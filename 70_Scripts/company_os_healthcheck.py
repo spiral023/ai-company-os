@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import argparse
 import subprocess
 import sys
 from pathlib import Path
@@ -31,8 +32,16 @@ def compile_scripts() -> tuple[str, int]:
     return run_command("Python Compile", [sys.executable, "-m", "py_compile", *script_paths])
 
 
-def main() -> int:
+def build_parser() -> argparse.ArgumentParser:
+    """Create the CLI argument parser."""
+    return argparse.ArgumentParser(description="Zentrale AI-Company-OS Checks ausführen")
+
+
+def main(argv: list[str] | None = None) -> int:
     """Run all health checks and return 0 only if all pass."""
+    parser = build_parser()
+    parser.parse_args(argv)
+
     checks = [
         ("Registry Check", [sys.executable, "70_Scripts/skill_registry_check.py"]),
         ("Skill Autoreview", [sys.executable, "70_Scripts/skill_autoreview.py"]),

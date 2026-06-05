@@ -82,6 +82,10 @@ Vor Änderungen an Scripts:
 - keine unnötigen Abhängigkeiten hinzufügen
 - Syntax-Check ausführen
 
+## Benutzerfreundliche Bedienung
+
+Für normale Bedienung bevorzugt `python ai.py` im Repo-Root nutzen. Die Scripts unter `70_Scripts/` bleiben die darunterliegenden Werkzeuge für Automatisierung, Debugging und direkte Agent-Nutzung.
+
 ## Externe Skills
 
 Externe Skills dürfen nicht automatisch als vertrauenswürdig gelten.

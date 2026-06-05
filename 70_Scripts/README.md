@@ -1,5 +1,7 @@
 # Scripts
 
+Für die normale Bedienung bevorzugt `python ai.py` im Repo-Root verwenden. Die Scripts in diesem Ordner sind die darunterliegenden Werkzeuge für Automatisierung, Debugging und direkte Agent-Nutzung.
+
 Kleine lokale Hilfsscripts für Phase 1.
 
 - `skill_registry_check.py`: prüft Registry und lokale Skill-Pfade.

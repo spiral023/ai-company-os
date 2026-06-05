@@ -46,6 +46,38 @@ python 70_Scripts/create_project_kit.py --kit saas-webapp --name mein-produkt --
 
 Danach im Zielprojekt mit Claude Code oder Codex weiterarbeiten.
 
+## Einfache Bedienung
+
+Interaktives Menü:
+
+```bash
+python ai.py
+```
+
+Windows:
+
+```powershell
+.\ai.ps1
+```
+
+Linux/macOS:
+
+```bash
+./ai.sh
+```
+
+Häufige Befehle:
+
+```bash
+python ai.py health
+python ai.py new
+python ai.py skills
+python ai.py external
+python ai.py status
+```
+
+Die Scripts unter `70_Scripts/` bleiben die technischen Werkzeuge. `ai.py` ist nur eine benutzerfreundliche Oberfläche darüber.
+
 ## Typischer Ablauf
 
 1. Idee in `00_Inbox/Ideen.md` notieren.
