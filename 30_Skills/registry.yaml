@@ -1,0 +1,220 @@
+version: 1
+description: Zentrale Skill Registry für das AI-Company-OS.
+trust_levels:
+  owned: Eigener Skill, frei nutzbar.
+  reviewed: Geprüfter externer Skill, für Projekte nutzbar.
+  available: Verfügbar, aber noch nicht vollständig geprüft.
+  unreviewed: Nur zur Sichtung, nicht automatisch verwenden.
+skills:
+- id: produktentwicklung
+  type: local
+  path: 30_Skills/local/produktentwicklung/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: true
+  project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  default_for_project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  description: Von Idee über Zielgruppe, Features, PRD und Roadmap zur umsetzbaren
+    Produktdefinition.
+- id: lovable-prototype
+  type: local
+  path: 30_Skills/local/lovable-prototype/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: true
+  project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  default_for_project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  description: Erstellt Lovable-Prompts für erste und zweite Prototypen inklusive
+    DESIGN.md und BACKEND.md.
+- id: open-source-to-saas
+  type: local
+  path: 30_Skills/local/open-source-to-saas/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: true
+  project_types:
+  - saas-webapp
+  default_for_project_types:
+  - saas-webapp
+  description: Analysiert Open-Source-Projekte und leitet daraus neue SaaS-Produkte
+    mit Zusatzfeatures ab.
+- id: project-bootstrap
+  type: local
+  path: 30_Skills/local/project-bootstrap/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: true
+  project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  default_for_project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  description: Erstellt aus Projekt-Kits neue Projekt-Repos oder vorbereitetes Projektmaterial.
+- id: ask-user-question
+  type: local
+  path: 30_Skills/local/ask-user-question/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: true
+  project_types:
+  - all
+  default_for_project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  description: Stellt konkrete Rückfragen mit Optionen und Empfehlung, wenn wichtige
+    Informationen fehlen.
+- id: skill-autoreview
+  type: local
+  path: 30_Skills/local/skill-autoreview/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: false
+  project_types:
+  - all
+  default_for_project_types: []
+  description: Prüft Skills auf Klarheit, Trigger, Output, Redundanz, Risiken und
+    Verbesserungsmöglichkeiten.
+- id: repo-import-review
+  type: local
+  path: 30_Skills/local/repo-import-review/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: false
+  project_types:
+  - all
+  default_for_project_types: []
+  description: Prüft externe Repositories, Skill-Packs, Templates und Tools vor Integration
+    auf Zweck, Lizenz, Risiken, Scripts, Vertrauensniveau und Integrationsform.
+- id: qa-engineer
+  type: local
+  path: 30_Skills/local/qa-engineer/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: true
+  project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  default_for_project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  description: Erstellt QA-Pläne, Testfälle, Regression-Checks und Release-Empfehlungen.
+- id: security-reviewer
+  type: local
+  path: 30_Skills/local/security-reviewer/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: true
+  project_types:
+  - saas-webapp
+  - shopify-app
+  default_for_project_types:
+  - saas-webapp
+  - shopify-app
+  description: Prüft Security, Auth, Secrets, Rollenrechte, Tenant-Isolation und Deployment-Risiken.
+- id: seo-manager
+  type: local
+  path: 30_Skills/local/seo-manager/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: true
+  project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  default_for_project_types:
+  - saas-webapp
+  - shopify-app
+  - website-redesign
+  description: Erstellt SEO-Strategien, Keyword-Cluster, Content-Briefs und Onpage-Checklisten.
+project_types:
+- id: saas-webapp
+  name: SaaS Webapp
+  kit_path: 40_Project_Kits/saas-webapp
+- id: shopify-app
+  name: Shopify App
+  kit_path: 40_Project_Kits/shopify-app
+- id: website-redesign
+  name: Website-Redesign
+  kit_path: 40_Project_Kits/website-redesign
+external_sources:
+- id: marketingskills
+  name: MarketingSkills
+  source: https://github.com/coreyhaines31/marketingskills
+  local_path: 30_Skills/external/sources/marketingskills
+  install_mode: submodule-or-copy
+  status: available
+  trust: available
+  allowed_use:
+  - review
+  - reference
+  blocked_use:
+  - automatic_project_copy
+  - script_execution
+  license: MIT
+  review_file: 30_Skills/external/reviews/marketingskills.md
+  notes: Marketing-, SEO-, Copywriting-, Launch- und Growth-Skills. Vor produktiver
+    Nutzung prüfen.
+- id: superpowers
+  name: Superpowers
+  source: TODO
+  local_path: 30_Skills/external/sources/superpowers
+  install_mode: submodule-or-copy
+  status: planned
+  trust: unreviewed
+  allowed_use:
+  - none
+  blocked_use:
+  - automatic_project_copy
+  - script_execution
+  license: unknown
+  review_file: 30_Skills/external/reviews/superpowers.md
+  notes: Geplant für Softwareentwicklungs-Skills wie TDD, Brainstorming und Engineering-Workflows.
+    Quelle noch ergänzen.
+- id: frontend-design
+  name: Frontend Design Skill
+  source: TODO
+  local_path: 30_Skills/external/sources/frontend-design
+  install_mode: submodule-or-copy
+  status: planned
+  trust: unreviewed
+  allowed_use:
+  - none
+  blocked_use:
+  - automatic_project_copy
+  - script_execution
+  license: unknown
+  review_file: 30_Skills/external/reviews/frontend-design.md
+  notes: Geplant für UI-, UX- und Frontend-Design-Skills. Quelle noch ergänzen.
+- id: shopify-ai-toolkit
+  name: Shopify AI Toolkit / Shopify Skills
+  source: TODO
+  local_path: 30_Skills/external/sources/shopify-ai-toolkit
+  install_mode: submodule-or-copy
+  status: planned
+  trust: unreviewed
+  allowed_use:
+  - none
+  blocked_use:
+  - automatic_project_copy
+  - script_execution
+  license: unknown
+  review_file: 30_Skills/external/reviews/shopify-ai-toolkit.md
+  notes: Geplant für Shopify-App-Entwicklung. Quelle noch ergänzen.
