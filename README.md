@@ -1,132 +1,210 @@
 # AI-Company-OS
 
-Dieses Repository ist das schlanke Mutter-Repo für Philipps KI-Agent-Firma. Es enthält Firmenregeln, Workflows, lokale Skills, Projekt-Kits, Evals und wiederverwendbares Wissen für neue Softwareprojekte.
+Schlankes Mutter-Repo für Philipps KI-Agent-Firma. Es bündelt Firmenregeln, Workflows, lokale Skills, Projekt-Kits, Evals und wiederverwendbares Wissen für KI-gestützte Softwareentwicklung und digitale Produkte.
 
-Einzelne Produkte liegen später in eigenen GitHub-Repositories. Aus diesem Repo werden passende Vorlagen, Skills und Arbeitsweisen in diese Projekt-Repos kopiert.
+Einzelne Softwareprojekte liegen später in eigenen GitHub-Repositories. Dieses Repo liefert dafür Vorlagen, Skills, Checklisten und Entscheidungswissen.
 
-## Phase-1-Umfang
+## Status
 
-- Firmenwissen und Arbeitsprinzipien
-- wiederverwendbare Workflows
-- lokale Markdown-Skills nach dem `SKILL.md`-Prinzip
-- Projekt-Kits für die ersten Projektarten
-- einfache Eval-Dateien
-- kleine Hilfsscripts
+| Bereich | Stand |
+|---|---|
+| Agent-Regeln | `AGENTS.md` ist führend, `CLAUDE.md` verweist nur darauf |
+| Projekt-Kits | SaaS Webapp, Shopify App, Website-Redesign |
+| Skills | lokale Skills unter `30_Skills/local/`, Registry unter `30_Skills/registry.yaml` |
+| Externe Skills | dokumentiert, aber nicht automatisch vertrauenswürdig |
+| Health Check | `python 70_Scripts/company_os_healthcheck.py` |
+| Obsidian | Markdown, Wiki-Links und kurze Index-Dateien |
 
-## Projektarten
+## Was dieses Repo ist
 
-- SaaS Webapp
-- Shopify App
-- Website-Redesign
+- Firmen- und Arbeitswissen für KI-gestützte Produktentwicklung.
+- Startpunkt für neue Projekt-Repos.
+- Sammlung lokaler Markdown-Skills nach dem `SKILL.md`-Prinzip.
+- Obsidian-kompatible Wissensbasis.
+- Kontrollierter Prozess für externe Skill-Quellen.
 
-## Ordner
+## Was dieses Repo nicht ist
 
-- `00_Inbox/`: Ideen, Rohnotizen und Fragen.
-- `10_Company/`: Mission, Prinzipien, Freigaben und Glossar.
-- `20_Workflows/`: wiederholbare Arbeitsabläufe.
-- `30_Skills/`: lokale Skills und Registry für externe Skills.
-- `40_Project_Kits/`: Startvorlagen für neue Projekt-Repos.
-- `50_Memory/`: Produkte, Entscheidungen, Märkte, Kunden und Lessons Learned.
-- `60_Evals/`: Qualitätskriterien für Skills, Produktarbeit und QA.
-- `70_Scripts/`: kleine lokale Hilfsscripts.
-- `90_Archive/`: Ablage für veraltete Inhalte.
-
-Externe Skills werden über `30_Skills/registry.yaml` verwaltet und vor produktiver Nutzung geprüft.
-
-## Beispielablauf
-
-1. Idee in `00_Inbox/Ideen.md` notieren.
-2. Workflow `20_Workflows/Idee_zu_Produkt.md` nutzen.
-3. passenden Projekt-Kit auswählen.
-4. Skills ins Projekt-Repo kopieren.
-5. Projekt mit Claude Code oder Codex weiterentwickeln.
-
-Falls ein `npx skills` Tool verfügbar ist, kann es später zur Verwaltung externer Skill-Packs dokumentiert und getestet werden. In Phase 1 ist es keine Voraussetzung.
+- kein Produkt-Code-Repo
+- kein Ort für Secrets, Tokens, Passwörter oder Kundendaten
+- kein automatischer Installer für externe Skills
+- kein Deployment- oder Produktionssystem
 
 ## Schnellstart
 
 ```bash
-python 70_Scripts/skill_registry_check.py
-python 70_Scripts/skill_autoreview.py
 python 70_Scripts/company_os_healthcheck.py
 python 70_Scripts/create_project_kit.py --list
+python 70_Scripts/install_project_skills.py --list
+```
+
+Neues SaaS-Projekt vorbereiten:
+
+```bash
 python 70_Scripts/create_project_kit.py --kit saas-webapp --name mein-produkt --target ../mein-produkt --copy-skills
 ```
 
-## Health Check
+Danach im Zielprojekt mit Claude Code oder Codex weiterarbeiten.
 
-Der zentrale Repo-Check läuft über:
+## Typischer Ablauf
 
-```bash
-python 70_Scripts/company_os_healthcheck.py
-```
+1. Idee in `00_Inbox/Ideen.md` notieren.
+2. Idee mit `20_Workflows/Idee_zu_Produkt.md` schärfen.
+3. Projektart auswählen.
+4. Projekt-Kit mit `create_project_kit.py` kopieren.
+5. passende lokale Skills ins Projekt kopieren.
+6. Zielprojekt separat als Git-Repository initialisieren.
+7. ersten Arbeitsauftrag mit `20_Workflows/Erster_Arbeitsauftrag_für_Coding_Agents.md` formulieren.
 
-## Ideen verarbeiten
+## Projekt-Kits
 
-Neue Ideen zuerst in `00_Inbox/Ideen.md` sammeln. Danach mit `20_Workflows/Idee_zu_Produkt.md` schärfen und bei Bedarf in `50_Memory/Produkte/` oder ein neues Projekt-Repo überführen.
+| Kit | Zweck | Pfad |
+|---|---|---|
+| SaaS Webapp | B2B/SaaS-Produkte mit Auth, Rollen, QA, Security und Deployment | `40_Project_Kits/saas-webapp/` |
+| Shopify App | Merchant Use Case, Admin UX, Shopify-Flows und Deployment | `40_Project_Kits/shopify-app/` |
+| Website-Redesign | Briefing, SEO, Content, Design, Technik und QA | `40_Project_Kits/website-redesign/` |
 
-## Projekt-Repos erstellen
-
-Projekt-Kits werden mit `70_Scripts/create_project_kit.py` kopiert. Beispiel:
+Beispiel:
 
 ```bash
 python 70_Scripts/create_project_kit.py --kit shopify-app --name shopify-review-tool --target ../shopify-review-tool --copy-skills
 ```
 
-Danach wird das Zielprojekt separat als eigenes Git-Repository initialisiert und mit Claude Code oder Codex weiterentwickelt.
+## Skills
 
-## Skills kopieren
+Lokale Skills liegen unter `30_Skills/local/` und werden über `30_Skills/registry.yaml` gesteuert.
 
-Skills werden über `30_Skills/registry.yaml` gesteuert. Defaults pro Projektart kopierst du so:
+| Script | Aufgabe |
+|---|---|
+| `skill_registry_check.py` | prüft Registry, lokale Skill-Pfade und externe Quellen |
+| `skill_autoreview.py` | prüft lokale Skills auf Länge, Frontmatter, Output und Risiken |
+| `install_project_skills.py` | kopiert lokale Skills in Projekt-Repos |
+| `external_skill_review.py` | prüft externe Skill-Quellen ohne Aktivierung |
+| `external_skill_intake.py` | legt neue externe Skill-Quellen als Entwurf an |
+| `company_os_healthcheck.py` | führt die zentralen Checks gesammelt aus |
+
+Default-Skills für ein Projekt kopieren:
 
 ```bash
 python 70_Scripts/install_project_skills.py --project-type website-redesign --target ../mein-redesign
 ```
 
-Einzelne Skills:
+Einzelne Skills kopieren:
 
 ```bash
 python 70_Scripts/install_project_skills.py --skills produktentwicklung qa-engineer --target ../mein-projekt
 ```
 
-## Externe Skills prüfen
+## Externe Skills
 
-Externe Quellen werden dokumentiert, aber nicht automatisch vertraut:
+Externe Skill-Packs werden dokumentiert, aber nicht automatisch vertraut.
+
+| Ordner | Bedeutung |
+|---|---|
+| `30_Skills/external/sources/` | mögliche Submodule, Fork-Kopien oder manuelle Kopien |
+| `30_Skills/external/reviews/` | Review-Berichte pro externer Quelle |
+| `30_Skills/external/intake/` | Entwürfe und ungeprüfte Quellen |
+
+Neue externe Quelle erfassen:
 
 ```bash
-python 70_Scripts/external_skill_review.py
 python 70_Scripts/external_skill_intake.py --id example --name "Example" --source https://github.com/example/repo
 ```
 
-Vor produktiver Nutzung sind Quelle, Lizenz, Inhalt und Trust-Level zu prüfen.
+Externe Quellen prüfen:
 
-## Externe Skills
+```bash
+python 70_Scripts/external_skill_review.py
+python 70_Scripts/external_skill_review.py --source marketingskills
+```
 
-Externe Skill-Packs liegen konzeptionell unter `30_Skills/external/`:
+Vor produktiver Nutzung immer:
 
-- `sources/`: Submodule, Fork-Kopien oder manuelle Kopien
-- `reviews/`: Review-Berichte pro Quelle
-- `intake/`: Entwürfe und noch ungeprüfte Quellen
+1. Quelle prüfen.
+2. Lizenz prüfen.
+3. Inhalt sichten.
+4. Review-Datei ausfüllen.
+5. Philipp-Freigabe einholen.
 
-Sichere Nutzung:
+Externe Scripts werden nicht automatisch ausgeführt. Externe Skills werden nicht automatisch in Projekt-Kits kopiert.
 
-1. Quelle mit `external_skill_intake.py` erfassen.
-2. Lizenz und Inhalt prüfen.
-3. Review-Datei ausfüllen.
-4. `external_skill_review.py` ausführen.
-5. Trust-Level erst nach Philipp-Freigabe erhöhen.
+## Workflows
 
-Externe Skills werden nicht automatisch in Projekt-Kits kopiert.
+| Workflow | Einsatz |
+|---|---|
+| `Idee_zu_Produkt.md` | aus rohen Ideen Produktkonzepte machen |
+| `Projekt_Bootstrap.md` | neues Projekt-Repo vorbereiten |
+| `Lovable_Prototyping.md` | Lovable-Prompts und Übergabe an Coding Agents |
+| `Open_Source_zu_SaaS.md` | Open-Source-Ideen in SaaS-Chancen übersetzen |
+| `Erster_Arbeitsauftrag_für_Coding_Agents.md` | Startprompt für Claude Code oder Codex erstellen |
+| `Externe_Skills_Integrieren.md` | externe Skill-Quellen sicher aufnehmen |
+
+Alle Workflows liegen unter `20_Workflows/`.
+
+## Memory
+
+`50_Memory/` enthält wiederverwendbares Wissen:
+
+- `Produkte/`: Produktideen und Produktnotizen, z. B. `TeamBridge`
+- `Entscheidungen/`: Entscheidungsdokumentation
+- `Märkte/`: Märkte, Wettbewerber und Zielgruppen
+- `Kunden/`: Kundensegmente und Bedarfsmuster
+- `Lessons_Learned/`: wiederverwendbare Erkenntnisse
 
 ## Obsidian
 
-Das Repo ist als Obsidian Vault nutzbar: Markdown-Dateien, kurze Index-Dateien und Wiki-Links wie `[[Projekt_Bootstrap]]` funktionieren ohne proprietäre Plugins.
+Das Repo ist als Obsidian Vault nutzbar:
 
-Lokale Obsidian-Workspace-Dateien wie `.obsidian/workspace.json` und `.obsidian/graph.json` sollten normalerweise nicht versioniert werden. Wenn sie bereits tracked sind, nicht automatisch entfernen.
+- Markdown-Dateien
+- klare Ordnernamen
+- kurze Index-Dateien
+- Wiki-Links wie `[[Projekt_Bootstrap]]`
+- keine proprietären Obsidian-Plugins als Voraussetzung
 
-## Bewusst nicht automatisiert
+Lokale Obsidian-UI-Dateien werden nicht versioniert:
 
-- externe Skills werden nicht automatisch aktiviert
-- echte Deployments brauchen Freigabe
-- Secrets werden nicht erzeugt
-- neue kostenpflichtige Dienste werden nicht automatisch eingerichtet
+- `.obsidian/workspace.json`
+- `.obsidian/workspace-mobile.json`
+- `.obsidian/graph.json`
+
+## Sicherheit und Freigaben
+
+Nicht in dieses Repo schreiben:
+
+- Secrets
+- Tokens
+- Passwörter
+- private Kundendaten
+- produktive API-Keys
+
+Philipp muss freigeben vor:
+
+- Produktion-Deployments
+- echten Kunden-E-Mails oder öffentlichen Veröffentlichungen
+- Preisänderungen
+- rechtlichen, steuerlichen oder datenschutzrelevanten Aussagen
+- Änderungen an Authentifizierung, Billing, Security oder Tenant-Isolation
+- neuen kostenpflichtigen Tools, APIs oder Diensten
+
+## Health Check
+
+Vor größeren Änderungen oder vor Commits:
+
+```bash
+python 70_Scripts/company_os_healthcheck.py
+```
+
+Der Check umfasst:
+
+- Registry Check
+- Skill Autoreview
+- External Skill Review
+- Projekt-Kit-Liste
+- Skill-Install-Liste
+- Python Compile für Scripts
+
+## Nächste sinnvolle Schritte
+
+- Erste echte Projektidee über `00_Inbox/Ideen.md` und `20_Workflows/Idee_zu_Produkt.md` ausarbeiten.
+- Für TeamBridge ein eigenes Projekt-Repo aus dem SaaS-Kit erzeugen.
+- Externe Skill-Quellen nur nach Review und Freigabe weiter integrieren.
