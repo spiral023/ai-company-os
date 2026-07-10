@@ -35,6 +35,10 @@ tmp/
 temp/
 .cache/
 
+# Externe Repos (nur lokale Analyse, nicht versioniert) - Index bleibt versioniert
+external_repos/*
+!external_repos/INDEX.md
+
 # Secrets
 secrets/
 *.key

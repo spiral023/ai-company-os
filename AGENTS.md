@@ -101,6 +101,48 @@ Vor Nutzung in Projekten:
 
 Externe Repositories, Templates und Skill-Packs müssen vor Integration mit dem Skill `repo-import-review` geprüft werden. Externe Scripts dürfen nicht automatisch ausgeführt werden.
 
+### Fremde GitHub-Repos herunterladen (Analyse-Repos)
+
+Fremde GitHub-Repos, die nur zur Analyse oder als Inspiration für Arbeitsweisen dienen, werden nach `external_repos/<owner>/<repo-name>/` geklont (einfacher `git clone`, kein Submodule/Subtree). Der Ordnername enthält immer den GitHub-Owner als Unterordner (z.B. `external_repos/mattpocock/skills/`), damit gleichnamige Repos verschiedener Owner nicht kollidieren. Der Ordner `external_repos/` ist in `.gitignore` und in der Obsidian-Konfiguration (`.obsidian/app.json` → `userIgnoreFilters`) ausgeschlossen: die Inhalte werden weder versioniert noch im Obsidian-Vault indiziert oder angezeigt.
+
+Update eines bereits geklonten Repos: `git -C external_repos/<owner>/<repo-name> pull`.
+
+`external_repos/INDEX.md` selbst ist von der `.gitignore`-Ausnahme für `external_repos/` ausgenommen (`!external_repos/INDEX.md`) und bleibt somit versioniert — nur die geklonten Repo-Inhalte selbst sind lokal/ignoriert.
+
+Beim Herunterladen eines neuen Repos immer einen Eintrag in `external_repos/INDEX.md` pflegen. Aufteilung: **die mechanischen Felder erledigt das Script automatisch, die inhaltlichen Felder schreibst du.**
+
+Von Hand pro Repo anzulegen sind nur:
+
+- Überschrift `## <owner>/<repo>` sowie die Zeilen `- **URL:**`, `- **Heruntergeladen:**`, `- **Zuletzt aktualisiert:**` (initial gleich dem Download-Datum).
+- Eine Zusammenfassung von ca. 200 Wörtern auf Basis der README.md: Was macht das Projekt, welches Problem löst es, welche Technologie/welcher Ansatz, für wen relevant.
+
+Automatisch durch `python 70_Scripts/update_external_repos.py` gepflegt (nicht von Hand berechnen):
+
+- `- **Dateien:** … · **Größe:** …` — Dateizahl (ohne `.git`) und Größe.
+- `- **Struktur:** …` — erkannte Skill-/Agent-/Command-/Hook-/Rules-/Plugin-Ordner, `SKILL.md`-Anzahl (ohne `docs/`- und `.`-Spiegelbäume) und generierte Spiegelordner.
+- Die Übersichtstabelle am Kopf (zwischen den `OVERVIEW`-Markern): Repos gesamt, Gesamtgröße, Dateien gesamt, Stand-Datum, Tabelle je Repo.
+
+Damit ein neues Repo alle Felder bekommt: nach dem Anlegen von Überschrift + URL + Datum + Zusammenfassung einmal `python 70_Scripts/update_external_repos.py --index-only` laufen lassen — das ergänzt/aktualisiert `Dateien`, `Größe`, `Struktur` und die Übersicht.
+
+**Struktur-Nuance (`<!-- manual -->`):** Bei Repos, wo die eigentliche Logik NICHT in Standard-Ordnern liegt (Quellcode in `packages/`/`src/`, reine CLI, Wissensbasis ohne Skill-Paket, viele generierte Spiegel), würde die mechanische Erkennung in die Irre führen. Dort die `- **Struktur:**`-Zeile von Hand schreiben und mit ` <!-- manual -->` am Zeilenende markieren — das Script überschreibt solche Zeilen nie.
+
+Ziel: Anhand dieses Index später effizient (ohne erneutes Klonen) passende GitHub-Repos empfehlen, direkt zu den relevanten Skill-/Agent-Ordnern springen und Informationen/Arbeitsweisen daraus extrahieren können.
+
+### Externe Repos aktualisieren
+
+Trigger-Phrasen wie „update die externen Repos“ oder „aktualisiere external_repos“ lösen folgenden Ablauf aus:
+
+1. `python 70_Scripts/update_external_repos.py` ausführen (optional mit `--repo <owner>/<repo>` für nur ein Repo beim Pull). Das Script:
+   - führt in jedem geklonten Repo `git pull --ff-only` aus und meldet pro Repo, ob es unverändert war oder neue Commits erhalten hat;
+   - scannt danach **alle** Repos neu und aktualisiert in `external_repos/INDEX.md` automatisch `Dateien`, `Größe`, `Struktur` (außer `<!-- manual -->`-Zeilen) und die Übersichtstabelle;
+   - setzt `Zuletzt aktualisiert` nur bei Repos mit neuen Commits auf das heutige Datum.
+   - Flags: `--index-only` (nur Neu-Scan ohne Pull), `--no-index` (nur Pull), `--dry-run` (Index-Änderungen nur anzeigen).
+2. Nur für die vom Script als „NEU" gemeldeten Repos die inhaltliche Zusammenfassung prüfen:
+   - README.md erneut lesen; falls vorhanden `CHANGELOG.md` bzw. Release-Notes sichten (viele READMEs enthalten die Highlights bereits inline).
+   - Die ~200-Wort-Zusammenfassung in `external_repos/INDEX.md` nur bei inhaltlich relevanten Änderungen neu schreiben (dieser Teil ist bewusst NICHT automatisiert — er braucht Urteilsvermögen).
+3. Unveränderte Repos brauchen keine manuelle Nacharbeit — ihre Metadaten hat das Script bereits aufgefrischt.
+4. Am Ende kurz zusammenfassen, welche Repos sich geändert haben und was daran neu ist.
+
 ## Projektarten in Phase 1
 
 Dieses Repo unterstützt zuerst diese Projektarten:
