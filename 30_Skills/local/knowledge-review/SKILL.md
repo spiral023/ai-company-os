@@ -27,6 +27,6 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`.
 - Merge-Kandidaten: <Liste oder "keine">
 - Zu prüfen (veraltet): <Liste oder "keine">
 - Aufgelöste Spannungen: <Liste oder "keine">
-- Konfidenz-Korrektionen: <Liste oder "keine">
+- Konfidenz-Korrekturen: <Liste oder "keine">
 - Index-/Link-Korrekturen: <Liste oder "keine">
 - Empfehlung: <max. 3 nächste Schritte>
