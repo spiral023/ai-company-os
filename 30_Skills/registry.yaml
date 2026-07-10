@@ -144,6 +144,28 @@ skills:
   - shopify-app
   - website-redesign
   description: Erstellt SEO-Strategien, Keyword-Cluster, Content-Briefs und Onpage-Checklisten.
+- id: knowledge-ingest
+  type: local
+  path: 30_Skills/local/knowledge-ingest/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: false
+  project_types:
+  - all
+  default_for_project_types: []
+  description: Arbeitet Tweets, Links und Texte über KI-Arbeitsweisen ins Knowledge-System
+    (80_Knowledge) ein und liefert ein Diff-Resümee.
+- id: knowledge-review
+  type: local
+  path: 30_Skills/local/knowledge-review/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: false
+  project_types:
+  - all
+  default_for_project_types: []
+  description: Pflege-Lauf für das Knowledge-System — Duplikate, veraltete Patterns,
+    Spannungen, Konfidenzen und Index-Konsistenz.
 project_types:
 - id: saas-webapp
   name: SaaS Webapp

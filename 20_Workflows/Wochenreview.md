@@ -22,6 +22,7 @@ Am Ende einer Arbeitswoche oder nach mehreren Projektentscheidungen.
 3. Entscheidungen dokumentieren.
 4. nächste Woche priorisieren.
 5. relevante Memory-Dateien aktualisieren.
+6. Knowledge-System pflegen (Skill knowledge-review).
 
 ## Output
 
@@ -33,3 +34,4 @@ Am Ende einer Arbeitswoche oder nach mehreren Projektentscheidungen.
 
 - ask-user-question
 - skill-autoreview
+- knowledge-review

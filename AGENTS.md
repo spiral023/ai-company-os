@@ -72,6 +72,14 @@ Skills liegen unter `30_Skills/`.
 - Nicht alle Skills sind automatisch aktiv.
 - Externe Skills müssen geprüft werden, bevor sie in Projekt-Kits übernommen werden.
 
+## Knowledge-System
+
+Wissen über KI-Arbeitsweisen (Skills, Agent-Workflows, Frameworks) lebt unter `80_Knowledge/`. Regeln und Templates: `80_Knowledge/README.md`.
+
+- Teilt Philipp einen Tweet, x.com-Link oder Text über Arbeitsweisen — auch formlos ohne Auftrag — den Skill `knowledge-ingest` anwenden.
+- Pflege-Lauf über den Skill `knowledge-review`, u.a. im Wochenreview.
+- In `80_Knowledge/Patterns/` wird nie gelöscht, nur datiert ergänzt; Widersprüche werden als Spannungen festgehalten.
+
 ## Scripts
 
 Wiederkehrende Aufgaben sollen bevorzugt über Scripts unter `70_Scripts/` gelöst werden, wenn sie mehr als zweimal vorkommen.
