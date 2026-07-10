@@ -11,7 +11,7 @@ Wissensbasis über KI-Arbeitsweisen (Coding Agents, Skills, Agent-Workflows, Fra
 
 ## Invarianten
 
-1. In `Patterns/` wird nie gelöscht. Überholte Aussagen bekommen einen datierten Vermerk („bis YYYY-MM üblich, seitdem …”).
+1. In `Patterns/` wird nie gelöscht. Überholte Aussagen bekommen einen datierten Vermerk („bis YYYY-MM üblich, seitdem …“).
 2. `Sources/`-Notizen werden nach Anlage nicht mehr inhaltlich verändert; nur Pattern-Links dürfen ergänzt werden.
 3. Widersprüche zwischen Quellen werden nicht aufgelöst, sondern als Spannung (Trade-off) im betroffenen Pattern festgehalten.
 4. Jede inhaltliche Aussage in einem Pattern muss mindestens einem Beleg zuordenbar sein.
@@ -42,7 +42,7 @@ typ: tweet | artikel | repo | video | notiz
 
 ## Inhalt
 
-<Originaltext. Bei URL-Abruf: das Abruf-Ergebnis, gekennzeichnet mit „(per WebFetch abgerufen, ggf. verlustbehaftet)”.>
+<Originaltext. Bei URL-Abruf: das Abruf-Ergebnis, gekennzeichnet mit „(per WebFetch abgerufen, ggf. verlustbehaftet)“.>
 
 ## Kernaussagen
 
