@@ -6,12 +6,12 @@
 
 ## Problem
 
-Philipp sammelt laufend Informationen über KI-Arbeitsweisen — Tweets, GitHub-Repos, Artikel über Skills, Agent-Workflows und Frameworks (z.B. mattpocock/skills, Wayfinder, Superpowers, GSD). Bisher gibt es dafür keinen Ort, an dem dieses Wissen strukturiert wächst. `external_repos/INDEX.md` beschreibt Repos, `50_Memory/` hält eigene Entscheidungen — aber Erkenntnisse über **Arbeitsweisen selbst** (Sinn, Zweck, Vor- und Nachteile, Trade-offs) haben keine Heimat und verbessern sich nicht mit neuen Eingaben.
+Philipp sammelt laufend Informationen über KI-Arbeitsweisen, hauptsächlich zum Thema Coding Agents — Tweets, GitHub-Repos, Artikel über Skills, Agent-Workflows und Frameworks (z.B. mattpocock/skills, Wayfinder, Superpowers, GSD). Bisher gibt es dafür keinen Ort, an dem dieses Wissen strukturiert wächst. `external_repos/INDEX.md` beschreibt Repos, `50_Memory/` hält eigene Entscheidungen — aber Erkenntnisse über **Arbeitsweisen selbst** (Sinn, Zweck, Vor- und Nachteile, Trade-offs) haben keine Heimat und verbessern sich nicht mit neuen Eingaben.
 
 ## Kernanforderungen
 
 1. Eingabe per Tweet-Text, x.com-URL (WebFetch funktioniert für einzelne Tweets, verifiziert am 2026-07-11) oder formlosem Text.
-2. Neue Infos machen alte nicht irrelevant: nichts wird gelöscht, Wissen wird datiert ergänzt; Widersprüche werden als Spannungen festgehalten, nicht wegaufgelöst.
+2. Neue Infos machen alte nicht irrelevant: nichts wird gelöscht, Wissen wird ergänzt; Widersprüche werden als Spannungen festgehalten, nicht wegaufgelöst.
 3. Auto-Synthese: Der Agent arbeitet Eingaben selbstständig ein und zeigt am Ende ein Diff-Resümee.
 4. Selbstverbesserung über die Eingabe hinaus: Vergleichsseiten, Pflege-Lauf, Verifikation gegen geklonte Repos.
 5. Obsidian-kompatibel: reine Markdown-Dateien, Wiki-Links, keine Plugin-Abhängigkeiten (gemäß AGENTS.md).

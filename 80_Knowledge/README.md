@@ -1,4 +1,4 @@
-﻿# Knowledge-System
+# Knowledge-System
 
 Wissensbasis über KI-Arbeitsweisen (Coding Agents, Skills, Agent-Workflows, Frameworks). Gespeist aus Tweets, GitHub-Repos, Artikeln und eigener Erfahrung. Design-Spec: `docs/superpowers/specs/2026-07-11-knowledge-system-design.md`.
 
