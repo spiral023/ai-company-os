@@ -1,0 +1,4 @@
+interface:
+  display_name: "Knowledge Curator"
+  short_description: "Quellen in belastbare Wissensartikel verwandeln"
+  default_prompt: "Nutze $knowledge-curator, um aus diesen Quellen einen belegbaren Wissensartikel zu erstellen, zu aktualisieren, zu verbessern oder zusammenzuführen."

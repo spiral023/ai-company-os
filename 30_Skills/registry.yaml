@@ -177,6 +177,25 @@ project_types:
   name: Website-Redesign
   kit_path: 40_Project_Kits/website-redesign
 external_sources:
+- id: knowledge-curator
+  name: Knowledge Curator
+  source: unbekannt (von Philipp bereitgestellt, keine Quell-/Lizenzangabe)
+  local_path: 30_Skills/external/sources/knowledge-curator
+  install_mode: manual-copy
+  status: available
+  trust: reviewed
+  allowed_use:
+  - review
+  - reference
+  blocked_use:
+  - automatic_project_copy
+  - script_execution
+  - code_copy
+  license: unknown
+  review_file: 30_Skills/external/reviews/knowledge-curator.md
+  notes: Knowledge-Ingest-Skill für ein fremdes Publishing-Schema. Lektionen wurden
+    2026-07-12 ins eigene Knowledge-System übernommen (Playbooks, Validator-Gate,
+    URL-Normalisierung). Wegen unbekannter Lizenz nur Konzept-Referenz, kein Code.
 - id: marketingskills
   name: MarketingSkills
   source: https://github.com/coreyhaines31/marketingskills
