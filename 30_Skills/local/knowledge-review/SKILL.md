@@ -19,8 +19,9 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`.
 2. **Frische.** Patterns, deren jüngster Beleg älter als ~90 Tage ist, im Konfidenz-Block mit „zu prüfen (kein frischer Beleg seit YYYY-MM-DD)“ markieren.
 3. **Spannungen prüfen.** Für jede offene Spannung prüfen, ob sie inzwischen entscheidbar ist — z.B. weil das betreffende Repo jetzt unter `external_repos/` liegt oder neue Quellen existieren. Entscheidbare Spannungen mit datiertem Vermerk auflösen (alte Sicht bleibt dokumentiert).
 4. **Konfidenzen neu ableiten.** Pro Pattern: höchster Beleg-Typ = Konfidenz. Abweichungen korrigieren.
-5. **Konsistenz.** `80_Knowledge/Index.md` gegen die tatsächlichen Dateien in `Patterns/` und `Vergleiche/` abgleichen (fehlende Einträge ergänzen, verwaiste entfernen); Wiki-Links stichprobenartig prüfen; Stand-Daten der Vergleichs-Notizen prüfen.
-6. **Bericht ausgeben** (siehe Ausgabeformat).
+5. **Validator ausführen.** `python 70_Scripts/validate_knowledge.py` — prüft deterministisch Frontmatter, Belege-Format, Konfidenz-Konsistenz, Wiki-Link-Ziele, Index-Vollständigkeit und Typografie. Gemeldete Fehler beheben und erneut ausführen.
+6. **Konsistenz (inhaltlich).** Was der Validator nicht sieht: `80_Knowledge/Index.md`-Einzeiler noch treffend? Stand-Daten der Vergleichs-Notizen plausibel? Verwandte-Patterns-Links fachlich sinnvoll?
+7. **Bericht ausgeben** (siehe Ausgabeformat). Erfolg nie melden, bevor der Validator fehlerfrei durchläuft; beim Merge erst nach erfolgreichem Validator-Lauf bereinigen.
 
 ## Ausgabeformat
 
@@ -28,5 +29,6 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`.
 - Zu prüfen (veraltet): <Liste oder "keine">
 - Aufgelöste Spannungen: <Liste oder "keine">
 - Konfidenz-Korrekturen: <Liste oder "keine">
+- Validator: <fehlerfrei | behobene Fehler>
 - Index-/Link-Korrekturen: <Liste oder "keine">
 - Empfehlung: <max. 3 nächste Schritte>

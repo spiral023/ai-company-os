@@ -44,6 +44,8 @@ typ: tweet | artikel | repo | video | notiz
 
 <Originaltext. Bei URL-Abruf: das Abruf-Ergebnis, gekennzeichnet mit „(per WebFetch abgerufen, ggf. verlustbehaftet)“.>
 
+Medien: <optional — Original-URL relevanter Bilder/Diagramme plus Ein-Satz-Beschreibung des Inhalts; nichts herunterladen>
+
 ## Kernaussagen
 
 - <Aussage 1> → [[<Pattern-Name>]]
