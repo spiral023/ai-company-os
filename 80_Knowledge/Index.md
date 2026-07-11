@@ -4,8 +4,13 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[README]] (80_Knowledge/RE
 
 ## Patterns
 
-_(noch keine — werden durch knowledge-ingest angelegt)_
+- [[Spec-Grilling]] — Agent verhört den Nutzer vor der Umsetzung, bis die Spec klar ist.
+- [[CONTEXT-Glossar]] — geteiltes Projekt-Vokabular in `CONTEXT.md` komprimiert Kommunikation und spart Thinking-Tokens.
+- [[Handoff-Doc]] — Konversation wird in ein Übergabe-Dokument kompaktiert, der nächste Agent macht nahtlos weiter.
+- [[Skill-Call-Hierarchie]] — user-invoked Skills orchestrieren, model-invoked Skills tragen die Disziplin; Orchestrator ruft nie Orchestrator.
+- [[Klein-und-komposierbar]] — Skills bleiben klein, komponierbar, leicht hackbar; Prozesskontrolle bleibt beim Menschen.
+- [[One-File-per-Failure-Mode]] — pro typischem Fehlermodus des Agenten genau ein fokussierter Skill.
 
 ## Vergleiche
 
-_(noch keine)_
+- [[Workflow-Frameworks]] — Gegenüberstellung von mattpocock/skills, Superpowers, GSD Core, gstack, addyosmani/agent-skills und Squad mit ersten Empfehlungen.
