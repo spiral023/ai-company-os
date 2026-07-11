@@ -25,7 +25,7 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`. 
    - Passendes Pattern existiert → Notiz ergänzen (neuer Beleg, ggf. neue Vor-/Nachteile, Konfidenz neu ableiten).
    - Kein passendes Pattern → neue Pattern-Notiz nach Template anlegen. Schwelle: Das Konzept ist benennbar und über die konkrete Quelle hinaus wiederverwendbar.
    - Aussage widerspricht Bestandswissen → im betroffenen Pattern unter „Spannungen & offene Fragen“ als Trade-off festhalten, mit beiden Quellen.
-6. **Repo-Verifikation.** Erwähnt die Quelle ein Repo, das unter `external_repos/` liegt (siehe `external_repos/INDEX.md`): zentrale Behauptungen dort stichprobenartig nachprüfen (Dateien/Struktur ansehen). Bestätigte Belege auf `verifiziert` heben; Abweichungen als Spannung notieren. Liegt das Repo nicht vor: Download gemäß `AGENTS.md` → „Repo-Import“ vorschlagen, aber nicht eigenmächtig klonen.
+6. **Repo-Verifikation.** Erwähnt die Quelle ein Repo, das unter `external_repos/` liegt (siehe `external_repos/INDEX.md`): zentrale Behauptungen dort stichprobenartig nachprüfen (Dateien/Struktur ansehen). Für bestätigte Aussagen eine neue Beleg-Zeile mit Repo-Pfad ergänzen (`YYYY-MM-DD · external_repos/<owner>/<repo>/<pfad> · verifiziert — …`); bestehende Beleg-Zeilen nie ändern. Abweichungen als Spannung notieren. Liegt das Repo nicht vor: Download gemäß `AGENTS.md` → „Repo-Import“ vorschlagen, aber nicht eigenmächtig klonen.
 7. **Vergleiche & Index aktualisieren.** Betroffene Notizen in `80_Knowledge/Vergleiche/` aktualisieren (Stand-Datum setzen); neue Patterns und Vergleiche in `80_Knowledge/Index.md` mit Einzeiler eintragen.
 8. **Diff-Resümee ausgeben** (siehe Ausgabeformat).
 

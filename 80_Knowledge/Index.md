@@ -1,6 +1,6 @@
 # Knowledge-Index
 
-Einstieg ins Knowledge-System. Regeln und Templates: [[README]] (80_Knowledge/README.md).
+Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|README]] (80_Knowledge/README.md).
 
 ## Patterns
 

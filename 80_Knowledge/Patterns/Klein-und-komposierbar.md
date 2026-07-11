@@ -35,7 +35,7 @@ Jeder Skill wird bewusst klein, leicht anpassbar und modellunabhängig gehalten,
 
 ## Spannungen & offene Fragen
 
-- Gegenposition zu schwereren Frameworks: `open-gsd/gsd-core` (siehe `external_repos/INDEX.md`) adressiert gezielt „Context Rot“ durch frische Subagent-Kontexte pro Ausführungsschritt und persistente `STATE.md`/`CONTEXT.md` — ein strukturell eingebauter Vorteil, den rein kleine, komponierbare Skills nicht automatisch mitbringen, weil der Nutzer den Gesamtworkflow selbst zusammensetzen muss. Trade-off: Kontrolle & Einfachheit (mattpocock) vs. eingebaute Disziplin gegen Kontext-Verschlechterung (GSD). Offene Frage: Ab welcher Vorhabengröße kippt der Vorteil zugunsten des schwereren, prozess-eigenen Frameworks? Siehe auch `[[Workflow-Frameworks]]`.
+- Gegenposition zu schwereren Frameworks: `open-gsd/gsd-core` (siehe `external_repos/INDEX.md`) adressiert gezielt „Context Rot“ durch frische Subagent-Kontexte pro Ausführungsschritt und persistente `STATE.md`/`CONTEXT.md` — ein strukturell eingebauter Vorteil, den rein kleine, komponierbare Skills nicht automatisch mitbringen, weil der Nutzer den Gesamtworkflow selbst zusammensetzen muss. Trade-off: Kontrolle & Einfachheit (mattpocock) vs. eingebaute Disziplin gegen Kontext-Verschlechterung (GSD). Offene Frage: Ab welcher Vorhabengröße kippt der Vorteil zugunsten des schwereren, prozess-eigenen Frameworks? Siehe auch [[Workflow-Frameworks]].
 
 ## Verwandte Patterns
 

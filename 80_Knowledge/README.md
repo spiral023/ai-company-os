@@ -25,7 +25,7 @@ Drei Beleg-Typen, aufsteigend gewichtet:
 2. `mehrfach-belegt` — mehrere voneinander unabhängige Quellen.
 3. `verifiziert` — im geklonten Repo (`external_repos/`) nachgeprüft oder selbst getestet.
 
-Konfidenz eines Patterns = höchster erreichter Beleg-Typ.
+Konfidenz eines Patterns = höchster erreichter Beleg-Typ. Ist ein Pattern bereits `verifiziert`, werden weitere Belege trotzdem als Zeilen ergänzt; die Konfidenz-Angabe ändert sich nicht mehr.
 
 ## Template: Source-Notiz
 
@@ -81,6 +81,7 @@ typ: tweet | artikel | repo | video | notiz
 ## Belege
 
 - YYYY-MM-DD · [[<Source-Datei>]] · <beleg-typ> — <Ein-Satz-Zusammenfassung des Belegs>
+- YYYY-MM-DD · external_repos/<owner>/<repo>/<pfad> · verifiziert — <was dort bestätigt wurde>
 
 ## Spannungen & offene Fragen
 
