@@ -10,6 +10,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[README]] (80_Knowledge/RE
 - [[Skill-Call-Hierarchie]] — user-invoked Skills orchestrieren, model-invoked Skills tragen die Disziplin; Orchestrator ruft nie Orchestrator.
 - [[Klein-und-komposierbar]] — Skills bleiben klein, komponierbar, leicht hackbar; Prozesskontrolle bleibt beim Menschen.
 - [[One-File-per-Failure-Mode]] — pro typischem Fehlermodus des Agenten genau ein fokussierter Skill.
+- [[Task-basierte-Steuerung]] — iterative Schleife „Set Goal → Task → Adjust → …“ statt linearem „Research → Plan → Implement“; Agent als PM und Developer zugleich.
 
 ## Vergleiche
 

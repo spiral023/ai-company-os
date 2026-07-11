@@ -40,3 +40,4 @@ Ein Skill komprimiert die laufende Konversation in ein Übergabe-Dokument („Ha
 ## Verwandte Patterns
 
 - [[Skill-Call-Hierarchie]]
+- [[Task-basierte-Steuerung]]

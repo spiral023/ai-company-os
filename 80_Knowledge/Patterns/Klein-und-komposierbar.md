@@ -31,6 +31,7 @@ Jeder Skill wird bewusst klein, leicht anpassbar und modellunabhängig gehalten,
 
 - 2026-07-10 · [[2026-07-10-voxyz-mattpocock-skills]] · meinung — Tweet: „the readme sets the boundary up front: skills stay small, composable, easy to hack. control of the process stays with you.“
 - 2026-07-11 · external_repos/mattpocock/skills/README.md · verifiziert — README bestätigt wörtlich: „These skills are designed to be small, easy to adapt, and composable. They work with any model.“ sowie die explizite Abgrenzung: „Approaches like GSD, BMAD, and Spec-Kit try to help by owning the process. But while doing so, they take away your control and make bugs in the process hard to resolve.“
+- 2026-07-09 · [[2026-07-09-n3sonline-wayfinder]] · meinung — Unabhängiger Tweet-Beleg: „A lot of other frameworks are HUGE. This one is small.“
 
 ## Spannungen & offene Fragen
 

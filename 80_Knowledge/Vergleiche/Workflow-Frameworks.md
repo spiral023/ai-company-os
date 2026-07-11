@@ -12,6 +12,7 @@
 | gstack (garrytan/gstack) | Virtuelles Engineering-Team: 23 Rollen-Skills + 8 „Power Tools“ über vollen Sprintzyklus Think → Plan → Build → Review → Test → Ship → Reflect | Sehr umfassend (Security-Audits, Browser-QA mit echten Screenshots, projektübergreifendes GBrain-Wissen); rollenbasierte Reviews aus mehreren Perspektiven | Hoher Umfang/Komplexität (59 SKILL.md, 53 MB); vermutlich Overkill für kleine Projekte; viele bewegliche Teile zu warten | `external_repos/INDEX.md` → garrytan/gstack |
 | addyosmani/agent-skills | 24 Lifecycle-Skills entlang Define → Plan → Build → Verify → Review → Ship, feste Anatomie mit Rationalizations-Tabelle und Red Flags | Sehr diszipliniert, explizite Anti-Rationalisierungs-Vorkehrungen, Google-Engineering-Praktiken eingebettet (Hyrum's Law, Chesterton's Fence u.a.), expliziter eigener Vergleich zu Superpowers/mattpocock vorhanden | Striktere, vorgegebene Anatomie evtl. weniger flexibel/hackbar als der mattpocock-Ansatz | `external_repos/INDEX.md` → addyosmani/agent-skills |
 | Squad (bradygaster/squad) | Menschengeführtes Team benannter KI-Spezialisten als persistente Dateien (`.squad/`); autonomer „Watch Mode“ (Ralph) für GitHub-Issue-Polling | Nachvollziehbares Entscheidungsprotokoll (`decisions.md`); autonomes Issue-Polling mit vierstufiger Fehler-Eskalation; projektübergreifendes Lernen | Alpha-Software; kein statischer Skill-Ordner — Logik liegt in CLI-Quellcode, dadurch schwerer zu inspizieren/anzupassen als reine Markdown-Skills | `external_repos/INDEX.md` → bradygaster/squad |
+| Wayfinder (Teil von mattpocock/skills) | Iteratives Task-Modell „Set Goal → Task → Adjust → Task → Adjust → …“ statt linearem Research → Plan → Implement; Task kann Recherche, Planung/Grilling, Implementierung oder Prototyp sein | Passt sich unscharfer, realer Arbeit an; laut Erfahrungsbericht bislang beste Lösung für Task-Sizing auf eine Agent-Session; bewusst klein im Vergleich zu vielen anderen Frameworks | Bislang nur ein Erfahrungsbericht („Day 1“) als Quelle; Reihenfolge/Art der Tasks steht erst im Nachhinein fest, dadurch weniger vorab planbar | `external_repos/INDEX.md` → mattpocock/skills (`skills/engineering/wayfinder`); [[2026-07-09-n3sonline-wayfinder]] |
 
 ## Empfehlungen
 
@@ -20,6 +21,7 @@
 - Teams, die durchgängige Disziplin und Nachvollziehbarkeit über den ganzen Lebenszyklus wollen (Anti-Rationalisierung, Red Flags, verpflichtende Reviews): addyosmani/agent-skills oder Superpowers als Vorbild.
 - Umfangreiche, rollenbasierte Workflows mit Sicherheits-/QA-Gates über den vollen Sprintzyklus: gstack als Vorbild — Umfang gegen Wartungsaufwand abwägen.
 - Autonomes Issue-Polling und persistente, benannte Agenten-Teams: Squad als Inspirationsquelle, Alpha-Status beachten.
+- Vorhaben mit hoher Unschärfe, bei denen sich Recherche-, Planungs- und Umsetzungsbedarf erst im Verlauf zeigen: Wayfinders iteratives Task-Modell (Set Goal → Task → Adjust) als Vorbild — siehe [[Task-basierte-Steuerung]].
 
 ## Offene Fragen
 
