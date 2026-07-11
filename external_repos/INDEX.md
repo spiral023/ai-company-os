@@ -9,31 +9,31 @@ Ordnerstruktur seit 2026-07-10: `external_repos/<owner>/<repo-name>/` (Owner als
 
 - **Repos gesamt:** 22
 - **Gesamtgröße:** ca. 415 MB
-- **Dateien gesamt:** ca. 20.603 (ohne `.git`)
-- **Stand:** 2026-07-10
+- **Dateien gesamt:** ca. 20.664 (ohne `.git`)
+- **Stand:** 2026-07-11
 
 | Repo | Dateien | Größe |
 |---|---:|---:|
 | pbakaus/impeccable | 2.201 | 77M |
 | shanraisshan/claude-code-best-practice | 454 | 74M |
-| garrytan/gstack | 1.169 | 53M |
+| garrytan/gstack | 1.170 | 53M |
 | affaan-m/ECC | 3.322 | 44M |
-| Egonex-AI/Understand-Anything | 435 | 30M |
+| Egonex-AI/Understand-Anything | 469 | 31M |
 | alirezarezvani/claude-skills | 4.606 | 29M |
-| open-gsd/gsd-core | 2.457 | 28M |
-| bradygaster/squad | 1.743 | 19M |
-| nextlevelbuilder/ui-ux-pro-max-skill | 491 | 14M |
+| open-gsd/gsd-core | 2.477 | 28M |
+| bradygaster/squad | 1.747 | 19M |
+| nextlevelbuilder/ui-ux-pro-max-skill | 482 | 13M |
 | OthmanAdi/planning-with-files | 424 | 12M |
 | anthropics/skills | 415 | 10M |
 | vercel-labs/agent-skills | 442 | 7,5M |
 | wshobson/agents | 1.094 | 7,3M |
 | AgriciDaniel/claude-seo | 364 | 3,8M |
-| coreyhaines31/marketingskills | 413 | 3,1M |
+| coreyhaines31/marketingskills | 416 | 3,1M |
 | Leonxlnx/taste-skill | 56 | 1,6M |
 | obra/superpowers | 172 | 1,3M |
-| vercel-labs/skills | 93 | 792K |
-| addyosmani/agent-skills | 125 | 647K |
-| mattpocock/skills | 110 | 436K |
+| vercel-labs/skills | 96 | 798K |
+| addyosmani/agent-skills | 126 | 665K |
+| mattpocock/skills | 114 | 450K |
 | emilkowalski/skills | 8 | 84K |
 | shadcn/improve | 9 | 61K |
 
@@ -46,9 +46,9 @@ Dateianzahl, Größe und Struktur pro Repo (ohne `.git`-Verzeichnis) stehen zus�
 
 - **URL:** https://github.com/mattpocock/skills
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 110 · **Größe:** 436K
-- **Struktur:** 38× SKILL.md · Ordner: skills
+- **Zuletzt aktualisiert:** 2026-07-11
+- **Dateien:** 114 · **Größe:** 450K
+- **Struktur:** 39× SKILL.md · Ordner: skills
 
 Sammlung von Agent-Skills von Matt Pocock (AI Hero), die er täglich für echte Softwareentwicklung nutzt – bewusst als Gegenentwurf zu "Vibe Coding" und prozess-diktierenden Frameworks wie GSD, BMAD oder Spec-Kit. Die Skills sind klein, modular, modellunabhängig und adressieren vier typische Fehlerquellen bei KI-gestützter Entwicklung: (1) Missverständnis zwischen Nutzer und Agent, gelöst durch "Grilling"-Sessions (`grill-me`, `grill-with-docs`), die den Agenten vor der Umsetzung gezielt nachfragen lassen; (2) zu weitschweifige Agenten, gelöst durch eine geteilte Fachsprache in einem `CONTEXT.md`-Dokument; (3) nicht funktionierender Code, gelöst durch strikte Test-Driven-Development- und Debugging-Skills (`tdd`, `diagnosing-bugs`); (4) architektonischer Verfall ("Ball of Mud"), adressiert durch `improve-codebase-architecture`. Skills sind in zwei Kategorien gegliedert: Engineering (Code-Arbeit) und Productivity (allgemeine Workflows), jeweils unterteilt in user-invoked (nur per Slash-Command aufrufbar, orchestrierend) und model-invoked (auch automatisch vom Agenten genutzt, enthalten die eigentliche Disziplin). Relevant als Vorbild für strukturierte, disziplinierte Engineering-Skills mit klarer Trennung von Orchestrierung und wiederverwendbarer Logik.
 
@@ -70,8 +70,8 @@ ECC ("Agent Harness Operating System") ist ein sehr umfangreiches Claude-Code-Pl
 
 - **URL:** https://github.com/garrytan/gstack
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 1.169 · **Größe:** 53M
+- **Zuletzt aktualisiert:** 2026-07-11
+- **Dateien:** 1.170 · **Größe:** 53M
 - **Struktur:** 59× SKILL.md · Ordner: skills, agents, hooks, references
 
 gstack ist Garry Tans (Präsident/CEO von Y Combinator) persönliches Open-Source-System, das Claude Code in ein virtuelles Engineering-Team verwandelt: 23 Rollen-Skills und 8 "Power Tools" bilden einen kompletten Sprint-Zyklus ab – Think → Plan → Build → Review → Test → Ship → Reflect. Zentrale Skills: `/office-hours` (Produktinterview mit gezielten Rückfragen, erzeugt Design-Doc), `/plan-ceo-review`/`/plan-eng-review`/`/plan-design-review`/`/plan-devex-review` (mehrstufige Planbewertung aus verschiedenen Rollen-Perspektiven), `/design-shotgun` (KI-generierte Mockup-Varianten mit Geschmacks-Lernen), `/review` und `/qa` (automatisierte Code- und Browser-Tests mit echten Screenshots), `/cso` (OWASP+STRIDE-Sicherheitsaudit), `/ship`/`/land-and-deploy` (Test, PR, Deployment, Monitoring). Ergänzt durch GBrain, eine persistente, projektübergreifende Wissensdatenbank für Agenten, sowie ausgefeilte Sicherheitsmechanismen gegen Prompt-Injection im Browser-Modus. Funktioniert nicht nur mit Claude Code, sondern auch mit Codex, Cursor, OpenCode u.a. MIT-lizenziert, sehr aktiv gepflegt (detailliertes Architektur- und Sicherheitsdokument). Relevant als Vorbild für einen vollständigen, rollenbasierten Entwicklungs-Workflow mit Review-Gates und Browser-QA.
@@ -82,8 +82,8 @@ gstack ist Garry Tans (Präsident/CEO von Y Combinator) persönliches Open-Sourc
 
 - **URL:** https://github.com/coreyhaines31/marketingskills
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 413 · **Größe:** 3,1M
+- **Zuletzt aktualisiert:** 2026-07-11
+- **Dateien:** 416 · **Größe:** 3,1M
 - **Struktur:** 47× SKILL.md · Ordner: skills, references
 
 Sammlung von rund 47 Marketing-Skills für KI-Coding-Agenten (Claude Code, Codex, Cursor, Windsurf) von Corey Haines (Conversion Factory, Swipe Files). Deckt praktisch das gesamte technische Marketing ab: SEO & Content (seo-audit, ai-seo, programmatic-seo, schema), Conversion-Optimierung (cro, signup, onboarding, popups, paywalls), Content & Copy (copywriting, cold-email, emails, social, video), bezahlte Kanäle (ads, ad-creative), Messung (analytics, ab-testing), Retention (churn-prevention), Wachstum (co-marketing, free-tools, referrals) sowie Strategie/Sales (pricing, launch, revops, sales-enablement). Alle Skills referenzieren ein zentrales `product-marketing`-Kontextdokument, das Produkt, Zielgruppe und Positionierung festhält und von jedem anderen Skill zuerst gelesen wird – ein Muster, um wiederholte Grundinformationen zu vermeiden. Skills sind stark querverweisend (z.B. copywriting ↔ cro ↔ ab-testing). Installierbar über npx skills, Claude-Code-Plugin, Git-Submodule oder einfaches Kopieren. Sehr relevant als direktes Vorbild für die eigenen Marketing-bezogenen Skills unter `30_Skills/`, insbesondere das Muster eines zentralen Produkt-Kontext-Dokuments, das andere Skills referenzieren.
@@ -118,8 +118,8 @@ Kleiner, fokussierter Agent-Skill von shadcn: auditiert eine beliebige Codebasis
 
 - **URL:** https://github.com/bradygaster/squad
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 1.743 · **Größe:** 19M
+- **Zuletzt aktualisiert:** 2026-07-11
+- **Dateien:** 1.747 · **Größe:** 19M
 - **Struktur:** kein statischer Skill-Ordner mit Inhalt — die eigentliche Logik ist CLI-Quellcode in `packages/squad-cli/`, `packages/squad-sdk/`; Vorlagen in `templates/skills/`; erzeugt zur Laufzeit `.squad/agents/` + `.squad/skills/` im Zielprojekt <!-- manual -->
 
 Squad baut über GitHub Copilot ein "menschengeführtes" Team benannter KI-Spezialisten (Frontend, Backend, Tester, Lead etc.) auf, die als Dateien im Repo (`.squad/`) persistieren, projektübergreifendes Wissen ansammeln und über Sessions hinweg lernen. Nutzer beschreiben ihr Vorhaben, Squad schlägt ein Team vor, das dann parallel an Aufgaben arbeitet; alle Entscheidungen werden nachvollziehbar in `decisions.md` protokolliert. Besonderheit ist der "Watch Mode" (genannt Ralph): ein Polling-Prozess, der GitHub Issues überwacht, priorisiert, Kontext an einen Copilot-Agenten übergibt und diesem die Auswahl überlässt, mit einer vierstufigen Fehler-Eskalation (Circuit-Breaker-Reset, Auth-Reprobe, Git-Pull, Pause mit Eskalation an Menschen). Alpha-Software, Node.js-Monorepo mit SDK- und CLI-Paket, auch als programmierbares TypeScript-Setup (`squad.config.ts`) nutzbar. Ausdrücklich als Produktivitätswerkzeug positioniert, das Menschen nicht ersetzt, sondern Koordination und Wiederholung abnimmt. Relevant als Vorbild für persistente, benannte Agenten-Teams mit Entscheidungsprotokoll und autonomem Issue-Polling mit Eskalationsstufen.
@@ -166,8 +166,8 @@ Das offizielle Anthropic-Repository mit Referenz-Implementierungen für das Clau
 
 - **URL:** https://github.com/open-gsd/gsd-core
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 2.457 · **Größe:** 28M
+- **Zuletzt aktualisiert:** 2026-07-11
+- **Dateien:** 2.477 · **Größe:** 28M
 - **Struktur:** 71× SKILL.md · Ordner: skills, agents, commands, hooks, references · Spiegelordner: .opencode (generiert)
 
 GSD Core ("Git. Ship. Done.") ist ein schlankes Context-Engineering- und Spec-driven-Development-Framework, das KI-Coding-Agenten (Claude Code, OpenCode, Antigravity CLI, Kimi CLI, Kilo, Codex, Copilot, Cursor, Windsurf u.a.) durch einen disziplinierten Fünf-Schritte-Phasenzyklus führt: Discuss (Entscheidungen vor der Planung festhalten) → Plan (Recherche, Zerlegung, Prüfung dass der Plan in ein frisches Kontextfenster passt) → Execute (Pläne in parallelen Wellen ausführen, jeder Executor startet mit sauberem 200k-Token-Kontext) → Verify (Durchgehen was gebaut wurde, Fixes vor "fertig") → Ship (PR erstellen, Phase archivieren, nächste Phase). Löst damit gezielt "Context Rot" – die Qualitätsverschlechterung, die sich aufbaut, während ein Agent sein Kontextfenster füllt – indem schwere Arbeit in frischen Subagenten läuft, während die Hauptsession schlank bleibt. Strukturierte Artefakte wie `STATE.md` und `CONTEXT.md` überleben Session-Grenzen. Installation über `npx @opengsd/gsd-core@latest` mit interaktivem Runtime-Prompt; Einstieg über `/gsd-new-project` (Neuprojekt) oder `/gsd-onboard` (bestehende Codebasis). Relevant als alternatives, sehr fokussiertes Muster zum eigenen mehrstufigen Workflow-Ansatz, insbesondere die "frischer Kontext pro Executor"-Idee.
@@ -178,8 +178,8 @@ GSD Core ("Git. Ship. Done.") ist ein schlankes Context-Engineering- und Spec-dr
 
 - **URL:** https://github.com/vercel-labs/skills
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 93 · **Größe:** 792K
+- **Zuletzt aktualisiert:** 2026-07-11
+- **Dateien:** 96 · **Größe:** 798K
 - **Struktur:** kein Skill-Inhalt — das ist die Installer-CLI selbst, Quellcode in `src/` <!-- manual -->
 
 Das ist keine Skill-Sammlung, sondern die CLI (`npx skills`) für das offene Agent-Skills-Ökosystem – das zugrundeliegende Werkzeug, mit dem Skills aus beliebigen GitHub-/GitLab-Repos oder lokalen Pfaden in über 70 unterstützte Coding-Agenten (Claude Code, Cursor, Codex, OpenCode, Windsurf, Antigravity, Gemini CLI, GitHub Copilot u.v.m.) installiert werden – per Symlink (empfohlen, eine kanonische Kopie) oder Kopie, projekt- oder global-scoped. Zentrale Befehle: `skills add <source>` (installieren, mit Filtern nach Skill-Namen/Agenten), `skills use <source>` (Skill ohne Installation testen, druckt generierten Prompt oder startet Agent direkt), `skills list`, `skills find` (interaktive/keyword-Suche, auch über alle Repos eines Owners), `skills update`, `skills remove`, `skills init` (neues SKILL.md-Template). Erkennt Skills automatisch über verschiedene Ablage-Konventionen (`skills/`, `.claude/skills/`, Root-`SKILL.md` etc.) inkl. Claude-Plugin-Marketplace-Manifesten. Über die Website skills.sh können Skills durchsucht werden. Sehr relevant als das faktische Standard-Werkzeug, mit dem praktisch alle anderen in diesem Index gelisteten Skill-Repos installiert werden – guter Kandidat, um das eigene Skill-Handling zu vereinheitlichen.
@@ -202,8 +202,8 @@ Claude SEO ist ein Open-Source-SEO-Analyse-Plugin für Claude Code, das 25 Sub-S
 
 - **URL:** https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 491 · **Größe:** 14M
+- **Zuletzt aktualisiert:** 2026-07-11
+- **Dateien:** 482 · **Größe:** 13M
 - **Struktur:** Quelle der Wahrheit in `src/ui-ux-pro-max/` (`data/`, `scripts/`, `templates/`), Installer in `cli/`, Dev-Kopie in `.claude/skills/` <!-- manual -->
 
 "UI UX Pro Max" ist ein KI-Skill, der Design-Intelligenz für professionelles UI/UX über mehrere Plattformen und Frameworks bereitstellt: durchsuchbare Datenbanken mit 67 UI-Stilen (Glassmorphism, Neumorphism, Brutalism, Bento Grid, AI-Native UI u.v.m.), 161 Farbpaletten (1:1 auf 161 Produkttypen abgestimmt), 57 Schriftpaarungen, 25 Chart-Typen und 99 UX-Richtlinien. Kernstück von v2.0 ist der Design-System-Generator: eine Reasoning-Engine, die aus einer Produktbeschreibung (z.B. "Beauty-Spa-Landingpage") automatisch ein komplettes, begründetes Design-System ableitet – Seitenstruktur, Stil, Farben, Typografie, Effekte, Anti-Pattern-Warnungen und eine Vorab-Auslieferungs-Checkliste (Kontrast, Fokus-States, Responsive-Breakpoints etc.). Nutzt eine BM25-Suchmaschine über CSV-Datenbanken und unterstützt 22 Tech-Stacks (React, Next.js, Vue, SwiftUI, Flutter, Laravel u.v.m.). Design-Systeme können projektübergreifend als Master+Override-Dateien persistiert werden. Aktiviert sich automatisch bei UI/UX-Anfragen in unterstützten Agenten oder per Slash-Command in anderen. Es gibt eine kostenlose Basis- und eine kostenpflichtige Premium-Version (Branding, Logo, Assets). Relevant als konkretes, datengetriebenes Gegenstück zu den eher stilistischen `taste-skill`-Ansätzen – hier mit strukturierten Entscheidungsregeln statt reiner Stilbeschreibung.
@@ -214,7 +214,7 @@ Claude SEO ist ein Open-Source-SEO-Analyse-Plugin für Claude Code, das 25 Sub-S
 
 - **URL:** https://github.com/shanraisshan/claude-code-best-practice
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
+- **Zuletzt aktualisiert:** 2026-07-11
 - **Dateien:** 454 · **Größe:** 74M
 - **Struktur:** kein Skill-Paket, sondern Wissensbasis: `best-practice/`, `reports/`, `tips/` (die eigentlichen Inhalte); Demo-Setup in `.claude/agents/`, `.claude/commands/`, `.claude/skills/` <!-- manual -->
 
@@ -238,7 +238,7 @@ Kompakte, von Vercel Engineering kuratierte Sammlung von acht Skills nach dem Ag
 
 - **URL:** https://github.com/emilkowalski/skills
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
+- **Zuletzt aktualisiert:** 2026-07-11
 - **Dateien:** 8 · **Größe:** 84K
 - **Struktur:** 4× SKILL.md · Ordner: skills
 
@@ -250,9 +250,9 @@ Kompakte, von Vercel Engineering kuratierte Sammlung von acht Skills nach dem Ag
 
 - **URL:** https://github.com/Egonex-AI/Understand-Anything
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 435 · **Größe:** 30M
-- **Struktur:** `understand-anything-plugin/skills/`, `understand-anything-plugin/agents/` (project-scanner, file-analyzer usw.), Analyse-Engine in `understand-anything-plugin/packages/core`, Dashboard in `understand-anything-plugin/packages/dashboard` <!-- manual -->
+- **Zuletzt aktualisiert:** 2026-07-11
+- **Dateien:** 469 · **Größe:** 31M
+- **Struktur:** `understand-anything-plugin/skills/`, `understand-anything-plugin/agents/` (project-scanner, file-analyzer usw.), Analyse-Engine in `understand-anything-plugin/packages/core`, Dashboard in `understand-anything-plugin/packages/dashboard`, Standalone-Viewer in `understand-anything-plugin/packages/viewer` (committeten Graph ohne Claude Code via `npx` ansehen) <!-- manual -->
 
 Ein Claude-Code-Plugin (ursprünglich von Lum1104, jetzt bei Egonex weitergeführt), das eine beliebige Codebasis mit einer Multi-Agent-Pipeline analysiert und daraus einen interaktiven Knowledge Graph baut – jede Datei, Funktion, Klasse und Abhängigkeit wird zum klickbaren, durchsuchbaren Knoten in einem visuellen Dashboard. Kombiniert deterministische Tree-sitter-Analyse (Imports, Exports, Funktions-/Klassendefinitionen, Aufrufstellen – reproduzierbar) mit LLM-Auswertung (Klartext-Zusammenfassungen, Architektur-Layer, Business-Domain-Mapping, geführte Touren). Sechs bis sieben spezialisierte Agenten (project-scanner, file-analyzer, architecture-analyzer, tour-builder, graph-reviewer, domain-analyzer, article-analyzer) arbeiten parallel; Folge-Läufe sind inkrementell (nur geänderte Dateien). Zentrale Befehle: `/understand` (Analyse), `/understand-dashboard` (Visualisierung), `/understand-chat` (Fragen zur Codebasis stellen), `/understand-diff` (Impact-Analyse von Änderungen), `/understand-onboard` (Onboarding-Guide generieren), `/understand-knowledge` (auch für Wissens-/Dokumentations-Basen nach Karpathy-Wiki-Muster nutzbar). Der Graph ist reines JSON und kann committet werden, damit Teammitglieder die Analyse nicht wiederholen müssen. Funktioniert über viele Agenten hinweg (Claude Code, Codex, Cursor, Copilot, Gemini CLI u.v.m.). Sehr relevant als direktes Vorbild für den eigenen `graphify`-Skill – ähnliches Ziel (Code/Wissen → Graph), aber mit ausgereifter Multi-Agent-Pipeline und Dashboard.
 
@@ -274,8 +274,8 @@ Ein sehr umfangreicher "Agentic Plugin Marketplace": 92 Plugins, 199 Agenten, 16
 
 - **URL:** https://github.com/addyosmani/agent-skills
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 125 · **Größe:** 647K
+- **Zuletzt aktualisiert:** 2026-07-11
+- **Dateien:** 126 · **Größe:** 665K
 - **Struktur:** 24× SKILL.md · Ordner: skills, agents, commands, hooks, references · Spiegelordner: .agents, .claude, .gemini (generiert)
 
 "Production-grade engineering skills" von Addy Osmani: 24 Skills (23 Lifecycle-Skills plus ein Meta-Skill `using-agent-skills`), die entlang des Entwicklungszyklus Define → Plan → Build → Verify → Review → Ship organisiert sind, mit acht zugehörigen Slash-Commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/webperf`, `/code-simplify`, `/ship`). `/build auto` kann Plan und Umsetzung in einem einzigen freigegebenen Durchgang autonom abarbeiten (weiterhin testgetrieben und mit Einzel-Commits pro Aufgabe). Jeder Skill folgt einer festen Anatomie (Frontmatter, Overview, When to Use, Process, Rationalizations-Tabelle mit Gegenargumenten, Red Flags, Verification) und bettet Praktiken aus Googles Engineering-Kultur ein (Hyrum's Law, Beyonce Rule, Chesterton's Fence, Trunk-based Development, Shift Left). Vier vorkonfigurierte Agenten-Personas (code-reviewer, test-engineer, security-auditor, web-performance-auditor) für gezielte Reviews. Funktioniert über 13+ Agenten/Tools hinweg. Enthält einen expliziten Vergleich zu Superpowers und Matt Pococks Skills (`docs/comparison.md`) inkl. Link zu einem kontrollierten Head-to-Head-Experiment. Sehr relevant als weiteres, sehr diszipliniertes Gegenstück zu Superpowers/Matt-Pocock-Skills mit Fokus auf Verifikations-Pflicht und Anti-Rationalisierungs-Tabellen.
@@ -286,7 +286,7 @@ Ein sehr umfangreicher "Agentic Plugin Marketplace": 92 Plugins, 199 Agenten, 16
 
 - **URL:** https://github.com/pbakaus/impeccable
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
+- **Zuletzt aktualisiert:** 2026-07-11
 - **Dateien:** 2.201 · **Größe:** 77M
 - **Struktur:** Quelle in `skill/` (`SKILL.src.md` + `reference/<command>.md`), generierte Provider-Ausgaben in `plugin/skills/` bzw. `.claude/skills/`, `.cursor/skills/` usw. <!-- manual -->
 
