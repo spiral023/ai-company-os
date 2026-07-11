@@ -30,7 +30,7 @@ Ein eigener Skill verhört den Nutzer gezielt zu einem Vorhaben, bis jeder Ast d
 ## Belege
 
 - 2026-07-10 · [[2026-07-10-voxyz-mattpocock-skills]] · meinung — Tweet nennt `/grill-me` als Interview-Skill, der so lange fragt, bis die Spec klar ist.
-- 2026-07-11 · external_repos/mattpocock/skills/skills/productivity/grill-me/SKILL.md · verifiziert — Skill `grill-me` existiert im Repo unter `skills/productivity/`; das README beschreibt ihn unter „#1: The Agent Didn't Do What I Want" explizit als „grilling session — getting the agent to ask you detailed questions about what you're building", ergänzt um `grill-with-docs` (`skills/engineering/grill-with-docs/SKILL.md`) und den zugrunde liegenden Loop `grilling` (`skills/productivity/grilling/SKILL.md`).
+- 2026-07-11 · external_repos/mattpocock/skills/skills/productivity/grill-me/SKILL.md · verifiziert — Skill `grill-me` existiert im Repo unter `skills/productivity/`; das README beschreibt ihn unter „#1: The Agent Didn't Do What I Want“ explizit als „grilling session — getting the agent to ask you detailed questions about what you're building“, ergänzt um `grill-with-docs` (`skills/engineering/grill-with-docs/SKILL.md`) und den zugrunde liegenden Loop `grilling` (`skills/productivity/grilling/SKILL.md`).
 
 ## Spannungen & offene Fragen
 

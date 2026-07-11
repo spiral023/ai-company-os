@@ -8,7 +8,7 @@ Erhält den Arbeitszustand über das Ende einer Session oder eines Kontextfenste
 
 ## Funktionsweise
 
-Ein Skill komprimiert die laufende Konversation in ein Übergabe-Dokument („Handoff Doc"): die relevanten Entscheidungen, der aktuelle Stand, offene Fragen. Der nächste Agent liest dieses Dokument statt der vollständigen Historie und setzt die Arbeit an derselben Stelle fort. Für Vorhaben, die den Rahmen einer einzelnen Session sprengen, gibt es einen verwandten, aber eigenständigen Mechanismus: eine „Landkarte" aus Untersuchungs-Tickets auf dem Issue-Tracker, die nacheinander abgearbeitet werden, bis der Weg zum Ziel klar ist — statt eines einzelnen Übergabe-Dokuments wird hier der große Auftrag in kleine, session-große Entscheidungs-Häppchen zerlegt. Verwandte Umsetzungen außerhalb des Referenz-Repos: `planning-with-files` (`task_plan.md`/`findings.md`/`progress.md` als persistente Dateien), GSD Core `STATE.md` (überlebt Session-Grenzen) — siehe `external_repos/INDEX.md`.
+Ein Skill komprimiert die laufende Konversation in ein Übergabe-Dokument („Handoff Doc“): die relevanten Entscheidungen, der aktuelle Stand, offene Fragen. Der nächste Agent liest dieses Dokument statt der vollständigen Historie und setzt die Arbeit an derselben Stelle fort. Für Vorhaben, die den Rahmen einer einzelnen Session sprengen, gibt es einen verwandten, aber eigenständigen Mechanismus: eine „Landkarte“ aus Untersuchungs-Tickets auf dem Issue-Tracker, die nacheinander abgearbeitet werden, bis der Weg zum Ziel klar ist — statt eines einzelnen Übergabe-Dokuments wird hier der große Auftrag in kleine, session-große Entscheidungs-Häppchen zerlegt. Verwandte Umsetzungen außerhalb des Referenz-Repos: `planning-with-files` (`task_plan.md`/`findings.md`/`progress.md` als persistente Dateien), GSD Core `STATE.md` (überlebt Session-Grenzen) — siehe `external_repos/INDEX.md`.
 
 ## Vorteile
 
@@ -31,7 +31,7 @@ Ein Skill komprimiert die laufende Konversation in ein Übergabe-Dokument („Ha
 
 - 2026-07-10 · [[2026-07-10-voxyz-mattpocock-skills]] · meinung — Tweet beschreibt `/handoff` (Konversation → Übergabe-Dokument) und `/wayfinder` (zu große Arbeit → Ticket-Landkarte).
 - 2026-07-11 · external_repos/mattpocock/skills/skills/productivity/handoff/SKILL.md · verifiziert — Skill `handoff` existiert im Repo unter `skills/productivity/`.
-- 2026-07-11 · external_repos/mattpocock/skills/skills/engineering/wayfinder/SKILL.md · verifiziert — Skill `wayfinder` existiert unter `skills/engineering/`; Beschreibung bestätigt exakt das Tweet-Motiv „Plan a huge chunk of work — more than one agent session can hold — as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear."
+- 2026-07-11 · external_repos/mattpocock/skills/skills/engineering/wayfinder/SKILL.md · verifiziert — Skill `wayfinder` existiert unter `skills/engineering/`; Beschreibung bestätigt exakt das Tweet-Motiv „Plan a huge chunk of work — more than one agent session can hold — as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.“
 
 ## Spannungen & offene Fragen
 

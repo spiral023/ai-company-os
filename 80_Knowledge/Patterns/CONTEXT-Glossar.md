@@ -8,7 +8,7 @@ Löst das Problem zu weitschweifiger, ungenauer Agent-Kommunikation: Ohne geteil
 
 ## Funktionsweise
 
-Eine Datei `CONTEXT.md` im Projekt hält das gemeinsame Vokabular des Projekts fest — die „ubiquitous language" im Sinne von Domain-Driven Design. Ist ein Begriff einmal definiert, ersetzt er ganze Beschreibungssätze: aus „ein Kurs-Lesson-Objekt wird im Dateisystem materialisiert" wird schlicht „materialization cascade". Das spart nicht nur Zeichen, sondern auch Denk-Token, weil der Agent den Begriff nachschlagen statt neu herleiten kann.
+Eine Datei `CONTEXT.md` im Projekt hält das gemeinsame Vokabular des Projekts fest — die „ubiquitous language“ im Sinne von Domain-Driven Design. Ist ein Begriff einmal definiert, ersetzt er ganze Beschreibungssätze: aus „ein Kurs-Lesson-Objekt wird im Dateisystem materialisiert“ wird schlicht „materialization cascade“. Das spart nicht nur Zeichen, sondern auch Denk-Token, weil der Agent den Begriff nachschlagen statt neu herleiten kann.
 
 ## Vorteile
 
@@ -29,9 +29,9 @@ Eine Datei `CONTEXT.md` im Projekt hält das gemeinsame Vokabular des Projekts f
 
 ## Belege
 
-- 2026-07-10 · [[2026-07-10-voxyz-mattpocock-skills]] · meinung — Tweet beschreibt `CONTEXT.md` als geteiltes Vokabular, Beispiel „materialization cascade", spart Thinking-Tokens.
-- 2026-07-11 · external_repos/mattpocock/skills/CONTEXT.md · verifiziert — Datei existiert im Repo-Root; README-Abschnitt „#2: The Agent Is Way Too Verbose" bestätigt Zweck und exakt das Beispiel „materialization cascade" (verlinkt auf `course-video-manager`-Repo) sowie den Hinweis, dass der Agent dadurch „fewer tokens on thinking" verbraucht.
-- 2026-07-11 · external_repos/mattpocock/skills/.agents/invocation.md · verifiziert — Abschnitt „Passive vs active domain work" bestätigt die Unterscheidung zwischen bloßem Lesen von `CONTEXT.md` und der aktiven `domain-modeling`-Pflegedisziplin.
+- 2026-07-10 · [[2026-07-10-voxyz-mattpocock-skills]] · meinung — Tweet beschreibt `CONTEXT.md` als geteiltes Vokabular, Beispiel „materialization cascade“, spart Thinking-Tokens.
+- 2026-07-11 · external_repos/mattpocock/skills/CONTEXT.md · verifiziert — Datei existiert im Repo-Root; README-Abschnitt „#2: The Agent Is Way Too Verbose“ bestätigt Zweck und exakt das Beispiel „materialization cascade“ (verlinkt auf `course-video-manager`-Repo) sowie den Hinweis, dass der Agent dadurch „fewer tokens on thinking“ verbraucht.
+- 2026-07-11 · external_repos/mattpocock/skills/.agents/invocation.md · verifiziert — Abschnitt „Passive vs active domain work“ bestätigt die Unterscheidung zwischen bloßem Lesen von `CONTEXT.md` und der aktiven `domain-modeling`-Pflegedisziplin.
 
 ## Spannungen & offene Fragen
 

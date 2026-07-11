@@ -8,7 +8,7 @@ Strukturiert eine Skill-Bibliothek entlang konkret benannter, wiederkehrender Fe
 
 ## Funktionsweise
 
-Statt eines monolithischen Prompts wird für jeden typischen Fehlermodus des Agenten — z.B. „Agent hat das Falsche gebaut", „Agent ist zu weitschweifig", „Code funktioniert nicht", „Codebasis verkommt" — genau ein passender, schmal geschnittener Skill (oder eine kleine Gruppe verwandter Skills) angelegt. Beispiele aus dem Referenz-Repo: `tdd` (Fehlermodus „Code funktioniert nicht"), `grill-me`/`grill-with-docs` (Fehlermodus „Agent hat das Falsche gebaut"), `improve-codebase-architecture` (Fehlermodus „Ball of Mud"; empfohlene Ausführung alle paar Tage).
+Statt eines monolithischen Prompts wird für jeden typischen Fehlermodus des Agenten — z.B. „Agent hat das Falsche gebaut“, „Agent ist zu weitschweifig“, „Code funktioniert nicht“, „Codebasis verkommt“ — genau ein passender, schmal geschnittener Skill (oder eine kleine Gruppe verwandter Skills) angelegt. Beispiele aus dem Referenz-Repo: `tdd` (Fehlermodus „Code funktioniert nicht“), `grill-me`/`grill-with-docs` (Fehlermodus „Agent hat das Falsche gebaut“), `improve-codebase-architecture` (Fehlermodus „Ball of Mud“; empfohlene Ausführung alle paar Tage).
 
 ## Vorteile
 
@@ -20,7 +20,7 @@ Statt eines monolithischen Prompts wird für jeden typischen Fehlermodus des Age
 
 - Risiko von Überlappung/Duplikation, wenn sich Fehlermodi nicht sauber trennen lassen.
 - Erfordert laufende Kuratierung, damit die Sammlung nicht unübersichtlich wächst, je mehr Fehlermodi identifiziert werden.
-- Die Formulierung „one file per failure mode" ist eine Zuspitzung/Synthese des Tweet-Autors, keine wörtliche Aussage aus dem Repo (siehe Spannungen).
+- Die Formulierung „one file per failure mode“ ist eine Zuspitzung/Synthese des Tweet-Autors, keine wörtliche Aussage aus dem Repo (siehe Spannungen).
 
 ## Wann einsetzen, wann nicht
 
@@ -29,12 +29,12 @@ Statt eines monolithischen Prompts wird für jeden typischen Fehlermodus des Age
 
 ## Belege
 
-- 2026-07-10 · [[2026-07-10-voxyz-mattpocock-skills]] · meinung — Tweet: „/grill-me ... /tdd ... /improve-codebase-architecture treats codebase rot ... one file per failure mode."
-- 2026-07-11 · external_repos/mattpocock/skills/README.md · verifiziert — Abschnitt „Why These Skills Exist" öffnet wörtlich mit „I built these skills as a way to fix common failure modes I see with Claude Code, Codex, and other coding agents" und listet vier nummerierte Fehlermodi (#1 Agent tut nicht, was gewünscht; #2 Agent zu weitschweifig; #3 Code funktioniert nicht; #4 Ball of Mud), jeweils einem oder wenigen konkret benannten Skills zugeordnet (`grill-me`/`grill-with-docs`, `CONTEXT.md`, `tdd`/`diagnosing-bugs`, `improve-codebase-architecture`). Die Formulierung „every few days" für `improve-codebase-architecture` ist ebenfalls wörtlich bestätigt.
+- 2026-07-10 · [[2026-07-10-voxyz-mattpocock-skills]] · meinung — Tweet: „/grill-me ... /tdd ... /improve-codebase-architecture treats codebase rot ... one file per failure mode.“
+- 2026-07-11 · external_repos/mattpocock/skills/README.md · verifiziert — Abschnitt „Why These Skills Exist“ öffnet wörtlich mit „I built these skills as a way to fix common failure modes I see with Claude Code, Codex, and other coding agents“ und listet vier nummerierte Fehlermodi (#1 Agent tut nicht, was gewünscht; #2 Agent zu weitschweifig; #3 Code funktioniert nicht; #4 Ball of Mud), jeweils einem oder wenigen konkret benannten Skills zugeordnet (`grill-me`/`grill-with-docs`, `CONTEXT.md`, `tdd`/`diagnosing-bugs`, `improve-codebase-architecture`). Die Formulierung „every few days“ für `improve-codebase-architecture` ist ebenfalls wörtlich bestätigt.
 
 ## Spannungen & offene Fragen
 
-- Die exakte Formulierung „one file per failure mode" ist keine wörtliche Repo-Aussage, sondern eine Zuspitzung des Tweet-Autors der im README dokumentierten Struktur (nummerierte Fehlermodi → benannte Skills). Die inhaltliche Struktur ist verifiziert, der genaue Wortlaut nicht.
+- Die exakte Formulierung „one file per failure mode“ ist keine wörtliche Repo-Aussage, sondern eine Zuspitzung des Tweet-Autors der im README dokumentierten Struktur (nummerierte Fehlermodi → benannte Skills). Die inhaltliche Struktur ist verifiziert, der genaue Wortlaut nicht.
 
 ## Verwandte Patterns
 
