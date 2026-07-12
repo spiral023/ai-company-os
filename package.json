@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "ingest:x": "node scripts/ingest-x.mjs"
+  },
+  "dependencies": {
+    "twitter-api-v2": "^1.29.0"
+  }
+}

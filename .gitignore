@@ -10,12 +10,14 @@ venv/
 .env
 .env.*
 !.env.example
+.env.local
 
 # Node
 node_modules/
 npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
+scripts/.ingest/
 
 # Logs
 *.log
