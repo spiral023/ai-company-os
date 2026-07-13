@@ -31,6 +31,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 ## Guides
 
 - [[Matt-Pocock-Skills-Praxisguide]] — Praxisanleitung für Skill-Auswahl, Wayfinder und den Coding-Lifecycle von Exploration bis Code Review.
+- [[AI-Coding-Agents-Social-Media-Uebersicht]] — kuratierte Liste von X/Twitter-Accounts, YouTube- und TikTok-Kanälen zu AI Coding Agents (Anthropic, OpenAI, Vordenker, DACH-Creators).
 
 ## Vergleiche
 
