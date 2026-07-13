@@ -196,6 +196,18 @@ def replace_field(section: str, field: str, new_line: str) -> tuple[str, bool]:
     return updated, count > 0 and updated != section
 
 
+def upsert_field(section: str, field: str, new_line: str, after_field: str) -> tuple[str, bool]:
+    """Replace an index field or insert it immediately after a known field."""
+    field_pattern = re.compile(rf"^- \*\*{re.escape(field)}:\*\*.*$", re.MULTILINE)
+    if field_pattern.search(section):
+        return replace_field(section, field, new_line)
+
+    anchor = re.search(rf"^- \*\*{re.escape(after_field)}:\*\*.*$", section, re.MULTILINE)
+    if not anchor:
+        return section, False
+    return section[: anchor.end()] + "\n" + new_line + section[anchor.end() :], True
+
+
 def update_index(
     scans: dict[str, tuple[int, int, str]],
     changed: set[str],
@@ -227,11 +239,13 @@ def update_index(
         file_count, size_bytes, struktur = scans[label]
 
         new_meta = f"- **Dateien:** {de_int(file_count)} · **Größe:** {human_size(size_bytes)}"
-        section, _ = replace_field(section, "Dateien", new_meta)
+        section, _ = upsert_field(section, "Dateien", new_meta, "Zuletzt aktualisiert")
 
         # Struktur: only auto-update if not hand-pinned with <!-- manual -->.
         struktur_line = re.search(r"^- \*\*Struktur:\*\*.*$", section, re.MULTILINE)
-        if struktur_line and "<!-- manual -->" not in struktur_line.group(0):
+        if not struktur_line:
+            section, _ = upsert_field(section, "Struktur", f"- **Struktur:** {struktur}", "Dateien")
+        elif "<!-- manual -->" not in struktur_line.group(0):
             section, _ = replace_field(section, "Struktur", f"- **Struktur:** {struktur}")
 
         # Zuletzt aktualisiert: bump only for repos that got new commits.
