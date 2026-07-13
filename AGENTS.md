@@ -128,9 +128,10 @@ Automatisch durch `python 70_Scripts/update_external_repos.py` gepflegt (nicht v
 
 - `- **Dateien:** … · **Größe:** …` — Dateizahl (ohne `.git`) und Größe.
 - `- **Struktur:** …` — erkannte Skill-/Agent-/Command-/Hook-/Rules-/Plugin-Ordner, `SKILL.md`-Anzahl (ohne `docs/`- und `.`-Spiegelbäume) und generierte Spiegelordner.
-- Die Übersichtstabelle am Kopf (zwischen den `OVERVIEW`-Markern): Repos gesamt, Gesamtgröße, Dateien gesamt, Stand-Datum, Tabelle je Repo.
+- `- **Stars:** ⭐ …` — aktueller GitHub-Sterne-Stand, abgerufen per `gh api` (Fallback: anonyme REST-API). Bei fehlgeschlagenem Abruf bleibt der zuletzt bekannte Wert unverändert stehen statt überschrieben zu werden.
+- Die Übersichtstabelle am Kopf (zwischen den `OVERVIEW`-Markern): Repos gesamt, Gesamtgröße, Dateien gesamt, Sterne gesamt, Stand-Datum, Tabelle je Repo (inkl. Sterne-Spalte).
 
-Damit ein neues Repo alle Felder bekommt: nach dem Anlegen von Überschrift + URL + Datum + Zusammenfassung einmal `python 70_Scripts/update_external_repos.py --index-only` laufen lassen — das ergänzt/aktualisiert `Dateien`, `Größe`, `Struktur` und die Übersicht.
+Damit ein neues Repo alle Felder bekommt: nach dem Anlegen von Überschrift + URL + Datum + Zusammenfassung einmal `python 70_Scripts/update_external_repos.py --index-only` laufen lassen — das ergänzt/aktualisiert `Dateien`, `Größe`, `Struktur`, `Stars` und die Übersicht.
 
 **Struktur-Nuance (`<!-- manual -->`):** Bei Repos, wo die eigentliche Logik NICHT in Standard-Ordnern liegt (Quellcode in `packages/`/`src/`, reine CLI, Wissensbasis ohne Skill-Paket, viele generierte Spiegel), würde die mechanische Erkennung in die Irre führen. Dort die `- **Struktur:**`-Zeile von Hand schreiben und mit ` <!-- manual -->` am Zeilenende markieren — das Script überschreibt solche Zeilen nie.
 
@@ -142,9 +143,9 @@ Trigger-Phrasen wie „update die externen Repos“ oder „aktualisiere externa
 
 1. `python 70_Scripts/update_external_repos.py` ausführen (optional mit `--repo <owner>/<repo>` für nur ein Repo beim Pull). Das Script:
    - führt in jedem geklonten Repo `git pull --ff-only` aus und meldet pro Repo, ob es unverändert war oder neue Commits erhalten hat;
-   - scannt danach **alle** Repos neu und aktualisiert in `external_repos/INDEX.md` automatisch `Dateien`, `Größe`, `Struktur` (außer `<!-- manual -->`-Zeilen) und die Übersichtstabelle;
+   - scannt danach **alle** Repos neu und aktualisiert in `external_repos/INDEX.md` automatisch `Dateien`, `Größe`, `Struktur` (außer `<!-- manual -->`-Zeilen), `Stars` und die Übersichtstabelle;
    - setzt `Zuletzt aktualisiert` nur bei Repos mit neuen Commits auf das heutige Datum.
-   - Flags: `--index-only` (nur Neu-Scan ohne Pull), `--no-index` (nur Pull), `--dry-run` (Index-Änderungen nur anzeigen).
+   - Flags: `--index-only` (nur Neu-Scan ohne Pull), `--no-index` (nur Pull), `--no-stars` (Sterne-Abruf überspringen), `--dry-run` (Index-Änderungen nur anzeigen).
 2. Nur für die vom Script als „NEU" gemeldeten Repos die inhaltliche Zusammenfassung prüfen:
    - README.md erneut lesen; falls vorhanden `CHANGELOG.md` bzw. Release-Notes sichten (viele READMEs enthalten die Highlights bereits inline).
    - Die ~200-Wort-Zusammenfassung in `external_repos/INDEX.md` nur bei inhaltlich relevanten Änderungen neu schreiben (dieser Teil ist bewusst NICHT automatisiert — er braucht Urteilsvermögen).

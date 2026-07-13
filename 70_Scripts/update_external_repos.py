@@ -1,13 +1,15 @@
 """Update all cloned external repos under external_repos/<owner>/<repo>.
 
-Two jobs in one run:
+Three jobs in one run:
 
 1. `git pull --ff-only` per repo and report which repos got new commits, so an
    agent knows where it is worth re-reading README/CHANGELOG.
 2. Refresh the mechanical metadata in external_repos/INDEX.md automatically:
    file count, size, a detected "Struktur" hint (where skills/agents/commands
-   live), the overview table, and the totals. This removes the manual
-   find/du toil.
+   live), GitHub star count, the overview table, and the totals. This removes
+   the manual find/du/browser-tab toil.
+3. Fetch each repo's current GitHub star count (via `gh api`, falling back to
+   the anonymous REST API) and write it as `- **Stars:** ⭐ N`.
 
 The ~200-word summaries stay untouched (they need human/LLM judgement). A
 `Struktur` line ending in `<!-- manual -->` is treated as hand-authored and is
@@ -18,17 +20,22 @@ Flags:
   --repo <owner>/<repo>   only this repo (still refreshes the whole index)
   --index-only            skip git pull, only rescan + rewrite the index
   --no-index              only git pull, do not touch INDEX.md
+  --no-stars              skip the GitHub star-count lookup (offline/rate-limit)
   --dry-run               show what would change in INDEX.md, write nothing
 """
 
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import os
 import re
+import shutil
 import subprocess
 import sys
+import urllib.error
+import urllib.request
 from datetime import date
 from pathlib import Path
 
@@ -184,6 +191,57 @@ def render_struktur(
 
 
 # --------------------------------------------------------------------------- #
+# GitHub stars
+# --------------------------------------------------------------------------- #
+def fetch_star_count(label: str) -> int | None:
+    """Fetch the current star count for owner/repo `label` from GitHub.
+
+    Prefers the authenticated `gh` CLI (5000 req/hour) since 40+ repos would
+    exhaust the anonymous REST API's 60 req/hour limit quickly. Returns None
+    on any failure so the caller leaves the existing Stars-Feld untouched
+    instead of overwriting it with a wrong value.
+    """
+    gh_path = shutil.which("gh")
+    if gh_path:
+        try:
+            result = subprocess.run(
+                [gh_path, "api", f"repos/{label}", "--jq", ".stargazers_count"],
+                capture_output=True,
+                text=True,
+                timeout=15,
+                check=False,
+            )
+            out = result.stdout.strip()
+            if result.returncode == 0 and out.isdigit():
+                return int(out)
+            logging.warning(
+                "gh api Sterne-Abruf für %s fehlgeschlagen: %s", label, result.stderr.strip()
+            )
+        except (subprocess.TimeoutExpired, OSError) as exc:
+            logging.warning("gh api Sterne-Abruf für %s fehlgeschlagen: %s", label, exc)
+
+    try:
+        req = urllib.request.Request(
+            f"https://api.github.com/repos/{label}",
+            headers={
+                "User-Agent": "ai-company-os-index-updater",
+                "Accept": "application/vnd.github+json",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.load(resp)
+        return int(data.get("stargazers_count", 0))
+    except (urllib.error.URLError, ValueError, OSError) as exc:
+        logging.warning("GitHub-API Sterne-Abruf für %s fehlgeschlagen: %s", label, exc)
+        return None
+
+
+def fetch_star_counts(labels: list[str]) -> dict[str, int | None]:
+    """Fetch star counts for all labels. Failures log a warning and yield None."""
+    return {label: fetch_star_count(label) for label in labels}
+
+
+# --------------------------------------------------------------------------- #
 # index rewriting
 # --------------------------------------------------------------------------- #
 def replace_field(section: str, field: str, new_line: str) -> tuple[str, bool]:
@@ -213,12 +271,14 @@ def update_index(
     changed: set[str],
     today: str,
     dry_run: bool,
+    stars: dict[str, int | None] | None = None,
 ) -> bool:
     """Rewrite mechanical fields + overview in INDEX.md. Returns True if changed."""
     if not INDEX_PATH.exists():
         logging.error("INDEX.md fehlt: %s", INDEX_PATH)
         return False
 
+    stars = stars or {}
     text = INDEX_PATH.read_text(encoding="utf-8")
     original = text
     notes: list[str] = []
@@ -248,6 +308,12 @@ def update_index(
         elif "<!-- manual -->" not in struktur_line.group(0):
             section, _ = replace_field(section, "Struktur", f"- **Struktur:** {struktur}")
 
+        # Stars: only write when the fetch succeeded — a failed lookup (rate
+        # limit, offline, repo renamed) must not clobber the last known value.
+        star_count = stars.get(label)
+        if star_count is not None:
+            section, _ = upsert_field(section, "Stars", f"- **Stars:** ⭐ {de_int(star_count)}", "URL")
+
         # Zuletzt aktualisiert: bump only for repos that got new commits.
         if label in changed:
             section, _ = replace_field(
@@ -257,7 +323,7 @@ def update_index(
         text = text[:start] + section + text[end:]
 
     # --- overview block ---------------------------------------------------- #
-    overview = build_overview(scans, today)
+    overview = build_overview(scans, today, stars)
     overview_re = re.compile(
         r"(<!-- OVERVIEW:START.*?-->\n).*?(\n<!-- OVERVIEW:END -->)",
         re.DOTALL,
@@ -283,11 +349,17 @@ def update_index(
     return True
 
 
-def build_overview(scans: dict[str, tuple[int, int, str]], today: str) -> str:
+def build_overview(
+    scans: dict[str, tuple[int, int, str]],
+    today: str,
+    stars: dict[str, int | None] | None = None,
+) -> str:
     """Render the overview block content (between the markers)."""
+    stars = stars or {}
     total_files = sum(fc for fc, _, _ in scans.values())
     total_bytes = sum(sb for _, sb, _ in scans.values())
     total_mb = round(total_bytes / 1024 / 1024)
+    known_stars = [v for v in stars.values() if v is not None]
 
     rows = sorted(scans.items(), key=lambda kv: kv[1][1], reverse=True)
     lines = [
@@ -296,17 +368,26 @@ def build_overview(scans: dict[str, tuple[int, int, str]], today: str) -> str:
         f"- **Repos gesamt:** {len(scans)}",
         f"- **Gesamtgröße:** ca. {de_int(total_mb)} MB",
         f"- **Dateien gesamt:** ca. {de_int(total_files)} (ohne `.git`)",
+    ]
+    if known_stars:
+        lines.append(
+            f"- **Sterne gesamt:** ca. {de_int(sum(known_stars))} "
+            f"({len(known_stars)}/{len(scans)} Repos abgerufen)"
+        )
+    lines += [
         f"- **Stand:** {today}",
         "",
-        "| Repo | Dateien | Größe |",
-        "|---|---:|---:|",
+        "| Repo | Dateien | Größe | ⭐ |",
+        "|---|---:|---:|---:|",
     ]
     for label, (fc, sb, _) in rows:
-        lines.append(f"| {label} | {de_int(fc)} | {human_size(sb)} |")
+        star_count = stars.get(label)
+        star_cell = de_int(star_count) if star_count is not None else "–"
+        lines.append(f"| {label} | {de_int(fc)} | {human_size(sb)} | {star_cell} |")
     lines.append("")
     lines.append(
-        "Dateianzahl, Größe und Struktur pro Repo (ohne `.git`-Verzeichnis) stehen "
-        "zusätzlich in jedem Eintrag unten und werden von "
+        "Dateianzahl, Größe, Struktur und Sterne pro Repo (ohne `.git`-Verzeichnis) "
+        "stehen zusätzlich in jedem Eintrag unten und werden von "
         "`70_Scripts/update_external_repos.py` automatisch aufgefrischt."
     )
     return "\n".join(lines)
@@ -326,6 +407,9 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--index-only", action="store_true", help="Kein git pull, nur Index neu scannen")
     parser.add_argument("--no-index", action="store_true", help="Nur git pull, INDEX.md nicht anfassen")
+    parser.add_argument(
+        "--no-stars", action="store_true", help="GitHub-Sterne-Abruf überspringen (offline/Rate-Limit)"
+    )
     parser.add_argument("--dry-run", action="store_true", help="Index-Änderungen nur anzeigen, nichts schreiben")
     return parser
 
@@ -369,7 +453,13 @@ def main() -> int:
         for repo in repos:
             label = repo.relative_to(EXTERNAL_ROOT).as_posix()
             scans[label] = scan_repo(repo)
-        index_changed = update_index(scans, changed, date.today().isoformat(), args.dry_run)
+
+        stars: dict[str, int | None] = {}
+        if not args.no_stars:
+            logging.info("GitHub-Sterne: Abruf für %d Repo(s) ...", len(scans))
+            stars = fetch_star_counts(sorted(scans))
+
+        index_changed = update_index(scans, changed, date.today().isoformat(), args.dry_run, stars)
 
     logging.info(
         "Zusammenfassung: %d neu, %d Fehler, Index %s",
