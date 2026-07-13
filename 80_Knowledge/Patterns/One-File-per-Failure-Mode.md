@@ -31,6 +31,7 @@ Statt eines monolithischen Prompts wird für jeden typischen Fehlermodus des Age
 
 - 2026-07-10 · [[2026-07-10-voxyz-mattpocock-skills]] · meinung — Tweet: „/grill-me ... /tdd ... /improve-codebase-architecture treats codebase rot ... one file per failure mode.“
 - 2026-07-11 · external_repos/mattpocock/skills/README.md · verifiziert — Abschnitt „Why These Skills Exist“ öffnet wörtlich mit „I built these skills as a way to fix common failure modes I see with Claude Code, Codex, and other coding agents“ und listet vier nummerierte Fehlermodi (#1 Agent tut nicht, was gewünscht; #2 Agent zu weitschweifig; #3 Code funktioniert nicht; #4 Ball of Mud), jeweils einem oder wenigen konkret benannten Skills zugeordnet (`grill-me`/`grill-with-docs`, `CONTEXT.md`, `tdd`/`diagnosing-bugs`, `improve-codebase-architecture`). Die Formulierung „every few days“ für `improve-codebase-architecture` ist ebenfalls wörtlich bestätigt.
+- 2026-07-13 · external_repos/mattpocock/skills/skills/engineering/improve-codebase-architecture/SKILL.md · verifiziert — Der Skill sucht gezielt nach Möglichkeiten, Module zu vertiefen, erstellt einen visuellen HTML-Report und führt anschließend einen Grilling-Loop für den ausgewählten Kandidaten aus.
 
 ## Spannungen & offene Fragen
 
