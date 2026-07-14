@@ -1,6 +1,6 @@
 # Skill-Qualitaet-durch-Trigger-und-Baseline-Evals
 
-**Konfidenz:** meinung
+**Konfidenz:** verifiziert
 
 ## Zweck
 
@@ -30,10 +30,12 @@ Der Lebenszyklus eines Skills läuft über: Ziel/Scope klären → Entwurf schre
 ## Belege
 
 - 2026-04-16 · [[2026-04-16-wiki-compiler-skill-creator-skill]] · meinung — Wiki-Artikel (Quelle: offizieller `skill-creator`-Skill im Repo `anthropics/skills`) beschreibt Baseline-Vergleich, Trigger-Optimierung, Progressive Disclosure innerhalb eines Skills und Bundled Scripts.
+- 2026-07-14 · external_repos/anthropics/skills/skills/skill-creator/SKILL.md · verifiziert — Direkte Lektüre bestätigt alle Aussagen und ergänzt Details: Benchmarking mit Varianzanalyse (Pass-Rate/Zeit/Tokens, Mittelwert ± Stddev vs. Baseline), automatisierter Description-Optimierungsloop (60/40 Train/Test-Split, 3 Läufe pro Query, bis 5 Iterationen, Auswahl nach Test-Score), Blind-Vergleich zweier Skill-Versionen, Packaging als `.skill`-Datei. Siehe [[2026-07-01-anthropic-skill-creator-skill-md]].
 
 ## Spannungen & offene Fragen
 
-- Die Quelle bezieht sich auf den offiziellen Anthropic-Skill, wurde aber über eine Sekundärsynthese (vibe-repo-Wiki) bezogen, nicht direkt aus dem geklonten `anthropics/skills`-Repo verifiziert.
+- ~~Die Quelle bezieht sich auf den offiziellen Anthropic-Skill, wurde aber über eine Sekundärsynthese (vibe-repo-Wiki) bezogen, nicht direkt aus dem geklonten `anthropics/skills`-Repo verifiziert.~~ Erledigt 2026-07-14: direkt in der geklonten SKILL.md verifiziert ([[2026-07-01-anthropic-skill-creator-skill-md]]); die Sekundärsynthese war inhaltlich korrekt.
+- Ergänzung 2026-07-14: Die SKILL.md nennt eine wichtige Triggering-Nuance — Claude konsultiert Skills nur bei Aufgaben, die es nicht trivial selbst löst; simple Ein-Schritt-Queries triggern auch bei perfekter Description nicht. Trigger-Evals müssen daher substanzielle Queries verwenden.
 - Offene Frage: Wie verhält sich diese Trigger-/Baseline-Disziplin zu unserer eigenen [[Skill-Call-Hierarchie]] — sollte die Aufruf-Klassifizierung (user-invoked/model-invoked) selbst Teil der Trigger-Tests sein?
 
 ## Verwandte Patterns
