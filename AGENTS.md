@@ -37,6 +37,19 @@ Einzelne Softwareprojekte liegen in eigenen Repositories. Dieses Repo liefert da
    - Welche Checks wurden ausgeführt?
    - Welche offenen Fragen oder Risiken bleiben?
 
+## Commit-Nachrichten
+
+Nur committen, wenn explizit beauftragt (siehe `Autonom erlaubt` / `Freigabe durch Philipp erforderlich`). Ist ein Commit beauftragt, gilt für die Nachricht:
+
+- **Titel:** kurzer Imperativ auf Deutsch, ohne Satzpunkt am Ende, möglichst unter 70 Zeichen (z. B. „Externe Repos aktualisieren und Wissens-Patterns ergänzen").
+- **Body:** immer ausführlich, nie nur eine Dateiliste. Eine Leerzeile nach dem Titel, danach in Fließtext erklären, WAS sich geändert hat und WARUM — so, dass der Commit ohne Rückfrage beim Autor verständlich ist.
+- Bei mehreren unabhängigen Änderungsblöcken (z. B. Skript-Lauf + Knowledge-Patterns + neue Datei) jeden Block als eigenen Absatz mit kurzer Einleitung, nicht alles vermischt.
+- Auffälligkeiten, Überraschungen oder Abweichungen vom Erwarteten explizit benennen (z. B. „Bemerkenswert: …"), nicht nur den Normalfall beschreiben.
+- Bei automatisiert gepflegten Feldern (z. B. `external_repos/INDEX.md` per `update_external_repos.py`) kurz erwähnen, was automatisch vs. von Hand geprüft/geschrieben wurde.
+- Sprache durchgängig Deutsch, außer Code-Identifier, Dateipfade und Eigennamen.
+- Am Ende `Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>` ergänzen, wenn Claude die Änderung erstellt hat.
+- Commit-Message immer per Heredoc übergeben, nie mit `--amend` ohne ausdrücklichen Auftrag.
+
 ## Freigabe durch Philipp erforderlich
 
 Immer nach Freigabe fragen vor:

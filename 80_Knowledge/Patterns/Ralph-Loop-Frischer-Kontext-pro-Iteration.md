@@ -1,6 +1,6 @@
 # Ralph-Loop-Frischer-Kontext-pro-Iteration
 
-**Konfidenz:** meinung
+**Konfidenz:** mehrfach-belegt
 
 ## Zweck
 
@@ -32,10 +32,13 @@ Jede Iteration eines Laufs startet mit vollständig frischem Kontext statt einer
 - 2026-04-17 · [[2026-04-17-wiki-compiler-ralph-loop]] · meinung — Wiki-Artikel (Quelle: einzelner X-Post @d4m1n) beschreibt den `.agent/`-Verzeichnisaufbau, den Iterationszyklus und die Steering-über-Datei-Praxis.
 - 2026-02-23 · [[2026-02-23-d4m1n-ralph-loop-setup-primaer]] · meinung — Primärquelle desselben Autors liefert konkrete Nutzungsdaten (37 Stunden Dauerlauf, 250 Aufgaben aus einem 2.000-Zeilen-PRD, AFK abgeschlossen) und das vollständige Setup (Bootstrapping, `prd-creator`-Skill, Review-Pflicht der generierten Aufgabenspezifikation vor dem Lauf).
 - 2026-02-05 · [[2026-02-05-d4m1n-docker-sandboxes]] · meinung — Ergänzt die sicherheitstechnische Voraussetzung: Docker Sandboxes (`docker sandbox run claude .`) isolieren den Lauf in einer Micro-VM, damit YOLO-Modus/Ralph-Loop-Läufe über Nacht laufen können, ohne das Host-System zu gefährden.
+- 2026-06-01 · external_knowledge/ai-llm-wiki/raw/i-chose-a-good-harness.md (Gentle-AI) · meinung — Unabhängige Bestätigung des Kernprinzips durch anderen Autor und anderes System: Spec-Driven Development als „break a feature into discrete phases, give each phase its own agent with its own context, and persist artifacts between them via Engram (a SQLite-backed memory layer)" — frischer Kontext pro Phase, Zustand außerhalb des Modells persistiert (dort SQLite statt Dateien/Git).
+- 2026-06-09 · external_knowledge/ai-llm-wiki/raw/not-every-codebase-deserves-loops.md (Mark, Limestone Digital) · meinung — Wichtige Gegenposition für Brownfield: „Your legacy codebase is the actual prompt." Ein Loop shippte vier Features, die alle ein zu deprecatendes Security-Pattern replizierten, weil das alte Muster in 40+ Dateien dominierte und das neue nur in 6 — der Loop lernt das dominante Muster, nicht das gewollte.
 
 ## Spannungen & offene Fragen
 
-- Beide Ralph-Loop-Quellen stammen vom selben Autor (@d4m1n) — Konfidenz bleibt bei „meinung“, bis eine unabhängige Zweitquelle oder eigene Erfahrung hinzukommt. Die Docker-Sandbox-Quelle ist zwar vom selben Autor, behandelt aber ein technisch eigenständiges Thema (Isolation statt Kontextmanagement).
+- ~~Beide Ralph-Loop-Quellen stammen vom selben Autor (@d4m1n) — Konfidenz bleibt bei „meinung“, bis eine unabhängige Zweitquelle oder eigene Erfahrung hinzukommt.~~ Erledigt 2026-07-14: Gentle-AI (anderer Autor, anderes System) bestätigt das Kernprinzip „frischer Kontext pro Phase + externe Zustandspersistenz" unabhängig → mehrfach-belegt. Die d4m1n-spezifische `.agent/`-Verzeichnisstruktur bleibt Einzelmeinung.
+- Ergänzung 2026-07-14: Die Brownfield-Gegenposition (Limestone Digital) verschärft „Wann nicht einsetzen": In Legacy-Codebasen mit bekannten Anti-Patterns repliziert der Loop das dominante (falsche) Muster — vor einem Loop-Lauf müssen deprecated Patterns explizit in Steering/PRD ausgeschlossen werden.
 - Bezug zu GSDs `STATE.md`-Mechanik (bereits in [[Handoff-Doc]] erwähnt) und zu [[Kontext-Hygiene-Entscheidungsbaum]]: Ralph Loop geht über beide hinaus, indem es *jede* Iteration komplett neu startet statt nur bei Bedarf zu kompaktieren/zu wechseln — offene Frage, ab welcher Aufgabengröße sich der volle Ralph-Loop-Overhead gegenüber einem einzelnen gut geführten Handoff lohnt.
 
 ## Verwandte Patterns

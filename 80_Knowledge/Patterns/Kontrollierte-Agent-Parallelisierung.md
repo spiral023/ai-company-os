@@ -1,6 +1,6 @@
 # Kontrollierte-Agent-Parallelisierung
 
-**Konfidenz:** meinung
+**Konfidenz:** mehrfach-belegt
 
 ## Zweck
 
@@ -32,10 +32,13 @@ Parallelisierung lohnt sich nur unter drei Voraussetzungen: (1) **klare Modulgre
 - 2026-04-17 · [[2026-04-17-wiki-compiler-agent-teams-in-claude-code]] · meinung — Wiki-Artikel (Quelle: zwei unabhängige X-Posts, @dani_avila7 und @jasonzhou1993) beschreibt die drei Voraussetzungen und die Eskalationsreihenfolge Hauptthread → Subagents → Agent Teams.
 - 2026-04-17 · [[2026-04-17-wiki-compiler-praktische-claude-code-workflows]] · meinung — Unabhängige Zweitquelle bestätigt die Regel „nach Modulen/Dateien parallelisieren, nicht über gemeinsam editierte Kernartefakte“.
 - 2026-04-17 · [[2026-04-17-wiki-compiler-codex-claude-code-lovable-workflow]] · meinung — Ergänzt die Praxisregel für zwei parallel eingesetzte Coding Agents (ein Hauptagent, der andere Review/getrenntes Paket).
+- o. D. (gesichtet 2026-07-14) · external_knowledge/ai-llm-wiki/raw/anthropic-multi-agent-research-system.md (Anthropic Engineering) · meinung — Liefert die bislang fehlenden Zahlen: Multi-Agent (Opus 4 Lead + Sonnet 4 Subagents) schlägt Single-Agent Opus 4 um 90,2 % im internen Research-Eval; Tokenverbrauch erklärt allein 80 % der Performance-Varianz; Multi-Agent-Systeme verbrauchen ~15× mehr Tokens als Chats — bestätigt „inhärente Kosten" quantitativ. Ergänzt Memory-Persistenz-Muster: Lead speichert den Plan extern, bevor der Kontext (200k) abgeschnitten wird.
+- o. D. (gesichtet 2026-07-14) · external_knowledge/ai-llm-wiki/raw/multi-agent-systems-mind.md · meinung — Unabhängige Bestätigung des Eskalationsprinzips als explizites Anti-Pattern: „Don't build a multi-agent system if a single agent with tools can suffice; MAS introduce state management and latency overhead." Ergänzt drei Orchestrierungs-Patterns (Supervisor, Hierarchisch, Peer-to-Peer/Handoff) und das Prinzip, dass der Shared State („Whiteboard") das eigentliche „Mind" des Systems ist — Koordination über Struktur statt freie Konversation.
 
 ## Spannungen & offene Fragen
 
 - Die drei Quellen überschneiden sich teilweise in ihren zugrunde liegenden X-Posts (u.a. @dani_avila7 taucht in mehreren vibe-repo-Artikeln auf), sind aber inhaltlich eigenständig und ergänzen sich, statt sich zu widersprechen.
+- Spannung 2026-07-14: Anthropic nennt Research als Paradebeispiel für lohnende Parallelisierung (+90,2 %), aber bei ~15× Tokenkosten — der Business Case gilt laut Quelle nur für Aufgaben, deren Wert die Kosten trägt und die echt parallelisierbar sind. Das stützt die Eskalationsreihenfolge dieses Patterns, setzt die Schwelle aber höher als „geht es parallel?": „lohnt es die 15×?".
 - Offene Frage: Wie lässt sich die Drei-Voraussetzungen-Prüfung praktisch vor jedem Parallelisierungsversuch operationalisieren (z.B. als Checkliste in einem Skill), statt sie nur als Prinzip im Kopf zu behalten?
 
 ## Verwandte Patterns

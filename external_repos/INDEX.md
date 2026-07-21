@@ -205,7 +205,7 @@ Offizielle CLI-Repos zweier führender Coding-Agenten als Architektur- und Featu
 
 **Praktische Kombination:** Einen Hauptworkflow wählen und nur gezielte Spezial-Skills ergänzen. Mehrere vollständige Frameworks gleichzeitig erzeugen meist doppelte Regeln und widersprüchliche Gates.
 
-### Für den Ausbau dieses AI-Company-OS
+### Für den Aufbau eines eigenen KI-gestützten Arbeits- und Entwicklungssystems
 
 1. **[anthropics/skills](#anthropicsskills)** als Referenz für Format und minimale Skill-Struktur.
 2. **[wshobson/agents](#wshobsonagents)** für Multi-Harness-Generierung, Plugin-Grenzen und Evals.
@@ -235,69 +235,69 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 ## Übersicht
 
 - **Repos gesamt:** 56
-- **Gesamtgröße:** ca. 1.572 MB
-- **Dateien gesamt:** ca. 90.453 (ohne `.git`)
-- **Sterne gesamt:** ca. 3.953.948 (56/56 Repos abgerufen)
-- **Stand:** 2026-07-15
+- **Gesamtgröße:** ca. 1.597 MB
+- **Dateien gesamt:** ca. 91.709 (ohne `.git`)
+- **Sterne gesamt:** ca. 4.047.336 (56/56 Repos abgerufen)
+- **Stand:** 2026-07-22
 
 | Repo | Dateien | Größe | ⭐ |
 |---|---:|---:|---:|
-| nexu-io/open-design | 11.177 | 285M | 78.195 |
-| diegosouzapw/OmniRoute | 9.071 | 155M | 17.344 |
-| davila7/claude-code-templates | 9.140 | 102M | 29.512 |
-| shadcn-ui/ui | 9.834 | 80M | 119.115 |
-| pbakaus/impeccable | 2.201 | 77M | 46.737 |
-| shanraisshan/claude-code-best-practice | 454 | 74M | 62.609 |
-| intellectronica/ruler | 253 | 70M | 2.802 |
-| paperclipai/paperclip | 3.560 | 68M | 73.673 |
-| teng-lin/notebooklm-py | 1.234 | 62M | 17.780 |
-| headroomlabs-ai/headroom | 1.959 | 57M | 59.174 |
-| garrytan/gstack | 1.170 | 53M | 121.913 |
-| openai/codex | 5.414 | 51M | 98.077 |
-| affaan-m/ECC | 3.322 | 44M | 229.743 |
-| farion1231/cc-switch | 1.089 | 36M | 117.220 |
-| Egonex-AI/Understand-Anything | 469 | 31M | 74.054 |
-| midudev/autoskills | 4.610 | 30M | 6.519 |
-| alirezarezvani/claude-skills | 4.606 | 29M | 22.578 |
-| open-gsd/gsd-core | 2.477 | 28M | 6.611 |
-| microsoft/markitdown | 163 | 24M | 165.964 |
-| upstash/context7 | 372 | 19M | 59.112 |
-| bradygaster/squad | 1.747 | 19M | 2.974 |
-| thedotmack/claude-mem | 850 | 17M | 87.271 |
-| millionco/react-doctor | 4.312 | 15M | 13.798 |
-| Graphify-Labs/graphify | 735 | 13M | 86.444 |
-| nextlevelbuilder/ui-ux-pro-max-skill | 482 | 13M | 105.607 |
-| anthropics/claude-code | 216 | 12M | 137.885 |
-| OthmanAdi/planning-with-files | 424 | 12M | 25.359 |
-| thedaviddias/Front-End-Checklist | 1.871 | 11M | 73.211 |
-| bmad-code-org/BMAD-METHOD | 591 | 11M | 50.598 |
-| router-for-me/CLIProxyAPI | 937 | 10M | 41.912 |
-| anthropics/skills | 415 | 10M | 161.153 |
-| github/spec-kit | 462 | 7,7M | 121.285 |
-| vercel-labs/agent-skills | 442 | 7,5M | 29.067 |
-| wshobson/agents | 1.094 | 7,3M | 37.914 |
-| AgriciDaniel/claude-seo | 388 | 4,3M | 11.388 |
-| msitarzewski/agency-agents | 326 | 4,0M | 131.487 |
-| rtk-ai/rtk | 398 | 3,9M | 71.039 |
-| coreyhaines31/marketingskills | 416 | 3,1M | 39.233 |
-| NVIDIA/SkillSpector | 242 | 2,5M | 13.176 |
-| abi/screenshot-to-code | 286 | 2,2M | 73.279 |
-| VoltAgent/awesome-design-md | 153 | 2,1M | 101.862 |
-| Leonxlnx/taste-skill | 56 | 1,6M | 63.523 |
-| DietrichGebert/ponytail | 156 | 1,6M | 83.137 |
-| obra/superpowers | 172 | 1,3M | 254.713 |
-| langchain-ai/openwiki | 90 | 1012K | 11.264 |
-| juliusbrussee/caveman | 167 | 848K | 89.501 |
-| vercel-labs/skills | 96 | 798K | 26.146 |
-| karpathy/autoresearch | 10 | 747K | 91.115 |
-| addyosmani/agent-skills | 126 | 665K | 78.327 |
-| 0xNyk/council-of-high-intelligence | 56 | 563K | 3.559 |
-| mattpocock/skills | 114 | 450K | 170.342 |
-| emilkowalski/skills | 8 | 84K | 12.849 |
-| shadcn/improve | 9 | 61K | 8.242 |
-| kepano/obsidian-skills | 14 | 53K | 41.940 |
-| multica-ai/andrej-karpathy-skills | 9 | 38K | 192.278 |
-| jakubkrehel/make-interfaces-feel-better | 8 | 36K | 2.338 |
+| nexu-io/open-design | 11.502 | 299M | 80.389 |
+| diegosouzapw/OmniRoute | 9.350 | 151M | 23.446 |
+| davila7/claude-code-templates | 9.173 | 102M | 29.813 |
+| pbakaus/impeccable | 2.386 | 81M | 48.524 |
+| paperclipai/paperclip | 4.022 | 75M | 74.386 |
+| shanraisshan/claude-code-best-practice | 454 | 74M | 63.233 |
+| intellectronica/ruler | 258 | 71M | 2.814 |
+| teng-lin/notebooklm-py | 1.244 | 62M | 18.045 |
+| headroomlabs-ai/headroom | 2.123 | 59M | 61.000 |
+| garrytan/gstack | 1.179 | 53M | 123.424 |
+| openai/codex | 5.677 | 53M | 100.382 |
+| shadcn-ui/ui | 5.642 | 44M | 119.488 |
+| affaan-m/ECC | 3.325 | 44M | 231.877 |
+| farion1231/cc-switch | 1.130 | 40M | 119.750 |
+| Egonex-AI/Understand-Anything | 497 | 31M | 75.483 |
+| open-gsd/gsd-core | 2.773 | 31M | 6.969 |
+| midudev/autoskills | 4.610 | 30M | 6.559 |
+| alirezarezvani/claude-skills | 4.721 | 30M | 22.942 |
+| millionco/react-doctor | 6.976 | 28M | 14.040 |
+| microsoft/markitdown | 163 | 24M | 167.934 |
+| upstash/context7 | 376 | 19M | 59.542 |
+| bradygaster/squad | 1.782 | 19M | 2.993 |
+| thedotmack/claude-mem | 850 | 17M | 88.139 |
+| nextlevelbuilder/ui-ux-pro-max-skill | 530 | 15M | 108.531 |
+| Graphify-Labs/graphify | 752 | 14M | 93.072 |
+| anthropics/claude-code | 229 | 12M | 138.587 |
+| OthmanAdi/planning-with-files | 485 | 12M | 25.600 |
+| thedaviddias/Front-End-Checklist | 1.871 | 11M | 73.268 |
+| router-for-me/CLIProxyAPI | 996 | 11M | 44.089 |
+| bmad-code-org/BMAD-METHOD | 600 | 11M | 50.916 |
+| anthropics/skills | 411 | 10M | 163.181 |
+| github/spec-kit | 507 | 8,8M | 123.098 |
+| wshobson/agents | 1.160 | 7,6M | 38.113 |
+| vercel-labs/agent-skills | 442 | 7,5M | 29.284 |
+| 0xNyk/council-of-high-intelligence | 67 | 5,9M | 3.690 |
+| AgriciDaniel/claude-seo | 403 | 4,5M | 11.975 |
+| msitarzewski/agency-agents | 336 | 4,1M | 135.374 |
+| rtk-ai/rtk | 408 | 4,0M | 72.370 |
+| coreyhaines31/marketingskills | 420 | 3,2M | 41.060 |
+| NVIDIA/SkillSpector | 243 | 2,6M | 13.509 |
+| abi/screenshot-to-code | 290 | 2,2M | 73.408 |
+| VoltAgent/awesome-design-md | 153 | 2,1M | 103.613 |
+| Leonxlnx/taste-skill | 58 | 1,6M | 66.010 |
+| DietrichGebert/ponytail | 156 | 1,6M | 87.251 |
+| obra/superpowers | 172 | 1,3M | 258.741 |
+| langchain-ai/openwiki | 132 | 1,3M | 12.766 |
+| vercel-labs/skills | 106 | 879K | 26.840 |
+| juliusbrussee/caveman | 167 | 848K | 91.733 |
+| karpathy/autoresearch | 10 | 747K | 91.732 |
+| addyosmani/agent-skills | 172 | 729K | 79.670 |
+| mattpocock/skills | 167 | 475K | 180.343 |
+| emilkowalski/skills | 13 | 118K | 19.394 |
+| shadcn/improve | 9 | 61K | 8.555 |
+| kepano/obsidian-skills | 14 | 53K | 42.895 |
+| multica-ai/andrej-karpathy-skills | 9 | 38K | 195.065 |
+| jakubkrehel/make-interfaces-feel-better | 8 | 36K | 2.431 |
 
 Dateianzahl, Größe, Struktur und Sterne pro Repo (ohne `.git`-Verzeichnis) stehen zusätzlich in jedem Eintrag unten und werden von `70_Scripts/update_external_repos.py` automatisch aufgefrischt.
 <!-- OVERVIEW:END -->
@@ -313,10 +313,10 @@ Ein Eintrag pro Repo, alphabetisch nach `owner/repo` sortiert — neue Repos ent
 ## 0xNyk/council-of-high-intelligence
 
 - **URL:** https://github.com/0xNyk/council-of-high-intelligence
-- **Stars:** ⭐ 3.559
+- **Stars:** ⭐ 3.690
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 56 · **Größe:** 563K
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 67 · **Größe:** 5,9M
 - **Struktur:** Claude-Plugin mit Rollen in `agents/`, Steuerung in `skills/` und Konfigurationen in `configs/`; Installations- und Demo-Scripts separat <!-- manual -->
 
 „Council of High Intelligence“ ist ein Multi-Agent-Plugin für strategische oder schwer umkehrbare Entscheidungen. Es inszeniert 18 klar gegensätzliche Persona-Rollen – etwa Socrates, Feynman, Torvalds, Kahneman oder Rams – und zwingt sie zu unterschiedlichen Problemrahmungen, unabhängiger Analyse, Kreuzverhören und einer abschließenden Synthese. Drei Modi begrenzen Aufwand und Tiefe: Full mit drei Runden, Quick ohne Cross-Examination und Duo mit einem gezielten Gegenpaar; zusätzlich gibt es fachbezogene Dreiergruppen für Architektur, Produkt, Risiko, Design oder AI. Das Plugin kann verfügbare Provider wie Claude, Codex, Gemini, Ollama und Cursor erkennen und Rollen über sie verteilen, um nicht nur identische Modellantworten zu vervielfachen. Dissent-Quoten, Novelty-Gates und Counterfactual-Prompts sollen Gruppendenken entgegenwirken; der Bericht soll offene Fragen und nächste Schritte vor Konsens stellen. Relevant als anschauliche Referenz für bewusst erzeugte Spannungen in Entscheidungsprozessen. Nicht geeignet für Faktenfragen, triviale oder dringende Entscheidungen – genau das dokumentiert die README selbst. Die Subagenten- und Provider-Aufrufe können erhebliche Tokenkosten, Zugriffe und Laufzeit erzeugen; deshalb nur gezielt und mit Kostenlimit verwenden. MIT-lizenziert.
@@ -326,10 +326,10 @@ Ein Eintrag pro Repo, alphabetisch nach `owner/repo` sortiert — neue Repos ent
 ## abi/screenshot-to-code
 
 - **URL:** https://github.com/abi/screenshot-to-code
-- **Stars:** ⭐ 73.279
+- **Stars:** ⭐ 73.408
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 286 · **Größe:** 2,2M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 290 · **Größe:** 2,2M
 - **Struktur:** FastAPI-Backend in `backend/`, React/Vite-Frontend in `frontend/`, Hilfsprogramme und Design-Dokumente in `scripts/` und `design-docs/`; kein Skill-Paket <!-- manual -->
 
 Screenshot to Code ist eine Web-Anwendung, die Screenshots, Mockups, Figma-Designs und Bildschirmaufzeichnungen mit generativen Modellen in funktionsfähigen Frontend-Code überführt. Unterstützt werden HTML mit Tailwind oder CSS, React, Vue, Bootstrap und Ionic; ein React/Vite-Frontend kommuniziert mit einem FastAPI-Backend. Für lokale Ausführung verlangt das Projekt mindestens einen Provider-Key (OpenAI, Anthropic oder Gemini); Gemini wird für Asset-Extraktion und Video-Modus, Replicate für Bildgenerierung, Hintergrundentfernung und Bildbearbeitung empfohlen. Mehrere konfigurierte Anbieter erlauben Modellvarianten und Vergleiche; optional rendert ein Chromium-basierter Preview-Mechanismus erzeugte Seiten, sodass der Agent das Ergebnis visuell prüfen kann. Relevant als Referenz für den Workflow „visuelle Vorlage → Code → Browser-Preview → Iteration“, nicht als Ersatz für ein bewusstes Designsystem oder Accessibility-Review. Die lokale Ausführung kann Bildmaterial und Prompts an externe Modellanbieter übertragen und verursacht API-Kosten; API-Keys gehören ausschließlich in lokale Umgebungsdateien und dürfen nicht eingecheckt werden. Vor Nutzung von Screenshots mit Kunden-, Marken- oder personenbezogenen Inhalten sind Rechte und Datenschutz zu klären. MIT-lizenziert.
@@ -339,10 +339,10 @@ Screenshot to Code ist eine Web-Anwendung, die Screenshots, Mockups, Figma-Desig
 ## addyosmani/agent-skills
 
 - **URL:** https://github.com/addyosmani/agent-skills
-- **Stars:** ⭐ 78.327
+- **Stars:** ⭐ 79.670
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 126 · **Größe:** 665K
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 172 · **Größe:** 729K
 - **Struktur:** 24× SKILL.md · Ordner: skills, agents, commands, hooks, references · Spiegelordner: .agents, .claude, .gemini (generiert)
 
 "Production-grade engineering skills" von Addy Osmani: 24 Skills (23 Lifecycle-Skills plus ein Meta-Skill `using-agent-skills`), die entlang des Entwicklungszyklus Define → Plan → Build → Verify → Review → Ship organisiert sind, mit acht zugehörigen Slash-Commands (`/spec`, `/plan`, `/build`, `/test`, `/review`, `/webperf`, `/code-simplify`, `/ship`). `/build auto` kann Plan und Umsetzung in einem einzigen freigegebenen Durchgang autonom abarbeiten (weiterhin testgetrieben und mit Einzel-Commits pro Aufgabe). Jeder Skill folgt einer festen Anatomie (Frontmatter, Overview, When to Use, Process, Rationalizations-Tabelle mit Gegenargumenten, Red Flags, Verification) und bettet Praktiken aus Googles Engineering-Kultur ein (Hyrum's Law, Beyonce Rule, Chesterton's Fence, Trunk-based Development, Shift Left). Vier vorkonfigurierte Agenten-Personas (code-reviewer, test-engineer, security-auditor, web-performance-auditor) für gezielte Reviews. Funktioniert über 13+ Agenten/Tools hinweg. Enthält einen expliziten Vergleich zu Superpowers und Matt Pococks Skills (`docs/comparison.md`) inkl. Link zu einem kontrollierten Head-to-Head-Experiment. Sehr relevant als weiteres, sehr diszipliniertes Gegenstück zu Superpowers/Matt-Pocock-Skills mit Fokus auf Verifikations-Pflicht und Anti-Rationalisierungs-Tabellen.
@@ -352,10 +352,10 @@ Screenshot to Code ist eine Web-Anwendung, die Screenshots, Mockups, Figma-Desig
 ## affaan-m/ECC
 
 - **URL:** https://github.com/affaan-m/ECC
-- **Stars:** ⭐ 229.743
+- **Stars:** ⭐ 231.877
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 3.322 · **Größe:** 44M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 3.325 · **Größe:** 44M
 - **Struktur:** 278× SKILL.md · Ordner: skills, agents, commands, hooks, rules, plugins, references · Spiegelordner: .agents, .claude, .codex, .cursor, … (+2) (generiert)
 
 ECC ("Agent Harness Operating System") ist ein sehr umfangreiches Claude-Code-Plugin-System eines Einzelentwicklers, das über 10+ Monate produktiven Einsatzes gewachsen ist und über sieben Agent-Harnesses (Claude Code, Cursor, Codex, OpenCode, Gemini, Zed, GitHub Copilot) hinweg funktioniert. Es bündelt ~67 spezialisierte Subagenten (Planner, Architect, Code-Reviewer, Security-Reviewer u.v.m.), ~278 Skills (Coding-Standards für 12+ Sprachökosysteme, Backend-/Frontend-Patterns, Content-/Marketing-Skills, ML-Workflows), Hooks für Memory-Persistenz zwischen Sessions, ein instinkt-basiertes kontinuierliches Lernsystem, Verifikations-/Eval-Loops sowie einen eigenen Security-Auditor (AgentShield, OWASP-artige Scans von Claude-Konfigurationen). Installierbar als Plugin, npm-Paket oder manuell; bietet zusätzlich eine kostenpflichtige "ECC Pro"-Stufe für private Repos. Das Repo dokumentiert explizit Fallstricke bei Mehrfachinstallation (Plugin + manueller Installer gleichzeitig führt zu Duplikaten) und pflegt ein detailliertes Änderungsprotokoll. Relevant als Referenz für Skalierung eines Skill-/Agenten-Ökosystems über viele Sprachen und Harnesses hinweg, für Memory-Persistenz-Hooks und für strukturierte Sicherheits-Audits von Agent-Konfigurationen.
@@ -365,10 +365,10 @@ ECC ("Agent Harness Operating System") ist ein sehr umfangreiches Claude-Code-Pl
 ## AgriciDaniel/claude-seo
 
 - **URL:** https://github.com/AgriciDaniel/claude-seo
-- **Stars:** ⭐ 11.388
+- **Stars:** ⭐ 11.975
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 388 · **Größe:** 4,3M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 403 · **Größe:** 4,5M
 - **Struktur:** 33× SKILL.md · Ordner: skills, agents, hooks, references
 
 Claude SEO ist ein Open-Source-SEO-Analyse-Plugin für Claude Code, das 25 Sub-Skills und 18 spezialisierte Subagenten parallel über technische SEO, Content-Qualität (E-E-A-T), Schema.org-Markup, KI-Suchoptimierung (GEO), lokale SEO, E-Commerce und internationale SEO laufen lässt. Jeder Audit erzeugt einen priorisierten, testbaren Maßnahmenplan, der auf Primärquellen (Google-Dokumentation) beruht statt auf Vermutungen – jede Empfehlung trägt explizit die zugrunde liegende Beobachtung, Abhängigkeiten zu anderen Empfehlungen, einen "woran erkennen wir das Scheitern?"-Check und einen Frühindikator. Zentrale Befehle: `/seo audit`, `/seo page`, `/seo schema`, `/seo geo`, `/seo technical`, `/seo local`, `/seo sitemap` u.v.m. Vollständige Site-Audits laufen mit bis zu 15 parallelen Agenten in 10–15 Minuten statt Stunden. Vierstufiges Credential-System erlaubt Start ohne jegliche API-Keys, mit optionalem Ausbau (PageSpeed/CrUX, Search Console, GA4, Keyword Planner). Erweiterbar durch MCP-Extensions (DataForSEO, Firecrawl, Ahrefs, SE Ranking, Profound, Bing Webmaster, Unlighthouse, Bildgenerierung). Sehr relevant als direktes fachliches Gegenstück/Vorbild zum `seo`-Skill-Bereich im eigenen Environment – deutlich tiefer ausgebaut mit konkreten Python-Skripten, Falsifizierbarkeits-Prinzip und Google-API-Integration.
@@ -378,36 +378,36 @@ Claude SEO ist ein Open-Source-SEO-Analyse-Plugin für Claude Code, das 25 Sub-S
 ## alirezarezvani/claude-skills
 
 - **URL:** https://github.com/alirezarezvani/claude-skills
-- **Stars:** ⭐ 22.578
+- **Stars:** ⭐ 22.942
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 4.606 · **Größe:** 29M
-- **Struktur:** 357× SKILL.md · Ordner: skills, agents, commands, hooks, rules, references · Spiegelordner: .claude, .codex, .gemini, .hermes, … (+1) (generiert)
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 4.721 · **Größe:** 30M
+- **Struktur:** 362× SKILL.md · Ordner: skills, agents, commands, hooks, rules, references · Spiegelordner: .claude, .codex, .gemini, .hermes, … (+1) (generiert)
 
-Die mit Abstand umfangreichste Skill-Bibliothek im gesamten Index: 355 produktionsreife Skills über 18 Domänen (Engineering Core & POWERFUL-Tier, Product, Marketing inkl. AEO/Answer-Engine-Optimization, Regulatorik/Qualitätsmanagement, Compliance-OS, vollständige C-Level-Beratung als Personas CEO/CTO/CFO/CMO/CRO/CPO/COO/CHRO/CISO/GC/CDO/CAIO/CCO/VPE, Business-Growth, Business-Operations, Commercial, Finance, akademische Forschung sowie unternehmensweite Research Operations), mit 602 stdlib-only Python-Analyse-Tools (keine LLM-Aufrufe in Scripts, bewusst für Portabilität), 731 Referenzdateien, 99 Agenten und 109 Slash-Commands, verteilt als 83 Marketplace-Plugins. Funktioniert nativ oder per Konvertierungsskript auf 13 Tools (Claude Code, Codex, Gemini CLI, Cursor, Aider, Windsurf u.a.). Enthält einen eigenen Skill-Security-Auditor (Prompt-Injection-, Command-Injection- und Supply-Chain-Scans vor Installation) sowie ein dokumentiertes Orchestrierungs-Protokoll für Persona-Ketten über Domänengrenzen hinweg (Solo Sprint, Domain Deep-Dive, Multi-Agent Handoff, Skill Chain). Neueste Versionen bauen Product- und Projekt-Management-Skills zu selbstverifizierenden "Agent-Harness"-Loops mit deterministischen Goal-Routern aus. Sehr relevant als Referenz für Skalierung eines sehr breiten Skill-Ökosystems inkl. Business-/C-Level-Perspektive, die in den bisherigen Repos kaum abgedeckt war.
+Die mit Abstand umfangreichste Skill-Bibliothek im gesamten Index: 362 produktionsreife Skills über 18 Domänen (Engineering Core & POWERFUL-Tier, Product, Marketing inkl. AEO/Answer-Engine-Optimization, Regulatorik/Qualitätsmanagement, Compliance-OS, vollständige C-Level-Beratung als Personas CEO/CTO/CFO/CMO/CRO/CPO/COO/CHRO/CISO/GC/CDO/CAIO/CCO/VPE, Business-Growth, Business-Operations, Commercial, Finance, akademische Forschung sowie unternehmensweite Research Operations), mit 644 stdlib-only Python-Analyse-Tools (keine LLM-Aufrufe in Scripts, bewusst für Portabilität), rund 740 Referenzdateien, 102 Agenten und 116 Slash-Commands, verteilt als 88 Marketplace-Plugins. Neu hinzugekommen ist die Domäne Produktivität (11 Skills: `capture`, `email`-Paar, `reflect`, `handoff`, `andreessen`, `roast`, `fable-goal`, `weekly-review`, `deep-work`, `meetings`) für persönliches Aufgaben- und Zeitmanagement nach GTD-Prinzipien. Funktioniert nativ oder per Konvertierungsskript auf 13 Tools (Claude Code, Codex, Gemini CLI, Cursor, Aider, Windsurf u.a.). Enthält einen eigenen Skill-Security-Auditor (Prompt-Injection-, Command-Injection- und Supply-Chain-Scans vor Installation) sowie ein dokumentiertes Orchestrierungs-Protokoll für Persona-Ketten über Domänengrenzen hinweg (Solo Sprint, Domain Deep-Dive, Multi-Agent Handoff, Skill Chain). Neueste Versionen bauen Product- und Projekt-Management-Skills zu selbstverifizierenden "Agent-Harness"-Loops mit deterministischen Goal-Routern aus. Sehr relevant als Referenz für Skalierung eines sehr breiten Skill-Ökosystems inkl. Business-/C-Level-Perspektive und jetzt auch persönlicher Produktivität, die in den bisherigen Repos kaum abgedeckt war.
 
 ---
 
 ## anthropics/claude-code
 
 - **URL:** https://github.com/anthropics/claude-code
-- **Stars:** ⭐ 137.885
+- **Stars:** ⭐ 138.587
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 216 · **Größe:** 12M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 229 · **Größe:** 12M
 - **Struktur:** Die Top-Level-Struktur (CHANGELOG, `scripts/` für Issue-Automatisierung, `examples/` für Settings/Hooks/MDM, ein Devcontainer) zeigt, dass hier nicht der CLI-Quellcode liegt, sondern rund um ein npm/Binary-Release organisierte Doku und Tooling; der Ordner `plugins/` enthält zusätzlich mehrere eigenständige Bundles mit jeweils eigenen skills/agents/commands/hooks-Unterordnern, die eine rein mechanische Skills-Repo-Erkennung fälschlich nahelegen würde. <!-- manual -->
 
-Dieses Repository ist das offizielle GitHub-Repo zu Claude Code, enthält jedoch nicht den proprietären CLI-Quellcode selbst, sondern die Distribution begleitende Materialien: ein knappes README mit Installationsanleitung (curl/Homebrew/WinGet, npm-Installation als deprecated markiert), ein sehr umfangreiches CHANGELOG als Versionshistorie, Issue-Templates und GitHub-Actions-Workflows samt Skripten zur automatisierten Issue-Pflege (Duplikate schließen, Lifecycle-Kommentare, gh-CLI-Wrapper), sowie Beispielkonfigurationen für Hooks, MDM-Verteilung (macOS/Windows) und Settings-Sicherheitsstufen. Der Ordner `plugins/` bündelt zusätzlich mehrere offizielle, aber optionale Erweiterungen (u.a. code-review, feature-dev, hookify, pr-review-toolkit, plugin-dev, frontend-design) mit eigenen Agents, Commands, Skills und Hooks – funktional vergleichbar mit dem `anthropics/skills`-Repo, aber als Plugin-Marketplace organisiert (`.claude-plugin/marketplace.json`). Für das AI-Company-OS-Projekt ist der Wert daher primär in den Beispiel-Settings, Hook-Patterns und Plugin-Referenzimplementierungen zu suchen, nicht in eigenem CLI-Code. Einschränkung: Die Kernlogik der Engine ist nicht einsehbar, die Lizenz ist proprietär (© Anthropic PBC, Anthropic Commercial Terms of Service statt Open-Source-Lizenz), und Inhalte sind stark auf Anthropics eigenen Release- und Community-Betrieb zugeschnitten statt auf Wiederverwendung als Bibliothek ausgelegt.
+Dieses Repository ist das offizielle GitHub-Repo zu Claude Code, enthält jedoch nicht den proprietären CLI-Quellcode selbst, sondern die Distribution begleitende Materialien: ein knappes README mit Installationsanleitung (curl/Homebrew/WinGet, npm-Installation als deprecated markiert), ein sehr umfangreiches CHANGELOG als Versionshistorie, Issue-Templates und GitHub-Actions-Workflows samt Skripten zur automatisierten Issue-Pflege (Duplikate schließen, Lifecycle-Kommentare, gh-CLI-Wrapper), sowie Beispielkonfigurationen für Hooks, MDM-Verteilung (macOS/Windows) und Settings-Sicherheitsstufen. Der Ordner `plugins/` bündelt zusätzlich mehrere offizielle, aber optionale Erweiterungen (u.a. code-review, feature-dev, hookify, pr-review-toolkit, plugin-dev, frontend-design) mit eigenen Agents, Commands, Skills und Hooks – funktional vergleichbar mit dem `anthropics/skills`-Repo, aber als Plugin-Marketplace organisiert (`.claude-plugin/marketplace.json`). Der praktische Wert liegt primär in den Beispiel-Settings, Hook-Patterns und Plugin-Referenzimplementierungen, nicht in eigenem CLI-Code. Einschränkung: Die Kernlogik der Engine ist nicht einsehbar, die Lizenz ist proprietär (© Anthropic PBC, Anthropic Commercial Terms of Service statt Open-Source-Lizenz), und Inhalte sind stark auf Anthropics eigenen Release- und Community-Betrieb zugeschnitten statt auf Wiederverwendung als Bibliothek ausgelegt.
 
 ---
 
 ## anthropics/skills
 
 - **URL:** https://github.com/anthropics/skills
-- **Stars:** ⭐ 161.153
+- **Stars:** ⭐ 163.181
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 415 · **Größe:** 10M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 411 · **Größe:** 10M
 - **Struktur:** 18× SKILL.md · Ordner: skills, agents, references
 
 Das offizielle Anthropic-Repository mit Referenz-Implementierungen für das Claude-Skills-System. Enthält Beispiel-Skills für kreative Anwendungen (Kunst, Musik, Design), technische Aufgaben (Web-App-Testing, MCP-Server-Generierung) sowie Unternehmens-Workflows (Kommunikation, Branding). Besonders relevant: die Dokument-Skills (`skills/docx`, `skills/pdf`, `skills/pptx`, `skills/xlsx`), die tatsächlich Claudes Dokumentenerstellung in Produktion antreiben – "source-available", nicht Open Source, aber als Referenz für komplexe, produktiv genutzte Skills freigegeben. Das Repo dient explizit als Inspirationsquelle und Muster-Referenz, nicht als garantiertes Abbild von Claudes tatsächlichem Verhalten. Enthält außerdem die Agent-Skills-Spezifikation (`spec/`) und ein minimales Skill-Template (`template/`) mit den zwei Pflichtfeldern im YAML-Frontmatter (`name`, `description`). Installierbar als Claude-Code-Plugin-Marketplace (`document-skills`, `example-skills`), in Claude.ai direkt nutzbar, oder über die Claude API hochladbar. Als "Quelle der Wahrheit" für das Skill-Format und als Referenz für gut strukturierte, offizielle Beispiel-Skills die mit Abstand wichtigste Referenz unter allen geladenen Repos.
@@ -417,23 +417,23 @@ Das offizielle Anthropic-Repository mit Referenz-Implementierungen für das Clau
 ## bmad-code-org/BMAD-METHOD
 
 - **URL:** https://github.com/bmad-code-org/BMAD-METHOD
-- **Stars:** ⭐ 50.598
+- **Stars:** ⭐ 50.916
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 591 · **Größe:** 11M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 600 · **Größe:** 11M
 - **Struktur:** Skills in `src/bmm-skills/` (vier nummerierte Phasen) und `src/core-skills/`; Installer in `tools/installer/`, Web-Bundles in `web-bundles/`, Doku in `docs/`; kein Top-Level-`skills/`-Ordner <!-- manual -->
 
-BMAD-METHOD („Breakthrough Method of Agile AI-driven Development") von Brian „BMad" Madison ist eines der bekanntesten und ausgereiftesten Agile-Frameworks für KI-gestützte Entwicklung (npm `bmad-method`, v6, sehr großes Changelog) und taucht in den Workflow-Vergleichen anderer Repos regelmäßig als Referenzmethodik neben Superpowers, GSD und Spec Kit auf. Der Kern führt Coding-Agenten „scale-adaptiv" durch vier nummerierte Phasen – Analysis, Plan, Solutioning, Implementation (`src/bmm-skills/1-analysis` … `4-implementation`) – und passt die Planungstiefe automatisch an die Projektkomplexität an, vom Bugfix bis zum Enterprise-System. Besonderheit sind 12+ benannte Experten-Personas (PM, Architect, Developer „Amelia", UX-Designer, Analyst, Tech Writer) als eigene Agent-Skills, ergänzt um Core-Skills wie `bmad-brainstorming`, `bmad-advanced-elicitation`, `bmad-party-mode` (mehrere Personas in einer Session), adversariale Reviews, `bmad-help` (zustandsbewusste „Was mache ich als Nächstes?"-Beratung) und `bmad-shard-doc`. 56 `SKILL.md` über Core und BMM. Anpassung erfolgt über eine base → team → user TOML-Merge-Kette (`customize.toml`, `_bmad/custom/*.toml`, `resolve_customization.py`). Ein Node-Installer (`npx bmad-method install`, Node ≥20.12, Python ≥3.10, uv) und die `bmad-modules.yaml`-Registry binden offizielle Zusatzmodule an: BMad Builder (BMB), Test Architect (TEA), Game Dev Studio, Creative Intelligence Suite, BMad Loop (deterministischer unbeaufsichtigter Dev-Loop mit adversarialem Review) und WDS. Web-Bundles paketieren die Planungs-Skills als Gemini Gems / ChatGPT Custom GPTs, um Upfront-Planung auf Flatrate-Abos statt metered IDE-Tokens zu erledigen und die Artefakte danach in die IDE zu holen. Sehr relevant als schwergewichtige, rollen- und phasenbasierte Alternative zu den schlankeren Skill-Sets im Index – mit Alleinstellungsmerkmalen bei benannten Agile-Rollen, scale-adaptiver Tiefe und Modul-Ökosystem. MIT-lizenziert (Marke „BMAD" jedoch geschützt, siehe `TRADEMARK.md`).
+BMAD-METHOD („Breakthrough Method of Agile AI-driven Development") von Brian „BMad" Madison ist eines der bekanntesten und ausgereiftesten Agile-Frameworks für KI-gestützte Entwicklung (npm `bmad-method`, v6, sehr großes Changelog) und taucht in den Workflow-Vergleichen anderer Repos regelmäßig als Referenzmethodik neben Superpowers, GSD und Spec Kit auf. Der Kern führt Coding-Agenten „scale-adaptiv" durch vier nummerierte Phasen – Analysis, Plan, Solutioning, Implementation (`src/bmm-skills/1-analysis` … `4-implementation`) – und passt die Planungstiefe automatisch an die Projektkomplexität an, vom Bugfix bis zum Enterprise-System. Besonderheit sind 12+ benannte Experten-Personas (PM, Architect, Developer „Amelia", UX-Designer, Analyst, Tech Writer) als eigene Agent-Skills, ergänzt um Core-Skills wie `bmad-brainstorming`, `bmad-advanced-elicitation`, `bmad-party-mode` (mehrere Personas in einer Session) und `bmad-help` (zustandsbewusste „Was mache ich als Nächstes?"-Beratung). Der Core wurde jüngst von 14 auf einen schlanken 8-Skill-Kern gestrafft: separate adversariale Reviews (general/edge-case/verification-gap) sowie Editorial-Review-Varianten wurden zu wählbaren Lenses in einem einzigen `bmad-review`-Skill zusammengeführt, veraltete Skills wie `bmad-shard-doc` und `bmad-index-docs` samt der letzten npm-Abhängigkeit im Baum entfernt. Insgesamt 47 `SKILL.md` über Core und BMM (Stand nach der Straffung, zuvor 56). Anpassung erfolgt über eine base → team → user TOML-Merge-Kette (`customize.toml`, `_bmad/custom/*.toml`, `resolve_customization.py`). Ein Node-Installer (`npx bmad-method install`, Node ≥20.12, Python ≥3.10, uv) und die `bmad-modules.yaml`-Registry binden offizielle Zusatzmodule an: BMad Builder (BMB), Test Architect (TEA), Game Dev Studio, Creative Intelligence Suite, BMad Loop (deterministischer unbeaufsichtigter Dev-Loop mit adversarialem Review) und WDS. Web-Bundles paketieren die Planungs-Skills als Gemini Gems / ChatGPT Custom GPTs, um Upfront-Planung auf Flatrate-Abos statt metered IDE-Tokens zu erledigen und die Artefakte danach in die IDE zu holen. Sehr relevant als schwergewichtige, rollen- und phasenbasierte Alternative zu den schlankeren Skill-Sets im Index – mit Alleinstellungsmerkmalen bei benannten Agile-Rollen, scale-adaptiver Tiefe und Modul-Ökosystem. MIT-lizenziert (Marke „BMAD" jedoch geschützt, siehe `TRADEMARK.md`).
 
 ---
 
 ## bradygaster/squad
 
 - **URL:** https://github.com/bradygaster/squad
-- **Stars:** ⭐ 2.974
+- **Stars:** ⭐ 2.993
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 1.747 · **Größe:** 19M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 1.782 · **Größe:** 19M
 - **Struktur:** kein statischer Skill-Ordner mit Inhalt — die eigentliche Logik ist CLI-Quellcode in `packages/squad-cli/`, `packages/squad-sdk/`; Vorlagen in `templates/skills/`; erzeugt zur Laufzeit `.squad/agents/` + `.squad/skills/` im Zielprojekt <!-- manual -->
 
 Squad baut über GitHub Copilot ein "menschengeführtes" Team benannter KI-Spezialisten (Frontend, Backend, Tester, Lead etc.) auf, die als Dateien im Repo (`.squad/`) persistieren, projektübergreifendes Wissen ansammeln und über Sessions hinweg lernen. Nutzer beschreiben ihr Vorhaben, Squad schlägt ein Team vor, das dann parallel an Aufgaben arbeitet; alle Entscheidungen werden nachvollziehbar in `decisions.md` protokolliert. Besonderheit ist der "Watch Mode" (genannt Ralph): ein Polling-Prozess, der GitHub Issues überwacht, priorisiert, Kontext an einen Copilot-Agenten übergibt und diesem die Auswahl überlässt, mit einer vierstufigen Fehler-Eskalation (Circuit-Breaker-Reset, Auth-Reprobe, Git-Pull, Pause mit Eskalation an Menschen). Alpha-Software, Node.js-Monorepo mit SDK- und CLI-Paket, auch als programmierbares TypeScript-Setup (`squad.config.ts`) nutzbar. Ausdrücklich als Produktivitätswerkzeug positioniert, das Menschen nicht ersetzt, sondern Koordination und Wiederholung abnimmt. Relevant als Vorbild für persistente, benannte Agenten-Teams mit Entscheidungsprotokoll und autonomem Issue-Polling mit Eskalationsstufen.
@@ -443,10 +443,10 @@ Squad baut über GitHub Copilot ein "menschengeführtes" Team benannter KI-Spezi
 ## coreyhaines31/marketingskills
 
 - **URL:** https://github.com/coreyhaines31/marketingskills
-- **Stars:** ⭐ 39.233
+- **Stars:** ⭐ 41.060
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 416 · **Größe:** 3,1M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 420 · **Größe:** 3,2M
 - **Struktur:** 47× SKILL.md · Ordner: skills, references
 
 Sammlung von rund 47 Marketing-Skills für KI-Coding-Agenten (Claude Code, Codex, Cursor, Windsurf) von Corey Haines (Conversion Factory, Swipe Files). Deckt praktisch das gesamte technische Marketing ab: SEO & Content (seo-audit, ai-seo, programmatic-seo, schema), Conversion-Optimierung (cro, signup, onboarding, popups, paywalls), Content & Copy (copywriting, cold-email, emails, social, video), bezahlte Kanäle (ads, ad-creative), Messung (analytics, ab-testing), Retention (churn-prevention), Wachstum (co-marketing, free-tools, referrals) sowie Strategie/Sales (pricing, launch, revops, sales-enablement). Alle Skills referenzieren ein zentrales `product-marketing`-Kontextdokument, das Produkt, Zielgruppe und Positionierung festhält und von jedem anderen Skill zuerst gelesen wird – ein Muster, um wiederholte Grundinformationen zu vermeiden. Skills sind stark querverweisend (z.B. copywriting ↔ cro ↔ ab-testing). Installierbar über npx skills, Claude-Code-Plugin, Git-Submodule oder einfaches Kopieren. Sehr relevant als direktes Vorbild für die eigenen Marketing-bezogenen Skills unter `30_Skills/`, insbesondere das Muster eines zentralen Produkt-Kontext-Dokuments, das andere Skills referenzieren.
@@ -456,10 +456,10 @@ Sammlung von rund 47 Marketing-Skills für KI-Coding-Agenten (Claude Code, Codex
 ## davila7/claude-code-templates
 
 - **URL:** https://github.com/davila7/claude-code-templates
-- **Stars:** ⭐ 29.512
+- **Stars:** ⭐ 29.813
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 9.140 · **Größe:** 102M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 9.173 · **Größe:** 102M
 - **Struktur:** Großer Komponenten-Katalog in `.claude/` und `.claude-plugin/`; Installer, APIs und Dashboard-Code in `cli-tool/`, `api/`, `dashboard/` und `cloudflare-workers/`; zahlreiche generierte Spiegel und Drittquellen <!-- manual -->
 
 Claude Code Templates ist ein großer Katalog für vorkonfigurierte Claude-Code-Komponenten. Über eine npm-CLI oder die Website lassen sich mehr als hundert Agents, Slash-Commands, MCP-Integrationen, Settings, Hooks und Skills auswählen; Beispiele reichen von Security-Audits und React-Performance bis zu Datenbank-, GitHub-, Stripe- oder AWS-Integrationen. Neben der Sammlung liefert das Projekt eigene Bedienoberflächen für Installationsverwaltung, Session-Analytics, Conversation-Monitoring, Health Checks und Plugin-Übersicht. Die README dokumentiert außerdem eine Reihe übernommener Quellen – darunter Anthropic Skills, Superpowers, wshobson/agents und alirezarezvani/claude-skills – und verweist auf deren originale Lizenzen und Attributionen. Das macht das Repo als Landkarte und Vergleichssammlung interessant, aber auch besonders prüfbedürftig: Der sehr große Katalog enthält installierbare Hooks, MCPs und Integrationen aus vielen Domänen, die nicht pauschal als vertrauenswürdig gelten können. Relevant als Referenz für Marketplace-UX, Komponententypen und Attribution bei Aggregationen. Einzelne Komponenten müssen mit ihrer tatsächlichen Quelle, Lizenz, Script- und Berechtigungswirkung geprüft werden; nicht das Gesamtpaket installieren. Das Repository selbst ist MIT-lizenziert, ohne damit die Lizenzen eingebetteter Komponenten zu vereinheitlichen.
@@ -469,22 +469,22 @@ Claude Code Templates ist ein großer Katalog für vorkonfigurierte Claude-Code-
 ## diegosouzapw/OmniRoute
 
 - **URL:** https://github.com/diegosouzapw/OmniRoute
-- **Stars:** ⭐ 17.344
+- **Stars:** ⭐ 23.446
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 9.071 · **Größe:** 155M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 9.350 · **Größe:** 151M
 - **Struktur:** Reiner Next.js-16-Anwendungscode in `src/` (app/, domain/, lib/, server/, sse/), plus Workspace `open-sse/` (Streaming-Engine), `electron/` (Desktop-App) und `bin/` (CLI); der vorhandene Ordner `skills/` enthält keine wiederverwendbaren Agenten-Skills, sondern 42 auto-generierte SKILL.md-Referenzdateien (API/CLI-Doku für den eigenen MCP-/A2A-/REST-Zugriff auf OmniRoute selbst). <!-- manual -->
 
-OmniRoute ist ein selbstgehosteter AI-Gateway/Proxy-Server (Next.js 16, TypeScript, npm-Paket „omniroute", zusätzlich Docker/Electron/CLI-Distribution), der einen einheitlichen OpenAI-kompatiblen Endpunkt vor rund 250 LLM-Provider legt und Format-Übersetzung zwischen OpenAI-, Claude- und Gemini-API bietet. Kernproblem: Entwickler, die viele KI-Coding-Tools (Claude Code, Codex, Cursor, Cline, Copilot) parallel nutzen, sollen kostenlose/günstige Kontingente über Provider hinweg ausschöpfen, Rate-Limits per Auto-Fallback (18 Routing-Strategien, Circuit Breaker, Cooldowns) umgehen und Tokenverbrauch durch eigene Kompressionsverfahren (RTK, „Caveman") senken. Technisch bringt es einen MCP-Server (94 Tools, drei Transporte), einen A2A-JSON-RPC-Agentenserver, ein Skill-Framework, Memory-Subsystem und umfangreiche Policy-/Kosten-Engine mit; die Qualitätssicherung ist mit ca. 21.000 Tests, ~48 Quality-Gates und strengen Contribution-Regeln (CLAUDE.md/AGENTS.md) sehr ausgeprägt. Für ein AI-Company-OS ist es primär als Referenz-Infrastruktur relevant (Multi-Provider-Routing, Kostenkontrolle, MCP/A2A-Integrationsmuster), nicht als Skill- oder Agentenbibliothek zum Einbinden. Risiken: sehr großer, komplexer Monorepo-Codebestand, starke Marketingsprache im README, Node-only-Betrieb, Sicherheitsrelevanz durch eingebettete OAuth-Client-Secrets und lokal gespeicherte Provider-Credentials, sowie hohe Wartungslast durch Providerzahl und Feature-Umfang. MIT-lizenziert.
+OmniRoute ist ein selbstgehosteter AI-Gateway/Proxy-Server (Next.js 16, TypeScript, npm-Paket „omniroute", zusätzlich Docker/Electron/CLI-Distribution), der einen einheitlichen OpenAI-kompatiblen Endpunkt vor rund 250 LLM-Provider legt und Format-Übersetzung zwischen OpenAI-, Claude- und Gemini-API bietet. Kernproblem: Entwickler, die viele KI-Coding-Tools (Claude Code, Codex, Cursor, Cline, Copilot) parallel nutzen, sollen kostenlose/günstige Kontingente über Provider hinweg ausschöpfen, Rate-Limits per Auto-Fallback (18 Routing-Strategien, Circuit Breaker, Cooldowns) umgehen und Tokenverbrauch durch eigene Kompressionsverfahren (RTK, „Caveman") senken. Technisch bringt es einen MCP-Server (94 Tools, drei Transporte), einen A2A-JSON-RPC-Agentenserver, ein Skill-Framework, Memory-Subsystem und umfangreiche Policy-/Kosten-Engine mit; die Qualitätssicherung ist mit ca. 21.000 Tests, ~48 Quality-Gates und strengen Contribution-Regeln (CLAUDE.md/AGENTS.md) sehr ausgeprägt. Als Referenz-Infrastruktur ist es vor allem für Multi-Provider-Routing, Kostenkontrolle und MCP-/A2A-Integrationsmuster interessant, nicht als Skill- oder Agentenbibliothek zum Einbinden. Risiken: sehr großer, komplexer Monorepo-Codebestand, starke Marketingsprache im README, Node-only-Betrieb, Sicherheitsrelevanz durch eingebettete OAuth-Client-Secrets und lokal gespeicherte Provider-Credentials, sowie hohe Wartungslast durch Providerzahl und Feature-Umfang. MIT-lizenziert.
 
 ---
 
 ## DietrichGebert/ponytail
 
 - **URL:** https://github.com/DietrichGebert/ponytail
-- **Stars:** ⭐ 83.137
+- **Stars:** ⭐ 87.251
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
+- **Zuletzt aktualisiert:** 2026-07-22
 - **Dateien:** 156 · **Größe:** 1,6M
 - **Struktur:** Skill-/Plugin-Paket mit `skills/` (6 SKILL.md-Definitionen), `commands/` (Slash-Commands als .toml), `hooks/` (Lifecycle-Hooks u.a. für Claude Code/Codex) sowie zusätzlichen Adapterordnern (`.cursor/`, `.windsurf/`, `.clinerules/`, `.kiro/`, `.opencode/`, `.qoder/` etc.) für rund 20 Agent-Hosts; kein klassischer Anwendungscode, sondern ein Multi-Host-Plugin-System. <!-- manual -->
 
@@ -495,10 +495,10 @@ Ponytail ist ein Regel- und Skill-Paket, das KI-Coding-Agenten (Claude Code, Cod
 ## Egonex-AI/Understand-Anything
 
 - **URL:** https://github.com/Egonex-AI/Understand-Anything
-- **Stars:** ⭐ 74.054
+- **Stars:** ⭐ 75.483
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 469 · **Größe:** 31M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 497 · **Größe:** 31M
 - **Struktur:** `understand-anything-plugin/skills/`, `understand-anything-plugin/agents/` (project-scanner, file-analyzer usw.), Analyse-Engine in `understand-anything-plugin/packages/core`, Dashboard in `understand-anything-plugin/packages/dashboard`, Standalone-Viewer in `understand-anything-plugin/packages/viewer` (committeten Graph ohne Claude Code via `npx` ansehen) <!-- manual -->
 
 Ein Claude-Code-Plugin (ursprünglich von Lum1104, jetzt bei Egonex weitergeführt), das eine beliebige Codebasis mit einer Multi-Agent-Pipeline analysiert und daraus einen interaktiven Knowledge Graph baut – jede Datei, Funktion, Klasse und Abhängigkeit wird zum klickbaren, durchsuchbaren Knoten in einem visuellen Dashboard. Kombiniert deterministische Tree-sitter-Analyse (Imports, Exports, Funktions-/Klassendefinitionen, Aufrufstellen – reproduzierbar) mit LLM-Auswertung (Klartext-Zusammenfassungen, Architektur-Layer, Business-Domain-Mapping, geführte Touren). Sechs bis sieben spezialisierte Agenten (project-scanner, file-analyzer, architecture-analyzer, tour-builder, graph-reviewer, domain-analyzer, article-analyzer) arbeiten parallel; Folge-Läufe sind inkrementell (nur geänderte Dateien). Zentrale Befehle: `/understand` (Analyse), `/understand-dashboard` (Visualisierung), `/understand-chat` (Fragen zur Codebasis stellen), `/understand-diff` (Impact-Analyse von Änderungen), `/understand-onboard` (Onboarding-Guide generieren), `/understand-knowledge` (auch für Wissens-/Dokumentations-Basen nach Karpathy-Wiki-Muster nutzbar). Der Graph ist reines JSON und kann committet werden, damit Teammitglieder die Analyse nicht wiederholen müssen. Funktioniert über viele Agenten hinweg (Claude Code, Codex, Cursor, Copilot, Gemini CLI u.v.m.). Sehr relevant als direktes Vorbild für den eigenen `graphify`-Skill – ähnliches Ziel (Code/Wissen → Graph), aber mit ausgereifter Multi-Agent-Pipeline und Dashboard.
@@ -508,36 +508,36 @@ Ein Claude-Code-Plugin (ursprünglich von Lum1104, jetzt bei Egonex weitergefüh
 ## emilkowalski/skills
 
 - **URL:** https://github.com/emilkowalski/skills
-- **Stars:** ⭐ 12.849
+- **Stars:** ⭐ 19.394
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 8 · **Größe:** 84K
-- **Struktur:** 4× SKILL.md · Ordner: skills
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 13 · **Größe:** 118K
+- **Struktur:** 7× SKILL.md · Ordner: skills
 
-"Skills For Design Engineers" von Emil Kowalski (Design-Engineering-Erfahrung u.a. bei Vercel und Linear, Betreiber von animations.dev). Vier fokussierte Skills, die gezielt die "fehlende Design-Taste" von KI-Agenten adressieren: `emil-design-eng` (Hauptskill, primär Animation plus allgemeine Design-Ratschläge), `review-animations` (strenge Animations-Reviews nach Kowalskis eigenen Regeln), `animation-vocabulary` (präzises Vokabular, um Agenten exakt die gewünschte Animation zu entlocken) und `apple-design` (Apples Interface- und Bewegungsprinzipien, aus WWDC-Design-Talks destilliert und fürs Web übersetzt). Kernthese: Agenten treffen oft die falschen Detailentscheidungen (z.B. `ease-in` statt `ease-out` bei Enter-Animationen, solide statt halbtransparente Schatten) – kleine Fehler, die sich zu insgesamt mittelmäßigen statt herausragenden Interfaces summieren. Die Skills sind laut Autor ein Nebenprodukt echter Domänen-Expertise, nicht deren Ersatz. Installation über `npx skills@latest add emilkowalski/skills`. Sehr relevant als kompakte, hochkarätige Ergänzung zu den bereits vorhandenen Design-/Taste-Skills (`taste-skill`, `ui-ux-pro-max-skill`) – hier mit Fokus auf Animation und einem sehr erfahrenen, spezifischen Blickwinkel statt breiter Systematik.
+"Skills For Design Engineers" von Emil Kowalski (Design-Engineering-Erfahrung u.a. bei Vercel und Linear, Betreiber von animations.dev). Mittlerweile sieben fokussierte Skills, die gezielt die "fehlende Design-Taste" von KI-Agenten adressieren: `emil-design-eng` (Hauptskill, primär Animation plus allgemeine Design-Ratschläge), `review-animations` (strenge Animations-Reviews nach Kowalskis eigenen Regeln), `improve-animations` (auditiert die gesamte Codebase in acht Kategorien und schreibt priorisierte, selbstständig ausführbare Pläne statt selbst Code anzufassen), `find-animation-opportunities` (sucht UI-Stellen, die echt von Motion profitieren, und nennt auch, was nicht animiert werden sollte), `animation-vocabulary` (präzises Vokabular, um Agenten exakt die gewünschte Animation zu entlocken), `apple-design` (Apples Interface- und Bewegungsprinzipien, aus WWDC-Design-Talks destilliert und fürs Web übersetzt) und neu `pick-ui-library` (lässt den Agenten aus einer kuratierten Liste vertrauenswürdiger Bibliotheken wählen, statt Komponenten wie Toasts selbst zu bauen oder verwaiste Pakete zu installieren). Kernthese: Agenten treffen oft die falschen Detailentscheidungen (z.B. `ease-in` statt `ease-out` bei Enter-Animationen, solide statt halbtransparente Schatten) – kleine Fehler, die sich zu insgesamt mittelmäßigen statt herausragenden Interfaces summieren. Die Skills sind laut Autor ein Nebenprodukt echter Domänen-Expertise, nicht deren Ersatz. Installation über `npx skills@latest add emilkowalski/skills`. Sehr relevant als kompakte, hochkarätige Ergänzung zu den bereits vorhandenen Design-/Taste-Skills (`taste-skill`, `ui-ux-pro-max-skill`) – hier mit Fokus auf Animation und einem sehr erfahrenen, spezifischen Blickwinkel statt breiter Systematik.
 
 ---
 
 ## farion1231/cc-switch
 
 - **URL:** https://github.com/farion1231/cc-switch
-- **Stars:** ⭐ 117.220
+- **Stars:** ⭐ 119.750
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 1.089 · **Größe:** 36M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 1.130 · **Größe:** 40M
 - **Struktur:** Reiner Anwendungscode einer Tauri-Desktop-App: React/TypeScript-Frontend in `src/` (u.a. `components/providers`, `components/mcp`, `components/skills`, `components/proxy`) und Rust-Backend in `src-tauri/src/` (`commands/`, `services/`, `database/`, `proxy/`, `mcp/`); trotz Verzeichnisnamen wie `skills/` oder `mcp/` handelt es sich nicht um ein Claude-Code-Skill/Plugin-Paket, sondern um UI-Module zur Verwaltung von Skills/MCP-Konfigurationen anderer Tools. <!-- manual -->
 
-CC Switch ist eine Cross-Platform-Desktop-Anwendung (Tauri 2 mit Rust-Backend und React/TypeScript-Frontend), die zentrale Verwaltung von API-Provider-Konfigurationen für sieben KI-Coding-Tools bietet: Claude Code, Claude Desktop, Codex, Gemini CLI, OpenCode, OpenClaw und Hermes. Statt Konfigurationsdateien (JSON/TOML/.env) manuell zu editieren, bietet die App eine grafische Oberfläche mit über 50 Provider-Presets, Ein-Klick-Wechsel, System-Tray-Schnellzugriff sowie einer lokalen SQLite-Datenbank mit atomaren Schreibvorgängen zum Schutz vor Config-Korruption. Zusätzliche Funktionen umfassen einen lokalen Proxy mit Failover/Circuit-Breaker, vereinheitlichte Verwaltung von MCP-Servern, Prompts und Skills über mehrere Tools hinweg, ein Nutzungs-Dashboard für Kosten/Tokens sowie Cloud-Sync via Dropbox/OneDrive/WebDAV. Technisch handelt es sich um eine reine Anwendung (kein Python/Node-Package, keine Bibliothek), mit klarer Schichtenarchitektur (Commands/Services/DAO) im Rust-Teil. Relevanz für das AI-Company-OS liegt primär als Referenz für Provider-Switching-UX und Multi-Tool-Konfigurationsmanagement, weniger als wiederverwendbarer Code-Baustein. Wesentliches Risiko: Die App speichert API-Keys und Provider-Zugangsdaten lokal (SQLite/JSON) und synchronisiert diese optional über Cloud-Dienste Dritter; das README enthält zudem zahlreiche gesponserte Relay-Anbieter, was Sorgfalt bei Vertrauenswürdigkeit und Datenschutz nahelegt. Die Wartungsqualität wirkt aktiv (häufige Releases laut CHANGELOG), Tests via vitest/cargo test vorhanden. MIT-lizenziert.
+CC Switch ist eine Cross-Platform-Desktop-Anwendung (Tauri 2 mit Rust-Backend und React/TypeScript-Frontend), die zentrale Verwaltung von API-Provider-Konfigurationen für inzwischen acht KI-Coding-Tools bietet: Claude Code, Claude Desktop, Codex, Gemini CLI, OpenCode, OpenClaw, Hermes und seit v3.18.0 neu Grok Build (xAI) als achtes verwaltetes Tool mit eigenem Preset-Set, Proxy-Route und MCP-/Skill-Sync. Statt Konfigurationsdateien (JSON/TOML/.env) manuell zu editieren, bietet die App eine grafische Oberfläche mit über 50 Provider-Presets, Ein-Klick-Wechsel, System-Tray-Schnellzugriff sowie einer lokalen SQLite-Datenbank mit atomaren Schreibvorgängen zum Schutz vor Config-Korruption. Neu hinzugekommen ist außerdem eine direkte xAI-Grok-Kontoanmeldung per OAuth-Device-Flow für Claude Code, Claude Desktop und Codex, bei der ein lokaler Proxy Anfragen ohne eigenen API-Key in die xAI-API übersetzt. Zusätzliche Funktionen umfassen einen lokalen Proxy mit Failover/Circuit-Breaker, vereinheitlichte Verwaltung von MCP-Servern, Prompts und Skills über mehrere Tools hinweg, ein Nutzungs-Dashboard für Kosten/Tokens sowie Cloud-Sync via Dropbox/OneDrive/WebDAV. Technisch handelt es sich um eine reine Anwendung (kein Python/Node-Package, keine Bibliothek), mit klarer Schichtenarchitektur (Commands/Services/DAO) im Rust-Teil. Besonders nützlich ist sie als Referenz für Provider-Switching-UX und Multi-Tool-Konfigurationsmanagement, weniger als wiederverwendbarer Code-Baustein. Wesentliches Risiko: Die App speichert API-Keys, OAuth-Refresh-Tokens und Provider-Zugangsdaten lokal (SQLite/JSON) und synchronisiert diese optional über Cloud-Dienste Dritter; das README enthält zudem zahlreiche gesponserte Relay-Anbieter, was Sorgfalt bei Vertrauenswürdigkeit und Datenschutz nahelegt. Die Wartungsqualität wirkt aktiv (häufige Releases laut CHANGELOG), Tests via vitest/cargo test vorhanden. MIT-lizenziert.
 
 ---
 
 ## garrytan/gstack
 
 - **URL:** https://github.com/garrytan/gstack
-- **Stars:** ⭐ 121.913
+- **Stars:** ⭐ 123.424
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 1.170 · **Größe:** 53M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 1.179 · **Größe:** 53M
 - **Struktur:** 59× SKILL.md · Ordner: skills, agents, hooks, references
 
 gstack ist Garry Tans (Präsident/CEO von Y Combinator) persönliches Open-Source-System, das Claude Code in ein virtuelles Engineering-Team verwandelt: 23 Rollen-Skills und 8 "Power Tools" bilden einen kompletten Sprint-Zyklus ab – Think → Plan → Build → Review → Test → Ship → Reflect. Zentrale Skills: `/office-hours` (Produktinterview mit gezielten Rückfragen, erzeugt Design-Doc), `/plan-ceo-review`/`/plan-eng-review`/`/plan-design-review`/`/plan-devex-review` (mehrstufige Planbewertung aus verschiedenen Rollen-Perspektiven), `/design-shotgun` (KI-generierte Mockup-Varianten mit Geschmacks-Lernen), `/review` und `/qa` (automatisierte Code- und Browser-Tests mit echten Screenshots), `/cso` (OWASP+STRIDE-Sicherheitsaudit), `/ship`/`/land-and-deploy` (Test, PR, Deployment, Monitoring). Ergänzt durch GBrain, eine persistente, projektübergreifende Wissensdatenbank für Agenten, sowie ausgefeilte Sicherheitsmechanismen gegen Prompt-Injection im Browser-Modus. Funktioniert nicht nur mit Claude Code, sondern auch mit Codex, Cursor, OpenCode u.a. MIT-lizenziert, sehr aktiv gepflegt (detailliertes Architektur- und Sicherheitsdokument). Relevant als Vorbild für einen vollständigen, rollenbasierten Entwicklungs-Workflow mit Review-Gates und Browser-QA.
@@ -547,23 +547,23 @@ gstack ist Garry Tans (Präsident/CEO von Y Combinator) persönliches Open-Sourc
 ## github/spec-kit
 
 - **URL:** https://github.com/github/spec-kit
-- **Stars:** ⭐ 121.285
+- **Stars:** ⭐ 123.098
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 462 · **Größe:** 7,7M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 507 · **Größe:** 8,8M
 - **Struktur:** Kern ist eine Python-CLI (`src/specify_cli` mit `integrations/`, `bundler/`, `presets/`, `workflows/`) zur Codegenerierung; `templates/commands`, `extensions/*/commands` und `presets/*/commands` enthalten Slash-Command-/Skill-Vorlagen, die beim `specify init` in Zielprojekte (z.B. `.claude/commands/`) geschrieben werden – kein eigenständiges Skill-Paket, sondern ein Generator/Installer für Skill- und Command-Artefakte anderer Agenten. <!-- manual -->
 
-Spec-Kit ist GitHubs Referenzimplementierung von Spec-Driven Development (SDD), einem Workflow, bei dem Spezifikationen nicht nur Dokumentation, sondern ausführbarer Ausgangspunkt für KI-gestützte Codegenerierung sind. Kernstück ist die Python-CLI „specify“ (uv/pipx-Installation), die in Zielprojekten strukturierte Artefakte anlegt und über Slash-Commands bzw. Agent-Skills (`/speckit.constitution`, `.specify`, `.plan`, `.tasks`, `.implement`, `.clarify`, `.analyze`, `.checklist`) einen mehrstufigen Prozess von Projektprinzipien über Spezifikation, Planung, Taskaufteilung bis zur Implementierung steuert. Über 30 Coding-Agenten (Claude Code, Copilot, Cursor, Codex, Gemini u.a.) werden per Integrationsmodule unterstützt, inklusive Skills-Mode für einige Agenten. Erweiterbar über Extensions (neue Fähigkeiten), Presets (Format-/Terminologie-Anpassungen) und Bundles (rollenbasierte Komplettpakete); alle Komponenten werden versioniert über Kataloge verwaltet und lokal installiert. Für ein AI-Company-OS ist Spec-Kit als Vergleichsreferenz relevant: es ist stärker prozess- und Artefakt-orientiert (Spec/Plan/Tasks als Dateien) als reine Skill-Sammlungen wie superpowers oder gsd-core. Stärken: breite Agent-Unterstützung, klare Phasenstruktur, aktive Erweiterbarkeit. Risiken: hohe CLI-/Tooling-Komplexität, starke Abhängigkeit von Python/uv, GitHub-zentrierte Governance, und der generierte Prozess kann für kleine Projekte overhead-lastig wirken. MIT-lizenziert.
+Spec-Kit ist GitHubs Referenzimplementierung von Spec-Driven Development (SDD), einem Workflow, bei dem Spezifikationen nicht nur Dokumentation, sondern ausführbarer Ausgangspunkt für KI-gestützte Codegenerierung sind. Kernstück ist die Python-CLI „specify“ (uv/pipx-Installation), die in Zielprojekten strukturierte Artefakte anlegt und über Slash-Commands bzw. Agent-Skills (`/speckit.constitution`, `.specify`, `.plan`, `.tasks`, `.implement`, `.clarify`, `.analyze`, `.checklist`) einen mehrstufigen Prozess von Projektprinzipien über Spezifikation, Planung, Taskaufteilung bis zur Implementierung steuert. Über 30 Coding-Agenten (Claude Code, Copilot, Cursor, Codex, Gemini u.a.) werden per Integrationsmodule unterstützt, inklusive Skills-Mode für einige Agenten. Erweiterbar über Extensions (neue Fähigkeiten), Presets (Format-/Terminologie-Anpassungen) und Bundles (rollenbasierte Komplettpakete); alle Komponenten werden versioniert über Kataloge verwaltet und lokal installiert. Als Vergleichsreferenz ist Spec-Kit besonders interessant: Es ist stärker prozess- und artefaktorientiert (Spec/Plan/Tasks als Dateien) als reine Skill-Sammlungen wie superpowers oder gsd-core. Stärken: breite Agent-Unterstützung, klare Phasenstruktur, aktive Erweiterbarkeit. Risiken: hohe CLI-/Tooling-Komplexität, starke Abhängigkeit von Python/uv, GitHub-zentrierte Governance, und der generierte Prozess kann für kleine Projekte overhead-lastig wirken. MIT-lizenziert.
 
 ---
 
 ## Graphify-Labs/graphify
 
 - **URL:** https://github.com/Graphify-Labs/graphify
-- **Stars:** ⭐ 86.444
+- **Stars:** ⭐ 93.072
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 735 · **Größe:** 13M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 752 · **Größe:** 14M
 - **Struktur:** Python-Paket (`pyproject.toml`, CLI-Entry-Point `graphify`) mit Quellcode in `graphify/`; enthält zwar einen Unterordner `graphify/skills/`, dieser ist aber ein Vorlagenverzeichnis für die vom Tool selbst generierten Skill-Dateien verschiedener KI-Assistenten (Claude, Codex, Cursor u.a.), kein direkt kopierbarer Skill-Ordner für Dritte. <!-- manual -->
 
 Graphify ist ein Python-CLI-Tool und PyPI-Paket (`graphifyy`), das Code, Dokumente, PDFs, Bilder und Videos eines Projekts in einen durchsuchbaren Knowledge Graph überführt, den man abfragt statt Dateien zu grep-en. Code wird lokal per Tree-Sitter-AST ohne LLM geparst (deterministisch, rund 40 Sprachen), Dokumente/Medien werden optional über das Modell des jeweiligen KI-Assistenten oder einen konfigurierten API-Key semantisch erschlossen; jede Kante ist als EXTRACTED oder INFERRED markiert. Ausgabe sind drei Artefakte (graph.html, GRAPH_REPORT.md, graph.json), abfragbar per `/graphify`-Befehl, CLI-Kommandos (`query`, `path`, `explain`) oder einem optionalen MCP-Server (stdio/HTTP). Wichtige Erkenntnis für dieses Environment: Dies ist exakt die Quelle des bereits lokal installierten gleichnamigen Skills (`~/.claude/skills/graphify/SKILL.md`, identische Beschreibung „any input to knowledge graph"), der über die Befehle `graphify install` bzw. `graphify claude install` genau aus diesem Repository generiert wird — kein unabhängiges Projekt mit ähnlichem Namen und keine bloße Inspirationsquelle, sondern das Original-Tool selbst. Relevant für Agenten/Workflows, die Codebasen oder Wissenssammlungen explorierbar machen wollen, insbesondere als Ergänzung zu grep/Read-Workflows in Claude Code, Cursor, Codex etc. Stärken: breite Sprachabdeckung, lokale Verarbeitung von Code, Git-Hook-Integration, PR-Triage. Einschränkungen: junges YC-S26-Startup-Projekt mit kommerziellem Ableger (Penpax), Abhängigkeit von externen LLM-Backends für Nicht-Code-Inhalte, hohe CLI-Komplexität mit vielen Flags/Plattformen. MIT-lizenziert.
@@ -573,10 +573,10 @@ Graphify ist ein Python-CLI-Tool und PyPI-Paket (`graphifyy`), das Code, Dokumen
 ## headroomlabs-ai/headroom
 
 - **URL:** https://github.com/headroomlabs-ai/headroom
-- **Stars:** ⭐ 59.174
+- **Stars:** ⭐ 61.000
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 1.959 · **Größe:** 57M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 2.123 · **Größe:** 59M
 - **Struktur:** Rust-Kern in `crates/`, Python-Paket in `headroom/`, Integrationen in `plugins/`, umfangreiche Evals und Dokumentation; kein klassisches Skill-Paket <!-- manual -->
 
 Headroom ist eine lokale Kontext-Kompressionsschicht für LLM-Anwendungen und Coding-Agenten. Es reduziert nach eigener Darstellung Tool-Ausgaben, Logs, RAG-Chunks, Dateien und Gesprächshistorie, bevor sie ein Modell erreichen, und verbindet das mit einer reversiblem Cache: Originale bleiben lokal verfügbar und können über Retrieval nachgeladen werden. Der Inhalt kann als Python-/TypeScript-Library, lokaler OpenAI-kompatibler Proxy, MCP-Server oder Agent-Wrapper eingesetzt werden; der Wrapper unterstützt unter anderem Claude Code, Codex, Copilot, OpenCode und Cline. Die Architektur routet Inhalte zu JSON-, AST-Code- oder Text-Kompressoren und versucht über CacheAligner zudem Provider-KV-Caches besser nutzbar zu machen. Ergänzend analysiert `headroom learn` vergangene Sitzungen und kann Korrekturen oder Präferenzen in lokale Agenten-Anweisungen schreiben. Die README nennt Benchmarks und Einsparungswerte, die als Herstellerangaben zu verstehen sind. Relevant als Referenz für lokale, wiederherstellbare Kontextreduktion und für die Kombination von Token-Ökonomie, Memory und Agenten-Integration. Wegen Proxy, MCP, Session-Auswertung und möglichen Änderungen an Agenten-Konfigurationen nur nach Datenfluss-, Telemetrie- und Berechtigungsprüfung produktiv einsetzen. Apache-2.0-lizenziert.
@@ -586,20 +586,20 @@ Headroom ist eine lokale Kontext-Kompressionsschicht für LLM-Anwendungen und Co
 ## intellectronica/ruler
 
 - **URL:** https://github.com/intellectronica/ruler
-- **Stars:** ⭐ 2.802
+- **Stars:** ⭐ 2.814
 - **Heruntergeladen:** 2026-07-15
-- **Zuletzt aktualisiert:** 2026-07-15
-- **Dateien:** 253 · **Größe:** 70M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 258 · **Größe:** 71M
 - **Struktur:** TypeScript-CLI mit Quellcode in `src/` (Adapter unter `src/agents/`, Rule-/Konfigurations- und Dateisystemlogik in `src/core/`, MCP-Transformationen in `src/mcp/`), umfangreichen Jest-Tests in `tests/` und GitHub-Actions-Workflows in `.github/workflows/` <!-- manual -->
 
-Ruler ist eine MIT-lizenzierte TypeScript-CLI, die Anweisungen für AI-Coding-Agenten aus einem zentralen `.ruler/`-Verzeichnis in die jeweiligen nativen Konfigurationsdateien ausspielt. Markdown-Regeln werden rekursiv gesammelt, mit Herkunftsmarkern zusammengeführt und unter anderem für Codex, Claude Code, Copilot, Cursor, Gemini CLI, OpenCode und Aider erzeugt. Optional synchronisiert das Tool MCP-Server-Konfigurationen, Skills und Subagenten; verschachtelte `.ruler/`-Verzeichnisse erlauben unterschiedliche Regeln für Teilbereiche eines Monorepos. Damit ist das Projekt vor allem als Referenz für Multi-Harness-Konfiguration und die Verteilung eines gemeinsamen `AGENTS.md`-/Skill-Kontexts interessant. Die Implementierung enthält Backups, Provenance-Dateien, idempotente Updates sowie Schutz gegen Schreibvorgänge über Symlinks oder außerhalb des Projektroots. Die Testbasis deckt Adapter, MCP-Merges, Revert-Verhalten und Sicherheitsgrenzen breit ab; CI prüft Linting, Tests, Build und npm-Audits mit gepinnten GitHub Actions. Praktische Risiken bleiben: `apply` verändert viele agentenspezifische Dateien und standardmäßig auch `.gitignore`; MCP-Konfigurationen können Umgebungsvariablen oder Zugangsdaten referenzieren; Skills und Subagenten sind laut README experimentell. Wegen der aktiven Beta-Positionierung und der vielen Tool-spezifischen Adapter sollte Ruler zunächst nur in einem Testprojekt mit `--dry-run`, gezielter Agentenauswahl und deaktivierten MCP-/Gitignore-Updates evaluiert werden. Für das AI-Company-OS empfiehlt sich die Nutzung als Referenz, nicht als unbesehen zu übernehmendes Tool.
+Ruler ist eine MIT-lizenzierte TypeScript-CLI, die Anweisungen für AI-Coding-Agenten aus einem zentralen `.ruler/`-Verzeichnis in die jeweiligen nativen Konfigurationsdateien ausspielt. Markdown-Regeln werden rekursiv gesammelt, mit Herkunftsmarkern zusammengeführt und unter anderem für Codex, Claude Code, Copilot, Cursor, Gemini CLI, OpenCode und Aider erzeugt. Optional synchronisiert das Tool MCP-Server-Konfigurationen, Skills und Subagenten; verschachtelte `.ruler/`-Verzeichnisse erlauben unterschiedliche Regeln für Teilbereiche eines Monorepos. Damit ist das Projekt vor allem als Referenz für Multi-Harness-Konfiguration und die Verteilung eines gemeinsamen `AGENTS.md`-/Skill-Kontexts interessant. Die Implementierung enthält Backups, Provenance-Dateien, idempotente Updates sowie Schutz gegen Schreibvorgänge über Symlinks oder außerhalb des Projektroots. Die Testbasis deckt Adapter, MCP-Merges, Revert-Verhalten und Sicherheitsgrenzen breit ab; CI prüft Linting, Tests, Build und npm-Audits mit gepinnten GitHub Actions. Praktische Risiken bleiben: `apply` verändert viele agentenspezifische Dateien und standardmäßig auch `.gitignore`; MCP-Konfigurationen können Umgebungsvariablen oder Zugangsdaten referenzieren; Skills und Subagenten sind laut README experimentell. Wegen der aktiven Beta-Positionierung und der vielen Tool-spezifischen Adapter sollte Ruler zunächst nur in einem Testprojekt mit `--dry-run`, gezielter Agentenauswahl und deaktivierten MCP-/Gitignore-Updates evaluiert werden. Für Teams, die ein solches System aufbauen, empfiehlt sich Ruler als Referenz, nicht als unbesehen zu übernehmendes Tool.
 
 ---
 
 ## jakubkrehel/make-interfaces-feel-better
 
 - **URL:** https://github.com/jakubkrehel/make-interfaces-feel-better
-- **Stars:** ⭐ 2.338
+- **Stars:** ⭐ 2.431
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-07-13
 - **Dateien:** 8 · **Größe:** 36K
@@ -612,7 +612,7 @@ Ein einzelner, bewusst kompakter Design-Engineering-Skill für die letzte Qualit
 ## juliusbrussee/caveman
 
 - **URL:** https://github.com/juliusbrussee/caveman
-- **Stars:** ⭐ 89.501
+- **Stars:** ⭐ 91.733
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-07-13
 - **Dateien:** 167 · **Größe:** 848K
@@ -625,7 +625,7 @@ Caveman ist ein Skill/Plugin, das KI-Coding-Agenten in komprimiertem „Caveman"
 ## karpathy/autoresearch
 
 - **URL:** https://github.com/karpathy/autoresearch
-- **Stars:** ⭐ 91.115
+- **Stars:** ⭐ 91.732
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-07-13
 - **Dateien:** 10 · **Größe:** 747K
@@ -638,36 +638,36 @@ Autoresearch ist Andrej Karpathys bewusst kleines Experiment für autonome LLM-F
 ## kepano/obsidian-skills
 
 - **URL:** https://github.com/kepano/obsidian-skills
-- **Stars:** ⭐ 41.940
+- **Stars:** ⭐ 42.895
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-07-13
 - **Dateien:** 14 · **Größe:** 53K
 - **Struktur:** 5× SKILL.md · Ordner: skills, references
 
-Kepanos kompakte Skill-Sammlung ergänzt Agenten um Obsidian-spezifisches Wissen, ohne ein eigenes Framework zu erzwingen. Sie enthält fünf klar getrennte Skills: `obsidian-markdown` für Wikilinks, Embeds, Callouts und Properties; `obsidian-bases` für datenbankartige `.base`-Ansichten mit Filtern und Formeln; `json-canvas` für valide `.canvas`-Dateien; `obsidian-cli` für die Arbeit mit einer laufenden Obsidian-Instanz sowie `defuddle` zum Extrahieren von sauberem Markdown aus Webseiten. Für dieses AI-Company-OS ist vor allem `obsidian-markdown` eine passende Referenz: Das Repo ist selbst ein Obsidian-Vault, verwendet Wiki-Links und legt Wert auf portable Markdown-Dateien. JSON Canvas und Bases sind sinnvolle Ergänzungen, falls künftig visuelle Maps oder querybare Arbeitsübersichten explizit gewünscht werden. Der CLI-Skill kann Dateien ändern, JavaScript im Obsidian-Kontext ausführen, Plugins neu laden und Screenshots erstellen; daher nur mit klar benanntem Vault und enger Aufgabe verwenden. `defuddle` fordert bei Bedarf eine globale npm-Installation und ruft externe URLs ab. Das Repository enthält keine eigenen ausführbaren Scripts; die Hauptgefahr liegt in den durch Skills ausgelösten CLI-, Installations- und Netzwerkaktionen. Als Referenz sowie für eine selektive Übernahme einzelner, überprüfter Skills gut geeignet. MIT-lizenziert.
+Kepanos kompakte Skill-Sammlung ergänzt Agenten um Obsidian-spezifisches Wissen, ohne ein eigenes Framework zu erzwingen. Sie enthält fünf klar getrennte Skills: `obsidian-markdown` für Wikilinks, Embeds, Callouts und Properties; `obsidian-bases` für datenbankartige `.base`-Ansichten mit Filtern und Formeln; `json-canvas` für valide `.canvas`-Dateien; `obsidian-cli` für die Arbeit mit einer laufenden Obsidian-Instanz sowie `defuddle` zum Extrahieren von sauberem Markdown aus Webseiten. Besonders passend ist `obsidian-markdown`: Das Repo ist selbst ein Obsidian-Vault, verwendet Wiki-Links und legt Wert auf portable Markdown-Dateien. JSON Canvas und Bases sind sinnvolle Ergänzungen, falls künftig visuelle Maps oder querybare Arbeitsübersichten explizit gewünscht werden. Der CLI-Skill kann Dateien ändern, JavaScript im Obsidian-Kontext ausführen, Plugins neu laden und Screenshots erstellen; daher nur mit klar benanntem Vault und enger Aufgabe verwenden. `defuddle` fordert bei Bedarf eine globale npm-Installation und ruft externe URLs ab. Das Repository enthält keine eigenen ausführbaren Scripts; die Hauptgefahr liegt in den durch Skills ausgelösten CLI-, Installations- und Netzwerkaktionen. Als Referenz sowie für eine selektive Übernahme einzelner, überprüfter Skills gut geeignet. MIT-lizenziert.
 
 ---
 
 ## langchain-ai/openwiki
 
 - **URL:** https://github.com/langchain-ai/openwiki
-- **Stars:** ⭐ 11.264
+- **Stars:** ⭐ 12.766
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 90 · **Größe:** 1012K
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 132 · **Größe:** 1,3M
 - **Struktur:** Reiner Anwendungscode in `src/` (agent, auth, connectors, cli.tsx) plus `test/` und `examples/`; kein Skill-/Agent-Definitionsordner im OS-Sinne — der Ordner `openwiki/` enthält nur die vom Tool selbst generierte Wiki-Doku, und `AGENTS.md`/`CLAUDE.md` sind autogenerierte Verweisdateien auf diese Doku, keine Agentendefinitionen. <!-- manual -->
 
-OpenWiki ist ein von LangChain entwickeltes Node/TypeScript-CLI-Tool, das für Codebasen oder persönliches Wissen automatisch eine lokale "Agent-Wiki" erstellt und pflegt. Es unterstützt zwei Modi: Code-Modus generiert Repository-Dokumentation (Architektur, Workflows, Domänenkonzepte) im Ordner `openwiki/` und aktualisiert diese per CI-Workflow (GitHub Actions, GitLab, Bitbucket) via Pull Request; Personal-Modus baut ein persönliches Wissens-Wiki unter `~/.openwiki/wiki` aus Quellen wie lokalen Git-Repos, Gmail, Notion, Slack, X/Twitter, Websuche und Hacker News. Deterministische Connector-Tools ziehen Rohdaten, ein LLM-Agent (LangChain-basiert, mit better-sqlite3-Checkpointing) synthetisiert daraus Markdown-Seiten. Zusätzlich schreibt es Blöcke in `AGENTS.md`/`CLAUDE.md`, damit Coding-Agenten die Wiki als Kontextquelle referenzieren. Unterstützt diverse LLM-Provider (OpenAI, Anthropic, OpenRouter, Fireworks, Baseten, NVIDIA NIM, OpenAI-kompatible Endpunkte) sowie optionales LangSmith-Tracing. Relevant für KI-gestützte Entwicklung als Ergänzung/Alternative zu Doku-Retrieval-Tools wie Context7, insbesondere für automatisch aktuell gehaltene Projektdokumentation als Agentenkontext. Risiken: junges Projekt, lokale Speicherung von API-Keys/OAuth-Tokens in `~/.openwiki/.env`, native Abhängigkeit (better-sqlite3) mit Windows/Bun-Build-Problemen, starke Kopplung an LangChain-Ökosystem, laufende LLM-Kosten, und weitreichende OAuth-Connector-Berechtigungen (Gmail, Slack, X, Notion) mit Datenschutzimplikationen. MIT-lizenziert.
+OpenWiki ist ein von LangChain entwickeltes Node/TypeScript-CLI-Tool, das für Codebasen oder persönliches Wissen automatisch eine lokale "Agent-Wiki" erstellt und pflegt. Es unterstützt zwei Modi: Code-Modus generiert Repository-Dokumentation (Architektur, Workflows, Domänenkonzepte) im Ordner `openwiki/` und aktualisiert diese per CI-Workflow (GitHub Actions, GitLab, Bitbucket) via Pull Request; Personal-Modus baut ein persönliches Wissens-Wiki unter `~/.openwiki/wiki` aus Quellen wie lokalen Git-Repos, Gmail, Notion, Slack, X/Twitter, Websuche und Hacker News. Deterministische Connector-Tools ziehen Rohdaten, ein LLM-Agent (LangChain-basiert, mit better-sqlite3-Checkpointing) synthetisiert daraus Markdown-Seiten. Zusätzlich schreibt es Blöcke in `AGENTS.md`/`CLAUDE.md`, damit Coding-Agenten die Wiki als Kontextquelle referenzieren. Unterstützt inzwischen deutlich mehr LLM-Provider (OpenAI inkl. ChatGPT-Login, Anthropic, OpenRouter mit Provider-Pinning, Gemini via AI Studio, Gemini Enterprise/Vertex AI, AWS Bedrock, Nebius Token Factory, Fireworks, Baseten, NVIDIA NIM, OpenAI-kompatible Endpunkte) sowie optionales LangSmith-Tracing; das Tool warnt zudem, wenn ein konfiguriertes Modell nicht zum gewählten Provider passt. Relevant für KI-gestützte Entwicklung als Ergänzung/Alternative zu Doku-Retrieval-Tools wie Context7, insbesondere für automatisch aktuell gehaltene Projektdokumentation als Agentenkontext. Risiken: junges Projekt, lokale Speicherung von API-Keys/OAuth-Tokens in `~/.openwiki/.env`, native Abhängigkeit (better-sqlite3) mit Windows/Bun-Build-Problemen, starke Kopplung an LangChain-Ökosystem, laufende LLM-Kosten, und weitreichende OAuth-Connector-Berechtigungen (Gmail, Slack, X, Notion) mit Datenschutzimplikationen. MIT-lizenziert.
 
 ---
 
 ## Leonxlnx/taste-skill
 
 - **URL:** https://github.com/Leonxlnx/taste-skill
-- **Stars:** ⭐ 63.523
+- **Stars:** ⭐ 66.010
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 56 · **Größe:** 1,6M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 58 · **Größe:** 1,6M
 - **Struktur:** 13× SKILL.md · Ordner: skills
 
 "Anti-Slop Frontend Framework" – eine Sammlung portabler Agent-Skills, die die visuelle Qualität von KI-generierten Frontends verbessern sollen (Layout, Typografie, Bewegung, Abstände), statt generisch wirkender Standard-UIs. Enthält mehrere Implementierungs-Varianten für unterschiedliche Stilrichtungen: das Standard-`taste-skill` (v2, mit einstellbaren Reglern für Layout-Varianz, Bewegungsintensität und visuelle Dichte), eine strengere GPT/Codex-Variante, sowie spezialisierte Stile (minimalistisch, brutalistisch, "soft"/hochwertig), zusätzlich ein Skill zur Überarbeitung bestehender Projekte (`redesign-skill`) und eines gegen abgeschnittene/unvollständige Ausgaben. Ergänzend gibt es reine Bildgenerierungs-Skills (Website-Mockups, Mobile-Screens, Brand-Kits) zur Nutzung mit Bildgeneratoren wie ChatGPT Images, deren Ergebnisse dann an Coding-Agenten übergeben werden. Framework-agnostisch (React, Vue, Svelte). Installierbar über `npx skills add`. Relevant als Referenz für konkrete, anwendbare Stilregeln gegen generisch wirkende KI-UIs sowie für das Muster "Bildgenerierung zur Referenz, dann Code-Umsetzung".
@@ -677,11 +677,11 @@ OpenWiki ist ein von LangChain entwickeltes Node/TypeScript-CLI-Tool, das für C
 ## mattpocock/skills
 
 - **URL:** https://github.com/mattpocock/skills
-- **Stars:** ⭐ 170.342
+- **Stars:** ⭐ 180.343
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 114 · **Größe:** 450K
-- **Struktur:** 39× SKILL.md · Ordner: skills
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 167 · **Größe:** 475K
+- **Struktur:** 41× SKILL.md · Ordner: skills, agents
 
 Sammlung von Agent-Skills von Matt Pocock (AI Hero), die er täglich für echte Softwareentwicklung nutzt – bewusst als Gegenentwurf zu "Vibe Coding" und prozess-diktierenden Frameworks wie GSD, BMAD oder Spec-Kit. Die Skills sind klein, modular, modellunabhängig und adressieren vier typische Fehlerquellen bei KI-gestützter Entwicklung: (1) Missverständnis zwischen Nutzer und Agent, gelöst durch "Grilling"-Sessions (`grill-me`, `grill-with-docs`), die den Agenten vor der Umsetzung gezielt nachfragen lassen; (2) zu weitschweifige Agenten, gelöst durch eine geteilte Fachsprache in einem `CONTEXT.md`-Dokument; (3) nicht funktionierender Code, gelöst durch strikte Test-Driven-Development- und Debugging-Skills (`tdd`, `diagnosing-bugs`); (4) architektonischer Verfall ("Ball of Mud"), adressiert durch `improve-codebase-architecture`. Skills sind in zwei Kategorien gegliedert: Engineering (Code-Arbeit) und Productivity (allgemeine Workflows), jeweils unterteilt in user-invoked (nur per Slash-Command aufrufbar, orchestrierend) und model-invoked (auch automatisch vom Agenten genutzt, enthalten die eigentliche Disziplin). Relevant als Vorbild für strukturierte, disziplinierte Engineering-Skills mit klarer Trennung von Orchestrierung und wiederverwendbarer Logik.
 
@@ -690,36 +690,36 @@ Sammlung von Agent-Skills von Matt Pocock (AI Hero), die er täglich für echte 
 ## microsoft/markitdown
 
 - **URL:** https://github.com/microsoft/markitdown
-- **Stars:** ⭐ 165.964
+- **Stars:** ⭐ 167.934
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
+- **Zuletzt aktualisiert:** 2026-07-22
 - **Dateien:** 163 · **Größe:** 24M
 - **Struktur:** keine Standard-Skill-/Agent-Ordner (Quellcode/CLI oder reine Doku)
 
-MarkItDown ist ein von Microsoft (AutoGen-Team) entwickeltes Python-Utility, das diverse Dateiformate (PDF, Word, PowerPoint, Excel, Bilder, Audio, HTML, CSV/JSON/XML, ZIP, EPub, YouTube-URLs) in Markdown konvertiert, um sie für LLM-Pipelines und Textanalyse nutzbar zu machen. Der Ansatz: Struktur (Überschriften, Listen, Tabellen, Links) wird erhalten, das Ergebnis ist nicht auf menschliche Lesbarkeit, sondern auf Token-Effizienz und LLM-Verständlichkeit optimiert. Technisch gibt es eine CLI (`markitdown datei.pdf`), eine Python-API, einen Docker-Container sowie einen separaten MCP-Server (`markitdown-mcp`), der die Konvertierung direkt als Tool in MCP-fähige Agenten-Umgebungen einbindet – dadurch unmittelbar relevant für Agenten- und Tool-Workflows in einem AI-Company-OS. Ein Plugin-System erlaubt Erweiterungen (z. B. `markitdown-ocr` für LLM-gestützte OCR über Vision-Modelle); optional Azure Document Intelligence/Content Understanding für höherwertige Cloud-Konvertierung. Stärken: breite Formatunterstützung, leichtgewichtig, aktiv von Microsoft gepflegt, klare Sicherheitsdoku. Risiken: explizit dokumentierte Sicherheitswarnung, da I/O mit Prozessrechten erfolgen (SSRF/Path-Traversal-Risiko bei ungeprüften Eingaben), Konvertierungsqualität ist funktional statt hochtreu, viele optionale Abhängigkeiten (`[all]`) erhöhen die Angriffsfläche, und Cloud-Feature (Azure) verursachen laufende Kosten. MIT-lizenziert.
+MarkItDown ist ein von Microsoft (AutoGen-Team) entwickeltes Python-Utility, das diverse Dateiformate (PDF, Word, PowerPoint, Excel, Bilder, Audio, HTML, CSV/JSON/XML, ZIP, EPub, YouTube-URLs) in Markdown konvertiert, um sie für LLM-Pipelines und Textanalyse nutzbar zu machen. Der Ansatz: Struktur (Überschriften, Listen, Tabellen, Links) wird erhalten, das Ergebnis ist nicht auf menschliche Lesbarkeit, sondern auf Token-Effizienz und LLM-Verständlichkeit optimiert. Technisch gibt es eine CLI (`markitdown datei.pdf`), eine Python-API, einen Docker-Container sowie einen separaten MCP-Server (`markitdown-mcp`), der die Konvertierung direkt als Tool in MCP-fähige Agenten-Umgebungen einbindet – dadurch unmittelbar relevant für Agenten- und Tool-Workflows in KI-gestützten Arbeitsumgebungen. Ein Plugin-System erlaubt Erweiterungen (z. B. `markitdown-ocr` für LLM-gestützte OCR über Vision-Modelle); optional Azure Document Intelligence/Content Understanding für höherwertige Cloud-Konvertierung. Stärken: breite Formatunterstützung, leichtgewichtig, aktiv von Microsoft gepflegt, klare Sicherheitsdoku. Risiken: explizit dokumentierte Sicherheitswarnung, da I/O mit Prozessrechten erfolgen (SSRF/Path-Traversal-Risiko bei ungeprüften Eingaben), Konvertierungsqualität ist funktional statt hochtreu, viele optionale Abhängigkeiten (`[all]`) erhöhen die Angriffsfläche, und Cloud-Feature (Azure) verursachen laufende Kosten. MIT-lizenziert.
 
 ---
 
 ## midudev/autoskills
 
 - **URL:** https://github.com/midudev/autoskills
-- **Stars:** ⭐ 6.519
+- **Stars:** ⭐ 6.559
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
+- **Zuletzt aktualisiert:** 2026-07-22
 - **Dateien:** 4.610 · **Größe:** 30M
 - **Struktur:** CLI-Quellcode in `src/` und `packages/`; kuratierte, gehashte Skill-Registry und Metadaten im Repository; keine klassische Quellenstruktur je Skill <!-- manual -->
 
-Autoskills ist eine Node.js-CLI, die ein Projekt analysiert, dessen Tech-Stack aus Manifesten und Konfigurationen ableitet und dazu passende Agent-Skills installiert. Der interessante Teil ist weniger der Ein-Befehl-Installer als das Supply-Chain-Modell: Die Skills werden laut README nicht zur Laufzeit aus beliebigen Upstream-Repos gezogen, sondern von Maintainer:innen in eine repositoryeigene Registry synchronisiert, auf Prompt-Injection- und Supply-Chain-Risiken geprüft und mit SHA-256-Hashes im Manifest festgehalten. Der Installer lädt nur die ausgewählten Registry-Dateien, verifiziert sie gegen das Manifest und schreibt Herkunft und Bundle-Hash in ein `skills-lock.json`. Unterstützt werden breite moderne Stacks von React/Next.js bis zu Flutter, Cloudflare, Datenbanken, Testing und AI-/Media-Tools. Relevant als Referenz für eine kuratierte statt beliebige Skill-Beschaffung und für Lockfile-/Hash-basierte Nachvollziehbarkeit. Die README verspricht eine automatische Auswahl, die konkreten Regeln und die Registry bleiben dennoch unabhängig zu prüfen; der Installer schreibt Dateien in Zielprojekte und benötigt Node.js 22 oder neuer. Für das AI-Company-OS ist das Muster „vorprüfen → paketieren → verifizieren → locken“ wertvoller als eine unreflektierte Masseninstallation. Die Lizenz CC BY-NC 4.0 schränkt insbesondere kommerzielle Nutzung ein.
+Autoskills ist eine Node.js-CLI, die ein Projekt analysiert, dessen Tech-Stack aus Manifesten und Konfigurationen ableitet und dazu passende Agent-Skills installiert. Der interessante Teil ist weniger der Ein-Befehl-Installer als das Supply-Chain-Modell: Die Skills werden laut README nicht zur Laufzeit aus beliebigen Upstream-Repos gezogen, sondern von Maintainer:innen in eine repositoryeigene Registry synchronisiert, auf Prompt-Injection- und Supply-Chain-Risiken geprüft und mit SHA-256-Hashes im Manifest festgehalten. Der Installer lädt nur die ausgewählten Registry-Dateien, verifiziert sie gegen das Manifest und schreibt Herkunft und Bundle-Hash in ein `skills-lock.json`. Unterstützt werden breite moderne Stacks von React/Next.js bis zu Flutter, Cloudflare, Datenbanken, Testing und AI-/Media-Tools. Relevant als Referenz für eine kuratierte statt beliebige Skill-Beschaffung und für Lockfile-/Hash-basierte Nachvollziehbarkeit. Die README verspricht eine automatische Auswahl, die konkreten Regeln und die Registry bleiben dennoch unabhängig zu prüfen; der Installer schreibt Dateien in Zielprojekte und benötigt Node.js 22 oder neuer. Besonders wertvoll ist das Muster „vorprüfen → paketieren → verifizieren → locken“, nicht eine unreflektierte Masseninstallation. Die Lizenz CC BY-NC 4.0 schränkt insbesondere kommerzielle Nutzung ein.
 
 ---
 
 ## millionco/react-doctor
 
 - **URL:** https://github.com/millionco/react-doctor
-- **Stars:** ⭐ 13.798
+- **Stars:** ⭐ 14.040
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 4.312 · **Größe:** 15M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 6.976 · **Größe:** 28M
 - **Struktur:** TypeScript-Monorepo in `packages/`; Kern-CLI in `packages/react-doctor/`, ergänzende ESLint-/Oxlint-/Language-Server-/Editor-Pakete sowie Skills in `skills/`; Provider-Artefakte in `.agents/` <!-- manual -->
 
 React Doctor ist ein deterministischer Auditor für React-Codebasen. Die CLI scannt laut Paket-README Probleme in State und Effects, Performance, Architektur, Security und Accessibility und soll mit unterschiedlichen React-Frameworks und Bibliotheken arbeiten, darunter Next.js, Vite, TanStack, React Native und Expo. Ein schneller Lauf erfolgt über `npx react-doctor`; Konfigurationen lassen sich in `doctor.config.ts` anpassen, und JSON-Ausgaben enthalten stabile Diagnose-IDs sowie projektbezogene Scan-Abdeckung. Nach einem Audit kann die CLI eine passende Skill-Anleitung für Coding-Agenten wie Claude Code, Cursor, Codex oder OpenCode installieren. Für CI erstellt sie GitHub-Workflows, die Pull Requests auf neu eingeführte Findings prüfen, statt den gesamten historischen Backlog als Blocker zu behandeln; GitLab erhält einen Gate-Entwurf. Das Monorepo enthält außerdem Regeln bzw. Integrationen für ESLint, Oxlint, Language Server, VS Code und Zed. Relevant als ausführbares Gegenstück zu den eher regelbasierten Frontend-Skills im Index: zuerst deterministisch feststellen, was im konkreten Projekt problematisch ist, dann gezielt beheben. Die CLI sendet standardmäßig anonyme Nutzungs- und Laufzeitdaten sowie Regelzähler an Sentry; `--no-telemetry` deaktiviert dies. Die Root-Lizenz ist eine modifizierte MIT-Lizenz und verlangt für ML-Training/-Evaluation sowie bestimmte kommerzielle Hosting-/SaaS-Nutzungen vorherige schriftliche Zustimmung – daher vor Übernahme oder Produktintegration rechtlich prüfen und nur als Referenz nutzen.
@@ -743,10 +743,10 @@ Persönliche, LLM-gepflegte Wissenssammlung eines Kollegen (Obsidian-Wissensgrap
 ## msitarzewski/agency-agents
 
 - **URL:** https://github.com/msitarzewski/agency-agents
-- **Stars:** ⭐ 131.487
+- **Stars:** ⭐ 135.374
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 326 · **Größe:** 4,0M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 336 · **Größe:** 4,1M
 - **Struktur:** Keine Standard-Ordner skills/agents/commands/hooks; stattdessen 17 thematische "Divisions"-Verzeichnisse (engineering, marketing, sales, design, security, gis, healthcare u.a.) mit insgesamt ca. 250 Markdown-Agentendateien mit YAML-Frontmatter (name, description, color, vibe), ergänzt um `integrations/` (generierte Konvertierungs-Outputs pro Tool), `strategy/` (Playbooks/Runbooks) und `scripts/` (Bash/Python-Installer und Konverter). <!-- manual -->
 
 Agency-agents ist eine umfangreiche Sammlung vorformulierter KI-Agenten-Personas als Markdown-Dateien mit YAML-Frontmatter, organisiert in 17 fachlichen "Divisions" wie Engineering, Marketing, Sales, Design, Security, GIS, Healthcare, Finance und Projektmanagement mit insgesamt rund 250 Agentendefinitionen. Jede Datei beschreibt Rolle, Persönlichkeit, Kernauftrag, Workflows und Erfolgsmetriken eines Spezialisten (z.B. Frontend Developer, Code Reviewer, SEO Specialist) und ist als System-Prompt für Claude Code, Cursor, Codex, Gemini CLI, OpenCode, Windsurf, Aider und weitere Tools gedacht. Ein Shell-Skript-Toolkit (scripts/install.sh, convert.sh) übersetzt die Agenten automatisiert in die jeweiligen Tool-Formate und installiert sie interaktiv nach Tool und Division wählbar; zusätzlich existiert eine separate Desktop-App zur grafischen Installation. Ergänzend gibt es unter strategy/ Playbooks und Runbooks für Multi-Agenten-Koordination (NEXUS-Konzept) sowie Beispiel-Workflows unter examples/. Relevant für Skill-/Agenten-Bibliotheken und Multi-Tool-Rollout von Subagenten-Prompts. Stärken: sehr breite Domänenabdeckung, klare Konvertierungspipeline für viele Tools, aktive CI-Checks (Divisions-Konsistenz, Originalitätsprüfung). Risiken: reine Prompt-Texte ohne ausführbaren Code oder Tests der Aussagen, Qualität und Tiefe variieren zwischen Agenten stark, "Personality"-Framing wirkt teils marketinglastig, Aktualität/Richtigkeit der Fachinhalte ist nicht verifizierbar, und die Menge an Agenten kann Kontextfenster und Wartungsaufwand aufblähen. MIT-lizenziert.
@@ -756,7 +756,7 @@ Agency-agents ist eine umfangreiche Sammlung vorformulierter KI-Agenten-Personas
 ## multica-ai/andrej-karpathy-skills
 
 - **URL:** https://github.com/multica-ai/andrej-karpathy-skills
-- **Stars:** ⭐ 192.278
+- **Stars:** ⭐ 195.065
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-07-13
 - **Dateien:** 9 · **Größe:** 38K
@@ -769,36 +769,36 @@ Das Repository ist kein Code- oder Anwendungsprojekt, sondern ein einzelnes Prom
 ## nextlevelbuilder/ui-ux-pro-max-skill
 
 - **URL:** https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
-- **Stars:** ⭐ 105.607
+- **Stars:** ⭐ 108.531
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 482 · **Größe:** 13M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 530 · **Größe:** 15M
 - **Struktur:** Quelle der Wahrheit in `src/ui-ux-pro-max/` (`data/`, `scripts/`, `templates/`), Installer in `cli/`, Dev-Kopie in `.claude/skills/` <!-- manual -->
 
-"UI UX Pro Max" ist ein KI-Skill, der Design-Intelligenz für professionelles UI/UX über mehrere Plattformen und Frameworks bereitstellt: durchsuchbare Datenbanken mit 67 UI-Stilen (Glassmorphism, Neumorphism, Brutalism, Bento Grid, AI-Native UI u.v.m.), 161 Farbpaletten (1:1 auf 161 Produkttypen abgestimmt), 57 Schriftpaarungen, 25 Chart-Typen und 99 UX-Richtlinien. Kernstück von v2.0 ist der Design-System-Generator: eine Reasoning-Engine, die aus einer Produktbeschreibung (z.B. "Beauty-Spa-Landingpage") automatisch ein komplettes, begründetes Design-System ableitet – Seitenstruktur, Stil, Farben, Typografie, Effekte, Anti-Pattern-Warnungen und eine Vorab-Auslieferungs-Checkliste (Kontrast, Fokus-States, Responsive-Breakpoints etc.). Nutzt eine BM25-Suchmaschine über CSV-Datenbanken und unterstützt 22 Tech-Stacks (React, Next.js, Vue, SwiftUI, Flutter, Laravel u.v.m.). Design-Systeme können projektübergreifend als Master+Override-Dateien persistiert werden. Aktiviert sich automatisch bei UI/UX-Anfragen in unterstützten Agenten oder per Slash-Command in anderen. Es gibt eine kostenlose Basis- und eine kostenpflichtige Premium-Version (Branding, Logo, Assets). Relevant als konkretes, datengetriebenes Gegenstück zu den eher stilistischen `taste-skill`-Ansätzen – hier mit strukturierten Entscheidungsregeln statt reiner Stilbeschreibung.
+"UI UX Pro Max" ist ein KI-Skill, der Design-Intelligenz für professionelles UI/UX über mehrere Plattformen und Frameworks bereitstellt: durchsuchbare Datenbanken mit 84 UI-Stilen (Glassmorphism, Neumorphism, Brutalism, Bento Grid, AI-Native UI u.v.m.), 192 Farbpaletten (1:1 auf 192 Produkttypen abgestimmt), 74 Schriftpaarungen, 25 Chart-Typen und 98 UX-Richtlinien – alle vier Datenbanken sind seit v2.0 spürbar gewachsen (zuvor 67/161/57/99). Kernstück ist weiterhin der in v2.0 eingeführte Design-System-Generator: eine Reasoning-Engine, die aus einer Produktbeschreibung (z.B. "Beauty-Spa-Landingpage") automatisch ein komplettes, begründetes Design-System ableitet – Seitenstruktur, Stil, Farben, Typografie, Effekte, Anti-Pattern-Warnungen und eine Vorab-Auslieferungs-Checkliste (Kontrast, Fokus-States, Responsive-Breakpoints etc.). Nutzt eine BM25-Suchmaschine über CSV-Datenbanken und unterstützt weiterhin 22 Tech-Stacks (React, Next.js, Vue, SwiftUI, Flutter, Laravel u.v.m.), neu ergänzt um einen eigenen Website-Design-Stack-Starter unter `stack/` sowie CodeWhale als zusätzliches Installationsziel neben Claude Code, Cursor, Windsurf & Co. Design-Systeme können projektübergreifend als Master+Override-Dateien persistiert werden. Aktiviert sich automatisch bei UI/UX-Anfragen in unterstützten Agenten oder per Slash-Command in anderen. Es gibt eine kostenlose Basis- und eine kostenpflichtige Premium-Version (Branding, Logo, Assets). Relevant als konkretes, datengetriebenes Gegenstück zu den eher stilistischen `taste-skill`-Ansätzen – hier mit strukturierten Entscheidungsregeln statt reiner Stilbeschreibung.
 
 ---
 
 ## nexu-io/open-design
 
 - **URL:** https://github.com/nexu-io/open-design
-- **Stars:** ⭐ 78.195
+- **Stars:** ⭐ 80.389
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 11.177 · **Größe:** 285M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 11.502 · **Größe:** 299M
 - **Struktur:** Monorepo mit Desktop-/Daemon-Code in `apps/`, wiederverwendbaren Skills, Templates und Datenbanken in `skills/`, `design-templates/`, `design-systems/`, `prompt-templates/` und `data/`; Provider-Ausgaben in `.claude/` <!-- manual -->
 
-Open Design positioniert sich als Open-Source-Alternative zu Claude Design und als agent-native, lokale Design-Umgebung für macOS und Windows. Statt eines klassischen Canvas-Editors organisiert es einen Dateibestand aus Skills, `DESIGN.md`-Designsystemen, Templates und Plugins; ein Coding-Agent erzeugt daraus reale Artefakte. Das Studio kann Web-, Desktop- und Mobile-Prototypen, editierbare Live-Dashboards, HTML-basierte Decks, Bilder sowie Video-/HyperFrame-Animationen erzeugen und nach HTML, PDF, PPTX oder MP4 exportieren. Die lokale Desktop-App kann über CLI und MCP mit zahlreichen Agenten wie Claude Code, Codex, Cursor, OpenCode, Copilot und Gemini verbunden werden; alternativ bietet sie eine BYOK-Proxy-Schicht. Besonders interessant sind die explizite Brand-Contract-Datei `DESIGN.md`, das breite Template-/Prompt-Material und die Plugin-Architektur. Relevant als große Referenz für einen nachvollziehbaren „Brief → Designsystem → Artefakt → Kritik → Export“-Workflow und dafür, wie Skills als Produktoberfläche nutzbar werden. Der Umfang, eingebundene Drittinhalte, Modellprovider und die Proxy-/MCP-Integration machen es jedoch zu einer Referenzquelle, nicht zu einem ungeprüften Standard-Plugin. Apache-2.0-lizenziert.
+Open Design positioniert sich als Open-Source-Alternative zu Claude Design und als agent-native, lokale Design-Umgebung für macOS und Windows. Statt eines klassischen Canvas-Editors organisiert es einen Dateibestand aus Skills, `DESIGN.md`-Designsystemen, Templates und Plugins; ein Coding-Agent erzeugt daraus reale Artefakte. Das Studio kann Web-, Desktop- und Mobile-Prototypen, editierbare Live-Dashboards, HTML-basierte Decks, Bilder sowie Video-/HyperFrame-Animationen erzeugen und nach HTML, PDF, PPTX oder MP4 exportieren. Die lokale Desktop-App kann über CLI und MCP mit zahlreichen Agenten wie Claude Code, Codex, Cursor, OpenCode, Copilot und Gemini verbunden werden; alternativ bietet sie eine BYOK-Proxy-Schicht oder den neuen Managed-Dienst „Open Design Cloud" (nutzungsbasiert abgerechneter Zugriff auf 20+ Modelle von GPT, Claude, Gemini und DeepSeek ohne eigene API-Keys). Seit Version 0.13.0 überstehen lange Design-Sessions Unterbrechungen besser: Runs bei Codex, OpenCode, Pi und Open Design Cloud lassen sich über mehrere Turns fortsetzen, ergänzt um einen verbesserten Modellwähler und direkten Screenshot-Export nach PPTX/PDF. Besonders interessant sind die explizite Brand-Contract-Datei `DESIGN.md`, das breite Template-/Prompt-Material und die Plugin-Architektur. Relevant als große Referenz für einen nachvollziehbaren „Brief → Designsystem → Artefakt → Kritik → Export“-Workflow und dafür, wie Skills als Produktoberfläche nutzbar werden. Der Umfang, eingebundene Drittinhalte, Modellprovider und die Proxy-/MCP-Integration machen es jedoch zu einer Referenzquelle, nicht zu einem ungeprüften Standard-Plugin. Apache-2.0-lizenziert.
 
 ---
 
 ## NVIDIA/SkillSpector
 
 - **URL:** https://github.com/NVIDIA/SkillSpector
-- **Stars:** ⭐ 13.176
+- **Stars:** ⭐ 13.509
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 242 · **Größe:** 2,5M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 243 · **Größe:** 2,6M
 - **Struktur:** Python-Scanner in `src/`, Regeln und Tests in `tests/`, Integrationen und Batch-Tools unter `extensions/` und `contrib/`; kein Skill-Paket <!-- manual -->
 
 SkillSpector ist ein Security-Scanner für Agent-Skills, MCPs und verwandte Konfigurationen. Er akzeptiert lokale Verzeichnisse, einzelne `SKILL.md`-Dateien, Git-Repositories und ZIP-Dateien und prüft sie zunächst statisch, optional danach mit semantischer LLM-Auswertung. Die README nennt 68 Muster in 17 Kategorien, darunter Prompt Injection, Datenexfiltration, Privilege Escalation, Supply-Chain-Risiken, Memory Poisoning, Tool Misuse, MCP Least Privilege und Tool Poisoning. Ergebnisse können im Terminal sowie als JSON, Markdown oder SARIF ausgegeben werden; Baselines erlauben es, bekannte Findings zu akzeptieren und spätere Scans auf neue Befunde zu fokussieren. Zusätzlich kann der Scanner OSV-Daten für Schwachstellen nachschlagen und als MCP-Server laufen, damit Installationsentscheidungen direkt in Agent-Workflows gegatet werden. Für die optionale LLM-Stufe unterstützt er verschiedene Cloud-Provider, lokale CLI-Authentifizierung und OpenAI-kompatible Endpunkte – ein wichtiger Datenabfluss- und Kostenaspekt. Relevant als konkretes Prüfwerkzeug für den in diesem Repo vorgeschriebenen Review externer Skills, insbesondere vor produktiver Übernahme. Ein Scan ist kein Sicherheitsnachweis; Findings, Baselines und übermittelte Inhalte müssen von Menschen bewertet werden. Apache-2.0-lizenziert.
@@ -808,7 +808,7 @@ SkillSpector ist ein Security-Scanner für Agent-Skills, MCPs und verwandte Konf
 ## obra/superpowers
 
 - **URL:** https://github.com/obra/superpowers
-- **Stars:** ⭐ 254.713
+- **Stars:** ⭐ 258.741
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-07-10
 - **Dateien:** 172 · **Größe:** 1,3M
@@ -821,11 +821,11 @@ Superpowers ist eine vollständige Softwareentwicklungs-Methodik als Satz kompon
 ## open-gsd/gsd-core
 
 - **URL:** https://github.com/open-gsd/gsd-core
-- **Stars:** ⭐ 6.611
+- **Stars:** ⭐ 6.969
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 2.477 · **Größe:** 28M
-- **Struktur:** 71× SKILL.md · Ordner: skills, agents, commands, hooks, references · Spiegelordner: .opencode (generiert)
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 2.773 · **Größe:** 31M
+- **Struktur:** 71× SKILL.md · Ordner: skills, agents, commands, hooks, references · Spiegelordner: .kilo, .opencode (generiert)
 
 GSD Core ("Git. Ship. Done.") ist ein schlankes Context-Engineering- und Spec-driven-Development-Framework, das KI-Coding-Agenten (Claude Code, OpenCode, Antigravity CLI, Kimi CLI, Kilo, Codex, Copilot, Cursor, Windsurf u.a.) durch einen disziplinierten Fünf-Schritte-Phasenzyklus führt: Discuss (Entscheidungen vor der Planung festhalten) → Plan (Recherche, Zerlegung, Prüfung dass der Plan in ein frisches Kontextfenster passt) → Execute (Pläne in parallelen Wellen ausführen, jeder Executor startet mit sauberem 200k-Token-Kontext) → Verify (Durchgehen was gebaut wurde, Fixes vor "fertig") → Ship (PR erstellen, Phase archivieren, nächste Phase). Löst damit gezielt "Context Rot" – die Qualitätsverschlechterung, die sich aufbaut, während ein Agent sein Kontextfenster füllt – indem schwere Arbeit in frischen Subagenten läuft, während die Hauptsession schlank bleibt. Strukturierte Artefakte wie `STATE.md` und `CONTEXT.md` überleben Session-Grenzen. Installation über `npx @opengsd/gsd-core@latest` mit interaktivem Runtime-Prompt; Einstieg über `/gsd-new-project` (Neuprojekt) oder `/gsd-onboard` (bestehende Codebasis). Relevant als alternatives, sehr fokussiertes Muster zum eigenen mehrstufigen Workflow-Ansatz, insbesondere die "frischer Kontext pro Executor"-Idee.
 
@@ -834,36 +834,36 @@ GSD Core ("Git. Ship. Done.") ist ein schlankes Context-Engineering- und Spec-dr
 ## openai/codex
 
 - **URL:** https://github.com/openai/codex
-- **Stars:** ⭐ 98.077
+- **Stars:** ⭐ 100.382
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 5.414 · **Größe:** 51M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 5.677 · **Größe:** 53M
 - **Struktur:** Monorepo mit Rust-Kernimplementierung (`codex-rs`, ~109 Crates: Core-Agent-Loop, Sandboxing, MCP-Server, TUI, App-Server), einem dünnen npm-Wrapper (`codex-cli`) sowie separaten Python- und TypeScript-SDKs (`sdk/`), zusätzlich Bazel- und Nix-Build-Tooling — kein Skill-/Plugin-Paket im Claude-Code-Sinne. <!-- manual -->
 
-Codex CLI ist OpenAIs lokal laufender Coding-Agent, das direkte Gegenstück zu Claude Code. Kern ist in Rust implementiert (`codex-rs`, dutzende Crates für Agent-Loop, Sandbox unter Linux/macOS/Windows, MCP-Client/-Server, App-Server-Protokoll, TUI, Cloud-Tasks-Integration), umgeben von einem npm-Distributionspaket (`codex-cli`) sowie offiziellen Python- und TypeScript-SDKs zur programmatischen Steuerung. Installation erfolgt über Shell-/PowerShell-Installer, npm, Homebrew oder vorgefertigte Release-Binaries; Build-Infrastruktur nutzt zusätzlich Bazel und Nix, was auf hohe interne Komplexität und Multi-Plattform-Anspruch (inkl. nativer Windows-Sandbox) hindeutet. Authentifizierung läuft primär über ChatGPT-Abo (Plus/Pro/Business/Enterprise) oder alternativ API-Key. Anders als reine Skill-Repos handelt es sich um den vollständigen Quellcode eines konkurrierenden Agenten-Produkts, inklusive eigenem Skills-/Hooks-/Plugin-System (`codex-rs/skills`, `codex-rs/hooks`, `codex-rs/plugin`) und Cloud-Anbindung (ChatGPT/Codex Web). Für das AI-Company-OS ist das Repo als Vergleichsreferenz relevant: es zeigt, wie OpenAI CLI-Agent, Sandboxing, MCP-Interop und SDK-Ökosystem architektonisch löst. Risiken: sehr großer, stark OpenAI-spezifischer Rust-Monorepo-Umfang, Abhängigkeit von ChatGPT-Konto/Cloud-Diensten, hohe Build-Komplexität (Bazel/Nix) erschwert eigenständiges Nachvollziehen oder Wiederverwendung einzelner Komponenten. Apache-2.0-lizenziert.
+Codex CLI ist OpenAIs lokal laufender Coding-Agent, das direkte Gegenstück zu Claude Code. Kern ist in Rust implementiert (`codex-rs`, dutzende Crates für Agent-Loop, Sandbox unter Linux/macOS/Windows, MCP-Client/-Server, App-Server-Protokoll, TUI, Cloud-Tasks-Integration), umgeben von einem npm-Distributionspaket (`codex-cli`) sowie offiziellen Python- und TypeScript-SDKs zur programmatischen Steuerung. Installation erfolgt über Shell-/PowerShell-Installer, npm, Homebrew oder vorgefertigte Release-Binaries; Build-Infrastruktur nutzt zusätzlich Bazel und Nix, was auf hohe interne Komplexität und Multi-Plattform-Anspruch (inkl. nativer Windows-Sandbox) hindeutet. Authentifizierung läuft primär über ChatGPT-Abo (Plus/Pro/Business/Enterprise) oder alternativ API-Key. Anders als reine Skill-Repos handelt es sich um den vollständigen Quellcode eines konkurrierenden Agenten-Produkts, inklusive eigenem Skills-/Hooks-/Plugin-System (`codex-rs/skills`, `codex-rs/hooks`, `codex-rs/plugin`) und Cloud-Anbindung (ChatGPT/Codex Web). Als Vergleichsreferenz zeigt das Repo, wie OpenAI CLI-Agent, Sandboxing, MCP-Interop und SDK-Ökosystem architektonisch löst. Risiken: sehr großer, stark OpenAI-spezifischer Rust-Monorepo-Umfang, Abhängigkeit von ChatGPT-Konto/Cloud-Diensten, hohe Build-Komplexität (Bazel/Nix) erschwert eigenständiges Nachvollziehen oder Wiederverwendung einzelner Komponenten. Apache-2.0-lizenziert.
 
 ---
 
 ## OthmanAdi/planning-with-files
 
 - **URL:** https://github.com/OthmanAdi/planning-with-files
-- **Stars:** ⭐ 25.359
+- **Stars:** ⭐ 25.600
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 424 · **Größe:** 12M
-- **Struktur:** 6× SKILL.md · Ordner: skills, commands · Spiegelordner: .codebuddy, .codex, .continue, .cursor, … (+8) (generiert)
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 485 · **Größe:** 12M
+- **Struktur:** 6× SKILL.md · Ordner: skills, commands · Spiegelordner: .agents, .codebuddy, .codex, .continue, … (+9) (generiert)
 
-"Planning with Files" ist ein dateibasierter Planungs-Skill, der dem Muster von Manus (der für 2 Mrd. USD von Meta übernommenen Agentenfirma) folgt: Für jede komplexe Aufgabe legt der Agent drei persistente Markdown-Dateien an – `task_plan.md` (Phasen/Fortschritt), `findings.md` (Rechercheergebnisse) und `progress.md` (Session-Log). Kernprinzip: Das Kontextfenster ist wie flüchtiges RAM, das Dateisystem wie persistente Festplatte – alles Wichtige wird auf Platte geschrieben statt im Kontext zu verbleiben. Hooks lesen den Plan vor wichtigen Entscheidungen erneut ein (PreToolUse), erinnern nach Datei-Schreibvorgängen an Status-Updates (PostToolUse) und verifizieren Vollständigkeit vor dem Stoppen (Stop-Hook). Damit übersteht der Agent Kontextverlust, `/clear` und Abstürze und erholt sich automatisch (Session Recovery). Läuft über 60+ Agenten/IDEs hinweg (Claude Code, Codex, Cursor, Gemini CLI u.v.m.) via SKILL.md-Standard, inkl. mehrsprachiger Varianten. Laut eigener Evaluation (Anthropics skill-creator-Framework) steigt die Aufgaben-Erfolgsquote von 6,7% ohne auf 96,7% mit Skill. Neu in v3.0.0: optionale autonome und "gated" Modi mit einem Completion-Gate, das den Agenten erst stoppen lässt, wenn der Plan tatsächlich fertig ist. Sehr relevant als konkretes, breit erprobtes Muster für strukturierte Notizen/Planpersistenz gegen Kontext-Rot.
+"Planning with Files" ist ein dateibasierter Planungs-Skill, der dem Muster von Manus (der für 2 Mrd. USD von Meta übernommenen Agentenfirma) folgt: Für jede komplexe Aufgabe legt der Agent drei persistente Markdown-Dateien an – `task_plan.md` (Phasen/Fortschritt), `findings.md` (Rechercheergebnisse) und `progress.md` (Session-Log). Kernprinzip: Das Kontextfenster ist wie flüchtiges RAM, das Dateisystem wie persistente Festplatte – alles Wichtige wird auf Platte geschrieben statt im Kontext zu verbleiben. Hooks (bis zu 8, je nach Agent) lesen den Plan vor wichtigen Entscheidungen erneut ein, erinnern nach Datei-Schreibvorgängen an Status-Updates und verifizieren Vollständigkeit vor dem Stoppen (Stop-Hook, optional gated Modus seit v3.0). Damit übersteht der Agent Kontextverlust, `/clear` und Abstürze und erholt sich automatisch (Session Recovery). Mittlerweile bei v3.8 unterstützt der Skill 60+ Agenten über den Agent-Skills-Standard, davon 18+ mit dokumentiertem, gestuftem Support: volle Hook-Integration bei Claude Code, Cursor, Codex u.a., reine SKILL.md-Erkennung bei Continue, Pi, OpenClaw u.a., und seit v3.7.0 zusätzlich ein in-Tree-Pfad ohne Tool-Setup. Der neue Self-Check-Befehl `/plan-doctor` (v3.6.0+) prüft Plan-Auflösung, Injection und Installationsoberflächen und deckt damit typische, sonst stille Fehlerquellen auf. Laut eigener Evaluation steigt die Aufgaben-Erfolgsquote von 6,7% ohne auf 96,7% mit Skill. Sehr relevant als konkretes, breit erprobtes Muster für strukturierte Notizen/Planpersistenz gegen Kontext-Rot.
 
 ---
 
 ## paperclipai/paperclip
 
 - **URL:** https://github.com/paperclipai/paperclip
-- **Stars:** ⭐ 73.673
+- **Stars:** ⭐ 74.386
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 3.560 · **Größe:** 68M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 4.022 · **Größe:** 75M
 - **Struktur:** Node.js-/React-Monorepo in `packages/` mit CLI, Server und UI; Agenten-/Skill-Integrationen in `.agents/`, `.claude/` und `plugins/`; Betriebsartefakte in `docker/`, `evals/` und `docs/` <!-- manual -->
 
 Paperclip ist eine selbst hostbare Control Plane für Teams von AI-Agenten. Es modelliert eine Organisation statt nur einzelner Chats: Ziele, Firmen, Projekte, Org-Charts, Rollen, Tickets und Entscheidungswege bilden den Kontext; Agents verschiedener Runtimes wie Claude Code, Codex, Cursor, OpenClaw, Bash oder HTTP-Bots können Aufgaben über Heartbeats abarbeiten. Die React-Oberfläche und der Node.js-Server kombinieren Task-Tracking mit Budgetlimits, Kostenmessung, Governance-/Approval-Gates, Workspaces und Worktrees, Routinen, Plugin-Workers, Secret-Handling und einem dauerhaften Audit-Log. Bemerkenswert sind die als atomar beschriebenen Task-Checkouts und Budgetgrenzen sowie Mehrfirmen-Isolation und Export/Import mit Secret-Scrubbing. Relevant als umfassendes Referenzsystem für den Schritt vom Agenten-Workflow zur operativen AI-Organisation – besonders für Zielvererbung, Kostenkontrolle und menschliche Eingriffsrechte. Es ist ausdrücklich nicht für einen einzelnen Agenten gedacht und ersetzt keine Code-Review- oder Agenten-Framework-Entscheidung. Wegen Workspaces, Secrets, Schedules, automatischer Ausführung, Kosten und Tenant-Isolation ist jede produktive Einführung ein Security-, Billing- und Governance-Projekt und benötigt vorher eine separate Architektur- und Freigabeentscheidung. MIT-lizenziert.
@@ -873,10 +873,10 @@ Paperclip ist eine selbst hostbare Control Plane für Teams von AI-Agenten. Es m
 ## pbakaus/impeccable
 
 - **URL:** https://github.com/pbakaus/impeccable
-- **Stars:** ⭐ 46.737
+- **Stars:** ⭐ 48.524
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 2.201 · **Größe:** 77M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 2.386 · **Größe:** 81M
 - **Struktur:** Quelle in `skill/` (`SKILL.src.md` + `reference/<command>.md`), generierte Provider-Ausgaben in `plugin/skills/` bzw. `.claude/skills/`, `.cursor/skills/` usw. <!-- manual -->
 
 Design-Guidance für KI-Coding-Agenten von Paul Bakaus, explizit als Weiterentwicklung von Anthropics `frontend-design`-Skill positioniert. Besteht aus einem einzigen Skill `impeccable` mit 23 Unterbefehlen (`/impeccable init`, `polish`, `audit`, `critique`, `bolder`, `quieter`, `distill`, `animate`, `live` u.v.m.) plus 46 deterministischen Detektor-Regeln, die typische KI-Generik erkennen (Inter-Schriftart überall, Lila-Blau-Verläufe, verschachtelte Cards, graue Schrift auf farbigem Hintergrund). `/impeccable init` legt einmalig `PRODUCT.md` (und optional `DESIGN.md`) an, die Zielgruppe, Marken-/Produkt-Register, Stimme, Anti-Referenzen, Farben, Typografie und Komponenten festhalten, auf die alle weiteren Befehle zugreifen. Live-Modus erlaubt visuelle Iteration direkt im Browser. Installierbar per CLI (`npx impeccable install`), Git-Submodule, Plugin oder manuellem Kopieren, für über zehn Tools (Cursor, Claude Code, Copilot, Gemini CLI, Codex, Grok Build u.a.); ein providernativer Hook prüft Design-Verstöße direkt bei Datei-Edits. Apache-2.0-lizenziert. Sehr relevant als weiteres, sehr ausgereiftes Anti-Slop-Design-Tool neben `taste-skill` und `emilkowalski/skills` – mit dem Alleinstellungsmerkmal der deterministischen (nicht nur LLM-basierten) Detektor-Regeln und Live-Browser-Iteration.
@@ -886,10 +886,10 @@ Design-Guidance für KI-Coding-Agenten von Paul Bakaus, explizit als Weiterentwi
 ## router-for-me/CLIProxyAPI
 
 - **URL:** https://github.com/router-for-me/CLIProxyAPI
-- **Stars:** ⭐ 41.912
+- **Stars:** ⭐ 44.089
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 937 · **Größe:** 10M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 996 · **Größe:** 11M
 - **Struktur:** Go-Server in `cmd/` und `internal/`, SDK und Beispiele in `sdk/` und `examples/`, Betriebs-/API-Dokumentation unter `docs/`; kein Skill-Paket <!-- manual -->
 
 CLIProxyAPI ist ein in Go implementierter lokaler Proxy, der OpenAI-, Gemini-, Claude-, Codex- und Grok-kompatible API-Schnittstellen für CLI- und SDK-Clients bereitstellt. Er unterstützt laut README OAuth-Logins für Codex, Claude Code und Grok Build, mehrere Accounts mit Round-Robin-Load-Balancing, Streaming, Tool Calling, multimodale Eingaben sowie konfigurierbare OpenAI-kompatible Upstreams. Zusätzlich gibt es eine Management-API, eine einbettbare Go-SDK und ein großes Umfeld von Dashboards, Tray-Apps und Account-/Quota-Tools. Das kann für lokale Tests, Provider-Abstraktion oder die Analyse von API-Übersetzern technisch interessant sein. Gleichzeitig ist es Infrastruktur mit besonders hohem Risiko: OAuth-Tokens, API-Keys, Requests und Account-Pools werden zentral verarbeitet; die README enthält zahlreiche Sponsor-/Relay-Angebote und verweist auf Drittanbieter-Zugänge. Daher ausschließlich als Analyse- und Referenzquelle behandeln. Eine produktive Nutzung erfordert vorab eine genaue Prüfung der OAuth-Abläufe, Secret-Speicherung, Netzwerk-Exposition, Logging, Providerbedingungen, Rechtslage und Account-Compliance sowie Philipps explizite Freigabe. MIT-lizenziert, wobei die Lizenz keine Freigabe für die Nutzung von Provider-Accounts oder Drittservices ersetzt.
@@ -899,10 +899,10 @@ CLIProxyAPI ist ein in Go implementierter lokaler Proxy, der OpenAI-, Gemini-, C
 ## rtk-ai/rtk
 
 - **URL:** https://github.com/rtk-ai/rtk
-- **Stars:** ⭐ 71.039
+- **Stars:** ⭐ 72.370
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 398 · **Größe:** 3,9M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 408 · **Größe:** 4,0M
 - **Struktur:** Rust-CLI in `src/`; Integrationen als `hooks/`, `.claude/` und `openclaw/`; 12× SKILL.md für Agenten-Anleitungen <!-- manual -->
 
 RTK („Rust Token Killer“) ist eine einzelne Rust-CLI, die Shell-Ausgaben vor der Übergabe an einen Coding-Agenten verdichtet. Statt Agenten ihre Arbeitsweise neu lernen zu lassen, können Hooks Bash-Aufrufe wie `git status`, `rg`, Test-Runner, Build-Tools, Cloud-CLIs oder Container-Kommandos transparent auf `rtk` umschreiben; der Agent erhält gefilterte, gruppierte, gekürzte und deduplizierte Ergebnisse. Zusätzlich bietet das Tool direkte Befehle für Dateien, Git, GitHub, Tests, Linting, Paketmanager, AWS, Docker und Analytics über erzielte Einsparungen. Unterstützt werden laut README zahlreiche Agenten, darunter Claude Code, Codex, Gemini CLI, Cursor, OpenCode und Copilot. Wichtig ist die dokumentierte Grenze: eingebaute Read-/Grep-/Glob-Tools eines Agenten passieren den Bash-Hook nicht. RTK enthält außerdem eine optionale, standardmäßig deaktivierte anonyme Telemetrie. Relevant als fokussierter Gegenentwurf zu großen Kontext-Frameworks: es optimiert vor allem die terminalbasierte Datenquelle, ohne den gesamten Prompt- oder Memory-Stack zu ersetzen. Für eine Produktivnutzung sind die globalen Hooks, die lokale Aufzeichnung von Roh-Ausgaben bei Fehlern („tee“) und die Telemetrie-Einstellung bewusst zu prüfen. Apache-2.0-lizenziert.
@@ -912,10 +912,10 @@ RTK („Rust Token Killer“) ist eine einzelne Rust-CLI, die Shell-Ausgaben vor
 ## shadcn-ui/ui
 
 - **URL:** https://github.com/shadcn-ui/ui
-- **Stars:** ⭐ 119.115
+- **Stars:** ⭐ 119.488
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 9.834 · **Größe:** 80M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 5.642 · **Größe:** 44M
 - **Struktur:** 2× SKILL.md · Ordner: skills, agents, commands, hooks, rules · Spiegelordner: .cursor (generiert)
 
 Das offizielle shadcn/ui-Monorepo ist die Quelle für die CLI, Komponenten, Registry- und Template-Logik sowie zwei Agent-Skills: `shadcn` und `migrate-radix-to-base`. Der zentrale `shadcn`-Skill arbeitet nicht als allgemeiner Designratgeber, sondern als projektbewusste Arbeitsanweisung für Projekte mit `components.json`: Er liest die tatsächliche Konfiguration (Alias, Framework, Tailwind-Version, Komponenten, Icon-Bibliothek und Primitive-Base), sucht vorhandene Komponenten, ruft versionsnahe Dokumentation ab und empfiehlt Komposition statt selbst gebauter UI-Duplikate. Seine Regeln zu semantischen Farben, `gap` statt `space-*`, Accessibility-Titeln in Overlays, Form-Komposition und vorsichtigen Component-Updates sind als Referenz sehr wertvoll. Das Repo ist jedoch ein großes, aktiv entwickeltes pnpm/Turbo-Monorepo; seine Build-, Release- und Template-Sync-Scripts sind nicht für dieses Mutter-Repo bestimmt. Insbesondere `scripts/sync-templates.sh` löscht Inhalte in temporären Klonen und darf nur nach vollständigem Verständnis ausgeführt werden. Der Skill selbst erlaubt `npx`/`pnpm dlx`/`bunx shadcn@latest` und kann über Registries Quellcode in Zielprojekte einbringen. Vor jeder produktiven Nutzung: Registry explizit wählen, `--dry-run`/`--diff` verwenden, hinzugefügte Dateien prüfen und niemals Überschreiben ohne Freigabe ausführen. Als offizielle Referenz und selektiv aktivierbarer Projekt-Skill geeignet, nicht als pauschaler globaler Standard. MIT-lizenziert.
@@ -925,7 +925,7 @@ Das offizielle shadcn/ui-Monorepo ist die Quelle für die CLI, Komponenten, Regi
 ## shadcn/improve
 
 - **URL:** https://github.com/shadcn/improve
-- **Stars:** ⭐ 8.242
+- **Stars:** ⭐ 8.555
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-07-10
 - **Dateien:** 9 · **Größe:** 61K
@@ -938,9 +938,9 @@ Kleiner, fokussierter Agent-Skill von shadcn: auditiert eine beliebige Codebasis
 ## shanraisshan/claude-code-best-practice
 
 - **URL:** https://github.com/shanraisshan/claude-code-best-practice
-- **Stars:** ⭐ 62.609
+- **Stars:** ⭐ 63.233
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
+- **Zuletzt aktualisiert:** 2026-07-22
 - **Dateien:** 454 · **Größe:** 74M
 - **Struktur:** kein Skill-Paket, sondern Wissensbasis: `best-practice/`, `reports/`, `tips/` (die eigentlichen Inhalte); Demo-Setup in `.claude/agents/`, `.claude/commands/`, `.claude/skills/` <!-- manual -->
 
@@ -951,20 +951,20 @@ Eine sehr umfangreiche, laufend aktualisierte Sammlung von Claude-Code-Best-Prac
 ## teng-lin/notebooklm-py
 
 - **URL:** https://github.com/teng-lin/notebooklm-py
-- **Stars:** ⭐ 17.780
+- **Stars:** ⭐ 18.045
 - **Heruntergeladen:** 2026-07-14
-- **Zuletzt aktualisiert:** 2026-07-14
-- **Dateien:** 1.234 · **Größe:** 62M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 1.244 · **Größe:** 62M
 - **Struktur:** 1× SKILL.md
 
-`notebooklm-py` ist ein aktiver, MIT-lizenzierter Python-Client für Google NotebookLM mit asynchroner API, CLI, optionalem MCP- und lokalem REST-Server sowie einem mitgelieferten Agent-Skill für Claude Code, Codex und kompatible Hosts. Er automatisiert Notebooks, Quellenimporte aus URLs, Dateien, YouTube und Google Drive, quellengebundene Fragen mit Zitaten, Deep Research sowie die Erstellung und den Download von Audio-/Video-Überblicken, Slides, Infografiken, Reports, Quizzen, Flashcards, Datentabellen und Mindmaps. Damit eignet sich das Projekt als Referenz und optionales Werkzeug, um umfangreiche Dokumentbestände von NotebookLM verdichten und für Agent-Workflows als persistenten, quellengebundenen Wissensspeicher abfragen zu lassen. Die CLI bietet strukturierte JSON-Ausgaben und getrennte Profile, was parallele Agentenläufe erleichtert. Die praktische Einschränkung ist wesentlich: Das Projekt nutzt nicht dokumentierte Google-APIs, kann deshalb ohne Vorwarnung brechen, Rate Limits oder Kontobeschränkungen auslösen und ist nicht mit Google verbunden. Die Anmeldung verwaltet sensible Google-Session-Cookies lokal; Cookie-Dateien und Browserprofile müssen geschützt und aus Git ausgeschlossen bleiben. Optionale Browser-, Cookie-, MCP- und Server-Abhängigkeiten erweitern die Angriffs- und Wartungsfläche. Daher zunächst nur als lokale Referenz nutzen; eine produktive Integration, insbesondere mit Firmenquellen, Remote-MCP oder geteilten Credentials, erfordert vorherige Sicherheits- und Datenschutzprüfung sowie Philipp-Freigabe.
+`notebooklm-py` ist ein aktiver, MIT-lizenzierter Python-Client für Google NotebookLM (seit Juli 2026 von Google zu "Gemini Notebook" umbenannt; gleiches Produkt, automatische Weiterleitungen, keine API-Änderung – das Paket behält seinen Namen) mit asynchroner API, CLI, optionalem MCP- und lokalem REST-Server sowie einem mitgelieferten Agent-Skill für Claude Code, Codex und kompatible Hosts. Er automatisiert Notebooks, Quellenimporte aus URLs, Dateien, YouTube und Google Drive, quellengebundene Fragen mit Zitaten, Deep Research sowie die Erstellung und den Download von Audio-/Video-Überblicken, Slides, Infografiken, Reports, Quizzen, Flashcards, Datentabellen und Mindmaps. Damit eignet sich das Projekt als Referenz und optionales Werkzeug, um umfangreiche Dokumentbestände von NotebookLM verdichten und für Agent-Workflows als persistenten, quellengebundenen Wissensspeicher abfragen zu lassen. Die CLI bietet strukturierte JSON-Ausgaben und getrennte Profile, was parallele Agentenläufe erleichtert. Die praktische Einschränkung ist wesentlich: Das Projekt nutzt nicht dokumentierte Google-APIs, kann deshalb ohne Vorwarnung brechen, Rate Limits oder Kontobeschränkungen auslösen und ist nicht mit Google verbunden. Die Anmeldung verwaltet sensible Google-Session-Cookies lokal; Cookie-Dateien und Browserprofile müssen geschützt und aus Git ausgeschlossen bleiben. Optionale Browser-, Cookie-, MCP- und Server-Abhängigkeiten erweitern die Angriffs- und Wartungsfläche. Daher zunächst nur als lokale Referenz nutzen; eine produktive Integration, insbesondere mit Firmenquellen, Remote-MCP oder geteilten Credentials, erfordert vorherige Sicherheits- und Datenschutzprüfung sowie Philipp-Freigabe.
 
 ---
 
 ## thedaviddias/Front-End-Checklist
 
 - **URL:** https://github.com/thedaviddias/Front-End-Checklist
-- **Stars:** ⭐ 73.211
+- **Stars:** ⭐ 73.268
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-07-13
 - **Dateien:** 1.871 · **Größe:** 11M
@@ -977,7 +977,7 @@ Front-End-Checklist begann als reine Markdown-Checkliste für Frontend-Qualität
 ## thedotmack/claude-mem
 
 - **URL:** https://github.com/thedotmack/claude-mem
-- **Stars:** ⭐ 87.271
+- **Stars:** ⭐ 88.139
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-07-13
 - **Dateien:** 850 · **Größe:** 17M
@@ -990,10 +990,10 @@ Claude-Mem ist ein persistentes Gedächtnis- und Kompressionssystem für Claude 
 ## upstash/context7
 
 - **URL:** https://github.com/upstash/context7
-- **Stars:** ⭐ 59.112
+- **Stars:** ⭐ 59.542
 - **Heruntergeladen:** 2026-07-13
-- **Zuletzt aktualisiert:** 2026-07-13
-- **Dateien:** 372 · **Größe:** 19M
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 376 · **Größe:** 19M
 - **Struktur:** TypeScript-Monorepo in `packages/`; Agenten-Installationen, Regeln und Skills unter `plugins/`, `rules/` und `skills/`; Provider-Spiegel in `.agents/` und `.claude-plugin/` <!-- manual -->
 
 Context7 bringt aktuelle, versionsbezogene Library-Dokumentation und Codebeispiele in den Kontext eines Coding-Agenten. Dafür gibt es zwei Modi: Die `ctx7`-CLI installiert eine Skill-Anleitung, über die Agenten Bibliotheken suchen und passende Dokumentauszüge abfragen, oder ein MCP-Server stellt native Tools zur Auflösung einer Library-ID und zur Docs-Abfrage bereit. Prompts können eine konkrete Context7-ID wie `/vercel/next.js` oder eine gewünschte Version nennen, um die Suche zu präzisieren. Das Ziel ist, alte Modellkenntnis, halluzinierte APIs und generische Beispiele durch quellennähere Informationen zu ersetzen. Die README weist zugleich darauf hin, dass die zugrundeliegenden Library-Projekte Community-Beiträge sind und Richtigkeit, Vollständigkeit oder Sicherheit nicht garantiert werden; Backend, Parser und Crawler sind nicht Teil dieses öffentlichen Repositories. Eine API-Key-Anmeldung erhöht Limits, und die automatisierte Installation verändert Agenten-Konfigurationen. Relevant als leichtgewichtige Ergänzung für Library-/API-Arbeit und als Muster für CLI- plus MCP-Dualität. Für produktive Nutzung sind API-Key, Telemetrie/Datentransfer, die Vertrauenswürdigkeit einzelner Dokumentquellen und die automatisierten Konfigurationsänderungen zu prüfen. MIT-lizenziert.
@@ -1003,9 +1003,9 @@ Context7 bringt aktuelle, versionsbezogene Library-Dokumentation und Codebeispie
 ## vercel-labs/agent-skills
 
 - **URL:** https://github.com/vercel-labs/agent-skills
-- **Stars:** ⭐ 29.067
+- **Stars:** ⭐ 29.284
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
+- **Zuletzt aktualisiert:** 2026-07-22
 - **Dateien:** 442 · **Größe:** 7,5M
 - **Struktur:** 9× SKILL.md · Ordner: skills, rules, references
 
@@ -1016,10 +1016,10 @@ Kompakte, von Vercel Engineering kuratierte Sammlung von acht Skills nach dem Ag
 ## vercel-labs/skills
 
 - **URL:** https://github.com/vercel-labs/skills
-- **Stars:** ⭐ 26.146
+- **Stars:** ⭐ 26.840
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-11
-- **Dateien:** 96 · **Größe:** 798K
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 106 · **Größe:** 879K
 - **Struktur:** kein Skill-Inhalt — das ist die Installer-CLI selbst, Quellcode in `src/` <!-- manual -->
 
 Das ist keine Skill-Sammlung, sondern die CLI (`npx skills`) für das offene Agent-Skills-Ökosystem – das zugrundeliegende Werkzeug, mit dem Skills aus beliebigen GitHub-/GitLab-Repos oder lokalen Pfaden in über 70 unterstützte Coding-Agenten (Claude Code, Cursor, Codex, OpenCode, Windsurf, Antigravity, Gemini CLI, GitHub Copilot u.v.m.) installiert werden – per Symlink (empfohlen, eine kanonische Kopie) oder Kopie, projekt- oder global-scoped. Zentrale Befehle: `skills add <source>` (installieren, mit Filtern nach Skill-Namen/Agenten), `skills use <source>` (Skill ohne Installation testen, druckt generierten Prompt oder startet Agent direkt), `skills list`, `skills find` (interaktive/keyword-Suche, auch über alle Repos eines Owners), `skills update`, `skills remove`, `skills init` (neues SKILL.md-Template). Erkennt Skills automatisch über verschiedene Ablage-Konventionen (`skills/`, `.claude/skills/`, Root-`SKILL.md` etc.) inkl. Claude-Plugin-Marketplace-Manifesten. Über die Website skills.sh können Skills durchsucht werden. Sehr relevant als das faktische Standard-Werkzeug, mit dem praktisch alle anderen in diesem Index gelisteten Skill-Repos installiert werden – guter Kandidat, um das eigene Skill-Handling zu vereinheitlichen.
@@ -1029,23 +1029,23 @@ Das ist keine Skill-Sammlung, sondern die CLI (`npx skills`) für das offene Age
 ## VoltAgent/awesome-design-md
 
 - **URL:** https://github.com/VoltAgent/awesome-design-md
-- **Stars:** ⭐ 101.862
+- **Stars:** ⭐ 103.613
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-07-13
 - **Dateien:** 153 · **Größe:** 2,1M
 - **Struktur:** keine Standard-Skill-/Agent-Ordner (Quellcode/CLI oder reine Doku)
 
-Awesome-design-md ist eine von VoltAgent kuratierte Sammlung von rund 70 DESIGN.md-Dateien, die das von Google Stitch eingeführte Format für maschinenlesbare Design-Systeme nutzen. Jede Datei beschreibt für eine bekannte Marke (u.a. Stripe, Apple, Notion, Tesla, Figma) Farbpalette, Typografie-Hierarchie, Komponentenstile, Spacing/Grid, Schatten/Elevation, Responsive-Regeln sowie Do's/Don'ts als strukturiertes YAML-artiges Markdown mit kurzem Agenten-Prompt-Leitfaden. Das Konzept ist analog zu AGENTS.md gedacht: Während AGENTS.md Coding-Agenten sagt, wie gebaut wird, sagt DESIGN.md Design-/Coding-Agenten, wie es aussehen soll. Nutzer kopieren die Datei ins Projektroot und weisen den KI-Agenten an, UI im jeweiligen Stil zu generieren. Es handelt sich um reine, textuelle Referenzdaten ohne Automatisierungslogik, Parser oder Tooling – kein Skill-/Plugin-System, kein Code. Relevanz für das AI-Company-OS liegt vor allem als Prompt-Kontext-Baustein für UI-generierende Agenten/Workflows (Design-Konsistenz per Drop-in-Datei), nicht als Skill oder Agent selbst – ergänzt damit die eher regelbasierten Design-Skills wie [nextlevelbuilder/ui-ux-pro-max-skill](#nextlevelbuilderui-ux-pro-max-skill) um fertige, markenspezifische Tokens. Einschränkungen: Werte sind aus öffentlich sichtbarem CSS extrahiert (keine Garantie auf Aktualität/Rechtmäßigkeit bei Markenänderungen), es gibt keine Validierung/Tests der Tokens, Qualität hängt von der ursprünglichen Extraktion ab, und das Projekt ist stark durch das kommerzielle Angebot getdesign.md/VoltAgent getrieben (Sponsoring-Banner, Marketingsprache im README). MIT-lizenziert.
+Awesome-design-md ist eine von VoltAgent kuratierte Sammlung von rund 70 DESIGN.md-Dateien, die das von Google Stitch eingeführte Format für maschinenlesbare Design-Systeme nutzen. Jede Datei beschreibt für eine bekannte Marke (u.a. Stripe, Apple, Notion, Tesla, Figma) Farbpalette, Typografie-Hierarchie, Komponentenstile, Spacing/Grid, Schatten/Elevation, Responsive-Regeln sowie Do's/Don'ts als strukturiertes YAML-artiges Markdown mit kurzem Agenten-Prompt-Leitfaden. Das Konzept ist analog zu AGENTS.md gedacht: Während AGENTS.md Coding-Agenten sagt, wie gebaut wird, sagt DESIGN.md Design-/Coding-Agenten, wie es aussehen soll. Nutzer kopieren die Datei ins Projektroot und weisen den KI-Agenten an, UI im jeweiligen Stil zu generieren. Es handelt sich um reine, textuelle Referenzdaten ohne Automatisierungslogik, Parser oder Tooling – kein Skill-/Plugin-System, kein Code. Besonders nützlich ist die Sammlung als Prompt-Kontext-Baustein für UI-generierende Agenten und Workflows: Design-Konsistenz per Drop-in-Datei, nicht als Skill oder Agent selbst. Sie ergänzt damit die eher regelbasierten Design-Skills wie [nextlevelbuilder/ui-ux-pro-max-skill](#nextlevelbuilderui-ux-pro-max-skill) um fertige, markenspezifische Tokens. Einschränkungen: Werte sind aus öffentlich sichtbarem CSS extrahiert (keine Garantie auf Aktualität/Rechtmäßigkeit bei Markenänderungen), es gibt keine Validierung/Tests der Tokens, Qualität hängt von der ursprünglichen Extraktion ab, und das Projekt ist stark durch das kommerzielle Angebot getdesign.md/VoltAgent getrieben (Sponsoring-Banner, Marketingsprache im README). MIT-lizenziert.
 
 ---
 
 ## wshobson/agents
 
 - **URL:** https://github.com/wshobson/agents
-- **Stars:** ⭐ 37.914
+- **Stars:** ⭐ 38.113
 - **Heruntergeladen:** 2026-07-10
-- **Zuletzt aktualisiert:** 2026-07-10
-- **Dateien:** 1.094 · **Größe:** 7,3M
-- **Struktur:** 162× SKILL.md · Ordner: skills, agents, commands, hooks, plugins, references · Spiegelordner: .agents, .cursor, .cursor-plugin (generiert)
+- **Zuletzt aktualisiert:** 2026-07-22
+- **Dateien:** 1.160 · **Größe:** 7,6M
+- **Struktur:** 180× SKILL.md · Ordner: skills, agents, commands, hooks, plugins, references · Spiegelordner: .agents, .cursor, .cursor-plugin (generiert)
 
-Ein sehr umfangreicher "Agentic Plugin Marketplace": 92 Plugins, 199 Agenten, 162 Skills und 106 Commands, aus einer einzigen Markdown-Quelle (`plugins/`) generiert und nativ auf fünf Harnesses ausgespielt (Claude Code als Quelle der Wahrheit, plus Codex CLI, Cursor, OpenCode, Gemini CLI, GitHub Copilot) – jeweils mit harness-nativen Artefakten statt kleinstem gemeinsamen Nenner. Jedes Plugin ist isoliert und komponierbar (z.B. `plugins/python-development/` mit eigenen Agenten, Commands, Skills); die Installation eines Plugins lädt nur dessen Komponenten in den Kontext. Nutzt eine gestufte Modellstrategie (Fable 5/Opus für Architektur/Sicherheit, Sonnet für Doku/Tests, Haiku für operative Aufgaben) und ein dreistufiges Qualitäts-Eval-Framework (`plugin-eval`: statische Analyse, LLM-Judge, Monte-Carlo-Zuverlässigkeitstests). Enthält externe Memory-Integration (Pensyve) als Git-Subdir-Einbindung. Build-Tooling (`make generate-all`, `make validate`, `make garden`) hält alle Harness-Ausgaben synchron. Sehr relevant als Referenz für Multi-Harness-Distribution aus einer Quelle sowie für das eigene Qualitäts-Eval-Konzept für Skills/Plugins.
+Ein sehr umfangreicher "Agentic Plugin Marketplace": 94 Plugins, 203 Agenten, 175 Skills und 109 Commands (u.a. neu: `pptx-deck-creation` für Präsentationserstellung sowie `llm-finetuning` und `dgx-spark-ops` für eine Eval-gesteuerte Fine-Tuning-Pipeline), aus einer einzigen Markdown-Quelle (`plugins/`) generiert und nativ auf fünf Harnesses ausgespielt (Claude Code als Quelle der Wahrheit, plus Codex CLI, Cursor, OpenCode, Gemini CLI, GitHub Copilot) – jeweils mit harness-nativen Artefakten statt kleinstem gemeinsamen Nenner. Jedes Plugin ist isoliert und komponierbar (z.B. `plugins/python-development/` mit eigenen Agenten, Commands, Skills); die Installation eines Plugins lädt nur dessen Komponenten in den Kontext. Nutzt eine gestufte Modellstrategie (Fable 5/Opus für Architektur/Sicherheit, Sonnet für Doku/Tests, Haiku für operative Aufgaben) und ein dreistufiges Qualitäts-Eval-Framework (`plugin-eval`: statische Analyse, LLM-Judge, Monte-Carlo-Zuverlässigkeitstests). Enthält externe Memory-Integration (Pensyve) als Git-Subdir-Einbindung. Build-Tooling (`make generate-all`, `make validate`, `make garden`) hält alle Harness-Ausgaben synchron. Sehr relevant als Referenz für Multi-Harness-Distribution aus einer Quelle sowie für das eigene Qualitäts-Eval-Konzept für Skills/Plugins.

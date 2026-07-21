@@ -1,6 +1,6 @@
 # AGENTS-md-Onboarding-Design
 
-**Konfidenz:** meinung
+**Konfidenz:** mehrfach-belegt
 
 ## Zweck
 
@@ -35,6 +35,7 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 - 2026-02-01 · [[2026-02-01-humanlayer-writing-a-good-claude-md]] · meinung — Primärquelle (HumanLayer) bestätigt und konkretisiert dieselben Prinzipien: exaktes Instruction-Following-Budget (~150-200 Instruktionen, ~50 bereits vom System-Prompt verbraucht), Längenempfehlung (<300 Zeilen, HumanLayer selbst <60), wörtliches Zitat des Claude-Code-System-Reminders, explizite Warnung vor `/init`/Auto-Generierung.
 - 2026-02-26 · [[2026-02-26-omarsar0-agents-md-evaluation]] · meinung — ETH-Zürich-Studie (AGENTbench, 138 Instanzen/12 Repos) liefert empirischen Beleg: LLM-generierte Context Files senken die Erfolgsquote und erhöhen Kosten um >20%, menschlich geschriebene bringen +4% — Redundanz vs. Additivität als Ursache.
 - 2026-01-20 · [[2026-01-20-ben-tossell-agent-coding]] · meinung — Praxisbeispiel: eigene `agents.md` pro Projektordner mit explizitem Setup (Git-Workflow, Account-Wahl, E2E-Tests), aktiv von fremden `agents.md`-Dateien inspiriert.
+- o. D. (gesichtet 2026-07-14) · external_knowledge/ai-llm-wiki/raw/agents-md-official-spec.md (agents.md, Linux Foundation) · meinung — Offizielle Spezifikations-Website bestätigt die Design-Begründung auf Standard-Ebene: `AGENTS.md` als „README for agents", bewusst getrennt vom menschlichen README (Build-Steps, Tests, Konventionen, die ein README überladen würden); Verbreitung: über 60.000 Open-Source-Projekte auf GitHub nutzen das Format.
 
 ## Spannungen & offene Fragen
 

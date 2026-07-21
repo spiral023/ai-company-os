@@ -38,6 +38,8 @@ Ein Handoff kann außerdem bewusst zwischen unterschiedlichen Arbeitsmodi vermit
 - 2026-07-13 · [[2026-07-13-mattpocock-handoff-to-teach]] · meinung — Matt empfiehlt, Wissenslücken aus einem Grilling per Handoff in einen Teach-Workspace auszulagern und danach zum Grilling zurückzukehren.
 - 2026-07-13 · external_repos/mattpocock/skills/skills/productivity/handoff/SKILL.md · verifiziert — Das Handoff wird im temporären OS-Verzeichnis gespeichert, schlägt Skills für die nächste Session vor und verweist auf bestehende Artefakte, statt sie zu duplizieren.
 - 2026-07-13 · external_repos/mattpocock/skills/skills/productivity/teach/SKILL.md · verifiziert — `/teach` definiert einen persistenten Teaching-Workspace mit Mission, Ressourcen, Lessons und Learning Records.
+- o. D. (gesichtet 2026-07-14) · external_knowledge/ai-llm-wiki/raw/coding-agents-continuity.md · meinung — Liefert die konzeptionelle Begründung des Patterns in einem Satz: „Context is what the agent has available now. Continuity is what lets the next execution continue from what actually happened before." Größere Kontextfenster lösen das Session-Grenzen-Problem explizit nicht — „Continuity is the bridge between sessions."
+- 2026-05-27 · external_knowledge/ai-llm-wiki/raw/drowning-in-context.md (G. Vetukuri) · meinung — Ergänzt das Architektur-Pendant: „Structured Handoff Packets" — zusammengefasste Checkpoints statt Roh-History an den nächsten Bearbeitungsschritt übergeben, als eine von drei Mitigationen gegen Context Rot.
 
 ## Spannungen & offene Fragen
 

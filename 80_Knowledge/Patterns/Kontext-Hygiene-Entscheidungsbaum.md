@@ -1,6 +1,6 @@
 # Kontext-Hygiene-Entscheidungsbaum
 
-**Konfidenz:** meinung
+**Konfidenz:** mehrfach-belegt
 
 ## Zweck
 
@@ -37,11 +37,13 @@ Nach jedem abgeschlossenen Arbeitsblock wird bewusst zwischen fünf Optionen ent
 - 2026-05-01 · [[2026-05-01-mnilax-claude-code-overhead-9-patterns]] · meinung — 90-Tage-API-Audit (430h, 6 Mio. Tokens) zeigt, dass nur 27% der Tokens produktiv waren; ergänzt Cache-Lebensdauer/Resume-Miss als eigenständigen Kostenfaktor neben reiner History-Länge, mit konkretem Audit-Script.
 - 2026-01-20 · [[2026-01-20-mrexodia-vibe-engineering]] · meinung — Unabhängige Quelle bestätigt „Context Window als knappste Ressource“ (unter 50-75% Kapazität bleiben) mit dem Commodore-64-Mentalmodell als zusätzlicher Heuristik.
 - 2026-02-27 · [[2026-02-27-thariq-lessons-building-claude-code]] · meinung — Ergänzt Progressive Disclosure beim Kontextaufbau selbst (Datei verweist auf Datei statt alles upfront zu laden) als konkrete Umsetzung von Kontext-Sparsamkeit.
+- 2026-05-27 · external_knowledge/ai-llm-wiki/raw/drowning-in-context.md (G. Vetukuri, towardsai.net) · meinung — Unabhängige Bestätigung von Context Rot als „Self-Generated Noise" (Agent begräbt sein eigenes Ziel unter Tool-Outputs) und „Lost in the Middle"; ergänzt drei Architektur-Mitigationen: Intent-Pickers, Structured Handoff Packets (Checkpoints statt Roh-History), Resume Contracts.
+- o. D. (gesichtet 2026-07-14) · external_knowledge/ai-llm-wiki/raw/context-compaction-tip-009.md (M. Contieri, hackernoon.com) · meinung — Unabhängige Bestätigung der Kernregeln: oft neu starten statt stundenlanger Threads, State-Summary vor Session-Ende erzwingen, Stack-Traces auf ~5 relevante Zeilen trimmen statt 200-Zeilen-Dumps, kleine injizierbare `context.md` pflegen. Fazit dort: „You are the curator of the AI's memory."
 
 ## Spannungen & offene Fragen
 
 - Mehrere unabhängige Autoren (@trq212, @0x_kaize, Mnimiy, mrexodia, Thariq) konvergieren auf dieselbe Kernaussage „Kontext ist die knappste Ressource, mehr Fenster löst das Problem nicht“ — bei ausschließlich sekundärer Beschaffung über vibedeck/vibe-repo, nicht von uns unabhängig gegen die Original-Posts nachgeprüft.
-- Offene Frage: Wie genau lässt sich dieser Entscheidungsbaum mit [[Handoff-Doc]] kombinieren — wann reicht `/compact` mit Fokusangabe, und wann braucht es stattdessen ein explizites Handoff-Dokument vor `/clear`?
+- Offene Frage: Wie genau lässt sich dieser Entscheidungsbaum mit [[Handoff-Doc]] kombinieren — wann reicht `/compact` mit Fokusangabe, und wann braucht es stattdessen ein explizites Handoff-Dokument vor `/clear`? (Vetukuri 2026-05-27 stützt die Handoff-Seite: „Structured Handoff Packets" statt Roh-History als Architekturprinzip.)
 
 ## Verwandte Patterns
 

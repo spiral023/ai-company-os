@@ -39,6 +39,8 @@ Die Komposition umfasst auch Infrastruktur: `/setup-matt-pocock-skills` schreibt
 - 2026-07-13 · external_repos/mattpocock/skills/skills/engineering/setup-matt-pocock-skills/SKILL.md · verifiziert — Setup dokumentiert Tracker, Triage-Labels und Domain-Docs; GitHub, GitLab, lokale Dateien und frei beschriebene andere Tracker sind vorgesehen.
 - 2026-07-13 · external_repos/mattpocock/skills/skills/engineering/research/SKILL.md · verifiziert — `research` ist model-invoked und delegiert Primärquellen-Recherche an einen Hintergrundagenten.
 - 2026-07-13 · external_repos/mattpocock/skills/skills/engineering/prototype/SKILL.md · verifiziert — `prototype` ist model-invoked und erzeugt bewusst wegwerfbare Artefakte zur Beantwortung einer Designfrage.
+- o. D. (gesichtet 2026-07-14) · external_knowledge/ai-llm-wiki/raw/agentskills-best-practices.md (agentskills.io) · meinung — Unabhängige Bestätigung der Größendisziplin mit konkreten Grenzen: `SKILL.md` unter 500 Zeilen/5.000 Tokens, Skills als „coherent units" schneiden — weder zu eng (mehrere Skills müssen für eine Aufgabe laden) noch zu breit (schwer präzise zu aktivieren).
+- o. D. (gesichtet 2026-07-14) · external_knowledge/ai-llm-wiki/raw/opencode-cloudflare-skill-anatomy.md (D. Mulroy) · meinung — Zeigt, wie Komposition bei großen Domänen (60+ Produkte) skaliert, ohne monolithisch zu werden: Decision-Trees statt flacher Listen, 5-Datei-Struktur pro Produkt (README/api/configuration/patterns/gotchas), Cross-References bewusst nur eine Ebene tief — verschachtelte Ladeketten (`SKILL.md → A.md → B.md`) verwirren das Laden.
 
 ## Spannungen & offene Fragen
 

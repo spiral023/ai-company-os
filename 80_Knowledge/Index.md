@@ -27,6 +27,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Fable-Unknowns-vor-Prompt-Qualitaet]] — der Engpass ist nicht der Prompt, sondern unaufgeschriebene Annahmen; acht Techniken zum systematischen Aufdecken.
 - [[Action-Space-Design-nach-Modellfaehigkeit]] — Agent-Tools am tatsächlichen Fähigkeitsprofil des Modells ausrichten statt an Feature-Vollständigkeit.
 - [[Lokale-Modell-Umleitung-Muster]] — Claude Code per Umgebungsvariablen auf lokale oder alternative Cloud-Modelle umleiten, CLI bleibt gleich.
+- [[Anti-Rationalization-Tables]] — vorformulierte Widerlegungen typischer Ausreden verhindern, dass Agenten disziplin-tragende Workflows überspringen.
 
 ## Guides
 

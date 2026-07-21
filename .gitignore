@@ -45,3 +45,4 @@ external_repos/*
 secrets/
 *.key
 *.pem
+external_knowledge/

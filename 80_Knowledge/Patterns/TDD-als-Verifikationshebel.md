@@ -1,6 +1,6 @@
 # TDD-als-Verifikationshebel
 
-**Konfidenz:** meinung
+**Konfidenz:** mehrfach-belegt
 
 ## Zweck
 
@@ -33,13 +33,16 @@ Kontextmenge, Prüfbarkeit und Arbeitspaketgröße bestimmen gemeinsam die Quali
 - 2026-02-14 · [[2026-02-14-matt-pocock-skill-tdd-claude-code]] · meinung — Primärquelle (Matt Pocock, aihero.dev) liefert den Begriff „Tracer Bullets“ im Original, konkrete Code-Beispiele für gute vs. schlechte Tests und Planungsfragen vor dem ersten Test (Interface-Änderungen, Deep Modules, Testbarkeit durch Dependency Injection).
 - 2026-01-20 · [[2026-01-20-mrexodia-vibe-engineering]] · meinung — Unabhängige Quelle bestätigt: TDD ist für Agenten (anders als laut Autor für Menschen) kein Scam, sondern Goldstandard, weil es eine Feedback-Schleife per Design ist.
 - 2026-01-26 · [[2026-01-26-karpathy-coding-workflow-2026]] · meinung — Dritte unabhängige Quelle (Karpathy) beschreibt denselben Mechanismus als Teil von „Leverage“: Tests schreiben und bestehen lassen als deklarative Erfolgskriterien statt imperativer Anweisungen.
+- o. D. (gesichtet 2026-07-14) · external_knowledge/ai-llm-wiki/raw/addyosmani-agent-skills-blog.md (Addy Osmani, Google) · meinung — Vierte unabhängige Quelle, generalisiert das Prinzip auf Skill-Ebene: „Verification is Non-Negotiable — every skill terminates in concrete evidence. 'Seems right' is never sufficient." Ergänzt eine wichtige Nuance über den grünen Test hinaus: „Passing tests are evidence, not proof. Did you check the runtime? Did a human read the diff?" — und die Praxisregel, „produce evidence" als harten Exit-Schritt jeder Aufgabe zu definieren (Testlauf, Screenshot, Log oder Review-Approval).
 
 ## Spannungen & offene Fragen
 
-- Drei unabhängige Autoren (Matt Pocock, Duncan Ogilvie, Andrej Karpathy) konvergieren unabhängig auf TDD als zentralen Verifikationsmechanismus für Agenten — stützt die Kernaussage über bloße Einzelmeinung hinaus, auch wenn keine kontrollierte Studie vorliegt.
+- Vier unabhängige Autoren (Matt Pocock, Duncan Ogilvie, Andrej Karpathy, Addy Osmani — Stand 2026-07-14) konvergieren unabhängig auf TDD/Verifikation als zentralen Mechanismus für Agenten — stützt die Kernaussage über bloße Einzelmeinung hinaus, auch wenn keine kontrollierte Studie vorliegt.
+- Spannung 2026-07-14 (Osmani): Grüne Tests allein können selbst zur Scheinverifikation werden („evidence, not proof") — der Agent kann Tests passend machen. Konsequenz: Runtime-Check und menschlicher Diff-Read bleiben Teil der Eskalationskette, TDD ersetzt sie nicht.
 - Offene Frage: Wie lässt sich TDD-Pflicht mit sehr frühen, explorativen Prototyping-Phasen (siehe [[Lovable-Prototyp-dann-lokaler-Handoff]]) vereinbaren, wo noch kein stabiler Prüfpfad existiert?
 
 ## Verwandte Patterns
 
 - [[Plan-first-mit-getrenntem-Review]]
 - [[Spec-Grilling]]
+- [[Anti-Rationalization-Tables]]
