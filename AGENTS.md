@@ -162,8 +162,15 @@ Trigger-Phrasen wie „update die externen Repos“ oder „aktualisiere externa
 2. Nur für die vom Script als „NEU" gemeldeten Repos die inhaltliche Zusammenfassung prüfen:
    - README.md erneut lesen; falls vorhanden `CHANGELOG.md` bzw. Release-Notes sichten (viele READMEs enthalten die Highlights bereits inline).
    - Die ~200-Wort-Zusammenfassung in `external_repos/INDEX.md` nur bei inhaltlich relevanten Änderungen neu schreiben (dieser Teil ist bewusst NICHT automatisiert — er braucht Urteilsvermögen).
-3. Unveränderte Repos brauchen keine manuelle Nacharbeit — ihre Metadaten hat das Script bereits aufgefrischt.
-4. Am Ende kurz zusammenfassen, welche Repos sich geändert haben und was daran neu ist.
+3. Jeden Update-Lauf in `CHANGELOG-EXTERNAL-REPOS.md` dokumentieren:
+   - Einen neuen Abschnitt mit Datum am Anfang der Datei ergänzen; bei mehreren Läufen am selben Tag zusätzlich die Uhrzeit im Titel verwenden.
+   - Eine kurze Laufstatistik festhalten: geprüfte, geänderte, unveränderte und fehlgeschlagene Repos.
+   - Jedes Repo mit neuen Commits erhält einen eigenen Unterabschnitt mit Commit-Spanne (`alt → neu`) und 1–3 konkreten Stichpunkten zu den relevanten Änderungen aus README, Changelog, Release-Notes oder Commit-Verlauf.
+   - Pro Repo vermerken, ob und warum die inhaltliche Zusammenfassung in `external_repos/INDEX.md` angepasst wurde oder unverändert bleiben konnte.
+   - Bewusst separat gepflegte Repos außerhalb von `external_repos/` (aktuell `external_knowledge/ai-llm-wiki/`) ebenfalls aktualisieren und im selben Lauf dokumentieren.
+   - Alte Changelog-Einträge niemals umschreiben oder löschen; die Datei wird nur datiert ergänzt.
+4. Unveränderte Repos brauchen keine manuelle Nacharbeit und keinen eigenen Changelog-Unterabschnitt — ihre Metadaten hat das Script bereits aufgefrischt.
+5. Am Ende kurz zusammenfassen, welche Repos sich geändert haben und was daran neu ist; auf den neuen Changelog-Abschnitt verweisen.
 
 ## Projektarten in Phase 1
 
