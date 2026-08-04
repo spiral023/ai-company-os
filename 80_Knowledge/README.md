@@ -4,7 +4,8 @@ Wissensbasis über KI-Arbeitsweisen (Coding Agents, Skills, Agent-Workflows, Fra
 
 ## Struktur
 
-- `Sources/` — unveränderliches Quellen-Archiv, eine Datei pro Quelle: `YYYY-MM-DD-<autor>-<slug>.md` (Datum = Original-Veröffentlichung).
+- `00_Inbox/Quellen/` — **Rohquellen-Archiv** (nicht Teil von `80_Knowledge/`): vollständiger Originaltext und Bilder, wie erfasst. Siehe `00_Inbox/Quellen/README.md`.
+- `Sources/` — redaktionelle deutsche Aufarbeitung je Quelle: `YYYY-MM-DD-<autor>-<slug>.md` (Datum = Original-Veröffentlichung). Seit 2026-08-04 wird hier **nicht mehr der Originaltext** abgelegt — der liegt in `00_Inbox/Quellen/` und wird per Frontmatter-Feld `rohquelle:` verlinkt. Aufbau- und Sprachregeln: `30_Skills/local/quellen-verarbeiten/references/artikel-format.md`.
 - `Patterns/` — lebende Synthese-Notizen, eine pro Arbeitsweise.
 - `Vergleiche/` — Verdichtung mehrerer Patterns/Frameworks zu Empfehlungen, eine Datei pro Themenfeld.
 - `Index.md` — Einstieg: alle Patterns und Vergleiche mit Einzeilern.
@@ -36,21 +37,34 @@ autor: <Handle oder Name>
 datum: <YYYY-MM-DD der Original-Veröffentlichung>
 erfasst: <YYYY-MM-DD des Ingests>
 typ: tweet | artikel | repo | video | notiz
+rohquelle: <00_Inbox/Quellen/<slug>.md — entfällt, wenn keine erfasste Rohquelle existiert>
 ---
 
-# <Titel: Autor zu Thema>
+# <Aussagekräftiger deutscher Titel>
 
-## Inhalt
+<Einstieg: worum es geht und warum es relevant ist.>
 
-<Originaltext. Bei URL-Abruf: das Abruf-Ergebnis, gekennzeichnet mit „(per WebFetch abgerufen, ggf. verlustbehaftet)“.>
+## <Fachliche Überschrift>
 
-Medien: <optional — Original-URL relevanter Bilder/Diagramme plus Ein-Satz-Beschreibung des Inhalts; nichts herunterladen>
+<Redaktionelle deutsche Zusammenfassung, nach Lernlogik geordnet. Bilder relativ aus
+`00_Inbox/Quellen/medien/<slug>/` referenzieren, dort wo der Text sie braucht.>
+
+## Einordnung
+
+<Fachliche Bewertung, klar getrennt von den Aussagen der Quelle: was ist belastbar,
+was selbstberichtet, was widerspricht dem Bestand, was kostet die Arbeitsweise.>
 
 ## Kernaussagen
 
 - <Aussage 1> → [[<Pattern-Name>]]
 - <Aussage 2> → [[<Pattern-Name>]]
+
+## Verbindungen
+
+- [[<verwandtes Pattern oder Source>]]
 ```
+
+Liegt keine erfasste Rohquelle vor (z. B. von Philipp eingefügter Text), tritt ein Abschnitt `## Inhalt` mit dem Originaltext an die Stelle von `rohquelle:`.
 
 ## Template: Pattern-Notiz
 

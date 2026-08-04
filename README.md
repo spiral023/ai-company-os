@@ -14,6 +14,7 @@ Einzelne Softwareprojekte liegen später in eigenen GitHub-Repositories. Dieses 
 | Externe Skills | dokumentiert, aber nicht automatisch vertrauenswürdig |
 | Health Check | `python 70_Scripts/company_os_healthcheck.py` |
 | Obsidian | Markdown, Wiki-Links und kurze Index-Dateien |
+| Knowledge-System | 29 Patterns, 63 Source-Notizen unter `80_Knowledge/`; 81 Rohquellen in `00_Inbox/Quellen/` (Stand 2026-08-05) |
 
 ## Was dieses Repo ist
 
@@ -182,6 +183,32 @@ Alle Workflows liegen unter `20_Workflows/`.
 - `Märkte/`: Märkte, Wettbewerber und Zielgruppen
 - `Kunden/`: Kundensegmente und Bedarfsmuster
 - `Lessons_Learned/`: wiederverwendbare Erkenntnisse
+
+## Knowledge-System
+
+`80_Knowledge/` ist die lebende Wissensbasis über KI-Arbeitsweisen (Coding Agents, Skills, Agent-Workflows, Frameworks) — gespeist aus Tweets, Artikeln, offizieller Doku und eigener Erfahrung. Rohquellen liegen unveränderlich in `00_Inbox/Quellen/`, die redaktionelle Synthese in `80_Knowledge/Sources/` und `80_Knowledge/Patterns/`. Regeln, Konfidenz-Modell und Templates: `80_Knowledge/README.md`. Vollständige Liste mit Einzeilern: `80_Knowledge/Index.md`.
+
+**29 Patterns** (Stand 2026-08-05), nach Themenfeld:
+
+| Themenfeld | Anzahl | Beispiele |
+|---|---|---|
+| Skills & Agenten-Architektur | 8 | `Skill-Call-Hierarchie`, `Klein-und-komposierbar`, `AGENTS-md-Onboarding-Design` |
+| Planung & Verifikation | 6 | `Plan-first-mit-getrenntem-Review`, `TDD-als-Verifikationshebel`, `Testharness-als-staerkster-Hebel` |
+| Kontext- & Session-Management | 4 | `Kontext-Hygiene-Entscheidungsbaum`, `Handoff-Doc`, `Ralph-Loop-Frischer-Kontext-pro-Iteration` |
+| Parallelisierung & Rollen | 3 | `Kontrollierte-Agent-Parallelisierung`, `Great-Decoupling-Rollenverstaendnis` |
+| Modell & Kosten | 2 | `Modell-Eskalation-von-guenstig-nach-teuer`, `Lokale-Modell-Umleitung-Muster` |
+| Security & Sandbox | 2 | `Deny-Rules-statt-CLAUDE-md-Empfehlung`, `Sandbox-Komposition-aus-OS-Primitiven` |
+| Prompting | 2 | `Fable-Unknowns-vor-Prompt-Qualitaet`, `Voice-Prompting-fuer-Kontextreichtum` |
+| CI/Betrieb, Prototyping | 2 | `CI-Agent-mit-Review-Gate`, `Lovable-Prototyp-dann-lokaler-Handoff` |
+
+Dazu 63 Source-Notizen (`80_Knowledge/Sources/`) und ein laufender Übernahme-Prozess aus einem zweiten Projekt (vibedeck): 81 Rohquellen in `00_Inbox/Quellen/`, Fortschritt und nächste Schritte in `00_Inbox/Quellen/VERARBEITUNGSPLAN.md`.
+
+Neue Quelle einarbeiten: Skill `quellen-verarbeiten` (`30_Skills/local/quellen-verarbeiten/`). Validieren:
+
+```bash
+python 70_Scripts/validate_knowledge.py
+python 70_Scripts/fix_typography.py 80_Knowledge/Sources/<neue-datei>.md
+```
 
 ## Obsidian
 

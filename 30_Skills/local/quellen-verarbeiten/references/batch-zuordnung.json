@@ -1,0 +1,152 @@
+[
+ {
+  "batch": "skills-subagents-1",
+  "dateien": [
+   "2026-01-12-eyad-khrais-claude-code-tutorial-level-2.md",
+   "2026-01-21-meta-alchemist-claude-skills-deep-dive.md",
+   "2026-01-21-tempoimmaterial-agent-skills-vs-rules.md",
+   "2026-01-23-jarrodwatts-context-engineering-guide.md",
+   "2026-01-25-sankalp-claude-code-experience.md",
+   "2026-01-31-bcherny-claude-code-team-tips.md",
+   "2026-02-01-aiedge-claude-starter-pack.md",
+   "2026-02-01-anthropic-docs-create-custom-subagents.md",
+   "2026-02-01-anthropic-docs-extend-claude-code.md"
+  ],
+  "bilder": 33
+ },
+ {
+  "batch": "skills-subagents-2",
+  "dateien": [
+   "2026-02-01-anthropic-docs-extend-claude-with-skills.md",
+   "2026-02-02-anthony-riera-planning-with-files-skill.md",
+   "2026-02-04-meer-aiit-claude-skills-complete-guide.md",
+   "2026-02-05-carl-vellotti-claude-code-for-everyone-course.md",
+   "2026-02-05-tadas-petra-agent-skills-deep-dive.md",
+   "2026-02-09-pdrmnvd-how-claude-code-skills-work.md",
+   "2026-02-09-tom-crawshaw-claude-code-insights-guide.md",
+   "2026-02-11-rohit4verse-guide-building-agent-skills.md",
+   "2026-02-14-gmoney-eth-25-claude-code-lessons.md"
+  ],
+  "bilder": 16
+ },
+ {
+  "batch": "skills-subagents-3",
+  "dateien": [
+   "2026-02-27-meer-ai-tools-news-claude-code-best-practices-2026.md",
+   "2026-07-13-matt-pocock-matt-pocock-skills-praxisguide.md"
+  ],
+  "bilder": 1
+ },
+ {
+  "batch": "mcp-hooks-tooling-1",
+  "dateien": [
+   "2026-01-12-dhruv1103-lessons-learned-500k-lines-claude-code.md",
+   "2026-01-21-ai-edge-claude-50-pro-tips.md",
+   "2026-01-22-hooeem-claude-code-guide.md",
+   "2026-02-01-anthropic-docs-automate-workflows-with-hooks.md",
+   "2026-02-01-anthropic-docs-claude-code-vs-code.md",
+   "2026-02-01-anthropic-docs-connect-claude-code-to-mcp.md",
+   "2026-02-01-anthropic-docs-how-claude-code-works.md",
+   "2026-02-04-aiedge-10-claude-code-prompts-you-need-to-steal.md",
+   "2026-02-07-jason-zhou-claude-code-agent-teams.md"
+  ],
+  "bilder": 12
+ },
+ {
+  "batch": "mcp-hooks-tooling-2",
+  "dateien": [
+   "2026-02-13-vincanger-claude-code-fullstack-essentials.md",
+   "2026-02-23-elvis-openclaw-codex-agent-swarm.md",
+   "2026-03-21-sourfraser-claude-obsidian-ai-employee.md",
+   "2026-05-09-zodchiii-15-claude-code-settings-most-developers.md",
+   "2026-07-01-mozilla-mit-slashdata-state-of-open-source-ai-2026.md"
+  ],
+  "bilder": 7
+ },
+ {
+  "batch": "workflow-orchestrierung-1",
+  "dateien": [
+   "2026-01-15-unbekannt-vibe-coding-beginner-guide.md",
+   "2026-01-23-nummanali-claude-task-system.md",
+   "2026-01-31-unsloth-team-kimi-k2-5-local-guide.md",
+   "2026-02-01-google-ai-studio-nano-banana-pro-tutorial.md",
+   "2026-02-01-unbekannt-vibe-coding-rules.md",
+   "2026-02-01-unbekannt-writing-agents-md.md",
+   "2026-02-03-god-of-prompt-karpathy-ai-coding-system-prompt.md",
+   "2026-02-05-harshil-tomar-vibe-coding-roadmap.md",
+   "2026-02-07-daniel-san-advanced-agent-teams-patterns.md"
+  ],
+  "bilder": 30
+ },
+ {
+  "batch": "workflow-orchestrierung-2",
+  "dateien": [
+   "2026-02-17-damien-lovable-proposals-guide.md",
+   "2026-02-20-boris-tane-sdlc-is-dead.md",
+   "2026-02-25-heynavtoor-claude-cowork-setup-guide.md",
+   "2026-02-28-openai-codex-multi-agents-guide.md"
+  ],
+  "bilder": 3
+ },
+ {
+  "batch": "planung-verifikation",
+  "dateien": [
+   "2026-01-14-ashpreetbedi-claude-code-spec-first.md",
+   "2026-02-01-anthropic-docs-claude-code-common-workflows.md",
+   "2026-02-01-unbekannt-software-testing-guide.md",
+   "2026-02-03-svpino-claude-code-md-tips.md",
+   "2026-02-04-lovable-docs-prompting-debugging.md",
+   "2026-02-04-tweag-tdd-agentic-coding.md",
+   "2026-02-05-kloss-xyz-feature-intelligence-architect.md",
+   "2026-02-10-boris-tane-boris-tane-claude-code-workflow.md"
+  ],
+  "bilder": 2
+ },
+ {
+  "batch": "prompting-vibecoding",
+  "dateien": [
+   "2026-01-22-damien-lovable-website-guide.md",
+   "2026-02-01-god-of-prompt-gemini-elite-web-designer.md",
+   "2026-02-01-google-ai-gemini-image-generation.md",
+   "2026-02-04-lovable-docs-lovable-security-guide.md",
+   "2026-02-15-avid-ai-design-workflow-2026.md",
+   "2026-02-24-aakash-gupta-notebooklm-complete-guide.md"
+  ],
+  "bilder": 9
+ },
+ {
+  "batch": "context-management",
+  "dateien": [
+   "2026-01-10-eyad-khrais-claude-code-tutorial.md",
+   "2026-02-01-anthropic-docs-claude-code-best-practices.md",
+   "2026-02-14-minty-mastering-claude-code.md",
+   "2026-07-08-claudedevs-claude-code-model-und-effort.md"
+  ],
+  "bilder": 15
+ },
+ {
+  "batch": "claude-code-basis",
+  "dateien": [
+   "2026-02-01-anthropic-docs-claude-code-gitlab-ci.md",
+   "2026-02-02-unsloth-team-claude-code-local-llm.md",
+   "2026-08-04-anthropic-best-practices-for-claude-code-claude-code-docs.md"
+  ],
+  "bilder": 1
+ },
+ {
+  "batch": "security-kosten",
+  "dateien": [
+   "2026-02-28-openai-codex-rules-guide.md",
+   "2026-05-13-david-wiesen-openai-codex-windows-sandbox.md"
+  ],
+  "bilder": 0
+ },
+ {
+  "batch": "sonstiges",
+  "dateien": [
+   "2026-04-22-alibaba-qwen-qwen3-6-27b-lokal-betreiben.md",
+   "2026-07-28-pdf-state-of-open-source-ai-v1-0-1.md"
+  ],
+  "bilder": 3
+ }
+]

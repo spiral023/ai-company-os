@@ -9,7 +9,6 @@ import {
   extractArticleText,
   isThreadStart,
   orderThreadChronologically,
-  formatDump,
 } from './lib/x-ingest.mjs';
 import {
   createClient,
@@ -17,14 +16,25 @@ import {
   resolveThreadForward,
   resolveThreadBackward,
 } from './lib/x-client.mjs';
+import {
+  buildSlug,
+  downloadMedia,
+  formatInboxNote,
+  writeInboxNote,
+  mediaTargetDir,
+  INBOX_REL,
+} from './lib/inbox-store.mjs';
 
 const rootDir = process.cwd();
 const ingestDir = path.join(rootDir, 'scripts/.ingest');
 
 function usage() {
   console.log(
-    'Usage: npm run ingest:x -- <tweet-url-oder-id> [--thread] [--force] [--max-thread <n>]',
+    'Usage: npm run ingest:x -- <tweet-url-oder-id> [--thread] [--force] [--refetch] [--max-thread <n>] [--no-media]',
   );
+  console.log(`  Ablage: ${INBOX_REL}/<slug>.md · Medien: ${INBOX_REL}/medien/<slug>/`);
+  console.log('  --force    Notiz neu schreiben (aus dem Cache, kein API-Call).');
+  console.log('  --refetch  API-Antwort neu holen — kostet einen Request. Impliziert --force.');
 }
 
 function loadEnv() {
@@ -100,12 +110,11 @@ async function main() {
 
   fs.mkdirSync(ingestDir, { recursive: true });
   const jsonPath = path.join(ingestDir, `${id}.json`);
-  const mdPath = path.join(ingestDir, `${id}.md`);
 
   let payload;
-  if (fs.existsSync(jsonPath) && !args.force) {
+  if (fs.existsSync(jsonPath) && !args.refetch) {
     console.log(
-      `● Cache-Treffer: ${path.relative(rootDir, jsonPath)} (kein API-Call). --force zum Neuladen.`,
+      `● Cache-Treffer: ${path.relative(rootDir, jsonPath)} (kein API-Call). --refetch lädt neu.`,
     );
     payload = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
   } else {
@@ -154,19 +163,65 @@ async function main() {
   const author = findAuthor(payload.includes, tweet.author_id);
   const media = extractMedia(payload.includes?.media);
   const articleMedia = extractArticleMedia(tweet, payload.includes?.media);
-  const md = formatDump({ tweet, author, media, articleMedia, thread: payload.thread });
-  fs.writeFileSync(mdPath, md, 'utf8');
+  const slug = buildSlug({ createdAt: tweet.created_at, username: author?.username, id });
+  const notePath = path.join(rootDir, INBOX_REL, `${slug}.md`);
+
+  // Eine bestehende Notiz kann manuell ergänzt oder auf status:verarbeitet
+  // gesetzt sein — die darf ein erneuter Lauf nicht stillschweigend verwerfen.
+  if (fs.existsSync(notePath) && !args.force) {
+    console.log(`● Notiz existiert bereits: ${path.relative(rootDir, notePath)}`);
+    console.log('  Unverändert gelassen. --force überschreibt sie.');
+    return;
+  }
+
+  // Medien für Deduplizierung in derselben Reihenfolge wie in der Notiz.
+  const mediaToLoad = [];
+  const seenMedia = new Set();
+  for (const item of [...articleMedia, ...media]) {
+    const key = item.url || item.key;
+    if (!key || seenMedia.has(key)) continue;
+    seenMedia.add(key);
+    mediaToLoad.push(item);
+  }
+
+  let downloads = [];
+  if (args.media && mediaToLoad.length) {
+    downloads = await downloadMedia(mediaToLoad, mediaTargetDir(rootDir, slug));
+    for (const d of downloads.filter((x) => !x.ok)) {
+      console.warn(`⚠ Medien-Download fehlgeschlagen (${d.file}): ${d.error}`);
+    }
+  }
+
+  const note = formatInboxNote({
+    tweet,
+    author,
+    slug,
+    media,
+    articleMedia,
+    thread: payload.thread,
+    threadMethod: payload.threadMethod,
+    downloads,
+    fetchedAt: payload.fetchedAt,
+  });
+  writeInboxNote(rootDir, slug, note);
 
   const articleText = extractArticleText(tweet);
   const contentLen = articleText ? articleText.length : extractTweetText(tweet).length;
-  const contentNote = articleText ? ` Zeichen (Artikel)` : ` Zeichen`;
+  const contentNote = articleText ? ' Zeichen (Artikel)' : ' Zeichen';
   const threadNote = payload.thread
     ? ` · Thread: ${payload.thread.length} Posts (${payload.threadMethod})`
     : '';
-  console.log(`✔ Dump: ${path.relative(rootDir, mdPath)}`);
+  const okCount = downloads.filter((d) => d.ok).length;
+  const skipped = downloads.filter((d) => d.skipped).length;
+  const mediaNote = mediaToLoad.length
+    ? ` · Medien: ${okCount}/${mediaToLoad.length} lokal${skipped ? ` (${skipped} bereits vorhanden)` : ''}`
+    : '';
+
+  console.log(`✔ Quelle: ${path.relative(rootDir, notePath)}`);
   console.log(
-    `  Autor: ${author?.name ?? '?'} (@${author?.username ?? '?'}) · ${contentLen}${contentNote}${threadNote}`,
+    `  Autor: ${author?.name ?? '?'} (@${author?.username ?? '?'}) · ${contentLen}${contentNote}${threadNote}${mediaNote}`,
   );
+  console.log('  status: neu — wird beim nächsten Sammel-Lauf verarbeitet.');
 }
 
 main().catch((err) => {

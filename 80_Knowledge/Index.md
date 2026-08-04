@@ -28,6 +28,11 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Action-Space-Design-nach-Modellfaehigkeit]] — Agent-Tools am tatsächlichen Fähigkeitsprofil des Modells ausrichten statt an Feature-Vollständigkeit.
 - [[Lokale-Modell-Umleitung-Muster]] — Claude Code per Umgebungsvariablen auf lokale oder alternative Cloud-Modelle umleiten, CLI bleibt gleich.
 - [[Anti-Rationalization-Tables]] — vorformulierte Widerlegungen typischer Ausreden verhindern, dass Agenten disziplin-tragende Workflows überspringen.
+- [[Modell-Eskalation-von-guenstig-nach-teuer]] — beim günstigsten tragfähigen Modell starten und erst bei ausbleibendem Fortschritt hochschalten; Reasoning-Stufe ist die zweite, unabhängige Achse.
+- [[Advisor-Agent-gegen-Drift]] — zweiter Agent mit einem einzigen Auftrag: Ziel und Constraints überwachen und bei Abweichung während des Laufs eingreifen.
+- [[Voice-Prompting-fuer-Kontextreichtum]] — gesprochene statt getippte Prompts liefern beiläufig mehr Kontext, Details und Constraints.
+- [[CI-Agent-mit-Review-Gate]] — Coding Agent läuft sandboxed und event-getriggert in CI, Output läuft ausschließlich über das bestehende Team-Review-Gate (MR/PR).
+- [[Sandbox-Komposition-aus-OS-Primitiven]] — kein einzelnes natives OS-Feature deckt den offenen Zugriffsbedarf eines Coding Agents; die Sandbox-Grenze entsteht aus mehreren komponierten Primitiven.
 
 ## Guides
 

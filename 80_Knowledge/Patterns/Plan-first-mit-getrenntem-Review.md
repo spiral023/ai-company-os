@@ -36,6 +36,10 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-07-13 · external_repos/mattpocock/skills/skills/engineering/code-review/SKILL.md · verifiziert — Code Review trennt Standards- und Spec-Prüfung in zwei unabhängige Review-Achsen.
 - 2026-02-20 · [[2026-02-20-aseem-shrey-claude-codex-plan-review]] · meinung — Unabhängige Primärquelle liefert ein konkretes technisches Muster für getrenntes Review: Cross-Model-Review (Codex prüft read-only Claudes Pläne) mit VERDICT-Protokoll und Rundenlimit, plus Vorher-Nachher-Beispiel (14 Probleme in 3 Runden behoben).
 - 2026-07-03 · [[2026-07-03-trq212-fable-field-guide-unknowns]] · meinung — Ergänzt eine konkrete Priorisierungsregel für den Plan-Schritt: Implementierungspläne nach Änderungswahrscheinlichkeit sortieren (Datenmodelle/Interfaces zuerst), damit Review-Aufwand dort konzentriert wird, wo Fehlannahmen am teuersten sind.
+- 2026-08-04 · [[2026-08-04-anthropic-docs-claude-code-best-practices]] · meinung — Ergänzt einen konkreten Adversarial-Review-Prompt gegen `PLAN.md`: Diff gegen Plan, Edge-Case-Test-Abdeckung und Scope-Grenzen prüfen, mit der expliziten Anweisung „Report gaps, not style preferences“.
+- 2026-02-27 · [[2026-02-27-meer-claude-code-best-practices]] · meinung — Boris Cherny (laut Tweet-Sekundärquelle) lässt eine zweite Claude-Instanz bereits den Plan selbst als Senior Engineer prüfen, bevor implementiert wird — Review vor der Umsetzung statt erst am fertigen Diff.
+- 2026-01-10 · [[2026-01-10-eyad-khrais-claude-code-tutorial]] · meinung — Erfahrungsbericht: Plan Mode vor Implementierung liefert laut Autor „10 von 10 Mal“ signifikant bessere Ergebnisse als direktes Losschreiben (unbelegte Einschätzung).
+- 2026-02-01 · [[2026-02-01-anthropic-docs-claude-code-best-practices]] · meinung — Offizielle Anthropic-Doku bestätigt Explore→Plan→Implement→Commit als empfohlenen Standardablauf für nicht-triviale Änderungen.
 
 ## Spannungen & offene Fragen
 

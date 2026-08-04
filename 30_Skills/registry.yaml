@@ -155,6 +155,18 @@ skills:
   default_for_project_types: []
   description: Arbeitet Tweets, Links und Texte über KI-Arbeitsweisen ins Knowledge-System
     (80_Knowledge) ein und liefert ein Diff-Resümee.
+- id: quellen-verarbeiten
+  type: local
+  path: 30_Skills/local/quellen-verarbeiten/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: false
+  project_types:
+  - all
+  default_for_project_types: []
+  description: "Arbeitet offene Quellen aus 00_Inbox/Quellen/ (status: neu) als Sammel-Lauf
+    ins Knowledge-System ein — deutsche Zusammenfassung mit Bildern, Quervergleich mit
+    dem Bestand, abgeleitete Arbeitsweisen als Patterns."
 - id: knowledge-review
   type: local
   path: 30_Skills/local/knowledge-review/SKILL.md

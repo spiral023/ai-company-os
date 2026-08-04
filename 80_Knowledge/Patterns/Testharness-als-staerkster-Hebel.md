@@ -30,10 +30,13 @@ Autonome Agenten optimieren zuverlässig das, was der Verifier misst — ist der
 ## Belege
 
 - 2026-02-05 · [[2026-02-05-carlini-anthropic-c-compiler]] · meinung — Anthropic-Engineering-Bericht (16 parallele Claude-Agenten bauen einen C-Compiler) beschreibt den Testharness-Hebel, den Oracle-Ansatz mit GCC und die Rolle spezialisierter Agenten, mit konkreten Kosten-/Aufwandszahlen (~20.000 USD, ~2 Wochen, ~100.000 Zeilen Code).
+- 2026-08-04 · [[2026-08-04-anthropic-docs-claude-code-best-practices]] · meinung — Offizielle Anthropic-Doku beschreibt eine vierstufige Verifikations-Eskalation (Prompt → `/goal`-Evaluator → Stop-Hook mit Acht-Blockierungen-Override → zweite Meinung durch frisches Modell) als strukturellen Baukasten für den Verifikationsschritt selbst, über den bisherigen Oracle-Beleg hinaus.
+- 2026-02-01 · [[2026-02-01-anthropic-docs-claude-code-best-practices]] · meinung — Ergänzt drei konkrete Beispiele für verifizierbare statt vage Anweisungen (Testfälle statt „implementiere Validierung“, Screenshot-Soll-Ist-Vergleich statt „mache es schöner“, konkrete Fehlermeldung statt Symptombeschreibung).
+- 2026-02-14 · [[2026-02-14-minty-mastering-claude-code]] · meinung — Erfahrungsbericht ergänzt eine visuelle Grenze des Verifikationshebels: Claude „sieht“ den Bildschirm nicht und schließt CSS-/Rendering-Fixes rein logisch aus dem Code, nicht aus dem tatsächlichen Ergebnis — visuelle Änderungen müssen deshalb vom Menschen verifiziert werden.
 
 ## Spannungen & offene Fragen
 
-- Einzige bisherige Quelle ist ein einzelner (wenn auch sehr detaillierter, offizieller Anthropic-)Bericht — keine unabhängige Zweitquelle bislang.
+- Drei von vier Belegen stammen von Anthropic selbst (Carlini-Bericht, beide Best-Practices-Docs) — inhaltlich unterschiedliche Dokumente zu unterschiedlichen Zeitpunkten, aber organisatorisch nicht unabhängig. Nur der Minty-Beleg ist eine echte Drittquelle, deckt aber nur einen Teilaspekt (visuelle Verifikation) statt der Kernaussage ab.
 - Offene Frage: Wie überträgt sich der Oracle-Ansatz auf Domänen ohne bekannt funktionierende Referenzimplementierung (z.B. neuartige Geschäftslogik ohne Vorbild)?
 
 ## Verwandte Patterns

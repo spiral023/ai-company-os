@@ -41,6 +41,25 @@ temp/
 external_repos/*
 !external_repos/INDEX.md
 
+# Quell-Binärdateien (PDFs, Office-Dokumente, Medien, Archive)
+# Bleiben lokal, z. B. in 00_Inbox/. Versioniert wird die Markdown-Auswertung
+# einer Quelle, nicht das Original. Einzelfall bewusst aufnehmen: git add -f <datei>
+*.pdf
+*.epub
+*.docx
+*.doc
+*.pptx
+*.xlsx
+*.csv.gz
+*.zip
+*.7z
+*.tar.gz
+*.mp3
+*.wav
+*.m4a
+*.mp4
+*.mov
+
 # Secrets
 secrets/
 *.key

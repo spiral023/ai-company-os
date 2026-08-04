@@ -1,6 +1,6 @@
 # Lokale-Modell-Umleitung-Muster
 
-**Konfidenz:** meinung
+**Konfidenz:** mehrfach-belegt
 
 ## Zweck
 
@@ -31,10 +31,12 @@ Claude Code liest Modell und Endpunkt aus Umgebungsvariablen (bzw. `~/.claude/se
 
 - 2026-01-22 · [[2026-01-22-dr-cintas-claude-code-local]] · meinung — Tutorial zeigt das Drei-Variablen-Muster für lokale Ollama-Modelle mit konkreten Befehlen.
 - 2026-02-04 · [[2026-02-04-rudrank-using-minimax-with-claude-code]] · meinung — Unabhängige Quelle bestätigt dasselbe Muster für einen bezahlten Cloud-Provider (MiniMax M2.1) und ergänzt die Verifikations- und Cleanup-Praxis sowie CC-MIRROR für Multi-Provider-Setups.
+- 2026-02-01 · [[2026-02-01-anthropic-docs-claude-code-gitlab-ci]] · meinung — Zeigt das Muster in einem anderen Kontext: Provider-Abstraktion (Claude API/AWS Bedrock/Google Vertex AI über OIDC bzw. Workload Identity Federation) hinter derselben CI-Job-Definition, statt lokaler CLI-Session.
+- 2026-02-02 · [[2026-02-02-unsloth-team-claude-code-local-llm]] · meinung — Dritte unabhängige Bestätigung des Drei-Variablen-Musters mit einem selbst gehosteten `llama.cpp`-Server als drittem Backend nach Ollama und einem bezahlten Cloud-Provider; ergänzt, dass OpenAI Codex CLI dieselbe Umleitung strukturell anders löst (Provider-Config in `~/.codex/config.toml` statt Umgebungsvariablen).
 
 ## Spannungen & offene Fragen
 
-- Beide Quellen sind unabhängige Autoren und bestätigen im Kern dasselbe technische Muster (Anthropic-kompatible Umgebungsvariablen) mit unterschiedlichen Zielprovidern — jede Zeile einzeln bleibt aber „meinung“, da keine der Quellen selbst verifiziert (z.B. gegen ein Repo) wurde.
+- Vier unabhängige Quellen bestätigen inzwischen im Kern dasselbe technische Muster (Anthropic-kompatible Umgebungsvariablen bzw. äquivalente Provider-Abstraktion) über CLI-, CI- und Multi-Provider-Kontexte hinweg — jede Zeile einzeln bleibt aber „meinung“, da keine der Quellen selbst gegen ein Repo verifiziert wurde.
 - Offene Frage: Welche Datenschutz-/Compliance-Prüfung ist nötig, bevor ein externer Cloud-Provider (statt Anthropic direkt) produktiv genutzt wird — die Quellen behandeln nur die technische Machbarkeit, nicht die Governance-Seite.
 
 ## Verwandte Patterns

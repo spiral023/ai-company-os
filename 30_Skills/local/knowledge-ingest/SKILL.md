@@ -17,7 +17,9 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`. 
 
 1. **Quelle beschaffen.** Das passende Playbook aus `references/quellen-playbooks.md` (im Skill-Verzeichnis) anwenden.
    - Eingefügter Originaltext hat Vorrang (verlustfrei).
-   - Bei URL: per WebFetch abrufen. Schlägt der Abruf fehl oder wirkt unvollständig (z.B. fehlender Thread), Philipp um den eingefügten Originaltext bitten und so lange nicht weitermachen.
+   - **x.com-Link: immer `npm run ingest:x -- <url> --thread`** statt WebFetch. Das Script holt Artikel-Volltext, Thread und Bilder über die API und legt die Quelle unter `00_Inbox/Quellen/` ab. Liegt dort schon eine Notiz zur ID, diese verwenden statt neu abzurufen.
+   - Andere URLs: per WebFetch abrufen. Schlägt der Abruf fehl oder wirkt unvollständig, Philipp um den eingefügten Originaltext bitten und so lange nicht weitermachen.
+   - Liegt die Quelle als Notiz in `00_Inbox/Quellen/` vor: nach dem Einarbeiten dort `status: neu` → `status: verarbeitet` setzen und `source_notiz:` auf die erzeugte Datei in `80_Knowledge/Sources/` verweisen. Ohne diesen Schritt taucht die Quelle beim nächsten Sammel-Lauf erneut als offen auf.
 2. **Duplikat-Check.** URL normalisieren: Tracking-Parameter entfernen (`utm_*`, `fbclid`, `gclid`, `ref`, bei x.com auch `?s=…`/`?t=…`), Canonical-Form behalten. Dann `80_Knowledge/Sources/` nach gleicher normalisierter URL oder gleichem Inhalt durchsuchen. Bei Treffer: nicht neu archivieren, sondern nur prüfen, ob neue Aussagen dazugekommen sind.
 3. **Source-Notiz anlegen** nach Template, Dateiname `YYYY-MM-DD-<autor>-<slug>.md` (Datum = Original-Veröffentlichung). Als `url:` die normalisierte URL eintragen.
 4. **Kernaussagen extrahieren — erst erfassen, dann synthetisieren.** Vor dem Schreiben intern jede tragende Aussage mit Quelle, Datum und Vertrauensgrad verknüpfen und Übereinstimmungen, Ergänzungen und Widersprüche zum Bestand unterscheiden. Keine Lücke plausibel ergänzen; Ergänzungen aus eigenem Wissen nie als Aussage der Quelle ausgeben. Jede benennbare, wiederverwendbare Erkenntnis über eine Arbeitsweise ist ein Kandidat für ein Pattern.
@@ -38,6 +40,9 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`. 
 
 ## Häufige Fehler
 
+- Bei einem x.com-Link zu WebFetch greifen, obwohl `npm run ingest:x` Artikel-Volltext, Thread und Bilder vollständig liefert.
+- Quelle einarbeiten, aber `status: neu` in `00_Inbox/Quellen/` stehen lassen — sie gilt dann weiter als offen.
+- Zahlen aus mitgelieferten Charts und Tabellen übergehen, weil nur der Text gelesen wurde.
 - Unvollständigen Thread-Abruf als vollständig behandeln, statt die Lücke zu vermerken oder nach dem Originaltext zu fragen.
 - Dieselbe Quelle wegen Tracking-Parametern in der URL doppelt archivieren.
 - Aussagen mehrerer Quellen entlang der Quellenreihenfolge einarbeiten, statt sie dem fachlich passenden Pattern zuzuordnen.

@@ -1,9 +1,22 @@
 export function parseArgs(argv) {
-  const args = { input: undefined, thread: false, force: false, maxThread: 50 };
+  // --force schreibt die Notiz neu (aus dem Cache, kostenlos).
+  // --refetch holt zusätzlich die API-Antwort neu und kostet einen Request.
+  const args = {
+    input: undefined,
+    thread: false,
+    force: false,
+    refetch: false,
+    maxThread: 50,
+    media: true,
+  };
   for (let i = 0; i < argv.length; i += 1) {
     const a = argv[i];
     if (a === '--thread') args.thread = true;
     else if (a === '--force') args.force = true;
+    else if (a === '--refetch') {
+      args.refetch = true;
+      args.force = true;
+    } else if (a === '--no-media') args.media = false;
     else if (a === '--max-thread') {
       const n = Number.parseInt(argv[i + 1], 10);
       args.maxThread = Number.isFinite(n) && n > 0 ? n : 50;
@@ -104,63 +117,5 @@ export function orderThreadChronologically(tweets) {
   });
 }
 
-export function formatDump({ tweet, author, media, articleMedia, thread }) {
-  const handle = author?.username ? `@${author.username}` : 'unbekannt';
-  const name = author?.name ?? 'Unbekannt';
-  const lines = [`# X-Ingest: ${name} (${handle})`, ''];
-  lines.push(`- **Tweet-ID:** ${tweet.id}`);
-  lines.push(`- **URL:** https://x.com/${author?.username ?? 'i'}/status/${tweet.id}`);
-  if (tweet.created_at) lines.push(`- **Datum:** ${tweet.created_at}`);
-  const m = tweet.public_metrics;
-  if (m) {
-    lines.push(
-      `- **Metriken:** ${m.like_count ?? 0} Likes · ${m.retweet_count ?? 0} Retweets · ${m.reply_count ?? 0} Replies · ${m.impression_count ?? '?'} Views`,
-    );
-  }
-  lines.push('');
-  if (tweet.article) {
-    const title = tweet.article.title ?? '(ohne Titel)';
-    const articleText = extractArticleText(tweet);
-    if (articleText) {
-      lines.push(`## Artikel: ${title}`, '', articleText, '');
-    } else {
-      lines.push(
-        `> ⚠️ Nativer X-Artikel „${title}" — Volltext nicht über die API verfügbar; bei Bedarf Sekundärquelle prüfen.`,
-        '',
-      );
-    }
-  }
-  if (Array.isArray(articleMedia) && articleMedia.length) {
-    lines.push('## Artikel-Media', '');
-    for (const am of articleMedia) {
-      const label = am.cover ? 'Cover' : am.type ?? 'media';
-      if (am.url) {
-        lines.push(`- **${label}**${am.alt ? ` — ${am.alt}` : ''}: ![${am.alt ?? ''}](${am.url})`);
-      } else {
-        lines.push(`- **${label}** — nicht aufgelöst (media_key: ${am.key ?? '?'})`);
-      }
-    }
-    lines.push('');
-  }
-  lines.push('## Text', '', extractTweetText(tweet), '');
-  const links = extractLinks(tweet);
-  if (links.length) {
-    lines.push('## Links', '');
-    for (const l of links) lines.push(`- [${l.display}](${l.url})`);
-    lines.push('');
-  }
-  if (media.length) {
-    lines.push('## Media', '');
-    for (const md of media) {
-      lines.push(`- **${md.type}**${md.alt ? `: ${md.alt}` : ''}${md.url ? ` (${md.url})` : ''}`);
-    }
-    lines.push('');
-  }
-  if (thread && thread.length) {
-    lines.push('## Thread', '');
-    thread.forEach((t, i) => {
-      lines.push(`### ${i + 1}/${thread.length}`, '', extractTweetText(t), '');
-    });
-  }
-  return lines.join('\n');
-}
+// Die Ausgabe-Formatierung lebt in lib/inbox-store.mjs (formatInboxNote) —
+// eine Quelle wird direkt als Inbox-Notiz geschrieben, nicht als Zwischen-Dump.

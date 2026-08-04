@@ -1,5 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 
 import {
   parseArgs,
@@ -11,16 +14,29 @@ import {
   extractArticleMedia,
   isThreadStart,
   orderThreadChronologically,
-  formatDump,
 } from '../scripts/lib/x-ingest.mjs';
+import {
+  buildSlug,
+  mediaFileName,
+  originalSizeUrl,
+  downloadMedia,
+  formatInboxNote,
+} from '../scripts/lib/inbox-store.mjs';
 
 test('parseArgs liest Eingabe und Thread-Optionen', () => {
   assert.deepEqual(parseArgs(['https://x.com/user/status/123', '--thread', '--force', '--max-thread', '12']), {
     input: 'https://x.com/user/status/123',
     thread: true,
     force: true,
+    refetch: false,
     maxThread: 12,
+    media: true,
   });
+  assert.equal(parseArgs(['123', '--no-media']).media, false);
+  // --refetch impliziert --force: neu geholte Daten sollen auch die Notiz erneuern.
+  const refetch = parseArgs(['123', '--refetch']);
+  assert.equal(refetch.refetch, true);
+  assert.equal(refetch.force, true);
 });
 
 test('parseTweetId akzeptiert X-URLs und numerische IDs', () => {
@@ -77,7 +93,7 @@ test('Tweet- und Artikel-Medien werden normalisiert und per media_key aufgelöst
   ]);
 });
 
-test('Threads werden erkannt, chronologisch sortiert und im Dump ausgegeben', () => {
+test('Threads werden erkannt und chronologisch sortiert', () => {
   const tweet = {
     id: '2',
     conversation_id: '2',
@@ -88,15 +104,107 @@ test('Threads werden erkannt, chronologisch sortiert und im Dump ausgegeben', ()
   const earlier = { id: '1', created_at: '2026-01-01T00:00:00.000Z', text: 'Früher' };
   assert.equal(isThreadStart(tweet), true);
   assert.deepEqual(orderThreadChronologically([tweet, earlier]).map((item) => item.id), ['1', '2']);
+});
 
-  const dump = formatDump({
+test('Slug und Medien-Dateinamen sind stabil und dateisystemsicher', () => {
+  assert.equal(
+    buildSlug({ createdAt: '2026-07-27T19:44:39.000Z', username: 'Cerebras', id: '208182' }),
+    '2026-07-27-cerebras-208182',
+  );
+  // Kaputter Handle darf keinen Pfad erzeugen, der aus dem Zielordner ausbricht.
+  assert.equal(buildSlug({ createdAt: '2026-01-01', username: '../evil', id: '1' }), '2026-01-01-evil-1');
+  assert.equal(mediaFileName(0, { cover: true, type: 'photo', url: 'https://x/a.png' }), '01-cover.png');
+  assert.equal(mediaFileName(9, { type: 'photo', url: 'https://x/a.jpg?name=small' }), '10-photo.jpg');
+  assert.equal(mediaFileName(1, { type: 'video', url: 'https://x/clip' }), '02-video.mp4');
+});
+
+test('originalSizeUrl fordert bei twimg die Originalgröße, sonst nichts', () => {
+  assert.equal(originalSizeUrl('https://pbs.twimg.com/media/a.jpg'), 'https://pbs.twimg.com/media/a.jpg?name=orig');
+  assert.equal(originalSizeUrl('https://pbs.twimg.com/media/a.jpg?name=small'), 'https://pbs.twimg.com/media/a.jpg?name=small');
+  assert.equal(originalSizeUrl('https://example.com/a.jpg'), 'https://example.com/a.jpg');
+});
+
+test('downloadMedia schreibt Dateien und übersteht einzelne Fehlschläge', async (t) => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'x-ingest-test-'));
+  t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+
+  const fakeFetch = async (url) => {
+    if (url.includes('kaputt')) return { ok: false, status: 404 };
+    return { ok: true, arrayBuffer: async () => new TextEncoder().encode('BILD').buffer };
+  };
+  const results = await downloadMedia(
+    [
+      { type: 'photo', cover: true, url: 'https://pbs.twimg.com/media/ok.jpg' },
+      { type: 'photo', url: 'https://pbs.twimg.com/media/kaputt.jpg' },
+      { type: 'photo', url: '', key: 'ungeloest' },
+    ],
+    dir,
+    { fetch: fakeFetch },
+  );
+
+  assert.equal(results[0].ok, true);
+  assert.equal(fs.readFileSync(path.join(dir, '01-cover.jpg'), 'utf8'), 'BILD');
+  assert.equal(results[1].ok, false);
+  assert.match(results[1].error, /HTTP 404/);
+  assert.match(results[2].error, /media_key: ungeloest/);
+
+  // Zweiter Lauf lädt vorhandene Dateien nicht erneut.
+  const again = await downloadMedia(
+    [{ type: 'photo', cover: true, url: 'https://pbs.twimg.com/media/ok.jpg' }],
+    dir,
+    {
+      fetch: async () => {
+        throw new Error('darf nicht aufgerufen werden');
+      },
+    },
+  );
+  assert.equal(again[0].skipped, true);
+});
+
+test('Inbox-Notiz trägt Status, lokale Bildpfade und Thread', () => {
+  const tweet = {
+    id: '42',
+    conversation_id: '42',
+    created_at: '2026-07-27T19:44:39.000Z',
+    text: 'https://t.co/x',
+    article: { title: 'Mein Artikel', plain_text: 'Volltext hier' },
+    public_metrics: { like_count: 5, retweet_count: 1, reply_count: 0, impression_count: 99 },
+  };
+  const note = formatInboxNote({
     tweet,
-    author: { name: 'Ada', username: 'ada' },
+    author: { name: 'Ada "Lovelace"', username: 'ada' },
+    slug: '2026-07-27-ada-42',
     media: [],
-    articleMedia: [],
-    thread: [earlier, tweet],
+    articleMedia: [{ type: 'photo', cover: true, alt: 'Chart', url: 'https://pbs.twimg.com/media/a.jpg' }],
+    thread: [tweet, { id: '43', text: 'Zweiter Post' }],
+    threadMethod: 'backward-walk',
+    downloads: [{ url: 'https://pbs.twimg.com/media/a.jpg', file: '01-cover.jpg', ok: true }],
+    fetchedAt: '2026-08-04T10:00:00.000Z',
   });
-  assert.match(dump, /^# X-Ingest: Ada \(@ada\)/);
-  assert.match(dump, /## Thread/);
-  assert.match(dump, /### 2\/2\n\nStart/);
+
+  assert.match(note, /^---\n/);
+  assert.match(note, /\nstatus: neu\n/);
+  assert.match(note, /\ndatum: 2026-07-27\n/);
+  assert.match(note, /\nerfasst: 2026-08-04\n/);
+  assert.match(note, /typ: artikel/);
+  assert.match(note, /autor_name: "Ada \\"Lovelace\\""/);
+  assert.match(note, /medien: "1\/1 lokal"/);
+  assert.match(note, /thread_posts: 2/);
+  assert.match(note, /## Artikel-Volltext\n\nVolltext hier/);
+  assert.match(note, /!\[Chart\]\(medien\/2026-07-27-ada-42\/01-cover\.jpg\)/);
+  assert.match(note, /### 2\/2\n\nZweiter Post/);
+});
+
+test('Nicht geladene Bilder behalten die Remote-URL und werden markiert', () => {
+  const note = formatInboxNote({
+    tweet: { id: '7', text: 'Post' },
+    author: { name: 'Ada', username: 'ada' },
+    slug: '2026-01-01-ada-7',
+    media: [{ type: 'photo', alt: '', url: 'https://pbs.twimg.com/media/b.jpg' }],
+    articleMedia: [],
+    downloads: [{ url: 'https://pbs.twimg.com/media/b.jpg', file: '01-photo.jpg', ok: false, error: 'HTTP 404' }],
+    fetchedAt: '2026-01-02T00:00:00.000Z',
+  });
+  assert.match(note, /nicht lokal gespeichert/);
+  assert.match(note, /!\[photo\]\(https:\/\/pbs\.twimg\.com\/media\/b\.jpg\)/);
 });
