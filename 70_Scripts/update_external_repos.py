@@ -55,6 +55,10 @@ INDEX_PATH = EXTERNAL_ROOT / "INDEX.md"
 KEY_DIRS = ["skills", "agents", "commands", "hooks", "rules", "plugins", "references"]
 KEY_DIR_SET = set(KEY_DIRS)
 
+# Lokale Analysekopien, deren Git-Historie bewusst nicht wieder per `git pull`
+# aktualisiert werden soll. Die Arbeitskopie bleibt für Index-Scans erhalten.
+PULL_EXCLUDED_REPOS = {"nexu-io/open-design"}
+
 
 # --------------------------------------------------------------------------- #
 # git pull
@@ -423,12 +427,21 @@ def main() -> int:
         logging.warning("Keine geklonten Repos unter external_repos/ gefunden.")
         return 0
 
-    pull_targets = repos
+    pull_targets = [
+        repo
+        for repo in repos
+        if repo.relative_to(EXTERNAL_ROOT).as_posix() not in PULL_EXCLUDED_REPOS
+    ]
     if args.repo:
-        pull_targets = [r for r in repos if r.relative_to(EXTERNAL_ROOT).as_posix() == args.repo]
-        if not pull_targets:
+        matching_repos = [r for r in repos if r.relative_to(EXTERNAL_ROOT).as_posix() == args.repo]
+        if not matching_repos:
             logging.error("Repo nicht gefunden unter external_repos/: %s", args.repo)
             return 1
+        pull_targets = [
+            repo
+            for repo in matching_repos
+            if repo.relative_to(EXTERNAL_ROOT).as_posix() not in PULL_EXCLUDED_REPOS
+        ]
 
     changed: set[str] = set()
     failed: list[str] = []
