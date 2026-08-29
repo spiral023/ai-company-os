@@ -39,13 +39,34 @@ Select-String -Path "00_Inbox/Quellen/*.md" -Pattern '^status: neu$' | Select-Ob
 
 ## Erfassen
 
+**X (Twitter):**
+
 ```powershell
 npm run ingest:x -- <tweet-url-oder-id> [--thread] [--force] [--no-media]
 ```
 
-Eine bestehende Notiz wird **nicht** überschrieben — so gehen manuelle Ergänzungen und ein bereits gesetzter Status nicht verloren. `--force` überschreibt bewusst und lädt auch die API-Antwort neu (kostet einen Request).
+**TikTok:**
+
+```powershell
+npm run ingest:tiktok -- <video-url-oder-id> [--force] [--refetch] [--no-media] [--gap <sek>]
+```
+
+Eine bestehende Notiz wird **nicht** überschrieben — so gehen manuelle Ergänzungen und ein bereits gesetzter Status nicht verloren. `--force` überschreibt bewusst; `--refetch` holt zusätzlich die API-Antwort neu (kostet einen Request bzw. $0.001).
 
 Der JSON-Cache unter `scripts/.ingest/` verhindert doppelte API-Calls und ist gitignored.
+
+### Was TikTok-Notizen ausmacht
+
+Das Transkript kommt vom Apify-Actor `scrape-creators/best-tiktok-transcripts-scraper` ($0.001 pro Video, `APIFY_TOKEN` in `.env.local`). Der Actor liefert trotz seiner Beschreibung **nur** das Transkript, keine Metadaten. Deshalb kommen die übrigen Felder aus zwei kostenlosen Quellen:
+
+- **Veröffentlichungsdatum** aus der Video-ID — TikTok-IDs sind Snowflake-artig, die oberen 32 Bit sind der Unix-Timestamp. Lässt sich das Datum nicht ableiten, trägt die Notiz `datum_unsicher: true`.
+- **Caption, Autorname, Cover** über TikTok oEmbed (ohne Key). Scheitert der Abruf, entsteht die Notiz trotzdem — nur ohne diese Felder.
+
+Der gesprochene Text steht als Fließtext in der Notiz, getrennt in Absätze an Sprechpausen ab `--gap` (Default 0,4s). Die Spracherkennung von TikTok setzt keine Satzzeichen und verhaut regelmäßig Eigennamen und Zahlwörter — die Notiz trägt dazu einen Warnhinweis. Vor der Übernahme ins Knowledge-System gegen das Video prüfen.
+
+Nicht jedes Video hat ein Transkript: TikTok erzeugt nicht überall Untertitel. Dann trägt die Notiz `transkript: "keins verfügbar"` und nur die Metadaten. Der Actor berechnet den Credit trotzdem.
+
+**Übersetzte Untertitelspuren:** TikTok liefert zu manchen Videos statt des Originaltons eine maschinell ins Englische übersetzte Fassung — ein deutsches Video kommt dann als englischer Text zurück, mit deutscher Satzstellung („Anthropic hat die Claude Academy veröffentlicht" wird zu „1 Tropic has the cloud Academy published"). Der Actor kennt keinen Sprachparameter. Das Script misst deshalb die Sprache von Transkript und Caption und trägt `sprache:` ins Frontmatter; weichen beide ab, kommen `sprache_abweichung: true`, ein Warnblock in der Notiz und eine Warnung im Terminal dazu. Ein `--refetch` liefert manchmal die Originalspur (bei einem Video half es, bei einem anderen blieb es über drei Versuche englisch) — hilft es nicht, ist die Caption die verlässlichere Quelle.
 
 ## Regeln
 

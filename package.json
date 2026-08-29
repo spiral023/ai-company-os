@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "ingest:x": "node scripts/ingest-x.mjs"
+    "ingest:x": "node scripts/ingest-x.mjs",
+    "ingest:tiktok": "node scripts/ingest-tiktok.mjs"
   },
   "dependencies": {
     "twitter-api-v2": "^1.29.0"

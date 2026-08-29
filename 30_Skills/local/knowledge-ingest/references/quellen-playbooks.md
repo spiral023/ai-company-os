@@ -21,6 +21,22 @@ Ergebnis: `00_Inbox/Quellen/<slug>.md` mit `status: neu`, Bilder lokal unter `00
 - WebFetch nur als Fallback, wenn das Script nicht nutzbar ist (kein Token, kein Guthaben) und Philipp zustimmt. Dann in der Source-Notiz als „per WebFetch abgerufen, ggf. verlustbehaftet" kennzeichnen.
 - Bei unsicherer Autor-Zuordnung oder wesentlich unvollständigem Inhalt: Philipp um eingefügten Originaltext bitten statt aus Such-Snippets oder einem einzelnen Mirror zu rekonstruieren.
 
+## TikTok
+
+**Primärweg ist das Script, nicht WebFetch:**
+
+```powershell
+npm run ingest:tiktok -- <video-url-oder-id>
+```
+
+Ergebnis: `00_Inbox/Quellen/<slug>.md` mit `status: neu`, Cover lokal unter `00_Inbox/Quellen/medien/<slug>/`. Details: `00_Inbox/Quellen/README.md`.
+
+- Der gesprochene Inhalt ist bei TikTok die eigentliche Quelle — die Caption besteht oft nur aus Hashtags. Das Script holt das Transkript über einen kostenpflichtigen Apify-Actor ($0.001 pro Video). Bei `402 Guthaben aufgebraucht` nicht auf WebFetch ausweichen, sondern Philipp informieren.
+- Steht `sprache_abweichung: true` im Frontmatter, hat TikTok statt des Originaltons eine maschinell übersetzte Untertitelspur geliefert (typisch: deutsches Video, englischer Text mit deutscher Satzstellung). Diese Fassung ist eine doppelte Verfremdung — Spracherkennung plus Übersetzung — und taugt nicht für Zitate. Inhalt aus der Caption belegen und die Einschränkung in der Source-Notiz vermerken.
+- **Das Transkript ist automatische Spracherkennung, keine Autorenschrift.** Eigennamen und Zahlwörter sind regelmäßig falsch (`Grammy` statt `graphify`, `1 KI System` statt `ein KI-System`). Wörtliche Zitate nur nach Prüfung gegen das Video übernehmen; im Zweifel sinngemäß wiedergeben und den Vorbehalt in der Source-Notiz vermerken.
+- Meldet das Script „Kein Transkript verfügbar", hat TikTok für das Video keine Untertitel erzeugt. Dann trägt die Notiz nur Metadaten. Bei Accounts, die den Inhalt in die Caption schreiben, kann die Caption trotzdem eine tragfähige Quelle sein — dann in der Source-Notiz vermerken, dass der Beleg aus der Caption stammt und nicht aus dem gesprochenen Wort. Ist auch die Caption leer, ist die Notiz keine ausreichende Quelle.
+- Ein `datum_unsicher: true` im Frontmatter heißt: das Veröffentlichungsdatum ließ sich nicht aus der Video-ID ableiten und ist das Erfassungsdatum. Nicht als Publikationsdatum zitieren.
+
 ## GitHub-Repository
 
 - Aussagen an konkrete Dateien, Releases oder Commits binden — keine Pauschal-Zusammenfassung und keine Schlüsse aus Dateinamen allein.
