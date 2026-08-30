@@ -89,7 +89,10 @@ Skills liegen unter `30_Skills/`.
 
 Wissen über KI-Arbeitsweisen (Skills, Agent-Workflows, Frameworks) lebt unter `80_Knowledge/`. Regeln und Templates: `80_Knowledge/README.md`.
 
-- Teilt Philipp einen Tweet, x.com-Link oder Text über Arbeitsweisen — auch formlos ohne Auftrag — den Skill `knowledge-ingest` anwenden.
+- Teilt Philipp eine neue Quelle über Arbeitsweisen — X/Twitter, TikTok, YouTube, Artikel, PDF oder formlosen Text, auch ohne expliziten Auftrag — den Skill `knowledge-ingest` anwenden.
+- Neue Quellen immer über den passenden lokalen Abrufweg archivieren: X mit `npm run ingest:x -- <url> --thread`, TikTok mit `npm run ingest:tiktok -- <url>`, YouTube/Artikel/PDF mit `python ai.py ingest <url-oder-pfad>`. Nicht ersatzweise per WebFetch eine unvollständige Quelle als vollständig behandeln.
+- Rohquellen liegen automatisch nach Typ unter `00_Inbox/Quellen/{X,TikTok,YouTube,URL,PDF}/`; Medien jeweils im typgleichen Unterordner `medien/<slug>/`.
+- Bereits erfasste Quellen aus diesen Typordnern (`status: neu`) über den Skill `quellen-verarbeiten` einarbeiten.
 - Pflege-Lauf über den Skill `knowledge-review`, u.a. im Wochenreview.
 - In `80_Knowledge/Patterns/` wird nie gelöscht, nur datiert ergänzt; Widersprüche werden als Spannungen festgehalten.
 

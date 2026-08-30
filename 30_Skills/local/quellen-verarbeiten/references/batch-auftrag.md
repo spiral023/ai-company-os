@@ -10,7 +10,7 @@ Du arbeitest als erfahrener AI Engineer im Repo `c:\Users\asi\Documents\GitHub\a
 
 ## Was du tust
 
-Für **jede** dir zugewiesene Quelle in `00_Inbox/Quellen/`:
+Für **jede** dir zugewiesene Quelle in einem Typordner unter `00_Inbox/Quellen/`:
 
 1. **Vollständig lesen.** Nicht nur den Anfang.
 2. **Alle Bilder lesen**, die die Notiz referenziert (`medien/<slug>/...`). Das ist Pflicht, keine Option. Charts, Preistabellen und Diagramme enthalten regelmäßig Zahlen und Abläufe, die im Text fehlen — genau diese Werte sind der Mehrwert. Ein Bild ohne Erklärwert (Header-Grafik, Logo, Deko) wird nicht in die Source-Notiz übernommen.
@@ -23,7 +23,7 @@ Für **jede** dir zugewiesene Quelle in `00_Inbox/Quellen/`:
 Bilder werden **nicht kopiert**, sondern relativ referenziert:
 
 ```markdown
-![Beschreibender Alt-Text, der Inhalt und Zweck nennt](../../00_Inbox/Quellen/medien/<slug>/<datei>.jpg)
+![Beschreibender Alt-Text, der Inhalt und Zweck nennt](../../00_Inbox/Quellen/<Quelltyp>/medien/<slug>/<datei>.jpg)
 ```
 
 - Platziere jedes Bild **an der Stelle, wo der zugehörige Text steht** — nicht alle am Anfang. Die Inbox-Notiz zeigt dir bei importierten vibedeck-Artikeln die ursprüngliche Position; übernimm sie, wenn sie inhaltlich passt.

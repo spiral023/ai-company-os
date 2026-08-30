@@ -4,7 +4,7 @@ autor: Eyad Khrais
 datum: 2026-01-10
 erfasst: 2026-08-04
 typ: tweet
-rohquelle: 00_Inbox/Quellen/2026-01-10-eyad-khrais-claude-code-tutorial.md
+rohquelle: 00_Inbox/Quellen/X/2026-01-10-eyad-khrais-claude-code-tutorial.md
 beleg_art: sekundaerquelle
 ---
 

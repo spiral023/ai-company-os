@@ -67,6 +67,37 @@ class AiCliTest(unittest.TestCase):
             "Skills anzeigen oder installieren",
         )
 
+    def test_ingest_forwards_source_options(self) -> None:
+        ai = load_ai_module()
+
+        with patch.object(ai, "run_subprocess", return_value=0) as run_subprocess:
+            result = ai.main(
+                [
+                    "ingest",
+                    "https://youtu.be/dQw4w9WgXcQ",
+                    "--typ",
+                    "youtube",
+                    "--force",
+                    "--titel",
+                    "Testvideo",
+                ]
+            )
+
+        self.assertEqual(result, 0)
+        run_subprocess.assert_called_once_with(
+            [
+                sys.executable,
+                str(ROOT / "70_Scripts" / "ingest_source.py"),
+                "https://youtu.be/dQw4w9WgXcQ",
+                "--typ",
+                "youtube",
+                "--force",
+                "--titel",
+                "Testvideo",
+            ],
+            "Quelle erfassen",
+        )
+
     def test_new_noninteractive_forwards_project_creation(self) -> None:
         ai = load_ai_module()
 

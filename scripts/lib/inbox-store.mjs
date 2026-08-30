@@ -2,11 +2,19 @@ import fs from 'fs';
 import path from 'path';
 import { extractTweetText, extractArticleText, extractLinks } from './x-ingest.mjs';
 
-// Ablage für abgerufene Quellen. Flache Notizliste, Medien gebündelt pro Quelle:
-//   00_Inbox/Quellen/<slug>.md
-//   00_Inbox/Quellen/medien/<slug>/01-cover.jpg
+// Ablage nach Quelltyp, Medien jeweils neben den Notizen des Typs:
+//   00_Inbox/Quellen/X/<slug>.md
+//   00_Inbox/Quellen/X/medien/<slug>/01-cover.jpg
 export const INBOX_REL = '00_Inbox/Quellen';
 export const MEDIA_DIR = 'medien';
+export const SOURCE_FOLDERS = Object.freeze({
+  x: 'X',
+  tiktok: 'TikTok',
+});
+
+export function sourceInboxRel(sourceType) {
+  return `${INBOX_REL}/${SOURCE_FOLDERS[sourceType] ?? 'Sonstige'}`;
+}
 
 export function isoDate(value) {
   const d = value ? new Date(value) : new Date();
@@ -210,14 +218,14 @@ export function formatInboxNote({
   return lines.join('\n');
 }
 
-export function writeInboxNote(rootDir, slug, content) {
-  const dir = path.join(rootDir, INBOX_REL);
+export function writeInboxNote(rootDir, sourceType, slug, content) {
+  const dir = path.join(rootDir, sourceInboxRel(sourceType));
   fs.mkdirSync(dir, { recursive: true });
   const file = path.join(dir, `${slug}.md`);
   fs.writeFileSync(file, content, 'utf8');
   return file;
 }
 
-export function mediaTargetDir(rootDir, slug) {
-  return path.join(rootDir, INBOX_REL, MEDIA_DIR, slug);
+export function mediaTargetDir(rootDir, sourceType, slug) {
+  return path.join(rootDir, sourceInboxRel(sourceType), MEDIA_DIR, slug);
 }

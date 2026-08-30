@@ -1,6 +1,6 @@
 ---
 name: knowledge-ingest
-description: Verwende diesen Skill, wenn Philipp einen Tweet, einen Link (z.B. x.com), einen Artikel oder formlosen Text über KI-Arbeitsweisen, Skills, Agent-Workflows oder Frameworks teilt — auch ohne expliziten Auftrag. Arbeitet die Information ins Knowledge-System (80_Knowledge/) ein und liefert ein Diff-Resümee.
+description: Verwende diesen Skill, wenn Philipp eine einzelne neue Quelle über KI-Arbeitsweisen, Skills, Agent-Workflows oder Frameworks teilt — X/Twitter, TikTok, YouTube, Artikel, PDF oder formlosen Text, auch ohne expliziten Auftrag. Archiviert sie lokal, arbeitet sie ins Knowledge-System ein und liefert ein Diff-Resümee.
 ---
 
 # Knowledge Ingest
@@ -17,9 +17,12 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`. 
 
 1. **Quelle beschaffen.** Das passende Playbook aus `references/quellen-playbooks.md` (im Skill-Verzeichnis) anwenden.
    - Eingefügter Originaltext hat Vorrang (verlustfrei).
-   - **x.com-Link: immer `npm run ingest:x -- <url> --thread`** statt WebFetch. Das Script holt Artikel-Volltext, Thread und Bilder über die API und legt die Quelle unter `00_Inbox/Quellen/` ab. Liegt dort schon eine Notiz zur ID, diese verwenden statt neu abzurufen.
-   - Andere URLs: per WebFetch abrufen. Schlägt der Abruf fehl oder wirkt unvollständig, Philipp um den eingefügten Originaltext bitten und so lange nicht weitermachen.
-   - Liegt die Quelle als Notiz in `00_Inbox/Quellen/` vor: nach dem Einarbeiten dort `status: neu` → `status: verarbeitet` setzen und `source_notiz:` auf die erzeugte Datei in `80_Knowledge/Sources/` verweisen. Ohne diesen Schritt taucht die Quelle beim nächsten Sammel-Lauf erneut als offen auf.
+   - **X/Twitter:** immer `npm run ingest:x -- <url> --thread` statt WebFetch. Das Script holt Artikel-Volltext, Thread und Bilder über die API.
+   - **TikTok:** immer `npm run ingest:tiktok -- <url>`. Das Script holt Caption, Cover und — sofern verfügbar — das Transkript.
+   - **YouTube, Artikel und PDF:** immer `python ai.py ingest <url-oder-pfad>`. YouTube wird mit Beschreibung und lesbarem Transkript ohne Zeitstempel archiviert.
+   - Die Scripts legen Quellen automatisch unter `00_Inbox/Quellen/{X,TikTok,YouTube,URL,PDF}/` ab. Liegt dort schon eine Notiz zur normalisierten URL bzw. ID, diese verwenden statt neu abzurufen.
+   - Schlägt der vorgesehene Abruf fehl oder wirkt der Inhalt unvollständig, nicht still auf WebFetch ausweichen und die Teilfassung als vollständig behandeln. Fehler benennen und bei fehlendem Originaltext Philipp fragen.
+   - Liegt die Quelle als Inbox-Notiz vor: nach dem Einarbeiten `status: neu` → `status: verarbeitet` setzen und `source_notiz:` auf die erzeugte Datei in `80_Knowledge/Sources/` verweisen. Ohne diesen Schritt taucht die Quelle beim nächsten Sammel-Lauf erneut als offen auf.
 2. **Duplikat-Check.** URL normalisieren: Tracking-Parameter entfernen (`utm_*`, `fbclid`, `gclid`, `ref`, bei x.com auch `?s=…`/`?t=…`), Canonical-Form behalten. Dann `80_Knowledge/Sources/` nach gleicher normalisierter URL oder gleichem Inhalt durchsuchen. Bei Treffer: nicht neu archivieren, sondern nur prüfen, ob neue Aussagen dazugekommen sind.
 3. **Source-Notiz anlegen** nach Template, Dateiname `YYYY-MM-DD-<autor>-<slug>.md` (Datum = Original-Veröffentlichung). Als `url:` die normalisierte URL eintragen.
 4. **Kernaussagen extrahieren — erst erfassen, dann synthetisieren.** Vor dem Schreiben intern jede tragende Aussage mit Quelle, Datum und Vertrauensgrad verknüpfen und Übereinstimmungen, Ergänzungen und Widersprüche zum Bestand unterscheiden. Keine Lücke plausibel ergänzen; Ergänzungen aus eigenem Wissen nie als Aussage der Quelle ausgeben. Jede benennbare, wiederverwendbare Erkenntnis über eine Arbeitsweise ist ein Kandidat für ein Pattern.
@@ -40,8 +43,8 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`. 
 
 ## Häufige Fehler
 
-- Bei einem x.com-Link zu WebFetch greifen, obwohl `npm run ingest:x` Artikel-Volltext, Thread und Bilder vollständig liefert.
-- Quelle einarbeiten, aber `status: neu` in `00_Inbox/Quellen/` stehen lassen — sie gilt dann weiter als offen.
+- Eine unterstützte Quelle per WebFetch verarbeiten, obwohl der typgerechte Ingest-Pfad sie vollständig und lokal archiviert.
+- Quelle einarbeiten, aber `status: neu` in ihrem Typordner stehen lassen — sie gilt dann weiter als offen.
 - Zahlen aus mitgelieferten Charts und Tabellen übergehen, weil nur der Text gelesen wurde.
 - Unvollständigen Thread-Abruf als vollständig behandeln, statt die Lücke zu vermerken oder nach dem Originaltext zu fragen.
 - Dieselbe Quelle wegen Tracking-Parametern in der URL doppelt archivieren.

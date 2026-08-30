@@ -21,7 +21,13 @@ import {
   formatTiktokNote,
 } from './lib/tiktok-ingest.mjs';
 import { runTranscriptActor, fetchOembed, resolveShortUrl } from './lib/tiktok-client.mjs';
-import { buildSlug, downloadMedia, writeInboxNote, mediaTargetDir, INBOX_REL } from './lib/inbox-store.mjs';
+import {
+  buildSlug,
+  downloadMedia,
+  writeInboxNote,
+  mediaTargetDir,
+  sourceInboxRel,
+} from './lib/inbox-store.mjs';
 
 const rootDir = process.cwd();
 const ingestDir = path.join(rootDir, 'scripts/.ingest');
@@ -30,7 +36,7 @@ function usage() {
   console.log(
     'Usage: npm run ingest:tiktok -- <video-url-oder-id> [--force] [--refetch] [--no-media] [--gap <sek>]',
   );
-  console.log(`  Ablage: ${INBOX_REL}/<slug>.md · Cover: ${INBOX_REL}/medien/<slug>/`);
+  console.log(`  Ablage: ${sourceInboxRel('tiktok')}/<slug>.md · Cover: ${sourceInboxRel('tiktok')}/medien/<slug>/`);
   console.log('  --force    Notiz neu schreiben (aus dem Cache, kein Actor-Run).');
   console.log('  --refetch  Transkript neu holen — kostet $0.001. Impliziert --force.');
   console.log('  --gap      Sprechpause in Sekunden, ab der ein neuer Absatz beginnt (Default 0.8).');
@@ -135,7 +141,7 @@ async function main() {
     username: video.username ?? handleFromAuthorUrl(payload.oembed?.author_url),
     id: video.id,
   });
-  const notePath = path.join(rootDir, INBOX_REL, `${slug}.md`);
+  const notePath = path.join(rootDir, sourceInboxRel('tiktok'), `${slug}.md`);
 
   // Eine bestehende Notiz kann manuell ergänzt oder auf status:verarbeitet
   // gesetzt sein — die darf ein erneuter Lauf nicht stillschweigend verwerfen.
@@ -150,7 +156,7 @@ async function main() {
   if (args.media && cover) {
     downloads = await downloadMedia(
       [{ url: cover, type: 'photo', cover: true }],
-      mediaTargetDir(rootDir, slug),
+      mediaTargetDir(rootDir, 'tiktok', slug),
     );
     for (const d of downloads.filter((x) => !x.ok)) {
       console.warn(`⚠ Cover-Download fehlgeschlagen (${d.file}): ${d.error}`);
@@ -166,7 +172,7 @@ async function main() {
     fetchedAt: payload.fetchedAt,
     gap: args.gap,
   });
-  writeInboxNote(rootDir, slug, note);
+  writeInboxNote(rootDir, 'tiktok', slug, note);
 
   if (!transcript) {
     console.warn('⚠ Kein Transkript verfügbar — TikTok hat für dieses Video keine Untertitel.');

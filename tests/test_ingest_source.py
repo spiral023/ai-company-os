@@ -1,6 +1,7 @@
 """Tests für 70_Scripts/ingest_source.py — reine Logik, kein Netzwerk."""
 
 import importlib.util
+import json
 import sys
 from pathlib import Path
 
@@ -80,6 +81,18 @@ class TestTypErkennung:
         with pytest.raises(SystemExit):
             ingest.erkenne_typ("weder url noch datei")
 
+    @pytest.mark.parametrize(
+        "typ,ordner",
+        [("youtube", "YouTube"), ("url", "URL"), ("pdf", "PDF"), ("unbekannt", "Sonstige")],
+    )
+    def test_quelltyp_bestimmt_unterordner(self, tmp_path, monkeypatch, typ, ordner):
+        monkeypatch.setattr(ingest, "INBOX", tmp_path)
+        assert ingest.quelltyp_ordner(typ) == tmp_path / ordner
+
+    def test_pdf_originaldateien_liegen_im_pdf_typordner(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(ingest, "INBOX", tmp_path)
+        assert ingest.pdf_dateien_ordner() == tmp_path / "PDF" / "dateien"
+
 
 class TestYoutubeId:
     @pytest.mark.parametrize(
@@ -97,6 +110,37 @@ class TestYoutubeId:
     def test_ohne_id(self):
         with pytest.raises(SystemExit):
             ingest.youtube_id("https://www.youtube.com/")
+
+
+class TestYoutubeAufbereitung:
+    def test_transkript_wird_zu_absatz_ohne_zeitstempel(self):
+        text = ingest.formatiere_transkript(
+            ["Das ist z.B.", "ein vollständiger Satz.", "Noch ein Satz."],
+            min_absatzlaenge=5,
+        )
+        assert text == "Das ist z.B. ein vollständiger Satz.\n\nNoch ein Satz."
+        assert "**[" not in text
+
+    def test_metadaten_enthalten_beschreibung_und_datum(self, monkeypatch):
+        player = {
+            "videoDetails": {
+                "title": "Mein Video",
+                "author": "Ada",
+                "shortDescription": "Beschreibung mit Link: https://example.com",
+            },
+            "microformat": {
+                "playerMicroformatRenderer": {"publishDate": "2026-07-30T10:41:23-07:00"}
+            },
+        }
+        seite = f"<script>var ytInitialPlayerResponse = {json.dumps(player)};</script>"
+        monkeypatch.setattr(ingest, "hole", lambda *_args, **_kwargs: seite.encode("utf-8"))
+
+        assert ingest.youtube_metadaten("https://youtu.be/dQw4w9WgXcQ", "dQw4w9WgXcQ") == (
+            "Mein Video",
+            "Ada",
+            "2026-07-30",
+            "Beschreibung mit Link: https://example.com",
+        )
 
 
 class TestEindeutigerSlug:
@@ -133,6 +177,16 @@ class TestQuellenErkennung:
         assert ingest.finde_dublette("https://example.com/x/?utm_source=rss") is not None
         assert ingest.finde_dublette("https://example.com/anders") is None
 
+    def test_quellen_werden_in_typordnern_rekursiv_gefunden(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(ingest, "INBOX", tmp_path)
+        youtube = tmp_path / "YouTube"
+        x = tmp_path / "X"
+        youtube.mkdir()
+        x.mkdir()
+        (youtube / "video.md").write_text("---\nurl: https://youtu.be/x\n---\n", encoding="utf-8")
+        (x / "post.md").write_text("---\nurl: https://x.com/a/status/1\n---\n", encoding="utf-8")
+        assert [pfad.name for pfad in ingest.quellen_dateien()] == ["post.md", "video.md"]
+
 
 class TestNotizAufbau:
     def test_frontmatter_pflichtfelder_und_escaping(self):
@@ -167,6 +221,19 @@ class TestNotizAufbau:
         notiz = ingest.baue_notiz(q, "slug-x")
         assert "https://example.com/b.jpg" in notiz
         assert "HTTP 404" in notiz
+
+    def test_youtube_notiz_enthaelt_beschreibung_vor_transkript(self):
+        q = ingest.Quelle(
+            url="https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            typ="youtube",
+            titel="Video",
+            text="Lesbarer Transkripttext.",
+            datum="2026-07-30",
+            beschreibung="Die Videobeschreibung.",
+        )
+        notiz = ingest.baue_notiz(q, "video")
+        assert "## Videobeschreibung\n\nDie Videobeschreibung." in notiz
+        assert notiz.index("## Videobeschreibung") < notiz.index("## Transkript")
 
 
 class TestMedienSchreiben:

@@ -4,8 +4,8 @@ autor: "@ClaudeDevs (Artikel: Lydia Hallie, Anthropic)"
 datum: 2026-07-08
 erfasst: 2026-08-04
 typ: artikel
-rohquelle: 00_Inbox/Quellen/2026-07-08-claudedevs-2074900291062034618.md
-zweitquelle: 00_Inbox/Quellen/2026-07-08-claudedevs-claude-code-model-und-effort.md
+rohquelle: 00_Inbox/Quellen/X/2026-07-08-claudedevs-2074900291062034618.md
+zweitquelle: 00_Inbox/Quellen/X/2026-07-08-claudedevs-claude-code-model-und-effort.md
 ---
 
 # Modell oder Effort: zwei Regler, zwei verschiedene Probleme
@@ -20,7 +20,7 @@ Das Modell bestimmt den **Fähigkeitsraum**: Die Gewichte enthalten die im Train
 
 Effort bestimmt die **Arbeitstiefe**. Anthropic betont ausdrücklich, dass Effort mehr ist als Denkzeit: Es steuert, wie viele Dateien Claude liest, wie viel es verifiziert und wie weit es eine mehrstufige Aufgabe durchzieht, bevor es beim Nutzer nachfragt. Bei niedrigem Effort fragt Claude eher zurück, statt Tokens für eigene Ermittlung auszugeben.
 
-![Entscheidungsbaum: Bei übersprungener Arbeit den Effort erhöhen, bei gründlich erarbeitetem aber falschem Ergebnis das Modell wechseln, sonst den Input reparieren](../../00_Inbox/Quellen/medien/2026-07-08-claudedevs-claude-code-model-und-effort/model-or-effort-decision.png)
+![Entscheidungsbaum: Bei übersprungener Arbeit den Effort erhöhen, bei gründlich erarbeitetem aber falschem Ergebnis das Modell wechseln, sonst den Input reparieren](../../00_Inbox/Quellen/X/medien/2026-07-08-claudedevs-claude-code-model-und-effort/model-or-effort-decision.png)
 
 Die Diagnose folgt dem Fehlerbild. **Effort erhöhen**, wenn Claude eine Datei übersprungen, Tests nicht ausgeführt, seine Änderung nicht kontrolliert, eine mehrstufige Aufgabe nur teilweise erledigt hat oder vorschnell nach Informationen fragt, die es selbst ermitteln könnte — das sind Symptome unzureichender Arbeitstiefe, nicht fehlenden Wissens. **Modell wechseln**, wenn Claude alles Relevante gelesen, die Tools tatsächlich eingesetzt und das Problem nachvollziehbar untersucht hat und trotzdem selbstbewusst falsch liegt.
 
@@ -34,7 +34,7 @@ Zu prüfen ist dann, ob die Aufgabe sinnvoll abgegrenzt ist, ob Claude alle rele
 
 Die zentrale Formel des Artikels: **Das Modell wählt die Kurve, Effort bestimmt, wie weit nach rechts Claude auf ihr zu gehen bereit ist.**
 
-![Zwei Qualitätskurven über Tokenverbrauch: das größere Modell erreicht bei mittlerem Effort dieselbe Qualität wie das kleinere bei maximalem Effort](../../00_Inbox/Quellen/medien/2026-07-08-claudedevs-claude-code-model-und-effort/hard-task-cost-curves.png)
+![Zwei Qualitätskurven über Tokenverbrauch: das größere Modell erreicht bei mittlerem Effort dieselbe Qualität wie das kleinere bei maximalem Effort](../../00_Inbox/Quellen/X/medien/2026-07-08-claudedevs-claude-code-model-und-effort/hard-task-cost-curves.png)
 
 Bei einer schwierigen Aufgabe kann das größere Modell bei mittlerem Effort dieselbe Qualität erreichen wie das kleinere bei maximalem — „same quality, fewer tokens“. Der höhere Preis pro Token wird dann durch weniger Umwege ausgeglichen, und manche Qualitätsstufe ist auf der kleineren Kurve überhaupt nicht erreichbar. Bei Routineaufgaben kehrt sich das um: Beide Modelle lösen sie, das größere führt aber zusätzliche Verifikationsschritte zum höheren Tokenpreis aus.
 

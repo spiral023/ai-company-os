@@ -4,7 +4,7 @@ autor: Minty
 datum: 2026-02-14
 erfasst: 2026-08-04
 typ: tweet
-rohquelle: 00_Inbox/Quellen/2026-02-14-minty-mastering-claude-code.md
+rohquelle: 00_Inbox/Quellen/X/2026-02-14-minty-mastering-claude-code.md
 beleg_art: sekundaerquelle
 ---
 
@@ -20,7 +20,7 @@ Jede Session startet „blank“ — Projektwissen, Präferenzen und Ordnerstruk
 
 Für dynamisches Wissen empfiehlt Minty ein Memory-System mit einer schlanken Index-Datei, die auf Detaildateien verweist statt alles selbst zu enthalten — eine 500-zeilige Memory-Datei verschwendet Token, ein 30-zeiliger Index lädt gezielt nur das für die aktuelle Aufgabe Relevante nach.
 
-![Aufbau des Memory-Systems: MEMORY.md als schlanker Index mit Environment Summary, Active Projects, User Preferences und Links zu drei Detaildateien](../../00_Inbox/Quellen/medien/2026-02-14-minty-mastering-claude-code/context.png)
+![Aufbau des Memory-Systems: MEMORY.md als schlanker Index mit Environment Summary, Active Projects, User Preferences und Links zu drei Detaildateien](../../00_Inbox/Quellen/X/medien/2026-02-14-minty-mastering-claude-code/context.png)
 
 Konkret verweist `MEMORY.md` (Environment Summary, Active Projects mit je einer Zeile, User Preferences, Links zu Detaildateien) auf drei Detaildateien: `projects/dashboard.md` (Schema, Endpoints, Status), `lessons.md` (Gotchas, Fixes, gelernte Patterns) und `sessions.md` (die letzten fünf Sessions, Handoff-Kontext). Operationalisiert wird das, indem man Claude während der Session aktiv anweist, etwas „ins Memory-System unter [Kategorie]“ zu speichern, und am Sessionende kurz zusammenfasst, was erreicht wurde. Wichtiger Hinweis: Da diese Dateien in der Codebase liegen, dürfen sie nie Secrets oder sensible Daten enthalten.
 
@@ -28,7 +28,7 @@ Konkret verweist `MEMORY.md` (Environment Summary, Active Projects mit je einer 
 
 Claude Code ist teurer als Standard-Modelle — Minty nutzt es deshalb als Koordinator statt als reinen Worker.
 
-![Orchestrator-Setup: Claude plant Aufgaben, schreibt Specs, routet an Worker und reviewt deren Output, schreibt aber selbst keinen Implementierungscode; darunter drei Worker mit ihren jeweiligen Stärken](../../00_Inbox/Quellen/medien/2026-02-14-minty-mastering-claude-code/orchestrator.png)
+![Orchestrator-Setup: Claude plant Aufgaben, schreibt Specs, routet an Worker und reviewt deren Output, schreibt aber selbst keinen Implementierungscode; darunter drei Worker mit ihren jeweiligen Stärken](../../00_Inbox/Quellen/X/medien/2026-02-14-minty-mastering-claude-code/orchestrator.png)
 
 Claude plant, was gebaut wird, wie es strukturiert ist und welche Edge-Cases zu beachten sind, schreibt aber selbst keinen Implementierungscode. Die Bulk-Generierung übernehmen spezialisierte, günstigere Worker: Codex für Code-Generierung, Backend/APIs, Debugging und Tests; Gemini für Research, Web-Suche, Multimodal-Aufgaben und Analyse; DeepSeek für Reasoning, Mathematik/Logik, lange Kontexte und als günstige/schnelle Option. Anschließend prüft Claude den Worker-Output gegen die ursprüngliche Spezifikation. Minty begründet das mit der Aufgabenverteilung nach Ermessen: Claude entscheidet Fragen wie „Klasse oder Funktion?“ oder „Ist das Error-Handling ausreichend?“, während 500 Zeilen Boilerplate keine Aufgabe für Premium-Preise sind.
 
@@ -36,7 +36,7 @@ Claude plant, was gebaut wird, wie es strukturiert ist und welche Edge-Cases zu 
 
 Wiederkehrende Muster (Artikel-Brainstorming, Debugging, Dokumenten-Editing) werden als Skill definiert — eine Markdown-Datei, die die Schritte eines mehrstufigen Prozesses festlegt, nicht nur einen Prompt umformuliert.
 
-![Drei Beispiel-Slash-Commands und wozu sie expandieren: /commit liest gestagte Änderungen, generiert eine Conventional-Commit-Message, führt Pre-Commit-Hooks aus und committet mit Co-Author-Tag. /review identifiziert geänderte Dateien, prüft gegen den Styleguide, markiert Security-Probleme und schlägt Verbesserungen vor. /debug reproduziert das Problem, bildet eine Hypothese, testet systematisch und dokumentiert die Ursache.](../../00_Inbox/Quellen/medien/2026-02-14-minty-mastering-claude-code/skills.png)
+![Drei Beispiel-Slash-Commands und wozu sie expandieren: /commit liest gestagte Änderungen, generiert eine Conventional-Commit-Message, führt Pre-Commit-Hooks aus und committet mit Co-Author-Tag. /review identifiziert geänderte Dateien, prüft gegen den Styleguide, markiert Security-Probleme und schlägt Verbesserungen vor. /debug reproduziert das Problem, bildet eine Hypothese, testet systematisch und dokumentiert die Ursache.](../../00_Inbox/Quellen/X/medien/2026-02-14-minty-mastering-claude-code/skills.png)
 
 Ein guter Skill kodiert laut Minty den Prozess, nicht nur den Prompt: Was muss vor dem Start geprüft werden, wie werden Checkpoints gesetzt, was muss bewahrt werden, wann muss der Nutzer gefragt werden.
 

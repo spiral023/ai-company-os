@@ -33,6 +33,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Voice-Prompting-fuer-Kontextreichtum]] — gesprochene statt getippte Prompts liefern beiläufig mehr Kontext, Details und Constraints.
 - [[CI-Agent-mit-Review-Gate]] — Coding Agent läuft sandboxed und event-getriggert in CI, Output läuft ausschließlich über das bestehende Team-Review-Gate (MR/PR).
 - [[Sandbox-Komposition-aus-OS-Primitiven]] — kein einzelnes natives OS-Feature deckt den offenen Zugriffsbedarf eines Coding Agents; die Sandbox-Grenze entsteht aus mehreren komponierten Primitiven.
+- [[Agent-generierte-Schulung-mit-Curriculum-Gate]] — Briefing und Curriculum prüfen, bevor ein Agent Medien erzeugt und eine interaktive Single-File-HTML-Schulung montiert.
 
 ## Guides
 

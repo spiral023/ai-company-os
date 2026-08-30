@@ -21,6 +21,9 @@ import {
   originalSizeUrl,
   downloadMedia,
   formatInboxNote,
+  sourceInboxRel,
+  writeInboxNote,
+  mediaTargetDir,
 } from '../scripts/lib/inbox-store.mjs';
 
 test('parseArgs liest Eingabe und Thread-Optionen', () => {
@@ -116,6 +119,25 @@ test('Slug und Medien-Dateinamen sind stabil und dateisystemsicher', () => {
   assert.equal(mediaFileName(0, { cover: true, type: 'photo', url: 'https://x/a.png' }), '01-cover.png');
   assert.equal(mediaFileName(9, { type: 'photo', url: 'https://x/a.jpg?name=small' }), '10-photo.jpg');
   assert.equal(mediaFileName(1, { type: 'video', url: 'https://x/clip' }), '02-video.mp4');
+});
+
+test('Quelltypen werden in feste Inbox-Unterordner geroutet', () => {
+  assert.equal(sourceInboxRel('x'), '00_Inbox/Quellen/X');
+  assert.equal(sourceInboxRel('tiktok'), '00_Inbox/Quellen/TikTok');
+  assert.equal(sourceInboxRel('unbekannt'), '00_Inbox/Quellen/Sonstige');
+});
+
+test('Notizen und Medienziele werden im Typordner angelegt', (t) => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'inbox-routing-test-'));
+  t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
+
+  const note = writeInboxNote(dir, 'x', 'slug', 'Inhalt');
+  assert.equal(note, path.join(dir, '00_Inbox/Quellen/X/slug.md'));
+  assert.equal(fs.readFileSync(note, 'utf8'), 'Inhalt');
+  assert.equal(
+    mediaTargetDir(dir, 'tiktok', 'video-slug'),
+    path.join(dir, '00_Inbox/Quellen/TikTok/medien/video-slug'),
+  );
 });
 
 test('originalSizeUrl fordert bei twimg die Originalgröße, sonst nichts', () => {

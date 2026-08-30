@@ -4,7 +4,7 @@ autor: "Anthropic (Claude Code Docs)"
 datum: 2026-08-04
 erfasst: 2026-08-05
 typ: artikel
-rohquelle: 00_Inbox/Quellen/2026-08-04-anthropic-best-practices-for-claude-code-claude-code-docs.md
+rohquelle: 00_Inbox/Quellen/URL/2026-08-04-anthropic-best-practices-for-claude-code-claude-code-docs.md
 ---
 
 # Anthropics aktuelle Best-Practices-Seite: Verifikation als vierstufige Eskalation

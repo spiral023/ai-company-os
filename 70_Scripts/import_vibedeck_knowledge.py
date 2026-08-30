@@ -8,6 +8,8 @@ markiert — die Verarbeitung muss wissen, dass hier nicht die Primärquelle vor
 Bildpositionen: vibedeck referenziert Bilder inline an der inhaltlich passenden
 Stelle. Diese Information wird bewahrt — die Bilder werden kopiert und nur die
 Pfade umgeschrieben (`/images/knowledge/<slug>/x.jpg` → `medien/<slug>/x.jpg`).
+Tweet-/Thread-Quellen landen unter `00_Inbox/Quellen/X/`, Webquellen unter
+`00_Inbox/Quellen/URL/`.
 
 Nutzung:
     python 70_Scripts/import_vibedeck_knowledge.py [--dry-run] [--only <slug>]
@@ -33,6 +35,7 @@ MEDIA_DIRNAME = "medien"
 
 # vibedeck sourceType → Inbox-typ (Source-Notiz-Mapping macht der Skill)
 TYP_MAP = {"tweet": "tweet", "thread": "tweet", "blog": "url", "docs": "url", "article": "url"}
+ORDNER_MAP = {"tweet": "X", "url": "URL"}
 BILD_RE = re.compile(r"!\[([^\]]*)\]\(/images/knowledge/([^/)]+)/([^)]+)\)")
 
 
@@ -88,7 +91,7 @@ def vorhandene_urls() -> dict[str, str]:
     for ordner, muster in ((SOURCES, r"(?m)^url:\s*(.+)$"), (INBOX, r"(?m)^url:\s*(.+)$")):
         if not ordner.exists():
             continue
-        for datei in ordner.glob("*.md"):
+        for datei in ordner.rglob("*.md"):
             if datei.name == "README.md":
                 continue
             gefunden = re.search(muster, datei.read_text(encoding="utf-8"))
@@ -159,8 +162,6 @@ def main() -> int:
         return 1
 
     bekannt = vorhandene_urls()
-    INBOX.mkdir(parents=True, exist_ok=True)
-
     statistik = {"importiert": 0, "uebersprungen_url": 0, "uebersprungen_da": 0, "bilder": 0}
     dubletten: list[tuple[str, str]] = []
 
@@ -180,14 +181,16 @@ def main() -> int:
 
         datum = str(fm.get("sourceDate") or fm.get("addedDate") or dt.date.today().isoformat())[:10]
         ziel_slug = f"{datum}-{autor_slug(str(fm.get('author', '')))}-{slugify(slug)}"
-        ziel_notiz = INBOX / f"{ziel_slug}.md"
+        inbox_typ = TYP_MAP.get(str(fm.get("sourceType", "")), "notiz")
+        ziel_ordner = INBOX / ORDNER_MAP.get(inbox_typ, "Sonstige")
+        ziel_notiz = ziel_ordner / f"{ziel_slug}.md"
         if ziel_notiz.exists():
             statistik["uebersprungen_da"] += 1
             continue
 
         # Bilder kopieren und Pfade umschreiben — Position im Text bleibt erhalten.
         kopiert: list[str] = []
-        ziel_medien = INBOX / MEDIA_DIRNAME / ziel_slug
+        ziel_medien = ziel_ordner / MEDIA_DIRNAME / ziel_slug
 
         def ersetze(treffer: re.Match[str]) -> str:
             alt_text, bild_slug, dateiname = treffer.groups()
@@ -204,8 +207,11 @@ def main() -> int:
         notiz = baue_notiz(fm, neuer_body, slug, kopiert)
 
         if args.dry_run:
-            print(f"[dry-run] {ziel_slug}.md ({len(kopiert)} Bilder)")
+            print(
+                f"[dry-run] {ziel_notiz.relative_to(REPO)} ({len(kopiert)} Bilder)"
+            )
         else:
+            ziel_ordner.mkdir(parents=True, exist_ok=True)
             ziel_notiz.write_text(notiz, encoding="utf-8", newline="\n")
         statistik["importiert"] += 1
         statistik["bilder"] += len(kopiert)

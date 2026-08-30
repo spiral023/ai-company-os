@@ -1,5 +1,5 @@
 ---
-url: file:///C:/Users/asi/Documents/GitHub/ai-company-os/00_Inbox/state-of-open-source-ai-v1-0-1.pdf
+url: file:///C:/Users/asi/Documents/GitHub/ai-company-os/00_Inbox/Quellen/PDF/dateien/state-of-open-source-ai-v1-0-1.pdf
 titel: "state of open source ai v1 0 1"
 datum: 2026-07-28
 erfasst: 2026-08-05
@@ -13,7 +13,7 @@ datei: "state-of-open-source-ai-v1-0-1.pdf"
 
 # state of open source ai v1 0 1
 
-> Automatisch per `python 70_Scripts/ingest_source.py` erfasst. Quelle: `file:///C:/Users/asi/Documents/GitHub/ai-company-os/00_Inbox/state-of-open-source-ai-v1-0-1.pdf`
+> Automatisch per `python ai.py ingest` erfasst. Quelle: `file:///C:/Users/asi/Documents/GitHub/ai-company-os/00_Inbox/Quellen/PDF/dateien/state-of-open-source-ai-v1-0-1.pdf`
 
 ## Volltext
 

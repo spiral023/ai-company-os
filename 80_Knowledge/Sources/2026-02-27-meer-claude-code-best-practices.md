@@ -4,7 +4,7 @@ autor: "@Meer_AIIT (Meer | AI Tools & News)"
 datum: 2026-02-27
 erfasst: 2026-08-05
 typ: tweet
-rohquelle: 00_Inbox/Quellen/2026-02-27-meer-ai-tools-news-claude-code-best-practices-2026.md
+rohquelle: 00_Inbox/Quellen/X/2026-02-27-meer-ai-tools-news-claude-code-best-practices-2026.md
 beleg_art: sekundaerquelle
 ---
 

@@ -4,7 +4,7 @@ autor: "@cerebras (@0xSero & Zhenwei Gao/@zhennydez)"
 datum: 2026-07-27
 erfasst: 2026-08-04
 typ: artikel
-rohquelle: 00_Inbox/Quellen/2026-07-27-cerebras-2081828128952095022.md
+rohquelle: 00_Inbox/Quellen/X/2026-07-27-cerebras-2081828128952095022.md
 ---
 
 # Modellwahl und Reasoning-Stufen als Kostenhebel im Codex-Workflow
@@ -21,7 +21,7 @@ Die drei Modelle sind unabhängig trainiert und separat bepreist. Aus der mitgel
 | `gpt-5.6-terra` | 2,50 $ | 0,25 $ | 15,00 $ |
 | `gpt-5.6-luna` | 1,00 $ | 0,10 $ | 6,00 $ |
 
-![Preistabelle der GPT-5.6-Modelle mit Input-, Cache- und Output-Preisen für Short und Long Context](../../00_Inbox/Quellen/medien/2026-07-27-cerebras-2081828128952095022/04-photo.jpg)
+![Preistabelle der GPT-5.6-Modelle mit Input-, Cache- und Output-Preisen für Short und Long Context](../../00_Inbox/Quellen/X/medien/2026-07-27-cerebras-2081828128952095022/04-photo.jpg)
 
 Terra kostet exakt die Hälfte von Sol, Luna ein Fünftel — und zwar sowohl im Short- als auch im Long-Context-Tarif. Cached Input liegt durchgängig bei 10 % des regulären Input-Preises, was die im Text genannten „90 % günstiger“ rechnerisch bestätigt.
 
@@ -31,19 +31,19 @@ Die Rollenverteilung laut Artikel: Sol für lange Läufe, komplexe technische Pr
 
 Die zentrale Arbeitsweise: nicht mit dem stärksten Modell beginnen, sondern mit dem günstigsten — und erst hochschalten, wenn der Fortschritt ausbleibt. Die Abbruchkriterien sind konkret benannt: der Agent bleibt hängen, Fixes greifen nicht mehr, oder das Modell verliert den Faden.
 
-![Flussdiagramm: Aufgabe startet bei Luna, bei Stillstand Eskalation zu Sol, bei weiterhin ungelöstem Problem maximale Reasoning-Stufe](../../00_Inbox/Quellen/medien/2026-07-27-cerebras-2081828128952095022/06-photo.jpg)
+![Flussdiagramm: Aufgabe startet bei Luna, bei Stillstand Eskalation zu Sol, bei weiterhin ungelöstem Problem maximale Reasoning-Stufe](../../00_Inbox/Quellen/X/medien/2026-07-27-cerebras-2081828128952095022/06-photo.jpg)
 
 Die zweite Eskalationsachse ist die Reasoning-Stufe, die in Codex fünf Werte kennt: Light, Medium, High, Extra High und Ultra. Der Artikel ordnet sie zu — Light für Aufgaben, bei denen das Modell weiß was zu tun ist und die Fehlerwahrscheinlichkeit niedrig ist; Medium als Alltagsdefault für Aufgaben mit Interpretations- oder Debugging-Anteil; High und Extra High für schwierige STEM- und Coding-Probleme mit mehreren plausiblen Lösungswegen; Ultra nur bei detaillierten Constraints über mehrere unabhängige Systeme hinweg.
 
 Was das kostet, steht ausschließlich in den Charts. Artificial Analysis hat am 17. Juli 2026 die Kosten pro Index-Task für Sol über alle Reasoning-Stufen gemessen:
 
-![Balkendiagramm: Kosten pro Intelligence-Index-Task für GPT-5.6 Sol, aufgeschlüsselt nach Token-Typ, von 0,20 $ bei low bis 1,04 $ bei max](../../00_Inbox/Quellen/medien/2026-07-27-cerebras-2081828128952095022/05-photo.jpg)
+![Balkendiagramm: Kosten pro Intelligence-Index-Task für GPT-5.6 Sol, aufgeschlüsselt nach Token-Typ, von 0,20 $ bei low bis 1,04 $ bei max](../../00_Inbox/Quellen/X/medien/2026-07-27-cerebras-2081828128952095022/05-photo.jpg)
 
 0,20 $ bei `low`, 0,31 $ bei `medium`, 0,45 $ bei `high`, 0,68 $ bei `xhigh` und 1,04 $ bei `max`. Das entspricht Aufschlägen von 55 %, 45 %, 51 % und 53 % pro Stufe und bestätigt die Aussage des Artikels, dass jede Stufe rund 50 % mehr kostet. Von der niedrigsten zur höchsten Stufe ist es der Faktor 5,2.
 
 Was der Aufpreis bringt, zeigt das zweite Chart: der Intelligence-Index steigt von etwa 49,5 bei `low` auf 58,7 bei `max`.
 
-![Streudiagramm: Intelligence-Index gegen Kosten pro Task, die Reasoning-Stufen von Sol als aufsteigende Punktreihe](../../00_Inbox/Quellen/medien/2026-07-27-cerebras-2081828128952095022/02-photo.jpg)
+![Streudiagramm: Intelligence-Index gegen Kosten pro Task, die Reasoning-Stufen von Sol als aufsteigende Punktreihe](../../00_Inbox/Quellen/X/medien/2026-07-27-cerebras-2081828128952095022/02-photo.jpg)
 
 Gut neun Index-Punkte für den 5,2-fachen Preis — und nur die Stufen bis `high` liegen im als „most attractive quadrant“ markierten Bereich des Charts. Das ist das eigentliche Argument für Eskalation von unten: der Grenznutzen sinkt, während die Kosten annähernd exponentiell steigen.
 
@@ -51,7 +51,7 @@ Gut neun Index-Punkte für den 5,2-fachen Preis — und nur die Stufen bis `high
 
 Cached Input kostet 10 % des Normalpreises, die Cache-TTL liegt laut Artikel bei etwa 30 Minuten. Daraus folgt eine Arbeitsweise, die dem intuitiven Aufräumen widerspricht: eine durchgehende Session ist billiger als eine neue pro Aufgabe, weil jeder Neustart denselben Codebase-Kontext erneut zum vollen Preis einliest.
 
-![Flussdiagramm: Kontext einmal laden, Session halten — neue Session pro Aufgabe erzeugt teuren Fresh Input, Wiederverwendung nutzt 90 Prozent günstigeren Cache](../../00_Inbox/Quellen/medien/2026-07-27-cerebras-2081828128952095022/07-photo.jpg)
+![Flussdiagramm: Kontext einmal laden, Session halten — neue Session pro Aufgabe erzeugt teuren Fresh Input, Wiederverwendung nutzt 90 Prozent günstigeren Cache](../../00_Inbox/Quellen/X/medien/2026-07-27-cerebras-2081828128952095022/07-photo.jpg)
 
 Als praktischen Trick nennt der Artikel Codex-Automations im 20-Minuten-Takt, die den Cache innerhalb der TTL warm halten und gleichzeitig länger laufende Prozesse antreiben.
 
@@ -59,7 +59,7 @@ Als praktischen Trick nennt der Artikel Codex-Automations im 20-Minuten-Takt, di
 
 Für längere Läufe beschreibt der Artikel eine Zwei-Rollen-Aufteilung mit einem eng umrissenen Auftrag für den zweiten Agenten: die vollständige Session mitlesen, Ziel und Constraints im Blick halten und eingreifen, sobald der Worker abdriftet.
 
-![Sequenzdiagramm: Nutzer gibt Task an Worker Agent, Advisor Model liest die Session mit, erkennt Drift und stößt eine Kurskorrektur an](../../00_Inbox/Quellen/medien/2026-07-27-cerebras-2081828128952095022/03-photo.jpg)
+![Sequenzdiagramm: Nutzer gibt Task an Worker Agent, Advisor Model liest die Session mit, erkennt Drift und stößt eine Kurskorrektur an](../../00_Inbox/Quellen/X/medien/2026-07-27-cerebras-2081828128952095022/03-photo.jpg)
 
 Der Advisor arbeitet nicht mit, er beobachtet — und greift nur bei Abweichung ein. Ergänzend erwähnt der Artikel, dass sich in lokalem Codex auch andere Anbieter einbinden lassen, etwa Kimi K2.7 Code oder GLM-5.2 für begrenzte Subagent-Aufgaben. Wichtige Einschränkung: Das läuft über Codex-Konfiguration und eigene Agent-Dateien, nicht über einen Modell-Auswahldialog in der App.
 

@@ -1,6 +1,6 @@
 ---
 name: quellen-verarbeiten
-description: Verwende diesen Skill, wenn offene Quellen aus 00_Inbox/Quellen/ (status: neu) ins Knowledge-System eingearbeitet werden sollen — als Sammel-Lauf über alle oder für einzelne Quellen. Auch bei Formulierungen wie „verarbeite die neuen Quellen", „arbeite die Inbox ab", „was liegt noch offen". Schreibt deutsche Zusammenfassungen mit Bildern, leitet Arbeitsweisen ab und vergleicht mit dem Bestand.
+description: "Verwende diesen Skill, wenn offene Quellen aus den Typordnern unter 00_Inbox/Quellen/ (status: neu) ins Knowledge-System eingearbeitet werden sollen — als Sammel-Lauf über alle oder für einzelne Quellen. Auch bei Formulierungen wie „verarbeite die neuen Quellen“, „arbeite die Inbox ab“, „was liegt noch offen“. Schreibt deutsche Zusammenfassungen mit Bildern, leitet Arbeitsweisen ab und vergleicht mit dem Bestand."
 ---
 
 # Quellen verarbeiten
@@ -19,7 +19,7 @@ Das bedeutet konkret:
 ## Abgrenzung
 
 - **Dieser Skill:** Batch über bereits erfasste Quellen in `00_Inbox/Quellen/`. Der Rohtext liegt schon lokal.
-- **`knowledge-ingest`:** Einzelne Quelle, die Philipp gerade teilt und die noch nicht erfasst ist. Nutzt für x.com `npm run ingest:x`, für Artikel/YouTube/PDF `python 70_Scripts/ingest_source.py`.
+- **`knowledge-ingest`:** Einzelne Quelle, die Philipp gerade teilt und die noch nicht erfasst ist. Nutzt für X `npm run ingest:x`, für TikTok `npm run ingest:tiktok`, für Artikel/YouTube/PDF `python ai.py ingest`.
 
 Beide schreiben ins selbe Ziel und folgen denselben Invarianten aus `80_Knowledge/README.md`.
 
@@ -35,7 +35,9 @@ Vor dem ersten Schreiben lesen und exakt befolgen:
 ### 1. Offene Quellen ermitteln
 
 ```powershell
-Select-String -Path "00_Inbox/Quellen/*.md" -Pattern '^status: neu$' | Select-Object -ExpandProperty Path
+Get-ChildItem "00_Inbox/Quellen" -Filter "*.md" -File -Recurse |
+  Select-String -Pattern '^status: neu$' |
+  Select-Object -ExpandProperty Path
 ```
 
 `README.md` in diesem Ordner ist keine Quelle. Gibt es keine Treffer: das melden und aufhören, nichts erfinden.
@@ -46,7 +48,7 @@ Bei mehr als fünf offenen Quellen: nach thematischer Nähe gruppieren und in ei
 
 Die Notiz komplett lesen, nicht nur den Anfang. **Die Bilder im zugehörigen `medien/<slug>/`-Ordner ebenfalls öffnen und lesen** — Charts, Preistabellen und Benchmark-Grafiken enthalten regelmäßig Zahlen, die im Fließtext fehlen. Eine Verarbeitung, die die Bilder überspringt, verliert genau die belastbaren Werte.
 
-Bei YouTube-Transkripten: Zeitstempel sind Belegstellen. Bei Auto-Transkripten (`transkript_generiert: ja`) mit Fachbegriff-Fehlern rechnen und offensichtliche Verballhornungen als solche behandeln, statt sie als Zitat zu übernehmen.
+Bei YouTube-Transkripten: Der Rohtext liegt absichtlich ohne Zeitstempel als lesbare Absätze vor. Kapitelmarken aus der Videobeschreibung belegen nur grobe Abschnitte, nicht einzelne Sätze. Bei Auto-Transkripten (`transkript_generiert: ja`) mit Fachbegriff-Fehlern rechnen und offensichtliche Verballhornungen als solche behandeln, statt sie als Zitat zu übernehmen.
 
 ### 3. Relevanz-Gate
 
@@ -74,7 +76,7 @@ Nichts plausibel ergänzen. Eigenes Fachwissen darf einordnen und kontextualisie
 
 Nach Template aus `80_Knowledge/README.md`, Dateiname `YYYY-MM-DD-<autor>-<slug>.md` mit dem **Veröffentlichungsdatum** der Quelle. Aufbau, Sprache und Bildregeln nach `references/artikel-format.md`.
 
-Der Rohtext bleibt in `00_Inbox/Quellen/` und wird **nicht** in die Source-Notiz kopiert. Die Source-Notiz enthält die redaktionelle deutsche Zusammenfassung und verweist im Feld `rohquelle:` auf die Inbox-Datei.
+Der Rohtext bleibt in `00_Inbox/Quellen/<Quelltyp>/` und wird **nicht** in die Source-Notiz kopiert. Die Source-Notiz enthält die redaktionelle deutsche Zusammenfassung und verweist im Feld `rohquelle:` auf die Inbox-Datei.
 
 ### 7. Arbeitsweisen ableiten
 

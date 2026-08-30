@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Quellen erfassen: Artikel-URLs, YouTube-Transkripte und PDFs.
 
-Schreibt in dieselbe Ablage wie `npm run ingest:x` (X/Twitter):
+Schreibt typabhängig in dieselbe Ablage wie X- und TikTok-Ingest:
 
-    00_Inbox/Quellen/<slug>.md          Notiz mit Frontmatter (status: neu)
-    00_Inbox/Quellen/medien/<slug>/     Bilder der Quelle
+    00_Inbox/Quellen/<Quelltyp>/<slug>.md
+    00_Inbox/Quellen/<Quelltyp>/medien/<slug>/
 
 Die Ablage-Konvention ist in 00_Inbox/Quellen/README.md beschrieben und gilt
 fuer beide Implementierungen (dieses Script und scripts/lib/inbox-store.mjs).
@@ -27,9 +27,19 @@ import urllib.request
 from dataclasses import dataclass, field
 from pathlib import Path
 
+# Konsistente Ausgabe in PowerShell, Pipes und Agent-Terminals unter Windows.
+for stream in (sys.stdout, sys.stderr):
+    if hasattr(stream, "reconfigure"):
+        stream.reconfigure(encoding="utf-8")
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INBOX = REPO_ROOT / "00_Inbox" / "Quellen"
 MEDIA_DIRNAME = "medien"
+QUELLTYP_ORDNER = {
+    "youtube": "YouTube",
+    "url": "URL",
+    "pdf": "PDF",
+}
 # Verwaltungsdateien im Quellenordner sind keine Quellen. Ohne diese Liste
 # würden sie bei Dubletten- und Statusprüfungen mitgezählt.
 KEINE_QUELLEN = {"README.md", "VERARBEITUNGSPLAN.md"}
@@ -61,6 +71,7 @@ class Quelle:
     text: str
     autor: str = ""
     datum: str = ""
+    beschreibung: str = ""
     medien: list[Medium] = field(default_factory=list)
     extra: dict[str, str] = field(default_factory=dict)
 
@@ -119,6 +130,16 @@ def baue_slug(quelle: Quelle) -> str:
     return f"{iso_datum(quelle.datum)}-{herkunft}-{slugify(quelle.titel, 48)}"
 
 
+def quelltyp_ordner(typ: str) -> Path:
+    """Zielordner für einen technischen Inbox-Typ bestimmen."""
+    return INBOX / QUELLTYP_ORDNER.get(typ.lower(), "Sonstige")
+
+
+def pdf_dateien_ordner() -> Path:
+    """Ablage für heruntergeladene PDF-Originaldateien."""
+    return quelltyp_ordner("pdf") / "dateien"
+
+
 def hole(url: str, timeout: int = 30) -> bytes:
     anfrage = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(anfrage, timeout=timeout) as antwort:
@@ -134,7 +155,7 @@ def erkenne_typ(eingabe: str) -> str:
         return "url"
     if Path(eingabe).exists():
         return "pdf"
-    raise SystemExit(f"✖ Typ nicht erkennbar: {eingabe}. --typ setzen.")
+    raise SystemExit(f"[FEHLER] Typ nicht erkennbar: {eingabe}. --typ setzen.")
 
 
 # ------------------------------------------------------------------- Artikel-URL
@@ -217,7 +238,7 @@ def lade_artikel(url: str) -> Quelle:
 def youtube_id(url: str) -> str:
     treffer = re.search(r"(?:v=|youtu\.be/|/shorts/|/embed/)([A-Za-z0-9_-]{11})", url)
     if not treffer:
-        raise SystemExit(f"✖ Keine YouTube-Video-ID in {url}")
+        raise SystemExit(f"[FEHLER] Keine YouTube-Video-ID in {url}")
     return treffer.group(1)
 
 
@@ -226,7 +247,8 @@ def lade_youtube(url: str) -> Quelle:
         from youtube_transcript_api import YouTubeTranscriptApi
     except ImportError:
         raise SystemExit(
-            "✖ youtube-transcript-api fehlt. Installieren:\n  python -m pip install youtube-transcript-api"
+            "[FEHLER] youtube-transcript-api fehlt. Installieren:\n"
+            "  python -m pip install youtube-transcript-api"
         )
 
     vid = youtube_id(url)
@@ -242,46 +264,112 @@ def lade_youtube(url: str) -> Quelle:
         sprache = getattr(spur, "language_code", "?")
         generiert = getattr(spur, "is_generated", None)
     except Exception as err:  # noqa: BLE001 — API wirft heterogene Fehler
-        raise SystemExit(f"✖ Kein Transkript verfuegbar für {vid}: {err}")
+        raise SystemExit(f"[FEHLER] Kein Transkript verfuegbar für {vid}: {err}")
 
-    zeilen: list[str] = []
+    segmente: list[str] = []
     for eintrag in eintraege:
-        start = getattr(eintrag, "start", 0.0)
         text = (getattr(eintrag, "text", "") or "").replace("\n", " ").strip()
         if not text:
             continue
-        stempel = f"{int(start) // 60:02d}:{int(start) % 60:02d}"
-        zeilen.append(f"**[{stempel}]** {text}")
+        segmente.append(re.sub(r"\s+", " ", text))
 
-    titel, autor, datum = youtube_metadaten(url, vid)
+    titel, autor, datum, beschreibung = youtube_metadaten(url, vid)
     return Quelle(
         url=f"https://www.youtube.com/watch?v={vid}",
         typ="youtube",
         titel=titel,
-        text="\n\n".join(zeilen),
+        text=formatiere_transkript(segmente),
         autor=autor,
         datum=datum,
+        beschreibung=beschreibung,
         extra={
             "video_id": vid,
             "transkript_sprache": sprache,
             "transkript_generiert": "ja" if generiert else "nein",
-            "transkript_segmente": str(len(zeilen)),
+            "transkript_segmente": str(len(segmente)),
         },
     )
 
 
-def youtube_metadaten(url: str, vid: str) -> tuple[str, str, str]:
-    """Titel und Kanal per oEmbed (ohne API-Key). Datum liefert oEmbed nicht."""
-    try:
-        import json
+def formatiere_transkript(segmente: list[str], min_absatzlaenge: int = 600) -> str:
+    """Untertitel-Segmente ohne Zeitstempel zu lesbaren Absätzen verbinden."""
+    absaetze: list[str] = []
+    aktueller_absatz: list[str] = []
+    aktuelle_laenge = 0
 
-        ziel = "https://www.youtube.com/oembed?format=json&url=" + urllib.parse.quote(
-            f"https://www.youtube.com/watch?v={vid}", safe=""
+    for segment in segmente:
+        aktueller_absatz.append(segment)
+        aktuelle_laenge += len(segment) + 1
+        ist_satzende = re.search(r'[.!?…]["”\)]?$', segment)
+        ist_abkuerzung = re.search(
+            r"\b(?:z\.\s?B\.|bzw\.|ca\.|d\.\s?h\.|u\.\s?a\.|etc\.)$",
+            segment,
+            re.I,
         )
-        daten = json.loads(hole(ziel).decode("utf-8", errors="replace"))
-        return daten.get("title", vid), daten.get("author_name", ""), heute()
-    except Exception:  # noqa: BLE001 — Metadaten sind optional
-        return vid, "", heute()
+        if aktuelle_laenge >= min_absatzlaenge and ist_satzende and not ist_abkuerzung:
+            absaetze.append(" ".join(aktueller_absatz))
+            aktueller_absatz = []
+            aktuelle_laenge = 0
+
+    if aktueller_absatz:
+        absaetze.append(" ".join(aktueller_absatz))
+
+    return "\n\n".join(absaetze)
+
+
+def youtube_metadaten(url: str, vid: str) -> tuple[str, str, str, str]:
+    """Titel, Kanal, Datum und Beschreibung ohne YouTube-API-Key abrufen."""
+    titel = vid
+    autor = ""
+    datum = heute()
+    beschreibung = ""
+    videoseite = ""
+
+    try:
+        videoseite = hole(f"https://www.youtube.com/watch?v={vid}").decode(
+            "utf-8", errors="replace"
+        )
+        marker = "var ytInitialPlayerResponse = "
+        start = videoseite.find(marker)
+        if start >= 0:
+            start += len(marker)
+            ende = videoseite.find(";</script>", start)
+            if ende >= 0:
+                import json
+
+                player = json.loads(videoseite[start:ende])
+                details = player.get("videoDetails", {})
+                microformat = player.get("microformat", {}).get(
+                    "playerMicroformatRenderer", {}
+                )
+                titel = details.get("title") or titel
+                autor = details.get("author") or autor
+                beschreibung = (details.get("shortDescription") or "").strip()
+                datum = iso_datum(microformat.get("publishDate") or datum)
+    except Exception:  # noqa: BLE001 — Metadaten haben einen oEmbed-Fallback
+        pass
+
+    if titel == vid or not autor:
+        try:
+            import json
+
+            ziel = "https://www.youtube.com/oembed?format=json&url=" + urllib.parse.quote(
+                f"https://www.youtube.com/watch?v={vid}", safe=""
+            )
+            daten = json.loads(hole(ziel).decode("utf-8", errors="replace"))
+            titel = daten.get("title") or titel
+            autor = daten.get("author_name") or autor
+        except Exception:  # noqa: BLE001 — Metadaten sind optional
+            pass
+
+    if datum == heute():
+        treffer = re.search(
+            r'itemprop="datePublished"\s+content="(\d{4}-\d{2}-\d{2})', videoseite
+        )
+        if treffer:
+            datum = treffer.group(1)
+
+    return titel, autor, datum, beschreibung
 
 
 # -------------------------------------------------------------------------- PDF
@@ -291,19 +379,20 @@ def lade_pdf(eingabe: str, medien_laden: bool) -> Quelle:
     try:
         import fitz
     except ImportError:
-        raise SystemExit("✖ PyMuPDF fehlt. Installieren:\n  python -m pip install pymupdf")
+        raise SystemExit("[FEHLER] PyMuPDF fehlt. Installieren:\n  python -m pip install pymupdf")
 
     lokal = Path(eingabe)
     quell_url = eingabe
     if re.match(r"^https?://", eingabe, re.I):
-        ziel = REPO_ROOT / "00_Inbox" / Path(urllib.parse.urlparse(eingabe).path).name
+        ziel = pdf_dateien_ordner() / Path(urllib.parse.urlparse(eingabe).path).name
         if not ziel.exists():
+            ziel.parent.mkdir(parents=True, exist_ok=True)
             ziel.write_bytes(hole(eingabe, timeout=120))
         lokal = ziel
     else:
         quell_url = lokal.resolve().as_uri()
     if not lokal.exists():
-        raise SystemExit(f"✖ PDF nicht gefunden: {lokal}")
+        raise SystemExit(f"[FEHLER] PDF nicht gefunden: {lokal}")
 
     dok = fitz.open(lokal)
     meta = dok.metadata or {}
@@ -423,11 +512,13 @@ def baue_notiz(quelle: Quelle, slug: str) -> str:
         f"[{quelle.url}]({quelle.url})" if quelle.url.startswith("http") else f"`{quelle.url}`"
     )
     zeilen += [
-        f"> Automatisch per `python 70_Scripts/ingest_source.py` erfasst. Quelle: {herkunft}",
+        f"> Automatisch per `python ai.py ingest` erfasst. Quelle: {herkunft}",
         "",
     ]
 
     if quelle.typ == "youtube":
+        if quelle.beschreibung:
+            zeilen += ["## Videobeschreibung", "", quelle.beschreibung, ""]
         zeilen += ["## Transkript", ""]
     elif quelle.typ == "pdf":
         zeilen += ["## Volltext", ""]
@@ -449,22 +540,23 @@ def baue_notiz(quelle: Quelle, slug: str) -> str:
 
 
 def quellen_dateien() -> list[Path]:
-    """Alle Quellnotizen im Inbox-Ordner, ohne Verwaltungsdateien."""
+    """Alle Quellnotizen rekursiv, ohne Verwaltungsdateien."""
     if not INBOX.exists():
         return []
-    return [p for p in sorted(INBOX.glob("*.md")) if p.name not in KEINE_QUELLEN]
+    return [p for p in sorted(INBOX.rglob("*.md")) if p.name not in KEINE_QUELLEN]
 
 
-def eindeutiger_slug(basis: str, url: str) -> str:
+def eindeutiger_slug(basis: str, url: str, ordner: Path | None = None) -> str:
     """Kollision verhindern: Zwei verschiedene Quellen können denselben Slug
     erzeugen (etwa wenn beide Seiten denselben og:title tragen). Ohne diese
     Prüfung würde die zweite Quelle die erste überschreiben — auch mit --force,
     das nur das Überschreiben derselben Quelle erlauben soll."""
     normalisiert = url.split("?")[0].rstrip("/")
+    ordner = ordner or INBOX
     kandidat = basis
     zaehler = 2
     while True:
-        notiz = INBOX / f"{kandidat}.md"
+        notiz = ordner / f"{kandidat}.md"
         if not notiz.exists():
             return kandidat
         treffer = re.search(r"(?m)^url:\s*(.+)$", notiz.read_text(encoding="utf-8"))
@@ -487,7 +579,9 @@ def finde_dublette(url: str) -> Path | None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Quelle in 00_Inbox/Quellen/ erfassen")
+    parser = argparse.ArgumentParser(
+        description="Quelle nach 00_Inbox/Quellen/<Quelltyp>/ erfassen"
+    )
     parser.add_argument("eingabe", help="URL oder Pfad zu einer PDF")
     parser.add_argument("--typ", choices=["auto", "url", "youtube", "pdf"], default="auto")
     parser.add_argument("--no-media", action="store_true", help="keine Bilder laden")
@@ -501,7 +595,7 @@ def main() -> int:
     if not args.force:
         vorhanden = finde_dublette(args.eingabe)
         if vorhanden:
-            print(f"● Quelle bereits erfasst: {vorhanden.relative_to(REPO_ROOT)}")
+            print(f"[INFO] Quelle bereits erfasst: {vorhanden.relative_to(REPO_ROOT)}")
             print("  Unverändert gelassen. --force überschreibt sie.")
             return 0
 
@@ -514,12 +608,13 @@ def main() -> int:
 
     if args.titel:
         quelle.titel = args.titel
-    slug = eindeutiger_slug(baue_slug(quelle), quelle.url)
-    medien_ziel = INBOX / MEDIA_DIRNAME / slug
+    ziel_ordner = quelltyp_ordner(quelle.typ)
+    slug = eindeutiger_slug(baue_slug(quelle), quelle.url, ziel_ordner)
+    medien_ziel = ziel_ordner / MEDIA_DIRNAME / slug
 
-    notiz = INBOX / f"{slug}.md"
+    notiz = ziel_ordner / f"{slug}.md"
     if notiz.exists() and not args.force:
-        print(f"● Notiz existiert bereits: {notiz.relative_to(REPO_ROOT)}")
+        print(f"[INFO] Notiz existiert bereits: {notiz.relative_to(REPO_ROOT)}")
         print("  Unverändert gelassen. --force überschreibt sie.")
         return 0
 
@@ -529,13 +624,13 @@ def main() -> int:
         schreibe_vorhandene(quelle.medien, medien_ziel)
         lade_medien(quelle.medien, medien_ziel)
 
-    INBOX.mkdir(parents=True, exist_ok=True)
+    ziel_ordner.mkdir(parents=True, exist_ok=True)
     notiz.write_text(baue_notiz(quelle, slug), encoding="utf-8")
 
     geladen = len([m for m in quelle.medien if m.local])
     for medium in (m for m in quelle.medien if m.error):
-        print(f"⚠ Medium übersprungen: {medium.error}")
-    print(f"✔ Quelle: {notiz.relative_to(REPO_ROOT)}")
+        print(f"[WARNUNG] Medium übersprungen: {medium.error}")
+    print(f"[OK] Quelle: {notiz.relative_to(REPO_ROOT)}")
     info = f"  Typ: {typ} · {len(quelle.text)} Zeichen"
     if quelle.autor:
         info += f" · Autor: {quelle.autor}"

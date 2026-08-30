@@ -17,7 +17,7 @@ autor: <Handle oder Name, wie die Quelle ihn führt>
 datum: <YYYY-MM-DD der Original-Veröffentlichung>
 erfasst: <YYYY-MM-DD des Ingests>
 typ: tweet | artikel | repo | video | notiz
-rohquelle: 00_Inbox/Quellen/<slug>.md
+rohquelle: 00_Inbox/Quellen/<Quelltyp>/<slug>.md
 ---
 ```
 
@@ -49,7 +49,7 @@ Kein „In diesem Artikel wird …" — direkt in die Sache.>
 <Erklärung mit Belegen. Zahlen konkret nennen. Bilder an der Stelle einfügen,
 wo der Text sie braucht.>
 
-![Beschreibender Alt-Text](../../00_Inbox/Quellen/medien/<slug>/02-photo.jpg)
+![Beschreibender Alt-Text](../../00_Inbox/Quellen/<Quelltyp>/medien/<slug>/02-photo.jpg)
 
 ## Einordnung
 
@@ -87,10 +87,10 @@ Nie mechanisch Abschnitt für Abschnitt paraphrasieren. Wenn die Quelle schlecht
 
 ## Bilder
 
-Die Bilder liegen bereits lokal unter `00_Inbox/Quellen/medien/<slug>/`. Sie werden **nicht kopiert**, sondern relativ referenziert:
+Die Bilder liegen bereits lokal unter `00_Inbox/Quellen/<Quelltyp>/medien/<slug>/`. Sie werden **nicht kopiert**, sondern relativ referenziert:
 
 ```markdown
-![Chart: Intelligence-Index gegen Kosten pro Task](../../00_Inbox/Quellen/medien/2026-07-27-cerebras-2081828128952095022/02-photo.jpg)
+![Chart: Intelligence-Index gegen Kosten pro Task](../../00_Inbox/Quellen/X/medien/2026-07-27-cerebras-2081828128952095022/02-photo.jpg)
 ```
 
 Regeln:

@@ -4,7 +4,7 @@ autor: OpenAI
 datum: 2026-02-28
 erfasst: 2026-08-04
 typ: artikel
-rohquelle: 00_Inbox/Quellen/2026-02-28-openai-codex-rules-guide.md
+rohquelle: 00_Inbox/Quellen/URL/2026-02-28-openai-codex-rules-guide.md
 beleg_art: sekundaerquelle
 ---
 

@@ -22,7 +22,7 @@ import {
   formatInboxNote,
   writeInboxNote,
   mediaTargetDir,
-  INBOX_REL,
+  sourceInboxRel,
 } from './lib/inbox-store.mjs';
 
 const rootDir = process.cwd();
@@ -32,7 +32,7 @@ function usage() {
   console.log(
     'Usage: npm run ingest:x -- <tweet-url-oder-id> [--thread] [--force] [--refetch] [--max-thread <n>] [--no-media]',
   );
-  console.log(`  Ablage: ${INBOX_REL}/<slug>.md · Medien: ${INBOX_REL}/medien/<slug>/`);
+  console.log(`  Ablage: ${sourceInboxRel('x')}/<slug>.md · Medien: ${sourceInboxRel('x')}/medien/<slug>/`);
   console.log('  --force    Notiz neu schreiben (aus dem Cache, kein API-Call).');
   console.log('  --refetch  API-Antwort neu holen — kostet einen Request. Impliziert --force.');
 }
@@ -164,7 +164,7 @@ async function main() {
   const media = extractMedia(payload.includes?.media);
   const articleMedia = extractArticleMedia(tweet, payload.includes?.media);
   const slug = buildSlug({ createdAt: tweet.created_at, username: author?.username, id });
-  const notePath = path.join(rootDir, INBOX_REL, `${slug}.md`);
+  const notePath = path.join(rootDir, sourceInboxRel('x'), `${slug}.md`);
 
   // Eine bestehende Notiz kann manuell ergänzt oder auf status:verarbeitet
   // gesetzt sein — die darf ein erneuter Lauf nicht stillschweigend verwerfen.
@@ -186,7 +186,7 @@ async function main() {
 
   let downloads = [];
   if (args.media && mediaToLoad.length) {
-    downloads = await downloadMedia(mediaToLoad, mediaTargetDir(rootDir, slug));
+    downloads = await downloadMedia(mediaToLoad, mediaTargetDir(rootDir, 'x', slug));
     for (const d of downloads.filter((x) => !x.ok)) {
       console.warn(`⚠ Medien-Download fehlgeschlagen (${d.file}): ${d.error}`);
     }
@@ -203,7 +203,7 @@ async function main() {
     downloads,
     fetchedAt: payload.fetchedAt,
   });
-  writeInboxNote(rootDir, slug, note);
+  writeInboxNote(rootDir, 'x', slug, note);
 
   const articleText = extractArticleText(tweet);
   const contentLen = articleText ? articleText.length : extractTweetText(tweet).length;

@@ -4,7 +4,7 @@ autor: David Wiesen
 datum: 2026-05-13
 erfasst: 2026-08-04
 typ: artikel
-rohquelle: 00_Inbox/Quellen/2026-05-13-david-wiesen-openai-codex-windows-sandbox.md
+rohquelle: 00_Inbox/Quellen/URL/2026-05-13-david-wiesen-openai-codex-windows-sandbox.md
 beleg_art: sekundaerquelle
 ---
 

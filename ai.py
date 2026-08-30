@@ -100,6 +100,20 @@ def run_external(args: argparse.Namespace) -> int:
     return run_subprocess(command, "Externe Skills prüfen")
 
 
+def run_ingest(args: argparse.Namespace) -> int:
+    """Archive an article, YouTube video or PDF in the source inbox."""
+    command = [sys.executable, script_path("ingest_source.py"), args.eingabe]
+    if args.typ != "auto":
+        command.extend(["--typ", args.typ])
+    if args.no_media:
+        command.append("--no-media")
+    if args.force:
+        command.append("--force")
+    if args.titel:
+        command.extend(["--titel", args.titel])
+    return run_subprocess(command, "Quelle erfassen")
+
+
 def run_skills(args: argparse.Namespace) -> int:
     """List or install local project skills."""
     command = [sys.executable, script_path("install_project_skills.py")]
@@ -199,8 +213,9 @@ def run_menu() -> int:
         print("2) Health Check ausführen")
         print("3) Skills anzeigen oder installieren")
         print("4) Externe Skills prüfen")
-        print("5) Git-Status anzeigen")
-        print("6) Beenden")
+        print("5) Quelle erfassen")
+        print("6) Git-Status anzeigen")
+        print("7) Beenden")
         choice = input("Auswahl: ").strip()
 
         if choice == "1":
@@ -212,8 +227,19 @@ def run_menu() -> int:
         if choice == "4":
             return run_external(argparse.Namespace(source=None))
         if choice == "5":
-            return run_status(argparse.Namespace())
+            eingabe = prompt_text("URL oder PDF-Pfad")
+            return run_ingest(
+                argparse.Namespace(
+                    eingabe=eingabe,
+                    typ="auto",
+                    no_media=False,
+                    force=False,
+                    titel=None,
+                )
+            )
         if choice == "6":
+            return run_status(argparse.Namespace())
+        if choice == "7":
             return 0
         print("Bitte eine gültige Option wählen.")
         print()
@@ -233,6 +259,18 @@ def build_parser() -> argparse.ArgumentParser:
     external = subparsers.add_parser("external", help="Externe Skills prüfen")
     external.add_argument("--source", help="Nur eine externe Quelle per ID prüfen")
     external.set_defaults(handler=run_external)
+
+    ingest = subparsers.add_parser(
+        "ingest", help="Artikel, YouTube-Video oder PDF als Quelle erfassen"
+    )
+    ingest.add_argument("eingabe", help="URL oder Pfad zu einer PDF")
+    ingest.add_argument(
+        "--typ", choices=["auto", "url", "youtube", "pdf"], default="auto"
+    )
+    ingest.add_argument("--no-media", action="store_true", help="Keine Bilder laden")
+    ingest.add_argument("--force", action="store_true", help="Bestehende Notiz überschreiben")
+    ingest.add_argument("--titel", help="Automatisch erkannten Titel überschreiben")
+    ingest.set_defaults(handler=run_ingest)
 
     skills = subparsers.add_parser("skills", help="Skills anzeigen oder installieren")
     skills.add_argument("--project-type", help="Projektart für Default-Skills")

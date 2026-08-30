@@ -4,7 +4,7 @@ autor: "Unsloth Team"
 datum: 2026-02-02
 erfasst: 2026-08-05
 typ: artikel
-rohquelle: 00_Inbox/Quellen/2026-02-02-unsloth-team-claude-code-local-llm.md
+rohquelle: 00_Inbox/Quellen/URL/2026-02-02-unsloth-team-claude-code-local-llm.md
 beleg_art: sekundaerquelle
 ---
 

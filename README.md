@@ -14,7 +14,7 @@ Einzelne Softwareprojekte liegen später in eigenen GitHub-Repositories. Dieses 
 | Externe Skills | dokumentiert, aber nicht automatisch vertrauenswürdig |
 | Health Check | `python 70_Scripts/company_os_healthcheck.py` |
 | Obsidian | Markdown, Wiki-Links und kurze Index-Dateien |
-| Knowledge-System | 29 Patterns, 63 Source-Notizen unter `80_Knowledge/`; 81 Rohquellen in `00_Inbox/Quellen/` (Stand 2026-08-05) |
+| Knowledge-System | Patterns und Source-Notizen unter `80_Knowledge/`; Rohquellen nach Quelltyp unter `00_Inbox/Quellen/` |
 
 ## Was dieses Repo ist
 
@@ -74,6 +74,7 @@ python ai.py health
 python ai.py new
 python ai.py skills
 python ai.py external
+python ai.py ingest <url-oder-pdf-pfad>
 python ai.py status
 ```
 
@@ -186,22 +187,17 @@ Alle Workflows liegen unter `20_Workflows/`.
 
 ## Knowledge-System
 
-`80_Knowledge/` ist die lebende Wissensbasis über KI-Arbeitsweisen (Coding Agents, Skills, Agent-Workflows, Frameworks) — gespeist aus Tweets, Artikeln, offizieller Doku und eigener Erfahrung. Rohquellen liegen unveränderlich in `00_Inbox/Quellen/`, die redaktionelle Synthese in `80_Knowledge/Sources/` und `80_Knowledge/Patterns/`. Regeln, Konfidenz-Modell und Templates: `80_Knowledge/README.md`. Vollständige Liste mit Einzeilern: `80_Knowledge/Index.md`.
+`80_Knowledge/` ist die lebende Wissensbasis über KI-Arbeitsweisen (Coding Agents, Skills, Agent-Workflows, Frameworks) — gespeist aus X/Twitter, TikTok, YouTube, Artikeln, PDFs, offizieller Doku und eigener Erfahrung. Rohquellen liegen unveränderlich nach Quelltyp unter `00_Inbox/Quellen/{X,TikTok,YouTube,URL,PDF}/`, die redaktionelle Synthese in `80_Knowledge/Sources/` und `80_Knowledge/Patterns/`. Regeln, Konfidenz-Modell und Templates: `80_Knowledge/README.md`. Die aktuelle, nicht manuell zu zählende Liste mit Einzeilern steht in `80_Knowledge/Index.md`.
 
-**29 Patterns** (Stand 2026-08-05), nach Themenfeld:
+Neue Quellen abrufen:
 
-| Themenfeld | Anzahl | Beispiele |
-|---|---|---|
-| Skills & Agenten-Architektur | 8 | `Skill-Call-Hierarchie`, `Klein-und-komposierbar`, `AGENTS-md-Onboarding-Design` |
-| Planung & Verifikation | 6 | `Plan-first-mit-getrenntem-Review`, `TDD-als-Verifikationshebel`, `Testharness-als-staerkster-Hebel` |
-| Kontext- & Session-Management | 4 | `Kontext-Hygiene-Entscheidungsbaum`, `Handoff-Doc`, `Ralph-Loop-Frischer-Kontext-pro-Iteration` |
-| Parallelisierung & Rollen | 3 | `Kontrollierte-Agent-Parallelisierung`, `Great-Decoupling-Rollenverstaendnis` |
-| Modell & Kosten | 2 | `Modell-Eskalation-von-guenstig-nach-teuer`, `Lokale-Modell-Umleitung-Muster` |
-| Security & Sandbox | 2 | `Deny-Rules-statt-CLAUDE-md-Empfehlung`, `Sandbox-Komposition-aus-OS-Primitiven` |
-| Prompting | 2 | `Fable-Unknowns-vor-Prompt-Qualitaet`, `Voice-Prompting-fuer-Kontextreichtum` |
-| CI/Betrieb, Prototyping | 2 | `CI-Agent-mit-Review-Gate`, `Lovable-Prototyp-dann-lokaler-Handoff` |
+```bash
+npm run ingest:x -- <x-url> --thread
+npm run ingest:tiktok -- <tiktok-url>
+python ai.py ingest <youtube-url-artikel-url-oder-pdf-pfad>
+```
 
-Dazu 63 Source-Notizen (`80_Knowledge/Sources/`) und ein laufender Übernahme-Prozess aus einem zweiten Projekt (vibedeck): 81 Rohquellen in `00_Inbox/Quellen/`, Fortschritt und nächste Schritte in `00_Inbox/Quellen/VERARBEITUNGSPLAN.md`.
+Fortschritt und nächste Schritte für bereits erfasste Rohquellen stehen in `00_Inbox/Quellen/VERARBEITUNGSPLAN.md`.
 
 Neue Quelle einarbeiten: Skill `quellen-verarbeiten` (`30_Skills/local/quellen-verarbeiten/`). Validieren:
 

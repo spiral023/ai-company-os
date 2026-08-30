@@ -6,14 +6,26 @@ Roh erfasste externe Quellen, vollständig und unbearbeitet. Eingangsstufe vor `
 
 ```
 00_Inbox/Quellen/
-  2026-07-27-cerebras-2081828128952095022.md      ← Notiz mit Volltext
-  medien/
-    2026-07-27-cerebras-2081828128952095022/      ← Bilder dieser Quelle
-      01-cover.jpg
-      02-photo.jpg
+  X/
+    2026-07-27-cerebras-2081828128952095022.md    ← Notiz mit Volltext
+    medien/
+      2026-07-27-cerebras-2081828128952095022/    ← Bilder dieser Quelle
+  TikTok/
+  YouTube/
+  URL/
+  PDF/
+    dateien/                                            ← lokal gespeicherte Remote-PDFs
 ```
 
-Slug = `<Veröffentlichungsdatum>-<Handle>-<ID>`. Die ID hält den Slug eindeutig, auch bei mehreren Posts eines Autors am selben Tag.
+Die Ingest-Scripts wählen den Typordner automatisch. X und TikTok verwenden den Slug `<Veröffentlichungsdatum>-<Handle>-<ID>`; URL, YouTube und PDF ergänzen einen gekürzten Titel. `Sonstige/` ist der kontrollierte Fallback für einen künftig unbekannten technischen Typ.
+
+| Quelle | Zielordner | Abruf |
+|---|---|---|
+| X/Twitter | `X/` | `npm run ingest:x -- <url> --thread` |
+| TikTok | `TikTok/` | `npm run ingest:tiktok -- <url>` |
+| YouTube | `YouTube/` | `python ai.py ingest <url>` |
+| Website/Artikel | `URL/` | `python ai.py ingest <url>` |
+| PDF | `PDF/` | `python ai.py ingest <url-oder-pfad>` |
 
 ## Warum Bilder lokal liegen
 
@@ -34,10 +46,18 @@ Jede Notiz trägt im Frontmatter ein `status`-Feld:
 Alle offenen Quellen finden:
 
 ```powershell
-Select-String -Path "00_Inbox/Quellen/*.md" -Pattern '^status: neu$' | Select-Object Path
+Get-ChildItem "00_Inbox/Quellen" -Filter "*.md" -File -Recurse |
+  Select-String -Pattern '^status: neu$' |
+  Select-Object Path
 ```
 
 ## Erfassen
+
+**Artikel, YouTube und PDF:**
+
+```powershell
+python ai.py ingest <url-oder-pdf-pfad> [--force] [--no-media]
+```
 
 **X (Twitter):**
 
@@ -54,6 +74,12 @@ npm run ingest:tiktok -- <video-url-oder-id> [--force] [--refetch] [--no-media] 
 Eine bestehende Notiz wird **nicht** überschrieben — so gehen manuelle Ergänzungen und ein bereits gesetzter Status nicht verloren. `--force` überschreibt bewusst; `--refetch` holt zusätzlich die API-Antwort neu (kostet einen Request bzw. $0.001).
 
 Der JSON-Cache unter `scripts/.ingest/` verhindert doppelte API-Calls und ist gitignored.
+
+### Was YouTube-Notizen ausmacht
+
+Das Script übernimmt die Videobeschreibung und eine vorhandene deutsche oder englische Untertitelspur. Das Transkript wird ohne Zeitstempel zu lesbaren Absätzen verbunden; die ursprünglichen Untertitel-Segmente werden nur als Anzahl im Frontmatter dokumentiert. Titel, Kanal und Veröffentlichungsdatum kommen ohne API-Key von YouTube.
+
+Bei `transkript_generiert: ja` handelt es sich um automatische Spracherkennung. Eigennamen, Produktnamen und Fachbegriffe können falsch sein und werden im Roharchiv nicht stillschweigend korrigiert. Vor Zitaten oder der Übernahme kritischer Aussagen ins Knowledge-System den Inhalt gegen das Video prüfen. Stellt YouTube keine Untertitelspur bereit, bricht der Abruf mit einer klaren Meldung ab.
 
 ### Was TikTok-Notizen ausmacht
 

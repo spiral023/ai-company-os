@@ -4,7 +4,7 @@ Wissensbasis über KI-Arbeitsweisen (Coding Agents, Skills, Agent-Workflows, Fra
 
 ## Struktur
 
-- `00_Inbox/Quellen/` — **Rohquellen-Archiv** (nicht Teil von `80_Knowledge/`): vollständiger Originaltext und Bilder, wie erfasst. Siehe `00_Inbox/Quellen/README.md`.
+- `00_Inbox/Quellen/<Quelltyp>/` — **Rohquellen-Archiv** (nicht Teil von `80_Knowledge/`): vollständiger Originaltext und Bilder, wie erfasst. Typordner: `X`, `TikTok`, `YouTube`, `URL`, `PDF`. Siehe `00_Inbox/Quellen/README.md`.
 - `Sources/` — redaktionelle deutsche Aufarbeitung je Quelle: `YYYY-MM-DD-<autor>-<slug>.md` (Datum = Original-Veröffentlichung). Seit 2026-08-04 wird hier **nicht mehr der Originaltext** abgelegt — der liegt in `00_Inbox/Quellen/` und wird per Frontmatter-Feld `rohquelle:` verlinkt. Aufbau- und Sprachregeln: `30_Skills/local/quellen-verarbeiten/references/artikel-format.md`.
 - `Patterns/` — lebende Synthese-Notizen, eine pro Arbeitsweise.
 - `Vergleiche/` — Verdichtung mehrerer Patterns/Frameworks zu Empfehlungen, eine Datei pro Themenfeld.
@@ -37,7 +37,7 @@ autor: <Handle oder Name>
 datum: <YYYY-MM-DD der Original-Veröffentlichung>
 erfasst: <YYYY-MM-DD des Ingests>
 typ: tweet | artikel | repo | video | notiz
-rohquelle: <00_Inbox/Quellen/<slug>.md — entfällt, wenn keine erfasste Rohquelle existiert>
+rohquelle: <00_Inbox/Quellen/<Quelltyp>/<slug>.md — entfällt, wenn keine erfasste Rohquelle existiert>
 ---
 
 # <Aussagekräftiger deutscher Titel>
@@ -47,7 +47,7 @@ rohquelle: <00_Inbox/Quellen/<slug>.md — entfällt, wenn keine erfasste Rohque
 ## <Fachliche Überschrift>
 
 <Redaktionelle deutsche Zusammenfassung, nach Lernlogik geordnet. Bilder relativ aus
-`00_Inbox/Quellen/medien/<slug>/` referenzieren, dort wo der Text sie braucht.>
+`00_Inbox/Quellen/<Quelltyp>/medien/<slug>/` referenzieren, dort wo der Text sie braucht.>
 
 ## Einordnung
 

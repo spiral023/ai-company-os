@@ -40,6 +40,7 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-02-27 · [[2026-02-27-meer-claude-code-best-practices]] · meinung — Boris Cherny (laut Tweet-Sekundärquelle) lässt eine zweite Claude-Instanz bereits den Plan selbst als Senior Engineer prüfen, bevor implementiert wird — Review vor der Umsetzung statt erst am fertigen Diff.
 - 2026-01-10 · [[2026-01-10-eyad-khrais-claude-code-tutorial]] · meinung — Erfahrungsbericht: Plan Mode vor Implementierung liefert laut Autor „10 von 10 Mal“ signifikant bessere Ergebnisse als direktes Losschreiben (unbelegte Einschätzung).
 - 2026-02-01 · [[2026-02-01-anthropic-docs-claude-code-best-practices]] · meinung — Offizielle Anthropic-Doku bestätigt Explore→Plan→Implement→Commit als empfohlenen Standardablauf für nicht-triviale Änderungen.
+- 2026-07-30 · [[2026-07-30-julian-ivanov-interaktive-schulungen-mit-claude-code]] · meinung — Überträgt Plan-first auf Content-Produktion: Ein Curriculum mit Lernzielen, Leveln und Voiceover wird vor der kostenpflichtigen Mediengenerierung geprüft und explizit freigegeben.
 
 ## Spannungen & offene Fragen
 

@@ -4,7 +4,7 @@ autor: Anthropic Docs
 datum: 2026-02-01
 erfasst: 2026-08-04
 typ: artikel
-rohquelle: 00_Inbox/Quellen/2026-02-01-anthropic-docs-claude-code-best-practices.md
+rohquelle: 00_Inbox/Quellen/URL/2026-02-01-anthropic-docs-claude-code-best-practices.md
 beleg_art: sekundaerquelle
 ---
 
