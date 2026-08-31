@@ -143,6 +143,57 @@ class TestYoutubeAufbereitung:
         )
 
 
+class TestNormalisiereUrl:
+    """Der Vergleichsschluessel muss die Identität einer Quelle treffen."""
+
+    @pytest.mark.parametrize(
+        "url",
+        [
+            "https://www.youtube.com/watch?v=gz0PBC2P9eg",
+            "https://youtu.be/gz0PBC2P9eg?t=42",
+            "https://www.youtube.com/shorts/gz0PBC2P9eg",
+            "https://www.youtube.com/embed/gz0PBC2P9eg",
+        ],
+    )
+    def test_youtube_varianten_fallen_zusammen(self, url):
+        assert ingest.normalisiere_url(url) == "https://www.youtube.com/watch?v=gz0PBC2P9eg"
+
+    def test_verschiedene_videos_bleiben_verschieden(self):
+        # Der alte Code schnitt alles ab "?" weg. Damit normalisierte jedes
+        # Video auf ".../watch" und ein neues galt als Dublette des ersten.
+        a = ingest.normalisiere_url("https://www.youtube.com/watch?v=gz0PBC2P9eg")
+        b = ingest.normalisiere_url("https://www.youtube.com/watch?v=AAAAAAAAAAA")
+        assert a != b
+
+    def test_tracking_faellt_weg_inhaltsparameter_bleibt(self):
+        assert (
+            ingest.normalisiere_url("https://example.com/x/?utm_source=rss&id=7&fbclid=z")
+            == "https://example.com/x?id=7"
+        )
+
+    def test_www_und_schema_vereinheitlicht(self):
+        assert ingest.normalisiere_url(
+            "https://www.example.com/x?id=7"
+        ) == ingest.normalisiere_url("https://example.com/x/?id=7")
+
+    def test_parameterreihenfolge_egal(self):
+        assert ingest.normalisiere_url("https://example.com/x?b=2&a=1") == ingest.normalisiere_url(
+            "https://example.com/x?a=1&b=2"
+        )
+
+    def test_kurzparameter_nur_bei_x(self):
+        # ?s=/?t= stammen vom Teilen-Dialog von X. Anderswo können es echte
+        # Parameter sein, die zwei Quellen unterscheiden.
+        assert (
+            ingest.normalisiere_url("https://x.com/a/status/1?s=20&t=xy")
+            == "https://x.com/a/status/1"
+        )
+        assert ingest.normalisiere_url("https://example.com/suche?s=agenten").endswith("?s=agenten")
+
+    def test_lokaler_pfad_bleibt_unveraendert(self):
+        assert ingest.normalisiere_url("C:/tmp/paper.pdf") == "C:/tmp/paper.pdf"
+
+
 class TestEindeutigerSlug:
     """Zwei verschiedene Quellen dürfen sich nie gegenseitig überschreiben."""
 
@@ -176,6 +227,14 @@ class TestQuellenErkennung:
         )
         assert ingest.finde_dublette("https://example.com/x/?utm_source=rss") is not None
         assert ingest.finde_dublette("https://example.com/anders") is None
+
+    def test_neues_youtube_video_ist_keine_dublette(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(ingest, "INBOX", tmp_path)
+        (tmp_path / "video.md").write_text(
+            "---\nurl: https://www.youtube.com/watch?v=gz0PBC2P9eg\n---\n", encoding="utf-8"
+        )
+        assert ingest.finde_dublette("https://www.youtube.com/watch?v=AAAAAAAAAAA") is None
+        assert ingest.finde_dublette("https://youtu.be/gz0PBC2P9eg") is not None
 
     def test_quellen_werden_in_typordnern_rekursiv_gefunden(self, tmp_path, monkeypatch):
         monkeypatch.setattr(ingest, "INBOX", tmp_path)

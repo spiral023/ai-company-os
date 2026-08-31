@@ -44,6 +44,42 @@ QUELLTYP_ORDNER = {
 # würden sie bei Dubletten- und Statusprüfungen mitgezählt.
 KEINE_QUELLEN = {"README.md", "VERARBEITUNGSPLAN.md"}
 USER_AGENT = "Mozilla/5.0 (compatible; ai-company-os ingest)"
+# Parameter, die nur der Nachverfolgung dienen. Sie gehoeren nicht zur
+# Identitaet einer Quelle: dieselbe Seite aus einem Newsletter und aus einem
+# Tweet ist eine Quelle, nicht zwei.
+TRACKING_PARAMETER = {
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_term",
+    "utm_content",
+    "utm_id",
+    "fbclid",
+    "gclid",
+    "gbraid",
+    "wbraid",
+    "msclkid",
+    "yclid",
+    "twclid",
+    "igshid",
+    "igsh",
+    "mc_cid",
+    "mc_eid",
+    "_hsenc",
+    "_hsmi",
+    "ref",
+    "ref_src",
+    "ref_url",
+    "__twitter_impression",
+    "spm",
+    "si",
+}
+# Der Teilen-Dialog von X haengt ?s=...&t=... an. Anderswo koennen so kurze
+# Namen echte Parameter sein, deshalb nur hostgebunden entfernen.
+HOST_TRACKING_PARAMETER = {
+    "x.com": {"s", "t"},
+    "twitter.com": {"s", "t"},
+}
 # Bilder unter dieser Groesse sind praktisch immer Icons, Spacer oder Tracking-Pixel.
 MIN_IMAGE_BYTES = 15_000
 
@@ -546,12 +582,52 @@ def quellen_dateien() -> list[Path]:
     return [p for p in sorted(INBOX.rglob("*.md")) if p.name not in KEINE_QUELLEN]
 
 
+def normalisiere_url(url: str) -> str:
+    """Kanonische Form einer Quell-URL fuer den Dublettenvergleich.
+
+    Frueher wurde schlicht alles ab '?' verworfen. Bei YouTube steckt die
+    Video-ID aber genau dort: Jedes Video normalisierte damit auf
+    'https://www.youtube.com/watch' und galt als Dublette des ersten bereits
+    erfassten Videos — neue Videos wurden abgewiesen. Der Query wird deshalb
+    gefiltert statt verworfen, und YouTube-Links laufen ueber die Video-ID auf
+    eine gemeinsame Form, damit watch-, youtu.be- und shorts-Adressen
+    desselben Videos zusammenfallen.
+    """
+    url = (url or "").strip()
+    if re.search(r"(youtube\.com|youtu\.be)", url, re.I):
+        treffer = re.search(
+            r"(?:v=|youtu\.be/|/shorts/|/embed/|/live/)([A-Za-z0-9_-]{11})", url
+        )
+        if treffer:
+            return f"https://www.youtube.com/watch?v={treffer.group(1)}"
+
+    teile = urllib.parse.urlsplit(url)
+    if not teile.scheme or not teile.netloc:
+        # Lokale PDF-Pfade haben keinen Host und werden unveraendert verglichen.
+        return url.rstrip("/")
+
+    host = teile.netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    entfernen = TRACKING_PARAMETER | HOST_TRACKING_PARAMETER.get(host, set())
+    query = urllib.parse.urlencode(
+        sorted(
+            (name, wert)
+            for name, wert in urllib.parse.parse_qsl(teile.query, keep_blank_values=True)
+            if name.lower() not in entfernen
+        )
+    )
+    return urllib.parse.urlunsplit(
+        (teile.scheme.lower(), host, teile.path.rstrip("/"), query, "")
+    )
+
+
 def eindeutiger_slug(basis: str, url: str, ordner: Path | None = None) -> str:
     """Kollision verhindern: Zwei verschiedene Quellen können denselben Slug
     erzeugen (etwa wenn beide Seiten denselben og:title tragen). Ohne diese
     Prüfung würde die zweite Quelle die erste überschreiben — auch mit --force,
     das nur das Überschreiben derselben Quelle erlauben soll."""
-    normalisiert = url.split("?")[0].rstrip("/")
+    normalisiert = normalisiere_url(url)
     ordner = ordner or INBOX
     kandidat = basis
     zaehler = 2
@@ -560,17 +636,17 @@ def eindeutiger_slug(basis: str, url: str, ordner: Path | None = None) -> str:
         if not notiz.exists():
             return kandidat
         treffer = re.search(r"(?m)^url:\s*(.+)$", notiz.read_text(encoding="utf-8"))
-        if treffer and treffer.group(1).strip().split("?")[0].rstrip("/") == normalisiert:
+        if treffer and normalisiere_url(treffer.group(1).strip()) == normalisiert:
             return kandidat  # dieselbe Quelle — darf überschrieben werden
         kandidat = f"{basis}-{zaehler}"
         zaehler += 1
 
 
 def finde_dublette(url: str) -> Path | None:
-    normalisiert = url.split("?")[0].rstrip("/")
+    normalisiert = normalisiere_url(url)
     for datei in quellen_dateien():
         treffer = re.search(r"(?m)^url:\s*(.+)$", datei.read_text(encoding="utf-8"))
-        if treffer and treffer.group(1).strip().split("?")[0].rstrip("/") == normalisiert:
+        if treffer and normalisiere_url(treffer.group(1).strip()) == normalisiert:
             return datei
     return None
 
