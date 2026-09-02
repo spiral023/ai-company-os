@@ -5,6 +5,7 @@ Thumbs.db
 # Python
 __pycache__/
 *.pyc
+.pytest_cache/
 .venv/
 venv/
 .env
@@ -59,6 +60,26 @@ external_repos/*
 *.m4a
 *.mp4
 *.mov
+
+# Agent-Werkzeuge: lokaler Laufzeit-State
+# Diese Muster lagen bisher nur in .git/info/exclude und galten damit allein
+# auf dem Rechner, der sie eingetragen hat. Hier wirken sie fuer jeden Clone.
+# .claude/ selbst bleibt versionierbar — dort liegen geteilte Skills und
+# Settings, nur der Laufzeit-State darunter gehoert nicht ins Repo.
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+.claude/scheduled_tasks.json
+.claude/routines/.state/
+.claude/worktrees/
+.claude/checkpoints/
+.claude/mailbox/
+.claude/agent-registry.json
+.claude/agent-memory-local/
+.claude/first-run
+.claude/assistant-daemon-state.json
+# Review-Diffs und Fortschrittsnotizen eines lokalen Werkzeugs. Ignoriert sich
+# bisher nur ueber eine .gitignore, die das Werkzeug selbst anlegt.
+.superpowers/
 
 # Secrets
 secrets/
