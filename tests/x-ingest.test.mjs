@@ -14,6 +14,7 @@ import {
   extractArticleMedia,
   isThreadStart,
   orderThreadChronologically,
+  threadIdentity,
 } from '../scripts/lib/x-ingest.mjs';
 import {
   buildSlug,
@@ -229,4 +230,102 @@ test('Nicht geladene Bilder behalten die Remote-URL und werden markiert', () => 
   });
   assert.match(note, /nicht lokal gespeichert/);
   assert.match(note, /!\[photo\]\(https:\/\/pbs\.twimg\.com\/media\/b\.jpg\)/);
+});
+
+test('threadIdentity ankert einen Einzelpost an sich selbst', () => {
+  const tweet = { id: '5', author_id: 'a', conversation_id: '5', created_at: '2026-01-01T00:00:00.000Z' };
+  const { anker, ids } = threadIdentity(tweet, null);
+  assert.equal(anker.id, '5');
+  assert.deepEqual([...ids].sort(), ['5']);
+});
+
+test('threadIdentity ankert einen Thread am aeltesten eigenen Post', () => {
+  // Rueckwaerts-Walk vom letzten Post: Die Notiz soll unter dem Start liegen,
+  // damit ein Nachlauf ueber den letzten Post dieselbe Datei trifft.
+  const start = { id: '1', author_id: 'a', conversation_id: '1', created_at: '2026-01-01T10:00:00.000Z' };
+  const mitte = { id: '2', author_id: 'a', conversation_id: '1', created_at: '2026-01-01T10:05:00.000Z' };
+  const letzter = { id: '3', author_id: 'a', conversation_id: '1', created_at: '2026-01-01T10:09:00.000Z' };
+  const { anker, ids } = threadIdentity(letzter, [letzter, start, mitte]);
+  assert.equal(anker.id, '1');
+  assert.deepEqual([...ids].sort(), ['1', '2', '3']);
+});
+
+test('threadIdentity laesst fremde Posts der Kette aussen vor', () => {
+  // Antwort auf einen fremden Tweet: Dessen conversation_id gehoert nicht zu
+  // dieser Quelle, sonst wuerden zwei verschiedene Quellen verschmelzen.
+  const fremd = { id: '1', author_id: 'b', conversation_id: '1', created_at: '2026-01-01T10:00:00.000Z' };
+  const eigen = { id: '2', author_id: 'a', conversation_id: '1', created_at: '2026-01-01T10:05:00.000Z' };
+  const { anker, ids } = threadIdentity(eigen, [fremd, eigen]);
+  assert.equal(anker.id, '2');
+  assert.deepEqual([...ids].sort(), ['2']);
+  assert.equal(ids.has('1'), false);
+});
+
+test('Frontmatter traegt die conversation_id des Strangs', () => {
+  const note = formatInboxNote({
+    tweet: { id: '3', conversation_id: '1', text: 'Letzter Post', created_at: '2026-01-01T10:09:00.000Z' },
+    author: { name: 'Ada', username: 'ada' },
+    slug: '2026-01-01-ada-1',
+    media: [],
+    articleMedia: [],
+    fetchedAt: '2026-01-02T00:00:00.000Z',
+  });
+  assert.match(note, /\ntweet_id: "3"\n/);
+  assert.match(note, /\nconversation_id: "1"\n/);
+});
+
+test('Ohne conversation_id faellt das Feld auf die Tweet-ID zurueck', () => {
+  const note = formatInboxNote({
+    tweet: { id: '9', text: 'Einzelpost', created_at: '2026-01-01T10:00:00.000Z' },
+    author: { name: 'Ada', username: 'ada' },
+    slug: '2026-01-01-ada-9',
+    media: [],
+    articleMedia: [],
+    fetchedAt: '2026-01-02T00:00:00.000Z',
+  });
+  assert.match(note, /\nconversation_id: "9"\n/);
+});
+
+test('Posts Dritter im Thread werden ihrem Urheber zugeschrieben', () => {
+  // Der Rueckwaerts-Walk nimmt Antworten Dritter mit. Ohne Kennzeichnung
+  // laesen sie sich wie Aussagen des Autors.
+  const note = formatInboxNote({
+    tweet: { id: '1', author_id: 'a', conversation_id: '1', text: 'Erstpost', created_at: '2026-01-01T10:00:00.000Z' },
+    author: { name: 'Ada', username: 'ada' },
+    slug: '2026-01-01-ada-1',
+    media: [],
+    articleMedia: [],
+    thread: [
+      { id: '1', author_id: 'a', text: 'Erstpost' },
+      { id: '2', author_id: 'b', text: 'Fremde Antwort' },
+      { id: '3', author_id: 'a', text: 'Antwort des Autors' },
+    ],
+    threadMethod: 'backward-walk',
+    threadUsers: [
+      { id: 'a', username: 'ada' },
+      { id: 'b', username: 'grace' },
+    ],
+    fetchedAt: '2026-01-02T00:00:00.000Z',
+  });
+
+  assert.match(note, /### 1\/3\n/);
+  assert.match(note, /### 2\/3 · Reply von @grace \(nicht vom Autor\)/);
+  assert.match(note, /### 3\/3\n/);
+});
+
+test('Ohne bekannten Handle bleibt der fremde Post trotzdem markiert', () => {
+  const note = formatInboxNote({
+    tweet: { id: '1', author_id: 'a', text: 'Erstpost', created_at: '2026-01-01T10:00:00.000Z' },
+    author: { name: 'Ada', username: 'ada' },
+    slug: '2026-01-01-ada-1',
+    media: [],
+    articleMedia: [],
+    thread: [
+      { id: '1', author_id: 'a', text: 'Erstpost' },
+      { id: '2', author_id: 'b', text: 'Fremde Antwort' },
+    ],
+    threadMethod: 'backward-walk',
+    fetchedAt: '2026-01-02T00:00:00.000Z',
+  });
+  assert.match(note, /### 2\/2 · Reply von @unbekannt \(nicht vom Autor\)/);
 });

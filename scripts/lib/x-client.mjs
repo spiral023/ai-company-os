@@ -68,8 +68,13 @@ export async function resolveThreadForward(client, tweet, username) {
 
 // Fall B: URL zeigt auf späteren Tweet. Rückwärts der replied_to-Kette folgen,
 // ein Request pro Tweet, gedeckelt auf maxTweets.
-export async function resolveThreadBackward(client, tweet, maxTweets) {
+//
+// Die includes jedes Schritts werden mitgenommen: Die Notiz wird am ältesten
+// eigenen Post aufgehängt, und dessen Bilder hängen an seiner eigenen Antwort,
+// nicht an der des Posts, dessen URL übergeben wurde.
+export async function resolveThreadBackward(client, tweet, maxTweets, includes) {
   const chain = [tweet];
+  const gesammelt = { media: [...(includes?.media ?? [])], users: [...(includes?.users ?? [])] };
   let current = tweet;
   while (chain.length < maxTweets) {
     const replied = (current.referenced_tweets ?? []).find((r) => r.type === 'replied_to');
@@ -77,7 +82,25 @@ export async function resolveThreadBackward(client, tweet, maxTweets) {
     const res = await fetchTweet(client, replied.id);
     if (!res?.data) break;
     chain.push(res.data);
+    gesammelt.media.push(...(res.includes?.media ?? []));
+    gesammelt.users.push(...(res.includes?.users ?? []));
     current = res.data;
   }
-  return chain;
+  return { tweets: chain, includes: mergeIncludes(gesammelt) };
+}
+
+function mergeIncludes({ media, users }) {
+  const einmalig = (liste, schluessel) => {
+    const gesehen = new Set();
+    return liste.filter((eintrag) => {
+      const key = schluessel(eintrag);
+      if (!key || gesehen.has(key)) return false;
+      gesehen.add(key);
+      return true;
+    });
+  };
+  return {
+    media: einmalig(media, (m) => m?.media_key ?? m?.url),
+    users: einmalig(users, (u) => u?.id),
+  };
 }

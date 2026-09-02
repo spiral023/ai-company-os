@@ -117,5 +117,21 @@ export function orderThreadChronologically(tweets) {
   });
 }
 
+// Ein Thread ist eine Quelle, nicht mehrere. Identität ist deshalb nicht der
+// Post, dessen URL gerade übergeben wurde, sondern der Strang: Der älteste
+// eigene Post ankert Dateinamen und Slug, damit ein Nachlauf über den LETZTEN
+// Post dieselbe Notiz trifft statt eine zweite anzulegen.
+//
+// Fremde Posts der Kette bleiben außen vor. Wer auf einen fremden Tweet
+// antwortet, teilt dessen conversation_id — über sie zu deduplizieren würde
+// zwei verschiedene Quellen verschmelzen. Gehört die conversation_id zu einem
+// eigenen Post, steckt sie ohnehin schon in der Kette.
+export function threadIdentity(tweet, thread) {
+  const kette = orderThreadChronologically(thread?.length ? thread : [tweet]);
+  const eigene = kette.filter((t) => t?.id && t.author_id && t.author_id === tweet?.author_id);
+  const anker = eigene[0] ?? tweet;
+  return { anker, ids: new Set([tweet?.id, ...eigene.map((t) => t.id)].filter(Boolean)) };
+}
+
 // Die Ausgabe-Formatierung lebt in lib/inbox-store.mjs (formatInboxNote) —
 // eine Quelle wird direkt als Inbox-Notiz geschrieben, nicht als Zwischen-Dump.

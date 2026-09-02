@@ -9,6 +9,7 @@ import {
   extractArticleText,
   isThreadStart,
   orderThreadChronologically,
+  threadIdentity,
 } from './lib/x-ingest.mjs';
 import {
   createClient,
@@ -71,26 +72,76 @@ function formatApiError(err) {
   return `✖ API-Fehler: ${err?.message ?? String(err)}`;
 }
 
-async function resolveThread(client, tweet, author, maxThread) {
+function noteIds(notePath) {
+  try {
+    const text = fs.readFileSync(notePath, 'utf8');
+    return [
+      text.match(/^tweet_id:\s*["']?(\d+)/m)?.[1],
+      text.match(/^conversation_id:\s*["']?(\d+)/m)?.[1],
+    ].filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
+// Sucht die Notiz zu diesem Strang. Notizen aus der Zeit vor dem
+// conversation_id-Feld tragen nur tweet_id — die IDs der Kette decken sie ab.
+function findNoteByIds(ids) {
+  const dir = path.join(rootDir, sourceInboxRel('x'));
+  if (!fs.existsSync(dir)) return null;
+  return (
+    fs
+      .readdirSync(dir, { withFileTypes: true })
+      .filter((entry) => entry.isFile() && entry.name.endsWith('.md'))
+      .map((entry) => path.join(dir, entry.name))
+      .find((file) => noteIds(file).some((id) => ids.has(id))) ?? null
+  );
+}
+
+function threadPostsInNote(notePath) {
+  try {
+    return Number(fs.readFileSync(notePath, 'utf8').match(/^thread_posts:\s*(\d+)/m)?.[1] ?? 1);
+  } catch {
+    return 1;
+  }
+}
+
+async function resolveThread(client, tweet, author, maxThread, includes) {
   if (isThreadStart(tweet)) {
     if (!author?.username) {
       console.warn('⚠ Thread-Start ohne auflösbaren Autor-Username — Thread wird nicht aufgelöst.');
       return { thread: null, method: null };
     }
     const fwd = await resolveThreadForward(client, tweet, author.username);
-    if (fwd) return { thread: orderThreadChronologically(fwd.tweets), method: fwd.method };
-    console.warn(
-      '⚠ Thread über Search nicht auflösbar (>7 Tage & kein Full-Archive-Zugang). Für ältere Threads die URL des LETZTEN Tweets übergeben.',
-    );
+    if (fwd) {
+      return {
+        thread: orderThreadChronologically(fwd.tweets),
+        method: fwd.method,
+        includes: fwd.includes,
+      };
+    }
+    // Ohne Antworten kann es keinen Thread geben — dann ist die leere Suche
+    // das erwartete Ergebnis und keine Warnung wert. Sonst bleibt offen, ob
+    // der Strang fehlt oder der Post schlicht allein steht.
+    if ((tweet.public_metrics?.reply_count ?? 0) > 0) {
+      console.warn(
+        '⚠ Thread nicht über Search auflösbar (>7 Tage & kein Full-Archive-Zugang). Hat der Post Folge-Posts, die URL des LETZTEN übergeben — der Rückwärts-Walk kommt ohne Search aus und trifft dieselbe Notiz.',
+      );
+    }
     return { thread: null, method: null };
   }
-  const chain = await resolveThreadBackward(client, tweet, maxThread);
+  const walk = await resolveThreadBackward(client, tweet, maxThread, includes);
+  const chain = walk.tweets;
   const oldest = chain[chain.length - 1];
   const hasMoreParents = (oldest?.referenced_tweets ?? []).some((r) => r.type === 'replied_to');
   if (chain.length >= maxThread && hasMoreParents) {
     console.warn(`⚠ Rückwärts-Walk bei --max-thread=${maxThread} gekappt (weitere Vorgänger vorhanden).`);
   }
-  return { thread: orderThreadChronologically(chain), method: 'backward-walk' };
+  return {
+    thread: orderThreadChronologically(chain),
+    method: 'backward-walk',
+    includes: walk.includes,
+  };
 }
 
 async function main() {
@@ -144,34 +195,76 @@ async function main() {
     const author = findAuthor(res.includes, tweet.author_id);
     let thread = null;
     let threadMethod = null;
+    let threadIncludes = null;
     if (args.thread) {
-      ({ thread, method: threadMethod } = await resolveThread(client, tweet, author, args.maxThread));
+      ({
+        thread,
+        method: threadMethod,
+        includes: threadIncludes,
+      } = await resolveThread(client, tweet, author, args.maxThread, res.includes));
     }
 
     payload = {
       fetchedAt: new Date().toISOString(),
       id,
       tweet,
-      includes: res.includes ?? {},
+      // Die includes der Kette decken auch die Bilder des Ankers ab, an dem
+      // die Notiz später hängt — der muss nicht der abgerufene Post sein.
+      includes: threadIncludes ?? res.includes ?? {},
       thread,
       threadMethod,
     };
     fs.writeFileSync(jsonPath, JSON.stringify(payload, null, 2), 'utf8');
   }
 
-  const tweet = payload.tweet;
-  const author = findAuthor(payload.includes, tweet.author_id);
-  const media = extractMedia(payload.includes?.media);
+  const abgerufen = payload.tweet;
+  const author = findAuthor(payload.includes, abgerufen.author_id);
+  // Der Strang ankert an seinem ältesten eigenen Post, nicht an der übergebenen
+  // URL. Ein Nachlauf über den letzten Post landet dadurch auf derselben Notiz.
+  // Der Anker trägt auch Kopf, url und Metriken: Zitiert wird der Erstpost,
+  // nicht die Antwort, über die man zufällig in den Strang eingestiegen ist.
+  const { anker, ids } = threadIdentity(abgerufen, payload.thread);
+  const tweet = anker;
+  // Bei einem Strang tragen die includes die Bilder aller Posts. Unter dem Kopf
+  // dürfen nur die des Ankers stehen — die übrigen gehören zu ihren Posts.
+  const ankerKeys = new Set(tweet.attachments?.media_keys ?? []);
+  const media = extractMedia(
+    payload.thread?.length
+      ? (payload.includes?.media ?? []).filter((m) => ankerKeys.has(m?.media_key))
+      : payload.includes?.media,
+  );
   const articleMedia = extractArticleMedia(tweet, payload.includes?.media);
-  const slug = buildSlug({ createdAt: tweet.created_at, username: author?.username, id });
+  const slug = buildSlug({ createdAt: anker.created_at, username: author?.username, id: anker.id });
   const notePath = path.join(rootDir, sourceInboxRel('x'), `${slug}.md`);
 
   // Eine bestehende Notiz kann manuell ergänzt oder auf status:verarbeitet
   // gesetzt sein — die darf ein erneuter Lauf nicht stillschweigend verwerfen.
-  if (fs.existsSync(notePath) && !args.force) {
-    console.log(`● Notiz existiert bereits: ${path.relative(rootDir, notePath)}`);
-    console.log('  Unverändert gelassen. --force überschreibt sie.');
+  const existingNote = findNoteByIds(ids);
+  if (existingNote && !args.force) {
+    console.log(`● Notiz existiert bereits: ${path.relative(rootDir, existingNote)}`);
+    const jetzt = payload.thread?.length ?? 1;
+    const bisher = threadPostsInNote(existingNote);
+    if (jetzt > bisher) {
+      console.log(`  Dieser Lauf hätte ${jetzt} statt ${bisher} Posts — --force schreibt sie neu.`);
+    } else {
+      console.log('  Unverändert gelassen. --force überschreibt sie.');
+    }
     return;
+  }
+
+  // --force schreibt den Strang neu. Lag die Notiz noch unter der ID eines
+  // späteren Posts, zieht der Dateiname samt Medienordner auf den Anker nach,
+  // statt eine zweite Notiz derselben Quelle anzulegen.
+  if (existingNote && path.resolve(existingNote) !== path.resolve(notePath)) {
+    const altSlug = path.basename(existingNote, '.md');
+    const altMedien = mediaTargetDir(rootDir, 'x', altSlug);
+    const neuMedien = mediaTargetDir(rootDir, 'x', slug);
+    if (fs.existsSync(neuMedien)) {
+      throw new Error(`Ziel-Medienordner existiert bereits: ${path.relative(rootDir, neuMedien)}`);
+    }
+    if (fs.existsSync(altMedien)) fs.renameSync(altMedien, neuMedien);
+    fs.renameSync(existingNote, notePath);
+    console.log(`  Umbenannt: ${altSlug}.md → ${slug}.md`);
   }
 
   // Medien für Deduplizierung in derselben Reihenfolge wie in der Notiz.
@@ -200,6 +293,7 @@ async function main() {
     articleMedia,
     thread: payload.thread,
     threadMethod: payload.threadMethod,
+    threadUsers: payload.includes?.users,
     downloads,
     fetchedAt: payload.fetchedAt,
   });

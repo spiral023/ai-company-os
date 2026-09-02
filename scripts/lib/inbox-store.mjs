@@ -110,6 +110,7 @@ export function formatInboxNote({
   articleMedia,
   thread,
   threadMethod,
+  threadUsers,
   downloads,
   fetchedAt,
 }) {
@@ -134,6 +135,9 @@ export function formatInboxNote({
   ];
   if (title) fm.push(`titel: ${yamlString(title)}`);
   fm.push(`tweet_id: "${tweet.id}"`);
+  // Klammert die Posts eines Threads zu einer Quelle: Ein späterer Lauf über
+  // einen anderen Post desselben Strangs erkennt die Notiz daran wieder.
+  fm.push(`conversation_id: "${tweet.conversation_id ?? tweet.id}"`);
   const m = tweet.public_metrics;
   if (m) {
     fm.push(
@@ -209,9 +213,16 @@ export function formatInboxNote({
 
   if (thread?.length) {
     lines.push('## Thread', '');
+    // Der Rückwärts-Walk folgt der Antwortkette und nimmt dabei auch Posts
+    // Dritter mit. Sie als Primärinhalt des Autors zu lesen wäre eine falsche
+    // Zuschreibung, deshalb steht ihr Urheber in der Überschrift.
+    const handles = new Map((threadUsers ?? []).map((u) => [u?.id, u?.username]).filter(([id]) => id));
     thread.forEach((t, i) => {
       const text = extractTweetText(t).trim();
-      lines.push(`### ${i + 1}/${thread.length}`, '', text || '(kein Text)', '');
+      const fremd = t?.author_id && tweet?.author_id && t.author_id !== tweet.author_id;
+      const handle = fremd ? handles.get(t.author_id) : null;
+      const marke = fremd ? ` · Reply von @${handle ?? 'unbekannt'} (nicht vom Autor)` : '';
+      lines.push(`### ${i + 1}/${thread.length}${marke}`, '', text || '(kein Text)', '');
     });
   }
 
