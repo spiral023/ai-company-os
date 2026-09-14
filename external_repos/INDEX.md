@@ -26,6 +26,7 @@ Lokale Referenzbibliothek geklonter GitHub-Repos für AI-gestützte Produkt- und
 | Ein vollständiges Agile-Framework mit Rollen nutzen | [bmad-code-org/BMAD-METHOD](#bmad-code-orgbmad-method) | Scale-adaptive Phasen, benannte Experten-Personas, Party Mode, Web-Bundles und Modul-Ökosystem |
 | Kontext über lange Aufgaben erhalten | [OthmanAdi/planning-with-files](#othmanadiplanning-with-files), [open-gsd/gsd-core](#open-gsdgsd-core) | Persistente Plan-, Findings- und Statusdateien sowie frische Kontexte pro Phase |
 | Code testen, reviewen und sicher shippen | [addyosmani/agent-skills](#addyosmaniagent-skills), [garrytan/gstack](#garrytangstack), [shadcn/improve](#shadcnimprove) | Test-, Security-, Performance- und Code-Review-Workflows mit Verifikation |
+| Agenten-Ergebnisse prüfen und Feedback gebündelt zurückgeben | [petergyang/human-review](#petergyanghuman-review) | Direktes Editieren und punktgenau verankerte Kommentare in HTML, Markdown oder localhost-Seiten, als ein Batch an den Agenten |
 | React oder Next.js verbessern | [millionco/react-doctor](#millioncoreact-doctor), [vercel-labs/agent-skills](#vercel-labsagent-skills) | Deterministischer Audit mit CI-Gate sowie Performance-, Composition- und Accessibility-Regeln |
 | Mit shadcn/ui-Komponenten bauen | [shadcn-ui/ui](#shadcn-uiui) | Projektbewusster `shadcn`-Skill: liest `components.json`, empfiehlt Komposition und saubere Registry-Nutzung |
 | Eine generische AI-Oberfläche aufwerten | [pbakaus/impeccable](#pbakausimpeccable), [Leonxlnx/taste-skill](#leonxlnxtaste-skill), [emilkowalski/skills](#emilkowalskiskills), [jakubkrehel/make-interfaces-feel-better](#jakubkrehelmake-interfaces-feel-better) | Anti-Slop-Regeln, Design-Taste, Animationen, visuelle Reviews und gezielte Polish-Workflows |
@@ -79,6 +80,7 @@ Durchgängige Entwicklungs-Workflows: Anforderungen klären, planen, umsetzen, v
 | [obra/superpowers](#obrasuperpowers) | Disziplinierte, testgetriebene Entwicklung | Brainstorming, Worktrees, Pläne, TDD, Reviews und Branch-Abschluss | Framework | `external_repos/obra/superpowers/skills/` |
 | [open-gsd/gsd-core](#open-gsdgsd-core) | Spec-driven Development mit sauberem Kontext | Discuss–Plan–Execute–Verify–Ship, State-Dateien und Phasen-Workflows | Framework | `external_repos/open-gsd/gsd-core/` |
 | [OthmanAdi/planning-with-files](#othmanadiplanning-with-files) | Lange Aufgaben und Context Rot beherrschen | Persistente Plan-, Findings- und Fortschrittsdateien plus Recovery-Hooks | Skill / Framework | `external_repos/OthmanAdi/planning-with-files/skills/` |
+| [petergyang/human-review](#petergyanghuman-review) | Menschliches Review als eigenen Schritt in die Agentenschleife legen | Browser-Editor für HTML, Markdown und localhost, verankerte Kommentare, blockierendes `poll` als Wartepunkt | Tool / Skill | `external_repos/petergyang/human-review/src/` |
 | [shadcn/improve](#shadcnimprove) | Eine Codebasis auditieren und gute Pläne erzeugen | Mehrdimensionaler Audit, Finding-Verifikation und ausführbare Einzelpläne | Skill | `external_repos/shadcn/improve/skills/` |
 
 ### Skills bauen, prüfen und verteilen
@@ -236,70 +238,71 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 <!-- OVERVIEW:START (automatisch generiert von 70_Scripts/update_external_repos.py — nicht von Hand bearbeiten) -->
 ## Übersicht
 
-- **Repos gesamt:** 56
-- **Gesamtgröße:** ca. 1.566 MB
-- **Dateien gesamt:** ca. 90.753 (ohne `.git`)
-- **Sterne gesamt:** ca. 4.583.775 (56/56 Repos abgerufen)
+- **Repos gesamt:** 57
+- **Gesamtgröße:** ca. 1.568 MB
+- **Dateien gesamt:** ca. 90.805 (ohne `.git`)
+- **Sterne gesamt:** ca. 4.585.247 (57/57 Repos abgerufen)
 - **Stand:** 2026-09-14
 
 | Repo | Dateien | Größe | ⭐ |
 |---|---:|---:|---:|
-| diegosouzapw/OmniRoute | 12.757 | 213M | 65.840 |
-| thedotmack/claude-mem | 1.025 | 119M | 93.815 |
-| paperclipai/paperclip | 4.883 | 110M | 80.628 |
-| davila7/claude-code-templates | 9.224 | 103M | 30.719 |
-| teng-lin/notebooklm-py | 1.446 | 75M | 19.303 |
+| diegosouzapw/OmniRoute | 12.757 | 213M | 65.848 |
+| thedotmack/claude-mem | 1.025 | 119M | 93.817 |
+| paperclipai/paperclip | 4.883 | 110M | 80.632 |
+| davila7/claude-code-templates | 9.224 | 103M | 30.718 |
+| teng-lin/notebooklm-py | 1.446 | 75M | 19.304 |
 | shanraisshan/claude-code-best-practice | 454 | 74M | 65.907 |
 | intellectronica/ruler | 257 | 71M | 2.926 |
-| openai/codex | 6.504 | 64M | 123.939 |
-| headroomlabs-ai/headroom | 2.314 | 63M | 71.969 |
-| pbakaus/impeccable | 3.267 | 61M | 67.877 |
-| affaan-m/ECC | 3.493 | 49M | 257.924 |
-| shadcn-ui/ui | 5.762 | 45M | 123.708 |
-| open-gsd/gsd-core | 3.057 | 45M | 9.427 |
-| farion1231/cc-switch | 1.230 | 44M | 132.736 |
+| openai/codex | 6.504 | 64M | 123.956 |
+| headroomlabs-ai/headroom | 2.314 | 63M | 71.975 |
+| pbakaus/impeccable | 3.267 | 61M | 67.882 |
+| affaan-m/ECC | 3.493 | 49M | 257.938 |
+| shadcn-ui/ui | 5.762 | 45M | 123.709 |
+| open-gsd/gsd-core | 3.057 | 45M | 9.431 |
+| farion1231/cc-switch | 1.230 | 44M | 132.740 |
 | millionco/react-doctor | 7.085 | 39M | 14.839 |
-| Egonex-AI/Understand-Anything | 499 | 31M | 82.610 |
+| Egonex-AI/Understand-Anything | 499 | 31M | 82.613 |
 | midudev/autoskills | 4.610 | 30M | 6.871 |
-| alirezarezvani/claude-skills | 4.777 | 30M | 25.934 |
-| garrytan/gstack | 1.359 | 28M | 132.921 |
-| microsoft/markitdown | 165 | 24M | 183.733 |
+| alirezarezvani/claude-skills | 4.777 | 30M | 25.935 |
+| garrytan/gstack | 1.359 | 28M | 132.923 |
+| microsoft/markitdown | 165 | 24M | 183.743 |
 | bradygaster/squad | 1.891 | 22M | 3.172 |
-| upstash/context7 | 410 | 21M | 61.974 |
-| nextlevelbuilder/ui-ux-pro-max-skill | 662 | 21M | 127.450 |
-| router-for-me/CLIProxyAPI | 1.373 | 16M | 51.693 |
-| juliusbrussee/caveman | 1.436 | 16M | 105.435 |
-| Graphify-Labs/graphify | 845 | 16M | 116.528 |
+| upstash/context7 | 410 | 21M | 61.975 |
+| nextlevelbuilder/ui-ux-pro-max-skill | 662 | 21M | 127.453 |
+| router-for-me/CLIProxyAPI | 1.373 | 16M | 51.695 |
+| juliusbrussee/caveman | 1.436 | 16M | 105.440 |
+| Graphify-Labs/graphify | 845 | 16M | 116.533 |
 | langchain-ai/openwiki | 583 | 15M | 16.455 |
-| OthmanAdi/planning-with-files | 610 | 14M | 26.872 |
+| OthmanAdi/planning-with-files | 610 | 14M | 26.870 |
 | anthropics/claude-code | 229 | 12M | 144.960 |
 | thedaviddias/Front-End-Checklist | 1.875 | 11M | 74.132 |
-| github/spec-kit | 545 | 11M | 136.535 |
-| anthropics/skills | 417 | 10M | 176.181 |
-| wshobson/agents | 1.157 | 7,7M | 39.635 |
-| vercel-labs/agent-skills | 446 | 7,5M | 31.174 |
+| github/spec-kit | 545 | 11M | 136.545 |
+| anthropics/skills | 417 | 10M | 176.186 |
+| wshobson/agents | 1.157 | 7,7M | 39.636 |
+| vercel-labs/agent-skills | 446 | 7,5M | 31.173 |
 | bmad-code-org/BMAD-METHOD | 603 | 6,3M | 52.984 |
 | 0xNyk/council-of-high-intelligence | 68 | 5,9M | 4.233 |
-| NVIDIA/SkillSpector | 323 | 4,5M | 17.125 |
+| NVIDIA/SkillSpector | 323 | 4,5M | 17.128 |
 | AgriciDaniel/claude-seo | 403 | 4,5M | 16.877 |
-| msitarzewski/agency-agents | 343 | 4,2M | 152.196 |
-| rtk-ai/rtk | 412 | 4,2M | 80.243 |
-| coreyhaines31/marketingskills | 434 | 3,3M | 50.075 |
-| abi/screenshot-to-code | 316 | 2,6M | 78.755 |
-| VoltAgent/awesome-design-md | 153 | 2,1M | 115.756 |
-| Leonxlnx/taste-skill | 64 | 1,7M | 86.944 |
-| obra/superpowers | 195 | 1,6M | 286.344 |
-| DietrichGebert/ponytail | 159 | 1,6M | 137.650 |
+| msitarzewski/agency-agents | 343 | 4,2M | 152.199 |
+| rtk-ai/rtk | 412 | 4,2M | 80.246 |
+| coreyhaines31/marketingskills | 434 | 3,3M | 50.082 |
+| abi/screenshot-to-code | 316 | 2,6M | 78.757 |
+| VoltAgent/awesome-design-md | 153 | 2,1M | 115.761 |
+| petergyang/human-review | 52 | 1,8M | 1.258 |
+| Leonxlnx/taste-skill | 64 | 1,7M | 86.950 |
+| obra/superpowers | 195 | 1,6M | 286.363 |
+| DietrichGebert/ponytail | 159 | 1,6M | 137.674 |
 | vercel-labs/skills | 118 | 1016K | 31.577 |
-| addyosmani/agent-skills | 188 | 795K | 94.133 |
+| addyosmani/agent-skills | 188 | 795K | 94.142 |
 | karpathy/autoresearch | 10 | 747K | 95.745 |
-| mattpocock/skills | 162 | 655K | 261.533 |
-| mattpocock/dictionary-of-ai-coding | 88 | 321K | 4.589 |
-| emilkowalski/skills | 23 | 239K | 37.516 |
+| mattpocock/skills | 162 | 655K | 261.546 |
+| mattpocock/dictionary-of-ai-coding | 88 | 321K | 4.590 |
+| emilkowalski/skills | 23 | 239K | 37.518 |
 | shadcn/improve | 9 | 61K | 9.116 |
-| kepano/obsidian-skills | 14 | 53K | 48.293 |
+| kepano/obsidian-skills | 14 | 53K | 48.295 |
 | jakubkrehel/make-interfaces-feel-better | 12 | 48K | 3.433 |
-| multica-ai/andrej-karpathy-skills | 9 | 38K | 212.836 |
+| multica-ai/andrej-karpathy-skills | 9 | 38K | 212.841 |
 
 Dateianzahl, Größe, Struktur und Sterne pro Repo (ohne `.git`-Verzeichnis) stehen zusätzlich in jedem Eintrag unten und werden von `70_Scripts/update_external_repos.py` automatisch aufgefrischt.
 <!-- OVERVIEW:END -->
@@ -328,7 +331,7 @@ Ein Eintrag pro Repo, alphabetisch nach `owner/repo` sortiert — neue Repos ent
 ## abi/screenshot-to-code
 
 - **URL:** https://github.com/abi/screenshot-to-code
-- **Stars:** ⭐ 78.755
+- **Stars:** ⭐ 78.757
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 316 · **Größe:** 2,6M
@@ -341,7 +344,7 @@ Screenshot to Code ist eine Web-Anwendung, die Screenshots, Mockups, Figma-Desig
 ## addyosmani/agent-skills
 
 - **URL:** https://github.com/addyosmani/agent-skills
-- **Stars:** ⭐ 94.133
+- **Stars:** ⭐ 94.142
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 188 · **Größe:** 795K
@@ -354,7 +357,7 @@ Screenshot to Code ist eine Web-Anwendung, die Screenshots, Mockups, Figma-Desig
 ## affaan-m/ECC
 
 - **URL:** https://github.com/affaan-m/ECC
-- **Stars:** ⭐ 257.924
+- **Stars:** ⭐ 257.938
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 3.493 · **Größe:** 49M
@@ -380,7 +383,7 @@ Claude SEO ist ein Open-Source-SEO-Analyse-Plugin für Claude Code, das 25 Sub-S
 ## alirezarezvani/claude-skills
 
 - **URL:** https://github.com/alirezarezvani/claude-skills
-- **Stars:** ⭐ 25.934
+- **Stars:** ⭐ 25.935
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 4.777 · **Größe:** 30M
@@ -406,7 +409,7 @@ Dieses Repository ist das offizielle GitHub-Repo zu Claude Code, enthält jedoch
 ## anthropics/skills
 
 - **URL:** https://github.com/anthropics/skills
-- **Stars:** ⭐ 176.181
+- **Stars:** ⭐ 176.186
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 417 · **Größe:** 10M
@@ -445,7 +448,7 @@ Squad baut über GitHub Copilot ein "menschengeführtes" Team benannter KI-Spezi
 ## coreyhaines31/marketingskills
 
 - **URL:** https://github.com/coreyhaines31/marketingskills
-- **Stars:** ⭐ 50.075
+- **Stars:** ⭐ 50.082
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 434 · **Größe:** 3,3M
@@ -458,7 +461,7 @@ Sammlung von 49 Marketing-Skills für KI-Coding-Agenten (Claude Code, Codex, Cur
 ## davila7/claude-code-templates
 
 - **URL:** https://github.com/davila7/claude-code-templates
-- **Stars:** ⭐ 30.719
+- **Stars:** ⭐ 30.718
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 9.224 · **Größe:** 103M
@@ -471,7 +474,7 @@ Claude Code Templates ist ein großer Katalog für vorkonfigurierte Claude-Code-
 ## diegosouzapw/OmniRoute
 
 - **URL:** https://github.com/diegosouzapw/OmniRoute
-- **Stars:** ⭐ 65.840
+- **Stars:** ⭐ 65.848
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 12.757 · **Größe:** 213M
@@ -484,7 +487,7 @@ OmniRoute ist ein selbstgehosteter AI-Gateway/Proxy-Server (Next.js 16, TypeScri
 ## DietrichGebert/ponytail
 
 - **URL:** https://github.com/DietrichGebert/ponytail
-- **Stars:** ⭐ 137.650
+- **Stars:** ⭐ 137.674
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 159 · **Größe:** 1,6M
@@ -497,7 +500,7 @@ Ponytail ist ein Regel- und Skill-Paket, das KI-Coding-Agenten (Claude Code, Cod
 ## Egonex-AI/Understand-Anything
 
 - **URL:** https://github.com/Egonex-AI/Understand-Anything
-- **Stars:** ⭐ 82.610
+- **Stars:** ⭐ 82.613
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 499 · **Größe:** 31M
@@ -510,7 +513,7 @@ Ein Claude-Code-Plugin (ursprünglich von Lum1104, jetzt bei Egonex weitergefüh
 ## emilkowalski/skills
 
 - **URL:** https://github.com/emilkowalski/skills
-- **Stars:** ⭐ 37.516
+- **Stars:** ⭐ 37.518
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 23 · **Größe:** 239K
@@ -523,7 +526,7 @@ Ein Claude-Code-Plugin (ursprünglich von Lum1104, jetzt bei Egonex weitergefüh
 ## farion1231/cc-switch
 
 - **URL:** https://github.com/farion1231/cc-switch
-- **Stars:** ⭐ 132.736
+- **Stars:** ⭐ 132.740
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 1.230 · **Größe:** 44M
@@ -536,7 +539,7 @@ CC Switch ist eine Cross-Platform-Desktop-Anwendung (Tauri 2 mit Rust-Backend un
 ## garrytan/gstack
 
 - **URL:** https://github.com/garrytan/gstack
-- **Stars:** ⭐ 132.921
+- **Stars:** ⭐ 132.923
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 1.359 · **Größe:** 28M
@@ -549,7 +552,7 @@ gstack ist Garry Tans (Präsident/CEO von Y Combinator) persönliches Open-Sourc
 ## github/spec-kit
 
 - **URL:** https://github.com/github/spec-kit
-- **Stars:** ⭐ 136.535
+- **Stars:** ⭐ 136.545
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 545 · **Größe:** 11M
@@ -562,7 +565,7 @@ Spec-Kit ist GitHubs Referenzimplementierung von Spec-Driven Development (SDD), 
 ## Graphify-Labs/graphify
 
 - **URL:** https://github.com/Graphify-Labs/graphify
-- **Stars:** ⭐ 116.528
+- **Stars:** ⭐ 116.533
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 845 · **Größe:** 16M
@@ -575,7 +578,7 @@ Graphify ist ein Python-CLI-Tool und PyPI-Paket (`graphifyy`), das Code, Dokumen
 ## headroomlabs-ai/headroom
 
 - **URL:** https://github.com/headroomlabs-ai/headroom
-- **Stars:** ⭐ 71.969
+- **Stars:** ⭐ 71.975
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 2.314 · **Größe:** 63M
@@ -614,7 +617,7 @@ Ein einzelner, bewusst kompakter Design-Engineering-Skill für die letzte Qualit
 ## juliusbrussee/caveman
 
 - **URL:** https://github.com/juliusbrussee/caveman
-- **Stars:** ⭐ 105.435
+- **Stars:** ⭐ 105.440
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 1.436 · **Größe:** 16M
@@ -640,7 +643,7 @@ Autoresearch ist Andrej Karpathys bewusst kleines Experiment für autonome LLM-F
 ## kepano/obsidian-skills
 
 - **URL:** https://github.com/kepano/obsidian-skills
-- **Stars:** ⭐ 48.293
+- **Stars:** ⭐ 48.295
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-07-13
 - **Dateien:** 14 · **Größe:** 53K
@@ -666,7 +669,7 @@ OpenWiki ist ein von LangChain entwickeltes Node/TypeScript-CLI-Tool, das für C
 ## Leonxlnx/taste-skill
 
 - **URL:** https://github.com/Leonxlnx/taste-skill
-- **Stars:** ⭐ 86.944
+- **Stars:** ⭐ 86.950
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 64 · **Größe:** 1,7M
@@ -679,7 +682,7 @@ OpenWiki ist ein von LangChain entwickeltes Node/TypeScript-CLI-Tool, das für C
 ## mattpocock/dictionary-of-ai-coding
 
 - **URL:** https://github.com/mattpocock/dictionary-of-ai-coding
-- **Stars:** ⭐ 4.589
+- **Stars:** ⭐ 4.590
 - **Heruntergeladen:** 2026-09-14
 - **Zuletzt aktualisiert:** 2026-09-14
 - **Dateien:** 88 · **Größe:** 321K
@@ -692,7 +695,7 @@ Nachschlagewerk von Matt Pocock (AI Hero), das das Vokabular der KI-gestützten 
 ## mattpocock/skills
 
 - **URL:** https://github.com/mattpocock/skills
-- **Stars:** ⭐ 261.533
+- **Stars:** ⭐ 261.546
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 162 · **Größe:** 655K
@@ -705,7 +708,7 @@ Sammlung von Agent-Skills von Matt Pocock (AI Hero), die er täglich für echte 
 ## microsoft/markitdown
 
 - **URL:** https://github.com/microsoft/markitdown
-- **Stars:** ⭐ 183.733
+- **Stars:** ⭐ 183.743
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 165 · **Größe:** 24M
@@ -758,7 +761,7 @@ Persönliche, LLM-gepflegte Wissenssammlung eines Kollegen (Obsidian-Wissensgrap
 ## msitarzewski/agency-agents
 
 - **URL:** https://github.com/msitarzewski/agency-agents
-- **Stars:** ⭐ 152.196
+- **Stars:** ⭐ 152.199
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 343 · **Größe:** 4,2M
@@ -771,7 +774,7 @@ Agency-agents ist eine umfangreiche Sammlung vorformulierter KI-Agenten-Personas
 ## multica-ai/andrej-karpathy-skills
 
 - **URL:** https://github.com/multica-ai/andrej-karpathy-skills
-- **Stars:** ⭐ 212.836
+- **Stars:** ⭐ 212.841
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-07-13
 - **Dateien:** 9 · **Größe:** 38K
@@ -784,7 +787,7 @@ Das Repository ist kein Code- oder Anwendungsprojekt, sondern ein einzelnes Prom
 ## nextlevelbuilder/ui-ux-pro-max-skill
 
 - **URL:** https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
-- **Stars:** ⭐ 127.450
+- **Stars:** ⭐ 127.453
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 662 · **Größe:** 21M
@@ -810,7 +813,7 @@ Open Design positioniert sich als Open-Source-Alternative zu Claude Design und a
 ## NVIDIA/SkillSpector
 
 - **URL:** https://github.com/NVIDIA/SkillSpector
-- **Stars:** ⭐ 17.125
+- **Stars:** ⭐ 17.128
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 323 · **Größe:** 4,5M
@@ -823,7 +826,7 @@ SkillSpector ist ein Security-Scanner für Agent-Skills, MCPs und verwandte Konf
 ## obra/superpowers
 
 - **URL:** https://github.com/obra/superpowers
-- **Stars:** ⭐ 286.344
+- **Stars:** ⭐ 286.363
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 195 · **Größe:** 1,6M
@@ -836,7 +839,7 @@ Superpowers ist eine vollständige Softwareentwicklungs-Methodik als Satz kompon
 ## open-gsd/gsd-core
 
 - **URL:** https://github.com/open-gsd/gsd-core
-- **Stars:** ⭐ 9.427
+- **Stars:** ⭐ 9.431
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 3.057 · **Größe:** 45M
@@ -849,7 +852,7 @@ GSD Core ("Git. Ship. Done.") ist ein inzwischen umfangreiches Context-Engineeri
 ## openai/codex
 
 - **URL:** https://github.com/openai/codex
-- **Stars:** ⭐ 123.939
+- **Stars:** ⭐ 123.956
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 6.504 · **Größe:** 64M
@@ -862,7 +865,7 @@ Codex CLI ist OpenAIs lokal laufender Coding-Agent, das direkte Gegenstück zu C
 ## OthmanAdi/planning-with-files
 
 - **URL:** https://github.com/OthmanAdi/planning-with-files
-- **Stars:** ⭐ 26.872
+- **Stars:** ⭐ 26.870
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 610 · **Größe:** 14M
@@ -875,7 +878,7 @@ Codex CLI ist OpenAIs lokal laufender Coding-Agent, das direkte Gegenstück zu C
 ## paperclipai/paperclip
 
 - **URL:** https://github.com/paperclipai/paperclip
-- **Stars:** ⭐ 80.628
+- **Stars:** ⭐ 80.632
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 4.883 · **Größe:** 110M
@@ -888,7 +891,7 @@ Paperclip ist eine selbst hostbare Control Plane für Teams von AI-Agenten. Es m
 ## pbakaus/impeccable
 
 - **URL:** https://github.com/pbakaus/impeccable
-- **Stars:** ⭐ 67.877
+- **Stars:** ⭐ 67.882
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 3.267 · **Größe:** 61M
@@ -898,10 +901,23 @@ Design-Guidance für KI-Coding-Agenten von Paul Bakaus, explizit als Weiterentwi
 
 ---
 
+## petergyang/human-review
+
+- **URL:** https://github.com/petergyang/human-review
+- **Stars:** ⭐ 1.258
+- **Heruntergeladen:** 2026-09-14
+- **Zuletzt aktualisiert:** 2026-09-14
+- **Dateien:** 52 · **Größe:** 1,8M
+- **Struktur:** Node-CLI statt Skill-Paket: `src/` enthält CLI, lokalen Server, Browser-Client, Markdown-Renderer und Setup, dazu `src/SKILL.md` als Agent-Anleitung; 20 Test-Dateien in `test/`; `design-ref/` und `spec.html` als Entwurfsmaterial <!-- manual -->
+
+Lokales Node-Werkzeug mit mitgeliefertem Agent-Skill von Peter Yang, das den Umweg über getippte Änderungswünsche ersetzt: Statt im Chat zu beschreiben, welcher Satz im dritten Absatz anders lauten soll, öffnet der Agent die Datei im Browser. Dort lässt sich Text direkt bearbeiten, Formatierung, Listen und Links setzen, Bilder skalieren und verschieben, ganze Blöcke umsortieren und Elemente löschen; Kommentare hängen punktgenau an der markierten Stelle oder am angeklickten Element. Ein Klick auf Send schickt sämtliche Edits und Kommentare als ein Bündel zurück an den Agenten. Unterstützt werden HTML-Dateien, gerenderte Markdown-Dateien (die Quelldatei bleibt unangetastet, der Agent überträgt die Änderungen selbst) und laufende localhost-Seiten. Das eigentliche Muster steckt im Wartepunkt: `human-review poll` blockiert, bis der Mensch sendet, und weckt den Agenten dann mit dem gesamten Batch — in Claude Code als Hintergrundprozess, der den Zug beendet und später aufgeweckt wird. Damit ist menschliches Review ein benannter Schritt in der Agentenschleife statt einer Unterbrechung. Alles läuft lokal, ohne Account, Cloud oder API-Key; 19 Test-Dateien decken unter anderem Sicherheit, Feedback-Integrität und Frame-Policy ab. Aktiv gepflegt (Version 0.8.1, 52 Commits, zuletzt 04.09.2026), MIT-lizenziert. Vor einer Übernahme zu prüfen: `npx -y human-review setup --global` schreibt den Skill in globale Agenten-Konfigurationen, und HTML-Edits speichern direkt in die Datei.
+
+---
+
 ## router-for-me/CLIProxyAPI
 
 - **URL:** https://github.com/router-for-me/CLIProxyAPI
-- **Stars:** ⭐ 51.693
+- **Stars:** ⭐ 51.695
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 1.373 · **Größe:** 16M
@@ -914,7 +930,7 @@ CLIProxyAPI ist ein in Go implementierter lokaler Proxy, der OpenAI-, Gemini-, C
 ## rtk-ai/rtk
 
 - **URL:** https://github.com/rtk-ai/rtk
-- **Stars:** ⭐ 80.243
+- **Stars:** ⭐ 80.246
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 412 · **Größe:** 4,2M
@@ -927,7 +943,7 @@ RTK („Rust Token Killer“) ist eine einzelne Rust-CLI, die Shell-Ausgaben vor
 ## shadcn-ui/ui
 
 - **URL:** https://github.com/shadcn-ui/ui
-- **Stars:** ⭐ 123.708
+- **Stars:** ⭐ 123.709
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 5.762 · **Größe:** 45M
@@ -966,7 +982,7 @@ Eine sehr umfangreiche, laufend aktualisierte Sammlung von Claude-Code-Best-Prac
 ## teng-lin/notebooklm-py
 
 - **URL:** https://github.com/teng-lin/notebooklm-py
-- **Stars:** ⭐ 19.303
+- **Stars:** ⭐ 19.304
 - **Heruntergeladen:** 2026-07-14
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 1.446 · **Größe:** 75M
@@ -992,7 +1008,7 @@ Front-End-Checklist begann als reine Markdown-Checkliste für Frontend-Qualität
 ## thedotmack/claude-mem
 
 - **URL:** https://github.com/thedotmack/claude-mem
-- **Stars:** ⭐ 93.815
+- **Stars:** ⭐ 93.817
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 1.025 · **Größe:** 119M
@@ -1005,7 +1021,7 @@ Claude-Mem ist ein persistentes Gedächtnis- und Kompressionssystem für Claude 
 ## upstash/context7
 
 - **URL:** https://github.com/upstash/context7
-- **Stars:** ⭐ 61.974
+- **Stars:** ⭐ 61.975
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 410 · **Größe:** 21M
@@ -1018,7 +1034,7 @@ Context7 bringt aktuelle, versionsbezogene Library-Dokumentation und Codebeispie
 ## vercel-labs/agent-skills
 
 - **URL:** https://github.com/vercel-labs/agent-skills
-- **Stars:** ⭐ 31.174
+- **Stars:** ⭐ 31.173
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 446 · **Größe:** 7,5M
@@ -1044,7 +1060,7 @@ Das ist keine Skill-Sammlung, sondern die CLI (`npx skills`) für das offene Age
 ## VoltAgent/awesome-design-md
 
 - **URL:** https://github.com/VoltAgent/awesome-design-md
-- **Stars:** ⭐ 115.756
+- **Stars:** ⭐ 115.761
 - **Heruntergeladen:** 2026-07-13
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 153 · **Größe:** 2,1M
@@ -1057,7 +1073,7 @@ Awesome-design-md ist eine von VoltAgent kuratierte Sammlung von rund 70 DESIGN.
 ## wshobson/agents
 
 - **URL:** https://github.com/wshobson/agents
-- **Stars:** ⭐ 39.635
+- **Stars:** ⭐ 39.636
 - **Heruntergeladen:** 2026-07-10
 - **Zuletzt aktualisiert:** 2026-08-23
 - **Dateien:** 1.157 · **Größe:** 7,7M
