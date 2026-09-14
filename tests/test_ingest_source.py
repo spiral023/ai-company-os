@@ -34,6 +34,60 @@ class TestDatum:
     def test_ungueltiger_monat_faellt_auf_heute(self):
         assert ingest.iso_datum("D:20261399") == ingest.heute()
 
+    def test_parse_datum_bleibt_leer_statt_heute(self):
+        # Der Unterschied zu iso_datum: hier muss erkennbar bleiben, dass gar
+        # kein Datum gefunden wurde — sonst wird der Abruftag zum vermeintlichen
+        # Veröffentlichungsdatum.
+        assert ingest.parse_datum("völlig unklar") == ""
+        assert ingest.parse_datum(None) == ""
+
+    def test_parse_datum_erkennt_die_gleichen_formate(self):
+        assert ingest.parse_datum("2026-07-28T10:00:00Z") == "2026-07-28"
+        assert ingest.parse_datum("Aug 14, 2026") == "2026-08-14"
+
+
+class TestJsonLdDatum:
+    """Viele Seiten führen das Datum nur im JSON-LD — dort muss es herkommen."""
+
+    def test_iso_wert(self):
+        html = (
+            '<script type="application/ld+json">'
+            '{"@type":"NewsletterIssue","datePublished":"2026-08-05T14:03:23+00:00"}'
+            "</script>"
+        )
+        assert ingest.json_ld_datum(html) == "2026-08-05T14:03:23+00:00"
+
+    def test_nicht_iso_wert_wird_durchgereicht(self):
+        # claude.com schreibt "Aug 14, 2026"; das Normalisieren macht parse_datum.
+        html = (
+            '<script type="application/ld+json">'
+            '{"@type":"BlogPosting","datePublished":"Aug 14, 2026"}'
+            "</script>"
+        )
+        assert ingest.parse_datum(ingest.json_ld_datum(html)) == "2026-08-14"
+
+    def test_verschachtelt_in_graph(self):
+        html = (
+            '<script type="application/ld+json">'
+            '{"@graph":[{"@type":"WebSite"},{"@type":"Article","datePublished":"2026-03-09"}]}'
+            "</script>"
+        )
+        assert ingest.json_ld_datum(html) == "2026-03-09"
+
+    def test_kaputter_block_blockiert_den_naechsten_nicht(self):
+        html = (
+            '<script type="application/ld+json">{kein json</script>'
+            '<script type="application/ld+json">{"datePublished":"2026-05-01"}</script>'
+        )
+        assert ingest.json_ld_datum(html) == "2026-05-01"
+
+    def test_ohne_datum_leer(self):
+        html = '<script type="application/ld+json">{"@type":"WebPage"}</script>'
+        assert ingest.json_ld_datum(html) == ""
+
+    def test_ohne_json_ld_leer(self):
+        assert ingest.json_ld_datum("<html><body>Text</body></html>") == ""
+
 
 class TestSlug:
     def test_umlaute_und_sonderzeichen(self):
@@ -263,6 +317,22 @@ class TestNotizAufbau:
             assert f"\n{feld}" in f"\n{notiz}"
         # Anführungszeichen im Titel dürfen das YAML nicht zerlegen.
         assert '\\"Anführung\\"' in notiz
+
+    def test_unbekanntes_datum_wird_als_unsicher_gekennzeichnet(self):
+        q = ingest.Quelle(url="https://example.com/a", typ="url", titel="T", text="x", datum="")
+        notiz = ingest.baue_notiz(q, "slug-x")
+        # Der Abruftag steht im Feld, damit Slug und Sortierung funktionieren —
+        # aber er ist als unsicher markiert.
+        assert f"datum: {ingest.heute()}" in notiz
+        assert "\ndatum_unsicher: true\n" in notiz
+
+    def test_bekanntes_datum_ohne_unsicher_marke(self):
+        q = ingest.Quelle(
+            url="https://example.com/a", typ="url", titel="T", text="x", datum="2026-02-01"
+        )
+        notiz = ingest.baue_notiz(q, "slug-x")
+        assert "datum: 2026-02-01" in notiz
+        assert "datum_unsicher" not in notiz
 
     def test_medien_werden_relativ_referenziert(self):
         q = ingest.Quelle(

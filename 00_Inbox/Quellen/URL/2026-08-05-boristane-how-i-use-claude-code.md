@@ -1,7 +1,7 @@
 ---
 url: https://boristane.com/blog/how-i-use-claude-code/
 titel: "How I Use Claude Code"
-datum: 2026-08-05
+datum: 2026-02-10
 erfasst: 2026-08-05
 typ: url
 quelle: url

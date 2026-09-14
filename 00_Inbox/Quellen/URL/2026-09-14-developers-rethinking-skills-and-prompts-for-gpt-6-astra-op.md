@@ -3,6 +3,7 @@ url: https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-
 titel: "Rethinking skills and prompts for GPT-6 Astra | OpenAI Developers"
 autor: "OpenAI Developers"
 datum: 2026-09-14
+datum_unsicher: true
 erfasst: 2026-09-14
 typ: url
 quelle: url

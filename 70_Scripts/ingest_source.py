@@ -119,10 +119,15 @@ def heute() -> str:
     return dt.date.today().isoformat()
 
 
-def iso_datum(wert: str | None) -> str:
-    """Datum aus verschiedenen Formaten auf YYYY-MM-DD normalisieren."""
+def parse_datum(wert: str | None) -> str:
+    """Datum aus verschiedenen Formaten auf YYYY-MM-DD normalisieren.
+
+    Leer, wenn sich keins erkennen lässt. Wer einen Wert zum Schreiben
+    braucht, nimmt `iso_datum`; wer wissen muss, ob überhaupt ein Datum
+    bekannt ist, fragt diese Funktion.
+    """
     if not wert:
-        return heute()
+        return ""
     treffer = re.search(r"(\d{4})-(\d{2})-(\d{2})", wert)
     if treffer:
         return treffer.group(0)
@@ -137,7 +142,60 @@ def iso_datum(wert: str | None) -> str:
             return dt.datetime.strptime(wert.strip(), muster).date().isoformat()
         except ValueError:
             continue
-    return heute()
+    return ""
+
+
+def iso_datum(wert: str | None) -> str:
+    """Wie `parse_datum`, fällt aber auf heute zurück — für Slug und Frontmatter."""
+    return parse_datum(wert) or heute()
+
+
+def json_ld_datum(html: str) -> str:
+    """Veröffentlichungsdatum aus JSON-LD lesen, roh wie es dort steht.
+
+    Muss auf dem unveränderten HTML laufen: `lade_artikel` entfernt alle
+    <script>-Tags, bevor es den Text extrahiert — danach ist JSON-LD weg.
+    Viele Seiten führen das Datum ausschließlich hier: Substack als ISO-Wert,
+    claude.com als "Aug 14, 2026". Ohne diese Quelle fiel das Datum still auf
+    den Abruftag zurück und prägte so auch den Slug.
+    """
+    import json
+
+    schluessel = ("datePublished", "dateCreated", "uploadDate")
+    for block in re.findall(
+        r"<script[^>]*application/ld\+json[^>]*>(.*?)</script>", html, re.S | re.I
+    ):
+        try:
+            daten = json.loads(block.strip())
+        except ValueError:
+            continue
+        treffer = _suche_wert(daten, schluessel)
+        if treffer:
+            return treffer
+    return ""
+
+
+def _suche_wert(daten: object, schluessel: tuple[str, ...]) -> str:
+    """Ersten nichtleeren Stringwert zu einem der Schlüssel finden.
+
+    Rekursiv, weil JSON-LD verschachtelt: Seiten liefern Listen, `@graph`
+    oder ein BlogPosting unter einer WebPage.
+    """
+    if isinstance(daten, dict):
+        for name in schluessel:
+            wert = daten.get(name)
+            if isinstance(wert, str) and wert.strip():
+                return wert.strip()
+        for wert in daten.values():
+            treffer = _suche_wert(wert, schluessel)
+            if treffer:
+                return treffer
+    elif isinstance(daten, list):
+        for element in daten:
+            treffer = _suche_wert(element, schluessel)
+            if treffer:
+                return treffer
+    return ""
 
 
 def slugify(wert: str, maxlen: int = 60) -> str:
@@ -197,6 +255,37 @@ def erkenne_typ(eingabe: str) -> str:
 # ------------------------------------------------------------------- Artikel-URL
 
 
+def artikel_datum(suppe, html: str) -> str:
+    """Veröffentlichungsdatum einer Artikelseite; leer, wenn keins zu finden ist.
+
+    Reihenfolge nach Verlässlichkeit: erklärtes Veröffentlichungsdatum in den
+    Meta-Tags, dann JSON-LD, dann ein <time datetime>. `og:updated_time` steht
+    bewusst zuletzt — es ist das Änderungsdatum, und laufend gepflegte
+    Doku-Seiten datieren damit auf heute statt auf ihr Erscheinen.
+
+    `html` ist das unveränderte Dokument, weil JSON-LD in <script> steht und
+    `lade_artikel` diese Tags vor der Textextraktion entfernt.
+    """
+
+    def meta(*namen: str) -> str:
+        for name in namen:
+            for attr in ("property", "name", "itemprop"):
+                tag = suppe.find("meta", attrs={attr: name})
+                if tag and tag.get("content"):
+                    return tag["content"].strip()
+        return ""
+
+    datum = parse_datum(meta("article:published_time", "datePublished"))
+    if not datum:
+        datum = parse_datum(json_ld_datum(html))
+    if not datum:
+        zeit = suppe.find("time", attrs={"datetime": True})
+        datum = parse_datum(zeit["datetime"]) if zeit else ""
+    if not datum:
+        datum = parse_datum(meta("og:updated_time"))
+    return datum
+
+
 def lade_artikel(url: str) -> Quelle:
     from bs4 import BeautifulSoup
 
@@ -223,7 +312,7 @@ def lade_artikel(url: str) -> Quelle:
     if h1_text and len(h1_text) > len(titel) and len(titel) < 30:
         titel = h1_text
     autor = meta("author", "article:author", "og:site_name")
-    datum = meta("article:published_time", "datePublished", "og:updated_time")
+    datum = artikel_datum(suppe, html)
 
     # Hauptinhalt: bevorzugt semantische Container, sonst der Block mit dem
     # meisten Text. Boilerplate ist oben schon entfernt.
@@ -263,7 +352,7 @@ def lade_artikel(url: str) -> Quelle:
         titel=titel or url,
         text="\n\n".join(absaetze),
         autor=autor,
-        datum=iso_datum(datum),
+        datum=datum,
         medien=medien,
     )
 
@@ -357,7 +446,7 @@ def youtube_metadaten(url: str, vid: str) -> tuple[str, str, str, str]:
     """Titel, Kanal, Datum und Beschreibung ohne YouTube-API-Key abrufen."""
     titel = vid
     autor = ""
-    datum = heute()
+    datum = ""
     beschreibung = ""
     videoseite = ""
 
@@ -381,7 +470,7 @@ def youtube_metadaten(url: str, vid: str) -> tuple[str, str, str, str]:
                 titel = details.get("title") or titel
                 autor = details.get("author") or autor
                 beschreibung = (details.get("shortDescription") or "").strip()
-                datum = iso_datum(microformat.get("publishDate") or datum)
+                datum = parse_datum(microformat.get("publishDate")) or datum
     except Exception:  # noqa: BLE001 — Metadaten haben einen oEmbed-Fallback
         pass
 
@@ -398,7 +487,7 @@ def youtube_metadaten(url: str, vid: str) -> tuple[str, str, str, str]:
         except Exception:  # noqa: BLE001 — Metadaten sind optional
             pass
 
-    if datum == heute():
+    if not datum:
         treffer = re.search(
             r'itemprop="datePublished"\s+content="(\d{4}-\d{2}-\d{2})', videoseite
         )
@@ -471,7 +560,7 @@ def lade_pdf(eingabe: str, medien_laden: bool) -> Quelle:
         titel=titel,
         text="\n\n".join(seiten),
         autor=(meta.get("author") or "").strip(),
-        datum=iso_datum(meta.get("creationDate")),
+        datum=parse_datum(meta.get("creationDate")),
         medien=medien,
         extra={"seiten": str(dok.page_count), "datei": str(lokal.relative_to(REPO_ROOT)) if lokal.is_relative_to(REPO_ROOT) else lokal.name},
     )
@@ -531,8 +620,13 @@ def baue_notiz(quelle: Quelle, slug: str) -> str:
     ]
     if quelle.autor:
         zeilen.append(f"autor: {yaml_str(quelle.autor)}")
+    zeilen.append(f"datum: {iso_datum(quelle.datum)}")
+    # Ohne ermitteltes Datum steht dort der Abruftag. Das ist als Sortier- und
+    # Slug-Wert brauchbar, als Veröffentlichungsdatum aber falsch — die Notiz
+    # sagt das hier, statt die Annahme unsichtbar zu lassen.
+    if not quelle.datum:
+        zeilen.append("datum_unsicher: true")
     zeilen += [
-        f"datum: {iso_datum(quelle.datum)}",
         f"erfasst: {heute()}",
         f"typ: {quelle.typ}",
         f"quelle: {quelle.typ}",

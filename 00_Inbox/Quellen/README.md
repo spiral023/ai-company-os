@@ -75,6 +75,12 @@ Eine bestehende Notiz wird **nicht** überschrieben — so gehen manuelle Ergän
 
 Der JSON-Cache unter `scripts/.ingest/` verhindert doppelte API-Calls und ist gitignored.
 
+### Woher das Veröffentlichungsdatum kommt
+
+Für Artikel sucht `ingest_source.py` das Datum in dieser Reihenfolge: erklärtes Veröffentlichungsdatum in den Meta-Tags (`article:published_time`, `datePublished`), dann JSON-LD (`<script type="application/ld+json">`, wo Substack und viele CMS es ausschließlich führen), dann ein `<time datetime>`, zuletzt `og:updated_time`. Das Änderungsdatum steht bewusst am Ende — laufend gepflegte Doku-Seiten datieren damit auf heute statt auf ihr Erscheinen.
+
+Findet keine dieser Quellen etwas, steht im Feld `datum:` der Abruftag, damit Slug und Sortierung funktionieren, und die Notiz trägt zusätzlich `datum_unsicher: true`. Dieses Feld ist das Signal, das Datum vor einem Zitat oder einer Aktualitätsaussage gegen die Quelle zu prüfen. Ohne die Markierung liest sich der Abruftag wie ein belegtes Veröffentlichungsdatum — genau das war vorher der Fall. Reine Dokumentationsseiten (`docs.anthropic.com`, `unsloth.ai/docs`) führen typischerweise kein Datum und bekommen die Markierung deshalb regelmäßig.
+
 ### Was YouTube-Notizen ausmacht
 
 Das Script übernimmt die Videobeschreibung und eine vorhandene deutsche oder englische Untertitelspur. Das Transkript wird ohne Zeitstempel zu lesbaren Absätzen verbunden; die ursprünglichen Untertitel-Segmente werden nur als Anzahl im Frontmatter dokumentiert. Titel, Kanal und Veröffentlichungsdatum kommen ohne API-Key von YouTube.
