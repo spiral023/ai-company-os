@@ -87,19 +87,32 @@ def git_output(repo: Path, *args: str) -> str:
     return result.stdout.strip()
 
 
-def pull_repo(repo: Path) -> tuple[str, str]:
-    """Pull one repo. Returns (state, message) where state is new/unchanged/error."""
+def pull_repo(repo: Path) -> tuple[str, str, str | None, str | None]:
+    """Pull one repo. Returns (state, message, before_hash, after_hash).
+
+    state is new/unchanged/error; before/after are full commit hashes, or
+    None where unavailable (e.g. rev-parse itself failed).
+    """
     label = repo.relative_to(EXTERNAL_ROOT).as_posix()
+    before: str | None = None
     try:
         before = git_output(repo, "rev-parse", "HEAD")
         git_output(repo, "pull", "--ff-only", "--quiet")
         after = git_output(repo, "rev-parse", "HEAD")
     except subprocess.CalledProcessError as exc:
-        return "error", f"{label}: FEHLER beim Update ({exc.stderr.strip() or exc})"
+        return "error", f"{label}: FEHLER beim Update ({exc.stderr.strip() or exc})", before, None
 
     if before == after:
-        return "unchanged", f"{label}: unverändert ({after[:8]})"
-    return "new", f"{label}: NEU ({before[:8]} -> {after[:8]})"
+        return "unchanged", f"{label}: unverändert ({after[:8]})", before, after
+    return "new", f"{label}: NEU ({before[:8]} -> {after[:8]})", before, after
+
+
+def commit_count(repo: Path, before: str, after: str) -> int | None:
+    """Return the number of commits between before and after, or None on failure."""
+    try:
+        return int(git_output(repo, "rev-list", "--count", f"{before}..{after}"))
+    except (subprocess.CalledProcessError, ValueError):
+        return None
 
 
 # --------------------------------------------------------------------------- #
@@ -445,12 +458,14 @@ def main() -> int:
 
     changed: set[str] = set()
     failed: list[str] = []
+    unchanged: set[str] = set()
+    commit_ranges: dict[str, dict[str, str | int | None]] = {}
 
     if not args.index_only:
         logging.info("Pull: %d Repo(s) ...", len(pull_targets))
         for repo in pull_targets:
             label = repo.relative_to(EXTERNAL_ROOT).as_posix()
-            state, message = pull_repo(repo)
+            state, message, before, after = pull_repo(repo)
             if state == "error":
                 failed.append(message)
                 logging.error(message)
@@ -458,6 +473,15 @@ def main() -> int:
                 logging.info(message)
                 if state == "new":
                     changed.add(label)
+                    commit_ranges[label] = {
+                        "before": before,
+                        "after": after,
+                        "before_short": before[:8] if before else None,
+                        "after_short": after[:8] if after else None,
+                        "commits": commit_count(repo, before, after) if before and after else None,
+                    }
+                else:
+                    unchanged.add(label)
 
     index_changed = False
     if not args.no_index:
@@ -485,7 +509,37 @@ def main() -> int:
         for label in sorted(changed):
             logging.info("  - %s", label)
 
+    if not args.index_only:
+        write_run_report(changed, unchanged, failed, commit_ranges)
+
     return 1 if failed else 0
+
+
+def write_run_report(
+    changed: set[str],
+    unchanged: set[str],
+    failed: list[str],
+    commit_ranges: dict[str, dict[str, str | int | None]],
+) -> None:
+    """Write a machine-readable summary of this pull run for changelog tooling.
+
+    Not versioned (external_repos/* is gitignored except INDEX.md and
+    changelog/) — purely a hand-off artifact for the current session, so a
+    changelog write-up can quote exact hashes/commit counts instead of
+    transcribing them from log scrollback.
+    """
+    report = {
+        "date": date.today().isoformat(),
+        "repos_checked": len(changed) + len(unchanged) + len(failed),
+        "changed": len(changed),
+        "unchanged": len(unchanged),
+        "failed": len(failed),
+        "changed_repos": {label: commit_ranges.get(label, {}) for label in sorted(changed)},
+        "failed_repos": failed,
+    }
+    report_path = EXTERNAL_ROOT / ".last_run.json"
+    report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+    logging.info("Laufbericht geschrieben: %s", report_path)
 
 
 if __name__ == "__main__":

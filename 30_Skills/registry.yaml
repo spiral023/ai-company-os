@@ -101,6 +101,18 @@ skills:
   default_for_project_types: []
   description: Prüft externe Repositories, Skill-Packs, Templates und Tools vor Integration
     auf Zweck, Lizenz, Risiken, Scripts, Vertrauensniveau und Integrationsform.
+- id: external-repos
+  type: local
+  path: 30_Skills/local/external-repos/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: false
+  project_types:
+  - all
+  default_for_project_types: []
+  description: Pflegt die lokale Referenzbibliothek fremder GitHub-Repos unter external_repos/
+    — neues Repo laden und in INDEX.md dokumentieren, oder alle Repos per Script
+    aktualisieren und den Update-Lauf in external_repos/changelog/ dokumentieren.
 - id: qa-engineer
   type: local
   path: 30_Skills/local/qa-engineer/SKILL.md

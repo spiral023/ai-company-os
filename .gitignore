@@ -38,9 +38,11 @@ tmp/
 temp/
 .cache/
 
-# Externe Repos (nur lokale Analyse, nicht versioniert) - Index bleibt versioniert
+# Externe Repos (nur lokale Analyse, nicht versioniert) - Index und Changelog bleiben versioniert
 external_repos/*
 !external_repos/INDEX.md
+!external_repos/changelog/
+!external_repos/changelog/*
 
 # Quell-Binärdateien (PDFs, Office-Dokumente, Medien, Archive)
 # Bleiben lokal, z. B. in 00_Inbox/. Versioniert wird die Markdown-Auswertung
