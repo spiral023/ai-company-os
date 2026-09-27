@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-01-06-jarrodwatts-context-engineering-guide.md
 medien: "6 lokal"
 beschreibung: ">-"
 vibedeck_category: patterns

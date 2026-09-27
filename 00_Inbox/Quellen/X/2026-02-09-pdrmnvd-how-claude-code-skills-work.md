@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-02-09-pdrmnvd-how-claude-code-skills-work.md
 medien: "5 lokal"
 beschreibung: "Ein tiefer Einblick in die Funktionsweise von Claude Code Skills, von der Anatomie eines Skills bis hin zum dreistufigen Ladesystem."
 vibedeck_category: tooling

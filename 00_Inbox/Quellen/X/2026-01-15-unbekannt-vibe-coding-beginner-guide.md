@@ -6,7 +6,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-01-15-elenakvcs-vibe-coding-beginner-guide.md
 medien: "4 lokal"
 beschreibung: "Elena Kovacs teilt ihre Reise von null Programmierkenntnissen hin zum Bauen eigener Tools und Automatisierungen mit Claude Code."
 vibedeck_category: fundamentals

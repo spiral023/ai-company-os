@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-02-10-boris-tane-plan-annotation-workflow.md
 beschreibung: "Lerne den disziplinierten Workflow von Boris Tane kennen: Trennung von Planung und Implementierung durch Annotationen in Markdown-Dateien."
 vibedeck_category: workflows
 vibedeck_level: intermediate

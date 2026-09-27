@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+verarbeitet_am: 2026-08-05
+notiz: "Reiner Modell-Deployment-Guide fuer Kimi K2.5 (GGUF-Quantisierungsstufen, RAM/VRAM-Anforderungen, llama.cpp-Build/Run-Kommandos, Sampling-Parameter, Chat-Template, Benchmark-Tabelle) ohne Bezug zu Claude Code, Agenten, Skills oder Coding-Workflows. Im Unterschied zur verwandten Unsloth-Quelle vom 2026-02-02 (Sources/2026-02-02-unsloth-team-claude-code-local-llm.md, dort mit Umleitung von Claude Code/Codex auf ein lokales Modell) beschreibt dieser Artikel nur den Betrieb des Modells selbst, keine Umleitung eines Coding-Agenten und kein Auswahlkriterium fuer einen Stack. Die Benchmark-Zahlen (AIME, GPQA-Diamond, MMLU-Pro, SWE-Bench Verified, MathVista) sind unbestaetigte Vendor-Angaben (Moonshot AI/Unsloth) ohne unabhaengige Pruefung. Kein Beleg fuer Lokale-Modell-Umleitung-Muster (keine Umleitung eines Coding-Agenten erwaehnt) oder Trainingsdaten-Dichte-als-Stack-Kriterium (kein Stack-Auswahlkontext). Keine uebertragbare Arbeitsweise, daher ignoriert statt Source-Notiz."
 medien: "1 lokal"
 beschreibung: "Erfahre, wie Du Kimi K2.5 von Moonshot AI lokal ausführst. Nutze Unsloth Dynamic GGUFs für maximale Performance bei geringem Speicherbedarf."
 vibedeck_category: tooling

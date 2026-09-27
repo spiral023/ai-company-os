@@ -7,7 +7,7 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
 medien: "5 lokal"
 beschreibung: ">-"
 vibedeck_category: fundamentals
@@ -22,6 +22,8 @@ vibedeck_topics:
   - "[[Agent Rules]]"
   - "[[Commands]]"
   - "[[Subagents]]"
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-01-21-tempoimmaterial-agent-skills-vs-rules-vs-commands.md
 ---
 
 # Agent Skills vs. Rules vs. Commands

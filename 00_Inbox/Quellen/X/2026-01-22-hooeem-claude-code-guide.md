@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-01-22-hooeem-claude-code-7-schritte-plan.md
 medien: "2 lokal"
 beschreibung: ">-"
 vibedeck_category: fundamentals

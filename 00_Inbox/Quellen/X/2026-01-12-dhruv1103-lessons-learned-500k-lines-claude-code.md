@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-01-12-dhruv1103-lessons-learned-500k-lines-claude-code.md
 beschreibung: "Erkenntnisse und Best Practices eines Power-Users, der innerhalb von 90 Tagen über eine halbe Million Zeilen Code mit Claude Code geschrieben hat."
 vibedeck_category: workflows
 vibedeck_tags:

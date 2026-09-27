@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-02-07-daniel-san-agent-teams-praxismuster.md
 medien: "5 lokal"
 beschreibung: "Erfahre, wie du Agent Teams durch Modulgrenzen, operationalen Kontext in CLAUDE.md und automatisierte Verifizierung effizient steuerst."
 vibedeck_category: workflows

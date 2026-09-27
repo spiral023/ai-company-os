@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-01-21-aiedge-claude-50-pro-tips.md
 medien: "1 lokal"
 beschreibung: "Eine umfassende Sammlung von 50 praktischen Tipps für Claude, Claude Code, Cowork und Prompting-Hacks für Power-User."
 vibedeck_category: workflows

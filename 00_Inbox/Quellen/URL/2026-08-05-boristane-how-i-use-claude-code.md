@@ -5,7 +5,9 @@ datum: 2026-02-10
 erfasst: 2026-08-05
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-02-10-boris-tane-plan-annotation-workflow.md
 ---
 
 # How I Use Claude Code

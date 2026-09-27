@@ -7,7 +7,6 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
 medien: "1 lokal"
 beschreibung: "Das exakte Framework für wunderschöne, hochkonvertierende Lovable-Websites im Jahr 2026. Von Layout-Mustern bis zu Conversion-Hacks."
 vibedeck_category: workflows
@@ -21,6 +20,9 @@ vibedeck_topics:
   - "[[Web Design]]"
   - "[[Conversion Optimization]]"
   - "[[Landing Pages]]"
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-01-22-damien-lovable-website-guide.md
 ---
 
 # The Complete Guide: Lovable Websites bauen

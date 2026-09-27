@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-01-12-eyad-khrais-claude-code-tutorial-level-2.md
 medien: "1 lokal"
 beschreibung: "Gehe über die Grundlagen hinaus: Meistere Skills, Subagents und MCP-Connectors, um Claude Code in ein autonomes Entwicklungssystem zu verwandeln."
 vibedeck_category: tooling

@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-01-31-bcherny-claude-code-team-tips.md
 medien: "1 lokal"
 beschreibung: "Boris Cherny, der Schöpfer von Claude Code, teilt 10 exklusive Tipps und Best Practices direkt aus dem internen Anthropic-Team."
 vibedeck_category: workflows

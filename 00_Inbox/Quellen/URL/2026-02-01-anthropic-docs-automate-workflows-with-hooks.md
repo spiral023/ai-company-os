@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-02-01-anthropic-docs-automate-workflows-with-hooks.md
 beschreibung: ">-"
 vibedeck_category: tooling
 vibedeck_level: advanced

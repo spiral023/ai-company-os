@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-08-05
+source_notiz: 80_Knowledge/Sources/2026-02-07-jasonzhou-claude-code-agent-teams.md
 medien: "8 lokal"
 beschreibung: "Ein tiefer Einblick in das neue Agenten-Modell von Claude Code: Wie Agent Teams funktionieren, wie man sie installiert und warum sie herkömmliche Sub-Agenten übertreffen."
 vibedeck_category: tooling
