@@ -1,6 +1,6 @@
 // TikTok-Video als Quelle erfassen: Transkript über den Apify-Actor
 // scrape-creators/best-tiktok-transcripts-scraper, Metadaten über TikTok
-// oEmbed, Ablage nach 00_Inbox/Quellen/ wie bei `npm run ingest:x`.
+// oEmbed, Ablage nach 00_Inbox/Quellen/TikTok/ wie bei `npm run ingest:x`.
 //
 // Nutzung:
 //   npm run ingest:tiktok -- <video-url-oder-id> [--force] [--refetch]
@@ -19,15 +19,11 @@ import {
   parseVtt,
   splitCaption,
   formatTiktokNote,
+  tiktokTitle,
+  buildTiktokSlug,
 } from './lib/tiktok-ingest.mjs';
 import { runTranscriptActor, fetchOembed, resolveShortUrl } from './lib/tiktok-client.mjs';
-import {
-  buildSlug,
-  downloadMedia,
-  writeInboxNote,
-  mediaTargetDir,
-  sourceInboxRel,
-} from './lib/inbox-store.mjs';
+import { downloadMedia, writeInboxNote, mediaTargetDir, sourceInboxRel } from './lib/inbox-store.mjs';
 
 const rootDir = process.cwd();
 const ingestDir = path.join(rootDir, 'scripts/.ingest');
@@ -48,6 +44,26 @@ function loadEnv() {
   } catch {
     // .env.local optional — Variable kann extern gesetzt sein
   }
+}
+
+function videoIdFromNote(notePath) {
+  try {
+    return fs.readFileSync(notePath, 'utf8').match(/^video_id:\s*["']?(\d+)/m)?.[1] ?? null;
+  } catch {
+    return null;
+  }
+}
+
+function findNoteByVideoId(videoId) {
+  const dir = path.join(rootDir, sourceInboxRel('tiktok'));
+  if (!fs.existsSync(dir)) return null;
+  return (
+    fs
+      .readdirSync(dir, { withFileTypes: true })
+      .filter((entry) => entry.isFile() && entry.name.endsWith('.md'))
+      .map((entry) => path.join(dir, entry.name))
+      .find((file) => videoIdFromNote(file) === videoId) ?? null
+  );
 }
 
 async function resolveInput(input) {
@@ -133,15 +149,46 @@ async function main() {
   const transcript = payload.item?.transcript ?? '';
   const videoUrl = video.url ?? payload.video?.url ?? `https://www.tiktok.com/@i/video/${video.id}`;
   const publishedAt = dateFromVideoId(video.id);
-  // Nur der Handle taugt für den Slug — der Anzeigename aus oEmbed ist ein
-  // anderer Wert ("Florian Schnemann" statt "floknowsai") und würde dieselbe
-  // Quelle unter zwei Dateinamen ablegen.
-  const slug = buildSlug({
+  const username = video.username ?? handleFromAuthorUrl(payload.oembed?.author_url);
+  const title = tiktokTitle({
+    oembedTitle: payload.oembed?.title,
+    transcript,
+    username,
+  });
+  let slug = buildTiktokSlug({
     createdAt: publishedAt ?? payload.fetchedAt,
-    username: video.username ?? handleFromAuthorUrl(payload.oembed?.author_url),
+    username,
+    title,
     id: video.id,
   });
-  const notePath = path.join(rootDir, sourceInboxRel('tiktok'), `${slug}.md`);
+  let notePath = path.join(rootDir, sourceInboxRel('tiktok'), `${slug}.md`);
+
+  // Die ID bleibt im Frontmatter die stabile Identität. Dadurch erkennt ein
+  // erneuter Abruf dieselbe Quelle auch dann, wenn TikTok die Caption ändert.
+  const existingNote = findNoteByVideoId(video.id);
+  if (existingNote && !args.force) {
+    slug = path.basename(existingNote, '.md');
+    notePath = existingNote;
+  } else if (fs.existsSync(notePath) && videoIdFromNote(notePath) !== video.id) {
+    // Gleicher Autor, Tag und Titel: nur in diesem seltenen Kollisionsfall
+    // einen kurzen ID-Suffix ergänzen, statt eine bestehende Quelle zu treffen.
+    slug = `${slug}-${video.id.slice(-6)}`;
+    notePath = path.join(rootDir, sourceInboxRel('tiktok'), `${slug}.md`);
+  }
+
+  // --force regeneriert bewusst die Notiz und zieht dabei auch einen durch
+  // Caption-/Titeländerung veralteten Dateinamen samt Medienordner nach.
+  if (existingNote && args.force && path.resolve(existingNote) !== path.resolve(notePath)) {
+    const oldSlug = path.basename(existingNote, '.md');
+    const oldMediaDir = mediaTargetDir(rootDir, 'tiktok', oldSlug);
+    const newMediaDir = mediaTargetDir(rootDir, 'tiktok', slug);
+    if (fs.existsSync(newMediaDir)) {
+      throw new Error(`Ziel-Medienordner existiert bereits: ${path.relative(rootDir, newMediaDir)}`);
+    }
+    if (fs.existsSync(oldMediaDir)) fs.renameSync(oldMediaDir, newMediaDir);
+    fs.renameSync(existingNote, notePath);
+    console.log(`  Umbenannt: ${oldSlug}.md → ${slug}.md`);
+  }
 
   // Eine bestehende Notiz kann manuell ergänzt oder auf status:verarbeitet
   // gesetzt sein — die darf ein erneuter Lauf nicht stillschweigend verwerfen.

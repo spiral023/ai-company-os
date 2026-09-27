@@ -14,6 +14,9 @@ import {
   detectLanguage,
   shortenTitle,
   titleFromTranscript,
+  slugifyTitle,
+  tiktokTitle,
+  buildTiktokSlug,
   formatTiktokNote,
 } from '../scripts/lib/tiktok-ingest.mjs';
 
@@ -114,6 +117,35 @@ test('titleFromTranscript kürzt an der Wortgrenze', () => {
   assert.equal(titleFromTranscript([]), '');
 });
 
+test('TikTok-Slug verwendet den Titel statt der Video-ID', () => {
+  assert.equal(slugifyTitle('Hör auf, den Code deines KI-Agenten zu lesen.'), 'hoer-auf-den-code-deines-ki-agenten-zu-lesen');
+  assert.equal(slugifyTitle('AI memory is trash, here’s some solutions.'), 'ai-memory-is-trash-heres-some-solutions');
+  assert.equal(
+    buildTiktokSlug({
+      createdAt: '2026-08-14T08:00:00.000Z',
+      username: 'agentic.james',
+      title: 'AI memory is trash, here’s some solutions.',
+      id: '7674000398218284302',
+    }),
+    '2026-08-14-agenticjames-ai-memory-is-trash-heres-some-solutions',
+  );
+});
+
+test('TikTok-Titel fällt von Caption auf Transkript und erst danach auf Handle zurück', () => {
+  assert.equal(
+    tiktokTitle({ oembedTitle: '#nur #tags', transcript: VTT, username: 'promptgefluester' }),
+    'prompt Engineering ist tot und keiner hat es gemerkt so viel Kontext wie …',
+  );
+  assert.equal(
+    tiktokTitle({ oembedTitle: '', transcript: '', username: 'promptgefluester' }),
+    'TikTok von @promptgefluester',
+  );
+  assert.equal(
+    tiktokTitle({ oembedTitle: '#token #claude #sparen #tokenmaxing', transcript: '', username: 'promptgefluester' }),
+    'TikTok: token · claude · sparen · tokenmaxing',
+  );
+});
+
 test('shortenTitle bevorzugt den ersten abgeschlossenen Satz', () => {
   const caption =
     'Du wirst gerade von KI abgehängt, weil jedes neue Modell beschleunigt. Das solltest du beherrschen. Wann ein Cloud-Modell besser ist.';
@@ -153,7 +185,7 @@ test('formatTiktokNote baut Frontmatter, Caption und Transkript', () => {
     },
     oembed: { title: 'Skills erklärt #prompt #ki', author_name: 'Prompt Geflüster' },
     transcript: VTT,
-    slug: '2026-07-21-promptgefluester-7664997418081062177',
+    slug: '2026-07-21-promptgefluester-skills-erklaert',
     downloads: [{ ok: true, cover: true, file: '01-cover.jpg', url: 'https://p19.tiktokcdn.com/x.jpg' }],
     fetchedAt: '2026-08-30T08:00:00.000Z',
   });
@@ -166,10 +198,14 @@ test('formatTiktokNote baut Frontmatter, Caption und Transkript', () => {
   assert.match(note, /status: neu\n/);
   assert.match(note, /autor_name: "Prompt Geflüster"\n/);
   assert.match(note, /hashtags: "prompt, ki"\n/);
-  assert.match(note, /transkript: "3 Cues/);
+  assert.match(note, /transkript: automatisch/);
   assert.match(note, /laenge: "00:09"/);
   assert.match(note, /# Skills erklärt\n/);
-  assert.match(note, /!\[Cover\]\(medien\/2026-07-21-promptgefluester-7664997418081062177\/01-cover\.jpg\)/);
+  assert.match(note, /!\[Cover\]\(medien\/2026-07-21-promptgefluester-skills-erklaert\/01-cover\.jpg\)/);
+  assert.doesNotMatch(note, /Automatisch per `npm run ingest:tiktok`/);
+  assert.doesNotMatch(note, /## Caption/);
+  assert.doesNotMatch(note, /^#prompt/m);
+  assert.doesNotMatch(note, /Automatische Spracherkennung von TikTok/);
   assert.match(note, /## Transkript\n/);
   assert.match(note, /prompt Engineering ist tot und keiner hat es gemerkt/);
   // Der Text steht genau einmal in der Notiz — keine zweite Fassung mit Zeitmarken.
@@ -253,8 +289,9 @@ test('formatTiktokNote hält fest, wenn kein Transkript vorliegt', () => {
     downloads: [],
     fetchedAt: '2026-08-30T08:00:00.000Z',
   });
-  assert.match(note, /transkript: "keins verfügbar"/);
-  assert.match(note, /kein Transkript bereit/);
+  assert.match(note, /transkript: nicht verfügbar/);
+  assert.doesNotMatch(note, /## Transkript/);
+  assert.doesNotMatch(note, /autor_name:/);
 });
 
 test('formatTiktokNote markiert ein unsicheres Datum statt still zu raten', () => {

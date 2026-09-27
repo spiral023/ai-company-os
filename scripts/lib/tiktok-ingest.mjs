@@ -1,4 +1,4 @@
-import { isoDate, MEDIA_DIR } from './inbox-store.mjs';
+import { isoDate, MEDIA_DIR, slugifyHandle } from './inbox-store.mjs';
 
 // Reine Funktionen für den TikTok-Ingest: URL/ID, WEBVTT-Transkript, Notiz.
 // Netzwerkzugriffe liegen in tiktok-client.mjs.
@@ -199,6 +199,49 @@ export function titleFromTranscript(cues, maxLength = 80) {
   return shortenTitle(cues.map((c) => c.text).join(' '), maxLength);
 }
 
+// TikTok-Dateien sollen in der Inbox schon am Namen erkennbar sein. Deutsche
+// Umlaute werden ausgeschrieben; übrige Akzente entfernt. Die Begrenzung hält
+// auch Medienpfade unter Windows in einer handlichen Länge.
+export function slugifyTitle(value, maxLength = 72) {
+  const slug = String(value ?? '')
+    .trim()
+    .toLowerCase()
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss')
+    .normalize('NFKD')
+    .replace(/\p{M}/gu, '')
+    .replace(/['’]/g, '')
+    .replace(/&/g, ' und ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .replace(/-{2,}/g, '-');
+
+  if (slug.length <= maxLength) return slug;
+  const cut = slug.slice(0, maxLength + 1);
+  const boundary = cut.lastIndexOf('-');
+  return (boundary >= Math.floor(maxLength * 0.6) ? cut.slice(0, boundary) : slug.slice(0, maxLength))
+    .replace(/-+$/g, '');
+}
+
+export function tiktokTitle({ oembedTitle, transcript, username }) {
+  const caption = splitCaption(oembedTitle);
+  const cues = parseVtt(transcript);
+  const tagTitle = caption.tags.length ? `TikTok: ${caption.tags.slice(0, 5).join(' · ')}` : '';
+  return (
+    shortenTitle(caption.text) ||
+    titleFromTranscript(cues) ||
+    tagTitle ||
+    `TikTok von @${username ?? 'unbekannt'}`
+  );
+}
+
+export function buildTiktokSlug({ createdAt, username, title, id }) {
+  const titleSlug = slugifyTitle(title) || `video-${id}`;
+  return `${isoDate(createdAt)}-${slugifyHandle(username)}-${titleSlug}`;
+}
+
 export function formatTiktokNote({
   video,
   oembed,
@@ -216,15 +259,23 @@ export function formatTiktokNote({
   const paragraphs = cuesToParagraphs(cues, gap);
   const duration = transcriptDuration(cues);
   const cover = (downloads ?? []).find((d) => d.ok && d.cover);
+  const authorName = String(oembed?.author_name ?? username).trim();
 
-  const title =
-    shortenTitle(caption.text) || titleFromTranscript(cues) || `TikTok von @${username}`;
+  const title = tiktokTitle({
+    oembedTitle: oembed?.title,
+    transcript,
+    username,
+  });
 
   const fm = [
     '---',
     `url: ${url}`,
     `autor: "@${username}"`,
-    `autor_name: ${yamlString(oembed?.author_name ?? username)}`,
+  ];
+  if (authorName && authorName.toLowerCase() !== username.toLowerCase()) {
+    fm.push(`autor_name: ${yamlString(authorName)}`);
+  }
+  fm.push(
     `datum: ${publishedAt ? isoDate(publishedAt) : isoDate(fetchedAt)}`,
     `erfasst: ${isoDate(fetchedAt)}`,
     'typ: video',
@@ -232,7 +283,7 @@ export function formatTiktokNote({
     'status: neu',
     `titel: ${yamlString(title)}`,
     `video_id: "${video.id}"`,
-  ];
+  );
   if (!publishedAt) fm.push('datum_unsicher: true');
   if (caption.tags.length) fm.push(`hashtags: "${caption.tags.join(', ')}"`);
   const transcriptText = cues.map((c) => c.text).join(' ');
@@ -241,23 +292,17 @@ export function formatTiktokNote({
   const langMismatch = Boolean(transcriptLang && captionLang && transcriptLang !== captionLang);
 
   if (cues.length) {
-    fm.push(`transkript: "${cues.length} Cues · ${transcript.length} Zeichen"`);
+    fm.push('transkript: automatisch');
     if (duration) fm.push(`laenge: "${formatTimestamp(duration)}"`);
     if (transcriptLang) fm.push(`sprache: ${transcriptLang}`);
     if (langMismatch) fm.push('sprache_abweichung: true');
   } else {
-    fm.push('transkript: "keins verfügbar"');
+    fm.push('transkript: nicht verfügbar');
   }
-  const total = (downloads ?? []).length;
-  if (total) fm.push(`medien: "${(downloads ?? []).filter((d) => d.ok).length}/${total} lokal"`);
   fm.push('---', '');
 
   const lines = [...fm];
   lines.push(`# ${title}`, '');
-  lines.push(
-    `> Automatisch per \`npm run ingest:tiktok\` erfasst. Quelle: [tiktok.com/@${username}/video/${video.id}](${url})`,
-    '',
-  );
 
   if (cover) {
     lines.push(`![Cover](${MEDIA_DIR}/${slug}/${cover.file})`, '');
@@ -265,18 +310,13 @@ export function formatTiktokNote({
     lines.push('> ⚠️ Cover nicht lokal gespeichert.', '', `![Cover](${oembed.thumbnail_url})`, '');
   }
 
-  if (caption.text || caption.tags.length) {
+  if (caption.text && caption.text.trim() !== title.trim()) {
     lines.push('## Caption', '');
-    if (caption.text) lines.push(caption.text, '');
-    if (caption.tags.length) lines.push(caption.tags.map((t) => `#${t}`).join(' '), '');
+    lines.push(caption.text, '');
   }
 
   if (paragraphs.length) {
     lines.push('## Transkript', '');
-    lines.push(
-      '> ⚠️ Automatische Spracherkennung von TikTok. Eigennamen und Zahlwörter sind regelmäßig falsch erkannt — vor der Übernahme als Zitat gegen das Video prüfen.',
-      '',
-    );
     if (langMismatch) {
       lines.push(
         `> ⚠️ **Rückübersetzung, nicht der Originalton.** TikTok hat statt der Originalspur eine maschinell nach *${transcriptLang}* übersetzte Fassung geliefert (Caption ist *${captionLang}*). Für Zitate die Caption nutzen oder mit \`--refetch\` einen neuen Abruf versuchen.`,
@@ -284,12 +324,6 @@ export function formatTiktokNote({
       );
     }
     for (const p of paragraphs) lines.push(p, '');
-  } else {
-    lines.push('## Transkript', '');
-    lines.push(
-      '> ⚠️ TikTok stellt für dieses Video kein Transkript bereit. Der Actor liefert Transkripte nur, wenn TikTok selbst Untertitel erzeugt hat.',
-      '',
-    );
   }
 
   return lines.join('\n');
