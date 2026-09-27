@@ -11,3 +11,4 @@ Kleine lokale Hilfsscripts für Phase 1.
 - `external_skill_review.py`: prüft externe Skill-Quellen ohne Aktivierung.
 - `external_skill_intake.py`: legt neue externe Quellen als Registry- und Review-Entwurf an.
 - `company_os_healthcheck.py`: führt die zentralen Repo-Checks gesammelt aus.
+- `sync_ai_coding_dictionary.py`: spiegelt das AI Coding Dictionary aus `external_repos/mattpocock/dictionary-of-ai-coding/` mit Sektionsordnern nach `00_Inbox/Quellen/URL/aihero-ai-coding-dictionary/`.

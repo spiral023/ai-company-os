@@ -100,6 +100,20 @@ Nicht jedes Video hat ein Transkript: TikTok erzeugt nicht überall Untertitel. 
 
 **Übersetzte Untertitelspuren:** TikTok liefert zu manchen Videos statt des Originaltons eine maschinell ins Englische übersetzte Fassung — ein deutsches Video kommt dann als englischer Text zurück, mit deutscher Satzstellung („Anthropic hat die Claude Academy veröffentlicht" wird zu „1 Tropic has the cloud Academy published"). Der Actor kennt keinen Sprachparameter. Das Script misst deshalb die Sprache von Transkript und Caption und trägt `sprache:` ins Frontmatter; weichen beide ab, kommen `sprache_abweichung: true`, ein Warnblock in der Notiz und eine Warnung im Terminal dazu. Ein `--refetch` liefert manchmal die Originalspur (bei einem Video half es, bei einem anderen blieb es über drei Versuche englisch) — hilft es nicht, ist die Caption die verlässlichere Quelle.
 
+### Mehrteilige Sammlungen: AI Coding Dictionary
+
+Das [AI Coding Dictionary](https://www.aihero.dev/ai-coding-dictionary) von Matt Pocock liegt als eigener Ordner unter `URL/aihero-ai-coding-dictionary/`: `00-index.md` mit allen Begriffen und Kurzdefinitionen, darunter ein Unterordner pro Sektion (`01-the-model/`, `03-tools-environment/` …), wie auf der Website. Quelle ist nicht die Website, sondern der Klon `external_repos/mattpocock/dictionary-of-ai-coding/`. Dort liegen die Einträge als Original-Markdown vor, dazu die Sektionsreihenfolge in `internal/Curriculum.md`.
+
+```powershell
+git -C external_repos/mattpocock/dictionary-of-ai-coding pull --ff-only
+python 70_Scripts/sync_ai_coding_dictionary.py [--dry-run]
+```
+
+- Nur `00-index.md` trägt `status`. Die Sammlung wird als *eine* Quelle verarbeitet, nicht als 71.
+- Die Querverweise zwischen Begriffen schreibt das Script auf relative Pfade zwischen den Sektionsordnern um. Wiki-Links werden bewusst nicht verwendet, weil Dateinamen wie `Agent.md` oder `Skill.md` im Vault kollidieren könnten.
+- Begriffsdateien sind reine Spiegel: Ändert sich ein Eintrag im Repo, schreibt der nächste Lauf ihn neu. Im Index bleiben `status`, `source_notiz`, `notiz` und `erfasst` erhalten. Entfernte Begriffe meldet das Script nur, es löscht sie nicht.
+- **Nur lokal, nicht versioniert:** Das Dictionary-Repo hat keine Lizenzdatei (alle Rechte vorbehalten), dieses Repo ist öffentlich. Der Ordner steht deshalb in `.gitignore`. In Obsidian bleibt er sichtbar. Auf einem neuen Rechner erst das Repo klonen, dann das Script ausführen. Inhalte nicht wörtlich in eigene, versionierte Artefakte übernehmen.
+
 ## Regeln
 
 - Notizen hier werden inhaltlich nicht redigiert — sie sind das Rohmaterial. Kürzungen und Interpretation gehören in `80_Knowledge/`.

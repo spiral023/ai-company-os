@@ -44,6 +44,9 @@ external_repos/*
 !external_repos/changelog/
 !external_repos/changelog/*
 
+# Lokale Vault-Kopien fremder Inhalte ohne Lizenz (Repo ist öffentlich) - erzeugt per Script
+00_Inbox/Quellen/URL/aihero-ai-coding-dictionary/
+
 # Quell-Binärdateien (PDFs, Office-Dokumente, Medien, Archive)
 # Bleiben lokal, z. B. in 00_Inbox/. Versioniert wird die Markdown-Auswertung
 # einer Quelle, nicht das Original. Einzelfall bewusst aufnehmen: git add -f <datei>
