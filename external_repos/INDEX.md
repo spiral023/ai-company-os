@@ -249,10 +249,10 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 <!-- OVERVIEW:START (automatisch generiert von 70_Scripts/update_external_repos.py — nicht von Hand bearbeiten) -->
 ## Übersicht
 
-- **Repos gesamt:** 60
-- **Gesamtgröße:** ca. 1.865 MB
-- **Dateien gesamt:** ca. 101.005 (ohne `.git`)
-- **Stand:** 2026-09-17
+- **Repos gesamt:** 61
+- **Gesamtgröße:** ca. 1.866 MB
+- **Dateien gesamt:** ca. 101.171 (ohne `.git`)
+- **Stand:** 2026-09-27
 
 | Repo | Dateien | Größe | ⭐ |
 |---|---:|---:|---:|
@@ -307,6 +307,7 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 | vercel-labs/skills | 124 | 1,1M | – |
 | addyosmani/agent-skills | 197 | 895K | – |
 | karpathy/autoresearch | 10 | 747K | – |
+| docker/skills | 166 | 728K | – |
 | mattpocock/skills | 169 | 667K | – |
 | ayghri/i-have-adhd | 69 | 524K | – |
 | mattpocock/dictionary-of-ai-coding | 88 | 321K | – |
@@ -520,6 +521,19 @@ OmniRoute ist ein selbstgehosteter AI-Gateway/Proxy-Server (Next.js 16, TypeScri
 - **Struktur:** Skill-/Plugin-Paket mit `skills/` (6 SKILL.md-Definitionen), `commands/` (Slash-Commands als .toml), `hooks/` (Lifecycle-Hooks u.a. für Claude Code/Codex) sowie zusätzlichen Adapterordnern (`.cursor/`, `.windsurf/`, `.clinerules/`, `.kiro/`, `.opencode/`, `.qoder/` etc.) für rund 20 Agent-Hosts; kein klassischer Anwendungscode, sondern ein Multi-Host-Plugin-System. <!-- manual -->
 
 Ponytail ist ein Regel- und Skill-Paket, das KI-Coding-Agenten (Claude Code, Codex, Gemini CLI, Copilot CLI, Cursor, Windsurf, OpenCode u.a.) zu minimalistischem Code zwingt: Vor jeder Implementierung durchläuft der Agent eine Prioritätenleiter (YAGNI-Prüfung, Wiederverwendung vorhandenen Codes, Standardbibliothek, native Plattformfeatures, installierte Abhängigkeiten, Einzeiler, erst dann Custom-Code), um Overengineering, unnötige Abstraktionen und Bloat zu vermeiden. Technisch besteht das Projekt aus portablen Regeltexten (AGENTS.md, host-spezifische Rule-Files) plus sechs Skills (ponytail, -review, -audit, -debt, -gain, -help) und Lifecycle-Hooks, die den Modus (lite/full/ultra/off) je Host aktivieren und injizieren; es gibt native Adapter für rund 20 Agent-Umgebungen – neu inklusive Grok Build mit nativer Skills-Anbindung – sowie einen eigenen MCP-Server (ponytail-mcp) und eine Pi-Extension. Seit v4.10.0 bekommt auch Cursor echte Lifecycle-Hooks (`hooks.json`, `sessionStart`-Injektion, `/ponytail`-Moduswechsel als Plain-Message) statt nur der bisherigen statischen Regeldatei – die beiden Wege sind Alternativen, die Hooks übernehmen automatisch, sobald keine Rule-Datei mehr im Workspace liegt. Relevant für Skill- und Prompt-Engineering in Multi-Agent-Setups, insbesondere als Vorbild für portable Regelverteilung über heterogene Agent-Hosts hinweg und als Gegenmodell zu "mehr Code ist besser". Stärken: sehr gut dokumentierte Portabilität, eigene Benchmarks (Claude-Code-Sessions) zur Wirksamkeit, klare Eskalationsleiter statt vager Prinzipien. Risiken: Benchmark-Zahlen stammen vom Autor selbst und wurden bereits einmal öffentlich korrigiert (Community-Kritik zu Baseline-Fairness); Wirkung stark modellabhängig (bei manchen Reasoning-Modellen kontraproduktiv); Setup je Host weiterhin uneinheitlich (teils Plugin mit Hooks, teils nur statische Regeldatei ohne Commands); erfordert Node.js für Hooks in Claude Code/Codex/Cursor. MIT-lizenziert.
+
+---
+
+## docker/skills
+
+- **URL:** https://github.com/docker/skills
+- **Stars:** ⭐ 323
+- **Heruntergeladen:** 2026-09-27
+- **Zuletzt aktualisiert:** 2026-09-27
+- **Dateien:** 166 · **Größe:** 728K
+- **Struktur:** 11× SKILL.md · Ordner: skills, agents, references · Spiegelordner: .agents (generiert)
+
+Docker-eigenes Repository mit Agent Skills für KI-Coding-Agenten rund um Docker-Produkte: Dockerfile/Build (`docker-project-foundations`, `docker-build-strategies`), Compose (`docker-compose-patterns`), Docker Sandboxes/`sbx`-CLI (Lifecycle, Netzwerk/Credentials, deklarative `sbxenv.yaml`-Umgebungen, Kits — letztere beide als experimentell markiert) und Docker Agent/`cagent` (Config, lokaler Run, Deploy/Distribution), plus ein Cross-Product-Skill für destruktive-Operationen-Guardrails. Alle Skills folgen der offenen Agent-Skills-Spezifikation (agentskills.io) und bestehen den upstream `skills-ref`-Validator; `catalog.yaml` ist die Single Source of Truth, aus der README-Tabelle, `skills.sh.json` und Plugin-Manifeste per `task catalog` generiert werden. Installierbar über die `skills`-CLI (skills.sh, herstellerübergreifend für Claude Code, Codex, Cursor, Copilot CLI, Gemini CLI, OpenCode, Windsurf, Cline, Kiro u.a.), native Plugin-Marketplaces (Claude Code, Codex, Copilot CLI), die Gemini-CLI-Extension, `sbx skills add` oder klassisches Git-Clone mit Discovery-Symlinks (`.claude/skills`, `.agents/skills` usw.), sofern das geklonte Repo selbst Projekt-Root ist. Relevant als Referenz für sauberes Skill-Katalog-Management (Versionierung pro Skill, generierte statt handgepflegte Tabellen, CI-Validierung via Taskfile) und für Docker-Sandboxes/-Agent-spezifisches Vorgehen, weniger als inhaltlich übertragbares Wissen für andere Domänen. Apache-2.0-lizenziert, aktiver Maintainer (Docker Inc.), OpenSSF-Scorecard-Badge vorhanden.
 
 ---
 

@@ -51,6 +51,15 @@ function findAuthor(includes, authorId) {
   return users.find((u) => u.id === authorId) ?? users[0] ?? null;
 }
 
+// Liest .media/.users (ggf. Getter einer Paginator-Instanz der API-Bibliothek)
+// in echte, JSON-stabile Arrays ein. Siehe Kommentar an der Aufrufstelle.
+function plainIncludes(includes) {
+  return {
+    media: Array.isArray(includes?.media) ? [...includes.media] : [],
+    users: Array.isArray(includes?.users) ? [...includes.users] : [],
+  };
+}
+
 function formatApiError(err) {
   const code = err?.code ?? err?.data?.status;
   if (code === 401) return '✖ 401 Unauthorized — Bearer Token ungültig oder abgelaufen.';
@@ -210,7 +219,11 @@ async function main() {
       tweet,
       // Die includes der Kette decken auch die Bilder des Ankers ab, an dem
       // die Notiz später hängt — der muss nicht der abgerufene Post sein.
-      includes: threadIncludes ?? res.includes ?? {},
+      // Plain object statt der Paginator-Instanz aus der Bibliothek: deren
+      // .users/.media sind Getter, die live funktionieren, aber JSON.stringify
+      // serialisiert nur rohe eigene Properties, nicht die Getter — beim
+      // Cache-Read wären Autor und Medien sonst nicht mehr auflösbar.
+      includes: plainIncludes(threadIncludes ?? res.includes ?? {}),
       thread,
       threadMethod,
     };

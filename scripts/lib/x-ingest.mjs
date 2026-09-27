@@ -60,12 +60,24 @@ export function extractLinks(tweet) {
   return links;
 }
 
+// video/animated_gif liefern keine `url`, sondern `variants` (mehrere MP4-
+// Bitraten plus ggf. HLS-Playlists). X serviert "GIFs" ohnehin nur als
+// tonlose MP4-Loops, nie als echtes .gif. Ohne Treffer bleibt der Cover-Jpg
+// aus preview_image_url der Fallback.
+function bestMediaUrl(m) {
+  if (m.url) return m.url;
+  const variants = Array.isArray(m.variants) ? m.variants : [];
+  const mp4Varianten = variants.filter((v) => v.content_type === 'video/mp4');
+  const beste = mp4Varianten.sort((a, b) => (b.bit_rate ?? 0) - (a.bit_rate ?? 0))[0];
+  return beste?.url ?? m.preview_image_url ?? '';
+}
+
 export function extractMedia(mediaList) {
   if (!Array.isArray(mediaList)) return [];
   return mediaList.map((m) => ({
     type: m.type ?? 'unknown',
     alt: m.alt_text ?? '',
-    url: m.url ?? m.preview_image_url ?? '',
+    url: bestMediaUrl(m),
   }));
 }
 
@@ -95,7 +107,7 @@ export function extractArticleMedia(tweet, mediaIncludes) {
       out.push({
         type: m.type ?? 'unknown',
         alt: m.alt_text ?? '',
-        url: m.url ?? m.preview_image_url ?? '',
+        url: bestMediaUrl(m),
         cover,
       });
     } else {
@@ -109,11 +121,16 @@ export function isThreadStart(tweet) {
   return Boolean(tweet?.id && tweet.id === tweet.conversation_id);
 }
 
+// Sortiert nach Tweet-ID, nicht nach created_at: X-IDs sind Snowflake-IDs mit
+// Millisekunden-Auflösung und streng monoton. created_at rundet dagegen auf
+// die Sekunde — bei automatisiert/schnell geposteten Strängen (mehrere Posts
+// in derselben Sekunde) sind dann alle Zeitstempel gleich und der Sort bricht
+// Gleichstand mit der (falschen) API-Reihenfolge statt der echten Post-Reihenfolge.
 export function orderThreadChronologically(tweets) {
   return [...tweets].sort((a, b) => {
-    const ta = a?.created_at ? Date.parse(a.created_at) : 0;
-    const tb = b?.created_at ? Date.parse(b.created_at) : 0;
-    return ta - tb;
+    const ida = a?.id ? BigInt(a.id) : 0n;
+    const idb = b?.id ? BigInt(b.id) : 0n;
+    return ida < idb ? -1 : ida > idb ? 1 : 0;
   });
 }
 

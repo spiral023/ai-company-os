@@ -20,7 +20,7 @@ export const EXPANSIONS = [
   'article.media_entities',
 ];
 export const USER_FIELDS = ['name', 'username', 'verified'];
-export const MEDIA_FIELDS = ['type', 'alt_text', 'url', 'preview_image_url'];
+export const MEDIA_FIELDS = ['type', 'alt_text', 'url', 'preview_image_url', 'variants'];
 
 function queryOptions() {
   return {
