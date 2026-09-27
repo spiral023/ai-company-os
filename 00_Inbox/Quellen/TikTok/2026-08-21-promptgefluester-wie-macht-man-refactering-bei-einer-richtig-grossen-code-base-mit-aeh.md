@@ -1,7 +1,6 @@
 ---
 url: https://www.tiktok.com/@promptgefluester/video/7676584233586003232
 autor: "@promptgefluester"
-autor_name: "promptgefluester"
 datum: 2026-08-21
 erfasst: 2026-08-29
 typ: video
@@ -10,25 +9,16 @@ status: neu
 titel: "wie macht man refactering bei einer richtig großen Code Base mit äh Cloud Code …"
 video_id: "7676584233586003232"
 hashtags: "refactoring, ki, codebase"
-transkript: "109 Cues · 7635 Zeichen"
+transkript: automatisch
 laenge: "04:10"
 sprache: de
-medien: "1/1 lokal"
 ---
 
 # wie macht man refactering bei einer richtig großen Code Base mit äh Cloud Code …
 
-> Automatisch per `npm run ingest:tiktok` erfasst. Quelle: [tiktok.com/@promptgefluester/video/7676584233586003232](https://www.tiktok.com/@promptgefluester/video/7676584233586003232)
-
-![Cover](medien/2026-08-21-promptgefluester-7676584233586003232/01-cover.jpg)
-
-## Caption
-
-#refactoring #ki #codebase
+![Cover](medien/2026-08-21-promptgefluester-wie-macht-man-refactering-bei-einer-richtig-grossen-code-base-mit-aeh/01-cover.jpg)
 
 ## Transkript
-
-> ⚠️ Automatische Spracherkennung von TikTok. Eigennamen und Zahlwörter sind regelmäßig falsch erkannt — vor der Übernahme als Zitat gegen das Video prüfen.
 
 wie macht man refactering bei einer richtig großen Code Base mit äh Cloud Code das wurde ich in der Community gefragt hier Link in der Bio kostenlose Anmeldung wer Lust hat
 

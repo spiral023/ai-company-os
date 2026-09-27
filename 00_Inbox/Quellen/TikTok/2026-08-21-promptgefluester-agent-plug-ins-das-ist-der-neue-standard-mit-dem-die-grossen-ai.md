@@ -1,7 +1,6 @@
 ---
 url: https://www.tiktok.com/@promptgefluester/video/7676607306452176160
 autor: "@promptgefluester"
-autor_name: "promptgefluester"
 datum: 2026-08-21
 erfasst: 2026-08-29
 typ: video
@@ -10,25 +9,16 @@ status: neu
 titel: "Agent Plug ins das ist der neue Standard mit dem die großen AI companies jetzt …"
 video_id: "7676607306452176160"
 hashtags: "agentplugins, mcp, skill, standard"
-transkript: "34 Cues · 2339 Zeichen"
+transkript: automatisch
 laenge: "01:17"
 sprache: de
-medien: "1/1 lokal"
 ---
 
 # Agent Plug ins das ist der neue Standard mit dem die großen AI companies jetzt …
 
-> Automatisch per `npm run ingest:tiktok` erfasst. Quelle: [tiktok.com/@promptgefluester/video/7676607306452176160](https://www.tiktok.com/@promptgefluester/video/7676607306452176160)
-
-![Cover](medien/2026-08-21-promptgefluester-7676607306452176160/01-cover.jpg)
-
-## Caption
-
-#agentplugins #mcp #skill #standard
+![Cover](medien/2026-08-21-promptgefluester-agent-plug-ins-das-ist-der-neue-standard-mit-dem-die-grossen-ai/01-cover.jpg)
 
 ## Transkript
-
-> ⚠️ Automatische Spracherkennung von TikTok. Eigennamen und Zahlwörter sind regelmäßig falsch erkannt — vor der Übernahme als Zitat gegen das Video prüfen.
 
 Agent Plug ins das ist der neue Standard mit dem die großen
 

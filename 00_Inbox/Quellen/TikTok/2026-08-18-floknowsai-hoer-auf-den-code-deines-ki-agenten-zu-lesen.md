@@ -10,28 +10,21 @@ status: neu
 titel: "Hör auf, den Code deines KI-Agenten zu lesen."
 video_id: "7675431688024984865"
 hashtags: "ki, vibecoding, softwareengineering, claudecode, testing"
-transkript: "52 Cues · 3413 Zeichen"
+transkript: automatisch
 laenge: "01:18"
 sprache: en
 sprache_abweichung: true
-medien: "1/1 lokal"
 ---
 
 # Hör auf, den Code deines KI-Agenten zu lesen.
 
-> Automatisch per `npm run ingest:tiktok` erfasst. Quelle: [tiktok.com/@floknowsai/video/7675431688024984865](https://www.tiktok.com/@floknowsai/video/7675431688024984865)
-
-![Cover](medien/2026-08-18-floknowsai-7675431688024984865/01-cover.jpg)
+![Cover](medien/2026-08-18-floknowsai-hoer-auf-den-code-deines-ki-agenten-zu-lesen/01-cover.jpg)
 
 ## Caption
 
 Hör auf, den Code deines KI-Agenten zu lesen. Das sagt der Autor von Clean Code. Nicht weil er den Code für fehlerfrei hält, sondern weil er seinem Testing vertraut. Beim Mutation Testing schreibt ein Programm absichtlich Fehler in deinen Code und schaut, ob deine Tests anspringen. Die Tests, die dein Agent selbst geschrieben hat, finden über die Hälfte davon nicht. Der Grund ist einfach: derselbe Agent schreibt den Code und die Tests dazu. Ein grüner Test beweist also nicht, dass deine Software funktioniert. Er beweist nur, dass niemand widersprochen hat.
 
-#ki #vibecoding #softwareengineering #claudecode #testing
-
 ## Transkript
-
-> ⚠️ Automatische Spracherkennung von TikTok. Eigennamen und Zahlwörter sind regelmäßig falsch erkannt — vor der Übernahme als Zitat gegen das Video prüfen.
 
 > ⚠️ **Rückübersetzung, nicht der Originalton.** TikTok hat statt der Originalspur eine maschinell nach *en* übersetzte Fassung geliefert (Caption ist *de*). Für Zitate die Caption nutzen oder mit `--refetch` einen neuen Abruf versuchen.
 

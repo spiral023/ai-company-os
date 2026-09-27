@@ -1,7 +1,6 @@
 ---
 url: https://www.tiktok.com/@promptgefluester/video/7664997418081062177
 autor: "@promptgefluester"
-autor_name: "promptgefluester"
 datum: 2026-07-21
 erfasst: 2026-08-29
 typ: video
@@ -10,25 +9,16 @@ status: neu
 titel: "prompt Engineering ist tot und keiner hat's gemerkt was meine ich damit die …"
 video_id: "7664997418081062177"
 hashtags: "prompt, coding, ki, skills"
-transkript: "72 Cues · 4982 Zeichen"
+transkript: automatisch
 laenge: "02:30"
 sprache: de
-medien: "1/1 lokal"
 ---
 
 # prompt Engineering ist tot und keiner hat's gemerkt was meine ich damit die …
 
-> Automatisch per `npm run ingest:tiktok` erfasst. Quelle: [tiktok.com/@promptgefluester/video/7664997418081062177](https://www.tiktok.com/@promptgefluester/video/7664997418081062177)
-
-![Cover](medien/2026-07-21-promptgefluester-7664997418081062177/01-cover.jpg)
-
-## Caption
-
-#prompt #coding #ki #skills
+![Cover](medien/2026-07-21-promptgefluester-prompt-engineering-ist-tot-und-keiner-hats-gemerkt-was-meine-ich-damit/01-cover.jpg)
 
 ## Transkript
-
-> ⚠️ Automatische Spracherkennung von TikTok. Eigennamen und Zahlwörter sind regelmäßig falsch erkannt — vor der Übernahme als Zitat gegen das Video prüfen.
 
 prompt Engineering ist tot und keiner hat's gemerkt was meine ich damit
 
