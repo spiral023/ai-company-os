@@ -91,3 +91,16 @@ secrets/
 *.key
 *.pem
 external_knowledge/
+
+# Arbeitsordner der Quellen-Pipeline
+tmp/quellen-lauf/
+
+# Blog-Build
+blog/_site/
+blog/_preview/
+
+# NotebookLM-Audio (groß, wird erzeugt)
+reports/notebooklm/*.m4a
+
+# Browser-Logs der Playwright-Tests
+.playwright-mcp/

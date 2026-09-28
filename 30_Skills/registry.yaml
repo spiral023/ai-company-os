@@ -177,8 +177,8 @@ skills:
   - all
   default_for_project_types: []
   description: "Arbeitet offene Quellen aus 00_Inbox/Quellen/ (status: neu) als Sammel-Lauf
-    ins Knowledge-System ein — deutsche Zusammenfassung mit Bildern, Quervergleich mit
-    dem Bestand, abgeleitete Arbeitsweisen als Patterns."
+    ins Knowledge-System ein — Triage, drei Tiefen (VOLL, KURZ, FAKT), Übernahme per
+    Script in Inbox-Status, Patterns und Fakten-Register."
 - id: knowledge-review
   type: local
   path: 30_Skills/local/knowledge-review/SKILL.md
@@ -190,6 +190,18 @@ skills:
   default_for_project_types: []
   description: Pflege-Lauf für das Knowledge-System — Duplikate, veraltete Patterns,
     Spannungen, Konfidenzen und Index-Konsistenz.
+- id: blog-schreiben
+  type: local
+  path: 30_Skills/local/blog-schreiben/SKILL.md
+  status: active
+  trust: owned
+  copy_to_project: false
+  project_types:
+  - all
+  default_for_project_types: []
+  description: Schreibt Blog-Entwürfe für blog.sp23.online aus der Wissensbasis — Kurzmeldungen,
+    Modell-Radar, Arbeitsweisen, Duelle, Behauptungs-Checks und Wochen-Digest. Nur Entwürfe,
+    Freigabe bleibt bei Philipp.
 project_types:
 - id: saas-webapp
   name: SaaS Webapp
