@@ -7,7 +7,8 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Triage: Gemini 3.0-fokussiert, nicht auf Claude-Ökosystem."
 beschreibung: "Ein leistungsstarker Meta-Prompt, der Gemini 3.0 in einen Elite Web Designer verwandelt, der komplette Websites von der Vision bis zum Code erstellt."
 vibedeck_category: patterns
 vibedeck_level: advanced

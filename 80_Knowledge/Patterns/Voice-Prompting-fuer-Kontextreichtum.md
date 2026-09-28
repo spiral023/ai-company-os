@@ -30,10 +30,12 @@ Statt einen Prompt zu tippen, wird er gesprochen (z. B. per Diktierfunktion, auf
 ## Belege
 
 - 2026-02-27 · [[2026-02-27-meer-claude-code-best-practices]] · meinung — Tweet-Sekundärquelle berichtet, Boris Chernys Team nutze Voice Dictation für fast alle komplexen Prompts, mit deutlich besseren Ergebnissen durch beiläufig mitgelieferten Kontext.
+- 2026-01-14 · [[2026-01-14-ashpreetbedi-claude-code-spec-first]] · meinung — Unabhängige Zweitbestätigung: Der Autor transkribiert eine Idee bewusst „schlecht“ und unstrukturiert per Whisper Flow, bevor Claude daraus ein Design-Dokument schreibt — diktiert lieber, als zu tippen, auch für die anschließende Detailarbeit.
+- 2026-01-31 · [[2026-01-31-bcherny-claude-code-team-tips]] · meinung — Boris Cherny selbst (laut dieser Sekundärquelle) beschreibt Voice Dictation als Team-Praxis für komplexe Prompts, mit der zusätzlichen Begründung: Sprechen ist rund dreimal schneller als Tippen, was zu detaillierteren, nuancierteren Prompts führt. Dieselbe Kernbehauptung wie in [[2026-02-27-meer-claude-code-best-practices]] bereits belegt (beide Sekundärquellen gehen wahrscheinlich auf denselben Cherny-Ursprung zurück) — keine Konfidenzerhöhung, aber die Geschwindigkeits-Begründung ist hier neu.
 
 ## Spannungen & offene Fragen
 
-- Einzige bisherige Quelle ist ein einzelner Erfahrungsbericht, zudem nur sekundär über eine Tweet-Paraphrase eines Zitats belegt — keine unabhängige Zweitquelle, keine Messung.
+- Zwei unabhängige Erfahrungsberichte stützen die Kernaussage jetzt über bloße Einzelmeinung hinaus; die Boris-Cherny-Zuschreibung bleibt trotzdem nur sekundär über eine Tweet-Paraphrase belegt — keine Messung in beiden Fällen.
 - Offene Frage: Wie verhält sich der Kontextgewinn gegenüber dem Risiko von Transkriptionsfehlern bei technischen Begriffen — gibt es eine Aufgabenklasse, für die Voice Prompting sich systematisch nicht lohnt?
 
 ## Verwandte Patterns

@@ -5,7 +5,9 @@ datum: 2026-07-26
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-26-promptgefluester-ich-hab-ne-unbequeme-wahrheit-und-zwar-ich-wurde-gefragt-wieso.md
 titel: "ich hab ne unbequeme Wahrheit und zwar ich wurde gefragt wieso eigentlich die …"
 video_id: "7666715032855661857"
 hashtags: "vibecoding, kisysteme, agenticcoding"

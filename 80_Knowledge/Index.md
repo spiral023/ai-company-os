@@ -33,13 +33,30 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Voice-Prompting-fuer-Kontextreichtum]] — gesprochene statt getippte Prompts liefern beiläufig mehr Kontext, Details und Constraints.
 - [[CI-Agent-mit-Review-Gate]] — Coding Agent läuft sandboxed und event-getriggert in CI, Output läuft ausschließlich über das bestehende Team-Review-Gate (MR/PR).
 - [[Sandbox-Komposition-aus-OS-Primitiven]] — kein einzelnes natives OS-Feature deckt den offenen Zugriffsbedarf eines Coding Agents; die Sandbox-Grenze entsteht aus mehreren komponierten Primitiven.
+- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] — Instruktions-Spezifität (Prosa/Pseudocode/Skript) an die Fehleranfälligkeit der gesteuerten Operation koppeln, das Warum statt nur das Was erklären.
+- [[Blockierende-Task-Abhaengigkeiten]] — Tasks blockieren Tasks über `addBlockedBy`/`addBlocks`; abhängige Tasks werden erst nach erfüllten Voraussetzungen automatisch freigegeben.
+- [[Hook-erzwungene-Skill-Aktivierung]] — UserPromptSubmit-Hook prüft Prompt technisch auf Trigger-Keywords, statt sich allein auf die Description-Heuristik zu verlassen.
+- [[MCP-Code-Execution-statt-Tool-Definitionen]] — Sandbox + vom Modell geschriebener Aufruf-Code statt viele dauerhaft geladene MCP-Tool-Schemas.
+- [[Trainingsdaten-Dichte-als-Stack-Kriterium]] — populäre, etwas ältere Stacks statt Bleeding-Edge wählen, weil Modelle auf trainingsdaten-dichtem Code zuverlässiger sind.
+- [[Spec-Ordner-pro-Feature]] — fünf feste Dateien (design/implementation/decisions/prompts/future-work) als dauerhaftes, dateibasiertes Gedächtnis pro Feature.
+- [[Skill-aus-Demonstration-statt-Beschreibung]] — Skill aus gezeigtem Beispiel (Screenshot, aufgezeichneter Ablauf) statt aus verbaler Spezifikation ableiten.
+- [[Skill-Schwellenwert-institutionelles-Wissen]] — Faustregel „>1x/Tag → Skill“; git-eingecheckte Skills werden zu geteiltem Team-Wissen statt persönlichem Werkzeug.
+- [[Claude-als-Lernwerkzeug]] — Explanatory-Modus, Diagramme und Spaced-Repetition-Skill nutzen, um unbekannten Code zu verstehen statt nur zu produzieren.
 - [[Agent-generierte-Schulung-mit-Curriculum-Gate]] — Briefing und Curriculum prüfen, bevor ein Agent Medien erzeugt und eine interaktive Single-File-HTML-Schulung montiert.
+- [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] — deterministisches Skript, Prompt-Hook oder Agent-Hook je nach Prüfbarkeit der Hook-Bedingung wählen.
+- [[Screenshot-als-Spezifikationsmedium]] — Bild statt Prosa als Kontext für UI-Analyse, Fehlerdiagnose und Design-zu-Code-Generierung.
+- [[Metrikband-gestufte-Agent-Autonomie]] — Rechte des Agents wachsen mit der Schwere einer Metrik-Abweichung (1σ loggen, 2σ read-only, 3σ PR); Erkennung deterministisch ohne Modell.
 
 ## Guides
 
 - [[Matt-Pocock-Skills-Praxisguide]] — Praxisanleitung für Skill-Auswahl, Wayfinder und den Coding-Lifecycle von Exploration bis Code Review.
 - [[AI-Coding-Agents-Social-Media-Uebersicht]] — kuratierte Liste von X/Twitter-Accounts, YouTube- und TikTok-Kanälen zu AI Coding Agents (Anthropic, OpenAI, Vordenker, DACH-Creators).
+- [[Corporate-Baseline-AI-Coding-Agents]] — Besprechungsgrundlage für unternehmensweite Workspace-, Repo- und Rule-Vorgaben zu Claude Code und OpenAI Codex, inkl. Baseline-Vorschlägen in drei Stufen.
 
 ## Vergleiche
 
 - [[Workflow-Frameworks]] — Gegenüberstellung von mattpocock/skills, Superpowers, GSD Core, gstack, addyosmani/agent-skills und Squad mit ersten Empfehlungen.
+
+## Fakten
+
+- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-09-29.

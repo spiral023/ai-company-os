@@ -6,7 +6,8 @@ datum: 2025-09-26
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Nur Hinweis auf verkettbare Slash Commands (gather-requirements, write-tests) ohne Methode oder Beleg."
 titel: "Stop using Claude Code the wrong way!"
 video_id: "7554320240696462614"
 hashtags: "ai, claude, vibecoding, softwaredevelopment, claudecode, techtok"

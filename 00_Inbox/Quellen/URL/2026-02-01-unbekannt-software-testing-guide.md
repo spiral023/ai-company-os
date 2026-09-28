@@ -6,7 +6,8 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Generischer Überblick über klassische Testebenen (Sekundärquelle, Primärquelle unbekannt) ohne Bezug zu Agent-Arbeitsweisen."
 beschreibung: "Ein praxisnaher Überblick über Testebenen, Ziele und typische Fallstricke."
 vibedeck_category: fundamentals
 vibedeck_level: intermediate

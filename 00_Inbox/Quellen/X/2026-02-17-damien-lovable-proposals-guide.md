@@ -7,7 +7,8 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Prompt-Sammlung für Angebotsseiten ohne übertragbare Methode über Lovable-Prompting hinaus; Sekundärquelle."
 medien: "1 lokal"
 beschreibung: "Erfahre, wie du interaktive Angebote und Slide Decks in Minuten mit Lovable erstellst. Inklusive Prompts für verschiedene Branchen."
 vibedeck_category: workflows

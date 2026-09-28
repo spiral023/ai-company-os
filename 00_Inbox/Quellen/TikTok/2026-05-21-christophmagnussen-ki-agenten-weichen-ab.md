@@ -6,7 +6,9 @@ datum: 2026-05-21
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-05-21-christophmagnussen-ki-agenten-weichen-ab.md
 titel: "KI-Agenten weichen ab?"
 video_id: "7642335774192569632"
 hashtags: "KI, KünstlicheIntelligenz, AgentDrift, Technologie, ZukunftDerKI, MachineLearning, Entwicklung"

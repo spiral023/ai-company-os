@@ -7,7 +7,8 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Triage: Google Gemini 3 Pro, nicht auf Claude-Ökosystem fokussiert."
 medien: "14 lokal"
 beschreibung: "Ein umfassender Developer-Guide für die Features von Nano Banana Pro: Thinking Process, Search Grounding, 4K Output und mehr."
 vibedeck_category: patterns

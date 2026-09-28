@@ -6,7 +6,9 @@ datum: 2026-09-13
 erfasst: 2026-09-17
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-09-13-stefanantonelli-du-brauchst-keinen-entwickler-um-mit-ki-etwas-zu-bauen.md
 titel: "Du brauchst keinen Entwickler, um mit KI etwas zu bauen."
 video_id: "7685007734546107670"
 hashtags: "ki, künstlicheintelligenz, mittelstand, unternehmen, business, claude, anthropic"

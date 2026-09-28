@@ -6,7 +6,9 @@ datum: 2026-07-30
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-30-floknowsai-ki-gibt-dir-das-gefuehl-dass-du-so-schnell-wie-noch-nie-arbeitest.md
 titel: "KI gibt dir das Gefühl, dass du so schnell wie noch nie arbeitest."
 video_id: "7668380261251419424"
 transkript: automatisch

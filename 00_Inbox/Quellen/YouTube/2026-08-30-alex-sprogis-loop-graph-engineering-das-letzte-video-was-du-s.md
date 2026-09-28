@@ -6,7 +6,9 @@ datum: 2026-08-30
 erfasst: 2026-08-31
 typ: youtube
 quelle: youtube
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-30-alex-sprogis-loop-graph-engineering-das-letzte-video-was-du-s.md
 video_id: "bKt-GZicIlM"
 transkript_sprache: "de"
 transkript_generiert: "ja"

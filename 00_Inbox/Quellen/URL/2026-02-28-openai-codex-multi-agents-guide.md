@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-28-openai-codex-multi-agents-guide.md
 beschreibung: "Nutze experimentelle Multi-Agenten-Kollaboration in der Codex CLI für komplexe, parallele Aufgaben und Codebase-Exploration."
 vibedeck_category: workflows
 vibedeck_tags:

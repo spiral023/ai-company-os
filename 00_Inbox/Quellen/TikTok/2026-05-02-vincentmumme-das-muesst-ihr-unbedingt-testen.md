@@ -5,7 +5,9 @@ datum: 2026-05-02
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-05-02-vincentmumme-das-muesst-ihr-unbedingt-testen.md
 titel: "Das müsst ihr unbedingt testen!"
 video_id: "7635303149112266016"
 hashtags: "ki, ai, education, premortem, fail"

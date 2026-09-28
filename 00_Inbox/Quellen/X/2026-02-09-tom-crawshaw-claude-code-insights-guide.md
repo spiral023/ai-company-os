@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-09-tom-crawshaw-claude-code-insights-guide.md
 medien: "1 lokal"
 beschreibung: "Erfahre, wie der Befehl /insights tausende deiner Nachrichten analysiert, blinde Flecken in deinem Workflow aufdeckt und maßgeschneiderte autonome Agenten für dich entwirft."
 vibedeck_category: workflows

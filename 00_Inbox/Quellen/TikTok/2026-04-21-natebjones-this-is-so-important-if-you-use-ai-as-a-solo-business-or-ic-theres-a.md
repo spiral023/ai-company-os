@@ -6,7 +6,9 @@ datum: 2026-04-21
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-04-21-natebjones-this-is-so-important-if-you-use-ai-as-a-solo-business-or-ic-theres-a.md
 titel: "This is so important if you use AI as a solo business or IC: There’s a missing …"
 video_id: "7631050279584009502"
 hashtags: "ai, learnontiktok, learn, chatgpt"

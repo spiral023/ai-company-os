@@ -5,7 +5,9 @@ datum: 2026-07-12
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-12-agenticjames-claude-codes-new-feature-checkup-makes-claude-more-token-efficient-and.md
 titel: "Claude codes new feature /checkup makes Claude more token efficient and smarter in each of your projects."
 video_id: "7661714775629499662"
 hashtags: "claudecode, claude, aiagents, vibecoding, anthropic"

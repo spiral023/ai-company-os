@@ -6,7 +6,9 @@ datum: 2026-01-15
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-01-15-avasdr34m-its-not-easy-but-it-is-simple-kontext-nutzung-in-claude-code-entscheidet.md
 titel: "It's not easy but it is simple 👾 Kontext-Nutzung in Claude Code entscheidet …"
 video_id: "7595680584995704086"
 transkript: automatisch

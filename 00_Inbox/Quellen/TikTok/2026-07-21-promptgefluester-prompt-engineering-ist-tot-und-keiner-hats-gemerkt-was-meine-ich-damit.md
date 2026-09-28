@@ -5,7 +5,9 @@ datum: 2026-07-21
 erfasst: 2026-08-29
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-21-promptgefluester-prompt-engineering-ist-tot-und-keiner-hats-gemerkt-was-meine-ich-damit.md
 titel: "prompt Engineering ist tot und keiner hat's gemerkt was meine ich damit die …"
 video_id: "7664997418081062177"
 hashtags: "prompt, coding, ki, skills"

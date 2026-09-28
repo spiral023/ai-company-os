@@ -5,7 +5,9 @@ datum: 2026-07-25
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the.md
 titel: "They cut Claude code system prompt by 80% and you should be doing the same …"
 video_id: "7666509323413064974"
 hashtags: "ClaudeCode, Claude, AIAgents, Vibecoding, ContextEngineering"

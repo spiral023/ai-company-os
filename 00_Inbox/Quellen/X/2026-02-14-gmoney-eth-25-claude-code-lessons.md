@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-14-gmoney-eth-25-claude-code-lessons.md
 medien: "1 lokal"
 beschreibung: "Ein Deep-Dive in fortgeschrittene Workflows: CLAUDE.md, Memory-Systeme, Subagents und die effiziente Nutzung des Context Windows."
 vibedeck_category: workflows

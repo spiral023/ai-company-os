@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-28-pdf-state-of-open-source-ai-v1-0-1.md
 beschreibung: "Mozillas erster Report zum Stand offener KI: Der Fähigkeitsabstand schrumpft auf einen Release-Zyklus, offene Modelle routen ein Drittel aller Tokens – und der Engpass verschiebt sich auf Orchestrierung, Memory und Permission."
 vibedeck_category: fundamentals
 vibedeck_level: advanced

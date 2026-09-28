@@ -6,7 +6,8 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Deutsche Aufarbeitung des HumanLayer-Artikels, der bereits als 2026-02-01-humanlayer-writing-a-good-claude-md und wiki-compiler-gute-agents-md-schreiben vorliegt."
 beschreibung: "Best Practices für CLAUDE.md, GEMINI.md und das Onboarding von AI-Agents."
 vibedeck_category: fundamentals
 vibedeck_level: advanced

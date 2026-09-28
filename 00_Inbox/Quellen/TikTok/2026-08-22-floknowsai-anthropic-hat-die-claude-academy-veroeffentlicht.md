@@ -6,7 +6,8 @@ datum: 2026-08-22
 erfasst: 2026-08-29
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Triage: News/Marketing-Ankündigung, keine neue Erkenntnis"
 titel: "Anthropic hat die Claude Academy veröffentlicht."
 video_id: "7676841192276888864"
 hashtags: "ki, claude, claudecode, education, academy"

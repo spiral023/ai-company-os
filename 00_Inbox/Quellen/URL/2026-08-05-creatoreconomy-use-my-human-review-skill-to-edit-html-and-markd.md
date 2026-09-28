@@ -6,7 +6,9 @@ datum: 2026-08-05
 erfasst: 2026-09-14
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-05-creatoreconomy-use-my-human-review-skill-to-edit-html-and-markd.md
 medien: "3/4 lokal"
 ---
 

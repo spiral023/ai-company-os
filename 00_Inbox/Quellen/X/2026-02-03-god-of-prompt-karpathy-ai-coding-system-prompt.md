@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-03-god-of-prompt-karpathy-ai-coding-system-prompt.md
 beschreibung: "Ein Senior Software Engineer System Prompt für Claude Code und andere Agenten, basierend auf Andrej Karpathys Erkenntnissen zum KI-gestützten Programmieren."
 vibedeck_category: workflows
 vibedeck_level: advanced

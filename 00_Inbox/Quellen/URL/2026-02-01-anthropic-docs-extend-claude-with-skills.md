@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-01-anthropic-docs-extend-claude-with-skills.md
 beschreibung: "Erstelle, verwalte und teile Skills, um Claudes Fähigkeiten in Claude Code zu erweitern. Inklusive benutzerdefinierter Slash-Commands."
 vibedeck_category: tooling
 vibedeck_tags:

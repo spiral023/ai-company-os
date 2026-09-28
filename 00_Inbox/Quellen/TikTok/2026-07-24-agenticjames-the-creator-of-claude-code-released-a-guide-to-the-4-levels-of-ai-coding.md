@@ -5,7 +5,9 @@ datum: 2026-07-24
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding.md
 titel: "The creator of Claude code released a guide to the 4 levels of AI coding adoption."
 video_id: "7666102633823882510"
 hashtags: "claude, claudecode, aiagents, anthropic, vibecoding"

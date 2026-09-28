@@ -36,6 +36,12 @@ Version 1.1 macht diese Trennung im Lifecycle sichtbar: `wayfinder`, `to-spec`, 
 - 2026-07-11 · external_repos/mattpocock/skills/README.md · verifiziert — Abschnitt „Reference“ gliedert alle Skills explizit in „User-invoked“ und „Model-invoked“ je Kategorie (Engineering/Productivity) und wiederholt die Aufrufregel wörtlich.
 - 2026-07-08 · [[2026-07-08-mattpocock-skills-v1-1]] · meinung — Release-Ankündigung dokumentiert den aktuellen Lifecycle, unterstützende Skills und die neuen Namen `to-spec` und `to-tickets`.
 - 2026-07-13 · external_repos/mattpocock/skills/README.md · verifiziert — Die aktuelle Reference-Liste klassifiziert Lifecycle-Orchestratoren als user-invoked und Research, Prototype, TDD, Domain Modeling, Codebase Design und Code Review als model-invoked.
+- 2026-01-21 · [[2026-01-21-tempoimmaterial-agent-skills-vs-rules-vs-commands]] · meinung — Unabhängige Bestätigung derselben Aufruf-Achse unter anderen Namen: Commands sind deterministisch und explizit ausgelöst (= user-invoked), Skills ein Vorschlag, den der Agent selbst zieht (= model-invoked).
+- 2026-01-22 · [[2026-01-22-hooeem-claude-code-7-schritte-plan]] · meinung — Wiederkehrende, komplexe Prompts werden als Markdown-Datei in `.claude/commands/` hinterlegt und per Slash-Command deterministisch statt neu formuliert ausgelöst — knappe Bestätigung der Commands-als-deterministischer-Trigger-Seite dieses Patterns.
+- 2026-02-11 · [[2026-02-11-rohit4verse-guide-building-agent-skills]] · meinung — Dreistufige Offenlegung (Frontmatter, Body, Ressourcen) als Ladehierarchie; Sekundärquelle, deckt sich mit Doku.
+- 2026-04-22 · [[2026-04-22-agenticjames-everything-you-need-to-know-about-context-engineering-in-1-minute]] · meinung — Progressive Disclosure als Baum aus Entscheidungen statt Vorabladen; Grenzen des Verweisfolgens nicht behandelt.
+- 2026-07-25 · [[2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the]] · meinung — Ausgelagerter Kontext gehört in Skills zur progressiven Offenlegung. Bekannte Aussage, hier nur wiederholt.
+- 2026-02-01 · [[2026-02-01-anthropic-docs-extend-claude-with-skills]] · meinung — Frontmatter `disable-model-invocation`, `user-invocable`, `context: fork` steuern Auslösung und Isolation; Sekundärquelle.
 
 ## Spannungen & offene Fragen
 

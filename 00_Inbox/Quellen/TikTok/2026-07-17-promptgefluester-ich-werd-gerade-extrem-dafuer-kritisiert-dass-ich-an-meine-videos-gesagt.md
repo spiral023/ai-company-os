@@ -5,7 +5,9 @@ datum: 2026-07-17
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt.md
 titel: "ich werd gerade extrem dafür kritisiert dass ich an meine Videos gesagt hab 1 …"
 video_id: "7663472940259888417"
 hashtags: "software, code, fehler, spec"

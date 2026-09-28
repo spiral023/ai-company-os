@@ -6,7 +6,8 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Sekundärquelle ohne Primärquelle; zehn Standardregeln (PRD, Mainstream-Stack, kleine Schritte, Git, Rules, TDD, frische Chats) sind vollständig im Bestand abgedeckt."
 beschreibung: "Strategien von Startups und FAANG-Unternehmen für KI-gestützte Entwicklung."
 vibedeck_category: fundamentals
 vibedeck_level: intermediate

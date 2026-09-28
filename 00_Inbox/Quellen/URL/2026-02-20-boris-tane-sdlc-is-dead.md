@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-20-boris-tane-sdlc-is-dead.md
 beschreibung: "KI-Agenten beschleunigen den SDLC nicht nur – sie bringen ihn zum Einsturz. Ein Blick auf die neue Ära der Softwareentwicklung."
 vibedeck_category: fundamentals
 vibedeck_tags:

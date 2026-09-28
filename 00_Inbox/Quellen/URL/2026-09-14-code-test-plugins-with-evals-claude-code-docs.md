@@ -7,7 +7,9 @@ datum_unsicher: true
 erfasst: 2026-09-14
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-09-14-code-test-plugins-with-evals-claude-code-docs.md
 medien: "1/1 lokal"
 ---
 

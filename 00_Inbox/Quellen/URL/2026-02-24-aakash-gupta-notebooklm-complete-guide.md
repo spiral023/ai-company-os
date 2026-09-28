@@ -7,7 +7,8 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Produkt-Guide zu NotebookLM (Research-zu-Slides), ohne Bezug zu Coding-Agent-Arbeitsweisen und ohne neue Methode gegenüber dem Bestand."
 medien: "1 lokal"
 beschreibung: "Aakash Gupta zeigt NotebookLM als Research-to-Product-Pipeline: source-grounded Antworten, Slide-Revisionen, Infographics und der Übergang zu Gemini-Prototyping."
 vibedeck_category: tooling

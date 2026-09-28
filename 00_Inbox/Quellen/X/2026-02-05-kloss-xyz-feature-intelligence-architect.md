@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-05-kloss-xyz-feature-intelligence-architect.md
 medien: "1 lokal"
 beschreibung: "Verwandle deinen AI Coding Agent in einen Produktstrategen mit der Vision von Steve Jobs und der Systemdenke von Tobi Lütke."
 vibedeck_category: patterns

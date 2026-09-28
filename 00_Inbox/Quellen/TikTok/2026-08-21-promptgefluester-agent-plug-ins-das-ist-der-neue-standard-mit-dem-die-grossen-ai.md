@@ -5,7 +5,9 @@ datum: 2026-08-21
 erfasst: 2026-08-29
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-21-promptgefluester-agent-plug-ins-das-ist-der-neue-standard-mit-dem-die-grossen-ai.md
 titel: "Agent Plug ins das ist der neue Standard mit dem die großen AI companies jetzt …"
 video_id: "7676607306452176160"
 hashtags: "agentplugins, mcp, skill, standard"

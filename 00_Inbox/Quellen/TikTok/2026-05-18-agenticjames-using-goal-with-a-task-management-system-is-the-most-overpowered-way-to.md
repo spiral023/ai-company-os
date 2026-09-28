@@ -5,7 +5,9 @@ datum: 2026-05-18
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-05-18-agenticjames-using-goal-with-a-task-management-system-is-the-most-overpowered-way-to.md
 titel: "Using/goal with a task management system is the most overpowered way to use …"
 video_id: "7641240809131609358"
 hashtags: "ClaudeCode, codex, ChatGPT, AIAgents, Vibecoding"

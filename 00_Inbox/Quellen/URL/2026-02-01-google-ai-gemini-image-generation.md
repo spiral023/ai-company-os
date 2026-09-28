@@ -7,7 +7,8 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Triage: Nicht relevant für Coding/KI-Arbeits-Patterns"
 beschreibung: "Master image generation and editing with Gemini 2.5 Flash and Gemini 3 Pro."
 vibedeck_category: fundamentals
 vibedeck_tags:

@@ -5,7 +5,9 @@ datum: 2025-10-31
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2025-10-31-agenticjames-best-claude-skills-for-agentic-coding.md
 titel: "Best Claude skills for agentic coding!"
 video_id: "7567486319610416439"
 hashtags: "claude, vibecoding, software, coding, ai"

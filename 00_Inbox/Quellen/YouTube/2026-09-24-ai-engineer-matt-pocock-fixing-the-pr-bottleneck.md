@@ -6,7 +6,9 @@ datum: 2026-09-24
 erfasst: 2026-09-27
 typ: youtube
 quelle: youtube
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-09-24-ai-engineer-matt-pocock-fixing-the-pr-bottleneck.md
 video_id: "g0vqT_wZtXA"
 segment_titel: "Matt Pocock — Fixing the PR Bottleneck"
 segment_start_sekunden: 26238

@@ -6,7 +6,8 @@ datum: 2026-06-28
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Allgemeine Loop-Metapher ohne Methode; nur Hinweis, nichts Kritisches zu delegieren."
 titel: "what loop would help you?"
 video_id: "7656235405821480222"
 hashtags: "aiagents, ai, learnontiktok, futureofwork"

@@ -5,7 +5,9 @@ datum: 2026-08-14
 erfasst: 2026-08-29
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-14-agenticjames-ai-memory-is-trash-heres-some-solutions.md
 titel: "AI memory is trash, here’s some solutions."
 video_id: "7674000398218284302"
 hashtags: "aiagents, aimemory, claudecode, codex, ai"

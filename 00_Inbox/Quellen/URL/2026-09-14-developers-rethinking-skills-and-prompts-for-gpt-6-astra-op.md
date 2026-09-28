@@ -7,7 +7,9 @@ datum_unsicher: true
 erfasst: 2026-09-14
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-09-14-developers-rethinking-skills-and-prompts-for-gpt-6-astra-op.md
 ---
 
 # Rethinking skills and prompts for GPT-6 Astra | OpenAI Developers

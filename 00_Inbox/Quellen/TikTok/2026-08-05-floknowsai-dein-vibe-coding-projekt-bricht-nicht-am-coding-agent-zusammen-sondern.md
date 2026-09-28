@@ -6,7 +6,9 @@ datum: 2026-08-05
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-05-floknowsai-dein-vibe-coding-projekt-bricht-nicht-am-coding-agent-zusammen-sondern.md
 titel: "Dein Vibe-Coding-Projekt bricht nicht am Coding Agent zusammen, sondern an dem …"
 video_id: "7670597972576537888"
 hashtags: "ki, vibecoding, claudecode, codex, softwareengineering"

@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-03-svpino-claude-code-md-tips.md
 beschreibung: "Maximiere die Effizienz von Claude Code mit diesen 5 Regeln für Deine CLAUDE.md Datei. Verbessere Planung, Bug-Fixing und Lerneffekte des Agenten."
 vibedeck_category: patterns
 vibedeck_level: intermediate

@@ -34,6 +34,9 @@ Der Ablauf ist bewusst zweigeteilt: (1) Idee, Scope und erste UX in Lovable verd
 - 2026-04-17 · [[2026-04-17-wiki-compiler-codex-claude-code-lovable-workflow]] · meinung — Bestätigt den Handoff „Lovable → Export → lokales Repo → Coding Agent“ aus Entwickler-Workflow-Perspektive, unabhängig von den beiden anderen Quellen.
 - 2026-02-04 · [[2026-02-04-lovable-docs-best-practices]] · meinung — Primärquelle (Lovable Docs) konkretisiert die Knowledge-Datei als PRD-Ersatz, den 60-70%-Plan-Modus-Richtwert, „In Bricks bauen“ und die Frontend-First-Build-Strategie mit Supabase-Revert-Fallstrick.
 - 2026-01-17 · [[2026-01-17-damien-ghader-prompting-lovable-design]] · meinung — Primärquelle liefert das Drei-Ebenen-Modell (Foundations/Komponenten/Komposition) im Original mit konkreten Tailwind-Prompt-Beispielen und der Regel, existierende Komponenten namentlich zu referenzieren statt Design erneut zu beschreiben.
+- 2026-01-22 · [[2026-01-22-damien-lovable-website-guide]] · meinung — Vier zusätzliche, direkt einsetzbare Prompt-Beispiele desselben Autors übersetzen Design-Entscheidungen in konkrete strukturelle Vorgaben (benannte Layout-Option, exakte Pixel-Breakpoints, feste Typografie-Zahlen) statt vager Adjektive — bestätigt das „klare Layout-Logik statt vager Adjektive“-Prinzip, ohne neue Mechanik.
+- 2026-01-21 · [[2026-01-21-aiedge-claude-50-pro-tips]] · meinung — Nennt Google AI Studio als alternatives, günstigeres Prototyping-Werkzeug vor dem Wechsel zu Claude, sobald der Code größtenteils steht — dieselbe Grundidee wie „günstig prototypen, dann an den produktiven Agenten übergeben“, nur mit einem anderen Erstwerkzeug als Lovable.
+- 2026-02-04 · [[2026-02-04-lovable-docs-lovable-security-guide]] · meinung — Herstellerleitfaden: Secrets, Auth und Validierung gehören ins Backend, RLS früh setzen, Security Checker vor Veröffentlichung. Sekundärquelle, keine unabhängige Prüfung.
 
 ## Spannungen & offene Fragen
 

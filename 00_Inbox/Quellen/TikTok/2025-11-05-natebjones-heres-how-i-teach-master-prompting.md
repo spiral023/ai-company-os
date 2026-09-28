@@ -6,7 +6,8 @@ datum: 2025-11-05
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Generische Prompting-Denkmodelle (Chain of Verification, Meta Prompting) ohne Methode im Detail und mit Newsletter-Werbung; im Bestand abgedeckt."
 titel: "Here’s how I teach master prompting"
 video_id: "7569345803840539934"
 hashtags: "ai, learn, learnontiktok, chatgpt"

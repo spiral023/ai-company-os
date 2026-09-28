@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-23-elvis-openclaw-codex-agent-swarm.md
 medien: "4 lokal"
 beschreibung: "Ein tiefer Einblick in das autonome Agenten-System von Elvis: Orchestrierung mit OpenClaw, parallele Agenten-Flotten und der Weg zum Ein-Personen-Millionen-Dollar-Unternehmen."
 vibedeck_category: tooling

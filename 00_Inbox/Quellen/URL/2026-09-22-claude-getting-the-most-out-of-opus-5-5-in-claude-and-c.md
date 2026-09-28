@@ -6,7 +6,9 @@ datum: 2026-09-22
 erfasst: 2026-09-27
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c.md
 medien: "4/4 lokal"
 ---
 

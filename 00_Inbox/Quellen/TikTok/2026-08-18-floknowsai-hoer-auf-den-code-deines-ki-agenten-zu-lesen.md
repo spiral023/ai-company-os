@@ -6,7 +6,9 @@ datum: 2026-08-18
 erfasst: 2026-08-29
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-18-floknowsai-hoer-auf-den-code-deines-ki-agenten-zu-lesen.md
 titel: "Hör auf, den Code deines KI-Agenten zu lesen."
 video_id: "7675431688024984865"
 hashtags: "ki, vibecoding, softwareengineering, claudecode, testing"

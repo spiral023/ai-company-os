@@ -6,7 +6,9 @@ datum: 2026-08-03
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-03-steffen_hauptmann-die-meisten-lassen-sich-ein-handover-erst-schreiben-wenn-das.md
 titel: "Die meisten lassen sich ein Handover erst schreiben, wenn das Kontextfenster voll ist."
 video_id: "7669828414232136982"
 hashtags: "ClaudeCode, ContextEngineering, Softwareentwicklung"

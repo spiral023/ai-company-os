@@ -5,7 +5,9 @@ datum: 2026-04-22
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-04-22-agenticjames-everything-you-need-to-know-about-context-engineering-in-1-minute.md
 titel: "Everything you need to know about context engineering in 1 minute."
 video_id: "7631615421434596621"
 hashtags: "aiagents, claudecode, llms, aiautomation, claude"

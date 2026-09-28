@@ -7,7 +7,8 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Sekundärquelle mit reiner Kursankündigung für Einsteiger, ohne übertragbare Methode oder Zahlen."
 beschreibung: "Lerne Claude Code direkt in Claude Code. Ein kostenloser, praxisorientierter Kurs für Nicht-Techniker und Einsteiger."
 vibedeck_category: fundamentals
 vibedeck_level: beginner

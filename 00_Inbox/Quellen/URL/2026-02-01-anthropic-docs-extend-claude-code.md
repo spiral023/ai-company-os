@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-01-anthropic-docs-extend-claude-code.md
 beschreibung: "Verstehe, wann du CLAUDE.md, Skills, Subagents, Hooks, MCP und Plugins verwenden solltest."
 vibedeck_category: fundamentals
 vibedeck_tags:

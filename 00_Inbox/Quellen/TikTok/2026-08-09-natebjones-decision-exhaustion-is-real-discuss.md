@@ -6,7 +6,9 @@ datum: 2026-08-09
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-09-natebjones-decision-exhaustion-is-real-discuss.md
 titel: "Decision exhaustion is real. Discuss."
 video_id: "7672185095662390558"
 hashtags: "decisionfatigue, learnontiktok, futureofwork, artificialintelligence, worklifebalance"

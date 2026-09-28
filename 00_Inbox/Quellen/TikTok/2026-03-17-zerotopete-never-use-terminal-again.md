@@ -6,7 +6,9 @@ datum: 2026-03-17
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-03-17-zerotopete-never-use-terminal-again.md
 titel: "Never use Terminal again…"
 video_id: "7618333102263274766"
 hashtags: "claudecode, claude, codex, ai, cmux"

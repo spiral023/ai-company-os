@@ -5,7 +5,8 @@ datum: 2026-08-07
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Inhaltliche Dublette des Videos vom 2026-04-22 (Baum-Metapher, Progressive Disclosure), bereits als Source-Notiz vorhanden."
 titel: "Most people think context engineering is some complex art."
 video_id: "7671088367332838670"
 transkript: automatisch

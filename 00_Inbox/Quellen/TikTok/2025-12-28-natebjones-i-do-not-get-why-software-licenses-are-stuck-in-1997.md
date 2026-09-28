@@ -6,7 +6,8 @@ datum: 2025-12-28
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Meinungsvideo ohne Methode oder Zahlen jenseits der Anekdote (20/200 Dollar pro Monat); Argument „KI-Lizenz als Firmenausgabe“ ist Marketing-Rhetorik."
 titel: "I do not get why software licenses are stuck in 1997"
 video_id: "7588812222600727839"
 hashtags: "ai, chatgpt, learn, learnontiktok"

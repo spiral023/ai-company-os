@@ -6,7 +6,8 @@ datum: 2026-06-23
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Nur vage Erwähnung eines Google-Formats ohne Spezifikation, Methode oder Beleg."
 titel: "Google liefert mit dem Open Knowledge Format eine (neue) Antwort, wie wir …"
 video_id: "7654489369960566038"
 transkript: automatisch

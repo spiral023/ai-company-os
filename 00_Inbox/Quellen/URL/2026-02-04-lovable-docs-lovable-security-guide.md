@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-04-lovable-docs-lovable-security-guide.md
 beschreibung: "Ein Leitfaden zur Vermeidung gängiger Sicherheitsfehler in Lovable-Apps – von Frontend-Geheimnissen bis hin zu Row Level Security (RLS)."
 vibedeck_category: security
 vibedeck_tags:

@@ -7,7 +7,8 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Generische Einsteiger-Checkliste (Git, APIs, Fehlerlogs) ohne agentenspezifische Methode; Sekundärquelle."
 beschreibung: "Was jeder Vibe Coder lernen sollte: Eine strukturierte Roadmap von den Grundlagen über fortgeschrittene Patterns bis hin zu Profi-Skills und häufigen Fehlern."
 vibedeck_category: fundamentals
 vibedeck_level: beginner

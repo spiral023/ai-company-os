@@ -6,7 +6,8 @@ datum: 2026-06-29
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Generische Einführungstipps für KI-Verantwortliche in Unternehmen (Prozesse aufschreiben, zentrale Datenbasis, ROI messen) ohne Methode, Zahlen oder Bezug zu Agents, Harness, Kosten oder Modellen."
 titel: "Wenn ich heute KI-Verantwortlicher wäre…"
 video_id: "7656735482495225110"
 transkript: automatisch

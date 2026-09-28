@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-04-lovable-docs-prompting-debugging.md
 beschreibung: "Strategien und Best Practices zum Debuggen von Prompts und zur Behebung komplexer Probleme in Lovable."
 vibedeck_category: fundamentals
 vibedeck_level: intermediate

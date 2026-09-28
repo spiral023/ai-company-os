@@ -5,7 +5,8 @@ datum: 2026-04-25
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Allgemeiner Hinweis auf Validation Loops mit deterministischem Ergebnis, bereits durch Testharness- und TDD-Bestand abgedeckt."
 titel: "If you’re using coding agents, you need to be using validation and testing …"
 video_id: "7632622837878115597"
 hashtags: "AIAgents, ClogCode, Claude, AIAutomation, AIBusiness"

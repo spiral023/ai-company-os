@@ -7,7 +7,8 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Sammlung generischer Copy-Paste-Prompts für Einsteiger ohne Methode oder Beleg; Sekundärquelle."
 medien: "1 lokal"
 beschreibung: ">-"
 vibedeck_category: patterns

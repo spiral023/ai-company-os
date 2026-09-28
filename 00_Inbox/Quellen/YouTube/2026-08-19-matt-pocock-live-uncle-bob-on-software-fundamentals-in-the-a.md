@@ -6,7 +6,9 @@ datum: 2026-08-19
 erfasst: 2026-08-31
 typ: youtube
 quelle: youtube
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-19-matt-pocock-live-uncle-bob-on-software-fundamentals-in-the-a.md
 video_id: "zcLPGC-tvgk"
 transkript_sprache: "en"
 transkript_generiert: "ja"

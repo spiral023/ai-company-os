@@ -5,7 +5,9 @@ datum: 2026-07-28
 erfasst: 2026-08-05
 typ: pdf
 quelle: pdf
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-28-pdf-state-of-open-source-ai-v1-0-1.md
 medien: "1/1 lokal"
 seiten: "65"
 datei: "state-of-open-source-ai-v1-0-1.pdf"

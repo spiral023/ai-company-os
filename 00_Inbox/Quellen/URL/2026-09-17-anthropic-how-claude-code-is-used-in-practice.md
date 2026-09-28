@@ -6,7 +6,9 @@ datum_unsicher: true
 erfasst: 2026-09-17
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-09-17-anthropic-how-claude-code-is-used-in-practice.md
 medien: "8/9 lokal"
 ---
 

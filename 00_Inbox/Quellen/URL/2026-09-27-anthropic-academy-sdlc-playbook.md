@@ -6,7 +6,9 @@ datum: 2026-09-27
 erfasst: 2026-09-27
 typ: artikel
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-09-27-anthropic-academy-sdlc-playbook.md
 lektionen: 14
 ---
 

@@ -5,7 +5,9 @@ datum: 2026-08-21
 erfasst: 2026-08-29
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-21-promptgefluester-wie-macht-man-refactering-bei-einer-richtig-grossen-code-base-mit-aeh.md
 titel: "wie macht man refactering bei einer richtig großen Code Base mit äh Cloud Code …"
 video_id: "7676584233586003232"
 hashtags: "refactoring, ki, codebase"

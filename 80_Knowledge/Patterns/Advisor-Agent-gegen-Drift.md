@@ -36,6 +36,7 @@ Entscheidend ist die Enge des Auftrags. Der Advisor hat kein Mandat für Qualit�
 ## Belege
 
 - 2026-07-27 · [[2026-07-27-cerebras-gpt-5-6-modellwahl-und-reasoning]] · meinung — Cerebras-Artikel beschreibt den „Advisor workflow“ als Rolle mit genau einem Auftrag (vollständige Session lesen, Ziel und Constraints halten, bei Drift eingreifen); das mitgelieferte Sequenzdiagramm zeigt den Ablauf Task → Work → Stream session → Watch for drift → Nudge when off-program → Correct course → Result.
+- 2026-05-21 · [[2026-05-21-christophmagnussen-ki-agenten-weichen-ab]] · meinung — Bestätigt Agent Drift durch Subagent- und Tool-Aufrufe als unbemerkt auftretendes Problem und betont Prävention statt bloßer Sichtbarkeit. Reine Meinungsäußerung ohne Messung oder Methode.
 
 ## Spannungen & offene Fragen
 

@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-05-09-zodchiii-15-claude-code-settings-most-developers.md
 medien: "1 lokal"
 beschreibung: "Ein Source Note zu 15 oft übersehenen Claude-Code-Einstellungen rund um Reasoning, Permissions, Hooks, Memory, Worktrees und Kostenkontrolle."
 vibedeck_category: tooling

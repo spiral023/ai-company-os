@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-15-avid-ai-design-workflow-2026.md
 medien: "7 lokal"
 beschreibung: "KI macht die technische Ausführung einfach, aber 'Taste' bleibt die entscheidende Fähigkeit. Erfahre, wie du deinen Design-Geschmack trainierst und KI als Junior Designer nutzt."
 vibedeck_category: workflows

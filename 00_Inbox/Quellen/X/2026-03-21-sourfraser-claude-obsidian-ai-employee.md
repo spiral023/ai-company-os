@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-03-21-sourfraser-claude-obsidian-ai-employee.md
 medien: "1 lokal"
 beschreibung: "Wie Fraser Cottrell Claude mit Obsidian, MCP und automatischer Transkript-Verarbeitung zu einem dauerhaft lernenden Geschäftssystem verbunden hat – Schritt für Schritt nachbaubar."
 vibedeck_category: workflows

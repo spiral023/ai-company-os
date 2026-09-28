@@ -5,7 +5,8 @@ datum: 2026-01-20
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Reine Plugin-Empfehlung (hookify) ohne konkrete Methode oder Beispiel, Hook-Grundlagen bereits im Bestand."
 titel: "Use the hookify plugin to spin up Claude code hooks easily on the fly!"
 video_id: "7597264031451204877"
 hashtags: "claude, vibecoding, aiagents, aitools, aiautomation"

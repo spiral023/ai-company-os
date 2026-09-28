@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-13-vincanger-claude-code-fullstack-essentials.md
 medien: "1 lokal"
 beschreibung: "Vibe-Coding mit Claude Code ist mehr als nur Hype. Erfahre, welche drei Dinge du wirklich brauchst, um komplexe Apps effizient zu bauen."
 vibedeck_category: workflows

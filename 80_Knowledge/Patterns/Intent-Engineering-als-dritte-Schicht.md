@@ -30,6 +30,9 @@ Drei Entwicklungsstufen werden unterschieden: **Prompt Engineering** (Anweisung 
 ## Belege
 
 - 2026-02-24 · [[2026-02-24-nate-b-jones-intent-engineering]] · meinung — Video-Analyse beschreibt die drei Entwicklungsstufen, das Klarna-Fallbeispiel (853 FTE ersetzt, ~60 Mio. USD gespart, aber Kundenerlebnis/Marke beschädigt) und das Microsoft-Copilot-Gegenbeispiel (breite Adoption, stagnierende Nutzung).
+- 2025-12-31 · [[2025-12-31-natebjones-seriously-not-worth-it-now]] · meinung — Gleicher Autor wie die Intent-Engineering-Quelle: Steuerung über Instruktionen und Guide Rails statt Modelländerung. Nur Standpunkt in 111 Sekunden, keine Methode und keine Belege.
+- 2026-09-13 · [[2026-09-13-stefanantonelli-du-brauchst-keinen-entwickler-um-mit-ki-etwas-zu-bauen]] · meinung — Erfahrene Fachleute lösen pro Anweisung rund zwölf Agent-Schritte aus, Anfänger fünf (Caption, Zahlen ungeprüft). Stützt die These, dass Domänenwissen die Absicht und Qualitätskriterien liefert.
+- 2026-02-20 · [[2026-02-20-boris-tane-sdlc-is-dead]] · meinung — These: Loop aus Intent, Kontext, Build, Observe; Kontextqualität bestimmt Ergebnis. Reine Position, Sekundärquelle.
 
 ## Spannungen & offene Fragen
 

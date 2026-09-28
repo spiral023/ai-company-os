@@ -6,7 +6,9 @@ datum: 2026-09-09
 erfasst: 2026-09-14
 typ: youtube
 quelle: youtube
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-09-09-alex-sprogis-so-erstellst-du-interaktive-architektur-diagramm.md
 video_id: "YE40EDb1kRk"
 transkript_sprache: "de"
 transkript_generiert: "ja"

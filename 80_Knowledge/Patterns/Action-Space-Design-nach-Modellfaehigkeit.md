@@ -1,6 +1,6 @@
 # Action-Space-Design-nach-Modellfaehigkeit
 
-**Konfidenz:** meinung
+**Konfidenz:** mehrfach-belegt
 
 ## Zweck
 
@@ -30,10 +30,11 @@ Der „Action Space“ ist die Menge an Dingen, die ein Agent praktisch tun kann
 ## Belege
 
 - 2026-02-27 · [[2026-02-27-thariq-lessons-building-claude-code]] · meinung — X-Thread von Thariq (Anthropic, Claude-Code-Team) beschreibt drei konkrete Fallstudien aus der Claude-Code-Entwicklung: AskUserQuestion-Tool (drei gescheiterte Anläufe bis zur robusten Lösung), Todos→Task-Tool-Wechsel bei Modell-Upgrade, Progressive Disclosure beim Kontextaufbau via Guide-Subagent.
+- 2026-01-25 · [[2026-01-25-sankalp-claude-code-experience]] · meinung — Unabhängige Bestätigung anhand konkreter, reverse-engineerter Zahlen: Die vier Claude-Code-Subagent-Typen unterscheiden sich messbar in Tool-Zugriff, Kontext-Overhead und Kontext-Vererbung (Explore: 516 Token, read-only, kein Kontext-Erbe; Plan: 633 Token, alle Tools, volles Kontext-Erbe) — das Action-Space-Design ist je Subagent-Typ bewusst unterschiedlich zugeschnitten, nicht einheitlich.
 
 ## Spannungen & offene Fragen
 
-- Einzige bisherige Quelle ist ein einzelner Erfahrungsbericht aus der Claude-Code-Entwicklung selbst — hohe Glaubwürdigkeit durch Insider-Perspektive, aber keine unabhängige Zweitquelle.
+- Zwei unabhängige Erfahrungsberichte (Thariq aus der Claude-Code-Entwicklung selbst, Sankalp als externer Anwender mit eigener Reverse-Engineering-Messung) stützen die Kernaussage jetzt über bloße Einzelmeinung hinaus, auch ohne kontrollierte Studie.
 - Offene Frage: Wie lässt sich „Tool-Nutzung messen, nicht nur Verfügbarkeit“ in unserem eigenen Skill-System (30_Skills/) praktisch umsetzen, ohne ein aufwendiges Instrumentierungssystem zu bauen?
 
 ## Verwandte Patterns

@@ -6,7 +6,8 @@ datum: 2026-07-16
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Nur Teaser-Caption ohne Regel, Methode oder Transkript."
 titel: "Es gibt eine simple Regel, die erklärt, warum 95 Prozent aller KI-Projekte im Mittelstand scheitern."
 video_id: "7663144929610173718"
 transkript: nicht verfügbar

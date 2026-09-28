@@ -5,7 +5,9 @@ datum: 2026-07-14
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-14-fredrikharkort-5-prompts-die-weh-tun.md
 titel: "5 Prompts die weh tun"
 video_id: "7662423861232717089"
 transkript: automatisch

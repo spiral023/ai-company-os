@@ -5,7 +5,9 @@ datum: 2026-08-02
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-02-promptgefluester-wenn-ihr-versucht-euer-software-projekt-mit-fable-five-oder-o-plus-5.md
 titel: "wenn ihr versucht euer Software Projekt mit Fable Five oder O plus 5 einfach …"
 video_id: "7669564638576594208"
 hashtags: "codereview, vibecoding, softwate"

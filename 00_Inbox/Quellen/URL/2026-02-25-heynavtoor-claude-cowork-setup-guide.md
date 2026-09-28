@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-25-heynavtoor-claude-cowork-setup-guide.md
 medien: "2 lokal"
 beschreibung: "Erfahre, wie du Claude Cowork so konfigurierst, dass es deine Arbeit autonom erledigt, während du dich anderen Dingen widmest."
 vibedeck_category: workflows

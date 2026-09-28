@@ -6,7 +6,9 @@ datum: 2026-07-27
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-27-techfeed5-1-reason-why-the-cloud-limits-could-hit-directly-that-we-talk-to-opus-in.md
 titel: "1 reason why the cloud limits could hit directly that we talk to Opus in German …"
 video_id: "7667084904622017825"
 transkript: automatisch

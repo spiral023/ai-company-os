@@ -6,7 +6,9 @@ datum: 2026-08-21
 erfasst: 2026-09-14
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk.md
 medien: "1/3 lokal"
 ---
 

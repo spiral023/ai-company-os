@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-04-22-alibaba-qwen-qwen3-6-27b-lokal-betreiben.md
 medien: "2 lokal"
 beschreibung: "Ein 27B Dense-Modell übertrifft Qwen3.5-397B (15× größer) auf allen Coding-Benchmarks und matcht Claude 4.5 Opus auf mehreren Tasks – Apache 2.0, lokal betreibbar ab 18 GB RAM."
 vibedeck_category: fundamentals

@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-01-anthropic-docs-create-custom-subagents.md
 beschreibung: "Erstelle spezialisierte Subagents in Claude Code mit eigenem Prompt, Tools und Permissions."
 vibedeck_category: patterns
 vibedeck_level: advanced

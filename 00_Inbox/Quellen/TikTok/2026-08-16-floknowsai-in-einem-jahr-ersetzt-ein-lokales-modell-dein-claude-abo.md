@@ -6,7 +6,9 @@ datum: 2026-08-16
 erfasst: 2026-08-29
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo.md
 titel: "In einem Jahr ersetzt ein lokales Modell dein Claude-Abo."
 video_id: "7674510846168419606"
 hashtags: "ki, lokaleki, claude"

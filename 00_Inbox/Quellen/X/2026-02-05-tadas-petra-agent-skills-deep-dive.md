@@ -7,7 +7,8 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Sekundärquelle mit Skill-Grundlagen (SKILL.md, Progressive Disclosure), bereits durch mehrere Source-Notizen abgedeckt."
 medien: "3 lokal"
 beschreibung: "Ein umfassender Leitfaden zu Agent Skills: Wie sie funktionieren, wie man sie effizient einsetzt und eigene Skills für Claude Code oder Cursor entwickelt."
 vibedeck_category: fundamentals

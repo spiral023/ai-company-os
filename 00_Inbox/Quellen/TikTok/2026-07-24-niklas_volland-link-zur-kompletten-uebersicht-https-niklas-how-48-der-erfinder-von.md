@@ -5,7 +5,8 @@ datum: 2026-07-24
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Zweiter Hand wiedergegebene Jobtitel-Prognose (fünf Rollen Prototyper, Builder, Sweeper, Grower, Maintainer) ohne Primärquelle, Methode oder Belege und mit maschinell rückübersetztem Transkript; keine übertragbare Erkenntnis über Arbeitsweisen, Tools oder Kosten."
 titel: "📌 Link zur kompletten Übersicht → https://niklas.how/48 Der Erfinder von …"
 video_id: "7666143066742459680"
 hashtags: "KI, ZukunftDerArbeit, TechJobs, ClaudeCode, kipowerboost"

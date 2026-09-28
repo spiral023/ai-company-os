@@ -6,7 +6,9 @@ datum: 2026-08-03
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-03-floknowsai-die-preise-fuer-ki-fallen-wirklich-und-trotzdem-ist-dein-limit-genauso.md
 titel: "Die Preise für KI fallen wirklich, und trotzdem ist dein Limit genauso schnell weg wie vorher."
 video_id: "7669871035340033313"
 hashtags: "ki, usagelimit, chatgpt, claude, token"

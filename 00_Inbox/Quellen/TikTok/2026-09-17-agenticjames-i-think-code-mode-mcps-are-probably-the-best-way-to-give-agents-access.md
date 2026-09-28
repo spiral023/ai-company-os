@@ -5,7 +5,9 @@ datum: 2026-09-17
 erfasst: 2026-09-17
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-09-17-agenticjames-i-think-code-mode-mcps-are-probably-the-best-way-to-give-agents-access.md
 titel: "I think code mode MCPs are probably the best way to give agents access to tools."
 video_id: "7686584043177135373"
 hashtags: "mcp, aiautomation, claudecode, codex, aiagents"

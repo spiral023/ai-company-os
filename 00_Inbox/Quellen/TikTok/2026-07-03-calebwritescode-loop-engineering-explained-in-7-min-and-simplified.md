@@ -5,7 +5,9 @@ datum: 2026-07-03
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-07-03-calebwritescode-loop-engineering-explained-in-7-min-and-simplified.md
 titel: "loop engineering explained in 7 min and simplified."
 video_id: "7658324465037675789"
 hashtags: "loopengineering, agentharness, harnessengineering, agents, aiagents, builders, coder, programmer, agentic, artificialintelligence, ai, agi, largelanguagemodels, llms, compute"

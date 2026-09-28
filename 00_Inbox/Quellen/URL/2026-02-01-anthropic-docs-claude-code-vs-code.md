@@ -7,7 +7,8 @@ erfasst: 2026-08-04
 typ: url
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: ignoriert
+notiz: "Triage: Dokumentation von bekanntem Feature (VS Code Extension)"
 beschreibung: "Installiere und konfiguriere die Claude Code Erweiterung für VS Code. Erhalte KI-Coding-Assistenz mit Inline-Diffs, @-Mentions und Plan-Reviews."
 vibedeck_category: tooling
 vibedeck_tags:

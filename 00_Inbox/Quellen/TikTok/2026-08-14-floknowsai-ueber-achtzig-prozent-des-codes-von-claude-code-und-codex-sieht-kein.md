@@ -6,7 +6,9 @@ datum: 2026-08-14
 erfasst: 2026-08-29
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-14-floknowsai-ueber-achtzig-prozent-des-codes-von-claude-code-und-codex-sieht-kein.md
 titel: "Über achtzig Prozent des Codes von Claude Code und Codex sieht kein Mensch mehr an."
 video_id: "7673935893886979360"
 hashtags: "ki, vibecoding, claudecode, codex, codereview"

@@ -6,7 +6,9 @@ datum: 2026-09-04
 erfasst: 2026-09-14
 typ: youtube
 quelle: youtube
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re.md
 video_id: "4v_XNgWTLiM"
 transkript_sprache: "de"
 transkript_generiert: "ja"

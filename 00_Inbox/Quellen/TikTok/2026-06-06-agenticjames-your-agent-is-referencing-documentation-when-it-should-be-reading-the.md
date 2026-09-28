@@ -5,7 +5,9 @@ datum: 2026-06-06
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-06-06-agenticjames-your-agent-is-referencing-documentation-when-it-should-be-reading-the.md
 titel: "Your agent is referencing documentation when it should be reading the actual code."
 video_id: "7648227434789195022"
 transkript: automatisch

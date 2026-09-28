@@ -5,7 +5,8 @@ datum: 2026-07-23
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: ignoriert
+notiz: "Triage: Duplikat von Video 7665513807250345229."
 titel: "Using/goal with a task management system is the most overpowered way to use …"
 video_id: "7665513807250345229"
 hashtags: "ClaudeCode, codex, ChatGPT, AIAgents, Vibecoding"

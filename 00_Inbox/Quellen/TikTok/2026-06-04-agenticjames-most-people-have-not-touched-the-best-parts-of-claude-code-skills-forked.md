@@ -5,7 +5,9 @@ datum: 2026-06-04
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-06-04-agenticjames-most-people-have-not-touched-the-best-parts-of-claude-code-skills-forked.md
 titel: "Most people have not touched the best parts of Claude Code skills: forked …"
 video_id: "7647517398890794253"
 transkript: automatisch

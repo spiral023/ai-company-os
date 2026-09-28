@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-02-anthony-riera-planning-with-files-skill.md
 medien: "1 lokal"
 beschreibung: "Ein Deep Dive in den Planning-with-files Skill, der durch persistente Dateien für eine präzisere Planung und Ausführung sorgt."
 vibedeck_category: tooling

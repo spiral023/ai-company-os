@@ -6,7 +6,9 @@ datum: 2025-12-31
 erfasst: 2026-08-31
 typ: video
 quelle: tiktok
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2025-12-31-natebjones-seriously-not-worth-it-now.md
 titel: "Seriously not worth it now"
 video_id: "7589872498901077278"
 hashtags: "ai, learn, learnontiktok, chatgpt, 2026"

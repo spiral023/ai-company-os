@@ -7,7 +7,9 @@ erfasst: 2026-08-04
 typ: tweet
 quelle: vibedeck
 sekundaerquelle: true
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-02-04-meer-aiit-claude-skills-complete-guide.md
 medien: "4 lokal"
 beschreibung: ">-"
 vibedeck_category: fundamentals

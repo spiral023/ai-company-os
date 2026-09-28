@@ -6,7 +6,9 @@ datum: 2026-08-14
 erfasst: 2026-09-14
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-09-29
+source_notiz: 80_Knowledge/Sources/2026-08-14-claude-maximizing-the-value-of-your-claude-code-session.md
 medien: "9/15 lokal"
 ---
 
