@@ -1,0 +1,16 @@
+# Konfiguration des Blogs (blog.sp23.online)
+titel: "sp23 · KI-Praxis"
+beschreibung: "Was sich für Menschen ändert, die mit KI arbeiten und coden: Modelle, Kosten, Arbeitsweisen und Werkzeuge, eingeordnet und mit Quellen."
+base_url: "https://blog.sp23.online"
+autor: "sp23"
+fusszeile: "Beiträge entstehen mit KI-Unterstützung und werden vor der Veröffentlichung redaktionell geprüft"
+quellenhinweis: "Dieser Beitrag ordnet öffentlich zugängliche Quellen ein. Zahlen stammen aus den genannten Quellen; eigene Rechnungen sind im Text gekennzeichnet, Hersteller- und Selbstangaben als solche markiert."
+feed_max: 30
+kategorien:
+  modelle: "Modelle & Kosten"
+  arbeitsweisen: "Arbeitsweisen"
+  tools: "Tools & Releases"
+  duell: "Duelle"
+  check: "Behauptungs-Check"
+  digest: "Wochen-Digest"
+  kurz: "Kurzmeldungen"
