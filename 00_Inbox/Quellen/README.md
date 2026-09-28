@@ -17,7 +17,7 @@ Roh erfasste externe Quellen, vollständig und unbearbeitet. Eingangsstufe vor `
     dateien/                                            ← lokal gespeicherte Remote-PDFs
 ```
 
-Die Ingest-Scripts wählen den Typordner automatisch. X und TikTok verwenden den Slug `<Veröffentlichungsdatum>-<Handle>-<ID>`; URL, YouTube und PDF ergänzen einen gekürzten Titel. `Sonstige/` ist der kontrollierte Fallback für einen künftig unbekannten technischen Typ.
+Die Ingest-Scripts wählen den Typordner automatisch. X verwendet den Slug `<Veröffentlichungsdatum>-<Handle>-<ID>`, TikTok dagegen `<Veröffentlichungsdatum>-<Handle>-<gekürzter Titel>`. URL, YouTube und PDF ergänzen ebenfalls einen gekürzten Titel. TikToks bleiben über `video_id` im Frontmatter eindeutig; nur bei einer seltenen Dateinamenskollision ergänzt das Script einen kurzen ID-Suffix. `Sonstige/` ist der kontrollierte Fallback für einen künftig unbekannten technischen Typ.
 
 | Quelle | Zielordner | Abruf |
 |---|---|---|
@@ -94,9 +94,11 @@ Das Transkript kommt vom Apify-Actor `scrape-creators/best-tiktok-transcripts-sc
 - **Veröffentlichungsdatum** aus der Video-ID — TikTok-IDs sind Snowflake-artig, die oberen 32 Bit sind der Unix-Timestamp. Lässt sich das Datum nicht ableiten, trägt die Notiz `datum_unsicher: true`.
 - **Caption, Autorname, Cover** über TikTok oEmbed (ohne Key). Scheitert der Abruf, entsteht die Notiz trotzdem — nur ohne diese Felder.
 
-Der gesprochene Text steht als Fließtext in der Notiz, getrennt in Absätze an Sprechpausen ab `--gap` (Default 0,4s). Die Spracherkennung von TikTok setzt keine Satzzeichen und verhaut regelmäßig Eigennamen und Zahlwörter — die Notiz trägt dazu einen Warnhinweis. Vor der Übernahme ins Knowledge-System gegen das Video prüfen.
+Der gesprochene Text steht als Fließtext in der Notiz, getrennt in Absätze an Sprechpausen ab `--gap` (Default 0,4s). `transkript: automatisch` im Frontmatter kennzeichnet die automatische Spracherkennung; der immer gleiche Warnblock wird nicht in jede Notiz kopiert. Eigennamen und Zahlwörter können trotzdem falsch sein und müssen vor Zitaten gegen das Video geprüft werden.
 
-Nicht jedes Video hat ein Transkript: TikTok erzeugt nicht überall Untertitel. Dann trägt die Notiz `transkript: "keins verfügbar"` und nur die Metadaten. Der Actor berechnet den Credit trotzdem.
+Nicht jedes Video hat ein Transkript: TikTok erzeugt nicht überall Untertitel. Dann trägt die Notiz `transkript: nicht verfügbar`; ein leerer Transkript-Abschnitt wird nicht angelegt. Der Actor berechnet den Credit trotzdem.
+
+Die Notizen vermeiden abruftechnischen Boilerplate: URL, Video-ID, Hashtags und Transkriptstatus stehen einmal im Frontmatter; Hashtags werden nicht zusätzlich im Fließtext wiederholt. Eine Caption erscheint nur, wenn sie über den bereits verwendeten Titel hinausgeht. Spezifische Qualitätswarnungen wie eine erkannte Rückübersetzung bleiben direkt an der betroffenen Quelle stehen.
 
 **Übersetzte Untertitelspuren:** TikTok liefert zu manchen Videos statt des Originaltons eine maschinell ins Englische übersetzte Fassung — ein deutsches Video kommt dann als englischer Text zurück, mit deutscher Satzstellung („Anthropic hat die Claude Academy veröffentlicht" wird zu „1 Tropic has the cloud Academy published"). Der Actor kennt keinen Sprachparameter. Das Script misst deshalb die Sprache von Transkript und Caption und trägt `sprache:` ins Frontmatter; weichen beide ab, kommen `sprache_abweichung: true`, ein Warnblock in der Notiz und eine Warnung im Terminal dazu. Ein `--refetch` liefert manchmal die Originalspur (bei einem Video half es, bei einem anderen blieb es über drei Versuche englisch) — hilft es nicht, ist die Caption die verlässlichere Quelle.
 

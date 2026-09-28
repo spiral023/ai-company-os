@@ -29,7 +29,7 @@ Ergebnis: `00_Inbox/Quellen/X/<slug>.md` mit `status: neu`, Bilder lokal unter `
 npm run ingest:tiktok -- <video-url-oder-id>
 ```
 
-Ergebnis: `00_Inbox/Quellen/TikTok/<slug>.md` mit `status: neu`, Cover lokal unter `00_Inbox/Quellen/TikTok/medien/<slug>/`. Details: `00_Inbox/Quellen/README.md`.
+Ergebnis: `00_Inbox/Quellen/TikTok/<datum>-<handle>-<titel>.md` mit `status: neu`, Cover lokal im gleichnamigen Unterordner unter `00_Inbox/Quellen/TikTok/medien/`. Die stabile TikTok-ID bleibt im Frontmatter. Details: `00_Inbox/Quellen/README.md`.
 
 - Der gesprochene Inhalt ist bei TikTok die eigentliche Quelle — die Caption besteht oft nur aus Hashtags. Das Script holt das Transkript über einen kostenpflichtigen Apify-Actor ($0.001 pro Video). Bei `402 Guthaben aufgebraucht` nicht auf WebFetch ausweichen, sondern Philipp informieren.
 - Steht `sprache_abweichung: true` im Frontmatter, hat TikTok statt des Originaltons eine maschinell übersetzte Untertitelspur geliefert (typisch: deutsches Video, englischer Text mit deutscher Satzstellung). Diese Fassung ist eine doppelte Verfremdung — Spracherkennung plus Übersetzung — und taugt nicht für Zitate. Inhalt aus der Caption belegen und die Einschränkung in der Source-Notiz vermerken.
