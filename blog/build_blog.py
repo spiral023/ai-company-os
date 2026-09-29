@@ -40,44 +40,55 @@ SOURCES = ROOT / "80_Knowledge" / "Sources"
 GLOSSAR = HERE / "glossar.yaml"
 
 CSS = """
-:root{--bg:#fbfaf7;--fg:#1c1b19;--muted:#6b675f;--line:#e4e0d6;--accent:#b4451f;--chip:#f0ece1;--code:#f3f0e7;color-scheme:light}
-:root[data-theme=dark]{--bg:#151412;--fg:#ece8df;--muted:#a09a8d;--line:#2d2a25;--accent:#ee8b5f;--chip:#221f1b;--code:#1e1c19;color-scheme:dark}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#151412;--fg:#ece8df;--muted:#a09a8d;--line:#2d2a25;--accent:#ee8b5f;--chip:#221f1b;--code:#1e1c19;color-scheme:dark}}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font:1.0625rem/1.65 ui-serif,"Iowan Old Style","Palatino Linotype",Georgia,serif;padding:0 1rem}
-a{color:var(--accent);text-underline-offset:.18em}a:hover{text-decoration-thickness:2px}
-.wrap{max-width:44rem;margin:0 auto;padding-block:1.25rem 4rem}
-header.site{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;align-items:baseline;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:.9rem;margin-bottom:2rem;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
-header.site .name{font-weight:700;font-size:1.15rem;color:var(--fg);text-decoration:none;letter-spacing:-.01em}
-header.site nav{display:flex;gap:1rem;flex-wrap:wrap;font-size:.9rem}header.site nav a{color:var(--muted);text-decoration:none}header.site nav a:hover{color:var(--accent)}
-h1,h2,h3{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.2;letter-spacing:-.02em}
-h1{font-size:clamp(1.75rem,4.5vw,2.4rem);margin:.4rem 0 .6rem}h2{font-size:1.4rem;margin:2.2rem 0 .6rem}h3{font-size:1.12rem;margin:1.6rem 0 .4rem}
-.meta{font:.85rem/1.4 ui-sans-serif,system-ui,sans-serif;color:var(--muted);display:flex;flex-wrap:wrap;gap:.35rem .8rem;align-items:center}
-.chip{display:inline-block;background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:.08rem .6rem;font-size:.78rem;color:var(--muted);text-decoration:none}
-.lead{font-size:1.2rem;color:var(--muted);margin:.2rem 0 1.4rem}
-.list{list-style:none;padding:0;margin:0}.list li{padding:1.15rem 0;border-bottom:1px solid var(--line)}
-.list h2{font-size:1.28rem;margin:.3rem 0 .3rem}.list h2 a{color:var(--fg);text-decoration:none}.list h2 a:hover{color:var(--accent)}
+:root{--bg:#f4f5f2;--fg:#12161a;--muted:#59616a;--line:#d8dcd6;--accent:#2540d9;--surface:#e9ecf1;--code:#eaece8;--shadow:0 0 0 1px rgba(18,22,26,.06),0 1px 2px rgba(18,22,26,.05),0 6px 16px -6px rgba(18,22,26,.10);--ja:#1b6e46;--nein:#b3261e;--offen:#8a5a00;color-scheme:light}
+:root[data-theme=dark]{--bg:#0f1317;--fg:#e6e9ec;--muted:#9aa3ab;--line:#2a3138;--accent:#8fa2ff;--surface:#182029;--code:#182029;--shadow:0 0 0 1px rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 6px 16px -6px rgba(0,0,0,.5);--ja:#5fc48f;--nein:#f2867f;--offen:#e0b45a;color-scheme:dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1317;--fg:#e6e9ec;--muted:#9aa3ab;--line:#2a3138;--accent:#8fa2ff;--surface:#182029;--code:#182029;--shadow:0 0 0 1px rgba(255,255,255,.07),0 1px 2px rgba(0,0,0,.4),0 6px 16px -6px rgba(0,0,0,.5);--ja:#5fc48f;--nein:#f2867f;--offen:#e0b45a;color-scheme:dark}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:1.0625rem/1.65 system-ui,-apple-system,"Segoe UI Variable Text","Segoe UI",Roboto,sans-serif;padding:0 1rem;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-wrap:pretty}
+a{color:var(--accent);text-underline-offset:.18em;text-decoration-thickness:1px;transition-property:color,text-decoration-color;transition-duration:.15s}a:hover{text-decoration-thickness:2px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:46rem;margin:0 auto;padding-block:1.25rem 4rem}
+header.site{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;align-items:baseline;justify-content:space-between;padding-bottom:1rem;margin-bottom:2.5rem;box-shadow:0 1px 0 var(--line)}
+header.site .name{font:700 1.3rem/1 Charter,"Iowan Old Style","Sitka Heading",Georgia,serif;color:var(--fg);text-decoration:none;letter-spacing:-.02em;padding-block:.4rem}
+header.site nav{display:flex;gap:0 .3rem;flex-wrap:wrap;font-size:.9rem;margin-inline:-.55rem}
+header.site nav a{color:var(--muted);text-decoration:none;padding:.5rem .55rem;border-radius:6px}header.site nav a:hover{color:var(--fg)}
+h1,h2,h3{font-family:Charter,"Iowan Old Style","Sitka Heading",Georgia,serif;line-height:1.15;letter-spacing:-.02em;text-wrap:balance}
+h1{font-size:clamp(2rem,5.5vw,2.9rem);font-weight:700;margin:.5rem 0 .8rem;letter-spacing:-.03em}h2{font-size:1.55rem;font-weight:700;margin:2.6rem 0 .7rem}h3{font-size:1.2rem;font-weight:700;margin:1.8rem 0 .4rem}
+p,li{max-width:68ch}
+.meta{font:.85rem/1.4 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted);display:flex;flex-wrap:wrap;gap:.3rem 1rem;align-items:center;font-variant-numeric:tabular-nums}
+.chip{display:inline-flex;align-items:center;gap:.45rem;color:var(--fg);font-weight:600;text-decoration:none}.chip:hover{color:var(--accent)}
+.chip::before{content:"";width:.6rem;height:.6rem;border-radius:2px;background:var(--kc,var(--muted))}
+.k-modelle{--kc:#2540d9}.k-arbeitsweisen{--kc:#0f8a5f}.k-tools{--kc:#7c3fc9}.k-duell{--kc:#d4570f}.k-check{--kc:#c48a00}.k-digest{--kc:#0e8aa8}.k-kurz{--kc:#7a838b}.k-redaktion{--kc:#7a838b}
+:root[data-theme=dark] .chip::before{filter:brightness(1.35)}@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .chip::before{filter:brightness(1.35)}}
+.lead{font-size:1.2rem;line-height:1.5;color:var(--muted);margin:.4rem 0 1.6rem}
+.list{list-style:none;padding:0;margin:0}.list li{padding:1.5rem 0;box-shadow:0 1px 0 var(--line);max-width:none}
+.list h2{font-size:1.5rem;margin:.45rem 0 .4rem}.list h2 a{color:var(--fg);text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .2s cubic-bezier(.2,0,0,1)}.list h2 a:hover{background-size:100% 2px}
 .list p{margin:.2rem 0 0;color:var(--muted)}
-table{border-collapse:collapse;width:100%;font:.92rem/1.45 ui-sans-serif,system-ui,sans-serif;margin:1.2rem 0;display:block;overflow-x:auto}
-th,td{border:1px solid var(--line);padding:.45rem .65rem;text-align:left;vertical-align:top}th{background:var(--chip)}
-code{background:var(--code);padding:.08em .3em;border-radius:4px;font:.9em ui-monospace,SFMono-Regular,Consolas,monospace}
-pre{background:var(--code);padding:.9rem 1rem;border-radius:6px;overflow-x:auto}pre code{background:none;padding:0}
-blockquote{margin:1.2rem 0;padding:.1rem 1rem;border-left:3px solid var(--accent);color:var(--muted)}
-.tldr{background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:.2rem 1.1rem;margin:1.2rem 0}
-.quellen{margin-top:2.6rem;border-top:1px solid var(--line);padding-top:1rem;font:.9rem/1.5 ui-sans-serif,system-ui,sans-serif}.quellen h2{font-size:1rem;margin:0 0 .5rem}
-.quellen ul{padding-left:1.1rem;margin:.3rem 0}.hinweis{color:var(--muted);font-size:.85rem;margin-top:.8rem}
-footer.site{margin-top:3.5rem;border-top:1px solid var(--line);padding-top:1rem;font:.85rem/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--muted)}
-.tldr h2{font-size:1rem;margin:.9rem 0 .3rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.tldr ul{padding-left:1.1rem;margin:.3rem 0 .9rem}
-details.toc{font:.92rem/1.5 ui-sans-serif,system-ui,sans-serif;margin:1.2rem 0;color:var(--muted)}details.toc summary{cursor:pointer}details.toc ol{margin:.4rem 0;padding-left:1.3rem}details.toc a{color:var(--muted)}
-sup.q{font:.7rem ui-sans-serif,system-ui,sans-serif;margin-left:.1em}sup.q a{text-decoration:none}
-.weiter{margin-top:2.6rem;border-top:1px solid var(--line);padding-top:1rem;font:.95rem/1.5 ui-sans-serif,system-ui,sans-serif}.weiter h2{font-size:1rem;margin:0 0 .5rem}.weiter ul{list-style:none;padding:0;margin:0}.weiter li{margin:.35rem 0}
-.abo{margin-top:2rem;background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:.7rem 1.1rem;font:.9rem/1.5 ui-sans-serif,system-ui,sans-serif}
+table{border-collapse:collapse;width:100%;font:.93rem/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;margin:1.4rem 0;display:block;overflow-x:auto;font-variant-numeric:tabular-nums}
+th,td{border:0;border-bottom:1px solid var(--line);padding:.6rem .8rem .6rem 0;text-align:left;vertical-align:top}th{font-weight:600;color:var(--muted);font-size:.85rem;border-bottom:2px solid var(--fg)}td.num,th.num{text-align:right;padding-right:.9rem;white-space:nowrap}td:first-child{font-weight:600}
+code{background:var(--code);padding:.1em .35em;border-radius:5px;font:.88em ui-monospace,SFMono-Regular,Consolas,monospace}
+pre{background:var(--code);padding:.9rem 1rem;border-radius:10px;overflow-x:auto}pre code{background:none;padding:0}
+blockquote{margin:1.4rem 0;padding:.1rem 1.1rem;border-left:3px solid var(--accent);color:var(--muted)}
+.tldr{background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:.3rem 1.4rem .4rem;margin:1.6rem 0 2rem}
+.tldr h2{font:700 1.05rem/1.3 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:0;margin:1rem 0 .3rem}.tldr ul{padding-left:1.15rem;margin:.4rem 0 .9rem}.tldr li{margin:.4rem 0}
+.urteil{border-left:3px solid var(--offen);padding:.1rem 0 .1rem 1rem}.urteil>strong:first-child{color:var(--offen)}
+.urteil-ja{border-color:var(--ja)}.urteil-ja>strong:first-child{color:var(--ja)}.urteil-nein{border-color:var(--nein)}.urteil-nein>strong:first-child{color:var(--nein)}
+.quellen{margin-top:3rem;padding-top:1.2rem;box-shadow:0 -1px 0 var(--line);font:.9rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted)}.quellen h2{font-size:1.1rem;margin:0 0 .6rem;color:var(--fg)}
+.quellen ol{padding-left:1.2rem;margin:.3rem 0}.quellen li{margin:.3rem 0}.hinweis{color:var(--muted);font-size:.85rem;margin-top:.8rem}
+footer.site{margin-top:3.5rem;padding-top:1.2rem;box-shadow:0 -1px 0 var(--line);font:.85rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--muted)}
+details.toc{font:.92rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;margin:1.2rem 0;color:var(--muted)}details.toc summary{cursor:pointer;padding-block:.4rem}details.toc ol{margin:.4rem 0;padding-left:1.3rem}details.toc a{color:var(--muted)}details.toc a:hover{color:var(--accent)}
+sup.q{font:.7rem system-ui,sans-serif;margin-left:.1em}sup.q a{text-decoration:none}
+.weiter{margin-top:3rem;padding-top:1.2rem;box-shadow:0 -1px 0 var(--line);font:.97rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}.weiter h2{font-size:1.1rem;margin:0 0 .6rem}.weiter ul{list-style:none;padding:0;margin:0}.weiter li{margin:.5rem 0}
+.abo{margin-top:2.2rem;background:var(--surface);border-radius:12px;box-shadow:var(--shadow);padding:.9rem 1.2rem;font:.9rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
 a.gl{color:inherit;text-decoration:underline dotted var(--muted);text-underline-offset:.2em}a.gl:hover{color:var(--accent);text-decoration-style:solid}
-.gl-index{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 1.6rem}
-dl.impressum dt{font:700 .95rem ui-sans-serif,system-ui,sans-serif;margin-top:1.2rem}dl.impressum dd{margin:.2rem 0 0}
-dl.glossar dt{font:700 1.05rem ui-sans-serif,system-ui,sans-serif;margin-top:1.6rem;scroll-margin-top:1rem}dl.glossar dd{margin:.25rem 0 0}dl.glossar dd p{margin:.3rem 0}
-dl.glossar .siehe{font:.88rem ui-sans-serif,system-ui,sans-serif;color:var(--muted)}
-.draft{background:#fff3cd;color:#664d03;border:1px solid #ffe69c;padding:.4rem .8rem;border-radius:6px;font:.85rem ui-sans-serif,system-ui,sans-serif;margin-bottom:1rem}
+.gl-index{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 1.8rem}
+.gl-index .chip{background:var(--surface);border-radius:999px;padding:.5rem .9rem;font-size:.88rem;font-weight:500;box-shadow:var(--shadow);transition-property:scale,color;transition-duration:.15s}.gl-index .chip::before{display:none}.gl-index .chip:active{scale:.96}
+dl.impressum dt{font:700 .95rem system-ui,sans-serif;margin-top:1.2rem}dl.impressum dd{margin:.2rem 0 0}
+dl.glossar dt{font:700 1.2rem Charter,"Iowan Old Style","Sitka Heading",Georgia,serif;margin-top:1.8rem;scroll-margin-top:1rem}dl.glossar dd{margin:.25rem 0 0}dl.glossar dd p{margin:.3rem 0}
+dl.glossar .siehe{font:.88rem system-ui,sans-serif;color:var(--muted)}
+.draft{background:#fff3cd;color:#664d03;padding:.5rem .9rem;border-radius:8px;font:.85rem system-ui,sans-serif;margin-bottom:1rem;box-shadow:0 0 0 1px #ffe69c}
+@media (max-width:40rem){header.site nav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;white-space:nowrap;width:calc(100% + 1.1rem)}header.site nav::-webkit-scrollbar{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:0s!important}}
 """
 
 
@@ -428,7 +439,21 @@ def decorate(out: str, wc: int) -> str:
     if wc >= 600 and len(heads) >= 4:
         lis = "".join(f'<li><a href="#{i}">{t}</a></li>' for i, t in heads)
         toc = f'<details class="toc"><summary>Inhalt</summary><ol>{lis}</ol></details>'
+    rest = zahlenzellen(rest)
+    rest = re.sub(r"<p>(<strong>(Stimmt nicht|Stimmt|Nicht prüfbar)[.,:]?[^<]*</strong>)",
+                  lambda m: '<p class="urteil urteil-' + {"Stimmt": "ja", "Stimmt nicht": "nein"}.get(m.group(2), "offen") + '">' + m.group(1), rest)
     return head + sep + toc + rest
+
+
+NUM_CELL_RE = re.compile(r"^[~≈]?[+\-−]?[$€]?\s?\d[\d.,]*(\s?(%|Mio\.?|Mrd\.?|Min\.?))?(\s*/\s*[$€]?\d[\d.,]*)*$")
+
+
+def zahlenzellen(html_text: str) -> str:
+    """Zellen, die nur eine Zahl enthalten, rechtsbündig setzen (Klasse num)."""
+    def cell(m: re.Match) -> str:
+        inner = re.sub(r"<[^>]+>", "", m.group(3)).strip()
+        return f'<{m.group(1)} class="num"{m.group(2)}>{m.group(3)}</{m.group(1)}>' if NUM_CELL_RE.match(inner) else m.group(0)
+    return re.sub(r"<(td|th)((?: [^>]*)?)>(.*?)</\1>", cell, html_text, flags=re.S)
 
 
 def word_count(body: str) -> int:
@@ -445,7 +470,7 @@ def page(cfg: dict, title: str, body: str, *, desc: str, path: str, og_type: str
     canon = f"{base}{path}"
     full_title = f"{title} · {cfg['titel']}" if title != cfg["titel"] else cfg["titel"]
     aktiv = cfg.get("_aktiv")  # Kategorien mit sichtbaren Beiträgen; ohne Angabe alle
-    kats = sorted(((k, v) for k, v in cfg["kategorien"].items() if aktiv is None or k in aktiv),
+    kats = sorted(((k, v) for k, v in cfg["kategorien"].items() if k != "redaktion" and (aktiv is None or k in aktiv)),
                   key=lambda kv: kv[0] == "kurz")  # Kurzmeldungen zuletzt
     nav = "".join(f'<a href="/k/{k}/">{esc(v)}</a>' for k, v in kats) + \
         '<a href="/glossar/">Glossar</a><a href="/ueber/">Über</a><a href="/feed.xml">RSS</a>'
@@ -464,7 +489,7 @@ def page(cfg: dict, title: str, body: str, *, desc: str, path: str, og_type: str
 <meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{esc(canon)}">
 <meta property="og:site_name" content="{esc(cfg['titel'])}"><meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23b4451f'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='white'%3Esp%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232540d9'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' text-anchor='middle' fill='white'%3Esp%3C/text%3E%3C/svg%3E">
 {extra_head}
 <style>{CSS}</style>
 </head>
@@ -484,7 +509,7 @@ def meta_line(cfg: dict, p: dict, wc: int) -> str:
     minuten = max(1, round(wc / 220))
     a = p.get("aktualisiert")
     aktual = f'<span>aktualisiert {a.strftime("%d.%m.%Y")}</span>' if isinstance(a, date) else ""
-    return (f'<div class="meta"><a class="chip" href="/k/{p["kategorie"]}/">{esc(kat)}</a>'
+    return (f'<div class="meta"><a class="chip k-{p["kategorie"]}" href="/k/{p["kategorie"]}/">{esc(kat)}</a>'
             f'<time datetime="{p["datum"].isoformat()}">{p["datum"].strftime("%d.%m.%Y")}</time>'
             f'{aktual}<span>{minuten} Min. Lesezeit</span></div>')
 
