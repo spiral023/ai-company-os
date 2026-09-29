@@ -34,6 +34,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 POSTS = HERE / "posts"
 SOURCES = ROOT / "80_Knowledge" / "Sources"
+GLOSSAR = HERE / "glossar.yaml"
 
 CSS = """
 :root{--bg:#fbfaf7;--fg:#1c1b19;--muted:#6b675f;--line:#e4e0d6;--accent:#b4451f;--chip:#f0ece1;--code:#f3f0e7;color-scheme:light}
@@ -68,6 +69,10 @@ details.toc{font:.92rem/1.5 ui-sans-serif,system-ui,sans-serif;margin:1.2rem 0;c
 sup.q{font:.7rem ui-sans-serif,system-ui,sans-serif;margin-left:.1em}sup.q a{text-decoration:none}
 .weiter{margin-top:2.6rem;border-top:1px solid var(--line);padding-top:1rem;font:.95rem/1.5 ui-sans-serif,system-ui,sans-serif}.weiter h2{font-size:1rem;margin:0 0 .5rem}.weiter ul{list-style:none;padding:0;margin:0}.weiter li{margin:.35rem 0}
 .abo{margin-top:2rem;background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:.7rem 1.1rem;font:.9rem/1.5 ui-sans-serif,system-ui,sans-serif}
+a.gl{color:inherit;text-decoration:underline dotted var(--muted);text-underline-offset:.2em}a.gl:hover{color:var(--accent);text-decoration-style:solid}
+.gl-index{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 1.6rem}
+dl.glossar dt{font:700 1.05rem ui-sans-serif,system-ui,sans-serif;margin-top:1.6rem;scroll-margin-top:1rem}dl.glossar dd{margin:.25rem 0 0}dl.glossar dd p{margin:.3rem 0}
+dl.glossar .siehe{font:.88rem ui-sans-serif,system-ui,sans-serif;color:var(--muted)}
 .draft{background:#fff3cd;color:#664d03;border:1px solid #ffe69c;padding:.4rem .8rem;border-radius:6px;font:.85rem ui-sans-serif,system-ui,sans-serif;margin-bottom:1rem}
 """
 
@@ -134,6 +139,125 @@ def source_entries(post: dict) -> list[dict]:
             "url": url if url.startswith("http") else "",
         })
     return out
+
+
+# ---------------------------------------------------------------- Glossar
+
+GL_SUFFIX = r"(?:s|n|en|es)?"
+GL_SKIP_TAGS = {"a", "code", "pre", "sup", "h1", "h2", "h3", "h4", "h5", "h6", "th", "script", "style"}
+
+
+def load_glossar() -> dict:
+    """glossar.yaml laden; jeder Eintrag bekommt Anker und alle Schreibweisen."""
+    if not GLOSSAR.exists():
+        return {"begriffe": [], "beobachten": []}
+    g = yaml.safe_load(GLOSSAR.read_text(encoding="utf-8")) or {}
+    eintraege = g.get("begriffe") or []
+    for e in eintraege:
+        e["slug"] = slugify(str(e.get("begriff", "")))
+        e["formen"] = [str(e.get("begriff", "")), *map(str, e.get("aliase") or [])]
+        e["kurz"] = re.split(r"(?<=[.!?])\s", str(e.get("text", "")).strip())[0]
+    eintraege.sort(key=lambda e: str(e.get("begriff", "")).lower())
+    g["begriffe"] = eintraege
+    return g
+
+
+def glossar_formen(g: dict) -> dict[str, dict]:
+    return {f: e for e in g["begriffe"] for f in e["formen"] if f}
+
+
+def glossar_regex(formen: dict[str, dict]):
+    if not formen:
+        return None
+    alt = "|".join(re.escape(f) for f in sorted(formen, key=len, reverse=True))
+    return re.compile(rf"(?<![\w-])({alt}){GL_SUFFIX}(?!\w)")
+
+
+def link_terms(out: str, rx, formen: dict[str, dict]) -> tuple[str, set[str]]:
+    """Erste Nennung jedes Glossarbegriffs im Fließtext verlinken.
+
+    Überschriften, Links, Code, Fußnotenmarken und Tabellenköpfe bleiben unberührt.
+    """
+    if rx is None:
+        return out, set()
+    gesehen: set[str] = set()
+
+    def repl(m: re.Match) -> str:
+        e = formen[m.group(1)]
+        if e["slug"] in gesehen:
+            return m.group(0)
+        gesehen.add(e["slug"])
+        return f'<a class="gl" href="/glossar/#{e["slug"]}" title="{esc(e["kurz"])}">{m.group(0)}</a>'
+
+    teile = re.split(r"(<[^>]+>)", out)
+    tiefe = 0
+    for i, t in enumerate(teile):
+        if t.startswith("<"):
+            m = re.match(r"<(/?)([a-z0-9]+)", t)
+            if m and m.group(2) in GL_SKIP_TAGS:
+                tiefe = max(0, tiefe + (-1 if m.group(1) else 1))
+        elif not tiefe:
+            teile[i] = rx.sub(repl, t)
+    return "".join(teile), gesehen
+
+
+def check_glossar(g: dict, posts: list[dict]) -> list[str]:
+    fehler = []
+    formen: dict[str, dict] = {}
+    namen = {str(e.get("begriff", "")) for e in g["begriffe"]}
+    for e in g["begriffe"]:
+        n = e.get("begriff")
+        if not n or not e.get("text"):
+            fehler.append(f"glossar.yaml: Eintrag ohne begriff oder text: {n or e}")
+            continue
+        for f in e["formen"]:
+            if f in formen and formen[f] is not e:
+                fehler.append(f"glossar.yaml: Schreibweise „{f}“ doppelt ({formen[f]['begriff']} und {n})")
+            formen[f] = e
+        prosa = prose_only(str(e["text"]))
+        for m in sorted({m.group(0) for m in INTERN_RE.finditer(prosa)}):
+            fehler.append(f"glossar.yaml: {n}: interner Begriff im Text: „{m}“")
+        if "[[" in e["text"]:
+            fehler.append(f"glossar.yaml: {n}: Wiki-Links nicht erlaubt")
+        for s in e.get("siehe") or []:
+            if s not in namen:
+                fehler.append(f"glossar.yaml: {n}: „siehe“ verweist auf unbekannten Begriff „{s}“")
+    for t in g.get("beobachten") or []:
+        if t in formen:
+            continue
+        rx = re.compile(rf"(?<![\w-]){re.escape(t)}{GL_SUFFIX}(?!\w)")
+        for p in posts:
+            if rx.search(prose_only(p["body"])):
+                fehler.append(f"{p['datei']}: Fachbegriff „{t}“ steht im Text, aber nicht im Glossar")
+    return fehler
+
+
+def glossar_html(cfg: dict, g: dict, verwendet: dict[str, int]) -> str:
+    eintraege = g["begriffe"]
+    chips = "".join(f'<a class="chip" href="#{e["slug"]}">{esc(e["begriff"])}</a>' for e in eintraege)
+    items = []
+    for e in eintraege:
+        siehe = ""
+        if e.get("siehe"):
+            by_name = {x["begriff"]: x["slug"] for x in eintraege}
+            links = ", ".join(f'<a href="#{by_name[s]}">{esc(s)}</a>' for s in e["siehe"] if s in by_name)
+            siehe = f'<p class="siehe">Siehe auch: {links}</p>'
+        items.append(f'<dt id="{e["slug"]}">{esc(e["begriff"])}</dt><dd><p>{esc(e["text"])}</p>{siehe}</dd>')
+    hinweis = esc(g.get("hinweis", ""))
+    if g.get("hinweis_url"):
+        hinweis += f' <a href="{esc(g["hinweis_url"])}" rel="noopener">AI Coding Dictionary</a>'
+    return (f'<h1>{esc(g.get("titel", "Glossar"))}</h1><p class="lead">{esc(g.get("einleitung", ""))}</p>'
+            f'<div class="gl-index">{chips}</div><dl class="glossar">{"".join(items)}</dl>'
+            f'<p class="hinweis">{hinweis}</p>')
+
+
+def glossar_ld(cfg: dict, g: dict) -> str:
+    base = cfg["base_url"].rstrip("/")
+    terms = [{"@type": "DefinedTerm", "name": e["begriff"], "description": e["text"],
+              "url": f'{base}/glossar/#{e["slug"]}'} for e in g["begriffe"]]
+    doc = {"@context": "https://schema.org", "@type": "DefinedTermSet", "name": g.get("titel", "Glossar"),
+           "inLanguage": "de", "hasDefinedTerm": terms}
+    return f'<script type="application/ld+json">{_j(doc)}</script>'
 
 
 def check_post(post: dict, cfg: dict, slugs: set[str] | None = None) -> list[str]:
@@ -217,7 +341,7 @@ def page(cfg: dict, title: str, body: str, *, desc: str, path: str, og_type: str
     canon = f"{base}{path}"
     full_title = f"{title} · {cfg['titel']}" if title != cfg["titel"] else cfg["titel"]
     nav = "".join(f'<a href="/k/{k}/">{esc(v)}</a>' for k, v in cfg["kategorien"].items() if k != "kurz") + \
-        '<a href="/k/kurz/">Kurzmeldungen</a><a href="/ueber/">Über</a><a href="/feed.xml">RSS</a>'
+        '<a href="/k/kurz/">Kurzmeldungen</a><a href="/glossar/">Glossar</a><a href="/ueber/">Über</a><a href="/feed.xml">RSS</a>'
     banner = '<div class="draft">Entwurf, nicht veröffentlicht</div>' if draft else ""
     return f"""<!doctype html>
 <html lang="de">
@@ -302,9 +426,12 @@ def abo_html(cfg: dict) -> str:
             f' · <a href="/ueber/">Über diesen Blog</a></p>')
 
 
-def post_page(cfg: dict, md: MarkdownIt, p: dict, draft: bool, posts: list[dict]) -> tuple[str, str, int]:
+def post_page(cfg: dict, md: MarkdownIt, p: dict, draft: bool, posts: list[dict],
+              gl: tuple | None = None) -> tuple[str, str, int]:
     wc = word_count(p["body"])
     body_html = decorate(render_body(md, p), wc)
+    if gl:
+        body_html, _ = link_terms(body_html, *gl)
     path = f"/p/{p['slug']}/"
     ld = (f'<script type="application/ld+json">{{"@context":"https://schema.org","@type":"BlogPosting",'
           f'"headline":{_j(p["titel"])},"datePublished":"{p["datum"].isoformat()}",'
@@ -382,6 +509,8 @@ def main() -> int:
     slugs = {p["slug"] for p in posts}
     for p in posts:
         fehler += check_post(p, cfg, slugs)
+    glossar = load_glossar()
+    fehler += check_glossar(glossar, posts)
     if fehler:
         print("FEHLER:\n - " + "\n - ".join(fehler), file=sys.stderr)
         return 1
@@ -404,9 +533,14 @@ def main() -> int:
     out.mkdir(parents=True)
     md = MarkdownIt("commonmark", {"html": False}).enable(["table", "strikethrough"])
 
+    formen = glossar_formen(glossar)
+    gl = (glossar_regex(formen), formen)
+    verwendet: dict[str, int] = {}
     for p in sichtbar:
-        path, doc, _ = post_page(cfg, md, p, args.drafts, sichtbar)
+        path, doc, _ = post_page(cfg, md, p, args.drafts, sichtbar, gl)
         write(out, f"{path}index.html", doc)
+        for slug in link_terms(md.render(p["body"]), *gl)[1]:
+            verwendet[slug] = verwendet.get(slug, 0) + 1
     intro = f'<h1>{esc(cfg["titel"])}</h1><p class="lead">{esc(cfg["beschreibung"])}</p>'
     write(out, "index.html", page(cfg, cfg["titel"], intro + list_html(cfg, sichtbar) + abo_html(cfg), desc=cfg["beschreibung"], path="/"))
     for k, name in cfg["kategorien"].items():
@@ -419,9 +553,16 @@ def main() -> int:
     ueber = md.render(cfg.get("ueber", "")) + '<p><a href="/feed.xml">RSS-Feed abonnieren</a></p>'
     write(out, "ueber/index.html", page(cfg, "Über diesen Blog", "<h1>Über diesen Blog</h1>" + ueber,
                                         desc=cfg["beschreibung"], path="/ueber/"))
+    if glossar["begriffe"]:
+        write(out, "glossar/index.html", page(cfg, glossar.get("titel", "Glossar"), glossar_html(cfg, glossar, verwendet),
+                                              desc=glossar.get("einleitung", cfg["beschreibung"]), path="/glossar/",
+                                              extra_head=glossar_ld(cfg, glossar)))
+        ungenutzt = [e["begriff"] for e in glossar["begriffe"] if e["slug"] not in verwendet]
+        print(f"Glossar: {len(glossar['begriffe'])} Begriffe, {len(verwendet)} in Beiträgen verlinkt"
+              + (f"; ohne Vorkommen: {', '.join(ungenutzt)}" if ungenutzt else ""))
     write(out, "feed.xml", feed_xml(cfg, md, sichtbar, "/feed.xml", cfg["titel"]))
     base = cfg["base_url"].rstrip("/")
-    urls = [f"{base}/", f"{base}/ueber/"] + [f"{base}/p/{p['slug']}/" for p in sichtbar]
+    urls = [f"{base}/", f"{base}/ueber/"] + ([f"{base}/glossar/"] if glossar["begriffe"] else []) + [f"{base}/p/{p['slug']}/" for p in sichtbar]
     write(out, "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
           + "".join(f"<url><loc>{u}</loc></url>" for u in urls) + "</urlset>\n")
     write(out, "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")

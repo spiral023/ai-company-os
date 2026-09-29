@@ -1,0 +1,305 @@
+# Glossar für blog.sp23.online
+#
+# Der Generator erzeugt daraus die Seite /glossar/ und verlinkt in jedem Beitrag das
+# erste Vorkommen eines Begriffs (auch seiner `aliase`) mit dem Glossar-Eintrag.
+# Pluralformen (s, n, en, es) werden automatisch erkannt, Zusammensetzungen nicht.
+#
+# Felder je Eintrag:
+#   begriff   Name im Glossar (Pflicht)
+#   aliase    weitere Schreibweisen, die im Text verlinkt werden sollen
+#   text      Erklärung in eigenen Worten, zwei bis vier Sätze (Pflicht). Der erste Satz
+#             ist zugleich der Tooltip und muss für sich stehen.
+#   siehe     Begriffe für „Siehe auch“
+#
+# Die Texte sind eigene Formulierungen. Die Begriffsauswahl orientiert sich am AI Coding
+# Dictionary von Matt Pocock (ohne Lizenzangabe): Es werden keine Definitionen übernommen.
+
+titel: "Glossar"
+einleitung: "Fachbegriffe aus den Beiträgen, kurz und in eigenen Worten erklärt. Im Text ist jeweils die erste Nennung eines Begriffs mit seinem Eintrag verlinkt."
+hinweis: "Die Begriffsauswahl orientiert sich am AI Coding Dictionary von Matt Pocock. Die Erklärungen sind eigene Texte und beschreiben allgemeines Verständnis, keine Messwerte."
+hinweis_url: "https://www.aihero.dev/ai-coding-dictionary"
+
+# Fachbegriffe, die in keinem Beitrag ohne Glossareintrag vorkommen dürfen.
+# `--check` schlägt an, sobald einer im Fließtext steht, aber hier unten fehlt.
+beobachten:
+  - Rewind
+  - Autocompact
+  - Progressive Disclosure
+  - Sycophancy
+  - Vibe Coding
+  - System Prompt
+  - Stateless
+  - Prefix Cache
+  - Attention Budget
+  - Human-in-the-loop
+  - Review-Gate
+  - Workload
+  - Latenz
+  - Monitoring
+  - Diff
+  - Closed Loop
+
+begriffe:
+  - begriff: Accuracy
+    aliase: [Genauigkeit]
+    text: "Der Anteil der Antworten, die richtig sind. Bei Benchmarks sagt sie allein wenig: Ein Modell kann bei gleicher Accuracy deutlich öfter falsch liegen oder öfter passen, je nachdem, ob es bei Unsicherheit antwortet oder verzichtet."
+    siehe: [Halluzination, Verweigerung]
+
+  - begriff: Adversarial Agent
+    aliase: [Adversarial Reviewer, Adversarial Review, Adversarial Reviews]
+    text: "Ein zweiter Agent, der die Arbeit eines ersten gezielt kritisieren soll, statt sie zu bestätigen. Er bekommt idealerweise frischen Kontext ohne die Vorgeschichte des ersten, damit er dessen Annahmen nicht übernimmt und Lücken eher findet."
+    siehe: [Agent, Pull Request]
+
+  - begriff: Agent
+    aliase: [Coding-Agent]
+    text: "Ein Programm, in dem ein KI-Modell in einer Schleife selbst entscheidet, was als Nächstes zu tun ist: Es liest Dateien, ruft Werkzeuge auf, wertet die Ergebnisse aus und macht weiter, bis die Aufgabe erledigt ist oder es nachfragen muss. Ein Coding-Agent tut das mit Programmcode."
+    siehe: [Harness, Tool Call]
+
+  - begriff: AGENTS.md
+    aliase: [CLAUDE.md]
+    text: "Eine Textdatei im Projekt, die ein Coding-Agent bei jedem Start liest: Regeln, Konventionen, wichtige Befehle. Weil ihr Inhalt in jedem Turn mitgeschickt wird, kostet jede Zeile dauerhaft Tokens. Sie sollte deshalb kurz bleiben."
+    siehe: [Harness, Token]
+
+  - begriff: Artificial Analysis
+    text: "Ein Drittanbieter, der Modelle mit eigenen Tests vergleicht und Ranglisten veröffentlicht. Seine Werte sind keine Herstellerangaben, gelten aber nur für den jeweils getesteten Aufbau."
+    siehe: [Benchmark, Intelligence Index]
+
+  - begriff: Autocompact
+    aliase: [Autocompact-Puffer, Auto-Compact]
+    text: "Die automatische Compaction, die ein Coding-Agent selbst auslöst, wenn das Context Window fast voll ist. Für sie wird ein Teil des Fensters freigehalten, nutzbar ist deshalb weniger als die angegebene Gesamtgröße. Wer früher und gezielt selbst verdichtet, bestimmt besser, was erhalten bleibt."
+    siehe: [Compaction, Context Window]
+
+  - begriff: Benchmark
+    text: "Ein standardisierter Test mit festen Aufgaben und Bewertungsregeln, mit dem sich Modelle vergleichen lassen. Die Ergebnisse gelten nur für den getesteten Aufbau: Andere Prompts, Werkzeuge oder Versionen können abweichende Werte liefern."
+    siehe: [Harness, Eval]
+
+  - begriff: Blast Radius
+    text: "Wie weit sich ein Fehler auswirkt, wenn er durchrutscht. Ein Tippfehler im Changelog betrifft fast nichts, eine Migration der Produktionsdatenbank alles. Je größer der Blast Radius und je schwerer eine Änderung rückgängig zu machen ist, desto genauer sollte ein Mensch hinsehen."
+    siehe: [Pull Request]
+
+  - begriff: Closed Weights
+    text: "Das Modell läuft nur beim Anbieter, seine Parameter (die „Gewichte“) sind nicht veröffentlicht. Du kannst es nutzen, aber nicht selbst betreiben oder untersuchen."
+
+  - begriff: Coding Agent Index
+    text: "Ein Gesamtwert von Artificial Analysis für Coding-Agents, gemessen in einem konkreten Harness wie Claude Code. Er ist eine eigene Skala und lässt sich nicht mit dem Intelligence Index mischen."
+    siehe: [Artificial Analysis, Intelligence Index, Harness]
+
+  - begriff: Compaction
+    aliase: [Kompaktion, Kompaktieren, Auto-Compaction]
+    text: "Das Zusammenfassen eines langen Gesprächsverlaufs zu einer kürzeren Fassung, damit im Context Window wieder Platz ist. Das Modell entscheidet dabei selbst, was wichtig war, deshalb können Details verloren gehen. Was in einer Datei steht, überlebt die Verdichtung."
+    siehe: [Context Window, Handoff]
+
+  - begriff: Context Rot
+    text: "Der Effekt, dass ein Modell schlechter arbeitet, je voller sein Context Window wird: Alte Fehlversuche, lange Tool-Ausgaben und verworfene Ideen lenken ab. Ab wann das spürbar wird, hängt von Modell und Aufgabe ab."
+    siehe: [Context Window, Compaction]
+
+  - begriff: Context Window
+    aliase: [Kontextfenster]
+    text: "Auch Kontextfenster genannt: die Textmenge (in Tokens), die ein Modell pro Anfrage auf einmal berücksichtigen kann. Dazu gehören Anweisungen, bisheriger Verlauf, gelesene Dateien und Tool-Ausgaben. Ein größeres Fenster verhindert nicht, dass die Qualität bei vollem Fenster nachlässt."
+    siehe: [Token, Context Rot]
+
+  - begriff: Effort
+    aliase: [Effort-Stufe]
+    text: "Eine Einstellung, wie viel Denkaufwand ein Modell in eine Antwort steckt, bei Claude von low bis max. Mehr Effort bedeutet meist mehr Tokens, mehr Zeit und höhere Kosten pro Aufgabe. Ob sich das lohnt, hängt von der Aufgabe ab."
+    siehe: [Token]
+
+  - begriff: Elo
+    aliase: [Elo-Punkte]
+    text: "Eine Punktzahl aus paarweisen Vergleichen, die ursprünglich aus dem Schach stammt. Wer mehr Punkte hat, gewinnt im direkten Vergleich häufiger. Erst der Abstand zwischen zwei Werten sagt etwas, der absolute Wert nicht."
+    siehe: [Benchmark]
+
+  - begriff: Eval
+    aliase: [Eval-Case]
+    text: "Ein wiederholbarer Test für das Verhalten eines KI-Systems: eine Aufgabe plus Regeln, wann das Ergebnis als gut gilt. So lässt sich messen, ob eine Änderung (anderes Modell, neuer Prompt, ein Plugin) wirklich etwas verbessert, statt sich nur besser anzufühlen."
+    siehe: [Grader, Benchmark]
+
+  - begriff: Fine-Tuning
+    aliase: [Feintuning, feintunt, Feintunen]
+    text: "Ein bestehendes Modell mit eigenen Beispielen nachtrainieren, damit es einen Stil oder eine enge Aufgabe besser trifft. Das kostet Zeit und Geld und muss bei einer neuen Modellgeneration oft wiederholt werden."
+
+  - begriff: Grader
+    aliase: [Judge, LLM-Judge]
+    text: "Die Instanz, die in einem Eval das Ergebnis bewertet: entweder eine feste Regel (etwa ein Textmuster) oder ein zweites Modell, das als Judge urteilt. Judge-Modelle machen selbst Fehler. Fällt ein Ergebnis überraschend schlecht aus, lohnt zuerst der Blick auf den Judge."
+    siehe: [Eval]
+
+  - begriff: Halluzination
+    aliase: [Halluzinationsrate]
+    text: "Eine flüssig und selbstsicher formulierte Antwort, die falsch oder erfunden ist. Im Benchmark AA-Omniscience misst die Halluzinationsrate, wie oft ein Modell falsch antwortet, statt bei Nichtwissen zu verzichten. Sie sinkt deshalb auch dann, wenn ein Modell einfach öfter die Antwort verweigert."
+    siehe: [Verweigerung, Accuracy]
+
+  - begriff: Handoff
+    aliase: [Handoff-Datei, Handoff-Dokument]
+    text: "Eine Datei, die den Stand einer Arbeit für die nächste Session festhält: Ziel, Erledigtes, offene Punkte. Damit kannst du den Kontext leeren und trotzdem nahtlos weiterarbeiten."
+    siehe: [Session, Compaction]
+
+  - begriff: Harness
+    aliase: [Agentic Harness]
+    text: "Alles um das Modell herum, was es zum Agent macht: Werkzeuge, System Prompt, Rückfragen vor riskanten Aktionen, Hooks und die Verwaltung des Context Windows. Dasselbe Modell verhält sich in verschiedenen Harnesses unterschiedlich. Benchmark-Werte sind deshalb nur im jeweiligen Harness vergleichbar."
+    siehe: [Agent, Hook, Benchmark]
+
+  - begriff: Hook
+    text: "Ein Skript, das ein Coding-Agent automatisch an festen Stellen ausführt, etwa vor einem Tool-Aufruf oder nach dem Speichern einer Datei. Anders als eine Anweisung in einer Textdatei führt das Harness Hooks verlässlich aus. Sie eignen sich deshalb für Pflichtregeln."
+    siehe: [Harness, Skill]
+
+  - begriff: Intelligence Index
+    aliase: [Intelligence-Index]
+    text: "Ein Gesamtwert von Artificial Analysis, der die Ergebnisse mehrerer Benchmarks zu einer Zahl verdichtet. Werte verschiedener Versionen (etwa v4.3) und verschiedener Indizes lassen sich nicht direkt vergleichen."
+    siehe: [Artificial Analysis, Coding Agent Index]
+
+  - begriff: Kalibrierung
+    aliase: [Kalibrierungskurve, kalibriert]
+    text: "Ein Modell ist kalibriert, wenn seine angegebene Sicherheit zur Trefferquote passt: Von den Antworten mit 80 Prozent Zuversicht stimmen etwa 80 Prozent. Die Kalibrierungskurve zeigt dieses Verhältnis. Sie sollte man auf eigenen Daten prüfen."
+
+  - begriff: MCP
+    aliase: [MCP-Server]
+    text: "Das Model Context Protocol, ein offener Standard, über den ein Agent externe Werkzeuge und Datenquellen ansprechen kann, etwa einen Kalender, eine Datenbank oder einen Browser. Jeder angeschlossene MCP-Server belegt Platz im Context Window."
+    siehe: [Tool Call, Context Window]
+
+  - begriff: Model Routing
+    aliase: [Routing]
+    text: "Ein Vorschaltschritt, der pro Anfrage entscheidet, welches Modell sie bekommt: einfache Fragen an ein günstiges, schwierige an ein starkes."
+
+  - begriff: MRCR
+    text: "Ein Benchmark für langen Kontext: Das Modell soll bestimmte Stellen in einem sehr langen Gesprächsverlauf wiederfinden, der viele ähnliche Stellen enthält. Der Anteil der Treffer (Recall) sinkt bei vielen Modellen, wenn der Text länger wird."
+    siehe: [Benchmark, Context Window]
+
+  - begriff: Orchestrator
+    text: "Ein Agent, der Aufgaben plant und an andere Agents verteilt, statt sie selbst zu erledigen. Er hält den Überblick, während die ausführenden Agents in getrennten Kontexten arbeiten."
+    siehe: [Agent, Subagent]
+
+  - begriff: Pareto-Front
+    aliase: [Pareto Frontier, Kostenfront]
+    text: "Die Menge der Optionen, die bei ihren Kosten nicht übertroffen werden: Kein anderes Modell ist gleichzeitig besser und billiger. Wer mehr Leistung will, muss mehr zahlen. Die Front gilt immer nur relativ zu den gemessenen Modellen."
+    siehe: [Intelligence Index]
+
+  - begriff: Permission Prompt
+    text: "Die Rückfrage eines Agents, bevor er etwas Riskantes tut, etwa Dateien löschen oder einen Befehl ausführen. Sie bremst den Ablauf, ist aber die Stelle, an der du eingreifen kannst."
+    siehe: [Harness, Sandbox]
+
+  - begriff: Plugin
+    text: "Ein Erweiterungspaket für ein Werkzeug wie Claude Code, das Skills, Befehle, Hooks oder MCP-Server bündelt und gemeinsam installierbar macht."
+    siehe: [Skill, Hook, MCP]
+
+  - begriff: Primärquelle
+    text: "Das Original: die Seite des Herstellers, die Studie selbst, der Post des Urhebers. Wer eine Zahl nur aus einem Video oder einer Zusammenfassung kennt, liest eine Sekundärquelle, also eine Zwischenstufe, die Fehler enthalten kann."
+    siehe: [Sekundärquelle]
+
+  - begriff: Prompt Cache
+    aliase: [Prompt-Caching, Prompt Caching, Cached Input, Cache Reads]
+    text: "Der Anbieter merkt sich den unveränderten Anfang einer Anfrage und berechnet ihn beim nächsten Mal deutlich günstiger. Die Ersparnis verfällt nach einer Pause (siehe TTL) und geht verloren, wenn sich der Anfang des Verlaufs ändert."
+    siehe: [TTL, Token]
+
+  - begriff: Pull Request
+    aliase: [PR, Merge Request]
+    text: "Ein Änderungsvorschlag an einem Code-Projekt, den jemand prüft, bevor er übernommen wird (Merge). Coding-Agents liefern ihre Arbeit oft als Pull Request ab. So kann ein Mensch oder ein Review-Agent sie ansehen, bevor sie im Projekt landet."
+    siehe: [Adversarial Agent, Required Status Checks]
+
+  - begriff: Reranking
+    text: "Ein zweiter Schritt, der eine bereits gefundene Trefferliste noch einmal nach Relevanz ordnet, meist mit einem besseren, aber teureren Verfahren als die erste Suche."
+
+  - begriff: Required Status Checks
+    text: "Eine GitHub-Einstellung, die einen Merge sperrt, solange festgelegte automatische Prüfungen (Tests, Linter) nicht bestanden sind. Sie gilt auch für Änderungen von Agents."
+    siehe: [Pull Request]
+
+  - begriff: Rewind
+    text: "Ein Befehl, der eine Session an einen früheren Punkt zurücksetzt, im Fall von Claude Code je nach Auswahl Gespräch und Codeänderungen. Ein Fehlversuch verschwindet damit aus dem Kontext, statt ihn mit einer Korrekturnachricht weiter mitzuschleppen. Verloren geht auch, was der Agent auf dem Irrweg gelernt hat."
+    siehe: [Session, Context Rot]
+
+  - begriff: Sandbox
+    text: "Eine abgeschottete Umgebung, in der ein Agent Code ausführen darf, ohne an dein restliches System oder deine Zugangsdaten zu kommen. Sie begrenzt den Schaden, wenn der Agent etwas Falsches tut."
+    siehe: [Permission Prompt]
+
+  - begriff: SDLC
+    text: "Software Development Lifecycle, der Weg einer Software von Planung über Bauen und Testen bis zum Betrieb. In der Diskussion um Coding-Agents geht es darum, welche dieser Phasen ein Agent übernimmt und wo weiter ein Mensch entscheidet."
+
+  - begriff: Sekundärquelle
+    text: "Eine Darstellung, die eine andere Quelle wiedergibt oder auswertet: ein Artikel, ein Video, eine Zusammenfassung. Sie ist gut für den Einstieg. Zahlen daraus solltest du vor der Weitergabe im Original nachlesen."
+    siehe: [Primärquelle]
+
+  - begriff: Session
+    text: "Ein zusammenhängender Arbeitsverlauf mit einem Agent samt seinem Kontext. Startest du eine neue Session, beginnt der Agent ohne das bisher Gelesene."
+    siehe: [Handoff, Turn]
+
+  - begriff: Shadow Mode
+    text: "Ein neues System läuft parallel mit und trifft Entscheidungen, die aber nicht ausgeführt, sondern nur mit dem bisherigen Ergebnis verglichen werden. So siehst du auf echten Daten, ob es taugt, bevor es etwas auslöst."
+
+  - begriff: Skill
+    text: "Eine Anleitung als Markdown-Datei, gegebenenfalls mit Skripten, die ein Agent bei passender Aufgabe lädt, etwa „so schreibst du unseren Release-Text“. Sie macht Wissen wiederverwendbar, ohne dass es dauerhaft im Kontext liegen muss."
+    siehe: [Hook, Plugin]
+
+  - begriff: Subagent
+    text: "Ein Hilfs-Agent mit eigenem, frischem Context Window, den der Haupt-Agent für eine Teilaufgabe startet und der nur sein Ergebnis zurückmeldet. So bleibt langer Zwischenoutput aus dem Hauptverlauf. Jeder Aufruf kostet allerdings eigene Tokens."
+    siehe: [Agent, Orchestrator]
+
+  - begriff: Terminal-Bench
+    text: "Ein Benchmark, bei dem Agents Aufgaben in einer Kommandozeilen-Umgebung lösen müssen, etwa Programme bauen oder Systeme einrichten. Die Werte hängen vom verwendeten Harness ab."
+    siehe: [Benchmark, Harness]
+
+  - begriff: Token
+    text: "Die Recheneinheit, in der Modelle Text zählen: ein Wortstück, im Deutschen oft kürzer als ein Wort. Abgerechnet wird pro Million Input-Tokens (was du sendest) und Output-Tokens (was das Modell erzeugt). Der Preis pro Token sagt noch nichts über die Kosten pro Aufgabe."
+    siehe: [Context Window, Prompt Cache]
+
+  - begriff: Tool Call
+    aliase: [Tool-Call, Tool-Aufruf]
+    text: "Die Anfrage des Modells, ein Werkzeug zu nutzen: eine Datei lesen, einen Befehl ausführen, im Web suchen. Das Harness führt sie aus und gibt das Ergebnis ans Modell zurück."
+    siehe: [Harness, MCP]
+
+  - begriff: TTL
+    text: "Time to Live, also wie lange etwas gespeichert bleibt. Beim Prompt Cache ist das die Zeit, nach der der günstige Zwischenspeicher verfällt. Danach wird der Anfang der Anfrage wieder zum vollen Preis berechnet. Die Zeiten unterscheiden sich je Anbieter."
+    siehe: [Prompt Cache]
+
+  - begriff: Turn
+    text: "Ein Durchgang im Gespräch mit einem Agent: Du schickst eine Nachricht, der Agent antwortet, gegebenenfalls nach vielen Tool Calls. Bei jedem Turn liest das Modell den gesamten bisherigen Verlauf erneut."
+    siehe: [Session, Tool Call]
+
+  - begriff: Verweigerung
+    aliase: [verweigern, Verweigern]
+    text: "Das Modell beantwortet eine Frage nicht, statt zu raten. Das senkt die Halluzinationsrate, ohne dass das Modell mehr weiß. Ob dir das nützt, hängt davon ab, ob in deinem Einsatz eine falsche Antwort teurer ist als keine."
+    siehe: [Halluzination, Accuracy]
+
+  - begriff: Worktree
+    aliase: [Worktree-Isolation]
+    text: "Ein zweites Arbeitsverzeichnis desselben Git-Repositorys auf einem eigenen Branch. Damit können mehrere Agents parallel am selben Projekt arbeiten, ohne sich gegenseitig die Dateien zu überschreiben."
+    siehe: [Agent, Orchestrator]
+
+  - begriff: Diff
+    aliase: [Diffs]
+    text: "Die Gegenüberstellung von altem und neuem Stand einer Datei, die zeigt, welche Zeilen hinzugekommen, entfallen oder geändert sind. Ein Review liest in der Regel den Diff, nicht den ganzen Code."
+    siehe: [Pull Request]
+
+  - begriff: Gate
+    aliase: [Review-Gate, Gates, CI-Gate]
+    text: "Eine Kontrollstelle, an der eine Änderung stehen bleibt, bis eine Bedingung erfüllt ist: ein bestandener Test, eine Kostenschwelle oder die Freigabe einer Person. Ein Gate ist mehr als ein Hinweis, weil es den Weiter-Schritt tatsächlich sperrt."
+    siehe: [Required Status Checks, Pull Request]
+
+  - begriff: Latenz
+    text: "Die Zeit zwischen Anfrage und Antwort. Bei Modellen zählt meist die Wartezeit bis zum ersten Token und die Zeit bis zur vollständigen Antwort. Ein günstigeres oder klügeres Modell kann dabei spürbar langsamer sein."
+    siehe: [Token]
+
+  - begriff: Closed Loop
+    aliase: [Loop, Schleife]
+    text: "Ein Kreislauf, in dem das Ergebnis einer Handlung als Rückmeldung wieder in den Ausgangspunkt fließt. Im Agenten-Kontext: Der Agent baut, beobachtet die Wirkung, zum Beispiel über Telemetrie aus der Produktion, und korrigiert sich, ohne dass ein Mensch dazwischen steht."
+    siehe: [Agent, Gate]
+
+  - begriff: Monitoring
+    text: "Die laufende Beobachtung eines Systems im Betrieb, etwa über Fehlerraten, Antwortzeiten und Logs. Es erkennt Probleme erst, nachdem der Code läuft, und ersetzt deshalb keine Prüfung vor dem Merge."
+    siehe: [Closed Loop]
+
+  - begriff: Output
+    aliase: [Outputs, Output-Token]
+    text: "Der Text, den das Modell erzeugt, im Unterschied zum Input, den es liest. Output-Token sind bei den meisten Anbietern deutlich teurer als Input-Token, und Modelle mit langem Nachdenken erzeugen viele davon."
+    siehe: [Token, Effort]
+
+  - begriff: Score
+    aliase: [Scores]
+    text: "Die Kennzahl, die ein Benchmark für ein Modell ausgibt, meist als Prozentwert oder Punktzahl. Ein Score gilt nur für genau diese Testaufgaben und Testbedingungen. Was er für deine Aufgaben bedeutet, zeigt erst eine eigene Messung."
+    siehe: [Benchmark, Eval]
+
+  - begriff: Task
+    aliase: [Tasks]
+    text: "Eine einzelne Aufgabe, die ein Agent oder ein Benchmark bearbeitet, zum Beispiel einen Fehler beheben oder eine Funktion ergänzen. Kosten pro Task sind oft aussagekräftiger als der Preis pro Token, weil sie den Verbrauch mitrechnen."
+    siehe: [Benchmark, Token]
+
+  - begriff: Workload
+    text: "Die Gesamtheit der Aufgaben, die du tatsächlich an ein Modell stellst, also Art, Länge und Menge. Benchmarks messen einen fremden Workload. Kosten und Qualität für deinen eigenen kennst du erst nach einem Test damit."
+    siehe: [Benchmark, Task]

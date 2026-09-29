@@ -5,7 +5,7 @@ description: "Verwende diesen Skill, um aus der Wissensbasis (80_Knowledge/) Blo
 
 # Blog schreiben
 
-Schreibt Entwürfe für den Blog in `blog/posts/`. Leser sind technisch interessierte Menschen, die mit KI arbeiten oder coden: Anwender, Vibe Coder, Programmierer. Sie kennen Begriffe wie Context Window, Effort-Stufe oder Prompt Cache und wollen Einordnung, keine Grundlagen.
+Schreibt Entwürfe für den Blog in `blog/posts/`. Leser sind technisch interessierte Menschen, die mit KI arbeiten oder coden: Anwender, Vibe Coder, Programmierer. Sie kennen die Grundbegriffe, aber nicht jeden Fachausdruck. Die erste Nennung eines Begriffs aus `blog/glossar.yaml` wird automatisch mit dem Glossar verlinkt. Sie wollen Einordnung, keine Grundlagen.
 
 ## Harte Regeln
 
@@ -20,6 +20,7 @@ Schreibt Entwürfe für den Blog in `blog/posts/`. Leser sind technisch interess
 
 ## Stil
 
+- **Glossar pflegen.** Kommt ein Fachbegriff vor, den ein Vibe Coder nicht kennt (Harness, TTL, Blast Radius), zuerst in `blog/glossar.yaml` prüfen, ob es ihn gibt, sonst mit zwei bis vier Sätzen in eigenen Worten ergänzen. Nie Definitionen aus dem AI Coding Dictionary (Matt Pocock) oder anderen Quellen übernehmen oder übersetzen, dort fehlt eine Lizenz. Erklärungen im Glossar beschreiben Allgemeinverständnis, keine Zahlen.
 - Deutsch, sachlich und direkt, Ansprache mit „du“ bei Handlungsempfehlungen (kleingeschrieben: du, dich, dein). Englische Fachbegriffe im Original.
 - Hohe Informationsdichte: erst das Ergebnis, dann die Begründung. Kein Einleitungsgeplänkel, keine Floskeln („in der heutigen schnelllebigen Zeit“), keine Werbesprache, keine Emojis.
 - Konkrete Titel mit Aussage („Opus 5.5 an der Spitze, aber teurer pro Task“), nicht „Neues von Anthropic“.

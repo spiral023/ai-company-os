@@ -29,9 +29,15 @@ Im Text: `{q:2}` verweist auf die zweite Quelle (Fußnote), `[Text](post:<slug>)
 
 Quellenangaben (Titel, Autor, Datum, Original-URL) erzeugt der Generator aus den Source-Notizen. Wiki-Links in Doppelklammern sind im Text nicht erlaubt.
 
+## Glossar
+
+`blog/glossar.yaml` enthält die Fachbegriffe (Begriff, Aliase, Erklärung, „Siehe auch“). Der Generator erzeugt daraus die Seite `/glossar/` (mit Schema.org `DefinedTermSet`) und verlinkt in jedem Beitrag die **erste Nennung** eines Begriffs mit Tooltip. Überschriften, Links, Code und Fußnotenmarken bleiben unverlinkt, Pluralformen (s, n, en, es) werden erkannt.
+
+Die Erklärungen sind eigene Texte. Die Begriffsauswahl orientiert sich am AI Coding Dictionary von Matt Pocock, das keine Lizenzangabe hat: Es werden keine Definitionen übernommen oder übersetzt. Unter `beobachten:` stehen Fachbegriffe, die ohne Glossareintrag nicht im Fließtext vorkommen dürfen. `--check` schlägt dann an.
+
 ## Prüfungen
 
-`python blog/build_blog.py --check` bricht ab bei fehlenden Pflichtfeldern, unbekannter Kategorie, fehlender Quelle, Wiki-Links, ungültigen `{q:n}`- oder `post:`-Verweisen, fehlendem Abschnitt „Kurz gesagt“ (außer Kurzmeldung) sowie bei Stilfehlern: interne Begriffe (Notiz, Pattern, Konfidenz, Wiki), ISO-Daten im Fließtext, Dollar-Beträge mit Dezimalpunkt, fehlendes Leerzeichen nach Satzende.
+`python blog/build_blog.py --check` bricht ab bei fehlenden Pflichtfeldern, unbekannter Kategorie, fehlender Quelle, Wiki-Links, ungültigen `{q:n}`- oder `post:`-Verweisen, fehlendem Abschnitt „Kurz gesagt“ (außer Kurzmeldung) sowie bei Fehlern im Glossar (doppelte Schreibweise, unbekannter „Siehe auch“-Verweis, interne Begriffe) und Fachbegriffen aus `beobachten:` ohne Eintrag sowie bei Stilfehlern: interne Begriffe (Notiz, Pattern, Konfidenz, Wiki), ISO-Daten im Fließtext, Dollar-Beträge mit Dezimalpunkt, fehlendes Leerzeichen nach Satzende.
 
 ## Abhängigkeiten
 
