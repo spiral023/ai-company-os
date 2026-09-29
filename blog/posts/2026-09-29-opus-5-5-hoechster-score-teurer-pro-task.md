@@ -1,6 +1,6 @@
 ---
 titel: "Opus 5.5: Höchster Score, niedrigerer Preis, teurere Aufgabe"
-datum: 2026-09-30
+datum: 2026-09-29
 kategorie: modelle
 zusammenfassung: "Der Listenpreis sinkt um 20 %, die Kosten pro Coding-Aufgabe steigen um 21 %. Warum beides stimmt und welche Effort-Stufe sich für die eigene Arbeit lohnt."
 status: freigegeben

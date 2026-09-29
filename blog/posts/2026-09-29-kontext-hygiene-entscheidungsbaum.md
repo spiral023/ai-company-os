@@ -1,6 +1,6 @@
 ---
 titel: "Nach jedem Arbeitsblock fünf Optionen: Weiter ist der riskanteste Default"
-datum: 2026-09-30
+datum: 2026-09-29
 kategorie: arbeitsweisen
 zusammenfassung: "Continue, rewind, compact, clear oder Subagent: Wie du nach jedem Block eines Coding-Agents entscheidest, was jede Option kostet und warum feste Schwellenwerte nur Erfahrungswerte sind."
 status: freigegeben

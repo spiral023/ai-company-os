@@ -1,6 +1,6 @@
 ---
 titel: "GPT-6 Sol und Luna: halber Preis, weniger Halluzinationen nur durch Verweigern"
-datum: 2026-09-30
+datum: 2026-09-29
 kategorie: kurz
 zusammenfassung: "GPT-6 Sol und Luna kosten etwa die Hälfte von GPT-5.6 bei gleichem Intelligence-Index-Niveau. Die niedrigere Halluzinationsrate entsteht vor allem durch häufigeres Verweigern."
 status: freigegeben

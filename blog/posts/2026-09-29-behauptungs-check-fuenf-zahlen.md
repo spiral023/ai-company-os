@@ -1,6 +1,6 @@
 ---
 titel: "Stimmt das? Fünf Aussagen aus der KI-Szene im Faktencheck"
-datum: 2026-09-30
+datum: 2026-09-29
 kategorie: check
 zusammenfassung: "Fine-Tuning sei tot, 94 Commits an einem Tag, 93 % zu 76 % Kontext-Recall, gefühlt schneller und gemessen langsamer, weniger Halluzinationen bei GPT-6: fünf Aussagen und was an ihnen dran ist."
 status: freigegeben

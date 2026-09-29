@@ -1,6 +1,6 @@
 ---
 titel: "KW 39: Opus 5.5 führt, GPT-6 halbiert die Preise, Effort kauft Verifikation"
-datum: 2026-09-30
+datum: 2026-09-29
 kategorie: digest
 zusammenfassung: "Wochenrückblick KW 39: Opus 5.5 an der Spitze beider Indizes, GPT-6 Sol und Luna deutlich günstiger, dazu Effort-Daten, ein Opus-Leitfaden und drei Arbeitsweisen gegen den Review-Engpass."
 status: freigegeben

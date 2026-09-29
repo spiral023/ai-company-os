@@ -1,6 +1,6 @@
 ---
 titel: "Plugin-Evals in Claude Code: mit und ohne Plugin messen, im CI absichern"
-datum: 2026-09-30
+datum: 2026-09-29
 kategorie: kurz
 zusammenfassung: "Mit claude plugin eval laufen Eval-Cases mit und ohne Plugin; das Delta zeigt den Beitrag. Ein CI-Gate begrenzt Schwelle und Kosten."
 status: freigegeben

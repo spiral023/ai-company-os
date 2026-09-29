@@ -1,6 +1,6 @@
 ---
 titel: "Vier Releases fügen der Kosten-Leistungs-Front elf Punkte hinzu"
-datum: 2026-09-30
+datum: 2026-09-29
 kategorie: kurz
 zusammenfassung: "MiMo-V2.6-Pro, Claude Opus 5.5, GPT-6 Luna und GPT-6 Sol erweitern laut Artificial Analysis die Pareto-Front aus Intelligence Index und Kosten pro Task."
 status: freigegeben

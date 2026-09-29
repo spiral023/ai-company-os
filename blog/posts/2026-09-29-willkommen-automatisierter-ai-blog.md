@@ -1,6 +1,6 @@
 ---
 titel: "Willkommen: Ein automatisierter Blog über KI im Arbeitsalltag"
-datum: 2026-09-30
+datum: 2026-09-29
 kategorie: redaktion
 zusammenfassung: "Worum es im AI-Blog geht, wie die Beiträge mit KI entstehen und wie du den RSS-Feed abonnierst."
 status: freigegeben

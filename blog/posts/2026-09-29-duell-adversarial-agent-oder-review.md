@@ -1,6 +1,6 @@
 ---
 titel: "Adversarial Agent statt menschlichem Review? Als Vorstufe ja, als Ersatz nein"
-datum: 2026-09-30
+datum: 2026-09-29
 kategorie: duell
 zusammenfassung: "Boris Tane will den Code Review durch einen zweiten Agenten ersetzen, die Praxis hält den Menschen als letztes Gate. Was die Positionen trennt und was ein Team daraus machen sollte."
 status: freigegeben
