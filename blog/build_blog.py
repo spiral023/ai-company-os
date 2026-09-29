@@ -5,6 +5,7 @@ Nutzung:
     python blog/build_blog.py                 # nur status: freigegeben nach blog/_site
     python blog/build_blog.py --drafts        # Entwürfe zusätzlich, nach blog/_preview
     python blog/build_blog.py --check         # nur prüfen, nichts schreiben
+    python blog/build_blog.py --freigeben SLUG  # prüfen, dann status: freigegeben und geprueft_am setzen
 
 Beiträge liegen in blog/posts/*.md. Nur Beiträge mit `status: freigegeben` und einem
 Datum bis heute erscheinen im öffentlichen Build. Das ist die Freigabe-Schranke:
@@ -16,6 +17,7 @@ Abhängigkeiten: markdown-it-py, PyYAML (pip install markdown-it-py pyyaml).
 from __future__ import annotations
 
 import argparse
+import functools
 import html
 import re
 import shutil
@@ -71,6 +73,7 @@ sup.q{font:.7rem ui-sans-serif,system-ui,sans-serif;margin-left:.1em}sup.q a{tex
 .abo{margin-top:2rem;background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:.7rem 1.1rem;font:.9rem/1.5 ui-sans-serif,system-ui,sans-serif}
 a.gl{color:inherit;text-decoration:underline dotted var(--muted);text-underline-offset:.2em}a.gl:hover{color:var(--accent);text-decoration-style:solid}
 .gl-index{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 1.6rem}
+dl.impressum dt{font:700 .95rem ui-sans-serif,system-ui,sans-serif;margin-top:1.2rem}dl.impressum dd{margin:.2rem 0 0}
 dl.glossar dt{font:700 1.05rem ui-sans-serif,system-ui,sans-serif;margin-top:1.6rem;scroll-margin-top:1rem}dl.glossar dd{margin:.25rem 0 0}dl.glossar dd p{margin:.3rem 0}
 dl.glossar .siehe{font:.88rem ui-sans-serif,system-ui,sans-serif;color:var(--muted)}
 .draft{background:#fff3cd;color:#664d03;border:1px solid #ffe69c;padding:.4rem .8rem;border-radius:6px;font:.85rem ui-sans-serif,system-ui,sans-serif;margin-bottom:1rem}
@@ -117,27 +120,37 @@ def prose_only(body: str) -> str:
     return re.sub(r"\]\([^)]*\)", "]", t)
 
 
+@functools.lru_cache(maxsize=None)
+def _note_entry(q: str) -> dict:
+    note = SOURCES / f"{q}.md"
+    if not note.exists():
+        raise ValueError(f"Source-Notiz nicht gefunden: {q}")
+    t = note.read_text(encoding="utf-8")
+    fm = re.match(r"---\n(.*?)\n---\n(.*)", t, re.S)
+    meta = yaml.safe_load(fm.group(1)) if fm else {}
+    h1 = re.search(r"^# (.+)$", fm.group(2) if fm else t, re.M)
+    url = str(meta.get("url") or "")
+    return {
+        "titel": h1.group(1).strip() if h1 else q,
+        "autor": str(meta.get("autor") or ""),
+        "datum": str(meta.get("datum") or ""),
+        "url": url if url.startswith("http") else "",
+    }
+
+
 def source_entries(post: dict) -> list[dict]:
     """Quellenangaben aus Source-Notizen des Wissenssystems (Titel, Autor, URL)."""
     out = []
     for q in post.get("quellen") or []:
         if isinstance(q, dict):
+            if not q.get("titel"):
+                raise ValueError(f"{post['datei']}: Quelle ohne 'titel': {q}")
             out.append(q)
             continue
-        note = SOURCES / f"{q}.md"
-        if not note.exists():
-            raise ValueError(f"{post['datei']}: Source-Notiz nicht gefunden: {q}")
-        t = note.read_text(encoding="utf-8")
-        fm = re.match(r"---\n(.*?)\n---\n(.*)", t, re.S)
-        meta = yaml.safe_load(fm.group(1)) if fm else {}
-        h1 = re.search(r"^# (.+)$", fm.group(2) if fm else t, re.M)
-        url = str(meta.get("url") or "")
-        out.append({
-            "titel": h1.group(1).strip() if h1 else q,
-            "autor": str(meta.get("autor") or ""),
-            "datum": str(meta.get("datum") or ""),
-            "url": url if url.startswith("http") else "",
-        })
+        try:
+            out.append(_note_entry(str(q)))
+        except ValueError as e:
+            raise ValueError(f"{post['datei']}: {e}") from None
     return out
 
 
@@ -269,7 +282,9 @@ def check_post(post: dict, cfg: dict, slugs: set[str] | None = None) -> list[str
         fehler.append(f"{post['datei']}: unbekannte Kategorie '{post['kategorie']}'")
     if post.get("status") not in ("entwurf", "freigegeben"):
         fehler.append(f"{post['datei']}: status muss entwurf oder freigegeben sein")
-    if not post.get("quellen"):
+    if post.get("status") == "freigegeben" and not isinstance(post.get("geprueft_am"), date):
+        fehler.append(f"{post['datei']}: freigegeben ohne 'geprueft_am' (Freigabe mit --freigeben setzen)")
+    if not post.get("quellen") and post.get("kategorie") not in cfg.get("ohne_quellen", []):
         fehler.append(f"{post['datei']}: keine Quellen angegeben (Quellenangabe ist Pflicht)")
     if "[[" in post["body"]:
         fehler.append(f"{post['datei']}: Wiki-Links im Text (Doppelklammern) nicht erlaubt")
@@ -292,6 +307,87 @@ def check_post(post: dict, cfg: dict, slugs: set[str] | None = None) -> list[str
         fehler.append(f"{post['datei']}: Dollar-Betrag mit Dezimalpunkt (deutsch: $0,068, nicht $0.068)")
     if post.get("kategorie") != "kurz" and "## Kurz gesagt" not in post["body"]:
         fehler.append(f"{post['datei']}: Abschnitt „## Kurz gesagt“ fehlt")
+    try:
+        source_entries(post)
+    except ValueError as e:
+        fehler.append(str(e))
+    zitiert = {int(m.group(1)) for m in Q_RE.finditer(post["body"])}
+    for i in range(1, n_q + 1):
+        if i not in zitiert:
+            fehler.append(f"{post['datei']}: Quelle {i} wird nie zitiert (setze {{q:{i}}} an die belegte Aussage)")
+    return fehler
+
+
+BEKANNTE_FELDER = {"titel", "datum", "kategorie", "zusammenfassung", "status", "quellen", "aktualisiert",
+                   "geprueft_am", "pruefen_bis", "body", "slug", "datei"}
+ZAHL_RE = re.compile(r"\d[\d.,]*\s?(?:Prozent|%|Mio\.?|Tokens?|US-Dollar|Punkte\w*)|\$\d")
+
+
+def ist_sichtbar(p: dict, heute: date) -> bool:
+    return p["status"] == "freigegeben" and p["datum"] <= heute
+
+
+def warn_post(post: dict, heute: date | None = None) -> list[str]:
+    """Weiche Hinweise: Absätze mit Zahlen, aber ohne Quellenverweis."""
+    out = []
+    for k in post:
+        if k not in BEKANNTE_FELDER:
+            out.append(f"{post['datei']}: unbekanntes Frontmatter-Feld '{k}' (Tippfehler?)")
+    bis = post.get("pruefen_bis")
+    if isinstance(bis, date) and bis < (heute or date.today()):
+        out.append(f"{post['datei']}: pruefen_bis {bis.strftime('%d.%m.%Y')} ist überschritten, Zahlen und Preise erneut prüfen")
+    box = re.search(r"## Kurz gesagt\n(.*?)(?=\n## |\Z)", post["body"], re.S)
+    if box:
+        n = len(re.findall(r"^[-*] ", box.group(1), re.M))
+        if not 2 <= n <= 4:
+            out.append(f"{post['datei']}: „Kurz gesagt“ hat {n} Stichpunkte (vorgesehen: 2 bis 4)")
+    body = re.sub(r"```.*?```", "", post["body"], flags=re.S)
+    body = re.sub(r"## Kurz gesagt\n.*?(?=\n## |\Z)", "", body, flags=re.S)  # Zusammenfassung belegt der Text
+    for block in re.split(r"\n\s*\n", body):
+        b = block.strip()
+        if not b or b.startswith("#") or Q_RE.search(b):
+            continue
+        if ZAHL_RE.search(prose_only(b)):
+            out.append(f"{post['datei']}: Zahl ohne Quellenverweis in „{b[:50].replace(chr(10), ' ')}…“")
+    return out
+
+
+def check_freigabe(posts: list[dict], heute: date) -> list[str]:
+    """Regeln über mehrere Beiträge: Slug eindeutig, freigegebene verlinken nur Sichtbares."""
+    fehler = []
+    von: dict[str, list[str]] = {}
+    for p in posts:
+        von.setdefault(p["slug"], []).append(p["datei"])
+    for slug, dateien in von.items():
+        if len(dateien) > 1:
+            fehler.append(f"Slug „{slug}“ doppelt: {', '.join(dateien)}")
+    by_slug = {p["slug"]: p for p in posts}
+    for p in posts:
+        if not ist_sichtbar(p, heute):
+            continue
+        for m in POST_LINK_RE.finditer(p["body"]):
+            z = by_slug.get(m.group(1))
+            if z is not None and not ist_sichtbar(z, heute):
+                fehler.append(f"{p['datei']}: verlinkt post:{m.group(1)}, der noch nicht freigegeben oder datiert ist (toter Link)")
+    return fehler
+
+
+PLATZHALTER_RE = re.compile(r"\[hier ergänzen[^\]]*\]|\bTODO\b|\bXXX\b|Lorem ipsum", re.I)
+
+
+def platzhalter(cfg: dict, live: list[dict]) -> list[str]:
+    """Platzhalter in Konfiguration und veröffentlichten Beiträgen, die nicht live gehen dürfen."""
+    fehler = []
+    if cfg and not (cfg.get("impressum") or {}).get("medieninhaber"):
+        fehler.append("site.yaml: Impressum (Medieninhaber) fehlt, Offenlegung nach § 25 Mediengesetz")
+    for feld in ("titel", "beschreibung", "autor", "fusszeile", "ueber", "impressum", "datenschutz"):
+        for m in PLATZHALTER_RE.finditer(str(cfg.get(feld, ""))):
+            fehler.append(f"site.yaml: Platzhalter in '{feld}': {m.group(0)}")
+    if str(cfg.get("autor", "")).strip().lower() == "sp23" or "sp23 ·" in str(cfg.get("titel", "")):
+        fehler.append("site.yaml: Blogtitel oder Autor sind noch die Platzhalter „sp23“")
+    for p in live:
+        for m in PLATZHALTER_RE.finditer(p["body"]):
+            fehler.append(f"{p['datei']}: Platzhalter im Text: {m.group(0)}")
     return fehler
 
 
@@ -340,8 +436,12 @@ def page(cfg: dict, title: str, body: str, *, desc: str, path: str, og_type: str
     base = cfg["base_url"].rstrip("/")
     canon = f"{base}{path}"
     full_title = f"{title} · {cfg['titel']}" if title != cfg["titel"] else cfg["titel"]
-    nav = "".join(f'<a href="/k/{k}/">{esc(v)}</a>' for k, v in cfg["kategorien"].items() if k != "kurz") + \
-        '<a href="/k/kurz/">Kurzmeldungen</a><a href="/glossar/">Glossar</a><a href="/ueber/">Über</a><a href="/feed.xml">RSS</a>'
+    aktiv = cfg.get("_aktiv")  # Kategorien mit sichtbaren Beiträgen; ohne Angabe alle
+    kats = sorted(((k, v) for k, v in cfg["kategorien"].items() if aktiv is None or k in aktiv),
+                  key=lambda kv: kv[0] == "kurz")  # Kurzmeldungen zuletzt
+    nav = "".join(f'<a href="/k/{k}/">{esc(v)}</a>' for k, v in kats) + \
+        '<a href="/glossar/">Glossar</a><a href="/ueber/">Über</a><a href="/feed.xml">RSS</a>'
+    rechtliches = (' · <a href="/impressum/">Impressum</a>' if cfg.get("impressum") else "") +         (' · <a href="/datenschutz/">Datenschutz</a>' if cfg.get("datenschutz") else "")
     banner = '<div class="draft">Entwurf, nicht veröffentlicht</div>' if draft else ""
     return f"""<!doctype html>
 <html lang="de">
@@ -364,7 +464,7 @@ def page(cfg: dict, title: str, body: str, *, desc: str, path: str, og_type: str
 <div class="wrap">
 <header class="site"><a class="name" href="/">{esc(cfg['titel'])}</a><nav>{nav}</nav></header>
 <main>{banner}{body}</main>
-<footer class="site">{esc(cfg['fusszeile'])} · <a href="/feed.xml">RSS-Feed</a></footer>
+<footer class="site">{esc(cfg['fusszeile'])} · <a href="/feed.xml">RSS-Feed</a>{rechtliches}</footer>
 </div>
 </body>
 </html>
@@ -387,6 +487,8 @@ def de_datum(d: str) -> str:
 
 
 def quellen_html(cfg: dict, p: dict) -> str:
+    if not p.get("quellen"):
+        return ""
     items = []
     for i, q in enumerate(source_entries(p), 1):
         label = esc(q["titel"])
@@ -484,16 +586,50 @@ def feed_xml(cfg: dict, md: MarkdownIt, posts: list[dict], selfpath: str, title:
             f'<atom:link href="{base}{selfpath}" rel="self" type="application/rss+xml"/>{"".join(items)}</channel></rss>\n')
 
 
+def impressum_html(imp: dict) -> str:
+    zeilen = [("Medieninhaber und Herausgeber", "medieninhaber"), ("Wohnort", "wohnort"),
+              ("Unternehmensgegenstand", "gegenstand"), ("Grundlegende Richtung", "richtung"),
+              ("Beteiligungen", "beteiligungen"), ("Kontakt", "kontakt")]
+    items = "".join(f"<dt>{t}</dt><dd>{esc(imp[k])}</dd>" for t, k in zeilen if imp.get(k))
+    return (f'<h1>Impressum</h1><p class="lead">Offenlegung nach § 25 Mediengesetz</p>'
+            f'<dl class="impressum">{items}</dl>')
+
+
 def write(out: Path, rel: str, text: str) -> None:
     target = out / rel.lstrip("/")
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(text, encoding="utf-8", newline="\n")
 
 
+def freigeben(post: dict, posts: list[dict], heute: date) -> tuple[bool, str]:
+    """Beitrag freigeben: erneut prüfen, status und geprueft_am im Frontmatter setzen."""
+    if post["status"] == "freigegeben":
+        return False, f"{post['datei']} ist schon freigegeben"
+    probe = [{**q, "status": "freigegeben", "geprueft_am": heute} if q is post else q for q in posts]
+    fehler = check_freigabe(probe, heute) if post["datum"] <= heute else []
+    fehler += platzhalter({}, [post])
+    if fehler:
+        return False, "Freigabe abgelehnt:\n - " + "\n - ".join(fehler)
+    path = POSTS / post["datei"]
+    text = path.read_text(encoding="utf-8", newline="")
+    text = re.sub(r"^geprueft_am:.*?\r?\n", "", text, count=1, flags=re.M)
+    text, n = re.subn(r"^status:.*?(\r?\n)", lambda m: f"status: freigegeben{m.group(1)}geprueft_am: {heute.isoformat()}{m.group(1)}",
+                      text, count=1, flags=re.M)
+    if not n:
+        return False, f"{post['datei']}: status-Zeile nicht gefunden"
+    path.write_text(text, encoding="utf-8", newline="")
+    wann = "sofort sichtbar" if post["datum"] <= heute else f"erscheint ab {post['datum'].strftime('%d.%m.%Y')}"
+    return True, f"{post['datei']} freigegeben (geprueft_am {heute.strftime('%d.%m.%Y')}), {wann}"
+
+
 def main() -> int:
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--drafts", action="store_true", help="Entwürfe einbeziehen (Ausgabe nach blog/_preview)")
     ap.add_argument("--check", action="store_true", help="nur prüfen")
+    ap.add_argument("--freigeben", metavar="SLUG", help="Beitrag prüfen und freigeben (setzt status und geprueft_am)")
     args = ap.parse_args()
 
     cfg = load_config()
@@ -511,21 +647,41 @@ def main() -> int:
         fehler += check_post(p, cfg, slugs)
     glossar = load_glossar()
     fehler += check_glossar(glossar, posts)
+    heute = date.today()
+    fehler += check_freigabe(posts, heute)
     if fehler:
         print("FEHLER:\n - " + "\n - ".join(fehler), file=sys.stderr)
         return 1
 
-    heute = date.today()
-    sichtbar = [p for p in posts if (args.drafts or (p["status"] == "freigegeben" and p["datum"] <= heute))]
+    if args.freigeben:
+        ziel = next((p for p in posts if p["slug"] == args.freigeben), None)
+        if ziel is None:
+            print(f"Beitrag nicht gefunden: {args.freigeben}", file=sys.stderr)
+            return 1
+        ok, meldung = freigeben(ziel, posts, heute)
+        print(meldung, file=sys.stdout if ok else sys.stderr)
+        return 0 if ok else 1
+
+    sichtbar = [p for p in posts if (args.drafts or ist_sichtbar(p, heute))]
     sichtbar.sort(key=lambda p: (p["datum"], p["slug"]), reverse=True)
     n_draft = sum(1 for p in sichtbar if p["status"] != "freigegeben")
     print(f"{len(posts)} Beiträge, {len(sichtbar)} im Build ({n_draft} Entwürfe)")
+    warnungen = [w for p in posts for w in warn_post(p, heute)]
+    if warnungen:
+        print("HINWEISE:\n - " + "\n - ".join(warnungen), file=sys.stderr)
+    offen = platzhalter(cfg, [p for p in posts if ist_sichtbar(p, heute)])
     if args.check:
-        # Quellen auflösen, damit fehlende Source-Notizen auffallen
-        for p in sichtbar:
-            source_entries(p)
+        if offen:
+            print("Vor dem Livegang offen:\n - " + "\n - ".join(offen), file=sys.stderr)
         print("Prüfung bestanden.")
         return 0
+    if offen and not args.drafts:
+        print("FEHLER (Platzhalter im öffentlichen Build):\n - " + "\n - ".join(offen), file=sys.stderr)
+        return 1
+    if not sichtbar and not args.drafts:
+        print("FEHLER: Kein freigegebener Beitrag. Der öffentliche Build würde eine leere Seite erzeugen.", file=sys.stderr)
+        return 1
+    cfg["_aktiv"] ={p["kategorie"] for p in sichtbar}
 
     out = HERE / ("_preview" if args.drafts else "_site")
     if out.exists():
@@ -553,6 +709,12 @@ def main() -> int:
     ueber = md.render(cfg.get("ueber", "")) + '<p><a href="/feed.xml">RSS-Feed abonnieren</a></p>'
     write(out, "ueber/index.html", page(cfg, "Über diesen Blog", "<h1>Über diesen Blog</h1>" + ueber,
                                         desc=cfg["beschreibung"], path="/ueber/"))
+    if cfg.get("impressum"):
+        write(out, "impressum/index.html", page(cfg, "Impressum", impressum_html(cfg["impressum"]),
+                                                desc="Impressum und Offenlegung", path="/impressum/"))
+    if cfg.get("datenschutz"):
+        write(out, "datenschutz/index.html", page(cfg, "Datenschutz", "<h1>Datenschutz</h1>" + md.render(cfg["datenschutz"]),
+                                                  desc="Datenschutzerklärung", path="/datenschutz/"))
     if glossar["begriffe"]:
         write(out, "glossar/index.html", page(cfg, glossar.get("titel", "Glossar"), glossar_html(cfg, glossar, verwendet),
                                               desc=glossar.get("einleitung", cfg["beschreibung"]), path="/glossar/",
@@ -562,7 +724,7 @@ def main() -> int:
               + (f"; ohne Vorkommen: {', '.join(ungenutzt)}" if ungenutzt else ""))
     write(out, "feed.xml", feed_xml(cfg, md, sichtbar, "/feed.xml", cfg["titel"]))
     base = cfg["base_url"].rstrip("/")
-    urls = [f"{base}/", f"{base}/ueber/"] + ([f"{base}/glossar/"] if glossar["begriffe"] else []) + [f"{base}/p/{p['slug']}/" for p in sichtbar]
+    urls = [f"{base}/", f"{base}/ueber/", f"{base}/impressum/", f"{base}/datenschutz/"] + ([f"{base}/glossar/"] if glossar["begriffe"] else []) + [f"{base}/p/{p['slug']}/" for p in sichtbar]
     write(out, "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
           + "".join(f"<url><loc>{u}</loc></url>" for u in urls) + "</urlset>\n")
     write(out, "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")

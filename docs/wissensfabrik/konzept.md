@@ -220,14 +220,14 @@ Der vorhandene Skill `graphify` kann aus Sources, Patterns und Entitäten einen 
 
 Entschieden am 2026-09-29:
 
-1. **Ort:** öffentlicher Blog auf `blog.sp23.online`, mit RSS. Der Generator liegt in `blog/`, Beiträge gehen erst nach Freigabe (`status: freigegeben`) in Seite und Feed.
+1. **Ort:** öffentlicher Blog auf `ai-blog.sp23.online`, mit RSS. Der Generator liegt in `blog/`, Beiträge gehen erst nach Freigabe (`status: freigegeben`) in Seite und Feed.
 2. **NotebookLM:** Login ist erfolgt. Hochgeladen werden nur eigene Notizen. Erste Audio-Probe erzeugt (`reports/notebooklm/probe-modell-radar-kw39.m4a`, 23,7 Minuten bei „default“-Länge; künftig `--length short`).
 3. **Skill `quellen-verarbeiten`:** auf den neuen Ablauf umgestellt.
 4. **Kadenz:** nicht nur ein Artikel pro Woche (siehe unten).
 
 Noch offen:
 
-- Hosting und Deployment für `blog.sp23.online` (siehe `blog/README.md`).
+- Hosting und Deployment für `ai-blog.sp23.online` (siehe `blog/README.md`).
 - Freigabe der ersten neun Entwürfe.
 - Autorenname und Blogtitel (Platzhalter: „sp23“ und „sp23 · KI-Praxis“).
 - Watchlist: sollen die häufigsten Autoren und Herstellerblogs automatisch erfasst werden?

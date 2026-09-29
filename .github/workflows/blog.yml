@@ -1,0 +1,58 @@
+name: Blog
+
+# Prüft den Blog bei Änderungen und baut ihn täglich, damit Beiträge mit
+# Datum in der Zukunft am Stichtag erscheinen. Auf main (und täglich) wird der Build
+# als Cloudflare Worker nach ai-blog.sp23.online deployt. Sicherung: Der Build bricht
+# ab, solange Platzhalter in site.yaml stehen oder kein Beitrag freigegeben ist,
+# dann bleibt die Seite „Im Aufbau“ online.
+#
+# Benötigte Repository-Secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
+
+on:
+  push:
+    branches: [main]
+    paths: ["blog/**", "80_Knowledge/Sources/**", "tests/test_build_blog.py", ".github/workflows/blog.yml"]
+  pull_request:
+    paths: ["blog/**", "80_Knowledge/Sources/**", "tests/test_build_blog.py"]
+  schedule:
+    - cron: "15 5 * * *"
+  workflow_dispatch:
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install markdown-it-py pyyaml pytest
+      - run: python -m pytest tests/test_build_blog.py -q
+      - run: python blog/build_blog.py --check
+
+  bauen:
+    needs: pruefen
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: blog-deploy
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install markdown-it-py pyyaml
+      # Scheitert absichtlich, solange Platzhalter (Kontakt, Titel, Autor) in site.yaml stehen.
+      - run: python blog/build_blog.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: blog-site
+          path: blog/_site
+      - uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: blog
+          wranglerVersion: "4"
+          command: deploy

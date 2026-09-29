@@ -1,4 +1,4 @@
-# Blog (blog.sp23.online)
+# Blog (ai-blog.sp23.online)
 
 Statischer Blog aus Markdown, gespeist aus der Wissensbasis (`80_Knowledge/`). Der Generator `build_blog.py` erzeugt Seiten, RSS-Feeds und Sitemap.
 
@@ -6,9 +6,9 @@ Statischer Blog aus Markdown, gespeist aus der Wissensbasis (`80_Knowledge/`). D
 
 1. **Entwurf schreiben** (Skill `blog-schreiben`): `blog/posts/YYYY-MM-DD-<slug>.md` mit `status: entwurf`.
 2. **Vorschau:** `python blog/build_blog.py --drafts`, danach `blog/_preview/` lokal öffnen (`python -m http.server -d blog/_preview 8000`).
-3. **Freigabe:** Philipp setzt `status: freigegeben` (das Datum darf in der Zukunft liegen; dann erscheint der Beitrag erst ab diesem Tag).
+3. **Freigabe:** Philipp führt `python blog/build_blog.py --freigeben <slug>` aus. Das prüft erneut (Platzhalter, Links auf Entwürfe), setzt `status: freigegeben` und `geprueft_am` mit dem Tagesdatum. Das Datum des Beitrags darf in der Zukunft liegen, dann erscheint er erst ab diesem Tag. Der Skill `blog-schreiben` gibt nie frei.
 4. **Build:** `python blog/build_blog.py` schreibt `blog/_site/`. Nur freigegebene Beiträge landen in Seite und Feed.
-5. **Deployment** nach blog.sp23.online: noch offen (Hosting-Entscheidung).
+5. **Deployment** nach ai-blog.sp23.online: Cloudflare Worker mit Static Assets (`blog/wrangler.jsonc`). Testseite: `cd blog && wrangler deploy --assets ./_probe`, produktiv: `python build_blog.py && wrangler deploy`.
 
 ## Frontmatter
 
@@ -16,10 +16,12 @@ Statischer Blog aus Markdown, gespeist aus der Wissensbasis (`80_Knowledge/`). D
 ---
 titel: "Konkreter Titel"
 datum: 2026-09-29
-kategorie: modelle          # modelle | arbeitsweisen | tools | duell | check | digest | kurz
+kategorie: modelle          # modelle | arbeitsweisen | tools | duell | check | digest | kurz | redaktion (ohne Quellen)
 zusammenfassung: "Ein bis zwei Sätze für Liste, Feed und Suchmaschinen."
 status: entwurf             # entwurf | freigegeben
 aktualisiert: 2026-10-05    # optional; erscheint in Meta-Zeile und Schema.org
+pruefen_bis: 2026-11-01     # optional; danach meldet der Build „Zahlen erneut prüfen“
+geprueft_am: 2026-09-30     # setzt --freigeben; Pflicht bei status: freigegeben
 quellen:                    # Pflicht; Namen von Source-Notizen in 80_Knowledge/Sources/
   - 2026-09-22-artificialanlys-2102438210798514391
 ---
@@ -38,6 +40,19 @@ Die Erklärungen sind eigene Texte. Die Begriffsauswahl orientiert sich am AI Co
 ## Prüfungen
 
 `python blog/build_blog.py --check` bricht ab bei fehlenden Pflichtfeldern, unbekannter Kategorie, fehlender Quelle, Wiki-Links, ungültigen `{q:n}`- oder `post:`-Verweisen, fehlendem Abschnitt „Kurz gesagt“ (außer Kurzmeldung) sowie bei Fehlern im Glossar (doppelte Schreibweise, unbekannter „Siehe auch“-Verweis, interne Begriffe) und Fachbegriffen aus `beobachten:` ohne Eintrag sowie bei Stilfehlern: interne Begriffe (Notiz, Pattern, Konfidenz, Wiki), ISO-Daten im Fließtext, Dollar-Beträge mit Dezimalpunkt, fehlendes Leerzeichen nach Satzende.
+
+Zusätzlich gilt:
+
+- **Jede Quelle muss zitiert werden.** Eine Quelle in `quellen:` ohne `{q:n}` im Text ist ein Fehler.
+- **Quellen werden für alle Beiträge aufgelöst**, auch für Entwürfe. Ein Tippfehler im Namen fällt sofort auf.
+- **Slug eindeutig, keine toten Links.** Ein freigegebener Beitrag darf nur auf Beiträge verlinken, die ebenfalls sichtbar sind.
+- **Hinweise (kein Abbruch):** Absätze mit Zahlen, aber ohne `{q:n}`, erscheinen unter „HINWEISE“. Die Box „Kurz gesagt“ ist ausgenommen.
+- **Platzhalter blockieren den öffentlichen Build.** `[hier ergänzen …]`, `TODO` und die Platzhalter „sp23“ in `site.yaml` lassen `python blog/build_blog.py` scheitern. `--check` und `--drafts` melden sie nur.
+- **Weitere Hinweise:** unbekannte Frontmatter-Felder (Tippfehler), überschrittenes `pruefen_bis`, „Kurz gesagt“ mit weniger als 2 oder mehr als 4 Stichpunkten.
+- Die Navigation zeigt nur Kategorien mit sichtbaren Beiträgen.
+- **CI:** `.github/workflows/blog.yml` führt Tests und `--check` bei Änderungen aus und baut täglich als Artefakt. Deployment gibt es noch nicht.
+
+Tests: `python -m pytest tests/test_build_blog.py`
 
 ## Abhängigkeiten
 

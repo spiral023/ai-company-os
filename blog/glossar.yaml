@@ -1,4 +1,4 @@
-# Glossar für blog.sp23.online
+# Glossar für ai-blog.sp23.online
 #
 # Der Generator erzeugt daraus die Seite /glossar/ und verlinkt in jedem Beitrag das
 # erste Vorkommen eines Begriffs (auch seiner `aliase`) mit dem Glossar-Eintrag.

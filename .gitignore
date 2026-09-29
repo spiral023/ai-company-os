@@ -104,3 +104,4 @@ reports/notebooklm/*.m4a
 
 # Browser-Logs der Playwright-Tests
 .playwright-mcp/
+blog/_probe/

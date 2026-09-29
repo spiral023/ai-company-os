@@ -19,7 +19,7 @@ quellen:
 
 ## Die Zahlen
 
-Alle Werte stammen von Artificial Analysis, einer unabhängigen Messung. Die Kosten pro Aufgabe beziehen sich auf jeweils denselben Index.
+Alle Werte stammen von Artificial Analysis, einer unabhängigen Messung. Die Kosten pro Aufgabe beziehen sich auf jeweils denselben Index. Preise und Intelligence Index stammen aus der ersten Messung,{q:1} die Werte des Coding Agent Index und die Kosten pro Aufgabe aus der zweiten.{q:2}
 
 | | Opus 5 | Opus 5.5 |
 |---|---|---|

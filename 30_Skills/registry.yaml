@@ -199,7 +199,7 @@ skills:
   project_types:
   - all
   default_for_project_types: []
-  description: Schreibt Blog-Entwürfe für blog.sp23.online aus der Wissensbasis — Kurzmeldungen,
+  description: Schreibt Blog-Entwürfe für ai-blog.sp23.online aus der Wissensbasis — Kurzmeldungen,
     Modell-Radar, Arbeitsweisen, Duelle, Behauptungs-Checks und Wochen-Digest. Nur Entwürfe,
     Freigabe bleibt bei Philipp.
 project_types:

@@ -27,7 +27,7 @@ Artificial Analysis (unabhängiger Dritter) misst für Opus 5.5 (max, mit Fallba
 
 ## 2. Opus 5.5 im Preis: Token billiger, Tasks teurer
 
-Der Listenpreis sinkt auf 4/20 US-Dollar pro 1M Input/Output (Opus 5: 5/25), Cache Reads kosten 0,20 US-Dollar statt 0,50. Gleichzeitig verbraucht Opus 5.5 im Coding Agent Index rund 15,6 Mio. Token pro Task statt 11,4 Mio., die Kosten liegen bei 13,04 statt 10,79 US-Dollar. Preis pro Token und Kosten pro Aufgabe sind verschiedene Größen: Rechne mit deinen eigenen Läufen, nicht mit der Preisliste.
+Der Listenpreis sinkt auf 4/20 US-Dollar pro 1M Input/Output (Opus 5: 5/25), Cache Reads kosten 0,20 US-Dollar statt 0,50. Gleichzeitig verbraucht Opus 5.5 im Coding Agent Index rund 15,6 Mio. Token pro Task statt 11,4 Mio., die Kosten liegen bei 13,04 statt 10,79 US-Dollar. Preis pro Token und Kosten pro Aufgabe sind verschiedene Größen: Rechne mit deinen eigenen Läufen, nicht mit der Preisliste.{q:4}
 
 ## 3. GPT-6: halber Preis, gemischte Qualität
 

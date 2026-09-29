@@ -1,6 +1,6 @@
 ---
 name: blog-schreiben
-description: "Verwende diesen Skill, um aus der Wissensbasis (80_Knowledge/) Blogbeiträge für blog.sp23.online zu schreiben: Kurzmeldungen, Modell-Radar, Arbeitsweisen, Duelle, Behauptungs-Checks und Wochen-Digest. Auch bei „schreib einen Blogartikel über …“, „was gibt es Neues diese Woche“, „mach einen Wochen-Digest“. Schreibt nur Entwürfe (status: entwurf) und veröffentlicht nie selbst."
+description: "Verwende diesen Skill, um aus der Wissensbasis (80_Knowledge/) Blogbeiträge für ai-blog.sp23.online zu schreiben: Kurzmeldungen, Modell-Radar, Arbeitsweisen, Duelle, Behauptungs-Checks und Wochen-Digest. Auch bei „schreib einen Blogartikel über …“, „was gibt es Neues diese Woche“, „mach einen Wochen-Digest“. Schreibt nur Entwürfe (status: entwurf) und veröffentlicht nie selbst."
 ---
 
 # Blog schreiben
@@ -31,6 +31,7 @@ Schreibt Entwürfe für den Blog in `blog/posts/`. Leser sind technisch interess
 - Belege an der Aussage: `{q:2}` verweist auf die zweite Quelle aus `quellen:` (Reihenfolge zählt) und wird zur Fußnote mit Sprung zur Quellenliste.
 - Verweise auf andere Beiträge als `[Text](post:<slug>)`. Der Generator prüft, dass der Beitrag existiert. Kein „dazu ein eigener Beitrag“ ohne Link. Existiert er noch nicht, ihn zuerst schreiben oder den Satz streichen.
 - Zahlen deutsch: `$0,068` und `4/20 US-Dollar` mit Komma, Daten als 22.09.2026, nicht im Code-Format. Nach jedem Satzende ein Leerzeichen.
+- Jede Quelle aus `quellen:` mindestens einmal mit `{q:n}` zitieren, sonst lehnt der Generator ab. Absätze mit Zahlen ohne `{q:n}` meldet er als Hinweis: beheben, nicht ignorieren.
 - Ändern sich Preise oder Zahlen später, `aktualisiert: JJJJ-MM-TT` im Frontmatter setzen.
 - Echte Umlaute, deutsche Anführungszeichen „…“, keine ASCII-Ersatzzeichen.
 
