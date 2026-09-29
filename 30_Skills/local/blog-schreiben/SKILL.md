@@ -15,6 +15,7 @@ Schreibt Entwürfe für den Blog in `blog/posts/`. Leser sind technisch interess
 - **Eigenes von Fremdem trennen.** Eigene Rechnungen ausdrücklich kennzeichnen („eigene Rechnung“). Herstellerangaben, Selbstberichte und Sekundärquellen als solche benennen. Bei Zahlen nennen, wer sie gemessen hat und welche Einschränkung gilt.
 - **Nicht vergleichen, was nicht vergleichbar ist.** Index-Versionen, Harnesses und Kosten pro Token gegen Kosten pro Aufgabe getrennt halten.
 - **Keine fremden Texte übernehmen.** Aussagen in eigenen Worten, Zitate höchstens ein Satz. Der Beitrag liefert Einordnung, keine Kopie.
+- **Keine internen Begriffe.** Leser kennen das Wissenssystem nicht. Nie „Notiz“, „Pattern“, „Konfidenz“, „Wiki“, „Wissensbasis“ oder „Source-Notiz“ im Text. Stattdessen benennen, woher die Aussage stammt („laut Anthropic-Blog“, „so berichtet der Autor“). Die Belegstärke in einem Satz sagen („mehrfach belegt“, „nur eine Meinung“), nicht die interne Skala erklären. Der Generator lehnt diese Begriffe ab.
 - **Aktualität prüfen.** Bei Preisen, Modellen, Benchmarks das Datum der Quelle nennen und im Fakten-Register nachsehen, ob es neuere Angaben gibt.
 
 ## Stil
@@ -23,7 +24,13 @@ Schreibt Entwürfe für den Blog in `blog/posts/`. Leser sind technisch interess
 - Hohe Informationsdichte: erst das Ergebnis, dann die Begründung. Kein Einleitungsgeplänkel, keine Floskeln („in der heutigen schnelllebigen Zeit“), keine Werbesprache, keine Emojis.
 - Konkrete Titel mit Aussage („Opus 5.5 an der Spitze, aber teurer pro Task“), nicht „Neues von Anthropic“.
 - Tabellen für Vergleiche, kurze Absätze, ein Fazit mit einer Handlungsempfehlung.
-- Am Anfang „Kurz gesagt“ mit zwei bis vier Stichpunkten (außer Kurzmeldung).
+- Am Anfang `## Kurz gesagt` mit zwei bis vier Stichpunkten (außer Kurzmeldung). Der Generator macht daraus eine Box. Die Stichpunkte beantworten „Was mache ich damit?“, nicht nur „Was ist passiert?“.
+- Das Ergebnis steht oben: Bei Checks und Duellen die Urteilstabelle direkt nach „Kurz gesagt“, die Begründung danach. Herkunft und Lücken einer Aussage in ein bis zwei Sätzen, kein eigener Prozessabschnitt.
+- Länge deckeln: Analysen etwa 700 Wörter. Wird es mehr, in zwei Beiträge aufteilen und verlinken.
+- Belege an der Aussage: `{q:2}` verweist auf die zweite Quelle aus `quellen:` (Reihenfolge zählt) und wird zur Fußnote mit Sprung zur Quellenliste.
+- Verweise auf andere Beiträge als `[Text](post:<slug>)`. Der Generator prüft, dass der Beitrag existiert. Kein „dazu ein eigener Beitrag“ ohne Link. Existiert er noch nicht, ihn zuerst schreiben oder den Satz streichen.
+- Zahlen deutsch: `$0,068` und `4/20 US-Dollar` mit Komma, Daten als 22.09.2026, nicht im Code-Format. Nach jedem Satzende ein Leerzeichen.
+- Ändern sich Preise oder Zahlen später, `aktualisiert: JJJJ-MM-TT` im Frontmatter setzen.
 - Echte Umlaute, deutsche Anführungszeichen „…“, keine ASCII-Ersatzzeichen.
 
 ## Formate

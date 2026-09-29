@@ -63,6 +63,11 @@ blockquote{margin:1.2rem 0;padding:.1rem 1rem;border-left:3px solid var(--accent
 .quellen{margin-top:2.6rem;border-top:1px solid var(--line);padding-top:1rem;font:.9rem/1.5 ui-sans-serif,system-ui,sans-serif}.quellen h2{font-size:1rem;margin:0 0 .5rem}
 .quellen ul{padding-left:1.1rem;margin:.3rem 0}.hinweis{color:var(--muted);font-size:.85rem;margin-top:.8rem}
 footer.site{margin-top:3.5rem;border-top:1px solid var(--line);padding-top:1rem;font:.85rem/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--muted)}
+.tldr h2{font-size:1rem;margin:.9rem 0 .3rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.tldr ul{padding-left:1.1rem;margin:.3rem 0 .9rem}
+details.toc{font:.92rem/1.5 ui-sans-serif,system-ui,sans-serif;margin:1.2rem 0;color:var(--muted)}details.toc summary{cursor:pointer}details.toc ol{margin:.4rem 0;padding-left:1.3rem}details.toc a{color:var(--muted)}
+sup.q{font:.7rem ui-sans-serif,system-ui,sans-serif;margin-left:.1em}sup.q a{text-decoration:none}
+.weiter{margin-top:2.6rem;border-top:1px solid var(--line);padding-top:1rem;font:.95rem/1.5 ui-sans-serif,system-ui,sans-serif}.weiter h2{font-size:1rem;margin:0 0 .5rem}.weiter ul{list-style:none;padding:0;margin:0}.weiter li{margin:.35rem 0}
+.abo{margin-top:2rem;background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:.7rem 1.1rem;font:.9rem/1.5 ui-sans-serif,system-ui,sans-serif}
 .draft{background:#fff3cd;color:#664d03;border:1px solid #ffe69c;padding:.4rem .8rem;border-radius:6px;font:.85rem ui-sans-serif,system-ui,sans-serif;margin-bottom:1rem}
 """
 
@@ -85,6 +90,26 @@ def parse_post(path: Path) -> dict:
     fm["slug"] = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", path.stem)
     fm["datei"] = path.name
     return fm
+
+
+Q_RE = re.compile(r"\{q:(\d+)\}")
+POST_LINK_RE = re.compile(r"\]\(post:([a-z0-9-]+)\)")
+# Wörter aus dem internen Wissenssystem, die Leser nicht kennen
+INTERN_RE = re.compile(r"\b(Source-Notiz\w*|Notizen?|Patterns?|Konfidenz\w*|Wiki\w*|Fakten-Register|Wissensbasis)\b")
+
+
+def slugify(text: str) -> str:
+    t = re.sub(r"<[^>]+>", "", text).lower()
+    for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")):
+        t = t.replace(a, b)
+    return re.sub(r"[^a-z0-9]+", "-", t).strip("-") or "abschnitt"
+
+
+def prose_only(body: str) -> str:
+    """Fließtext ohne Codeblöcke, Inline-Code und Link-Ziele (für Stilprüfungen)."""
+    t = re.sub(r"```.*?```", "", body, flags=re.S)
+    t = re.sub(r"`[^`]*`", "", t)
+    return re.sub(r"\]\([^)]*\)", "]", t)
 
 
 def source_entries(post: dict) -> list[dict]:
@@ -111,7 +136,7 @@ def source_entries(post: dict) -> list[dict]:
     return out
 
 
-def check_post(post: dict, cfg: dict) -> list[str]:
+def check_post(post: dict, cfg: dict, slugs: set[str] | None = None) -> list[str]:
     fehler = []
     for f in ("titel", "datum", "kategorie", "zusammenfassung", "status"):
         if not post.get(f):
@@ -124,11 +149,58 @@ def check_post(post: dict, cfg: dict) -> list[str]:
         fehler.append(f"{post['datei']}: keine Quellen angegeben (Quellenangabe ist Pflicht)")
     if "[[" in post["body"]:
         fehler.append(f"{post['datei']}: Wiki-Links im Text (Doppelklammern) nicht erlaubt")
+    n_q = len(post.get("quellen") or [])
+    for m in Q_RE.finditer(post["body"]):
+        if not 1 <= int(m.group(1)) <= n_q:
+            fehler.append(f"{post['datei']}: Quellenverweis {{q:{m.group(1)}}} ohne passende Quelle (1 bis {n_q})")
+    if slugs is not None:
+        for m in POST_LINK_RE.finditer(post["body"]):
+            if m.group(1) not in slugs:
+                fehler.append(f"{post['datei']}: Verweis auf unbekannten Beitrag post:{m.group(1)}")
+    prosa = prose_only(post["body"])
+    for m in sorted({m.group(0) for m in INTERN_RE.finditer(prosa)}):
+        fehler.append(f"{post['datei']}: interner Begriff im Text: „{m}“ (Leser kennen das Wissenssystem nicht)")
+    for m in re.finditer(r"[a-zäöüß]{2}[.!?][A-ZÄÖÜ][a-zäöüß]", prosa):
+        fehler.append(f"{post['datei']}: fehlendes Leerzeichen nach Satzende: „{m.group(0)}“")
+    for m in re.finditer(r"\b\d{4}-\d{2}-\d{2}\b", prosa):
+        fehler.append(f"{post['datei']}: ISO-Datum im Fließtext: {m.group(0)} (schreibe 22.09.2026)")
+    if re.search(r"\$\d+\.\d", post["body"]):
+        fehler.append(f"{post['datei']}: Dollar-Betrag mit Dezimalpunkt (deutsch: $0,068, nicht $0.068)")
+    if post.get("kategorie") != "kurz" and "## Kurz gesagt" not in post["body"]:
+        fehler.append(f"{post['datei']}: Abschnitt „## Kurz gesagt“ fehlt")
     return fehler
 
 
-def render_body(md: MarkdownIt, body: str) -> str:
-    return md.render(body)
+def render_body(md: MarkdownIt, p: dict, base: str = "") -> str:
+    """Markdown -> HTML. `post:slug` wird zum Beitragslink, `{q:n}` zum Quellenverweis.
+
+    Mit `base` (Feed) werden Links absolut und Quellenverweise zu Klartext.
+    """
+    body = POST_LINK_RE.sub(lambda m: f"]({base}/p/{m.group(1)}/)", p["body"])
+    out = md.render(body)
+    if base:
+        return Q_RE.sub(lambda m: f"[{m.group(1)}]", out)
+    return Q_RE.sub(lambda m: f'<sup class="q"><a href="#q{m.group(1)}" title="Quelle {m.group(1)}">[{m.group(1)}]</a></sup>', out)
+
+
+def decorate(out: str, wc: int) -> str:
+    """Kurz-gesagt-Box, Überschriften-Anker und Inhaltsverzeichnis für lange Beiträge."""
+    out = re.sub(r"<h2>Kurz gesagt</h2>\s*(<ul>.*?</ul>)",
+                 lambda m: f'<div class="tldr"><h2>Kurz gesagt</h2>{m.group(1)}</div>', out, count=1, flags=re.S)
+    head, sep, rest = out.partition("</div>") if out.startswith('<div class="tldr">') else ("", "", out)
+    heads: list[tuple[str, str]] = []
+
+    def anchor(m: re.Match) -> str:
+        sid = slugify(m.group(1))
+        heads.append((sid, m.group(1)))
+        return f'<h2 id="{sid}">{m.group(1)}</h2>'
+
+    rest = re.sub(r"<h2>(.*?)</h2>", anchor, rest)
+    toc = ""
+    if wc >= 600 and len(heads) >= 4:
+        lis = "".join(f'<li><a href="#{i}">{t}</a></li>' for i, t in heads)
+        toc = f'<details class="toc"><summary>Inhalt</summary><ol>{lis}</ol></details>'
+    return head + sep + toc + rest
 
 
 def word_count(body: str) -> int:
@@ -145,7 +217,7 @@ def page(cfg: dict, title: str, body: str, *, desc: str, path: str, og_type: str
     canon = f"{base}{path}"
     full_title = f"{title} · {cfg['titel']}" if title != cfg["titel"] else cfg["titel"]
     nav = "".join(f'<a href="/k/{k}/">{esc(v)}</a>' for k, v in cfg["kategorien"].items() if k != "kurz") + \
-        '<a href="/k/kurz/">Kurzmeldungen</a><a href="/feed.xml">RSS</a>'
+        '<a href="/k/kurz/">Kurzmeldungen</a><a href="/ueber/">Über</a><a href="/feed.xml">RSS</a>'
     banner = '<div class="draft">Entwurf, nicht veröffentlicht</div>' if draft else ""
     return f"""<!doctype html>
 <html lang="de">
@@ -178,32 +250,72 @@ def page(cfg: dict, title: str, body: str, *, desc: str, path: str, og_type: str
 def meta_line(cfg: dict, p: dict, wc: int) -> str:
     kat = cfg["kategorien"][p["kategorie"]]
     minuten = max(1, round(wc / 220))
+    a = p.get("aktualisiert")
+    aktual = f'<span>aktualisiert {a.strftime("%d.%m.%Y")}</span>' if isinstance(a, date) else ""
     return (f'<div class="meta"><a class="chip" href="/k/{p["kategorie"]}/">{esc(kat)}</a>'
             f'<time datetime="{p["datum"].isoformat()}">{p["datum"].strftime("%d.%m.%Y")}</time>'
-            f'<span>{minuten} Min. Lesezeit</span></div>')
+            f'{aktual}<span>{minuten} Min. Lesezeit</span></div>')
 
 
-def post_page(cfg: dict, md: MarkdownIt, p: dict, draft: bool) -> tuple[str, str, int]:
-    body_html = render_body(md, p["body"])
-    wc = word_count(p["body"])
-    quellen = source_entries(p)
+def de_datum(d: str) -> str:
+    m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", d.strip())
+    return f"{m.group(3)}.{m.group(2)}.{m.group(1)}" if m else d
+
+
+def quellen_html(cfg: dict, p: dict) -> str:
     items = []
-    for q in quellen:
+    for i, q in enumerate(source_entries(p), 1):
         label = esc(q["titel"])
         if q.get("url"):
             label = f'<a href="{esc(q["url"])}" rel="noopener">{label}</a>'
-        zusatz = " · ".join(x for x in (esc(q.get("autor", "")), esc(q.get("datum", ""))) if x)
-        items.append(f"<li>{label}{(' (' + zusatz + ')') if zusatz else ''}</li>")
+        zusatz = " · ".join(x for x in (esc(q.get("autor", "")), esc(de_datum(q.get("datum", "")))) if x)
+        items.append(f'<li id="q{i}">{label}{(" (" + zusatz + ")") if zusatz else ""}</li>')
     hinweis = cfg.get("quellenhinweis", "")
-    quellen_html = f'<section class="quellen"><h2>Quellen</h2><ul>{"".join(items)}</ul><p class="hinweis">{esc(hinweis)}</p></section>'
+    return f'<section class="quellen"><h2>Quellen</h2><ol>{"".join(items)}</ol><p class="hinweis">{esc(hinweis)}</p></section>'
+
+
+def related(p: dict, posts: list[dict], n: int = 3) -> list[dict]:
+    """Verwandte Beiträge: nur mit mindestens einer gemeinsamen Quelle; die Kategorie sortiert nach."""
+    mine = set(map(str, p.get("quellen") or []))
+    scored = []
+    for o in posts:
+        if o["slug"] == p["slug"]:
+            continue
+        gemeinsam = len(mine & set(map(str, o.get("quellen") or [])))
+        score = 2 * gemeinsam + (1 if o["kategorie"] == p["kategorie"] else 0)
+        if gemeinsam:  # gleiche Kategorie allein ist kein Grund für einen Vorschlag
+            scored.append((score, o["datum"], o["slug"], o))
+    scored.sort(key=lambda t: t[:3], reverse=True)
+    return [t[3] for t in scored[:n]]
+
+
+def weiter_html(p: dict, posts: list[dict]) -> str:
+    rel = related(p, posts)
+    if not rel:
+        return ""
+    lis = "".join(f'<li><a href="/p/{o["slug"]}/">{esc(o["titel"])}</a></li>' for o in rel)
+    return f'<section class="weiter"><h2>Weiterlesen</h2><ul>{lis}</ul></section>'
+
+
+def abo_html(cfg: dict) -> str:
+    return (f'<p class="abo">{esc(cfg.get("abo_text", ""))} <a href="/feed.xml">RSS-Feed</a>'
+            f' · <a href="/ueber/">Über diesen Blog</a></p>')
+
+
+def post_page(cfg: dict, md: MarkdownIt, p: dict, draft: bool, posts: list[dict]) -> tuple[str, str, int]:
+    wc = word_count(p["body"])
+    body_html = decorate(render_body(md, p), wc)
     path = f"/p/{p['slug']}/"
     ld = (f'<script type="application/ld+json">{{"@context":"https://schema.org","@type":"BlogPosting",'
           f'"headline":{_j(p["titel"])},"datePublished":"{p["datum"].isoformat()}",'
-          f'"description":{_j(p["zusammenfassung"])},"inLanguage":"de",'
+          + (f'"dateModified":"{p["aktualisiert"].isoformat()}",' if isinstance(p.get("aktualisiert"), date) else "")
+          + f'"description":{_j(p["zusammenfassung"])},"inLanguage":"de",'
           f'"author":{{"@type":"Person","name":{_j(cfg["autor"])}}},'
           f'"mainEntityOfPage":{_j(cfg["base_url"].rstrip("/") + path)}}}</script>')
-    body = (f'<article><h1>{esc(p["titel"])}</h1>{meta_line(cfg, p, wc)}'
-            f'<p class="lead">{esc(p["zusammenfassung"])}</p>{body_html}{quellen_html}</article>')
+    # Ohne Kurz-gesagt-Box (Kurzmeldung) übernimmt die Zusammenfassung die Rolle des Einstiegs
+    lead = "" if 'class="tldr"' in body_html else f'<p class="lead">{esc(p["zusammenfassung"])}</p>'
+    body = (f'<article><h1>{esc(p["titel"])}</h1>{meta_line(cfg, p, wc)}{lead}{body_html}'
+            f'{quellen_html(cfg, p)}</article>{weiter_html(p, posts)}{abo_html(cfg)}')
     return path, page(cfg, p["titel"], body, desc=p["zusammenfassung"], path=path, og_type="article",
                       extra_head=ld, draft=draft and p["status"] != "freigegeben"), wc
 
@@ -231,7 +343,7 @@ def feed_xml(cfg: dict, md: MarkdownIt, posts: list[dict], selfpath: str, title:
     items = []
     for p in posts[: cfg.get("feed_max", 30)]:
         url = f"{base}/p/{p['slug']}/"
-        body_html = render_body(md, p["body"])
+        body_html = render_body(md, p, base) + quellen_html(cfg, p)
         items.append(
             f"<item><title>{esc(p['titel'])}</title><link>{url}</link><guid isPermaLink=\"true\">{url}</guid>"
             f"<pubDate>{rfc822(p['datum'])}</pubDate><category>{esc(cfg['kategorien'][p['kategorie']])}</category>"
@@ -266,8 +378,10 @@ def main() -> int:
         except ValueError as e:
             fehler.append(str(e))
             continue
-        fehler += check_post(p, cfg)
         posts.append(p)
+    slugs = {p["slug"] for p in posts}
+    for p in posts:
+        fehler += check_post(p, cfg, slugs)
     if fehler:
         print("FEHLER:\n - " + "\n - ".join(fehler), file=sys.stderr)
         return 1
@@ -291,10 +405,10 @@ def main() -> int:
     md = MarkdownIt("commonmark", {"html": False}).enable(["table", "strikethrough"])
 
     for p in sichtbar:
-        path, doc, _ = post_page(cfg, md, p, args.drafts)
+        path, doc, _ = post_page(cfg, md, p, args.drafts, sichtbar)
         write(out, f"{path}index.html", doc)
     intro = f'<h1>{esc(cfg["titel"])}</h1><p class="lead">{esc(cfg["beschreibung"])}</p>'
-    write(out, "index.html", page(cfg, cfg["titel"], intro + list_html(cfg, sichtbar), desc=cfg["beschreibung"], path="/"))
+    write(out, "index.html", page(cfg, cfg["titel"], intro + list_html(cfg, sichtbar) + abo_html(cfg), desc=cfg["beschreibung"], path="/"))
     for k, name in cfg["kategorien"].items():
         sel = [p for p in sichtbar if p["kategorie"] == k]
         if not sel:
@@ -302,9 +416,12 @@ def main() -> int:
         write(out, f"k/{k}/index.html", page(cfg, name, f"<h1>{esc(name)}</h1>" + list_html(cfg, sel),
                                              desc=f"{name}: {cfg['beschreibung']}", path=f"/k/{k}/"))
         write(out, f"feed/{k}.xml", feed_xml(cfg, md, sel, f"/feed/{k}.xml", f"{cfg['titel']}: {name}"))
+    ueber = md.render(cfg.get("ueber", "")) + '<p><a href="/feed.xml">RSS-Feed abonnieren</a></p>'
+    write(out, "ueber/index.html", page(cfg, "Über diesen Blog", "<h1>Über diesen Blog</h1>" + ueber,
+                                        desc=cfg["beschreibung"], path="/ueber/"))
     write(out, "feed.xml", feed_xml(cfg, md, sichtbar, "/feed.xml", cfg["titel"]))
     base = cfg["base_url"].rstrip("/")
-    urls = [f"{base}/"] + [f"{base}/p/{p['slug']}/" for p in sichtbar]
+    urls = [f"{base}/", f"{base}/ueber/"] + [f"{base}/p/{p['slug']}/" for p in sichtbar]
     write(out, "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
           + "".join(f"<url><loc>{u}</loc></url>" for u in urls) + "</urlset>\n")
     write(out, "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")

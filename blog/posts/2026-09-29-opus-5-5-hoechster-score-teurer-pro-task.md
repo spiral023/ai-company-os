@@ -11,7 +11,7 @@ quellen:
   - 2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c
 ---
 
-**Kurz gesagt**
+## Kurz gesagt
 
 - Claude Opus 5.5 führt beide relevanten Indizes von Artificial Analysis an: Intelligence Index 58 (der höchste bisher gemessene Wert) und Coding Agent Index 66 (Opus 5: 60, Fable 5.1: 62).
 - Der Preis pro Token sinkt um 20 %, der Verbrauch pro Aufgabe steigt stärker. Im Coding Agent Index kostet eine Aufgabe $13,04 statt $10,79.
@@ -43,7 +43,7 @@ Wer sein Budget nach Listenpreisen plant, unterschätzt Opus 5.5 also. Maßgebli
 
 Opus 5.5 hat fünf Stufen: `low`, `medium`, `high`, `xhigh` und `max`. Laut Artificial Analysis liegen `max`, `xhigh`, `high` und `medium` auf der Kurve aus Intelligence Index und Kosten pro Aufgabe. Gegenüber den anderen Modellen mit mindestens 50 Punkten in dieser Messung (GPT-6 Astra, Fable 5.1, Opus 5) sind diese Stufen jeweils billiger oder besser.
 
-Im Vergleich mit der Konkurrenz (Intelligence Index, jeweils `max`):
+Im Vergleich mit der Konkurrenz (Intelligence Index, jeweils `max`):{q:3}
 
 | Modell | Score | Kosten pro Aufgabe |
 |---|---|---|
@@ -56,7 +56,7 @@ Opus 5.5 liefert zehn Punkte mehr als Sol und kostet das 5,6-Fache (eigene Rechn
 
 ## Was sich beim Prompting ändert
 
-Der Herstellerguide zu Opus 5.5 nennt vier Verschiebungen, die direkt in die `CLAUDE.md` gehören. Das sind Empfehlungen des Herstellers, keine unabhängigen Messungen:
+Der Herstellerguide zu Opus 5.5 nennt vier Verschiebungen, die direkt in die `CLAUDE.md` gehören. Das sind Empfehlungen des Herstellers, keine unabhängigen Messungen:{q:4}
 
 1. **Fertig-Kriterium statt Anleitung.** Die Aufgabe in einer Nachricht geben, dazu was „done“ heißt („Tests laufen, alter Client gelöscht“) und wann das Modell nachfragen soll.
 2. **„Denk sorgfältig“ streichen.** Das Modell denkt vor jeder Antwort ohnehin. Laut Guide starten Antworten ohne diese Zeile früher, ohne erkennbaren Qualitätsverlust.
@@ -68,7 +68,7 @@ Der Herstellerguide zu Opus 5.5 nennt vier Verschiebungen, die direkt in die `CL
 - **Belegt** ist der Sprung in den Indizes: Er kommt von einem unabhängigen Anbieter mit veröffentlichten Benchmarks. **Nicht belegt** ist, dass sich die Werte auf deinen Workload übertragen lassen.
 - Zwei Terminal-Bench-Werte kursieren: 59,6 % (Harness des Intelligence Index, gleichauf mit GPT-6 Astra auf `xhigh`) und 63,1 % (Claude Code). Sie stammen aus verschiedenen Harnesses und lassen sich nicht direkt vergleichen.
 - Artificial Analysis nennt auch Schwächen: Bei CritPt, AA-LCR und GDP.pdf liegt Opus 5.5 leicht hinten.
-- Die Preisangaben gelten zum Stand 2026-09-22 und können sich ändern.
+- Die Preisangaben gelten zum Stand 22.09.2026 und können sich ändern.
 
 ## Empfehlung
 

@@ -19,16 +19,19 @@ datum: 2026-09-29
 kategorie: modelle          # modelle | arbeitsweisen | tools | duell | check | digest | kurz
 zusammenfassung: "Ein bis zwei Sätze für Liste, Feed und Suchmaschinen."
 status: entwurf             # entwurf | freigegeben
+aktualisiert: 2026-10-05    # optional; erscheint in Meta-Zeile und Schema.org
 quellen:                    # Pflicht; Namen von Source-Notizen in 80_Knowledge/Sources/
   - 2026-09-22-artificialanlys-2102438210798514391
 ---
 ```
 
+Im Text: `{q:2}` verweist auf die zweite Quelle (Fußnote), `[Text](post:<slug>)` verlinkt einen anderen Beitrag. `## Kurz gesagt` wird zur Box, bei mehr als vier Abschnitten und 600 Wörtern entsteht ein Inhaltsverzeichnis. Unter jedem Beitrag stehen „Weiterlesen“ (gemeinsame Quellen, gleiche Kategorie) und ein Abo-Hinweis. Die Seite „Über“ kommt aus `ueber:` in `site.yaml`.
+
 Quellenangaben (Titel, Autor, Datum, Original-URL) erzeugt der Generator aus den Source-Notizen. Wiki-Links in Doppelklammern sind im Text nicht erlaubt.
 
 ## Prüfungen
 
-`python blog/build_blog.py --check` bricht ab bei fehlenden Pflichtfeldern, unbekannter Kategorie, fehlender Quelle oder Wiki-Links im Text.
+`python blog/build_blog.py --check` bricht ab bei fehlenden Pflichtfeldern, unbekannter Kategorie, fehlender Quelle, Wiki-Links, ungültigen `{q:n}`- oder `post:`-Verweisen, fehlendem Abschnitt „Kurz gesagt“ (außer Kurzmeldung) sowie bei Stilfehlern: interne Begriffe (Notiz, Pattern, Konfidenz, Wiki), ISO-Daten im Fließtext, Dollar-Beträge mit Dezimalpunkt, fehlendes Leerzeichen nach Satzende.
 
 ## Abhängigkeiten
 
