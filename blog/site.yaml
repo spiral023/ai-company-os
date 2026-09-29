@@ -17,6 +17,15 @@ kategorien:
   kurz: "Kurzmeldungen"
   redaktion: "Über den Blog"
 ohne_quellen: [redaktion]   # Kategorien, die keine Quellenangabe brauchen
+modelle_preise:
+  titel: "Modelle und Preise"
+  beschreibung: "Datierte Angaben zu Modellen, Preisen, Benchmarks und Markt rund um KI und Coding-Agents, mit Datum, Einschränkung und Quelle."
+  pfad: "80_Knowledge/Fakten/Modelle-und-Preise.md"
+  einleitung: "Jede Zeile sagt, wer was wann gemessen oder angekündigt hat. Die Seite wächst mit den Quellen, alte Angaben bleiben mit ihrem Datum stehen."
+  hinweise:
+    - "Zahlen sind nur innerhalb derselben Messung vergleichbar. Indizes tragen Versionsnummern, und Kosten pro Aufgabe im Intelligence Index und im Coding Agent Index sind verschiedene Messungen."
+    - "Herstellerangaben und Drittmessungen stehen in der Spalte „Hinweis“. Ein leerer Hinweis ist keine Bestätigung."
+    - "Preise und Modellnamen verfallen. Achte auf das Datum."
 abo_text: "Neue Beiträge gibt es per RSS, einen Newsletter gibt es (noch) nicht."
 ueber: |
   Dieser Blog ordnet ein, was sich für Menschen ändert, die mit KI arbeiten und coden: neue Modelle und ihre echten Kosten, Arbeitsweisen für Coding-Agents, Werkzeuge und Behauptungen aus der Szene.

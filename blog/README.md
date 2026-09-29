@@ -53,6 +53,15 @@ Zusätzlich gilt:
 - Die Navigation zeigt nur Kategorien mit sichtbaren Beiträgen.
 - **CI:** `.github/workflows/blog.yml` führt Tests und `--check` bei Änderungen aus und baut täglich als Artefakt. Deployment gibt es noch nicht.
 
+## Lebende Seite „Modelle und Preise“
+
+`/modelle-und-preise/` entsteht bei jedem Build aus dem Fakten-Register (`80_Knowledge/Fakten/Modelle-und-Preise.md`, Konfiguration in `site.yaml` unter `modelle_preise`). Neue Angaben kommen als Zeile ins Register, danach `python blog/build_blog.py` und Deployment. Die Seite zeigt Stand-Datum (Zeile `**Stand:**` im Register), Filter und Quellenliste.
+
+- Der Build bricht ab bei fehlender Quelle, ungültigem Datum, fehlendem Stand oder internen Begriffen (Notiz, Pattern, Wiki …) in den Zellen.
+- `--check` meldet einen Hinweis, wenn der Stand älter als 14 Tage ist.
+- Für Leser wird die Schreibweise angepasst: kein Code-Format, Datum als TT.MM.JJJJ, Dollarbeträge mit Komma.
+- Code: `blog/fakten_seite.py`. Weitere lebende Seiten (Arbeitsweisen A bis Z, Behauptungs-Register) folgen demselben Muster.
+
 Tests: `python -m pytest tests/test_build_blog.py`
 
 ## Abhängigkeiten

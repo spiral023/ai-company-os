@@ -34,6 +34,8 @@ except ImportError:  # pragma: no cover
     sys.exit("Fehlende Abhängigkeit: pip install markdown-it-py pyyaml")
 
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+import fakten_seite  # noqa: E402
 ROOT = HERE.parent
 POSTS = HERE / "posts"
 SOURCES = ROOT / "80_Knowledge" / "Sources"
@@ -87,6 +89,12 @@ dl.impressum dt{font:700 .95rem system-ui,sans-serif;margin-top:1.2rem}dl.impres
 dl.glossar dt{font:700 1.2rem Charter,"Iowan Old Style","Sitka Heading",Georgia,serif;margin-top:1.8rem;scroll-margin-top:1rem}dl.glossar dd{margin:.25rem 0 0}dl.glossar dd p{margin:.3rem 0}
 dl.glossar .siehe{font:.88rem system-ui,sans-serif;color:var(--muted)}
 .draft{background:#fff3cd;color:#664d03;padding:.5rem .9rem;border-radius:8px;font:.85rem system-ui,sans-serif;margin-bottom:1rem;box-shadow:0 0 0 1px #ffe69c}
+.wrap.wide{max-width:64rem}
+.fakten-filter{width:100%;max-width:26rem;font:inherit;font-size:.95rem;padding:.6rem .9rem;border:0;border-radius:10px;background:var(--surface);color:var(--fg);box-shadow:var(--shadow);margin:0 0 1rem}.fakten-filter:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lesehinweise{color:var(--muted);font-size:.95rem;padding-left:1.1rem;margin:0 0 1.2rem}.lesehinweise li{margin:.25rem 0;max-width:80ch}
+table.fakten{display:table;font-size:.88rem;table-layout:auto}table.fakten td{padding-right:1rem}table.fakten td.datum{white-space:nowrap;color:var(--muted);font-weight:400}table.fakten td.gegenstand{font-weight:600;min-width:9rem}table.fakten td.hinweis{color:var(--muted);font-size:.84rem;min-width:10rem}table.fakten td.quelle{font-size:.84rem;white-space:nowrap}
+table.fakten thead th{position:sticky;top:0;background:var(--bg)}
+@media (max-width:48rem){table.fakten,table.fakten tbody,table.fakten tr,table.fakten td{display:block}table.fakten thead{display:none}table.fakten tr{padding:.9rem 0;box-shadow:0 1px 0 var(--line)}table.fakten td{border:0;padding:.1rem 0;min-width:0!important;white-space:normal!important}table.fakten td.datum,table.fakten td.quelle{display:inline-block;margin-right:.8rem}table.fakten td.hinweis:not(:empty)::before{content:"Hinweis: "}}
 @media (max-width:40rem){header.site nav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;white-space:nowrap;width:calc(100% + 1.1rem)}header.site nav::-webkit-scrollbar{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:0s!important}}
 """
@@ -115,7 +123,7 @@ def parse_post(path: Path) -> dict:
 Q_RE = re.compile(r"\{q:(\d+)\}")
 POST_LINK_RE = re.compile(r"\]\(post:([a-z0-9-]+)\)")
 # Wörter aus dem internen Wissenssystem, die Leser nicht kennen
-INTERN_RE = re.compile(r"\b(Source-Notiz\w*|Notizen?|Patterns?|Konfidenz\w*|Wiki\w*|Fakten-Register|Wissensbasis)\b")
+INTERN_RE = re.compile(r"\b(Source-Notiz\w*|Notiz\w*|Patterns?|Konfidenz\w*|Wiki\w*|Fakten-Register|Wissensbasis)\b")
 
 
 def slugify(text: str) -> str:
@@ -465,14 +473,16 @@ def esc(s: str) -> str:
 
 
 def page(cfg: dict, title: str, body: str, *, desc: str, path: str, og_type: str = "website",
-         extra_head: str = "", draft: bool = False) -> str:
+         extra_head: str = "", draft: bool = False, wide: bool = False) -> str:
     base = cfg["base_url"].rstrip("/")
     canon = f"{base}{path}"
     full_title = f"{title} · {cfg['titel']}" if title != cfg["titel"] else cfg["titel"]
     aktiv = cfg.get("_aktiv")  # Kategorien mit sichtbaren Beiträgen; ohne Angabe alle
     kats = sorted(((k, v) for k, v in cfg["kategorien"].items() if k != "redaktion" and (aktiv is None or k in aktiv)),
                   key=lambda kv: kv[0] == "kurz")  # Kurzmeldungen zuletzt
-    nav = "".join(f'<a href="/k/{k}/">{esc(v)}</a>' for k, v in kats) + \
+    seite = cfg.get("modelle_preise")
+    nav = (f'<a href="/modelle-und-preise/">{esc(seite.get("titel", "Modelle und Preise"))}</a>' if seite else "") + \
+        "".join(f'<a href="/k/{k}/">{esc(v)}</a>' for k, v in kats) + \
         '<a href="/glossar/">Glossar</a><a href="/ueber/">Über</a><a href="/feed.xml">RSS</a>'
     rechtliches = (' · <a href="/impressum/">Impressum</a>' if cfg.get("impressum") else "") +         (' · <a href="/datenschutz/">Datenschutz</a>' if cfg.get("datenschutz") else "")
     banner = '<div class="draft">Entwurf, nicht veröffentlicht</div>' if draft else ""
@@ -494,7 +504,7 @@ def page(cfg: dict, title: str, body: str, *, desc: str, path: str, og_type: str
 <style>{CSS}</style>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap{" wide" if wide else ""}">
 <header class="site"><a class="name" href="/">{esc(cfg['titel'])}</a><nav>{nav}</nav></header>
 <main>{banner}{body}</main>
 <footer class="site">{esc(cfg['fusszeile'])} · <a href="/feed.xml">RSS-Feed</a>{rechtliches}</footer>
@@ -728,6 +738,14 @@ def main() -> int:
     fehler += check_glossar(glossar, posts)
     heute = date.today()
     fehler += check_freigabe(posts, heute)
+    fakten = None
+    if cfg.get("modelle_preise"):
+        pfad = ROOT / cfg["modelle_preise"]["pfad"]
+        if pfad.exists():
+            fakten = fakten_seite.parse_register(pfad.read_text(encoding="utf-8"))
+            fehler += fakten_seite.pruefen(fakten, lambda q: (SOURCES / f"{q}.md").exists())
+        else:
+            fehler.append(f"site.yaml: Fakten-Register nicht gefunden: {cfg['modelle_preise']['pfad']}")
     if args.auto_freigeben:  # einzelne fehlerhafte Entwürfe blockieren nicht die anderen
         fehler = [f for f in fehler if f.startswith(("glossar.yaml", "Slug"))]
     if fehler:
@@ -752,7 +770,7 @@ def main() -> int:
     sichtbar.sort(key=lambda p: (p["datum"], p["slug"]), reverse=True)
     n_draft = sum(1 for p in sichtbar if p["status"] != "freigegeben")
     print(f"{len(posts)} Beiträge, {len(sichtbar)} im Build ({n_draft} Entwürfe)")
-    warnungen = [w for p in posts for w in warn_post(p, heute)]
+    warnungen = [w for p in posts for w in warn_post(p, heute)] + (fakten_seite.hinweise(fakten, heute) if fakten else [])
     if warnungen:
         print("HINWEISE:\n - " + "\n - ".join(warnungen), file=sys.stderr)
     offen = platzhalter(cfg, [p for p in posts if ist_sichtbar(p, heute)])
@@ -784,6 +802,10 @@ def main() -> int:
         for slug in link_terms(md.render(p["body"]), *gl)[1]:
             verwendet[slug] = verwendet.get(slug, 0) + 1
     intro = f'<h1>{esc(cfg["titel"])}</h1><p class="lead">{esc(cfg["beschreibung"])}</p>'
+    if fakten:
+        n = sum(len(a["zeilen"]) for a in fakten["abschnitte"])
+        intro += (f'<p class="abo"><a href="/modelle-und-preise/">{esc(cfg["modelle_preise"].get("titel", "Modelle und Preise"))}</a>: '
+                  f'{n} datierte Angaben zu Preisen, Benchmarks und Markt, Stand {fakten_seite.de_datum(fakten["stand"].isoformat())}.</p>')
     write(out, "index.html", page(cfg, cfg["titel"], intro + list_html(cfg, sichtbar) + abo_html(cfg), desc=cfg["beschreibung"], path="/"))
     for k, name in cfg["kategorien"].items():
         sel = [p for p in sichtbar if p["kategorie"] == k]
@@ -808,9 +830,14 @@ def main() -> int:
         ungenutzt = [e["begriff"] for e in glossar["begriffe"] if e["slug"] not in verwendet]
         print(f"Glossar: {len(glossar['begriffe'])} Begriffe, {len(verwendet)} in Beiträgen verlinkt"
               + (f"; ohne Vorkommen: {', '.join(ungenutzt)}" if ungenutzt else ""))
+    if fakten:
+        write(out, "modelle-und-preise/index.html",
+              page(cfg, cfg["modelle_preise"].get("titel", "Modelle und Preise"),
+                   fakten_seite.render(cfg["modelle_preise"], fakten, _note_entry),
+                   desc=cfg["modelle_preise"].get("beschreibung", cfg["beschreibung"]), path="/modelle-und-preise/", wide=True))
     write(out, "feed.xml", feed_xml(cfg, md, sichtbar, "/feed.xml", cfg["titel"]))
     base = cfg["base_url"].rstrip("/")
-    urls = [f"{base}/", f"{base}/ueber/", f"{base}/impressum/", f"{base}/datenschutz/"] + ([f"{base}/glossar/"] if glossar["begriffe"] else []) + [f"{base}/p/{p['slug']}/" for p in sichtbar]
+    urls = [f"{base}/", f"{base}/ueber/", f"{base}/impressum/", f"{base}/datenschutz/"] + ([f"{base}/glossar/"] if glossar["begriffe"] else []) + ([f"{base}/modelle-und-preise/"] if fakten else []) + [f"{base}/p/{p['slug']}/" for p in sichtbar]
     write(out, "sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
           + "".join(f"<url><loc>{u}</loc></url>" for u in urls) + "</urlset>\n")
     write(out, "robots.txt", f"User-agent: *\nAllow: /\nSitemap: {base}/sitemap.xml\n")

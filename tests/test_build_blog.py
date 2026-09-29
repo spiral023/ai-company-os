@@ -306,3 +306,60 @@ class TestBlogStil:
         p = post(body="Kostet 5 %.{q:1} Und mehr {q:1}.")
         assert "[1]" not in bb.render_body(md, p, zeige_q=False) and "{q:" not in bb.render_body(md, p, zeige_q=False)
         assert 'class="q"' in bb.render_body(md, p)
+
+
+class TestFaktenSeite:
+    REG = """# Fakten
+
+**Stand:** 2026-09-29
+
+## Lesehinweise
+
+- Text
+
+## Preise
+
+| Datum | Gegenstand | Aussage | Einschränkung | Quelle |
+|---|---|---|---|---|
+| 2026-09-20 | Modell A | `$0.10`/`$0.50` pro 1M | - | [[quelle-a]] |
+| 2026-09-22 | Modell B | 5 % mehr | Herstellerangabe | [[quelle-a]] [[quelle-b]] |
+"""
+
+    def test_register_wird_gelesen_und_neueste_zuerst_sortiert(self):
+        fs = bb.fakten_seite
+        reg = fs.parse_register(self.REG)
+        assert reg["stand"] == date(2026, 9, 29)
+        assert [a["titel"] for a in reg["abschnitte"]] == ["Preise"]
+        assert [z["gegenstand"] for z in reg["abschnitte"][0]["zeilen"]] == ["Modell B", "Modell A"]
+        assert reg["abschnitte"][0]["zeilen"][0]["quellen"] == ["quelle-a", "quelle-b"]
+
+    def test_schreibweise_fuer_leser(self):
+        fs = bb.fakten_seite
+        assert fs.bereinigen("`$0.10`/`$13.04`") == "$0,10/$13,04"
+        assert fs.bereinigen("Stand 2026-09-22") == "Stand 22.09.2026"
+
+    def test_fehlende_quelle_und_interner_begriff_sind_fehler(self):
+        fs = bb.fakten_seite
+        reg = fs.parse_register(self.REG.replace("[[quelle-b]]", "[[fehlt]]").replace("Herstellerangabe", "laut Notiz"))
+        fehler = fs.pruefen(reg, lambda q: q != "fehlt")
+        assert any("Quelle nicht gefunden: fehlt" in f for f in fehler)
+        assert any("interner Begriff" in f for f in fehler)
+
+    def test_konfidenzintervall_ist_kein_interner_begriff(self):
+        fs = bb.fakten_seite
+        reg = fs.parse_register(self.REG.replace("Herstellerangabe", "Konfidenzintervalle überlappen"))
+        assert fs.pruefen(reg, lambda q: True) == []
+
+    def test_alter_stand_ergibt_hinweis(self):
+        fs = bb.fakten_seite
+        reg = fs.parse_register(self.REG)
+        assert fs.hinweise(reg, date(2026, 10, 5)) == []
+        assert fs.hinweise(reg, date(2026, 10, 20))
+
+    def test_seite_zeigt_stand_datum_und_quellenliste(self):
+        fs = bb.fakten_seite
+        reg = fs.parse_register(self.REG)
+        eintrag = lambda q: {"titel": f"Titel {q}", "autor": "Anna", "datum": "2026-09-01", "url": "https://x.test"}
+        html = fs.render({"titel": "Modelle und Preise"}, reg, eintrag)
+        assert "Stand 29.09.2026" in html and "22.09.2026" in html and "$0,10" in html
+        assert 'id="q1"' in html and 'id="q2"' in html
