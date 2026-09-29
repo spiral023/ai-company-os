@@ -6,7 +6,7 @@ Statischer Blog aus Markdown, gespeist aus der Wissensbasis (`80_Knowledge/`). D
 
 1. **Entwurf schreiben** (Skill `blog-schreiben`): `blog/posts/YYYY-MM-DD-<slug>.md` mit `status: entwurf`.
 2. **Vorschau:** `python blog/build_blog.py --drafts`, danach `blog/_preview/` lokal öffnen (`python -m http.server -d blog/_preview 8000`).
-3. **Freigabe:** Philipp führt `python blog/build_blog.py --freigeben <slug>` aus. Das prüft erneut (Platzhalter, Links auf Entwürfe), setzt `status: freigegeben` und `geprueft_am` mit dem Tagesdatum. Das Datum des Beitrags darf in der Zukunft liegen, dann erscheint er erst ab diesem Tag. Der Skill `blog-schreiben` gibt nie frei.
+3. **Freigabe:** `python blog/build_blog.py --auto-freigeben` gibt jeden Entwurf frei, der alle Prüfungen ohne Fehler und Hinweise besteht. Er erscheint frühestens am Folgetag (Zeit zum Eingreifen: `status: entwurf` zurücksetzen oder das Datum verschieben). Einzeln freigeben: `--freigeben <slug>`. Vermerke im Frontmatter: `geprueft_am`, bei Automatik `freigabe: automatisch`. Entwürfe mit Hinweisen bleiben liegen.
 4. **Build:** `python blog/build_blog.py` schreibt `blog/_site/`. Nur freigegebene Beiträge landen in Seite und Feed.
 5. **Deployment** nach ai-blog.sp23.online: Cloudflare Worker mit Static Assets (`blog/wrangler.jsonc`). Testseite: `cd blog && wrangler deploy --assets ./_probe`, produktiv: `python build_blog.py && wrangler deploy`.
 
@@ -27,7 +27,7 @@ quellen:                    # Pflicht; Namen von Source-Notizen in 80_Knowledge/
 ---
 ```
 
-Im Text: `{q:2}` verweist auf die zweite Quelle (Fußnote), `[Text](post:<slug>)` verlinkt einen anderen Beitrag. `## Kurz gesagt` wird zur Box, bei mehr als vier Abschnitten und 600 Wörtern entsteht ein Inhaltsverzeichnis. Unter jedem Beitrag stehen „Weiterlesen“ (gemeinsame Quellen, gleiche Kategorie) und ein Abo-Hinweis. Die Seite „Über“ kommt aus `ueber:` in `site.yaml`.
+Im Text: `{q:2}` verweist auf die zweite Quelle. Die Prüfung verlangt es, angezeigt wird es nicht (`quellenverweise_im_text: false` in `site.yaml`), die Quellenliste steht am Ende. `[Text](post:<slug>)` verlinkt einen anderen Beitrag. `## Kurz gesagt` wird zur Box, bei mehr als vier Abschnitten und 600 Wörtern entsteht ein Inhaltsverzeichnis. Unter jedem Beitrag stehen „Weiterlesen“ (gemeinsame Quellen, gleiche Kategorie) und ein Abo-Hinweis. Die Seite „Über“ kommt aus `ueber:` in `site.yaml`.
 
 Quellenangaben (Titel, Autor, Datum, Original-URL) erzeugt der Generator aus den Source-Notizen. Wiki-Links in Doppelklammern sind im Text nicht erlaubt.
 
@@ -48,6 +48,7 @@ Zusätzlich gilt:
 - **Slug eindeutig, keine toten Links.** Ein freigegebener Beitrag darf nur auf Beiträge verlinken, die ebenfalls sichtbar sind.
 - **Hinweise (kein Abbruch):** Absätze mit Zahlen, aber ohne `{q:n}`, erscheinen unter „HINWEISE“. Die Box „Kurz gesagt“ ist ausgenommen.
 - **Platzhalter blockieren den öffentlichen Build.** `[hier ergänzen …]`, `TODO` und die Platzhalter „sp23“ in `site.yaml` lassen `python blog/build_blog.py` scheitern. `--check` und `--drafts` melden sie nur.
+- **Blogstil:** Wörter wie „belegt“, „unbelegt“, „Belegstärke“, „Primärquelle“ im Text erscheinen als Hinweis.
 - **Weitere Hinweise:** unbekannte Frontmatter-Felder (Tippfehler), überschrittenes `pruefen_bis`, „Kurz gesagt“ mit weniger als 2 oder mehr als 4 Stichpunkten.
 - Die Navigation zeigt nur Kategorien mit sichtbaren Beiträgen.
 - **CI:** `.github/workflows/blog.yml` führt Tests und `--check` bei Änderungen aus und baut täglich als Artefakt. Deployment gibt es noch nicht.

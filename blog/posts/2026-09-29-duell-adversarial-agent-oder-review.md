@@ -1,9 +1,11 @@
 ---
-titel: "Adversarial Agent statt menschlichem Review? Die These ist plausibel, aber ungeprüft"
-datum: 2026-09-29
+titel: "Adversarial Agent statt menschlichem Review? Als Vorstufe ja, als Ersatz nein"
+datum: 2026-09-30
 kategorie: duell
-zusammenfassung: "Boris Tane will den Code Review durch einen zweiten Agenten ersetzen, die Praxis-Quellen halten den Menschen als letztes Gate. Was die Positionen trennt, wie dünn beide belegt sind und was ein Team daraus machen sollte."
-status: entwurf
+zusammenfassung: "Boris Tane will den Code Review durch einen zweiten Agenten ersetzen, die Praxis hält den Menschen als letztes Gate. Was die Positionen trennt und was ein Team daraus machen sollte."
+status: freigegeben
+geprueft_am: 2026-09-29
+freigabe: automatisch
 quellen:
   - 2026-02-20-boris-tane-sdlc-is-dead
   - 2026-09-27-anthropic-academy-sdlc-playbook
@@ -14,56 +16,52 @@ quellen:
 
 ## Kurz gesagt
 
-- Position A (Boris Tane): Code Review ist der Flaschenhals im Agent-Zeitalter, ein zweiter Adversarial Agent soll ihn ersetzen. Belegt ist das nur als Meinung, ohne Daten.
-- Position B (Review-Gate): Der Agent liefert ausschließlich Pull Requests, ein Mensch gibt frei. Auch das ist überwiegend Meinung und Herstellerleitfaden, aber breiter und von mehreren unabhängigen Stimmen getragen.
-- Die Positionen unterscheiden sich weniger im Werkzeug als in der Frage, wer am Ende haftet. Praktisch sind sie näher beieinander, als der Titel des Duells vermuten lässt: Auch Position B setzt Agent-Reviewer ein, nur vor dem Menschen statt an seiner Stelle.
-- Empfehlung: Adversarial Reviewer einführen, menschliche Freigabe risikobasiert verschlanken, aber nicht abschaffen.
+- Position A (Boris Tane): Code Review ist der Flaschenhals im Agent-Zeitalter, ein zweiter Adversarial Agent soll ihn ersetzen.{q:1}
+- Position B (Review-Gate): Der Agent liefert nur Pull Requests, ein Mensch gibt frei.{q:2}
+- Die Positionen liegen näher beieinander, als der Titel vermuten lässt: Auch B setzt Agent-Reviewer ein, nur vor dem Menschen statt an seiner Stelle. Der Streit dreht sich darum, wer am Ende haftet.
+- Setze einen Adversarial Reviewer als Vorstufe ein und schlanke die menschliche Freigabe nach Risiko ab. Abschaffen solltest du sie nicht.
 
 ## Position A: Der Agent prüft den Agenten
 
-Tane{q:1} argumentiert, dass mit Coding-Agents die klassischen SDLC-Phasen zu einem engen Loop aus Intent, Build und Observe verschmelzen. Der Code Review gilt darin als Flaschenhals, den ein zweiter, gegnerisch angelegter Agent ersetzen soll. Sicherheitsnetz wäre Monitoring in Produktion, dessen Telemetrie zurück in den Kontext des Agenten fließt.
+Tane argumentiert, dass mit Coding-Agents die klassischen SDLC-Phasen zu einem engen Loop aus Intent, Build und Observe verschmelzen. Der Code Review ist darin der Flaschenhals, den ein zweiter, gegnerisch angelegter Agent ersetzen soll. Das Sicherheitsnetz wäre Monitoring in Produktion, dessen Telemetrie zurück in den Kontext des Agenten fließt.{q:1}
 
-Wichtig für die Belegstärke: Hier liegt nicht Tanes Original vor, sondern eine deutsche Aufarbeitung (vibedeck), also eine Sekundärquelle. Der Artikel ist eine reine Position ohne Daten, der Ersatz menschlichen Reviews ist darin nicht belegt. Der Closed Loop ist plausibel, wird aber nicht gezeigt.
+Der Artikel zeigt keine Daten. Der Closed Loop klingt plausibel, wird aber nirgends vorgeführt.
 
 ## Position B: Der Agent schreibt, der Mensch gibt frei
 
-Das Vorgehen „CI-Agent mit Review-Gate“ (mehrfach belegt) lässt den Agenten event-getriggert in einer Sandbox laufen und sein Ergebnis nur als Merge Request oder Pull Request zurückspielen. Der Reviewer-Schritt ist identisch mit dem Team-Review für menschliche Beiträge. Anthropics Playbook vom 27. September{q:2} formuliert es strikt: Der schreibende Agent genehmigt nicht selbst, Agenten-Befunde blockieren keinen PR, die Code-Owner-Freigabe bleibt.
+Beim Muster „CI-Agent mit Review-Gate“ läuft der Agent event-getriggert in einer Sandbox und spielt sein Ergebnis nur als Merge Request oder Pull Request zurück. Der Review-Schritt ist derselbe wie bei menschlichen Beiträgen. Anthropics Playbook vom 27.09.2026 formuliert es strikt: Der schreibende Agent genehmigt nicht selbst, Agenten-Befunde blockieren keinen PR, die Freigabe durch die Code-Owner bleibt.{q:2}
 
-Dazu kommt „Plan-first mit getrenntem Review“. Es trennt Builder, Reviewer und Verifier und eskaliert die Prüfung stufenweise bis zur modellübergreifenden Schleife. Wichtig: Dieses Vorgehen liefert die Mechanik für Tanes Adversarial Agent, nicht das Argument gegen ihn. Es geht um den frischen Blick auf den Plan oder Diff, nicht um die Frage, ob am Ende ein Mensch unterschreibt. Belegt ist es nur als schlüssiges Vorgehen: Die Einzelquellen dahinter sind fast alle Erfahrungsberichte.
+Dazu kommt „Plan-first mit getrenntem Review“. Es trennt Builder, Reviewer und Verifier und eskaliert die Prüfung stufenweise bis zur modellübergreifenden Schleife. Das liefert die Mechanik für Tanes Adversarial Agent, nicht das Argument gegen ihn. Es geht um den frischen Blick auf Plan oder Diff, nicht darum, ob am Ende ein Mensch unterschreibt.{q:2}
 
 ## Wo sich die Positionen wirklich unterscheiden
 
 | Aspekt | A: Adversarial Agent ersetzt Review | B: Agent-Review vor menschlichem Gate |
 |---|---|---|
 | Was der Review leisten soll | Fehler finden, schnell und skalierbar | Fehler finden und Verantwortung zuweisen |
-| Engpass | Mensch soll aus dem Pfad | Review-Kapazität begrenzt die Parallelität |
-| Risikoprofil | Fehler, die beide Agenten teilen, rutschen durch; Absicherung nur über Monitoring nach dem Deploy | Fehler werden vor dem Merge gefangen, dafür bleibt der Mensch Nadelöhr |
-| Kosten | Zusätzliche Agent-Läufe, aber keine Wartezeit auf Menschen | Agent-Läufe plus menschliche Zeit; laut Elvis 5 bis 10 Minuten pro PR (Selbstbericht){q:3} |
+| Engpass | Der Mensch soll aus dem Pfad | Review-Kapazität begrenzt die Parallelität |
+| Risiko | Fehler, die beide Agenten teilen, rutschen durch. Absicherung nur über Monitoring nach dem Deploy | Fehler werden vor dem Merge gefangen, der Mensch bleibt Nadelöhr |
+| Kosten | Zusätzliche Agent-Läufe, keine Wartezeit auf Menschen | Agent-Läufe plus menschliche Zeit, laut Elvis 5 bis 10 Minuten pro PR{q:3} |
 | Voraussetzung | Gute Observability, schnelles Rollback | Belastbarer Team-Review-Prozess |
 
-Der Kern ist die Aufgabe des Reviews. Für Tane ist Review Qualitätssicherung, und die lässt sich delegieren. Für das Gate ist Review auch ein Freigabeakt: Jemand aus dem Team steht dafür ein. Ein Agent kann Befunde liefern, aber keine Verantwortung tragen. Der Playbook-Satz „der Autor genehmigt nicht selbst“ ist ein Organisationsprinzip und keine Aussage über die Trefferquote von Agenten.
+Der Kern ist die Aufgabe des Reviews. Für Tane ist er Qualitätssicherung, und die lässt sich delegieren. Für das Gate ist er auch ein Freigabeakt: Jemand aus dem Team steht dafür ein. Ein Agent liefert Befunde, aber trägt keine Verantwortung. „Der Autor genehmigt nicht selbst“ ist ein Organisationsprinzip und sagt nichts über die Trefferquote von Agenten.
 
-Beim Risikoprofil hilft ein Gedanke aus Matt Pococks Vortrag zum PR-Bottleneck:{q:5} Die Review-Tiefe richtet sich danach, ob eine Entscheidung schwer umkehrbar ist und wie groß der Blast Radius ist. Ein Tippfehler im Changelog braucht keinen Menschen, eine Migration auf der Produktionsdatenbank schon. Das ist ein Praxisbericht eines Einzelnen ohne Messdaten, aber er löst den Gegensatz auf: Die Frage lautet nicht „Agent oder Mensch“, sondern „für welche Änderungen“.
+Matt Pococks Vortrag zum PR-Bottleneck löst den Gegensatz auf.{q:5} Die Review-Tiefe richtet sich danach, wie schwer eine Entscheidung umkehrbar ist und wie groß der Blast Radius. Ein Tippfehler im Changelog braucht keinen Menschen, eine Migration auf der Produktionsdatenbank schon. Die Frage lautet also nicht „Agent oder Mensch“, sondern „für welche Änderungen“.
 
-## Wie belastbar ist jede Seite?
+## Was die Zahlen hergeben
 
-- **A:** Eine Sekundärquelle, reine Position, keine Daten. Sie widerspricht der Praxis mit Review-Gates. Es gibt keinen Beleg, dass Agent-Review menschlichen Review in Fehlerquote oder Kosten erreicht.
-- **B:** Breiter, aber ebenfalls ohne Messung. Herstellerdoku und Playbook beschreiben ein Vorgehen ohne Wirkungszahlen. Das GitHub-Actions-Muster stammt aus einem Betriebsbericht, bleibt aber Sekundärquelle. Elvis' Setup mit drei AI-Reviewern vor dem Menschen ist ein Selbstbericht; seine Modellurteile (Codex mit wenigen False Positives, Claude Code eher bestätigend) sind ungeprüft.
-- **Die einzige Zahl:** Ein TikTok-Creator{q:4} zitiert eine Auswertung von über 932.000 Pull Requests: 61,38 Prozent der KI-generierten PRs ohne dokumentierte Review, bei 58,77 Prozent der geprüften sahen nur Agenten den Code. Eine frische Prüf-Session mit der ursprünglichen Aufgabe soll die Endkorrektheit von 71,6 auf 89,7 Prozent heben. Die Studie ist nicht verlinkt, es liegt nur die Caption vor. Die Werte sind unverifizierte Zweitwiedergabe und taugen als Hinweis, nicht als Beleg. Sie stützen ohnehin nur die Trennung von Autor und Prüfer, nicht den Wegfall des Menschen.
+Keine Seite hat Messungen, die den Ersatz oder Nicht-Ersatz des Menschen belegen. Die einzige Zahl kommt von einem TikTok-Creator, der eine Auswertung von über 932.000 Pull Requests zitiert: 61,38 Prozent der KI-generierten PRs hatten keinen dokumentierten Review, bei 58,77 Prozent der geprüften sahen nur Agenten den Code. Eine frische Prüf-Session mit der ursprünglichen Aufgabe soll die Endkorrektheit von 71,6 auf 89,7 Prozent heben.{q:4} Die Studie ist nicht verlinkt, du kannst die Zahlen also nur als Hinweis nehmen. Sie stützen ohnehin nur die Trennung von Autor und Prüfer, nicht den Wegfall des Menschen.
 
-Fazit der Belegstärke: Keine der beiden Seiten hat Messungen. B hat mehr unabhängige Stimmen, A hat die schlankere Story. Wer A umsetzt, geht auf einer Meinung ins Risiko.
+Elvis setzt drei AI-Reviewer vor den Menschen.{q:3} Seine Einschätzung, Codex melde wenige False Positives und Claude Code bestätige eher, ist eine Einzelbeobachtung.
 
 ## Wann welche Position trägt
 
-**A trägt**, wenn eine Änderung leicht rückholbar ist (Feature Flag, Canary, schneller Rollback), der Blast Radius klein bleibt und Tests sowie Monitoring stark sind. Ein Warnsignal bleibt: Passt der Agent Tests an, damit sie grün werden, ist das kein Erfolg. Pocock weist zudem darauf hin, dass grüne Checks lügen können (tautologische Tests, wegmockende Tests). Ein Adversarial Agent ist nur so gut wie die Checks, auf die er sich stützt. Das prüfende Modell sollte laut der TikTok-Quelle mindestens so stark sein wie das erzeugende, was die Kosten verdoppelt (eigene Ableitung aus der Quelle, nicht gemessen).
+**A trägt**, wenn eine Änderung leicht rückholbar ist (Feature Flag, Canary, schneller Rollback), der Blast Radius klein bleibt und Tests sowie Monitoring stark sind. Ein Warnsignal ist, wenn der Agent Tests anpasst, damit sie grün werden. Pocock weist darauf hin, dass grüne Checks lügen können, etwa durch tautologische oder wegmockende Tests.{q:5} Ein Adversarial Agent ist nur so gut wie die Checks, auf die er sich stützt. Das prüfende Modell sollte laut TikTok-Quelle mindestens so stark sein wie das erzeugende. Das verdoppelt grob die Kosten (eigene Ableitung, nicht gemessen).{q:4}
 
-**B trägt**, wenn Änderungen schwer umkehrbar sind, Compliance oder Audit-Pflichten gelten oder ein Fehler teuer ist. Dort braucht es eine Person, die freigibt. Die Grenze von B liegt im Team selbst: Ein oberflächliches Review lässt Agent-Fehler genauso durch wie menschliche. Ohne belastbaren Review-Prozess automatisiert das Gate nur die Zuführung ungeprüfter Änderungen.
+**B trägt**, wenn Änderungen schwer umkehrbar sind, Compliance oder Audit-Pflichten gelten oder ein Fehler teuer ist. Dort braucht es eine Person, die freigibt. Die Grenze von B liegt im Team: Ein oberflächlicher Review lässt Agent-Fehler genauso durch wie menschliche. Ohne belastbaren Review-Prozess automatisiert das Gate nur die Zuführung ungeprüfter Änderungen.
 
 ## Empfehlung für ein Team
 
-1. **Führe den Adversarial Agent ein, aber als Vorstufe.** Ein Reviewer mit frischem Kontext, der Diff, Plan und Originalaufgabe sieht und Lücken meldet statt Stilfragen. Das ist in beiden Lagern unstrittig.
-2. **Lass den Menschen nicht aus dem Merge-Pfad, solange du keine eigenen Zahlen hast.** Miss zwei bis vier Wochen, wie viele Agent-Befunde real waren und was der Agent übersehen hat, was danach ein Mensch fand. Erst diese eigene Messung rechtfertigt, Position A für bestimmte Änderungsklassen zu übernehmen.
-3. **Staffle nach Umkehrbarkeit.** Kleine, rückholbare Änderungen mit grünen Checks und Agent-Freigabe; Migrationen, Sicherheit und Datenzugriffe immer mit menschlicher Freigabe. Branch-Schutz mit Required Status Checks bleibt aktiv.
-4. **Plane die Kosten ein.** Mehr Review-Läufe bedeuten mehr Tokens pro PR; beziffert hat das keine der Quellen.
-
-Kurz: Tane hat recht damit, dass der Mensch als alleiniger Prüfer nicht mitskaliert. Belegt ist nur nicht, dass er als Freigeber verzichtbar ist.
+1. **Führe den Adversarial Agent als Vorstufe ein.** Ein Reviewer mit frischem Kontext, der Diff, Plan und Originalaufgabe sieht und Lücken meldet statt Stilfragen. Das ist in beiden Lagern unstrittig.
+2. **Lass den Menschen im Merge-Pfad, bis du eigene Zahlen hast.** Miss zwei bis vier Wochen, wie viele Agent-Befunde real waren und was danach ein Mensch fand, das der Agent übersehen hatte. Erst diese Messung rechtfertigt, A für bestimmte Änderungsklassen zu übernehmen.
+3. **Staffle nach Umkehrbarkeit.** Kleine, rückholbare Änderungen mit grünen Checks und Agent-Freigabe. Migrationen, Sicherheit und Datenzugriffe immer mit menschlicher Freigabe. Branch-Schutz mit Required Status Checks bleibt aktiv.
+4. **Plane die Kosten ein.** Mehr Review-Läufe bedeuten mehr Tokens pro PR. Beziffert hat das bisher keine Quelle.

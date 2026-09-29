@@ -6,6 +6,7 @@ Nutzung:
     python blog/build_blog.py --drafts        # Entwürfe zusätzlich, nach blog/_preview
     python blog/build_blog.py --check         # nur prüfen, nichts schreiben
     python blog/build_blog.py --freigeben SLUG  # prüfen, dann status: freigegeben und geprueft_am setzen
+    python blog/build_blog.py --auto-freigeben  # alle Entwürfe ohne Fehler und Hinweise freigeben (ab morgen)
 
 Beiträge liegen in blog/posts/*.md. Nur Beiträge mit `status: freigegeben` und einem
 Datum bis heute erscheinen im öffentlichen Build. Das ist die Freigabe-Schranke:
@@ -22,7 +23,7 @@ import html
 import re
 import shutil
 import sys
-from datetime import date, datetime, time, timezone
+from datetime import date, datetime, time, timedelta, timezone
 from email.utils import format_datetime
 from pathlib import Path
 
@@ -319,7 +320,8 @@ def check_post(post: dict, cfg: dict, slugs: set[str] | None = None) -> list[str
 
 
 BEKANNTE_FELDER = {"titel", "datum", "kategorie", "zusammenfassung", "status", "quellen", "aktualisiert",
-                   "geprueft_am", "pruefen_bis", "body", "slug", "datei"}
+                   "geprueft_am", "pruefen_bis", "freigabe", "body", "slug", "datei"}
+META_RE = re.compile(r"\b(?:un)?belegt\w*|Belegstärke|Primärquelle\w*|Quellenlage|Selbstbericht\w*", re.I)
 ZAHL_RE = re.compile(r"\d[\d.,]*\s?(?:Prozent|%|Mio\.?|Tokens?|US-Dollar|Punkte\w*)|\$\d")
 
 
@@ -341,6 +343,10 @@ def warn_post(post: dict, heute: date | None = None) -> list[str]:
         n = len(re.findall(r"^[-*] ", box.group(1), re.M))
         if not 2 <= n <= 4:
             out.append(f"{post['datei']}: „Kurz gesagt“ hat {n} Stichpunkte (vorgesehen: 2 bis 4)")
+    meta = META_RE.findall(prose_only(post["body"]))
+    if meta:
+        out.append(f"{post['datei']}: {len(meta)}x Beleg-Meta im Text ({', '.join(sorted({m.lower() for m in meta}))}): "
+                   "Blogstil verlangt Aussage statt Belegdiskussion, Quellen stehen am Ende")
     body = re.sub(r"```.*?```", "", post["body"], flags=re.S)
     body = re.sub(r"## Kurz gesagt\n.*?(?=\n## |\Z)", "", body, flags=re.S)  # Zusammenfassung belegt der Text
     for block in re.split(r"\n\s*\n", body):
@@ -363,12 +369,12 @@ def check_freigabe(posts: list[dict], heute: date) -> list[str]:
             fehler.append(f"Slug „{slug}“ doppelt: {', '.join(dateien)}")
     by_slug = {p["slug"]: p for p in posts}
     for p in posts:
-        if not ist_sichtbar(p, heute):
+        if p["status"] != "freigegeben":
             continue
         for m in POST_LINK_RE.finditer(p["body"]):
             z = by_slug.get(m.group(1))
-            if z is not None and not ist_sichtbar(z, heute):
-                fehler.append(f"{p['datei']}: verlinkt post:{m.group(1)}, der noch nicht freigegeben oder datiert ist (toter Link)")
+            if z is not None and (z["status"] != "freigegeben" or z["datum"] > p["datum"]):
+                fehler.append(f"{p['datei']}: verlinkt post:{m.group(1)}, der nicht freigegeben oder später datiert ist (toter Link)")
     return fehler
 
 
@@ -391,13 +397,15 @@ def platzhalter(cfg: dict, live: list[dict]) -> list[str]:
     return fehler
 
 
-def render_body(md: MarkdownIt, p: dict, base: str = "") -> str:
+def render_body(md: MarkdownIt, p: dict, base: str = "", zeige_q: bool = True) -> str:
     """Markdown -> HTML. `post:slug` wird zum Beitragslink, `{q:n}` zum Quellenverweis.
 
     Mit `base` (Feed) werden Links absolut und Quellenverweise zu Klartext.
     """
     body = POST_LINK_RE.sub(lambda m: f"]({base}/p/{m.group(1)}/)", p["body"])
     out = md.render(body)
+    if not zeige_q:
+        return re.sub(r" ?\{q:\d+\}", "", out)
     if base:
         return Q_RE.sub(lambda m: f"[{m.group(1)}]", out)
     return Q_RE.sub(lambda m: f'<sup class="q"><a href="#q{m.group(1)}" title="Quelle {m.group(1)}">[{m.group(1)}]</a></sup>', out)
@@ -531,7 +539,7 @@ def abo_html(cfg: dict) -> str:
 def post_page(cfg: dict, md: MarkdownIt, p: dict, draft: bool, posts: list[dict],
               gl: tuple | None = None) -> tuple[str, str, int]:
     wc = word_count(p["body"])
-    body_html = decorate(render_body(md, p), wc)
+    body_html = decorate(render_body(md, p, zeige_q=cfg.get("quellenverweise_im_text", True)), wc)
     if gl:
         body_html, _ = link_terms(body_html, *gl)
     path = f"/p/{p['slug']}/"
@@ -572,7 +580,7 @@ def feed_xml(cfg: dict, md: MarkdownIt, posts: list[dict], selfpath: str, title:
     items = []
     for p in posts[: cfg.get("feed_max", 30)]:
         url = f"{base}/p/{p['slug']}/"
-        body_html = render_body(md, p, base) + quellen_html(cfg, p)
+        body_html = render_body(md, p, base, cfg.get("quellenverweise_im_text", True)) + quellen_html(cfg, p)
         items.append(
             f"<item><title>{esc(p['titel'])}</title><link>{url}</link><guid isPermaLink=\"true\">{url}</guid>"
             f"<pubDate>{rfc822(p['datum'])}</pubDate><category>{esc(cfg['kategorien'][p['kategorie']])}</category>"
@@ -601,25 +609,69 @@ def write(out: Path, rel: str, text: str) -> None:
     target.write_text(text, encoding="utf-8", newline="\n")
 
 
-def freigeben(post: dict, posts: list[dict], heute: date) -> tuple[bool, str]:
-    """Beitrag freigeben: erneut prüfen, status und geprueft_am im Frontmatter setzen."""
+AUTO_VERZOEGERUNG_TAGE = 1  # automatisch freigegebene Beiträge erscheinen frühestens morgen (Zeit zum Eingreifen)
+
+
+def freigeben(post: dict, posts: list[dict], heute: date, automatisch: bool = False) -> tuple[bool, str]:
+    """Beitrag freigeben: erneut prüfen, status und geprueft_am im Frontmatter setzen.
+
+    Automatisch: frühestens morgen, Vermerk `freigabe: automatisch`, und der Beitrag darf keine Hinweise haben.
+    """
     if post["status"] == "freigegeben":
         return False, f"{post['datei']} ist schon freigegeben"
-    probe = [{**q, "status": "freigegeben", "geprueft_am": heute} if q is post else q for q in posts]
-    fehler = check_freigabe(probe, heute) if post["datum"] <= heute else []
-    fehler += platzhalter({}, [post])
+    datum = post["datum"]
+    if automatisch:
+        datum = max(datum, heute + timedelta(days=AUTO_VERZOEGERUNG_TAGE))
+    neu = {**post, "status": "freigegeben", "geprueft_am": heute, "datum": datum}
+    probe = [neu if q is post else q for q in posts]
+    fehler = check_freigabe(probe, heute) + platzhalter({}, [post])
+    if automatisch:
+        fehler += warn_post(post, heute)
     if fehler:
         return False, "Freigabe abgelehnt:\n - " + "\n - ".join(fehler)
     path = POSTS / post["datei"]
     text = path.read_text(encoding="utf-8", newline="")
-    text = re.sub(r"^geprueft_am:.*?\r?\n", "", text, count=1, flags=re.M)
-    text, n = re.subn(r"^status:.*?(\r?\n)", lambda m: f"status: freigegeben{m.group(1)}geprueft_am: {heute.isoformat()}{m.group(1)}",
+    text = re.sub(r"^(geprueft_am|freigabe):.*?\r?\n", "", text, flags=re.M)
+    zusatz = lambda nl: f"geprueft_am: {heute.isoformat()}{nl}" + (f"freigabe: automatisch{nl}" if automatisch else "")
+    text, n = re.subn(r"^status:.*?(\r?\n)", lambda m: f"status: freigegeben{m.group(1)}{zusatz(m.group(1))}",
                       text, count=1, flags=re.M)
     if not n:
         return False, f"{post['datei']}: status-Zeile nicht gefunden"
+    if datum != post["datum"]:
+        text = re.sub(r"^datum:.*?(\r?\n)", lambda m: f"datum: {datum.isoformat()}{m.group(1)}", text, count=1, flags=re.M)
     path.write_text(text, encoding="utf-8", newline="")
-    wann = "sofort sichtbar" if post["datum"] <= heute else f"erscheint ab {post['datum'].strftime('%d.%m.%Y')}"
+    post.update(status="freigegeben", geprueft_am=heute, datum=datum)
+    wann = "sofort sichtbar" if datum <= heute else f"erscheint ab {datum.strftime('%d.%m.%Y')}"
     return True, f"{post['datei']} freigegeben (geprueft_am {heute.strftime('%d.%m.%Y')}), {wann}"
+
+
+def auto_freigeben(posts: list[dict], cfg: dict, heute: date) -> list[str]:
+    """Alle Entwürfe freigeben, die jede automatische Prüfung bestehen. Rückgabe: Meldungen."""
+    meldungen: list[str] = []
+    offen = []
+    slugs = {p["slug"] for p in posts}
+    for p in posts:
+        if p["status"] != "entwurf":
+            continue
+        fehler = check_post({**p, "status": "freigegeben", "geprueft_am": heute}, cfg, slugs)
+        if fehler:
+            meldungen.append(f"übersprungen {p['datei']}: " + "; ".join(fehler))
+        else:
+            offen.append(p)
+    while True:  # Reihenfolge egal: ein Digest folgt, sobald die verlinkten Beiträge frei sind
+        fortschritt = False
+        for p in list(offen):
+            ok, msg = freigeben(p, posts, heute, automatisch=True)
+            if ok:
+                meldungen.append(msg)
+                offen.remove(p)
+                fortschritt = True
+        if not fortschritt:
+            break
+    for p in offen:
+        ok, msg = freigeben(p, posts, heute, automatisch=True)
+        meldungen.append(f"übersprungen {p['datei']}: {msg.replace(chr(10), ' ')}")
+    return meldungen
 
 
 def main() -> int:
@@ -630,6 +682,8 @@ def main() -> int:
     ap.add_argument("--drafts", action="store_true", help="Entwürfe einbeziehen (Ausgabe nach blog/_preview)")
     ap.add_argument("--check", action="store_true", help="nur prüfen")
     ap.add_argument("--freigeben", metavar="SLUG", help="Beitrag prüfen und freigeben (setzt status und geprueft_am)")
+    ap.add_argument("--auto-freigeben", action="store_true",
+                    help="alle Entwürfe freigeben, die jede Prüfung ohne Hinweise bestehen (erscheinen frühestens morgen)")
     args = ap.parse_args()
 
     cfg = load_config()
@@ -649,9 +703,16 @@ def main() -> int:
     fehler += check_glossar(glossar, posts)
     heute = date.today()
     fehler += check_freigabe(posts, heute)
+    if args.auto_freigeben:  # einzelne fehlerhafte Entwürfe blockieren nicht die anderen
+        fehler = [f for f in fehler if f.startswith(("glossar.yaml", "Slug"))]
     if fehler:
         print("FEHLER:\n - " + "\n - ".join(fehler), file=sys.stderr)
         return 1
+
+    if args.auto_freigeben:
+        for m in auto_freigeben(posts, cfg, heute):
+            print(m)
+        return 0
 
     if args.freigeben:
         ziel = next((p for p in posts if p["slug"] == args.freigeben), None)

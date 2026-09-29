@@ -1,9 +1,11 @@
 ---
 titel: "KW 39: Opus 5.5 führt, GPT-6 halbiert die Preise, Effort kauft Verifikation"
-datum: 2026-09-29
+datum: 2026-09-30
 kategorie: digest
 zusammenfassung: "Wochenrückblick KW 39: Opus 5.5 an der Spitze beider Indizes, GPT-6 Sol und Luna deutlich günstiger, dazu Effort-Daten, ein Opus-Leitfaden und drei Arbeitsweisen gegen den Review-Engpass."
-status: entwurf
+status: freigegeben
+geprueft_am: 2026-09-29
+freigabe: automatisch
 quellen:
   - 2026-09-22-artificialanlys-2102438210798514391
   - 2026-09-22-artificialanlys-2102462962758033624
@@ -19,11 +21,11 @@ quellen:
 
 - Claude Opus 5.5 führt Intelligence Index (58) und Coding Agent Index (66), kostet aber in Claude Code pro Task rund 21 Prozent mehr als Opus 5.
 - GPT-6 Sol und Luna kosten pro Token nur noch die Hälfte der Vorgänger, Luna ist der günstigste Punkt auf der Kostenfront.
-- Effort kauft Verifikationstiefe, keinen besseren Ansatz. Das ist die wichtigste Arbeitsregel der Woche.
+- Effort kauft Verifikationstiefe, keinen besseren Ansatz. Wähle die Stufe danach, wie viel Nachprüfen die Aufgabe braucht.
 
 ## 1. Opus 5.5: Spitze bei Intelligenz und Coding
 
-Artificial Analysis (unabhängiger Dritter) misst für Opus 5.5 (max, mit Fallback) 58 Punkte im Intelligence Index, vor Fable 5.1 und GPT-6 Astra mit je 53. Im Coding Agent Index in Claude Code sind es 66 Punkte (Opus 5: 60, Fable 5.1: 62). Beide Indizes sind getrennte Skalen, Werte lassen sich nicht mischen. Wenn du Coding-Agenten einsetzt, ist Opus 5.5 der Kandidat zum Testen; mehr dazu im [Beitrag zu Opus 5.5](post:opus-5-5-hoechster-score-teurer-pro-task).{q:1}
+Artificial Analysis misst für Opus 5.5 (max, mit Fallback) 58 Punkte im Intelligence Index, vor Fable 5.1 und GPT-6 Astra mit je 53. Im Coding Agent Index in Claude Code sind es 66 Punkte (Opus 5: 60, Fable 5.1: 62). Beide Indizes sind getrennte Skalen, Werte lassen sich nicht mischen. Wenn du Coding-Agenten einsetzt, ist Opus 5.5 der Kandidat zum Testen; mehr dazu im [Beitrag zu Opus 5.5](post:opus-5-5-hoechster-score-teurer-pro-task).{q:1}
 
 ## 2. Opus 5.5 im Preis: Token billiger, Tasks teurer
 
@@ -39,19 +41,19 @@ Elf neue Punkte auf der Pareto-Front von Intelligence Index gegen Kosten pro Tas
 
 ## 5. Effort kauft Verifikation, keinen besseren Ansatz
 
-Thariq (Anthropic) wertet eigene Terminal-Bench-3.0-Läufe aus, also Herstellerangaben mit ungefähr aus dem Chart abgelesenen Werten. Bei Fable 5.1 sinken übersehene Randfälle von 59 auf 24, falsche Grundentscheidungen aber nur von 133 auf 107. Opus 5.5 auf High erreicht laut Chart etwa den Score von Fable 5.1 auf Max mit rund der halben Token-Menge. Sein Ablauf: Claude dich interviewen lassen, auf Low oder Medium bauen, Ergebnis lesen, auf High verifizieren lassen. Umschalten geht mit `/effort` mitten im Gespräch.{q:6}
+Thariq von Anthropic hat eigene Terminal-Bench-3.0-Läufe ausgewertet, die Werte sind aus dem Chart abgelesen. Bei Fable 5.1 sinken übersehene Randfälle von 59 auf 24, falsche Grundentscheidungen aber nur von 133 auf 107. Opus 5.5 auf High erreicht laut Chart etwa den Score von Fable 5.1 auf Max mit rund der halben Token-Menge. Sein Ablauf: Claude dich interviewen lassen, auf Low oder Medium bauen, Ergebnis lesen, auf High verifizieren lassen. Umschalten geht mit `/effort` mitten im Gespräch.{q:6}
 
 ## 6. Opus 5.5 führen: Zielzustand, Stopp-Regeln, Task-Datei
 
-Der Herstellerleitfaden{q:5} (ohne Messwerte) rät, „done“ in einer Nachricht zu definieren, „think carefully“-Zeilen zu streichen und Stopp-Regeln in die `CLAUDE.md` zu schreiben: nur vor Destruktivem fragen. Am belastbarsten ist die Task-Liste in einer Datei, weil sie die Kontext-Zusammenfassung überlebt. Weniger Stopps erhöhen das Risiko, Permission Prompts bleiben deshalb an. Wie sich das mit einem Kontext-Aufräumplan verträgt, steht im [Beitrag zur Kontext-Hygiene](post:kontext-hygiene-entscheidungsbaum).
+Anthropics Leitfaden{q:5} rät, „done“ in einer Nachricht zu definieren, „think carefully“-Zeilen zu streichen und Stopp-Regeln in die `CLAUDE.md` zu schreiben: nur vor Destruktivem fragen. Am belastbarsten ist die Task-Liste in einer Datei, weil sie die Kontext-Zusammenfassung überlebt. Weniger Stopps erhöhen das Risiko, Permission Prompts bleiben deshalb an. Wie sich das mit einem Kontext-Aufräumplan verträgt, steht im [Beitrag zur Kontext-Hygiene](post:kontext-hygiene-entscheidungsbaum).
 
 ## 7. Review als Engpass
 
-Matt Pocock (Praxisbericht, ohne Messdaten){q:7} setzt auf drei Bremsen: deterministische Checks, ein Review-Subagent mit eigener Standards-Datei, der Fixes committet, und Human Review nach Risiko. Grüne Tests können lügen, etwa tautologische oder wegmockende Tests. Anthropics SDLC-Playbook (Hersteller, keine Wirkungszahlen){q:8} ergänzt: Der schreibende Agent genehmigt nicht selbst, Pflichtregeln gehören in Hooks statt in Skills. Kosten sind zusätzliche Review-Token pro PR. Die beiden Positionen dazu stehen im [Duell: Adversarial Agent oder menschlicher Review](post:duell-adversarial-agent-oder-review).
+Matt Pocock{q:7} setzt auf drei Bremsen: deterministische Checks, ein Review-Subagent mit eigener Standards-Datei, der Fixes committet, und Human Review nach Risiko. Grüne Tests können lügen, etwa tautologische oder wegmockende Tests. Anthropics SDLC-Playbook{q:8} ergänzt: Der schreibende Agent genehmigt nicht selbst, Pflichtregeln gehören in Hooks statt in Skills. Kosten sind zusätzliche Review-Token pro PR. Die beiden Positionen dazu stehen im [Duell: Adversarial Agent oder menschlicher Review](post:duell-adversarial-agent-oder-review).
 
-## Was ich diese Woche nicht einordnen konnte
+## Noch offen
 
-Zur Aussage, Effort zerstöre bei Fable 5.1 und Opus 5.5 den Prompt Cache nicht, gibt es nur die Behauptung der Quelle. Die Bugfund-Aussage im Opus-Leitfaden (niedrigster Effort schlägt Opus 5 bei hohem) stammt von einem einzelnen Tester. Die Terminal-Bench-Werte für Opus 5.5 weichen je nach Setup ab (59,6 Prozent im Intelligence Index, 63,1 Prozent im Coding Agent Index), die Ursache ist nur mit „anderes Harness“ beschrieben. Die Kennzahlen im SDLC-Playbook sind ungeprüfte Vorschläge. Zu GPT-6 lag mir nur die Auswertung von Artificial Analysis vor, keine Herstellerseite mit den Preisen.
+Ob Effort bei Fable 5.1 und Opus 5.5 den Prompt Cache zerstört, ist nur behauptet, nicht gezeigt. Die Aussage im Opus-Leitfaden, dass der niedrigste Effort Opus 5 bei hohem schlägt, stammt von einem einzelnen Tester. Die Terminal-Bench-Werte für Opus 5.5 schwanken je nach Setup zwischen 59,6 und 63,1 Prozent.{q:1}{q:4} Die Kennzahlen im SDLC-Playbook sind Vorschläge ohne Messung.{q:8} Zu GPT-6 gibt es bisher nur Zahlen von Artificial Analysis.{q:2}
 
 ## Fazit
 

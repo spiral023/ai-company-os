@@ -1,9 +1,11 @@
 ---
-titel: "Fünf Behauptungen aus der KI-Szene im Check: Was die Quellen wirklich tragen"
-datum: 2026-09-29
+titel: "Stimmt das? Fünf Aussagen aus der KI-Szene im Faktencheck"
+datum: 2026-09-30
 kategorie: check
-zusammenfassung: "Fine-Tuning sei tot, 94 Commits an einem Tag, 93 % zu 76 % Kontext-Recall, gefühlt schneller und gemessen langsamer, weniger Halluzinationen bei GPT-6: fünf Zahlen, geprüft gegen das, was die Quellen hergeben."
-status: entwurf
+zusammenfassung: "Fine-Tuning sei tot, 94 Commits an einem Tag, 93 % zu 76 % Kontext-Recall, gefühlt schneller und gemessen langsamer, weniger Halluzinationen bei GPT-6: fünf Aussagen und was an ihnen dran ist."
+status: freigegeben
+geprueft_am: 2026-09-29
+freigabe: automatisch
 quellen:
   - 2025-12-31-natebjones-seriously-not-worth-it-now
   - 2026-02-23-elvis-openclaw-codex-agent-swarm
@@ -14,80 +16,64 @@ quellen:
 
 ## Kurz gesagt
 
-- Von fünf geprüften Behauptungen ist nur eine durch die Quellen direkt gestützt, und die ist ein Messwert eines Drittanbieters, der anders gelesen werden muss, als die Überschrift nahelegt.
-- Eine Behauptung wird vom Bild aus dem Thread nicht bestätigt: Der Contribution-Graph zeigt an einem Tag im Februar 62 Beiträge. Ob es der Tag mit den 94 Commits ist, bleibt offen.
-- Drei Zahlen sind Herstellerangaben, Selbstberichte oder Zweitzitate ohne Primärquelle. Das macht sie nicht falsch, aber nicht belegt.
+- Von fünf Aussagen stimmt eine, aber anders, als die Schlagzeile klingt: Bei GPT-6 sinken die Halluzinationen vor allem, weil das Modell öfter nicht antwortet.{q:5}
+- Bei vier Aussagen lässt sich die Zahl nicht prüfen. Das macht sie nicht falsch, aber du solltest sie nicht als Fakt weitergeben.
+- Frag bei jeder Zahl aus der Szene: Wer hat gemessen, was genau, und was fehlt daneben?
 
-Grundlage sind öffentlich zugängliche Quellen und ihre Auswertung, keine eigenen Messungen. Wo eine Primärquelle nicht gelesen wurde, steht das dabei. Alles Weitere zur Sache selbst wäre Modellwissen und bleibt draußen.
+| Aussage | Wer sagt es | Urteil |
+|---|---|---|
+| Fine-Tuning ist tot{q:1} | Nate B. Jones | nicht prüfbar |
+| 94 Commits an einem Tag{q:2} | Elvis | nicht prüfbar |
+| 93 % zu 76 % Recall, siebenfacher Tokenverbrauch{q:3} | Julian Ivanov, zitiert Anthropic | nicht prüfbar, als Richtung plausibel |
+| Gefühlt schneller, gemessen langsamer{q:4} | @floknowsai, zitiert zwei Studien | nicht prüfbar, plausibel |
+| Weniger Halluzinationen bei GPT-6{q:5} | Artificial Analysis | stimmt, aber anders gemeint |
 
-## Das Ergebnis auf einen Blick
+## 1. „Wer 2026 feintunt, verliert gegen ein gutes Harness“
 
-| Behauptung | Wer sagt es | Art der Quelle | Urteil |
-|---|---|---|---|
-| Fine-Tuning ist tot | Nate B. Jones | Meinung ohne Daten | unbelegt |
-| 94 Commits am Tag | Elvis, via Zweitquelle | Selbstbericht, Bild bestätigt es nicht | unbelegt |
-| 93 % / 76 % MRCR, 7x Token | Ivanov, zitiert Anthropic | Hersteller aus zweiter Hand | unbelegt, plausibel |
-| Gefühlt schneller, gemessen langsamer | @floknowsai, zitiert arXiv | Studie aus zweiter Hand | plausibel |
-| Weniger Halluzinationen | Artificial Analysis | Drittmessung | belegt, aber Verweigerung |
+Nate B. Jones sagt in einem knapp zweiminütigen TikTok-Clip vom Dezember 2025:{q:1} Ein Fine-Tuning-Projekt dauere acht bis zwölf Wochen, danach sei das Modell von einer neuen Generation überholt. Unternehmen hätten im letzten Jahr zweistellige bis dreistellige Millionenbeträge verbrannt.
 
-Die Begründung je Behauptung steht darunter.
+Der Clip zeigt weder Messwerte noch eine Fallstudie. Die Logik, dass Modellwechsel schneller kommen als Trainingszyklen, leuchtet ein. Woher die Millionenzahl stammt, sagt er nicht. Gegenfälle wie kleine Modelle für Latenz- oder Kostenziele, Datenschutzvorgaben und enge Aufgaben mit hohem Volumen kommen nicht vor.
 
-## 1. „Fine-Tuning ist tot“
+**Nicht prüfbar.** Als Reihenfolge taugt die Aussage: erst Instruktionen, Constraints und Evals ausreizen. Als Absolutheit nicht.
 
-**Behauptet** von Nate B. Jones in einem knapp zweiminütigen TikTok-Clip (Dezember 2025):{q:1} Wer 2026 feintunt, verliert gegen ein gutes Agentic Harness. Ein Projekt dauere acht bis zwölf Wochen, danach sei das Modell von einer neuen Generation überholt. Unternehmen hätten im letzten Jahr zweistellige bis dreistellige Millionenbeträge verbrannt.
+## 2. „50 Commits pro Tag, Spitze 94“
 
-**Belegt:** nichts. Die Quelle ist reine Meinung ohne Messwerte, Fallstudie oder Methode. Die Zeitfalle-Logik (Modellwechsel schneller als Trainingszyklus) ist plausibel, aber nicht gemessen.
+Elvis (@elvissun) beschreibt in einem X-Thread einen Orchestrator, der parallele Coding-Agents steuert. Im Schnitt seien es 50 Commits pro Tag, an der Spitze 94. Rund 90 % der Aufgaben übernehme Codex.{q:2} Die Architektur (getrennte Kontexte für Business und Code, Worktree-Isolation, mehrere Gates vor dem Menschen) passt zu bekannten Mustern. Die Zahlen sind Eigenangaben.
 
-**Es fehlt:** die Millionenzahl hat keine Herleitung. Gegenfälle (kleine Modelle für Latenz- oder Kostenziele, Datenschutzvorgaben, enge Aufgaben mit hohem Volumen), kommen im Clip nicht vor.
+Das Bild aus dem Thread ist ein Contribution-Graph und zeigt an einem Tag im Februar 62 Beiträge. Ob es der Tag mit den 94 Commits ist, geht daraus nicht hervor.{q:2} Kosten nennt Elvis nicht: keinen Token-Verbrauch für drei Reviewer pro PR, keine Hardware für 20 und mehr parallele Agents. Commit-Zahlen sagen zudem nichts über Qualität oder Wert.
 
-**Urteil: unbelegt.** Als Entscheidungsreihenfolge (erst Instruktionen, Constraints und Evals ausreizen) taugt die Aussage, als Absolutheit nicht.
+**Nicht prüfbar.** Das Bild bestätigt die 94 jedenfalls nicht.
 
-## 2. „94 Commits an einem Tag mit einem Agent-Schwarm“
+## 3. „93 % bei 256.000 Token, 76 % bei einer Million“
 
-**Behauptet** von Elvis (@elvissun) in einem X-Thread:{q:2} Ein Orchestrator steuert parallele Coding-Agents, im Schnitt 50 Commits pro Tag, Spitze 94. Rund 90 % der Aufgaben übernehme Codex.
+Julian Ivanov beruft sich in einem Video auf Anthropic-Doku und -Blog:{q:3} Beim MRCR-Benchmark finde das Modell bei rund 256.000 Token 93 % der versteckten Informationen, bei einer Million nur 76 %. Ein Anthropic-Beispiel zeige etwa die siebenfache Tokenmenge von niedriger zu hoher Effort-Stufe.
 
-**Belegt:** das Architekturprinzip (getrennte Kontexte für Business und Code, Worktree-Isolation, mehrere Gates vor dem Menschen), weil es zu bekannten Mustern passt. Die Zahlen selbst sind selbstberichtet, und unsere Quelle ist eine deutsche Aufarbeitung des Threads, nicht das Original.
+Ivanov nennt die Zahlen ohne Methode, und das Original ist nicht geprüft. Unklar bleiben das Testsetup, das Modell und beim Faktor sieben die Aufgabe und die Vergleichsstufen. Der Faktor ist ein einzelnes Beispiel, kein Durchschnitt.
 
-**Es fehlt:** Kosten, komplett. Token-Verbrauch dreier Reviewer pro PR, 20+ parallele Agents und Hardware werden nicht beziffert. Commit-Zahlen sagen zudem nichts über Qualität oder Wert. Das Bild aus dem Thread ist ein Contribution-Graph und zeigt an einem Tag im Februar 62 Beiträge. Ob das der Tag mit den 94 Commits ist, geht aus der Quelle nicht hervor.
-
-**Urteil: unbelegt.** Das Bild aus dem Thread bestätigt die 94 nicht (62 Beiträge an einem Tag im Februar; ob derselbe Tag gemeint ist, bleibt offen).
-
-## 3. „93 % Recall bei 256.000 Token, 76 % bei einer Million; siebenfacher Tokenverbrauch bei hoher Effort-Stufe“
-
-**Behauptet** in einem Video von Julian Ivanov, der sich auf Anthropic-Doku und -Blog beruft:{q:3} Beim MRCR-Benchmark findet das Modell bei rund 256.000 Token 93 % der versteckten Informationen, bei einer Million nur 76 %. Ein Anthropic-Beispiel zeige etwa die siebenfache Tokenmenge von niedriger zu hoher Effort-Stufe.
-
-**Belegt:** dass Ivanov die Zahlen so nennt. Das Original wurde nicht geprüft, das Video zitiert ohne Methode. Es sind Herstellerangaben aus zweiter Hand. Beim Tokenfaktor fehlen Aufgabe, Modell und Vergleichsstufen.
-
-**Es fehlt:** die Primärquelle, das Testsetup des Benchmarks und die Frage, für welches Modell die Werte gelten. Der Faktor sieben ist ein einzelnes Beispiel, kein Durchschnitt.
-
-**Urteil: unbelegt, aber als Richtung plausibel.** Die Konsequenz (Kontext klein halten, Effort nach Aufgabe wählen) hängt nicht an der exakten Zahl. Zitiere sie nicht als Fakt, bevor du die Anthropic-Seite selbst gelesen hast.
+**Nicht prüfbar, als Richtung plausibel.** Die Konsequenz (Kontext klein halten, Effort nach Aufgabe wählen) hängt nicht an der exakten Zahl. Zitiere die Zahlen nicht als Fakt, bevor du die Anthropic-Seite selbst gelesen hast.
 
 ## 4. „Gefühlt 20 % schneller, gemessen 19 % langsamer“
 
-**Behauptet** in einem 96-Sekunden-TikTok von @floknowsai, der zwei arXiv-Studien zusammenfasst:{q:4} In der ersten arbeiteten 16 erfahrene Entwickler im eigenen Projekt. Zwölf wurden langsamer. Erwartet hatten sie vorher 24 % Beschleunigung, gefühlt waren es hinterher 20 %, gemessen 19 % mehr Zeit.
+@floknowsai fasst in einem 96-Sekunden-TikTok zwei arXiv-Studien zusammen.{q:4} In der ersten arbeiteten 16 erfahrene Entwickler im eigenen Projekt, zwölf wurden langsamer. Vorher erwarteten sie 24 % Beschleunigung, hinterher fühlten sie 20 %, gemessen waren es 19 % mehr Zeit.
 
-**Belegt:** nur als Wiedergabe. Die Zahlen stammen aus Caption und Transkript, die Studien wurden nicht geprüft. Das Transkript ist eine maschinelle Rückübersetzung, die Studien-Kennung steht nur als Link. Die Deutung, fünf Jahre Projektwissen kämen beim Agent nicht an, ist Florians eigene Erklärung, keine Aussage der Zahlen.
+Die Zahlen stammen aus Caption und Transkript des Videos, die Studien selbst sind nicht geprüft. Die Stichprobe ist klein und betrifft erfahrene Entwickler in vertrauten Projekten mit einem früheren Modellstand. Für Neulinge oder neuere Tools sagt sie wenig. Die Erklärung, fünf Jahre Projektwissen kämen beim Agent nicht an, ist Florians eigene Deutung, keine Aussage der Zahlen.
 
-**Es fehlt:** die Primärquelle. Die Stichprobe ist klein, bezieht sich auf erfahrene Entwickler in vertrauten Projekten und auf einen früheren Modellstand. Für Neulinge oder neuere Tools sagt sie wenig.
+**Nicht prüfbar, plausibel.** Die Wahrnehmungslücke ist der belastbare Kern, sofern die Studie so ist, wie das Video sie wiedergibt. Verlass dich bei deiner eigenen Produktivität nicht aufs Gefühl, sondern miss.
 
-**Urteil: plausibel.** Die Wahrnehmungslücke ist der belastbare Kern, sofern die Studie so berichtet, wie das Video sie wiedergibt. Was du daraus mitnimmst: Verlass dich bei deiner eigenen Produktivität nicht aufs Gefühl, sondern miss.
+## 5. „GPT-6 halluziniert deutlich weniger“
 
-## 5. „Weniger Halluzinationen bei GPT-6 Sol und Luna“
+Im Benchmark AA-Omniscience fällt die Halluzinationsrate bei Sol von 92 % auf 60 %, bei Luna von 93 % auf 77 %. Gemessen hat Artificial Analysis, Stand 22.09.2026 im Intelligence Index v4.3.{q:5}
 
-**Behauptet** wird der Rückgang der Halluzinationsrate im Benchmark AA-Omniscience: Sol von 92 % auf 60 %, Luna von 93 % auf 77 %.{q:5}
+Die Zahl bedeutet nicht, was sie klingt. Sol beantwortet nur noch 83 % der Fragen statt 99 %, die Accuracy sinkt von 59 % auf 54 %. Artificial Analysis liest das selbst überwiegend als Verweigerung, nicht als mehr Wissen. Der zusammengefasste Omniscience Index steigt trotzdem (Sol 27 statt 22, Luna 1 statt minus 10). Wie er gewichtet, steht nicht in der Quelle.{q:5}
 
-**Belegt:** als Messung von Artificial Analysis (Drittanbieter, Intelligence Index v4.3, Stand 22.09.2026). Aber die Zahl bedeutet nicht, was sie klingt. Sol beantwortet nur noch 83 % der Fragen statt 99 %, die Accuracy sinkt von 59 % auf 54 %. Artificial Analysis wertet das selbst überwiegend als Verweigerung, nicht als mehr Wissen. Der zusammengefasste Omniscience Index steigt dennoch (Sol 27 statt 22, Luna 1 statt minus 10); wie er gewichtet, steht nicht in der Quelle.
+**Stimmt, aber anders gemeint.** Weniger Halluzinationen heißt hier weniger geantwortet, nicht mehr gewusst. Ob dir das nützt, hängt davon ab, ob in deinem Einsatz eine falsche Antwort teurer ist als keine.
 
-**Es fehlt:** die Antwort auf die Frage, ob dir die Verweigerung nützt. Das hängt davon ab, ob in deinem Einsatz eine falsche Antwort teurer ist als keine.
+## Drei Fragen für jede Zahl
 
-**Urteil: belegt als Messwert, irreführend als Schlagzeile.** Weniger Halluzinationen heißt hier weniger geantwortet, nicht mehr gewusst.
-
-## Drei Prüffragen für jede Zahl
-
-1. **Wer hat gemessen, und woher kennst du die Zahl?** Hersteller, Drittanbieter oder Selbstbericht? Und liest du die Primärquelle oder ein Video, das sie zusammenfasst? Jede Zwischenstufe fügt Fehler hinzu, wie die Transkriptions- und Übersetzungsfehler in den Quellen zeigen.
-2. **Was genau wurde gemessen, und unter welchen Bedingungen?** Welcher Index, welches Harness, welche Stichprobe, welcher Modellstand? Die gleiche Kennzahl kann je nach Setup abweichen, und ein Rückgang kann aus etwas anderem stammen, als die Überschrift vermuten lässt.
-3. **Was fehlt neben der Zahl?** Kosten, Gegenfälle, Qualität statt Menge. Wenn eine Zahl ohne den Preis daherkommt, den sie verursacht, ist sie nur die halbe Aussage.
+1. **Wer hat gemessen, und woher kennst du die Zahl?** Hersteller, Drittanbieter oder der Urheber selbst? Liest du das Original oder ein Video, das es zusammenfasst? Jede Zwischenstufe fügt Fehler hinzu.
+2. **Was genau wurde gemessen?** Welcher Index, welches Harness, welche Stichprobe, welcher Modellstand? Dieselbe Kennzahl weicht je nach Setup ab, und ein Rückgang kann aus etwas anderem stammen, als die Überschrift vermuten lässt.
+3. **Was fehlt neben der Zahl?** Kosten, Gegenfälle, Qualität statt Menge. Eine Zahl ohne den Preis, den sie verursacht, ist nur die halbe Aussage.
 
 ## Empfehlung
 
-Behandle Zahlen aus der Szene als Hypothese, bis du die Primärquelle gelesen oder selbst gemessen hast. Für Entscheidungen über Modell, Effort oder Setup: miss auf deinen eigenen Aufgaben, mit Kosten pro Aufgabe statt Preis pro Token.
+Behandle Zahlen aus der Szene als Hypothese, bis du das Original gelesen oder selbst gemessen hast. Für Entscheidungen über Modell, Effort oder Setup: Miss auf deinen eigenen Aufgaben, mit Kosten pro Aufgabe statt Preis pro Token.

@@ -219,3 +219,90 @@ class TestOhneQuellen:
 
     def test_andere_kategorie_braucht_quellen(self):
         assert any("keine Quellen" in f for f in bb.check_post(post(quellen=[]), CFG))
+
+
+def schreibe(pfad, slug, status="entwurf", body="## Kurz gesagt\n\n- a\n- b\n\n## Text\n\nEin Satz.{q:1}", extra=""):
+    f = pfad / f"2026-09-29-{slug}.md"
+    f.write_text(f"---\ntitel: T\ndatum: 2026-09-29\nkategorie: modelle\nzusammenfassung: z\nstatus: {status}\n{extra}"
+                 f"quellen:\n  - titel: Q\n---\n{body}\n", encoding="utf-8", newline="")
+    return f
+
+
+def lade(pfad):
+    return [bb.parse_post(f) for f in sorted(pfad.glob("*.md"))]
+
+
+class TestAutoFreigeben:
+    def test_gibt_sauberen_entwurf_frei_ab_morgen(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(bb, "POSTS", tmp_path)
+        f = schreibe(tmp_path, "a")
+        posts = lade(tmp_path)
+        meldungen = bb.auto_freigeben(posts, CFG, HEUTE)
+        text = f.read_text(encoding="utf-8")
+        assert "status: freigegeben" in text and "freigabe: automatisch" in text
+        assert "datum: 2026-09-30" in text and "erscheint ab 30.09.2026" in meldungen[0]
+        assert not bb.ist_sichtbar(bb.parse_post(f), HEUTE)  # heute noch nicht sichtbar
+
+    def test_hinweis_blockiert(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(bb, "POSTS", tmp_path)
+        f = schreibe(tmp_path, "a", body="## Kurz gesagt\n\n- a\n- b\n\n## Text\n\nDas ist belegt.{q:1}")
+        meldungen = bb.auto_freigeben(lade(tmp_path), CFG, HEUTE)
+        assert "status: entwurf" in f.read_text(encoding="utf-8")
+        assert any("übersprungen" in m and "Beleg-Meta" in m for m in meldungen)
+
+    def test_zahl_ohne_beleg_blockiert(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(bb, "POSTS", tmp_path)
+        f = schreibe(tmp_path, "a", body="## Kurz gesagt\n\n- a\n- b\n\n## Text\n\nKostet 20 % mehr.\n\nQuelle.{q:1}")
+        bb.auto_freigeben(lade(tmp_path), CFG, HEUTE)
+        assert "status: entwurf" in f.read_text(encoding="utf-8")
+
+    def test_fehler_blockiert_nur_diesen_beitrag(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(bb, "POSTS", tmp_path)
+        kaputt = schreibe(tmp_path, "kaputt", body="## Kurz gesagt\n\n- a\n- b\n\nOhne Zitat.")
+        gut = schreibe(tmp_path, "gut")
+        bb.auto_freigeben(lade(tmp_path), CFG, HEUTE)
+        assert "status: entwurf" in kaputt.read_text(encoding="utf-8")
+        assert "status: freigegeben" in gut.read_text(encoding="utf-8")
+
+    def test_digest_folgt_seinen_einzelbeitraegen(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(bb, "POSTS", tmp_path)
+        digest = schreibe(tmp_path, "a-digest", body="## Kurz gesagt\n\n- a\n- b\n\n## Text\n\nSiehe [x](post:einzel).{q:1}")
+        einzel = schreibe(tmp_path, "einzel")
+        bb.auto_freigeben(lade(tmp_path), CFG, HEUTE)
+        assert "status: freigegeben" in digest.read_text(encoding="utf-8")
+        assert "status: freigegeben" in einzel.read_text(encoding="utf-8")
+
+    def test_digest_bleibt_liegen_wenn_einzelbeitrag_haengt(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(bb, "POSTS", tmp_path)
+        digest = schreibe(tmp_path, "digest", body="## Kurz gesagt\n\n- a\n- b\n\n## Text\n\nSiehe [x](post:einzel).{q:1}")
+        schreibe(tmp_path, "einzel", body="## Kurz gesagt\n\n- a\n- b\n\nOhne Zitat.")
+        bb.auto_freigeben(lade(tmp_path), CFG, HEUTE)
+        assert "status: entwurf" in digest.read_text(encoding="utf-8")
+
+    def test_bereits_freigegebene_bleiben(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(bb, "POSTS", tmp_path)
+        f = schreibe(tmp_path, "a", status="freigegeben", extra="geprueft_am: 2026-09-01\n")
+        assert bb.auto_freigeben(lade(tmp_path), CFG, HEUTE) == []
+        assert "freigabe:" not in f.read_text(encoding="utf-8")
+
+    def test_link_auf_spaeter_datierten_beitrag_ist_fehler(self):
+        a = post("a", body="[x](post:b)")
+        b = post("b", datum=HEUTE + timedelta(days=1))
+        assert bb.check_freigabe([a, b], HEUTE)
+
+
+class TestBlogStil:
+    def test_meta_wort_ist_hinweis(self):
+        w = bb.warn_post(post(body="## Kurz gesagt\n\n- a\n- b\n\n## T\n\nDas ist unbelegt und belegt.{q:1}"), HEUTE)
+        assert any("Beleg-Meta" in x for x in w)
+
+    def test_sauberer_text_ohne_hinweis(self):
+        w = bb.warn_post(post(body="## Kurz gesagt\n\n- a\n- b\n\n## T\n\nGPT-6 wird billiger.{q:1}"), HEUTE)
+        assert w == []
+
+    def test_quellenverweise_ausgeblendet(self):
+        from markdown_it import MarkdownIt
+        md = MarkdownIt("commonmark")
+        p = post(body="Kostet 5 %.{q:1} Und mehr {q:1}.")
+        assert "[1]" not in bb.render_body(md, p, zeige_q=False) and "{q:" not in bb.render_body(md, p, zeige_q=False)
+        assert 'class="q"' in bb.render_body(md, p)

@@ -1,9 +1,11 @@
 ---
 titel: "Jev: ein Modell für typisierte Entscheidungen statt Text"
-datum: 2026-09-29
+datum: 2026-09-30
 kategorie: kurz
 zusammenfassung: "TypeSafe AI liefert mit Jev ein Modell, das für kleine Urteile typisierte Antworten mit Wahrscheinlichkeiten ausgibt. Die Zahlen sind Herstellerangaben ohne unabhängige Messung."
-status: entwurf
+status: freigegeben
+geprueft_am: 2026-09-29
+freigabe: automatisch
 quellen:
   - 2026-09-18-akshay_pachaar-2101037514945597645
 ---

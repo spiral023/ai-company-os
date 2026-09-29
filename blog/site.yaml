@@ -3,9 +3,10 @@ titel: "AI-Blog"
 beschreibung: "Was sich für Menschen ändert, die mit KI arbeiten und coden: Modelle, Kosten, Arbeitsweisen und Werkzeuge, eingeordnet und mit Quellen."
 base_url: "https://ai-blog.sp23.online"
 autor: "Philipp Asanger"
-fusszeile: "Beiträge entstehen mit KI-Unterstützung und werden vor der Veröffentlichung redaktionell geprüft"
-quellenhinweis: "Dieser Beitrag ordnet öffentlich zugängliche Quellen ein. Zahlen stammen aus den genannten Quellen; eigene Rechnungen sind im Text gekennzeichnet, Hersteller- und Selbstangaben als solche markiert."
+fusszeile: "Beiträge entstehen mit KI-Unterstützung und werden vor der Veröffentlichung automatisch geprüft"
+quellenhinweis: "Eigene Rechnungen sind im Text als solche gekennzeichnet."
 feed_max: 30
+quellenverweise_im_text: false   # {q:n} bleiben im Markdown (Prüfung), erscheinen aber nicht im Text
 kategorien:
   modelle: "Modelle & Kosten"
   arbeitsweisen: "Arbeitsweisen"
@@ -18,11 +19,11 @@ kategorien:
 ohne_quellen: [redaktion]   # Kategorien, die keine Quellenangabe brauchen
 abo_text: "Neue Beiträge gibt es per RSS, einen Newsletter gibt es (noch) nicht."
 ueber: |
-  Dieser Blog ordnet ein, was sich für Menschen ändert, die mit KI arbeiten und coden: neue Modelle und ihre echten Kosten, Arbeitsweisen für Coding-Agents und Behauptungen aus der Szene, geprüft gegen ihre Quellen.
+  Dieser Blog ordnet ein, was sich für Menschen ändert, die mit KI arbeiten und coden: neue Modelle und ihre echten Kosten, Arbeitsweisen für Coding-Agents, Werkzeuge und Behauptungen aus der Szene.
 
-  **So entstehen die Beiträge.** Ein KI-Assistent sichtet und verdichtet öffentlich zugängliche Quellen, der Herausgeber prüft jeden Beitrag vor der Veröffentlichung. Jede Zahl trägt einen Quellenverweis. Wer sie gemessen hat, steht im Text: unabhängige Messung, Herstellerangabe, Selbstbericht oder eigene Rechnung.
+  **So entstehen die Beiträge.** Ein KI-Assistent sammelt öffentlich zugängliche Quellen und schreibt daraus die Beiträge. Vor der Veröffentlichung prüfen automatische Regeln Quellen, Links und Zahlen. Was besteht, erscheint frühestens am Tag danach, damit Zeit zum Eingreifen bleibt. Die Quellen stehen unter jedem Beitrag.
 
-  **So liest du die Urteile.** „Belegt“ heißt: Die Primärquelle oder eine unabhängige Messung stützt die Aussage. „Plausibel“ heißt: Sie passt zu bekannten Mustern, wurde aber nicht nachgeprüft. „Unbelegt“ heißt: Es liegt nur eine Behauptung vor.
+  **Fehler.** Sie sind trotzdem möglich, vor allem bei Zahlen aus zweiter Hand. Korrekturen stehen im Beitrag mit dem Vermerk „aktualisiert“.
 
   **Kontakt und Verantwortlicher:** Philipp Asanger
 impressum:
