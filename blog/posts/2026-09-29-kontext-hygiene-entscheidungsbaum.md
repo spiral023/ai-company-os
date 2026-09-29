@@ -1,5 +1,5 @@
 ---
-titel: "Nach jedem Arbeitsblock fünf Optionen: Weiter ist der teuerste Default"
+titel: "Nach jedem Arbeitsblock fünf Optionen: Weiter ist der riskanteste Default"
 datum: 2026-09-29
 kategorie: arbeitsweisen
 zusammenfassung: "Continue, rewind, compact, clear oder Subagent: Wie man nach jedem Block eines Coding-Agents entscheidet, was jede Option kostet und wie dünn die Belege für konkrete Schwellenwerte sind."
@@ -24,7 +24,7 @@ quellen:
 
 Ein Agent liest bei jeder Antwort den gesamten bisherigen Verlauf erneut. Dazu gehören Fehlversuche, Tool-Outputs und verworfene Hypothesen. Zwei Effekte folgen daraus: Die Präzision sinkt („Context Rot“), und der Tokenverbrauch wächst schneller als der Arbeitsaufwand.
 
-Die Kostenseite hat eine Primärquelle mit Rechnung. Der X-Autor kaize (März 2026){q:2} nimmt 500 Tokens pro Austausch an und kommt mit `S · N(N+1)/2` auf 7.500 Tokens bei 5 Nachrichten und 232.500 bei 30. Nachricht 30 ist damit 31-mal so teuer wie Nachricht 1. Bei langen Chats sollen bis zu 98,5 % der Tokens auf das Wiedereinlesen entfallen. Das ist ein Rechenmodell, keine Messung, und es ignoriert Caching.
+Die Kostenseite hat eine Primärquelle mit Rechnung. Der X-Autor kaize (März 2026){q:2} nimmt 500 Tokens pro Austausch an und kommt mit `S · N(N+1)/2` auf 7.500 Tokens bei 5 Nachrichten und 232.500 bei 30. Ein Chat mit 30 Nachrichten verbraucht damit das 31-Fache eines Chats mit 5 Nachrichten, bei nur sechsfacher Länge. Bei langen Chats sollen bis zu 98,5 % der Tokens auf das Wiedereinlesen entfallen. Das ist ein Rechenmodell, keine Messung, und es ignoriert Caching.
 
 ## Die fünf Optionen
 
