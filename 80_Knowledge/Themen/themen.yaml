@@ -1,0 +1,184 @@
+# Themen-Taxonomie des Knowledge-Systems
+#
+# Führende Datei für Themencluster. Sie speist `python 70_Scripts/themen.py`:
+#   - `zuordnen`  schlägt beim Ingest Cluster, verwandte Quellen und Patterns vor
+#   - `index`     erzeugt die Hub-Notizen unter 80_Knowledge/Themen/ neu
+#   - `blog`      liefert ein Briefing (Quellen, Patterns, Keywords, Lücken) für einen Beitrag
+#
+# Felder je Cluster:
+#   name          Anzeigename
+#   beschreibung  ein bis zwei Sätze: was gehört hinein, was nicht
+#   kern          Begriffe mit Gewicht 3 (trennscharf, kleingeschrieben, Teilstring-Treffer im Volltext)
+#   weit          Begriffe mit Gewicht 1 (typisch, aber auch in anderen Clustern zu finden)
+#   verwandt      Cluster-IDs, die häufig zusammen behandelt werden
+#   blog          Suchbegriffe für Beiträge: hauptkeyword, longtail, fragen
+#
+# Pflege: neue Begriffe ergänzen, nichts löschen, wenn sie Quellen zugeordnet haben.
+# Ein Cluster zerlegen erst, wenn er mehr als etwa 30 Quellen trägt.
+
+cluster:
+
+  kontext:
+    name: "Kontext-Management"
+    beschreibung: "Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, Clear, Rewind, Handoff zwischen Sessions, Kontextkosten von Tools. Regeldateien gehören zu agent-dateien, die Kosten des Cachings zu modelle-kosten."
+    kern: [context rot, context window, kontextfenster, /compact, /clear, /rewind, rewind, autocompact, context pollution, kontext-hygiene, context engineering, handoff, session-hygiene, kontextverschmutzung, context degradation, just-in-time context, frischer kontext, subagents als kontextgrenze]
+    weit: [kontext, compaction, session, token, mcp overhead, tool-beschreibungen, scratchpad, gedächtnis, memory]
+    verwandt: [agent-dateien, modelle-kosten, orchestrierung, planung]
+    blog:
+      hauptkeyword: "Context Engineering"
+      longtail: ["Context Rot vermeiden", "Claude Code /compact oder /clear", "Claude Code Kontextfenster verwalten", "Session Handoff Dokument", "Rewind statt Korrektur", "Subagents als Kontextgrenze"]
+      fragen: ["Wann sollte ich /clear statt /compact nutzen?", "Warum wird mein Agent in langen Sessions schlechter?"]
+
+  agent-dateien:
+    name: "Agent-Dateien & Memory"
+    beschreibung: "CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen."
+    kern: [claude.md, agents.md, gemini.md, agent-datei, agent_docs, instruktionsbudget, regelbudget, /init, llm wiki, llm-wiki, memory-system, memory-store, onboarding-datei, system-reminder, steering.md, cursor rules, .claude/rules]
+    weit: [progressive disclosure, regeldatei, regeln, memory, wissensbasis, knowledge graph, repo-onboarding, instruction following]
+    verwandt: [kontext, skills, erweiterungen, prompting]
+    blog:
+      hauptkeyword: "CLAUDE.md"
+      longtail: ["CLAUDE.md schreiben", "AGENTS.md Best Practices", "CLAUDE.md zu lang", "Progressive Disclosure Agent", "Claude Code Memory", "LLM Wiki aufbauen"]
+      fragen: ["Wie lang darf eine CLAUDE.md sein?", "Was gehört in AGENTS.md und was in einen Skill?"]
+
+  skills:
+    name: "Skill-Design"
+    beschreibung: "Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und Baselines, Skills als Teamwissen. Wayfinder und Frameworks aus Skill-Sammlungen stehen in frameworks."
+    kern: [skill.md, claude code skills, agent skills, skill description, skill-description, skill-trigger, skill evals, skill-creator, skill frontmatter, allowed-tools, "context: fork", skill-benchmark, rules vs. skills, skill-call, skill-hierarchie, skill-fehlermodi, codex skills, skill-schwellenwert, slash commands]
+    weit: [skill, skills, trigger, progressive disclosure, baseline-vergleich, eval, custom commands, plugin]
+    verwandt: [erweiterungen, frameworks, agent-dateien, verifikation]
+    blog:
+      hauptkeyword: "Claude Code Skills"
+      longtail: ["Skill Description schreiben", "Skill Evals Baseline", "SKILL.md Aufbau", "Skills vs. Slash Commands", "Skill Trigger optimieren", "Skills als Teamwissen"]
+      fragen: ["Wann lohnt sich ein eigener Skill?", "Warum löst mein Skill nicht aus?"]
+
+  erweiterungen:
+    name: "Hooks, MCP & Erweiterungs-Ebenen"
+    beschreibung: "Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook, MCP, Plugin) und wie Hooks, MCP-Server und Plugins konfiguriert werden."
+    kern: [hook, hooks, pretooluse, userpromptsubmit, exit-code 2, mcp, model context protocol, .mcp.json, mcp scopes, plugins, claude code plugins, erweiterungs-ebenen, tool search, lifecycle events, code mode, settings.json, managed-mcp, subagent frontmatter, .claude/agents]
+    weit: [erweiterung, connector, permission, tool, plugin, cli statt mcp]
+    verwandt: [skills, sicherheit, agent-dateien, kontext]
+    blog:
+      hauptkeyword: "Claude Code Hooks"
+      longtail: ["Claude Code Hooks Beispiele", "MCP Server Kontextkosten", "MCP Code Execution", "Hook vs. Skill vs. CLAUDE.md", "PreToolUse Hook", "Claude Code Plugins"]
+      fragen: ["Wann nehme ich einen Hook statt einer Regel?", "Was kosten MCP-Server im Kontext?"]
+
+  planung:
+    name: "Spezifikation & Planung"
+    beschreibung: "Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerung, Spec-Ordner, persistente Pläne. Prompt-Methoden für Klärung (Pre-Mortem, Unknowns) stehen in prompting."
+    kern: [plan mode, plan-first, spec-driven, spec-first, spec-grilling, grill-me, grilling, spec mode, to-spec, to-tickets, task-basierte steuerung, design.md, implementation.md, planning-with-files, task_plan.md, prd, plan annotation, plan-annotation, decision log, phasenplan, wayfinder, intent engineering, read-only planner]
+    weit: [plan, spec, spezifikation, planung, ticket, research plan implement, anforderungen, task, aufgaben zerlegen]
+    verwandt: [prompting, verifikation, frameworks, kontext]
+    blog:
+      hauptkeyword: "Spec-Driven Development"
+      longtail: ["Plan Mode Claude Code", "Spec-First Development", "Grill Me Skill", "Plan vor Code", "Spec Ordner pro Feature", "Plan Annotation Workflow"]
+      fragen: ["Lohnt sich Plan Mode?", "Wie schreibe ich eine Spec für einen Coding Agent?"]
+
+  verifikation:
+    name: "Verifikation, Tests & Review"
+    beschreibung: "Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates, getrenntes Review, Review als Engpass."
+    kern: [tdd, test-driven, testgetrieben, red-green-refactor, red green refactor, testharness, mutation testing, quality gate, quality gates, verifier, test oracle, code review, review-bottleneck, reward hacking, statische code-analyse, vibe reviewing, adversarial, tracer bullet, vertikale slices, testcontainers, golden master, e2e-test]
+    weit: [test, tests, review, reviewer, verifikation, pre-commit, linter, ci, halluzination, qualität, slop]
+    verwandt: [planung, autonomie, orchestrierung, skills]
+    blog:
+      hauptkeyword: "AI Code Review"
+      longtail: ["TDD mit Coding Agents", "Testharness für Agents", "Mutation Testing KI", "Reward Hacking Tests", "Adversarial Review Agent", "Review als Engpass"]
+      fragen: ["Wie prüfe ich KI-generierten Code?", "Warum schreibt der Agent Tests passend zum Bug?"]
+
+  orchestrierung:
+    name: "Multi-Agent & Parallelisierung"
+    beschreibung: "Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-Abhängigkeiten, Rollen, Advisor. Dauerläufe ohne Aufsicht stehen in autonomie."
+    kern: [subagent, subagents, agent teams, agent team, git worktree, git worktrees, multi-agent, parallele agents, parallele coding agents, swarm, sub-agents, task-abhängigkeit, addblockedby, orchestrator, advisor-agent, agent-tree, delegation, taskcreate, teammates, dynamic workflows]
+    weit: [parallel, worktree, rollen, agent drift, koordination, multi-session]
+    verwandt: [autonomie, kontext, modelle-kosten, verifikation]
+    blog:
+      hauptkeyword: "Claude Code Subagents"
+      longtail: ["Agent Teams Claude Code", "Git Worktrees parallele Agents", "Subagents vs. Agent Teams", "Multi-Agent Orchestrierung", "Task-Abhängigkeiten Claude Code", "Kosten paralleler Agents"]
+      fragen: ["Wann lohnt sich Parallelisierung?", "Subagent oder Agent Team?"]
+
+  autonomie:
+    name: "Autonome Läufe, Loops & CI"
+    beschreibung: "Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agents, Autonomiestufen und ihre Grenzen."
+    kern: [ralph loop, ralph wiggum, long-running agent, long-running agents, /goal, nachtlauf, über nacht, headless, claude -p, ci-agent, ci agent, github action, merge request, autonomiestufe, auto mode, loop engineering, autonome agents, steering, metrikband, unattended]
+    weit: [autonom, autonomie, loop, cron, pipeline, review gate, oidc, sandboxed runner]
+    verwandt: [orchestrierung, verifikation, sicherheit, kontext]
+    blog:
+      hauptkeyword: "Ralph Loop"
+      longtail: ["Ralph Loop einrichten", "Claude Code Headless CI", "Claude Code über Nacht", "Autonomiestufen Coding Agent", "Claude Code GitHub Action", "Loop Engineering"]
+      fragen: ["Kann ich einen Agent über Nacht laufen lassen?", "Wie viel Autonomie ist sicher?"]
+
+  modelle-kosten:
+    name: "Modelle, Kosten & Limits"
+    beschreibung: "Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Caching, Benchmarks, offene und lokale Modelle, Provider-Umleitung."
+    kern: [kosten pro task, cost per task, pareto, usage limit, usage limits, prompt caching, prompt cache, effort, reasoning-stufe, modellwahl, modellpreise, token-verbrauch, tokenizer, 5-stunden-fenster, peak hours, extra usage, anthropic_base_url, ollama, llama.cpp, lokale llms, lokale modelle, intelligence index, coding agent index, terminal-bench, opus 5.5, gpt-6, sonnet, haiku, modell-eskalation, benchmark]
+    weit: [modell, kosten, preis, preise, token, tokens, limit, cache, openrouter, quantisierung, fine-tuning]
+    verwandt: [kontext, orchestrierung, autonomie, rolle-markt]
+    blog:
+      hauptkeyword: "Claude Code Kosten"
+      longtail: ["Claude Code Usage Limits", "Kosten pro Task statt pro Token", "Prompt Caching Claude Code", "Claude Code mit lokalem Modell", "Reasoning Effort wählen", "Modell-Eskalation günstig nach teuer"]
+      fragen: ["Welches Modell für welche Aufgabe?", "Warum sind meine Limits so schnell leer?"]
+
+  sicherheit:
+    name: "Sicherheit & Sandboxing"
+    beschreibung: "Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps."
+    kern: [sandbox, sandboxing, deny-rule, deny-rules, secrets, secret leakage, .env, dangerously-skip-permissions, yolo-modus, micro-vm, microvm, command smuggling, execpolicy, prefix_rule, row level security, permissions deny, prompt injection, plugin-vertrauen, docker sandbox]
+    weit: [sicherheit, security, permission, rechte, isolation, risiko, rls]
+    verwandt: [erweiterungen, autonomie, prototyping]
+    blog:
+      hauptkeyword: "Claude Code Sicherheit"
+      longtail: ["Deny Rules statt CLAUDE.md", ".env Secrets Claude Code schützen", "Agent Sandbox einrichten", "Docker Sandbox Claude Code", "Codex Execpolicy", "Vibe Coding Sicherheit"]
+      fragen: ["Wie verhindere ich, dass der Agent meine .env liest?", "Reicht eine Regel in CLAUDE.md?"]
+
+  frameworks:
+    name: "Workflow-Frameworks & Tools"
+    beschreibung: "Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Matt Pococks Skills, Superpowers, GSD, gstack, Everything Claude Code, Terminal- und Multiplexer-Tools."
+    kern: [wayfinder, matt pocock, mattpocock, superpowers, gsd, gstack, everything claude code, get shit done, spec-driven development framework, cmux, conductor, ghostty, zellij, context7, workflow-framework, wiki-compiler, swiftui skill]
+    weit: [framework, workflow, toolkit, terminal, tmux, xcode, agent-skills]
+    verwandt: [skills, planung, orchestrierung]
+    blog:
+      hauptkeyword: "Claude Code Workflow"
+      longtail: ["Superpowers vs. GSD", "Matt Pocock Skills Wayfinder", "gstack Claude Code", "Everything Claude Code", "Agent Framework Vergleich", "cmux Terminal für Agents"]
+      fragen: ["Welches Workflow-Framework passt zu mir?", "Brauche ich ein Framework oder reichen eigene Skills?"]
+
+  rolle-markt:
+    name: "Rolle, Lernen & Markt"
+    beschreibung: "Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, SDLC-Wandel, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit."
+    kern: [great decoupling, vibe engineering, vibe coding kritik, sdlc, software development lifecycle, tech lead, coding atrophy, nutzungsdaten, domänenwissen, entwicklerrolle, entwickler-rolle, harness statt fine-tuning, harness-abhängigkeit, marktstrategie, open source modelle, enterprise-adoption, schulung, lernwerkzeug, explanatory mode, metr, produktivität]
+    weit: [vibe coding, rolle, markt, strategie, junior, senior, lernen, studie, arbeitsteilung]
+    verwandt: [prompting, verifikation, modelle-kosten, einstieg]
+    blog:
+      hauptkeyword: "Vibe Coding"
+      longtail: ["Vibe Coding Grenzen", "Vibe Engineering", "Great Decoupling Entwickler", "SDLC ist tot", "Claude als Lernwerkzeug", "Nutzungsdaten Coding Agents Studie"]
+      fragen: ["Was bleibt vom Entwickler übrig?", "Macht KI Entwickler wirklich produktiver?"]
+
+  prompting:
+    name: "Prompting & Klärung"
+    beschreibung: "Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns, Voice-Prompting, Anweisungen bei Modellwechsel ausdünnen, Anti-Sycophancy."
+    kern: [pre-mortem, self-interview, fable unknowns, known unknowns, unknowns, blind spot, sycophancy, voice-prompting, spracheingabe, sprachprompt, überregulierung, modellwechsel, prompt-technik, prompt engineering, intent-engineering, persona-prompt, zustimmungsneigung, entscheidungs-prompts]
+    weit: [prompt, prompts, instruktion, instruktionen, annahmen, klärung, frage]
+    verwandt: [planung, agent-dateien, rolle-markt]
+    blog:
+      hauptkeyword: "Prompt Engineering"
+      longtail: ["Pre-Mortem Prompt", "Unknowns aufdecken Prompt", "Voice Prompting Coding", "Anweisungen bei Modellwechsel ausdünnen", "Agent Sycophancy vermeiden", "Prompt für Coding Agents"]
+      fragen: ["Warum sind lange Prompts oft schlechter?", "Wie decke ich unbekannte Annahmen auf?"]
+
+  prototyping:
+    name: "Prototyping & UI-Design"
+    beschreibung: "Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents."
+    kern: [lovable, website-builder, design system, design tokens, design-skill, component-first, screenshot, hero section, landingpage, ui-design, ux-audit, tailwind prompting, prototyp-handoff, frontend first, supabase, remix]
+    weit: [prototyp, design, ui, ux, komponente, layout, responsive, spacing, typografie]
+    verwandt: [sicherheit, planung, skills]
+    blog:
+      hauptkeyword: "Lovable"
+      longtail: ["Lovable Prompts", "Lovable Sicherheit", "Lovable Prototyp exportieren", "Design System für Coding Agents", "Screenshot als Prompt", "KI-Website-Builder Vergleich"]
+      fragen: ["Wann wechsle ich von Lovable zu Claude Code?", "Wie bekomme ich konsistentes UI vom Agent?"]
+
+  einstieg:
+    name: "Einstieg & Best Practices"
+    beschreibung: "Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices, Anfängerfehler, Tippsammlungen. Sobald ein Thema tiefer behandelt wird, gehört die Quelle in den Fachcluster."
+    kern: [claude code anfänger, claude code tutorial, claude code best practices, starter pack, claude code einstieg, anthropic academy, boris cherny, 50 pro tips, claude code tipps, common workflows, erste schritte]
+    weit: [anfänger, tutorial, best practices, tipps, grundlagen, überblick]
+    verwandt: [kontext, planung, agent-dateien]
+    blog:
+      hauptkeyword: "Claude Code Tutorial"
+      longtail: ["Claude Code für Einsteiger", "Claude Code Best Practices", "Claude Code Tipps", "Claude Code Setup", "Claude Code Anfängerfehler", "Claude Code Lernpfad"]
+      fragen: ["Wie fange ich mit Claude Code an?", "Welche Fehler machen Einsteiger?"]

@@ -1,0 +1,1108 @@
+# Zuordnung von Sources und Patterns zu Themenclustern (siehe themen.yaml)
+#
+# Startbestand vom 2026-09-30: Ein Subagent je Notiz-Gruppe hat jede Notiz vollständig gelesen und Cluster,
+# Keywords und Kernaussage vorgeschlagen; die Cluster-Namen wurden auf die IDs aus themen.yaml normalisiert.
+# Neue Einträge entstehen beim Ingest über `python 70_Scripts/themen.py zuordnen <datei> --uebernehmen`.
+#
+#   haupt        Cluster-ID mit dem Schwerpunkt der Notiz
+#   neben        weitere Cluster-IDs (höchstens zwei)
+#   keywords     Suchbegriffe, wie ein Leser sie googeln würde (Fachbegriffe im Original)
+#   kernaussage  eine Zeile (nur bei Quellen)
+#   synonyme     Alternativbezeichnungen des Konzepts (nur bei Patterns)
+
+muster:
+  AGENTS-md-Onboarding-Design:
+    haupt: agent-dateien
+    keywords: [AGENTS.md, CLAUDE.md, Context Engineering, Progressive Disclosure, Instruction-Following-Budget, AGENTbench, LLM-generierte Context Files, Agent Onboarding]
+    neben: [kontext]
+    synonyme: [Agent-Datei, GEMINI.md, Context File, Repo-Onboarding-Datei]
+  Action-Space-Design-nach-Modellfaehigkeit:
+    haupt: erweiterungen
+    keywords: [Action Space, Agent Tooling, Tool Design, Tool Overload, Tool-Nutzung messen, Robuste Interfaces, Modellfähigkeit, Structured Output]
+    neben: [modelle-kosten]
+    synonyme: [Tool-Auswahl, Aktionsraum, Tool Selection, Agent Harness Design]
+  Advisor-Agent-gegen-Drift:
+    haupt: orchestrierung
+    keywords: [Advisor Agent, Agent Drift, Goal Drift, Long-Running Agents, Multi-Agent, Worker-Advisor, Session Monitoring, Kurskorrektur]
+    neben: [autonomie]
+    synonyme: [Advisor Pattern, Watcher Agent, Supervisor Agent, Drift Detection]
+  Agent-generierte-Schulung-mit-Curriculum-Gate:
+    haupt: rolle-markt
+    keywords: [Interaktive Schulung, Curriculum, Lernziele, Human Review Gate, E-Learning mit KI, Voiceover, Interaktive HTML-Anwendung, User-invoked Skill]
+    neben: [planung]
+    synonyme: [Trainingskurs, Kursgenerierung, Curriculum-Freigabe, Agent-Generated Training]
+  Anti-Rationalization-Tables:
+    haupt: skills
+    keywords: [Anti-Rationalization, Rationalization Table, Agent Skills, Red Flags, Skill-Anatomie, Workflow-Disziplin, Ausreden-Tabelle, Verifikation überspringen]
+    neben: [verifikation]
+    synonyme: [Rationalizations Table, Anti-Rationalisierung, Ausreden-Widerlegung]
+  Blockierende-Task-Abhaengigkeiten:
+    haupt: orchestrierung
+    keywords: [Task Dependencies, addBlockedBy, addBlocks, Claude Code Tasks, Task-Graph, Blocked Tasks, Abhängigkeitsgraph, Agent Task Management]
+    neben: [planung]
+    synonyme: [Task-Abhängigkeiten, Blocking Tasks, Dependency Graph]
+  CI-Agent-mit-Review-Gate:
+    haupt: autonomie
+    keywords: [Claude Code in CI/CD, GitHub Actions, GitLab CI, '@claude Mention', Pull Request Review, Merge Request, Sandboxed Runner, Human-in-the-Loop]
+    neben: [sicherheit]
+    synonyme: [CI-Agent, Claude Code GitHub Action, Headless Agent, Agent in Pipeline]
+  CONTEXT-Glossar:
+    haupt: planung
+    keywords: [CONTEXT.md, Ubiquitous Language, Domain-Driven Design, Projekt-Glossar, Shared Vocabulary, Domain Modeling, Token-Effizienz, Agent-Kommunikation]
+    neben: [kontext]
+    synonyme: [Domänenglossar, Ubiquitous-Language-Datei, Project Glossary]
+  Claude-als-Lernwerkzeug:
+    haupt: rolle-markt
+    keywords: [Learning Mode, Explanatory Output Style, Code verstehen, Claude Code /config, ASCII-Diagramme, HTML-Präsentation, Onboarding in Codebasen, Codebase Understanding]
+    neben: []
+    synonyme: [Learning Style, Explanatory Mode, Lernmodus, Claude Code Output Styles]
+  Deny-Rules-statt-CLAUDE-md-Empfehlung:
+    haupt: sicherheit
+    keywords: [Claude Code Deny Rules, Secrets Protection, .env schützen, Permission Rules, managed-settings.json, Advisory vs. Enforcement, Command Smuggling, requirements.toml]
+    neben: [erweiterungen]
+    synonyme: [Permissions Deny, Deny-Liste, Secret-Schutz, Enforcement statt Empfehlung]
+  Erweiterungs-Ebenen-Zuordnung:
+    haupt: erweiterungen
+    keywords: [Claude Code Extension Layers, Skills vs. Subagents, Claude Code Hooks, MCP-Kosten, CLAUDE.md, Slash Commands, Progressive Disclosure, Extension Points]
+    neben: [skills]
+    synonyme: [Erweiterungsebenen, Customization Layers, Skill vs. Rule, Claude Code Features Vergleich]
+  Fable-Unknowns-vor-Prompt-Qualitaet:
+    haupt: prompting
+    keywords: [Unknown Unknowns, Prompt Engineering, Known Unknowns, Change Quiz, Karte und Territorium, Implicit Knowledge, Ambiguität, Prompt-Qualität]
+    neben: [planung]
+    synonyme: [Unknowns-Quadranten, Unbekannte Unbekannte, Undocumented Constraints]
+  Freiheitsgrad-nach-Aufgaben-Fragilitaet:
+    haupt: skills
+    keywords: [Degrees of Freedom, Skill-Instruktionen, Prosa vs. Skript, Fragile Operationen, Deterministische Skripte, Skill Authoring, Pseudocode-Templates, Subagent-Prompts]
+    neben: []
+    synonyme: [Freedom Levels, Instruktions-Spezifität, Low Freedom High Freedom]
+  Great-Decoupling-Rollenverstaendnis:
+    haupt: rolle-markt
+    keywords: [The Great Decoupling, Programming vs. Engineering, Tech Lead, QA Lead, Vibe Reviewing, Trust the Harness, Agentic Engineering, Developer Role]
+    neben: [verifikation]
+    synonyme: [Entwicklerrolle im KI-Zeitalter, Decoupling, Engineer statt Programmierer]
+  Handoff-Doc:
+    haupt: kontext
+    keywords: [Handoff Document, Session Handoff, Context Compaction, Structured Handoff Packets, Session-Übergabe, STATE.md, Agent Memory, planning-with-files]
+    neben: [planung]
+    synonyme: [Handoff Doc, Übergabedokument, Session Summary, Context Handoff]
+  Hook-Entscheidungstyp-nach-Pruefbarkeit:
+    haupt: erweiterungen
+    keywords: [Claude Code Hooks, Prompt-based Hooks, Hook Types, PreToolUse, Deterministische Checks, LLM-as-Judge, Hook-Design, Guardrails]
+    neben: [sicherheit]
+    synonyme: [Prompt Hook, Command Hook, Shell-Hook, Hook Decision Types]
+  Hook-erzwungene-Skill-Aktivierung:
+    haupt: skills
+    keywords: [UserPromptSubmit Hook, Skill Activation, Skill Triggering, Claude Code Hooks, Skill Description, Undertriggering, Skill-Aktivierung erzwingen, Hook Matcher]
+    neben: [erweiterungen]
+    synonyme: [Forced Skill Activation, Skill Auto-Activation, Skill-Trigger-Hook]
+  Intent-Engineering-als-dritte-Schicht:
+    haupt: prompting
+    keywords: [Intent Engineering, Context Engineering, Prompt Engineering, Zielhierarchie, Organizational Intent, Agent Alignment, Trade-off-Logik, Eskalationsregeln]
+    neben: [planung, rolle-markt]
+    synonyme: [Intent Layer, Absichts-Schicht, Goal Hierarchy]
+  Klein-und-komposierbar:
+    haupt: skills
+    keywords: [mattpocock/skills, Composable Skills, Skill-Bibliothek, GSD, BMAD, Spec-Kit, Workflow-Frameworks, Wayfinder]
+    neben: [frameworks]
+    synonyme: [Small Composable Skills, Process-owning Frameworks, Leichtgewichtige Skills]
+  Kontext-Hygiene-Entscheidungsbaum:
+    haupt: kontext
+    keywords: [Context Rot, Context Pollution, Context Window, /clear, /compact, Rewind, Subagents, Prompt Caching, Context Compaction]
+    neben: [modelle-kosten]
+    synonyme: [Compaction, Context Degradation, Context Management, Session-Hygiene]
+  Kontrollierte-Agent-Parallelisierung:
+    haupt: orchestrierung
+    keywords: [Parallel Agents, Subagents, Agent Teams, Multi-Agent Systems, Edit-Kollisionen, Token-Kosten, Git Worktrees, Modulgrenzen]
+    neben: [modelle-kosten]
+    synonyme: [Agent Parallelization, Parallele Agenten, Multi-Agent Orchestration]
+  Lokale-Modell-Umleitung-Muster:
+    haupt: modelle-kosten
+    keywords: [ANTHROPIC_BASE_URL, Claude Code mit lokalen Modellen, Anthropic-kompatibler Endpunkt, Rate Limits, Datenschutz, Multi-Provider, Local LLM, Ollama]
+    neben: []
+    synonyme: [Model Routing, Provider-Umleitung, Claude Code Alternative Models, Endpoint Override]
+  Lovable-Prototyp-dann-lokaler-Handoff:
+    haupt: prototyping
+    keywords: [Lovable, Vibe Coding, UI Prototyping, Cloud UI Builder, shadcn/ui, React Vite Tailwind, Prototype to Production, Lovable Prompt]
+    neben: [planung]
+    synonyme: [Lovable Workflow, Prototyp-Handoff, Vibe-Coding-Prototyp]
+  MCP-Code-Execution-statt-Tool-Definitionen:
+    haupt: erweiterungen
+    keywords: [MCP, Model Context Protocol, Code Execution with MCP, Tool Definitions, Context Bloat, Tool Schemas, Sandbox, Token-Kosten von MCP]
+    neben: [kontext]
+    synonyme: [MCP Code Mode, MCP-Kontextkosten, Code Execution MCP]
+  Metrikband-gestufte-Agent-Autonomie:
+    haupt: autonomie
+    keywords: [Graduated Autonomy, Sigma-Abweichung, Anomaly Detection, Runbook Automation, Agentic Ops, Baseline Metrics, Read-only Diagnose, Incident Response]
+    neben: [sicherheit]
+    synonyme: [Gestufte Autonomie, Autonomy Tiers, Metrik-Schwellen]
+  Modell-Eskalation-von-guenstig-nach-teuer:
+    haupt: modelle-kosten
+    keywords: [Model Escalation, Reasoning Effort, Modellwahl, Kosten pro Task, GPT-5.6, Codex Reasoning Levels, Artificial Analysis, Modell-Routing]
+    neben: []
+    synonyme: [Model Selection, Effort Level, Cheap-to-Expensive Escalation, Reasoning-Stufen]
+  One-File-per-Failure-Mode:
+    haupt: skills
+    keywords: [Failure Modes, mattpocock/skills, grill-me, Skill-Bibliothek, Agent-Fehlermodi, Skill Design, tdd Skill, Fokussierte Skills]
+    neben: []
+    synonyme: [Ein Skill pro Fehlermodus, Failure-Mode-Skills, Fehlermodus-Katalog]
+  Plan-first-mit-getrenntem-Review:
+    haupt: planung
+    keywords: [Plan Mode, plan.md, Plan-then-Implement, Builder Reviewer Verifier, Single-Model-Blindheit, Discovery, Code Review Agent, Separate Reviewer]
+    neben: [verifikation]
+    synonyme: [Plan First, Planning Mode, Plan-Review-Trennung, Research Plan Implement]
+  Ralph-Loop-Frischer-Kontext-pro-Iteration:
+    haupt: autonomie
+    keywords: [Ralph Loop, Ralph Wiggum, Autonomous Coding Loop, Fresh Context, Overnight Agents, STEERING.md, Context Saturation, Brownfield]
+    neben: [kontext]
+    synonyme: [Ralph Wiggum Loop, Ralph, Loop Agent, Iterations-Loop]
+  Sandbox-Komposition-aus-OS-Primitiven:
+    haupt: sicherheit
+    keywords: [Agent Sandbox, Windows Sandbox, Restricted Token, Synthetic SID, OS-Level Sandboxing, Codex Sandbox, Process Isolation, Filesystem Permissions]
+    neben: []
+    synonyme: [Sandboxing, Coding Agent Sandbox, OS-Sandbox]
+  Screenshot-als-Spezifikationsmedium:
+    haupt: prototyping
+    keywords: [Screenshot Prompting, Multimodal Input, Vision, Mockup to Code, UI Debugging, Visuelle Verifikation, Bild-Kontext, Design-Mockup]
+    neben: [planung]
+    synonyme: [Image Input, Screenshot als Prompt, Visual Spec]
+  Skill-Call-Hierarchie:
+    haupt: skills
+    keywords: [User-invoked Skills, Model-invoked Skills, Skill Orchestration, Slash Commands, Wayfinder, to-spec, to-tickets, Skill Hierarchy]
+    neben: []
+    synonyme: [Skill Calling, Skill-Aufrufkette, Orchestrator-Skills]
+  Skill-Qualitaet-durch-Trigger-und-Baseline-Evals:
+    haupt: skills
+    keywords: [Skill Evals, Trigger Evals, Baseline Eval, skill-creator, Skill Description, Undertriggering, Progressive Disclosure, Skill Testing]
+    neben: [verifikation]
+    synonyme: [Skill-Tests, With/Without-Skill-Vergleich, Skill Benchmarking]
+  Skill-Schwellenwert-institutionelles-Wissen:
+    haupt: skills
+    keywords: [Institutional Knowledge, Team Skills, Skills einchecken, Skill-Erstellung, Wiederkehrende Workflows, Shared Skills, Git Check-in, Team-Wissen]
+    neben: []
+    synonyme: [Team-Wissen als Skill, Skill Threshold, Once-a-Day-Regel]
+  Skill-aus-Demonstration-statt-Beschreibung:
+    haupt: skills
+    keywords: [Skill aus Screenshot, Skill Creation, Browser Recording, Design-Schema, Demonstration Learning, Workflow Skill, Visual Skill, Computer Use]
+    neben: [prototyping]
+    synonyme: [Skill by Demonstration, Skill aus Beispiel, Recorded Workflow]
+  Spec-Grilling:
+    haupt: planung
+    keywords: [Grilling, grill-me, grill-with-docs, Spec-driven Development, Clarifying Questions, AskUserQuestion, Requirements Interview, Brainstorming Skill]
+    neben: []
+    synonyme: [Grill Me, Interview-Skill, Requirements Elicitation, office-hours]
+  Spec-Ordner-pro-Feature:
+    haupt: planung
+    keywords: [Spec-driven Development, design.md, Feature Spec Folder, Persistent Agent Memory, implementation.md, Session-Kontinuität, Source of Truth, File-based Memory]
+    neben: [kontext]
+    synonyme: [Feature-Ordner, Spec Folder, Spec-Ordner]
+  TDD-als-Verifikationshebel:
+    haupt: verifikation
+    keywords: [Test-Driven Development, TDD mit Agenten, Verification, Feedback Loops, Scheinverifikation, Reproduzierbare Tests, Arbeitspaketgröße, Evidence not Proof]
+    neben: []
+    synonyme: [TDD, Red-Green-Refactor, Verification Loop, Verifikationshebel]
+  Task-basierte-Steuerung:
+    haupt: planung
+    keywords: [Wayfinder, Investigation Tickets, Fog of War, Iterative Planung, Task Loop, Research Plan Implement, Set Goal Task Adjust, Spec-driven]
+    neben: []
+    synonyme: [Task-based Steering, Wayfinding, Iterative Task Loop, Exploration Map]
+  Testharness-als-staerkster-Hebel:
+    haupt: verifikation
+    keywords: [Test Harness, Verifier, Oracle Testing, Autonomous Agents, Agent Feedback, Visuelle Verifikation, Long-Running Agents, Reward Hacking]
+    neben: [autonomie]
+    synonyme: [Testharness, Verifier Quality, Test Oracle, Agent-Feedback-Loop]
+  Trainingsdaten-Dichte-als-Stack-Kriterium:
+    haupt: modelle-kosten
+    keywords: [Training Data Density, Tech Stack Wahl, Bleeding Edge, Framework-Auswahl, LLM-freundliche Stacks, React FastAPI Python, Modellwissen, Library Versions]
+    neben: [erweiterungen]
+    synonyme: [Trainingsdaten-Abdeckung, Stack Selection for AI, Boring Technology]
+  Voice-Prompting-fuer-Kontextreichtum:
+    haupt: prompting
+    keywords: [Voice Prompting, Diktierfunktion, Speech-to-Text, Prompt-Kontext, Voice Coding, Transkription, Context-rich Prompts, Dictation]
+    neben: [planung]
+    synonyme: [Voice Input, Sprachprompts, Spracheingabe, Dictation Mode]
+quellen:
+  2025-10-31-agenticjames-best-claude-skills-for-agentic-coding:
+    haupt: skills
+    kernaussage: Skills lassen sich für Marke, Debugging und Selbstgenerierung nutzen, doch automatisch erzeugte Skills ohne Review riskieren Wildwuchs und schlechte Trigger.
+    keywords: [Claude Skills, Brand Skill, Skill-Generator, Debugging-Skill, Agentic Coding, SKILL.md, Skill-Trigger]
+    neben: []
+  2025-12-31-natebjones-seriously-not-worth-it-now:
+    haupt: modelle-kosten
+    kernaussage: Vor jedem Fine-Tuning zuerst Instruktionen, Constraints und Evals als Harness ausreizen, da neue Modellgenerationen Trainingsprojekte schnell überholen.
+    keywords: [Fine-Tuning, Agentic Harness, Evals, Guardrails, Modellgenerationen, Fine-Tuning vs. Harness, Eval-Baseline]
+    neben: [rolle-markt]
+  2026-01-06-jarrodwatts-context-engineering-guide:
+    haupt: kontext
+    kernaussage: Wer den Kontext als einzigen Stellhebel versteht, hält ihn schlank, setzt schlechte Sessions zurück und lagert teure Recherche in Subagents aus.
+    keywords: [Context Engineering, Context Window, Claude Code /context, Autocompact-Puffer, /rewind, Loop of Slop, Subagents, Just-in-Time Context, MCP Tools]
+    neben: []
+  2026-01-10-eyad-khrais-claude-code-tutorial:
+    haupt: einstieg
+    kernaussage: Erst im Plan Mode denken, CLAUDE.md kurz halten, pro Feature eine Konversation führen und Kontextgrenzen mit externem Speicher abfangen.
+    keywords: [Claude Code Tutorial, Plan Mode, CLAUDE.md, Context Degradation, Headless Mode, Opus Sonnet Arbeitsteilung, SCRATCHPAD.md, Claude Code Anfänger]
+    neben: [kontext]
+  2026-01-12-dhruv1103-lessons-learned-500k-lines-claude-code:
+    haupt: verifikation
+    kernaussage: Modulare Architektur, TDD gegen echte Container, Read-only-MCP-Diagnose und gründliches Review machen große KI-Codebasen beherrschbar.
+    keywords: [Vibe Reviewing, Monorepo, Context Pollution, Testcontainers, Test Driven Development, git worktrees, MCP Datenbank read-only, tmux]
+    neben: [orchestrierung]
+  2026-01-12-eyad-khrais-claude-code-tutorial-level-2:
+    haupt: erweiterungen
+    kernaussage: Skills, Subagents und MCP ergänzen sich zu einem System, das Claude Code vom Chat-Werkzeug zum autonomen Entwicklungssystem macht.
+    keywords: [Claude Code Skills, Subagents, MCP Connectors, Progressive Disclosure, Explore Plan General-purpose, claude mcp add, Context Window]
+    neben: [kontext]
+  2026-01-14-ashpreetbedi-claude-code-spec-first:
+    haupt: planung
+    kernaussage: Ein persistenter Spec-Ordner pro Feature mit Design, Fortschritt und Entscheidungen ersetzt Chat-Gedächtnis und trägt Arbeit über Kontextlimits hinweg.
+    keywords: [Spec-First Development, design.md, Handoff-Dokument, Plan Mode, Session-Kontinuität, Cookbooks als Tests, Layered CLAUDE.md, Decision Log]
+    neben: [kontext]
+  2026-01-15-avasdr34m-its-not-easy-but-it-is-simple-kontext-nutzung-in-claude-code-entscheidet:
+    haupt: kontext
+    kernaussage: 'Je länger der Kontext, desto schlechter das Modell: MCP-Overhead vermeiden, Aufgaben in frischen Sessions abarbeiten und Research von Implementierung trennen.'
+    keywords: [Context Rot, MCP Overhead, Tool-Beschreibungen, Ralph Loop, Frischer Kontext, Claude Code Session, Research vs. Implementierung]
+    neben: [autonomie]
+  2026-01-15-elenakvcs-vibe-coding-beginner-guide:
+    haupt: einstieg
+    kernaussage: Beim Vibe Coding entscheidet nicht Syntax, sondern präzise Auftragsbeschreibung und die Zerlegung in kleine, einzeln geprüfte Schritte.
+    keywords: [Vibe Coding, Prompt-Präzision, Claude Code Anfänger, Aufgaben zerlegen, Alltagsautomatisierung, Python-Skript, Rückfragen des Modells]
+    neben: [planung]
+  2026-01-17-damien-ghader-prompting-lovable-design:
+    haupt: prototyping
+    kernaussage: 'KI-Design-Systeme funktionieren component-first: Komponenten in Tailwind-Begriffen prompten, bestehende namentlich referenzieren und globale Bausteine vor Einzelseiten stabilisieren.'
+    keywords: [Lovable, Design System, Component-First, Design Tokens, Tailwind Prompting, Foundations Komponenten Komposition, Lovable Prompts, Komponentenreferenz]
+    neben: [prompting]
+  2026-01-20-ben-tossell-agent-coding:
+    haupt: rolle-markt
+    kernaussage: Agenten-Output konsequent zu lesen baut echtes Systemverständnis auf; CLIs sind MCPs oft vorzuziehen, weil MCPs zu viel Kontext verbrauchen.
+    keywords: [Agent Coding ohne Code, Vibe Coding Kritik, Droid Factory CLI, Spec Mode, agents.md, CLI statt MCP, E2E-Tests, GitHub-App Agent]
+    neben: [erweiterungen]
+  2026-01-20-mrexodia-vibe-engineering:
+    haupt: rolle-markt
+    kernaussage: 'Die Rolle wandelt sich zu Tech Lead und QA Lead: Ergebnisse statt Zeilen prüfen, Tests als Harness bauen und Kontext knapp halten.'
+    keywords: [Vibe Engineering, Great Decoupling, Trust the Harness, TDD für Agenten, Golden Master Testing, DevDocs, Context Rot, CLI vs. IDE, Sub-Agents]
+    neben: [verifikation]
+  2026-01-21-aiedge-claude-50-pro-tips:
+    haupt: kontext
+    kernaussage: Bei anhaltender Verwirrung Kontext zurücksetzen, günstig prototypen und autonome Desktop-Agenten wie Cowork per Ordner-Isolation und Backups absichern.
+    keywords: [Claude Cowork, /compact, Ralph Plugin, Google AI Studio Prototyping, Sonnet 4.5, Cowork Guardrails, Skill aus Screenshot, Voice Prompting]
+    neben: [modelle-kosten]
+  2026-01-21-meta-alchemist-claude-skills-deep-dive:
+    haupt: skills
+    kernaussage: Ein Vendor-Benchmark für Skills überzeugt erst mit Stichprobengröße, Varianz und unabhängiger Prüfung; das Prinzip mit/ohne Skill zu testen bleibt richtig.
+    keywords: [Claude Skills, Skill-Benchmark, Vibeship Spawner, LLM Jury, Opus 4.5, Error Handling, Vendor-Benchmark, Baseline-Vergleich]
+    neben: [modelle-kosten]
+  2026-01-21-tempoimmaterial-agent-skills-vs-rules-vs-commands:
+    haupt: skills
+    kernaussage: Rules gelten immer, Commands sind explizit, Skills optional und selbst geladen; gute Skills haben eine Routing-Description und eine Prozedur statt Enzyklopädie.
+    keywords: [Agent Skills, Rules vs. Skills, Slash Commands, Progressive Disclosure, Skill Description, Subagents, Skill-Fehlermodi, Cursor Rules]
+    neben: [erweiterungen]
+  2026-01-22-damien-lovable-website-guide:
+    haupt: prototyping
+    kernaussage: Design-Vorgaben für KI-Website-Builder als konkrete Strukturen prompten (Layout-Option, Breakpoints, Typografiezahlen) statt als vage Adjektive.
+    keywords: [Lovable Website, Hero Section, Responsive Breakpoints, Spacing Typografie, Conversion Prompts, KI-Website-Builder, Landingpage]
+    neben: [prompting]
+  2026-01-22-dr-cintas-claude-code-local:
+    haupt: modelle-kosten
+    kernaussage: Über drei Umgebungsvariablen lässt sich Claude Code auf einen lokalen Ollama-Server umleiten, ohne die CLI selbst zu ändern.
+    keywords: [Claude Code lokal, Ollama, ANTHROPIC_BASE_URL, qwen3-coder, qwen2.5-coder, Lokales LLM, Claude Code kostenlos]
+    neben: []
+  2026-01-22-hooeem-claude-code-7-schritte-plan:
+    haupt: einstieg
+    kernaussage: Ein Überblick über Kernschleife, Kontextsteuerung, Plan Mode vs. Ultrathink, Panic-Buttons, Hooks als Guardrails und CI-Skalierung.
+    keywords: [Claude Code Hooks, Anthropic Academy, Plan Mode, Ultrathink, Extended Thinking, /rewind, Escape-Korrektur, PreToolUse, CLAUDE.md Ebenen, Custom Commands]
+    neben: [erweiterungen]
+  2026-01-23-nummanali-claude-task-system:
+    haupt: orchestrierung
+    kernaussage: Das Task-System bildet Abhängigkeiten als Graph ab, speichert Zustand in Dateien und koordiniert parallele Agenten über eine gemeinsame Liste.
+    keywords: [Claude Code Tasks, TaskCreate, addBlockedBy, Task-Abhängigkeitsgraph, CLAUDE_CODE_TASK_LIST_ID, Multi-Agent, Explore Plan Subagent, Haiku Sonnet Opus]
+    neben: [planung]
+  2026-01-25-sankalp-claude-code-experience:
+    haupt: kontext
+    kernaussage: Subagents, Checkpoints und frühe Handoffs steuern das 200k-Budget; ein zweites Modell (Codex) reviewt besser als das bauende Claude.
+    keywords: [Claude Code 2.0, Subagent-Kosten, Autocompact-Puffer, /handoff, Context Rot, UserPromptSubmit Hook, MCP Code Execution, GPT-5.2-Codex Review]
+    neben: [orchestrierung]
+  2026-01-26-karpathy-coding-workflow-2026:
+    haupt: rolle-markt
+    kernaussage: Agenten machen keine Syntaxfehler mehr, sondern konzeptionelle; Leverage entsteht durch deklarative Erfolgskriterien, Tests und ein menschliches Architektur-Review.
+    keywords: [Agent Coding, 80% Agent, Slopacolypse, Generation vs. Discrimination, Success Criteria, testgetrieben, Coding Atrophy, Senior Engineer Review]
+    neben: [verifikation]
+  2026-01-31-bcherny-claude-code-team-tips:
+    haupt: orchestrierung
+    kernaussage: Das Claude-Code-Team parallelisiert per Worktrees, lässt Pläne gegenreviewen, pflegt CLAUDE.md nach jedem Fehler und macht wiederkehrende Aufgaben zu Skills.
+    keywords: [git worktrees, Claude Code Team Workflow, Plan Mode Review, CLAUDE.md Selbstkorrektur, Skills als Teamwissen, Subagents, Voice Dictation, Permission Routing]
+    neben: [planung]
+  2026-02-01-aiedge-claude-code-starter-pack:
+    haupt: einstieg
+    kernaussage: 'Eine kuratierte Linkliste, deren Substanz in Bildern liegt: Parallel-Setup, geteilte CLAUDE.md, Lernpfad in fünf Stufen und ein zweifelhafter Persona-Prompt.'
+    keywords: [Claude Code Starter Pack, Boris Cherny Setup, Opus 4.5 Thinking, '@claude GitHub Action', Claude Code Learning Path, Plan Mode Kritik, Prompt Engineering Evals, Persona-Prompt]
+    neben: [orchestrierung]
+  2026-02-01-anthropic-docs-automate-workflows-with-hooks:
+    haupt: erweiterungen
+    kernaussage: Hooks blockieren per Exit-Code 2 deterministisch vor der Tool-Ausführung; prompt- und agentbasierte Hooks bilden eine flexiblere Stufe dazwischen.
+    keywords: [Claude Code Hooks, PreToolUse, Exit-Code 2, Prompt-based Hooks, Agent-based Hooks, Hook Matcher, .env Schutz, Lifecycle Events]
+    neben: []
+  2026-02-01-anthropic-docs-claude-code-best-practices:
+    haupt: einstieg
+    kernaussage: 'Das Kontextfenster ist die knappste Ressource: Verifizierbare Ziele, Explore-Plan-Implement-Ablauf und eine schlanke CLAUDE.md verhindern die vier typischen Fehlermuster.'
+    keywords: [Claude Code Best Practices, Kontextfenster, Verifikation, Explore Plan Implement Commit, Kitchen-Sink-Session, CLAUDE.md pruning, /clear, Headless Mode]
+    neben: [kontext]
+  2026-02-01-anthropic-docs-claude-code-common-workflows:
+    haupt: autonomie
+    kernaussage: Worktrees, @-Referenzen, Pipes mit JSON-Ausgabe und headless Plan Mode machen Claude Code zu einer komponierbaren Unix-Utility.
+    keywords: [Claude Code Common Workflows, git worktree, '@-Referenzen', claude -p, --output-format json, Plan Mode headless, Unix-Pipe, Extended Thinking]
+    neben: [einstieg]
+  2026-02-01-anthropic-docs-claude-code-gitlab-ci:
+    haupt: autonomie
+    kernaussage: Ein Coding Agent läuft als sandboxed, event-getriggerter CI-Job, dessen Output ausschließlich über das bestehende Merge-Request-Review läuft.
+    keywords: [Claude Code GitLab CI/CD, '@claude Merge Request', AWS Bedrock, Google Vertex AI, OIDC, Sandboxed Runner, CI Agent, Review Gate]
+    neben: [erweiterungen]
+  2026-02-01-anthropic-docs-connect-claude-code-to-mcp:
+    haupt: erweiterungen
+    kernaussage: MCP-Server lassen sich per HTTP oder stdio in drei Scopes einbinden; Tool Search lädt Definitionen dynamisch, damit sie den Kontext nicht füllen.
+    keywords: [Model Context Protocol, Claude Code MCP, Tool Search, .mcp.json, MCP Scopes, managed-mcp.json, Remote HTTP MCP, MCP Kontextkosten]
+    neben: [kontext]
+  2026-02-01-anthropic-docs-create-custom-subagents:
+    haupt: erweiterungen
+    kernaussage: Subagents mit eigenem Kontext, Tool-Rechten und Modell halten laute Exploration aus dem Hauptthread und begrenzen Rechte deterministisch.
+    keywords: [Claude Code Subagents, .claude/agents, Subagent Frontmatter, Tool-Allowlist, Permission Mode, Explore-Agent Haiku, bypassPermissions]
+    neben: [orchestrierung]
+  2026-02-01-anthropic-docs-extend-claude-code:
+    haupt: erweiterungen
+    kernaussage: 'Jede Erweiterungsebene hat ihren Zweck und Kontext-Preis: CLAUDE.md für immer geltende Regeln, Skills bei Bedarf, Subagents isoliert, MCP extern, Hooks kostenlos.'
+    keywords: [CLAUDE.md, Skills, Subagents, MCP, Hooks, Plugins, Kontext-Kosten, Claude Code Erweiterungen]
+    neben: []
+  2026-02-01-anthropic-docs-extend-claude-with-skills:
+    haupt: skills
+    kernaussage: Ein Skill ist SKILL.md mit Frontmatter, das Auslösung, Rechte und Ausführung steuert; triggert er nicht, liegt es meist an der description.
+    keywords: [Claude Code Skills, SKILL.md Frontmatter, disable-model-invocation, user-invocable, allowed-tools, 'context: fork', Skill description, Slash Commands]
+    neben: [erweiterungen]
+  2026-02-01-anthropic-docs-how-claude-code-works:
+    haupt: einstieg
+    kernaussage: Claude Code arbeitet in einer Schleife aus Kontext sammeln, handeln und prüfen; Sessions sind ephemer und Verifikation ist der wichtigste Hebel.
+    keywords: [Agentic Loop, Claude Code Sessions, --resume, --fork-session, /rewind Checkpoints, Permission-Modi, Plan Mode, /context]
+    neben: [kontext]
+  2026-02-01-humanlayer-writing-a-good-claude-md:
+    haupt: agent-dateien
+    kernaussage: Eine CLAUDE.md sollte kurz, handgeschrieben und per Progressive Disclosure strukturiert sein, weil das Modell irrelevant wirkenden Inhalt bewusst ignoriert.
+    keywords: [CLAUDE.md schreiben, Instruction Following, agent_docs, Progressive Disclosure, /init vermeiden, Instruktionsbudget, AGENTS.md, Claude Code System-Reminder]
+    neben: []
+  2026-02-02-anthony-riera-planning-with-files-skill:
+    haupt: planung
+    kernaussage: Plan, Erkenntnisse und Fortschritt als drei Dateien halten den Agenten in langen Sessions am Ziel, kosten aber zusätzliche Token beim Wiederlesen.
+    keywords: [planning-with-files, task_plan.md, findings.md, progress.md, Persistenter Plan, Agent Drift, Externer Speicher, Claude Skill]
+    neben: [kontext]
+  2026-02-02-unsloth-team-claude-code-local-llm:
+    haupt: modelle-kosten
+    kernaussage: Claude Code und Codex CLI laufen komplett lokal gegen einen llama.cpp-Server, wenn die Basis-URL oder der Provider auf den lokalen Endpunkt zeigt.
+    keywords: [llama.cpp, Unsloth, GLM-4.7-Flash, GGUF Quantisierung, Claude Code lokal, OpenAI Codex CLI, config.toml Provider, ANTHROPIC_BASE_URL]
+    neben: [autonomie]
+  2026-02-03-god-of-prompt-karpathy-ai-coding-system-prompt:
+    haupt: agent-dateien
+    kernaussage: Ein CLAUDE.md-Prompt gegen typische Agent-Fehler bündelt bekannte Prinzipien, konkurriert aber als langer Text im Kontext und wird nur weich befolgt.
+    keywords: [Karpathy System Prompt, CLAUDE.md Prompt, Annahmen offenlegen, Erfolgskriterien, Test-first, Scope begrenzen, Coding-Agent-Fehler]
+    neben: [planung]
+  2026-02-03-svpino-claude-code-md-tips:
+    haupt: agent-dateien
+    kernaussage: Fünf kurze CLAUDE.md-Regeln erzwingen Plan, kleine Schritte und Test zuerst; die Selbstverbesserungsregel lässt die Datei jedoch unkontrolliert wachsen.
+    keywords: [CLAUDE.md Regeln, Plan vor Code, Test zuerst, Reproduzierender Test, Aufgaben zerlegen, CLAUDE.md Selbstverbesserung, Claude Code Tipps]
+    neben: [verifikation]
+  2026-02-04-affaanmustafa-shorthand-guide-primaer:
+    haupt: erweiterungen
+    kernaussage: 'Viele MCPs installieren, aber unter zehn aktivieren: Zu viele aktive Tools schrumpfen das effektive Kontextfenster drastisch.'
+    keywords: [Everything Claude Code, MCP-Limit, Plugins, hookify, PreToolUse PostToolUse, disabledMcpServers, Kontextfenster Tools, ralph-wiggum Plugin]
+    neben: []
+  2026-02-04-lovable-docs-best-practices:
+    haupt: prototyping
+    kernaussage: Bei Lovable Plan-Modus intensiv nutzen, Features als Bricks einzeln bauen, Frontend zuerst mit Mock-Daten und die Datenbank erst nach stabiler UI anbinden.
+    keywords: [Lovable Best Practices, Knowledge-Datei, Plan-Modus, Frontend First, Supabase, Mock-Daten, Remix, In Bricks bauen]
+    neben: [planung]
+  2026-02-04-lovable-docs-lovable-security-guide:
+    haupt: sicherheit
+    kernaussage: Secrets und Autorisierung gehören ins Backend, Row Level Security früh setzen; die Verantwortung für Sicherheit bleibt beim Builder, nicht beim Tool.
+    keywords: [Lovable Security, Row Level Security, Supabase Edge Functions, Secrets im Frontend, Vibe Coding Sicherheit, Security Checker, KI-generierte Apps absichern]
+    neben: [prototyping]
+  2026-02-04-lovable-docs-prompting-debugging:
+    haupt: prototyping
+    kernaussage: Bei Fehlerschleifen Ursache erklären lassen statt Symptome zu flicken, Audits im Plan-Modus ohne Codeänderung fahren und Änderungsgrenzen benennen.
+    keywords: [Lovable Debugging, Plan Mode, Audit-Prompts, Root Cause statt Symptom, Fehlerschleifen durchbrechen, Rollback Versionshistorie, Prompting für kritische Bereiche]
+    neben: [planung]
+  2026-02-04-meer-aiit-claude-skills-complete-guide:
+    haupt: skills
+    kernaussage: Die description steuert das Triggern eines Skills; SKILL.md kurz halten, Details in references auslagern und Skripte für Deterministisches nutzen.
+    keywords: [Claude Skills, SKILL.md, Progressive Disclosure, Skill Description Trigger, Skill Frontmatter, Skills references und scripts, Freiheitsgrade bei Skills]
+    neben: []
+  2026-02-04-rudrank-using-minimax-with-claude-code:
+    haupt: modelle-kosten
+    kernaussage: Claude Code lässt sich per drei Umgebungsvariablen auf jeden Anthropic-kompatiblen Provider umleiten; vorher alte Overrides löschen und Routing mit /status prüfen.
+    keywords: [MiniMax M2.1 mit Claude Code, ANTHROPIC_BASE_URL, Claude Code Alternative Modelle, CC-MIRROR, Kimi K2.5, GLM 4.7, Rate Limits umgehen, Claude Code /status]
+    neben: [agent-dateien]
+  2026-02-04-tweag-tdd-agentic-coding:
+    haupt: verifikation
+    kernaussage: 'Ein Test ist ein präziser Prompt: Der Agent baut Logik Test für Test, wobei die Testqualität beim Menschen liegt.'
+    keywords: [TDD mit KI-Agenten, Test-Driven Development Agentic Coding, Tests als Spezifikation, Red Green Refactor, Pre-Commit Hooks, tdd-plan.md, Halluzinationen reduzieren]
+    neben: [planung]
+  2026-02-05-carlini-anthropic-c-compiler:
+    haupt: autonomie
+    kernaussage: Der stärkste Hebel für lang laufende Agent-Teams ist ein präzises, maschinenlesbares Testharness; ein unpräziser Verifier erzeugt zuverlässig falschen Erfolg.
+    keywords: [Claude C Compiler, Long-running Agents, Agent Teams parallel, Testharness für Agenten, Oracle-Ansatz GCC, Verifier-Design, 16 parallele Claudes, Autonome Coding-Agents]
+    neben: [verifikation]
+  2026-02-05-d4m1n-docker-sandboxes:
+    haupt: sicherheit
+    kernaussage: Docker Sandboxes isolieren Agent-CLIs per Micro-VM und machen YOLO-Modus und nächtliche Ralph-Loop-Läufe sicher, ohne den Host zu gefährden.
+    keywords: [Docker Sandboxes, YOLO-Modus, Claude Code dangerously-skip-permissions, Micro-VM, Ralph Loop über Nacht, docker sandbox run claude, Agent-Isolation]
+    neben: [autonomie]
+  2026-02-05-kloss-xyz-feature-intelligence-architect:
+    haupt: planung
+    kernaussage: 'Analyse und Umsetzung trennen: Ein Read-only-Planer erzeugt eine Plan-Datei, die als Vertrag für den Build-Agenten nach Freigabe dient.'
+    keywords: [Read-only Planner Prompt, Feature-Planung mit KI, PRD, Phasenplan, Parking Lot, Rejected Ideas, Handoff-Dokument, Build-Agent Freigabe]
+    neben: [agent-dateien]
+  2026-02-07-daniel-san-agent-teams-praxismuster:
+    haupt: orchestrierung
+    kernaussage: Agent Teams laufen kollisionsfrei bei klaren Modulgrenzen, kurzem operationalem CLAUDE.md und definierten Verifikationssignalen; N Teammates kosten N-fachen Kontext.
+    keywords: [Claude Code Agent Teams, CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS, Modulgrenzen, CLAUDE.md für Teams, Plan Mode Agent Teams, Team Lead Teammates, Token-Kosten paralleler Agents]
+    neben: [kontext]
+  2026-02-07-jasonzhou-claude-code-agent-teams:
+    haupt: orchestrierung
+    kernaussage: Agent Teams ersetzen isolierte Sub-Agents durch geteilte Task-Liste und Messaging; sie kosten mehr Tokens und lohnen sich vor allem für Deep Debugging.
+    keywords: [Claude Code Agent Teams, TeamCreate TaskCreate SendMessage, Sub-Agents vs. Agent Teams, geteilte Task-Liste, Deep Debugging mit konkurrierenden Hypothesen, tmux iTerm2 Teammate Mode, Agent
+        Team Debatte]
+    neben: []
+  2026-02-09-pdrmnvd-how-claude-code-skills-work:
+    haupt: skills
+    kernaussage: Skills laden Fachwissen in drei Stufen erst bei Bedarf; die description ist der Trigger, und Anweisungs-Spezifität richtet sich nach der Fragilität der Aufgabe.
+    keywords: [Claude Code Skills, Progressive Disclosure, Skill Description, Drei-Ebenen-Ladesystem, skill-creator, Slash-Command Aktivierung, Freiheitsgrad und Fragilität, Warum statt Was erklären]
+    neben: [kontext]
+  2026-02-09-tom-crawshaw-claude-code-insights-guide:
+    haupt: agent-dateien
+    kernaussage: Die Auswertung der eigenen Sessions per /insights zeigt Reibung durch fehlenden Startkontext und unklares Done; kurzer CLAUDE.md-Kontext und Slash Commands helfen.
+    keywords: [Claude Code /insights, Nutzungsanalyse, CLAUDE.md Kontext, Slash Commands, Definition of Done, Session-Reibung, MCP-Server, Skills Selbstverbesserung]
+    neben: [skills]
+  2026-02-10-boris-tane-plan-annotation-workflow:
+    haupt: planung
+    kernaussage: Claude schreibt keinen Code vor einem geprüften Plan; Recherche und Plan sind persistente Markdown-Artefakte, die der Mensch per Inline-Annotation iterativ schärft.
+    keywords: [Claude Code Workflow, research.md und plan.md, Annotation Cycle, Plan vor Code, don't implement yet, Plan Mode Alternative, Revert statt Nachbessern, Auto-Compaction]
+    neben: [kontext]
+  2026-02-11-rohit4verse-guide-building-agent-skills:
+    haupt: skills
+    kernaussage: Vor dem Bau eines Skills Erfolgskriterien wie Trigger-Trefferquote festlegen; die description folgt dem Muster was plus wann, allowed-tools begrenzt Rechte.
+    keywords: [Agent Skills bauen, Progressive Disclosure, Skill Trigger-Trefferquote, allowed-tools, Skill Erfolgskriterien, description was und wann, Skills Sicherheit fremder Herkunft]
+    neben: []
+  2026-02-13-vincanger-claude-code-fullstack-essentials:
+    haupt: einstieg
+    kernaussage: Ein Agent, der Dev-Server-Output und Browser selbst sieht, korrigiert autonom; ein meinungsstarker Stack und aktuelle Docs reduzieren Raten mehr als viele Features.
+    keywords: [Claude Code Fullstack, Chrome DevTools MCP, llms.txt, Background Task Dev-Server, Wasp Framework, Opinionated Stack, Subagents und Skills Minimalismus, Aktuelle Dokumentation im Kontext]
+    neben: [verifikation]
+  2026-02-14-gmoney-eth-25-claude-code-lessons:
+    haupt: kontext
+    kernaussage: 'Das Context Window wie RAM behandeln: früh löschen, Subagents nutzen, 3 bis 5 parallele Sessions in eigenen Worktrees fahren und bei Misserfolg neu ansetzen.'
+    keywords: [Claude Code Tipps, Context Window wie RAM, /clear, Git Worktrees, Parallele Sessions, Subagents Hauptkontext, Neu ansetzen statt patchen, AGENTS.md TOOLS.md USER.md]
+    neben: [orchestrierung]
+  2026-02-14-matt-pocock-skill-tdd-claude-code:
+    haupt: verifikation
+    kernaussage: 'Ein Test, eine Implementierung, wiederholen: Vertikale Tracer-Bullet-Zyklen verhindern, dass das Modell Tests umschreibt oder nur Mocks verifiziert.'
+    keywords: [TDD Skill Claude Code, Tracer Bullets, Red Green Refactor, vertikale Slices, Tests mocken vs. Verhalten testen, Deep Modules, Dependency Injection, KI schreibt Tests passend um]
+    neben: [skills]
+  2026-02-14-minty-mastering-claude-code:
+    haupt: agent-dateien
+    kernaussage: Ein schlanker Memory-Index gegen den Fresh-Context-Neustart und ein Orchestrator, bei dem das teure Modell plant und günstigere Worker implementieren, senken Aufwand und Kosten.
+    keywords: [Claude Code Memory-System, MEMORY.md Thin Index, Orchestrator-Modell, Claude plant Codex implementiert, Skills als Prozesse, Slash Commands /commit /review, Multi-LLM Kostensteuerung, Fresh-Context-Problem]
+    neben: [modelle-kosten]
+  2026-02-15-avid-ai-design-workflow-2026:
+    haupt: planung
+    kernaussage: KI-Design gelingt in drei Durchgängen mit Referenzen, erzwungenem Self-Review und Feinschliff; Geschmack ist der Engpass, nicht die Ausführung.
+    keywords: [KI-Design Workflow, Referenz-Screenshots, Self-Review Pass, Design-Vokabular prompten, Meta-Prompts, Hex-Codes im Prompt, UI-Politur mit KI]
+    neben: [prototyping]
+  2026-02-20-aseem-shrey-claude-codex-plan-review:
+    haupt: planung
+    kernaussage: Ein zweites Modell als Reviewer für Pläne, mit VERDICT-Protokoll und Rundenlimit, deckt blinde Flecken auf, die das planende Modell allein übersieht.
+    keywords: [Cross-Model-Review, Claude Code Codex CLI, Single-Model Blindness, /codex-review Skill, VERDICT APPROVED REVISE, Plan-Review iterativ, Codex exec resume, Adversarial Review]
+    neben: [orchestrierung]
+  2026-02-20-boris-tane-sdlc-is-dead:
+    haupt: rolle-markt
+    kernaussage: Mit Coding-Agents verschmelzen SDLC-Phasen zu einem Loop aus Intent, Build und Observe; Kontextqualität und Telemetrie werden zum Kern (spekulative These).
+    keywords: [SDLC ist tot, Software Development Lifecycle mit KI, Intent Build Observe, Adversarial Agent Code Review, Feature Flags Canary, Observability als Kontext, Closed Loop]
+    neben: [autonomie]
+  2026-02-23-d4m1n-ralph-loop-setup-primaer:
+    haupt: autonomie
+    kernaussage: Der Ralph Loop trägt Zustand in Dateien statt im Modell und läuft mit Tests und Steering-Datei stundenlang autonom; die Spec-Prüfung vorab ist billiger als Rollbacks.
+    keywords: [Ralph Loop, Ralph Loop Setup, 37 Stunden autonomer Lauf, PRD und tasks.json, STEERING.md, Playwright Vitest, prd-creator, AFK Coding Agent]
+    neben: [verifikation]
+  2026-02-23-elvis-openclaw-codex-agent-swarm:
+    haupt: orchestrierung
+    kernaussage: Business-Kontext und Code-Kontext gehören in getrennte Agent-Ebenen; parallele Agents brauchen Worktrees, Task-Registry, mehrstufige AI-Reviews und einen Rechteschnitt.
+    keywords: [Agent Swarm, OpenClaw, Orchestrator-Agent, Git Worktrees und tmux, Codex CLI, AI Code Review Gate, Business-Kontext vs. Code-Kontext, Definition of Done PR]
+    neben: [kontext]
+  2026-02-24-nate-b-jones-intent-engineering:
+    haupt: rolle-markt
+    kernaussage: 'Kontext sagt der KI, was sie wissen soll, Intent, was sie wollen soll: Ohne explizite Ziele und Eskalationsregeln optimiert ein Agent die falsche Metrik.'
+    keywords: [Intent Engineering, Context Engineering, Prompt Engineering, Klarna AI-Agent, Eskalationsregeln, Drift-Erkennung, Enterprise AI Adoption, Microsoft Copilot]
+    neben: [agent-dateien]
+  2026-02-25-heynavtoor-claude-cowork-setup-guide:
+    haupt: agent-dateien
+    kernaussage: Für Büroarbeit mit Claude Cowork genügen ein Ordner mit Kontextdateien und die Anweisung, vor der Arbeit klärende Fragen zu stellen.
+    keywords: [Claude Cowork, Cowork Setup, Kontextdateien about-me.md, AskUserQuestion, Brand Voice, Claude für Nicht-Entwickler, Wissensarbeit mit KI]
+    neben: [einstieg]
+  2026-02-26-omarsar0-agents-md-evaluation:
+    haupt: agent-dateien
+    kernaussage: Menschlich geschriebene Context Files bringen etwa 4 Prozent mehr Erfolg, LLM-generierte senken ihn und kosten über 20 Prozent mehr; schreibe für die Lücke, nicht den Überblick.
+    keywords: [AGENTS.md Evaluation, AGENTbench, LLM-generierte Context Files, CLAUDE.md Wirkung, ETH Zürich Studie, Redundanz vs. Additivität, Inference-Kosten, Context Files schreiben]
+    neben: []
+  2026-02-27-meer-claude-code-best-practices:
+    haupt: einstieg
+    kernaussage: Über die offizielle Doku hinaus helfen Voice Dictation für kontextreichere Prompts und eine zweite Claude-Instanz, die den Plan vor der Umsetzung prüft.
+    keywords: [Claude Code Best Practices, Voice Dictation Prompting, Zwei-Claude-Review, Plan-Review vor Umsetzung, Boris Cherny Tipps, Self-Verification, Context Window knappste Ressource]
+    neben: [planung]
+  2026-02-27-thariq-lessons-building-claude-code:
+    haupt: skills
+    kernaussage: Tools müssen zum Fähigkeitsprofil des Modells passen und bei jedem Modell-Upgrade neu geprüft werden; Formattreue gehört in Tool-Verträge statt in Freitext-Prompts.
+    keywords: [Action Space Design, Claude Code Tool-Design, AskUserQuestion Tool, TodoWrite zu Task-Tool, Progressive Disclosure Kontext, Guide-Subagent, Capability Drift, Context Rot]
+    neben: [kontext]
+  2026-02-28-openai-codex-multi-agents-guide:
+    haupt: orchestrierung
+    kernaussage: Codex Sub-Agenten haben eng gefasste Rollen, begrenzte Parallelität und erben die Sandbox, laufen aber mit non-interaktiven Approvals.
+    keywords: [Codex Multi-Agent, Codex CLI, agents.max_threads, Codex Rollen worker explorer, Sub-Agent Sandbox-Vererbung, config.toml multi_agent, Parallele Code-Reviews]
+    neben: [sicherheit]
+  2026-02-28-openai-codex-rules-guide:
+    haupt: sicherheit
+    kernaussage: Eine Grenze wirkt nur, wenn eine Regel-Engine sie vor der Ausführung erzwingt; Codex Rules zerlegen verpackte Shell-Aufrufe, um Command Smuggling zu verhindern.
+    keywords: [Codex Rules, prefix_rule, Command Smuggling, Tree-sitter Shell Parsing, Starlark, codex execpolicy, Deny-Rules, Sandbox-Grenzen erzwingen]
+    neben: []
+  2026-03-17-zerotopete-never-use-terminal-again:
+    haupt: frameworks
+    kernaussage: cmux löst das Aufmerksamkeitsproblem beim Parallelbetrieb mehrerer Agents per Tabs und Notifications, aber nicht die Koordination von Dateikonflikten und Review.
+    keywords: [cmux, Parallele Coding Agents, Ghostty Terminal, Multi-Agent Übersicht, Agent Notifications, tmux Alternative, conductor, zellij]
+    neben: [orchestrierung]
+  2026-03-21-sourfraser-claude-obsidian-ai-employee:
+    haupt: agent-dateien
+    kernaussage: Eine Memory-Datei als Onboarding-Dokument plus Schreibzugriff auf einen Obsidian-Vault gibt Claude persistentes Gedächtnis; Rechte, Qualität und Datenschutz bleiben offen.
+    keywords: [Obsidian Vault MCP, Claude Gedächtnis, Memory Loop, Persistentes Memory, Call-Transkripte auswerten, AI Employee, Onboarding-Dokument, Custom Instructions]
+    neben: [kontext]
+  2026-03-29-0x-kaize-claude-usage-limits-primaer:
+    haupt: modelle-kosten
+    kernaussage: Der Tokenverbrauch wächst in langen Chats quadratisch, weil der Verlauf neu eingelesen wird; kurze Chats, Haiku für Routine und Nutzung außerhalb der Peak Hours sparen Limit.
+    keywords: [Claude Usage Limits, Token-Verbrauch quadratisch, 5-Stunden-Fenster, Peak Hours, Haiku für Routineaufgaben, Claude Projects Caching, Prompt Edit statt Korrektur, Extra Usage]
+    neben: [kontext]
+  2026-04-10-paulsolt-2042716870512353294:
+    haupt: frameworks
+    kernaussage: Skill-Packs korrigieren veraltete APIs, und ein knapper Build-Test-Einstieg mit Warnings-as-Errors macht Xcode-Projekte für Agenten zu einem billigen Verifikationshebel.
+    keywords: [Swift Skills, SwiftUI Skill-Packs, Xcode Agenten, Buildable Folders, Warnings-as-Errors, xcbeautify, Makefile build test, Deprecated APIs vermeiden]
+    neben: [verifikation]
+  2026-04-13-wiki-compiler-gute-agents-md-schreiben:
+    haupt: agent-dateien
+    kernaussage: Agent-Dateien kurz, universell relevant und gestaffelt halten; Stilregeln gehören in Formatter und Linter, nicht in AGENTS.md.
+    keywords: [AGENTS.md schreiben, CLAUDE.md Best Practices, Progressive Disclosure, Instruktionsbudget, Was Warum Wie, Linter statt Agent-Regeln, agent_docs, Auto-generierte Agent-Dateien]
+    neben: [kontext]
+  2026-04-13-wiki-compiler-shorthand-guide-claude-code:
+    haupt: agent-dateien
+    kernaussage: Hooks automatisieren deterministisch, MCPs und Subagents bewusst klein und eng gescopt halten; das Kontextfenster ist die knappe Ressource.
+    keywords: [Claude Code Hooks, PreToolUse PostToolUse, MCP Server begrenzen, Subagents scopen, /fork, /rewind, Git Worktrees, Rules-Ordner]
+    neben: [frameworks]
+  2026-04-15-trq212-claude-code-session-management-1m-context-primaer:
+    haupt: kontext
+    kernaussage: 'Ein 1M-Kontext ist kein pauschaler Gewinn: Früh und aktiv kompaktieren, neue Aufgabe meist neue Session, Subagents als Kontextgrenze nutzen.'
+    keywords: [Context Rot, 1M Context Window, Claude Code /compact, /clear, rewind, Session Management, Context Pollution, Subagents als Kontextgrenze]
+    neben: []
+  2026-04-16-wiki-compiler-context7:
+    haupt: frameworks
+    kernaussage: Context7 liefert versionsspezifische Bibliotheksdoku direkt in den Agent-Kontext und ergänzt Workflow-Frameworks als Doku-Layer, ersetzt aber kein Architekturdenken.
+    keywords: [Context7, Context7 MCP, Aktuelle Bibliotheksdokumentation, API-Halluzinationen, Library-IDs, ctx7 CLI, Doku-Retrieval für Coding Agents]
+    neben: [kontext]
+  2026-04-16-wiki-compiler-everything-claude-code-ecc:
+    haupt: frameworks
+    kernaussage: ECC ist ein umfassendes Cross-Harness-Agent-Betriebssystem; große Skill-Portfolios kippen ohne diszipliniertes Kuratieren in Wartungsaufwand.
+    keywords: [Everything Claude Code, ECC, Cross-Harness Agent Framework, Skills Agents Commands Hooks, Skill Provenance, Continuous Learning, Codex Cursor OpenCode, Skill-Portfolio Wartung]
+    neben: [skills]
+  2026-04-16-wiki-compiler-get-shit-done-gsd:
+    haupt: frameworks
+    kernaussage: GSD wirkt gegen Context Rot mit Spec-driven Development, Subagent-Orchestrierung und atomaren Commits; die empfohlene Skip-Permissions-Nutzung kollidiert mit strengerer Governance.
+    keywords: [Get Shit Done GSD, Spec-driven Development, Context Rot bekämpfen, gsd-map-codebase, Wellenbasierte Ausführung, Multi-Runtime Codex Gemini CLI, dangerously-skip-permissions, Atomare Commits]
+    neben: [planung]
+  2026-04-16-wiki-compiler-gstack:
+    haupt: frameworks
+    kernaussage: gstack simuliert per Rollen-Commands ein virtuelles Engineering-Team und liefert mit persistentem Browser-Daemon echte QA-Prüfung als festen Workflow-Bestandteil.
+    keywords: [gstack, Workflow-Frameworks, Claude Code Slash Commands, Rollen-basierte Agents, Persistent Browser Daemon, Playwright QA, ETHOS Boil the Lake, OpenClaw]
+    neben: [verifikation]
+  2026-04-16-wiki-compiler-skill-creator-skill:
+    haupt: skills
+    kernaussage: 'Skills sind messbare Produkte: Wer sie mit und ohne Skill vergleicht und die Trigger-Description schärft, statt nach Gefühl zu bewerten, verbessert sie belegbar.'
+    keywords: [Claude Code Skills, skill-creator, Skill Evals, Baseline-Vergleich, Trigger Description, Progressive Disclosure, SKILL.md, Undertriggering]
+    neben: []
+  2026-04-16-wiki-compiler-superpowers:
+    haupt: frameworks
+    kernaussage: Community-Plugins wie Superpowers sind nicht von Anthropic geprüft und gehören wie Drittcode mit Hooks vor dem Einsatz und nach Updates kontrolliert.
+    keywords: [Superpowers, obra/superpowers, Claude Code Plugins, SessionStart Hook, Plugin-Marketplace Sicherheit, Supply-Chain-Risiko, TDD-Enforcement, Codex Skills]
+    neben: [sicherheit]
+  2026-04-16-wiki-compiler-ui-ux-pro-max-skill:
+    haupt: frameworks
+    kernaussage: Regelbasierte Design-System-Generierung reduziert generische AI-Frontends, ersetzt aber weder echte UX-Forschung noch separate Accessibility-Prüfung.
+    keywords: [UI UX Pro Max, Design-System-Generator, Design Skills, AI-Frontend Design, Anti-Patterns, Landing-Page-Patterns, Claude Code Skills, Cursor]
+    neben: [prototyping]
+  2026-04-16-wiki-compiler-vergleich-gsd-superpowers-gstack-ecc-learnings:
+    haupt: frameworks
+    kernaussage: 'Welches Workflow-Framework passt, hängt vom dominanten Problem ab: Dokumentationstiefe, Umsetzungsdisziplin, rollenbasierte QA oder komplette Agentenplattform, nicht von einer Rangfolge.'
+    keywords: [GSD, Superpowers, gstack, Everything Claude Code, Spec-Driven Development, gsd-map-codebase, Brownfield, Agent Harness]
+    neben: []
+  2026-04-17-wiki-compiler-agent-teams-in-claude-code:
+    haupt: orchestrierung
+    kernaussage: Agent Teams lohnen sich nur bei klaren Modulgrenzen, kurzem gemeinsamem Kontext und Verifikationssignalen, und erst nach Hauptthread und Subagents.
+    keywords: [Agent Teams, Claude Code Subagents, Parallel Agents, Lead-Teammate-Muster, CLAUDE.md Größe, Edit-Kollisionen, Multi-Agent Debugging, Token-Verbrauch]
+    neben: [kontext]
+  2026-04-17-wiki-compiler-codex-claude-code-lovable-workflow:
+    haupt: prototyping
+    kernaussage: Webapp-Prototypen zuerst in Lovable visuell klären, dann lokal exportieren und mit einem Coding Agent für Backend, Tests und Deployment weiterbauen.
+    keywords: [Lovable, Codex, Claude Code, Vibe Coding Workflow, Prototyp-Handoff, Prompt Engineering, Zwei Coding Agents parallel, Lokaler Export]
+    neben: [orchestrierung]
+  2026-04-17-wiki-compiler-kontextsteuerung-verifikation-tdd:
+    haupt: planung
+    kernaussage: Kontextmenge, Prüfbarkeit und Paketgröße bestimmen die Qualität; TDD in vertikalen Slices und gestufte Review-Eskalation verhindern spekulativen Code und Scheinfortschritt.
+    keywords: [TDD mit AI Agents, Tracer Bullets, Vertikale Slices, Agent Verifikation, Claude Code Review, Mock-Illusion, Kitchen-Sink-Session, Self-Verification]
+    neben: [kontext]
+  2026-04-17-wiki-compiler-lovable-design-debugging-sicherheit:
+    haupt: prototyping
+    kernaussage: Im Lovable-Frontend gehören Secrets, Validierung und Autorisierung serverseitig, Debugging läuft über Plan-Modus statt blindem Retry, Security Checker sind fester Release-Schritt.
+    keywords: [Lovable, Component-first Design, Plan-Modus Debugging, Supabase Row Level Security, Edge Functions, Security Checker, Frontend Secrets, Vibe Coding Security]
+    neben: [sicherheit]
+  2026-04-17-wiki-compiler-lovable-frontend-rapid-prototyping:
+    haupt: prototyping
+    kernaussage: 'Lovable ist für den schnellen Prototyp-Start da: ausführliches Produktbriefing, Mock-Daten, früher Export ins lokale Repo mit Handoff-Checkliste.'
+    keywords: [Lovable, Rapid Prototyping, React Vite shadcn/ui, Mock-first, Produktbriefing Prompt, Prototyp-Handoff Checkliste, Vibe Coding, Tailwind CSS]
+    neben: []
+  2026-04-17-wiki-compiler-praktische-claude-code-workflows:
+    haupt: planung
+    kernaussage: Ein Fünf-Schritte-Workflow mit Plan als Datei und getrenntem Review trennt Erstellung von Prüfung und schützt vor Blindheit des einzelnen Modells.
+    keywords: [Claude Code Workflow, Plan Mode, plan.md, Builder-Reviewer-Verifier, Adversarial Review Loop, /clear, Checkpoints Rewind, Single-Model-Blindheit]
+    neben: [orchestrierung]
+  2026-04-17-wiki-compiler-ralph-loop:
+    haupt: autonomie
+    kernaussage: Beim Ralph Loop liegt der Fortschritt in Dateien und Git statt im Modellkontext, jede Iteration startet frisch, und ohne echte Tests halluziniert der Agent Fortschritt.
+    keywords: [Ralph Loop, Autonomous Coding Agents, Frischer Kontext pro Iteration, tasks.json, STEERING.md, PRD-getriebene Entwicklung, Playwright Vitest, Long-running Agents]
+    neben: [kontext]
+  2026-04-17-wiki-compiler-skills-subagents-hooks-mcp-pragmatisch:
+    haupt: erweiterungen
+    kernaussage: Jede Anforderung gehört auf genau eine Ebene (CLAUDE.md, Skill, Subagent, Hook, MCP); Mehrfachmodellierung ist ein Designfehler, Einführung schrittweise vom knappen Kern aus.
+    keywords: [CLAUDE.md, Claude Code Skills, Subagents, Claude Code Hooks, MCP Server, Progressive Disclosure, Überprivilegierte Subagents, Erweiterungsebenen Mapping]
+    neben: [skills]
+  2026-04-21-natebjones-this-is-so-important-if-you-use-ai-as-a-solo-business-or-ic-theres-a:
+    haupt: agent-dateien
+    kernaussage: Ein LLM-Wiki passt zu Verbindungsarbeit einzelner Personen, für zitierbare Fakten im Großen braucht es eine Datenbank und für parallele Agenten ein anderes Modell.
+    keywords: [LLM Wiki, Karpathy Wiki, AI Memory, Obsidian, Context-Schicht, Memory für Agents, SQL vs. Wiki, Multi-Agent Konflikte]
+    neben: []
+  2026-04-22-agenticjames-everything-you-need-to-know-about-context-engineering-in-1-minute:
+    haupt: kontext
+    kernaussage: Was nicht im Context Window landet, kennt der Agent nicht; CLAUDE.md oder AGENTS.md ist der immer geladene Stamm, von dem Verweise bei Bedarf abzweigen.
+    keywords: [Context Engineering, CLAUDE.md, AGENTS.md, Context Window, Progressive Disclosure, Agent Harness, Skills, MCP Tools]
+    neben: [skills]
+  2026-04-22-alibaba-qwen-qwen3-6-27b-lokal-betreiben:
+    haupt: modelle-kosten
+    kernaussage: Ein offenes 27B-Modell erreicht laut Herstellerchart im Agentic Coding etwa den Stand eines Vorjahres-Frontiermodells; lokaler Betrieb ist eine Speicher- und Bandbreitenfrage.
+    keywords: [Qwen3.6-27B, Lokale LLMs, Open-Weight Coding-Modell, SWE-bench Verified, Terminal-Bench 2.0, GGUF Q4 Unsloth, Apache 2.0, Claude 4.5 Opus Vergleich]
+    neben: []
+  2026-04-29-wiki-compiler-claude-code-session-management-1m-context:
+    haupt: kontext
+    kernaussage: Nach jedem Arbeitsblock bewusst zwischen Continue, Rewind, Compact, Clear und Subagent wählen, weil mehr Kontext ab etwa 300k Tokens Context Rot riskiert.
+    keywords: [Context Rot, Claude Code 1M Context, /compact, /clear, Rewind, Context Pollution, Subagents als Kontextgrenze, Session-Management]
+    neben: []
+  2026-04-29-wiki-compiler-claude-usage-limits-token-strategien:
+    haupt: modelle-kosten
+    kernaussage: Tokenverbrauch wächst quadratisch mit der Nachrichtenzahl; kurze klar geschnittene Sessions und Modellwahl nach Aufgabenschwere senken Verbrauch und Limit-Druck.
+    keywords: [Claude Usage Limits, Token-Verbrauch quadratisch, Prompt editieren statt korrigieren, Claude Projects, Modellwahl Haiku Sonnet Opus, 5-Stunden-Fenster, Extra Usage, Peak Hours]
+    neben: [kontext]
+  2026-04-30-zodchiii-claude-code-env-security:
+    haupt: sicherheit
+    kernaussage: Nur Deny-Regeln in settings.json erzwingen Zugriffssperren, CLAUDE.md-Hinweise sind Empfehlungen; Secrets lecken auch über Runtime-Output und Grep-Treffer.
+    keywords: [Claude Code Security, .env Secrets, settings.json Deny-Regeln, Permissions, Secret Leakage, Pre-Commit Hook, .env.test, Container-Isolation]
+    neben: [erweiterungen]
+  2026-05-01-mnilax-claude-code-overhead-9-patterns:
+    haupt: modelle-kosten
+    kernaussage: 'Ein 90-Tage-Audit zeigt: 73 Prozent der Claude-Code-Tokens gehen in strukturellen Overhead wie große CLAUDE.md, Hooks, MCPs und Cache-Misses, nicht in Modellwahl.'
+    keywords: [Claude Code Token-Overhead, Prompt Caching, CLAUDE.md Größe, UserPromptSubmit Hook, MCP-Overhead, Extended Thinking, Token-Audit, Context Bloat]
+    neben: [kontext]
+  2026-05-02-vincentmumme-das-muesst-ihr-unbedingt-testen:
+    haupt: prompting
+    kernaussage: Wer den Agenten aus der Rückschau auf ein gescheitertes Projekt argumentieren lässt, umgeht seine Zustimmungsneigung und deckt Risiken vor der Entwicklung auf.
+    keywords: [Pre-Mortem Prompt, Sycophancy, AI Agent Zustimmungsneigung, Risikoanalyse, Frühwarnsignale, Spec Grilling, Projektplanung mit AI, Prompt-Tricks]
+    neben: [planung]
+  2026-05-04-wiki-compiler-claude-session-und-token-management:
+    haupt: kontext
+    kernaussage: Gute Claude-Nutzung optimiert auf klar geschnittene Arbeitsblöcke mit bewusstem Kontext statt lange Chats, gestützt auf Handoff-Summaries und eine Prompt-Checkliste.
+    keywords: [Claude Code Session-Management, Handoff-Summary, Arbeitsblöcke, /compact, Rewind, Subagent Review, Tokenbudget, Kontext-Checkliste]
+    neben: [modelle-kosten]
+  2026-05-09-zodchiii-15-claude-code-settings-most-developers:
+    haupt: erweiterungen
+    kernaussage: Viele Qualitätsprobleme in Claude Code stammen aus schlechten Defaults und losen Permissions; Effort, Deny-Regeln, Modell-Routing und Hooks lassen sich konfigurieren.
+    keywords: [Claude Code Settings, /effort high, Adaptive Thinking, Permissions Allow Deny, --max-budget-usd, Model Routing, Claude Code Hooks, MCP ausmisten]
+    neben: [modelle-kosten]
+  2026-05-13-david-wiesen-openai-codex-windows-sandbox:
+    haupt: sicherheit
+    kernaussage: Kein einzelnes OS-Feature reichte für eine Agent-Sandbox; sie wurde aus mehreren Primitiven komponiert, und rein advisory Netzwerkschutz genügt nicht.
+    keywords: [Codex Windows Sandbox, Agent Sandbox, Restricted Tokens, AppContainer, Windows Firewall, Netzwerk-Isolation, Elevated Sandbox, OpenAI Codex]
+    neben: []
+  2026-05-18-agenticjames-using-goal-with-a-task-management-system-is-the-most-overpowered-way-to:
+    haupt: autonomie
+    kernaussage: Ein Task pro Datei plus fest vorgegebene Prozedur im /goal-Befehl macht Reihenfolge und Laufzeit eines Agenten-Loops steuerbar, Kosten und Abbruchkriterium bleiben offen.
+    keywords: [Claude Code /goal, Task-Management für Agents, Linear Notion Markdown Tasks, Autonomous Loop, Task-basierte Steuerung, Langlaufende Agents, Ralph Loop]
+    neben: []
+  2026-05-21-christophmagnussen-ki-agenten-weichen-ab:
+    haupt: orchestrierung
+    kernaussage: Agent Drift entsteht unbemerkt bei Subagent- und Tool-Aufrufen; Prävention durch vorab definierte Entscheidungsregeln schlägt reine Sichtbarkeit.
+    keywords: [Agent Drift, Multi-Agent Systeme, Agent-Hierarchie, Policies für Agents, Reasoning-Traces, Subagent Alignment, Agent Observability, OpenClaw]
+    neben: [autonomie]
+  2026-06-02-trq212-2061907337154367865:
+    haupt: orchestrierung
+    kernaussage: Claude erzeugt pro Aufgabe ein Skript mit Subagents in eigenen Kontexten; Verifier und Classifier vermeiden Selbstbewertung, kosten aber deutlich mehr Tokens.
+    keywords: [Dynamic Workflows, Claude Code Subagents, Fan-out and Synthesize, Adversarial Verification, Tournament, Goal Drift, Agentic Laziness, Classifier-Agent]
+    neben: [autonomie]
+  2026-06-04-agenticjames-most-people-have-not-touched-the-best-parts-of-claude-code-skills-forked:
+    haupt: skills
+    kernaussage: 'Mit context: fork und model im Skill-Frontmatter läuft ein teures Modell nur für eine Aufgabe, ohne den Hauptkontext zu füllen; imperative Descriptions sollen besser triggern.'
+    keywords: [Claude Code Skills, 'context: fork', Skill Frontmatter, $ARGUMENTS, Skill Description, Modell pro Skill, Forked Subagent, Skill Trigger]
+    neben: [modelle-kosten]
+  2026-06-06-agenticjames-your-agent-is-referencing-documentation-when-it-should-be-reading-the:
+    haupt: kontext
+    kernaussage: Agenten sollten gegen den lokal abgelegten Quellcode von Dependencies statt nur gegen Doku arbeiten, damit sie nicht raten; Nutzen und Kosten sind ungeprüft.
+    keywords: [opensrc, Vercel Labs, Dependency-Quellcode, graphify, Knowledge Graph, Coding Agent Dokumentation, Halluzination reduzieren, Open-Source Dependencies]
+    neben: [agent-dateien]
+  2026-07-01-anthropic-skill-creator-skill-md:
+    haupt: skills
+    kernaussage: Der offizielle skill-creator deckt Erstellen, Evals mit Baseline, Varianz-Benchmarks, automatisierte Trigger-Optimierung und Blind-Vergleich ab; simple Ein-Schritt-Queries triggern Skills
+      nie.
+    keywords: [skill-creator SKILL.md, Skill Evals, Benchmarking, Trigger-Optimierung, should-trigger Queries, Blind-Vergleich, Skill Packaging, anthropics/skills]
+    neben: []
+  2026-07-03-calebwritescode-loop-engineering-explained-in-7-min-and-simplified:
+    haupt: autonomie
+    kernaussage: Loop Engineering ist als vierte Schicht über Prompt, Context und Harness eingeordnet, lässt Agenten sich selbst anstoßen; der Nutzen ist laut Autor unbewiesen.
+    keywords: [Loop Engineering, Harness Engineering, Context Engineering, Prompt Engineering, Agent Automation, Worktrees, Subagents, State Management]
+    neben: [kontext]
+  2026-07-03-trq212-fable-field-guide-unknowns:
+    haupt: prompting
+    kernaussage: Stärkere Modelle tragen falsche Annahmen selbstbewusst durch die Session; der Engpass ist die Spezifikation, daher Unknowns per Interview, Prototyp und Change Quiz heben.
+    keywords: [Fable Unknowns, Known Unknowns, Blind Spot Pass, Change Quiz, Implementation Plan, Decision Record, Spec-Driven Development, Modell-Annahmen]
+    neben: [planung]
+  2026-07-06-mattpocock-writing-great-skills-beyond-skills:
+    haupt: skills
+    kernaussage: Struktur, Leading Words und Pruning, entwickelt für Skills, verbessern jeden Text, den Agenten lesen, von AGENTS.md über Specs bis zu AFK-Prompts.
+    keywords: [AGENTS.md schreiben, Writing Great Skills, Leading Words, Pruning, Agent-lesbare Texte, Specs und Tickets, AFK Workflow Prompts, Struktur]
+    neben: [kontext]
+  2026-07-06-nightmoon-wayfinder:
+    haupt: frameworks
+    kernaussage: Wayfinder verlangt weniger menschliche Koordinationsarbeit als der lineare Ablauf grill, PRD, Issues, Implementierung; eine Tendenz zu automatisierten Entscheidungen bleibt unsichere Beobachtung.
+    keywords: [Wayfinder, Matt Pocock Skills, grill-me, to-prd, to-issue, Task-basierte Steuerung, Agentic Coding Workflow, automatisierte Entscheidungen]
+    neben: [skills]
+  2026-07-08-claudedevs-modell-vs-effort:
+    haupt: modelle-kosten
+    kernaussage: 'Bei schlechten Ergebnissen zuerst Input und Kontext prüfen, dann nach Fehlerbild entscheiden: übersprungene Arbeit braucht mehr Effort, gründlich erarbeitete Fehler ein anderes Modell.'
+    keywords: [Claude Code Effort Level, Modellwahl, Effort vs. Modell, CLAUDE.md, Token-Kosten, Fehlerdiagnose, Fast Mode, Arbeitstiefe]
+    neben: [kontext]
+  2026-07-08-mattpocock-custom-issue-tracker:
+    haupt: skills
+    kernaussage: Workflow-Skills lassen sich per Setup-Befehl an jeden programmierbar erreichbaren Issue-Tracker anbinden, weil Arbeitslogik und Tracker-Anbindung getrennt sind.
+    keywords: [Matt Pocock Skills, Custom Issue Tracker, setup-matt-pocock-skills, GitHub Issues, Claude Code Skills, Skill-Konfiguration, komponierbare Skills]
+    neben: [frameworks]
+  2026-07-08-mattpocock-skills-v1-1:
+    haupt: frameworks
+    kernaussage: Skills-Version 1.1 deckt mit Wayfinder, Spec, Tickets, Implementierung und Code Review den kompletten Coding-Lifecycle ab; Recherche und Prototyp bleiben eigenständig nutzbar.
+    keywords: [mattpocock/skills, Wayfinder, to-spec, to-tickets, implement, code-review, grill-me, Coding-Lifecycle]
+    neben: [skills]
+  2026-07-09-n3sonline-wayfinder:
+    haupt: frameworks
+    kernaussage: Iterative Steuerung aus Ziel, Task und Anpassung ersetzt lineares Research-Plan-Implement und dimensioniert Aufgaben passend für eine einzelne Agent-Session.
+    keywords: [Wayfinder, Task Sizing, Set Goal Task Adjust, Research Plan Implement, Agent als Product Manager, Single-Agent-Session, Agentic Coding Frameworks, Matt Pocock Skills]
+    neben: [autonomie]
+  2026-07-10-voxyz-mattpocock-skills:
+    haupt: skills
+    kernaussage: Eine kleine Sammlung Markdown-Skills mit Aufrufhierarchie, gemeinsamem Projekt-Glossar und Handoff ist ein leichtgewichtiger, komponierbarer Agent-Stack unter menschlicher Prozesskontrolle.
+    keywords: [mattpocock/skills, grill-me, CONTEXT.md, Handoff, Skill-Call-Hierarchie, Ubiquitous Language, improve-codebase-architecture, npx skills]
+    neben: [kontext]
+  2026-07-11-mattpocock-wayfinder-to-implementation:
+    haupt: frameworks
+    kernaussage: Für große Coding-Vorhaben gehört zwischen Wayfinder-Map und Umsetzung eine Spec samt Tickets, die ein AFK-Agent abarbeitet; Wayfinder allein trägt eher nicht-codierende Arbeit.
+    keywords: [Wayfinder, to-spec, to-tickets, implement, AFK Agent, Spec-Driven Development, Coding-Workflow, Matt Pocock Skills]
+    neben: [planung]
+  2026-07-12-agenticjames-claude-codes-new-feature-checkup-makes-claude-more-token-efficient-and:
+    haupt: kontext
+    kernaussage: Ein automatisches Aufräumen von Skills, MCP-Servern und CLAUDE.md senkt den Baseline-Kontext, verschiebt aber Kontrolle und birgt das Risiko, wichtige Regeln oder Fähigkeiten zu entfernen.
+    keywords: [Claude Code /checkup, Baseline-Kontext, Progressive Disclosure, verschachtelte CLAUDE.md, ungenutzte MCP-Server, Claude Code Hooks, Auto Mode, Permissions]
+    neben: [agent-dateien]
+  2026-07-13-mattpocock-handoff-to-teach:
+    haupt: kontext
+    kernaussage: Wissenslücken während einer Grilling-Session per Handoff an einen Lern-Workspace auslagern hält die Session fokussiert und bewahrt den Lernfortschritt.
+    keywords: [Handoff-Doc, Teach-Skill, Grilling Session, Wissenslücken, Lernen mit KI, Kontext sauber halten, Claude Code Skills, Matt Pocock Skills]
+    neben: [planung]
+  2026-07-14-fredrikharkort-5-prompts-die-weh-tun:
+    haupt: prompting
+    kernaussage: Prompts, die Rückfragen und unbequemes Feedback erzwingen, verbessern Entscheidungen, hängen aber davon ab, wie viel Kontext die KI über Person und Geschäft hat.
+    keywords: [Pre-Mortem, Self-Interview, Board Member Prompt, Serviettentest, Entscheidungs-Prompts, Prompt Engineering, KI als Sparringspartner, Strategieplanung]
+    neben: [planung]
+  2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt:
+    haupt: planung
+    kernaussage: Eine ausführliche Spezifikation mit verweisenden Task-Listen und mehrfacher Agent-Prüfung des Plans ist billiger als spätes Nachbessern, verursacht aber eigene Pflegekosten.
+    keywords: [Spec-Driven Development, große Spezifikation, Task-Markdown, Plan Review durch Agents, Git-Commit als Rollback, Session-Wechsel, Datenmodell-Review, Vibe Coding]
+    neben: [kontext]
+  2026-07-21-promptgefluester-prompt-engineering-ist-tot-und-keiner-hats-gemerkt-was-meine-ich-damit:
+    haupt: skills
+    kernaussage: Statt eines langen Initial-Prompts erzeugen Rückfrage-Skills sauberen Basis-Kontext und Hook-Skills laden Regeln im Prozess nach, weil frühe Regeln im wachsenden Kontext verblassen.
+    keywords: [Prompt Engineering, Hook-basierte Skills, Claude Code Hooks, Superpowers Brainstorming, Context Rot, Spec-Grilling, Skill-Trigger, Initial-Prompt]
+    neben: [kontext]
+  2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding:
+    haupt: autonomie
+    kernaussage: Das Vier-Stufen-Modell von Pair Programming bis Agentenflotte trägt nur mit automatischer Verifikation, und Fehlläufe sollten systematisch in besseren Startkontext übersetzt werden.
+    keywords: [Vier Stufen KI-Coding, Auto Mode, Git Worktrees, Parallele Claude-Code-Sessions, Agentenflotte, Meta-Loop, Code-Review-Skills, Claude Code]
+    neben: [verifikation]
+  2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the:
+    haupt: agent-dateien
+    kernaussage: Neuere Modelle arbeiten mit weniger vorgegebenem Kontext besser; lange CLAUDE.md-Dateien sollten gekürzt und Wissen in bei Bedarf ladbare Skills ausgelagert werden.
+    keywords: [CLAUDE.md kürzen, Claude Code System Prompt, Progressive Disclosure, Skills statt Regeln, präskriptive Regeln, Context Engineering, Sonnet vs. Opus, Regeldatei]
+    neben: [kontext]
+  2026-07-26-promptgefluester-ich-hab-ne-unbequeme-wahrheit-und-zwar-ich-wurde-gefragt-wieso:
+    haupt: verifikation
+    kernaussage: Bei größeren Codebasen liefern dichte deterministische Prüfungen die Qualität, nicht das Modell allein, und kosten bewusst Zeit und Pflege.
+    keywords: [Quality Gates, Code Guard, statische Codeanalyse, Business-Logik-Drift, AI Slop, Vibe Coding Grenzen, Impact-Analyse, Testharness]
+    neben: [planung]
+  2026-07-27-cerebras-gpt-5-6-modellwahl-und-reasoning:
+    haupt: modelle-kosten
+    kernaussage: Mit dem günstigsten tragfähigen Modell starten und bei Stillstand eskalieren, denn jede Reasoning-Stufe kostet rund 50 Prozent mehr bei sinkendem Grenznutzen; warme Sessions sparen Cache-Kosten.
+    keywords: [GPT-5.6 Sol Terra Luna, Reasoning-Stufen, Prompt Caching, Cached Input, Advisor-Agent, Codex, Artificial Analysis Intelligence Index, Modell-Eskalation]
+    neben: [kontext]
+  2026-07-27-techfeed5-1-reason-why-the-cloud-limits-could-hit-directly-that-we-talk-to-opus-in:
+    haupt: modelle-kosten
+    kernaussage: Der Token-Verbrauch hängt von der Sprache ab und Deutsch verbraucht bei Claude Opus laut Clip deutlich mehr als Englisch, allerdings ohne belegte Quelle und Methode.
+    keywords: [Tokenizer, Token-Verbrauch nach Sprache, Deutsch vs. Englisch Prompts, Claude Opus Limits, Usage Limits, Token-Kosten, Prompt-Sprache]
+    neben: [rolle-markt]
+  2026-07-28-pdf-state-of-open-source-ai-v1-0-1:
+    haupt: rolle-markt
+    kernaussage: Offene Modelle liegen nur etwa einen Release-Zyklus hinter der Frontier, und Benchmark-Ergebnisse hängen stark vom Harness, nicht nur vom Modell ab.
+    keywords: [State of Open Source AI, Open-Weight-Modelle, Kimi K3, GLM 5.2, Agent Harness, Terminal-Bench, Artificial Analysis Intelligence Index, Metered Pricing]
+    neben: [modelle-kosten]
+  2026-07-30-floknowsai-ki-gibt-dir-das-gefuehl-dass-du-so-schnell-wie-noch-nie-arbeitest:
+    haupt: kontext
+    kernaussage: Erfahrene Entwickler fühlen sich mit KI schneller, messen aber langsamer, und falscher Kontext schadet mehr als gar keiner, weshalb Pflege wichtiger ist als Sammeln.
+    keywords: [METR Studie, Produktivität mit KI, gefühlte Geschwindigkeit, Kontextqualität, falscher Kontext, CLAUDE.md, Claude Code Skills, Connectors]
+    neben: [agent-dateien]
+  2026-07-30-julian-ivanov-interaktive-schulungen-mit-claude-code:
+    haupt: skills
+    kernaussage: Ein Skill kann Briefing, Curriculum-Freigabe und Medienproduktion zu einem wiederholbaren Kurs-Workflow verbinden, wobei ein menschliches Review-Gate teure Fehlproduktion verhindert.
+    keywords: [Interaktive Schulung, Claude Code Skill, Curriculum-Gate, Higgsfield MCP, HyperFrames, HTML-Kurs, KI-Video-Generierung, Human-in-the-Loop]
+    neben: [planung]
+  2026-08-02-promptgefluester-wenn-ihr-versucht-euer-software-projekt-mit-fable-five-oder-o-plus-5:
+    haupt: verifikation
+    kernaussage: Vor einem KI-Refactoring deterministische statische Analyse laufen lassen, toten Code entfernen und Architekturregeln festlegen, statt das Modell Abhängigkeiten selbst abgleichen zu lassen.
+    keywords: [KI-Refactoring, statische Code-Analyse, toter Code, Legacy-Code, deterministische Prüfer, MVC-Architektur, Vibe-Coded Projekt, Refactoring-Prompt]
+    neben: [autonomie]
+  2026-08-03-floknowsai-die-preise-fuer-ki-fallen-wirklich-und-trotzdem-ist-dein-limit-genauso:
+    haupt: modelle-kosten
+    kernaussage: Trotz fallender Preise für festes Können bleibt das Limit gleich schnell leer, weil Kontextlänge, Denkstufe, Tokenizer, Subagents und Langläufer den Verbrauch pro Aufgabe erhöhen.
+    keywords: [Usage Limits, Token-Preise, Opus Preis, Tokenizer, Subagent-Kosten, 1M Kontext, Thinking-Tokens, GPT-5.6 Luna]
+    neben: [kontext]
+  2026-08-03-steffen_hauptmann-die-meisten-lassen-sich-ein-handover-erst-schreiben-wenn-das:
+    haupt: kontext
+    kernaussage: Eine fortlaufend gepflegte Zustandsdatei macht den Handover schon vor vollem Context Window verfügbar, kostet aber laufend Tokens und kann bei falschem Stand irreführen.
+    keywords: [STATE.md, Handover, Context Window, Session-Handoff, Claude Code /clear, Learnings zu Regeln, Solo-Entwicklung, Zustandsdatei]
+    neben: []
+  2026-08-04-anthropic-docs-claude-code-best-practices:
+    haupt: verifikation
+    kernaussage: Anthropic empfiehlt Verifikation als vierstufige Eskalation vom Prompt über Goal-Evaluator und Stop-Hook bis zur zweiten Meinung durch ein frisches Modell, ergänzt um Plan-first und Session-Hygiene.
+    keywords: [Claude Code Best Practices, Stop-Hook, /goal, Auto Mode, Agent Teams, Explore Plan Implement Commit, /btw, Verifikations-Subagent]
+    neben: [agent-dateien]
+  2026-08-05-creatoreconomy-use-my-human-review-skill-to-edit-html-and-markd:
+    haupt: verifikation
+    kernaussage: Feedback direkt an der Stelle in der Datei ist präziser als Chat-Anweisungen und verhindert, dass ungeprüfte Agent-Edits Slop ins Projekt tragen.
+    keywords: [human-review Skill, Visual Editor, Human-in-the-Loop, Markdown-Review, HTML-Review, Kommentare am Dokument, AI Slop, Claude Code Skills]
+    neben: [skills]
+  2026-08-05-floknowsai-dein-vibe-coding-projekt-bricht-nicht-am-coding-agent-zusammen-sondern:
+    haupt: planung
+    kernaussage: Vibe-Coding-Projekte scheitern am fehlenden Fundament aus Architektur, Datenfluss und Fehlerfällen, nicht am Agenten, und Rules allein setzen Qualität nicht durch.
+    keywords: [Vibe Coding, MVP vs. Produktion, Fundament vor Code, statische Code-Analyse, Rules in Coding Agents, DSGVO, Architektur-Entscheidungen, Fehlerfälle]
+    neben: [verifikation]
+  2026-08-09-natebjones-decision-exhaustion-is-real-discuss:
+    haupt: rolle-markt
+    kernaussage: Wenn KI die Ausführung übernimmt, bleiben nur schwere Entscheidungen beim Menschen, was Erholung erfordert und bei vielen parallelen Agents zum Engpass wird.
+    keywords: [Decision Fatigue, Entscheidungsermüdung, KI und Arbeitszeit, Review-Last, parallele Agents, Rolle des Menschen, Trade-offs, 40-Stunden-Woche]
+    neben: [autonomie]
+  2026-08-12-voxyz_ai-2087579867139264681:
+    haupt: autonomie
+    kernaussage: Ungenutztes Agent-Kontingent lässt sich über einen reinen Kandidatenbericht verplanen, wenn nur umkehrbare Aufgaben mit Prüfbefehl in isolierten Branches zugelassen sind.
+    keywords: [Overnight Agents, Agent-Kontingent nutzen, Triage-Prompt, Git Worktree, Prüfbefehl, Handoff-Notizen, Nachtläufe, Usage Limits]
+    neben: [kontext]
+  2026-08-14-agenticjames-ai-memory-is-trash-heres-some-solutions:
+    haupt: kontext
+    kernaussage: 'Agent Memory ist nicht ein Problem, sondern vier: Ablage, Turn-Erinnerung, multimodale Suche und Abrufzeitpunkt, wobei Pull durch den Agenten und Push per Hook Kosten und Nutzen tauschen.'
+    keywords: [Agent Memory, Knowledge Graph, Graphify, Vektordatenbank, Semantische Suche, Multimodale Embeddings, Claude Code Hooks, Kontext-Injektion]
+    neben: [skills]
+  2026-08-14-claude-maximizing-the-value-of-your-claude-code-session:
+    haupt: modelle-kosten
+    kernaussage: Tool-Outputs bleiben in jedem Folgeturn im Kontext, und Modell- oder Effort-Wechsel sowie Compact entwerten den Prompt Cache, daher Sitzungen aufgabenweise mit /clear führen.
+    keywords: [Prompt Cache, Cache-Ablauf, Claude Code Kosten, /clear, /compact, Subagent Modell Haiku, Kontextgröße, Quiet-Flags]
+    neben: [kontext]
+  2026-08-14-floknowsai-ueber-achtzig-prozent-des-codes-von-claude-code-und-codex-sieht-kein:
+    haupt: verifikation
+    kernaussage: Ein Agent findet eigene Fehler seltener im selben Verlauf, weshalb eine frische Prüf-Session mit gleich starkem Modell und erzwungenen Status-Checks besser verifiziert.
+    keywords: [Agent Code Review, Pull Requests ohne Review, frische Review-Session, Selbstkontrolle von Agents, Branch Protection, Required Status Checks, TDD, Refactoring-Tests]
+    neben: []
+  2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo:
+    haupt: modelle-kosten
+    kernaussage: Speicherbedarf und Tempo lokaler Modelle lassen sich mit einfachen Faustformeln aus Parametern, Quantisierung und Speicherbandbreite vorab abschätzen; Kontext und KV-Cache fehlen dabei.
+    keywords: [Lokale LLMs, Speicherbedarf berechnen, Quantisierung Q4, Mixture of Experts, Tokens pro Sekunde, Speicherbandbreite, VRAM, RAG vs. Fine-Tuning, Qwen3-30B-A3B]
+    neben: []
+  2026-08-18-docker-2089789519788728379:
+    haupt: sicherheit
+    kernaussage: MicroVM-Isolation mit eigenem Kernel pro Sandbox gilt laut Docker inzwischen als empfohlener Standardpfad für Claude Code, ist aber nur als Herstellermeldung belegt.
+    keywords: [Docker Sandboxes, MicroVM-Isolation, Claude Code Sandbox, Agent Sandboxing, Isolierter Kernel, Docker-Daemon, Claude Code Docs]
+    neben: []
+  2026-08-18-floknowsai-hoer-auf-den-code-deines-ki-agenten-zu-lesen:
+    haupt: verifikation
+    kernaussage: 'Autor und Prüfer müssen getrennt sein: Mutation Testing prüft die Tests selbst, ein zweiter Agent mit frischem Kontext bewertet Code und Testqualität.'
+    keywords: [Mutation Testing, Code-Review durch Agents, Unit-Tests, Zweiter Agent, Frischer Kontext, Testqualität, Coding Agents, Uncle Bob]
+    neben: []
+  2026-08-19-matt-pocock-live-uncle-bob-on-software-fundamentals-in-the-a:
+    haupt: verifikation
+    kernaussage: Statt langer Regeltexte gehören deterministische Tools wie Mutation Testing und Komplexitätsmetriken in eine Agent-Schleife, weil Modelle lange Regeldokumente nur als Richtlinie behandeln.
+    keywords: [Mutation Testing, CRAP-Score, Code Coverage, Lost in the Middle, Deterministische Checks, Clean Code, TDD mit Agents, Regeldokumente, Coding Agents]
+    neben: [prompting]
+  2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk:
+    haupt: agent-dateien
+    kernaussage: Lint-Warnungen direkt im Tool-Ergebnis steuern Agents kostengünstig ohne Blockade; harte Durchsetzung braucht weiterhin ein separates CI-Gate.
+    keywords: [Open Knowledge Format, OKF, LLM Wiki, Markdown-Frontmatter, Linter für Agents, MCP-Server, Provenance, stale_after, CI-Gate, OpenKnowledge]
+    neben: [erweiterungen]
+  2026-08-21-promptgefluester-agent-plug-ins-das-ist-der-neue-standard-mit-dem-die-grossen-ai:
+    haupt: erweiterungen
+    kernaussage: Ein gemeinsames Plugin-Paketformat aus Manifest, Skills und MCP-Konfiguration würde Erweiterungen zwischen Coding Agents portierbar machen; der Standard ist bisher nur schwach belegt.
+    keywords: [Agent Plugins, plugin.json, Skills und MCP, Plugin-Standard, Claude Code Plugins, Codex, Cursor, Portabilität, mcp.json]
+    neben: [skills]
+  2026-08-21-promptgefluester-wie-macht-man-refactering-bei-einer-richtig-grossen-code-base-mit-aeh:
+    haupt: rolle-markt
+    kernaussage: 'Große Refactorings gelingen stufenweise: erst nur analysieren, leichte vor schweren Funden beheben und dabei Business-Logik dokumentieren, die später als Kontext dient.'
+    keywords: [Refactoring mit Claude Code, Große Codebase, Legacy-Code, Refactoring-Skill, Analyse vor Umbau, Business-Logik-Dokumentation, Kontextaufbau, Skill-Evals]
+    neben: [skills]
+  2026-08-25-vikingmute-2092059170812108811:
+    haupt: verifikation
+    kernaussage: Ein strenger Review-Skill sucht zuerst Vereinfachungen der Struktur statt Detailkritik, erzeugt aber bei Bestandscode schnell mehr Befunde, als sich abarbeiten lassen.
+    keywords: [Code-Review-Skill, Thermo-Nuclear Code Quality Review, Cursor, Strukturvereinfachung, Refactoring, Dateigröße 1000 Zeilen, PR-Review, Review-Schulden]
+    neben: [skills]
+  2026-08-30-alex-sprogis-loop-graph-engineering-das-letzte-video-was-du-s:
+    haupt: orchestrierung
+    kernaussage: Ein Agent-Loop braucht ein binäres Erfolgskriterium, ein Iterationslimit und einen unabhängigen Prüfer; große Aufträge laufen als Schritte mit frischem Kontext und Artefakt-Übergaben.
+    keywords: [Loop Engineering, Graph Engineering, Reward Hacking, Goal-based Loop, Claude Code /goal, /loop und /schedule, Context Rot, Dark Software Factory, Spec-driven Development, Akzeptanzkriterien]
+    neben: [verifikation]
+  2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re:
+    haupt: kontext
+    kernaussage: 'Weniger Anweisungen, mehr Absicht und messbares Abschlusskriterium: Kontext klein halten, Garantien in Hooks legen und das Setup bei jedem Modellwechsel ausdünnen.'
+    keywords: [Claude Code Best Practices, Opus 5, Fable 5, CLAUDE.md, Claude Code Hooks, Prompt Caching, /compact und /clear, Effort-Stufen, Auto Memory, Negativregeln]
+    neben: [prompting]
+  2026-09-04-pvncher-2095991462416490862:
+    haupt: prompting
+    kernaussage: 'Bei stärkeren Modellen werden angesammelte Skills und AGENTS.md-Regeln zum Ballast: Descriptions kurz und triggerbasiert halten, Pflichtlektüre und Rezepte streichen.'
+    keywords: [AGENTS.md, Skill Descriptions, Progressive Disclosure, GPT-6 Astra, Codex skill-creator, Trigger-Beschreibung, Modellwechsel, Überregulierung, Instruktions-Audit]
+    neben: [skills]
+  2026-09-07-sairahul1-2096902575035683147:
+    haupt: prompting
+    kernaussage: Alte Prompts, die Testen und Selbstprüfen erzwingen, schaden stärkeren Modellen; gesteuert werden sollten Autonomie, Prioritäten, Verifikationsumfang und prüfbare Stop-Bedingungen.
+    keywords: [GPT-6 Astra Prompting, AGENTS.md Audit, Stop-Kriterium, Verifikationsumfang, Subagent-Delegation, Reasoning-Effort, Prompt-Injection durch Tool-Ergebnisse, Skill-Beschreibungen]
+    neben: [orchestrierung]
+  2026-09-09-alex-sprogis-so-erstellst-du-interaktive-architektur-diagramm:
+    haupt: prototyping
+    kernaussage: Ein Skill kann Diagramme aus der Codebase erzeugen und sich per Screenshot selbst korrigieren; die Korrektheit der abgeleiteten Beziehungen bleibt ungeprüft.
+    keywords: [Archify, Architekturdiagramm, Diagramme aus Code, Interaktive HTML-Diagramme, Claude Code Skill, Datenfluss-Diagramm, Screenshot-Feedback, Spec-driven Workflow]
+    neben: [rolle-markt]
+  2026-09-09-voxyz_ai-2097814698204832116:
+    haupt: orchestrierung
+    kernaussage: Günstige Modelle explorieren, ein mittleres implementiert, das stärkste prüft nur bei Bedarf; Rollen gehören per Konfiguration statt Prosa festgelegt und in den Logs verifiziert.
+    keywords: [Codex Subagents, Agent Tree, GPT-6 Astra, GPT-6 Luna, GPT-6 Sol, model_reasoning_effort, Custom Agents, Modell-Routing pro Rolle, Kosten pro Task]
+    neben: [modelle-kosten]
+  2026-09-13-stefanantonelli-du-brauchst-keinen-entwickler-um-mit-ki-etwas-zu-bauen:
+    haupt: rolle-markt
+    kernaussage: Fachexpertise statt Programmierkenntnis erhöht laut Caption die Autonomie pro Anweisung, weil sie Ziel und Prüfkriterien liefert; die Studie selbst wurde nicht gelesen.
+    keywords: [Domänenwissen, Claude Code für Nicht-Entwickler, Vibe Coding, Anthropic Studie 400.000 Sessions, Erfolgsquote, Spezifikation als Engpass, KI im Mittelstand]
+    neben: []
+  2026-09-14-code-test-plugins-with-evals-claude-code-docs:
+    haupt: skills
+    kernaussage: Plugins und Skills lassen sich per Eval mit und ohne Plugin vergleichen; das Delta zeigt den Beitrag, ein negatives Delta verdächtigt zuerst den Judge.
+    keywords: [claude plugin eval, Plugin-Evals, Skill Evals, No-Plugin-Baseline, LLM-as-Judge, tool_used Grader, CI-Gate, Claude Code Plugins, Eval-Cases]
+    neben: [verifikation]
+  2026-09-14-developers-rethinking-skills-and-prompts-for-gpt-6-astra-op:
+    haupt: prompting
+    kernaussage: Anweisungen veralten modellabhängig und schaden bei stärkeren Modellen aktiv; Skills als Router mit engen Triggern und schlanke AGENTS.md sind der Ausweg.
+    keywords: [GPT-6 Astra, AGENTS.md, Skill Descriptions, Progressive Disclosure, Codex skill-creator, Prompt-Audit, Überregulierung, Modellwechsel, Router-Skill]
+    neben: [skills]
+  2026-09-17-agenticjames-i-think-code-mode-mcps-are-probably-the-best-way-to-give-agents-access:
+    haupt: erweiterungen
+    kernaussage: Ein einzelnes Skript-Tool vor vielen MCP-Servern macht Aufrufe komposierbar und filtert große Ausgaben, bevor sie das Context Window füllen; Sandbox und Gateway-Vertrauen kosten zusätzlich.
+    keywords: [Code Mode MCP, MCP-Gateway, Code Execution mit MCP, Tool-Token-Reduktion, executor, Docker MCP Gateway, Context Window, Tool-Komposition]
+    neben: [kontext]
+  2026-09-17-anthropic-how-claude-code-is-used-in-practice:
+    haupt: rolle-markt
+    kernaussage: Menschen treffen die Planungsentscheidungen, der Agent die Ausführung, und mehr Domänenwissen bringt längere autonome Ketten und höhere Erfolgsquoten; Steuerung verlagert sich auf Spezifikation
+      und Verifikation.
+    keywords: [Claude Code Nutzungsdaten, Domänenexpertise, Planung vs. Ausführung, Verified Success, Aktionen pro Prompt, Arbeitsmodi Fixing Building, Novice vs. Expert, Anthropic Studie]
+    neben: []
+  2026-09-18-akshay_pachaar-2101037514945597645:
+    haupt: modelle-kosten
+    kernaussage: 'Kleine Urteile in Agent-Schleifen brauchen kein generatives LLM: ein typisiertes, kalibriertes Entscheidungsmodell liefert Wahrscheinlichkeiten, Schwellen und Verzweigung bleiben im Code.'
+    keywords: [Jev TypeSafe AI, Entscheidungsmodell, Model Routing, Risiko-Gating vor Tool-Calls, Kalibrierte Konfidenz, Reranking, Shadow Mode, LangChain Middleware, Closed Weights]
+    neben: [sicherheit]
+  2026-09-19-voxyz_ai-2101295246659182978:
+    haupt: prototyping
+    kernaussage: 'Erst ein Referenzbild generieren, dann das Codemodell umsetzen lassen: Gestaltung und Implementierung werden getrennt, das Bild dient als Spezifikation.'
+    keywords: [Codex imagegen, Design-Referenzbild, Bild als Spezifikation, Frontend mit KI, Vibe-Coding-Design, GPT-6 Astra, Agent-Design-Workflow]
+    neben: []
+  2026-09-19-voxyz_ai-2101355643882065971:
+    haupt: prompting
+    kernaussage: Coding Agents führt man besser über Ergebnisverantwortung mit prüfbarem Endergebnis und Berichtspflicht als über Einzelschritte; der Reviewer läuft getrennt vom Implementierer.
+    keywords: [Rollen-Prompts, Tech Lead Prompt, Task Brief, Requirements Lead, Reviewer-Agent, Claude Code Prompts, Codex, Ergebnisverantwortung, Verifikation vor Abschluss]
+    neben: [orchestrierung]
+  2026-09-20-voxyz_ai-2101657631249031507:
+    haupt: prototyping
+    kernaussage: Vage Designwünsche durch benannte Operationen ersetzen, Komponentenbibliothek als Skill packen und die Seite per Agent im Browser real bedienen lassen liefert Reproduktionsschritte statt
+      Optik-Urteil.
+    keywords: [Design-Skills, Impeccable Skill, UX-Audit mit Agent, Komponentenbibliothek als Skill, Browser-Automation, Codex Skills, Frontend-Qualität, Hero und Pricing Section]
+    neben: [skills]
+  2026-09-21-voxyz_ai-2102050225443766571:
+    haupt: prototyping
+    kernaussage: Referenzquelle, Auswahlkriterien und Prüfschritt gehören einmal in den Skill statt in jeden Auftrag; ein Audit-Skill klickt Flows als Erstnutzer durch.
+    keywords: [Design-Reference-Skill, Komponentenbibliothek, UX-Audit-Skill, Codex Skills, Browser-Test, Mobile-Viewport, Skill-Vorlage, Erstnutzer-Test]
+    neben: [skills]
+  2026-09-22-artificialanlys-2102438210798514391:
+    haupt: modelle-kosten
+    kernaussage: Opus 5.5 führt den Intelligence Index bei niedrigerem Listenpreis, verbraucht aber mehr Tokens; maßgeblich sind Kosten pro Task, nicht der Preis pro Million Token.
+    keywords: [Claude Opus 5.5, Artificial Analysis Intelligence Index, Modellpreise, Prompt Caching Preise, Cache Reads, Kosten pro Task, Pareto-Front, Opus 5.5 vs. GPT-6 Astra, Terminal-Bench 4.0]
+    neben: []
+  2026-09-22-artificialanlys-2102462962758033624:
+    haupt: modelle-kosten
+    kernaussage: GPT-6 Sol und Luna halbieren die Kosten bei etwa gleichem Score wie GPT-5.6; die bessere Halluzinationsrate stammt überwiegend aus mehr Verweigerung.
+    keywords: [GPT-6 Sol, GPT-6 Luna, Coding Agent Index, Codex Harness, Modellpreise, Kosten pro Task, Halluzinationsrate, AA-Omniscience, Terminal-Bench 4.0]
+    neben: []
+  2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c:
+    haupt: prompting
+    kernaussage: Bei Opus 5.5 helfen ein klares Ziel, eine einzige Stopp-Bedingung und eine Task-Datei, die Kontext-Zusammenfassungen überlebt; weniger Stopps brauchen Gates.
+    keywords: [Claude Opus 5.5, Stop-Bedingungen, Definition of Done, TASKS.md, Lange autonome Läufe, Subagents für Audits, CLAUDE.md-Regeln, Permission Prompts, Migration mit Claude Code]
+    neben: [orchestrierung]
+  2026-09-23-artificialanlys-2102833926788288704:
+    haupt: modelle-kosten
+    kernaussage: Mehrere Effort-Stufen desselben Modells liegen als getrennte Punkte auf der Pareto-Front; die Effort-Wahl ist damit ein eigener Kostenhebel.
+    keywords: [Pareto-Front, Intelligence vs. Cost per Task, Reasoning-Effort, MiMo-V2.6-Pro, GPT-6 Luna, Opus 5.5, Modellwahl, Artificial Analysis]
+    neben: []
+  2026-09-24-ai-engineer-matt-pocock-fixing-the-pr-bottleneck:
+    haupt: verifikation
+    kernaussage: 'Mehr Agent-Output verschärft den Review-Flaschenhals: deterministische Checks, ein separater Review-Agent mit Commits und risikobasiertes Human Review bremsen ihn in drei Stufen.'
+    keywords: [PR-Engpass, Code-Review mit Agents, Review-Subagent, coding-standards.md, Tautologische Tests, One-Way-Door, Blast Radius, Red-Green-Refactor, /retro, Tiefe Module]
+    neben: [rolle-markt]
+  2026-09-24-artificialanlys-2102932119995756613:
+    haupt: modelle-kosten
+    kernaussage: Opus 5.5 in Claude Code führt den Coding Agent Index, kostet aber pro Task 21 Prozent mehr, weil der Tokenverbrauch die Preissenkung überkompensiert.
+    keywords: [Coding Agent Index, Claude Code Opus 5.5, Kosten pro Task, Tokenverbrauch, Terminal-Bench 4.0, DeepSWE, Pareto-Front, Codex GPT-6 Sol, Coding Agent Benchmark]
+    neben: []
+  2026-09-25-trq212-2103576349499855160:
+    haupt: modelle-kosten
+    kernaussage: Effort kauft Verifikationstiefe und übersehene Randfälle, keinen besseren Ansatz; ein stärkeres Modell auf High kann ein schwächeres auf Max bei halben Tokens einholen.
+    keywords: [Claude Code /effort, Effort-Stufen, Terminal-Bench 3.0, Opus 5.5, Fable 5.1, Verifikationstiefe, Edge Cases, Interview-Spec, Token pro Versuch]
+    neben: [verifikation]
+  2026-09-26-voxyz_ai-2103977414711767244:
+    haupt: orchestrierung
+    kernaussage: Ein read-only Subagent pro Prüfgruppe erstellt Befunde, der Hauptagent behebt sie nach Freigabe allein, damit nie zwei Agents dieselbe Datei editieren.
+    keywords: [Pre-Launch-Check, Vibe-Coding-Site, Claude Code Subagents, DESIGN.md, Launch-Checkliste, UI-Zustände, Mobile-Test, Read-only Subagent, Opus 5.5]
+    neben: [prototyping]
+  2026-09-27-anthropic-academy-sdlc-playbook:
+    haupt: rolle-markt
+    kernaussage: Jede SDLC-Phase endet mit einem committeten Artefakt; beratende Ebenen wie Skills brauchen erzwingende wie Hooks, und der schreibende Agent genehmigt sich nie selbst.
+    keywords: [AI-native SDLC, Anthropic Academy, intent.md, spec.md, Claude Code Hooks, Managed Settings, Plan-Modus, Evals in CI, REVIEW.md, Agent-Autonomie nach Umgebung]
+    neben: [sicherheit]

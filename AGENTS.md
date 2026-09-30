@@ -107,6 +107,7 @@ Wissen über KI-Arbeitsweisen (Skills, Agent-Workflows, Frameworks) lebt unter `
 - Rohquellen liegen automatisch nach Typ unter `00_Inbox/Quellen/{X,TikTok,YouTube,URL,PDF}/`; Medien jeweils im typgleichen Unterordner `medien/<slug>/`.
 - TikTok- und YouTube-Untertitel sind automatisch erzeugt und können ähnlich klingende Wörter falsch wiedergeben; kritische Aussagen und Zitate gegen das Video prüfen.
 - Bereits erfasste Quellen aus diesen Typordnern (`status: neu`) über den Skill `quellen-verarbeiten` einarbeiten. Bei Batch-Läufen gilt zusätzlich der Abschnitt „Subagents und Token-Ökonomie“; der Auftragstext dafür ist `30_Skills/local/quellen-verarbeiten/references/batch-auftrag.md`.
+- Jede neue Source und jedes neue Pattern bekommt einen Themencluster (`python 70_Scripts/themen.py zuordnen <datei> --uebernehmen`, danach `themen.py index`). Das Script schlägt Cluster, Keywords und verwandte Notizen vor; Details in den Skills `knowledge-ingest` und `quellen-verarbeiten`. Für Blog-Beiträge liefert `python 70_Scripts/themen.py blog <Thema>` das Briefing mit Keywords und offenen Quellen.
 - Pflege-Lauf über den Skill `knowledge-review`, u.a. im Wochenreview.
 - In `80_Knowledge/Patterns/` wird nie gelöscht, nur datiert ergänzt; Widersprüche werden als Spannungen festgehalten.
 - Patterns wachsen dadurch append-only. Wer Belege ergänzt, liest deshalb gezielt (Anker `## Spannungen`) statt die ganze Datei.

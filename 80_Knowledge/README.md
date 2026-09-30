@@ -8,6 +8,7 @@ Wissensbasis über KI-Arbeitsweisen (Coding Agents, Skills, Agent-Workflows, Fra
 - `Sources/` — redaktionelle deutsche Aufarbeitung je Quelle: `YYYY-MM-DD-<autor>-<slug>.md` (Datum = Original-Veröffentlichung). Seit 2026-08-04 wird hier **nicht mehr der Originaltext** abgelegt — der liegt in `00_Inbox/Quellen/` und wird per Frontmatter-Feld `rohquelle:` verlinkt. Aufbau- und Sprachregeln: `30_Skills/local/quellen-verarbeiten/references/artikel-format.md`.
 - `Patterns/` — lebende Synthese-Notizen, eine pro Arbeitsweise.
 - `Vergleiche/` — Verdichtung mehrerer Patterns/Frameworks zu Empfehlungen, eine Datei pro Themenfeld.
+- `Themen/` — thematische Verknüpfung quer zu Sources und Patterns: `themen.yaml` (Taxonomie mit Keywords), `zuordnung.yaml` (Haupt-/Nebencluster und Keywords je Notiz), erzeugte Hub-Notizen `Thema-*.md`, `Themen-Übersicht.md` und `Keyword-Register.md`. Gepflegt mit `python 70_Scripts/themen.py`. Die Notizen selbst bleiben dafür unverändert.
 - `Index.md` — Einstieg: alle Patterns und Vergleiche mit Einzeilern.
 
 ## Invarianten

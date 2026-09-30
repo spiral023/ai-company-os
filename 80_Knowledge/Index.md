@@ -47,6 +47,10 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Screenshot-als-Spezifikationsmedium]] — Bild statt Prosa als Kontext für UI-Analyse, Fehlerdiagnose und Design-zu-Code-Generierung.
 - [[Metrikband-gestufte-Agent-Autonomie]] — Rechte des Agents wachsen mit der Schwere einer Metrik-Abweichung (1σ loggen, 2σ read-only, 3σ PR); Erkennung deterministisch ohne Modell.
 
+## Themen
+
+Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 15 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand.
+
 ## Guides
 
 - [[Matt-Pocock-Skills-Praxisguide]] — Praxisanleitung für Skill-Auswahl, Wayfinder und den Coding-Lifecycle von Exploration bis Code Review.

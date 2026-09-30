@@ -76,6 +76,16 @@ Setzt in den Inbox-Notizen `status: verarbeitet` (mit `source_notiz`) oder `igno
 
 **Das Script bricht ab, wenn ein genannter Report nicht existiert.** Nach dem Übernehmen immer Erwartung und Ist abgleichen: Anzahl Reports gegenüber `erwartet.txt`, dann `python 70_Scripts/quellen_pipeline.py check`. Ein `seq -w 1 8` ohne führende Nullen hat einmal acht Reports still übersprungen.
 
+### 5b. Themen zuordnen
+
+```powershell
+python 70_Scripts/themen.py zuordnen --neu
+python 70_Scripts/themen.py zuordnen --neu --uebernehmen
+python 70_Scripts/themen.py index
+```
+
+Ordnet jede neue Source (und jedes neue Pattern) per Textscoring einem Haupt-Cluster zu und übernimmt die Keywords aus den Treffern. Der erste Aufruf zeigt nur Vorschläge: Einträge mit „Kein Cluster über der Schwelle“ und Quellen mit auffällig ähnlichem Bestand (Ähnlichkeit ab etwa 0,2) prüfen. Grenzfälle einzeln mit `--haupt`, `--neben`, `--kw` nachziehen. Automatisch erzeugte Keywords sind generisch; bei VOLL-Quellen die Suchbegriffe von Hand schärfen. Subagents fassen `zuordnung.yaml` nicht an (Schreibkonflikte), das macht der Hauptagent.
+
 ### 6. Fakten fortschreiben
 
 ```powershell
@@ -99,6 +109,7 @@ Das kann kein Script:
 python 70_Scripts/fix_typography.py <nur die in diesem Lauf berührten Dateien>
 python 70_Scripts/validate_knowledge.py
 python 70_Scripts/quellen_pipeline.py check
+python 70_Scripts/themen.py check
 ```
 
 Der Validator hat vorbestehende Fehler in Altdateien. Maßstab: **Zahl vor und nach dem Lauf** vergleichen; jeder Fehler in einer im Lauf geschriebenen Datei muss behoben werden. Nie „grün“ melden, wenn er es nicht ist, sondern „keine neuen Fehler, N vorbestehende unverändert“. Sinkt die Zahl, kann `fix_typography.py` in einer ohnehin bearbeiteten Datei Altfehler mitkorrigiert haben; das benennen.
@@ -151,5 +162,6 @@ Tokens: Triage 80k, Verarbeitung 850k (21k je Quelle)
 → Vorschlag: <Workflow/Skill> anpassen, weil <Grund> (nicht ausgeführt)
 ? Offene Frage: <Frage> → 00_Inbox/Fragen_an_Philipp.md
 Abgleich: 40 von 40 Reports übernommen, check konsistent
+Themen: 40 Quellen zugeordnet (3 mit Nebencluster), Hub-Notizen aktualisiert
 Validator: keine neuen Fehler (56 vorbestehende unverändert)
 ```

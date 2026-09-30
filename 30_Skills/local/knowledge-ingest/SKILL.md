@@ -31,9 +31,16 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`. 
    - Kein passendes Pattern → neue Pattern-Notiz nach Template anlegen. Schwelle: Das Konzept ist benennbar und über die konkrete Quelle hinaus wiederverwendbar.
    - Aussage widerspricht Bestandswissen → im betroffenen Pattern unter „Spannungen & offene Fragen“ als Trade-off festhalten, mit beiden Quellen.
 6. **Repo-Verifikation.** Erwähnt die Quelle ein Repo, das unter `external_repos/` liegt (siehe `external_repos/INDEX.md`): zentrale Behauptungen dort stichprobenartig nachprüfen (Dateien/Struktur ansehen). Für bestätigte Aussagen eine neue Beleg-Zeile mit Repo-Pfad ergänzen (`YYYY-MM-DD · external_repos/<owner>/<repo>/<pfad> · verifiziert — …`); bestehende Beleg-Zeilen nie ändern. Abweichungen als Spannung notieren. Liegt das Repo nicht vor: Download gemäß `AGENTS.md` → „Repo-Import“ vorschlagen, aber nicht eigenmächtig klonen.
-7. **Vergleiche & Index aktualisieren.** Betroffene Notizen in `80_Knowledge/Vergleiche/` aktualisieren (Stand-Datum setzen); neue Patterns und Vergleiche in `80_Knowledge/Index.md` mit Einzeiler eintragen.
-8. **Validator ausführen.** `python 70_Scripts/validate_knowledge.py` — jeden gemeldeten Fehler beheben und erneut ausführen. Erfolg nie melden, bevor der Validator fehlerfrei durchläuft.
-9. **Diff-Resümee ausgeben** (siehe Ausgabeformat).
+7. **Themen zuordnen.** `python 70_Scripts/themen.py zuordnen <source-datei>` zeigt Cluster-Vorschlag, Keywords, verwandte Sources und Patterns (TF-IDF). Die Ausgabe nutzen, statt die Verknüpfung zu raten:
+   - Sehr ähnliche Source (Ähnlichkeit ab etwa 0,2) → wahrscheinlich Dublette oder Zweitfassung derselben Quelle: Duplikat-Check aus Schritt 2 wiederholen und das Pattern des Treffers als ersten Kandidaten in Schritt 5 prüfen.
+   - Verwandte Patterns, die in Schritt 5 nicht vorkamen, kurz gegenprüfen: passt die Aussage dort als Beleg oder als Spannung?
+   - Cluster und Keywords prüfen und übernehmen: `python 70_Scripts/themen.py zuordnen <source-datei> --uebernehmen [--haupt ID --neben ID --kw "Begriff 1;Begriff 2"]`. Keywords von Hand nachschärfen: Fachbegriffe im Original, wie ein Leser sie googeln würde (siehe `80_Knowledge/Themen/themen.yaml`, Feld `blog`).
+   - Meldet das Script „Kein Cluster über der Schwelle“, ist das ein neues Thema oder eine Taxonomie-Lücke: als Frage nach `00_Inbox/Fragen_an_Philipp.md`, die Taxonomie nicht eigenmächtig erweitern.
+   - Neue Patterns ebenfalls zuordnen (`themen.py zuordnen <pattern-datei> --uebernehmen`, danach `synonyme` in `zuordnung.yaml` ergänzen).
+   - Danach `python 70_Scripts/themen.py index`, damit Hub-Notizen und Keyword-Register aktuell sind.
+8. **Vergleiche & Index aktualisieren.** Betroffene Notizen in `80_Knowledge/Vergleiche/` aktualisieren (Stand-Datum setzen); neue Patterns und Vergleiche in `80_Knowledge/Index.md` mit Einzeiler eintragen.
+9. **Validator ausführen.** `python 70_Scripts/validate_knowledge.py` und `python 70_Scripts/themen.py check` — jeden gemeldeten Fehler beheben und erneut ausführen. Erfolg nie melden, bevor beide fehlerfrei durchlaufen (vorbestehende Validator-Fehler benennen).
+10. **Diff-Resümee ausgeben** (siehe Ausgabeformat).
 
 ## Grenzfälle
 
@@ -52,6 +59,7 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`. 
 - Widersprüche glätten, statt sie als Spannung sichtbar zu machen.
 - Bestehende Beleg-Zeilen umschreiben, statt neue Zeilen zu ergänzen.
 - Erfolg melden, bevor der Validator fehlerfrei durchgelaufen ist.
+- Die Themenzuordnung überspringen oder das Script-Ergebnis ungeprüft übernehmen: falsche Cluster und generische Keywords („kontext“, „token“) verwässern später die Blog-Briefings.
 
 ## Ausgabeformat (Diff-Resümee)
 
@@ -59,5 +67,6 @@ Templates, Invarianten und Konfidenz-Modell stehen in `80_Knowledge/README.md`. 
 - ✓ Pattern ergänzt: `<Name>` (+n Belege, Konfidenz: <alt> → <neu>)
 - ✓ Pattern NEU: `<Name>`
 - ✓ Vergleich aktualisiert: `<Name>`
+- ✓ Thema zugeordnet: `<Cluster>` (+ Nebencluster), verwandte Sources: `<Slug>`, …
 - ⚠ Spannung: <Ein-Satz-Beschreibung> → notiert in `<Pattern>`
 - ? Offene Frage: <Frage> → `00_Inbox/Fragen_an_Philipp.md`

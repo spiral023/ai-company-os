@@ -71,13 +71,14 @@ Beim Schreiben vermeiden, beim Prüfen als Detect-Durchgang suchen. Quelle: `ext
 ## Ablauf
 
 1. Auftrag klären: Format, Thema oder Zeitraum. Bei „was gibt es Neues“: Sources mit `datum:` im Zeitraum und `zeitkritisch: ja` sowie neue Zeilen im Fakten-Register sichten.
-2. Rohstoff lesen: `80_Knowledge/Index.md` für Patterns, dann gezielt die passenden Notizen. Bei Patterns die **Belege** und **Spannungen** lesen, nicht nur den Zweck.
-3. Zahlen gegen die Source-Notiz prüfen (nicht aus dem Gedächtnis). Widersprüche zwischen Quellen im Text nennen.
-4. Beitrag schreiben nach `blog/posts/YYYY-MM-DD-<slug>.md` mit dem Frontmatter aus `blog/README.md`. Das Datum ist das Tagesdatum (oder das gewünschte Veröffentlichungsdatum).
-5. Prüfen: `python blog/build_blog.py --check`. Hinweise (Zahl ohne Beleg, Beleg-Meta) beheben, sonst wird der Entwurf nicht automatisch freigegeben. Dann `--drafts` und die Vorschau ansehen.
-6. Slop-Durchgang (Detect): den Entwurf einmal komplett gegen „Slop-Muster“ lesen. Jeden Fund mit zitierter Zeile notieren und selbst beheben, ohne Zahlen, `{q:n}`-Marker oder Aussagen zu ändern. Danach Schritt 5 wiederholen.
-7. Freigabe: `python blog/build_blog.py --auto-freigeben`. Der Beitrag erscheint frühestens am Folgetag.
-8. Bericht an Philipp: Titel, Format, Länge, verwendete Quellen, freigegebene und liegen gebliebene Entwürfe mit Grund.
+2. Thema und Keywords klären: `python 70_Scripts/themen.py blog "<Cluster-ID oder Hauptkeyword>"` liefert Patterns mit Belegzahl und Spannungen (Duell-Stoff), alle Quellen des Themas mit Kernaussage, welche davon schon in einem Beitrag stehen, bestehende Beiträge zum Thema (interne Verweise per `post:`) und die Suchbegriffe. Das Hauptkeyword gehört in Titel und `zusammenfassung`, ein bis zwei Long-Tail-Begriffe in Zwischenüberschriften und den Einstieg; Keywords nie in den Text stopfen, das ist Slop. Bei Quellen mit „· offen“ zuerst schauen, ob sie den Beitrag schärfen. Passt das Thema in keinen Cluster: `python 70_Scripts/themen.py blog "<Suchbegriff>"` zeigt Notizen mit passendem Keyword.
+3. Rohstoff lesen: `80_Knowledge/Index.md` für Patterns, dann gezielt die passenden Notizen. Bei Patterns die **Belege** und **Spannungen** lesen, nicht nur den Zweck.
+4. Zahlen gegen die Source-Notiz prüfen (nicht aus dem Gedächtnis). Widersprüche zwischen Quellen im Text nennen.
+5. Beitrag schreiben nach `blog/posts/YYYY-MM-DD-<slug>.md` mit dem Frontmatter aus `blog/README.md`. Das Datum ist das Tagesdatum (oder das gewünschte Veröffentlichungsdatum).
+6. Prüfen: `python blog/build_blog.py --check`. Hinweise (Zahl ohne Beleg, Beleg-Meta) beheben, sonst wird der Entwurf nicht automatisch freigegeben. Dann `--drafts` und die Vorschau ansehen.
+7. Slop-Durchgang (Detect): den Entwurf einmal komplett gegen „Slop-Muster“ lesen. Jeden Fund mit zitierter Zeile notieren und selbst beheben, ohne Zahlen, `{q:n}`-Marker oder Aussagen zu ändern. Danach Schritt 6 wiederholen.
+8. Freigabe: `python blog/build_blog.py --auto-freigeben`. Der Beitrag erscheint frühestens am Folgetag.
+9. Bericht an Philipp: Titel, Format, Länge, verwendete Quellen, freigegebene und liegen gebliebene Entwürfe mit Grund.
 
 ## Häufige Fehler
 

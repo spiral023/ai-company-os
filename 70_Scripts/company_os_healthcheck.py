@@ -46,6 +46,7 @@ def main(argv: list[str] | None = None) -> int:
         ("Registry Check", [sys.executable, "70_Scripts/skill_registry_check.py"]),
         ("Skill Autoreview", [sys.executable, "70_Scripts/skill_autoreview.py"]),
         ("External Skill Review", [sys.executable, "70_Scripts/external_skill_review.py"]),
+        ("Themen-Zuordnung", [sys.executable, "70_Scripts/themen.py", "check"]),
         ("Project Kit List", [sys.executable, "70_Scripts/create_project_kit.py", "--list"]),
         ("Install Project Skills List", [sys.executable, "70_Scripts/install_project_skills.py", "--list"]),
     ]
