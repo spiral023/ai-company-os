@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), known unknowns (2), change quiz (2), skill descriptions (2), codex skill-creator (2), modellwechsel (2), gpt-6 astra (2), agents.md (2), progressive disclosure (2), überregulierung (2), risikoanalyse, spec grilling, sycophancy, prompt-tricks, ai agent zustimmungsneigung, projektplanung mit ai, pre-mortem prompt, frühwarnsignale, blind spot pass, spec-driven development
+- **Häufig in den Quellen:** prompt engineering (3), known unknowns (2), change quiz (2), codex skill-creator (2), modellwechsel (2), gpt-6 astra (2), skill descriptions (2), agents.md (2), überregulierung (2), progressive disclosure (2), sycophancy, pre-mortem prompt, projektplanung mit ai, prompt-tricks, frühwarnsignale, ai agent zustimmungsneigung, spec grilling, risikoanalyse, spec-driven development, implementation plan
 
 ## Verwandte Themen
 

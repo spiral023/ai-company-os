@@ -9,7 +9,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - **Hauptkeyword:** Ralph Loop
 - **Long-Tail:** Ralph Loop einrichten; Claude Code Headless CI; Claude Code über Nacht; Autonomiestufen Coding Agent; Claude Code GitHub Action; Loop Engineering
 - **Fragen:** Kann ich einen Agent über Nacht laufen lassen? / Wie viel Autonomie ist sicher?
-- **Häufig in den Quellen:** ralph loop (5), steering.md (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), overnight agents (2), extended thinking, unix-pipe, @-referenzen, plan mode headless, claude code common workflows, --output-format json, claude -p, ci agent, @claude merge request, aws bedrock, oidc, review gate, google vertex ai
+- **Häufig in den Quellen:** ralph loop (5), steering.md (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), overnight agents (2), --output-format json, claude -p, extended thinking, @-referenzen, unix-pipe, plan mode headless, claude code common workflows, oidc, google vertex ai, review gate, claude code gitlab ci/cd, aws bedrock, @claude merge request
 
 ## Verwandte Themen
 

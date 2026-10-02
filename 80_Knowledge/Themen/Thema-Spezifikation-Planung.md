@@ -9,7 +9,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - **Hauptkeyword:** Spec-Driven Development
 - **Long-Tail:** Plan Mode Claude Code; Spec-First Development; Grill Me Skill; Plan vor Code; Spec Ordner pro Feature; Plan Annotation Workflow
 - **Fragen:** Lohnt sich Plan Mode? / Wie schreibe ich eine Spec für einen Coding Agent?
-- **Häufig in den Quellen:** spec-driven development (6), plan mode (4), vibe coding (3), session-kontinuität (2), handoff-dokument (2), design.md (2), claude code workflow (2), self-verification (2), plan.md (2), single-model-blindheit (2), wayfinder (2), matt pocock skills (2), decision log, layered claude.md, cookbooks als tests, spec-first development, planning-with-files, progress.md, externer speicher, task_plan.md
+- **Häufig in den Quellen:** spec-driven development (6), plan mode (4), vibe coding (3), session-kontinuität (2), design.md (2), handoff-dokument (2), claude code workflow (2), self-verification (2), single-model-blindheit (2), plan.md (2), to-tickets (2), to-spec (2), wayfinder (2), matt pocock skills (2), layered claude.md, cookbooks als tests, spec-first development, decision log, agent drift, task_plan.md
 
 ## Verwandte Themen
 
@@ -20,7 +20,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 
 ## Patterns (5)
 
-- [[CONTEXT-Glossar]] · verifiziert · 3 Belege
+- [[CONTEXT-Glossar]] · verifiziert · 4 Belege
 - [[Plan-first-mit-getrenntem-Review]] · verifiziert · 37 Belege
 - [[Spec-Grilling]] · verifiziert · 14 Belege
 - [[Spec-Ordner-pro-Feature]] · meinung · 2 Belege
@@ -28,8 +28,9 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-generierte-Schulung-mit-Curriculum-Gate]], [[Blockierende-Task-Abhaengigkeiten]], [[Fable-Unknowns-vor-Prompt-Qualitaet]], [[Handoff-Doc]], [[Intent-Engineering-als-dritte-Schicht]], [[Lovable-Prototyp-dann-lokaler-Handoff]], [[Screenshot-als-Spezifikationsmedium]], [[Voice-Prompting-fuer-Kontextreichtum]]
 
-## Quellen (10)
+## Quellen (11)
 
+- [[2026-10-02-repo-mattpocock-skills]] — Im Klon von mattpocock/skills (Stand Commit `d81f3a18`) liegen `implement-spec`, `pr` und `retro` unter `skills/engineering/`.
 - [[2026-08-05-floknowsai-dein-vibe-coding-projekt-bricht-nicht-am-coding-agent-zusammen-sondern]] — Vibe-Coding-Projekte scheitern am fehlenden Fundament aus Architektur, Datenfluss und Fehlerfällen, nicht am Agenten, und Rules allein setzen Qualität nicht durch.
 - [[2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt]] — Eine ausführliche Spezifikation mit verweisenden Task-Listen und mehrfacher Agent-Prüfung des Plans ist billiger als spätes Nachbessern, verursacht aber eigene Pflegekosten.
 - [[2026-04-17-wiki-compiler-praktische-claude-code-workflows]] — Ein Fünf-Schritte-Workflow mit Plan als Datei und getrenntem Review trennt Erstellung von Prüfung und schützt vor Blindheit des einzelnen Modells.

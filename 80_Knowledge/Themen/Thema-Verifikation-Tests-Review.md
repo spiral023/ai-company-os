@@ -9,7 +9,7 @@ Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statis
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug?
-- **Häufig in den Quellen:** llm-as-judge (3), git worktrees (2), red green refactor (2), ai slop (2), statische code-analyse (2), auto mode (2), mutation testing (2), coding agents (2), hillclimbing (2), overfitting (2), reward hacking (2), long-running agents (2), verifier (2), context rot (2), subagents (2), effort (2), monorepo, vibe reviewing, testcontainers, mcp datenbank read-only
+- **Häufig in den Quellen:** llm-as-judge (3), git worktrees (2), red green refactor (2), ai slop (2), testharness (2), statische code-analyse (2), auto mode (2), tdd (2), coding agents (2), mutation testing (2), hillclimbing (2), overfitting (2), test (2), gstack (2), ci-gate (2), long-running agents (2), verifier (2), reward hacking (2), context rot (2), subagents (2)
 
 ## Verwandte Themen
 
@@ -26,8 +26,10 @@ Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statis
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[Great-Decoupling-Rollenverstaendnis]], [[Plan-first-mit-getrenntem-Review]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]]
 
-## Quellen (13)
+## Quellen (15)
 
+- [[2026-10-02-repo-thedaviddias-front-end-checklist]] — Im Klon von thedaviddias/Front-End-Checklist (Stand Commit `7bfd8680`) beschreibt `packages/cli/README.md` die CLI `@frontendchecklist/cli`; die Regeln liegen im Paket, sie läuft offline.
+- [[2026-10-02-repo-garrytan-gstack]] — Laut `CHANGELOG.md` von garrytan/gstack (Repo-Stand Commit `7fca42ad`, Einträge um v1.91.9.0) wenden alle Workflows, die Tests vorschlagen, schreiben, prüfen oder ausliefern, eine gemeinsame „Test Val
 - [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] — Anthropic beschreibt Prinzipien für Eval-Design und für das schrittweise Verbessern gegen ein Eval (Hillclimbing) und zeigt, wie die Befehle `/claude-api build-eval` und `/claude-api hillclimb` im `cl
 - [[2026-09-24-ai-engineer-matt-pocock-fixing-the-pr-bottleneck]] — Mehr Agent-Output verschärft den Review-Flaschenhals: deterministische Checks, ein separater Review-Agent mit Commits und risikobasiertes Human Review bremsen ihn in drei Stufen.
 - [[2026-08-25-vikingmute-2092059170812108811]] — Ein strenger Review-Skill sucht zuerst Vereinfachungen der Struktur statt Detailkritik, erzeugt aber bei Bestandscode schnell mehr Befunde, als sich abarbeiten lassen.

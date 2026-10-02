@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), subagents (4), progressive disclosure (4), claude code skills (3), pretooluse (3), claude.md (3), slash commands (3), context window (2), prompt-based hooks (2), model context protocol (2), mcp (2), plugins (2), skill description (2), explore plan general-purpose, claude mcp add, mcp connectors, hook matcher, agent-based hooks, .env schutz, exit-code 2
+- **Häufig in den Quellen:** claude code hooks (6), subagents (4), progressive disclosure (4), claude code skills (3), pretooluse (3), claude.md (3), plugins (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), hooks (2), mcp (2), skill description (2), ci-gate (2), mcp connectors, explore plan general-purpose, claude mcp add, lifecycle events
 
 ## Verwandte Themen
 
@@ -27,8 +27,9 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Hook-erzwungene-Skill-Aktivierung]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]
 
-## Quellen (10)
+## Quellen (11)
 
+- [[2026-10-02-repo-anthropics-claude-code]] — Laut `CHANGELOG.md` (Eintrag 2.1.287, Repo-Stand Commit `52c76441`) gibt es „Claude Mods“, also Plugins, die tieferes Verhalten ändern dürfen.
 - [[2026-09-17-agenticjames-i-think-code-mode-mcps-are-probably-the-best-way-to-give-agents-access]] — Ein einzelnes Skript-Tool vor vielen MCP-Servern macht Aufrufe komposierbar und filtert große Ausgaben, bevor sie das Context Window füllen; Sandbox und Gateway-Vertrauen kosten zusätzlich.
 - [[2026-08-21-promptgefluester-agent-plug-ins-das-ist-der-neue-standard-mit-dem-die-grossen-ai]] — Ein gemeinsames Plugin-Paketformat aus Manifest, Skills und MCP-Konfiguration würde Erweiterungen zwischen Coding Agents portierbar machen; der Standard ist bisher nur schwach belegt.
 - [[2026-05-09-zodchiii-15-claude-code-settings-most-developers]] — Viele Qualitätsprobleme in Claude Code stammen aus schlechten Defaults und losen Permissions; Effort, Deny-Regeln, Modell-Routing und Hooks lassen sich konfigurieren.
@@ -42,6 +43,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-E
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-02-repo-thedaviddias-front-end-checklist]]
+- [[2026-10-02-repo-jakubantalik-transitions-dev]]
 - [[2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk]]
 - [[2026-04-30-zodchiii-claude-code-env-security]]
 - [[2026-02-01-anthropic-docs-extend-claude-with-skills]]

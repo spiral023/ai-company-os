@@ -45,6 +45,7 @@ Praxisregeln aus den Belegen:
 
 - Drei unabhängige Anbieter zeigen das Muster, gemessen ist bisher nichts davon. Die Konfidenz bleibt deshalb `meinung`, bis Messwerte zu Latenz, Kosten und Trefferquote vorliegen.
 - Laya beschreibt seinen Ja/Nein-Fragetyp im Bild als `noul`, vermutlich ein Tippfehler für `bool` (2026-10-02 nicht verifiziert).
+- **Korrektur 2026-10-02:** `Noul` ist kein Tippfehler, sondern TypeSafes eigener Name für den Ja/Nein-Typ von Jev (neben `Choice` und `Score`), siehe [[2026-09-18-akshay_pachaar-2101037514945597645]]. Laya übernimmt damit Jevs Benennung, was zur Jev-kompatiblen API passt. Die Vermutung oben ist damit überholt.
 
 ## Verwandte Patterns
 

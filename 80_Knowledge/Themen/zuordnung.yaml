@@ -1245,3 +1245,47 @@ quellen:
     kernaussage: Ein Creator zeigt drei Selbsttests, in denen Claude Code mit Opus 5.5 und HyperFrames (Open Source von HeyGen) Videos baut.
     keywords: [motion graphics, hyperframes, opus 5.5, erklärvideo, werbespot, video aus code]
     neben: [modelle-kosten]
+  2026-10-02-repo-anthropics-claude-code:
+    haupt: erweiterungen
+    kernaussage: Laut `CHANGELOG.md` (Eintrag 2.1.287, Repo-Stand Commit `52c76441`) gibt es „Claude Mods“, also Plugins, die tieferes Verhalten ändern dürfen.
+    keywords: [hook, hooks, plugins, erweiterungs-ebenen, plugin, erweiterung]
+    neben: []
+  2026-10-02-repo-anthropics-skills:
+    haupt: skills
+    kernaussage: Im Klon von anthropics/skills (Stand Commit `8a1541c4`) enthält der Skill `skills/claude-api/` unter `shared/evals/` die Anleitungen `build-eval.md`, `eval-hillclimb.md`, `cost-hillclimb.md`
+      und `eval
+    keywords: [skill.md, eval, skill, skills, trigger, effort, kosten]
+    neben: [modelle-kosten]
+  2026-10-02-repo-farion1231-cc-switch:
+    haupt: modelle-kosten
+    kernaussage: 'Im Klon von farion1231/cc-switch (Stand Commit `b9e96202`) beschreibt `src/i18n/locales/en.json` einen „Stack“-Modus: Du legst mehrere Anbieter an, und alle ihre Modelle erscheinen im
+      Modellmenü von C'
+    keywords: [lokale modelle, modell]
+    neben: []
+  2026-10-02-repo-garrytan-gstack:
+    haupt: verifikation
+    kernaussage: Laut `CHANGELOG.md` von garrytan/gstack (Repo-Stand Commit `7fca42ad`, Einträge um v1.91.9.0) wenden alle Workflows, die Tests vorschlagen, schreiben, prüfen oder ausliefern, eine gemeinsame
+      „Test Val
+    keywords: [tdd, testharness, test, tests, verifikation, gstack, workflow]
+    neben: [frameworks]
+  2026-10-02-repo-jakubantalik-transitions-dev:
+    haupt: prototyping
+    kernaussage: 'Im Klon von Jakubantalik/transitions.dev (Stand Commit `d8f2c222`) beschreibt `agent/README.md` den Transitions Agent: Er scannt die Codebasis auf fehlende oder uneinheitliche UI-Transitions,
+      vergibt'
+    keywords: [ui-animationen, motion-scan, mcp-server, github action, transitions agent]
+    neben: [erweiterungen]
+  2026-10-02-repo-latent-spaces-brag:
+    haupt: prototyping
+    kernaussage: 'Neu im Bestand: latent-spaces/brag.'
+    keywords: [launch-video, hyperframes, agent skill, brag, skill-distribution]
+    neben: [skills]
+  2026-10-02-repo-mattpocock-skills:
+    haupt: planung
+    kernaussage: Im Klon von mattpocock/skills (Stand Commit `d81f3a18`) liegen `implement-spec`, `pr` und `retro` unter `skills/engineering/`.
+    keywords: [to-spec, to-tickets, spec, ticket, skill.md, skill]
+    neben: [skills]
+  2026-10-02-repo-thedaviddias-front-end-checklist:
+    haupt: verifikation
+    kernaussage: Im Klon von thedaviddias/Front-End-Checklist (Stand Commit `7bfd8680`) beschreibt `packages/cli/README.md` die CLI `@frontendchecklist/cli`; die Regeln liegen im Paket, sie läuft offline.
+    keywords: [front-end-checkliste, cli, mcp-server, ci-gate, audit]
+    neben: [sicherheit, erweiterungen]

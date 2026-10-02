@@ -9,7 +9,7 @@ Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Mat
 - **Hauptkeyword:** Claude Code Workflow
 - **Long-Tail:** Superpowers vs. GSD; Matt Pocock Skills Wayfinder; gstack Claude Code; Everything Claude Code; Agent Framework Vergleich; cmux Terminal für Agents
 - **Fragen:** Welches Workflow-Framework passt zu mir? / Brauche ich ein Framework oder reichen eigene Skills?
-- **Häufig in den Quellen:** wayfinder (4), matt pocock skills (4), spec-driven development (3), everything claude code (2), gsd-map-codebase (2), gstack (2), superpowers (2), claude code skills (2), grill-me (2), to-tickets (2), implement (2), to-spec (2), parallele coding agents, cmux, zellij, agent notifications, tmux alternative, multi-agent übersicht, conductor, ghostty terminal
+- **Häufig in den Quellen:** matt pocock skills (4), wayfinder (4), spec-driven development (3), gstack (3), everything claude code (2), gsd-map-codebase (2), superpowers (2), claude code skills (2), grill-me (2), to-tickets (2), implement (2), to-spec (2), multi-agent übersicht, ghostty terminal, parallele coding agents, cmux, conductor, zellij, tmux alternative, agent notifications
 
 ## Verwandte Themen
 
@@ -40,5 +40,6 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Klein-und-komposierbar]]
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-02-repo-garrytan-gstack]]
 - [[2026-07-08-mattpocock-custom-issue-tracker]]
 - [[2026-04-13-wiki-compiler-shorthand-guide-claude-code]]

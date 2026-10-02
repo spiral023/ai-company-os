@@ -9,7 +9,7 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 - **Hauptkeyword:** Claude Code Kosten
 - **Long-Tail:** Claude Code Usage Limits; Kosten pro Task statt pro Token; Prompt Caching Claude Code; Claude Code mit lokalem Modell; Reasoning Effort wählen; Modell-Eskalation günstig nach teuer
 - **Fragen:** Welches Modell für welche Aufgabe? / Warum sind meine Limits so schnell leer?
-- **Häufig in den Quellen:** modell-eskalation (14), modell (10), kosten pro task (10), effort (9), gpt-6 (8), preis (6), kosten (6), opus 5.5 (6), token (5), anthropic_base_url (4), preise (4), /compact (4), sonnet (4), terminal-bench (4), prompt caching (3), modellwahl (3), artificial analysis intelligence index (3), modellpreise (3), limit (3), terminal-bench 4.0 (3)
+- **Häufig in den Quellen:** modell-eskalation (14), modell (11), kosten pro task (10), effort (10), gpt-6 (8), kosten (7), preis (6), opus 5.5 (6), token (5), anthropic_base_url (4), preise (4), /compact (4), sonnet (4), terminal-bench (4), prompt caching (3), modellwahl (3), artificial analysis intelligence index (3), limit (3), modellpreise (3), pareto-front (3)
 
 ## Verwandte Themen
 
@@ -27,8 +27,9 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]]
 
-## Quellen (36)
+## Quellen (37)
 
+- [[2026-10-02-repo-farion1231-cc-switch]] — Im Klon von farion1231/cc-switch (Stand Commit `b9e96202`) beschreibt `src/i18n/locales/en.json` einen „Stack“-Modus: Du legst mehrere Anbieter an, und alle ihre Modelle erscheinen im Modellmenü von C
 - [[2026-10-01-artificialanlys-2105491868608004578]] — Artificial Analysis (Drittanbieter) misst am 01.10.2026 Kosten pro Intelligence-Index-Task für OpenAI-Modelle nach.
 - [[2026-09-30-artificialanlys-2105392625788637299]] — Artificial Analysis (Drittanbieter-Messung, Intelligence Index v4.3.2 mit 10 Evaluations) bewertet am 30.09.2026 Googles Gemini 4 Argon mit `high` Reasoning, der höchsten verfügbaren Stufe.
 - [[2026-09-29-voxyz_ai-2104919123918479521]] — Vox liefert einen Prompt, mit dem Claude Code das eigene Setup gegen Anthropics Leitfaden zu Sonnet 5.5 prüft ([[2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog]]).
@@ -68,6 +69,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-02-repo-anthropics-skills]]
 - [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]]
 - [[2026-09-29-voxyz_ai-2105012597796057438]]
 - [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]]
