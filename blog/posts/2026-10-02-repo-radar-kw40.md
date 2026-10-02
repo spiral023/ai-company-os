@@ -1,11 +1,10 @@
 ---
 titel: "Repo-Radar KW 40: Evals per Befehl, Claude Mods und ein Launch-Video aus dem Projekt"
-datum: 2026-10-03
+datum: 2026-10-02
 kategorie: tools
 zusammenfassung: "Acht Repos mit neuen Funktionen in dieser Woche: Eval-Flows im claude-api-Skill, Mods und /diff in Claude Code, /test-audit, ein Stack-Modus für Drittanbieter-Modelle, ein Motion-Scan, eine Frontend-CLI, die Umbenennung von CONTEXT.md und /brag."
 status: freigegeben
 geprueft_am: 2026-10-02
-freigabe: automatisch
 quellen:
   - 2026-10-02-repo-anthropics-skills
   - 2026-10-02-repo-anthropics-claude-code

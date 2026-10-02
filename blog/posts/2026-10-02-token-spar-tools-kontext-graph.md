@@ -1,11 +1,10 @@
 ---
 titel: "Token-Spar-Tools: Wann ein Kontext-Graph schadet"
-datum: 2026-10-03
+datum: 2026-10-02
 kategorie: kurz
 zusammenfassung: "Tools, die Claude Code Tokens sparen sollen, indem sie Kontext aus einem vorab gebauten Graphen liefern, schaffen eine zweite Quelle der Wahrheit. Bei komplexen Aufgaben veraltet sie und kostet Qualität."
 status: freigegeben
 geprueft_am: 2026-10-02
-freigabe: automatisch
 quellen:
   - 2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht
 ---

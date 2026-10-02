@@ -1,11 +1,10 @@
 ---
 titel: "Entscheiden statt schreiben: Routing per Scoring"
-datum: 2026-10-03
+datum: 2026-10-02
 kategorie: arbeitsweisen
 zusammenfassung: "Wenn die erlaubten Antworten feststehen, muss ein Modell keinen Text erzeugen. Fixed-Answer Scoring liest nach einem Durchlauf nur die Wahrscheinlichkeiten der Antwort-Labels. Was das für Klassifikation und Routing bringt, welche Regeln gelten und was bisher nicht gemessen ist."
 status: freigegeben
 geprueft_am: 2026-10-02
-freigabe: automatisch
 quellen:
   - 2026-09-20-avichawla-2101563610644496464
   - 2026-09-28-unslothai-2104592692072304916

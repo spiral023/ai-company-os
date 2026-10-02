@@ -1,11 +1,10 @@
 ---
 titel: "Evals verbessern, ohne sich selbst zu täuschen: Hillclimbing mit Holdout"
-datum: 2026-10-03
+datum: 2026-10-02
 kategorie: arbeitsweisen
 zusammenfassung: "Wer einen Prompt gegen ein Eval optimiert, optimiert irgendwann das Eval selbst. Ein zufälliger Train/Test-Split mit Revert-Regel macht das sichtbar; Claude Code bringt dafür zwei Befehle mit."
 status: freigegeben
 geprueft_am: 2026-10-02
-freigabe: automatisch
 quellen:
   - 2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla
 ---

@@ -1,11 +1,10 @@
 ---
 titel: "KW 40: GPT-6.1 Sol fast auf Astra-Niveau, Sonnet 5.5 schluckt Tokens, Gemini ist zurück"
-datum: 2026-10-03
+datum: 2026-10-02
 kategorie: digest
 zusammenfassung: "Wochen-Digest KW 40 (28.09. bis 04.10.2026): GPT-6.1 Sol kommt für ein Viertel der Kosten an GPT-6 Astra heran, Sonnet 5.5 senkt die Kosten laut Anthropic und steigert sie laut Artificial Analysis, Gemini 4 Argon zieht gleich."
 status: freigegeben
 geprueft_am: 2026-10-02
-freigabe: automatisch
 quellen:
   - 2026-09-29-artificialanlys-2105025585332605357
   - 2026-10-01-artificialanlys-2105491868608004578

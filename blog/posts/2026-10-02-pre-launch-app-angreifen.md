@@ -1,11 +1,10 @@
 ---
 titel: "Vor dem Launch: Lass Agenten deine App angreifen"
-datum: 2026-10-03
+datum: 2026-10-02
 kategorie: arbeitsweisen
 zusammenfassung: "Vier read-only Prüfagenten greifen deine vibe-coded App vor dem Release in einer Testumgebung an. Ablauf, 16 Prüffragen, Schutzrahmen und die Grenzen des Verfahrens."
 status: freigegeben
 geprueft_am: 2026-10-02
-freigabe: automatisch
 quellen:
   - 2026-09-27-voxyz_ai-2104224555040452925
   - 2026-09-26-voxyz_ai-2103977414711767244

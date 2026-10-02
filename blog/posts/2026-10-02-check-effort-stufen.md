@@ -1,11 +1,10 @@
 ---
 titel: "Welche Effort-Stufe stimmt? Fünf Aussagen im Check"
-datum: 2026-10-03
+datum: 2026-10-02
 kategorie: check
 zusammenfassung: "Vier Stimmen derselben Woche empfehlen vier verschiedene Effort-Stufen. Fünf Aussagen zur richtigen Reasoning-Einstellung im Check: Zwei stimmen, drei lassen sich nicht prüfen."
 status: freigegeben
 geprueft_am: 2026-10-02
-freigabe: automatisch
 quellen:
   - 2026-09-29-voxyz_ai-2105012597796057438
   - 2026-09-29-artificialanlys-2105025585332605357
