@@ -53,6 +53,8 @@ Autonome Agenten optimieren zuverlässig das, was der Verifier misst — ist der
 - 2026-08-19 · [[2026-08-19-matt-pocock-live-uncle-bob-on-software-fundamentals-in-the-a]] · meinung — Robert C. Martin lässt Agenten in Schleife CRAP-Score und Mutation Testing bis zum Bestehen laufen und liest den Code kaum noch; Erfahrungsbericht, Grenze ist die Laufzeit der Checks.
 - 2026-09-28 · [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] · meinung — Eval-Design-Regeln (Aufgaben spiegeln Produktion, Headroom, geringe Varianz, keine Auswahl nach heutigen Modellfehlern, menschlich validierter Grader, Judge ungleich getestetes Modell) und Leck-Beispiele bis zum Reward Hacking stützen die Verifier-Qualität als Hebel. Methodik ohne unabhängige Messung.
 - 2026-09-28 · [[2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog]] · meinung — Empfiehlt einen System-Prompt-Absatz, der vor „fertig“ einen echten Check (Tests, Type-Checker, Build) verlangt; Syntax-Check zählt nicht. Anlass: bei `low` Effort wird der Check gelegentlich übersprungen; keine Zahl dazu.
+- 2026-07-01 · [[2026-07-01-0xcodila-2072329149520232639]] · meinung — Ohne automatisierten Verifier (Test, Metrik, Build) ist ein Loop nur Selbstbestätigung; bei `autoresearch` ist der Evaluator `prepare.py` für den Agenten gesperrt. Selbstberichtet, Beispiel stammt aus Modelltraining.
+- 2026-07-06 · [[2026-07-06-claudedevs-2074208949205881033]] · meinung — Deterministische Exit-Kriterien (Tests bestanden, Score-Schwelle) und als Skill kodierte Verifikation machen Goal-Loops zuverlässig; je quantitativer der Check, desto besser. Selbstberichtet, ohne Zahlen.
 
 ## Spannungen & offene Fragen
 

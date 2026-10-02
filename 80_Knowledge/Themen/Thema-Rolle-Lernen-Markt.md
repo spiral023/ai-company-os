@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; SDLC ist tot; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** trust the harness (2), spec mode, agent coding ohne code, agents.md, vibe coding kritik, cli statt mcp, e2e-tests, droid factory cli, github-app agent, sub-agents, golden master testing, vibe engineering, cli vs. ide, devdocs, great decoupling, tdd für agenten, context rot, 80% agent, agent coding, senior engineer review
+- **Häufig in den Quellen:** trust the harness (2), agent coding ohne code, e2e-tests, spec mode, github-app agent, agents.md, droid factory cli, cli statt mcp, vibe coding kritik, context rot, devdocs, vibe engineering, golden master testing, sub-agents, tdd für agenten, cli vs. ide, great decoupling, success criteria, senior engineer review, testgetrieben
 
 ## Verwandte Themen
 
@@ -21,7 +21,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 ## Patterns (3)
 
 - [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 1 Belege
-- [[Claude-als-Lernwerkzeug]] · meinung · 1 Belege
+- [[Claude-als-Lernwerkzeug]] · meinung · 2 Belege
 - [[Great-Decoupling-Rollenverstaendnis]] · meinung · 9 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Intent-Engineering-als-dritte-Schicht]]

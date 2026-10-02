@@ -32,6 +32,7 @@ Faustregel für den Zeitpunkt der Skill-Erstellung: Alles, was mehr als einmal a
 - 2026-01-31 · [[2026-01-31-bcherny-claude-code-team-tips]] · meinung — Boris Chernys Team (laut Tweet-Sekundärquelle) nennt die 1x/Tag-Schwelle explizit als Faustregel und den eingecheckten BigQuery-Skill als konkretes Beispiel für den Team-Wissen-Effekt (>6 Monate keine eigene SQL-Zeile mehr).
 - 2026-09-27 · [[2026-09-27-anthropic-academy-sdlc-playbook]] · meinung — Anthropic nennt dieselbe Faustregel (Skill nur für konsistent anzuwendendes institutionelles Wissen) und ergänzt, dass Skills beratend sind und Pflichtregeln zusätzlich einen Hook oder Review-Durchgang brauchen. Herstellerleitfaden ohne Messdaten.
 - 2025-10-31 · [[2025-10-31-agenticjames-best-claude-skills-for-agentic-coding]] · meinung — Brand- und Debugging-Skills als dynamisch geladene Dokumente; reine Empfehlung ohne Belege.
+- 2026-07-03 · [[2026-07-03-neilzegh-2072977540193378428]] · meinung — Pflichtfrage in `CLAUDE.md` nach jeder Aufgabe, ob wiederverwendbares Wissen entstand; Erfahrungsaussage ohne Messung, Filterkriterium fehlt.
 
 ## Spannungen & offene Fragen
 

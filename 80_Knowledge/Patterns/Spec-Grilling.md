@@ -43,6 +43,7 @@ Ein eigener Skill verhört den Nutzer gezielt zu einem Vorhaben, bis jeder Ast d
 - 2026-07-14 · [[2026-07-14-fredrikharkort-5-prompts-die-weh-tun]] · meinung — Self-Interview und Board-Member-Prompt lassen die KI Widersprüche und unbequeme Themen aufdecken; fünf Prompts, alle aus Entscheidungs- statt Coding-Kontext. Ohne Auswertung.
 - 2026-02-03 · [[2026-02-03-god-of-prompt-karpathy-ai-coding-system-prompt]] · meinung — Prompt erzwingt Annahmen-Offenlegung und Anhalten bei Widersprüchen; Sekundärquelle, Wirkung nicht getestet.
 - 2026-02-25 · [[2026-02-25-heynavtoor-claude-cowork-setup-guide]] · meinung — Vor der Arbeit `AskUserQuestion` erzwingen, statt zu raten; Sekundärquelle, Büro-Kontext statt Code.
+- 2026-07-03 · [[2026-07-03-trq212-2073100352921215386]] · meinung — Interview-Technik: Claude fragt eine Frage nach der anderen, priorisiert nach Architekturwirkung. Nur ein Beispielprompt, keine Evaluation.
 
 ## Spannungen & offene Fragen
 

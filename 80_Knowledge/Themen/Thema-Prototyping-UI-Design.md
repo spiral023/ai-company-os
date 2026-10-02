@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), security checker (2), vibe coding (2), codex skills (2), opus 5.5 (2), hyperframes (2), design tokens, foundations komponenten komposition, tailwind prompting, design system, component-first, lovable prompts, komponentenreferenz, lovable website, responsive breakpoints, landingpage, ki-website-builder, hero section, conversion prompts, spacing typografie
+- **Häufig in den Quellen:** lovable (5), security checker (2), vibe coding (2), codex skills (2), opus 5.5 (2), hyperframes (2), component-first, komponentenreferenz, design tokens, tailwind prompting, lovable prompts, design system, foundations komponenten komposition, landingpage, hero section, lovable website, conversion prompts, responsive breakpoints, spacing typografie, ki-website-builder
 
 ## Verwandte Themen
 

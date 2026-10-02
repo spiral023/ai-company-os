@@ -9,7 +9,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** row level security (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), playwright (2), security (2), sicherheit (2), prompt injection (2), vibe coding security (2), supabase edge functions, lovable security, secrets im frontend, ki-generierte apps absichern, vibe coding sicherheit, claude code dangerously-skip-permissions, ralph loop über nacht, micro-vm, yolo-modus, docker sandbox run claude
+- **Häufig in den Quellen:** row level security (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), playwright (2), security (2), sandbox (2), sicherheit (2), prompt injection (2), vibe coding security (2), vibe coding sicherheit, ki-generierte apps absichern, secrets im frontend, supabase edge functions, lovable security, claude code dangerously-skip-permissions, docker sandbox run claude, agent-isolation, micro-vm
 
 ## Verwandte Themen
 
@@ -42,6 +42,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], 
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]]
 - [[2026-09-27-anthropic-academy-sdlc-playbook]]
 - [[2026-09-18-akshay_pachaar-2101037514945597645]]
+- [[2026-07-16-amasad-2077802290304684404]]
 - [[2026-04-17-wiki-compiler-lovable-design-debugging-sicherheit]]
 - [[2026-04-16-wiki-compiler-superpowers]]
 - [[2026-02-28-openai-codex-multi-agents-guide]]

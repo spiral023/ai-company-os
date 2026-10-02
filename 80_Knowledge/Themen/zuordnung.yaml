@@ -778,6 +778,16 @@ quellen:
     kernaussage: Agenten sollten gegen den lokal abgelegten Quellcode von Dependencies statt nur gegen Doku arbeiten, damit sie nicht raten; Nutzen und Kosten sind ungeprüft.
     keywords: [opensrc, Vercel Labs, Dependency-Quellcode, graphify, Knowledge Graph, Coding Agent Dokumentation, Halluzination reduzieren, Open-Source Dependencies]
     neben: [agent-dateien]
+  2026-06-08-mvanhorn-2063865685558903149:
+    haupt: autonomie
+    kernaussage: Matt Van Horn ordnet die Debatte um Peter Steinbergers Satz ein, man solle Coding Agents nicht mehr prompten, sondern Loops entwerfen, die sie prompten.
+    keywords: [/goal, ralph loop, auto mode, loop, cron]
+    neben: []
+  2026-07-01-0xcodila-2072329149520232639:
+    haupt: verifikation
+    kernaussage: Der X-Artikel erklärt Loops als Ziel, auf das ein Agent ohne Prompt pro Schritt hinarbeitet, und stützt sich auf Karpathys `autoresearch` und eine Bilevel-Arbeit.
+    keywords: [verifier, testharness, test, review, reviewer, verifikation, qualität, /goal, über nacht, benchmark]
+    neben: [autonomie, modelle-kosten]
   2026-07-01-anthropic-skill-creator-skill-md:
     haupt: skills
     kernaussage: Der offizielle skill-creator deckt Erstellen, Evals mit Baseline, Varianz-Benchmarks, automatisierte Trigger-Optimierung und Blind-Vergleich ab; simple Ein-Schritt-Queries triggern Skills
@@ -789,21 +799,54 @@ quellen:
     kernaussage: Loop Engineering ist als vierte Schicht über Prompt, Context und Harness eingeordnet, lässt Agenten sich selbst anstoßen; der Nutzen ist laut Autor unbewiesen.
     keywords: [Loop Engineering, Harness Engineering, Context Engineering, Prompt Engineering, Agent Automation, Worktrees, Subagents, State Management]
     neben: [kontext]
+  2026-07-03-emanueledpt-2073013891752251574:
+    haupt: autonomie
+    kernaussage: 'Emanuele Di Pietro beschreibt einen selbstberichteten Nachtlauf mit Codex: Threads in Worktrees, Heartbeats zum Einchecken, Review von PRs und Issues sowie ein Codex-Bot auf GitHub, der
+      Issues in eine'
+    keywords: [nachtlauf, über nacht, ci-agent, loop]
+    neben: []
+  2026-07-03-neilzegh-2072977540193378428:
+    haupt: skills
+    kernaussage: 'Neil Zeghidour rät, in der `CLAUDE.md` eine Pflichtfrage zu verankern: Nach jeder Aufgabe soll der Agent prüfen, ob wiederverwendbares Wissen (Tool, Trick, Repo, Bug) entstanden ist, und
+      es in die Kno'
+    keywords: [skill-schwellenwert, skill]
+    neben: []
+  2026-07-03-trq212-2073100352921215386:
+    haupt: prompting
+    kernaussage: Thariq (Anthropic) beschreibt in einem langen X-Artikel, wie er mit Claude Fable 5 arbeitet.
+    keywords: [unknowns, blind spot, known unknowns, prompt, frage, prompts, annahmen, spec-grilling, grilling]
+    neben: [planung]
   2026-07-03-trq212-fable-field-guide-unknowns:
     haupt: prompting
     kernaussage: Stärkere Modelle tragen falsche Annahmen selbstbewusst durch die Session; der Engpass ist die Spezifikation, daher Unknowns per Interview, Prototyp und Change Quiz heben.
     keywords: [Fable Unknowns, Known Unknowns, Blind Spot Pass, Change Quiz, Implementation Plan, Decision Record, Spec-Driven Development, Modell-Annahmen]
     neben: [planung]
+  2026-07-06-claudedevs-2074208949205881033:
+    haupt: autonomie
+    kernaussage: Das Claude-Code-Team definiert einen Loop als Agent, der Arbeitszyklen wiederholt, bis ein Stop-Kriterium greift, und sortiert Loops nach Trigger, Stop-Kriterium, verwendetem Primitive
+      und passender A
+    keywords: [/goal, auto mode, loop, autonom, testharness, code review, modell-eskalation, modell]
+    neben: [verifikation, modelle-kosten]
   2026-07-06-mattpocock-writing-great-skills-beyond-skills:
     haupt: skills
     kernaussage: Struktur, Leading Words und Pruning, entwickelt für Skills, verbessern jeden Text, den Agenten lesen, von AGENTS.md über Specs bis zu AFK-Prompts.
     keywords: [AGENTS.md schreiben, Writing Great Skills, Leading Words, Pruning, Agent-lesbare Texte, Specs und Tickets, AFK Workflow Prompts, Struktur]
     neben: [kontext]
+  2026-07-06-mattpocockuk-2074060484047712521:
+    haupt: agent-dateien
+    kernaussage: 'Matt Pocock empfiehlt einen Zwei-Schritt-Trick fürs Debugging: den Dev-Server per `tee` in eine lokale Datei schreiben lassen und in `AGENTS.md` auf diese Datei verweisen.'
+    keywords: [agents.md]
+    neben: []
   2026-07-06-nightmoon-wayfinder:
     haupt: frameworks
     kernaussage: Wayfinder verlangt weniger menschliche Koordinationsarbeit als der lineare Ablauf grill, PRD, Issues, Implementierung; eine Tendenz zu automatisierten Entscheidungen bleibt unsichere Beobachtung.
     keywords: [Wayfinder, Matt Pocock Skills, grill-me, to-prd, to-issue, Task-basierte Steuerung, Agentic Coding Workflow, automatisierte Entscheidungen]
     neben: [skills]
+  2026-07-08-bcherny-2074997570317779038:
+    haupt: erweiterungen
+    kernaussage: Boris Cherny kündigt den Befehl `/checkup` für Claude Code an (Stand 2026-07-08).
+    keywords: [hook, hooks, mcp, plugins, plugin, kontext-hygiene, kontext, claude.md]
+    neben: [kontext, agent-dateien]
   2026-07-08-claudedevs-modell-vs-effort:
     haupt: modelle-kosten
     kernaussage: 'Bei schlechten Ergebnissen zuerst Input und Kontext prüfen, dann nach Fehlerbild entscheiden: übersprungene Arbeit braucht mehr Effort, gründlich erarbeitete Fehler ein anderes Modell.'
@@ -819,11 +862,37 @@ quellen:
     kernaussage: Skills-Version 1.1 deckt mit Wayfinder, Spec, Tickets, Implementierung und Code Review den kompletten Coding-Lifecycle ab; Recherche und Prototyp bleiben eigenständig nutzbar.
     keywords: [mattpocock/skills, Wayfinder, to-spec, to-tickets, implement, code-review, grill-me, Coding-Lifecycle]
     neben: [skills]
+  2026-07-09-artificialanlys-2075268970492657905:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis (AA) misst die drei GPT-5.6-Modelle im eigenen Intelligence Index v4.1 und im neuen Coding Agent Index.
+    keywords: [coding agent index, kosten pro task, pareto, intelligence index, terminal-bench, modell-eskalation, cost per task, modell]
+    neben: []
+  2026-07-09-kimmonismus-2075271465964798147:
+    haupt: modelle-kosten
+    kernaussage: Der Post fasst den GPT-5.6-Launch zusammen und gibt Benchmark-Zahlen wieder.
+    keywords: [terminal-bench, benchmark, modell-eskalation, kosten, modell]
+    neben: []
   2026-07-09-n3sonline-wayfinder:
     haupt: frameworks
     kernaussage: Iterative Steuerung aus Ziel, Task und Anpassung ersetzt lineares Research-Plan-Implement und dimensioniert Aufgaben passend für eine einzelne Agent-Session.
     keywords: [Wayfinder, Task Sizing, Set Goal Task Adjust, Research Plan Implement, Agent als Product Manager, Single-Agent-Session, Agentic Coding Frameworks, Matt Pocock Skills]
     neben: [autonomie]
+  2026-07-09-voxyz_ai-2075278546570801574:
+    haupt: modelle-kosten
+    kernaussage: '@Voxyz_ai argumentiert, dass bei niedrigen Preisen die Frage entfällt, ob eine Aufgabe das gute Modell wert ist.'
+    keywords: [modell-eskalation, kosten pro task, modellwahl, coding agent index, preis, preise, modell, kosten]
+    neben: []
+  2026-07-10-matthewberman-2075597710435266674:
+    haupt: modelle-kosten
+    kernaussage: '@MatthewBerman gibt eine DeepSWE-Auswertung weiter und stimmt ihr zu, dass GPT-5.6 Sol in der Stufe `high` das beste Preis-Leistungs-Modell sei.'
+    keywords: [kosten pro task, effort, sonnet, modell-eskalation, benchmark, modell, kosten, preis]
+    neben: []
+  2026-07-10-rasbt-2075573860796436626:
+    haupt: modelle-kosten
+    kernaussage: 'Sebastian Raschka liest aus einem Chart des Artificial Analysis Coding Agent Index v1.1 Faustregeln für agentisches Coding ab: Statt auf die nächsthöhere Modellstufe zu wechseln, lohnt
+      sich häufig das'
+    keywords: [effort, modell-eskalation, coding agent index, pareto, token-verbrauch, modell, kosten, preis]
+    neben: []
   2026-07-10-voxyz-mattpocock-skills:
     haupt: skills
     kernaussage: Eine kleine Sammlung Markdown-Skills mit Aufrufhierarchie, gemeinsamem Projekt-Glossar und Handoff ist ein leichtgewichtiger, komponierbarer Agent-Stack unter menschlicher Prozesskontrolle.
@@ -849,6 +918,16 @@ quellen:
     kernaussage: Prompts, die Rückfragen und unbequemes Feedback erzwingen, verbessern Entscheidungen, hängen aber davon ab, wie viel Kontext die KI über Person und Geschäft hat.
     keywords: [Pre-Mortem, Self-Interview, Board Member Prompt, Serviettentest, Entscheidungs-Prompts, Prompt Engineering, KI als Sparringspartner, Strategieplanung]
     neben: [planung]
+  2026-07-15-xudong07452910-2077246527756775933:
+    haupt: modelle-kosten
+    kernaussage: Der Tweet fasst auf Chinesisch den Prompt-Guide von OpenAI zu GPT-5.6 Sol zusammen (Stand 2026-07-15) und zieht daraus eine Folgerung für `AGENTS.md`.
+    keywords: [gpt-6, modellwahl, modell, kosten, token, agents.md]
+    neben: [agent-dateien]
+  2026-07-16-amasad-2077802290304684404:
+    haupt: verifikation
+    kernaussage: Replit-CEO Amjad Masad beschreibt, wie Replit zwischen Januar und Juni 2026 interne Agents in Engineering, Data, Sales, Marketing und Support eingeführt hat.
+    keywords: [review, test, tests, qualität, ci, reviewer, sandbox, microvm, ci-agent, loop engineering]
+    neben: [sicherheit, autonomie]
   2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt:
     haupt: planung
     kernaussage: Eine ausführliche Spezifikation mit verweisenden Task-Listen und mehrfacher Agent-Prüfung des Plans ist billiger als spätes Nachbessern, verursacht aber eigene Pflegekosten.
@@ -1245,6 +1324,11 @@ quellen:
     kernaussage: Ein Creator zeigt drei Selbsttests, in denen Claude Code mit Opus 5.5 und HyperFrames (Open Source von HeyGen) Videos baut.
     keywords: [motion graphics, hyperframes, opus 5.5, erklärvideo, werbespot, video aus code]
     neben: [modelle-kosten]
+  2026-10-02-developers-using-gpt-6-openai-api:
+    haupt: modelle-kosten
+    kernaussage: Die Entwicklerseite „Using GPT-6“ beschreibt die drei GPT-6-Modelle, neue API-Funktionen und Prompt-Bausteine für Astra.
+    keywords: [gpt-6, effort, modell-eskalation, cost per task, benchmark, modell, cache, kosten]
+    neben: []
   2026-10-02-repo-anthropics-claude-code:
     haupt: erweiterungen
     kernaussage: Laut `CHANGELOG.md` (Eintrag 2.1.287, Repo-Stand Commit `52c76441`) gibt es „Claude Mods“, also Plugins, die tieferes Verhalten ändern dürfen.

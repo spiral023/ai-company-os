@@ -60,6 +60,8 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 - 2026-02-09 · [[2026-02-09-tom-crawshaw-claude-code-insights-guide]] · meinung — Sekundärquelle: `/insights` führt hohen Exploration-Overhead (Bash 4x Dateiedits) auf fehlenden Startkontext zurück und empfiehlt wenige Zeilen in `CLAUDE.md`. Selbstberichtete Einzelzahlen.
 - 2026-02-25 · [[2026-02-25-heynavtoor-claude-cowork-setup-guide]] · meinung — Ordner `Claude Context` mit drei Kontextdateien (about-me, brand-voice, working-style) als dauerhafter Hintergrund; Sekundärquelle.
 - 2026-08-22 · [[2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht]] · meinung — Quellcode als einzige Quelle der Wahrheit halten; ausgelagerte Notizen, Logs und Kommentare am Session-Ende auf Aktualität prüfen, weil der Agent sie später wieder als wahr einliest.
+- 2026-07-06 · [[2026-07-06-mattpocockuk-2074060484047712521]] · meinung — Dev-Server per `tee` in Logdatei, Zeiger in `AGENTS.md`: Agent sieht Laufzeitausgabe ohne Prozessbesitz; ungemessener Praxistipp, Logwachstum nicht adressiert.
+- 2026-07-15 · [[2026-07-15-xudong07452910-2077246527756775933]] · meinung — Empfiehlt, in `AGENTS.md` Akzeptanzkriterien, Berechtigungsgrenzen und Verifikationsablauf zu betonen statt enger Prozesssteuerung. Reine Autorenmeinung zu einem Herstellerdokument, ohne Beispiel.
 
 ## Spannungen & offene Fragen
 

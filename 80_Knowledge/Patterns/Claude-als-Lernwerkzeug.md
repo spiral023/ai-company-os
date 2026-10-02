@@ -30,6 +30,7 @@ Statt eine Änderung direkt umsetzen zu lassen, wird der Agent explizit in einen
 ## Belege
 
 - 2026-01-31 · [[2026-01-31-bcherny-claude-code-team-tips]] · meinung — Boris Chernys Team (laut Tweet-Sekundärquelle) nennt Claude Code als Lernwerkzeug für unbekannten Code als eigenständigen, vom reinen Produktivitätsfokus abweichenden zehnten Praxispunkt: Explanatory-/Learning-Stil, HTML-/ASCII-Diagramme, ein selbstgebauter Spaced-Repetition-Skill.
+- 2026-07-03 · [[2026-07-03-trq212-2073100352921215386]] · meinung — Blind Spot Pass und Change-Quiz (Merge erst bei fehlerfreiem Bestehen) sowie Color-Grading-Lernsession beim Launchvideo. Das Quiz prüft Verständnis des Menschen, nicht Codekorrektheit.
 
 ## Spannungen & offene Fragen
 

@@ -32,6 +32,7 @@ Prompts/Skills/Kontext sind nur eine Karte der Arbeit; die echte Codebasis mit i
 - 2026-07-03 · [[2026-07-03-trq212-fable-field-guide-unknowns]] · meinung — X-Artikel von Thariq Shihipar (Anthropic) beschreibt das Vier-Quadranten-Modell, alle acht Techniken und ein konkretes Praxisbeispiel (Videoschnitt als Laiendomäne).
 - 2026-02-01 · [[2026-02-01-aiedge-claude-code-starter-pack]] · meinung — Gegenbeispiel: Ein beworbener „bester Claude Code Prompt“ ist ein reiner Persona-/Vision-Priming-Prompt („Craftsman“, „Reality Distortion Field“, `ultrathink`), der nichts fragt, keine Erfolgskriterien benennt und keine Unknowns adressiert — steht in direktem Gegensatz zur Kernthese dieses Patterns und stachelt das Modell eher zu mehr Selbstüberzeugung an, statt Ambiguität offenzulegen. Die Quelle liefert keinen Vorher-Nachher-Vergleich für die Superlativ-Behauptung.
 - 2026-09-04 · [[2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re]] · meinung — Prompt mit Grund, Ziel, Referenzdateien und messbarem Abschlusskriterium statt Rollenfloskeln und Verbotslisten; gibt die Fable-5-Doku nur sinngemäß wieder. Einschränkung: Ergebnisse nur an einem Newsletter-Beispiel gezeigt.
+- 2026-07-03 · [[2026-07-03-trq212-2073100352921215386]] · meinung — Volltext-Fassung des Artikels mit allen Techniken (Blind Spot Pass, Brainstorm/Prototyp, Interview, References, Plan, Implementation Notes, Pitch, Quiz) und Rückkopplungs-Zeitleiste. Selbstberichtet, ohne Messwerte.
 
 ## Spannungen & offene Fragen
 

@@ -14,6 +14,11 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 
 | Datum | Gegenstand | Aussage | Einschränkung | Quelle |
 |---|---|---|---|---|
+| 2026-10-02 | GPT-6.1 Sol | Near-Astra-Leistung bei geringeren Kosten | Herstellerangabe, Vergleich auf eigenen Tasks empfohlen | [[2026-10-02-developers-using-gpt-6-openai-api]] |
+| 2026-10-02 | GPT-6 Luna | Schnellste, günstigste GPT-6-Stufe für Volumenaufgaben | Herstellerangabe | [[2026-10-02-developers-using-gpt-6-openai-api]] |
+| 2026-10-02 | GPT-6 Astra / Sol / Luna | Fast mode nicht mit EU-Data-Residency; Ultrafast nur US/global | Astra Fast mode ohne Latenz-SLA | [[2026-10-02-developers-using-gpt-6-openai-api]] |
+| 2026-10-02 | GPT-6 Astra / GPT-6.1 Sol | Reasoning-Effort low, medium (Default), high, xhigh, max; none und minimal nicht unterstützt | GPT-6 Sol und GPT-6 Luna unterstützen none | [[2026-10-02-developers-using-gpt-6-openai-api]] |
+| 2026-10-02 | GPT-6 Astra | Höchste Intelligenzstufe der GPT-6-Familie, laut OpenAI SOTA bei Computer Use, Browsing, Software Engineering, Science | Herstellerangabe, keine Zahlen auf der Seite | [[2026-10-02-developers-using-gpt-6-openai-api]] |
 | 2026-09-30 | Gemini 4 Argon | Kontextfenster 1M Tokens; Input Text, Bild, Video, Sprache, Output Text; erstes proprietäres Google-Modell über Flash-Klasse seit über 7 Monaten | Rollout nur an ausgewählte Nutzer | [[2026-09-30-artificialanlys-2105392625788637299]] |
 | 2026-09-30 | Gemini 4 Argon | Long Decode Continuation: pausiert lange Antworten, setzt sie über Folgeaufrufe fort, Reasoning bis 1M Output-Tokens ohne Timeout | Neues Gemini-API-Feature, von AA getestet | [[2026-09-30-artificialanlys-2105392625788637299]] |
 | 2026-09-29 | GPT-6.1 Sol | Ersetzt GPT-6 Sol; laut OpenAI nahezu Astra-Intelligenz zu einem Fünftel der regulären Astra-Token-Preise (Ein- und Ausgabe) | Herstellerangabe ohne Methode; Drittmessung siehe Artificial Analysis 29.09. | [[2026-09-29-openai-rueckblick-auf-den-devday-2026]] |
@@ -40,6 +45,7 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 
 | Datum | Gegenstand | Aussage | Einschränkung | Quelle |
 |---|---|---|---|---|
+| 2026-10-02 | GPT-6 Familie | Cache-Writes werden berechnet; prompt_cache_retention ersetzt durch prompt_cache_options.ttl "30m" | Satz der Cache-Write-Gebühr auf dieser Seite nicht genannt; GPT-5.6 laut Seite 1,25x Input | [[2026-10-02-developers-using-gpt-6-openai-api]] |
 | 2026-09-30 | Gemini 4 Argon | $4/$20 pro 1M Input/Output regulär, rabattiert $2/$10; Cache-Rabatt 95 % ($0,10 pro 1M rabattiert), zuvor 90 % bei Gemini 3.8 Flash | Rabatt ohne bestätigtes Enddatum | [[2026-09-30-artificialanlys-2105392625788637299]] |
 | 2026-09-29 | OpenAI Pro $200 Abo | Wieder offen für Neukunden ab 2026-09-30; Nutzungsberechnung netto etwa halber API-Dollar-Gegenwert gegenüber altem Pro $200 | Selbstaussage Tibo (Codex-Umfeld), keine Rechnung | [[2026-09-29-thsottiaux-2104823812042940713]] |
 | 2026-09-29 | OpenAI Pro $200 Abo | 5-Stunden-Limit wird nicht wieder eingeführt, Wochenvolumen frei nutzbar | Zusage, kein Beleg | [[2026-09-29-thsottiaux-2104823812042940713]] |
@@ -68,6 +74,16 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 | 2026-07-28 | GLM 5.2 (offen), Terminal-Bench 2.1 auf vals.ai Terminus-2 | 67,79 % bei 0,43 $ pro Task | Neutraler Scaffold, Drittanbieter | [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] |
 | 2026-07-28 | Claude Opus 4.8, Terminal-Bench 2.1 auf vals.ai Terminus-2 | 71,91 % bei 2,41 $ pro Task | Neutraler Scaffold, Drittanbieter | [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] |
 | 2026-07-28 | Claude Opus 4.7, Terminal-Bench 2.1 auf vals.ai Terminus-2 | 68,54 % bei 1,98 $ pro Task | Neutraler Scaffold; ca. 5x Preis für ca. 1 Punkt | [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] |
+| 2026-07-09 | Meta Muse Spark 1.1 | 1,25 USD Input / 4,25 USD Output je Million Tokens | Nur Aussage von Voxyz_ai, nicht gegengeprüft | [[2026-07-09-voxyz_ai-2075278546570801574]] |
+| 2026-07-09 | Grok 4.5 | 2 USD Input / 6 USD Output je Million Tokens | Nur Aussage von Voxyz_ai, nicht gegengeprüft | [[2026-07-09-voxyz_ai-2075278546570801574]] |
+| 2026-07-09 | GPT-5.6 Terra (max) | 0,55 USD Cost per Task im Intelligence Index, etwa 50 % unter Sol | Drittanbieter | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Terra | 2,5 USD Input / 15 USD Output je Million Tokens | Stand 2026-07-09 | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Sol (max) | 1,04 USD Cost per Task im Intelligence Index, etwa ein Drittel der Kosten von Claude Fable 5 | Drittanbieter; Absolutwert für Fable nicht genannt | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Sol | 5 USD Input / 30 USD Output je Million Tokens | Stand 2026-07-09, laut Artificial Analysis | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Luna (max) | 0,21 USD Cost per Task im Intelligence Index, etwa 80 % unter Sol | Drittanbieter | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Luna | 1 USD Input / 6 USD Output je Million Tokens | Stand 2026-07-09; deckt sich mit Voxyz_ai | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Cache | Cache-Reads 90 % Rabatt, Cache-Writes 1,25x Input-Preis (erstmals bei OpenAI) | Laut Artificial Analysis | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | Claude Opus 4.8 | 5 USD Input / 25 USD Output je Million Tokens | Aussage von Voxyz_ai, Stand 2026-07-09 | [[2026-07-09-voxyz_ai-2075278546570801574]] |
 | 2026-04-30 | DeepSeek-V4 Pro | 0,435 $/M Input, 1,6T Parameter, 1M Kontext | Bericht, April 2026 | [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] |
 | 2025-12-31 | Günstigster Anbieter auf GPT-4-Niveau | 0,40 $ pro 1M Token (blended) gegenüber 20 $ im Nov 2023, 45 $ zum GPT-4-Launch (Faktor 50 bzw. 112) | a16z-LLMflation-Methodik, Listenpreise, Dez 2025 | [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] |
 | 2025-01-31 | DeepSeek-R1 vs. OpenAI o1-1217 | 0,55 $/2,19 $ gegen 15 $/60 $ pro 1M Token bei MATH-500 97,3 % gegen ca. 97 % (ca. 27x Preisunterschied) | Alt-Angabe Jan 2025, MIT-Lizenz | [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] |
@@ -76,6 +92,7 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 
 | Datum | Gegenstand | Aussage | Einschränkung | Quelle |
 |---|---|---|---|---|
+| 2026-10-02 | Leanere Prompts (GPT-5.6-Abschnitt) | Score +10 bis 15 %, Tokens -41 bis 66 %, Kosten -33 bis 67 % | OpenAI-interne Coding-Agent-Evals, Stichprobe, direktional | [[2026-10-02-developers-using-gpt-6-openai-api]] |
 | 2026-10-01 | GPT-6.1 Sol (max) | Kosten pro Index-Task $0,72 (GPT-6 Astra $3,26, GPT-6 Sol $1,04, GPT-5.6 Sol $1,99) | Drittanbieter; alle Effort-Stufen auf der Kosten-Pareto-Grenze | [[2026-10-01-artificialanlys-2105491868608004578]] |
 | 2026-10-01 | GPT-6 Luna (max) | Nach Bildencoding-Fix +1 Index-Punkt; GDP.pdf +2,4, MMMU-Pro +4,1, GDPval-AA v2.1 +71 Elo, AA-Briefcase +36 Elo | Fix durch OpenAI; GPT-6 Sol kaum verändert | [[2026-10-01-artificialanlys-2105491868608004578]] |
 | 2026-09-30 | Gemini 4 Argon (high) | Artificial Analysis Intelligence Index v4.3.2: 53, gleich GPT-6 Astra (max, 53), 1 Punkt über GPT-6.1 Sol (max, 52) | Drittanbieter; high ist höchste verfügbare Stufe; nicht öffentlich verfügbar | [[2026-09-30-artificialanlys-2105392625788637299]] |
@@ -138,6 +155,34 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 | 2026-07-28 | Fable 5 vs. Kimi K3, GDPval-AA v2 | Fable 5 führt mit 92 Elo | Größte Elo-Trennung unter gemeinsamen Benchmarks laut Bericht | [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] |
 | 2026-07-28 | Epoch Capabilities Index | GPT-5.6 Sol 162 (CI 159–166), Kimi K3 156 (CI 154–159), Abstand 6 Punkte | Konfidenzintervalle (90 %) überlappen; alle gelisteten Modelle von April bis Juli 2026 | [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] |
 | 2026-07-28 | Artificial Analysis Intelligence Index v4.1 | Claude Opus 5 = 61 (geschlossen, Spitze), Kimi K3 = 57 (bestes offenes Modell, Rang 4 von 586) | Fable 5 und Sol sind Deployed-System-Konfigurationen (System gegen Modell); Drittanbieter-Index, Juli 2026 | [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] |
+| 2026-07-10 | GPT-5.6 Terra Ultra | Index-Score ca. 77,5 bei ca. 930 USD | Abgelesen aus Chart | [[2026-07-10-rasbt-2075573860796436626]] |
+| 2026-07-10 | GPT-5.6 Sol Ultra | Index-Score ca. 80 bei ca. 2.440 USD | Abgelesen aus Chart | [[2026-07-10-rasbt-2075573860796436626]] |
+| 2026-07-10 | GPT-5.6 Sol Max | Index-Score ca. 79 bei ca. 1.810 USD | Abgelesen aus Chart | [[2026-07-10-rasbt-2075573860796436626]] |
+| 2026-07-10 | GPT-5.6 Sol High | Index-Score ca. 74,5 bei ca. 1.030 USD | Abgelesen aus Chart | [[2026-07-10-rasbt-2075573860796436626]] |
+| 2026-07-10 | GPT-5.6 Sol Extra High | Index-Score ca. 77 bei ca. 1.430 USD | Abgelesen aus Chart | [[2026-07-10-rasbt-2075573860796436626]] |
+| 2026-07-10 | GPT-5.6 Sol (medium) | DeepSWE etwa 61 % bei etwa 1,50 USD je Task | Chart abgelesen | [[2026-07-10-matthewberman-2075597710435266674]] |
+| 2026-07-10 | GPT-5.6 Sol (high) | DeepSWE etwa 69 % bei 3,47 USD durchschnittlichen Kosten je Task | Chart abgelesen, Betreiber der Auswertung unbekannt; Fable 5 high etwa 69 % bei etwa 9 USD | [[2026-07-10-matthewberman-2075597710435266674]] |
+| 2026-07-10 | GPT-5.6 Luna Ultra | Coding Agent Index v1.1 Score ca. 74,5 bei API-Kosten ca. 520 USD | Abgelesen aus Chart, Drittanbieter Artificial Analysis, Kosten vermutlich Gesamtlauf | [[2026-07-10-rasbt-2075573860796436626]] |
+| 2026-07-10 | GPT-5.6 Luna High | Index-Score ca. 58,5 bei ca. 150 USD | Abgelesen aus Chart | [[2026-07-10-rasbt-2075573860796436626]] |
+| 2026-07-10 | Claude Opus 4.8 Max | Index-Score ca. 72,5 bei ca. 2.450 USD | Abgelesen aus Chart; unter GPT-5.5 (ca. 76,5 bei ca. 1.700 USD) | [[2026-07-10-rasbt-2075573860796436626]] |
+| 2026-07-10 | Claude Fable 5 | Index-Score ca. 77 bei geschätzt über 3.700 USD | Einzelpunkt am rechten Chartrand, Kosten grob geschätzt | [[2026-07-10-rasbt-2075573860796436626]] |
+| 2026-07-09 | GPT-5.6 Terra und Luna (max) in Codex | Coding Agent Index: 77 bzw. 75 Punkte (Tabelle 77,4 / 74,6), Kosten etwa 60 % bzw. 80 % unter Sol | Modell plus Harness | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Terra (max) | Intelligence Index v4.1: 55 Punkte | Drittanbieter; GPT-5.5 (xhigh) ebenfalls 55 | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Sol Ultra | Terminal-Bench 2.1: 91,9 %; Sol 88,8 %, Terra 87,4 %, Luna 84,7 %, GPT-5.5 85,6 %, Claude Mythos 5 88,0 % | Herstellermessung; Mythos-Wert nur berichtet; Sol Ultra bei etwa 5 USD je Task | [[2026-07-09-kimmonismus-2075271465964798147]] |
+| 2026-07-09 | GPT-5.6 Sol Ultra | BrowseComp 92,2 %; SEC-Bench Pro 74,3 % | Nur im Tweet-Text, in den Bildern nicht verifizierbar | [[2026-07-09-kimmonismus-2075271465964798147]] |
+| 2026-07-09 | GPT-5.6 Sol (max) in Codex | Artificial Analysis Coding Agent Index: 80 Punkte, führt bei DeepSWE, Terminal-Bench v2 und SWE-Atlas-QnA (Gleichstand bei Letzterem mit Grok 4.5) | Modell plus Harness; Drittanbieter | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Sol (max) | Artificial Analysis Intelligence Index v4.1: 59 Punkte (Tabelle 58,9) | Drittanbieter mit Pre-Release-Zugang; Claude Fable 5 60 (59,9) | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Sol (max) | 15k Output-Tokens je Intelligence-Index-Task gegenüber 16k bei GPT-5.5 | Drittanbieter | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | GPT-5.6 Sol | Agents' Last Exam 52,7 %; Terra 50,4 %, Luna 50,3 %, GPT-5.5 46,9 %, Opus 4.8 45,2 %, Fable 5 40,5 % | OpenAI-Chart/Tabelle, Herstellermessung | [[2026-07-09-kimmonismus-2075271465964798147]] |
+| 2026-07-09 | GPT-5.6 Sol | SWE-Bench Pro 64,6 %; Claude Mythos 5 80,3 %, Mythos Preview 77,8 %, GPT-5.5 59,4 % | OpenAI-Tabelle | [[2026-07-09-kimmonismus-2075271465964798147]] |
+| 2026-07-09 | GPT-5.6 Sol | DeepSWE v1.1: 72,7 %; Terra 69,6 %, Luna 67,2 %, GPT-5.5 67 % | OpenAI-Tabelle | [[2026-07-09-kimmonismus-2075271465964798147]] |
+| 2026-07-09 | GPT-5.6 Sol | GDPval-AA v2 1.747,8 Elo; Fable 5 1.759,6, Opus 4.8 1.600,1 | OpenAI-Tabelle | [[2026-07-09-kimmonismus-2075271465964798147]] |
+| 2026-07-09 | GPT-5.6 Sol | Management Consulting Tasks (Internal) 43,2 %; Big Finance Bench 53 % | Interne OpenAI-Benchmarks bzw. Herstellertabelle | [[2026-07-09-kimmonismus-2075271465964798147]] |
+| 2026-07-09 | GPT-5.6 Sol | OSWorld 2.0: 62,6 %, vor Opus 4.8 | Nur im Tweet-Text, Bild nicht sichtbar | [[2026-07-09-kimmonismus-2075271465964798147]] |
+| 2026-07-09 | GPT-5.6 Luna (max) | Intelligence Index v4.1: 51 Punkte (Tabelle 51,2) | Drittanbieter | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | Claude Opus 4.8 (max) in Claude Code | Coding Agent Index: 73 Punkte; Intelligence Index 56 | Chart; Sol laut AA etwa 10 % billiger je Task | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | Claude Fable 5 (max) in Claude Code | Coding Agent Index: 77 Punkte | Chart, mit Fallback; Sol laut AA etwa 40 % billiger je Task | [[2026-07-09-artificialanlys-2075268970492657905]] |
+| 2026-07-09 | AA-Briefcase | Fable 5 (max) Rubric Score 56 % gegenüber 42 % bei GPT-5.6 Sol (max); Analytical Quality Elo 1764 gegenüber 1592 | Drittanbieter; Sol hat höchste Presentation Elo | [[2026-07-09-artificialanlys-2075268970492657905]] |
 | 2026-05-31 | Terminal-Bench 2.0, Harness-Effekt | Fremd-Scaffold mit Anthropic-Gewichten 79,8 % gegen Claude Code mit denselben Gewichten 58,0 % (21,8 Punkte) | Mai 2026 (Tag ungenau); Bericht zitiert Fremdmessung | [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] |
 | 2026-04-22 | Qwen3.6-27B vs. Claude 4.5 Opus, Terminal-Bench 2.0 | 59,3 gegen 59,3 | Selbstmessung Alibaba, Apache-2.0-Modell, Harness nicht genannt | [[2026-04-22-alibaba-qwen-qwen3-6-27b-lokal-betreiben]] |
 | 2026-04-22 | Qwen3.6-27B vs. Claude 4.5 Opus, SkillsBench | 48,2 gegen 45,3 | Selbstmessung Alibaba | [[2026-04-22-alibaba-qwen-qwen3-6-27b-lokal-betreiben]] |

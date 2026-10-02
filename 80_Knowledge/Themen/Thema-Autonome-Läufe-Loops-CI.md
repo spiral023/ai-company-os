@@ -9,7 +9,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - **Hauptkeyword:** Ralph Loop
 - **Long-Tail:** Ralph Loop einrichten; Claude Code Headless CI; Claude Code über Nacht; Autonomiestufen Coding Agent; Claude Code GitHub Action; Loop Engineering
 - **Fragen:** Kann ich einen Agent über Nacht laufen lassen? / Wie viel Autonomie ist sicher?
-- **Häufig in den Quellen:** ralph loop (5), steering.md (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), overnight agents (2), --output-format json, claude -p, extended thinking, @-referenzen, unix-pipe, plan mode headless, claude code common workflows, oidc, google vertex ai, review gate, claude code gitlab ci/cd, aws bedrock, @claude merge request
+- **Häufig in den Quellen:** ralph loop (6), steering.md (3), auto mode (3), loop (3), /goal (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), über nacht (2), ci-agent (2), testharness (2), overnight agents (2), review (2), reviewer (2), test (2), qualität (2), @-referenzen, plan mode headless
 
 ## Verwandte Themen
 
@@ -20,17 +20,20 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 
 ## Patterns (3)
 
-- [[CI-Agent-mit-Review-Gate]] · mehrfach-belegt · 8 Belege
+- [[CI-Agent-mit-Review-Gate]] · mehrfach-belegt · 9 Belege
 - [[Metrikband-gestufte-Agent-Autonomie]] · meinung · 1 Belege
-- [[Ralph-Loop-Frischer-Kontext-pro-Iteration]] · mehrfach-belegt · 11 Belege
+- [[Ralph-Loop-Frischer-Kontext-pro-Iteration]] · mehrfach-belegt · 15 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]], [[Testharness-als-staerkster-Hebel]]
 
-## Quellen (9)
+## Quellen (12)
 
 - [[2026-08-12-voxyz_ai-2087579867139264681]] — Ungenutztes Agent-Kontingent lässt sich über einen reinen Kandidatenbericht verplanen, wenn nur umkehrbare Aufgaben mit Prüfbefehl in isolierten Branches zugelassen sind.
 - [[2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding]] — Das Vier-Stufen-Modell von Pair Programming bis Agentenflotte trägt nur mit automatischer Verifikation, und Fehlläufe sollten systematisch in besseren Startkontext übersetzt werden.
+- [[2026-07-06-claudedevs-2074208949205881033]] — Das Claude-Code-Team definiert einen Loop als Agent, der Arbeitszyklen wiederholt, bis ein Stop-Kriterium greift, und sortiert Loops nach Trigger, Stop-Kriterium, verwendetem Primitive und passender A
+- [[2026-07-03-emanueledpt-2073013891752251574]] — Emanuele Di Pietro beschreibt einen selbstberichteten Nachtlauf mit Codex: Threads in Worktrees, Heartbeats zum Einchecken, Review von PRs und Issues sowie ein Codex-Bot auf GitHub, der Issues in eine
 - [[2026-07-03-calebwritescode-loop-engineering-explained-in-7-min-and-simplified]] — Loop Engineering ist als vierte Schicht über Prompt, Context und Harness eingeordnet, lässt Agenten sich selbst anstoßen; der Nutzen ist laut Autor unbewiesen.
+- [[2026-06-08-mvanhorn-2063865685558903149]] — Matt Van Horn ordnet die Debatte um Peter Steinbergers Satz ein, man solle Coding Agents nicht mehr prompten, sondern Loops entwerfen, die sie prompten.
 - [[2026-05-18-agenticjames-using-goal-with-a-task-management-system-is-the-most-overpowered-way-to]] — Ein Task pro Datei plus fest vorgegebene Prozedur im /goal-Befehl macht Reihenfolge und Laufzeit eines Agenten-Loops steuerbar, Kosten und Abbruchkriterium bleiben offen.
 - [[2026-04-17-wiki-compiler-ralph-loop]] — Beim Ralph Loop liegt der Fortschritt in Dateien und Git statt im Modellkontext, jede Iteration startet frisch, und ohne echte Tests halluziniert der Agent Fortschritt.
 - [[2026-02-23-d4m1n-ralph-loop-setup-primaer]] — Der Ralph Loop trägt Zustand in Dateien statt im Modell und läuft mit Tests und Steering-Datei stundenlang autonom; die Spec-Prüfung vorab ist billiger als Rollbacks.
@@ -42,7 +45,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]],
 
 - [[2026-08-09-natebjones-decision-exhaustion-is-real-discuss]]
 - [[2026-08-02-promptgefluester-wenn-ihr-versucht-euer-software-projekt-mit-fable-five-oder-o-plus-5]]
+- [[2026-07-16-amasad-2077802290304684404]]
 - [[2026-07-09-n3sonline-wayfinder]]
+- [[2026-07-01-0xcodila-2072329149520232639]]
 - [[2026-06-02-trq212-2061907337154367865]]
 - [[2026-05-21-christophmagnussen-ki-agenten-weichen-ab]]
 - [[2026-02-20-boris-tane-sdlc-is-dead]]

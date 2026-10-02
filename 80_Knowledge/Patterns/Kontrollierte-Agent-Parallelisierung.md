@@ -63,6 +63,9 @@ Parallelisierung lohnt sich nur unter drei Voraussetzungen: (1) **klare Modulgre
 - 2026-09-27 · [[2026-09-27-voxyz_ai-2104254744722383210]] · meinung — Selbstbericht: 8 parallele Agenten verbrannten ca. 12M Token pro Mining-Durchlauf und erreichten zweimal das Limit; Gruppen à 3 liefen fehlerfrei, Done-Marker für idempotente Reruns. Einzelfall, nicht kontrolliert verglichen.
 - 2026-09-29 · [[2026-09-29-voxyz_ai-2105012597796057438]] · meinung — fork_turns auf none oder wenige Turns, sonst erben Subagents Modell und Effort des Hauptagenten. Konkreter Stolperstein bei Delegation in Codex.
 - 2026-09-27 · [[2026-09-27-voxyz_ai-2104224555040452925]] · meinung — Vier thematisch getrennte, read-only Breaker-Subagents prüfen je einen festen Fragenkatalog, der Hauptagent behebt danach. Neu gegenüber dem 26.09.: Effort-Stufen (`high`, Security `xhigh`) und ein Sicherheitsrahmen für die Testumgebung; keine Messung.
+- 2026-07-03 · [[2026-07-03-emanueledpt-2073013891752251574]] · meinung — Selbstberichteter Codex-Nachtlauf mit Worktree pro Aufgabe, Heartbeats und GitHub-Bot-Fix-Loop; keine Zahlen zu Kosten oder Fehlerquote.
+- 2026-06-08 · [[2026-06-08-mvanhorn-2063865685558903149]] · meinung — Beschreibt Orchestrierungs-Loops, die andere Loops beaufsichtigen, und nennt Cherny-Tipp Selbstverifikation als Voraussetzung für lange autonome Läufe. Einschränkung: selbstberichtet, kein Messwert.
+- 2026-07-16 · [[2026-07-16-amasad-2077802290304684404]] · meinung — Manager-Agent pro Mitarbeiter spawnt Agent-Flotten in Loops an verifizierbaren Aufgaben (CSS-Migration: 423 PRs, 309 gemergt in etwa zwei Monaten). Läuft in microVMs mit Audit-Log und Token-Proxy, Selbstbericht, Kosten nicht genannt.
 
 ## Spannungen & offene Fragen
 

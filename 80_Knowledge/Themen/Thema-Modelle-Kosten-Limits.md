@@ -9,7 +9,7 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 - **Hauptkeyword:** Claude Code Kosten
 - **Long-Tail:** Claude Code Usage Limits; Kosten pro Task statt pro Token; Prompt Caching Claude Code; Claude Code mit lokalem Modell; Reasoning Effort wählen; Modell-Eskalation günstig nach teuer
 - **Fragen:** Welches Modell für welche Aufgabe? / Warum sind meine Limits so schnell leer?
-- **Häufig in den Quellen:** modell-eskalation (14), modell (11), kosten pro task (10), effort (10), gpt-6 (8), kosten (7), preis (6), opus 5.5 (6), token (5), anthropic_base_url (4), preise (4), /compact (4), sonnet (4), terminal-bench (4), prompt caching (3), modellwahl (3), artificial analysis intelligence index (3), limit (3), modellpreise (3), pareto-front (3)
+- **Häufig in den Quellen:** modell-eskalation (21), modell (19), kosten pro task (13), kosten (13), effort (13), gpt-6 (10), preis (9), terminal-bench (6), coding agent index (6), benchmark (6), token (6), opus 5.5 (6), modellwahl (5), pareto (5), preise (5), sonnet (5), anthropic_base_url (4), cost per task (4), /compact (4), prompt caching (3)
 
 ## Verwandte Themen
 
@@ -22,14 +22,15 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 
 - [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 3 Belege
 - [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 8 Belege
-- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 36 Belege
+- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 41 Belege
 - [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 2 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]]
 
-## Quellen (37)
+## Quellen (44)
 
 - [[2026-10-02-repo-farion1231-cc-switch]] — Im Klon von farion1231/cc-switch (Stand Commit `b9e96202`) beschreibt `src/i18n/locales/en.json` einen „Stack“-Modus: Du legst mehrere Anbieter an, und alle ihre Modelle erscheinen im Modellmenü von C
+- [[2026-10-02-developers-using-gpt-6-openai-api]] — Die Entwicklerseite „Using GPT-6“ beschreibt die drei GPT-6-Modelle, neue API-Funktionen und Prompt-Bausteine für Astra.
 - [[2026-10-01-artificialanlys-2105491868608004578]] — Artificial Analysis (Drittanbieter) misst am 01.10.2026 Kosten pro Intelligence-Index-Task für OpenAI-Modelle nach.
 - [[2026-09-30-artificialanlys-2105392625788637299]] — Artificial Analysis (Drittanbieter-Messung, Intelligence Index v4.3.2 mit 10 Evaluations) bewertet am 30.09.2026 Googles Gemini 4 Argon mit `high` Reasoning, der höchsten verfügbaren Stufe.
 - [[2026-09-29-voxyz_ai-2104919123918479521]] — Vox liefert einen Prompt, mit dem Claude Code das eigene Setup gegen Anthropics Leitfaden zu Sonnet 5.5 prüft ([[2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog]]).
@@ -57,6 +58,12 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-08-03-floknowsai-die-preise-fuer-ki-fallen-wirklich-und-trotzdem-ist-dein-limit-genauso]] — Trotz fallender Preise für festes Können bleibt das Limit gleich schnell leer, weil Kontextlänge, Denkstufe, Tokenizer, Subagents und Langläufer den Verbrauch pro Aufgabe erhöhen.
 - [[2026-07-27-techfeed5-1-reason-why-the-cloud-limits-could-hit-directly-that-we-talk-to-opus-in]] — Der Token-Verbrauch hängt von der Sprache ab und Deutsch verbraucht bei Claude Opus laut Clip deutlich mehr als Englisch, allerdings ohne belegte Quelle und Methode.
 - [[2026-07-27-cerebras-gpt-5-6-modellwahl-und-reasoning]] — Mit dem günstigsten tragfähigen Modell starten und bei Stillstand eskalieren, denn jede Reasoning-Stufe kostet rund 50 Prozent mehr bei sinkendem Grenznutzen; warme Sessions sparen Cache-Kosten.
+- [[2026-07-15-xudong07452910-2077246527756775933]] — Der Tweet fasst auf Chinesisch den Prompt-Guide von OpenAI zu GPT-5.6 Sol zusammen (Stand 2026-07-15) und zieht daraus eine Folgerung für `AGENTS.md`.
+- [[2026-07-10-rasbt-2075573860796436626]] — Sebastian Raschka liest aus einem Chart des Artificial Analysis Coding Agent Index v1.1 Faustregeln für agentisches Coding ab: Statt auf die nächsthöhere Modellstufe zu wechseln, lohnt sich häufig das
+- [[2026-07-10-matthewberman-2075597710435266674]] — @MatthewBerman gibt eine DeepSWE-Auswertung weiter und stimmt ihr zu, dass GPT-5.6 Sol in der Stufe `high` das beste Preis-Leistungs-Modell sei.
+- [[2026-07-09-voxyz_ai-2075278546570801574]] — @Voxyz_ai argumentiert, dass bei niedrigen Preisen die Frage entfällt, ob eine Aufgabe das gute Modell wert ist.
+- [[2026-07-09-kimmonismus-2075271465964798147]] — Der Post fasst den GPT-5.6-Launch zusammen und gibt Benchmark-Zahlen wieder.
+- [[2026-07-09-artificialanlys-2075268970492657905]] — Artificial Analysis (AA) misst die drei GPT-5.6-Modelle im eigenen Intelligence Index v4.1 und im neuen Coding Agent Index.
 - [[2026-07-08-claudedevs-modell-vs-effort]] — Bei schlechten Ergebnissen zuerst Input und Kontext prüfen, dann nach Fehlerbild entscheiden: übersprungene Arbeit braucht mehr Effort, gründlich erarbeitete Fehler ein anderes Modell.
 - [[2026-05-01-mnilax-claude-code-overhead-9-patterns]] — Ein 90-Tage-Audit zeigt: 73 Prozent der Claude-Code-Tokens gehen in strukturellen Overhead wie große CLAUDE.md, Hooks, MCPs und Cache-Misses, nicht in Modellwahl.
 - [[2026-04-29-wiki-compiler-claude-usage-limits-token-strategien]] — Tokenverbrauch wächst quadratisch mit der Nachrichtenzahl; kurze klar geschnittene Sessions und Modellwahl nach Aufgabenschwere senken Verbrauch und Limit-Druck.
@@ -76,6 +83,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-09-27-voxyz_ai-2104254744722383210]]
 - [[2026-09-09-voxyz_ai-2097814698204832116]]
 - [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]]
+- [[2026-07-06-claudedevs-2074208949205881033]]
+- [[2026-07-01-0xcodila-2072329149520232639]]
 - [[2026-06-04-agenticjames-most-people-have-not-touched-the-best-parts-of-claude-code-skills-forked]]
 - [[2026-05-09-zodchiii-15-claude-code-settings-most-developers]]
 - [[2026-05-04-wiki-compiler-claude-session-und-token-management]]

@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), known unknowns (2), change quiz (2), codex skill-creator (2), modellwechsel (2), gpt-6 astra (2), skill descriptions (2), agents.md (2), überregulierung (2), progressive disclosure (2), sycophancy, pre-mortem prompt, projektplanung mit ai, prompt-tricks, frühwarnsignale, ai agent zustimmungsneigung, spec grilling, risikoanalyse, spec-driven development, implementation plan
+- **Häufig in den Quellen:** known unknowns (3), prompt engineering (3), change quiz (2), skill descriptions (2), progressive disclosure (2), modellwechsel (2), codex skill-creator (2), agents.md (2), gpt-6 astra (2), überregulierung (2), frühwarnsignale, pre-mortem prompt, spec grilling, prompt-tricks, risikoanalyse, projektplanung mit ai, ai agent zustimmungsneigung, sycophancy, blind spot, frage
 
 ## Verwandte Themen
 
@@ -19,13 +19,13 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 
 ## Patterns (3)
 
-- [[Fable-Unknowns-vor-Prompt-Qualitaet]] · meinung · 3 Belege
+- [[Fable-Unknowns-vor-Prompt-Qualitaet]] · meinung · 4 Belege
 - [[Intent-Engineering-als-dritte-Schicht]] · meinung · 4 Belege
 - [[Voice-Prompting-fuer-Kontextreichtum]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-statt-Generierung]]
 
-## Quellen (8)
+## Quellen (9)
 
 - [[2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c]] — Bei Opus 5.5 helfen ein klares Ziel, eine einzige Stopp-Bedingung und eine Task-Datei, die Kontext-Zusammenfassungen überlebt; weniger Stopps brauchen Gates.
 - [[2026-09-19-voxyz_ai-2101355643882065971]] — Coding Agents führt man besser über Ergebnisverantwortung mit prüfbarem Endergebnis und Berichtspflicht als über Einzelschritte; der Reviewer läuft getrennt vom Implementierer.
@@ -34,6 +34,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-sta
 - [[2026-09-04-pvncher-2095991462416490862]] — Bei stärkeren Modellen werden angesammelte Skills und AGENTS.md-Regeln zum Ballast: Descriptions kurz und triggerbasiert halten, Pflichtlektüre und Rezepte streichen.
 - [[2026-07-14-fredrikharkort-5-prompts-die-weh-tun]] — Prompts, die Rückfragen und unbequemes Feedback erzwingen, verbessern Entscheidungen, hängen aber davon ab, wie viel Kontext die KI über Person und Geschäft hat.
 - [[2026-07-03-trq212-fable-field-guide-unknowns]] — Stärkere Modelle tragen falsche Annahmen selbstbewusst durch die Session; der Engpass ist die Spezifikation, daher Unknowns per Interview, Prototyp und Change Quiz heben.
+- [[2026-07-03-trq212-2073100352921215386]] — Thariq (Anthropic) beschreibt in einem langen X-Artikel, wie er mit Claude Fable 5 arbeitet.
 - [[2026-05-02-vincentmumme-das-muesst-ihr-unbedingt-testen]] — Wer den Agenten aus der Rückschau auf ein gescheitertes Projekt argumentieren lässt, umgeht seine Zustimmungsneigung und deckt Risiken vor der Entwicklung auf.
 
 ## Quellen mit diesem Thema als Nebenthema

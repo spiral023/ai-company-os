@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** progressive disclosure (5), context engineering (3), instruktionsbudget (2), agent_docs (2), agents.md (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), llm wiki (2), claude.md (2), auto mode (2), instruction following, claude.md schreiben, /init vermeiden, claude code system-reminder, coding-agent-fehler, test-first, erfolgskriterien, annahmen offenlegen
+- **Häufig in den Quellen:** progressive disclosure (5), agents.md (4), context engineering (3), claude.md (3), instruktionsbudget (2), agent_docs (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), llm wiki (2), auto mode (2), claude code system-reminder, instruction following, claude.md schreiben, /init vermeiden, annahmen offenlegen, erfolgskriterien, claude.md prompt, test-first
 
 ## Verwandte Themen
 
@@ -20,12 +20,13 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 
 ## Patterns (1)
 
-- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 29 Belege
+- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 31 Belege
 
-## Quellen (13)
+## Quellen (14)
 
 - [[2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk]] — Lint-Warnungen direkt im Tool-Ergebnis steuern Agents kostengünstig ohne Blockade; harte Durchsetzung braucht weiterhin ein separates CI-Gate.
 - [[2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the]] — Neuere Modelle arbeiten mit weniger vorgegebenem Kontext besser; lange CLAUDE.md-Dateien sollten gekürzt und Wissen in bei Bedarf ladbare Skills ausgelagert werden.
+- [[2026-07-06-mattpocockuk-2074060484047712521]] — Matt Pocock empfiehlt einen Zwei-Schritt-Trick fürs Debugging: den Dev-Server per `tee` in eine lokale Datei schreiben lassen und in `AGENTS.md` auf diese Datei verweisen.
 - [[2026-04-21-natebjones-this-is-so-important-if-you-use-ai-as-a-solo-business-or-ic-theres-a]] — Ein LLM-Wiki passt zu Verbindungsarbeit einzelner Personen, für zitierbare Fakten im Großen braucht es eine Datenbank und für parallele Agenten ein anderes Modell.
 - [[2026-04-13-wiki-compiler-shorthand-guide-claude-code]] — Hooks automatisieren deterministisch, MCPs und Subagents bewusst klein und eng gescopt halten; das Kontextfenster ist die knappe Ressource.
 - [[2026-04-13-wiki-compiler-gute-agents-md-schreiben]] — Agent-Dateien kurz, universell relevant und gestaffelt halten; Stilregeln gehören in Formatter und Linter, nicht in AGENTS.md.
@@ -42,7 +43,9 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 
 - [[2026-08-04-anthropic-docs-claude-code-best-practices]]
 - [[2026-07-30-floknowsai-ki-gibt-dir-das-gefuehl-dass-du-so-schnell-wie-noch-nie-arbeitest]]
+- [[2026-07-15-xudong07452910-2077246527756775933]]
 - [[2026-07-12-agenticjames-claude-codes-new-feature-checkup-makes-claude-more-token-efficient-and]]
+- [[2026-07-08-bcherny-2074997570317779038]]
 - [[2026-06-06-agenticjames-your-agent-is-referencing-documentation-when-it-should-be-reading-the]]
 - [[2026-02-24-nate-b-jones-intent-engineering]]
 - [[2026-02-05-kloss-xyz-feature-intelligence-architect]]

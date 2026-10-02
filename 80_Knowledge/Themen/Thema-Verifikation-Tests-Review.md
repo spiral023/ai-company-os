@@ -9,7 +9,7 @@ Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statis
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug?
-- **Häufig in den Quellen:** llm-as-judge (3), git worktrees (2), red green refactor (2), ai slop (2), testharness (2), statische code-analyse (2), auto mode (2), tdd (2), coding agents (2), mutation testing (2), hillclimbing (2), overfitting (2), test (2), gstack (2), ci-gate (2), long-running agents (2), verifier (2), reward hacking (2), context rot (2), subagents (2)
+- **Häufig in den Quellen:** test (4), testharness (4), verifier (3), /goal (3), auto mode (3), llm-as-judge (3), git worktrees (2), red green refactor (2), review (2), reviewer (2), qualität (2), verifikation (2), loop engineering (2), tests (2), ai slop (2), statische code-analyse (2), tdd (2), coding agents (2), mutation testing (2), hillclimbing (2)
 
 ## Verwandte Themen
 
@@ -20,13 +20,13 @@ Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statis
 
 ## Patterns (3)
 
-- [[Hillclimbing-mit-Holdout-Split]] · meinung · 1 Belege
+- [[Hillclimbing-mit-Holdout-Split]] · meinung · 3 Belege
 - [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 11 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 24 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 26 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[Great-Decoupling-Rollenverstaendnis]], [[Plan-first-mit-getrenntem-Review]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]]
 
-## Quellen (15)
+## Quellen (17)
 
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]] — Im Klon von thedaviddias/Front-End-Checklist (Stand Commit `7bfd8680`) beschreibt `packages/cli/README.md` die CLI `@frontendchecklist/cli`; die Regeln liegen im Paket, sie läuft offline.
 - [[2026-10-02-repo-garrytan-gstack]] — Laut `CHANGELOG.md` von garrytan/gstack (Repo-Stand Commit `7fca42ad`, Einträge um v1.91.9.0) wenden alle Workflows, die Tests vorschlagen, schreiben, prüfen oder ausliefern, eine gemeinsame „Test Val
@@ -40,6 +40,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-08-04-anthropic-docs-claude-code-best-practices]] — Anthropic empfiehlt Verifikation als vierstufige Eskalation vom Prompt über Goal-Evaluator und Stop-Hook bis zur zweiten Meinung durch ein frisches Modell, ergänzt um Plan-first und Session-Hygiene.
 - [[2026-08-02-promptgefluester-wenn-ihr-versucht-euer-software-projekt-mit-fable-five-oder-o-plus-5]] — Vor einem KI-Refactoring deterministische statische Analyse laufen lassen, toten Code entfernen und Architekturregeln festlegen, statt das Modell Abhängigkeiten selbst abgleichen zu lassen.
 - [[2026-07-26-promptgefluester-ich-hab-ne-unbequeme-wahrheit-und-zwar-ich-wurde-gefragt-wieso]] — Bei größeren Codebasen liefern dichte deterministische Prüfungen die Qualität, nicht das Modell allein, und kosten bewusst Zeit und Pflege.
+- [[2026-07-16-amasad-2077802290304684404]] — Replit-CEO Amjad Masad beschreibt, wie Replit zwischen Januar und Juni 2026 interne Agents in Engineering, Data, Sales, Marketing und Support eingeführt hat.
+- [[2026-07-01-0xcodila-2072329149520232639]] — Der X-Artikel erklärt Loops als Ziel, auf das ein Agent ohne Prompt pro Schritt hinarbeitet, und stützt sich auf Karpathys `autoresearch` und eine Bilevel-Arbeit.
 - [[2026-02-14-matt-pocock-skill-tdd-claude-code]] — Ein Test, eine Implementierung, wiederholen: Vertikale Tracer-Bullet-Zyklen verhindern, dass das Modell Tests umschreibt oder nur Mocks verifiziert.
 - [[2026-02-04-tweag-tdd-agentic-coding]] — Ein Test ist ein präziser Prompt: Der Agent baut Logik Test für Test, wobei die Testqualität beim Menschen liegt.
 - [[2026-01-12-dhruv1103-lessons-learned-500k-lines-claude-code]] — Modulare Architektur, TDD gegen echte Container, Read-only-MCP-Diagnose und gründliches Review machen große KI-Codebasen beherrschbar.
@@ -53,6 +55,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-08-30-alex-sprogis-loop-graph-engineering-das-letzte-video-was-du-s]]
 - [[2026-08-05-floknowsai-dein-vibe-coding-projekt-bricht-nicht-am-coding-agent-zusammen-sondern]]
 - [[2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding]]
+- [[2026-07-06-claudedevs-2074208949205881033]]
 - [[2026-04-16-wiki-compiler-gstack]]
 - [[2026-04-10-paulsolt-2042716870512353294]]
 - [[2026-02-23-d4m1n-ralph-loop-setup-primaer]]

@@ -67,6 +67,7 @@ Nach jedem abgeschlossenen Arbeitsblock wird bewusst zwischen fünf Optionen ent
 - 2026-02-14 · [[2026-02-14-gmoney-eth-25-claude-code-lessons]] · meinung — Context Window wie RAM, `/clear` und frischer Kontext, Subagents für Sauberkeit. Selbstberichtet, Sekundärquelle.
 - 2026-09-22 · [[2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit]] · meinung — `/clear` nach erledigter Aufgabe statt ca. 80 % Kontext mitzuschleppen, alternativ `/compact`. Keine Messung der Ersparnis.
 - 2026-08-22 · [[2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht]] · meinung — Warnt vor Token-Spar-Tools mit vorab gebautem Kontext-Graphen: Die Pflege bei sich ändernder Geschäftslogik ist das Problem, veralteter Graph-Inhalt landet als Wahrheit im Kontext; Erfahrungsvergleich ohne offengelegte Zahlen.
+- 2026-07-08 · [[2026-07-08-bcherny-2074997570317779038]] · meinung — Hersteller-Primärquelle: `/checkup` automatisiert Aufräumen von Skills/MCPs/Plugins und Aufteilen der Root-`CLAUDE.md`; keine Messung der Einsparung.
 
 ## Spannungen & offene Fragen
 

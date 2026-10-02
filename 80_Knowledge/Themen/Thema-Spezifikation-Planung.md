@@ -9,7 +9,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - **Hauptkeyword:** Spec-Driven Development
 - **Long-Tail:** Plan Mode Claude Code; Spec-First Development; Grill Me Skill; Plan vor Code; Spec Ordner pro Feature; Plan Annotation Workflow
 - **Fragen:** Lohnt sich Plan Mode? / Wie schreibe ich eine Spec für einen Coding Agent?
-- **Häufig in den Quellen:** spec-driven development (6), plan mode (4), vibe coding (3), session-kontinuität (2), design.md (2), handoff-dokument (2), claude code workflow (2), self-verification (2), single-model-blindheit (2), plan.md (2), to-tickets (2), to-spec (2), wayfinder (2), matt pocock skills (2), layered claude.md, cookbooks als tests, spec-first development, decision log, agent drift, task_plan.md
+- **Häufig in den Quellen:** spec-driven development (6), plan mode (4), vibe coding (3), handoff-dokument (2), design.md (2), session-kontinuität (2), claude code workflow (2), self-verification (2), plan.md (2), single-model-blindheit (2), to-tickets (2), to-spec (2), grilling (2), wayfinder (2), known unknowns (2), matt pocock skills (2), decision log, layered claude.md, spec-first development, cookbooks als tests
 
 ## Verwandte Themen
 
@@ -22,7 +22,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 
 - [[CONTEXT-Glossar]] · verifiziert · 4 Belege
 - [[Plan-first-mit-getrenntem-Review]] · verifiziert · 37 Belege
-- [[Spec-Grilling]] · verifiziert · 14 Belege
+- [[Spec-Grilling]] · verifiziert · 15 Belege
 - [[Spec-Ordner-pro-Feature]] · meinung · 2 Belege
 - [[Task-basierte-Steuerung]] · verifiziert · 14 Belege
 
@@ -50,6 +50,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-generierte-Schulung-mi
 - [[2026-07-13-mattpocock-handoff-to-teach]]
 - [[2026-07-11-mattpocock-wayfinder-to-implementation]]
 - [[2026-07-03-trq212-fable-field-guide-unknowns]]
+- [[2026-07-03-trq212-2073100352921215386]]
 - [[2026-05-02-vincentmumme-das-muesst-ihr-unbedingt-testen]]
 - [[2026-04-16-wiki-compiler-get-shit-done-gsd]]
 - [[2026-02-27-meer-claude-code-best-practices]]

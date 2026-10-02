@@ -9,7 +9,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 - **Hauptkeyword:** Context Engineering
 - **Long-Tail:** Context Rot vermeiden; Claude Code /compact oder /clear; Claude Code Kontextfenster verwalten; Session Handoff Dokument; Rewind statt Korrektur; Subagents als Kontextgrenze
 - **Fragen:** Wann sollte ich /clear statt /compact nutzen? / Warum wird mein Agent in langen Sessions schlechter?
-- **Häufig in den Quellen:** context rot (8), context window (6), /compact (6), /clear (6), progressive disclosure (6), claude.md (5), subagents (4), context engineering (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), plan mode (3), autocompact-puffer (2), mcp tools (2), ralph loop (2), userpromptsubmit hook (2), subagent-kosten (2), subagents als kontextgrenze (2)
+- **Häufig in den Quellen:** context rot (8), context window (6), /compact (6), /clear (6), progressive disclosure (6), claude.md (6), context engineering (4), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), kontext-hygiene (3), plan mode (3), mcp tools (2), autocompact-puffer (2), ralph loop (2), subagent-kosten (2), userpromptsubmit hook (2)
 
 ## Verwandte Themen
 
@@ -21,7 +21,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 ## Patterns (2)
 
 - [[Handoff-Doc]] · verifiziert · 17 Belege
-- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 38 Belege
+- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 39 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]]
 
@@ -58,6 +58,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 - [[2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt]]
 - [[2026-07-10-voxyz-mattpocock-skills]]
 - [[2026-07-08-claudedevs-modell-vs-effort]]
+- [[2026-07-08-bcherny-2074997570317779038]]
 - [[2026-07-06-mattpocock-writing-great-skills-beyond-skills]]
 - [[2026-07-03-calebwritescode-loop-engineering-explained-in-7-min-and-simplified]]
 - [[2026-05-01-mnilax-claude-code-overhead-9-patterns]]

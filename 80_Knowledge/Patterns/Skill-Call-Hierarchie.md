@@ -42,6 +42,7 @@ Version 1.1 macht diese Trennung im Lifecycle sichtbar: `wayfinder`, `to-spec`, 
 - 2026-04-22 · [[2026-04-22-agenticjames-everything-you-need-to-know-about-context-engineering-in-1-minute]] · meinung — Progressive Disclosure als Baum aus Entscheidungen statt Vorabladen; Grenzen des Verweisfolgens nicht behandelt.
 - 2026-07-25 · [[2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the]] · meinung — Ausgelagerter Kontext gehört in Skills zur progressiven Offenlegung. Bekannte Aussage, hier nur wiederholt.
 - 2026-02-01 · [[2026-02-01-anthropic-docs-extend-claude-with-skills]] · meinung — Frontmatter `disable-model-invocation`, `user-invocable`, `context: fork` steuern Auslösung und Isolation; Sekundärquelle.
+- 2026-10-02 · [[2026-10-02-developers-using-gpt-6-openai-api]] · meinung — OpenAI rät, den Vorrang der Nutzeranweisung vor Skill-Anweisungen explizit zu setzen, weil Astra empfindlicher auf Skills und `AGENTS.md` reagiert und bei Widersprüchen früh pausiert. Selbstbericht, verhaltensbasiert, nicht gemessen.
 
 ## Spannungen & offene Fragen
 

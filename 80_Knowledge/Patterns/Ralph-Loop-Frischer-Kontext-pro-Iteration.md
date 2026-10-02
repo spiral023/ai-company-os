@@ -40,6 +40,10 @@ Jede Iteration eines Laufs startet mit vollständig frischem Kontext statt einer
 - 2026-01-15 · [[2026-01-15-avasdr34m-its-not-easy-but-it-is-simple-kontext-nutzung-in-claude-code-entscheidet]] · meinung — Bash-Schleife über Aufgabenliste mit frischer Session je Aufgabe; Selbstbehauptung ohne Messung.
 - 2026-07-03 · [[2026-07-03-calebwritescode-loop-engineering-explained-in-7-min-and-simplified]] · meinung — Ordnet Harness als Task-Schleife außerhalb des Context Window ein; Loop Engineering als Selbst-Anstoß darüber. Nutzen laut Autor unbewiesen.
 - 2026-05-18 · [[2026-05-18-agenticjames-using-goal-with-a-task-management-system-is-the-most-overpowered-way-to]] · meinung — Loop bis Zielerreichung mit vorgegebener Prozedur; anders als beim Ralph Loop wird nichts zum Kontext-Reset gesagt, Kosten und Abbruchkriterium fehlen.
+- 2026-07-03 · [[2026-07-03-emanueledpt-2073013891752251574]] · meinung — Loop-Variante mit Prompt-Schärfung durch ein stärkeres Modell vorab; kein Beleg für frischen Kontext pro Iteration.
+- 2026-06-08 · [[2026-06-08-mvanhorn-2063865685558903149]] · meinung — Ordnet Ralph Loop als Stufe drei einer Lineage (ReAct, AutoGPT, Ralph, `/goal`, Orchestrierungs-Loop) ein und nennt drei harte Stopps (max. Iterationen, Stillstandserkennung, Budget). Einschränkung: Kompilat mit Eigenwerbung, Zahlen zitiert und nicht geprüft.
+- 2026-07-01 · [[2026-07-01-0xcodila-2072329149520232639]] · meinung — Nennt State-Datei (Erledigt/Gescheitert/Nächstes) und harte Stop-Bedingung („nach N Versuchen stoppen und berichten“) als Pflichtteile eines Loops. Dazu ein Vier-Punkte-Eignungstest (wöchentlich wiederkehrend, automatisierte Verifikation, Token-Budget, echte Tools).
+- 2026-07-06 · [[2026-07-06-claudedevs-2074208949205881033]] · meinung — Offizielle Claude-Code-Taxonomie von Loops (turn-, goal-, time-based, proactive) mit Stop-Kriterium je Typ; `/goal` nutzt ein Evaluator-Modell und Turn-Cap als herstellerseitiges Pendant zur Shell-Schleife. Selbstberichtet, keine Messdaten; frischer Kontext pro Iteration wird nicht thematisiert.
 
 ## Spannungen & offene Fragen
 

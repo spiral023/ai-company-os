@@ -39,6 +39,7 @@ Der Agent läuft als eigener, sandboxed Job in der CI-Pipeline (z. B. GitLab CI,
 - 2026-08-14 · [[2026-08-14-floknowsai-ueber-achtzig-prozent-des-codes-von-claude-code-und-codex-sieht-kein]] · meinung — Prüfmodell mindestens gleich stark wie Erzeuger, Merge nur mit Required Status Checks (Rulesets); Warnsignal, wenn der Agent Tests anpasst.
 - 2026-02-20 · [[2026-02-20-boris-tane-sdlc-is-dead]] · meinung — Fordert Adversarial Agent statt menschlichem PR-Review; steht im Gegensatz zum Review-Gate, ungeprüft.
 - 2026-09-29 · [[2026-09-29-openclaw-openclaw-enterprise-the-open-agent-platform-open]] · meinung — Interner Agent Androidclaw triagiert Kanäle, findet PRs und mergt Fixes; LLM-basierte Reviews als Teil der Plattform. Eigenbericht, ohne Zahlen.
+- 2026-07-16 · [[2026-07-16-amasad-2077802290304684404]] · meinung — Replit lässt den Agent PRs nach Risikostufe prüfen und holt nur bei Bedarf einen zweiten Menschen, etwa 29 bis 35 % der gemergten PRs werden agentisch freigegeben, 30 % menschliche Review-Zeit gespart. Selbstbericht des Anbieters ohne Methodik, Fehlerquote der Agent-Freigaben nicht genannt.
 
 ## Spannungen & offene Fragen
 

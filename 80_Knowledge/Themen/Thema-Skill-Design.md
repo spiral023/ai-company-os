@@ -9,7 +9,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - **Hauptkeyword:** Claude Code Skills
 - **Long-Tail:** Skill Description schreiben; Skill Evals Baseline; SKILL.md Aufbau; Skills vs. Slash Commands; Skill Trigger optimieren; Skills als Teamwissen
 - **Fragen:** Wann lohnt sich ein eigener Skill? / Warum löst mein Skill nicht aus?
-- **Häufig in den Quellen:** progressive disclosure (10), claude code skills (7), skill description (6), skill.md (5), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), wayfinder (4), claude skills (3), skill-creator (3), undertriggering (3), to-tickets (3), to-spec (3), agents.md (3), skill-trigger (2), baseline-vergleich (2), subagents (2), agent skills (2)
+- **Häufig in den Quellen:** progressive disclosure (10), claude code skills (7), skill description (6), skill.md (5), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), wayfinder (4), claude skills (3), skill-creator (3), undertriggering (3), skill (3), to-tickets (3), to-spec (3), agents.md (3), skill-trigger (2), baseline-vergleich (2), agent skills (2)
 
 ## Verwandte Themen
 
@@ -21,18 +21,18 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 ## Patterns (9)
 
 - [[Anti-Rationalization-Tables]] · verifiziert · 3 Belege
-- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 8 Belege
+- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 9 Belege
 - [[Hook-erzwungene-Skill-Aktivierung]] · meinung · 4 Belege
 - [[Klein-und-komposierbar]] · verifiziert · 16 Belege
 - [[One-File-per-Failure-Mode]] · verifiziert · 3 Belege
-- [[Skill-Call-Hierarchie]] · verifiziert · 11 Belege
+- [[Skill-Call-Hierarchie]] · verifiziert · 12 Belege
 - [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 18 Belege
-- [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 3 Belege
+- [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 4 Belege
 - [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Erweiterungs-Ebenen-Zuordnung]], [[Hillclimbing-mit-Holdout-Split]]
 
-## Quellen (18)
+## Quellen (19)
 
 - [[2026-10-02-repo-anthropics-skills]] — Im Klon von anthropics/skills (Stand Commit `8a1541c4`) enthält der Skill `skills/claude-api/` unter `shared/evals/` die Anleitungen `build-eval.md`, `eval-hillclimb.md`, `cost-hillclimb.md` und `eval
 - [[2026-09-14-code-test-plugins-with-evals-claude-code-docs]] — Plugins und Skills lassen sich per Eval mit und ohne Plugin vergleichen; das Delta zeigt den Beitrag, ein negatives Delta verdächtigt zuerst den Judge.
@@ -41,6 +41,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Erweiterungs-Ebenen-Zuordnun
 - [[2026-07-10-voxyz-mattpocock-skills]] — Eine kleine Sammlung Markdown-Skills mit Aufrufhierarchie, gemeinsamem Projekt-Glossar und Handoff ist ein leichtgewichtiger, komponierbarer Agent-Stack unter menschlicher Prozesskontrolle.
 - [[2026-07-08-mattpocock-custom-issue-tracker]] — Workflow-Skills lassen sich per Setup-Befehl an jeden programmierbar erreichbaren Issue-Tracker anbinden, weil Arbeitslogik und Tracker-Anbindung getrennt sind.
 - [[2026-07-06-mattpocock-writing-great-skills-beyond-skills]] — Struktur, Leading Words und Pruning, entwickelt für Skills, verbessern jeden Text, den Agenten lesen, von AGENTS.md über Specs bis zu AFK-Prompts.
+- [[2026-07-03-neilzegh-2072977540193378428]] — Neil Zeghidour rät, in der `CLAUDE.md` eine Pflichtfrage zu verankern: Nach jeder Aufgabe soll der Agent prüfen, ob wiederverwendbares Wissen (Tool, Trick, Repo, Bug) entstanden ist, und es in die Kno
 - [[2026-07-01-anthropic-skill-creator-skill-md]] — Der offizielle skill-creator deckt Erstellen, Evals mit Baseline, Varianz-Benchmarks, automatisierte Trigger-Optimierung und Blind-Vergleich ab; simple Ein-Schritt-Queries triggern Skills nie.
 - [[2026-06-04-agenticjames-most-people-have-not-touched-the-best-parts-of-claude-code-skills-forked]] — Mit context: fork und model im Skill-Frontmatter läuft ein teures Modell nur für eine Aufgabe, ohne den Hauptkontext zu füllen; imperative Descriptions sollen besser triggern.
 - [[2026-04-16-wiki-compiler-skill-creator-skill]] — Skills sind messbare Produkte: Wer sie mit und ohne Skill vergleicht und die Trigger-Description schärft, statt nach Gefühl zu bewerten, verbessert sie belegbar.
