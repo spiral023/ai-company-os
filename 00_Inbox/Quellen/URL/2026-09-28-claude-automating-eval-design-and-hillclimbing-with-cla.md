@@ -6,8 +6,10 @@ datum: 2026-09-28
 erfasst: 2026-10-02
 typ: url
 quelle: url
-status: neu
-medien: "6/6 lokal"
+status: verarbeitet
+verarbeitet_am: 2026-10-02
+source_notiz: 80_Knowledge/Sources/2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla.md
+medien: "9/9 lokal"
 ---
 
 # Automating eval design and hillclimbing with Claude / claude.dev Blog
@@ -198,3 +200,11 @@ With special thanks to Misha Khalman for skill development. With thanks to Misha
 ![The hillclimbing loop: the thing being edited, such as a prompt, feeds a fixed model and harness that is scored on a held-out test split and a train split. An analyzer reads only the train failures and proposes one diff per round; the diff is kept when train and test both rise, and reverted when only train rises or either score drops.](medien/2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla/05-bild.png)
 
 ![The inbox-routing results page after hillclimbing, comparing three variants on train and test scores. Variant v1, which defines each queue and adds a tie-break rule, is marked best at 0.875 on both; v2, which adds two worked examples, was reverted because train went up while test stayed flat.](medien/2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla/06-bild.png)
+
+<!-- Ergänzt am 2026-10-02: Die Abbildungen 1, 8 und 9 sind auf der Seite eingebettete SVGs und wurden vom Ingest nicht erfasst. Sie wurden per Playwright als Element-Screenshot gesichert. Die Bilder 01–06 oben entsprechen den Abbildungen 2–7. -->
+
+![FIG 1 – The four elements of a good eval: illustratives Diagramm „Score against tokens spent“ mit drei Modellgrößen auf low/medium/high Effort; markiert sind (1) stärkeres Modell scort höher, (2) mehr Effort scort höher, (3) Headroom unter dem perfekten Score, (4) geringe Run-to-Run-Varianz.](medien/2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla/fig1-svg.png)
+
+![FIG 8 – Cost-focused hillclimbing: Customer-Support-Benchmark, Entscheidungsgenauigkeit auf Search-Tickets gegen Kosten pro Ticket; (1) Opus 4.8 high, Baseline 74,4 % bei 4,6 ¢, (2) Opus 5.5 low mit auditiertem Prompt 87,8 % bei 1,9 ¢, (3) Sonnet 5 low gleicher Prompt 88,9 % bei 1 ¢, (4) Sonnet 5 low mit verbessertem Prompt 98,9 % bei 1 ¢.](medien/2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla/fig8-svg.png)
+
+![FIG 9 – Performance-focused hillclimbing: claude-api-Skill-Eval, Pass Rate über 24 Hillclimbing-Runden von 66,1 % auf 87,9 % (Runde 6: 74,3 %, 9: 74,0 %, 11: 77,5 %, 13: 77,2 %, 17: 80,1 %, 22: 84,0 %, 24: 87,9 %); Phasen: (1) fehlende Abschnitte und Typtabellen ergänzen, (2) korrigieren, wie der Skill Claude Code schreiben lässt, (3) Grader korrigieren plus weitere Skill-Edits.](medien/2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla/fig9-svg.png)
