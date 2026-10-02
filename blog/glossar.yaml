@@ -303,3 +303,73 @@ begriffe:
   - begriff: Workload
     text: "Die Gesamtheit der Aufgaben, die du tatsächlich an ein Modell stellst, also Art, Länge und Menge. Benchmarks messen einen fremden Workload. Kosten und Qualität für deinen eigenen kennst du erst nach einem Test damit."
     siehe: [Benchmark, Task]
+
+  - begriff: Hillclimbing
+    aliase: [Hill Climbing]
+    text: "Ein System in kleinen Schritten gegen einen festen Score verbessern: pro Runde eine Änderung, neu messen, behalten nur, was hilft. Das trägt, solange der Score misst, worauf es dir ankommt, und ein getrennter Testteil prüft, ob die Verbesserung auch auf neuen Fällen hält."
+    siehe: [Eval, Holdout, Overfitting]
+
+  - begriff: Holdout
+    aliase: [Holdout-Set, Test-Split]
+    text: "Der Teil deiner Testfälle, den der Optimierer nie zu sehen bekommt. Daran misst du, ob eine Verbesserung auf unbekannten Fällen trägt. Steigt nur der Score auf den gesehenen Fällen, hast du wahrscheinlich auf genau diese Fälle hin optimiert."
+    siehe: [Eval, Overfitting]
+
+  - begriff: Overfitting
+    text: "Ein System passt sich so eng an seine Testfälle an, dass es dort glänzt, im echten Einsatz aber nicht besser wird. Bei Prompts und Skills passiert das schnell, etwa wenn Fehlerbeispiele direkt in den Prompt wandern. Ein getrennter Testteil macht es sichtbar."
+    siehe: [Holdout, Eval]
+
+  - begriff: Logits
+    text: "Die Rohwerte, die ein Sprachmodell für jedes mögliche nächste Token ausgibt. Ein höherer Wert heißt, das Token passt besser zum bisherigen Text. Wahrscheinlichkeiten werden daraus erst durch Softmax."
+    siehe: [Token, Softmax]
+
+  - begriff: Softmax
+    text: "Ein Rechenschritt, der Rohwerte in Wahrscheinlichkeiten umwandelt, die zusammen eins ergeben. Rechnet man ihn nur über eine kleine Auswahl, etwa feste Antwortoptionen, verteilt sich die ganze Wahrscheinlichkeit auf genau diese. Deshalb braucht eine solche Auswahl eine Ausweichoption."
+    siehe: [Logits, Kalibrierung]
+
+  - begriff: Structured Output
+    aliase: [Structured Outputs]
+    text: "Eine Funktion von Modell-APIs, die die Antwort in ein vorgegebenes Format zwingt, meist ein JSON-Objekt mit festen Feldern. Das Format ist damit gesichert, der Inhalt der Felder nicht. Das Modell erzeugt die Antwort weiterhin Token für Token."
+    siehe: [Token]
+
+  - begriff: Prefill
+    text: "Der erste Rechendurchlauf, in dem ein Modell den ganzen Prompt auf einmal verarbeitet, bevor es mit dem Schreiben beginnt. Beim Auswerten fester Antwortoptionen bleibt es bei diesem einen Durchlauf, deshalb ist das deutlich schneller als eine Textantwort."
+    siehe: [Token, Logits]
+
+  - begriff: Tokenizer
+    text: "Das Bauteil, das Text in die Tokens zerlegt, mit denen ein Modell arbeitet. Jedes Modell hat seinen eigenen, deshalb kann derselbe Text unterschiedlich viele Tokens ergeben. Schon ein führendes Leerzeichen kann aus einem Zeichen ein anderes Token machen."
+    siehe: [Token]
+
+  - begriff: Prompt Injection
+    text: "Anweisungen, die in einem Text versteckt sind, den ein Modell liest, etwa auf einer Webseite, in einem Dokument oder einer Nutzereingabe. Das Modell befolgt sie, als kämen sie von dir. Gefährlich wird das, sobald das Modell Werkzeuge aufrufen oder Daten verändern darf."
+    siehe: [Agent, Tool Call]
+
+  - begriff: Row Level Security
+    aliase: [RLS]
+    text: "Eine Datenbankregel, die pro Zeile festlegt, wer sie lesen oder ändern darf. Weil sie in der Datenbank selbst greift, schützt sie auch dann, wenn die App einen Fehler hat. Ohne sie sieht jeder, der die Tabelle erreicht, alle Zeilen."
+
+  - begriff: CORS
+    text: "Eine Browserregel, die festlegt, welche fremden Webseiten Anfragen an deine Schnittstelle schicken und die Antwort lesen dürfen. Ist sie zu offen eingestellt, kann fremder Code im Namen deiner Nutzer auf deren Daten zugreifen."
+
+  - begriff: CSRF
+    text: "Ein Angriff, bei dem eine fremde Seite den Browser eines angemeldeten Nutzers dazu bringt, bei deiner App ungewollt etwas auszulösen, etwa eine Bestellung oder eine Passwortänderung. Schutz bieten Prüfwerte pro Formular und passend eingestellte Cookies."
+
+  - begriff: XSS
+    aliase: [Cross-Site Scripting]
+    text: "Fremder Code, der über Eingaben wie Kommentare, Markdown oder hochgeladene Bilder in deine Seite gelangt und im Browser anderer Nutzer ausgeführt wird. Er kann dort Sitzungen auslesen oder Aktionen auslösen. Abhilfe ist, Eingaben vor der Anzeige zu bereinigen."
+
+  - begriff: Rate Limit
+    aliase: [Rate Limits, Rate Limiting]
+    text: "Eine Obergrenze, wie oft ein Nutzer oder eine Adresse eine Funktion in einem Zeitraum aufrufen darf. Sie bremst Passwort-Raten und Spam und verhindert, dass jemand über deine KI-Funktionen hohe Kosten verursacht."
+
+  - begriff: Webhook
+    aliase: [Webhooks]
+    text: "Eine Nachricht, die ein fremdes System an deine App schickt, sobald dort etwas passiert ist, etwa eine Zahlung. Weil sie doppelt ankommen oder gefälscht sein kann, sollte deine App die Signatur prüfen und Wiederholungen erkennen."
+
+  - begriff: Mod
+    aliase: [Mods, Claude Mods]
+    text: "Eine Erweiterung für Claude Code, die tiefer eingreift als ein normales Plugin: Sie darf das Verhalten der Anwendung selbst verändern, etwa wie Regeln geladen oder Ansichten geöffnet werden. Einige Mods sind fest eingebaut. Weil sie so tief eingreifen, legen Organisationen oft fest, welche Mods erlaubt sind."
+    siehe: [Plugin, Skill]
+
+  - begriff: HyperFrames
+    aliase: [Hyperframes]
+    text: "Ein quelloffenes Werkzeug von HeyGen, das Videos als Code beschreibt: Eine animierte Webseite wird Bild für Bild aufgenommen und zu einem Video zusammengesetzt. Jede Farbe und jedes Timing bleibt dadurch als Code änderbar, statt dass das ganze Video neu erzeugt werden muss."
