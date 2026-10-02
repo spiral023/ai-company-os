@@ -21,6 +21,11 @@ muster:
     keywords: [Action Space, Agent Tooling, Tool Design, Tool Overload, Tool-Nutzung messen, Robuste Interfaces, Modellfähigkeit, Structured Output]
     neben: [modelle-kosten]
     synonyme: [Tool-Auswahl, Aktionsraum, Tool Selection, Agent Harness Design]
+  Adversarialer-Pre-Launch-Check:
+    haupt: sicherheit
+    keywords: [Pre-Launch Security Check, Breaker Subagents, Vibe Coding Security, Row Level Security, Prompt Injection, Rate Limiting, Playwright, Launch-Checkliste]
+    neben: [orchestrierung, verifikation]
+    synonyme: [Red Teaming der eigenen App, Securitymaxxing, Launch Readiness Check, Adversarial Testing]
   Advisor-Agent-gegen-Drift:
     haupt: orchestrierung
     keywords: [Advisor Agent, Agent Drift, Goal Drift, Long-Running Agents, Multi-Agent, Worker-Advisor, Session Monitoring, Kurskorrektur]
@@ -61,6 +66,11 @@ muster:
     keywords: [Claude Code Deny Rules, Secrets Protection, .env schützen, Permission Rules, managed-settings.json, Advisory vs. Enforcement, Command Smuggling, requirements.toml]
     neben: [erweiterungen]
     synonyme: [Permissions Deny, Deny-Liste, Secret-Schutz, Enforcement statt Empfehlung]
+  Entscheidung-per-Scoring-statt-Generierung:
+    haupt: modelle-kosten
+    keywords: [Fixed-Answer Scoring, Decision Model, Logits, SGLang, Klassifikation, LLM-Routing, Kalibrierung, Decisions API]
+    neben: [prompting]
+    synonyme: [Decision API, Jev, Laya, Label Scoring, Constrained Classification]
   Erweiterungs-Ebenen-Zuordnung:
     haupt: erweiterungen
     keywords: [Claude Code Extension Layers, Skills vs. Subagents, Claude Code Hooks, MCP-Kosten, CLAUDE.md, Slash Commands, Progressive Disclosure, Extension Points]
@@ -86,6 +96,11 @@ muster:
     keywords: [Handoff Document, Session Handoff, Context Compaction, Structured Handoff Packets, Session-Übergabe, STATE.md, Agent Memory, planning-with-files]
     neben: [planung]
     synonyme: [Handoff Doc, Übergabedokument, Session Summary, Context Handoff]
+  Hillclimbing-mit-Holdout-Split:
+    haupt: verifikation
+    keywords: [Eval Design, Hillclimbing, Holdout Set, Overfitting, Train/Test-Split, LLM-as-Judge, Grader-Validierung, claude-api build-eval]
+    neben: [skills]
+    synonyme: [Eval-driven Optimization, Prompt-Optimierung, Hill Climbing, Eval Hillclimb]
   Hook-Entscheidungstyp-nach-Pruefbarkeit:
     haupt: erweiterungen
     keywords: [Claude Code Hooks, Prompt-based Hooks, Hook Types, PreToolUse, Deterministische Checks, LLM-as-Judge, Hook-Design, Guardrails]
@@ -914,6 +929,11 @@ quellen:
     kernaussage: Vibe-Coding-Projekte scheitern am fehlenden Fundament aus Architektur, Datenfluss und Fehlerfällen, nicht am Agenten, und Rules allein setzen Qualität nicht durch.
     keywords: [Vibe Coding, MVP vs. Produktion, Fundament vor Code, statische Code-Analyse, Rules in Coding Agents, DSGVO, Architektur-Entscheidungen, Fehlerfälle]
     neben: [verifikation]
+  2026-08-07-theaicareercoach-vor-einem-jahr-noch-teuer-heute-fast-geschenkt-die-preise-fuer-ki:
+    haupt: modelle-kosten
+    kernaussage: Ein Creator (Norman, Daten- und KI-Leiter einer Beratung) meldet Anfang August 2026 eine Preissenkung von OpenAI und nennt drei Treiber für sinkende Modellpreise.
+    keywords: [modell-eskalation, modellpreise, preis, modell, preise, limit, token]
+    neben: []
   2026-08-09-natebjones-decision-exhaustion-is-real-discuss:
     haupt: rolle-markt
     kernaussage: Wenn KI die Ausführung übernimmt, bleiben nur schwere Entscheidungen beim Menschen, was Erholung erfordert und bei vielen parallelen Agents zum Engpass wird.
@@ -974,6 +994,11 @@ quellen:
     kernaussage: 'Große Refactorings gelingen stufenweise: erst nur analysieren, leichte vor schweren Funden beheben und dabei Business-Logik dokumentieren, die später als Kontext dient.'
     keywords: [Refactoring mit Claude Code, Große Codebase, Legacy-Code, Refactoring-Skill, Analyse vor Umbau, Business-Logik-Dokumentation, Kontextaufbau, Skill-Evals]
     neben: [skills]
+  2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht:
+    haupt: kontext
+    kernaussage: Der Creator warnt vor GitHub-Tools, die Claude Code Tokens sparen sollen, indem sie Kontext vorab aus einem Graphen zusammensuchen.
+    keywords: [kontext-hygiene, context rot, kontext, token, session]
+    neben: []
   2026-08-25-vikingmute-2092059170812108811:
     haupt: verifikation
     kernaussage: Ein strenger Review-Skill sucht zuerst Vereinfachungen der Struktur statt Detailkritik, erzeugt aber bei Bestandscode schnell mehr Befunde, als sich abarbeiten lassen.
@@ -1050,6 +1075,12 @@ quellen:
     kernaussage: Coding Agents führt man besser über Ergebnisverantwortung mit prüfbarem Endergebnis und Berichtspflicht als über Einzelschritte; der Reviewer läuft getrennt vom Implementierer.
     keywords: [Rollen-Prompts, Tech Lead Prompt, Task Brief, Requirements Lead, Reviewer-Agent, Claude Code Prompts, Codex, Ergebnisverantwortung, Verifikation vor Abschluss]
     neben: [orchestrierung]
+  2026-09-20-avichawla-2101563610644496464:
+    haupt: modelle-kosten
+    kernaussage: 'Avi Chawla zeigt, wie sich ein offenes LLM ohne Training als schnelle lokale Entscheidungsmaschine nutzen lässt, wenn die erlaubten Antworten vorab feststehen: Statt Text zu erzeugen,
+      liest der Server'
+    keywords: [fixed-answer scoring, logits, sglang, klassifikation, routing, kalibrierung, lokales modell]
+    neben: []
   2026-09-20-voxyz_ai-2101657631249031507:
     haupt: prototyping
     kernaussage: Vage Designwünsche durch benannte Operationen ersetzen, Komponentenbibliothek als Skill packen und die Seite per Agent im Browser real bedienen lassen liefert Reproduktionsschritte statt
@@ -1076,10 +1107,30 @@ quellen:
     kernaussage: Bei Opus 5.5 helfen ein klares Ziel, eine einzige Stopp-Bedingung und eine Task-Datei, die Kontext-Zusammenfassungen überlebt; weniger Stopps brauchen Gates.
     keywords: [Claude Opus 5.5, Stop-Bedingungen, Definition of Done, TASKS.md, Lange autonome Läufe, Subagents für Audits, CLAUDE.md-Regeln, Permission Prompts, Migration mit Claude Code]
     neben: [orchestrierung]
+  2026-09-22-epoch-the-plunging-price-of-thought:
+    haupt: modelle-kosten
+    kernaussage: Epoch AI hat Kosten je Leistungsniveau auf fünf Benchmarks (FrontierMath Tier 1–3, OTIS Mock AIME, GPQA Diamond, Chess Puzzles, Mystery Game Puzzles) untersucht.
+    keywords: [epoch ai, kostenverfall, price of thought, cost per task, pareto frontier, inferenzkosten]
+    neben: []
+  2026-09-22-kimmonismus-2102462091299098640:
+    haupt: modelle-kosten
+    kernaussage: Kimmonismus gibt die Benchmarkvergleiche aus der OpenAI-Ankündigung zu `GPT-6 Sol` und `Luna` wieder.
+    keywords: [gpt-6, modell-eskalation, kosten pro task, cost per task, benchmark, modell, kosten, preis]
+    neben: []
+  2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit:
+    haupt: modelle-kosten
+    kernaussage: Ein Creator nennt aus Praxiserfahrung Hebel gegen aufgebrauchte Token-Limits.
+    keywords: [effort, sonnet, modell-eskalation, modell, token, limit, kontext-hygiene, /compact]
+    neben: [kontext]
   2026-09-23-artificialanlys-2102833926788288704:
     haupt: modelle-kosten
     kernaussage: Mehrere Effort-Stufen desselben Modells liegen als getrennte Punkte auf der Pareto-Front; die Effort-Wahl ist damit ein eigener Kostenhebel.
     keywords: [Pareto-Front, Intelligence vs. Cost per Task, Reasoning-Effort, MiMo-V2.6-Pro, GPT-6 Luna, Opus 5.5, Modellwahl, Artificial Analysis]
+    neben: []
+  2026-09-23-kimmonismus-2102748118400004100:
+    haupt: modelle-kosten
+    kernaussage: Kimmonismus fasst eine Analyse von Epoch AI zusammen.
+    keywords: [modell-eskalation, benchmark, modell, kosten, preis, preise]
     neben: []
   2026-09-24-ai-engineer-matt-pocock-fixing-the-pr-bottleneck:
     haupt: verifikation
@@ -1096,6 +1147,11 @@ quellen:
     kernaussage: Effort kauft Verifikationstiefe und übersehene Randfälle, keinen besseren Ansatz; ein stärkeres Modell auf High kann ein schwächeres auf Max bei halben Tokens einholen.
     keywords: [Claude Code /effort, Effort-Stufen, Terminal-Bench 3.0, Opus 5.5, Fable 5.1, Verifikationstiefe, Edge Cases, Interview-Spec, Token pro Versuch]
     neben: [verifikation]
+  2026-09-25-voxyz_ai-2103586663393853636:
+    haupt: modelle-kosten
+    kernaussage: 'Vox übersetzt Thariqs Tests (mehr Effort kaufe vor allem mehr Verifikation und Edge-Case-Tests) in zwei Subagents: ein builder auf `low`, ein verifier auf `high`.'
+    keywords: [effort, modell-eskalation, modell, kosten, verifier, test, subagent, subagents]
+    neben: [verifikation, orchestrierung]
   2026-09-26-voxyz_ai-2103977414711767244:
     haupt: orchestrierung
     kernaussage: Ein read-only Subagent pro Prüfgruppe erstellt Befunde, der Hauptagent behebt sie nach Freigabe allein, damit nie zwei Agents dieselbe Datei editieren.
@@ -1106,3 +1162,86 @@ quellen:
     kernaussage: Jede SDLC-Phase endet mit einem committeten Artefakt; beratende Ebenen wie Skills brauchen erzwingende wie Hooks, und der schreibende Agent genehmigt sich nie selbst.
     keywords: [AI-native SDLC, Anthropic Academy, intent.md, spec.md, Claude Code Hooks, Managed Settings, Plan-Modus, Evals in CI, REVIEW.md, Agent-Autonomie nach Umgebung]
     neben: [sicherheit]
+  2026-09-27-voxyz_ai-2104224555040452925:
+    haupt: sicherheit
+    kernaussage: 'Vox beschreibt einen Pre-Launch-Check für Claude Code (Modellname im Tweet: Opus 5.5): Vier Subagents haben nur die Aufgabe, die eigene App zu brechen, und teilen sich 16 feste Prüffragen.'
+    keywords: [pre-launch, security, subagents, playwright, breaker, effort]
+    neben: [verifikation, orchestrierung]
+  2026-09-27-voxyz_ai-2104254744722383210:
+    haupt: orchestrierung
+    kernaussage: 'Vox lässt Opus 5.5 aus 1.500+ eigenen Posts ein Repo mit 66 Skills bauen: Mining (71 Agenten), Planning (9), Scaffold (1), Build (21), QA (3).'
+    keywords: [subagents, parallel, ultracode, done-marker, effort, usage limit]
+    neben: [modelle-kosten]
+  2026-09-28-artificialanlys-2104640155843989864:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis (Drittanbieter) misst `Claude Sonnet 5.5` mit dem Intelligence Index v4.3.2 (zehn Evals, u.
+    keywords: [sonnet, terminal-bench, opus 5.5, effort, gpt-6, modell-eskalation, kosten pro task, pareto]
+    neben: []
+  2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla:
+    haupt: verifikation
+    kernaussage: Anthropic beschreibt Prinzipien für Eval-Design und für das schrittweise Verbessern gegen ein Eval (Hillclimbing) und zeigt, wie die Befehle `/claude-api build-eval` und `/claude-api hillclimb`
+      im `cl
+    keywords: [eval, hillclimbing, holdout, overfitting, llm-as-judge, grader, build-eval]
+    neben: [skills, modelle-kosten]
+  2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog:
+    haupt: modelle-kosten
+    kernaussage: 'Der Herstellerleitfaden zu `claude-sonnet-5-5` (Stand 2026-09-28) behauptet: gleicher Token-Preis wie Sonnet 5, aber deutlich weniger Tokens pro Aufgabe, daher „bis zu 30 % weniger“ Kosten.'
+    keywords: [sonnet 5.5, effort, migration, thinking, between_tools, prompt caching, opus 5.5]
+    neben: []
+  2026-09-28-unslothai-2104592692072304916:
+    haupt: modelle-kosten
+    kernaussage: Unsloth kündigt am 28.09.2026 an, dass sich das Decision-Modell „Laya“ (laut Guide eine offene Jev-Alternative) lokal über Unsloth Desktop betreiben lässt, auf CPU, Mac, Windows, Linux
+      und GPU.
+    keywords: [modell-eskalation, modell, token]
+    neben: []
+  2026-09-29-artificialanlys-2105025585332605357:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis (Drittanbieter, Intelligence Index v4.3.2) misst `GPT-6.1 Sol`, das `GPT-6 Sol` nach sieben Tagen ablöst.
+    keywords: [gpt-6, effort, modell-eskalation, pareto, intelligence index, coding agent index, terminal-bench, kosten]
+    neben: []
+  2026-09-29-openai-rueckblick-auf-den-devday-2026:
+    haupt: modelle-kosten
+    kernaussage: OpenAI fasst am 29.09.2026 mehr als 20 Ankündigungen zusammen.
+    keywords: [gpt-6, modell-eskalation, kosten pro task, token-verbrauch, preis, modell, preise, token]
+    neben: []
+  2026-09-29-openclaw-openclaw-enterprise-the-open-agent-platform-open:
+    haupt: sicherheit
+    kernaussage: 'Herstellerankündigung der OpenClaw Foundation: Open-Source-Control-Plane für persistente Agenten in sensiblen Umgebungen, vor 1.0, nutzbar für interne Piloten.'
+    keywords: [sandbox, sandboxing, sicherheit]
+    neben: []
+  2026-09-29-suraj_sharma14-2104790775397830755:
+    haupt: sicherheit
+    kernaussage: Suraj Sharma listet 30 knappe Sicherheitsmaßnahmen für KI-generierte Apps.
+    keywords: [prompt injection, secrets, .env, row level security, security, sicherheit, rls]
+    neben: []
+  2026-09-29-thsottiaux-2104823812042940713:
+    haupt: modelle-kosten
+    kernaussage: Tibo (@thsottiaux, signiert „Codexingly“, also aus dem Codex-Umfeld bei OpenAI) kündigt am 29.09.2026 an, dass das Pro-$200-Abo am Folgetag wieder für Neukunden öffnet.
+    keywords: [modell-eskalation, gpt-6, preis, modell, limit, kosten, preise]
+    neben: []
+  2026-09-29-voxyz_ai-2104919123918479521:
+    haupt: modelle-kosten
+    kernaussage: Vox liefert einen Prompt, mit dem Claude Code das eigene Setup gegen Anthropics Leitfaden zu Sonnet 5.5 prüft ([[2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog]]).
+    keywords: [sonnet, effort, modell-eskalation, modell, preis]
+    neben: []
+  2026-09-29-voxyz_ai-2105012597796057438:
+    haupt: orchestrierung
+    kernaussage: 'Vox beschreibt für GPT-6.1 Sol (Stand 2026-09-29) einen Agent-Tree in Codex: Orchestrator `high`, explorer/worker/researcher auf `medium`, `gpt-6-astra` auf `xhigh` nur als Reviewer vor
+      großen Änderun'
+    keywords: [subagent, subagents, orchestrator, agent-tree, delegation, parallel, effort, gpt-6]
+    neben: [modelle-kosten]
+  2026-09-30-artificialanlys-2105392625788637299:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis (Drittanbieter-Messung, Intelligence Index v4.3.2 mit 10 Evaluations) bewertet am 30.09.2026 Googles Gemini 4 Argon mit `high` Reasoning, der höchsten verfügbaren Stufe.
+    keywords: [gpt-6, sonnet, opus 5.5, kosten pro task, token-verbrauch, intelligence index, terminal-bench, modell-eskalation]
+    neben: []
+  2026-10-01-artificialanlys-2105491868608004578:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis (Drittanbieter) misst am 01.10.2026 Kosten pro Intelligence-Index-Task für OpenAI-Modelle nach.
+    keywords: [gpt-6, pareto, kosten pro task, effort, modell-eskalation, modell, kosten, token]
+    neben: []
+  2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi:
+    haupt: prototyping
+    kernaussage: Ein Creator zeigt drei Selbsttests, in denen Claude Code mit Opus 5.5 und HyperFrames (Open Source von HeyGen) Videos baut.
+    keywords: [motion graphics, hyperframes, opus 5.5, erklärvideo, werbespot, video aus code]
+    neben: [modelle-kosten]

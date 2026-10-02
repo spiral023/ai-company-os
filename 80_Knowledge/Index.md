@@ -46,6 +46,9 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] — deterministisches Skript, Prompt-Hook oder Agent-Hook je nach Prüfbarkeit der Hook-Bedingung wählen.
 - [[Screenshot-als-Spezifikationsmedium]] — Bild statt Prosa als Kontext für UI-Analyse, Fehlerdiagnose und Design-zu-Code-Generierung.
 - [[Metrikband-gestufte-Agent-Autonomie]] — Rechte des Agents wachsen mit der Schwere einer Metrik-Abweichung (1σ loggen, 2σ read-only, 3σ PR); Erkennung deterministisch ohne Modell.
+- [[Hillclimbing-mit-Holdout-Split]] — Prompt, Skill oder Modellwahl gegen ein Eval verbessern: Train/Test-Split, eine Änderung pro Runde, Revert wenn nur Train steigt.
+- [[Entscheidung-per-Scoring-statt-Generierung]] — bei festem Antwortraum Label-Logits auslesen statt Text erzeugen; Verteilung plus Schwellen im Code entscheiden über Automatik oder Review.
+- [[Adversarialer-Pre-Launch-Check]] — vor dem Release read-only Prüfagenten mit festen Fragenkatalogen die eigene App in einer sicheren Testumgebung brechen lassen.
 
 ## Themen
 
@@ -63,4 +66,4 @@ Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 15 
 
 ## Fakten
 
-- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-09-29.
+- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-02.

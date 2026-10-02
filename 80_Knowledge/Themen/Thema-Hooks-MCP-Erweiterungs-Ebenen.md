@@ -1,6 +1,6 @@
 # Hooks, MCP & Erweiterungs-Ebenen
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook, MCP, Plugin) und wie Hooks, MCP-Server und Plugins konfiguriert werden.
 
@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), progressive disclosure (4), subagents (4), claude code skills (3), pretooluse (3), claude.md (3), slash commands (3), context window (2), prompt-based hooks (2), model context protocol (2), plugins (2), mcp (2), skill description (2), claude mcp add, explore plan general-purpose, mcp connectors, hook matcher, exit-code 2, .env schutz, agent-based hooks
+- **Häufig in den Quellen:** claude code hooks (6), subagents (4), progressive disclosure (4), claude code skills (3), pretooluse (3), claude.md (3), slash commands (3), context window (2), prompt-based hooks (2), model context protocol (2), mcp (2), plugins (2), skill description (2), explore plan general-purpose, claude mcp add, mcp connectors, hook matcher, agent-based hooks, .env schutz, exit-code 2
 
 ## Verwandte Themen
 

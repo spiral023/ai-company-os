@@ -34,6 +34,7 @@ Die zentrale Designspannung dabei ist nicht Security als Selbstzweck, sondern **
 
 - 2026-05-13 · [[2026-05-13-david-wiesen-openai-codex-windows-sandbox]] · meinung — OpenAI-Engineering-Bericht beschreibt, warum AppContainer, Windows Sandbox und Mandatory Integrity Control einzeln nicht ausreichten, und wie die finale Architektur aus SIDs, restricted Tokens, dedizierten lokalen Usern, Firewall-Regeln und separaten Hilfsbinaries komponiert wurde.
 - 2026-08-18 · [[2026-08-18-docker-2089789519788728379]] · meinung — Docker Sandboxes laut Herstellerangabe in Claude-Code-Docs als MicroVM-Option (eigener Kernel und Daemon); Docs-Aufnahme nicht geprüft.
+- 2026-09-29 · [[2026-09-29-openclaw-openclaw-enterprise-the-open-agent-platform-open]] · meinung — Herstellerankündigung: harte Grenzen trusted/untrusted, Sandboxing und feine Berechtigungen, Sandbox austauschbar. Referenzarchitektur steht aus, nicht prüfbar.
 
 ## Spannungen & offene Fragen
 

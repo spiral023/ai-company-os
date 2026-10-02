@@ -6,7 +6,9 @@ datum: 2026-09-29
 erfasst: 2026-10-02
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-10-02
+source_notiz: 80_Knowledge/Sources/2026-09-29-openai-rueckblick-auf-den-devday-2026.md
 medien: "3/3 lokal"
 ---
 

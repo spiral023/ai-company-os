@@ -65,6 +65,8 @@ Nach jedem abgeschlossenen Arbeitsblock wird bewusst zwischen fünf Optionen ent
 - 2026-02-01 · [[2026-02-01-anthropic-docs-how-claude-code-works]] · meinung — Doku bestätigt, dass Skills und MCP-Tools Context verbrauchen (`/context`) und Sessions ephemer sind; Sekundärquelle.
 - 2026-02-01 · [[2026-02-01-anthropic-docs-create-custom-subagents]] · meinung — Subagents halten Exploration und laute Outputs aus dem Haupt-Thread; Skills werden nicht vererbt, sondern per skills-Feld injiziert.
 - 2026-02-14 · [[2026-02-14-gmoney-eth-25-claude-code-lessons]] · meinung — Context Window wie RAM, `/clear` und frischer Kontext, Subagents für Sauberkeit. Selbstberichtet, Sekundärquelle.
+- 2026-09-22 · [[2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit]] · meinung — `/clear` nach erledigter Aufgabe statt ca. 80 % Kontext mitzuschleppen, alternativ `/compact`. Keine Messung der Ersparnis.
+- 2026-08-22 · [[2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht]] · meinung — Warnt vor Token-Spar-Tools mit vorab gebautem Kontext-Graphen: Die Pflege bei sich ändernder Geschäftslogik ist das Problem, veralteter Graph-Inhalt landet als Wahrheit im Kontext; Erfahrungsvergleich ohne offengelegte Zahlen.
 
 ## Spannungen & offene Fragen
 

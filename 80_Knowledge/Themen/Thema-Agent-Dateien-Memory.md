@@ -1,6 +1,6 @@
 # Agent-Dateien & Memory
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen.
 
@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** progressive disclosure (5), context engineering (3), instruktionsbudget (2), agents.md (2), agent_docs (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), llm wiki (2), claude.md (2), auto mode (2), instruction following, /init vermeiden, claude code system-reminder, claude.md schreiben, claude.md prompt, test-first, erfolgskriterien, karpathy system prompt
+- **Häufig in den Quellen:** progressive disclosure (5), context engineering (3), instruktionsbudget (2), agent_docs (2), agents.md (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), llm wiki (2), claude.md (2), auto mode (2), instruction following, claude code system-reminder, /init vermeiden, claude.md schreiben, coding-agent-fehler, scope begrenzen, test-first, erfolgskriterien
 
 ## Verwandte Themen
 
@@ -20,7 +20,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 
 ## Patterns (1)
 
-- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 28 Belege
+- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 29 Belege
 
 ## Quellen (13)
 

@@ -36,6 +36,7 @@ Instruktions-Spezifität wird entlang einer Skala von High Freedom bis Low Freed
 - 2026-09-22 · [[2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c]] · meinung — Herstellerleitfaden: Zielzustand plus einzige Stopp-Bedingung statt Schritt-Anweisungen, „think carefully“ streichen. Selbstberichtet, modellspezifisch für Opus 5.5.
 - 2026-02-04 · [[2026-02-04-lovable-docs-prompting-debugging]] · meinung — Bei Auth/Payment explizit Vorsicht und Änderungsgrenzen im Prompt; weiche Anweisung ohne harte Absicherung.
 - 2026-02-04 · [[2026-02-04-meer-aiit-claude-skills-complete-guide]] · meinung — Strikte Regeln bei fragilen Aufgaben, Spielraum bei kreativen; nur als Faustregel genannt, ohne Beleg.
+- 2026-10-01 · [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]] · meinung — Ziel, Referenzen und Geschmack statt Weg vorgeben; Ergebnis als Code (HyperFrames) statt Pixel, daher gezielt nachbesserbar. Selbstbericht eines Creators, Transkript automatisch erzeugt, keine Messung.
 
 ## Spannungen & offene Fragen
 

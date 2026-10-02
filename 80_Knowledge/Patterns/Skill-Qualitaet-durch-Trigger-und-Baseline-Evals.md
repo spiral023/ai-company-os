@@ -46,6 +46,7 @@ Der Lebenszyklus eines Skills läuft über: Ziel/Scope klären → Entwurf schre
 - 2026-09-14 · [[2026-09-14-code-test-plugins-with-evals-claude-code-docs]] · meinung — Offizielles Tooling `claude plugin eval` mit No-Plugin-Baseline, tool_used-Grader und CI-Threshold; Herstellerdoku, Datum unsicher, Judge-Läufe kosten Nutzung.
 - 2026-02-04 · [[2026-02-04-meer-aiit-claude-skills-complete-guide]] · meinung — Bestätigt Trigger-Logik in der Description statt im Body und Progressive Disclosure; Sekundärquelle, kaum Neues gegenüber Bestand.
 - 2026-02-09 · [[2026-02-09-tom-crawshaw-claude-code-insights-guide]] · meinung — Vorgeschlagener Agent optimiert Skills mit generierten Testszenarien, bis alle bestehen. Nur Vorschlag, kein gezeigtes Ergebnis.
+- 2026-09-28 · [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] · meinung — Herstellerquelle nennt Skill-Triggering ausdrücklich als gut attributierbare Hillclimb-Oberfläche und zeigt am eigenen `claude-api`-Skill 66 % auf etwa 88 % per Hillclimbing mit Ursachen-Sortierung. Selbstmessung, kleiner Maßstab.
 
 ## Spannungen & offene Fragen
 

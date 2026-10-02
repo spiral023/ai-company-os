@@ -51,6 +51,8 @@ Autonome Agenten optimieren zuverlässig das, was der Verifier misst — ist der
 - 2026-09-20 · [[2026-09-20-voxyz_ai-2101657631249031507]] · meinung — UX-Audit, bei dem der Agent die Seite im Browser bedient und Reproduktionsschritte liefert, als Verhaltensprüfung statt Screenshot-Urteil; selbstberichtet.
 - 2026-08-18 · [[2026-08-18-floknowsai-hoer-auf-den-code-deines-ki-agenten-zu-lesen]] · meinung — Mutation Testing prüft die Tests des Agenten selbst; Agent-geschriebene Tests seien oft zu schwach (Zahl „über die Hälfte“ nur im Video, ohne Beleg).
 - 2026-08-19 · [[2026-08-19-matt-pocock-live-uncle-bob-on-software-fundamentals-in-the-a]] · meinung — Robert C. Martin lässt Agenten in Schleife CRAP-Score und Mutation Testing bis zum Bestehen laufen und liest den Code kaum noch; Erfahrungsbericht, Grenze ist die Laufzeit der Checks.
+- 2026-09-28 · [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] · meinung — Eval-Design-Regeln (Aufgaben spiegeln Produktion, Headroom, geringe Varianz, keine Auswahl nach heutigen Modellfehlern, menschlich validierter Grader, Judge ungleich getestetes Modell) und Leck-Beispiele bis zum Reward Hacking stützen die Verifier-Qualität als Hebel. Methodik ohne unabhängige Messung.
+- 2026-09-28 · [[2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog]] · meinung — Empfiehlt einen System-Prompt-Absatz, der vor „fertig“ einen echten Check (Tests, Type-Checker, Build) verlangt; Syntax-Check zählt nicht. Anlass: bei `low` Effort wird der Check gelegentlich übersprungen; keine Zahl dazu.
 
 ## Spannungen & offene Fragen
 

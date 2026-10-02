@@ -36,6 +36,7 @@ Claude Code liest Modell und Endpunkt aus Umgebungsvariablen (bzw. `~/.claude/se
 - 2026-07-28 · [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] · meinung — Second Sourcing mit offenen Gewichten gegen Metered Pricing; Deployability endet bei einem 8-GPU-Node, Selbsthosting rechnet sich laut Bericht ab etwa 8.000 Konversationen täglich. Einschränkung: Berichtsannahmen, Produktionsquote offen nur 51 %.
 - 2026-04-22 · [[2026-04-22-alibaba-qwen-qwen3-6-27b-lokal-betreiben]] · meinung — 27B-Dense-Modell laut Hersteller nahe an Claude 4.5 Opus bei Coding und ab etwa 18 GB RAM lokal lauffähig. Einschränkung: Herstellerbenchmarks, Sekundärquelle, Vergleichsmodell veraltet.
 - 2026-08-16 · [[2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo]] · meinung — Faustformeln zur Hardware-Vorabprüfung: Speicher = Parameter mal Bits durch acht, Tempo = Bandbreite durch Modellgröße halbiert, MoE braucht Speicher für alle Parameter. Rechenbeispiele, keine Messung; die Ablöse-Prognose im Titel ist unbelegt.
+- 2026-09-28 · [[2026-09-28-unslothai-2104592692072304916]] · meinung — Unsloth Desktop stellt eine Jev-kompatible API bereit, bestehende Integrationen werden auf den lokalen Server gezeigt; gleiche Umleitungslogik, aber für eine Decision-API statt Chat-API.
 
 ## Spannungen & offene Fragen
 

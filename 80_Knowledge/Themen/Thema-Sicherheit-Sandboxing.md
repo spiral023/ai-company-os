@@ -1,6 +1,6 @@
 # Sicherheit & Sandboxing
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps.
 
@@ -9,7 +9,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), ki-generierte apps absichern, secrets im frontend, lovable security, row level security, vibe coding sicherheit, supabase edge functions, agent-isolation, yolo-modus, micro-vm, ralph loop über nacht, claude code dangerously-skip-permissions, docker sandbox run claude, codex rules, starlark, prefix_rule, codex execpolicy
+- **Häufig in den Quellen:** row level security (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), playwright (2), security (2), sicherheit (2), prompt injection (2), vibe coding security (2), lovable security, vibe coding sicherheit, ki-generierte apps absichern, secrets im frontend, supabase edge functions, agent-isolation, micro-vm, claude code dangerously-skip-permissions, yolo-modus, ralph loop über nacht
 
 ## Verwandte Themen
 
@@ -17,15 +17,19 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - [[Thema-Autonome-Läufe-Loops-CI]] — Autonome Läufe, Loops & CI
 - [[Thema-Prototyping-UI-Design]] — Prototyping & UI-Design
 
-## Patterns (2)
+## Patterns (3)
 
+- [[Adversarialer-Pre-Launch-Check]] · meinung · 3 Belege
 - [[Deny-Rules-statt-CLAUDE-md-Empfehlung]] · mehrfach-belegt · 12 Belege
-- [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 2 Belege
+- [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], [[Hook-Entscheidungstyp-nach-Pruefbarkeit]], [[Metrikband-gestufte-Agent-Autonomie]]
 
-## Quellen (6)
+## Quellen (9)
 
+- [[2026-09-29-suraj_sharma14-2104790775397830755]] — Suraj Sharma listet 30 knappe Sicherheitsmaßnahmen für KI-generierte Apps.
+- [[2026-09-29-openclaw-openclaw-enterprise-the-open-agent-platform-open]] — Herstellerankündigung der OpenClaw Foundation: Open-Source-Control-Plane für persistente Agenten in sensiblen Umgebungen, vor 1.0, nutzbar für interne Piloten.
+- [[2026-09-27-voxyz_ai-2104224555040452925]] — Vox beschreibt einen Pre-Launch-Check für Claude Code (Modellname im Tweet: Opus 5.5): Vier Subagents haben nur die Aufgabe, die eigene App zu brechen, und teilen sich 16 feste Prüffragen.
 - [[2026-08-18-docker-2089789519788728379]] — MicroVM-Isolation mit eigenem Kernel pro Sandbox gilt laut Docker inzwischen als empfohlener Standardpfad für Claude Code, ist aber nur als Herstellermeldung belegt.
 - [[2026-05-13-david-wiesen-openai-codex-windows-sandbox]] — Kein einzelnes OS-Feature reichte für eine Agent-Sandbox; sie wurde aus mehreren Primitiven komponiert, und rein advisory Netzwerkschutz genügt nicht.
 - [[2026-04-30-zodchiii-claude-code-env-security]] — Nur Deny-Regeln in settings.json erzwingen Zugriffssperren, CLAUDE.md-Hinweise sind Empfehlungen; Secrets lecken auch über Runtime-Output und Grep-Treffer.

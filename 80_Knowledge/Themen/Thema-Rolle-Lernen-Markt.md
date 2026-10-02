@@ -1,6 +1,6 @@
 # Rolle, Lernen & Markt
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, SDLC-Wandel, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit.
 
@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; SDLC ist tot; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** trust the harness (2), agent coding ohne code, e2e-tests, droid factory cli, cli statt mcp, vibe coding kritik, github-app agent, spec mode, agents.md, sub-agents, context rot, great decoupling, devdocs, golden master testing, vibe engineering, tdd für agenten, cli vs. ide, coding atrophy, agent coding, 80% agent
+- **Häufig in den Quellen:** trust the harness (2), github-app agent, cli statt mcp, spec mode, vibe coding kritik, e2e-tests, agents.md, agent coding ohne code, droid factory cli, context rot, devdocs, golden master testing, great decoupling, vibe engineering, sub-agents, cli vs. ide, tdd für agenten, generation vs. discrimination, agent coding, testgetrieben
 
 ## Verwandte Themen
 

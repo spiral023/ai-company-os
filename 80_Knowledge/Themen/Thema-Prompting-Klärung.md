@@ -1,6 +1,6 @@
 # Prompting & Klärung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns, Voice-Prompting, Anweisungen bei Modellwechsel ausdünnen, Anti-Sycophancy.
 
@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), change quiz (2), known unknowns (2), modellwechsel (2), progressive disclosure (2), codex skill-creator (2), überregulierung (2), gpt-6 astra (2), skill descriptions (2), agents.md (2), sycophancy, spec grilling, prompt-tricks, ai agent zustimmungsneigung, risikoanalyse, frühwarnsignale, pre-mortem prompt, projektplanung mit ai, decision record, implementation plan
+- **Häufig in den Quellen:** prompt engineering (3), known unknowns (2), change quiz (2), skill descriptions (2), codex skill-creator (2), modellwechsel (2), gpt-6 astra (2), agents.md (2), progressive disclosure (2), überregulierung (2), risikoanalyse, spec grilling, sycophancy, prompt-tricks, ai agent zustimmungsneigung, projektplanung mit ai, pre-mortem prompt, frühwarnsignale, blind spot pass, spec-driven development
 
 ## Verwandte Themen
 
@@ -22,6 +22,8 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - [[Fable-Unknowns-vor-Prompt-Qualitaet]] · meinung · 3 Belege
 - [[Intent-Engineering-als-dritte-Schicht]] · meinung · 4 Belege
 - [[Voice-Prompting-fuer-Kontextreichtum]] · meinung · 3 Belege
+
+Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-statt-Generierung]]
 
 ## Quellen (8)
 

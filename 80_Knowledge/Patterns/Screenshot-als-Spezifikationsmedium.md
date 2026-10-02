@@ -32,6 +32,7 @@ Ein Bild (Screenshot, Mockup, Fehlerdarstellung) wird per Drag & Drop, Copy & Pa
 - 2026-02-01 · [[2026-02-01-anthropic-docs-claude-code-common-workflows]] · meinung — Anthropics Common-Workflows-Doku beschreibt Screenshot-Einbindung (Drag & Drop, Paste, Pfad) für UI-Analyse, Fehlerdiagnose und Design-zu-Code-Generierung als eigenständige Technik. Beleglage dünn: reine Feature-Aufzählung ohne Tiefe, kein Vorher-Nachher-Vergleich.
 - 2026-02-15 · [[2026-02-15-avid-ai-design-workflow-2026]] · meinung — Referenz-Screenshots und Video-zu-Code (Kimi K2.5) als Spezifikation für Design; Design-Vokabular macht Prompts präzise. Sekundärquelle.
 - 2026-09-19 · [[2026-09-19-voxyz_ai-2101295246659182978]] · meinung — Variante, bei der der Agent das Referenzbild per Bildmodell selbst erzeugt und dann umsetzt; keine Vergleichsmessung, Modellaussage nur Behauptung.
+- 2026-10-01 · [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]] · meinung — Claude prüft die selbst gerenderten Frames per Screenshot. Nur beiläufig erwähnt, schwacher Beleg.
 
 ## Spannungen & offene Fragen
 

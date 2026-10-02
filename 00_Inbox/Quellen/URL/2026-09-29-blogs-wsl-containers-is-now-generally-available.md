@@ -6,7 +6,8 @@ datum: 2026-09-29
 erfasst: 2026-10-02
 typ: url
 quelle: url
-status: neu
+status: ignoriert
+notiz: "Triage: Produkt-Release ohne Methode und ohne Bezug zu Agent-Arbeitsweisen, Kosten oder Modellen."
 medien: "1/1 lokal"
 ---
 

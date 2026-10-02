@@ -1,6 +1,6 @@
 # Spezifikation & Planung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerung, Spec-Ordner, persistente Pläne. Prompt-Methoden für Klärung (Pre-Mortem, Unknowns) stehen in prompting.
 
@@ -9,7 +9,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - **Hauptkeyword:** Spec-Driven Development
 - **Long-Tail:** Plan Mode Claude Code; Spec-First Development; Grill Me Skill; Plan vor Code; Spec Ordner pro Feature; Plan Annotation Workflow
 - **Fragen:** Lohnt sich Plan Mode? / Wie schreibe ich eine Spec für einen Coding Agent?
-- **Häufig in den Quellen:** spec-driven development (6), plan mode (4), vibe coding (3), handoff-dokument (2), design.md (2), session-kontinuität (2), claude code workflow (2), self-verification (2), single-model-blindheit (2), plan.md (2), wayfinder (2), matt pocock skills (2), layered claude.md, spec-first development, decision log, cookbooks als tests, findings.md, planning-with-files, claude skill, externer speicher
+- **Häufig in den Quellen:** spec-driven development (6), plan mode (4), vibe coding (3), session-kontinuität (2), handoff-dokument (2), design.md (2), claude code workflow (2), self-verification (2), plan.md (2), single-model-blindheit (2), wayfinder (2), matt pocock skills (2), decision log, layered claude.md, cookbooks als tests, spec-first development, planning-with-files, progress.md, externer speicher, task_plan.md
 
 ## Verwandte Themen
 
@@ -21,7 +21,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 ## Patterns (5)
 
 - [[CONTEXT-Glossar]] · verifiziert · 3 Belege
-- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 35 Belege
+- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 37 Belege
 - [[Spec-Grilling]] · verifiziert · 14 Belege
 - [[Spec-Ordner-pro-Feature]] · meinung · 2 Belege
 - [[Task-basierte-Steuerung]] · verifiziert · 14 Belege

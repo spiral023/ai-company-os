@@ -1,6 +1,6 @@
 # Skill-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und Baselines, Skills als Teamwissen. Wayfinder und Frameworks aus Skill-Sammlungen stehen in frameworks.
 
@@ -9,7 +9,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - **Hauptkeyword:** Claude Code Skills
 - **Long-Tail:** Skill Description schreiben; Skill Evals Baseline; SKILL.md Aufbau; Skills vs. Slash Commands; Skill Trigger optimieren; Skills als Teamwissen
 - **Fragen:** Wann lohnt sich ein eigener Skill? / Warum löst mein Skill nicht aus?
-- **Häufig in den Quellen:** progressive disclosure (10), claude code skills (7), skill description (6), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), wayfinder (4), claude skills (3), skill.md (3), skill-creator (3), undertriggering (3), agents.md (3), skill-trigger (2), baseline-vergleich (2), agent skills (2), subagents (2), allowed-tools (2), context: fork (2)
+- **Häufig in den Quellen:** progressive disclosure (10), claude code skills (7), skill description (6), slash commands (4), skill evals (4), grill-me (4), mattpocock/skills (4), claude code hooks (4), wayfinder (4), skill.md (3), claude skills (3), skill-creator (3), undertriggering (3), agents.md (3), skill-trigger (2), baseline-vergleich (2), subagents (2), agent skills (2), allowed-tools (2), context: fork (2)
 
 ## Verwandte Themen
 
@@ -21,16 +21,16 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 ## Patterns (9)
 
 - [[Anti-Rationalization-Tables]] · verifiziert · 3 Belege
-- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 7 Belege
+- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 8 Belege
 - [[Hook-erzwungene-Skill-Aktivierung]] · meinung · 4 Belege
 - [[Klein-und-komposierbar]] · verifiziert · 16 Belege
 - [[One-File-per-Failure-Mode]] · verifiziert · 3 Belege
 - [[Skill-Call-Hierarchie]] · verifiziert · 11 Belege
-- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 17 Belege
+- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 18 Belege
 - [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 3 Belege
 - [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 3 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Erweiterungs-Ebenen-Zuordnung]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Erweiterungs-Ebenen-Zuordnung]], [[Hillclimbing-mit-Holdout-Split]]
 
 ## Quellen (17)
 
@@ -54,6 +54,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Erweiterungs-Ebenen-Zuordnun
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]]
 - [[2026-09-21-voxyz_ai-2102050225443766571]]
 - [[2026-09-20-voxyz_ai-2101657631249031507]]
 - [[2026-09-14-developers-rethinking-skills-and-prompts-for-gpt-6-astra-op]]

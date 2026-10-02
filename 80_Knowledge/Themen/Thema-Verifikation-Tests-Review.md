@@ -1,6 +1,6 @@
 # Verifikation, Tests & Review
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates, getrenntes Review, Review als Engpass.
 
@@ -9,7 +9,7 @@ Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statis
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug?
-- **Häufig in den Quellen:** git worktrees (2), red green refactor (2), ai slop (2), statische code-analyse (2), auto mode (2), mutation testing (2), coding agents (2), long-running agents (2), reward hacking (2), context rot (2), testcontainers, mcp datenbank read-only, test driven development, monorepo, tmux, vibe reviewing, context pollution, test-driven development agentic coding, halluzinationen reduzieren, tdd mit ki-agenten
+- **Häufig in den Quellen:** llm-as-judge (3), git worktrees (2), red green refactor (2), ai slop (2), statische code-analyse (2), auto mode (2), mutation testing (2), coding agents (2), hillclimbing (2), overfitting (2), reward hacking (2), long-running agents (2), verifier (2), context rot (2), subagents (2), effort (2), monorepo, vibe reviewing, testcontainers, mcp datenbank read-only
 
 ## Verwandte Themen
 
@@ -18,15 +18,17 @@ Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statis
 - [[Thema-Multi-Agent-Parallelisierung]] — Multi-Agent & Parallelisierung
 - [[Thema-Skill-Design]] — Skill-Design
 
-## Patterns (2)
+## Patterns (3)
 
+- [[Hillclimbing-mit-Holdout-Split]] · meinung · 1 Belege
 - [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 11 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 22 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 24 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Anti-Rationalization-Tables]], [[Great-Decoupling-Rollenverstaendnis]], [[Plan-first-mit-getrenntem-Review]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[Great-Decoupling-Rollenverstaendnis]], [[Plan-first-mit-getrenntem-Review]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]]
 
-## Quellen (12)
+## Quellen (13)
 
+- [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] — Anthropic beschreibt Prinzipien für Eval-Design und für das schrittweise Verbessern gegen ein Eval (Hillclimbing) und zeigt, wie die Befehle `/claude-api build-eval` und `/claude-api hillclimb` im `cl
 - [[2026-09-24-ai-engineer-matt-pocock-fixing-the-pr-bottleneck]] — Mehr Agent-Output verschärft den Review-Flaschenhals: deterministische Checks, ein separater Review-Agent mit Commits und risikobasiertes Human Review bremsen ihn in drei Stufen.
 - [[2026-08-25-vikingmute-2092059170812108811]] — Ein strenger Review-Skill sucht zuerst Vereinfachungen der Struktur statt Detailkritik, erzeugt aber bei Bestandscode schnell mehr Befunde, als sich abarbeiten lassen.
 - [[2026-08-19-matt-pocock-live-uncle-bob-on-software-fundamentals-in-the-a]] — Statt langer Regeltexte gehören deterministische Tools wie Mutation Testing und Komplexitätsmetriken in eine Agent-Schleife, weil Modelle lange Regeldokumente nur als Richtlinie behandeln.
@@ -42,6 +44,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Anti-Rationalization-Tables]
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-09-27-voxyz_ai-2104224555040452925]]
+- [[2026-09-25-voxyz_ai-2103586663393853636]]
 - [[2026-09-25-trq212-2103576349499855160]]
 - [[2026-09-14-code-test-plugins-with-evals-claude-code-docs]]
 - [[2026-08-30-alex-sprogis-loop-graph-engineering-das-letzte-video-was-du-s]]

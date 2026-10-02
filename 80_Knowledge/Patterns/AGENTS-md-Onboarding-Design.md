@@ -59,6 +59,7 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 - 2026-03-21 · [[2026-03-21-sourfraser-claude-obsidian-ai-employee]] · meinung — Memory-Datei als Onboarding-Dokument mit Routing-Regeln, zu Sessionbeginn per Custom Instruction geladen; selbstberichtet, Sekundärquelle.
 - 2026-02-09 · [[2026-02-09-tom-crawshaw-claude-code-insights-guide]] · meinung — Sekundärquelle: `/insights` führt hohen Exploration-Overhead (Bash 4x Dateiedits) auf fehlenden Startkontext zurück und empfiehlt wenige Zeilen in `CLAUDE.md`. Selbstberichtete Einzelzahlen.
 - 2026-02-25 · [[2026-02-25-heynavtoor-claude-cowork-setup-guide]] · meinung — Ordner `Claude Context` mit drei Kontextdateien (about-me, brand-voice, working-style) als dauerhafter Hintergrund; Sekundärquelle.
+- 2026-08-22 · [[2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht]] · meinung — Quellcode als einzige Quelle der Wahrheit halten; ausgelagerte Notizen, Logs und Kommentare am Session-Ende auf Aktualität prüfen, weil der Agent sie später wieder als wahr einliest.
 
 ## Spannungen & offene Fragen
 

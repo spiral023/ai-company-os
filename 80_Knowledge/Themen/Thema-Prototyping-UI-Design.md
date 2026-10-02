@@ -1,6 +1,6 @@
 # Prototyping & UI-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents.
 
@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), security checker (2), vibe coding (2), codex skills (2), tailwind prompting, design tokens, foundations komponenten komposition, komponentenreferenz, lovable prompts, design system, component-first, hero section, lovable website, conversion prompts, landingpage, responsive breakpoints, ki-website-builder, spacing typografie, lovable best practices, supabase
+- **Häufig in den Quellen:** lovable (5), security checker (2), vibe coding (2), codex skills (2), opus 5.5 (2), komponentenreferenz, lovable prompts, design tokens, component-first, design system, foundations komponenten komposition, tailwind prompting, spacing typografie, lovable website, landingpage, responsive breakpoints, hero section, ki-website-builder, conversion prompts, plan-modus
 
 ## Verwandte Themen
 
@@ -20,12 +20,13 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 ## Patterns (2)
 
 - [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 8 Belege
-- [[Screenshot-als-Spezifikationsmedium]] · meinung · 3 Belege
+- [[Screenshot-als-Spezifikationsmedium]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Skill-aus-Demonstration-statt-Beschreibung]]
 
-## Quellen (11)
+## Quellen (12)
 
+- [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]] — Ein Creator zeigt drei Selbsttests, in denen Claude Code mit Opus 5.5 und HyperFrames (Open Source von HeyGen) Videos baut.
 - [[2026-09-21-voxyz_ai-2102050225443766571]] — Referenzquelle, Auswahlkriterien und Prüfschritt gehören einmal in den Skill statt in jeden Auftrag; ein Audit-Skill klickt Flows als Erstnutzer durch.
 - [[2026-09-20-voxyz_ai-2101657631249031507]] — Vage Designwünsche durch benannte Operationen ersetzen, Komponentenbibliothek als Skill packen und die Seite per Agent im Browser real bedienen lassen liefert Reproduktionsschritte statt Optik-Urteil.
 - [[2026-09-19-voxyz_ai-2101295246659182978]] — Erst ein Referenzbild generieren, dann das Codemodell umsetzen lassen: Gestaltung und Implementierung werden getrennt, das Bild dient als Spezifikation.

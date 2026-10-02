@@ -1,6 +1,6 @@
 # Autonome Läufe, Loops & CI
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agents, Autonomiestufen und ihre Grenzen.
 
@@ -9,7 +9,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - **Hauptkeyword:** Ralph Loop
 - **Long-Tail:** Ralph Loop einrichten; Claude Code Headless CI; Claude Code über Nacht; Autonomiestufen Coding Agent; Claude Code GitHub Action; Loop Engineering
 - **Fragen:** Kann ich einen Agent über Nacht laufen lassen? / Wie viel Autonomie ist sicher?
-- **Häufig in den Quellen:** ralph loop (5), steering.md (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), overnight agents (2), --output-format json, @-referenzen, plan mode headless, claude code common workflows, extended thinking, unix-pipe, claude -p, @claude merge request, oidc, claude code gitlab ci/cd, review gate, aws bedrock, google vertex ai
+- **Häufig in den Quellen:** ralph loop (5), steering.md (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), overnight agents (2), extended thinking, unix-pipe, @-referenzen, plan mode headless, claude code common workflows, --output-format json, claude -p, ci agent, @claude merge request, aws bedrock, oidc, review gate, google vertex ai
 
 ## Verwandte Themen
 
@@ -20,7 +20,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 
 ## Patterns (3)
 
-- [[CI-Agent-mit-Review-Gate]] · mehrfach-belegt · 7 Belege
+- [[CI-Agent-mit-Review-Gate]] · mehrfach-belegt · 8 Belege
 - [[Metrikband-gestufte-Agent-Autonomie]] · meinung · 1 Belege
 - [[Ralph-Loop-Frischer-Kontext-pro-Iteration]] · mehrfach-belegt · 11 Belege
 

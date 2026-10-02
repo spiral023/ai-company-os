@@ -6,7 +6,9 @@ datum: 2026-09-29
 erfasst: 2026-10-02
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-10-02
+source_notiz: 80_Knowledge/Sources/2026-09-29-openclaw-openclaw-enterprise-the-open-agent-platform-open.md
 medien: "3/3 lokal"
 ---
 

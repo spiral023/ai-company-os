@@ -1,6 +1,6 @@
 # Kontext-Management
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, Clear, Rewind, Handoff zwischen Sessions, Kontextkosten von Tools. Regeldateien gehören zu agent-dateien, die Kosten des Cachings zu modelle-kosten.
 
@@ -9,7 +9,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 - **Hauptkeyword:** Context Engineering
 - **Long-Tail:** Context Rot vermeiden; Claude Code /compact oder /clear; Claude Code Kontextfenster verwalten; Session Handoff Dokument; Rewind statt Korrektur; Subagents als Kontextgrenze
 - **Fragen:** Wann sollte ich /clear statt /compact nutzen? / Warum wird mein Agent in langen Sessions schlechter?
-- **Häufig in den Quellen:** context rot (7), context window (6), /clear (6), progressive disclosure (6), /compact (5), claude.md (5), context engineering (4), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), plan mode (3), autocompact-puffer (2), mcp tools (2), ralph loop (2), subagent-kosten (2), userpromptsubmit hook (2), subagents als kontextgrenze (2)
+- **Häufig in den Quellen:** context rot (8), context window (6), /compact (6), /clear (6), progressive disclosure (6), claude.md (5), context engineering (4), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), plan mode (3), mcp tools (2), autocompact-puffer (2), ralph loop (2), userpromptsubmit hook (2), subagent-kosten (2), subagents als kontextgrenze (2)
 
 ## Verwandte Themen
 
@@ -21,13 +21,14 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 ## Patterns (2)
 
 - [[Handoff-Doc]] · verifiziert · 17 Belege
-- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 36 Belege
+- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 38 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]]
 
-## Quellen (16)
+## Quellen (17)
 
 - [[2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re]] — Weniger Anweisungen, mehr Absicht und messbares Abschlusskriterium: Kontext klein halten, Garantien in Hooks legen und das Setup bei jedem Modellwechsel ausdünnen.
+- [[2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht]] — Der Creator warnt vor GitHub-Tools, die Claude Code Tokens sparen sollen, indem sie Kontext vorab aus einem Graphen zusammensuchen.
 - [[2026-08-14-agenticjames-ai-memory-is-trash-heres-some-solutions]] — Agent Memory ist nicht ein Problem, sondern vier: Ablage, Turn-Erinnerung, multimodale Suche und Abrufzeitpunkt, wobei Pull durch den Agenten und Push per Hook Kosten und Nutzen tauschen.
 - [[2026-08-03-steffen_hauptmann-die-meisten-lassen-sich-ein-handover-erst-schreiben-wenn-das]] — Eine fortlaufend gepflegte Zustandsdatei macht den Handover schon vor vollem Context Window verfügbar, kostet aber laufend Tokens und kann bei falschem Stand irreführen.
 - [[2026-07-30-floknowsai-ki-gibt-dir-das-gefuehl-dass-du-so-schnell-wie-noch-nie-arbeitest]] — Erfahrene Entwickler fühlen sich mit KI schneller, messen aber langsamer, und falscher Kontext schadet mehr als gar keiner, weshalb Pflege wichtiger ist als Sammeln.
@@ -46,6 +47,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit]]
 - [[2026-09-17-agenticjames-i-think-code-mode-mcps-are-probably-the-best-way-to-give-agents-access]]
 - [[2026-08-14-claude-maximizing-the-value-of-your-claude-code-session]]
 - [[2026-08-12-voxyz_ai-2087579867139264681]]

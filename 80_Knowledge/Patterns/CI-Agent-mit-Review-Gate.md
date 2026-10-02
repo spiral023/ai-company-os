@@ -38,6 +38,7 @@ Der Agent läuft als eigener, sandboxed Job in der CI-Pipeline (z. B. GitLab CI,
 - 2026-02-23 · [[2026-02-23-elvis-openclaw-codex-agent-swarm]] · meinung — Definition of Done aus grüner CI, Sync mit main, Screenshot bei UI-Änderung und drei AI-Reviewern vor dem menschlichen Review (5–10 Minuten laut Quelle). Neu ist die Modell-Rollenteilung der Reviewer; die Wirksamkeit ist nicht gemessen.
 - 2026-08-14 · [[2026-08-14-floknowsai-ueber-achtzig-prozent-des-codes-von-claude-code-und-codex-sieht-kein]] · meinung — Prüfmodell mindestens gleich stark wie Erzeuger, Merge nur mit Required Status Checks (Rulesets); Warnsignal, wenn der Agent Tests anpasst.
 - 2026-02-20 · [[2026-02-20-boris-tane-sdlc-is-dead]] · meinung — Fordert Adversarial Agent statt menschlichem PR-Review; steht im Gegensatz zum Review-Gate, ungeprüft.
+- 2026-09-29 · [[2026-09-29-openclaw-openclaw-enterprise-the-open-agent-platform-open]] · meinung — Interner Agent Androidclaw triagiert Kanäle, findet PRs und mergt Fixes; LLM-basierte Reviews als Teil der Plattform. Eigenbericht, ohne Zahlen.
 
 ## Spannungen & offene Fragen
 

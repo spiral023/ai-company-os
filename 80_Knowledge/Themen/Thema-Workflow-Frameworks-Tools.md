@@ -1,6 +1,6 @@
 # Workflow-Frameworks & Tools
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Matt Pococks Skills, Superpowers, GSD, gstack, Everything Claude Code, Terminal- und Multiplexer-Tools.
 
@@ -9,7 +9,7 @@ Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Mat
 - **Hauptkeyword:** Claude Code Workflow
 - **Long-Tail:** Superpowers vs. GSD; Matt Pocock Skills Wayfinder; gstack Claude Code; Everything Claude Code; Agent Framework Vergleich; cmux Terminal für Agents
 - **Fragen:** Welches Workflow-Framework passt zu mir? / Brauche ich ein Framework oder reichen eigene Skills?
-- **Häufig in den Quellen:** matt pocock skills (4), wayfinder (4), spec-driven development (3), everything claude code (2), gsd-map-codebase (2), gstack (2), superpowers (2), claude code skills (2), grill-me (2), to-tickets (2), implement (2), to-spec (2), multi-agent übersicht, parallele coding agents, ghostty terminal, tmux alternative, agent notifications, cmux, zellij, conductor
+- **Häufig in den Quellen:** wayfinder (4), matt pocock skills (4), spec-driven development (3), everything claude code (2), gsd-map-codebase (2), gstack (2), superpowers (2), claude code skills (2), grill-me (2), to-tickets (2), implement (2), to-spec (2), parallele coding agents, cmux, zellij, agent notifications, tmux alternative, multi-agent übersicht, conductor, ghostty terminal
 
 ## Verwandte Themen
 

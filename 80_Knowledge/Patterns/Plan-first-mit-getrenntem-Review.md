@@ -64,6 +64,8 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-09-09 · [[2026-09-09-alex-sprogis-so-erstellst-du-interaktive-architektur-diagramm]] · meinung — Beschreibt Workflow Spec, Architektur, Tasks, Build, unabhängige QA gegen die Spec; nur Beschreibung, gesponserte Demo.
 - 2026-08-05 · [[2026-08-05-creatoreconomy-use-my-human-review-skill-to-edit-html-and-markd]] · meinung — Menschliches Review von Planungsdokumenten per Inline-Kommentar in einem lokalen Visual Editor statt im Chat. Neu ist nur das Werkzeug; keine Wirksamkeitsmessung.
 - 2026-08-18 · [[2026-08-18-floknowsai-hoer-auf-den-code-deines-ki-agenten-zu-lesen]] · meinung — Zweiter Agent mit frischem Kontext prüft Code und Tests, weil der Autor-Agent befangen ist; Kosten: doppelter Tokenverbrauch.
+- 2026-09-27 · [[2026-09-27-voxyz_ai-2104224555040452925]] · meinung — Die Agent-Dateien werden erst nach Freigabe geschrieben, Befunde kommen priorisiert mit Repro, Screenshot und Fix an die Hauptsession, Unprüfbares als „untested“. Wirkung nicht belegt.
+- 2026-09-22 · [[2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit]] · meinung — Plan mit Opus erstellen, mit Sonnet gegenreviewen; Planfehler seien später teurer. Behauptet, das Review finde noch weitere Fehler (ohne Zahl).
 
 ## Spannungen & offene Fragen
 

@@ -6,7 +6,9 @@ datum: 2026-09-28
 erfasst: 2026-10-02
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-10-02
+source_notiz: 80_Knowledge/Sources/2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog.md
 medien: "1/1 lokal"
 ---
 

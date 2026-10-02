@@ -60,6 +60,9 @@ Parallelisierung lohnt sich nur unter drei Voraussetzungen: (1) **klare Modulgre
 - 2026-09-22 · [[2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c]] · meinung — Audit/Migration pro Einheit an ein Subagent, Evidenz prüfen, Ergebnis als Tabelle. Nur Tester-Berichte, keine Messwerte.
 - 2026-02-14 · [[2026-02-14-gmoney-eth-25-claude-code-lessons]] · meinung — 3 bis 5 parallele Sessions je Git-Worktree als größter Produktivitätshebel; ohne Kosten- und Review-Betrachtung.
 - 2026-07-03 · [[2026-07-03-calebwritescode-loop-engineering-explained-in-7-min-and-simplified]] · meinung — Nennt Worktrees und Subagents als Komponenten, um parallele Fixes ohne Runtime-Kontamination zu ermöglichen; nur Beispiel, keine Messung.
+- 2026-09-27 · [[2026-09-27-voxyz_ai-2104254744722383210]] · meinung — Selbstbericht: 8 parallele Agenten verbrannten ca. 12M Token pro Mining-Durchlauf und erreichten zweimal das Limit; Gruppen à 3 liefen fehlerfrei, Done-Marker für idempotente Reruns. Einzelfall, nicht kontrolliert verglichen.
+- 2026-09-29 · [[2026-09-29-voxyz_ai-2105012597796057438]] · meinung — fork_turns auf none oder wenige Turns, sonst erben Subagents Modell und Effort des Hauptagenten. Konkreter Stolperstein bei Delegation in Codex.
+- 2026-09-27 · [[2026-09-27-voxyz_ai-2104224555040452925]] · meinung — Vier thematisch getrennte, read-only Breaker-Subagents prüfen je einen festen Fragenkatalog, der Hauptagent behebt danach. Neu gegenüber dem 26.09.: Effort-Stufen (`high`, Security `xhigh`) und ein Sicherheitsrahmen für die Testumgebung; keine Messung.
 
 ## Spannungen & offene Fragen
 

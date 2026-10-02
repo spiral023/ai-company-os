@@ -1,6 +1,6 @@
 # Einstieg & Best Practices
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-09-30. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices, Anfängerfehler, Tippsammlungen. Sobald ein Thema tiefer behandelt wird, gehört die Quelle in den Fachcluster.
 
@@ -9,7 +9,7 @@ Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices,
 - **Hauptkeyword:** Claude Code Tutorial
 - **Long-Tail:** Claude Code für Einsteiger; Claude Code Best Practices; Claude Code Tipps; Claude Code Setup; Claude Code Anfängerfehler; Claude Code Lernpfad
 - **Fragen:** Wie fange ich mit Claude Code an? / Welche Fehler machen Einsteiger?
-- **Häufig in den Quellen:** plan mode (3), headless mode (2), claude code anfänger (2), extended thinking (2), claude code best practices (2), claude code tutorial, context degradation, scratchpad.md, claude.md, opus sonnet arbeitsteilung, alltagsautomatisierung, vibe coding, prompt-präzision, aufgaben zerlegen, rückfragen des modells, python-skript, pretooluse, /rewind, claude code hooks, anthropic academy
+- **Häufig in den Quellen:** plan mode (3), claude code anfänger (2), headless mode (2), extended thinking (2), claude code best practices (2), claude.md, claude code tutorial, scratchpad.md, opus sonnet arbeitsteilung, context degradation, aufgaben zerlegen, alltagsautomatisierung, vibe coding, prompt-präzision, python-skript, rückfragen des modells, escape-korrektur, pretooluse, claude code hooks, custom commands
 
 ## Verwandte Themen
 
