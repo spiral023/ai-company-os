@@ -249,76 +249,76 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 <!-- OVERVIEW:START (automatisch generiert von 70_Scripts/update_external_repos.py — nicht von Hand bearbeiten) -->
 ## Übersicht
 
-- **Repos gesamt:** 62
-- **Gesamtgröße:** ca. 1.886 MB
-- **Dateien gesamt:** ca. 104.555 (ohne `.git`)
-- **Sterne gesamt:** ca. 4.850.012 (62/62 Repos abgerufen)
-- **Stand:** 2026-09-27
+- **Repos gesamt:** 63
+- **Gesamtgröße:** ca. 1.948 MB
+- **Dateien gesamt:** ca. 104.923 (ohne `.git`)
+- **Stand:** 2026-10-02
 
 | Repo | Dateien | Größe | ⭐ |
 |---|---:|---:|---:|
-| diegosouzapw/OmniRoute | 12.595 | 223M | 70.608 |
-| thedotmack/claude-mem | 1.531 | 151M | 94.767 |
-| paperclipai/paperclip | 7.814 | 123M | 88.281 |
-| teng-lin/notebooklm-py | 2.183 | 117M | 19.488 |
-| davila7/claude-code-templates | 9.618 | 112M | 31.949 |
-| openai/codex | 8.683 | 84M | 126.684 |
-| shanraisshan/claude-code-best-practice | 454 | 75M | 66.417 |
-| intellectronica/ruler | 257 | 71M | 2.936 |
-| headroomlabs-ai/headroom | 2.463 | 66M | 73.919 |
-| pbakaus/impeccable | 3.261 | 65M | 71.658 |
-| open-gsd/gsd-core | 3.568 | 57M | 9.890 |
-| garrytan/gstack | 2.821 | 56M | 134.299 |
-| affaan-m/ECC | 3.734 | 52M | 268.085 |
-| tt-a1i/archify | 565 | 48M | 72.467 |
-| farion1231/cc-switch | 1.268 | 46M | 137.372 |
-| shadcn-ui/ui | 5.800 | 46M | 124.670 |
-| millionco/react-doctor | 7.163 | 39M | 14.927 |
-| alirezarezvani/claude-skills | 5.443 | 35M | 26.561 |
-| Egonex-AI/Understand-Anything | 515 | 32M | 84.306 |
-| midudev/autoskills | 4.610 | 30M | 6.914 |
-| OthmanAdi/planning-with-files | 736 | 30M | 27.144 |
-| router-for-me/CLIProxyAPI | 1.661 | 27M | 53.301 |
-| Jakubantalik/transitions.dev | 220 | 25M | 4.377 |
-| Graphify-Labs/graphify | 959 | 25M | 121.750 |
-| upstash/context7 | 507 | 24M | 62.464 |
-| microsoft/markitdown | 200 | 24M | 187.231 |
-| bradygaster/squad | 1.995 | 23M | 3.236 |
-| nextlevelbuilder/ui-ux-pro-max-skill | 682 | 21M | 130.928 |
-| langchain-ai/openwiki | 574 | 18M | 16.807 |
-| juliusbrussee/caveman | 1.594 | 18M | 107.998 |
-| anthropics/claude-code | 1.434 | 14M | 148.273 |
-| github/spec-kit | 835 | 12M | 139.054 |
-| thedaviddias/Front-End-Checklist | 1.875 | 11M | 74.286 |
-| anthropics/skills | 419 | 11M | 178.601 |
-| wshobson/agents | 1.189 | 8,0M | 40.017 |
-| vercel-labs/agent-skills | 447 | 7,6M | 31.606 |
-| NVIDIA/SkillSpector | 391 | 6,8M | 18.405 |
-| rtk-ai/rtk | 599 | 6,5M | 81.794 |
-| 0xNyk/council-of-high-intelligence | 68 | 5,9M | 4.517 |
-| AgriciDaniel/claude-seo | 459 | 5,2M | 17.767 |
-| bmad-code-org/BMAD-METHOD | 629 | 5,0M | 53.534 |
-| Leonxlnx/taste-skill | 66 | 4,7M | 90.484 |
-| msitarzewski/agency-agents | 362 | 4,5M | 154.825 |
-| coreyhaines31/marketingskills | 466 | 3,7M | 51.640 |
-| abi/screenshot-to-code | 316 | 2,6M | 79.752 |
-| VoltAgent/awesome-design-md | 153 | 2,1M | 118.250 |
-| obra/superpowers | 229 | 1,9M | 292.041 |
-| petergyang/human-review | 52 | 1,8M | 1.294 |
-| DietrichGebert/ponytail | 166 | 1,7M | 146.701 |
-| vercel-labs/skills | 124 | 1,1M | 32.590 |
-| addyosmani/agent-skills | 208 | 999K | 99.361 |
-| karpathy/autoresearch | 10 | 747K | 96.855 |
-| docker/skills | 166 | 728K | 330 |
-| mattpocock/skills | 169 | 667K | 270.442 |
-| ayghri/i-have-adhd | 73 | 596K | 51.466 |
-| mattpocock/dictionary-of-ai-coding | 90 | 331K | 4.843 |
-| emilkowalski/skills | 26 | 261K | 41.374 |
-| petergyang/no-ai-slop | 14 | 257K | 11.402 |
-| shadcn/improve | 10 | 61K | 9.185 |
-| kepano/obsidian-skills | 15 | 57K | 48.926 |
-| jakubkrehel/make-interfaces-feel-better | 12 | 48K | 3.514 |
-| multica-ai/andrej-karpathy-skills | 9 | 38K | 215.449 |
+| diegosouzapw/OmniRoute | 12.595 | 223M | – |
+| thedotmack/claude-mem | 1.531 | 151M | – |
+| paperclipai/paperclip | 7.814 | 123M | – |
+| teng-lin/notebooklm-py | 2.183 | 117M | – |
+| davila7/claude-code-templates | 9.618 | 112M | – |
+| openai/codex | 8.683 | 84M | – |
+| shanraisshan/claude-code-best-practice | 454 | 75M | – |
+| intellectronica/ruler | 257 | 71M | – |
+| headroomlabs-ai/headroom | 2.463 | 66M | – |
+| pbakaus/impeccable | 3.261 | 65M | – |
+| latent-spaces/brag | 368 | 62M | – |
+| open-gsd/gsd-core | 3.568 | 57M | – |
+| garrytan/gstack | 2.821 | 56M | – |
+| affaan-m/ECC | 3.734 | 52M | – |
+| tt-a1i/archify | 565 | 48M | – |
+| farion1231/cc-switch | 1.268 | 46M | – |
+| shadcn-ui/ui | 5.800 | 46M | – |
+| millionco/react-doctor | 7.163 | 39M | – |
+| alirezarezvani/claude-skills | 5.443 | 35M | – |
+| Egonex-AI/Understand-Anything | 515 | 32M | – |
+| midudev/autoskills | 4.610 | 30M | – |
+| OthmanAdi/planning-with-files | 736 | 30M | – |
+| router-for-me/CLIProxyAPI | 1.661 | 27M | – |
+| Jakubantalik/transitions.dev | 220 | 25M | – |
+| Graphify-Labs/graphify | 959 | 25M | – |
+| upstash/context7 | 507 | 24M | – |
+| microsoft/markitdown | 200 | 24M | – |
+| bradygaster/squad | 1.995 | 23M | – |
+| nextlevelbuilder/ui-ux-pro-max-skill | 682 | 21M | – |
+| langchain-ai/openwiki | 574 | 18M | – |
+| juliusbrussee/caveman | 1.594 | 18M | – |
+| anthropics/claude-code | 1.434 | 14M | – |
+| github/spec-kit | 835 | 12M | – |
+| thedaviddias/Front-End-Checklist | 1.875 | 11M | – |
+| anthropics/skills | 419 | 11M | – |
+| wshobson/agents | 1.189 | 8,0M | – |
+| vercel-labs/agent-skills | 447 | 7,6M | – |
+| NVIDIA/SkillSpector | 391 | 6,8M | – |
+| rtk-ai/rtk | 599 | 6,5M | – |
+| 0xNyk/council-of-high-intelligence | 68 | 5,9M | – |
+| AgriciDaniel/claude-seo | 459 | 5,2M | – |
+| bmad-code-org/BMAD-METHOD | 629 | 5,0M | – |
+| Leonxlnx/taste-skill | 66 | 4,7M | – |
+| msitarzewski/agency-agents | 362 | 4,5M | – |
+| coreyhaines31/marketingskills | 466 | 3,7M | – |
+| abi/screenshot-to-code | 316 | 2,6M | – |
+| VoltAgent/awesome-design-md | 153 | 2,1M | – |
+| obra/superpowers | 229 | 1,9M | – |
+| petergyang/human-review | 52 | 1,8M | – |
+| DietrichGebert/ponytail | 166 | 1,7M | – |
+| vercel-labs/skills | 124 | 1,1M | – |
+| addyosmani/agent-skills | 208 | 999K | – |
+| karpathy/autoresearch | 10 | 747K | – |
+| docker/skills | 166 | 728K | – |
+| mattpocock/skills | 169 | 667K | – |
+| ayghri/i-have-adhd | 73 | 596K | – |
+| mattpocock/dictionary-of-ai-coding | 90 | 331K | – |
+| emilkowalski/skills | 26 | 261K | – |
+| petergyang/no-ai-slop | 14 | 257K | – |
+| shadcn/improve | 10 | 61K | – |
+| kepano/obsidian-skills | 15 | 57K | – |
+| jakubkrehel/make-interfaces-feel-better | 12 | 48K | – |
+| multica-ai/andrej-karpathy-skills | 9 | 38K | – |
 
 Dateianzahl, Größe, Struktur und Sterne pro Repo (ohne `.git`-Verzeichnis) stehen zusätzlich in jedem Eintrag unten und werden von `70_Scripts/update_external_repos.py` automatisch aufgefrischt.
 <!-- OVERVIEW:END -->
@@ -718,6 +718,19 @@ Kepanos kompakte Skill-Sammlung ergänzt Agenten um Obsidian-spezifisches Wissen
 - **Struktur:** Reiner Anwendungscode in `src/` (agent, auth, connectors, cli.tsx) plus `test/` und `examples/`; kein Skill-/Agent-Definitionsordner im OS-Sinne — der Ordner `openwiki/` enthält nur die vom Tool selbst generierte Wiki-Doku, und `AGENTS.md`/`CLAUDE.md` sind autogenerierte Verweisdateien auf diese Doku, keine Agentendefinitionen. <!-- manual -->
 
 OpenWiki ist ein von LangChain entwickeltes Node/TypeScript-CLI-Tool, das für Codebasen oder persönliches Wissen automatisch eine lokale "Agent-Wiki" erstellt und pflegt. Es unterstützt zwei Modi: Code-Modus generiert Repository-Dokumentation (Architektur, Workflows, Domänenkonzepte) im Ordner `openwiki/` und aktualisiert diese per CI-Workflow (GitHub Actions, GitLab, Bitbucket) via Pull Request; Personal-Modus baut ein persönliches Wissens-Wiki unter `~/.openwiki/wiki` aus Quellen wie lokalen Git-Repos, Gmail, Notion, Slack, X/Twitter, Websuche und Hacker News. Deterministische Connector-Tools ziehen Rohdaten, ein LLM-Agent (LangChain-basiert, mit better-sqlite3-Checkpointing) synthetisiert daraus Markdown-Seiten. `.openwikiignore` kann private, generierte oder irrelevante Pfade aus Discovery und Shell-Zugriff ausschließen. Zusätzlich schreibt das Tool Blöcke in `AGENTS.md`/`CLAUDE.md`, damit Coding-Agenten die Wiki als Kontextquelle referenzieren; eigene Integrationen gibt es inzwischen für IBM Bob (inkl. Streaming, damit lange Generierungen nicht in ein Timeout laufen), Codex, Claude Code, OpenCode, Cursor, Kiro, Antigravity und Oh My Pi (omp), die über einen MCP-Lifecycle (`openwiki_begin` … `openwiki_finish`) nur noch sparsame Claim-Entscheidungen je Seite übermitteln, während OpenWiki Persistenz und Abschluss deterministisch übernimmt. Seit 0.6.0 lässt sich ein Wiki auch selbst als MCP-Server befragen: `search`, `read` und `link` erlauben abfragbare Wikis sowie Verlinkung zwischen mehreren Wikis. "Grounded Claims" machen Code-Wikis selbstkorrigierend: Aussagen tragen eine überprüfbare Herkunft, damit veraltete Seiten auffallen statt unbemerkt weiterzuleben. Die Repository-Generierung folgt inzwischen einer wiederaufnehmbaren Seiten-Job-Pipeline (`begin → submit_plan → next_page → submit_page → … → finish`) mit durablem Run-Status (`openwiki/.run.json`), sodass unterbrochene Läufe auf einem persistenten Checkout fortgesetzt statt komplett neu gestartet werden. Unterstützt werden OpenAI inkl. ChatGPT-Login, Anthropic, OpenRouter, Gemini/Vertex (inkl. Reasoning-Effort-Mapping), AWS Bedrock, GitHub Copilot und mehrere weitere bzw. kompatible Provider sowie optionales LangSmith-Tracing. Relevant als Ergänzung zu Doku-Retrieval-Tools wie Context7, insbesondere für automatisch aktuell gehaltene Projektdokumentation als Agentenkontext. Risiken: junges Projekt, lokale Speicherung von API-Keys/OAuth-Tokens in `~/.openwiki/.env`, native Abhängigkeit (better-sqlite3), laufende LLM-Kosten und weitreichende OAuth-Connector-Berechtigungen mit Datenschutzimplikationen; Shell-Ausführung im Personal-Modus wurde inzwischen als Sicherheitsfix deaktiviert. MIT-lizenziert.
+
+---
+
+## latent-spaces/brag
+
+- **URL:** https://github.com/latent-spaces/brag
+- **Stars:** ⭐ 12.833
+- **Heruntergeladen:** 2026-10-02
+- **Zuletzt aktualisiert:** 2026-10-02
+- **Dateien:** 368 · **Größe:** 62M
+- **Struktur:** 2× SKILL.md · Ordner: skills, references · Spiegelordner: .agents, .claude, .opencode (generiert)
+
+`/brag` ist ein Agent-Skill, der aus einem fertigen Projekt ein kurzes Launch-Video (15–25 s) samt Musik, Soundeffekten und Share-Texten für X oder LinkedIn macht. Statt Screenshots oder einer Live-URL liest der Agent den Projektcode selbst, entwickelt daraus einen projektspezifischen Video-Plan mit Storyboard und übergibt ein fokussiertes Composition-Brief an Hyperframes (HeyGen), das Video rendert. Gesteuert wird über Optionen wie `--tone` (Presets von `polished` bis `yc-parody` oder freie Regie), `--format` (quer, hochkant, quadratisch) und optional `--voice` (Kokoro-Sprecher). Der Ablauf ist in vier Referenzdateien (Inspect, Plan, Compose, Deliver) zerlegt; ein Python-Script analysiert Musik-Cues für den Schnitt. Neu ist `/brag-slim`: eine schlanke Einzeldatei-Variante ohne Hyperframes und gebündelte Assets, bei der Opus 5.5 das ganze Video selbst baut. Bemerkenswert als Muster ist der modellabhängige Dispatch am Skill-Anfang: Erkennt sich das Modell als Opus 5.5, wechselt der Skill automatisch zur Slim-Variante und sagt das dem Nutzer in einer Zeile. Das Repo verteilt denselben Skill per Symlinks an die Discovery-Pfade von Claude Code, Codex, opencode und Antigravity sowie als Plugin-Manifeste (`.claude-plugin/`, `.codex-plugin/`, `plugin.json`); fünf erfundene Demo-Sites in `examples/` dienen als Benchmark-Suite. Relevant als Referenz für Skill-Distribution über mehrere Agenten und als Werkzeug für Launch-Content der Wissensfabrik. Voraussetzungen: Node.js 22+, FFmpeg, Hyperframes-CLI. Auf Windows funktionieren die Symlinks nur mit `core.symlinks` und Developer Mode. MIT-lizenziert, gehostete Variante unter letsbrag.app.
 
 ---
 
