@@ -151,6 +151,10 @@ Mechanische INDEX.md-Felder (`Dateien`, `Größe`, `Struktur`, `Stars`, Übersic
 
 Ziel: Anhand dieses Index später effizient (ohne erneutes Klonen) passende GitHub-Repos empfehlen, direkt zu den relevanten Skill-/Agent-Ordnern springen und Informationen/Arbeitsweisen daraus extrahieren können.
 
+## Design-Inspiration
+
+`docs/design-inspiration/webapps/` enthält Bilder mit Webapp-Design-Inspirationen aus X-Posts (Dashboards, Websites, Mobile Apps). `REGISTER.md` darin verzeichnet je Bild Autor, Link, Datum, Kategorie, Typ und Tweet-Text. Neue Bilder als `<thema>_<tweet-id>.jpg` ablegen und im Register ergänzen.
+
 ## Projektarten in Phase 1
 
 Dieses Repo unterstützt zuerst diese Projektarten:
