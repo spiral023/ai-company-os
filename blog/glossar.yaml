@@ -452,3 +452,82 @@ begriffe:
     aliase: [Micro-VMs]
     text: "Eine sehr schlanke virtuelle Maschine, die schnell startet und ein Programm vom restlichen Rechner abschottet. Ein Agent, der darin läuft, kann Befehle ausführen, ohne das eigentliche System zu verändern. Das macht lange Läufe ohne Rückfragen sicherer."
     siehe: [Sandbox, Permission Prompt]
+
+  - begriff: System Prompt
+    aliase: [Systemprompt, System Prompts]
+    text: "Die Grundanweisung, die ein Modell vor jeder Unterhaltung bekommt, noch vor deiner ersten Nachricht. Coding-Agents packen dort Regeln, Werkzeugbeschreibungen und Projektdateien wie AGENTS.md hinein. Alles darin nimmt bei jeder Anfrage Platz im Context Window ein, deshalb kostet ein langer System Prompt bei jedem Schritt."
+    siehe: [Context Window, Token]
+
+  - begriff: Progressive Disclosure
+    aliase: [gestaffeltes Laden]
+    text: "Ein Aufbau, bei dem ein Agent zuerst nur eine kurze Übersicht sieht und Details erst lädt, wenn er sie braucht. Bei Skills liegt dauerhaft nur Name und Beschreibung im Kontext, der eigentliche Inhalt und weitere Dateien folgen bei Bedarf. So bleibt der Kontext klein, obwohl viel Wissen verfügbar ist."
+    siehe: [Skill, Context Window]
+
+  - begriff: Deny-Rule
+    aliase: [Deny-Rules, Deny-Regel, Deny-Regeln, Deny-Liste]
+    text: "Ein Eintrag in den Einstellungen eines Coding-Agents, der einen Zugriff technisch verbietet, etwa das Lesen einer Datei oder einen bestimmten Befehl. Das Harness prüft die Regel, bevor das Werkzeug läuft, das Modell kann sie also nicht übergehen. Eine Anweisung in einer Textdatei wie AGENTS.md ist dagegen nur eine Bitte."
+    siehe: [Harness, Hook, Permission Prompt]
+
+  - begriff: Secret
+    aliase: [Secrets]
+    text: "Eine geheime Zugangsangabe wie ein API-Key, ein Passwort, ein privater Schlüssel oder ein Datenbank-Zugang. Secrets liegen oft in Dateien wie .env und dürfen weder ins Repository noch in den Kontext eines Agents gelangen. Was einmal im Kontext stand, kann in Antworten, Logs oder Commits wieder auftauchen."
+    siehe: [Context Window, Deny-Rule]
+
+  - begriff: Auto Mode
+    text: "Ein Betriebsmodus von Claude Code, in dem ein eigenes Prüfmodell jeden Befehl bewertet und nur blockiert, was riskant wirkt. Du musst dann nicht jeden Schritt bestätigen. Weil ein Modell sich irren kann, ersetzt er keine fest eingetragenen Sperren."
+    siehe: [Permission Prompt, Deny-Rule]
+
+  - begriff: YOLO-Modus
+    aliase: [YOLO]
+    text: "Umgangssprachlich für einen Agent-Lauf ohne Rückfragen, bei dem alle Aktionen automatisch erlaubt sind. Das macht lange, unbeaufsichtigte Läufe möglich, erhöht aber den möglichen Schaden durch einen falschen Befehl. Vertretbar ist er nur in einer abgeschotteten Umgebung ohne echte Zugangsdaten."
+    siehe: [Sandbox, Permission Prompt, Blast Radius]
+
+  - begriff: Pre-Commit-Hook
+    text: "Ein Skript, das Git vor jedem Commit ausführt und den Commit abbrechen kann. Typische Aufgaben sind Formatierung, Tests oder die Suche nach versehentlich eingefügten Zugangsdaten. Anders als ein Hook im Agent greift er unabhängig davon, wer den Commit auslöst."
+    siehe: [Hook, Secret]
+
+  - begriff: Tree-sitter
+    text: "Ein Werkzeug, das Quellcode und Shell-Befehle in ihre Bestandteile zerlegt, statt sie als bloßen Text zu behandeln. Sicherheitsfilter nutzen das, um verkettete Befehle einzeln zu prüfen. So fällt ein gefährlicher Teil auch dann auf, wenn er hinter einem harmlosen Befehl versteckt ist."
+    siehe: [Deny-Rule]
+
+  - begriff: Baseline
+    aliase: [Baseline-Vergleich]
+    text: "Der Vergleichslauf ohne die Änderung, die du prüfen willst, etwa dieselbe Aufgabe einmal ohne Skill. Erst der Abstand zur Baseline zeigt, ob ein Skill oder Prompt etwas verbessert oder nur Tokens kostet."
+    siehe: [Eval, Skill]
+
+  - begriff: Frontmatter
+    text: "Ein Block mit Metadaten im YAML-Format ganz oben in einer Markdown-Datei, eingerahmt von drei Bindestrichen. Bei Skills stehen dort Name, Beschreibung und Schalter, die steuern, wer den Skill auslösen darf und wie er läuft."
+    siehe: [Skill, Trigger]
+
+  - begriff: Fork
+    aliase: [Forks]
+    text: "Eine abgezweigte Ausführung in einem eigenen, frischen Kontext. Ein Skill im Fork läuft wie ein Subagent, sieht den bisherigen Gesprächsverlauf nicht und gibt nur sein Ergebnis zurück."
+    siehe: [Subagent, Context Window]
+
+  - begriff: Slash-Command
+    aliase: [Slash-Commands, Slash Command]
+    text: "Ein Befehl mit vorangestelltem Schrägstrich, den du im Chat eines Coding-Agents tippst, etwa /release. Der Agent führt dann einen hinterlegten Prompt oder Ablauf aus. Anders als bei einem Skill entscheidest du selbst, wann er startet."
+    siehe: [Skill, Trigger]
+
+  - begriff: Exit-Code
+    aliase: [Exit-Codes]
+    text: "Die Zahl, mit der sich ein Programm beim Beenden zurückmeldet. Null bedeutet üblicherweise Erfolg, jeder andere Wert einen Fehler oder einen bestimmten Zustand. Hooks und CI-Systeme lesen diesen Wert, um einen Schritt durchzulassen oder zu sperren."
+    siehe: [Hook, Gate]
+
+  - begriff: Matcher
+    text: "Ein Filter in der Hook-Konfiguration, der festlegt, bei welchen Tools ein Hook feuert. Ohne ihn läuft der Hook bei jedem Tool-Aufruf, mit ihm etwa nur beim Bearbeiten oder Schreiben von Dateien."
+    siehe: [Hook, Tool Call]
+
+  - begriff: Gateway
+    aliase: [MCP-Gateway, Gateways]
+    text: "Eine Zwischenstation, die mehrere Dienste hinter einem gemeinsamen Zugang bündelt. Bei MCP sitzt ein Gateway vor vielen Servern, sodass der Agent nur noch einen Anschluss sieht. Dafür liegen dort auch die Zugangsdaten aller angeschlossenen Dienste."
+    siehe: [MCP, Code Mode]
+
+  - begriff: Code Mode
+    aliase: [Code-Mode]
+    text: "Ein Ansatz, bei dem ein Agent externe Werkzeuge nicht einzeln aufruft, sondern ein kurzes Skript schreibt, das sie in einer Sandbox nacheinander anspricht. Das Skript kann Ergebnisse filtern, bevor sie im Context Window landen. Der Preis sind Sandbox, ein zusätzlicher Suchschritt und mögliche Fehler im generierten Code."
+    siehe: [MCP, Sandbox, Context Window]
+
+  - begriff: Tool Search
+    text: "Eine Funktion in Claude Code, die Beschreibungen von MCP-Tools erst dann in den Kontext lädt, wenn sie gebraucht werden. Ohne sie liegen alle Tool-Beschreibungen in jedem Turn im Context Window."
+    siehe: [MCP, Progressive Disclosure]
