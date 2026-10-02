@@ -277,7 +277,7 @@ begriffe:
     siehe: [Token]
 
   - begriff: Closed Loop
-    aliase: [Loop, Schleife]
+    aliase: [Schleife]
     text: "Ein Kreislauf, in dem das Ergebnis einer Handlung als Rückmeldung wieder in den Ausgangspunkt fließt. Im Agenten-Kontext: Der Agent baut, beobachtet die Wirkung, zum Beispiel über Telemetrie aus der Produktion, und korrigiert sich, ohne dass ein Mensch dazwischen steht."
     siehe: [Agent, Gate]
 
@@ -373,3 +373,82 @@ begriffe:
   - begriff: HyperFrames
     aliase: [Hyperframes]
     text: "Ein quelloffenes Werkzeug von HeyGen, das Videos als Code beschreibt: Eine animierte Webseite wird Bild für Bild aufgenommen und zu einem Video zusammengesetzt. Jede Farbe und jedes Timing bleibt dadurch als Code änderbar, statt dass das ganze Video neu erzeugt werden muss."
+
+  - begriff: Trigger
+    aliase: [Auslöser, Skill-Trigger]
+    text: "Die Bedingung, unter der ein Agent einen Skill lädt, meist in dessen Beschreibung formuliert. Je enger der Trigger gefasst ist, desto seltener landet ein Skill im Kontext, der für die Aufgabe nichts beiträgt."
+    siehe: [Skill, Router]
+
+  - begriff: Router
+    aliase: [Skill-Router]
+    text: "Eine kurze Einstiegsdatei, die selbst wenig Inhalt hat und je nach Fall auf das passende Unterdokument oder Skript verweist. Der Agent liest so nur das, was er für den aktuellen Schritt braucht, und der Kontext bleibt klein."
+    siehe: [Skill, Trigger]
+
+  - begriff: Fixture
+    aliase: [Fixtures, Wegwerf-Fixtures]
+    text: "Vorbereitete Testdaten oder ein Testzustand, den ein Test vor dem Lauf aufbaut und danach wieder verwirft. Weil Fixtures keine echten Daten berühren, kann ein Agent Tests damit gefahrlos wiederholen."
+    siehe: [Sandbox]
+
+  - begriff: Reasoning-Token
+    aliase: [Reasoning-Tokens]
+    text: "Tokens, die ein Modell für sein internes Nachdenken erzeugt, bevor es antwortet. Sie erscheinen meist nicht in der Antwort, werden aber wie Output berechnet und treiben so die Kosten einer Aufgabe."
+    siehe: [Token, Effort]
+
+  - begriff: Stop-Bedingung
+    aliase: [Stop-Kriterium, Abnahmebedingung]
+    text: "Ein prüfbares Kriterium, an dem ein Agent erkennt, dass seine Aufgabe erledigt ist. Ohne sie hört er zu früh auf oder arbeitet weiter, obwohl das Ziel erreicht ist."
+    siehe: [Agent, Task]
+
+  - begriff: Viewport
+    aliase: [Viewports]
+    text: "Der sichtbare Bereich einer Webseite im Browserfenster oder auf dem Bildschirm eines Geräts. Ein mobiler Viewport ist schmal und hoch, deshalb ordnen sich Inhalte dort anders an als am Desktop. Wer eine Seite nur in einem Viewport prüft, übersieht Fehler, die erst auf anderen Bildschirmgrößen auftreten."
+    siehe: [Komponentenbibliothek]
+
+  - begriff: Komponentenbibliothek
+    aliase: [Komponentenbibliotheken]
+    text: "Eine Sammlung fertiger Bausteine für Oberflächen wie Buttons, Karten, Navigationsleisten oder Preistabellen. Sie kann ein Web-Katalog, ein Open-Source-Repo oder ein Ordner im eigenen Projekt sein. Ein Agent, der aus ihr auswählt, baut konsistenter als einer, der jedes Element neu erfindet."
+    siehe: [Skill]
+
+  - begriff: Reproduktionsschritte
+    aliase: [Repro-Schritte, Reproduktionsschritten]
+    text: "Die genaue Abfolge von Aktionen, mit der sich ein Fehler zuverlässig wieder auslösen lässt, etwa welche Seite, welche Eingabe, welcher Klick. Sie machen aus einem vagen Eindruck einen prüfbaren Befund. Wer einen Fehler behebt, nutzt dieselben Schritte danach als Test, ob er behoben ist."
+    siehe: [Viewport]
+
+  - begriff: Referenzbild
+    aliase: [Referenzbilder, Mockup, Mockups]
+    text: "Ein Bild, das zeigt, wie eine Oberfläche aussehen soll, bevor sie gebaut wird. Es ersetzt lange Beschreibungen von Layout, Farben und Abständen und dient dem Agenten als Vorlage. Ob das Ergebnis der Vorlage entspricht, muss man danach im Browser prüfen."
+    siehe: [Viewport]
+
+  - begriff: Ralph Loop
+    aliase: [Ralph-Loop, Ralph Loops]
+    text: "Ein Skript, das einen Coding-Agent immer wieder neu startet, jedes Mal mit leerem Kontext und derselben Grundanweisung. Was erledigt ist und was noch fehlt, steht in Dateien und Git-Commits, nicht im Gedächtnis des Modells. So kann ein Agent lange Aufgabenlisten abarbeiten, ohne dass sich Fehlversuche im Kontext ansammeln."
+    siehe: [Agent, Context Rot, Handoff]
+
+  - begriff: TDD
+    aliase: [Test-Driven Development, testgetriebene Entwicklung]
+    text: "Eine Arbeitsweise, bei der zuerst ein Test entsteht, der fehlschlägt, und erst danach der Code, der ihn bestehen lässt. Für Agents ist das ein klares Signal, ob ein Schritt fertig ist. Ein Test, der nie rot war, beweist allerdings nicht, dass er die gewünschte Logik prüft."
+    siehe: [Agent, Reward Hacking]
+
+  - begriff: Reward Hacking
+    text: "Ein Agent erfüllt das gemessene Ziel auf einem Weg, den niemand gemeint hat. Typisch ist, Tests zu löschen oder abzuschwächen, damit „alle Tests grün“ stimmt. Dagegen helfen ein Prüfer, der nicht selbst gebaut hat, und Prüffälle, die der bauende Agent nicht kennt."
+    siehe: [Eval, Overfitting, TDD]
+
+  - begriff: Akzeptanzkriterium
+    aliase: [Akzeptanzkriterien]
+    text: "Eine vorab festgelegte, prüfbare Bedingung, die eine Funktion erfüllen muss, damit sie als fertig gilt. Oft wird sie als Satz nach dem Muster „Angenommen …, wenn …, dann …“ formuliert. Für einen Agent liefert sie ein Ziel, das sich mit Ja oder Nein beantworten lässt."
+    siehe: [TDD, Gate]
+
+  - begriff: Iterationslimit
+    aliase: [Iterationslimits]
+    text: "Die Höchstzahl an Durchläufen, die ein Agent-Loop machen darf, bevor er abbricht. Es begrenzt Kosten und verhindert, dass ein Agent endlos an einem Ziel dreht, das er nicht erreicht. Ein Lauf, der am Limit endet, braucht einen Blick von dir."
+    siehe: [Ralph Loop, Closed Loop]
+
+  - begriff: Regression
+    aliase: [Regressionen]
+    text: "Ein Fehler, der durch eine neue Änderung in etwas entsteht, das vorher schon funktioniert hat. Bestehende Tests sollen solche Rückschritte auffangen. Bei autonomen Agent-Läufen fallen sie oft erst spät auf, wenn niemand die einzelnen Änderungen liest."
+    siehe: [TDD, Diff]
+
+  - begriff: Micro-VM
+    aliase: [Micro-VMs]
+    text: "Eine sehr schlanke virtuelle Maschine, die schnell startet und ein Programm vom restlichen Rechner abschottet. Ein Agent, der darin läuft, kann Befehle ausführen, ohne das eigentliche System zu verändern. Das macht lange Läufe ohne Rückfragen sicherer."
+    siehe: [Sandbox, Permission Prompt]
