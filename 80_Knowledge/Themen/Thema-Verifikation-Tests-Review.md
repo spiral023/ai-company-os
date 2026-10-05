@@ -2,14 +2,14 @@
 
 *Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
-Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates, getrenntes Review, Review als Engpass.
+Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates und getrennte Autor-/Prüfkontexte. Dazu gehören risikobasiertes Human Review, menschliche Verantwortung und Freigaben (Human in the Loop), Review-Kapazität sowie PR-Größe und Aufteilung in überschaubare Änderungen. Agent-Autonomie gehört hier hinein, soweit sie Prüf- und Freigabeentscheidungen betrifft; autonome Ausführung steht in autonomie, der gesamte Entwicklungsprozess in sdlc.
 
 ## Suchbegriffe
 
 - **Hauptkeyword:** AI Code Review
-- **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass
-- **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug?
-- **Häufig in den Quellen:** testharness (4), test (4), /goal (3), verifier (3), auto mode (3), llm-as-judge (3), gstack (3), git worktrees (2), red green refactor (2), reviewer (2), verifikation (2), review (2), qualität (2), loop engineering (2), tests (2), ai slop (2), statische code-analyse (2), tdd (2), coding agents (2), mutation testing (2)
+- **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass; Codequalität mit KI und Menschen; Human in the Loop beim Code Review; Risikobasiertes Human Review; Agent-Autonomie und menschliche Freigaben; Große KI-generierte PRs prüfen; Pull Requests in prüfbare Änderungen aufteilen; Review-Kapazität bei parallelen Agents
+- **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug? / Welche Änderungen brauchen menschliches Review und welche automatische Checks? / Wer trägt die Verantwortung, wenn ein Agent Code freigibt? / Was tun, wenn PRs zu groß für ein gründliches manuelles Review werden? / Wie begrenzt Review-Kapazität die Agent-Autonomie und Parallelisierung?
+- **Häufig in den Quellen:** human-in-the-loop (5), testharness (4), test (4), risikobasiertes human review (4), menschliche freigabe (4), verifier (3), /goal (3), auto mode (3), tdd (3), llm-as-judge (3), gstack (3), ai-native sdlc (3), git worktrees (2), red green refactor (2), review (2), reviewer (2), qualität (2), verifikation (2), tests (2), loop engineering (2)
 
 ## Verwandte Themen
 
@@ -17,14 +17,18 @@ Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statis
 - [[Thema-Autonome-Läufe-Loops-CI]] — Autonome Läufe, Loops & CI
 - [[Thema-Multi-Agent-Parallelisierung]] — Multi-Agent & Parallelisierung
 - [[Thema-Skill-Design]] — Skill-Design
+- [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
+- [[Thema-Sicherheit-Sandboxing]] — Sicherheit & Sandboxing
+- [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
 
-## Patterns (3)
+## Patterns (4)
 
 - [[Hillclimbing-mit-Holdout-Split]] · meinung · 3 Belege
+- [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 1 Belege
 - [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 11 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 26 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 27 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[Great-Decoupling-Rollenverstaendnis]], [[Plan-first-mit-getrenntem-Review]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Great-Decoupling-Rollenverstaendnis]], [[Kontrollierte-Agent-Parallelisierung]], [[Plan-first-mit-getrenntem-Review]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]]
 
 ## Quellen (19)
 
@@ -54,12 +58,15 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-10-05-repo-bmad-method-retrospective]]
 - [[2026-10-05-repo-alirezarezvani-skill-doctor]]
 - [[2026-09-27-voxyz_ai-2104224555040452925]]
+- [[2026-09-27-anthropic-academy-sdlc-playbook]]
 - [[2026-09-25-voxyz_ai-2103586663393853636]]
 - [[2026-09-25-trq212-2103576349499855160]]
+- [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]]
 - [[2026-09-14-code-test-plugins-with-evals-claude-code-docs]]
 - [[2026-08-30-alex-sprogis-loop-graph-engineering-das-letzte-video-was-du-s]]
 - [[2026-08-05-floknowsai-dein-vibe-coding-projekt-bricht-nicht-am-coding-agent-zusammen-sondern]]
 - [[2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding]]
+- [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]]
 - [[2026-07-06-claudedevs-2074208949205881033]]
 - [[2026-04-16-wiki-compiler-gstack]]
 - [[2026-04-10-paulsolt-2042716870512353294]]

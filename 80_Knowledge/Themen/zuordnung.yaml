@@ -31,6 +31,11 @@ muster:
     keywords: [Advisor Agent, Agent Drift, Goal Drift, Long-Running Agents, Multi-Agent, Worker-Advisor, Session Monitoring, Kurskorrektur]
     neben: [autonomie]
     synonyme: [Advisor Pattern, Watcher Agent, Supervisor Agent, Drift Detection]
+  Agent-Rechte-umfassen-Kommunikationswege:
+    haupt: sicherheit
+    keywords: [Agent-to-Agent-Kommunikation, Agent-Identität, Least Agency, Indirekte Rechte, Delegierte Aktionen, Berechtigungsgrenzen, Audit-Logging, Modellwechsel]
+    neben: [orchestrierung, autonomie]
+    synonyme: [Kommunikationsrechte von Agents, Indirekte Agent-Berechtigungen, Agent-to-Agent Permission Boundaries]
   Agent-generierte-Schulung-mit-Curriculum-Gate:
     haupt: rolle-markt
     keywords: [Interaktive Schulung, Curriculum, Lernziele, Human Review Gate, E-Learning mit KI, Voiceover, Interaktive HTML-Anwendung, User-invoked Skill]
@@ -49,7 +54,7 @@ muster:
   CI-Agent-mit-Review-Gate:
     haupt: autonomie
     keywords: [Claude Code in CI/CD, GitHub Actions, GitLab CI, '@claude Mention', Pull Request Review, Merge Request, Sandboxed Runner, Human-in-the-Loop]
-    neben: [sicherheit]
+    neben: [sicherheit, verifikation]
     synonyme: [CI-Agent, Claude Code GitHub Action, Headless Agent, Agent in Pipeline]
   CONTEXT-Glossar:
     haupt: planung
@@ -129,7 +134,7 @@ muster:
   Kontrollierte-Agent-Parallelisierung:
     haupt: orchestrierung
     keywords: [Parallel Agents, Subagents, Agent Teams, Multi-Agent Systems, Edit-Kollisionen, Token-Kosten, Git Worktrees, Modulgrenzen]
-    neben: [modelle-kosten]
+    neben: [modelle-kosten, verifikation]
     synonyme: [Agent Parallelization, Parallele Agenten, Multi-Agent Orchestration]
   Lokale-Modell-Umleitung-Muster:
     haupt: modelle-kosten
@@ -149,7 +154,7 @@ muster:
   Metrikband-gestufte-Agent-Autonomie:
     haupt: autonomie
     keywords: [Graduated Autonomy, Sigma-Abweichung, Anomaly Detection, Runbook Automation, Agentic Ops, Baseline Metrics, Read-only Diagnose, Incident Response]
-    neben: [sicherheit]
+    neben: [sicherheit, sdlc]
     synonyme: [Gestufte Autonomie, Autonomy Tiers, Metrik-Schwellen]
   Modell-Eskalation-von-guenstig-nach-teuer:
     haupt: modelle-kosten
@@ -171,6 +176,11 @@ muster:
     keywords: [Ralph Loop, Ralph Wiggum, Autonomous Coding Loop, Fresh Context, Overnight Agents, STEERING.md, Context Saturation, Brownfield]
     neben: [kontext]
     synonyme: [Ralph Wiggum Loop, Ralph, Loop Agent, Iterations-Loop]
+  Review-Autonomie-mit-Shadow-Mode-und-Stichproben:
+    haupt: verifikation
+    keywords: [Risikobasiertes Human Review, Shadow Mode, Review-Stichproben, Automatische PR-Freigabe, Review-Kapazität, Human-in-the-Loop, Menschliche Freigabe, Befundnachweis]
+    neben: [autonomie, sicherheit]
+    synonyme: [Risikobasierte Review-Autonomie, Shadow Mode für Review-Agents, Menschliche Review-Stichproben]
   Sandbox-Komposition-aus-OS-Primitiven:
     haupt: sicherheit
     keywords: [Agent Sandbox, Windows Sandbox, Restricted Token, Synthetic SID, OS-Level Sandboxing, Codex Sandbox, Process Isolation, Filesystem Permissions]
@@ -534,10 +544,10 @@ quellen:
     keywords: [Cross-Model-Review, Claude Code Codex CLI, Single-Model Blindness, /codex-review Skill, VERDICT APPROVED REVISE, Plan-Review iterativ, Codex exec resume, Adversarial Review]
     neben: [orchestrierung]
   2026-02-20-boris-tane-sdlc-is-dead:
-    haupt: rolle-markt
+    haupt: sdlc
     kernaussage: Mit Coding-Agents verschmelzen SDLC-Phasen zu einem Loop aus Intent, Build und Observe; Kontextqualität und Telemetrie werden zum Kern (spekulative These).
     keywords: [SDLC ist tot, Software Development Lifecycle mit KI, Intent Build Observe, Adversarial Agent Code Review, Feature Flags Canary, Observability als Kontext, Closed Loop]
-    neben: [autonomie]
+    neben: [autonomie, rolle-markt]
   2026-02-23-d4m1n-ralph-loop-setup-primaer:
     haupt: autonomie
     kernaussage: Der Ralph Loop trägt Zustand in Dateien statt im Modell und läuft mit Tests und Steering-Datei stundenlang autonom; die Spec-Prüfung vorab ist billiger als Rollbacks.
@@ -926,13 +936,19 @@ quellen:
   2026-07-16-amasad-2077802290304684404:
     haupt: verifikation
     kernaussage: Replit-CEO Amjad Masad beschreibt, wie Replit zwischen Januar und Juni 2026 interne Agents in Engineering, Data, Sales, Marketing und Support eingeführt hat.
-    keywords: [review, test, tests, qualität, ci, reviewer, sandbox, microvm, ci-agent, loop engineering]
+    keywords: [review, test, tests, qualität, ci, reviewer, sandbox, microvm, ci-agent, loop engineering, Risikobasiertes Human Review, Menschliche Freigabe, Review-Latenz, Agentische PR-Freigabe]
     neben: [sicherheit, autonomie]
   2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt:
     haupt: planung
     kernaussage: Eine ausführliche Spezifikation mit verweisenden Task-Listen und mehrfacher Agent-Prüfung des Plans ist billiger als spätes Nachbessern, verursacht aber eigene Pflegekosten.
     keywords: [Spec-Driven Development, große Spezifikation, Task-Markdown, Plan Review durch Agents, Git-Commit als Rollback, Session-Wechsel, Datenmodell-Review, Vibe Coding]
     neben: [kontext]
+  2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev:
+    haupt: sdlc
+    kernaussage: Anthropic staffelt Review-Autonomie nach Risiko, prüft neue Reviewer im Shadow Mode und kontrolliert automatische Freigaben durch menschliche Stichproben; Agent-Rechte müssen auch Kommunikationswege erfassen. Herstellerbericht ohne unabhängige Wirkungsmessung.
+    keywords: [AI-native SDLC, Human-in-the-Loop, Risikobasiertes Human Review, Shadow Mode, Review-Stichproben, Automatische PR-Freigabe, Befundnachweis, SAST und DAST, Invariantentests, Least Agency,
+      Agent-Identität, Agent-to-Agent-Kommunikation, SIEM, Egress-Allowlist]
+    neben: [verifikation, sicherheit]
   2026-07-21-promptgefluester-prompt-engineering-ist-tot-und-keiner-hats-gemerkt-was-meine-ich-damit:
     haupt: skills
     kernaussage: Statt eines langen Initial-Prompts erzeugen Rückfrage-Skills sauberen Basis-Kontext und Hook-Skills laden Regeln im Prozess nach, weil frühe Regeln im wachsenden Kontext verblassen.
@@ -1160,6 +1176,12 @@ quellen:
       liest der Server'
     keywords: [fixed-answer scoring, logits, sglang, klassifikation, routing, kalibrierung, lokales modell]
     neben: []
+  2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide:
+    haupt: sdlc
+    kernaussage: Eric Tech erläutert Anthropics AI-native SDLC-Playbook als durchgängigen Ablauf mit Claude Code.
+    keywords: [AI-native SDLC, intent.md, spec.md, plan.md, REVIEW.md, Human-in-the-Loop, Menschliche Freigabe, Review-Regeln aus PR-Feedback, Agent-Evals in CI, TDD, Monitoring als Feedback, Source of
+        Truth]
+    neben: [verifikation, planung]
   2026-09-20-voxyz_ai-2101657631249031507:
     haupt: prototyping
     kernaussage: Vage Designwünsche durch benannte Operationen ersetzen, Komponentenbibliothek als Skill packen und die Seite per Agent im Browser real bedienen lassen liefert Reproduktionsschritte statt
@@ -1214,7 +1236,8 @@ quellen:
   2026-09-24-ai-engineer-matt-pocock-fixing-the-pr-bottleneck:
     haupt: verifikation
     kernaussage: 'Mehr Agent-Output verschärft den Review-Flaschenhals: deterministische Checks, ein separater Review-Agent mit Commits und risikobasiertes Human Review bremsen ihn in drei Stufen.'
-    keywords: [PR-Engpass, Code-Review mit Agents, Review-Subagent, coding-standards.md, Tautologische Tests, One-Way-Door, Blast Radius, Red-Green-Refactor, /retro, Tiefe Module]
+    keywords: [PR-Engpass, Code-Review mit Agents, Review-Subagent, coding-standards.md, Tautologische Tests, One-Way-Door, Blast Radius, Red-Green-Refactor, /retro, Tiefe Module, Risikobasiertes Human
+        Review, Getrennte Prüfkontexte]
     neben: [rolle-markt]
   2026-09-24-artificialanlys-2102932119995756613:
     haupt: modelle-kosten
@@ -1237,10 +1260,11 @@ quellen:
     keywords: [Pre-Launch-Check, Vibe-Coding-Site, Claude Code Subagents, DESIGN.md, Launch-Checkliste, UI-Zustände, Mobile-Test, Read-only Subagent, Opus 5.5]
     neben: [prototyping]
   2026-09-27-anthropic-academy-sdlc-playbook:
-    haupt: rolle-markt
+    haupt: sdlc
     kernaussage: Jede SDLC-Phase endet mit einem committeten Artefakt; beratende Ebenen wie Skills brauchen erzwingende wie Hooks, und der schreibende Agent genehmigt sich nie selbst.
-    keywords: [AI-native SDLC, Anthropic Academy, intent.md, spec.md, Claude Code Hooks, Managed Settings, Plan-Modus, Evals in CI, REVIEW.md, Agent-Autonomie nach Umgebung]
-    neben: [sicherheit]
+    keywords: [AI-native SDLC, Anthropic Academy, intent.md, spec.md, Claude Code Hooks, Managed Settings, Plan-Modus, Evals in CI, REVIEW.md, Agent-Autonomie nach Umgebung, Review-Kapazität, Menschliche
+        Freigabe, Human-in-the-Loop]
+    neben: [sicherheit, verifikation]
   2026-09-27-voxyz_ai-2104224555040452925:
     haupt: sicherheit
     kernaussage: 'Vox beschreibt einen Pre-Launch-Check für Claude Code (Modellname im Tweet: Opus 5.5): Vier Subagents haben nur die Aufgabe, die eigene App zu brechen, und teilen sich 16 feste Prüffragen.'

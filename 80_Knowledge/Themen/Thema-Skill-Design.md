@@ -9,7 +9,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - **Hauptkeyword:** Claude Code Skills
 - **Long-Tail:** Skill Description schreiben; Skill Evals Baseline; SKILL.md Aufbau; Skills vs. Slash Commands; Skill Trigger optimieren; Skills als Teamwissen
 - **Fragen:** Wann lohnt sich ein eigener Skill? / Warum löst mein Skill nicht aus?
-- **Häufig in den Quellen:** progressive disclosure (10), claude code skills (7), skill description (6), skill.md (5), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), wayfinder (4), claude skills (3), skill-creator (3), undertriggering (3), skill (3), to-spec (3), to-tickets (3), agents.md (3), skill-trigger (2), baseline-vergleich (2), agent skills (2)
+- **Häufig in den Quellen:** progressive disclosure (10), claude code skills (7), skill description (6), skill.md (5), slash commands (4), skill evals (4), grill-me (4), mattpocock/skills (4), claude code hooks (4), wayfinder (4), claude skills (3), skill-creator (3), undertriggering (3), skill (3), to-spec (3), to-tickets (3), agents.md (3), skill-trigger (2), baseline-vergleich (2), subagents (2)
 
 ## Verwandte Themen
 
@@ -26,7 +26,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - [[Klein-und-komposierbar]] · verifiziert · 16 Belege
 - [[One-File-per-Failure-Mode]] · verifiziert · 3 Belege
 - [[Skill-Call-Hierarchie]] · verifiziert · 12 Belege
-- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 18 Belege
+- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 19 Belege
 - [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 4 Belege
 - [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 3 Belege
 

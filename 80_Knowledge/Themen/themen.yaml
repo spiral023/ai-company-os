@@ -67,7 +67,7 @@ cluster:
     beschreibung: "Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerung, Spec-Ordner, persistente Pläne. Prompt-Methoden für Klärung (Pre-Mortem, Unknowns) stehen in prompting."
     kern: [plan mode, plan-first, spec-driven, spec-first, spec-grilling, grill-me, grilling, spec mode, to-spec, to-tickets, task-basierte steuerung, design.md, implementation.md, planning-with-files, task_plan.md, prd, plan annotation, plan-annotation, decision log, phasenplan, wayfinder, intent engineering, read-only planner]
     weit: [plan, spec, spezifikation, planung, ticket, research plan implement, anforderungen, task, aufgaben zerlegen]
-    verwandt: [prompting, verifikation, frameworks, kontext]
+    verwandt: [prompting, verifikation, frameworks, kontext, sdlc]
     blog:
       hauptkeyword: "Spec-Driven Development"
       longtail: ["Plan Mode Claude Code", "Spec-First Development", "Grill Me Skill", "Plan vor Code", "Spec Ordner pro Feature", "Plan Annotation Workflow"]
@@ -75,14 +75,14 @@ cluster:
 
   verifikation:
     name: "Verifikation, Tests & Review"
-    beschreibung: "Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates, getrenntes Review, Review als Engpass."
-    kern: [tdd, test-driven, testgetrieben, red-green-refactor, red green refactor, testharness, mutation testing, quality gate, quality gates, verifier, test oracle, code review, review-bottleneck, reward hacking, statische code-analyse, vibe reviewing, adversarial, tracer bullet, vertikale slices, testcontainers, golden master, e2e-test]
-    weit: [test, tests, review, reviewer, verifikation, pre-commit, linter, ci, halluzination, qualität, slop]
-    verwandt: [planung, autonomie, orchestrierung, skills]
+    beschreibung: "Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates und getrennte Autor-/Prüfkontexte. Dazu gehören risikobasiertes Human Review, menschliche Verantwortung und Freigaben (Human in the Loop), Review-Kapazität sowie PR-Größe und Aufteilung in überschaubare Änderungen. Agent-Autonomie gehört hier hinein, soweit sie Prüf- und Freigabeentscheidungen betrifft; autonome Ausführung steht in autonomie, der gesamte Entwicklungsprozess in sdlc."
+    kern: [tdd, test-driven, testgetrieben, red-green-refactor, red green refactor, testharness, mutation testing, quality gate, quality gates, verifier, test oracle, code review, review-bottleneck, reward hacking, statische code-analyse, vibe reviewing, adversarial, tracer bullet, vertikale slices, testcontainers, golden master, e2e-test, codequalität, code quality, human review, human-in-the-loop, human in the loop, risikobasiertes review, risk-based review, review gate, review-gate, review-kapazität, review capacity, review-flaschenhals, pr bottleneck, pr-engpass, pr-größe, pr größe, pull request size, large prs, small prs, review fatigue]
+    weit: [test, tests, review, reviewer, verifikation, pre-commit, linter, ci, halluzination, qualität, slop, menschliche freigabe, menschliche verantwortung, agent-autonomie, code owner, blast radius, änderungsumfang, review-last, prüfbare änderungen]
+    verwandt: [planung, autonomie, orchestrierung, skills, sdlc, sicherheit, rolle-markt]
     blog:
       hauptkeyword: "AI Code Review"
-      longtail: ["TDD mit Coding Agents", "Testharness für Agents", "Mutation Testing KI", "Reward Hacking Tests", "Adversarial Review Agent", "Review als Engpass"]
-      fragen: ["Wie prüfe ich KI-generierten Code?", "Warum schreibt der Agent Tests passend zum Bug?"]
+      longtail: ["TDD mit Coding Agents", "Testharness für Agents", "Mutation Testing KI", "Reward Hacking Tests", "Adversarial Review Agent", "Review als Engpass", "Codequalität mit KI und Menschen", "Human in the Loop beim Code Review", "Risikobasiertes Human Review", "Agent-Autonomie und menschliche Freigaben", "Große KI-generierte PRs prüfen", "Pull Requests in prüfbare Änderungen aufteilen", "Review-Kapazität bei parallelen Agents"]
+      fragen: ["Wie prüfe ich KI-generierten Code?", "Warum schreibt der Agent Tests passend zum Bug?", "Welche Änderungen brauchen menschliches Review und welche automatische Checks?", "Wer trägt die Verantwortung, wenn ein Agent Code freigibt?", "Was tun, wenn PRs zu groß für ein gründliches manuelles Review werden?", "Wie begrenzt Review-Kapazität die Agent-Autonomie und Parallelisierung?"]
 
   orchestrierung:
     name: "Multi-Agent & Parallelisierung"
@@ -100,7 +100,7 @@ cluster:
     beschreibung: "Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agents, Autonomiestufen und ihre Grenzen."
     kern: [ralph loop, ralph wiggum, long-running agent, long-running agents, /goal, nachtlauf, über nacht, headless, claude -p, ci-agent, ci agent, github action, merge request, autonomiestufe, auto mode, loop engineering, autonome agents, steering, metrikband, unattended]
     weit: [autonom, autonomie, loop, cron, pipeline, review gate, oidc, sandboxed runner]
-    verwandt: [orchestrierung, verifikation, sicherheit, kontext]
+    verwandt: [orchestrierung, verifikation, sicherheit, kontext, sdlc]
     blog:
       hauptkeyword: "Ralph Loop"
       longtail: ["Ralph Loop einrichten", "Claude Code Headless CI", "Claude Code über Nacht", "Autonomiestufen Coding Agent", "Claude Code GitHub Action", "Loop Engineering"]
@@ -122,7 +122,7 @@ cluster:
     beschreibung: "Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps."
     kern: [sandbox, sandboxing, deny-rule, deny-rules, secrets, secret leakage, .env, dangerously-skip-permissions, yolo-modus, micro-vm, microvm, command smuggling, execpolicy, prefix_rule, row level security, permissions deny, prompt injection, plugin-vertrauen, docker sandbox]
     weit: [sicherheit, security, permission, rechte, isolation, risiko, rls]
-    verwandt: [erweiterungen, autonomie, prototyping]
+    verwandt: [erweiterungen, autonomie, prototyping, sdlc]
     blog:
       hauptkeyword: "Claude Code Sicherheit"
       longtail: ["Deny Rules statt CLAUDE.md", ".env Secrets Claude Code schützen", "Agent Sandbox einrichten", "Docker Sandbox Claude Code", "Codex Execpolicy", "Vibe Coding Sicherheit"]
@@ -139,15 +139,26 @@ cluster:
       longtail: ["Superpowers vs. GSD", "Matt Pocock Skills Wayfinder", "gstack Claude Code", "Everything Claude Code", "Agent Framework Vergleich", "cmux Terminal für Agents"]
       fragen: ["Welches Workflow-Framework passt zu mir?", "Brauche ich ein Framework oder reichen eigene Skills?"]
 
+  sdlc:
+    name: "AI-nativer SDLC"
+    beschreibung: "Wie Coding Agents den gesamten Software Development Lifecycle verändern: von Intent und Spezifikation über Build, Tests und Review bis Deployment, Betrieb und Rückkopplung. Einzelne Techniken stehen in ihren Fachclustern; hier gehören phasenübergreifende Abläufe, Übergaben, Kontrollpunkte und der Wandel vom linearen Prozess zur Schleife hinein."
+    kern: [sdlc, software development lifecycle, software development life cycle, softwareentwicklungslebenszyklus, ai-native sdlc, ai-nativer sdlc, ki-nativer sdlc, agentic sdlc, adlc, agent development lifecycle, intent build observe]
+    weit: [entwicklungsprozess, lebenszyklus, kontrollpunkte, phasenübergabe, audit-trail, observability, closed loop, feedback-schleife]
+    verwandt: [planung, verifikation, autonomie, sicherheit, rolle-markt]
+    blog:
+      hauptkeyword: "AI-nativer SDLC"
+      longtail: ["Software Development Lifecycle mit KI", "SDLC mit Coding Agents", "AI-native SDLC Playbook", "SDLC ist tot", "Intent Build Observe", "Agentic SDLC und ADLC", "Menschliche Freigaben im AI-nativen SDLC"]
+      fragen: ["Wie verändert sich der SDLC durch Coding Agents?", "Welche Kontrollpunkte brauchen Menschen weiterhin?", "Wie fließen Erkenntnisse aus dem Betrieb zurück in die Planung?"]
+
   rolle-markt:
     name: "Rolle, Lernen & Markt"
-    beschreibung: "Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, SDLC-Wandel, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit."
-    kern: [great decoupling, vibe engineering, vibe coding kritik, sdlc, software development lifecycle, tech lead, coding atrophy, nutzungsdaten, domänenwissen, entwicklerrolle, entwickler-rolle, harness statt fine-tuning, harness-abhängigkeit, marktstrategie, open source modelle, enterprise-adoption, schulung, lernwerkzeug, explanatory mode, metr, produktivität]
+    beschreibung: "Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit. Der Wandel des gesamten Entwicklungsprozesses gehört zu sdlc."
+    kern: [great decoupling, vibe engineering, vibe coding kritik, tech lead, coding atrophy, nutzungsdaten, domänenwissen, entwicklerrolle, entwickler-rolle, harness statt fine-tuning, harness-abhängigkeit, marktstrategie, open source modelle, enterprise-adoption, schulung, lernwerkzeug, explanatory mode, metr, produktivität]
     weit: [vibe coding, rolle, markt, strategie, junior, senior, lernen, studie, arbeitsteilung]
-    verwandt: [prompting, verifikation, modelle-kosten, einstieg]
+    verwandt: [prompting, verifikation, modelle-kosten, einstieg, sdlc]
     blog:
       hauptkeyword: "Vibe Coding"
-      longtail: ["Vibe Coding Grenzen", "Vibe Engineering", "Great Decoupling Entwickler", "SDLC ist tot", "Claude als Lernwerkzeug", "Nutzungsdaten Coding Agents Studie"]
+      longtail: ["Vibe Coding Grenzen", "Vibe Engineering", "Great Decoupling Entwickler", "Claude als Lernwerkzeug", "Nutzungsdaten Coding Agents Studie"]
       fragen: ["Was bleibt vom Entwickler übrig?", "Macht KI Entwickler wirklich produktiver?"]
 
   prompting:

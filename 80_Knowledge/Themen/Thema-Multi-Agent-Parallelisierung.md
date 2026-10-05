@@ -24,7 +24,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - [[Blockierende-Task-Abhaengigkeiten]] · meinung · 1 Belege
 - [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 37 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]]
 
 ## Quellen (14)
 

@@ -41,13 +41,24 @@ Der Agent läuft als eigener, sandboxed Job in der CI-Pipeline (z. B. GitLab CI,
 - 2026-09-29 · [[2026-09-29-openclaw-openclaw-enterprise-the-open-agent-platform-open]] · meinung — Interner Agent Androidclaw triagiert Kanäle, findet PRs und mergt Fixes; LLM-basierte Reviews als Teil der Plattform. Eigenbericht, ohne Zahlen.
 - 2026-07-16 · [[2026-07-16-amasad-2077802290304684404]] · meinung — Replit lässt den Agent PRs nach Risikostufe prüfen und holt nur bei Bedarf einen zweiten Menschen, etwa 29 bis 35 % der gemergten PRs werden agentisch freigegeben, 30 % menschliche Review-Zeit gespart. Selbstbericht des Anbieters ohne Methodik, Fehlerquote der Agent-Freigaben nicht genannt.
 
+- 2026-09-20 · [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] · meinung — Eric Tech empfiehlt, wiederkehrende menschliche PR-Kommentare als Kandidaten für Regeln in REVIEW.md auszuwerten; Hooks ergänzen Grenzen für sensible Aktionen. Aufarbeitung des Anthropic-Playbooks mit eigener Empfehlung, ohne Wirkungsnachweis.
+
+- 2026-07-21 · [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] · meinung — Anthropic kombiniert spezialisierte Review-Agents, Befundnachweise, SAST und menschliche Freigaben nach Risiko; automatische Entscheidungen werden protokolliert und stichprobenartig von Menschen geprüft. Herstellerbericht, keine unabhängige Validierung der Automatik.
+
 ## Spannungen & offene Fragen
+
+- Ergänzung (2026-10-05): [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] beschreibt automatische PR-Freigaben für ausgewählte Risikobereiche mit protokollierten Entscheidungen und menschlichen Stichproben, während kritische Bereiche verpflichtende menschliche Freigaben behalten. Das steht in Spannung zum durchgängigen Team-Review-Gate dieses Patterns und zum späteren [[2026-09-27-anthropic-academy-sdlc-playbook]]; Risikobereiche und Zeitpunkte sind nicht vollständig vergleichbar.
 
 - Die GitHub-Actions-Bestätigung (aiedge/Boris Cherny) und die drei hooeem-Werkzeuge bleiben Sekundärquellen ohne eigene Messung; die GitLab-Quelle bleibt die einzige Herstellerdokumentation. Trotzdem: drei organisatorisch unterschiedliche Quellen über zwei Plattformen stützen dasselbe Grundmuster jetzt über eine reine Einzelquelle hinaus.
 - Offene Frage: Wie unterscheidet sich die Risikoabschätzung, wenn der CI-Agent nicht nur Code-Änderungen vorschlägt, sondern auch Tests oder Deploy-Schritte selbst auslösen darf?
 - Spannung (2026-09-29): [[2026-02-20-boris-tane-sdlc-is-dead]] vertritt die These, ein Adversarial Agent könne den menschlichen Review ersetzen. Das widerspricht dem Kern dieses Patterns, den Agent-Output ausschließlich über das bestehende Team-Review-Gate laufen zu lassen. Belegt ist die These nur als Meinung (vibedeck-Sekundärquelle, keine Messung). Beide Positionen bleiben nebeneinander stehen.
 
+- Spannung (2026-10-05): [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] skizziert Rollback durch einen Agent mit entsprechendem Tool, ohne das Freigabegate präzise zu erklären. [[2026-09-27-anthropic-academy-sdlc-playbook]] bindet Produktionseingriffe an menschliche Autorisierung und gestaffelte Autonomie. Die Video-Skizze reicht als Beleg für einen vollständig abgesicherten Produktionsablauf nicht aus.
+
 ## Verwandte Patterns
+
+- [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]]
+- [[Agent-Rechte-umfassen-Kommunikationswege]]
 
 - [[Lokale-Modell-Umleitung-Muster]]
 - [[Deny-Rules-statt-CLAUDE-md-Empfehlung]]

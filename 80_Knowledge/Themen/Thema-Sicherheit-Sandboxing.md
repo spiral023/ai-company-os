@@ -9,21 +9,23 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** row level security (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), security (2), playwright (2), sandbox (2), sicherheit (2), prompt injection (2), vibe coding security (2), lovable security, ki-generierte apps absichern, supabase edge functions, vibe coding sicherheit, secrets im frontend, docker sandbox run claude, micro-vm, agent-isolation, ralph loop über nacht
+- **Häufig in den Quellen:** row level security (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), playwright (2), security (2), sandbox (2), sicherheit (2), prompt injection (2), vibe coding security (2), least agency (2), agent-to-agent-kommunikation (2), agent-identität (2), risikobasiertes human review (2), menschliche freigabe (2), ai-native sdlc (2), human-in-the-loop (2), shadow mode (2), ki-generierte apps absichern
 
 ## Verwandte Themen
 
 - [[Thema-Hooks-MCP-Erweiterungs-Ebenen]] — Hooks, MCP & Erweiterungs-Ebenen
 - [[Thema-Autonome-Läufe-Loops-CI]] — Autonome Läufe, Loops & CI
 - [[Thema-Prototyping-UI-Design]] — Prototyping & UI-Design
+- [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
 
-## Patterns (3)
+## Patterns (4)
 
 - [[Adversarialer-Pre-Launch-Check]] · meinung · 3 Belege
+- [[Agent-Rechte-umfassen-Kommunikationswege]] · meinung · 1 Belege
 - [[Deny-Rules-statt-CLAUDE-md-Empfehlung]] · mehrfach-belegt · 12 Belege
-- [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 3 Belege
+- [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 4 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], [[Hook-Entscheidungstyp-nach-Pruefbarkeit]], [[Metrikband-gestufte-Agent-Autonomie]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], [[Hook-Entscheidungstyp-nach-Pruefbarkeit]], [[Metrikband-gestufte-Agent-Autonomie]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]]
 
 ## Quellen (9)
 
@@ -42,6 +44,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], 
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]]
 - [[2026-09-27-anthropic-academy-sdlc-playbook]]
 - [[2026-09-18-akshay_pachaar-2101037514945597645]]
+- [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]]
 - [[2026-07-16-amasad-2077802290304684404]]
 - [[2026-04-17-wiki-compiler-lovable-design-debugging-sicherheit]]
 - [[2026-04-16-wiki-compiler-superpowers]]

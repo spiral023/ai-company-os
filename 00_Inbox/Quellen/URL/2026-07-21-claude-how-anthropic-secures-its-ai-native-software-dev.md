@@ -6,7 +6,8 @@ datum: 2026-07-21
 erfasst: 2026-10-02
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+source_notiz: 80_Knowledge/Sources/2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev.md
 medien: "4/12 lokal"
 ---
 

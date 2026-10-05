@@ -36,7 +36,11 @@ Die zentrale Designspannung dabei ist nicht Security als Selbstzweck, sondern **
 - 2026-08-18 · [[2026-08-18-docker-2089789519788728379]] · meinung — Docker Sandboxes laut Herstellerangabe in Claude-Code-Docs als MicroVM-Option (eigener Kernel und Daemon); Docs-Aufnahme nicht geprüft.
 - 2026-09-29 · [[2026-09-29-openclaw-openclaw-enterprise-the-open-agent-platform-open]] · meinung — Herstellerankündigung: harte Grenzen trusted/untrusted, Sandboxing und feine Berechtigungen, Sandbox austauschbar. Referenzarchitektur steht aus, nicht prüfbar.
 
+- 2026-07-21 · [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] · meinung — Anthropic beschreibt Remote-VMs mit beschränkten Netzwerkzielen und zweckgebundene Agent-Identitäten zur Begrenzung möglicher Schäden; Instruktionen werden um technische Grenzen ergänzt. Herstellerbericht, Implementierung nicht im Code geprüft.
+
 ## Spannungen & offene Fragen
+
+- Ergänzung (2026-10-05): [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] liefert einen weiteren Herstellerbericht über technische Grenzen, hier Remote-VMs, beschränkte Netzwerkziele und Agent-Identitäten. Das ergänzt die bisherige Perspektive, verifiziert aber weder die OS-Komposition noch die Implementierung.
 
 - Einzige bisherige Quelle ist ein einzelner Herstellerbericht (OpenAI über die eigene Architektur), nicht unabhängig gegen den Quellcode oder eine zweite Plattform (macOS/Linux-Sandbox-Komposition) verifiziert.
 - Verhältnis zu [[Deny-Rules-statt-CLAUDE-md-Empfehlung]]: Dort wird Container-Isolation als „für viele Projekte zu aufwendig“ eingeordnet — dieser Bericht liefert die technische Begründung, warum die schwächere Alternative (rein advisory Schutz) tatsächlich nicht ausreicht, ohne den Aufwandseinwand selbst zu widerlegen.

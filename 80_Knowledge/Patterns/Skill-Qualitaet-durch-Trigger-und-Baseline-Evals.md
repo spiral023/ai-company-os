@@ -48,6 +48,8 @@ Der Lebenszyklus eines Skills läuft über: Ziel/Scope klären → Entwurf schre
 - 2026-02-09 · [[2026-02-09-tom-crawshaw-claude-code-insights-guide]] · meinung — Vorgeschlagener Agent optimiert Skills mit generierten Testszenarien, bis alle bestehen. Nur Vorschlag, kein gezeigtes Ergebnis.
 - 2026-09-28 · [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] · meinung — Herstellerquelle nennt Skill-Triggering ausdrücklich als gut attributierbare Hillclimb-Oberfläche und zeigt am eigenen `claude-api`-Skill 66 % auf etwa 88 % per Hillclimbing mit Ursachen-Sortierung. Selbstmessung, kleiner Maßstab.
 
+- 2026-09-20 · [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] · meinung — Modell- und Regeländerungen gegen 20 bis 50 reale Aufgaben mit erwarteten Ergebnissen in CI prüfen; Agent-Evals von Anwendungstests unterscheiden. Empfehlung aus dem Anthropic-Playbook, keine unabhängige Validierung der Startgröße.
+
 ## Spannungen & offene Fragen
 
 - ~~Die Quelle bezieht sich auf den offiziellen Anthropic-Skill, wurde aber über eine Sekundärsynthese (vibe-repo-Wiki) bezogen, nicht direkt aus dem geklonten `anthropics/skills`-Repo verifiziert.~~ Erledigt 2026-07-14: direkt in der geklonten SKILL.md verifiziert ([[2026-07-01-anthropic-skill-creator-skill-md]]); die Sekundärsynthese war inhaltlich korrekt.

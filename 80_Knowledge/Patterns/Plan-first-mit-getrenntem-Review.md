@@ -67,6 +67,9 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-09-27 · [[2026-09-27-voxyz_ai-2104224555040452925]] · meinung — Die Agent-Dateien werden erst nach Freigabe geschrieben, Befunde kommen priorisiert mit Repro, Screenshot und Fix an die Hauptsession, Unprüfbares als „untested“. Wirkung nicht belegt.
 - 2026-09-22 · [[2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit]] · meinung — Plan mit Opus erstellen, mit Sonnet gegenreviewen; Planfehler seien später teurer. Behauptet, das Review finde noch weitere Fehler (ohne Zahl).
 
+- 2026-09-20 · [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] · meinung — Intent erklärt das Warum, Spec das erwartete Verhalten, Plan Dateien, Reihenfolge, Risiken und Nachweise; bestehende Plan-Workflows weiterverwenden. Sekundärdarstellung des Anthropic-Playbooks, keine unabhängige Wirkungsmessung.
+- 2026-10-05 · external_repos/obra/superpowers/skills/writing-plans/SKILL.md · verifiziert — Der im Video genannte Plan-Skill fordert einen Plan aus Spec oder Anforderungen vor Codeänderungen, mit konkreten Dateien, Schnittstellen und Tests pro Aufgabe; bestätigt die beschriebene Plan-Variante, keine Produktivitätswirkung.
+
 ## Spannungen & offene Fragen
 
 - Beide ursprünglichen Quellen teilen sich mindestens eine Primärquelle (@Meer_AIIT), sind also nicht vollständig unabhängig; die neu ergänzten Quellen (Aseem Shrey, Thariq, Matt Pocock) sind davon unabhängig und beschreiben eigenständige, sich ergänzende Facetten derselben Grundidee.

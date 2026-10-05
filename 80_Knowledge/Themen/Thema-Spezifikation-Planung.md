@@ -9,7 +9,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - **Hauptkeyword:** Spec-Driven Development
 - **Long-Tail:** Plan Mode Claude Code; Spec-First Development; Grill Me Skill; Plan vor Code; Spec Ordner pro Feature; Plan Annotation Workflow
 - **Fragen:** Lohnt sich Plan Mode? / Wie schreibe ich eine Spec für einen Coding Agent?
-- **Häufig in den Quellen:** spec-driven development (6), plan mode (4), vibe coding (3), handoff-dokument (2), session-kontinuität (2), design.md (2), claude code workflow (2), self-verification (2), plan.md (2), single-model-blindheit (2), to-tickets (2), to-spec (2), retrospektive (2), aktionspunkte (2), grilling (2), wayfinder (2), known unknowns (2), matt pocock skills (2), decision log, layered claude.md
+- **Häufig in den Quellen:** spec-driven development (6), plan mode (4), plan.md (3), vibe coding (3), session-kontinuität (2), handoff-dokument (2), design.md (2), claude code workflow (2), self-verification (2), single-model-blindheit (2), to-spec (2), to-tickets (2), aktionspunkte (2), retrospektive (2), grilling (2), source of truth (2), wayfinder (2), known unknowns (2), matt pocock skills (2), human-in-the-loop (2)
 
 ## Verwandte Themen
 
@@ -17,11 +17,12 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - [[Thema-Verifikation-Tests-Review]] — Verifikation, Tests & Review
 - [[Thema-Workflow-Frameworks-Tools]] — Workflow-Frameworks & Tools
 - [[Thema-Kontext-Management]] — Kontext-Management
+- [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
 
 ## Patterns (5)
 
 - [[CONTEXT-Glossar]] · verifiziert · 4 Belege
-- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 37 Belege
+- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 39 Belege
 - [[Spec-Grilling]] · verifiziert · 15 Belege
 - [[Spec-Ordner-pro-Feature]] · meinung · 2 Belege
 - [[Task-basierte-Steuerung]] · verifiziert · 14 Belege
@@ -46,6 +47,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-generierte-Schulung-mi
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]]
 - [[2026-07-30-julian-ivanov-interaktive-schulungen-mit-claude-code]]
 - [[2026-07-26-promptgefluester-ich-hab-ne-unbequeme-wahrheit-und-zwar-ich-wurde-gefragt-wieso]]
 - [[2026-07-14-fredrikharkort-5-prompts-die-weh-tun]]

@@ -56,6 +56,8 @@ Autonome Agenten optimieren zuverlässig das, was der Verifier misst — ist der
 - 2026-07-01 · [[2026-07-01-0xcodila-2072329149520232639]] · meinung — Ohne automatisierten Verifier (Test, Metrik, Build) ist ein Loop nur Selbstbestätigung; bei `autoresearch` ist der Evaluator `prepare.py` für den Agenten gesperrt. Selbstberichtet, Beispiel stammt aus Modelltraining.
 - 2026-07-06 · [[2026-07-06-claudedevs-2074208949205881033]] · meinung — Deterministische Exit-Kriterien (Tests bestanden, Score-Schwelle) und als Skill kodierte Verifikation machen Goal-Loops zuverlässig; je quantitativer der Check, desto besser. Selbstberichtet, ohne Zahlen.
 
+- 2026-07-21 · [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] · meinung — Anthropic verlangt Nachweise für Review-Befunde, prüft wichtige Invarianten separat und kombiniert SAST mit dynamischer Prüfung in Staging. Retrospektiv hätte der aktuelle Prozess rund ein Drittel früherer Incident-Bugs erkannt; interne Einschätzung, kein beobachteter Qualitätsgewinn.
+
 ## Spannungen & offene Fragen
 
 - Drei von vier Belegen stammen von Anthropic selbst (Carlini-Bericht, beide Best-Practices-Docs) — inhaltlich unterschiedliche Dokumente zu unterschiedlichen Zeitpunkten, aber organisatorisch nicht unabhängig. Nur der Minty-Beleg ist eine echte Drittquelle, deckt aber nur einen Teilaspekt (visuelle Verifikation) statt der Kernaussage ab.

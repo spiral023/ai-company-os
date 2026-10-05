@@ -49,10 +49,12 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Hillclimbing-mit-Holdout-Split]] — Prompt, Skill oder Modellwahl gegen ein Eval verbessern: Train/Test-Split, eine Änderung pro Runde, Revert wenn nur Train steigt.
 - [[Entscheidung-per-Scoring-statt-Generierung]] — bei festem Antwortraum Label-Logits auslesen statt Text erzeugen; Verteilung plus Schwellen im Code entscheiden über Automatik oder Review.
 - [[Adversarialer-Pre-Launch-Check]] — vor dem Release read-only Prüfagenten mit festen Fragenkatalogen die eigene App in einer sicheren Testumgebung brechen lassen.
+- [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] — automatische Review-Freigaben nur in abgegrenzten Risikobereichen, mit Shadow Mode, protokollierten Entscheidungen und menschlichen Stichproben.
+- [[Agent-Rechte-umfassen-Kommunikationswege]] — direkte Rechte reichen nicht: erreichbare Agents und delegierte Aktionen gehören zur Berechtigungsgrenze.
 
 ## Themen
 
-Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 15 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand.
+Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 16 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand.
 
 ## Guides
 
