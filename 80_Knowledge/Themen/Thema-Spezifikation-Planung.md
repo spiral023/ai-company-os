@@ -1,6 +1,6 @@
 # Spezifikation & Planung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerung, Spec-Ordner, persistente Pläne. Prompt-Methoden für Klärung (Pre-Mortem, Unknowns) stehen in prompting.
 
@@ -9,7 +9,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - **Hauptkeyword:** Spec-Driven Development
 - **Long-Tail:** Plan Mode Claude Code; Spec-First Development; Grill Me Skill; Plan vor Code; Spec Ordner pro Feature; Plan Annotation Workflow
 - **Fragen:** Lohnt sich Plan Mode? / Wie schreibe ich eine Spec für einen Coding Agent?
-- **Häufig in den Quellen:** spec-driven development (6), plan mode (4), vibe coding (3), handoff-dokument (2), design.md (2), session-kontinuität (2), claude code workflow (2), self-verification (2), plan.md (2), single-model-blindheit (2), to-tickets (2), to-spec (2), grilling (2), wayfinder (2), known unknowns (2), matt pocock skills (2), decision log, layered claude.md, spec-first development, cookbooks als tests
+- **Häufig in den Quellen:** spec-driven development (6), plan mode (4), vibe coding (3), handoff-dokument (2), session-kontinuität (2), design.md (2), claude code workflow (2), self-verification (2), plan.md (2), single-model-blindheit (2), to-tickets (2), to-spec (2), retrospektive (2), aktionspunkte (2), grilling (2), wayfinder (2), known unknowns (2), matt pocock skills (2), decision log, layered claude.md
 
 ## Verwandte Themen
 
@@ -28,8 +28,10 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-generierte-Schulung-mit-Curriculum-Gate]], [[Blockierende-Task-Abhaengigkeiten]], [[Fable-Unknowns-vor-Prompt-Qualitaet]], [[Handoff-Doc]], [[Intent-Engineering-als-dritte-Schicht]], [[Lovable-Prototyp-dann-lokaler-Handoff]], [[Screenshot-als-Spezifikationsmedium]], [[Voice-Prompting-fuer-Kontextreichtum]]
 
-## Quellen (11)
+## Quellen (13)
 
+- [[2026-10-05-repo-squad-retro-enforcement]] — Im Klon von bradygaster/squad (Branch `dev`, Stand Commit `d2364dfe`) liegt die Skill-Vorlage `templates/skills/retro-enforcement/SKILL.md`.
+- [[2026-10-05-repo-bmad-method-retrospective]] — Im Klon von bmad-code-org/BMAD-METHOD (Stand Commit `8f2c13d`) liegt `skills/bmad-retrospective/` mit `workflow.md` und fünf Referenzdateien.
 - [[2026-10-02-repo-mattpocock-skills]] — Im Klon von mattpocock/skills (Stand Commit `d81f3a18`) liegen `implement-spec`, `pr` und `retro` unter `skills/engineering/`.
 - [[2026-08-05-floknowsai-dein-vibe-coding-projekt-bricht-nicht-am-coding-agent-zusammen-sondern]] — Vibe-Coding-Projekte scheitern am fehlenden Fundament aus Architektur, Datenfluss und Fehlerfällen, nicht am Agenten, und Rules allein setzen Qualität nicht durch.
 - [[2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt]] — Eine ausführliche Spezifikation mit verweisenden Task-Listen und mehrfacher Agent-Prüfung des Plans ist billiger als spätes Nachbessern, verursacht aber eigene Pflegekosten.

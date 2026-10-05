@@ -1,6 +1,6 @@
 # Prototyping & UI-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents.
 
@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), security checker (2), vibe coding (2), codex skills (2), opus 5.5 (2), hyperframes (2), component-first, komponentenreferenz, design tokens, tailwind prompting, lovable prompts, design system, foundations komponenten komposition, landingpage, hero section, lovable website, conversion prompts, responsive breakpoints, spacing typografie, ki-website-builder
+- **Häufig in den Quellen:** lovable (5), security checker (2), vibe coding (2), codex skills (2), hyperframes (2), opus 5.5 (2), component-first, lovable prompts, design system, design tokens, foundations komponenten komposition, komponentenreferenz, tailwind prompting, ki-website-builder, spacing typografie, hero section, responsive breakpoints, lovable website, landingpage, conversion prompts
 
 ## Verwandte Themen
 

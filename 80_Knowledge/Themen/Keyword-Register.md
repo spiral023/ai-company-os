@@ -1,6 +1,6 @@
 # Keyword-Register
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05.*
 
 Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wissen schon mehrfach belegt ist, und taugen als Suchbegriffe für Blog-Beiträge.
 
@@ -56,6 +56,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | context pollution | 4 | Kontext-Management, Verifikation, Tests & Review |
 | cost per task | 4 | Modelle, Kosten & Limits |
 | gpt-6 astra | 4 | Multi-Agent & Parallelisierung, Prompting & Klärung, Prototyping & UI-Design |
+| gstack | 4 | Verifikation, Tests & Review, Workflow-Frameworks & Tools |
 | llm-as-judge | 4 | Hooks, MCP & Erweiterungs-Ebenen, Skill-Design, Verifikation, Tests & Review |
 | long-running agents | 4 | Autonome Läufe, Loops & CI, Multi-Agent & Parallelisierung, Verifikation, Tests & Review |
 | mattpocock/skills | 4 | Skill-Design, Workflow-Frameworks & Tools |
@@ -74,6 +75,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | agent teams | 3 | Multi-Agent & Parallelisierung, Verifikation, Tests & Review |
 | artificial analysis intelligence index | 3 | Modelle, Kosten & Limits, Rolle, Lernen & Markt |
 | ci-gate | 3 | Agent-Dateien & Memory, Skill-Design, Verifikation, Tests & Review |
+| claude code | 3 | Autonome Läufe, Loops & CI, Hooks, MCP & Erweiterungs-Ebenen, Prototyping & UI-Design |
 | claude code plugins | 3 | Hooks, MCP & Erweiterungs-Ebenen, Skill-Design, Workflow-Frameworks & Tools |
 | claude skills | 3 | Skill-Design |
 | codex skills | 3 | Prototyping & UI-Design, Workflow-Frameworks & Tools |
@@ -82,7 +84,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | everything claude code | 3 | Hooks, MCP & Erweiterungs-Ebenen, Workflow-Frameworks & Tools |
 | extended thinking | 3 | Autonome Läufe, Loops & CI, Einstieg & Best Practices, Modelle, Kosten & Limits |
 | gpt-6 luna | 3 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
-| gstack | 3 | Verifikation, Tests & Review, Workflow-Frameworks & Tools |
 | hooks | 3 | Hooks, MCP & Erweiterungs-Ebenen |
 | human-in-the-loop | 3 | Autonome Läufe, Loops & CI, Skill-Design, Verifikation, Tests & Review |
 | hyperframes | 3 | Prototyping & UI-Design, Skill-Design |
@@ -97,6 +98,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | openclaw | 3 | Multi-Agent & Parallelisierung, Workflow-Frameworks & Tools |
 | pareto-front | 3 | Modelle, Kosten & Limits |
 | pretooluse | 3 | Einstieg & Best Practices, Hooks, MCP & Erweiterungs-Ebenen |
+| retrospektive | 3 | Spezifikation & Planung, Verifikation, Tests & Review |
 | row level security | 3 | Sicherheit & Sandboxing |
 | sandbox | 3 | Hooks, MCP & Erweiterungs-Ebenen, Sicherheit & Sandboxing, Verifikation, Tests & Review |
 | skill | 3 | Skill-Design, Spezifikation & Planung |
@@ -119,6 +121,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | agentbench | 2 | Agent-Dateien & Memory |
 | agents.md schreiben | 2 | Agent-Dateien & Memory, Skill-Design |
 | ai slop | 2 | Verifikation, Tests & Review |
+| aktionspunkte | 2 | Spezifikation & Planung |
 | allowed-tools | 2 | Skill-Design |
 | anthropic academy | 2 | Einstieg & Best Practices, Rolle, Lernen & Markt |
 | artificial analysis | 2 | Modelle, Kosten & Limits |
@@ -126,10 +129,10 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | aufgaben zerlegen | 2 | Agent-Dateien & Memory, Einstieg & Best Practices |
 | autocompact-puffer | 2 | Kontext-Management |
 | baseline-vergleich | 2 | Skill-Design |
+| bmad | 2 | Skill-Design, Spezifikation & Planung |
 | brownfield | 2 | Autonome Läufe, Loops & CI, Workflow-Frameworks & Tools |
 | change quiz | 2 | Prompting & Klärung |
 | ci-agent | 2 | Autonome Läufe, Loops & CI, Verifikation, Tests & Review |
-| claude code | 2 | Autonome Läufe, Loops & CI, Prototyping & UI-Design |
 | claude code /goal | 2 | Autonome Läufe, Loops & CI, Multi-Agent & Parallelisierung |
 | claude code agent teams | 2 | Multi-Agent & Parallelisierung |
 | claude code anfänger | 2 | Einstieg & Best Practices |
@@ -162,6 +165,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | fixed-answer scoring | 2 | Modelle, Kosten & Limits |
 | frischer kontext | 2 | Kontext-Management, Verifikation, Tests & Review |
 | git worktree | 2 | Autonome Läufe, Loops & CI |
+| github issues | 2 | Skill-Design, Spezifikation & Planung |
 | goal drift | 2 | Multi-Agent & Parallelisierung |
 | gpt-6 sol | 2 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | graphify | 2 | Kontext-Management |
@@ -212,11 +216,13 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | plugin | 2 | Hooks, MCP & Erweiterungs-Ebenen |
 | pretooluse posttooluse | 2 | Agent-Dateien & Memory, Hooks, MCP & Erweiterungs-Ebenen |
 | prompt injection | 2 | Sicherheit & Sandboxing |
+| prompt-audit | 2 | Hooks, MCP & Erweiterungs-Ebenen, Prompting & Klärung |
 | prompt-based hooks | 2 | Hooks, MCP & Erweiterungs-Ebenen |
 | qualität | 2 | Verifikation, Tests & Review |
 | reasoning-effort | 2 | Modelle, Kosten & Limits, Prompting & Klärung |
 | red green refactor | 2 | Verifikation, Tests & Review |
 | research plan implement | 2 | Spezifikation & Planung, Workflow-Frameworks & Tools |
+| retro | 2 | Verifikation, Tests & Review, Workflow-Frameworks & Tools |
 | review | 2 | Verifikation, Tests & Review |
 | reviewer | 2 | Verifikation, Tests & Review |
 | reward hacking | 2 | Multi-Agent & Parallelisierung, Verifikation, Tests & Review |

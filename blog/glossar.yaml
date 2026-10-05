@@ -531,3 +531,18 @@ begriffe:
   - begriff: Tool Search
     text: "Eine Funktion in Claude Code, die Beschreibungen von MCP-Tools erst dann in den Kontext lädt, wenn sie gebraucht werden. Ohne sie liegen alle Tool-Beschreibungen in jedem Turn im Context Window."
     siehe: [MCP, Progressive Disclosure]
+
+  - begriff: Retrospektive
+    aliase: [Retro, Retros]
+    text: "Ein Rückblick nach abgeschlossener Arbeit: Was lief gut, was ging schief, was ändern wir beim nächsten Mal? Bei Agents wertet eine Retro meist eine oder mehrere Sessions aus und schlägt Änderungen an Regeln, Checks oder Skills vor. Ihr Wert hängt daran, ob jemand die Vorschläge umsetzt."
+    siehe: [Session, Skill]
+
+  - begriff: Linter
+    aliase: [Linter-Regel, Linting]
+    text: "Ein Programm, das Code ohne Ausführung auf Stil- und Fehlermuster prüft, etwa ungenutzte Variablen oder verbotene Importe. Eigene Regeln lassen sich ergänzen. Weil er bei jedem Lauf gleich entscheidet, eignet er sich für Vorgaben, an die sich ein Agent zuverlässig halten muss."
+    siehe: [Pre-Commit-Hook, CI]
+
+  - begriff: CI
+    aliase: [Continuous Integration, CI-Job, CI-Jobs]
+    text: "Continuous Integration: Ein Server führt bei jedem Push oder Pull Request automatisch Tests, Linter und Builds aus. Schlägt ein Schritt fehl, sieht das jeder im Pull Request, und ein Merge lässt sich sperren."
+    siehe: [Pull Request, Required Status Checks, Linter]

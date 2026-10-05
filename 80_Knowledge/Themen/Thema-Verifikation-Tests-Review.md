@@ -1,6 +1,6 @@
 # Verifikation, Tests & Review
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates, getrenntes Review, Review als Engpass.
 
@@ -9,7 +9,7 @@ Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statis
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug?
-- **Häufig in den Quellen:** test (4), testharness (4), verifier (3), /goal (3), auto mode (3), llm-as-judge (3), git worktrees (2), red green refactor (2), review (2), reviewer (2), qualität (2), verifikation (2), loop engineering (2), tests (2), ai slop (2), statische code-analyse (2), tdd (2), coding agents (2), mutation testing (2), hillclimbing (2)
+- **Häufig in den Quellen:** testharness (4), test (4), /goal (3), verifier (3), auto mode (3), llm-as-judge (3), gstack (3), git worktrees (2), red green refactor (2), reviewer (2), verifikation (2), review (2), qualität (2), loop engineering (2), tests (2), ai slop (2), statische code-analyse (2), tdd (2), coding agents (2), mutation testing (2)
 
 ## Verwandte Themen
 
@@ -26,8 +26,10 @@ Wie man prüft, ob der Agent liefert: TDD, Testharness, Mutation Testing, statis
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[Great-Decoupling-Rollenverstaendnis]], [[Plan-first-mit-getrenntem-Review]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]]
 
-## Quellen (17)
+## Quellen (19)
 
+- [[2026-10-05-repo-millionco-react-doctor-skill]] — Im Klon von millionco/react-doctor (Stand Commit `1b149bae`) liegt der Agent-Skill `skills/react-doctor/SKILL.md` (Version 1.2.0).
+- [[2026-10-05-repo-mattpocock-skills-retro]] — Im Klon von mattpocock/skills (Stand Commit `4588b32`, Version 1.3.1) liegt `retro` unter `skills/engineering/retro/SKILL.md`.
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]] — Im Klon von thedaviddias/Front-End-Checklist (Stand Commit `7bfd8680`) beschreibt `packages/cli/README.md` die CLI `@frontendchecklist/cli`; die Regeln liegen im Paket, sie läuft offline.
 - [[2026-10-02-repo-garrytan-gstack]] — Laut `CHANGELOG.md` von garrytan/gstack (Repo-Stand Commit `7fca42ad`, Einträge um v1.91.9.0) wenden alle Workflows, die Tests vorschlagen, schreiben, prüfen oder ausliefern, eine gemeinsame „Test Val
 - [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] — Anthropic beschreibt Prinzipien für Eval-Design und für das schrittweise Verbessern gegen ein Eval (Hillclimbing) und zeigt, wie die Befehle `/claude-api build-eval` und `/claude-api hillclimb` im `cl
@@ -48,6 +50,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-05-repo-garrytan-gstack-retro]]
+- [[2026-10-05-repo-bmad-method-retrospective]]
+- [[2026-10-05-repo-alirezarezvani-skill-doctor]]
 - [[2026-09-27-voxyz_ai-2104224555040452925]]
 - [[2026-09-25-voxyz_ai-2103586663393853636]]
 - [[2026-09-25-trq212-2103576349499855160]]

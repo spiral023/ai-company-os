@@ -1,6 +1,6 @@
 # Kontext-Management
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, Clear, Rewind, Handoff zwischen Sessions, Kontextkosten von Tools. Regeldateien gehören zu agent-dateien, die Kosten des Cachings zu modelle-kosten.
 
@@ -9,7 +9,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 - **Hauptkeyword:** Context Engineering
 - **Long-Tail:** Context Rot vermeiden; Claude Code /compact oder /clear; Claude Code Kontextfenster verwalten; Session Handoff Dokument; Rewind statt Korrektur; Subagents als Kontextgrenze
 - **Fragen:** Wann sollte ich /clear statt /compact nutzen? / Warum wird mein Agent in langen Sessions schlechter?
-- **Häufig in den Quellen:** context rot (8), context window (6), /compact (6), /clear (6), progressive disclosure (6), claude.md (6), context engineering (4), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), kontext-hygiene (3), plan mode (3), mcp tools (2), autocompact-puffer (2), ralph loop (2), subagent-kosten (2), userpromptsubmit hook (2)
+- **Häufig in den Quellen:** context rot (8), context window (6), /compact (6), /clear (6), progressive disclosure (6), claude.md (6), subagents (4), context engineering (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), kontext-hygiene (3), plan mode (3), autocompact-puffer (2), mcp tools (2), ralph loop (2), subagent-kosten (2), userpromptsubmit hook (2)
 
 ## Verwandte Themen
 

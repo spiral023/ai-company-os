@@ -1,6 +1,6 @@
 # Workflow-Frameworks & Tools
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Matt Pococks Skills, Superpowers, GSD, gstack, Everything Claude Code, Terminal- und Multiplexer-Tools.
 
@@ -9,7 +9,7 @@ Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Mat
 - **Hauptkeyword:** Claude Code Workflow
 - **Long-Tail:** Superpowers vs. GSD; Matt Pocock Skills Wayfinder; gstack Claude Code; Everything Claude Code; Agent Framework Vergleich; cmux Terminal für Agents
 - **Fragen:** Welches Workflow-Framework passt zu mir? / Brauche ich ein Framework oder reichen eigene Skills?
-- **Häufig in den Quellen:** wayfinder (4), matt pocock skills (4), spec-driven development (3), gstack (3), everything claude code (2), gsd-map-codebase (2), superpowers (2), claude code skills (2), grill-me (2), implement (2), to-tickets (2), to-spec (2), zellij, agent notifications, ghostty terminal, cmux, conductor, tmux alternative, multi-agent übersicht, parallele coding agents
+- **Häufig in den Quellen:** gstack (4), matt pocock skills (4), wayfinder (4), spec-driven development (3), everything claude code (2), gsd-map-codebase (2), superpowers (2), claude code skills (2), grill-me (2), to-tickets (2), to-spec (2), implement (2), multi-agent übersicht, conductor, zellij, cmux, tmux alternative, ghostty terminal, parallele coding agents, agent notifications
 
 ## Verwandte Themen
 
@@ -22,8 +22,9 @@ Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Mat
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Klein-und-komposierbar]]
 
-## Quellen (13)
+## Quellen (14)
 
+- [[2026-10-05-repo-garrytan-gstack-retro]] — Im Klon von garrytan/gstack (Stand Commit `857466f`) liegt `retro/SKILL.md` (Skill-Version 2.0.0, rund 1.200 Zeilen, aus einer Vorlage generiert).
 - [[2026-07-11-mattpocock-wayfinder-to-implementation]] — Für große Coding-Vorhaben gehört zwischen Wayfinder-Map und Umsetzung eine Spec samt Tickets, die ein AFK-Agent abarbeitet; Wayfinder allein trägt eher nicht-codierende Arbeit.
 - [[2026-07-09-n3sonline-wayfinder]] — Iterative Steuerung aus Ziel, Task und Anpassung ersetzt lineares Research-Plan-Implement und dimensioniert Aufgaben passend für eine einzelne Agent-Session.
 - [[2026-07-08-mattpocock-skills-v1-1]] — Skills-Version 1.1 deckt mit Wayfinder, Spec, Tickets, Implementierung und Code Review den kompletten Coding-Lifecycle ab; Recherche und Prototyp bleiben eigenständig nutzbar.

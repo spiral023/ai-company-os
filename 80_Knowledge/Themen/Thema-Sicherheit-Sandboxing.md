@@ -1,6 +1,6 @@
 # Sicherheit & Sandboxing
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps.
 
@@ -9,7 +9,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** row level security (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), playwright (2), security (2), sandbox (2), sicherheit (2), prompt injection (2), vibe coding security (2), vibe coding sicherheit, ki-generierte apps absichern, secrets im frontend, supabase edge functions, lovable security, claude code dangerously-skip-permissions, docker sandbox run claude, agent-isolation, micro-vm
+- **Häufig in den Quellen:** row level security (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), security (2), playwright (2), sandbox (2), sicherheit (2), prompt injection (2), vibe coding security (2), lovable security, ki-generierte apps absichern, supabase edge functions, vibe coding sicherheit, secrets im frontend, docker sandbox run claude, micro-vm, agent-isolation, ralph loop über nacht
 
 ## Verwandte Themen
 

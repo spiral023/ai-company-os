@@ -1373,3 +1373,38 @@ quellen:
     kernaussage: Im Klon von thedaviddias/Front-End-Checklist (Stand Commit `7bfd8680`) beschreibt `packages/cli/README.md` die CLI `@frontendchecklist/cli`; die Regeln liegen im Paket, sie läuft offline.
     keywords: [front-end-checkliste, cli, mcp-server, ci-gate, audit]
     neben: [sicherheit, erweiterungen]
+  2026-10-05-repo-alirezarezvani-skill-doctor:
+    haupt: skills
+    kernaussage: Im Klon von alirezarezvani/claude-skills (Stand Commit `19392f7a`) liegt `engineering/skill-doctor/` mit SKILL.md (Version 1.0.0, MIT), drei Python-Skripten und zwei Bewertungsrubriken.
+    keywords: [skill-doctor, Session-Auswertung, Rubrik, Skill-Verbesserung]
+    neben: [verifikation]
+  2026-10-05-repo-bmad-method-retrospective:
+    haupt: planung
+    kernaussage: Im Klon von bmad-code-org/BMAD-METHOD (Stand Commit `8f2c13d`) liegt `skills/bmad-retrospective/` mit `workflow.md` und fünf Referenzdateien.
+    keywords: [BMAD, Retrospektive, Epic, Aktionspunkte]
+    neben: [verifikation]
+  2026-10-05-repo-claude-code-doctor-insights:
+    haupt: erweiterungen
+    kernaussage: Aus `CHANGELOG.md` von anthropics/claude-code (Stand 2.1.289).
+    keywords: [/doctor, /skill-doctor, /insights, Claude Code, prompt-audit]
+    neben: [agent-dateien, skills]
+  2026-10-05-repo-garrytan-gstack-retro:
+    haupt: frameworks
+    kernaussage: Im Klon von garrytan/gstack (Stand Commit `857466f`) liegt `retro/SKILL.md` (Skill-Version 2.0.0, rund 1.200 Zeilen, aus einer Vorlage generiert).
+    keywords: [gstack, retro, Engineering-Retrospektive, Focus Score]
+    neben: [verifikation]
+  2026-10-05-repo-mattpocock-skills-retro:
+    haupt: verifikation
+    kernaussage: Im Klon von mattpocock/skills (Stand Commit `4588b32`, Version 1.3.1) liegt `retro` unter `skills/engineering/retro/SKILL.md`.
+    keywords: [retro, Retrospektive, Coding-Session, Pre-Commit-Hook, CODING_STANDARDS.md, Review-Agent]
+    neben: [skills, agent-dateien]
+  2026-10-05-repo-millionco-react-doctor-skill:
+    haupt: verifikation
+    kernaussage: Im Klon von millionco/react-doctor (Stand Commit `1b149bae`) liegt der Agent-Skill `skills/react-doctor/SKILL.md` (Version 1.2.0).
+    keywords: [react-doctor, React, Health-Score, Regressionsprüfung]
+    neben: [skills]
+  2026-10-05-repo-squad-retro-enforcement:
+    haupt: planung
+    kernaussage: Im Klon von bradygaster/squad (Branch `dev`, Stand Commit `d2364dfe`) liegt die Skill-Vorlage `templates/skills/retro-enforcement/SKILL.md`.
+    keywords: [Retrospektive, Aktionspunkte, GitHub Issues, Squad]
+    neben: [skills]

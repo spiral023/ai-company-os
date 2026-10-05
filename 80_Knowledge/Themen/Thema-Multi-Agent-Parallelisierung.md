@@ -1,6 +1,6 @@
 # Multi-Agent & Parallelisierung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-02. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-Abhängigkeiten, Rollen, Advisor. Dauerläufe ohne Aufsicht stehen in autonomie.
 
@@ -9,7 +9,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - **Hauptkeyword:** Claude Code Subagents
 - **Long-Tail:** Agent Teams Claude Code; Git Worktrees parallele Agents; Subagents vs. Agent Teams; Multi-Agent Orchestrierung; Task-Abhängigkeiten Claude Code; Kosten paralleler Agents
 - **Fragen:** Wann lohnt sich Parallelisierung? / Subagent oder Agent Team?
-- **Häufig in den Quellen:** subagents (6), git worktrees (4), claude code subagents (4), effort (4), addblockedby (2), claude code tasks (2), multi-agent (2), claude code agent teams (2), modulgrenzen (2), openclaw (2), codex cli (2), agent teams (2), edit-kollisionen (2), parallel agents (2), agent drift (2), goal drift (2), context rot (2), parallel (2), subagent (2), /clear (2)
+- **Häufig in den Quellen:** subagents (6), git worktrees (4), claude code subagents (4), effort (4), addblockedby (2), claude code tasks (2), multi-agent (2), modulgrenzen (2), claude code agent teams (2), openclaw (2), codex cli (2), edit-kollisionen (2), agent teams (2), parallel agents (2), agent drift (2), goal drift (2), context rot (2), parallel (2), subagent (2), /clear (2)
 
 ## Verwandte Themen
 
