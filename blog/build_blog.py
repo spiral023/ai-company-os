@@ -304,6 +304,11 @@ def check_post(post: dict, cfg: dict, slugs: set[str] | None = None) -> list[str
         fehler.append(f"{post['datei']}: status muss entwurf oder freigegeben sein")
     if post.get("status") == "freigegeben" and not isinstance(post.get("geprueft_am"), date):
         fehler.append(f"{post['datei']}: freigegeben ohne 'geprueft_am' (Freigabe mit --freigeben setzen)")
+    akt = post.get("aktualisiert")
+    if akt is not None and not isinstance(akt, date):
+        fehler.append(f"{post['datei']}: 'aktualisiert' ist kein Datum im Format JJJJ-MM-TT: {akt}")
+    elif isinstance(akt, date) and isinstance(post.get("datum"), date) and akt < post["datum"]:
+        fehler.append(f"{post['datei']}: 'aktualisiert' ({akt.isoformat()}) liegt vor 'datum' ({post['datum'].isoformat()})")
     if not post.get("quellen") and post.get("kategorie") not in cfg.get("ohne_quellen", []):
         fehler.append(f"{post['datei']}: keine Quellen angegeben (Quellenangabe ist Pflicht)")
     if "[[" in post["body"]:

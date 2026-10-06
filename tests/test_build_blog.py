@@ -191,6 +191,15 @@ class TestFreigeben:
         assert any("geprueft_am" in f for f in bb.check_post(p, CFG))
         assert not any("geprueft_am" in f for f in bb.check_post({**p, "geprueft_am": HEUTE}, CFG))
 
+    def test_aktualisiert_vor_datum_ist_fehler(self):
+        p = post(body="## Kurz gesagt\n\n- x\n\nT.{q:1}", aktualisiert=HEUTE - timedelta(days=1))
+        assert any("aktualisiert" in f for f in bb.check_post(p, CFG))
+        assert bb.check_post({**p, "aktualisiert": HEUTE}, CFG) == []
+
+    def test_aktualisiert_ohne_gueltiges_datum_ist_fehler(self):
+        p = post(body="## Kurz gesagt\n\n- x\n\nT.{q:1}", aktualisiert="5.10.2026")
+        assert any("aktualisiert" in f for f in bb.check_post(p, CFG))
+
 
 class TestImpressum:
     def test_ohne_impressum_blockiert(self):
