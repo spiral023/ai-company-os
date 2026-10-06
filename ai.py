@@ -135,6 +135,26 @@ def run_skills(args: argparse.Namespace) -> int:
     return run_subprocess(command, "Skills anzeigen oder installieren")
 
 
+def run_feeds(args: argparse.Namespace) -> int:
+    """Register feeds or list entries for the existing ingest workflow."""
+    command = [sys.executable, script_path("feeds.py"), args.aktion]
+    if args.aktion == "add":
+        command.append(args.url)
+        if args.name:
+            command.extend(["--name", args.name])
+    elif args.aktion == "check":
+        command.extend(["--limit", str(args.limit)])
+        if args.url:
+            command.extend(["--url", args.url])
+        if args.thema:
+            command.extend(["--thema", args.thema])
+        if args.alle:
+            command.append("--alle")
+        if args.ausgabe:
+            command.extend(["--ausgabe", args.ausgabe])
+    return run_subprocess(command, "Feeds verwalten")
+
+
 def print_project_created(name: str, target: str) -> None:
     """Print next steps after a project was created."""
     print()
@@ -271,6 +291,22 @@ def build_parser() -> argparse.ArgumentParser:
     ingest.add_argument("--force", action="store_true", help="Bestehende Notiz überschreiben")
     ingest.add_argument("--titel", help="Automatisch erkannten Titel überschreiben")
     ingest.set_defaults(handler=run_ingest)
+
+    feeds = subparsers.add_parser("feeds", help="RSS-/Atom-Feeds registrieren und prüfen")
+    feeds_sub = feeds.add_subparsers(dest="aktion", required=True)
+    feeds_add = feeds_sub.add_parser("add", help="Feed registrieren")
+    feeds_add.add_argument("url")
+    feeds_add.add_argument("--name", help="Anzeigename")
+    feeds_add.set_defaults(handler=run_feeds)
+    feeds_list = feeds_sub.add_parser("list", help="Feeds anzeigen")
+    feeds_list.set_defaults(handler=run_feeds)
+    feeds_check = feeds_sub.add_parser("check", help="Thematisch passende Artikel vorschlagen")
+    feeds_check.add_argument("--url", help="Nur diesen Feed prüfen")
+    feeds_check.add_argument("--limit", type=int, default=10, help="Einträge pro Feed")
+    feeds_check.add_argument("--thema", help="Themencluster-ID, z. B. verifikation")
+    feeds_check.add_argument("--alle", action="store_true", help="Alle offenen Einträge nach Datum anzeigen")
+    feeds_check.add_argument("--ausgabe", help="Vorauswahl als Markdown speichern")
+    feeds_check.set_defaults(handler=run_feeds)
 
     skills = subparsers.add_parser("skills", help="Skills anzeigen oder installieren")
     skills.add_argument("--project-type", help="Projektart für Default-Skills")

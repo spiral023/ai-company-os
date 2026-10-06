@@ -26,6 +26,33 @@ def load_ai_module():
 class AiCliTest(unittest.TestCase):
     """Check that ai.py forwards commands to existing scripts."""
 
+    def test_feed_check_forwards_filter_and_limit(self) -> None:
+        ai = load_ai_module()
+        with patch.object(ai, "run_subprocess", return_value=0) as run:
+            result = ai.main(["feeds", "check", "--url", "https://example.org/rss.xml", "--limit", "5"])
+        self.assertEqual(result, 0)
+        run.assert_called_once_with(
+            [sys.executable, str(ROOT / "70_Scripts" / "feeds.py"), "check",
+             "--limit", "5", "--url", "https://example.org/rss.xml"], "Feeds verwalten")
+
+    def test_feed_add_forwards_name(self) -> None:
+        ai = load_ai_module()
+        with patch.object(ai, "run_subprocess", return_value=0) as run:
+            result = ai.main(["feeds", "add", "https://example.org/rss.xml", "--name", "Beispiel"])
+        self.assertEqual(result, 0)
+        run.assert_called_once_with(
+            [sys.executable, str(ROOT / "70_Scripts" / "feeds.py"), "add",
+             "https://example.org/rss.xml", "--name", "Beispiel"], "Feeds verwalten")
+
+    def test_feed_selection_options_are_forwarded(self) -> None:
+        ai = load_ai_module()
+        with patch.object(ai, "run_subprocess", return_value=0) as run:
+            result = ai.main(["feeds", "check", "--thema", "verifikation", "--alle", "--ausgabe", "Auswahl.md"])
+        self.assertEqual(result, 0)
+        run.assert_called_once_with(
+            [sys.executable, str(ROOT / "70_Scripts" / "feeds.py"), "check", "--limit", "10",
+             "--thema", "verifikation", "--alle", "--ausgabe", "Auswahl.md"], "Feeds verwalten")
+
     def test_health_forwards_to_healthcheck_script(self) -> None:
         ai = load_ai_module()
 

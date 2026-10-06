@@ -53,6 +53,8 @@ Get-ChildItem "00_Inbox/Quellen" -Filter "*.md" -File -Recurse |
 
 ## Erfassen
 
+RSS-/Atom-Feeds werden unter `00_Inbox/Feeds/feeds.yaml` registriert. `python ai.py feeds check` zeigt noch nicht archivierte Einträge; ausgewählte Artikel werden über den folgenden Artikel-Ingest erfasst. Details: [Feed-Verwaltung](../Feeds/README.md).
+
 **Artikel, YouTube und PDF:**
 
 ```powershell

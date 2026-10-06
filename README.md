@@ -75,10 +75,14 @@ python ai.py new
 python ai.py skills
 python ai.py external
 python ai.py ingest <url-oder-pdf-pfad>
+python ai.py feeds list
+python ai.py feeds check
 python ai.py status
 ```
 
 Die Scripts unter `70_Scripts/` bleiben die technischen Werkzeuge. `ai.py` ist nur eine benutzerfreundliche Oberfläche darüber.
+
+RSS-/Atom-Feeds lassen sich mit `python ai.py feeds add <feed-url>` registrieren. `feeds check` empfiehlt thematisch passende Beiträge mit Begründung; `--thema verifikation` fokussiert ein Thema, `--alle` zeigt auch zurückgestellte Einträge. Nur ausgewählte Artikel werden anschließend mit `ingest` erfasst. Ablauf und Register: [RSS-Feeds](00_Inbox/Feeds/README.md).
 
 ## Typischer Ablauf
 

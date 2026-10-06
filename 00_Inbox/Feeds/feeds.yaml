@@ -1,0 +1,23 @@
+# Feed-Register; einzelne Artikel werden separat als Quellen archiviert.
+feeds:
+- name: Matt Pocock / AI Hero
+  url: https://www.aihero.dev/rss.xml
+  website: https://www.aihero.dev
+  format: rss
+  hinzugefuegt: '2026-10-05'
+  auswahl:
+    # Kurze englische Feed-Beschreibungen ergänzen die vorhandenen Themen-Keywords.
+    themen_keywords:
+      verifikation: [/pr, pull request, retrospective, code-review]
+    ausschliessen_pfade:
+    - /newsletter
+    - /skills
+    - /skills/subscribe
+    - /workshops/*
+    - /my-claude-code-cohort-a-teaser
+    # Das Dictionary wird als Sammlung über sync_ai_coding_dictionary.py gepflegt.
+    - /ai-coding-dictionary
+    - /ai-coding-dictionary/*
+  # Derselbe Beitrag; der flache Pfad ergänzt Kurztext und Share-Link (05.10.2026).
+  url_aliases:
+    https://www.aihero.dev/skills-changelog-v13-implement-spec-pr-retro-and-glossary-md: https://www.aihero.dev/skills/skills-changelog-v13-implement-spec-pr-retro-and-glossary-md
