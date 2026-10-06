@@ -22,7 +22,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 
 - [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 2 Belege
 - [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 18 Belege
-- [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 6 Belege
+- [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 7 Belege
 - [[MCP-Code-Execution-statt-Tool-Definitionen]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Hook-erzwungene-Skill-Aktivierung]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]

@@ -945,7 +945,8 @@ quellen:
     neben: [kontext]
   2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev:
     haupt: sdlc
-    kernaussage: Anthropic staffelt Review-Autonomie nach Risiko, prüft neue Reviewer im Shadow Mode und kontrolliert automatische Freigaben durch menschliche Stichproben; Agent-Rechte müssen auch Kommunikationswege erfassen. Herstellerbericht ohne unabhängige Wirkungsmessung.
+    kernaussage: Anthropic staffelt Review-Autonomie nach Risiko, prüft neue Reviewer im Shadow Mode und kontrolliert automatische Freigaben durch menschliche Stichproben; Agent-Rechte müssen auch Kommunikationswege
+      erfassen. Herstellerbericht ohne unabhängige Wirkungsmessung.
     keywords: [AI-native SDLC, Human-in-the-Loop, Risikobasiertes Human Review, Shadow Mode, Review-Stichproben, Automatische PR-Freigabe, Befundnachweis, SAST und DAST, Invariantentests, Least Agency,
       Agent-Identität, Agent-to-Agent-Kommunikation, SIEM, Egress-Allowlist]
     neben: [verifikation, sicherheit]
@@ -1124,6 +1125,12 @@ quellen:
     kernaussage: Ein Skill kann Diagramme aus der Codebase erzeugen und sich per Screenshot selbst korrigieren; die Korrektheit der abgeleiteten Beziehungen bleibt ungeprüft.
     keywords: [Archify, Architekturdiagramm, Diagramme aus Code, Interaktive HTML-Diagramme, Claude Code Skill, Datenfluss-Diagramm, Screenshot-Feedback, Spec-driven Workflow]
     neben: [rolle-markt]
+  2026-09-09-orf-anthropic-forscher-ki-risiko-fuer-menschen:
+    haupt: ki-risiken
+    kernaussage: ORF.at berichtet am 09.09.2026 über Warnungen von Forschern aus Anthropic und OpenAI vor künftig übermenschlichen KI-Fähigkeiten.
+    keywords: [Risiken von KI, Existenzielle KI-Risiken, Kontrollverlust durch KI, Selbstverbessernde KI, Defensive KI, Übermenschliche KI-Fähigkeiten, Forscherwarnung, Persönliche Risikoeinschätzung, Jacob
+        Coxon, Evan Hubinger, Jakub Pachocki]
+    neben: []
   2026-09-09-voxyz_ai-2097814698204832116:
     haupt: orchestrierung
     kernaussage: Günstige Modelle explorieren, ein mittleres implementiert, das stärkste prüft nur bei Bedarf; Rollen gehören per Konfiguration statt Prosa festgelegt und in den Logs verifiziert.
@@ -1243,6 +1250,11 @@ quellen:
     haupt: modelle-kosten
     kernaussage: Opus 5.5 in Claude Code führt den Coding Agent Index, kostet aber pro Task 21 Prozent mehr, weil der Tokenverbrauch die Preissenkung überkompensiert.
     keywords: [Coding Agent Index, Claude Code Opus 5.5, Kosten pro Task, Tokenverbrauch, Terminal-Bench 4.0, DeepSWE, Pareto-Front, Codex GPT-6 Sol, Coding Agent Benchmark]
+    neben: []
+  2026-09-24-orf-ex-google-manager-warnt-vor-ki-gefahren-fuer-kin:
+    haupt: ki-risiken
+    kernaussage: ORF.at berichtet über eine Warnung des früheren Google-Managers für Nutzersicherheit Tom Siegel gegenüber Reuters.
+    keywords: [Risiken von KI, KI-Gefahren für Kinder, Risiken von KI-Chatbots, Minderjährige, Jugendschutz, Kritisches Denken, Altersüberprüfung, Youth AI Safety Institute, Tom Siegel, Common Sense Media]
     neben: []
   2026-09-25-trq212-2103576349499855160:
     haupt: modelle-kosten
@@ -1397,6 +1409,11 @@ quellen:
     kernaussage: Im Klon von thedaviddias/Front-End-Checklist (Stand Commit `7bfd8680`) beschreibt `packages/cli/README.md` die CLI `@frontendchecklist/cli`; die Regeln liegen im Paket, sie läuft offline.
     keywords: [front-end-checkliste, cli, mcp-server, ci-gate, audit]
     neben: [sicherheit, erweiterungen]
+  2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md:
+    haupt: skills
+    kernaussage: Skills 1.3 ergänzt Spec-Umsetzung, PR-Aufbereitung und eine Retro mit menschlicher Auswahl; große Integrationsbranches bleiben eine Review-Grenze.
+    keywords: [Matt Pocock Skills 1.3, Retro-Skill, Human in the Loop, implement-spec, PR-Review, GLOSSARY.md, deterministische Checks]
+    neben: [verifikation, planung]
   2026-10-05-repo-alirezarezvani-skill-doctor:
     haupt: skills
     kernaussage: Im Klon von alirezarezvani/claude-skills (Stand Commit `19392f7a`) liegt `engineering/skill-doctor/` mit SKILL.md (Version 1.0.0, MIT), drei Python-Skripten und zwei Bewertungsrubriken.

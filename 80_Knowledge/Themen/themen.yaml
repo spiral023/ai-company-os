@@ -119,14 +119,25 @@ cluster:
 
   sicherheit:
     name: "Sicherheit & Sandboxing"
-    beschreibung: "Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps."
+    beschreibung: "Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps. Berichte über Gefahren, Missbrauch und konkrete KI-Vorfälle stehen in ki-risiken."
     kern: [sandbox, sandboxing, deny-rule, deny-rules, secrets, secret leakage, .env, dangerously-skip-permissions, yolo-modus, micro-vm, microvm, command smuggling, execpolicy, prefix_rule, row level security, permissions deny, prompt injection, plugin-vertrauen, docker sandbox]
     weit: [sicherheit, security, permission, rechte, isolation, risiko, rls]
-    verwandt: [erweiterungen, autonomie, prototyping, sdlc]
+    verwandt: [erweiterungen, autonomie, prototyping, sdlc, ki-risiken]
     blog:
       hauptkeyword: "Claude Code Sicherheit"
       longtail: ["Deny Rules statt CLAUDE.md", ".env Secrets Claude Code schützen", "Agent Sandbox einrichten", "Docker Sandbox Claude Code", "Codex Execpolicy", "Vibe Coding Sicherheit"]
       fragen: ["Wie verhindere ich, dass der Agent meine .env liest?", "Reicht eine Regel in CLAUDE.md?"]
+
+  ki-risiken:
+    name: "KI-Risiken & Sicherheitsvorfälle"
+    beschreibung: "Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Systeme: Risiken für Minderjährige, übermäßiges Vertrauen, Kontrollverlust, existenzielle Risiken, Fehlverhalten, Missbrauch, KI-gestützte Cyberangriffe und Vorfälle an KI-Plattformen oder mit autonomen Agents. Warnungen, Risikoszenarien und dokumentierte Vorfälle unterscheiden; bei Angriffen die Rolle von KI als Werkzeug, Ziel oder handelnder Agent festhalten. Technische Schutzmaßnahmen gehören zu sicherheit, Prüf- und Freigabeverfahren zu verifikation."
+    kern: [ki-risiken, ki risiken, ki-gefahren, ki gefahren, ai risks, ai safety, jugendschutz, kindersicherheit, minderjährige, youth ai safety, chatbot-risiken, psychische belastung, kritisches denken, kontrollverlust, existenzielle risiken, existential risk, selbstverbessernde ki, recursive self-improvement, defensive ki, fehlsteuerung, ki-missbrauch, ki-gestützte cyberangriffe, ai-powered cyberattacks, autonome cyberangriffe, hugging face incident, huggingface incident, model evaluation incident, sandbox escape, benchmark answer theft, deepfakes, desinformation]
+    weit: [risiko, gefahren, schaden, warnung, vorfall, incident, cyberangriff, hackerangriff, altersüberprüfung, schutzmaßnahmen, autonomer agent, missbrauch, vertrauen]
+    verwandt: [sicherheit, autonomie, verifikation, rolle-markt]
+    blog:
+      hauptkeyword: "Risiken von KI"
+      longtail: ["KI-Gefahren für Kinder", "Risiken von KI-Chatbots", "KI und kritisches Denken", "KI-gestützte Hackerangriffe", "Sicherheitsvorfälle mit KI-Agents", "Hugging Face KI-Vorfall", "Sandbox Escape bei AI-Evaluierungen", "KI-Warnungen und belegte Vorfälle unterscheiden", "Kontrollverlust durch KI", "Existenzielle KI-Risiken", "KI zur Verteidigung gegen KI"]
+      fragen: ["Welche KI-Risiken sind belegt und welche sind Warnungen?", "Welche Risiken betreffen Minderjährige besonders?", "Welche Rolle hatte KI bei einem Angriff: Werkzeug, Zielsystem oder handelnder Agent?", "Was lässt sich aus konkreten KI-Sicherheitsvorfällen lernen?"]
 
   frameworks:
     name: "Workflow-Frameworks & Tools"

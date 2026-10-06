@@ -5,7 +5,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 ## Patterns
 
 - [[Spec-Grilling]] — Agent verhört den Nutzer vor der Umsetzung, bis die Spec klar ist.
-- [[CONTEXT-Glossar]] — geteiltes Projekt-Vokabular in `CONTEXT.md` komprimiert Kommunikation und spart Thinking-Tokens.
+- [[CONTEXT-Glossar]] — geteiltes Projekt-Vokabular in `GLOSSARY.md` (früher `CONTEXT.md`) komprimiert Kommunikation und spart Thinking-Tokens.
 - [[Handoff-Doc]] — Konversation wird in ein Übergabe-Dokument kompaktiert, der nächste Agent macht nahtlos weiter.
 - [[Skill-Call-Hierarchie]] — user-invoked Skills orchestrieren, model-invoked Skills tragen die Disziplin; Orchestrator ruft nie Orchestrator.
 - [[Klein-und-komposierbar]] — Skills bleiben klein, komponierbar, leicht hackbar; Prozesskontrolle bleibt beim Menschen.
@@ -54,7 +54,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 
 ## Themen
 
-Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 16 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand.
+Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 17 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand. [[Thema-KI-Risiken-Sicherheitsvorfälle]] sammelt Warnungen, Risikoszenarien und konkrete Vorfälle mit KI.
 
 ## Guides
 

@@ -85,6 +85,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | codex skills | 3 | Prototyping & UI-Design, Workflow-Frameworks & Tools |
 | cursor | 3 | Hooks, MCP & Erweiterungs-Ebenen, Verifikation, Tests & Review, Workflow-Frameworks & Tools |
 | design.md | 3 | Multi-Agent & Parallelisierung, Spezifikation & Planung |
+| deterministische checks | 3 | Hooks, MCP & Erweiterungs-Ebenen, Skill-Design, Verifikation, Tests & Review |
 | everything claude code | 3 | Hooks, MCP & Erweiterungs-Ebenen, Workflow-Frameworks & Tools |
 | extended thinking | 3 | Autonome Läufe, Loops & CI, Einstieg & Best Practices, Modelle, Kosten & Limits |
 | gpt-6 luna | 3 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
@@ -165,7 +166,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | context.md | 2 | Skill-Design, Spezifikation & Planung |
 | context: fork | 2 | Skill-Design |
 | definition of done | 2 | Agent-Dateien & Memory, Prompting & Klärung |
-| deterministische checks | 2 | Hooks, MCP & Erweiterungs-Ebenen, Verifikation, Tests & Review |
 | docker sandboxes | 2 | Sicherheit & Sandboxing |
 | edit-kollisionen | 2 | Multi-Agent & Parallelisierung |
 | effort-stufen | 2 | Kontext-Management, Modelle, Kosten & Limits |
@@ -225,6 +225,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | playwright | 2 | Sicherheit & Sandboxing |
 | playwright vitest | 2 | Autonome Läufe, Loops & CI |
 | plugin | 2 | Hooks, MCP & Erweiterungs-Ebenen |
+| pr-review | 2 | Skill-Design, Verifikation, Tests & Review |
 | pretooluse posttooluse | 2 | Agent-Dateien & Memory, Hooks, MCP & Erweiterungs-Ebenen |
 | prompt injection | 2 | Sicherheit & Sandboxing |
 | prompt-audit | 2 | Hooks, MCP & Erweiterungs-Ebenen, Prompting & Klärung |
@@ -240,6 +241,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | review.md | 2 | AI-nativer SDLC |
 | reviewer | 2 | Verifikation, Tests & Review |
 | reward hacking | 2 | Multi-Agent & Parallelisierung, Verifikation, Tests & Review |
+| risiken von ki | 2 | KI-Risiken & Sicherheitsvorfälle |
 | sandboxed runner | 2 | Autonome Läufe, Loops & CI |
 | security | 2 | Sicherheit & Sandboxing |
 | security checker | 2 | Prototyping & UI-Design, Sicherheit & Sandboxing |

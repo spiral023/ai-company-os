@@ -36,6 +36,8 @@ Drei Entscheidungsformen stehen zwischen starrem Skript und freiem, unstrukturie
 - 2026-08-21 · [[2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk]] · meinung — Lint-Ergebnisse werden als Warnung an die MCP-Tool-Antwort gehängt, blockieren den Write nicht und kosten keinen Extra-Call; harte Durchsetzung läuft getrennt über `ok lint` in CI. Herstellerangabe ohne Messung, ob Agents die Warnungen befolgen.
 - 2026-08-05 · [[2026-08-05-floknowsai-dein-vibe-coding-projekt-bricht-nicht-am-coding-agent-zusammen-sondern]] · meinung — Rules sind keine Garantie, weil sie in langen Sessions untergehen; ergänzend statische Code-Analyse per Script als deterministische Prüfung. Erfahrungsbericht.
 
+- 2026-10-05 · [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]] · meinung — Pococks `/retro` ordnet mechanische Coding-Verstöße einem Linter, Pre-Commit-Hook oder CI-Job zu und hält `CODING_STANDARDS.md` für Ermessensfragen frei. Nutzer wählen die Vorschläge vor Änderungen aus; automatische Retro-Schleifen bergen laut Autor das Risiko fortgesetzter Umbauten wegen falsch positiver Funde.
+
 ## Spannungen & offene Fragen
 
 - Einzige bisherige Quelle, dort nur in zwei Sätzen ohne Vertiefung erwähnt — eine zweite, unabhängige Quelle würde die Aussage deutlich stärken, bevor sie über den Status einer Einzelbeobachtung hinauswächst.

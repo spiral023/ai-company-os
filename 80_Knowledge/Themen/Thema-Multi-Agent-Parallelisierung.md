@@ -21,7 +21,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 ## Patterns (3)
 
 - [[Advisor-Agent-gegen-Drift]] · meinung · 3 Belege
-- [[Blockierende-Task-Abhaengigkeiten]] · meinung · 1 Belege
+- [[Blockierende-Task-Abhaengigkeiten]] · meinung · 2 Belege
 - [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 37 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]]

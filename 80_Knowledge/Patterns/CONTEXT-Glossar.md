@@ -36,6 +36,9 @@ Eine Datei `CONTEXT.md` im Projekt hält das gemeinsame Vokabular des Projekts f
 - 2026-07-11 · external_repos/mattpocock/skills/.agents/invocation.md · verifiziert — Abschnitt „Passive vs active domain work“ bestätigt die Unterscheidung zwischen bloßem Lesen von `CONTEXT.md` und der aktiven `domain-modeling`-Pflegedisziplin.
 - 2026-10-02 · external_repos/mattpocock/skills/.changeset/rename-context-to-glossary.md · verifiziert — Mit dem Changeset `rename-context-to-glossary` (Stand 2026-10-02 noch nicht als Release veröffentlicht, `package.json` steht auf 1.2.3) heißt die Konvention `GLOSSARY.md`/`GLOSSARY-MAP.md` statt `CONTEXT.md`/`CONTEXT-MAP.md`; die Skills (`domain-modeling`, `grill-with-docs`, `tdd`, `pr` u. a.) suchen nur noch nach dem neuen Namen, bestehende Dateien sollen per `git mv` umbenannt werden. Im Repo-Root liegt jetzt `GLOSSARY.md`, `CONTEXT.md` existiert nicht mehr.
 
+- 2026-10-05 · [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]] · meinung — Die Umbenennung auf `GLOSSARY.md`/`GLOSSARY-MAP.md` ist mit 1.3 veröffentlicht; gemeinsam migrieren, sonst kann ein aktualisierter Agent ein leeres Glossar neben der alten Datei anlegen. Aktualisiert den Release-Stand des Vermerks vom 2026-10-02, die Arbeitsweise bleibt gleich.
+- 2026-10-05 · external_repos/mattpocock/skills/CHANGELOG.md · verifiziert — Der Abschnitt 1.3.0 führt die Glossar-Umbenennung als veröffentlichten Minor Change auf; die Skills suchen nur die neuen Namen.
+
 ## Spannungen & offene Fragen
 
 - Keine inhaltliche Spannung zu anderen Quellen bekannt; offene Frage: Wie viel Pflegeaufwand ist realistisch, bevor das Glossar veraltet? (aus dem Repo nicht beantwortbar, nur aus eigener Erfahrung zu klären.)

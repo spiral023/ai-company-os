@@ -2,7 +2,7 @@
 
 *Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
-Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps.
+Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps. Berichte über Gefahren, Missbrauch und konkrete KI-Vorfälle stehen in ki-risiken.
 
 ## Suchbegriffe
 
@@ -17,6 +17,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - [[Thema-Autonome-Läufe-Loops-CI]] — Autonome Läufe, Loops & CI
 - [[Thema-Prototyping-UI-Design]] — Prototyping & UI-Design
 - [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
+- [[Thema-KI-Risiken-Sicherheitsvorfälle]] — KI-Risiken & Sicherheitsvorfälle
 
 ## Patterns (4)
 

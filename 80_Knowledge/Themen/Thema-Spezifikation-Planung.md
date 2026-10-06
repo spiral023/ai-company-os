@@ -21,7 +21,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 
 ## Patterns (5)
 
-- [[CONTEXT-Glossar]] · verifiziert · 4 Belege
+- [[CONTEXT-Glossar]] · verifiziert · 6 Belege
 - [[Plan-first-mit-getrenntem-Review]] · verifiziert · 39 Belege
 - [[Spec-Grilling]] · verifiziert · 15 Belege
 - [[Spec-Ordner-pro-Feature]] · meinung · 2 Belege
@@ -47,6 +47,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-generierte-Schulung-mi
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]]
 - [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]]
 - [[2026-07-30-julian-ivanov-interaktive-schulungen-mit-claude-code]]
 - [[2026-07-26-promptgefluester-ich-hab-ne-unbequeme-wahrheit-und-zwar-ich-wurde-gefragt-wieso]]

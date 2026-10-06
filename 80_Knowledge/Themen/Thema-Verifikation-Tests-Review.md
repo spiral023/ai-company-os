@@ -57,6 +57,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-10-05-repo-garrytan-gstack-retro]]
 - [[2026-10-05-repo-bmad-method-retrospective]]
 - [[2026-10-05-repo-alirezarezvani-skill-doctor]]
+- [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]]
 - [[2026-09-27-voxyz_ai-2104224555040452925]]
 - [[2026-09-27-anthropic-academy-sdlc-playbook]]
 - [[2026-09-25-voxyz_ai-2103586663393853636]]

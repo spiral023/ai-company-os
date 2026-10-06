@@ -31,9 +31,12 @@ Tasks bekommen über `addBlockedBy`/`addBlocks` explizite, append-only Abhängig
 
 - 2026-01-23 · [[2026-01-23-nummanali-claude-task-system]] · meinung — X-Artikel von @nummanali beschreibt die vier Tools `TaskCreate`/`TaskUpdate`/`TaskGet`/`TaskList`, die Blockierlogik `addBlockedBy`/`addBlocks`, die Datei-pro-Task-Persistenz unter `~/.claude/tasks/<list-id>/` und `owner` als reines Filter-Label, anhand einer siebenteiligen JWT-Migration und einer achtteiligen Hochzeitsplanung als Beispielgraphen.
 
+- 2026-10-05 · [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]] · meinung — `/implement-spec` startet Implementierer für nicht mehr blockierte Tickets in eigenen Worktrees, führt Ergebnisse auf einer Integrationsbranch zusammen und überprüft den Gesamtstand anschließend mit `/code-review`; der Autor benennt große Branches und semantische Merge-Kollisionen ausdrücklich als ungelöste Grenzen.
+
 ## Spannungen & offene Fragen
 
 - Der Synchronisationsmechanismus für parallel schreibende Agenten (mehrere Agenten aktualisieren laut Quelle „ohne Konflikte“) bleibt unbelegt; ein Abgleich mit `external_repos/anthropics/claude-code/` lieferte keinen Engine-Quellcode, nur Plugin-/Hook-Beispiele. Bis zu einer Verifikation bleibt das unverifizierte Anwenderbeobachtung.
+- 2026-10-05: Pocock hält die deterministische Ticket-Schleife für verlässlicher als eine durch Agents gesteuerte Schleife. Worktree-Isolation verlagert Kollisionen auf den Merge; ein abgearbeiteter Task-Graph garantiert daher keine konfliktfreie Gesamtänderung. → [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]]
 
 ## Verwandte Patterns
 

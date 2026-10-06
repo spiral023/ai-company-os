@@ -7,7 +7,7 @@ Jede Source und jedes Pattern hat einen Haupt-Cluster und höchstens zwei Nebenc
 | Thema | Hub-Notiz | Quellen | Patterns | Hauptkeyword |
 |---|---|---|---|---|
 | Modelle, Kosten & Limits | [[Thema-Modelle-Kosten-Limits]] | 44 | 4 | Claude Code Kosten |
-| Skill-Design | [[Thema-Skill-Design]] | 20 | 9 | Claude Code Skills |
+| Skill-Design | [[Thema-Skill-Design]] | 21 | 9 | Claude Code Skills |
 | Verifikation, Tests & Review | [[Thema-Verifikation-Tests-Review]] | 19 | 4 | AI Code Review |
 | Kontext-Management | [[Thema-Kontext-Management]] | 17 | 2 | Context Engineering |
 | Agent-Dateien & Memory | [[Thema-Agent-Dateien-Memory]] | 14 | 1 | CLAUDE.md |
@@ -22,3 +22,4 @@ Jede Source und jedes Pattern hat einen Haupt-Cluster und höchstens zwei Nebenc
 | Prompting & Klärung | [[Thema-Prompting-Klärung]] | 9 | 3 | Prompt Engineering |
 | Einstieg & Best Practices | [[Thema-Einstieg-Best-Practices]] | 8 | 0 | Claude Code Tutorial |
 | AI-nativer SDLC | [[Thema-AI-nativer-SDLC]] | 4 | 0 | AI-nativer SDLC |
+| KI-Risiken & Sicherheitsvorfälle | [[Thema-KI-Risiken-Sicherheitsvorfälle]] | 2 | 0 | Risiken von KI |
