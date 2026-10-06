@@ -1,6 +1,6 @@
 # Keyword-Register
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-07.*
 
 Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wissen schon mehrfach belegt ist, und taugen als Suchbegriffe für Blog-Beiträge.
 
@@ -53,7 +53,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | anthropic_base_url | 4 | Modelle, Kosten & Limits |
 | claude code best practices | 4 | Einstieg & Best Practices, Kontext-Management, Verifikation, Tests & Review |
 | claude code subagents | 4 | Hooks, MCP & Erweiterungs-Ebenen, Multi-Agent & Parallelisierung |
-| codex | 4 | Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits, Prompting & Klärung, Prototyping & UI-Design |
+| codex | 4 | Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits, Prompts zum Ausprobieren, Prototyping & UI-Design |
 | context pollution | 4 | Kontext-Management, Verifikation, Tests & Review |
 | cost per task | 4 | Modelle, Kosten & Limits |
 | gpt-6 astra | 4 | Multi-Agent & Parallelisierung, Prompting & Klärung, Prototyping & UI-Design |

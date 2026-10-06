@@ -16,7 +16,7 @@ Statischer Blog aus Markdown, gespeist aus der Wissensbasis (`80_Knowledge/`). D
 ---
 titel: "Konkreter Titel"
 datum: 2026-09-29
-kategorie: modelle          # modelle | arbeitsweisen | tools | duell | check | digest | kurz | redaktion (ohne Quellen)
+kategorie: modelle          # modelle | arbeitsweisen | tools | duell | check | digest | prompts | kurz | redaktion (ohne Quellen)
 zusammenfassung: "Ein bis zwei Sätze für Liste, Feed und Suchmaschinen."
 status: entwurf             # entwurf | freigegeben
 aktualisiert: 2026-10-05    # optional; erscheint in Meta-Zeile und Schema.org

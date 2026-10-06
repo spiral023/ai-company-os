@@ -177,11 +177,22 @@ cluster:
     beschreibung: "Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns, Voice-Prompting, Anweisungen bei Modellwechsel ausdünnen, Anti-Sycophancy."
     kern: [pre-mortem, self-interview, fable unknowns, known unknowns, unknowns, blind spot, sycophancy, voice-prompting, spracheingabe, sprachprompt, überregulierung, modellwechsel, prompt-technik, prompt engineering, intent-engineering, persona-prompt, zustimmungsneigung, entscheidungs-prompts]
     weit: [prompt, prompts, instruktion, instruktionen, annahmen, klärung, frage]
-    verwandt: [planung, agent-dateien, rolle-markt]
+    verwandt: [planung, agent-dateien, rolle-markt, prompt-vorlagen]
     blog:
       hauptkeyword: "Prompt Engineering"
       longtail: ["Pre-Mortem Prompt", "Unknowns aufdecken Prompt", "Voice Prompting Coding", "Anweisungen bei Modellwechsel ausdünnen", "Agent Sycophancy vermeiden", "Prompt für Coding Agents"]
       fragen: ["Warum sind lange Prompts oft schlechter?", "Wie decke ich unbekannte Annahmen auf?"]
+
+  prompt-vorlagen:
+    name: "Prompts zum Ausprobieren"
+    beschreibung: "Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, Codex oder einem Chat einsetzen können: Wortlaut, Zweck, Einsatzort, erwartetes Ergebnis. Jeder Prompt bleibt bei seiner Quelle; Varianten derselben Idee von verschiedenen Autoren werden nicht zusammengeführt. Prinzipien der Prompt-Technik gehören zu prompting."
+    kern: [prompt-vorlage, prompt-vorlagen, prompt template, example prompts, beispiel-prompt, copy-paste-prompt, prompts zum ausprobieren, blindspot pass, blind spot pass, rollen-prompts, debugging-prompt, review-prompt]
+    weit: [prompt, prompts, vorlage, platzhalter, wortlaut, kopieren, systemprompt]
+    verwandt: [prompting, planung, verifikation]
+    blog:
+      hauptkeyword: "Prompts für Claude Code"
+      longtail: ["Prompts zum Ausprobieren", "Claude Code Prompt-Vorlagen", "Blindspot Pass Prompt", "Claude interviewt mich Prompt", "Debugging-Prompt für Coding Agents", "Prompt mit klarem Zielzustand", "Plan vor Code Prompt"]
+      fragen: ["Welche Prompts kann ich direkt in Claude Code ausprobieren?", "Wie sage ich dem Agent, wann er fertig ist?", "Wie verhindere ich, dass der Agent Fehler nur versteckt?"]
 
   prototyping:
     name: "Prototyping & UI-Design"

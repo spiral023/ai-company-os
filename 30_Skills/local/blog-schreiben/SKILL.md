@@ -67,6 +67,7 @@ Beim Schreiben vermeiden, beim Prüfen als Detect-Durchgang suchen. Quelle: `ext
 | **Duell** (`duell`) | 700–1100 | zwei Sources mit Gegenpositionen oder ein Pattern mit Spannung | Position A, Position B, wo sie sich wirklich unterscheiden, wann welche gilt |
 | **Behauptungs-Check** (`check`) | 700–1100 | Befunde und Source-Einordnungen | fünf Behauptungen: Was wird behauptet, was stimmt, was fehlt, Urteil in einem Wort („stimmt“, „stimmt nicht“, „nicht prüfbar“) |
 | **Wochen-Digest** (`digest`) | 400–700 | alles Neue seit dem letzten Digest | fünf bis acht Punkte mit je zwei bis drei Sätzen und Verweis auf die Einzelbeiträge |
+| **Prompts zum Ausprobieren** (`prompts`) | 700–1200 ohne Prompt-Text | Quellen im Cluster `prompt-vorlagen` mit vollständigem Prompt in der Rohquelle | Übersichtstabelle (Prompt, wann, Ergebnis, von wem), dann je Prompt: was er macht und warum, Prompt auf Deutsch als Codeblock mit Platzhaltern in eckigen Klammern, **Wann:**, **Ergebnis:**, Link zum englischen Original. Ein Prompt stammt aus genau einer Quelle; Varianten anderer Autoren nicht einmischen oder zusammenführen. Übertragen, nicht wörtlich übersetzen; Fachbegriffe, die der Autor bewusst wählt, im Original lassen. |
 
 ## Ablauf
 

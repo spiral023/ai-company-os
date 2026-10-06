@@ -14,6 +14,7 @@ kategorien:
   duell: "Duelle"
   check: "Behauptungs-Check"
   digest: "Wochen-Digest"
+  prompts: "Prompts zum Ausprobieren"
   kurz: "Kurzmeldungen"
   redaktion: "Über den Blog"
 ohne_quellen: [redaktion]   # Kategorien, die keine Quellenangabe brauchen

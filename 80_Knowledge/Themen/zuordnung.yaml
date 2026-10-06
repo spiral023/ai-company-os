@@ -426,7 +426,7 @@ quellen:
     haupt: agent-dateien
     kernaussage: Ein CLAUDE.md-Prompt gegen typische Agent-Fehler bündelt bekannte Prinzipien, konkurriert aber als langer Text im Kontext und wird nur weich befolgt.
     keywords: [Karpathy System Prompt, CLAUDE.md Prompt, Annahmen offenlegen, Erfolgskriterien, Test-first, Scope begrenzen, Coding-Agent-Fehler]
-    neben: [planung]
+    neben: [planung, prompt-vorlagen]
   2026-02-03-svpino-claude-code-md-tips:
     haupt: agent-dateien
     kernaussage: Fünf kurze CLAUDE.md-Regeln erzwingen Plan, kleine Schritte und Test zuerst; die Selbstverbesserungsregel lässt die Datei jedoch unkontrolliert wachsen.
@@ -451,7 +451,7 @@ quellen:
     haupt: prototyping
     kernaussage: Bei Fehlerschleifen Ursache erklären lassen statt Symptome zu flicken, Audits im Plan-Modus ohne Codeänderung fahren und Änderungsgrenzen benennen.
     keywords: [Lovable Debugging, Plan Mode, Audit-Prompts, Root Cause statt Symptom, Fehlerschleifen durchbrechen, Rollback Versionshistorie, Prompting für kritische Bereiche]
-    neben: [planung]
+    neben: [planung, prompt-vorlagen]
   2026-02-04-meer-aiit-claude-skills-complete-guide:
     haupt: skills
     kernaussage: Die description steuert das Triggern eines Skills; SKILL.md kurz halten, Details in references auslagern und Skripte für Deterministisches nutzen.
@@ -466,7 +466,7 @@ quellen:
     haupt: verifikation
     kernaussage: 'Ein Test ist ein präziser Prompt: Der Agent baut Logik Test für Test, wobei die Testqualität beim Menschen liegt.'
     keywords: [TDD mit KI-Agenten, Test-Driven Development Agentic Coding, Tests als Spezifikation, Red Green Refactor, Pre-Commit Hooks, tdd-plan.md, Halluzinationen reduzieren]
-    neben: [planung]
+    neben: [planung, prompt-vorlagen]
   2026-02-05-carlini-anthropic-c-compiler:
     haupt: autonomie
     kernaussage: Der stärkste Hebel für lang laufende Agent-Teams ist ein präzises, maschinenlesbares Testharness; ein unpräziser Verifier erzeugt zuverlässig falschen Erfolg.
@@ -481,7 +481,7 @@ quellen:
     haupt: planung
     kernaussage: 'Analyse und Umsetzung trennen: Ein Read-only-Planer erzeugt eine Plan-Datei, die als Vertrag für den Build-Agenten nach Freigabe dient.'
     keywords: [Read-only Planner Prompt, Feature-Planung mit KI, PRD, Phasenplan, Parking Lot, Rejected Ideas, Handoff-Dokument, Build-Agent Freigabe]
-    neben: [agent-dateien]
+    neben: [agent-dateien, prompt-vorlagen]
   2026-02-07-daniel-san-agent-teams-praxismuster:
     haupt: orchestrierung
     kernaussage: Agent Teams laufen kollisionsfrei bei klaren Modulgrenzen, kurzem operationalem CLAUDE.md und definierten Verifikationssignalen; N Teammates kosten N-fachen Kontext.
@@ -507,7 +507,7 @@ quellen:
     haupt: planung
     kernaussage: Claude schreibt keinen Code vor einem geprüften Plan; Recherche und Plan sind persistente Markdown-Artefakte, die der Mensch per Inline-Annotation iterativ schärft.
     keywords: [Claude Code Workflow, research.md und plan.md, Annotation Cycle, Plan vor Code, don't implement yet, Plan Mode Alternative, Revert statt Nachbessern, Auto-Compaction]
-    neben: [kontext]
+    neben: [kontext, prompt-vorlagen]
   2026-02-11-rohit4verse-guide-building-agent-skills:
     haupt: skills
     kernaussage: Vor dem Bau eines Skills Erfolgskriterien wie Trigger-Trefferquote festlegen; die description folgt dem Muster was plus wann, allowed-tools begrenzt Rechte.
@@ -777,7 +777,7 @@ quellen:
     haupt: orchestrierung
     kernaussage: Claude erzeugt pro Aufgabe ein Skript mit Subagents in eigenen Kontexten; Verifier und Classifier vermeiden Selbstbewertung, kosten aber deutlich mehr Tokens.
     keywords: [Dynamic Workflows, Claude Code Subagents, Fan-out and Synthesize, Adversarial Verification, Tournament, Goal Drift, Agentic Laziness, Classifier-Agent]
-    neben: [autonomie]
+    neben: [autonomie, prompt-vorlagen]
   2026-06-04-agenticjames-most-people-have-not-touched-the-best-parts-of-claude-code-skills-forked:
     haupt: skills
     kernaussage: 'Mit context: fork und model im Skill-Frontmatter läuft ein teures Modell nur für eine Aufgabe, ohne den Hauptkontext zu füllen; imperative Descriptions sollen besser triggern.'
@@ -825,12 +825,12 @@ quellen:
     haupt: prompting
     kernaussage: Thariq (Anthropic) beschreibt in einem langen X-Artikel, wie er mit Claude Fable 5 arbeitet.
     keywords: [unknowns, blind spot, known unknowns, prompt, frage, prompts, annahmen, spec-grilling, grilling]
-    neben: [planung]
+    neben: [planung, prompt-vorlagen]
   2026-07-03-trq212-fable-field-guide-unknowns:
     haupt: prompting
     kernaussage: Stärkere Modelle tragen falsche Annahmen selbstbewusst durch die Session; der Engpass ist die Spezifikation, daher Unknowns per Interview, Prototyp und Change Quiz heben.
     keywords: [Fable Unknowns, Known Unknowns, Blind Spot Pass, Change Quiz, Implementation Plan, Decision Record, Spec-Driven Development, Modell-Annahmen]
-    neben: [planung]
+    neben: [planung, prompt-vorlagen]
   2026-07-06-claudedevs-2074208949205881033:
     haupt: autonomie
     kernaussage: Das Claude-Code-Team definiert einen Loop als Agent, der Arbeitszyklen wiederholt, bis ein Stop-Kriterium greift, und sortiert Loops nach Trigger, Stop-Kriterium, verwendetem Primitive
@@ -1014,7 +1014,7 @@ quellen:
     haupt: verifikation
     kernaussage: Anthropic empfiehlt Verifikation als vierstufige Eskalation vom Prompt über Goal-Evaluator und Stop-Hook bis zur zweiten Meinung durch ein frisches Modell, ergänzt um Plan-first und Session-Hygiene.
     keywords: [Claude Code Best Practices, Stop-Hook, /goal, Auto Mode, Agent Teams, Explore Plan Implement Commit, /btw, Verifikations-Subagent]
-    neben: [agent-dateien]
+    neben: [agent-dateien, prompt-vorlagen]
   2026-08-05-creatoreconomy-use-my-human-review-skill-to-edit-html-and-markd:
     haupt: verifikation
     kernaussage: Feedback direkt an der Stelle in der Datei ist präziser als Chat-Anweisungen und verhindert, dass ungeprüfte Agent-Edits Slop ins Projekt tragen.
@@ -1039,7 +1039,7 @@ quellen:
     haupt: autonomie
     kernaussage: Ungenutztes Agent-Kontingent lässt sich über einen reinen Kandidatenbericht verplanen, wenn nur umkehrbare Aufgaben mit Prüfbefehl in isolierten Branches zugelassen sind.
     keywords: [Overnight Agents, Agent-Kontingent nutzen, Triage-Prompt, Git Worktree, Prüfbefehl, Handoff-Notizen, Nachtläufe, Usage Limits]
-    neben: [kontext]
+    neben: [kontext, prompt-vorlagen]
   2026-08-14-agenticjames-ai-memory-is-trash-heres-some-solutions:
     haupt: kontext
     kernaussage: 'Agent Memory ist nicht ein Problem, sondern vier: Ablage, Turn-Erinnerung, multimodale Suche und Abrufzeitpunkt, wobei Pull durch den Agenten und Push per Hook Kosten und Nutzen tauschen.'
@@ -1173,10 +1173,10 @@ quellen:
     keywords: [Codex imagegen, Design-Referenzbild, Bild als Spezifikation, Frontend mit KI, Vibe-Coding-Design, GPT-6 Astra, Agent-Design-Workflow]
     neben: []
   2026-09-19-voxyz_ai-2101355643882065971:
-    haupt: prompting
+    haupt: prompt-vorlagen
     kernaussage: Coding Agents führt man besser über Ergebnisverantwortung mit prüfbarem Endergebnis und Berichtspflicht als über Einzelschritte; der Reviewer läuft getrennt vom Implementierer.
     keywords: [Rollen-Prompts, Tech Lead Prompt, Task Brief, Requirements Lead, Reviewer-Agent, Claude Code Prompts, Codex, Ergebnisverantwortung, Verifikation vor Abschluss]
-    neben: [orchestrierung]
+    neben: [prompting, orchestrierung]
   2026-09-20-avichawla-2101563610644496464:
     haupt: modelle-kosten
     kernaussage: 'Avi Chawla zeigt, wie sich ein offenes LLM ohne Training als schnelle lokale Entscheidungsmaschine nutzen lässt, wenn die erlaubten Antworten vorab feststehen: Statt Text zu erzeugen,
@@ -1199,7 +1199,7 @@ quellen:
     haupt: prototyping
     kernaussage: Referenzquelle, Auswahlkriterien und Prüfschritt gehören einmal in den Skill statt in jeden Auftrag; ein Audit-Skill klickt Flows als Erstnutzer durch.
     keywords: [Design-Reference-Skill, Komponentenbibliothek, UX-Audit-Skill, Codex Skills, Browser-Test, Mobile-Viewport, Skill-Vorlage, Erstnutzer-Test]
-    neben: [skills]
+    neben: [skills, prompt-vorlagen]
   2026-09-22-artificialanlys-2102438210798514391:
     haupt: modelle-kosten
     kernaussage: Opus 5.5 führt den Intelligence Index bei niedrigerem Listenpreis, verbraucht aber mehr Tokens; maßgeblich sind Kosten pro Task, nicht der Preis pro Million Token.
@@ -1214,7 +1214,7 @@ quellen:
     haupt: prompting
     kernaussage: Bei Opus 5.5 helfen ein klares Ziel, eine einzige Stopp-Bedingung und eine Task-Datei, die Kontext-Zusammenfassungen überlebt; weniger Stopps brauchen Gates.
     keywords: [Claude Opus 5.5, Stop-Bedingungen, Definition of Done, TASKS.md, Lange autonome Läufe, Subagents für Audits, CLAUDE.md-Regeln, Permission Prompts, Migration mit Claude Code]
-    neben: [orchestrierung]
+    neben: [orchestrierung, prompt-vorlagen]
   2026-09-22-epoch-the-plunging-price-of-thought:
     haupt: modelle-kosten
     kernaussage: Epoch AI hat Kosten je Leistungsniveau auf fünf Benchmarks (FrontierMath Tier 1–3, OTIS Mock AIME, GPQA Diamond, Chess Puzzles, Mystery Game Puzzles) untersucht.
@@ -1270,7 +1270,7 @@ quellen:
     haupt: orchestrierung
     kernaussage: Ein read-only Subagent pro Prüfgruppe erstellt Befunde, der Hauptagent behebt sie nach Freigabe allein, damit nie zwei Agents dieselbe Datei editieren.
     keywords: [Pre-Launch-Check, Vibe-Coding-Site, Claude Code Subagents, DESIGN.md, Launch-Checkliste, UI-Zustände, Mobile-Test, Read-only Subagent, Opus 5.5]
-    neben: [prototyping]
+    neben: [prototyping, prompt-vorlagen]
   2026-09-27-anthropic-academy-sdlc-playbook:
     haupt: sdlc
     kernaussage: Jede SDLC-Phase endet mit einem committeten Artefakt; beratende Ebenen wie Skills brauchen erzwingende wie Hooks, und der schreibende Agent genehmigt sich nie selbst.
@@ -1302,7 +1302,7 @@ quellen:
     haupt: modelle-kosten
     kernaussage: 'Der Herstellerleitfaden zu `claude-sonnet-5-5` (Stand 2026-09-28) behauptet: gleicher Token-Preis wie Sonnet 5, aber deutlich weniger Tokens pro Aufgabe, daher „bis zu 30 % weniger“ Kosten.'
     keywords: [sonnet 5.5, effort, migration, thinking, between_tools, prompt caching, opus 5.5]
-    neben: []
+    neben: [prompt-vorlagen]
   2026-09-28-unslothai-2104592692072304916:
     haupt: modelle-kosten
     kernaussage: Unsloth kündigt am 28.09.2026 an, dass sich das Decision-Modell „Laya“ (laut Guide eine offene Jev-Alternative) lokal über Unsloth Desktop betreiben lässt, auf CPU, Mac, Windows, Linux
@@ -1364,7 +1364,7 @@ quellen:
     haupt: modelle-kosten
     kernaussage: Die Entwicklerseite „Using GPT-6“ beschreibt die drei GPT-6-Modelle, neue API-Funktionen und Prompt-Bausteine für Astra.
     keywords: [gpt-6, effort, modell-eskalation, cost per task, benchmark, modell, cache, kosten]
-    neben: []
+    neben: [prompt-vorlagen]
   2026-10-02-repo-anthropics-claude-code:
     haupt: erweiterungen
     kernaussage: Laut `CHANGELOG.md` (Eintrag 2.1.287, Repo-Stand Commit `52c76441`) gibt es „Claude Mods“, also Plugins, die tieferes Verhalten ändern dürfen.
