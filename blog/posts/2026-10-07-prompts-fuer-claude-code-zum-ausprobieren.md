@@ -91,7 +91,7 @@ Zwischen Schritt 2 und 3 schreibst du deine Korrekturen direkt in den Plan, etwa
 
 **Wann:** bei Änderungen, die ein bestehendes System berühren. Als teuersten Fehler nennt Tane Code, der für sich funktioniert, aber das umgebende System bricht, etwa durch doppelte Logik oder einen übergangenen Cache.{q:3}
 
-**Ergebnis:** eine `research.md`, an der du Missverständnisse erkennst, bevor sie im Plan landen, und ein `plan.md`, der zu deinem System passt. Erst danach folgt die Umsetzung, bei Tane mit einem eigenen Prompt, der den Plan Punkt für Punkt abhakt.{q:3}
+**Ergebnis:** eine `research.md`, an der du Missverständnisse erkennst, bevor sie im Plan landen, und ein `plan.md`, der zu deinem System passt. Erst danach folgt die Umsetzung, bei Tane mit einem eigenen Prompt, der den Plan Punkt für Punkt abhakt.{q:3} Diesen Prompt stellt der Beitrag zu [langen Agent-Läufen](post:prompts-fuer-lange-agent-laeufe) vor.
 
 Original: [How I Use Claude Code von Boris Tane (englisch)](https://boristane.com/blog/how-i-use-claude-code/)
 
@@ -141,7 +141,7 @@ brauchst. Versteck den Fehler nicht einfach.
 
 **Ergebnis:** eine Behebung, die mit deinen eigenen Schritten geprüft ist, und ein kurzer Bericht über Ursache, Änderung und Prüfung. Die Anweisung „such weiter“ kann teuer werden. Brich ab, wenn der Agent lange ohne Fortschritt sucht, und gib ihm mehr Material.
 
-Original: [Thread von @Voxyz_ai auf X (englisch)](https://x.com/Voxyz_ai/status/2101355643882065971). Dort stehen sechs weitere Rollen-Prompts, unter anderem für Review und Anforderungen.
+Original: [Thread von @Voxyz_ai auf X (englisch)](https://x.com/Voxyz_ai/status/2101355643882065971). Dort stehen sechs weitere Rollen-Prompts. Fünf davon stellt der Beitrag [Fünf Rollen-Prompts für Claude Code und Codex](post:rollen-prompts-fuer-claude-code-und-codex) vor, den Reviewer der Beitrag zu [Review und Abnahme](post:prompts-fuer-review-und-abnahme).
 
 ## Empfehlung
 
