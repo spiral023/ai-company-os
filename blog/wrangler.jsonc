@@ -1,7 +1,7 @@
 {
   // Statischer Blog als Cloudflare Worker mit Static Assets (kein eigener Code).
   // Test:    wrangler deploy --assets ./_probe   (nur Platzhalterseite, noindex)
-  // Produktiv: python build_blog.py && wrangler deploy
+  // Produktiv: python build_blog.py && wrangler deploy && python build_blog.py --ping
   "name": "sp23-blog",
   "compatibility_date": "2026-09-01",
   "assets": {

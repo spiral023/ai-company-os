@@ -7,6 +7,7 @@ Nutzung:
     python blog/build_blog.py --check         # nur prüfen, nichts schreiben
     python blog/build_blog.py --freigeben SLUG  # prüfen, dann status: freigegeben und geprueft_am setzen
     python blog/build_blog.py --auto-freigeben  # alle Entwürfe ohne Fehler und Hinweise freigeben (sofort)
+    python blog/build_blog.py --ping            # nach dem Deployment: WebSub-Hub über neue Feeds informieren
 
 Beiträge liegen in blog/posts/*.md. Nur Beiträge mit `status: freigegeben` und einem
 Datum bis heute erscheinen im öffentlichen Build. Das ist die Freigabe-Schranke:
@@ -23,6 +24,8 @@ import html
 import re
 import shutil
 import sys
+import urllib.parse
+import urllib.request
 from datetime import date, datetime, time, timedelta, timezone
 from email.utils import format_datetime
 from pathlib import Path
@@ -631,7 +634,40 @@ def feed_xml(cfg: dict, md: MarkdownIt, posts: list[dict], selfpath: str, title:
             '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">'
             f'<channel><title>{esc(title)}</title><link>{base}/</link><description>{esc(cfg["beschreibung"])}</description>'
             f'<language>de-de</language><lastBuildDate>{rfc822(latest)}</lastBuildDate>'
-            f'<atom:link href="{base}{selfpath}" rel="self" type="application/rss+xml"/>{"".join(items)}</channel></rss>\n')
+            f'<atom:link href="{base}{selfpath}" rel="self" type="application/rss+xml"/>'
+            + (f'<atom:link href="{esc(cfg["websub_hub"])}" rel="hub"/>' if cfg.get("websub_hub") else "")
+            + f'{"".join(items)}</channel></rss>\n')
+
+
+def _hub_post(hub: str, daten: bytes) -> int:
+    req = urllib.request.Request(hub, data=daten, method="POST",
+                                 headers={"Content-Type": "application/x-www-form-urlencoded"})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        return r.status
+
+
+def websub_ping(cfg: dict, site: Path, senden=_hub_post) -> tuple[bool, list[str]]:
+    """Meldet dem WebSub-Hub jeden gebauten Feed als aktualisiert, damit Reader wie Feedly sofort abrufen."""
+    hub = cfg.get("websub_hub")
+    if not hub:
+        return False, ["site.yaml: websub_hub fehlt, kein Ping gesendet"]
+    base = cfg["base_url"].rstrip("/")
+    feeds = sorted(site.glob("feed.xml")) + sorted(site.glob("feed/*.xml"))
+    if not feeds:
+        return False, [f"Keine Feeds in {site} gefunden, zuerst bauen und deployen"]
+    ok, meldungen = True, []
+    for f in feeds:
+        url = f"{base}/{f.relative_to(site).as_posix()}"
+        try:
+            status, grund = senden(hub, urllib.parse.urlencode({"hub.mode": "publish", "hub.url": url}).encode()), ""
+        except Exception as e:  # Netzwerkfehler einzeln melden, die übrigen Feeds trotzdem pingen
+            status, grund = None, str(e)
+        if status is not None and 200 <= status < 300:
+            meldungen.append(f"Ping {url}: {status}")
+        else:
+            ok = False
+            meldungen.append(f"Ping {url} fehlgeschlagen: {grund or status}")
+    return ok, meldungen
 
 
 def impressum_html(imp: dict) -> str:
@@ -725,9 +761,15 @@ def main() -> int:
     ap.add_argument("--freigeben", metavar="SLUG", help="Beitrag prüfen und freigeben (setzt status und geprueft_am)")
     ap.add_argument("--auto-freigeben", action="store_true",
                     help="alle Entwürfe freigeben, die jede Prüfung ohne Hinweise bestehen (erscheinen sofort)")
+    ap.add_argument("--ping", action="store_true",
+                    help="nach dem Deployment den WebSub-Hub über alle Feeds in blog/_site informieren")
     args = ap.parse_args()
 
     cfg = load_config()
+    if args.ping:
+        ok, meldungen = websub_ping(cfg, HERE / "_site")
+        print("\n".join(meldungen), file=sys.stdout if ok else sys.stderr)
+        return 0 if ok else 1
     posts = []
     fehler = []
     for f in sorted(POSTS.glob("*.md")):

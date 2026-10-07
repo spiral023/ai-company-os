@@ -6,6 +6,9 @@ autor: "Philipp Asanger"
 fusszeile: "Beiträge entstehen mit KI-Unterstützung und werden vor der Veröffentlichung automatisch geprüft"
 quellenhinweis: "Eigene Rechnungen sind im Text als solche gekennzeichnet."
 feed_max: 30
+# WebSub: Feeds nennen diesen Hub; `python blog/build_blog.py --ping` nach jedem Deployment
+# meldet neue Beiträge, damit Reader wie Feedly sofort abrufen statt nach ihrem eigenen Takt.
+websub_hub: "https://pubsubhubbub.appspot.com/"
 quellenverweise_im_text: false   # {q:n} bleiben im Markdown (Prüfung), erscheinen aber nicht im Text
 kategorien:
   modelle: "Modelle & Kosten"

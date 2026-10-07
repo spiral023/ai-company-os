@@ -378,3 +378,37 @@ class TestFaktenSeite:
         html = fs.render({"titel": "Modelle und Preise"}, reg, eintrag)
         assert "Stand 29.09.2026" in html and "22.09.2026" in html and "$0,10" in html
         assert 'id="q1"' in html and 'id="q2"' in html
+
+
+class TestWebSub:
+    def _md(self):
+        return bb.MarkdownIt("commonmark", {"html": False}).enable(["table"])
+
+    def test_feed_nennt_hub(self):
+        xml = bb.feed_xml({**CFG, "websub_hub": "https://hub.test/"}, self._md(), [], "/feed.xml", "T")
+        assert '<atom:link href="https://hub.test/" rel="hub"/>' in xml
+
+    def test_feed_ohne_hub(self):
+        assert 'rel="hub"' not in bb.feed_xml(CFG, self._md(), [], "/feed.xml", "T")
+
+    def test_ping_meldet_jeden_feed(self, tmp_path):
+        (tmp_path / "feed").mkdir()
+        (tmp_path / "feed.xml").write_text("x", encoding="utf-8")
+        (tmp_path / "feed" / "tools.xml").write_text("x", encoding="utf-8")
+        gesendet = []
+        ok, _ = bb.websub_ping({**CFG, "websub_hub": "https://hub.test/"}, tmp_path,
+                               senden=lambda hub, daten: gesendet.append((hub, daten)) or 204)
+        assert ok and len(gesendet) == 2
+        assert b"hub.mode=publish" in gesendet[0][1]
+        assert b"hub.url=https%3A%2F%2Fx.test%2Ffeed.xml" in gesendet[0][1]
+        assert b"hub.url=https%3A%2F%2Fx.test%2Ffeed%2Ftools.xml" in gesendet[1][1]
+
+    def test_ping_fehler_wird_gemeldet(self, tmp_path):
+        (tmp_path / "feed.xml").write_text("x", encoding="utf-8")
+        ok, meldungen = bb.websub_ping({**CFG, "websub_hub": "https://hub.test/"}, tmp_path,
+                                       senden=lambda hub, daten: 500)
+        assert not ok and "fehlgeschlagen" in meldungen[0]
+
+    def test_ping_ohne_hub(self, tmp_path):
+        ok, meldungen = bb.websub_ping(CFG, tmp_path)
+        assert not ok and "websub_hub" in meldungen[0]

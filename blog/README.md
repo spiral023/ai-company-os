@@ -8,7 +8,7 @@ Statischer Blog aus Markdown, gespeist aus der Wissensbasis (`80_Knowledge/`). D
 2. **Vorschau:** `python blog/build_blog.py --drafts`, danach `blog/_preview/` lokal öffnen (`python -m http.server -d blog/_preview 8000`).
 3. **Freigabe:** `python blog/build_blog.py --auto-freigeben` gibt jeden Entwurf frei, der alle Prüfungen ohne Fehler und Hinweise besteht. Er erscheint sofort mit dem nächsten Build und Deployment (Beschluss Philipp, 07.10.2026; bis dahin galt der Folgetag). Zurückhalten lässt er sich mit `status: entwurf` oder einem späteren Datum. Einzeln freigeben: `--freigeben <slug>`. Vermerke im Frontmatter: `geprueft_am`, bei Automatik `freigabe: automatisch`. Entwürfe mit Hinweisen bleiben liegen.
 4. **Build:** `python blog/build_blog.py` schreibt `blog/_site/`. Nur freigegebene Beiträge landen in Seite und Feed.
-5. **Deployment** nach ai-blog.sp23.online: Cloudflare Worker mit Static Assets (`blog/wrangler.jsonc`). Testseite: `cd blog && wrangler deploy --assets ./_probe`, produktiv: `python build_blog.py && wrangler deploy`.
+5. **Deployment** nach ai-blog.sp23.online: Cloudflare Worker mit Static Assets (`blog/wrangler.jsonc`). Testseite: `cd blog && wrangler deploy --assets ./_probe`, produktiv: `python build_blog.py && wrangler deploy && python build_blog.py --ping`. Der Ping meldet dem WebSub-Hub (`websub_hub` in `site.yaml`) alle Feeds als aktualisiert; Feedly und andere Reader mit WebSub holen neue Beiträge dann innerhalb von Minuten statt nach ihrem eigenen Abruftakt.
 
 ## Frontmatter
 
