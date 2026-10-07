@@ -1,6 +1,6 @@
 # Agent-Dateien & Memory
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-07. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen.
 
@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** progressive disclosure (5), agents.md (4), context engineering (3), claude.md (3), agent_docs (2), instruktionsbudget (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), llm wiki (2), auto mode (2), /init vermeiden, claude.md schreiben, claude code system-reminder, instruction following, coding-agent-fehler, annahmen offenlegen, test-first, claude.md prompt
+- **Häufig in den Quellen:** progressive disclosure (5), agents.md (5), claude.md (4), context engineering (3), instruktionsbudget (2), agent_docs (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), llm wiki (2), /doctor (2), auto mode (2), /init vermeiden, instruction following, claude code system-reminder, claude.md schreiben, annahmen offenlegen, karpathy system prompt, erfolgskriterien
 
 ## Verwandte Themen
 
@@ -20,10 +20,11 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 
 ## Patterns (1)
 
-- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 31 Belege
+- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 32 Belege
 
-## Quellen (14)
+## Quellen (15)
 
+- [[2026-09-18-repo-anthropics-claude-code-agents-md-support]] — Claude Code liest seit 2.1.277 AGENTS.md, wenn keine CLAUDE.md existiert, sodass eine Instruktionsdatei mehrere Agents bedienen kann; eine zusätzliche CLAUDE.md hat Vorrang.
 - [[2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk]] — Lint-Warnungen direkt im Tool-Ergebnis steuern Agents kostengünstig ohne Blockade; harte Durchsetzung braucht weiterhin ein separates CI-Gate.
 - [[2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the]] — Neuere Modelle arbeiten mit weniger vorgegebenem Kontext besser; lange CLAUDE.md-Dateien sollten gekürzt und Wissen in bei Bedarf ladbare Skills ausgelagert werden.
 - [[2026-07-06-mattpocockuk-2074060484047712521]] — Matt Pocock empfiehlt einen Zwei-Schritt-Trick fürs Debugging: den Dev-Server per `tee` in eine lokale Datei schreiben lassen und in `AGENTS.md` auf diese Datei verweisen.

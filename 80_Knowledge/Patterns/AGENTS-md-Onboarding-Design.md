@@ -62,6 +62,7 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 - 2026-08-22 · [[2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht]] · meinung — Quellcode als einzige Quelle der Wahrheit halten; ausgelagerte Notizen, Logs und Kommentare am Session-Ende auf Aktualität prüfen, weil der Agent sie später wieder als wahr einliest.
 - 2026-07-06 · [[2026-07-06-mattpocockuk-2074060484047712521]] · meinung — Dev-Server per `tee` in Logdatei, Zeiger in `AGENTS.md`: Agent sieht Laufzeitausgabe ohne Prozessbesitz; ungemessener Praxistipp, Logwachstum nicht adressiert.
 - 2026-07-15 · [[2026-07-15-xudong07452910-2077246527756775933]] · meinung — Empfiehlt, in `AGENTS.md` Akzeptanzkriterien, Berechtigungsgrenzen und Verifikationsablauf zu betonen statt enger Prozesssteuerung. Reine Autorenmeinung zu einem Herstellerdokument, ohne Beispiel.
+- 2026-09-18 · [[2026-09-18-repo-anthropics-claude-code-agents-md-support]] · verifiziert — Claude Code liest seit 2.1.277 `AGENTS.md`, wenn keine `CLAUDE.md` existiert (umstellbar in `/config` unter „Project instructions“), seit 2.1.281 auch über Bedrock, Vertex, Foundry und Gateways. Eine Datei kann damit Claude Code und andere Agents bedienen; eine zusätzliche `CLAUDE.md` hat Vorrang.
 
 ## Spannungen & offene Fragen
 

@@ -823,7 +823,8 @@ quellen:
     neben: []
   2026-07-03-trq212-2073100352921215386:
     haupt: prompting
-    kernaussage: Die Qualität langer Fable-Aufgaben hängt laut Thariq daran, die Unknowns zwischen Prompt und Codebasis zu klären; Techniken vor, während und nach der Umsetzung, vom Blind Spot Pass bis zum Quiz vor dem Merge.
+    kernaussage: Die Qualität langer Fable-Aufgaben hängt laut Thariq daran, die Unknowns zwischen Prompt und Codebasis zu klären; Techniken vor, während und nach der Umsetzung, vom Blind Spot Pass bis
+      zum Quiz vor dem Merge.
     keywords: [Fable Unknowns, Known Unknowns, Blind Spot Pass, Change Quiz, Implementation Plan, Implementation Notes, Spec-Driven Development, Spec-Grilling, Modell-Annahmen]
     neben: [planung, prompt-vorlagen]
   2026-07-06-claudedevs-2074208949205881033:
@@ -1162,6 +1163,11 @@ quellen:
     kernaussage: 'Kleine Urteile in Agent-Schleifen brauchen kein generatives LLM: ein typisiertes, kalibriertes Entscheidungsmodell liefert Wahrscheinlichkeiten, Schwellen und Verzweigung bleiben im Code.'
     keywords: [Jev TypeSafe AI, Entscheidungsmodell, Model Routing, Risiko-Gating vor Tool-Calls, Kalibrierte Konfidenz, Reranking, Shadow Mode, LangChain Middleware, Closed Weights]
     neben: [sicherheit]
+  2026-09-18-repo-anthropics-claude-code-agents-md-support:
+    haupt: agent-dateien
+    kernaussage: Claude Code liest seit 2.1.277 AGENTS.md, wenn keine CLAUDE.md existiert, sodass eine Instruktionsdatei mehrere Agents bedienen kann; eine zusätzliche CLAUDE.md hat Vorrang.
+    keywords: [AGENTS.md, CLAUDE.md, Claude Code AGENTS.md Support, Project instructions, /config, /doctor, Instruktionsdatei, Codex]
+    neben: [erweiterungen]
   2026-09-19-voxyz_ai-2101295246659182978:
     haupt: prototyping
     kernaussage: 'Erst ein Referenzbild generieren, dann das Codemodell umsetzen lassen: Gestaltung und Implementierung werden getrennt, das Bild dient als Spezifikation.'

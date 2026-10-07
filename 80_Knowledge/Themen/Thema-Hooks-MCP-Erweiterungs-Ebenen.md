@@ -1,6 +1,6 @@
 # Hooks, MCP & Erweiterungs-Ebenen
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-07. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook, MCP, Plugin) und wie Hooks, MCP-Server und Plugins konfiguriert werden.
 
@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), progressive disclosure (4), subagents (4), plugins (4), claude.md (4), claude code skills (3), pretooluse (3), mcp (3), hooks (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), hook (2), plugin (2), skill description (2), ci-gate (2), explore plan general-purpose, mcp connectors
+- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), subagents (4), progressive disclosure (4), plugins (4), claude code skills (3), pretooluse (3), mcp (3), hooks (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), hook (2), plugin (2), codex (2), /doctor (2), agents.md (2), skill description (2)
 
 ## Verwandte Themen
 
@@ -47,6 +47,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-E
 
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]]
 - [[2026-10-02-repo-jakubantalik-transitions-dev]]
+- [[2026-09-18-repo-anthropics-claude-code-agents-md-support]]
 - [[2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk]]
 - [[2026-04-30-zodchiii-claude-code-env-security]]
 - [[2026-02-01-anthropic-docs-extend-claude-with-skills]]

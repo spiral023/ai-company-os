@@ -10,7 +10,7 @@ Jede Source und jedes Pattern hat einen Haupt-Cluster und höchstens zwei Nebenc
 | Skill-Design | [[Thema-Skill-Design]] | 21 | 9 | Claude Code Skills |
 | Verifikation, Tests & Review | [[Thema-Verifikation-Tests-Review]] | 19 | 4 | AI Code Review |
 | Kontext-Management | [[Thema-Kontext-Management]] | 17 | 2 | Context Engineering |
-| Agent-Dateien & Memory | [[Thema-Agent-Dateien-Memory]] | 14 | 1 | CLAUDE.md |
+| Agent-Dateien & Memory | [[Thema-Agent-Dateien-Memory]] | 15 | 1 | CLAUDE.md |
 | Multi-Agent & Parallelisierung | [[Thema-Multi-Agent-Parallelisierung]] | 14 | 3 | Claude Code Subagents |
 | Workflow-Frameworks & Tools | [[Thema-Workflow-Frameworks-Tools]] | 14 | 0 | Claude Code Workflow |
 | Prototyping & UI-Design | [[Thema-Prototyping-UI-Design]] | 14 | 2 | Lovable |

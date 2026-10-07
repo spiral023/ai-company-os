@@ -15,11 +15,11 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | kosten pro task | 13 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | subagents | 13 | Autonome Läufe, Loops & CI, Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Modelle, Kosten & Limits, Multi-Agent & Parallelisierung, Sicherheit & Sandboxing, Skill-Design |
 | claude code skills | 11 | Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Skill-Design, Verifikation, Tests & Review, Workflow-Frameworks & Tools |
-| claude.md | 10 | Agent-Dateien & Memory, Einstieg & Best Practices, Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Modelle, Kosten & Limits |
+| claude.md | 11 | Agent-Dateien & Memory, Einstieg & Best Practices, Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Modelle, Kosten & Limits |
 | context rot | 10 | Kontext-Management, Multi-Agent & Parallelisierung, Rolle, Lernen & Markt, Skill-Design |
 | gpt-6 | 10 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
+| agents.md | 9 | Agent-Dateien & Memory, Kontext-Management, Modelle, Kosten & Limits, Prompting & Klärung, Rolle, Lernen & Markt |
 | preis | 9 | Modelle, Kosten & Limits |
-| agents.md | 8 | Agent-Dateien & Memory, Kontext-Management, Modelle, Kosten & Limits, Prompting & Klärung, Rolle, Lernen & Markt |
 | spec-driven development | 8 | Multi-Agent & Parallelisierung, Prompting & Klärung, Spezifikation & Planung, Workflow-Frameworks & Tools |
 | /clear | 7 | Einstieg & Best Practices, Kontext-Management, Modelle, Kosten & Limits, Spezifikation & Planung |
 | context engineering | 7 | Agent-Dateien & Memory, Autonome Läufe, Loops & CI, Kontext-Management, Prompting & Klärung, Rolle, Lernen & Markt |
@@ -39,6 +39,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | terminal-bench | 6 | Modelle, Kosten & Limits, Rolle, Lernen & Markt |
 | vibe coding | 6 | Einstieg & Best Practices, Prototyping & UI-Design, Rolle, Lernen & Markt, Spezifikation & Planung |
 | auto mode | 5 | Autonome Läufe, Loops & CI, Kontext-Management, Verifikation, Tests & Review |
+| codex | 5 | Agent-Dateien & Memory, Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits, Prompts zum Ausprobieren, Prototyping & UI-Design |
 | grill-me | 5 | Skill-Design, Spezifikation & Planung, Workflow-Frameworks & Tools |
 | lovable | 5 | Prototyping & UI-Design |
 | matt pocock skills | 5 | Kontext-Management, Skill-Design, Workflow-Frameworks & Tools |
@@ -53,7 +54,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | anthropic_base_url | 4 | Modelle, Kosten & Limits |
 | claude code best practices | 4 | Einstieg & Best Practices, Kontext-Management, Verifikation, Tests & Review |
 | claude code subagents | 4 | Hooks, MCP & Erweiterungs-Ebenen, Multi-Agent & Parallelisierung |
-| codex | 4 | Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits, Prompts zum Ausprobieren, Prototyping & UI-Design |
 | context pollution | 4 | Kontext-Management, Verifikation, Tests & Review |
 | cost per task | 4 | Modelle, Kosten & Limits |
 | gpt-6 astra | 4 | Multi-Agent & Parallelisierung, Prompting & Klärung, Prototyping & UI-Design |
@@ -119,6 +119,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | userpromptsubmit hook | 3 | Kontext-Management, Modelle, Kosten & Limits, Skill-Design |
 | verifier | 3 | Modelle, Kosten & Limits, Verifikation, Tests & Review |
 | verifikation | 3 | Einstieg & Best Practices, Verifikation, Tests & Review |
+| /doctor | 2 | Agent-Dateien & Memory, Hooks, MCP & Erweiterungs-Ebenen |
 | 5-stunden-fenster | 2 | Modelle, Kosten & Limits |
 | addblockedby | 2 | Multi-Agent & Parallelisierung |
 | agent memory | 2 | Kontext-Management |
