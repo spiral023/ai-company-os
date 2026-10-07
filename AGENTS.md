@@ -68,7 +68,7 @@ Immer nach Freigabe fragen vor:
 
 - Produktion-Deployments
 - echten Kunden-E-Mails oder öffentlichen Veröffentlichungen
-  - Ausnahme Blog (Beschluss Philipp, 29.09.2026): `python blog/build_blog.py --auto-freigeben` darf Blog-Entwürfe freigeben, die alle automatischen Prüfungen ohne Fehler und Hinweise bestehen. Sie erscheinen frühestens am Folgetag. Deployment und Push bleiben ohne Auftrag ausgeschlossen.
+  - Ausnahme Blog (Beschluss Philipp, 29.09.2026, geändert 07.10.2026): `python blog/build_blog.py --auto-freigeben` darf Blog-Entwürfe freigeben, die alle automatischen Prüfungen ohne Fehler und Hinweise bestehen. Sie erscheinen sofort, also mit dem nächsten Build und Deployment; die frühere Wartezeit bis zum Folgetag entfällt. Deployment und Push bleiben ohne Auftrag ausgeschlossen.
 - Preisänderungen
 - rechtlichen, steuerlichen oder datenschutzrelevanten Aussagen
 - Änderungen an Authentifizierung, Billing, Security oder Tenant-Isolation

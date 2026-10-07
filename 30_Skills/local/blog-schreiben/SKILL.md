@@ -9,7 +9,7 @@ Schreibt Entwürfe für den Blog in `blog/posts/`. Leser sind technisch interess
 
 ## Harte Regeln
 
-- **Entwürfe schreiben, nie selbst freigeben.** Jeder Beitrag beginnt mit `status: entwurf`. Den Status nie von Hand auf `freigegeben` setzen und nie deployen. Philipp hat am 29.09.2026 beschlossen, dass die Freigabe automatisch läuft: `python blog/build_blog.py --auto-freigeben` gibt jeden Entwurf frei, der alle Prüfungen ohne Fehler und Hinweise besteht, und setzt ihn frühestens auf den Folgetag. Wer Hinweise nicht beheben kann, lässt den Entwurf liegen und meldet das.
+- **Entwürfe schreiben, nie selbst freigeben.** Jeder Beitrag beginnt mit `status: entwurf`. Den Status nie von Hand auf `freigegeben` setzen und nie deployen. Philipp hat am 29.09.2026 beschlossen, dass die Freigabe automatisch läuft: `python blog/build_blog.py --auto-freigeben` gibt jeden Entwurf frei, der alle Prüfungen ohne Fehler und Hinweise besteht, und veröffentlicht ihn sofort (seit 07.10.2026, vorher frühestens am Folgetag). Wer Hinweise nicht beheben kann, lässt den Entwurf liegen und meldet das.
 - **Nur belegte Aussagen.** Jede Zahl und jede Behauptung stammt aus einer Source-Notiz, einem Pattern oder dem Fakten-Register (`80_Knowledge/Fakten/Modelle-und-Preise.md`). Nichts aus eigenem Modellwissen als Tatsache ausgeben.
 - **Quellen sind Pflicht.** Im Frontmatter `quellen:` mit den Basisnamen der Source-Notizen. Der Generator erzeugt daraus Titel, Autor, Datum und Original-URL.
 - **Eigenes von Fremdem trennen.** Eigene Rechnungen kennzeichnen („eigene Rechnung“). Bei Zahlen einmal nennen, wer sie gemessen hat („laut Artificial Analysis“), und eine Einschränkung nur, wenn sie die Entscheidung ändert (Herstellerangabe bei Preisen, anderer Index).
@@ -78,7 +78,7 @@ Beim Schreiben vermeiden, beim Prüfen als Detect-Durchgang suchen. Quelle: `ext
 5. Beitrag schreiben nach `blog/posts/YYYY-MM-DD-<slug>.md` mit dem Frontmatter aus `blog/README.md`. Das Datum ist das Tagesdatum (oder das gewünschte Veröffentlichungsdatum).
 6. Prüfen: `python blog/build_blog.py --check`. Hinweise (Zahl ohne Beleg, Beleg-Meta) beheben, sonst wird der Entwurf nicht automatisch freigegeben. Dann `--drafts` und die Vorschau ansehen.
 7. Slop-Durchgang (Detect): den Entwurf einmal komplett gegen „Slop-Muster“ lesen. Jeden Fund mit zitierter Zeile notieren und selbst beheben, ohne Zahlen, `{q:n}`-Marker oder Aussagen zu ändern. Danach Schritt 6 wiederholen.
-8. Freigabe: `python blog/build_blog.py --auto-freigeben`. Der Beitrag erscheint frühestens am Folgetag.
+8. Freigabe: `python blog/build_blog.py --auto-freigeben`. Der Beitrag erscheint sofort mit dem nächsten Build und Deployment.
 9. Bericht an Philipp: Titel, Format, Länge, verwendete Quellen, freigegebene und liegen gebliebene Entwürfe mit Grund.
 
 ## Häufige Fehler

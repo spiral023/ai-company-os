@@ -6,7 +6,7 @@ Nutzung:
     python blog/build_blog.py --drafts        # Entwürfe zusätzlich, nach blog/_preview
     python blog/build_blog.py --check         # nur prüfen, nichts schreiben
     python blog/build_blog.py --freigeben SLUG  # prüfen, dann status: freigegeben und geprueft_am setzen
-    python blog/build_blog.py --auto-freigeben  # alle Entwürfe ohne Fehler und Hinweise freigeben (ab morgen)
+    python blog/build_blog.py --auto-freigeben  # alle Entwürfe ohne Fehler und Hinweise freigeben (sofort)
 
 Beiträge liegen in blog/posts/*.md. Nur Beiträge mit `status: freigegeben` und einem
 Datum bis heute erscheinen im öffentlichen Build. Das ist die Freigabe-Schranke:
@@ -649,13 +649,14 @@ def write(out: Path, rel: str, text: str) -> None:
     target.write_text(text, encoding="utf-8", newline="\n")
 
 
-AUTO_VERZOEGERUNG_TAGE = 1  # automatisch freigegebene Beiträge erscheinen frühestens morgen (Zeit zum Eingreifen)
+AUTO_VERZOEGERUNG_TAGE = 0  # automatisch freigegebene Beiträge erscheinen sofort (Beschluss Philipp, 07.10.2026)
 
 
 def freigeben(post: dict, posts: list[dict], heute: date, automatisch: bool = False) -> tuple[bool, str]:
     """Beitrag freigeben: erneut prüfen, status und geprueft_am im Frontmatter setzen.
 
-    Automatisch: frühestens morgen, Vermerk `freigabe: automatisch`, und der Beitrag darf keine Hinweise haben.
+    Automatisch: Datum frühestens heute plus AUTO_VERZOEGERUNG_TAGE, Vermerk `freigabe: automatisch`,
+    und der Beitrag darf keine Hinweise haben.
     """
     if post["status"] == "freigegeben":
         return False, f"{post['datei']} ist schon freigegeben"
@@ -723,7 +724,7 @@ def main() -> int:
     ap.add_argument("--check", action="store_true", help="nur prüfen")
     ap.add_argument("--freigeben", metavar="SLUG", help="Beitrag prüfen und freigeben (setzt status und geprueft_am)")
     ap.add_argument("--auto-freigeben", action="store_true",
-                    help="alle Entwürfe freigeben, die jede Prüfung ohne Hinweise bestehen (erscheinen frühestens morgen)")
+                    help="alle Entwürfe freigeben, die jede Prüfung ohne Hinweise bestehen (erscheinen sofort)")
     args = ap.parse_args()
 
     cfg = load_config()

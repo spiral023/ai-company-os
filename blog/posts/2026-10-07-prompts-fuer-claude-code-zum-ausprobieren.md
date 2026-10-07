@@ -1,6 +1,6 @@
 ---
 titel: "Fünf Prompts für Claude Code zum Ausprobieren: von der Wissenslücke bis zum Bugfix"
-datum: 2026-10-08
+datum: 2026-10-07
 kategorie: prompts
 zusammenfassung: "Fünf Prompts für Claude Code aus öffentlichen Quellen, auf Deutsch übertragen: was jeder Prompt macht, wann du ihn einsetzt und was dabei herauskommt. Mit Link zum englischen Original."
 status: freigegeben

@@ -6,7 +6,7 @@ Statischer Blog aus Markdown, gespeist aus der Wissensbasis (`80_Knowledge/`). D
 
 1. **Entwurf schreiben** (Skill `blog-schreiben`): `blog/posts/YYYY-MM-DD-<slug>.md` mit `status: entwurf`.
 2. **Vorschau:** `python blog/build_blog.py --drafts`, danach `blog/_preview/` lokal öffnen (`python -m http.server -d blog/_preview 8000`).
-3. **Freigabe:** `python blog/build_blog.py --auto-freigeben` gibt jeden Entwurf frei, der alle Prüfungen ohne Fehler und Hinweise besteht. Er erscheint frühestens am Folgetag (Zeit zum Eingreifen: `status: entwurf` zurücksetzen oder das Datum verschieben). Einzeln freigeben: `--freigeben <slug>`. Vermerke im Frontmatter: `geprueft_am`, bei Automatik `freigabe: automatisch`. Entwürfe mit Hinweisen bleiben liegen.
+3. **Freigabe:** `python blog/build_blog.py --auto-freigeben` gibt jeden Entwurf frei, der alle Prüfungen ohne Fehler und Hinweise besteht. Er erscheint sofort mit dem nächsten Build und Deployment (Beschluss Philipp, 07.10.2026; bis dahin galt der Folgetag). Zurückhalten lässt er sich mit `status: entwurf` oder einem späteren Datum. Einzeln freigeben: `--freigeben <slug>`. Vermerke im Frontmatter: `geprueft_am`, bei Automatik `freigabe: automatisch`. Entwürfe mit Hinweisen bleiben liegen.
 4. **Build:** `python blog/build_blog.py` schreibt `blog/_site/`. Nur freigegebene Beiträge landen in Seite und Feed.
 5. **Deployment** nach ai-blog.sp23.online: Cloudflare Worker mit Static Assets (`blog/wrangler.jsonc`). Testseite: `cd blog && wrangler deploy --assets ./_probe`, produktiv: `python build_blog.py && wrangler deploy`.
 

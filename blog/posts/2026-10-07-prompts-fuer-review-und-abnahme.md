@@ -1,6 +1,6 @@
 ---
 titel: "Vier Prompts für Review und Abnahme: So prüfst du, was der Agent gebaut hat"
-datum: 2026-10-08
+datum: 2026-10-07
 kategorie: prompts
 zusammenfassung: "Vier Review-Prompts für Claude Code aus vier Quellen, auf Deutsch übertragen: Prüfung gegen den Plan, Merge-Blocker im Diff, ein unabhängiger Reviewer und ein Quiz, das du vor dem Merge bestehen musst. Mit Link zum Original."
 status: freigegeben

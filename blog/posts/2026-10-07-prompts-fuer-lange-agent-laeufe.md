@@ -1,6 +1,6 @@
 ---
 titel: "Vier Prompts für lange Agent-Läufe: Aufgaben finden, durcharbeiten, ehrlich abschließen"
-datum: 2026-10-08
+datum: 2026-10-07
 kategorie: prompts
 zusammenfassung: "Vier Prompts aus vier Quellen für lange Läufe mit Claude Code und Codex, auf Deutsch übertragen: Aufgaben für die Nacht finden, einen Plan durcharbeiten, echte Prüfungen erzwingen und Stopps regeln. Mit Link zum Original."
 status: freigegeben

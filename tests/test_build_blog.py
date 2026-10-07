@@ -242,15 +242,21 @@ def lade(pfad):
 
 
 class TestAutoFreigeben:
-    def test_gibt_sauberen_entwurf_frei_ab_morgen(self, tmp_path, monkeypatch):
+    def test_gibt_sauberen_entwurf_sofort_frei(self, tmp_path, monkeypatch):
         monkeypatch.setattr(bb, "POSTS", tmp_path)
         f = schreibe(tmp_path, "a")
         posts = lade(tmp_path)
         meldungen = bb.auto_freigeben(posts, CFG, HEUTE)
         text = f.read_text(encoding="utf-8")
         assert "status: freigegeben" in text and "freigabe: automatisch" in text
-        assert "datum: 2026-09-30" in text and "erscheint ab 30.09.2026" in meldungen[0]
-        assert not bb.ist_sichtbar(bb.parse_post(f), HEUTE)  # heute noch nicht sichtbar
+        assert "datum: 2026-09-29" in text and "sofort sichtbar" in meldungen[0]
+        assert bb.ist_sichtbar(bb.parse_post(f), HEUTE)
+
+    def test_vergangenes_datum_wird_auf_heute_gesetzt(self, tmp_path, monkeypatch):
+        monkeypatch.setattr(bb, "POSTS", tmp_path)
+        f = schreibe(tmp_path, "a")
+        bb.auto_freigeben(lade(tmp_path), CFG, HEUTE + timedelta(days=2))
+        assert "datum: 2026-10-01" in f.read_text(encoding="utf-8")
 
     def test_hinweis_blockiert(self, tmp_path, monkeypatch):
         monkeypatch.setattr(bb, "POSTS", tmp_path)

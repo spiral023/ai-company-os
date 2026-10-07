@@ -1,6 +1,6 @@
 ---
 titel: "Fünf Rollen-Prompts für Claude Code und Codex: von der Anforderung bis zum Backend"
-datum: 2026-10-08
+datum: 2026-10-07
 kategorie: prompts
 zusammenfassung: "Fünf Rollen-Prompts von @Voxyz_ai für Claude Code und Codex, auf Deutsch übertragen: Requirements Lead, Tech Lead, Performance, Frontend und Backend. Was jeder Prompt verlangt, wann du ihn einsetzt und was herauskommt."
 status: freigegeben
