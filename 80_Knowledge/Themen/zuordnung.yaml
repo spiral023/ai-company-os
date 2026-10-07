@@ -823,13 +823,8 @@ quellen:
     neben: []
   2026-07-03-trq212-2073100352921215386:
     haupt: prompting
-    kernaussage: Thariq (Anthropic) beschreibt in einem langen X-Artikel, wie er mit Claude Fable 5 arbeitet.
-    keywords: [unknowns, blind spot, known unknowns, prompt, frage, prompts, annahmen, spec-grilling, grilling]
-    neben: [planung, prompt-vorlagen]
-  2026-07-03-trq212-fable-field-guide-unknowns:
-    haupt: prompting
-    kernaussage: Stärkere Modelle tragen falsche Annahmen selbstbewusst durch die Session; der Engpass ist die Spezifikation, daher Unknowns per Interview, Prototyp und Change Quiz heben.
-    keywords: [Fable Unknowns, Known Unknowns, Blind Spot Pass, Change Quiz, Implementation Plan, Decision Record, Spec-Driven Development, Modell-Annahmen]
+    kernaussage: Die Qualität langer Fable-Aufgaben hängt laut Thariq daran, die Unknowns zwischen Prompt und Codebasis zu klären; Techniken vor, während und nach der Umsetzung, vom Blind Spot Pass bis zum Quiz vor dem Merge.
+    keywords: [Fable Unknowns, Known Unknowns, Blind Spot Pass, Change Quiz, Implementation Plan, Implementation Notes, Spec-Driven Development, Spec-Grilling, Modell-Annahmen]
     neben: [planung, prompt-vorlagen]
   2026-07-06-claudedevs-2074208949205881033:
     haupt: autonomie

@@ -4,11 +4,11 @@
 
 ## Zweck
 
-Verschiebt den Engpass agentischer Arbeit von „Wie schreibe ich einen besseren Prompt?“ zu „Was weiß ich, das ich nicht aufgeschrieben habe — und was weiß ich nicht, das ich wissen müsste?“. Adressiert, dass stärkere Modelle das Unknowns-Problem verschärfen statt lösen: sie lösen Ambiguität selbstbewusst auf und tragen eine falsche Annahme konsistent durch eine ganze Multi-File-Session, statt (wie schwächere Modelle) laut und lokal zu scheitern.
+Verschiebt den Engpass agentischer Arbeit von „Wie schreibe ich einen besseren Prompt?“ zu „Was weiß ich, das ich nicht aufgeschrieben habe — und was weiß ich nicht, das ich wissen müsste?“. Thariq nennt Fable 5 das erste Modell, bei dem die Qualität der Arbeit vor allem davon abhängt, wie gut er dessen Unknowns klärt: Trifft das Modell auf eine Lücke, entscheidet es nach bester Vermutung, und je länger die Arbeit läuft, desto mehr Lücken tauchen auf.
 
 ## Funktionsweise
 
-Prompts/Skills/Kontext sind nur eine Karte der Arbeit; die echte Codebasis mit ihrer Geschichte und den undokumentierten Constraints im Kopf des Entwicklers ist das Territorium — die Differenz sind die Unknowns. Vier-Quadranten-Modell: Known Knowns (explizit im Prompt), Known Unknowns (bekannte Lücken), Unknown Knowns (so offensichtlich, dass man es nie aufschreiben würde), Unknown Unknowns (woran man nicht mal gedacht hat) — die gefährlichsten sind die unteren beiden. Konkrete Techniken entlang der Zeitachse: **vor der Arbeit** — Blind Spot Pass (offen sagen, was man selbst nicht versteht, das Modell kartiert Standards/Risiken/Fragen), Brainstorms/Prototypen (bei Design-Entscheidungen mehrere bewusst unterschiedliche Wegwerf-Prototypen statt einer Prosa-Beschreibung — Reagieren ist leichter als Spezifizieren), Interviews (das Modell befragt den Nutzer eine Frage nach der anderen, priorisiert nach architektonischer Tragweite, mit dokumentiertem Decision Record — dreht die übliche Prompt-Richtung um), References statt Beschreibungen (Quellcode/Referenz-Library benennen statt schwer beschreibbares Verhalten in Prosa zu spezifizieren), Implementation Plans nach Änderungswahrscheinlichkeit sortiert (Datenmodelle/Interfaces zuerst, mechanisches Refactoring ans Ende — konzentriert Review dort, wo Unknowns am teuersten sind); **während der Arbeit** — Implementation Notes (laufendes Protokoll über Entscheidungen, Abweichungen, unerwartete Funde); **nach der Arbeit** — Pitches/Explainer (Spezifikation+Prototyp+Notes zu einem Dokument mit Demo statt rohem Diff) und der **Change Quiz**: vor dem Merge lässt man sich vom Modell ein Quiz über die eigenen Änderungen stellen — wer es nicht besteht, hat die Änderung nicht verstanden und sollte nicht mergen (Verifikation für den Menschen, nicht für das Modell).
+Prompts/Skills/Kontext sind nur eine Karte der Arbeit; die echte Codebasis mit ihrer Geschichte und den undokumentierten Constraints im Kopf des Entwicklers ist das Territorium — die Differenz sind die Unknowns. Vier-Quadranten-Modell: Known Knowns (explizit im Prompt), Known Unknowns (bekannte Lücken), Unknown Knowns (so offensichtlich, dass man es nie aufschreiben würde), Unknown Unknowns (woran man nicht mal gedacht hat) — die gefährlichsten sind die unteren beiden. Konkrete Techniken entlang der Zeitachse: **vor der Arbeit** — Blind Spot Pass (offen sagen, was man selbst nicht versteht, das Modell kartiert Standards/Risiken/Fragen), Brainstorms/Prototypen (bei Design-Entscheidungen mehrere bewusst unterschiedliche Wegwerf-Prototypen statt einer Prosa-Beschreibung — Reagieren ist leichter als Spezifizieren), Interviews (das Modell befragt den Nutzer eine Frage nach der anderen, priorisiert nach architektonischer Tragweite — dreht die übliche Prompt-Richtung um), References statt Beschreibungen (Quellcode/Referenz-Library benennen statt schwer beschreibbares Verhalten in Prosa zu spezifizieren), Implementation Plans nach Änderungswahrscheinlichkeit sortiert (Datenmodelle/Interfaces zuerst, mechanisches Refactoring ans Ende — konzentriert Review dort, wo Unknowns am teuersten sind); **während der Arbeit** — Implementation Notes (laufendes Protokoll über Entscheidungen, Abweichungen, unerwartete Funde); **nach der Arbeit** — Pitches/Explainer (Spezifikation+Prototyp+Notes zu einem Dokument mit Demo statt rohem Diff) und der **Change Quiz**: vor dem Merge lässt man sich vom Modell ein Quiz über die eigenen Änderungen stellen — wer es nicht besteht, hat die Änderung nicht verstanden und sollte nicht mergen (Verifikation für den Menschen, nicht für das Modell).
 
 ## Vorteile
 
@@ -24,19 +24,18 @@ Prompts/Skills/Kontext sind nur eine Karte der Arbeit; die echte Codebasis mit i
 
 ## Wann einsetzen, wann nicht
 
-- Einsetzen: nichttriviale Vorhaben mit unklarer oder unvollständiger Spezifikation, besonders wenn der Nutzer selbst Wissenslücken in der Zieldomäne hat oder das Modell über mehrere Dateien hinweg konsistent falsch abbiegen könnte.
+- Einsetzen: nichttriviale Vorhaben mit unklarer oder unvollständiger Spezifikation, besonders wenn der Nutzer selbst Wissenslücken in der Zieldomäne hat oder lange Aufgaben anstehen, in denen das Modell an vielen Stellen raten müsste.
 - Nicht einsetzen: triviale, eindeutig spezifizierte Änderungen ohne nennenswertes Risiko einer Fehlannahme.
 
 ## Belege
 
-- 2026-07-03 · [[2026-07-03-trq212-fable-field-guide-unknowns]] · meinung — X-Artikel von Thariq Shihipar (Anthropic) beschreibt das Vier-Quadranten-Modell, alle acht Techniken und ein konkretes Praxisbeispiel (Videoschnitt als Laiendomäne).
 - 2026-02-01 · [[2026-02-01-aiedge-claude-code-starter-pack]] · meinung — Gegenbeispiel: Ein beworbener „bester Claude Code Prompt“ ist ein reiner Persona-/Vision-Priming-Prompt („Craftsman“, „Reality Distortion Field“, `ultrathink`), der nichts fragt, keine Erfolgskriterien benennt und keine Unknowns adressiert — steht in direktem Gegensatz zur Kernthese dieses Patterns und stachelt das Modell eher zu mehr Selbstüberzeugung an, statt Ambiguität offenzulegen. Die Quelle liefert keinen Vorher-Nachher-Vergleich für die Superlativ-Behauptung.
 - 2026-09-04 · [[2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re]] · meinung — Prompt mit Grund, Ziel, Referenzdateien und messbarem Abschlusskriterium statt Rollenfloskeln und Verbotslisten; gibt die Fable-5-Doku nur sinngemäß wieder. Einschränkung: Ergebnisse nur an einem Newsletter-Beispiel gezeigt.
 - 2026-07-03 · [[2026-07-03-trq212-2073100352921215386]] · meinung — Volltext-Fassung des Artikels mit allen Techniken (Blind Spot Pass, Brainstorm/Prototyp, Interview, References, Plan, Implementation Notes, Pitch, Quiz) und Rückkopplungs-Zeitleiste. Selbstberichtet, ohne Messwerte.
 
 ## Spannungen & offene Fragen
 
-- Einzige bisherige Quelle ist ein einzelner Artikel, wenn auch von einem Anthropic-Mitarbeiter mit hoher Reichweite (laut Quelle >3,6 Mio. Views).
+- Einzige bisherige Quelle ist ein einzelner Artikel, wenn auch von einem Anthropic-Mitarbeiter mit hoher Reichweite (laut Quelle rund 3,8 Mio. Views).
 - Ergänzung 2026-02-01: Ein unabhängiges Gegenbeispiel (aiedge Starter Pack) zeigt einen verbreiteten Prompt-Stil, der der Kernthese dieses Patterns direkt widerspricht — stützt indirekt die Kernthese, weil genau die Art Prompt, vor der das Pattern warnt, in der Praxis unbelegt als „bester Prompt“ beworben wird.
 - Offene Frage: Wie genau lässt sich der „Change Quiz“ praktisch operationalisieren (automatisiert vom Modell generiert, oder manuell vom Reviewer gestellt)?
 
@@ -45,3 +44,4 @@ Prompts/Skills/Kontext sind nur eine Karte der Arbeit; die echte Codebasis mit i
 - [[Plan-first-mit-getrenntem-Review]]
 - [[Spec-Grilling]]
 - [[Ralph-Loop-Frischer-Kontext-pro-Iteration]]
+- Korrektur 2026-10-07: Die erste Zusammenfassung des Artikels behauptete, stärkere Modelle scheiterten leiser als schwächere und Interviews endeten mit einem Decision Record. Beides steht nicht im Artikel und ist entfernt; die doppelte Notiz zur selben URL ist in [[2026-07-03-trq212-2073100352921215386]] aufgegangen.

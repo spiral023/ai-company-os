@@ -24,4 +24,4 @@ Die Task-Datei überlebt die Kontext-Zusammenfassung; das ist die belastbarste E
 ## Verbindungen
 - [[Kontrollierte-Agent-Parallelisierung]]
 - [[Task-basierte-Steuerung]]
-- [[2026-07-03-trq212-fable-field-guide-unknowns]]
+- [[2026-07-03-trq212-2073100352921215386]]

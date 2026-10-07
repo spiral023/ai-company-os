@@ -19,8 +19,8 @@ Jede Source und jedes Pattern hat einen Haupt-Cluster und höchstens zwei Nebenc
 | Autonome Läufe, Loops & CI | [[Thema-Autonome-Läufe-Loops-CI]] | 12 | 3 | Ralph Loop |
 | Sicherheit & Sandboxing | [[Thema-Sicherheit-Sandboxing]] | 9 | 4 | Claude Code Sicherheit |
 | Rolle, Lernen & Markt | [[Thema-Rolle-Lernen-Markt]] | 9 | 3 | Vibe Coding |
-| Prompting & Klärung | [[Thema-Prompting-Klärung]] | 8 | 3 | Prompt Engineering |
 | Einstieg & Best Practices | [[Thema-Einstieg-Best-Practices]] | 8 | 0 | Claude Code Tutorial |
+| Prompting & Klärung | [[Thema-Prompting-Klärung]] | 7 | 3 | Prompt Engineering |
 | AI-nativer SDLC | [[Thema-AI-nativer-SDLC]] | 4 | 0 | AI-nativer SDLC |
 | KI-Risiken & Sicherheitsvorfälle | [[Thema-KI-Risiken-Sicherheitsvorfälle]] | 2 | 0 | Risiken von KI |
 | Prompts zum Ausprobieren | [[Thema-Prompts-zum-Ausprobieren]] | 1 | 0 | Prompts für Claude Code |

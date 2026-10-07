@@ -9,7 +9,7 @@ Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, C
 - **Hauptkeyword:** Prompts für Claude Code
 - **Long-Tail:** Prompts zum Ausprobieren; Claude Code Prompt-Vorlagen; Blindspot Pass Prompt; Claude interviewt mich Prompt; Debugging-Prompt für Coding Agents; Prompt mit klarem Zielzustand; Plan vor Code Prompt
 - **Fragen:** Welche Prompts kann ich direkt in Claude Code ausprobieren? / Wie sage ich dem Agent, wann er fertig ist? / Wie verhindere ich, dass der Agent Fehler nur versteckt?
-- **Häufig in den Quellen:** claude code subagents (2), known unknowns (2), opus 5.5 (2), effort (2), ergebnisverantwortung, reviewer-agent, verifikation vor abschluss, tech lead prompt, rollen-prompts, claude code prompts, codex, requirements lead, task brief, claude.md prompt, erfolgskriterien, scope begrenzen, karpathy system prompt, test-first, annahmen offenlegen, coding-agent-fehler
+- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), verifikation vor abschluss, codex, requirements lead, reviewer-agent, tech lead prompt, claude code prompts, rollen-prompts, ergebnisverantwortung, task brief, karpathy system prompt, annahmen offenlegen, test-first, coding-agent-fehler, erfolgskriterien, claude.md prompt, scope begrenzen, fehlerschleifen durchbrechen
 
 ## Verwandte Themen
 
@@ -33,7 +33,6 @@ Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, C
 - [[2026-09-21-voxyz_ai-2102050225443766571]]
 - [[2026-08-12-voxyz_ai-2087579867139264681]]
 - [[2026-08-04-anthropic-docs-claude-code-best-practices]]
-- [[2026-07-03-trq212-fable-field-guide-unknowns]]
 - [[2026-07-03-trq212-2073100352921215386]]
 - [[2026-06-02-trq212-2061907337154367865]]
 - [[2026-02-10-boris-tane-plan-annotation-workflow]]

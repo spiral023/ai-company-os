@@ -92,7 +92,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | hooks | 3 | Hooks, MCP & Erweiterungs-Ebenen |
 | hyperframes | 3 | Prototyping & UI-Design, Skill-Design |
 | intelligence index | 3 | Modelle, Kosten & Limits |
-| known unknowns | 3 | Prompting & Klärung |
 | kontext-hygiene | 3 | Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Modelle, Kosten & Limits |
 | limit | 3 | Modelle, Kosten & Limits |
 | loop | 3 | Autonome Läufe, Loops & CI |
@@ -180,7 +179,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | goal drift | 2 | Multi-Agent & Parallelisierung |
 | gpt-6 sol | 2 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | graphify | 2 | Kontext-Management |
-| grilling | 2 | Prompting & Klärung, Spezifikation & Planung |
 | gsd | 2 | Skill-Design, Workflow-Frameworks & Tools |
 | gsd-map-codebase | 2 | Workflow-Frameworks & Tools |
 | guardrails | 2 | Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits |
@@ -198,6 +196,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | kitchen-sink-session | 2 | Einstieg & Best Practices, Spezifikation & Planung |
 | klassifikation | 2 | Modelle, Kosten & Limits |
 | knowledge graph | 2 | Kontext-Management |
+| known unknowns | 2 | Prompting & Klärung |
 | kontext | 2 | Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management |
 | launch-checkliste | 2 | Multi-Agent & Parallelisierung, Sicherheit & Sandboxing |
 | least agency | 2 | AI-nativer SDLC, Sicherheit & Sandboxing |
