@@ -1,6 +1,6 @@
 # Agent-Dateien & Memory
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-07. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen.
 
@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** progressive disclosure (5), agents.md (5), claude.md (4), context engineering (3), instruktionsbudget (2), agent_docs (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), llm wiki (2), /doctor (2), auto mode (2), /init vermeiden, instruction following, claude code system-reminder, claude.md schreiben, annahmen offenlegen, karpathy system prompt, erfolgskriterien
+- **Häufig in den Quellen:** agents.md (9), claude.md (7), progressive disclosure (5), agent-datei (4), context engineering (3), instruktionsbudget (2), agent_docs (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), llm wiki (2), /doctor (2), test (2), regeln (2), handlungsbedarf (2), blockadebericht (2), agent bericht (2), auto mode (2), claude code system-reminder
 
 ## Verwandte Themen
 
@@ -18,12 +18,18 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - [[Thema-Hooks-MCP-Erweiterungs-Ebenen]] — Hooks, MCP & Erweiterungs-Ebenen
 - [[Thema-Prompting-Klärung]] — Prompting & Klärung
 
-## Patterns (1)
+## Patterns (2)
 
-- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 32 Belege
+- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 37 Belege
+- [[Handlungsbedarf-zuerst-im-Agent-Bericht]] · meinung · 1 Belege
 
-## Quellen (15)
+Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-erzwingen]]
 
+## Quellen (18)
+
+- [[2026-10-07-voxyz_ai-2107939019091005836]] — Vox empfiehlt unter **200 Zeilen** je Agent-Datei und nennt **32 KiB insgesamt** als Codex-Standardlimit.
+- [[2026-10-05-voxyz_ai-2107123654219743712]] — Vox beschreibt lange Abschlussberichte, in denen notwendige Nutzeraktionen zwischen anderen Ergebnissen verschwinden.
+- [[2026-10-04-voxyz_ai-2106783910055006342]] — Vox empfiehlt eine kompakte `AGENTS.md` gegen vorschnelle Kompatibilitätsschichten, ungenutzte Altdateien und Tests für belanglose Details.
 - [[2026-09-18-repo-anthropics-claude-code-agents-md-support]] — Claude Code liest seit 2.1.277 AGENTS.md, wenn keine CLAUDE.md existiert, sodass eine Instruktionsdatei mehrere Agents bedienen kann; eine zusätzliche CLAUDE.md hat Vorrang.
 - [[2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk]] — Lint-Warnungen direkt im Tool-Ergebnis steuern Agents kostengünstig ohne Blockade; harte Durchsetzung braucht weiterhin ein separates CI-Gate.
 - [[2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the]] — Neuere Modelle arbeiten mit weniger vorgegebenem Kontext besser; lange CLAUDE.md-Dateien sollten gekürzt und Wissen in bei Bedarf ladbare Skills ausgelagert werden.
@@ -44,6 +50,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 
 - [[2026-10-05-repo-mattpocock-skills-retro]]
 - [[2026-10-05-repo-claude-code-doctor-insights]]
+- [[2026-10-04-voxyz_ai-2106829206134931539]]
 - [[2026-08-04-anthropic-docs-claude-code-best-practices]]
 - [[2026-07-30-floknowsai-ki-gibt-dir-das-gefuehl-dass-du-so-schnell-wie-noch-nie-arbeitest]]
 - [[2026-07-15-xudong07452910-2077246527756775933]]

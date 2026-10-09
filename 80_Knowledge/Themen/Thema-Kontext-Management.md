@@ -1,6 +1,6 @@
 # Kontext-Management
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, Clear, Rewind, Handoff zwischen Sessions, Kontextkosten von Tools. Regeldateien gehören zu agent-dateien, die Kosten des Cachings zu modelle-kosten.
 
@@ -9,7 +9,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 - **Hauptkeyword:** Context Engineering
 - **Long-Tail:** Context Rot vermeiden; Claude Code /compact oder /clear; Claude Code Kontextfenster verwalten; Session Handoff Dokument; Rewind statt Korrektur; Subagents als Kontextgrenze
 - **Fragen:** Wann sollte ich /clear statt /compact nutzen? / Warum wird mein Agent in langen Sessions schlechter?
-- **Häufig in den Quellen:** context rot (8), context window (6), /compact (6), /clear (6), progressive disclosure (6), claude.md (6), subagents (4), context engineering (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), kontext-hygiene (3), plan mode (3), autocompact-puffer (2), mcp tools (2), ralph loop (2), subagent-kosten (2), userpromptsubmit hook (2)
+- **Häufig in den Quellen:** context rot (8), claude.md (7), context window (6), /compact (6), /clear (6), progressive disclosure (6), context engineering (4), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), kontext-hygiene (3), plan mode (3), mcp tools (2), autocompact-puffer (2), ralph loop (2), userpromptsubmit hook (2), subagent-kosten (2)
 
 ## Verwandte Themen
 
@@ -20,8 +20,8 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 
 ## Patterns (2)
 
-- [[Handoff-Doc]] · verifiziert · 17 Belege
-- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 39 Belege
+- [[Handoff-Doc]] · verifiziert · 18 Belege
+- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 41 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]]
 
@@ -47,6 +47,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-07-voxyz_ai-2107939019091005836]]
+- [[2026-10-02-voxyz_ai-2106006290954592332]]
 - [[2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit]]
 - [[2026-09-17-agenticjames-i-think-code-mode-mcps-are-probably-the-best-way-to-give-agents-access]]
 - [[2026-08-14-claude-maximizing-the-value-of-your-claude-code-session]]

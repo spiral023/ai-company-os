@@ -69,8 +69,11 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 
 - 2026-09-20 · [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] · meinung — Intent erklärt das Warum, Spec das erwartete Verhalten, Plan Dateien, Reihenfolge, Risiken und Nachweise; bestehende Plan-Workflows weiterverwenden. Sekundärdarstellung des Anthropic-Playbooks, keine unabhängige Wirkungsmessung.
 - 2026-10-05 · external_repos/obra/superpowers/skills/writing-plans/SKILL.md · verifiziert — Der im Video genannte Plan-Skill fordert einen Plan aus Spec oder Anforderungen vor Codeänderungen, mit konkreten Dateien, Schnittstellen und Tests pro Aufgabe; bestätigt die beschriebene Plan-Variante, keine Produktivitätswirkung.
+- 2026-10-08 · [[2026-10-08-mattpocockuk-2108216899439894574]] · meinung — Pocock empfiehlt /wayfinder erst nach begonnener Klärung bei wachsender Komplexität, weil ein vorschneller Plan unnötige Karten und Tickets erzeugen kann; menschliches Review behandelt er separat von der Entscheidung über Grilling vor dem Coden.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-09 · [[2026-10-08-mattpocockuk-2108216899439894574]]: Wayfinder erst bei wachsender Komplexität der begonnenen Klärung einsetzen; zu frühe Planung kann unnötige Karten und Tickets erzeugen. Menschliches Review bleibt eine getrennte Entscheidung, auch wenn kleine Diffs ohne vorgelagerten Plan entstehen.
 
 - Beide ursprünglichen Quellen teilen sich mindestens eine Primärquelle (@Meer_AIIT), sind also nicht vollständig unabhängig; die neu ergänzten Quellen (Aseem Shrey, Thariq, Matt Pocock) sind davon unabhängig und beschreiben eigenständige, sich ergänzende Facetten derselben Grundidee.
 - Offene Frage: Wie genau lässt sich die hier beschriebene Rollentrennung (Builder/Reviewer/Verifier) mit [[Kontrollierte-Agent-Parallelisierung]] kombinieren, wenn Builder und Reviewer parallel statt sequentiell arbeiten sollen?

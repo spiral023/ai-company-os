@@ -12,6 +12,8 @@ Statt sich auf ein einzelnes OS-Feature zu verlassen, wird die Sandbox-Grenze au
 
 Die zentrale Designspannung dabei ist nicht Security als Selbstzweck, sondern **harte Durchsetzung vs. realistischer Entwickler-Workflow**: Eine zu strikte Isolation (z. B. eine vollständige VM-Sandbox) trennt den Agenten vom realen Checkout und Tooling des Nutzers ab; eine zu offene Lösung lässt sich umgehen. Jede Architekturentscheidung im Komponieren der Primitive bewegt sich zwischen diesen beiden Polen.
 
+**Ergänzung 2026-10-09:** [[2026-10-08-unslothai-windows-sandboxing-mxc]] beschreibt für Python und Terminal eine zusätzliche OS-Isolation über MXC unter Windows, bubblewrap unter Linux und Seatbelt unter macOS. Softwareprüfungen bleiben davor bestehen. Der Windows-Screenshot zeigt einen aktiven Built-in-Container und einen alternativen Fallback mit Admin-Vorbereitung; er kennzeichnet MXC zugleich als Preview und ausdrücklich nicht als Sicherheitsgrenze. Das ist ein Herstellerbericht über eine weitere Umsetzung, keine verifizierte Schutzgarantie.
+
 ## Vorteile
 
 - Deckt einen offenen, nicht vorab spezifizierbaren Zugriffsbedarf ab, den kein einzelnes natives Feature allein abdeckt.
@@ -38,6 +40,8 @@ Die zentrale Designspannung dabei ist nicht Security als Selbstzweck, sondern **
 
 - 2026-07-21 · [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] · meinung — Anthropic beschreibt Remote-VMs mit beschränkten Netzwerkzielen und zweckgebundene Agent-Identitäten zur Begrenzung möglicher Schäden; Instruktionen werden um technische Grenzen ergänzt. Herstellerbericht, Implementierung nicht im Code geprüft.
 
+- 2026-10-08 · [[2026-10-08-unslothai-windows-sandboxing-mxc]] · meinung — Unsloth kombiniert Softwarefilter mit OS-Backends für Python und Terminal und zeigt den Status pro Tool; der ergänzende Guide nennt einen Windows-Fallback und enthält eine Preview-Einschränkung. Implementierung und Schutzumfang sind lokal nicht im Code geprüft.
+
 ## Spannungen & offene Fragen
 
 - Ergänzung (2026-10-05): [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] liefert einen weiteren Herstellerbericht über technische Grenzen, hier Remote-VMs, beschränkte Netzwerkziele und Agent-Identitäten. Das ergänzt die bisherige Perspektive, verifiziert aber weder die OS-Komposition noch die Implementierung.
@@ -46,7 +50,12 @@ Die zentrale Designspannung dabei ist nicht Security als Selbstzweck, sondern **
 - Verhältnis zu [[Deny-Rules-statt-CLAUDE-md-Empfehlung]]: Dort wird Container-Isolation als „für viele Projekte zu aufwendig“ eingeordnet — dieser Bericht liefert die technische Begründung, warum die schwächere Alternative (rein advisory Schutz) tatsächlich nicht ausreicht, ohne den Aufwandseinwand selbst zu widerlegen.
 - Offene Frage: Wie sieht die äquivalente Komposition auf macOS oder Linux aus, und teilen sich dort dieselben Grundprinzipien (kein Einzel-Primitiv reicht, Durchsetzung braucht einen eigenen Principal)?
 
+- 2026-10-09: Die pauschale Darstellung im Post-Bild, OS-Schäden seien ausgeschlossen, steht gegen den Guide-Screenshot, der MXC als Preview und nicht als Sicherheitsgrenze bezeichnet. Die Frage nach belastbaren Datei-, Netzwerk- und Prozessgrenzen bleibt damit offen. → [[2026-10-08-unslothai-windows-sandboxing-mxc]]
+- 2026-10-09: Der Post nennt weniger als 100 ms Overhead, der Guide 164 ms für Windows High. Low/High-Werte und 1–2 ms für reine Softwarechecks haben unklare Messbedingungen. Der behauptete geringe Overhead ist nicht reproduziert. → [[2026-10-08-unslothai-windows-sandboxing-mxc]]
+- 2026-10-09: Die frühere Aussage einer einzigen Herstellerquelle ist inzwischen überholt; Unsloth ergänzt einen weiteren Bericht. Das verifiziert die konkrete OS-Komposition jedoch nicht. Freigabe-Automatik und aktive Isolation sind zudem verschiedene Ebenen. → [[Freigaben-und-Isolation-getrennt-steuern]]
+
 ## Verwandte Patterns
 
 - [[Deny-Rules-statt-CLAUDE-md-Empfehlung]]
 - [[CI-Agent-mit-Review-Gate]]
+- [[Freigaben-und-Isolation-getrennt-steuern]]

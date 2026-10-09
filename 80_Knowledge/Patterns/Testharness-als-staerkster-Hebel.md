@@ -57,6 +57,8 @@ Autonome Agenten optimieren zuverlässig das, was der Verifier misst — ist der
 - 2026-07-06 · [[2026-07-06-claudedevs-2074208949205881033]] · meinung — Deterministische Exit-Kriterien (Tests bestanden, Score-Schwelle) und als Skill kodierte Verifikation machen Goal-Loops zuverlässig; je quantitativer der Check, desto besser. Selbstberichtet, ohne Zahlen.
 
 - 2026-07-21 · [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] · meinung — Anthropic verlangt Nachweise für Review-Befunde, prüft wichtige Invarianten separat und kombiniert SAST mit dynamischer Prüfung in Staging. Retrospektiv hätte der aktuelle Prozess rund ein Drittel früherer Incident-Bugs erkannt; interne Einschätzung, kein beobachteter Qualitätsgewinn.
+- 2026-10-04 · [[2026-10-04-voxyz_ai-2106829206134931539]] · meinung — Vox verbindet statisch erkennbare Wiederholungsfehler mit einer Lint-Meldung, die den passenden Helper nennt; das stützt präzises, maschinenlesbares Feedback für Agentkorrekturen, während ein tatsächlich ausgeführter Check und semantische Tests weiterhin nötig sind.
+- 2026-10-04 · [[2026-10-04-emilkowalski-2106752670405099523]] · meinung — Der zentral geprüfte `/break-ui`-Skill beschreibt eine Daten-Fixture, einen Demo-/Worst-case-Toggle und eine Befundliste mit Fix je Defekt; das stützt reproduzierbare Rückkopplung an konkreten UI-Fehlerfällen, ohne automatisierte Vollabdeckung oder Wirksamkeit nachzuweisen.
 
 ## Spannungen & offene Fragen
 

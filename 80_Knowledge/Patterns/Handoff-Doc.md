@@ -49,6 +49,7 @@ Ein Handoff kann außerdem bewusst zwischen unterschiedlichen Arbeitsmodi vermit
 - 2026-03-21 · [[2026-03-21-sourfraser-claude-obsidian-ai-employee]] · meinung — Call-Transkripte werden täglich in Entscheidungen, Actions und Kundendateien im Vault überführt (Memory Loop); Qualität der Extraktion ungeprüft.
 - 2026-08-12 · [[2026-08-12-voxyz_ai-2087579867139264681]] · meinung — Nutzt Handoff-Notizen anderer Agenten als Eingabe und fordert Rückgabe von Änderungen, Tests und Blockern; keine Belege zur Wirkung.
 - 2026-02-02 · [[2026-02-02-anthony-riera-planning-with-files-skill]] · meinung — Dateibasierter Plan als externer Speicher über lange Sessions; bekannte Arbeitsweise unter neuem Skill-Namen.
+- 2026-10-06 · [[2026-10-06-voxyz_ai-2107455844992299272]] · meinung — Vox verdichtet Projektteile, Meilensteine und ausstehende Entscheidungen in einer visuell lesbaren HTML-Karte für den späteren Wiedereinstieg; ein Sessionwechsel oder vollständiger Übergabekontext wird nicht beschrieben, weshalb die Karte ein Handoff ergänzt und nicht ersetzt.
 
 ## Spannungen & offene Fragen
 

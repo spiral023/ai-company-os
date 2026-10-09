@@ -1,15 +1,15 @@
 # Modelle, Kosten & Limits
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
-Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Caching, Benchmarks, offene und lokale Modelle, Provider-Umleitung.
+Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Caching, Benchmarks und Provider-Umleitung. Verfügbarkeit offener Gewichte, lokale Inferenz, Hardware und Fine-Tuning gehören vorrangig zu open-source-llms; Kostenvergleiche bleiben hier.
 
 ## Suchbegriffe
 
 - **Hauptkeyword:** Claude Code Kosten
 - **Long-Tail:** Claude Code Usage Limits; Kosten pro Task statt pro Token; Prompt Caching Claude Code; Claude Code mit lokalem Modell; Reasoning Effort wählen; Modell-Eskalation günstig nach teuer
 - **Fragen:** Welches Modell für welche Aufgabe? / Warum sind meine Limits so schnell leer?
-- **Häufig in den Quellen:** modell-eskalation (21), modell (19), kosten pro task (13), kosten (13), effort (13), gpt-6 (10), preis (9), terminal-bench (6), coding agent index (6), benchmark (6), token (6), opus 5.5 (6), modellwahl (5), pareto (5), preise (5), sonnet (5), anthropic_base_url (4), cost per task (4), /compact (4), prompt caching (3)
+- **Häufig in den Quellen:** modell-eskalation (24), modell (21), effort (15), kosten pro task (14), kosten (14), gpt-6 (13), preis (11), terminal-bench (9), benchmark (9), token (7), opus 5.5 (7), coding agent index (6), sonnet (6), modellwahl (5), pareto (5), preise (5), anthropic_base_url (4), cost per task (4), intelligence index (4), /compact (4)
 
 ## Verwandte Themen
 
@@ -17,18 +17,23 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 - [[Thema-Multi-Agent-Parallelisierung]] — Multi-Agent & Parallelisierung
 - [[Thema-Autonome-Läufe-Loops-CI]] — Autonome Läufe, Loops & CI
 - [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
+- [[Thema-Open-Source-LLMs-lokale-Modelle]] — Open-Source-LLMs & lokale Modelle
 
 ## Patterns (4)
 
-- [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 3 Belege
+- [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 4 Belege
 - [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 8 Belege
-- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 41 Belege
+- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 45 Belege
 - [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 2 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]]
 
-## Quellen (44)
+## Quellen (43)
 
+- [[2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker]] — Vox empfiehlt für Claude Code eine feste Rollenteilung: `Opus 5.5` plant und prüft, `Haiku 5.5` liest Code und recherchiert Dokumentation.
+- [[2026-10-07-kimmonismus-2107894978332557756]] — Chubby meldet `Claude Haiku 5.5`: Nach Herstellerangaben liegen durchschnittliche Betriebskosten rund **75 % unter** `Haiku 4.5`.
+- [[2026-10-07-artificialanlys-2107911905822351609]] — Artificial Analysis (AA) berichtet Modellmerkmale von `Claude Haiku 5.5`: adaptive thinking, Effort-Einstellungen, 1 Million Kontexttokens, Text-/Bildinput, Textoutput.
+- [[2026-10-06-artificialanlys-2107467221421420919]] — Artificial Analysis (AA) berichtet `Mistral Large 4 Preview`: „Research Public Preview“ über Mistrals API, 1 Billion Parameter, 49 Milliarden aktiv, 512k Kontexttokens, Text-/Bildinput, Textoutput.
 - [[2026-10-02-repo-farion1231-cc-switch]] — Im Klon von farion1231/cc-switch (Stand Commit `b9e96202`) beschreibt `src/i18n/locales/en.json` einen „Stack“-Modus: Du legst mehrere Anbieter an, und alle ihre Modelle erscheinen im Modellmenü von C
 - [[2026-10-02-developers-using-gpt-6-openai-api]] — Die Entwicklerseite „Using GPT-6“ beschreibt die drei GPT-6-Modelle, neue API-Funktionen und Prompt-Bausteine für Astra.
 - [[2026-10-01-artificialanlys-2105491868608004578]] — Artificial Analysis (Drittanbieter) misst am 01.10.2026 Kosten pro Intelligence-Index-Task für OpenAI-Modelle nach.
@@ -37,7 +42,6 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-09-29-thsottiaux-2104823812042940713]] — Tibo (@thsottiaux, signiert „Codexingly“, also aus dem Codex-Umfeld bei OpenAI) kündigt am 29.09.2026 an, dass das Pro-$200-Abo am Folgetag wieder für Neukunden öffnet.
 - [[2026-09-29-openai-rueckblick-auf-den-devday-2026]] — OpenAI fasst am 29.09.2026 mehr als 20 Ankündigungen zusammen.
 - [[2026-09-29-artificialanlys-2105025585332605357]] — Artificial Analysis (Drittanbieter, Intelligence Index v4.3.2) misst `GPT-6.1 Sol`, das `GPT-6 Sol` nach sieben Tagen ablöst.
-- [[2026-09-28-unslothai-2104592692072304916]] — Unsloth kündigt am 28.09.2026 an, dass sich das Decision-Modell „Laya“ (laut Guide eine offene Jev-Alternative) lokal über Unsloth Desktop betreiben lässt, auf CPU, Mac, Windows, Linux und GPU.
 - [[2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog]] — Der Herstellerleitfaden zu `claude-sonnet-5-5` (Stand 2026-09-28) behauptet: gleicher Token-Preis wie Sonnet 5, aber deutlich weniger Tokens pro Aufgabe, daher „bis zu 30 % weniger“ Kosten.
 - [[2026-09-28-artificialanlys-2104640155843989864]] — Artificial Analysis (Drittanbieter) misst `Claude Sonnet 5.5` mit dem Intelligence Index v4.3.2 (zehn Evals, u.
 - [[2026-09-25-voxyz_ai-2103586663393853636]] — Vox übersetzt Thariqs Tests (mehr Effort kaufe vor allem mehr Verifikation und Edge-Case-Tests) in zwei Subagents: ein builder auf `low`, ein verifier auf `high`.
@@ -52,7 +56,6 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-09-22-artificialanlys-2102438210798514391]] — Opus 5.5 führt den Intelligence Index bei niedrigerem Listenpreis, verbraucht aber mehr Tokens; maßgeblich sind Kosten pro Task, nicht der Preis pro Million Token.
 - [[2026-09-20-avichawla-2101563610644496464]] — Avi Chawla zeigt, wie sich ein offenes LLM ohne Training als schnelle lokale Entscheidungsmaschine nutzen lässt, wenn die erlaubten Antworten vorab feststehen: Statt Text zu erzeugen, liest der Server
 - [[2026-09-18-akshay_pachaar-2101037514945597645]] — Kleine Urteile in Agent-Schleifen brauchen kein generatives LLM: ein typisiertes, kalibriertes Entscheidungsmodell liefert Wahrscheinlichkeiten, Schwellen und Verzweigung bleiben im Code.
-- [[2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo]] — Speicherbedarf und Tempo lokaler Modelle lassen sich mit einfachen Faustformeln aus Parametern, Quantisierung und Speicherbandbreite vorab abschätzen; Kontext und KV-Cache fehlen dabei.
 - [[2026-08-14-claude-maximizing-the-value-of-your-claude-code-session]] — Tool-Outputs bleiben in jedem Folgeturn im Kontext, und Modell- oder Effort-Wechsel sowie Compact entwerten den Prompt Cache, daher Sitzungen aufgabenweise mit /clear führen.
 - [[2026-08-07-theaicareercoach-vor-einem-jahr-noch-teuer-heute-fast-geschenkt-die-preise-fuer-ki]] — Ein Creator (Norman, Daten- und KI-Leiter einer Beratung) meldet Anfang August 2026 eine Preissenkung von OpenAI und nennt drei Treiber für sinkende Modellpreise.
 - [[2026-08-03-floknowsai-die-preise-fuer-ki-fallen-wirklich-und-trotzdem-ist-dein-limit-genauso]] — Trotz fallender Preise für festes Können bleibt das Limit gleich schnell leer, weil Kontextlänge, Denkstufe, Tokenizer, Subagents und Langläufer den Verbrauch pro Aufgabe erhöhen.
@@ -67,27 +70,30 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-07-08-claudedevs-modell-vs-effort]] — Bei schlechten Ergebnissen zuerst Input und Kontext prüfen, dann nach Fehlerbild entscheiden: übersprungene Arbeit braucht mehr Effort, gründlich erarbeitete Fehler ein anderes Modell.
 - [[2026-05-01-mnilax-claude-code-overhead-9-patterns]] — Ein 90-Tage-Audit zeigt: 73 Prozent der Claude-Code-Tokens gehen in strukturellen Overhead wie große CLAUDE.md, Hooks, MCPs und Cache-Misses, nicht in Modellwahl.
 - [[2026-04-29-wiki-compiler-claude-usage-limits-token-strategien]] — Tokenverbrauch wächst quadratisch mit der Nachrichtenzahl; kurze klar geschnittene Sessions und Modellwahl nach Aufgabenschwere senken Verbrauch und Limit-Druck.
-- [[2026-04-22-alibaba-qwen-qwen3-6-27b-lokal-betreiben]] — Ein offenes 27B-Modell erreicht laut Herstellerchart im Agentic Coding etwa den Stand eines Vorjahres-Frontiermodells; lokaler Betrieb ist eine Speicher- und Bandbreitenfrage.
 - [[2026-03-29-0x-kaize-claude-usage-limits-primaer]] — Der Tokenverbrauch wächst in langen Chats quadratisch, weil der Verlauf neu eingelesen wird; kurze Chats, Haiku für Routine und Nutzung außerhalb der Peak Hours sparen Limit.
 - [[2026-02-04-rudrank-using-minimax-with-claude-code]] — Claude Code lässt sich per drei Umgebungsvariablen auf jeden Anthropic-kompatiblen Provider umleiten; vorher alte Overrides löschen und Routing mit /status prüfen.
-- [[2026-02-02-unsloth-team-claude-code-local-llm]] — Claude Code und Codex CLI laufen komplett lokal gegen einen llama.cpp-Server, wenn die Basis-URL oder der Provider auf den lokalen Endpunkt zeigt.
-- [[2026-01-22-dr-cintas-claude-code-local]] — Über drei Umgebungsvariablen lässt sich Claude Code auf einen lokalen Ollama-Server umleiten, ohne die CLI selbst zu ändern.
 - [[2025-12-31-natebjones-seriously-not-worth-it-now]] — Vor jedem Fine-Tuning zuerst Instruktionen, Constraints und Evals als Harness ausreizen, da neue Modellgenerationen Trainingsprojekte schnell überholen.
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-07-unslothai-decision-model-finetuning]]
 - [[2026-10-02-repo-anthropics-skills]]
 - [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]]
 - [[2026-09-29-voxyz_ai-2105012597796057438]]
+- [[2026-09-28-unslothai-2104592692072304916]]
 - [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]]
 - [[2026-09-27-voxyz_ai-2104254744722383210]]
 - [[2026-09-09-voxyz_ai-2097814698204832116]]
+- [[2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo]]
 - [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]]
 - [[2026-07-06-claudedevs-2074208949205881033]]
 - [[2026-07-01-0xcodila-2072329149520232639]]
 - [[2026-06-04-agenticjames-most-people-have-not-touched-the-best-parts-of-claude-code-skills-forked]]
 - [[2026-05-09-zodchiii-15-claude-code-settings-most-developers]]
 - [[2026-05-04-wiki-compiler-claude-session-und-token-management]]
+- [[2026-04-22-alibaba-qwen-qwen3-6-27b-lokal-betreiben]]
 - [[2026-02-14-minty-mastering-claude-code]]
+- [[2026-02-02-unsloth-team-claude-code-local-llm]]
+- [[2026-01-22-dr-cintas-claude-code-local]]
 - [[2026-01-21-meta-alchemist-claude-skills-deep-dive]]
 - [[2026-01-21-aiedge-claude-50-pro-tips]]

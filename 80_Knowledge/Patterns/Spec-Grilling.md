@@ -44,8 +44,11 @@ Ein eigener Skill verhört den Nutzer gezielt zu einem Vorhaben, bis jeder Ast d
 - 2026-02-03 · [[2026-02-03-god-of-prompt-karpathy-ai-coding-system-prompt]] · meinung — Prompt erzwingt Annahmen-Offenlegung und Anhalten bei Widersprüchen; Sekundärquelle, Wirkung nicht getestet.
 - 2026-02-25 · [[2026-02-25-heynavtoor-claude-cowork-setup-guide]] · meinung — Vor der Arbeit `AskUserQuestion` erzwingen, statt zu raten; Sekundärquelle, Büro-Kontext statt Code.
 - 2026-07-03 · [[2026-07-03-trq212-2073100352921215386]] · meinung — Interview-Technik: Claude fragt eine Frage nach der anderen, priorisiert nach Architekturwirkung. Nur ein Beispielprompt, keine Evaluation.
+- 2026-10-08 · [[2026-10-08-mattpocockuk-2108216899439894574]] · meinung — Pocock begrenzt Vorabklärung auf Änderungen mit relevantem oder unbekanntem Umfang: bei winzigen, schnell prüfbaren Diffs sei One Shot vertretbar, bei visueller Präzision könne schnelle /prototype-Iteration helfen; damit relativiert er pauschales Grilling vor jeder Umsetzung, ohne Änderungsrisiken oder Skill-Wirkung empirisch zu prüfen.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-09 · [[2026-10-08-mattpocockuk-2108216899439894574]]: Pocock erlaubt winzige, schnell prüfbare Diffs ohne Vorabklärung und nennt schnelle Prototyp-Iteration für visuelle Präzision. Das relativiert die pauschale Forderung, jeden Entscheidungsast vor Umsetzung zu klären; unbekannter Umfang soll weiterhin zum Grilling führen, Änderungsrisiken sind in der Quelle nicht systematisch bewertet.
 
 - Keine bekannt. Die verwandten Umsetzungen (gstack `/office-hours`, Superpowers `brainstorming`) unterscheiden sich im Detail (Design-Doc vs. reines Gespräch), widersprechen sich aber nicht im Grundprinzip.
 

@@ -1,6 +1,6 @@
 # Hooks, MCP & Erweiterungs-Ebenen
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-07. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook, MCP, Plugin) und wie Hooks, MCP-Server und Plugins konfiguriert werden.
 
@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), subagents (4), progressive disclosure (4), plugins (4), claude code skills (3), pretooluse (3), mcp (3), hooks (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), hook (2), plugin (2), codex (2), /doctor (2), agents.md (2), skill description (2)
+- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), progressive disclosure (4), subagents (4), plugins (4), hooks (4), claude code skills (3), pretooluse (3), mcp (3), hook (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), plugin (2), codex (2), erweiterung (2), /doctor (2), agents.md (2)
 
 ## Verwandte Themen
 
@@ -20,16 +20,17 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 
 ## Patterns (4)
 
-- [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 2 Belege
+- [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 5 Belege
 - [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 18 Belege
 - [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 7 Belege
 - [[MCP-Code-Execution-statt-Tool-Definitionen]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Hook-erzwungene-Skill-Aktivierung]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]
 
-## Quellen (13)
+## Quellen (14)
 
 - [[2026-10-05-repo-claude-code-doctor-insights]] — Aus `CHANGELOG.md` von anthropics/claude-code (Stand 2.1.289).
+- [[2026-10-02-voxyz_ai-2106006290954592332]] — Vox bündelt `Claude Code`-Befehle zu einem Wartungsplan gegen Duplikate, Strukturdrift und veraltete Regeln.
 - [[2026-10-02-repo-anthropics-claude-code]] — Laut `CHANGELOG.md` (Eintrag 2.1.287, Repo-Stand Commit `52c76441`) gibt es „Claude Mods“, also Plugins, die tieferes Verhalten ändern dürfen.
 - [[2026-09-17-agenticjames-i-think-code-mode-mcps-are-probably-the-best-way-to-give-agents-access]] — Ein einzelnes Skript-Tool vor vielen MCP-Servern macht Aufrufe komposierbar und filtert große Ausgaben, bevor sie das Context Window füllen; Sandbox und Gateway-Vertrauen kosten zusätzlich.
 - [[2026-08-21-promptgefluester-agent-plug-ins-das-ist-der-neue-standard-mit-dem-die-grossen-ai]] — Ein gemeinsames Plugin-Paketformat aus Manifest, Skills und MCP-Konfiguration würde Erweiterungen zwischen Coding Agents portierbar machen; der Standard ist bisher nur schwach belegt.

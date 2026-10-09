@@ -1,6 +1,6 @@
 # Prototyping & UI-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents.
 
@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), security checker (2), vibe coding (2), codex skills (2), hyperframes (2), opus 5.5 (2), component-first, lovable prompts, design system, design tokens, foundations komponenten komposition, komponentenreferenz, tailwind prompting, ki-website-builder, spacing typografie, hero section, responsive breakpoints, lovable website, landingpage, conversion prompts
+- **Häufig in den Quellen:** lovable (5), security checker (2), vibe coding (2), codex skills (2), hyperframes (2), opus 5.5 (2), lovable prompts, component-first, foundations komponenten komposition, tailwind prompting, design tokens, komponentenreferenz, design system, hero section, landingpage, ki-website-builder, lovable website, conversion prompts, responsive breakpoints, spacing typografie
 
 ## Verwandte Themen
 
@@ -20,12 +20,13 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 ## Patterns (2)
 
 - [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 8 Belege
-- [[Screenshot-als-Spezifikationsmedium]] · meinung · 4 Belege
+- [[Screenshot-als-Spezifikationsmedium]] · meinung · 5 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Skill-aus-Demonstration-statt-Beschreibung]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Skill-aus-Demonstration-statt-Beschreibung]], [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]], [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]
 
-## Quellen (14)
+## Quellen (15)
 
+- [[2026-10-04-emilkowalski-2106752670405099523]] — Emil Kowalski kündigt zwei Ergänzungen für sein [Skills-Repository](https://github.com/emilkowalski/skills) an:
 - [[2026-10-02-repo-latent-spaces-brag]] — Neu im Bestand: latent-spaces/brag.
 - [[2026-10-02-repo-jakubantalik-transitions-dev]] — Im Klon von Jakubantalik/transitions.dev (Stand Commit `d8f2c222`) beschreibt `agent/README.md` den Transitions Agent: Er scannt die Codebasis auf fehlende oder uneinheitliche UI-Transitions, vergibt
 - [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]] — Ein Creator zeigt drei Selbsttests, in denen Claude Code mit Opus 5.5 und HyperFrames (Open Source von HeyGen) Videos baut.
@@ -43,6 +44,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Skill-aus-Demonstration-stat
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-08-mattpocockuk-2108216899439894574]]
+- [[2026-10-06-voxyz_ai-2107576635578855461]]
 - [[2026-09-26-voxyz_ai-2103977414711767244]]
 - [[2026-04-16-wiki-compiler-ui-ux-pro-max-skill]]
 - [[2026-02-15-avid-ai-design-workflow-2026]]

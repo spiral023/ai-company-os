@@ -38,6 +38,8 @@ Eine Datei `CONTEXT.md` im Projekt hält das gemeinsame Vokabular des Projekts f
 
 - 2026-10-05 · [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]] · meinung — Die Umbenennung auf `GLOSSARY.md`/`GLOSSARY-MAP.md` ist mit 1.3 veröffentlicht; gemeinsam migrieren, sonst kann ein aktualisierter Agent ein leeres Glossar neben der alten Datei anlegen. Aktualisiert den Release-Stand des Vermerks vom 2026-10-02, die Arbeitsweise bleibt gleich.
 - 2026-10-05 · external_repos/mattpocock/skills/CHANGELOG.md · verifiziert — Der Abschnitt 1.3.0 führt die Glossar-Umbenennung als veröffentlichten Minor Change auf; die Skills suchen nur die neuen Namen.
+- 2026-10-04 · [[2026-10-04-mattpocockuk-2106730768789602313]] · meinung — Pocock verlangt für v1.3 ein konsistentes Umbenennen von CONTEXT.md zu GLOSSARY.md und die Prüfung lokaler Setup-Referenzen; ein gemeinsames Vokabular benötigt gepflegte Dateiverweise, die letzte 25-Sessions-Auswertung ist nur vorgeschlagen.
+- 2026-10-09 · external_repos/mattpocock/skills/CHANGELOG.md · verifiziert — Der lokale Checkout 4588b32 dokumentiert unter 1.3.0 den Wechsel von CONTEXT.md/CONTEXT-MAP.md zu GLOSSARY.md/GLOSSARY-MAP.md und entsprechende Leser in den Skills; bestätigt die dokumentierte Konvention, keinen ausgeführten lokalen Update.
 
 ## Spannungen & offene Fragen
 

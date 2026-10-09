@@ -47,6 +47,8 @@ Die Komposition umfasst auch Infrastruktur: `/setup-matt-pocock-skills` schreibt
 - 2026-02-01 · [[2026-02-01-anthropic-docs-claude-code-common-workflows]] · meinung — Ergänzt konkrete Unix-Komposition für den Headless-Modus: Pipe-Verkettung (`cat fehler.txt | claude -p "..." > out.txt`) und maschinenlesbare Ausgabeformate (`--output-format json`/`stream-json`) für Weiterverarbeitung in Skripten/Pipelines — macht aus Headless-Mode eine echte Unix-Utility statt eines reinen CLI-Aufrufs.
 - 2026-02-13 · [[2026-02-13-vincanger-claude-code-fullstack-essentials]] · meinung — Plädiert für Basisfunktionen zuerst, Subagents und Skills erst bei repetitiven Aufgaben mit konstanten Kriterien; Beleg ist ein anekdotisches Zitat (Chris McCord).
 - 2026-02-03 · [[2026-02-03-svpino-claude-code-md-tips]] · meinung — Konkrete Schwelle: ab mehr als 3 betroffenen Dateien in Teilaufgaben zerlegen. Schwelle willkürlich.
+- 2026-10-04 · [[2026-10-04-mattpocockuk-2106730768789602313]] · meinung — Pocock verbindet Release-Diff und die letzten 25 Sessions mit einer Empfehlung für eigene Anpassungen; Skill-Aufrufhäufigkeit ist kein Wirksamkeitsmaß und automatische Plugin-Updates sind nicht als hier ausgeführt belegt.
+- 2026-10-09 · external_repos/mattpocock/skills/README.md · verifiziert — Der lokale Checkout 4588b32 unterscheidet verwaltetes, read-only Plugin mit Autorenupdates und bearbeitbare skills.sh-Dateikopien; bestätigt die dokumentierten Wege, keine Installation oder Update-Verifikation auf diesem Rechner.
 
 ## Spannungen & offene Fragen
 

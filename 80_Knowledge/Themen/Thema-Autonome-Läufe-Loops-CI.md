@@ -1,6 +1,6 @@
 # Autonome Läufe, Loops & CI
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agents, Autonomiestufen und ihre Grenzen.
 
@@ -9,7 +9,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - **Hauptkeyword:** Ralph Loop
 - **Long-Tail:** Ralph Loop einrichten; Claude Code Headless CI; Claude Code über Nacht; Autonomiestufen Coding Agent; Claude Code GitHub Action; Loop Engineering
 - **Fragen:** Kann ich einen Agent über Nacht laufen lassen? / Wie viel Autonomie ist sicher?
-- **Häufig in den Quellen:** ralph loop (6), steering.md (3), /goal (3), loop (3), auto mode (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), ci-agent (2), über nacht (2), testharness (2), overnight agents (2), qualität (2), reviewer (2), test (2), review (2), @-referenzen, --output-format json
+- **Häufig in den Quellen:** ralph loop (6), steering.md (3), auto mode (3), loop (3), /goal (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), ci-agent (2), über nacht (2), modell (2), testharness (2), overnight agents (2), review (2), test (2), reviewer (2), qualität (2), wayfinder (2)
 
 ## Verwandte Themen
 
@@ -25,7 +25,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - [[Metrikband-gestufte-Agent-Autonomie]] · meinung · 1 Belege
 - [[Ralph-Loop-Frischer-Kontext-pro-Iteration]] · mehrfach-belegt · 15 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]], [[Testharness-als-staerkster-Hebel]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Freigaben-und-Isolation-getrennt-steuern]], [[Projektkarte-als-Status-und-Entscheidungsartefakt]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]], [[Testharness-als-staerkster-Hebel]]
 
 ## Quellen (12)
 
@@ -44,6 +44,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]],
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-06-voxyz_ai-2107455844992299272]]
+- [[2026-10-05-voxyz_ai-2107214251408433365]]
 - [[2026-08-09-natebjones-decision-exhaustion-is-real-discuss]]
 - [[2026-08-02-promptgefluester-wenn-ihr-versucht-euer-software-projekt-mit-fable-five-oder-o-plus-5]]
 - [[2026-07-16-amasad-2077802290304684404]]

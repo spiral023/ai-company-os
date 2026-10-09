@@ -1,6 +1,6 @@
 # Prompts zum Ausprobieren
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-07. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, Codex oder einem Chat einsetzen können: Wortlaut, Zweck, Einsatzort, erwartetes Ergebnis. Jeder Prompt bleibt bei seiner Quelle; Varianten derselben Idee von verschiedenen Autoren werden nicht zusammengeführt. Prinzipien der Prompt-Technik gehören zu prompting.
 
@@ -9,7 +9,7 @@ Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, C
 - **Hauptkeyword:** Prompts für Claude Code
 - **Long-Tail:** Prompts zum Ausprobieren; Claude Code Prompt-Vorlagen; Blindspot Pass Prompt; Claude interviewt mich Prompt; Debugging-Prompt für Coding Agents; Prompt mit klarem Zielzustand; Plan vor Code Prompt
 - **Fragen:** Welche Prompts kann ich direkt in Claude Code ausprobieren? / Wie sage ich dem Agent, wann er fertig ist? / Wie verhindere ich, dass der Agent Fehler nur versteckt?
-- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), verifikation vor abschluss, codex, requirements lead, reviewer-agent, tech lead prompt, claude code prompts, rollen-prompts, ergebnisverantwortung, task brief, karpathy system prompt, annahmen offenlegen, test-first, coding-agent-fehler, erfolgskriterien, claude.md prompt, scope begrenzen, fehlerschleifen durchbrechen
+- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), requirements lead, task brief, claude code prompts, verifikation vor abschluss, rollen-prompts, ergebnisverantwortung, codex, reviewer-agent, tech lead prompt, erfolgskriterien, scope begrenzen, claude.md prompt, coding-agent-fehler, karpathy system prompt, test-first, annahmen offenlegen, fehlerschleifen durchbrechen
 
 ## Verwandte Themen
 

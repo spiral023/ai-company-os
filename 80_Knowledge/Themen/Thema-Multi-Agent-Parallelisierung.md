@@ -1,6 +1,6 @@
 # Multi-Agent & Parallelisierung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-Abhängigkeiten, Rollen, Advisor. Dauerläufe ohne Aufsicht stehen in autonomie.
 
@@ -9,7 +9,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - **Hauptkeyword:** Claude Code Subagents
 - **Long-Tail:** Agent Teams Claude Code; Git Worktrees parallele Agents; Subagents vs. Agent Teams; Multi-Agent Orchestrierung; Task-Abhängigkeiten Claude Code; Kosten paralleler Agents
 - **Fragen:** Wann lohnt sich Parallelisierung? / Subagent oder Agent Team?
-- **Häufig in den Quellen:** subagents (6), git worktrees (4), claude code subagents (4), effort (4), addblockedby (2), claude code tasks (2), multi-agent (2), modulgrenzen (2), claude code agent teams (2), openclaw (2), codex cli (2), edit-kollisionen (2), agent teams (2), parallel agents (2), agent drift (2), goal drift (2), context rot (2), parallel (2), subagent (2), /clear (2)
+- **Häufig in den Quellen:** subagents (6), claude code subagents (5), git worktrees (4), effort (4), multi-agent (2), claude code tasks (2), addblockedby (2), modulgrenzen (2), claude code agent teams (2), openclaw (2), codex cli (2), agent teams (2), parallel agents (2), edit-kollisionen (2), agent drift (2), goal drift (2), context rot (2), agent tree (2), kosten pro task (2), opus 5.5 (2)
 
 ## Verwandte Themen
 
@@ -22,7 +22,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 
 - [[Advisor-Agent-gegen-Drift]] · meinung · 3 Belege
 - [[Blockierende-Task-Abhaengigkeiten]] · meinung · 2 Belege
-- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 37 Belege
+- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 38 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]]
 
@@ -45,6 +45,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker]]
 - [[2026-09-27-voxyz_ai-2104224555040452925]]
 - [[2026-09-25-voxyz_ai-2103586663393853636]]
 - [[2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c]]

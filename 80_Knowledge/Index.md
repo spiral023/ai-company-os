@@ -33,6 +33,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Voice-Prompting-fuer-Kontextreichtum]] — gesprochene statt getippte Prompts liefern beiläufig mehr Kontext, Details und Constraints.
 - [[CI-Agent-mit-Review-Gate]] — Coding Agent läuft sandboxed und event-getriggert in CI, Output läuft ausschließlich über das bestehende Team-Review-Gate (MR/PR).
 - [[Sandbox-Komposition-aus-OS-Primitiven]] — kein einzelnes natives OS-Feature deckt den offenen Zugriffsbedarf eines Coding Agents; die Sandbox-Grenze entsteht aus mehreren komponierten Primitiven.
+- [[Freigaben-und-Isolation-getrennt-steuern]] — Rückfragen vor Tool-Aufrufen und technische Zugriffsgrenzen getrennt beurteilen; Backend-Status pro Tool statt Vertrauen in einen High-Schalter.
 - [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] — Instruktions-Spezifität (Prosa/Pseudocode/Skript) an die Fehleranfälligkeit der gesteuerten Operation koppeln, das Warum statt nur das Was erklären.
 - [[Blockierende-Task-Abhaengigkeiten]] — Tasks blockieren Tasks über `addBlockedBy`/`addBlocks`; abhängige Tasks werden erst nach erfüllten Voraussetzungen automatisch freigegeben.
 - [[Hook-erzwungene-Skill-Aktivierung]] — UserPromptSubmit-Hook prüft Prompt technisch auf Trigger-Keywords, statt sich allein auf die Description-Heuristik zu verlassen.
@@ -45,16 +46,29 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Agent-generierte-Schulung-mit-Curriculum-Gate]] — Briefing und Curriculum prüfen, bevor ein Agent Medien erzeugt und eine interaktive Single-File-HTML-Schulung montiert.
 - [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] — deterministisches Skript, Prompt-Hook oder Agent-Hook je nach Prüfbarkeit der Hook-Bedingung wählen.
 - [[Screenshot-als-Spezifikationsmedium]] — Bild statt Prosa als Kontext für UI-Analyse, Fehlerdiagnose und Design-zu-Code-Generierung.
+- [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] — sichtbare Änderungen am gerenderten Ergebnis prüfen, neue Defekte zuordnen und Korrekturen erneut abnehmen.
 - [[Metrikband-gestufte-Agent-Autonomie]] — Rechte des Agents wachsen mit der Schwere einer Metrik-Abweichung (1σ loggen, 2σ read-only, 3σ PR); Erkennung deterministisch ohne Modell.
 - [[Hillclimbing-mit-Holdout-Split]] — Prompt, Skill oder Modellwahl gegen ein Eval verbessern: Train/Test-Split, eine Änderung pro Runde, Revert wenn nur Train steigt.
 - [[Entscheidung-per-Scoring-statt-Generierung]] — bei festem Antwortraum Label-Logits auslesen statt Text erzeugen; Verteilung plus Schwellen im Code entscheiden über Automatik oder Review.
+- [[Decision-Head-Finetuning]] — kleine LLMs mit Decision-Head und LoRA auf vorgegebene Optionen spezialisieren; Accuracy, Kalibrierung und Testdaten getrennt prüfen.
 - [[Adversarialer-Pre-Launch-Check]] — vor dem Release read-only Prüfagenten mit festen Fragenkatalogen die eigene App in einer sicheren Testumgebung brechen lassen.
 - [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] — automatische Review-Freigaben nur in abgegrenzten Risikobereichen, mit Shadow Mode, protokollierten Entscheidungen und menschlichen Stichproben.
 - [[Agent-Rechte-umfassen-Kommunikationswege]] — direkte Rechte reichen nicht: erreichbare Agents und delegierte Aktionen gehören zur Berechtigungsgrenze.
 
+- [[Projektkarte-als-Status-und-Entscheidungsartefakt]] — Meilensteine, Blockaden und Entscheidungen als wiederholt aktualisierte Projektübersicht sichtbar machen.
+- [[Handlungsbedarf-zuerst-im-Agent-Bericht]] — notwendige Zuarbeit mit Handlung, Ort und Rückgabe vor Ergebnisdetails nennen.
+- [[Helper-Nutzung-durch-Lint-erzwingen]] — wiederholte statische Fehler über einen gemeinsamen Helper und konkrete Lint-Meldungen beanstanden.
+- [[Fachregel-Konsolidierung-vor-Featureaenderung]] — Regelkopien vergleichen und Verhaltenskorrektur von erhaltendem Refactor trennen.
+- [[Abstraktionswert-mit-Deletion-Test-pruefen]] — gedanklich prüfen, ob ein Modul Komplexität bündelt oder nur weiterreicht.
+- [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]] — plausible Extremwerte als Fixture vergleichen und Rendering-Defekte gezielt nachprüfen.
+
 ## Themen
 
-Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 17 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand. [[Thema-KI-Risiken-Sicherheitsvorfälle]] sammelt Warnungen, Risikoszenarien und konkrete Vorfälle mit KI.
+Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 19 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand. [[Thema-KI-Risiken-Sicherheitsvorfälle]] sammelt Warnungen, Risikoszenarien und konkrete Vorfälle mit KI.
+
+[[Thema-Sicherheit-Sandboxing]] bündelt Sandbox-Mechanismen, Permissions und OS-Isolation für die Ausführung von Agent-Tools.
+
+[[Thema-Open-Source-LLMs-lokale-Modelle]] bündelt offene Gewichte, lokale Inferenz, Hardware, Quantisierung und Fine-Tuning; angekündigte und verfügbare Modelle bleiben unterscheidbar.
 
 ## Guides
 
@@ -68,4 +82,4 @@ Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 17 
 
 ## Fakten
 
-- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-02.
+- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-09.

@@ -18,6 +18,8 @@ Praxisregeln aus den Belegen:
 - Die Verteilung ist keine Trefferquote: 0,91 heißt nur, dass 91 % der Masse innerhalb der Kandidaten auf dieser Antwort liegen. Kalibrierung braucht gelabelte Beispiele.
 - Die Wahrscheinlichkeiten hängen von der Kandidatenmenge ab. Ausgerollt wird daher immer das Bündel aus Modell, Prompt, Tokenizer, Label-Set und Schwellen.
 
+**Ergänzung 2026-10-09:** [[2026-10-07-unslothai-decision-model-finetuning]] beschreibt mit [[Decision-Head-Finetuning]] einen trainierten Decision-Head plus LoRA als zweite Umsetzung des festen Antwortraums. Das unterscheidet sich vom oben beschriebenen eingeschränkten Softmax über Label-Tokens. Eigene Trainingsdaten und Kalibrierung werden damit zu zusätzlichen Arbeitsschritten.
+
 ## Vorteile
 
 - Kein autoregressiver Decoding-Loop, kein Parsen von Freitext oder JSON.
@@ -41,13 +43,18 @@ Praxisregeln aus den Belegen:
 - 2026-09-28 · [[2026-09-28-unslothai-2104592692072304916]] · meinung — Produktisiert als lokales Decision-Modell Laya über Unsloth Desktop ab 4 GB RAM mit Fragetypen Ja/Nein, `choice` und `score`.
 - 2026-09-29 · [[2026-09-29-openai-rueckblick-auf-den-devday-2026]] · meinung — OpenAI kündigt eine Decisions API an: Luna auf einen festen Fragenkatalog mit begrenzten Antworten, zum Klassifizieren, Weiterleiten und zur Wahl der nächsten Agent-Aktion; Herstellerankündigung, begrenzte Vorschau.
 
+- 2026-10-07 · [[2026-10-07-unslothai-decision-model-finetuning]] · meinung — Unsloth berichtet für einen Clef-Head plus LoRA bei Qwen3.5-0.8B aggregierte Accuracy von 20,7 % auf 74,3 % über drei Decision-Benchmarks und 78 % auf Holdout. Herstellerbericht ohne eigene Reproduktion oder Kalibrierungsmessung; Training und Inferenz sind getrennte Ressourcenangaben.
+
 ## Spannungen & offene Fragen
 
 - Drei unabhängige Anbieter zeigen das Muster, gemessen ist bisher nichts davon. Die Konfidenz bleibt deshalb `meinung`, bis Messwerte zu Latenz, Kosten und Trefferquote vorliegen.
 - Laya beschreibt seinen Ja/Nein-Fragetyp im Bild als `noul`, vermutlich ein Tippfehler für `bool` (2026-10-02 nicht verifiziert).
 - **Korrektur 2026-10-02:** `Noul` ist kein Tippfehler, sondern TypeSafes eigener Name für den Ja/Nein-Typ von Jev (neben `Choice` und `Score`), siehe [[2026-09-18-akshay_pachaar-2101037514945597645]]. Laya übernimmt damit Jevs Benennung, was zur Jev-kompatiblen API passt. Die Vermutung oben ist damit überholt.
 
+- **Ergänzung 2026-10-09:** Die frühere Aussage, es gebe keine Messwerte, ist durch Unsloths Accuracy-Tabelle zeitlich überholt. Unabhängige Qualitäts-, Latenz-, Kosten- und Kalibrierungsmessungen fehlen weiterhin; Post und Guide stammen vom selben Anbieter und erhöhen die Konfidenz deshalb nicht. → [[2026-10-07-unslothai-decision-model-finetuning]]
+
 ## Verwandte Patterns
 
 - [[Lokale-Modell-Umleitung-Muster]]
+- [[Decision-Head-Finetuning]]
 - [[Modell-Eskalation-von-guenstig-nach-teuer]]

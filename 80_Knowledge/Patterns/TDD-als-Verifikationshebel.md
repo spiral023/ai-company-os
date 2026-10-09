@@ -40,8 +40,12 @@ Kontextmenge, Prüfbarkeit und Arbeitspaketgröße bestimmen gemeinsam die Quali
 - 2026-08-14 · [[2026-08-14-floknowsai-ueber-achtzig-prozent-des-codes-von-claude-code-und-codex-sieht-kein]] · meinung — Test pro geändertem Verhalten, Refactoring muss unter unveränderten Tests grün bleiben; keine Messung, nur Regel.
 - 2026-02-03 · [[2026-02-03-svpino-claude-code-md-tips]] · meinung — Bugfix nur nach reproduzierendem Test, als CLAUDE.md-Regel formuliert. Sekundärquelle, keine Messung.
 - 2026-02-04 · [[2026-02-04-tweag-tdd-agentic-coding]] · meinung — Sekundärquelle des Tweag-Handbuchs: Test als präziser Prompt, ein Verhalten pro Prompt, Refactoring nur bei grünen Tests. Deckt sich mit dem Bestand; kein Messwert.
+- 2026-10-04 · [[2026-10-04-voxyz_ai-2106783910055006342]] · meinung — Der vorgeschlagene Ablauf setzt Dokumentationsabgleich, zunächst fehlschlagende Verhaltenstests, minimale Umsetzung und Bereinigung in Reihenfolge; echte Testausgaben und ausgelassene Checks sind zu berichten, ein Effizienzgewinn bleibt unbelegt.
+- 2026-10-02 · [[2026-10-02-voxyz_ai-2106104334035435572]] · meinung — Aktuelle Ausgaben sollen vor Refactors durch Tests festgehalten werden, Assertions bleiben in Strukturänderungen unverändert; Erhaltung gilt nur für abgedeckte Fälle und der vorgeschlagene Architektur-Check braucht konkrete Duplikaterkennung.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-09 · [[2026-10-02-voxyz_ai-2106104334035435572]] friert Assertions für verhaltensgleiche Refactors ein und trennt fachliche Korrekturen davon. Charakterisierungstests können dabei auch bestehendes Fehlverhalten festhalten; widersprüchliche Regelkopien brauchen eine gesonderte fachliche Entscheidung, bevor Tests das gewünschte Verhalten bestätigen.
 
 - Vier unabhängige Autoren (Matt Pocock, Duncan Ogilvie, Andrej Karpathy, Addy Osmani — Stand 2026-07-14) konvergieren unabhängig auf TDD/Verifikation als zentralen Mechanismus für Agenten — stützt die Kernaussage über bloße Einzelmeinung hinaus, auch wenn keine kontrollierte Studie vorliegt.
 - Spannung 2026-07-14 (Osmani): Grüne Tests allein können selbst zur Scheinverifikation werden („evidence, not proof“) — der Agent kann Tests passend machen. Konsequenz: Runtime-Check und menschlicher Diff-Read bleiben Teil der Eskalationskette, TDD ersetzt sie nicht.

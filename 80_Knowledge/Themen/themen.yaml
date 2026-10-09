@@ -108,14 +108,25 @@ cluster:
 
   modelle-kosten:
     name: "Modelle, Kosten & Limits"
-    beschreibung: "Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Caching, Benchmarks, offene und lokale Modelle, Provider-Umleitung."
+    beschreibung: "Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Caching, Benchmarks und Provider-Umleitung. Verfügbarkeit offener Gewichte, lokale Inferenz, Hardware und Fine-Tuning gehören vorrangig zu open-source-llms; Kostenvergleiche bleiben hier."
     kern: [kosten pro task, cost per task, pareto, usage limit, usage limits, prompt caching, prompt cache, effort, reasoning-stufe, modellwahl, modellpreise, token-verbrauch, tokenizer, 5-stunden-fenster, peak hours, extra usage, anthropic_base_url, ollama, llama.cpp, lokale llms, lokale modelle, intelligence index, coding agent index, terminal-bench, opus 5.5, gpt-6, sonnet, haiku, modell-eskalation, benchmark]
     weit: [modell, kosten, preis, preise, token, tokens, limit, cache, openrouter, quantisierung, fine-tuning]
-    verwandt: [kontext, orchestrierung, autonomie, rolle-markt]
+    verwandt: [kontext, orchestrierung, autonomie, rolle-markt, open-source-llms]
     blog:
       hauptkeyword: "Claude Code Kosten"
       longtail: ["Claude Code Usage Limits", "Kosten pro Task statt pro Token", "Prompt Caching Claude Code", "Claude Code mit lokalem Modell", "Reasoning Effort wählen", "Modell-Eskalation günstig nach teuer"]
       fragen: ["Welches Modell für welche Aufgabe?", "Warum sind meine Limits so schnell leer?"]
+
+  open-source-llms:
+    name: "Open-Source-LLMs & lokale Modelle"
+    beschreibung: "Offene LLMs und Open-Weight-Modelle: verfügbare oder angekündigte Gewichte, lokale Inferenz und Serving, Hardwarebedarf, Quantisierung und Fine-Tuning. Eine Gewichtsankündigung ist kein Release; die Bezeichnung Open Source setzt eine gesonderte Prüfung der Lizenz und Offenheit voraus. Allgemeine Modellpreise und Benchmark-Kostenvergleiche stehen in modelle-kosten."
+    kern: [open source llm, open-source llm, open source modelle, open-weight, open weights, offene gewichte, offene modelle, lokale llms, lokale modelle, lokale inferenz, ollama, llama.cpp, gguf, quantisierung, qwen, deepseek, mistral, kimi, glm, lora, decision-head]
+    weit: [self-hosted, inference server, serving, fine-tuning, vram, gpu, ram, kv-cache, memory bandwidth, parameter, lizenz, modellgewichte]
+    verwandt: [modelle-kosten, kontext, autonomie, rolle-markt, verifikation]
+    blog:
+      hauptkeyword: "Open Source LLM"
+      longtail: ["Open-Weight vs. Open Source", "LLM lokal betreiben", "Claude Code mit lokalem Modell", "Ollama vs. llama.cpp", "LLM Hardware und VRAM", "GGUF Quantisierung", "Offene LLMs fine-tunen", "Mistral offene Gewichte"]
+      fragen: ["Welche LLM-Gewichte sind tatsächlich verfügbar?", "Was unterscheidet Open Weight von Open Source?", "Welche Hardware brauche ich für lokale Modelle?", "Wann lohnt sich lokales Serving oder Fine-Tuning?"]
 
   sicherheit:
     name: "Sicherheit & Sandboxing"

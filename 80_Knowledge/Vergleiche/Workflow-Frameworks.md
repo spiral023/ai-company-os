@@ -1,6 +1,8 @@
 # Vergleich: Workflow-Frameworks
 
-**Stand:** 2026-07-13
+**Stand:** 2026-10-09
+
+**Datengrundlage:** Vergleichsmatrix 2026-07-13; Ergänzung zu Matt Pocock 2026-10-09.
 
 ## Übersicht
 
@@ -57,3 +59,11 @@ Kernaussage der Synthese: Die Wahl sollte am gerade dominanten Problem hängen (
 - Keiner der Frameworks wurde bisher im eigenen Environment produktiv getestet — alle Einschätzungen in dieser Tabelle stammen aus Repo-Struktur/README-Analyse (`external_repos/INDEX.md`) bzw. aus einer fremden Sekundärsynthese (vibe-repo-Wiki), nicht aus eigener Nutzung. Konfidenz „verifiziert“ im Sinne von „selbst getestet“ steht für diesen Vergleich insgesamt noch aus.
 - ECC ist bislang nicht unter `external_repos/` geklont — die hier erfassten Fakten stammen ausschließlich aus der vibe-repo-Sekundärquelle. Vor einer produktiven Einschätzung wäre ein eigener Klon und Abgleich mit `external_repos/INDEX.md` sinnvoll (siehe `AGENTS.md` → „Repo-Import“).
 - Der Sicherheitsbefund zu Superpowers (kein sichtbares „Anthropic verified“-Badge, Community-Plugins werden nicht geprüft) ist eine Beobachtung aus öffentlichem Artefakt-Stand, keine formale Garantie — sollte vor produktivem Einsatz eigenständig nachgeprüft werden.
+
+## Ergänzung 2026-10-09: Updates und Abstraktionen bei Matt Pocock
+
+Der lokal geprüfte Checkout `mattpocock/skills@4588b32` dokumentiert unter `1.3.0` den Wechsel von `CONTEXT.md`/`CONTEXT-MAP.md` zu `GLOSSARY.md`/`GLOSSARY-MAP.md`. Sein README unterscheidet ein verwaltetes Plugin mit Autorenupdates und bearbeitbare Skill-Kopien. Bei eigenen Kopien empfiehlt Pocock Release-Diff, Prüfung der Setup-Referenzen und eine Auswertung der letzten 25 Sessions für passende Workflow-Empfehlungen. Aufrufhäufigkeit belegt dabei keine Wirkung. Quelle: [[2026-10-04-mattpocockuk-2106730768789602313]].
+
+`codebase-design` liefert im selben Checkout den Deletion Test: Verschwindet Komplexität beim gedachten Entfernen, ist das Modul möglicherweise entbehrlich; verteilt sie sich wieder auf Aufrufer, erfüllt die Abstraktion einen Zweck. Das ergänzt die kleine, komponierbare Skill-Philosophie um ein konkretes Architekturprüfkriterium. Eine Entfernung oder Tokenersparnis wurde hier nicht getestet. Quelle: [[2026-10-01-mattpocockuk-2105563604384915639]], Pattern: [[Abstraktionswert-mit-Deletion-Test-pruefen]].
+
+Die Ergänzung bestätigt dokumentierte Methoden im vorhandenen Checkout. Die Vergleichsmatrix behält ihren datierten Stand vom 13.07.2026.

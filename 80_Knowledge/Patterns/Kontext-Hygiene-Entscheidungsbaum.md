@@ -68,6 +68,8 @@ Nach jedem abgeschlossenen Arbeitsblock wird bewusst zwischen fünf Optionen ent
 - 2026-09-22 · [[2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit]] · meinung — `/clear` nach erledigter Aufgabe statt ca. 80 % Kontext mitzuschleppen, alternativ `/compact`. Keine Messung der Ersparnis.
 - 2026-08-22 · [[2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht]] · meinung — Warnt vor Token-Spar-Tools mit vorab gebautem Kontext-Graphen: Die Pflege bei sich ändernder Geschäftslogik ist das Problem, veralteter Graph-Inhalt landet als Wahrheit im Kontext; Erfahrungsvergleich ohne offengelegte Zahlen.
 - 2026-07-08 · [[2026-07-08-bcherny-2074997570317779038]] · meinung — Hersteller-Primärquelle: `/checkup` automatisiert Aufräumen von Skills/MCPs/Plugins und Aufteilen der Root-`CLAUDE.md`; keine Messung der Einsparung.
+- 2026-10-07 · [[2026-10-07-voxyz_ai-2107939019091005836]] · meinung — Vox trennt optisches Aufräumen durch @-Imports von tatsächlicher Kontextentlastung und empfiehlt das Prüfen ungenutzter Skills; seine Aussagen zu vollständigem Startladen und fortlaufenden Skill-Metadatenkosten sind werkzeugabhängig und unverifiziert.
+- 2026-10-02 · [[2026-10-02-voxyz_ai-2106006290954592332]] · meinung — Vox schlägt wöchentliche Codepflege, monatliche Kontext-/Regelpflege und anlassbezogene Insights oder Retro vor; Intervalle und Befehlswirkungen sind datierte Empfehlungen ohne Nachweis einer optimalen Frequenz.
 
 ## Spannungen & offene Fragen
 

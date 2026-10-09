@@ -67,11 +67,15 @@ Parallelisierung lohnt sich nur unter drei Voraussetzungen: (1) **klare Modulgre
 - 2026-06-08 · [[2026-06-08-mvanhorn-2063865685558903149]] · meinung — Beschreibt Orchestrierungs-Loops, die andere Loops beaufsichtigen, und nennt Cherny-Tipp Selbstverifikation als Voraussetzung für lange autonome Läufe. Einschränkung: selbstberichtet, kein Messwert.
 - 2026-07-16 · [[2026-07-16-amasad-2077802290304684404]] · meinung — Manager-Agent pro Mitarbeiter spawnt Agent-Flotten in Loops an verifizierbaren Aufgaben (CSS-Migration: 423 PRs, 309 gemergt in etwa zwei Monaten). Läuft in microVMs mit Audit-Log und Token-Proxy, Selbstbericht, Kosten nicht genannt.
 
+- 2026-10-08 · [[2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker]] · meinung — Drei getrennte Rollen mit eigener Modell- und Effort-Wahl: Explore liest Code, Researcher sucht Dokumentation, Worker implementiert und testet; der Hauptagent führt zusammen und prüft. Der Setup-Prompt verlangt vor Änderungen einen Vorschlag und die Prüfung bestehender Agent-Definitionen und Overrides.
+
 ## Spannungen & offene Fragen
 
 - Die drei Quellen überschneiden sich teilweise in ihren zugrunde liegenden X-Posts (u.a. @dani_avila7 taucht in mehreren vibe-repo-Artikeln auf), sind aber inhaltlich eigenständig und ergänzen sich, statt sich zu widersprechen.
 - Spannung 2026-07-14: Anthropic nennt Research als Paradebeispiel für lohnende Parallelisierung (+90,2 %), aber bei ~15× Tokenkosten — der Business Case gilt laut Quelle nur für Aufgaben, deren Wert die Kosten trägt und die echt parallelisierbar sind. Das stützt die Eskalationsreihenfolge dieses Patterns, setzt die Schwelle aber höher als „geht es parallel?“: „lohnt es die 15×?“.
 - Offene Frage: Wie lässt sich die Drei-Voraussetzungen-Prüfung praktisch vor jedem Parallelisierungsversuch operationalisieren (z.B. als Checkliste in einem Skill), statt sie nur als Prinzip im Kopf zu behalten?
+
+- 2026-10-09: Vox nennt für eine Managed-Agents-Demo mit zehn Haiku-Subagents geringere Gesamtkosten und kürzere Laufzeit als für Opus allein. Das hebt den vorhandenen Beleg zu hohen Multi-Agent-Tokenkosten nicht auf: Aufgaben, Modelle und Messgrößen unterscheiden sich. Der vorgeschlagene Drei-Rollen-Coding-Baum wurde nicht verglichen. → [[2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker]]
 
 ## Verwandte Patterns
 

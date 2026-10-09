@@ -1,6 +1,6 @@
 # Prompting & Klärung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-07. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns, Voice-Prompting, Anweisungen bei Modellwechsel ausdünnen, Anti-Sycophancy.
 
@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), change quiz (2), known unknowns (2), skill descriptions (2), codex skill-creator (2), überregulierung (2), agents.md (2), modellwechsel (2), progressive disclosure (2), gpt-6 astra (2), spec grilling, risikoanalyse, prompt-tricks, frühwarnsignale, sycophancy, projektplanung mit ai, pre-mortem prompt, ai agent zustimmungsneigung, fable unknowns, spec-grilling
+- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), change quiz (2), known unknowns (2), progressive disclosure (2), skill descriptions (2), modellwechsel (2), überregulierung (2), gpt-6 astra (2), codex skill-creator (2), risikoanalyse, prompt-tricks, frühwarnsignale, sycophancy, pre-mortem prompt, ai agent zustimmungsneigung, spec grilling, projektplanung mit ai, spec-driven development, implementation notes
 
 ## Verwandte Themen
 
@@ -24,7 +24,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - [[Intent-Engineering-als-dritte-Schicht]] · meinung · 4 Belege
 - [[Voice-Prompting-fuer-Kontextreichtum]] · meinung · 3 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-statt-Generierung]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-statt-Generierung]], [[Handlungsbedarf-zuerst-im-Agent-Bericht]]
 
 ## Quellen (7)
 
@@ -38,6 +38,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-sta
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-05-voxyz_ai-2107123654219743712]]
 - [[2026-09-19-voxyz_ai-2101355643882065971]]
 - [[2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re]]
 - [[2026-08-19-matt-pocock-live-uncle-bob-on-software-fundamentals-in-the-a]]

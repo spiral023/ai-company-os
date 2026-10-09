@@ -16,6 +16,11 @@ muster:
     keywords: [AGENTS.md, CLAUDE.md, Context Engineering, Progressive Disclosure, Instruction-Following-Budget, AGENTbench, LLM-generierte Context Files, Agent Onboarding]
     neben: [kontext]
     synonyme: [Agent-Datei, GEMINI.md, Context File, Repo-Onboarding-Datei]
+  Abstraktionswert-mit-Deletion-Test-pruefen:
+    haupt: verifikation
+    keywords: [deletion test, deep modules, shallow modules, interface, abstraktion, code-review]
+    neben: [planung]
+    synonyme: [Deletion Test, Deep modules]
   Action-Space-Design-nach-Modellfaehigkeit:
     haupt: erweiterungen
     keywords: [Action Space, Agent Tooling, Tool Design, Tool Overload, Tool-Nutzung messen, Robuste Interfaces, Modellfähigkeit, Structured Output]
@@ -66,6 +71,11 @@ muster:
     keywords: [Learning Mode, Explanatory Output Style, Code verstehen, Claude Code /config, ASCII-Diagramme, HTML-Präsentation, Onboarding in Codebasen, Codebase Understanding]
     neben: []
     synonyme: [Learning Style, Explanatory Mode, Lernmodus, Claude Code Output Styles]
+  Decision-Head-Finetuning:
+    haupt: open-source-llms
+    keywords: [Decision Models, Decision Head, LoRA Fine-Tuning, Clef Head, Unsloth, Holdout Accuracy, Probability Calibration, Lokale Modelle]
+    neben: [modelle-kosten, verifikation]
+    synonyme: [Decision Model Fine-Tuning, Decision-Head-Training, Clef-Head-Finetuning, Entscheidungsmodell trainieren]
   Deny-Rules-statt-CLAUDE-md-Empfehlung:
     haupt: sicherheit
     keywords: [Claude Code Deny Rules, Secrets Protection, .env schützen, Permission Rules, managed-settings.json, Advisory vs. Enforcement, Command Smuggling, requirements.toml]
@@ -86,6 +96,16 @@ muster:
     keywords: [Unknown Unknowns, Prompt Engineering, Known Unknowns, Change Quiz, Karte und Territorium, Implicit Knowledge, Ambiguität, Prompt-Qualität]
     neben: [planung]
     synonyme: [Unknowns-Quadranten, Unbekannte Unbekannte, Undocumented Constraints]
+  Fachregel-Konsolidierung-vor-Featureaenderung:
+    haupt: verifikation
+    keywords: [tdd, test, tests, review, verifikation]
+    neben: [planung]
+    synonyme: [Rule deduplication, Behavior-preserving refactor]
+  Freigaben-und-Isolation-getrennt-steuern:
+    haupt: sicherheit
+    keywords: [Sandbox Permissions, Approval Policy, OS-Level Sandboxing, Tool Isolation, Full Access, Sandbox Status, Python Sandbox, Terminal Sandbox, MXC, Preview Security Boundary]
+    neben: [autonomie]
+    synonyme: [Freigabe-Modus und Sandbox, Permissions vs. Isolation, Approval vs. Sandboxing, Automatische Freigabe in der Sandbox]
   Freiheitsgrad-nach-Aufgaben-Fragilitaet:
     haupt: skills
     keywords: [Degrees of Freedom, Skill-Instruktionen, Prosa vs. Skript, Fragile Operationen, Deterministische Skripte, Skill Authoring, Pseudocode-Templates, Subagent-Prompts]
@@ -96,11 +116,21 @@ muster:
     keywords: [The Great Decoupling, Programming vs. Engineering, Tech Lead, QA Lead, Vibe Reviewing, Trust the Harness, Agentic Engineering, Developer Role]
     neben: [verifikation]
     synonyme: [Entwicklerrolle im KI-Zeitalter, Decoupling, Engineer statt Programmierer]
+  Handlungsbedarf-zuerst-im-Agent-Bericht:
+    haupt: agent-dateien
+    keywords: [agent-datei, agent bericht, handlungsbedarf, blockadebericht]
+    neben: [prompting]
+    synonyme: [Action-first report, Blockadebericht]
   Handoff-Doc:
     haupt: kontext
     keywords: [Handoff Document, Session Handoff, Context Compaction, Structured Handoff Packets, Session-Übergabe, STATE.md, Agent Memory, planning-with-files]
     neben: [planung]
     synonyme: [Handoff Doc, Übergabedokument, Session Summary, Context Handoff]
+  Helper-Nutzung-durch-Lint-erzwingen:
+    haupt: verifikation
+    keywords: [testharness, test, tests, linter]
+    neben: [agent-dateien]
+    synonyme: [Lint guardrail, Enforced helper]
   Hillclimbing-mit-Holdout-Split:
     haupt: verifikation
     keywords: [Eval Design, Hillclimbing, Holdout Set, Overfitting, Train/Test-Split, LLM-as-Judge, Grader-Validierung, claude-api build-eval]
@@ -139,7 +169,7 @@ muster:
   Lokale-Modell-Umleitung-Muster:
     haupt: modelle-kosten
     keywords: [ANTHROPIC_BASE_URL, Claude Code mit lokalen Modellen, Anthropic-kompatibler Endpunkt, Rate Limits, Datenschutz, Multi-Provider, Local LLM, Ollama]
-    neben: []
+    neben: [open-source-llms]
     synonyme: [Model Routing, Provider-Umleitung, Claude Code Alternative Models, Endpoint Override]
   Lovable-Prototyp-dann-lokaler-Handoff:
     haupt: prototyping
@@ -171,6 +201,11 @@ muster:
     keywords: [Plan Mode, plan.md, Plan-then-Implement, Builder Reviewer Verifier, Single-Model-Blindheit, Discovery, Code Review Agent, Separate Reviewer]
     neben: [verifikation]
     synonyme: [Plan First, Planning Mode, Plan-Review-Trennung, Research Plan Implement]
+  Projektkarte-als-Status-und-Entscheidungsartefakt:
+    haupt: planung
+    keywords: [projektkarte, projektstatus, meilenstein, blockaden, entscheidung, autonomer agent]
+    neben: [autonomie]
+    synonyme: [Project Map, Projektstatuskarte]
   Ralph-Loop-Frischer-Kontext-pro-Iteration:
     haupt: autonomie
     keywords: [Ralph Loop, Ralph Wiggum, Autonomous Coding Loop, Fresh Context, Overnight Agents, STEERING.md, Context Saturation, Brownfield]
@@ -241,6 +276,16 @@ muster:
     keywords: [Training Data Density, Tech Stack Wahl, Bleeding Edge, Framework-Auswahl, LLM-freundliche Stacks, React FastAPI Python, Modellwissen, Library Versions]
     neben: [erweiterungen]
     synonyme: [Trainingsdaten-Abdeckung, Stack Selection for AI, Boring Technology]
+  UI-Grenzfaelle-mit-realistischen-Daten-pruefen:
+    haupt: verifikation
+    keywords: [testharness, adversarial, test, verifikation, skill.md, skill]
+    neben: [prototyping]
+    synonyme: [Worst-case fixtures, Break UI]
+  Visuelle-Abnahme-mit-Live-Lokal-Vergleich:
+    haupt: verifikation
+    keywords: [screenshot, layout, testharness, test]
+    neben: [prototyping]
+    synonyme: [UI-Abnahme, Browserprüfung, Live-Lokal-Vergleich]
   Voice-Prompting-fuer-Kontextreichtum:
     haupt: prompting
     keywords: [Voice Prompting, Diktierfunktion, Speech-to-Text, Prompt-Kontext, Voice Coding, Transkription, Context-rich Prompts, Dictation]
@@ -328,10 +373,10 @@ quellen:
     keywords: [Lovable Website, Hero Section, Responsive Breakpoints, Spacing Typografie, Conversion Prompts, KI-Website-Builder, Landingpage]
     neben: [prompting]
   2026-01-22-dr-cintas-claude-code-local:
-    haupt: modelle-kosten
+    haupt: open-source-llms
     kernaussage: Über drei Umgebungsvariablen lässt sich Claude Code auf einen lokalen Ollama-Server umleiten, ohne die CLI selbst zu ändern.
     keywords: [Claude Code lokal, Ollama, ANTHROPIC_BASE_URL, qwen3-coder, qwen2.5-coder, Lokales LLM, Claude Code kostenlos]
-    neben: []
+    neben: [modelle-kosten]
   2026-01-22-hooeem-claude-code-7-schritte-plan:
     haupt: einstieg
     kernaussage: Ein Überblick über Kernschleife, Kontextsteuerung, Plan Mode vs. Ultrathink, Panic-Buttons, Hooks als Guardrails und CI-Skalierung.
@@ -418,10 +463,10 @@ quellen:
     keywords: [planning-with-files, task_plan.md, findings.md, progress.md, Persistenter Plan, Agent Drift, Externer Speicher, Claude Skill]
     neben: [kontext]
   2026-02-02-unsloth-team-claude-code-local-llm:
-    haupt: modelle-kosten
+    haupt: open-source-llms
     kernaussage: Claude Code und Codex CLI laufen komplett lokal gegen einen llama.cpp-Server, wenn die Basis-URL oder der Provider auf den lokalen Endpunkt zeigt.
     keywords: [llama.cpp, Unsloth, GLM-4.7-Flash, GGUF Quantisierung, Claude Code lokal, OpenAI Codex CLI, config.toml Provider, ANTHROPIC_BASE_URL]
-    neben: [autonomie]
+    neben: [modelle-kosten, autonomie]
   2026-02-03-god-of-prompt-karpathy-ai-coding-system-prompt:
     haupt: agent-dateien
     kernaussage: Ein CLAUDE.md-Prompt gegen typische Agent-Fehler bündelt bekannte Prinzipien, konkurriert aber als langer Text im Kontext und wird nur weich befolgt.
@@ -719,10 +764,10 @@ quellen:
     keywords: [Context Engineering, CLAUDE.md, AGENTS.md, Context Window, Progressive Disclosure, Agent Harness, Skills, MCP Tools]
     neben: [skills]
   2026-04-22-alibaba-qwen-qwen3-6-27b-lokal-betreiben:
-    haupt: modelle-kosten
+    haupt: open-source-llms
     kernaussage: Ein offenes 27B-Modell erreicht laut Herstellerchart im Agentic Coding etwa den Stand eines Vorjahres-Frontiermodells; lokaler Betrieb ist eine Speicher- und Bandbreitenfrage.
     keywords: [Qwen3.6-27B, Lokale LLMs, Open-Weight Coding-Modell, SWE-bench Verified, Terminal-Bench 2.0, GGUF Q4 Unsloth, Apache 2.0, Claude 4.5 Opus Vergleich]
-    neben: []
+    neben: [modelle-kosten]
   2026-04-29-wiki-compiler-claude-code-session-management-1m-context:
     haupt: kontext
     kernaussage: Nach jedem Arbeitsblock bewusst zwischen Continue, Rewind, Compact, Clear und Subagent wählen, weil mehr Kontext ab etwa 300k Tokens Context Rot riskiert.
@@ -977,10 +1022,10 @@ quellen:
     keywords: [Tokenizer, Token-Verbrauch nach Sprache, Deutsch vs. Englisch Prompts, Claude Opus Limits, Usage Limits, Token-Kosten, Prompt-Sprache]
     neben: [rolle-markt]
   2026-07-28-pdf-state-of-open-source-ai-v1-0-1:
-    haupt: rolle-markt
+    haupt: open-source-llms
     kernaussage: Offene Modelle liegen nur etwa einen Release-Zyklus hinter der Frontier, und Benchmark-Ergebnisse hängen stark vom Harness, nicht nur vom Modell ab.
     keywords: [State of Open Source AI, Open-Weight-Modelle, Kimi K3, GLM 5.2, Agent Harness, Terminal-Bench, Artificial Analysis Intelligence Index, Metered Pricing]
-    neben: [modelle-kosten]
+    neben: [rolle-markt, modelle-kosten]
   2026-07-30-floknowsai-ki-gibt-dir-das-gefuehl-dass-du-so-schnell-wie-noch-nie-arbeitest:
     haupt: kontext
     kernaussage: Erfahrene Entwickler fühlen sich mit KI schneller, messen aber langsamer, und falscher Kontext schadet mehr als gar keiner, weshalb Pflege wichtiger ist als Sammeln.
@@ -1052,10 +1097,10 @@ quellen:
     keywords: [Agent Code Review, Pull Requests ohne Review, frische Review-Session, Selbstkontrolle von Agents, Branch Protection, Required Status Checks, TDD, Refactoring-Tests]
     neben: []
   2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo:
-    haupt: modelle-kosten
+    haupt: open-source-llms
     kernaussage: Speicherbedarf und Tempo lokaler Modelle lassen sich mit einfachen Faustformeln aus Parametern, Quantisierung und Speicherbandbreite vorab abschätzen; Kontext und KV-Cache fehlen dabei.
     keywords: [Lokale LLMs, Speicherbedarf berechnen, Quantisierung Q4, Mixture of Experts, Tokens pro Sekunde, Speicherbandbreite, VRAM, RAG vs. Fine-Tuning, Qwen3-30B-A3B]
-    neben: []
+    neben: [modelle-kosten]
   2026-08-18-docker-2089789519788728379:
     haupt: sicherheit
     kernaussage: MicroVM-Isolation mit eigenem Kernel pro Sandbox gilt laut Docker inzwischen als empfohlener Standardpfad für Claude Code, ist aber nur als Herstellermeldung belegt.
@@ -1305,11 +1350,11 @@ quellen:
     keywords: [sonnet 5.5, effort, migration, thinking, between_tools, prompt caching, opus 5.5]
     neben: [prompt-vorlagen]
   2026-09-28-unslothai-2104592692072304916:
-    haupt: modelle-kosten
+    haupt: open-source-llms
     kernaussage: Unsloth kündigt am 28.09.2026 an, dass sich das Decision-Modell „Laya“ (laut Guide eine offene Jev-Alternative) lokal über Unsloth Desktop betreiben lässt, auf CPU, Mac, Windows, Linux
       und GPU.
     keywords: [modell-eskalation, modell, token]
-    neben: []
+    neben: [modelle-kosten]
   2026-09-29-artificialanlys-2105025585332605357:
     haupt: modelle-kosten
     kernaussage: Artificial Analysis (Drittanbieter, Intelligence Index v4.3.2) misst `GPT-6.1 Sol`, das `GPT-6 Sol` nach sieben Tagen ablöst.
@@ -1361,6 +1406,11 @@ quellen:
     kernaussage: Ein Creator zeigt drei Selbsttests, in denen Claude Code mit Opus 5.5 und HyperFrames (Open Source von HeyGen) Videos baut.
     keywords: [motion graphics, hyperframes, opus 5.5, erklärvideo, werbespot, video aus code]
     neben: [modelle-kosten]
+  2026-10-01-mattpocockuk-2105563604384915639:
+    haupt: verifikation
+    kernaussage: Pocock schlägt vor, mit `/codebase-design` nach Shallow Modules zu suchen und den **Deletion Test** auf mögliche Entfernungskandidaten anzuwenden.
+    keywords: [deletion test, shallow modules, deep modules, codebase-design, skill.md, skill, skills]
+    neben: [planung]
   2026-10-02-developers-using-gpt-6-openai-api:
     haupt: modelle-kosten
     kernaussage: Die Entwicklerseite „Using GPT-6“ beschreibt die drei GPT-6-Modelle, neue API-Funktionen und Prompt-Bausteine für Astra.
@@ -1410,6 +1460,37 @@ quellen:
     kernaussage: Im Klon von thedaviddias/Front-End-Checklist (Stand Commit `7bfd8680`) beschreibt `packages/cli/README.md` die CLI `@frontendchecklist/cli`; die Regeln liegen im Paket, sie läuft offline.
     keywords: [front-end-checkliste, cli, mcp-server, ci-gate, audit]
     neben: [sicherheit, erweiterungen]
+  2026-10-02-voxyz_ai-2106006290954592332:
+    haupt: erweiterungen
+    kernaussage: Vox bündelt `Claude Code`-Befehle zu einem Wartungsplan gegen Duplikate, Strukturdrift und veraltete Regeln.
+    keywords: [doctor prompt-audit, simplify, code-review, retro, insights, hook, hooks, erweiterung, skill.md, skill]
+    neben: [kontext, verifikation]
+  2026-10-02-voxyz_ai-2106104334035435572:
+    haupt: verifikation
+    kernaussage: 'Vox empfiehlt, vor Änderungen sämtliche Implementierungen der betroffenen Regel zu kartieren: Dateien, Kopien und Ergebnisse für identische Eingaben.'
+    keywords: [tdd, test, tests, review, verifikation, qualität]
+    neben: []
+  2026-10-04-emilkowalski-2106752670405099523:
+    haupt: prototyping
+    kernaussage: 'Emil Kowalski kündigt zwei Ergänzungen für sein [Skills-Repository](https://github.com/emilkowalski/skills) an:'
+    keywords: [mobile-native, break-ui, 'hover: hover', 'pointer: fine', worst-case fixtures, skill, skills, trigger, eval]
+    neben: [verifikation, skills]
+  2026-10-04-mattpocockuk-2106730768789602313:
+    haupt: frameworks
+    kernaussage: 'Pocock empfiehlt für `mattpocock/skills v1.3` einen gezielten Update-Check: `CONTEXT.md` in `GLOSSARY.md` umbenennen, nötige Anpassungen für `/setup-matt-pocock-skills` prüfen und die
+      eigenen Skill-Da'
+    keywords: [mattpocock/skills v1.3, GLOSSARY.md, skill diff, plugin updates, session usage, skill, skills, plugin, trigger, eval, mattpocock, workflow]
+    neben: [skills]
+  2026-10-04-voxyz_ai-2106783910055006342:
+    haupt: agent-dateien
+    kernaussage: Vox empfiehlt eine kompakte `AGENTS.md` gegen vorschnelle Kompatibilitätsschichten, ungenutzte Altdateien und Tests für belanglose Details.
+    keywords: [agent-datei, claude.md, agents.md, regeln, tdd, test]
+    neben: [verifikation]
+  2026-10-04-voxyz_ai-2106829206134931539:
+    haupt: verifikation
+    kernaussage: Vox empfiehlt, wiederholte Agentkorrekturen in fertige Funktionen oder Typen zu überführen und alternative Implementierungen mit `Lint` zu verbieten.
+    keywords: [lint, helper, custom lint rule, no-restricted-syntax, testharness, test, tests, review, claude.md, agents.md, deny-rule, deny-rules]
+    neben: [agent-dateien]
   2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md:
     haupt: skills
     kernaussage: Skills 1.3 ergänzt Spec-Umsetzung, PR-Aufbereitung und eine Retro mit menschlicher Auswahl; große Integrationsbranches bleiben eine Review-Grenze.
@@ -1450,3 +1531,65 @@ quellen:
     kernaussage: Im Klon von bradygaster/squad (Branch `dev`, Stand Commit `d2364dfe`) liegt die Skill-Vorlage `templates/skills/retro-enforcement/SKILL.md`.
     keywords: [Retrospektive, Aktionspunkte, GitHub Issues, Squad]
     neben: [skills]
+  2026-10-05-voxyz_ai-2107123654219743712:
+    haupt: agent-dateien
+    kernaussage: Vox beschreibt lange Abschlussberichte, in denen notwendige Nutzeraktionen zwischen anderen Ergebnissen verschwinden.
+    keywords: [AGENTS.md, agent-datei, handlungsbedarf, agent bericht, blockadebericht]
+    neben: [prompting]
+  2026-10-05-voxyz_ai-2107214251408433365:
+    haupt: planung
+    kernaussage: Vox nimmt ein bald zurückgesetztes Wochenlimit mit **mehr als der Hälfte** Restkapazität zum Anlass, sinnvolle Aufgaben für `Opus 5.5` vorzuschlagen; das Verfahren sei auch auf `Sol` in
+      Codex anwendba
+    keywords: [verifiable tasks, TODO, FIXME, aufgabenpriorisierung, abnahmekriterien, effort, opus 5.5, modell, kosten]
+    neben: [autonomie]
+  2026-10-06-artificialanlys-2107467221421420919:
+    haupt: modelle-kosten
+    kernaussage: 'Artificial Analysis (AA) berichtet `Mistral Large 4 Preview`: „Research Public Preview“ über Mistrals API, 1 Billion Parameter, 49 Milliarden aktiv, 512k Kontexttokens, Text-/Bildinput,
+      Textoutput.'
+    keywords: [intelligence index, gpt-6, benchmark, terminal-bench, modell-eskalation, modell, kosten, token, mistral, deepseek, open weights, offene gewichte, preview]
+    neben: [open-source-llms]
+  2026-10-06-voxyz_ai-2107455844992299272:
+    haupt: planung
+    kernaussage: 'Vox schlägt für längere autonome Arbeit mit `Opus 5.5` einen `project-map`-Subagent vor: `medium` für die Karte, während die Hauptsession mit `high` weiterarbeitet.'
+    keywords: [project map, meilensteine, blockaden, projektstatus, entscheidungsbedarf, handoff, session, memory, wayfinder, mattpocock]
+    neben: [autonomie]
+  2026-10-06-voxyz_ai-2107576635578855461:
+    haupt: verifikation
+    kernaussage: 'Vox schlägt eine Regel für `Claude Code` vor: Nach visuellen Codeänderungen prüft ein Subagent mit `codex-cu` die betroffenen Seiten im bereits freigegebenen Browser.'
+    keywords: [testharness, test, review, tests, änderungsumfang, screenshot, ui, live-lokal-vergleich, browserprüfung, visuelle abnahme]
+    neben: [prototyping]
+  2026-10-07-artificialanlys-2107911905822351609:
+    haupt: modelle-kosten
+    kernaussage: 'Artificial Analysis (AA) berichtet Modellmerkmale von `Claude Haiku 5.5`: adaptive thinking, Effort-Einstellungen, 1 Million Kontexttokens, Text-/Bildinput, Textoutput.'
+    keywords: [effort, haiku, terminal-bench, gpt-6, modell-eskalation, benchmark, modell, preis]
+    neben: []
+  2026-10-07-kimmonismus-2107894978332557756:
+    haupt: modelle-kosten
+    kernaussage: 'Chubby meldet `Claude Haiku 5.5`: Nach Herstellerangaben liegen durchschnittliche Betriebskosten rund **75 % unter** `Haiku 4.5`.'
+    keywords: [haiku, sonnet, effort, terminal-bench, benchmark, gpt-6, modell-eskalation, preis]
+    neben: []
+  2026-10-07-unslothai-decision-model-finetuning:
+    haupt: open-source-llms
+    kernaussage: 'Unsloth erweitert den lokalen Betrieb von Decision-Modellen um eigenes Training: Ein LLM soll vorgegebene Optionen bewerten und Wahrscheinlichkeiten liefern, statt eine Antwort auszuformulieren.'
+    keywords: [Decision Models, Unsloth, Clef Head, LoRA Fine-Tuning, Qwen3.5, Laya, BANKING77, CLINC150, Holdout Accuracy, Probability Calibration]
+    neben: [modelle-kosten, verifikation]
+  2026-10-07-voxyz_ai-2107939019091005836:
+    haupt: agent-dateien
+    kernaussage: Vox empfiehlt unter **200 Zeilen** je Agent-Datei und nennt **32 KiB insgesamt** als Codex-Standardlimit.
+    keywords: [agents.md, agent-datei, claude.md, regeln]
+    neben: [kontext, skills]
+  2026-10-08-mattpocockuk-2108216899439894574:
+    haupt: planung
+    kernaussage: 'Matt Pocock empfiehlt bei winzigen Änderungen direktes Umsetzen: Ist der Diff schnell prüfbar und ein neuer Versuch fast kostenlos, lohnt ausführliches „Grilling“ weniger.'
+    keywords: [wayfinder, grilling, spec-grilling, plan-first, plan, spec, planung, ticket, wayfinder, mattpocock]
+    neben: [frameworks, prototyping]
+  2026-10-08-unslothai-windows-sandboxing-mxc:
+    haupt: sicherheit
+    kernaussage: Unsloth kündigt eine Integration von Microsoft eXecution Container (`MXC`) für die Ausführung von Code unter Windows an.
+    keywords: [Windows Sandboxing, Microsoft eXecution Container, MXC, Unsloth, OS-Level Sandboxing, Bubblewrap, Seatbelt, Sandbox Permissions, Software Sandbox, Process Isolation]
+    neben: []
+  2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker:
+    haupt: modelle-kosten
+    kernaussage: 'Vox empfiehlt für Claude Code eine feste Rollenteilung: `Opus 5.5` plant und prüft, `Haiku 5.5` liest Code und recherchiert Dokumentation.'
+    keywords: [Claude Code Subagents, Haiku 5.5, Opus 5.5, Explore Agent, Agent Tree, Model Inheritance, Reasoning Effort, CLAUDE_CODE_EFFORT_LEVEL, Kosten pro Task]
+    neben: [orchestrierung]

@@ -1,6 +1,6 @@
 # Skill-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und Baselines, Skills als Teamwissen. Wayfinder und Frameworks aus Skill-Sammlungen stehen in frameworks.
 
@@ -9,7 +9,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - **Hauptkeyword:** Claude Code Skills
 - **Long-Tail:** Skill Description schreiben; Skill Evals Baseline; SKILL.md Aufbau; Skills vs. Slash Commands; Skill Trigger optimieren; Skills als Teamwissen
 - **Fragen:** Wann lohnt sich ein eigener Skill? / Warum löst mein Skill nicht aus?
-- **Häufig in den Quellen:** progressive disclosure (10), claude code skills (7), skill description (6), skill.md (5), slash commands (4), skill evals (4), grill-me (4), mattpocock/skills (4), claude code hooks (4), wayfinder (4), claude skills (3), skill-creator (3), undertriggering (3), skill (3), to-spec (3), to-tickets (3), agents.md (3), skill-trigger (2), baseline-vergleich (2), subagents (2)
+- **Häufig in den Quellen:** progressive disclosure (10), claude code skills (7), skill description (6), skill.md (5), skill (5), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), eval (4), skills (4), wayfinder (4), agents.md (4), claude skills (3), skill-creator (3), undertriggering (3), trigger (3), to-spec (3), to-tickets (3)
 
 ## Verwandte Themen
 
@@ -23,7 +23,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - [[Anti-Rationalization-Tables]] · verifiziert · 3 Belege
 - [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 9 Belege
 - [[Hook-erzwungene-Skill-Aktivierung]] · meinung · 4 Belege
-- [[Klein-und-komposierbar]] · verifiziert · 16 Belege
+- [[Klein-und-komposierbar]] · verifiziert · 18 Belege
 - [[One-File-per-Failure-Mode]] · verifiziert · 3 Belege
 - [[Skill-Call-Hierarchie]] · verifiziert · 12 Belege
 - [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 19 Belege
@@ -58,10 +58,13 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Erweiterungs-Ebenen-Zuordnun
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-07-voxyz_ai-2107939019091005836]]
 - [[2026-10-05-repo-squad-retro-enforcement]]
 - [[2026-10-05-repo-millionco-react-doctor-skill]]
 - [[2026-10-05-repo-mattpocock-skills-retro]]
 - [[2026-10-05-repo-claude-code-doctor-insights]]
+- [[2026-10-04-mattpocockuk-2106730768789602313]]
+- [[2026-10-04-emilkowalski-2106752670405099523]]
 - [[2026-10-02-repo-mattpocock-skills]]
 - [[2026-10-02-repo-latent-spaces-brag]]
 - [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]]

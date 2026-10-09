@@ -1,6 +1,6 @@
 # Verifikation, Tests & Review
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-05. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates und getrennte Autor-/Prüfkontexte. Dazu gehören risikobasiertes Human Review, menschliche Verantwortung und Freigaben (Human in the Loop), Review-Kapazität sowie PR-Größe und Aufteilung in überschaubare Änderungen. Agent-Autonomie gehört hier hinein, soweit sie Prüf- und Freigabeentscheidungen betrifft; autonome Ausführung steht in autonomie, der gesamte Entwicklungsprozess in sdlc.
 
@@ -9,7 +9,7 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass; Codequalität mit KI und Menschen; Human in the Loop beim Code Review; Risikobasiertes Human Review; Agent-Autonomie und menschliche Freigaben; Große KI-generierte PRs prüfen; Pull Requests in prüfbare Änderungen aufteilen; Review-Kapazität bei parallelen Agents
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug? / Welche Änderungen brauchen menschliches Review und welche automatische Checks? / Wer trägt die Verantwortung, wenn ein Agent Code freigibt? / Was tun, wenn PRs zu groß für ein gründliches manuelles Review werden? / Wie begrenzt Review-Kapazität die Agent-Autonomie und Parallelisierung?
-- **Häufig in den Quellen:** human-in-the-loop (5), testharness (4), test (4), risikobasiertes human review (4), menschliche freigabe (4), verifier (3), /goal (3), auto mode (3), tdd (3), llm-as-judge (3), gstack (3), ai-native sdlc (3), git worktrees (2), red green refactor (2), review (2), reviewer (2), qualität (2), verifikation (2), tests (2), loop engineering (2)
+- **Häufig in den Quellen:** test (12), testharness (9), tests (7), review (6), tdd (6), verifikation (5), human-in-the-loop (5), risikobasiertes human review (4), menschliche freigabe (4), skill (4), deep modules (3), verifier (3), /goal (3), qualität (3), auto mode (3), llm-as-judge (3), skill.md (3), gstack (3), retro (3), ai-native sdlc (3)
 
 ## Verwandte Themen
 
@@ -21,21 +21,30 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - [[Thema-Sicherheit-Sandboxing]] — Sicherheit & Sandboxing
 - [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
 
-## Patterns (4)
+## Patterns (9)
 
+- [[Abstraktionswert-mit-Deletion-Test-pruefen]] · verifiziert · 2 Belege
+- [[Fachregel-Konsolidierung-vor-Featureaenderung]] · meinung · 1 Belege
+- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 1 Belege
 - [[Hillclimbing-mit-Holdout-Split]] · meinung · 3 Belege
 - [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 1 Belege
-- [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 11 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 27 Belege
+- [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 13 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 29 Belege
+- [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]] · verifiziert · 2 Belege
+- [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] · meinung · 1 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Great-Decoupling-Rollenverstaendnis]], [[Kontrollierte-Agent-Parallelisierung]], [[Plan-first-mit-getrenntem-Review]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Great-Decoupling-Rollenverstaendnis]], [[Kontrollierte-Agent-Parallelisierung]], [[Plan-first-mit-getrenntem-Review]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]]
 
-## Quellen (19)
+## Quellen (23)
 
+- [[2026-10-06-voxyz_ai-2107576635578855461]] — Vox schlägt eine Regel für `Claude Code` vor: Nach visuellen Codeänderungen prüft ein Subagent mit `codex-cu` die betroffenen Seiten im bereits freigegebenen Browser.
 - [[2026-10-05-repo-millionco-react-doctor-skill]] — Im Klon von millionco/react-doctor (Stand Commit `1b149bae`) liegt der Agent-Skill `skills/react-doctor/SKILL.md` (Version 1.2.0).
 - [[2026-10-05-repo-mattpocock-skills-retro]] — Im Klon von mattpocock/skills (Stand Commit `4588b32`, Version 1.3.1) liegt `retro` unter `skills/engineering/retro/SKILL.md`.
+- [[2026-10-04-voxyz_ai-2106829206134931539]] — Vox empfiehlt, wiederholte Agentkorrekturen in fertige Funktionen oder Typen zu überführen und alternative Implementierungen mit `Lint` zu verbieten.
+- [[2026-10-02-voxyz_ai-2106104334035435572]] — Vox empfiehlt, vor Änderungen sämtliche Implementierungen der betroffenen Regel zu kartieren: Dateien, Kopien und Ergebnisse für identische Eingaben.
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]] — Im Klon von thedaviddias/Front-End-Checklist (Stand Commit `7bfd8680`) beschreibt `packages/cli/README.md` die CLI `@frontendchecklist/cli`; die Regeln liegen im Paket, sie läuft offline.
 - [[2026-10-02-repo-garrytan-gstack]] — Laut `CHANGELOG.md` von garrytan/gstack (Repo-Stand Commit `7fca42ad`, Einträge um v1.91.9.0) wenden alle Workflows, die Tests vorschlagen, schreiben, prüfen oder ausliefern, eine gemeinsame „Test Val
+- [[2026-10-01-mattpocockuk-2105563604384915639]] — Pocock schlägt vor, mit `/codebase-design` nach Shallow Modules zu suchen und den **Deletion Test** auf mögliche Entfernungskandidaten anzuwenden.
 - [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] — Anthropic beschreibt Prinzipien für Eval-Design und für das schrittweise Verbessern gegen ein Eval (Hillclimbing) und zeigt, wie die Befehle `/claude-api build-eval` und `/claude-api hillclimb` im `cl
 - [[2026-09-24-ai-engineer-matt-pocock-fixing-the-pr-bottleneck]] — Mehr Agent-Output verschärft den Review-Flaschenhals: deterministische Checks, ein separater Review-Agent mit Commits und risikobasiertes Human Review bremsen ihn in drei Stufen.
 - [[2026-08-25-vikingmute-2092059170812108811]] — Ein strenger Review-Skill sucht zuerst Vereinfachungen der Struktur statt Detailkritik, erzeugt aber bei Bestandscode schnell mehr Befunde, als sich abarbeiten lassen.
@@ -54,10 +63,14 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-07-unslothai-decision-model-finetuning]]
 - [[2026-10-05-repo-garrytan-gstack-retro]]
 - [[2026-10-05-repo-bmad-method-retrospective]]
 - [[2026-10-05-repo-alirezarezvani-skill-doctor]]
 - [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]]
+- [[2026-10-04-voxyz_ai-2106783910055006342]]
+- [[2026-10-04-emilkowalski-2106752670405099523]]
+- [[2026-10-02-voxyz_ai-2106006290954592332]]
 - [[2026-09-27-voxyz_ai-2104224555040452925]]
 - [[2026-09-27-anthropic-academy-sdlc-playbook]]
 - [[2026-09-25-voxyz_ai-2103586663393853636]]
