@@ -32,3 +32,7 @@ sehr stark irgendwie von HTML ähm angelehnt
 aber auch es gibt hier dieses ganz simple markdown Format in dem dann die Dateien geschrieben sind mit so nem äh Dokument im Kopf ja mit den Basics wo ne KI dann hier nur noch drauf springen muss sozusagen was befindet sich in der Datei ohne jetzt alles direkt lesen zu müssen ja und diese Kombination und wir Kennen das hier schon Aus den Skill Dateien zum Beispiel von klot ähm ist genau nach derselben Logik aufgebaut man hat hier n oberordner man hat hier markdown Files die sich gegeneinander dann auch referenzieren können und wir kennen's auch zum Beispiel von obsidien
 
 Tool wo man dann Mark down falls ähm äh Ableben kann und eben auch verlinken kann die haben das quasi selbst gebaut auf Basis von Mark down Dateien und Google sagt jetzt ja mit diesem neuen offenen Standard ähm bringen wir diese beiden Welten Mark down HTML ähm gut zusammen um möglichst für den Menschen nen Format zu haben was er leicht verstehen kann leicht bearbeiten kann aber eben auch für ne KI super einfach zu lesen uns bearbeiten is und von daher glaub ich is es spannend äh da mal n Blick drauf zu werfen auf das Open Knowledge Format
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-06-23-levanty_ch-google-liefert-mit-dem-open-knowledge-format-eine-neue-antwort-wie-wir/02-video.mp4)

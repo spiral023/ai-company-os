@@ -5,7 +5,9 @@ datum: 2026-07-27
 erfasst: 2026-10-02
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-10-10
+source_notiz: 80_Knowledge/Sources/2026-07-27-anthropic-our-position-on-open-weights-models.md
 ---
 
 # Our position on open-weights models

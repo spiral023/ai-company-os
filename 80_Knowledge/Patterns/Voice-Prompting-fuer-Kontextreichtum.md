@@ -32,11 +32,14 @@ Statt einen Prompt zu tippen, wird er gesprochen (z. B. per Diktierfunktion, auf
 - 2026-02-27 · [[2026-02-27-meer-claude-code-best-practices]] · meinung — Tweet-Sekundärquelle berichtet, Boris Chernys Team nutze Voice Dictation für fast alle komplexen Prompts, mit deutlich besseren Ergebnissen durch beiläufig mitgelieferten Kontext.
 - 2026-01-14 · [[2026-01-14-ashpreetbedi-claude-code-spec-first]] · meinung — Unabhängige Zweitbestätigung: Der Autor transkribiert eine Idee bewusst „schlecht“ und unstrukturiert per Whisper Flow, bevor Claude daraus ein Design-Dokument schreibt — diktiert lieber, als zu tippen, auch für die anschließende Detailarbeit.
 - 2026-01-31 · [[2026-01-31-bcherny-claude-code-team-tips]] · meinung — Boris Cherny selbst (laut dieser Sekundärquelle) beschreibt Voice Dictation als Team-Praxis für komplexe Prompts, mit der zusätzlichen Begründung: Sprechen ist rund dreimal schneller als Tippen, was zu detaillierteren, nuancierteren Prompts führt. Dieselbe Kernbehauptung wie in [[2026-02-27-meer-claude-code-best-practices]] bereits belegt (beide Sekundärquellen gehen wahrscheinlich auf denselben Cherny-Ursprung zurück) — keine Konfidenzerhöhung, aber die Geschwindigkeits-Begründung ist hier neu.
+- 2026-09-04 · [[2026-09-04-guinnesschen-2095920936172335278]] · meinung — Die Codex-Ankündigung ergänzt Sprachdialog im bestehenden Chat zur Klärung von PRs, Architektur und nächsten Schritten vor der Weiterarbeit; sie beschreibt Dialog statt reinem Diktat und liefert keine Messung zu Kontextreichtum oder Produktivität.
 
 ## Spannungen & offene Fragen
 
 - Zwei unabhängige Erfahrungsberichte stützen die Kernaussage jetzt über bloße Einzelmeinung hinaus; die Boris-Cherny-Zuschreibung bleibt trotzdem nur sekundär über eine Tweet-Paraphrase belegt — keine Messung in beiden Fällen.
 - Offene Frage: Wie verhält sich der Kontextgewinn gegenüber dem Risiko von Transkriptionsfehlern bei technischen Begriffen — gibt es eine Aufgabenklasse, für die Voice Prompting sich systematisch nicht lohnt?
+
+- Ergänzung 2026-10-10: [[2026-09-04-guinnesschen-2095920936172335278]] beschreibt Sprachdialog im bestehenden Codex-Chat statt eines einmalig diktierten Prompts. Die Demo zeigt einen Eingabekanal zur Klärung, misst aber weder zusätzlichen Kontext noch höhere Produktivität; diese Wirkungsannahmen bleiben offen.
 
 ## Verwandte Patterns
 

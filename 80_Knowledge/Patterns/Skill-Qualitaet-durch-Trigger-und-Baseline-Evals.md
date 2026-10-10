@@ -49,6 +49,7 @@ Der Lebenszyklus eines Skills läuft über: Ziel/Scope klären → Entwurf schre
 - 2026-09-28 · [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] · meinung — Herstellerquelle nennt Skill-Triggering ausdrücklich als gut attributierbare Hillclimb-Oberfläche und zeigt am eigenen `claude-api`-Skill 66 % auf etwa 88 % per Hillclimbing mit Ursachen-Sortierung. Selbstmessung, kleiner Maßstab.
 
 - 2026-09-20 · [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] · meinung — Modell- und Regeländerungen gegen 20 bis 50 reale Aufgaben mit erwarteten Ergebnissen in CI prüfen; Agent-Evals von Anwendungstests unterscheiden. Empfehlung aus dem Anthropic-Playbook, keine unabhängige Validierung der Startgröße.
+- 2026-07-17 · [[2026-07-17-reach_vb-2078108681678299194]] · meinung — Eigene vergangene Sitzungen liefern Fälle für die Prüfung und regelmäßige Anpassung von Workflow-Skills. Der Screenshot zeigt die Planung eines wiederholbaren Evals, aber keine abgeschlossenen Ergebnisse; beobachtetes Verhalten braucht eigenständige Erfolgskriterien.
 
 ## Spannungen & offene Fragen
 

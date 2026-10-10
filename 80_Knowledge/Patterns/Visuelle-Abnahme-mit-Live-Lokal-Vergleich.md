@@ -32,6 +32,10 @@ Die Prüfung findet im freigegebenen Browser statt. Bestehende Tabs bleiben unbe
 ## Belege
 
 - 2026-10-06 · [[2026-10-06-voxyz_ai-2107576635578855461]] · meinung — Vox schlägt gerenderte Live-/Lokal-Prüfung vor der Fertigmeldung vor, mit Zuordnung neuer Defekte, maximal zwei Korrekturrunden und begrenzten Browseraktionen; Wirksamkeit und konkrete Integration sind nicht gemessen.
+- 2026-10-08 · [[2026-10-08-voxyz_ai-2108324058739745228]] · meinung — Desktop und Mobile vollständig durchscrollen und auf Überdeckung sowie horizontalen Überlauf prüfen; der Post berichtet keinen tatsächlich durchgeführten Vergleich oder Test.
+- 2026-09-14 · [[2026-09-14-voxyz_ai-2099528601557496220]] · meinung — Abnahmekriterien in beobachtbare Handlungen und Ergebnisse übersetzen, Designreferenz mit gerenderter Seite vergleichen und Screenshots samt Prüfgrenzen berichten; der Post liefert keine eigene ausgeführte Abnahme oder Zeitmessung.
+- 2026-09-15 · [[2026-09-15-emilkowalski-2099948779864793303]] · meinung — Gewählte Animationen nach Iteration auf Performance, Accessibility und Mobile prüfen; der Thread nennt Kategorien, berichtet aber keine konkreten Browserprüfungen oder Messergebnisse.
+- 2026-07-23 · [[2026-07-23-colebemis-2080392348836790395]] · meinung — Annotierte PR-Screenshots erklären betroffene UI-Bereiche für Reviewer. Das Beispiel ist ein Review-Artefakt mit berichteten Checks; es belegt selbst keinen vollständigen Live/Lokal-Vergleich oder Produktionszustand.
 
 ## Spannungen & offene Fragen
 

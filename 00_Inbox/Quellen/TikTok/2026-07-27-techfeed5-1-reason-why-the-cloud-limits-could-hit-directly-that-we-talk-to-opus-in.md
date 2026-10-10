@@ -37,3 +37,7 @@ all also almost plus 50 percent
 Gemini Mistral and gbt
 
 only at 12 percent that is actually fair
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-07-27-techfeed5-1-reason-why-the-cloud-limits-could-hit-directly-that-we-talk-to-opus-in/02-video.mp4)

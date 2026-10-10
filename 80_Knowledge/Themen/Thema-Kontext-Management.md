@@ -1,6 +1,6 @@
 # Kontext-Management
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, Clear, Rewind, Handoff zwischen Sessions, Kontextkosten von Tools. Regeldateien gehören zu agent-dateien, die Kosten des Cachings zu modelle-kosten.
 
@@ -9,7 +9,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 - **Hauptkeyword:** Context Engineering
 - **Long-Tail:** Context Rot vermeiden; Claude Code /compact oder /clear; Claude Code Kontextfenster verwalten; Session Handoff Dokument; Rewind statt Korrektur; Subagents als Kontextgrenze
 - **Fragen:** Wann sollte ich /clear statt /compact nutzen? / Warum wird mein Agent in langen Sessions schlechter?
-- **Häufig in den Quellen:** context rot (8), claude.md (7), context window (6), /compact (6), /clear (6), progressive disclosure (6), context engineering (4), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), kontext-hygiene (3), plan mode (3), mcp tools (2), autocompact-puffer (2), ralph loop (2), userpromptsubmit hook (2), subagent-kosten (2)
+- **Häufig in den Quellen:** context window (8), context rot (8), claude.md (8), /compact (7), /clear (7), progressive disclosure (7), context engineering (5), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), handoff (4), kontext-hygiene (4), prompt caching (4), context pollution (3), kontext (3), token (3), state.md (3), plan mode (3), autocompact-puffer (2)
 
 ## Verwandte Themen
 
@@ -20,18 +20,21 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 
 ## Patterns (2)
 
-- [[Handoff-Doc]] · verifiziert · 18 Belege
-- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 41 Belege
+- [[Handoff-Doc]] · verifiziert · 21 Belege
+- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 44 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]]
 
-## Quellen (17)
+## Quellen (20)
 
+- [[2026-09-24-mattpocock-ai-coding-dictionary]] — Matt Pococks AI Coding Dictionary ordnet 71 Begriffe in sieben Bereiche.
 - [[2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re]] — Weniger Anweisungen, mehr Absicht und messbares Abschlusskriterium: Kontext klein halten, Garantien in Hooks legen und das Setup bei jedem Modellwechsel ausdünnen.
 - [[2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht]] — Der Creator warnt vor GitHub-Tools, die Claude Code Tokens sparen sollen, indem sie Kontext vorab aus einem Graphen zusammensuchen.
 - [[2026-08-14-agenticjames-ai-memory-is-trash-heres-some-solutions]] — Agent Memory ist nicht ein Problem, sondern vier: Ablage, Turn-Erinnerung, multimodale Suche und Abrufzeitpunkt, wobei Pull durch den Agenten und Push per Hook Kosten und Nutzen tauschen.
 - [[2026-08-03-steffen_hauptmann-die-meisten-lassen-sich-ein-handover-erst-schreiben-wenn-das]] — Eine fortlaufend gepflegte Zustandsdatei macht den Handover schon vor vollem Context Window verfügbar, kostet aber laufend Tokens und kann bei falschem Stand irreführen.
 - [[2026-07-30-floknowsai-ki-gibt-dir-das-gefuehl-dass-du-so-schnell-wie-noch-nie-arbeitest]] — Erfahrene Entwickler fühlen sich mit KI schneller, messen aber langsamer, und falscher Kontext schadet mehr als gar keiner, weshalb Pflege wichtiger ist als Sammeln.
+- [[2026-07-24-claude-the-new-rules-of-context-engineering-for-claude]] — Thariq Shihipar beschreibt, wie Anthropic den System Prompt von Claude Code für `Claude Opus 5` und `Claude Fable 5` um mehr als 80 Prozent verkürzt habe, ohne messbaren Verlust in den eigenen Coding-
+- [[2026-07-22-mattpocockuk-2079879414297330146]] — Matt Pococks Grafik ordnet fünf Fortsetzungen einer Agent-Session nach Entscheidungsfragen.
 - [[2026-07-13-mattpocock-handoff-to-teach]] — Wissenslücken während einer Grilling-Session per Handoff an einen Lern-Workspace auslagern hält die Session fokussiert und bewahrt den Lernfortschritt.
 - [[2026-07-12-agenticjames-claude-codes-new-feature-checkup-makes-claude-more-token-efficient-and]] — Ein automatisches Aufräumen von Skills, MCP-Servern und CLAUDE.md senkt den Baseline-Kontext, verschiebt aber Kontrolle und birgt das Risiko, wichtige Regeln oder Fähigkeiten zu entfernen.
 - [[2026-06-06-agenticjames-your-agent-is-referencing-documentation-when-it-should-be-reading-the]] — Agenten sollten gegen den lokal abgelegten Quellcode von Dependencies statt nur gegen Doku arbeiten, damit sie nicht raten; Nutzen und Kosten sind ungeprüft.
@@ -47,10 +50,14 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-09-repo-gsd-workflow]]
+- [[2026-10-09-ollama-kontext-speicher]]
 - [[2026-10-07-voxyz_ai-2107939019091005836]]
 - [[2026-10-02-voxyz_ai-2106006290954592332]]
+- [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]]
 - [[2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit]]
 - [[2026-09-17-agenticjames-i-think-code-mode-mcps-are-probably-the-best-way-to-give-agents-access]]
+- [[2026-09-04-guinnesschen-2095920936172335278]]
 - [[2026-08-14-claude-maximizing-the-value-of-your-claude-code-session]]
 - [[2026-08-12-voxyz_ai-2087579867139264681]]
 - [[2026-08-03-floknowsai-die-preise-fuer-ki-fallen-wirklich-und-trotzdem-ist-dein-limit-genauso]]

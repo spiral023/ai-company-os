@@ -1,6 +1,6 @@
 # Skill-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und Baselines, Skills als Teamwissen. Wayfinder und Frameworks aus Skill-Sammlungen stehen in frameworks.
 
@@ -9,7 +9,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - **Hauptkeyword:** Claude Code Skills
 - **Long-Tail:** Skill Description schreiben; Skill Evals Baseline; SKILL.md Aufbau; Skills vs. Slash Commands; Skill Trigger optimieren; Skills als Teamwissen
 - **Fragen:** Wann lohnt sich ein eigener Skill? / Warum löst mein Skill nicht aus?
-- **Häufig in den Quellen:** progressive disclosure (10), claude code skills (7), skill description (6), skill.md (5), skill (5), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), eval (4), skills (4), wayfinder (4), agents.md (4), claude skills (3), skill-creator (3), undertriggering (3), trigger (3), to-spec (3), to-tickets (3)
+- **Häufig in den Quellen:** progressive disclosure (11), claude code skills (7), skill (7), skill description (6), eval (6), skills (6), skill.md (5), trigger (5), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), wayfinder (4), claude.md (4), agents.md (4), claude skills (3), baseline-vergleich (3), skill-creator (3), undertriggering (3)
 
 ## Verwandte Themen
 
@@ -21,18 +21,18 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 ## Patterns (9)
 
 - [[Anti-Rationalization-Tables]] · verifiziert · 3 Belege
-- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 9 Belege
+- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 10 Belege
 - [[Hook-erzwungene-Skill-Aktivierung]] · meinung · 4 Belege
-- [[Klein-und-komposierbar]] · verifiziert · 18 Belege
+- [[Klein-und-komposierbar]] · verifiziert · 20 Belege
 - [[One-File-per-Failure-Mode]] · verifiziert · 3 Belege
 - [[Skill-Call-Hierarchie]] · verifiziert · 12 Belege
-- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 19 Belege
+- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 20 Belege
 - [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 4 Belege
-- [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 3 Belege
+- [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Erweiterungs-Ebenen-Zuordnung]], [[Hillclimbing-mit-Holdout-Split]]
 
-## Quellen (21)
+## Quellen (23)
 
 - [[2026-10-05-repo-alirezarezvani-skill-doctor]] — Im Klon von alirezarezvani/claude-skills (Stand Commit `19392f7a`) liegt `engineering/skill-doctor/` mit SKILL.md (Version 1.0.0, MIT), drei Python-Skripten und zwei Bewertungsrubriken.
 - [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]] — Skills 1.3 ergänzt Spec-Umsetzung, PR-Aufbereitung und eine Retro mit menschlicher Auswahl; große Integrationsbranches bleiben eine Review-Grenze.
@@ -40,6 +40,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Erweiterungs-Ebenen-Zuordnun
 - [[2026-09-14-code-test-plugins-with-evals-claude-code-docs]] — Plugins und Skills lassen sich per Eval mit und ohne Plugin vergleichen; das Delta zeigt den Beitrag, ein negatives Delta verdächtigt zuerst den Judge.
 - [[2026-07-30-julian-ivanov-interaktive-schulungen-mit-claude-code]] — Ein Skill kann Briefing, Curriculum-Freigabe und Medienproduktion zu einem wiederholbaren Kurs-Workflow verbinden, wobei ein menschliches Review-Gate teure Fehlproduktion verhindert.
 - [[2026-07-21-promptgefluester-prompt-engineering-ist-tot-und-keiner-hats-gemerkt-was-meine-ich-damit]] — Statt eines langen Initial-Prompts erzeugen Rückfrage-Skills sauberen Basis-Kontext und Hook-Skills laden Regeln im Prozess nach, weil frühe Regeln im wachsenden Kontext verblassen.
+- [[2026-07-21-claudeai-2079595988998554047]] — Claude kündigt am 21.
+- [[2026-07-17-reach_vb-2078108681678299194]] — Vaibhav Srivastav empfiehlt, Workflow-Skills durch Codex gegen vergangene eigene Sitzungen prüfen zu lassen und die Prüfung bei veränderten Arbeitsweisen zu wiederholen.
 - [[2026-07-10-voxyz-mattpocock-skills]] — Eine kleine Sammlung Markdown-Skills mit Aufrufhierarchie, gemeinsamem Projekt-Glossar und Handoff ist ein leichtgewichtiger, komponierbarer Agent-Stack unter menschlicher Prozesskontrolle.
 - [[2026-07-08-mattpocock-custom-issue-tracker]] — Workflow-Skills lassen sich per Setup-Befehl an jeden programmierbar erreichbaren Issue-Tracker anbinden, weil Arbeitslogik und Tracker-Anbindung getrennt sind.
 - [[2026-07-06-mattpocock-writing-great-skills-beyond-skills]] — Struktur, Leading Words und Pruning, entwickelt für Skills, verbessern jeden Text, den Agenten lesen, von AGENTS.md über Specs bis zu AFK-Prompts.
@@ -58,6 +60,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Erweiterungs-Ebenen-Zuordnun
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-09-shadcn-2108574564586332615]]
 - [[2026-10-07-voxyz_ai-2107939019091005836]]
 - [[2026-10-05-repo-squad-retro-enforcement]]
 - [[2026-10-05-repo-millionco-react-doctor-skill]]
@@ -77,6 +80,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Erweiterungs-Ebenen-Zuordnun
 - [[2026-08-21-promptgefluester-agent-plug-ins-das-ist-der-neue-standard-mit-dem-die-grossen-ai]]
 - [[2026-08-14-agenticjames-ai-memory-is-trash-heres-some-solutions]]
 - [[2026-08-05-creatoreconomy-use-my-human-review-skill-to-edit-html-and-markd]]
+- [[2026-07-24-claude-the-new-rules-of-context-engineering-for-claude]]
 - [[2026-07-08-mattpocock-skills-v1-1]]
 - [[2026-07-06-nightmoon-wayfinder]]
 - [[2026-04-22-agenticjames-everything-you-need-to-know-about-context-engineering-in-1-minute]]

@@ -27,3 +27,7 @@ Stop using Claude Code the wrong way! Learn how to chain slash commands for 10x 
 ## Transkript
 
 Most people are using cloud code incorrectly because they don't use slash commands to optimize their prompts. Slash commands are basically prompts that you can store and reuse in your cloud code project, and they're very good for things like designing, testing, or even implementation sometimes. But what most people don't know is that with the latest update to Cloud Code, you can now chain commands by mentioning them in your prompt. There are three steps to create a simple command chain in cloud code. Firstly, go into your cloud code terminal and create a simple testing command by giving cloud code this prompt. Create a new custom command that writes unit test for the feature I'm implementing. Name it right tests. Secondly, create another custom command that gathers feature requirements by giving cloud code this prompt. Create a new custom command that gathers requirements for a new project or feature. Name it gather requirements. And lastly, ask local to write a simple feature and actually use the two commands as part of his development framework by using this prompt. Create a simple Python calculator CLI app by firstly running the gather requirements command, then implement the app and run the write test command at the end.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2025-09-26-silviutechnology-stop-using-claude-code-the-wrong-way/02-video.mp4)

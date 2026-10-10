@@ -69,6 +69,9 @@ Parallelisierung lohnt sich nur unter drei Voraussetzungen: (1) **klare Modulgre
 
 - 2026-10-08 · [[2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker]] · meinung — Drei getrennte Rollen mit eigener Modell- und Effort-Wahl: Explore liest Code, Researcher sucht Dokumentation, Worker implementiert und testet; der Hauptagent führt zusammen und prüft. Der Setup-Prompt verlangt vor Änderungen einen Vorschlag und die Prüfung bestehender Agent-Definitionen und Overrides.
 
+- 2026-10-09 · [[2026-10-09-git-worktree]] · meinung — Git dokumentiert getrennte Arbeitsverzeichnisse mit jeweils eigenem HEAD und Index bei gemeinsamem Repository. Das trennt Dateiänderungen, aber keine Ports, Datenbanken oder logischen Schnittstellen; die zentrale Integration bleibt erforderlich. Keine eigene Leistungsmessung.
+- 2026-07-21 · [[2026-07-21-claudedevs-2079654423828304282]] · meinung — Der Migrationsbericht verbindet eine Abhängigkeitskarte und fortsetzbare Dateiwarteschlangen mit zwei unabhängigen Reviews, zusätzlicher Prüfung strittiger Befunde und einem zentralen Build-Prozess für teure Kompilierungen. Welche Prüfungen zentral laufen, hängt vom Stack ab; berichtete Agentenzahlen und Durchsatzwerte sind keine allgemeine Skalierungsempfehlung.
+
 ## Spannungen & offene Fragen
 
 - Die drei Quellen überschneiden sich teilweise in ihren zugrunde liegenden X-Posts (u.a. @dani_avila7 taucht in mehreren vibe-repo-Artikeln auf), sind aber inhaltlich eigenständig und ergänzen sich, statt sich zu widersprechen.

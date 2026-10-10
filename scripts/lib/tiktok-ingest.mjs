@@ -9,6 +9,7 @@ export function parseArgs(argv) {
     force: false,
     refetch: false,
     media: true,
+    video: true,
     gap: 0.4,
   };
   for (let i = 0; i < argv.length; i += 1) {
@@ -18,6 +19,7 @@ export function parseArgs(argv) {
       args.refetch = true;
       args.force = true;
     } else if (a === '--no-media') args.media = false;
+    else if (a === '--no-video') args.video = false;
     else if (a === '--gap') {
       const v = Number(argv[i + 1]);
       if (Number.isFinite(v) && v >= 0) args.gap = v;
@@ -242,12 +244,23 @@ export function buildTiktokSlug({ createdAt, username, title, id }) {
   return `${isoDate(createdAt)}-${slugifyHandle(username)}-${titleSlug}`;
 }
 
+// Nur einen Medien-Link ergänzen; Status, Transkript und manuelle Texte
+// einer bereits verarbeiteten Rohquelle bleiben erhalten.
+export function attachLocalTiktokVideo(note, slug, localVideo) {
+  if (!localVideo?.ok) return note;
+  const target = `${MEDIA_DIR}/${slug}/${localVideo.file}`;
+  if (note.includes(`](${target})`)) return note;
+  const newline = note.includes('\r\n') ? '\r\n' : '\n';
+  return `${note.trimEnd()}${newline}${newline}## Lokales Video${newline}${newline}[Video lokal abspielen](${target})${newline}`;
+}
+
 export function formatTiktokNote({
   video,
   oembed,
   transcript,
   slug,
   downloads,
+  localVideo,
   fetchedAt,
   gap = 0.4,
 }) {
@@ -326,5 +339,5 @@ export function formatTiktokNote({
     for (const p of paragraphs) lines.push(p, '');
   }
 
-  return lines.join('\n');
+  return attachLocalTiktokVideo(lines.join('\n'), slug, localVideo);
 }

@@ -1,6 +1,6 @@
 # Prototyping & UI-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents.
 
@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), security checker (2), vibe coding (2), codex skills (2), hyperframes (2), opus 5.5 (2), lovable prompts, component-first, foundations komponenten komposition, tailwind prompting, design tokens, komponentenreferenz, design system, hero section, landingpage, ki-website-builder, lovable website, conversion prompts, responsive breakpoints, spacing typografie
+- **Häufig in den Quellen:** lovable (5), hyperframes (3), design tokens (2), security checker (2), vibe coding (2), isolierte vorschau (2), gestaltungsachsen (2), produktionsabnahme (2), reduced motion (2), codex skills (2), opus 5.5 (2), mobile-native (2), dvh (2), bildschirmtastatur (2), webapp am handy (2), viewport (2), mobile ui-design (2), touch-hover (2), safe areas (2), shadcn/ui (2)
 
 ## Verwandte Themen
 
@@ -17,15 +17,21 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - [[Thema-Spezifikation-Planung]] — Spezifikation & Planung
 - [[Thema-Skill-Design]] — Skill-Design
 
-## Patterns (2)
+## Patterns (4)
 
 - [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 8 Belege
-- [[Screenshot-als-Spezifikationsmedium]] · meinung · 5 Belege
+- [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] · verifiziert · 2 Belege
+- [[Screenshot-als-Spezifikationsmedium]] · meinung · 7 Belege
+- [[Variantenvergleich-vor-Produktionsabnahme]] · verifiziert · 3 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Skill-aus-Demonstration-statt-Beschreibung]], [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]], [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]], [[Skill-aus-Demonstration-statt-Beschreibung]], [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]], [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]
 
-## Quellen (15)
+## Quellen (21)
 
+- [[2026-10-09-voxyz_ai-2108543002830360775]] — Vox verbindet einen verlinkten Claude-Motion-Guide mit einem eigenen Prompt für `Opus 5.5` in Claude Code.
+- [[2026-10-09-shadcn-2108574564586332615]] — shadcn berichtet am 09.10.2026 über verbesserte `DESIGN.md`-Unterstützung der `shadcn/ui`-Skills.
+- [[2026-10-09-repo-emilkowalski-mobile-native]] — Read-only-Prüfung von `external_repos/emilkowalski/skills/skills/mobile-native/SKILL.md` am 09.10.2026, Checkout `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`.
+- [[2026-10-08-voxyz_ai-2108324058739745228]] — Vox kuratiert Begriffe und einen Prompt für `Opus 5.5`.
 - [[2026-10-04-emilkowalski-2106752670405099523]] — Emil Kowalski kündigt zwei Ergänzungen für sein [Skills-Repository](https://github.com/emilkowalski/skills) an:
 - [[2026-10-02-repo-latent-spaces-brag]] — Neu im Bestand: latent-spaces/brag.
 - [[2026-10-02-repo-jakubantalik-transitions-dev]] — Im Klon von Jakubantalik/transitions.dev (Stand Commit `d8f2c222`) beschreibt `agent/README.md` den Transitions Agent: Er scannt die Codebasis auf fehlende oder uneinheitliche UI-Transitions, vergibt
@@ -33,6 +39,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Skill-aus-Demonstration-stat
 - [[2026-09-21-voxyz_ai-2102050225443766571]] — Referenzquelle, Auswahlkriterien und Prüfschritt gehören einmal in den Skill statt in jeden Auftrag; ein Audit-Skill klickt Flows als Erstnutzer durch.
 - [[2026-09-20-voxyz_ai-2101657631249031507]] — Vage Designwünsche durch benannte Operationen ersetzen, Komponentenbibliothek als Skill packen und die Seite per Agent im Browser real bedienen lassen liefert Reproduktionsschritte statt Optik-Urteil.
 - [[2026-09-19-voxyz_ai-2101295246659182978]] — Erst ein Referenzbild generieren, dann das Codemodell umsetzen lassen: Gestaltung und Implementierung werden getrennt, das Bild dient als Spezifikation.
+- [[2026-09-15-emilkowalski-2099948779864793303]] — Emil Kowalski berichtet, Animationen und Interaktionen weitgehend über Agenten statt durch eigene Codeänderungen zu entwickeln.
+- [[2026-09-14-shadcn-2099534231114314145]] — shadcn zeigt am 14.09.2026, wie `shadcn/lint` erlaubte Änderungen prüft und Agenten zum vorgesehenen Komponentenweg führt.
 - [[2026-09-09-alex-sprogis-so-erstellst-du-interaktive-architektur-diagramm]] — Ein Skill kann Diagramme aus der Codebase erzeugen und sich per Screenshot selbst korrigieren; die Korrektheit der abgeleiteten Beziehungen bleibt ungeprüft.
 - [[2026-04-17-wiki-compiler-lovable-frontend-rapid-prototyping]] — Lovable ist für den schnellen Prototyp-Start da: ausführliches Produktbriefing, Mock-Daten, früher Export ins lokale Repo mit Handoff-Checkliste.
 - [[2026-04-17-wiki-compiler-lovable-design-debugging-sicherheit]] — Im Lovable-Frontend gehören Secrets, Validierung und Autorisierung serverseitig, Debugging läuft über Plan-Modus statt blindem Retry, Security Checker sind fester Release-Schritt.
@@ -47,6 +55,10 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Skill-aus-Demonstration-stat
 - [[2026-10-08-mattpocockuk-2108216899439894574]]
 - [[2026-10-06-voxyz_ai-2107576635578855461]]
 - [[2026-09-26-voxyz_ai-2103977414711767244]]
+- [[2026-09-14-voxyz_ai-2099528601557496220]]
+- [[2026-07-23-mattpocockuk-2080277204970143986]]
+- [[2026-07-23-colebemis-2080392348836790395]]
+- [[2026-07-16-kimmonismus-2077828228282982886]]
 - [[2026-04-16-wiki-compiler-ui-ux-pro-max-skill]]
 - [[2026-02-15-avid-ai-design-workflow-2026]]
 - [[2026-02-04-lovable-docs-lovable-security-guide]]

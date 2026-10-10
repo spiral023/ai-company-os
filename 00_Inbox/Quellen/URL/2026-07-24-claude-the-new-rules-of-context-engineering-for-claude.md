@@ -6,7 +6,9 @@ datum: 2026-07-24
 erfasst: 2026-10-02
 typ: url
 quelle: url
-status: neu
+status: verarbeitet
+verarbeitet_am: 2026-10-10
+source_notiz: 80_Knowledge/Sources/2026-07-24-claude-the-new-rules-of-context-engineering-for-claude.md
 medien: "4/4 lokal"
 ---
 

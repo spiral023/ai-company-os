@@ -68,8 +68,11 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 - 2026-10-04 · [[2026-10-04-voxyz_ai-2106783910055006342]] · meinung — Vox grenzt eine kompakte Regeldatei auf Projekte ohne reale Nutzer ein, koppelt minimale Lösungen an gemeinsame Aufruferänderungen und Lessons-Pflege; dieser Status allein belegt nicht, dass Migrationen oder bestehende Daten entbehrlich sind.
 - 2026-10-02 · [[2026-10-02-voxyz_ai-2106006290954592332]] · meinung — Die Wartung trennt Quellcode, Konfiguration und sitzungsbezogene Lernsignale; der zentral geprüfte Retro-Skill bevorzugt deterministische Checks für mechanische Fehler, während die beschriebenen Doctor-Freigabegrenzen nicht getestet wurden.
 - 2026-10-09 · external_repos/mattpocock/skills/skills/engineering/retro/SKILL.md · verifiziert — Checkout 4588b32 ordnet mechanische Verstöße deterministischen Linter-, Hook- oder CI-Checks zu und reserviert Coding-Standards-Prosa für Ermessensfragen; bestätigt die dokumentierte Empfehlung, keine Fehlerreduktion.
+- 2026-07-24 · [[2026-07-24-claude-the-new-rules-of-context-engineering-for-claude]] · meinung — Thariq Shihipar empfiehlt Repo-Dateien für schwer erkennbare Besonderheiten statt wiederholter Code-Übersichten und ausgelagerte Verifikations-Skills. Anthropic berichtet mehr als 80 Prozent weniger System Prompt ohne Verlust in eigenen Coding-Evals; Methodik und Rohdaten fehlen, URL und X-Artikel sind eine Primärquelle.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-10 · [[2026-07-24-claude-the-new-rules-of-context-engineering-for-claude]]: Anthropics Bericht über mehr als 80 Prozent weniger System Prompt betrifft neuere Modelle und eigene Coding-Evals ohne veröffentlichten Kontrollaufbau. Die Kürzung von Stilregeln begründet weder eine universelle Token-Schwelle noch das Entfernen kritischer Sicherheits-, Freigabe- oder Verifikationsvorgaben.
 
 - 2026-10-09 · [[2026-10-04-voxyz_ai-2106783910055006342]] begrenzt seine Vorlage auf Projekte ohne reale Nutzer und empfiehlt dort Verzicht auf Kompatibilität und Migrationen. Gespeicherte Zustände und externe Aufrufer können trotzdem bestehen; der Projektstatus allein rechtfertigt keine Datenlöschung. Die dortige Lessons-Bereinigung gilt nicht für unsere append-only Patterns.
 

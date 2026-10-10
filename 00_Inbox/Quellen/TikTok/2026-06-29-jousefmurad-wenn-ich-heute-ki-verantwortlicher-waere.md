@@ -38,3 +38,7 @@ Punkt 3, super trivial. baut eine datenbasis auf. die meisten benutzen Excel hie
 misst den Return and Invest in Euro.
 
 und dann wenn der Erfolg messbar ist, kann euer Team auch sehen was für einen konkreten. Impact KI in eurem Unternehmen hat.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-06-29-jousefmurad-wenn-ich-heute-ki-verantwortlicher-waere/02-video.mp4)

@@ -30,3 +30,7 @@ Basically a good agentic harness that points it in the direction you want it to 
 We have seen already tens of millions of dollars, probably hundreds of millions of dollars go to waste on fine tuning in the last year across the corporate world as a whole.
 
 don't waste your time. Just don't do it. So that, I guess that's my P S A. For you. There are things to not do in 2026, now that A I. Models are moving faster, and one of them is do not fine tune your model.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2025-12-31-natebjones-seriously-not-worth-it-now/02-video.mp4)

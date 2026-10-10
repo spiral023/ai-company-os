@@ -1,6 +1,6 @@
 # Multi-Agent & Parallelisierung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-Abhängigkeiten, Rollen, Advisor. Dauerläufe ohne Aufsicht stehen in autonomie.
 
@@ -9,7 +9,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - **Hauptkeyword:** Claude Code Subagents
 - **Long-Tail:** Agent Teams Claude Code; Git Worktrees parallele Agents; Subagents vs. Agent Teams; Multi-Agent Orchestrierung; Task-Abhängigkeiten Claude Code; Kosten paralleler Agents
 - **Fragen:** Wann lohnt sich Parallelisierung? / Subagent oder Agent Team?
-- **Häufig in den Quellen:** subagents (6), claude code subagents (5), git worktrees (4), effort (4), multi-agent (2), claude code tasks (2), addblockedby (2), modulgrenzen (2), claude code agent teams (2), openclaw (2), codex cli (2), agent teams (2), parallel agents (2), edit-kollisionen (2), agent drift (2), goal drift (2), context rot (2), agent tree (2), kosten pro task (2), opus 5.5 (2)
+- **Häufig in den Quellen:** subagents (6), claude code subagents (5), git worktrees (4), effort (4), claude code tasks (2), addblockedby (2), multi-agent (2), claude code agent teams (2), modulgrenzen (2), openclaw (2), codex cli (2), agent teams (2), parallel agents (2), edit-kollisionen (2), agent drift (2), goal drift (2), context rot (2), agent tree (2), kosten pro task (2), opus 5.5 (2)
 
 ## Verwandte Themen
 
@@ -22,12 +22,13 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 
 - [[Advisor-Agent-gegen-Drift]] · meinung · 3 Belege
 - [[Blockierende-Task-Abhaengigkeiten]] · meinung · 2 Belege
-- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 38 Belege
+- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 40 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]]
 
-## Quellen (14)
+## Quellen (15)
 
+- [[2026-10-09-git-worktree]] — Getrennte Worktrees teilen das Repository, isolieren aber keine Laufzeitressourcen.
 - [[2026-09-29-voxyz_ai-2105012597796057438]] — Vox beschreibt für GPT-6.1 Sol (Stand 2026-09-29) einen Agent-Tree in Codex: Orchestrator `high`, explorer/worker/researcher auf `medium`, `gpt-6-astra` auf `xhigh` nur als Reviewer vor großen Änderun
 - [[2026-09-27-voxyz_ai-2104254744722383210]] — Vox lässt Opus 5.5 aus 1.500+ eigenen Posts ein Repo mit 66 Skills bauen: Mining (71 Agenten), Planning (9), Scaffold (1), Build (21), QA (3).
 - [[2026-09-26-voxyz_ai-2103977414711767244]] — Ein read-only Subagent pro Prüfgruppe erstellt Befunde, der Hauptagent behebt sie nach Freigabe allein, damit nie zwei Agents dieselbe Datei editieren.
@@ -51,6 +52,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c]]
 - [[2026-09-19-voxyz_ai-2101355643882065971]]
 - [[2026-09-07-sairahul1-2096902575035683147]]
+- [[2026-07-21-claudedevs-2079654423828304282]]
 - [[2026-04-17-wiki-compiler-praktische-claude-code-workflows]]
 - [[2026-04-17-wiki-compiler-codex-claude-code-lovable-workflow]]
 - [[2026-03-17-zerotopete-never-use-terminal-again]]

@@ -31,3 +31,7 @@ Die meisten lassen sich ein Handover erst schreiben, wenn das Kontextfenster vol
 > ⚠️ **Rückübersetzung, nicht der Originalton.** TikTok hat statt der Originalspur eine maschinell nach *en* übersetzte Fassung geliefert (Caption ist *de*). Für Zitate die Caption nutzen oder mit `--refetch` einen neuen Abruf versuchen.
 
 new session and the context is gone. I don't care at all in the meantime. probably you have your AI also explained several times, what you're sitting on right now. I'm doing it differently in the meantime. when I work on an idea, then I say, Claud, please write your current state in a file. the progress must be pure, open points must be pure, the Learnings have to go in, because we will build rules from this later. and clot holds in each session we are working on, this file is always up to date. that's exactly what else you get at the end of the session, when the context window becomes too large, type and say, Hey Make me handover prompt and so on. we can just say that in real time clot, that this is to create. so new session, you probably do that more often anyway. File pure Dragondrop and then you can go on seamlessly right there. but that only works, if you don't work in a team, but if you work on this one idea yourself. otherwise I would never check this file. but as long as that is the case, it is such a state document really useful.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-08-03-steffen_hauptmann-die-meisten-lassen-sich-ein-handover-erst-schreiben-wenn-das/02-video.mp4)

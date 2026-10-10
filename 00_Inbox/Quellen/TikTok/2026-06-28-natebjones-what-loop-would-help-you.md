@@ -29,3 +29,7 @@ And I think it's hard for us. I think we are used to carrying that load so much 
 Just. Just letting you know that there's a rumor going on. It's just me. It's just me.
 
 So there you go. Let Me know what your loops are in the comments. What would you like to turn into a loop that can lift the load from your shoulders? What would be a pain point that you would like AI to tackle? Let me know.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-06-28-natebjones-what-loop-would-help-you/02-video.mp4)

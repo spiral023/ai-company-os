@@ -32,6 +32,7 @@ Statt einen Skill ausschließlich aus einer verbalen Spezifikation zu bauen, ent
 - 2026-01-21 · [[2026-01-21-aiedge-claude-50-pro-tips]] · meinung — X-Thread-Aufarbeitung (über vibedeck-Sekundärfassung) nennt zwei Varianten derselben Grundidee: Skill aus Design-Screenshot ableiten, sowie Cowork per aufgezeichnetem Browser-Ablauf einen neuen Workflow beibringen — beide ohne Erfolgsnachweis oder Einschränkung.
 - 2025-10-31 · [[2025-10-31-agenticjames-best-claude-skills-for-agentic-coding]] · meinung — Skill-Generator, der wiederkehrende Chat-Muster zu Skills abstrahiert; nicht demonstriert, Wildwuchs-Risiko.
 - 2026-09-20 · [[2026-09-20-voxyz_ai-2101657631249031507]] · meinung — Eigene Komponentenbibliothek und benannte Design-Operationen als Skill statt vager Prompts; Erfahrungsbericht ohne Messung.
+- 2026-07-21 · [[2026-07-21-claudeai-2079595988998554047]] · meinung — Claude kündigt Skill-Erstellung durch Bildschirmaufnahme und gesprochene Erläuterung in Cowork an; das UI zeigt erfasste Klicks, Eingaben und Stimme sowie einen gespeicherten Skill. Dies ist ein Herstellerbeispiel zum Demonstrationsprinzip, kein unabhängig getesteter Wiederholungsnachweis.
 
 ## Spannungen & offene Fragen
 

@@ -35,3 +35,7 @@ now the AI takes a completely different perspective 1 and does not try
 to say that and that and that and that's why the project is good and your idea is good, but it takes exactly the opposite positions 1. it is looking for every reason why your project failed give yourself evidence and if you still want to take the whole thing to the next level, then you use research,
 
 Also websearch. that means you tell the agent and search the internet even for possible reasons and so you can give AI the chance. to show you every point, why your idea is not good and why it fails. and you can, in the evaluation phase where you are thinking, already counteract, because now you know what possible reasons are, why the project fails.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-05-02-vincentmumme-das-muesst-ihr-unbedingt-testen/02-video.mp4)

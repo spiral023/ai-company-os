@@ -38,6 +38,8 @@ Claude Code liest Modell und Endpunkt aus Umgebungsvariablen (bzw. `~/.claude/se
 - 2026-08-16 · [[2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo]] · meinung — Faustformeln zur Hardware-Vorabprüfung: Speicher = Parameter mal Bits durch acht, Tempo = Bandbreite durch Modellgröße halbiert, MoE braucht Speicher für alle Parameter. Rechenbeispiele, keine Messung; die Ablöse-Prognose im Titel ist unbelegt.
 - 2026-09-28 · [[2026-09-28-unslothai-2104592692072304916]] · meinung — Unsloth Desktop stellt eine Jev-kompatible API bereit, bestehende Integrationen werden auf den lokalen Server gezeigt; gleiche Umleitungslogik, aber für eine Decision-API statt Chat-API.
 
+- 2026-10-09 · [[2026-10-09-ollama-kontext-speicher]] · meinung — Größere konfigurierte Kontextlänge benötigt zusätzlich Speicher; `ollama ps` zeigt CPU/GPU-Zuordnung und Kontext. Modellgewichte sind deshalb nur ein Teil der Vorabschätzung. Die Dokumentation enthält keine Messung einer konkreten Coding-Aufgabe.
+
 ## Spannungen & offene Fragen
 
 - Vier unabhängige Quellen bestätigen inzwischen im Kern dasselbe technische Muster (Anthropic-kompatible Umgebungsvariablen bzw. äquivalente Provider-Abstraktion) über CLI-, CI- und Multi-Provider-Kontexte hinweg — jede Zeile einzeln bleibt aber „meinung“, da keine der Quellen selbst gegen ein Repo verifiziert wurde.

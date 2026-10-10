@@ -34,3 +34,7 @@ Andrej is an academic researcher in AI. He's not really academic in the sense th
 You need something that is closer to a database structure. I actually put together the Open Brain, uh, open source project on get help for this, because you need a SQL approach. And I'm layering into that a graph approach where you can add a wiki like structure, sort of like Andre does. Because I think it's nice to have the best of both worlds. Picking which memory system you use matters because you are deciding the kind of intellectual labor you are doing, right? Are you doing the labor of figuring out the connections between things? And so wiki matters a lot? Or do you need a factual store so you can go and get insights that are cited to a particular fact or data point and come back accurately and consistently, even at scale,
 
 that's very different work. And it takes a Different underlying data structure. So think about the memory you're using, and make sure you're intentional about it. Because so many people just jump onto the latest hot trend, and they aren't being intentional about how they think about their context layer. That leads to some bad, bad issues with agents. Because agents are only as good as the context layer that you give them. If you don't give him good context, you're not gonna get good results. So there you go. That's the real story on Andre's wiki.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-04-21-natebjones-this-is-so-important-if-you-use-ai-as-a-solo-business-or-ic-theres-a/02-video.mp4)

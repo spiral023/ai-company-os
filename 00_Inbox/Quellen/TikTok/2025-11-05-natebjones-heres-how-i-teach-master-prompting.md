@@ -51,3 +51,7 @@ I've put together a full guide on this. It's called CHAT G P T. 2:01, and it's o
 take away the idea that there are mental model shifts you can make, like the ones I've described, that are very simple, seemingly, but that unlock a tremendous amount of power. These. These prompts, if properly engineered, if you take into account these principles,
 
 they can take the exact same model and 10 x your output. And it's very rare for us to have tools that are that sensitive to your inputs. But A I. Is. And that's why it's important to talk about stuff like this. So this is your mini preview to CHAT G P T. 2:01. I hope it's been fun.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2025-11-05-natebjones-heres-how-i-teach-master-prompting/02-video.mp4)

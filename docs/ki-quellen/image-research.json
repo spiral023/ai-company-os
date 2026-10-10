@@ -1,0 +1,195 @@
+{
+  "matt-pocock": {
+    "image": "images/matt-pocock.jpg",
+    "imageSource": "https://www.mattpocock.com/",
+    "imageUrl": "https://www.mattpocock.com/face.jpeg",
+    "checkedAt": "2026-10-10"
+  },
+  "thariq": {
+    "image": "images/thariq.jpg",
+    "imageSource": "https://x.com/trq212",
+    "imageUrl": "https://pbs.twimg.com/profile_images/1976939058741039104/r3GgzqRh_400x400.jpg",
+    "checkedAt": "2026-10-10",
+    "notes": "Originalportrait direkt vom X-Profil @trq212."
+  },
+  "boris-cherny": {
+    "image": "images/boris-cherny.jpg",
+    "imageSource": "https://github.com/bcherny",
+    "imageUrl": "https://avatars.githubusercontent.com/u/1761758?v=4",
+    "checkedAt": "2026-10-10"
+  },
+  "andrej-karpathy": {
+    "image": "images/andrej-karpathy.jpg",
+    "imageSource": "https://github.com/karpathy",
+    "imageUrl": "https://avatars.githubusercontent.com/u/241138?v=4",
+    "checkedAt": "2026-10-10"
+  },
+  "felix-rieseberg": {
+    "image": "images/felix-rieseberg.jpg",
+    "imageSource": "https://github.com/felixrieseberg",
+    "imageUrl": "https://avatars.githubusercontent.com/u/1426799?v=4",
+    "checkedAt": "2026-10-10"
+  },
+  "romain-huet": {
+    "image": "images/romain-huet.jpg",
+    "imageSource": "https://github.com/romainhuet",
+    "imageUrl": "https://avatars.githubusercontent.com/u/27232?v=4",
+    "checkedAt": "2026-10-10"
+  },
+  "vox": {
+    "image": "images/vox.jpg",
+    "imageSource": "https://x.com/voxyz_ai",
+    "imageUrl": "https://pbs.twimg.com/profile_images/1998303259279138816/5bqsxKJS_400x400.jpg",
+    "checkedAt": "2026-10-10"
+  },
+  "artificial-analysis": {
+    "image": "images/artificial-analysis.jpg",
+    "imageSource": "https://x.com/ArtificialAnlys",
+    "imageUrl": "https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_400x400.jpg",
+    "checkedAt": "2026-10-10"
+  },
+  "chubby": {
+    "image": "images/chubby.jpg",
+    "imageSource": "https://x.com/kimmonismus",
+    "imageUrl": "https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_400x400.jpg",
+    "checkedAt": "2026-10-10"
+  },
+  "claude-code-changelog": {
+    "image": "images/claude-code-changelog.jpg",
+    "imageSource": "https://x.com/ClaudeCodeLog",
+    "imageUrl": "https://pbs.twimg.com/profile_images/2024922567320997889/1KnSSnCQ_400x400.jpg",
+    "checkedAt": "2026-10-10"
+  },
+  "codex-changelog": {
+    "image": "images/codex-changelog.jpg",
+    "imageSource": "https://x.com/Codex_Changelog",
+    "imageUrl": "https://pbs.twimg.com/profile_images/2024110158440538112/HcESUWDQ_400x400.jpg",
+    "checkedAt": "2026-10-10"
+  },
+  "claudedevs": {
+    "image": "images/claudedevs.jpg",
+    "imageSource": "https://x.com/ClaudeDevs",
+    "imageUrl": "https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_400x400.png",
+    "checkedAt": "2026-10-10"
+  },
+  "openai-developers": {
+    "image": "images/openai-developers.jpg",
+    "imageSource": "https://x.com/OpenAIDevs",
+    "imageUrl": "https://pbs.twimg.com/profile_images/2022002720971096064/l3Kyt4qt_400x400.jpg",
+    "checkedAt": "2026-10-10"
+  },
+  "gemini-cli": {
+    "image": "images/gemini-cli.jpg",
+    "imageSource": "https://x.com/geminicli",
+    "imageUrl": "https://pbs.twimg.com/profile_images/1991894070155698176/oWexB4k7_400x400.png",
+    "checkedAt": "2026-10-10"
+  },
+  "tibo-sottiaux": {
+    "image": "images/tibo-sottiaux.jpg",
+    "imageSource": "https://x.com/thsottiaux",
+    "imageUrl": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_400x400.jpg",
+    "checkedAt": "2026-10-10"
+  },
+  "andrew-ambrosino": {
+    "image": "images/andrew-ambrosino.jpg",
+    "imageSource": "https://x.com/ajambrosino",
+    "imageUrl": "https://pbs.twimg.com/profile_images/2095542837479890944/wYqaULZ2_400x400.jpg",
+    "checkedAt": "2026-10-10"
+  },
+  "ahmed": {
+    "image": "images/ahmed.jpg",
+    "imageSource": "https://x.com/ah20im",
+    "imageUrl": "https://pbs.twimg.com/profile_images/2010259041075769344/7tBD_2VX_400x400.jpg",
+    "checkedAt": "2026-10-10",
+    "notes": "Originalavatar des X-Profils; stilisiertes Portrait."
+  },
+  "sam-altman": {
+    "image": "images/sam-altman.jpg",
+    "imageSource": "https://x.com/sama",
+    "imageUrl": "https://pbs.twimg.com/profile_images/2046764873200394240/r7BxVezs_400x400.jpg",
+    "checkedAt": "2026-10-10"
+  },
+  "max-froehlich": {
+    "image": "images/max-froehlich.jpg",
+    "imageSource": "https://www.tiktok.com/@max_froehlich",
+    "imageUrl": "https://p19-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/e2bf4253fee60a21af779de3127ee59b~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=c496d543&x-expires=1791831600&x-signature=E%2Bol%2FHpR8oYaxPALrSASxsTbu74%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+    "checkedAt": "2026-10-10"
+  },
+  "pete-spano": {
+    "image": "images/pete-spano.jpg",
+    "imageSource": "https://www.tiktok.com/@zerotopete",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/de531f16b01c0fa2b51868874fa84379~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=57ccf12e&x-expires=1791831600&x-signature=6WaXfVlSIFSJSM%2BKeMRLw02Crr4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+    "checkedAt": "2026-10-10"
+  },
+  "techsnack": {
+    "image": null,
+    "imageSource": "https://www.tiktok.com/@techfeed5",
+    "imageUrl": null,
+    "checkedAt": "2026-10-10",
+    "notes": "TikTok lieferte für @techfeed5 keine Profildaten und kein verifizierbares Profilbild; Initialen verwenden."
+  },
+  "florian-schuenemann": {
+    "image": "images/florian-schuenemann.jpg",
+    "imageSource": "https://www.tiktok.com/@floknowsai",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/0bd4341b527bb2a766d7848dfefc1d08~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=599572a8&x-expires=1791831600&x-signature=AAHgePHBR0dmt9cWp2olbDdakb8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+    "checkedAt": "2026-10-10"
+  },
+  "avasdream": {
+    "image": "images/avasdream.jpg",
+    "imageSource": "https://www.tiktok.com/@avasdr34m",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/cfecb7fde292cbbd5f52b89aef04f4fa~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=6eb0cf93&x-expires=1791831600&x-signature=x%2Fi2Y2I8Rm%2BsRisunXQOwQ0W3AY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+    "checkedAt": "2026-10-10"
+  },
+  "agentic-james": {
+    "image": "images/agentic-james.jpg",
+    "imageSource": "https://www.tiktok.com/@agentic.james",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/67e9d13a11c26644703aac84ca3cfffe~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=c4ed133d&x-expires=1791831600&x-signature=cmqagkn3d5n%2BRW08usqjQFFeqiE%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+    "checkedAt": "2026-10-10"
+  },
+  "promptgefluester": {
+    "image": "images/promptgefluester.jpg",
+    "imageSource": "https://www.tiktok.com/@promptgefluester",
+    "imageUrl": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/af0c4769fd3738959b0df58e6d4ada61~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=9ba849f6&x-expires=1791831600&x-signature=0AsnsUpqmYCfZ0uxmt2rnAazu9c%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+    "checkedAt": "2026-10-10"
+  },
+  "julian-ivanov": {
+    "image": "images/julian-ivanov.jpg",
+    "imageSource": "https://www.youtube.com/@julian-ivanov",
+    "imageUrl": "https://yt3.googleusercontent.com/uPQwyhyNczxro6lYTVMEEbAu3s-7p4oTJBcwaduOgf5nV_PHmMqNsB_xQgiME6kUMefFrSuS-Q=s900-c-k-c0x00ffffff-no-rj",
+    "checkedAt": "2026-10-10",
+    "channelUrl": "https://www.youtube.com/@Julian-Ivanov",
+    "notes": "Kanalname und Avatar auf YouTube geprüft: Julian Ivanov | KI-Automatisierung."
+  },
+  "alex-sprogis": {
+    "image": "images/alex-sprogis.jpg",
+    "imageSource": "https://www.youtube.com/@alex.sprogis",
+    "imageUrl": "https://yt3.googleusercontent.com/kXJmW0VxaBU8deKEFN4NLQXoJtOdJ7EvOIyVWM4DdqTfANscbn5qp3h3jMg3UdfClzTsverLNUI=s900-c-k-c0x00ffffff-no-rj",
+    "checkedAt": "2026-10-10",
+    "channelUrl": "https://www.youtube.com/@alex.sprogis",
+    "notes": "Kanalname und Avatar auf YouTube geprüft: Alex Sprogis."
+  },
+  "ai-mit-arnie": {
+    "image": "images/ai-mit-arnie.jpg",
+    "imageSource": "https://www.youtube.com/@arnold-oberleiter",
+    "imageUrl": "https://yt3.googleusercontent.com/3kFF-J9PUy3cZmGoorMrqf9qvxbYEa0CO2sxc8KG6iZ_tpDHuFlEK_YiqGFKQgmrAKhLatIppA=s900-c-k-c0x00ffffff-no-rj",
+    "checkedAt": "2026-10-10",
+    "channelUrl": "https://www.youtube.com/@Arnold-Oberleiter",
+    "notes": "Kanalname und Avatar auf YouTube geprüft: AI mit Arnie. Originalavatar mit künstlerisch dargestelltem Portrait."
+  },
+  "digitale-profis": {
+    "image": "images/digitale-profis.jpg",
+    "imageSource": "https://www.youtube.com/@DigitaleProfis",
+    "imageUrl": "https://yt3.googleusercontent.com/goMcKDy7P2YhPf66gAgBh0U_MUKyNijI425aXGeBJhbTxdXyDQbww2IFZFcC07-35L4qX_4jew=s900-c-k-c0x00ffffff-no-rj",
+    "checkedAt": "2026-10-10",
+    "channelUrl": "https://www.youtube.com/@DigitaleProfis",
+    "notes": "Kanalname und Avatar auf YouTube geprüft: Digitale Profis."
+  },
+  "nate-b-jones": {
+    "image": "images/nate-b-jones.jpg",
+    "imageSource": "https://natebjones.com/about",
+    "imageUrl": "https://www.natebjones.com/_image?href=%2F_astro%2Fnate-jones-about-2026.hb6bX17c.jpg&w=640&h=800&q=90&f=webp&fit=cover&position=centre",
+    "checkedAt": "2026-10-10",
+    "channelUrl": "https://www.youtube.com/@NateBJones",
+    "notes": "Portrait und YouTube-Kanallink auf der eigenen Über-mich-Seite geprüft."
+  }
+}

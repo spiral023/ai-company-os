@@ -40,6 +40,51 @@ beobachten:
   - Closed Loop
 
 begriffe:
+  - begriff: Spec
+    text: "Eine Spezifikation, die das gewünschte Verhalten einer Funktion und ihre Grenzen beschreibt. Sie hält fest, welche Fälle eine Umsetzung erfüllen muss und welche Wünsche außerhalb des Auftrags bleiben. Prüffähige Abnahmekriterien machen sie für Coding-Agents nutzbar."
+    siehe: [Akzeptanzkriterium, Plan Mode]
+
+  - begriff: Clef-Head
+    text: "Der im Unsloth-Guide beschriebene Modellteil, der vorgegebene Antwortoptionen bewertet. Er ergänzt ein Sprachmodell für begrenzte Entscheidungsaufgaben. Die Qualität seiner Auswahl und Wahrscheinlichkeiten muss auf getrennten Daten geprüft werden."
+    siehe: [Decision-Head, Kalibrierung]
+
+  - begriff: Labelraum
+    text: "Die Menge der erlaubten Antwortkategorien einer Klassifikationsaufgabe. Jede Kategorie braucht eine eindeutige Bedeutung und passende Beispiele. Mehrdeutige Kategorien erschweren sowohl das Training als auch die Bewertung."
+    siehe: [Decision-Head]
+
+  - begriff: Datenvertrag
+    text: "Die vereinbarte Form und Bedeutung von Daten an einer Schnittstelle. Er beschreibt beispielsweise Pflichtfelder, erlaubte Werte und die Behandlung fehlender Angaben. Testdaten sollten zu diesem Vertrag passen oder ausdrücklich einen Fehlerfall prüfen."
+
+  - begriff: Regressionstest
+    text: "Eine wiederholbare Prüfung, die das erneute Auftreten eines bereits behobenen Fehlers erkennen soll. Sie verwendet den auslösenden Fall und ein klar erwartetes Ergebnis. Damit bleibt die Korrektur auch bei späteren Änderungen prüfbar."
+    siehe: [Regression, Reproduktionsschritte]
+
+  - begriff: Plan Mode
+    text: "Ein Arbeitsmodus eines Coding-Agents, in dem er zunächst untersucht und einen Umsetzungsvorschlag vorbereitet. Welche Werkzeuge dabei erlaubt sind, hängt vom jeweiligen Produkt und seiner Konfiguration ab. Ein geprüfter Plan braucht klare Anforderungen und Abnahmekriterien."
+    siehe: [Agent, Akzeptanzkriterium]
+
+  - begriff: Grilling
+    text: "Eine gezielte Fragerunde, mit der ein Agent Unklarheiten in einer Anforderung oder einem Entwurf aufdeckt. Dabei werden Erwartungen, Randfälle und Fachbegriffe geklärt, bevor die Umsetzung beginnt. Wie umfangreich die Runde sinnvoll ist, hängt vom Vorhaben ab."
+    siehe: [Plan Mode, Spec]
+
+  - begriff: Safe Area
+    aliase: [Safe Areas]
+    text: "Ein Bereich des Bildschirms, in dem Inhalte ohne Überdeckung durch Aussparungen oder Systembedienelemente dargestellt werden können. Eine randfüllende Webapp kann die zugehörigen Randabstände für wichtige Bedienelemente berücksichtigen. Diese Abstände ersetzen keine Prüfung mit geöffneter Bildschirmtastatur."
+    siehe: [Viewport]
+
+  - begriff: PWA
+    aliase: [Progressive Web App]
+    text: "Eine Webapp, die Browserfunktionen wie Installation oder Offline-Nutzung ergänzen kann. Welche Funktionen verfügbar sind, hängt von der Implementierung, dem Browser und der Plattform ab. Auch eine installierte PWA verwendet Webtechnologie."
+
+  - begriff: Decision-Head
+    aliase: [Decision-Head-Fine-Tuning]
+    text: "Eine Ausgabeschicht eines Modells, die vorgegebene Entscheidungsoptionen bewertet. Sie wird zusammen mit einem bestehenden Sprachmodell oder Teilen davon für eine begrenzte Aufgabe trainiert. Die ausgegebenen Wahrscheinlichkeiten müssen auf eigenen Daten geprüft werden."
+    siehe: [Fine-Tuning, Kalibrierung]
+
+  - begriff: LoRA
+    text: "Eine Methode zum Fine-Tuning, bei der zusätzliche kleine trainierbare Matrizen die Anpassung eines bestehenden Modells übernehmen. Viele ursprüngliche Modellparameter bleiben dabei unverändert. Ob sich die Anpassung lohnt, zeigt die Auswertung auf getrennten Testdaten."
+    siehe: [Fine-Tuning, Holdout]
+
   - begriff: Accuracy
     aliase: [Genauigkeit]
     text: "Der Anteil der Antworten, die richtig sind. Bei Benchmarks sagt sie allein wenig: Ein Modell kann bei gleicher Accuracy deutlich öfter falsch liegen oder öfter passen, je nachdem, ob es bei Unsicherheit antwortet oder verzichtet."
@@ -546,3 +591,92 @@ begriffe:
     aliase: [Continuous Integration, CI-Job, CI-Jobs]
     text: "Continuous Integration: Ein Server führt bei jedem Push oder Pull Request automatisch Tests, Linter und Builds aus. Schlägt ein Schritt fehl, sieht das jeder im Pull Request, und ein Merge lässt sich sperren."
     siehe: [Pull Request, Required Status Checks, Linter]
+
+  - begriff: Codepfad
+    text: "Die Folge von Aufrufen und Entscheidungen, die ein Programm für einen bestimmten Ablauf durchläuft. Beim Nachvollziehen verfolgst du beispielsweise eine Eingabe vom Formular bis zur Speicherung und zur angezeigten Antwort."
+
+  - begriff: API
+    text: "Eine definierte Schnittstelle, über die Software Daten oder Funktionen bereitstellt. Bei einer Web-API beschreibt sie unter anderem erlaubte Anfragen, Antworten und Fehler."
+
+  - begriff: Persistenz
+    text: "Das dauerhafte Speichern eines Zustands über die aktuelle Programmausführung hinaus. Eine erfolgreiche Anzeige im Browser bestätigt für sich noch keine erfolgreiche Speicherung in der Datenbank."
+
+  - begriff: Cache
+    text: "Ein Zwischenspeicher für Daten oder Ergebnisse, die erneut gebraucht werden. Ein gespeicherter Wert kann veraltet sein; deshalb gehört zur Nutzung auch eine Regel für seine Aktualisierung."
+
+  - begriff: Refactoring
+    aliase: [Refactor, Refaktorierung]
+    text: "Das Überarbeiten der inneren Struktur von Code bei gleichbleibendem vereinbartem Verhalten. Eine fachliche Verhaltensänderung braucht eine eigene Anforderung und Prüfung."
+
+  - begriff: CSV
+    text: "Ein Textformat für tabellarische Daten mit getrennten Feldern und Zeilen. Trennzeichen, Anführungszeichen und Zeilenumbrüche müssen beim Import und Export passend behandelt werden."
+
+  - begriff: Branch
+    text: "Ein benannter Entwicklungszweig in Git, dessen Verweis beim Committen weiterwandert. Getrennte Branches erlauben unterschiedliche Änderungsfolgen, die später integriert werden können."
+    siehe: [Commit, Worktree]
+
+  - begriff: Commit
+    text: "Ein gespeicherter Entwicklungsstand mit Beschreibung und Verweis auf seine Vorgänger in Git. Änderungen in lokalen Dateien gehören erst nach dem Commit zu diesem Stand."
+    siehe: [Branch, Diff]
+
+  - begriff: HEAD
+    text: "Der Git-Verweis auf den aktuell ausgecheckten Entwicklungsstand. Üblicherweise verweist er auf einen Branch, kann aber auch direkt auf einen Commit zeigen."
+    siehe: [Branch, Commit, Worktree]
+
+  - begriff: Lockdatei
+    aliase: [Lockfile]
+    text: "Eine Datei, die konkret aufgelöste Abhängigkeitsversionen festhält. Sie hilft, eine Installation nachzuvollziehen; Änderungen können mehrere Projektbereiche betreffen."
+
+  - begriff: Mock
+    aliase: [Mocktest, Mock-Test]
+    text: "Ein Testobjekt, das eine Abhängigkeit ersetzt und vorbereitete Antworten oder beobachtbare Aufrufe liefert. Die ersetzte Logik wird dadurch nicht automatisch mitgeprüft."
+    siehe: [Fixture, TDD]
+
+  - begriff: Mutation
+    aliase: [Mutationstest, Mutation Testing]
+    text: "Eine gezielte falsche Änderung am Code, mit der du die Aussagekraft eines Tests prüfen kannst. Erkennt der Test sie nicht, fehlt möglicherweise ein relevantes Prüfkriterium oder der betroffene Code wird nicht erreicht."
+    siehe: [TDD, Mock]
+
+  - begriff: Revision
+    text: "Ein bestimmter gespeicherter Versionsstand eines Projekts. Für eine nachvollziehbare Prüfung gehören zusätzlich vorhandene, noch nicht gespeicherte Dateiänderungen zum beschriebenen Arbeitsstand."
+    siehe: [Commit, Diff]
+
+  - begriff: List Comprehension
+    text: "Eine kompakte Python-Schreibweise, um aus einem iterierbaren Wert eine neue Liste zu erzeugen. Sie kann Elemente umformen und mit einer Bedingung auswählen."
+
+  - begriff: CLI
+    aliase: [Command Line Interface]
+    text: "Eine Schnittstelle, über die du Programme mit Befehlen und Argumenten aufrufst. Ausgaben und Exit-Codes können weitere Schritte in einem Script steuern."
+    siehe: [Exit-Code]
+
+  - begriff: JSON
+    text: "Ein Textformat für strukturierte Daten aus Objekten, Listen und einfachen Werten. Programme können diese Struktur gezielt lesen, statt Informationen aus einer freien Textantwort zu erraten."
+
+  - begriff: Release
+    text: "Ein zur Nutzung bereitgestellter Versionsstand einer Software. Ein erfolgreich erzeugter Build bestätigt noch nicht, dass dieser Stand in der Zielumgebung angekommen ist."
+    siehe: [Commit, CI]
+
+  - begriff: RAM
+    text: "Der Arbeitsspeicher eines Rechners, den laufende Programme für ihre Daten nutzen. Seine freie Kapazität ist von der Kapazität eines separaten Grafikspeichers zu unterscheiden."
+    siehe: [VRAM, CPU]
+
+  - begriff: VRAM
+    text: "Der Speicher einer Grafikeinheit für Daten ihrer Berechnungen. Bei lokaler Modellinferenz brauchen unter anderem Modellgewichte und der verwendete Kontext Speicher."
+    siehe: [RAM, GPU, Quantisierung]
+
+  - begriff: Quantisierung
+    text: "Das Darstellen von Modellwerten mit geringerer Genauigkeit oder weniger Bits. Das kann Speicherbedarf senken und die Ergebnisse verändern; die konkrete Variante muss geprüft werden."
+    siehe: [VRAM]
+
+  - begriff: CPU-Offloading
+    aliase: [Offloading]
+    text: "Das Verlagern von Teilen einer Modellberechnung auf die CPU, wenn die Laufzeit dies unterstützt. Die Aufteilung kann Speicherengpässe anders behandeln und die Geschwindigkeit beeinflussen."
+    siehe: [CPU, GPU, RAM, VRAM]
+
+  - begriff: GPU
+    text: "Ein Prozessor, der viele gleichartige Berechnungen parallel bearbeiten kann. Lokale KI-Laufzeiten können ihn verwenden, wenn Hardware, Modell und Software dazu passen."
+    siehe: [CPU, VRAM]
+
+  - begriff: CPU
+    text: "Der allgemeine Hauptprozessor eines Rechners. Er führt Programme aus und kann auch Modellberechnungen übernehmen, abhängig von der verwendeten Laufzeit."
+    siehe: [GPU, RAM]

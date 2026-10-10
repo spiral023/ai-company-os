@@ -28,3 +28,7 @@ I don't see people discussing this, but AI is inducing a kind of exhaustion that
 and is actually very practical, because otherwise you're not gonna be able to make the kind of high quality decisions you need to make there. There are no sort of mental rest periods while you're focused on just executing work anymore. If you're using AI, all the decisions that come back to you are kinda consequential. You have To think them through, you have to be thoughtful. You have to actually debate the trade offs.
 
 There's no light and easy decisions. And so I think this implies a new kind of work and rest rhythm. I don't think we figured it out. I would be curious for your thoughts. Have you experienced this? If you have, what. What do you think the right solution is? Uh, do you think that we need to figure out how to rest more? Uh, yeah. Let me know in the comments. Cheers.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-08-09-natebjones-decision-exhaustion-is-real-discuss/02-video.mp4)

@@ -38,6 +38,7 @@ Instruktions-Spezifität wird entlang einer Skala von High Freedom bis Low Freed
 - 2026-02-04 · [[2026-02-04-meer-aiit-claude-skills-complete-guide]] · meinung — Strikte Regeln bei fragilen Aufgaben, Spielraum bei kreativen; nur als Faustregel genannt, ohne Beleg.
 - 2026-10-01 · [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]] · meinung — Ziel, Referenzen und Geschmack statt Weg vorgeben; Ergebnis als Code (HyperFrames) statt Pixel, daher gezielt nachbesserbar. Selbstbericht eines Creators, Transkript automatisch erzeugt, keine Messung.
 - 2026-07-15 · [[2026-07-15-xudong07452910-2077246527756775933]] · meinung — Fasst die GPT-5.6-Prompt-Guidance als Task-Vertrag zusammen (Ziel, Erfolgskriterium, Pflichtbelege, Stopp-Regel, Bestätigungsaktionen) statt Schrittvorgaben. Stützt den Gradienten bei robusten Aufgaben, sagt aber nichts zu fragilen Operationen; Zweitverwertung ohne Messdaten.
+- 2026-07-24 · [[2026-07-24-claude-the-new-rules-of-context-engineering-for-claude]] · meinung — Starre Kommentarverbote werden im Herstellerbericht durch Orientierung an Kommentarhäufigkeit und Idiom des umgebenden Codes ersetzt. Der zusätzliche Urteilsspielraum ist modell- und aufgabenabhängig; er begründet keine Lockerung kritischer Sicherheits- oder Freigabegrenzen.
 
 ## Spannungen & offene Fragen
 

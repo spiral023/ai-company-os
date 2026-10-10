@@ -84,6 +84,14 @@ def run_health(_args: argparse.Namespace) -> int:
     )
 
 
+def run_social(args: argparse.Namespace) -> int:
+    """Build or check the local social-media directory."""
+    command = [sys.executable, script_path("build_social_directory.py")]
+    if args.check:
+        command.append("--check")
+    return run_subprocess(command, "KI-Kanalliste erstellen oder prüfen")
+
+
 def run_status(_args: argparse.Namespace) -> int:
     """Show git status in short format."""
     if shutil.which("git") is None:
@@ -275,6 +283,10 @@ def build_parser() -> argparse.ArgumentParser:
 
     status = subparsers.add_parser("status", help="Git-Status anzeigen")
     status.set_defaults(handler=run_status)
+
+    social = subparsers.add_parser("social", help="Lokale HTML-Liste der KI-Kanäle erstellen")
+    social.add_argument("--check", action="store_true", help="HTML-Liste auf Aktualität prüfen")
+    social.set_defaults(handler=run_social)
 
     external = subparsers.add_parser("external", help="Externe Skills prüfen")
     external.add_argument("--source", help="Nur eine externe Quelle per ID prüfen")

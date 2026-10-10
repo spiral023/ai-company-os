@@ -81,3 +81,7 @@ wie würdet ihr vorgehen würdet ihr unterschiedliche L L M's benutzen ich hab d
 ähm krassesten Features im Bereich der KI is grade wenn ihr ne ganz alte Legacy Code Software habt bei der ihr überhaupt kein Überblick habt da hör ich mittlerweile von vielen Software Teams die sagen sie nutzen erstmal KI um die entsprechenden äh Analysen zu fahren um danach manuell noch weiter zu programmieren
 
 äh wenn ihr Fragen habt schreibt einfach in die Kommentare ansonsten lasst gern n Abo da und ansonsten wie gesagt wenn ihr Interesse habt euch auszutauschen im Link in der Bio für die kostenlose Community
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-08-21-promptgefluester-wie-macht-man-refactering-bei-einer-richtig-grossen-code-base-mit-aeh/02-video.mp4)

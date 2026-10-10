@@ -57,3 +57,7 @@ also quasi auch businesslogik Drifts wo man sieht okay da passt die Logik sich j
 also businesslogiktests werden auch angepasst das dauert Stunden um Stunden also wir wir bauen wenn wir mal nen Update in der Maske machen braucht es 1/2 Stunden und wie gesagt diese Illusion die die L L M's machen von ich geb da ne Änderung 1 und dann ist die Änderung sofort da die Illusion die verkaufen die im Augenblick ähm ob's jetzt 1 Tropic oder Open AI ist egal ähm und die Illusion ist einfach falsch und ihr das das merkt jeder der professionell damit arbeitet ähm die Leute die halt hobbyprojekte machen die merken's halt erst wenn's dann ihre Plattform oder ihr Projekt knallt deshalb genauso wenig wirklich echte KI Systeme an Markt also Software die von KI gebaut wurde also kleine Tools ja kleine Games okay aber so richtig professionelle Software ähm da arbeiten Teams äh heute mit sehr sehr komplexen Quality Gates
 
 so wie ich das jetzt auch 1 gebaut hab über den letzten Monate und ähm da ist die Entwicklung einfach viel viel langsamer und schwieriger und ähm da macht's auch nicht so viel Spaß muss man einfach sagen das so meine Erkenntnis und schreibt Mir mal wie ihr das so seht
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-07-26-promptgefluester-ich-hab-ne-unbequeme-wahrheit-und-zwar-ich-wurde-gefragt-wieso/02-video.mp4)

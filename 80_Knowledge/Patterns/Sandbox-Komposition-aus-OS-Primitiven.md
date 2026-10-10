@@ -41,8 +41,11 @@ Die zentrale Designspannung dabei ist nicht Security als Selbstzweck, sondern **
 - 2026-07-21 · [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] · meinung — Anthropic beschreibt Remote-VMs mit beschränkten Netzwerkzielen und zweckgebundene Agent-Identitäten zur Begrenzung möglicher Schäden; Instruktionen werden um technische Grenzen ergänzt. Herstellerbericht, Implementierung nicht im Code geprüft.
 
 - 2026-10-08 · [[2026-10-08-unslothai-windows-sandboxing-mxc]] · meinung — Unsloth kombiniert Softwarefilter mit OS-Backends für Python und Terminal und zeigt den Status pro Tool; der ergänzende Guide nennt einen Windows-Fallback und enthält eine Preview-Einschränkung. Implementierung und Schutzumfang sind lokal nicht im Code geprüft.
+- 2026-10-09 · [[2026-10-09-openaidevs-2108573188703781190]] · meinung — Die Codex-Ankündigung nennt MXC für kompatible Windows-11-Geräte mit granularen Dateikontrollen und stärkerer Netzwerkdurchsetzung; ergänzt einen konkreten Produktkanal, bestätigt aber weder Schutzwirkung noch die MXC-Preview als Sicherheitsgrenze.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-10: [[2026-10-09-openaidevs-2108573188703781190]] kündigt MXC als Codex-Backend für kompatible Windows-11-Geräte an. Das ist ein weiterer Produktkontext, keine Widerlegung der Preview-Einschränkung im Unsloth-Material. Welche MXC-Version und welche Datei-, Netzwerk- und Prozessgrenzen Codex tatsächlich verwendet, bleibt hier ungeprüft.
 
 - Ergänzung (2026-10-05): [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] liefert einen weiteren Herstellerbericht über technische Grenzen, hier Remote-VMs, beschränkte Netzwerkziele und Agent-Identitäten. Das ergänzt die bisherige Perspektive, verifiziert aber weder die OS-Komposition noch die Implementierung.
 

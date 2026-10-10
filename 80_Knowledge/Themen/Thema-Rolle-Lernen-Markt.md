@@ -1,6 +1,6 @@
 # Rolle, Lernen & Markt
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit. Der Wandel des gesamten Entwicklungsprozesses gehört zu sdlc.
 
@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** trust the harness (2), droid factory cli, cli statt mcp, vibe coding kritik, e2e-tests, agent coding ohne code, github-app agent, agents.md, spec mode, vibe engineering, devdocs, sub-agents, tdd für agenten, great decoupling, golden master testing, context rot, cli vs. ide, 80% agent, coding atrophy, testgetrieben
+- **Häufig in den Quellen:** trust the harness (2), codebase understanding (2), github-app agent, spec mode, cli statt mcp, droid factory cli, agent coding ohne code, agents.md, e2e-tests, vibe coding kritik, tdd für agenten, context rot, sub-agents, vibe engineering, great decoupling, golden master testing, devdocs, cli vs. ide, coding atrophy, senior engineer review
 
 ## Verwandte Themen
 
@@ -21,16 +21,18 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 
 ## Patterns (3)
 
-- [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 1 Belege
+- [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 2 Belege
 - [[Claude-als-Lernwerkzeug]] · meinung · 2 Belege
-- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 9 Belege
+- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 10 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Intent-Engineering-als-dritte-Schicht]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-dokumentieren]], [[Intent-Engineering-als-dritte-Schicht]]
 
-## Quellen (8)
+## Quellen (10)
 
+- [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]] — Florian Schünemann beschreibt Fähigkeiten für den sinnvollen Einsatz von Agenten.
 - [[2026-09-17-anthropic-how-claude-code-is-used-in-practice]] — Menschen treffen die Planungsentscheidungen, der Agent die Ausführung, und mehr Domänenwissen bringt längere autonome Ketten und höhere Erfolgsquoten; Steuerung verlagert sich auf Spezifikation und Verifikation.
 - [[2026-09-13-stefanantonelli-du-brauchst-keinen-entwickler-um-mit-ki-etwas-zu-bauen]] — Fachexpertise statt Programmierkenntnis erhöht laut Caption die Autonomie pro Anweisung, weil sie Ziel und Prüfkriterien liefert; die Studie selbst wurde nicht gelesen.
+- [[2026-09-06-karl_lauterbach-2096616768974327822]] — Karl Lauterbach verbindet am 06.09.2026 eine Economist-Grafik mit einer politischen Bewertung von KI und Europas Exportstrategie.
 - [[2026-08-21-promptgefluester-wie-macht-man-refactering-bei-einer-richtig-grossen-code-base-mit-aeh]] — Große Refactorings gelingen stufenweise: erst nur analysieren, leichte vor schweren Funden beheben und dabei Business-Logik dokumentieren, die später als Kontext dient.
 - [[2026-08-09-natebjones-decision-exhaustion-is-real-discuss]] — Wenn KI die Ausführung übernimmt, bleiben nur schwere Entscheidungen beim Menschen, was Erholung erfordert und bei vielen parallelen Agents zum Engpass wird.
 - [[2026-02-24-nate-b-jones-intent-engineering]] — Kontext sagt der KI, was sie wissen soll, Intent, was sie wollen soll: Ohne explizite Ziele und Eskalationsregeln optimiert ein Agent die falsche Metrik.
@@ -40,7 +42,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Intent-Engineering-als-dritt
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-10-repo-oh-my-mermaid-architektur]]
 - [[2026-09-24-ai-engineer-matt-pocock-fixing-the-pr-bottleneck]]
+- [[2026-09-12-darioamodei-2098773920774074715]]
 - [[2026-09-09-alex-sprogis-so-erstellst-du-interaktive-architektur-diagramm]]
 - [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]]
 - [[2026-07-27-techfeed5-1-reason-why-the-cloud-limits-could-hit-directly-that-we-talk-to-opus-in]]

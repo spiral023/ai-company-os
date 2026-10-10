@@ -41,3 +41,7 @@ genau das ist der neue Standard ähm Agent Plug ins ähm macht total Sinn des zu
 lasst gern n ähm Follow da und einen Daumen hoch und wenn ihr Lust habt mehr übers Thema KI Programmierung zu erfahren in meiner Bio gibt's ne kostenlose Community da könnt ihr euch anmelden und mit anderen Leuten die auch mit KI programmieren diskutieren wir haben ne Community mit Sprachnachrichten mit interaktiven Chats
 
 und der Möglichkeit mit Mir zu sprechen einfach direkt anmelden let's go
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-08-21-promptgefluester-agent-plug-ins-das-ist-der-neue-standard-mit-dem-die-grossen-ai/02-video.mp4)

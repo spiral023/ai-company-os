@@ -51,3 +51,7 @@ It's like, we have This Assumption about software that software should be as che
 We need to stop anchoring to that. We need to start thinking of this as we're paying for an Iron Man suit for our employees. So what does it cost to get the Iron Man suit? It cost 200 bucks a month. Okay, well, that's what we gotta do. And then we gotta train them so they can use it well.
 
 And so in a sense, like we have time machines. And really, I feel like companies should be willing to buy the software that gives their employees time machines. Because otherwise you're wondering why your companies not doing well and not picking up A I. And everyone's kind of bored with A I. Well, yeah, maybe it's because everyone's having to use co pilot and they're all like a year behind. That's the joke, by the way. If you're using co pilot, it's free time travel. But it's backward anyway. Yeah. So I think this is actually something where companies need to reassess their. Their software practices. There's no reason to make employees individually pay for this if it ends up being a workplace productivity tool. Tell me what you think.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2025-12-28-natebjones-i-do-not-get-why-software-licenses-are-stuck-in-1997/02-video.mp4)

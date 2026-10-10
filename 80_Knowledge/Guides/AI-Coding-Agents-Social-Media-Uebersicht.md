@@ -1,232 +1,143 @@
 # Social-Media-Accounts und Personen rund um AI Coding Agents
 
-Diese Seite listet empfehlenswerte Twitter/X-Accounts und YouTube-Kanäle für Entwickler, die aktuelle Entwicklungen rund um AI Coding Agents verfolgen wollen. Die Auswahl umfasst offizielle Kanäle, automatisierte Changelogs und Schlüsselpersonen aus den Teams von Anthropic, OpenAI und dem weiteren Umfeld.
+Diese Empfehlungsliste hilft bei der Auswahl interessanter Kanäle zu AI Coding Agents, KI-Arbeitsweisen und Modellwahl. Die Kurzbeschreibungen zeigen, welche Themen und Inhalte sich für den eigenen Feed lohnen könnten.
 
----
+Interaktive HTML-Liste zum Weitergeben: [KI-Quellen](../../docs/ki-quellen/index.html).
 
 ## Automatisierte Changelog-Kanäle
 
-Diese Accounts posten vollautomatisch und sind daher besonders nützlich, um Releases und Feature-Änderungen zeitnah mitzubekommen.
-
 ### Claude Code Changelog — [@ClaudeCodeLog](https://x.com/ClaudeCodeLog)
 
-Automatisierter Account, der Releases und Feature-Änderungen von Claude Code trackt. Basis ist das Open-Source-Repository [claude-code-changelog](https://github.com/marckrenn/claude-code-changelog) von Marc Krenn, das Prompts, Feature-Flags und Metadaten je Claude-Code-Version verfolgt. Claude Code veröffentlicht teils täglich neue Versionen (März–April 2026: über 30 Releases in fünf Wochen), weshalb dieser Account als schneller Frühindikator nützlich ist.
+Wer Änderungen an Claude Code verfolgen möchte, findet hier eine auf Releases und neue Funktionen ausgerichtete Anlaufstelle. Der Changelog-Ansatz macht den Account besonders für Entwickler interessant, die nach einem Update wissen wollen, was sich am Werkzeug verändert hat. Ein Abo passt dazu, Versionshinweise im Blick zu behalten und relevante Neuerungen für das eigene Setup aufzugreifen.
 
 ### Codex Changelog — [@Codex_Changelog](https://x.com/Codex_Changelog)
 
-Analoges Äquivalent zu @ClaudeCodeLog für OpenAI Codex. Postet automatisiert Versionsinformationen und Änderungen am Codex-Produkt.
-
----
+Codex Changelog richtet den Blick auf Versionsinformationen und Änderungen am Codex-Produkt. Der Account ist als Begleitung für Entwickler interessant, die Codex im Alltag einsetzen und neue Funktionen oder verändertes Verhalten mitbekommen möchten. Wer Release-Hinweise lieber im eigenen Feed verfolgt, kann den Kanal als Ausgangspunkt für die Beschäftigung mit einem Update nutzen.
 
 ## Offizielle Kanäle
 
 ### ClaudeDevs — [@ClaudeDevs](https://x.com/ClaudeDevs)
 
-Offizieller Anthropic-Kanal für Entwickler, die mit Claude arbeiten. Hier werden API-Updates, neue Features und Developer-Ressourcen kommuniziert.
+ClaudeDevs verbindet Produktmeldungen mit ausführlichen Anleitungen für die Arbeit mit Claude Code. Themen sind Agenten-Loops mit klaren Abbruchbedingungen, die Wahl von Modell und Effort sowie größere Code-Migrationen mit Regeln, Reviews und Verhaltensprüfungen. Die Herstellerperspektive liefert konkrete Entscheidungsraster für Entwickler, die Agentenaufgaben strukturieren und ihre Prüfung planen möchten.
 
 ### OpenAI Developers — [@OpenAIDevs](https://x.com/OpenAIDevs)
 
-Offizielles Pendant bei OpenAI. Zielgruppe sind Entwickler, die mit Codex, der OpenAI API oder verwandten Tools arbeiten. Releases, Beispiele und Ankündigungen.
+OpenAI Developers stellt neue Codex-Funktionen mit Zugangsvoraussetzungen und Bedienhinweisen vor. Dazu gehören Sandboxing unter Windows und Vorschläge für Folgenachrichten im Composer. Die kurzen Produktankündigungen helfen Entwicklern, relevante Neuerungen zu entdecken und herauszufinden, wie sie zum eigenen Setup passen. Der Kanal verbindet Funktionsmeldungen mit konkreten Hinweisen zur Nutzung in der Entwicklungsumgebung.
 
 ### Gemini CLI — [@geminicli](https://x.com/geminicli)
 
-Offizieller Google-Kanal für das Gemini Command Line Interface – Googles Antwort auf Claude Code und Codex. Relevant für Entwickler, die den Markt im Blick behalten wollen.
-
----
+Gemini CLI ist eine Anlaufstelle für das Command-Line-Werkzeug rund um Gemini. Der Kanal ist für Entwickler interessant, die KI-Unterstützung im Terminal nutzen möchten oder neben Claude Code und Codex auch dieses Werkzeug verfolgen wollen. Ein Abo bietet eine thematische Orientierung für die Beschäftigung mit Gemini CLI und ergänzt den Blick auf unterschiedliche Ansätze für Coding Agents.
 
 ## Anthropic – Personen
 
 ### Boris Cherny — [@bcherny](https://x.com/bcherny)
 
-**Rolle:** Creator und Head of Claude Code, Anthropic
-
-Boris Cherny erfand Claude Code und leitet heute das gesamte Produkt. Vor Anthropic war er fünf Jahre Principal Engineer bei Meta und ist Autor von *Programming TypeScript*. Claude Code wuchs unter seiner Führung von einem internen Terminal-Prototyp zu einem Werkzeug, das 2026 laut Anthropic rund 4 % aller öffentlichen GitHub-Commits berührt. Cherny arbeitet selbst mit 5 parallelen Claude-Instanzen und schifft bis zu 20–30 Pull Requests pro Tag. Seine Tweets geben direkte Einblicke in Architekturentscheidungen und Workflow-Philosophie des Produkts.
+Boris Cherny teilt Claude-Code-Praxis und Hinweise auf Produktfunktionen. Die Inhalte reichen von getrennten Worktrees und paralleler Agentenarbeit über Plan-Reviews, Skills und Subagents bis zur Pflege von Kontext und Konfiguration mit /checkup. Wer seinen Coding-Workflow bewusst organisieren möchte, findet konkrete Anregungen aus der Team-Praxis für Aufgabenverteilung, Review und die Pflege der Arbeitsumgebung.
 
 ### Thariq Shihipar — [@trq212](https://x.com/trq212)
 
-**Rolle:** Product Lead / Engineer, Claude Code, Anthropic
-
-Ehemaliger YC-Gründer (Spielefirma, 17 Mio. USD Funding), MIT Media Lab Absolvent. Wechselte zu Anthropic aus Überzeugung, dass Claude Code die Zukunft der Softwareentwicklung ist. Hauptverantwortlich für das `ask-user-question`-Tool (interaktive Anforderungserhebung im Plan Mode) und die Skills-Feature-Architektur. Postet regelmäßig zu praktischen Claude-Code-Setups und neuen Features.
+Thariq Shihipar erklärt ausführlich, wie man die Arbeit mit Claude Code gestaltet: offene Anforderungen klären, Kontext passend bereitstellen, Aufgaben auf Agenten verteilen und Ergebnisse gezielt prüfen. Prompt-Beispiele, Interviews, unabhängige Reviewer und Schleifen mit Stop-Kriterien machen die Abläufe greifbar. Ein Abo lohnt sich für Entwickler, die eigene Agenten-Workflows und Prüfstrategien entwerfen möchten.
 
 ### Felix Rieseberg — [@felixrieseberg](https://x.com/felixrieseberg)
 
-**Rolle:** Engineering Lead, Claude Cowork & Claude Code Desktop, Anthropic
-
-Felix Rieseberg leitet die Entwicklung von Claude Cowork – der zugänglicheren, VM-basierten Variante von Claude Code für nicht-terminal-affine Nutzer. Zuvor bei Notion, Stripe und Slack tätig. Claude Cowork wurde von seinem Team in 1,5 Wochen vollständig mit Claude Code selbst gebaut, wobei bis zu 8 parallele Claude-Instanzen gleichzeitig liefen. Seine Beobachtung, dass Claude Code zunehmend auch für Wissensarbeit statt nur Coding eingesetzt wird, war Auslöser für Cowork. Seine Tweets thematisieren die Grenze zwischen technischer und nicht-technischer KI-Nutzung.
-
----
+Felix Rieseberg ist eine thematische Anlaufstelle für Claude Cowork, die Desktop-Nutzung von Claude und KI-gestützte Wissensarbeit. Wer Agenten auch außerhalb klassischer Terminal-Aufgaben einsetzen möchte, kann den Account in seine Auswahl aufnehmen. Der Schwerpunkt ist besonders für Kollegen interessant, die sich mit zugänglicheren KI-Werkzeugen und dem Übergang von Coding zu Wissensarbeit beschäftigen.
 
 ## OpenAI – Personen
 
 ### Tibo (Thibault Sottiaux) — [@thsottiaux](https://x.com/thsottiaux)
 
-**Rolle:** Head of Codex, OpenAI
-
-Thibault Sottiaux, kurz Tibo, leitet Codex bei OpenAI – Anthropics schärfstem Konkurrenzprodukt zu Claude Code. Unter seiner Produktverantwortung erreichte Codex 2026 über 3 Millionen wöchentlich aktive Entwickler mit einem Wachstum von rund einer Million Nutzer pro Monat. Codex entwickelt sich zur OpenAI-Superapp, die ChatGPT, Codex und einen integrierten Browser vereint. Tibo ist die erste Adresse für strategische Ankündigungen und Produktentscheidungen rund um Codex.
+Tibo Sottiaux erläutert Produktentscheidungen im Codex-Umfeld, etwa die Begründung von Änderungen an Abo-Berechnung und Nutzungsmodell. Solche Ankündigungen geben Einblick in die Sicht des Anbieters auf Kosten und Produktentwicklung. Der Account ist interessant, wenn man neben Funktionen auch verstehen möchte, welche Überlegungen hinter Änderungen am Produkt und seiner Nutzung stehen.
 
 ### Andrew Ambrosino — [@ajambrosino](https://x.com/ajambrosino)
 
-**Rolle:** Product Lead, Codex App, OpenAI
-
-Andrew Ambrosino verantwortet die Codex Desktop-App. Er präsentierte im April 2026 die Computer-Use-Integration: Codex kann seither direkt in andere Desktop-Anwendungen klicken, tippen und navigieren. Seine Tweets begleiten App-Releases mit technischen Details und Demos.
+Andrew Ambrosino ist eine Anlaufstelle rund um die Codex-App und Computer Use. Der Account passt in die Abo-Auswahl von Entwicklern und Kollegen, die sich für KI-Unterstützung in einer Desktop-Oberfläche interessieren. Thematisch geht es um die Verbindung von Agentenarbeit und der Bedienung anderer Anwendungen – ein nützlicher Blickwinkel für alle, die Codex über reine Terminal-Aufgaben hinaus betrachten möchten.
 
 ### Ahmed — [@ah20im](https://x.com/ah20im)
 
-**Rolle:** Entwickler, Codex, OpenAI
-
-Ingenieur im Codex-Team bei OpenAI. Postet zu technischen Implementierungsdetails und dem Entwickleralltag rund um Codex.
+Ahmed ist für Leser interessant, die Codex aus einer technischen Perspektive verfolgen möchten. Der Account ist im Engineering-Umfeld des Produkts eingeordnet und ergänzt damit eine Auswahl aus offiziellen Ankündigungen und allgemeinen KI-Kommentaren. Wer sich mit der Umsetzung und Weiterentwicklung von Coding-Agent-Werkzeugen beschäftigt, findet hier eine passende thematische Anlaufstelle.
 
 ### Romain Huet — [@romainhuet](https://x.com/romainhuet)
 
-**Rolle:** Head of Developer Experience, OpenAI
-
-Romain Huet leitet seit September 2023 die Developer Experience bei OpenAI. Zuvor fünf Jahre bei Stripe (Product Management Developer Platform) und davor mitverantwortlich für den Relaunch der Twitter-Developer-Plattform. Huet ist die zentrale Figur, wenn OpenAI auf die Entwickler-Community zielt: API-Dokumentation, SDK-Design, Events und Tooling. Breiter Blick auf die gesamte OpenAI Developer-Plattform, nicht nur Codex.
+Romain Huet richtet den Blick auf die OpenAI-Entwicklerplattform und Developer Experience. Der Account ist für Kollegen interessant, die KI-Funktionen in eigene Anwendungen integrieren und sich mit Entwicklerressourcen, APIs und SDKs beschäftigen möchten. Als Ergänzung zu Codex-orientierten Kanälen bietet diese Perspektive eine breitere Orientierung rund um die Nutzung von OpenAI als Entwicklungsplattform.
 
 ### Sam Altman — [@sama](https://x.com/sama)
 
-**Rolle:** CEO und Mitgründer, OpenAI
-
-Sam Altman ist Mitgründer und CEO von OpenAI. Für Entwickler interessant, wenn es um strategische Richtungsentscheidungen geht (Modelle, Pricing, Produktvision). Weniger technischer Detailgrad, dafür frühzeitige Hinweise auf Produktrichtungen. Einer der meistbeachteten Accounts im AI-Umfeld generell.
-
----
+Sam Altman ist eine Anlaufstelle für die strategische Perspektive im OpenAI-Umfeld. Wer sich mit Produktvision, Modellstrategie und möglichen Richtungen der KI-Entwicklung beschäftigt, kann den Account als Ergänzung zu technischen Entwicklerkanälen abonnieren. Für Kollegen, die KI-Projekte einordnen oder über deren zukünftige Ausrichtung diskutieren möchten, steht hier die übergeordnete Perspektive im Vordergrund.
 
 ## Vordenker und Community-Stimmen
 
 ### Andrej Karpathy — [@karpathy](https://x.com/karpathy)
 
-**Rolle:** AI-Forscher, Educator, Vordenker; ex-Head of AI @ Tesla, OpenAI Founding Member, Stanford PhD
+Andrej Karpathy reflektiert, wie Coding Agents die Arbeit von Entwicklern verändern. Im Mittelpunkt stehen klare Anforderungen und Erfolgskriterien, delegierte Umsetzung sowie die menschliche Prüfung von Architektur, Tests und Ergebnissen. Ausführliche persönliche Beobachtungen geben Denkanstöße zur eigenen Rolle im Entwicklungsprozess. Interessant für alle, die über Agentenarbeit nachdenken möchten, statt nur neue Tools zu sammeln.
 
-Andrej Karpathy prägte im Februar 2025 den Begriff **Vibe Coding** mit einem Tweet, der millionenfach geteilt wurde: die Idee, vollständig den LLMs zu vertrauen und nicht mehr direkt Code zu schreiben. Ein Jahr später distanziert er sich bereits vom Begriff – sein neuer Terminus ist **Agentic Engineering**: LLM-Agenten orchestrieren, Überwachung übernehmen, aber nicht mehr selbst schreiben. Im April 2026 beschreibt er seine Arbeit zunehmend als Wissensorganisation: Er nutzt LLMs, um aus rohen Forschungsmaterialien automatisch verlinkte Wikis zu erstellen.
+### Vox — [@voxyz_ai](https://x.com/voxyz_ai)
 
-Karpathy ist kein offizieller Vertreter eines Unternehmens, aber seine Einschätzungen setzen regelmäßig die Agenda im AI-Engineering-Diskurs. Sehr empfehlenswert für konzeptionelle Orientierung.
+Vox liefert praktische Rezepte für Claude Code und Codex: Aufgaben präzisieren, Builder und Reviewer trennen, Subagents einsetzen und Ergebnisse überprüfbar abnehmen. Die Inhalte reichen von kurzen Tipps bis zu kopierbaren Rollen-Prompts und konkreten UI-Checks für Desktop, Mobile, Formulare und Persistenz. Wer für eigene Coding-Aufgaben einen Ablauf vom Briefing bis zum Review sucht, findet hier viele Ansatzpunkte.
 
----
+### Artificial Analysis — [@ArtificialAnlys](https://x.com/ArtificialAnlys)
+
+Artificial Analysis vergleicht KI-Modelle und Agent-Harnesses anhand von Benchmarks, Effort-Stufen und Kosten pro Aufgabe. Ausführliche Ergebnis-Threads und Tabellen helfen, Tokenpreis von tatsächlichem Aufgabenaufwand zu unterscheiden. Für die Modellwahl sind auch die erläuterten Testbedingungen interessant: Effort, Harness und Benchmark-Aufbau zeigen, wie die Vergleiche zustande kommen.
+
+### Matt Pocock — [@mattpocockuk](https://x.com/mattpocockuk)
+
+Matt Pocock teilt kurze, konkrete Ideen für die Zusammenarbeit mit Coding Agents. Dazu gehören lesbare Dev-Server-Logs, sinnvolle Kontextübergaben, kritische Fragen zu Abstraktionen und die Wahl zwischen direkter Umsetzung und ausführlicher Planung. Seine Praxisheuristiken sind besonders interessant für Entwickler, die einzelne Engpässe verbessern möchten, ohne für jede Änderung einen großen Prozess einzuführen.
+
+### Chubby — [@kimmonismus](https://x.com/kimmonismus)
+
+Chubby kommentiert neue KI-Modelle anhand von Launchzahlen, Benchmark-Ausschnitten und Kostenvergleichen. Die kurzen, pointierten Posts helfen, diskutierte Produktänderungen schnell zu überblicken und interessante Vergleichsfragen zu finden. Ein Abo passt für die Release-Orientierung und für Leser, die neue Modellfähigkeiten, Leistungsergebnisse und Kostenentwicklungen in ihrem Feed verfolgen möchten.
 
 ## YouTube-Kanäle
 
 ### Digitale Profis
 
-**Sprache:** Deutsch | **Abonnenten:** 125.000+
-
-Timothy Meixner und Johannes Ruof sind ausgebildete Informatiker und das erfolgreichste deutschsprachige Duo für KI-Bildungsinhalte – mit über 140.000 verkauften Online-Kursen auf Udemy. Ihr YouTube-Kanal erklärt aktuelle KI-Tools (ChatGPT, Claude, Copilot, Gemini) praxisnah und ohne Hype. Besonders empfehlenswert für Einsteiger und Kollegen, die einen seriösen deutschsprachigen Einstieg suchen. Der Kanal wird von unidigital.news als Empfehlung für „unaufgeregte" KI-Erklärungen geführt. Ergänzt wird der Kanal durch eine aktive Website mit schriftlichen Tutorials und wöchentlichen KI-News.
-
-**Themen:** ChatGPT, Claude Code, Microsoft Copilot, Prompt Engineering, KI-News
+Digitale Profis ist als deutschsprachiger Einstieg in praktische KI-Tools interessant. Der Kanal passt für Kollegen und Teams, die sich mit Werkzeugen wie ChatGPT, Claude, Copilot oder Gemini beschäftigen und deren Einsatz im Arbeitsalltag erkunden möchten. Wer eine deutschsprachige Orientierung sucht, kann ihn in seine Abo-Auswahl aufnehmen und passende Themen für die eigene Einarbeitung auswählen.
 
 ### Alex Sprogis
 
-**Sprache:** Englisch
-
-Alex Sprogis ist Product Engineer und Content Creator (GitHub: AlexPEClub). Sein Kanal fokussiert auf praktische AI-Coding-Setups und Agentic Engineering – direkt aus der Entwicklerperspektive, ohne Marketingfilter. Für Entwickler interessant, die konkrete Implementierungsdetails und reale Workflows sehen wollen, nicht nur Feature-Announcements.
-
-**Themen:** AI Coding Agents, Entwickler-Workflows, Produktivität
+Alex Sprogis zeigt in ausführlichen deutschsprachigen Walkthroughs, wie sich Coding-Agent-Arbeit strukturieren lässt. Spezifikationen, Agenten-Loops, unabhängige Prüfung und Artefakt-Übergaben stehen neben Tool-Demos wie Archify für interaktive Architektur- und Prozessdiagramme. Interessant für Entwickler, die konkrete Abläufe am Bildschirm sehen und Ideen für die eigene Codebasis oder Dokumentation mitnehmen möchten.
 
 ### AI mit Arnie
 
-**Sprache:** Deutsch | **Skool-Community:** 8.700+ Mitglieder
-
-Arnold Oberleiter (Arnie) arbeitet seit 2018 mit KI und ist seit 2022 Vollzeit in diesem Bereich tätig. Sein YouTube-Kanal und die zugehörige Skool-Community sind auf Deutsch und decken das gesamte praktische KI-Tooling ab – von Claude Code über n8n-Automatisierungen bis zu lokalen LLMs und ComfyUI. Auch auf Udemy als Dozent aktiv. Für die RAITEC-Zielgruppe besonders relevant, weil er deutschsprachig erklärt und regelmäßig neue Automatisierungsszenarien mit Claude Code zeigt.
-
-**Themen:** Claude Code, n8n, AI Agents, Automatisierung, ComfyUI, lokale LLMs
+AI mit Arnie ist für deutschsprachige Kollegen interessant, die praktische KI-Tools und Automatisierung erkunden möchten. Die thematische Orientierung reicht von Claude Code und n8n über AI Agents bis zu lokalen Modellen und ComfyUI. Wer verschiedene Werkzeuge für eigene Arbeitsabläufe kennenlernen möchte, kann den Kanal als Einstieg nutzen und die passenden Themen anschließend am eigenen Anwendungsfall vertiefen.
 
 ### Julian Ivanov
 
-**Sprache:** Deutsch/Englisch
-
-Julian Ivanov betreibt die KI-Agentur Crystalflow AI und teilt auf YouTube, wie er Prozesse mit AI, n8n und Claude Code automatisiert – ausdrücklich ohne Programmierkenntnisse vorauszusetzen. Sein GitHub zeigt ein persönliches KI-Assistenten-Projekt mit Sprachsteuerung, Browser-Automatisierung und Screen-Capture, das mit Claude Code gebaut wurde. Praxisnah und unternehmensnah: Typische Videos zeigen reale Automatisierungsfälle, die direkt auf KMU-Kontext übertragbar sind.
-
-**Themen:** Claude Code, n8n, Prozessautomatisierung, AI Agents ohne Coding
+Julian Ivanov führt auf Deutsch durch konkrete Claude-Code-Projekte. Bildschirmdemos, Prompts und Ergebnisse zeigen etwa interaktive HTML-Schulungen mit Curriculum-Freigabe, die Gestaltung des eigenen Setups und Motion Graphics aus Code. Der Kanal ist für Entwickler, Content-Ersteller und Teams interessant, die Lern- oder Erklärinhalte produzieren möchten und dafür praktische Abläufe und Tool-Kombinationen suchen.
 
 ### AI News & Strategy Daily — Nate B. Jones
 
-**Sprache:** Englisch | **Format:** Täglich
-
-Nate B. Jones ist ein 20-jähriger Product Leader und AI-Stratege, der täglich auf YouTube und als Podcast publiziert. Sein Kanal richtet sich explizit an Professionals und Executives – weniger an Entwickler, die Code schreiben, sondern an Entscheider, die AI strategisch einordnen wollen. Themen in 2026: Agent-Infrastruktur, AI-Ökonomie, Plattformstrategien, organisationale Auswirkungen von AI-Adoption. Ergänzt durch Substack-Newsletter und die Website natebjones.com. Empfehlenswert für das Management-Umfeld und für Vertreter, die AI-Projekte vor Stakeholdern vertreten müssen.
-
-**Themen:** AI-Strategie, Agent-Infrastruktur, tägliche AI-News, Executive-Perspektive
-
----
+Nate B. Jones bietet mit Intent Engineering einen Denkrahmen für KI in Unternehmen: Neben Wissen und Kontext sollen Ziele, Prioritäten, erlaubte Aktionen und Eskalationsregeln ausdrücklich festgehalten werden. Das ist für Kollegen interessant, die Agenten an organisatorischen Entscheidungen ausrichten möchten. Der Kanal regt dazu an, über klare Handlungsgrenzen und Zielkonflikte nachzudenken, bevor man Umsetzung delegiert.
 
 ## TikTok-Kanäle
 
 ### Max Fröhlich — [@max_froehlich](https://www.tiktok.com/@max_froehlich)
 
-**Sprache:** Deutsch
-
-Max Fröhlich ist Mathematiker und Doktorand am Weierstraß-Institut sowie der Humboldt-Universität Berlin. Auf TikTok und Instagram (@max.froehlich) erklärt er KI-Themen fundiert und ohne Vereinfachung ins Oberflächliche. Sein Kanal ist unter dem Claim „AI einfach erklärt" positioniert, geht aber deutlich tiefer als typische Creator-Formate: Themen wie KI-Risiken, Jailbreaks und technische Grundlagen von Sprachmodellen werden wissenschaftlich korrekt und trotzdem zugänglich aufbereitet. Für Entwickler und Fachpublikum geeignet, die TikTok als Lernkanal nutzen.
-
-**Themen:** KI-Grundlagen, Risiken, Jailbreaks, LLM-Mechanismen
+Max Fröhlich ist eine deutschsprachige Anlaufstelle für KI-Grundlagen, Risiken und die Funktionsweise von Sprachmodellen. Die thematische Orientierung ist für Kollegen interessant, die neben praktischen Tools auch Mechanismen und Fragen wie Jailbreaks verstehen möchten. Ein Abo ergänzt eine auf Coding Agents ausgerichtete Auswahl um Grundlagenfragen und die Auseinandersetzung mit Grenzen des KI-Einsatzes.
 
 ### Pete Spano — [@zerotopete](https://www.tiktok.com/@zerotopete)
 
-**Sprache:** Englisch
-
-Pete Spano ist Stratege und Tech-Gründer aus New York, der nach dem Aufbau eines 7-stelligen Unternehmens begann, seine Erfahrungen öffentlich zu teilen. Sein TikTok-Kanal fokussiert auf die Founder- und Builder-Perspektive: Wie nutzt man AI strategisch beim Aufbau von Produkten? Ergänzt durch sein Substack „Zero to Pete", das Frameworks für Wachstum und Entscheidungen liefert. Für Entwickler interessant, die nicht nur coden, sondern Produkte und Geschäftsmodelle mit AI entwickeln wollen.
-
-**Themen:** AI-Strategie, Gründer-Learnings, Building, Tech-Entscheidungen
+Pete Spano zeigt auf Englisch, wie cmux parallele Codex- und Claude-Code-Sessions auf dem Mac übersichtlicher machen kann. Workspaces, Branches, Verzeichnisse, Ports und Benachrichtigungen stehen im Mittelpunkt des kurzen Tool-Eindrucks. Interessant für Entwickler, denen bei mehreren laufenden Agenten der Überblick fehlt und die eine Oberfläche für den Wechsel zwischen Aufgaben und Arbeitsverzeichnissen kennenlernen möchten.
 
 ### TechSnack — [@techfeed5](https://www.tiktok.com/@techfeed5)
 
-**Sprache:** Deutsch / Englisch
-
-TechSnack (@techfeed5) ist ein kurzformat-orientierter Kanal rund um Tech-News und AI-Tools. Inhaltlich zugänglich und auf schnellen Überblick ausgelegt. Keine vertieften biografischen Informationen öffentlich verfügbar – der Kanal ist primär über seinen Content identifizierbar.
-
-**Themen:** Tech-News, AI-Tools, Kurzüberblicke
+TechSnack greift die Frage auf, wie sich die Prompt-Sprache auf den Tokenverbrauch von KI-Modellen auswirkt. Kurze Zahlenkommentare machen Unterschiede zwischen Deutsch und Englisch zum Thema und liefern einen Einstieg in Sprachwahl und Token-Limits. Interessant für Kollegen, die den Ressourcenverbrauch ihrer KI-Nutzung besser verstehen und passende Fragen für eigene Experimente mitnehmen möchten.
 
 ### Florian Schünemann — [@floknowsai](https://www.tiktok.com/@floknowsai)
 
-**Sprache:** Deutsch
-
-Florian Schünemann betreibt den Kanal @floknowsai mit Fokus auf praktische AI-Anwendungen im deutschsprachigen Raum. Öffentlich verfügbare Hintergrundinformationen sind begrenzt – der Kanal ist über seine TikTok-Präsenz und das Handle „floknowsai" bekannt. Für deutschsprachige Entwickler relevant als Community-Stimme aus dem DACH-Raum.
-
-**Themen:** AI-Praxis, deutschsprachige AI-Community
+Florian Schünemann liefert kurze deutsche Impulse zu Coding Agents, Kontext und Softwarequalität. Themen sind fehlende Architekturvorgaben bei Prototypen, frische Agent-Reviews, Mutation Testing und grobe Hardwareabschätzungen für lokale Modelle. Der Kanal ist interessant, um konkrete Prüffragen für den eigenen KI-Einsatz zu finden. Studienzahlen und Zukunftsprognosen sind dabei eher Ausgangspunkte für eine vertiefte Prüfung.
 
 ### Avasdream — [@avasdr34m](https://www.tiktok.com/@avasdr34m)
 
-**Sprache:** Englisch
+Avasdream gibt auf Englisch kompakte Hinweise zum Kontextmanagement in Claude Code. Weniger dauerhaft geladene MCP-Beschreibungen, frische Sessions und getrennte Recherche- und Implementierungsphasen sollen die Arbeit übersichtlicher machen. Ergänzende Tipps betreffen relevante Dateien, Ziele und alte Logs. Interessant für Entwickler, die ihre Agenten-Sessions bewusst begrenzen und den Kontext für einzelne Aufgaben gezielter auswählen möchten.
 
-Avasdream betreibt neben TikTok einen technischen Blog (avasdream.com) mit ausführlichen Deep Dives in AI-Coding-Projekte. Ein bekanntes Beispiel ist OpenClaw – ein selbstgebautes System zur Browser-Automatisierung via Playwright und CDP, kombiniert mit einer Multi-Provider-AI-Pipeline und mobilem Canvas-Rendering. Der Kanal verbindet TikTok-Reichweite mit technischer Substanz, die über typische Tutorial-Formate hinausgeht.
+### Agentic James — [@agentic.james](https://www.tiktok.com/@agentic.james)
 
-**Themen:** AI Coding, Browser-Automatisierung, Multi-Provider AI-Pipelines, technische Builds
+Agentic James erklärt auf Englisch Claude-Code-Funktionen und Arbeitsmodelle in kurzen Videos. Wiederkehrend sind Skills, Progressive Disclosure, Kontextsteuerung, Tasks und Validierungsschleifen; hinzu kommen Memory-Ansätze und Tools wie Code-Mode-MCP. Ein Abo passt für Entwickler, die neue Funktionen kennenlernen und begrenzte Experimente im eigenen Workflow ausprobieren möchten. Die kompakten Erklärungen liefern Anregungen für Skills, Kontextpflege und die Organisation von Agentenaufgaben.
 
----
+### Promptgeflüster — [@promptgefluester](https://www.tiktok.com/@promptgefluester)
 
-## Schnellübersicht
+Promptgeflüster spricht auf Deutsch über KI-gestützte Softwareentwicklung von Spezifikationen und Tasklisten bis zu Skills, Hooks und Quality Gates. Praxis-Monologe behandeln Refactoring in Stufen, statische Prüfungen sowie Kontext- und Tokenmanagement. Interessant für Entwickler, die ihre Abläufe bewusster strukturieren möchten und konkrete Gegenfragen zu Token-Sparversprechen oder vorschneller Umsetzung suchen.
 
-### Twitter / X
+### Nate B. Jones — [@nate.b.jones](https://www.tiktok.com/@nate.b.jones)
 
-| Handle | Person / Kanal | Typ | Thema |
-|---|---|---|---|
-| [@ClaudeDevs](https://x.com/ClaudeDevs) | Anthropic | Offiziell | Claude-Developer-Updates |
-| [@ClaudeCodeLog](https://x.com/ClaudeCodeLog) | Automatisiert | Changelog | Claude Code Releases |
-| [@bcherny](https://x.com/bcherny) | Boris Cherny | Anthropic | Claude Code Produkt & Architektur |
-| [@trq212](https://x.com/trq212) | Thariq Shihipar | Anthropic | Claude Code Features & Skills |
-| [@felixrieseberg](https://x.com/felixrieseberg) | Felix Rieseberg | Anthropic | Cowork, Desktop, Non-Tech-Nutzung |
-| [@OpenAIDevs](https://x.com/OpenAIDevs) | OpenAI | Offiziell | Codex Developer-Updates |
-| [@Codex_Changelog](https://x.com/Codex_Changelog) | Automatisiert | Changelog | Codex Releases |
-| [@thsottiaux](https://x.com/thsottiaux) | Tibo Sottiaux | OpenAI | Codex Produktstrategie |
-| [@ajambrosino](https://x.com/ajambrosino) | Andrew Ambrosino | OpenAI | Codex App & Computer Use |
-| [@ah20im](https://x.com/ah20im) | Ahmed | OpenAI | Codex Engineering |
-| [@romainhuet](https://x.com/romainhuet) | Romain Huet | OpenAI | Developer Experience |
-| [@sama](https://x.com/sama) | Sam Altman | OpenAI | Strategie & Vision |
-| [@geminicli](https://x.com/geminicli) | Google | Offiziell | Gemini CLI |
-| [@karpathy](https://x.com/karpathy) | Andrej Karpathy | Vordenker | Agentic Engineering, Konzepte |
-
-### YouTube
-
-| Kanal | Sprache | Zielgruppe | Schwerpunkt |
-|---|---|---|---|
-| Digitale Profis | DE | Einsteiger, Teams | KI-Tools praxisnah auf Deutsch |
-| Alex Sprogis | EN | Entwickler | AI Coding Workflows, Agentic Engineering |
-| AI mit Arnie | DE | Praktiker, KMU | Claude Code, n8n, Automatisierung |
-| Julian Ivanov | DE/EN | KMU, No-Code | Prozessautomatisierung ohne Coding |
-| AI News & Strategy Daily | EN | Management, Executives | Tägliche AI-Strategie & News |
-
-### TikTok
-
-| Handle | Person | Sprache | Schwerpunkt |
-|---|---|---|---|
-| [@max_froehlich](https://www.tiktok.com/@max_froehlich) | Max Fröhlich | DE | KI-Grundlagen, Risiken, wissenschaftlich fundiert |
-| [@zerotopete](https://www.tiktok.com/@zerotopete) | Pete Spano | EN | Founder-Perspektive, AI Strategie, Building |
-| [@techfeed5](https://www.tiktok.com/@techfeed5) | TechSnack | DE/EN | Tech-News, AI-Tools |
-| [@floknowsai](https://www.tiktok.com/@floknowsai) | Florian Schünemann | DE | AI-Praxis auf Deutsch |
-| [@avasdr34m](https://www.tiktok.com/@avasdr34m) | Avasdream | EN | AI Coding, Browser-Automatisierung, technische Tiefe |
+Nate B. Jones liefert englische Kurzkommentare zu KI in Wissensarbeit und Unternehmen. Analogien und Leitfragen helfen, über Prompting, Agent-Harnesses, Wiki- und Datenbank-Memory sowie Modell- und Effortwahl nachzudenken. Wer Entscheidungen über Agenteneinsatz und die verbleibende menschliche Arbeit vorbereiten möchte, findet zugespitzte Denkmodelle. Die Thesen verbinden technische Wahlmöglichkeiten mit Fragen zu Verantwortung, Arbeitsorganisation und menschlicher Entscheidungslast.

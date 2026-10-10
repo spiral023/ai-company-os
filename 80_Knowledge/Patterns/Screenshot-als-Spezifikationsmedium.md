@@ -34,6 +34,8 @@ Ein Bild (Screenshot, Mockup, Fehlerdarstellung) wird per Drag & Drop, Copy & Pa
 - 2026-09-19 · [[2026-09-19-voxyz_ai-2101295246659182978]] · meinung — Variante, bei der der Agent das Referenzbild per Bildmodell selbst erzeugt und dann umsetzt; keine Vergleichsmessung, Modellaussage nur Behauptung.
 - 2026-10-01 · [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]] · meinung — Claude prüft die selbst gerenderten Frames per Screenshot. Nur beiläufig erwähnt, schwacher Beleg.
 - 2026-10-06 · [[2026-10-06-voxyz_ai-2107576635578855461]] · meinung — Vox ergänzt visuelle Eingaben um Screenshots des fertig gerenderten Ergebnisses und erneut geprüftes Rendering nach Korrekturen; der Browser-Vorschlag belegt keine funktionale Abnahme oder garantierte Fehlerfreiheit.
+- 2026-10-08 · [[2026-10-08-voxyz_ai-2108324058739745228]] · meinung — Vorher-/Nachher-Screenshots konkretisieren visuelle Änderungen; statische Bilder ersetzen keine Prüfung des Scrollverhaltens.
+- 2026-10-09 · [[2026-10-09-voxyz_ai-2108543002830360775]] · meinung — Echte Projektscreenshots spezifizieren Inhalte und Renderframes dienen der Layoutdiagnose; Frames im Sekundenabstand übersehen schnelle Bewegungsfehler und ersetzen keine Wiedergabeabnahme.
 
 ## Spannungen & offene Fragen
 

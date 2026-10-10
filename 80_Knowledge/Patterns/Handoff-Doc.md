@@ -51,6 +51,10 @@ Ein Handoff kann außerdem bewusst zwischen unterschiedlichen Arbeitsmodi vermit
 - 2026-02-02 · [[2026-02-02-anthony-riera-planning-with-files-skill]] · meinung — Dateibasierter Plan als externer Speicher über lange Sessions; bekannte Arbeitsweise unter neuem Skill-Namen.
 - 2026-10-06 · [[2026-10-06-voxyz_ai-2107455844992299272]] · meinung — Vox verdichtet Projektteile, Meilensteine und ausstehende Entscheidungen in einer visuell lesbaren HTML-Karte für den späteren Wiedereinstieg; ein Sessionwechsel oder vollständiger Übergabekontext wird nicht beschrieben, weshalb die Karte ein Handoff ergänzt und nicht ersetzt.
 
+- 2026-10-09 · [[2026-10-09-repo-gsd-workflow]] · meinung — GSD Core beschreibt persistente `STATE.md`- und `CONTEXT.md`-Dateien für Arbeitsstand und Entscheidungen über Phasen und frische Kontexte hinweg. Dokumentierter Ablauf, kein eigener Vergleich seiner Wirksamkeit.
+- 2026-09-24 · [[2026-09-24-mattpocock-ai-coding-dictionary]] · meinung — Übergaben als Sekundärquelle gestalten: Entscheidungen mit Gründen, konkrete Pfade, offener Umfang und Prüfbelege samt Rückweg zum tatsächlichen Code erhalten. Eine übernommene Fertigmeldung belegt den Stand nicht; wichtige Aussagen muss die nächste Session am Primärbeleg prüfen.
+- 2026-07-22 · [[2026-07-22-mattpocockuk-2079879414297330146]] · meinung — Die Originalgrafik nennt eine Markdown-Übergabe gezielt beim Wechsel zu anderem Agenten, Ordner oder Kollegen; handoff und compact erfüllen unterschiedliche Zwecke. Übergabebedarf ist ein eigenes Kriterium nach der Prüfung, ob alter Kontext entbehrlich ist.
+
 ## Spannungen & offene Fragen
 
 - Keine Spannung zu `planning-with-files` oder GSD `STATE.md` bekannt — beide verfolgen dasselbe Grundprinzip (Zustand auf Platte statt im flüchtigen Kontext), mit unterschiedlicher Formatwahl.

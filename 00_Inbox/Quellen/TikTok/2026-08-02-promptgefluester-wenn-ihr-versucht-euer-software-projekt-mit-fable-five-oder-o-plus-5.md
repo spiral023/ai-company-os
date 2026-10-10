@@ -49,3 +49,7 @@ habt ihr n Framework habt ihr kein Framework
 oder macht das Sinn vielleicht euer Modell von euer Projekt von vorne rein neu aufzusetzen mit dem wissen was ich hier zum Beispiel in diesem Kanal lernt also folgt Mir gern mehr für mehr Informationen zum Thema
 
 Softwareentwicklung mit KI
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-08-02-promptgefluester-wenn-ihr-versucht-euer-software-projekt-mit-fable-five-oder-o-plus-5/02-video.mp4)

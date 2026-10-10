@@ -70,6 +70,10 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-09-20 · [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] · meinung — Intent erklärt das Warum, Spec das erwartete Verhalten, Plan Dateien, Reihenfolge, Risiken und Nachweise; bestehende Plan-Workflows weiterverwenden. Sekundärdarstellung des Anthropic-Playbooks, keine unabhängige Wirkungsmessung.
 - 2026-10-05 · external_repos/obra/superpowers/skills/writing-plans/SKILL.md · verifiziert — Der im Video genannte Plan-Skill fordert einen Plan aus Spec oder Anforderungen vor Codeänderungen, mit konkreten Dateien, Schnittstellen und Tests pro Aufgabe; bestätigt die beschriebene Plan-Variante, keine Produktivitätswirkung.
 - 2026-10-08 · [[2026-10-08-mattpocockuk-2108216899439894574]] · meinung — Pocock empfiehlt /wayfinder erst nach begonnener Klärung bei wachsender Komplexität, weil ein vorschneller Plan unnötige Karten und Tickets erzeugen kann; menschliches Review behandelt er separat von der Entscheidung über Grilling vor dem Coden.
+- 2026-10-08 · [[2026-10-08-voxyz_ai-2108324058739745228]] · meinung — Abschnitt und Zweck vor Umsetzung vorschlagen, ungeeignete Stellen auslassen und Auswahl abwarten; Vox beschreibt kein unabhängiges Review und liefert keine Wirksamkeitsmessung.
+- 2026-10-09 · [[2026-10-09-voxyz_ai-2108543002830360775]] · meinung — Kommunikationsziel, Nutzen und Storyboard mit Szenendauern vor der Umsetzung auswählen; ein unabhängiger Reviewer oder nachgewiesener Qualitätsgewinn ist nicht beschrieben.
+- 2026-09-15 · [[2026-09-15-emilkowalski-2099948779864793303]] · meinung — Interaktive Varianten zuerst auswählen und iterieren, anschließend Produktionsprüfungen durchführen; der persönliche Bericht beschreibt keinen unabhängigen Reviewer und keinen gemessenen Qualitätsgewinn.
+- 2026-07-23 · [[2026-07-23-ccarlosai-2080339591014261034]] · meinung — Carlos ordnet Projektkontext, fünf klärende Rückfragen und abschnittsweise Plan-/Kontextdateien vor einem Coding-Handoff an. Ein getrennter Review fehlt im Post; seine zehnfachen Geschwindigkeitsversprechen sind unbelegt.
 
 ## Spannungen & offene Fragen
 

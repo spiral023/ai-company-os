@@ -4,7 +4,7 @@
 //
 // Nutzung:
 //   npm run ingest:tiktok -- <video-url-oder-id> [--force] [--refetch]
-//                            [--no-media] [--gap <sekunden>]
+//                            [--no-media] [--no-video] [--gap <sekunden>]
 //
 // Benötigt APIFY_TOKEN in .env.local (Vorlage: .env.example).
 
@@ -21,20 +21,24 @@ import {
   formatTiktokNote,
   tiktokTitle,
   buildTiktokSlug,
+  attachLocalTiktokVideo,
 } from './lib/tiktok-ingest.mjs';
 import { runTranscriptActor, fetchOembed, resolveShortUrl } from './lib/tiktok-client.mjs';
 import { downloadMedia, writeInboxNote, mediaTargetDir, sourceInboxRel } from './lib/inbox-store.mjs';
+import { downloadTiktokVideo } from './lib/tiktok-video.mjs';
 
 const rootDir = process.cwd();
 const ingestDir = path.join(rootDir, 'scripts/.ingest');
 
 function usage() {
   console.log(
-    'Usage: npm run ingest:tiktok -- <video-url-oder-id> [--force] [--refetch] [--no-media] [--gap <sek>]',
+    'Usage: npm run ingest:tiktok -- <video-url-oder-id> [--force] [--refetch] [--no-media] [--no-video] [--gap <sek>]',
   );
   console.log(`  Ablage: ${sourceInboxRel('tiktok')}/<slug>.md · Cover: ${sourceInboxRel('tiktok')}/medien/<slug>/`);
   console.log('  --force    Notiz neu schreiben (aus dem Cache, kein Actor-Run).');
   console.log('  --refetch  Transkript neu holen — kostet $0.001. Impliziert --force.');
+  console.log('  --no-video MP4-Download überspringen (Standard: Video lokal speichern).');
+  console.log('  --no-media Cover und Video überspringen.');
   console.log('  --gap      Sprechpause in Sekunden, ab der ein neuer Absatz beginnt (Default 0.8).');
 }
 
@@ -190,11 +194,26 @@ async function main() {
     console.log(`  Umbenannt: ${oldSlug}.md → ${slug}.md`);
   }
 
+  let localVideo = null;
+  if (args.media && args.video) {
+    console.log('→ Video lokal speichern …');
+    localVideo = await downloadTiktokVideo(videoUrl, mediaTargetDir(rootDir, 'tiktok', slug));
+    if (localVideo.ok) {
+      const state = localVideo.skipped ? 'bereits vorhanden' : 'heruntergeladen';
+      console.log(`  MP4 ${state}: ${(localVideo.bytes / 1024 / 1024).toFixed(1)} MB`);
+    } else {
+      console.warn(`⚠ Video-Download fehlgeschlagen: ${localVideo.error}`);
+    }
+  }
+
   // Eine bestehende Notiz kann manuell ergänzt oder auf status:verarbeitet
   // gesetzt sein — die darf ein erneuter Lauf nicht stillschweigend verwerfen.
   if (fs.existsSync(notePath) && !args.force) {
+    const original = fs.readFileSync(notePath, 'utf8');
+    const withVideo = attachLocalTiktokVideo(original, slug, localVideo);
+    if (withVideo !== original) fs.writeFileSync(notePath, withVideo, 'utf8');
     console.log(`● Notiz existiert bereits: ${path.relative(rootDir, notePath)}`);
-    console.log('  Unverändert gelassen. --force überschreibt sie.');
+    console.log(withVideo !== original ? '  Nur den lokalen Video-Link ergänzt.' : '  Unverändert gelassen. --force überschreibt sie.');
     return;
   }
 
@@ -216,6 +235,7 @@ async function main() {
     transcript,
     slug,
     downloads,
+    localVideo,
     fetchedAt: payload.fetchedAt,
     gap: args.gap,
   });

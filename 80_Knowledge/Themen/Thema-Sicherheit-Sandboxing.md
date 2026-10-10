@@ -1,6 +1,6 @@
 # Sicherheit & Sandboxing
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps. Berichte über Gefahren, Missbrauch und konkrete KI-Vorfälle stehen in ki-risiken.
 
@@ -9,7 +9,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** row level security (3), os-level sandboxing (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), security (2), playwright (2), sicherheit (2), sandbox (2), prompt injection (2), process isolation (2), sandbox permissions (2), mxc (2), vibe coding security (2), agent-identität (2), agent-to-agent-kommunikation (2), least agency (2), risikobasiertes human review (2), menschliche freigabe (2)
+- **Häufig in den Quellen:** row level security (3), os-level sandboxing (3), mxc (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), security (2), playwright (2), sandbox (2), sandboxing (2), sicherheit (2), prompt injection (2), sandbox permissions (2), process isolation (2), vibe coding security (2), least agency (2), agent-identität (2), agent-to-agent-kommunikation (2), risikobasiertes human review (2)
 
 ## Verwandte Themen
 
@@ -24,13 +24,14 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - [[Adversarialer-Pre-Launch-Check]] · meinung · 4 Belege
 - [[Agent-Rechte-umfassen-Kommunikationswege]] · meinung · 1 Belege
 - [[Deny-Rules-statt-CLAUDE-md-Empfehlung]] · mehrfach-belegt · 13 Belege
-- [[Freigaben-und-Isolation-getrennt-steuern]] · meinung · 1 Belege
-- [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 5 Belege
+- [[Freigaben-und-Isolation-getrennt-steuern]] · meinung · 2 Belege
+- [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 6 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], [[Hook-Entscheidungstyp-nach-Pruefbarkeit]], [[Metrikband-gestufte-Agent-Autonomie]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]], [[Hook-Entscheidungstyp-nach-Pruefbarkeit]], [[Metrikband-gestufte-Agent-Autonomie]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]]
 
-## Quellen (10)
+## Quellen (11)
 
+- [[2026-10-09-openaidevs-2108573188703781190]] — OpenAI Developers meldet am 09.10.2026 einen neuen `Codex`-Sandboxmodus mit `Microsoft Execution Containers` (`MXC`) unter Windows.
 - [[2026-10-08-unslothai-windows-sandboxing-mxc]] — Unsloth kündigt eine Integration von Microsoft eXecution Container (`MXC`) für die Ausführung von Code unter Windows an.
 - [[2026-09-29-suraj_sharma14-2104790775397830755]] — Suraj Sharma listet 30 knappe Sicherheitsmaßnahmen für KI-generierte Apps.
 - [[2026-09-29-openclaw-openclaw-enterprise-the-open-agent-platform-open]] — Herstellerankündigung der OpenClaw Foundation: Open-Source-Control-Plane für persistente Agenten in sensiblen Umgebungen, vor 1.0, nutzbar für interne Piloten.
@@ -44,9 +45,11 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], 
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-09-voxyz_ai-2108573215224160393]]
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]]
 - [[2026-09-27-anthropic-academy-sdlc-playbook]]
 - [[2026-09-18-akshay_pachaar-2101037514945597645]]
+- [[2026-07-27-anthropic-our-position-on-open-weights-models]]
 - [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]]
 - [[2026-07-16-amasad-2077802290304684404]]
 - [[2026-04-17-wiki-compiler-lovable-design-debugging-sicherheit]]

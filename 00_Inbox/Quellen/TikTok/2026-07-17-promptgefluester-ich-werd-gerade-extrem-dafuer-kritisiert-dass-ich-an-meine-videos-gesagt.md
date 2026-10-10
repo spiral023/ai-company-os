@@ -45,3 +45,7 @@ hinstichwort 4. Normalform die Datenbank so zu planen dass sie dann entsprechend
 Front and Smoke Tests and to End
 
 gepaart mit Unit Test die wirklich gecheckt werden oder wie macht ihr das am Ende bin gespannt
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt/02-video.mp4)

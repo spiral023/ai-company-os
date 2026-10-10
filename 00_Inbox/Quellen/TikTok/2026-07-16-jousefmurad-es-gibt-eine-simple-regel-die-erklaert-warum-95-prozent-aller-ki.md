@@ -20,3 +20,7 @@ transkript: nicht verfügbar
 ## Caption
 
 Es gibt eine simple Regel, die erklärt, warum 95 Prozent aller KI-Projekte im Mittelstand scheitern. Und wenn du sie einmal verstanden hast, triffst du nie wieder eine falsche Use-Case-Entscheidung.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-07-16-jousefmurad-es-gibt-eine-simple-regel-die-erklaert-warum-95-prozent-aller-ki/02-video.mp4)

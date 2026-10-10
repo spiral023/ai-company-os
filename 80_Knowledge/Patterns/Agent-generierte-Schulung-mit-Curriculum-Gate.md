@@ -33,6 +33,7 @@ Ein user-invoked Skill orchestriert fünf Phasen: (1) Briefing zu Zielgruppe, Vo
 ## Belege
 
 - 2026-07-30 · [[2026-07-30-julian-ivanov-interaktive-schulungen-mit-claude-code]] · meinung — Creator-Demo zeigt den vollständigen Ablauf vom Agenten-Briefing über Curriculum-Review und Mediengenerierung bis zu einer interaktiven Single-File-HTML-Schulung.
+- 2026-10-09 · [[2026-10-09-voxyz_ai-2108543002830360775]] · meinung — Zielgruppenbriefing und freigegebenes Storyboard übertragen das bekannte Inhalts-Gate auf Motion-Produktion; der Post belegt weder Lernerfolg noch Produktivität.
 
 ## Spannungen & offene Fragen
 

@@ -36,6 +36,7 @@ Lokale Referenzbibliothek geklonter GitHub-Repos für AI-gestützte Produkt- und
 | Vom Brief zu Design-Artefakten arbeiten | [nexu-io/open-design](#nexu-ioopen-design), [abi/screenshot-to-code](#abiscreenshot-to-code) | Agent-native Prototypen, Decks, Bild/Video-Artefakte oder Screenshot-zu-Code-Generierung |
 | Frontend-Qualität mit Checklisten und MCP-Tools prüfen | [thedaviddias/Front-End-Checklist](#thedaviddiasfront-end-checklist) | 385 kuratierte Regeln, 390 generierte Skills und ein gehosteter MCP-Server mit Audit-/Fix-Tools |
 | Eine fremde Codebasis verstehen | [Egonex-AI/Understand-Anything](#egonex-aiunderstand-anything), [shanraisshan/claude-code-best-practice](#shanraisshanclaude-code-best-practice), [Graphify-Labs/graphify](#graphify-labsgraphify) | Knowledge Graph, Architektur- und Domain-Analyse sowie praxisnahe Agenten-Wissensbasis |
+| Eine Codebasis als Architekturkarte dokumentieren | [oh-my-mermaid/oh-my-mermaid](#oh-my-mermaidoh-my-mermaid) | Perspektiven für Struktur, Datenfluss und Request-Lifecycle; Mermaid-Diagramme mit Dateipfaden und rekursiven Detailansichten |
 | Einen Obsidian-Vault mit Agenten bearbeiten | [kepano/obsidian-skills](#kepanoobsidian-skills) | Obsidian-Markdown, Bases, JSON Canvas, CLI-Steuerung und Web-Extraktion |
 | Begriffe des AI-Codings klären und gemeinsam benennen | [mattpocock/dictionary-of-ai-coding](#mattpocockdictionary-of-ai-coding) | 71 knappe Erklärungen von Harness bis Attention Budget, jeweils mit typischem Symptom und Beispieldialog |
 | AI-/LLM-Engineering-Konzepte (Skills, Harness, Kontext, SDD) nachschlagen | [mleibetseder/ai-llm-wiki](#mleibetsederai-llm-wiki) | 380 quellenzitierte Konzept-Seiten, destilliert aus 234 Artikeln und 25 Fach-PDFs |
@@ -148,6 +149,7 @@ Onboarding in fremde Codebasen, Nachschlagewerke und aktuelle Dokumentation.
 | [langchain-ai/openwiki](#langchain-aiopenwiki) | Projektdoku oder persönliches Wissen automatisch aktuell halten | CI-gepflegtes Repo-Wiki bzw. persönliches Wiki aus Git/Gmail/Notion/Slack/X | Tool | `external_repos/langchain-ai/openwiki/src/` |
 | [mattpocock/dictionary-of-ai-coding](#mattpocockdictionary-of-ai-coding) | Eine gemeinsame Sprache für die Arbeit mit Coding-Agenten aufbauen | 71 quervernetzte Begriffe in 7 Sektionen, je mit Mechanik, Symptom und Usage-Dialog | Wissensbasis | `external_repos/mattpocock/dictionary-of-ai-coding/dictionary/` |
 | [mleibetseder/ai-llm-wiki](#mleibetsederai-llm-wiki) | Verdichtetes, zitiertes AI-/LLM-Engineering-Wissen nachschlagen | 380 Konzept-Seiten zu Skills, Harness, Context Engineering, SDD; 234 Rohquellen inkl. 25 Fach-PDFs | Wissensbasis | `external_knowledge/ai-llm-wiki/wiki/` |
+| [oh-my-mermaid/oh-my-mermaid](#oh-my-mermaidoh-my-mermaid) | Codearchitektur in mehreren Perspektiven nachvollziehen | Rekursive Mermaid-Karten, sieben Dokumentationsfelder und Viewer; Cloud-Abgleich separat prüfpflichtig | Tool / Skill | `external_repos/oh-my-mermaid/oh-my-mermaid/skills/omm-scan/` |
 | [shanraisshan/claude-code-best-practice](#shanraisshanclaude-code-best-practice) | Claude-Code-Methoden vergleichen und nachschlagen | Best Practices, Reports, Community-Tipps und Workflow-Vergleiche | Wissensbasis | `external_repos/shanraisshan/claude-code-best-practice/best-practice/` |
 | [teng-lin/notebooklm-py](#teng-linnotebooklm-py) | NotebookLM automatisieren und als quellengebundenen Agenten-Speicher einsetzen | Python-API, CLI, MCP/REST-Server, Codex-Skill sowie Export von Audio, Reports, Quiz, Mindmaps und mehr | Tool / Skill | `external_repos/teng-lin/notebooklm-py/` |
 | [upstash/context7](#upstashcontext7) | Aktuelle, versionsgenaue Dokumentation abrufen | `ctx7`-CLI, MCP-Server, Library-ID-Auflösung und Docs-Abfragen | Tool / Dienst | `external_repos/upstash/context7/` |
@@ -249,11 +251,10 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 <!-- OVERVIEW:START (automatisch generiert von 70_Scripts/update_external_repos.py — nicht von Hand bearbeiten) -->
 ## Übersicht
 
-- **Repos gesamt:** 63
-- **Gesamtgröße:** ca. 2.500 MB
-- **Dateien gesamt:** ca. 120.249 (ohne `.git`)
-- **Sterne gesamt:** ca. 4.956.175 (63/63 Repos abgerufen)
-- **Stand:** 2026-10-05
+- **Repos gesamt:** 64
+- **Gesamtgröße:** ca. 2.502 MB
+- **Dateien gesamt:** ca. 120.461 (ohne `.git`)
+- **Stand:** 2026-10-10
 
 | Repo | Dateien | Größe | ⭐ |
 |---|---:|---:|---:|
@@ -304,6 +305,7 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 | coreyhaines31/marketingskills | 515 | 4,0M | 53.324 |
 | abi/screenshot-to-code | 316 | 2,6M | 79.998 |
 | VoltAgent/awesome-design-md | 153 | 2,1M | 119.630 |
+| oh-my-mermaid/oh-my-mermaid | 212 | 2,0M | 2.709 |
 | obra/superpowers | 229 | 1,9M | 295.523 |
 | petergyang/human-review | 52 | 1,8M | 1.363 |
 | DietrichGebert/ponytail | 170 | 1,8M | 155.698 |
@@ -902,6 +904,23 @@ SkillSpector ist ein Security-Scanner für Agent-Skills, MCPs und verwandte Konf
 - **Struktur:** 15× SKILL.md · Ordner: skills, hooks, references · Spiegelordner: .agents, .opencode (generiert)
 
 Superpowers ist eine vollständige Softwareentwicklungs-Methodik als Satz komponierbarer Skills von Jesse Vincent (Prime Radiant), verfügbar für praktisch alle gängigen Coding-Agenten (Claude Code, Antigravity, Codex, Cursor, Factory Droid, GitHub Copilot CLI, Kimi Code, OpenCode, Pi). Der Kern-Workflow läuft automatisch ab, sobald der Agent erkennt, dass etwas gebaut werden soll: `brainstorming` → `using-git-worktrees` → `writing-plans` → `subagent-driven-development`/`executing-plans` → `test-driven-development` → Code-Review → Branch-Abschluss. Version 6.4.2 erweitert die Harness-Unterstützung um OpenCode 2.0.4+ (native V2-Skill-Registrierung, übersteht Continuation/Restart/Forks/Compaction), Muse und Qwen Code. Die neue `diagnosing-superpowers`-Skill rekonstruiert nach einer schiefgelaufenen Session mit `path:line`-Belegen aus den Transkripten, was passiert ist, und kann auf Wunsch ein geschrubbtes Bundle oder einen GitHub-Issue-Entwurf erzeugen. `executing-plans` ist als "Native execution" neu gebaut: statt Subagenten implementiert die Session selbst jeden Task unter denselben Ledger-/Stop-Regeln wie Subagent-Driven Development und dispatcht am Ende ein einziges Whole-Branch-Review auf dem stärksten Modell – die günstigere Alternative zur vollen SDD; der Plan-Handoff nennt jetzt Kosten beider Modi und empfiehlt einen. `writing-plans` schreibt inzwischen deutlich schlankere Pläne: Ein Schritt hält Entscheidungen (Signaturen, Testaussagen, Spec-Werte) statt ausgeschriebenen Codes fest, ein Self-Review prüft das Längenverhältnis zur Spec, und Pläne tragen einen "Review Focus"-Abschnitt für vom Spec implizierte, aber von keinem Test abgedeckte Fälle – laut Eigenmessung bei gleicher Fehlerfindungsrate rund ein Viertel der Zeit und ein Drittel der Tokens. Version 6.3 hatte zuvor die Harness-Unterstützung um Devin CLI und Hermes Agent erweitert und die Brainstorming-Zeremonie an der Aufgabe skaliert (spike/bounded/architectural); in der subagentengetriebenen Entwicklung stallen Controller nicht mehr bei Plankonflikten – nicht-katastrophale Konflikte erhalten ein protokolliertes Ruling, nur destruktive oder irreversible Aktionen stoppen weiterhin für Menschen. Version 6.2 hatte zuvor den SDD-Arbeitsbereich planbezogen gemacht (`.superpowers/sdd/<plan>/`); die TDD-Referenz ist ein positiver Katalog für belastbare Tests inklusive Mutation-/Falsifizierbarkeitsprüfung. Philosophie: Test-Driven Development, systematisches statt Ad-hoc-Vorgehen, Einfachheit, Belege statt Behauptungen. Das Projekt hat strenge Beitragsregeln (94% PR-Ablehnungsquote, Offenlegung von Modell/Harness, keine Fremd-Abhängigkeiten oder domänenspezifischen Skills im Core). Direkt relevant als Referenz für Skill-Disziplin, reviewbare Subagenten-Abläufe und PR-Qualitätsstandards.
+
+---
+
+## oh-my-mermaid/oh-my-mermaid
+
+- **URL:** https://github.com/oh-my-mermaid/oh-my-mermaid
+- **Stars:** ⭐ 2.709
+- **Heruntergeladen:** 2026-10-10
+- **Zuletzt aktualisiert:** 2026-10-10
+- **Dateien:** 212 · **Größe:** 2,0M
+- **Struktur:** TypeScript-CLI unter `src/`, HTTP-Viewer unter `src/server/`, drei Skills unter `skills/`, Architekturbeispiele unter `.omm/`, Vitest-Dateien unter `src/__tests__/` <!-- manual -->
+
+Oh-my-mermaid erstellt navigierbare Architekturdokumentation für Codebasen, die mit Coding-Agenten analysiert werden. Der Scan-Skill liest Manifeste, Einstiegspunkte, Routen, Services und Integrationen und wählt passende Perspektiven: etwa Gesamtarchitektur, Request-Lifecycle, Datenfluss oder CLI-Befehle. Komplexe Knoten erhalten rekursiv eigene Unteransichten; einfache bleiben Blätter. Knoten-IDs entsprechen Verzeichnisnamen, Beschriftungen nennen konkrete Codepfade und Kanten erklären die Verbindung. Unter `.omm/` liegen Mermaid-Diagramme und Markdown-Dateien für Beschreibung, Kontext, Einschränkungen, Bedenken, Aufgaben und Notizen. Die Ablage bleibt unabhängig vom Viewer lesbar.
+
+Technisch ist Version 0.2.0 eine TypeScript-CLI für Node.js ab 18 mit `yaml` als Laufzeitabhängigkeit, einem HTTP-Viewer und drei Skills für Scan, Anzeige und Cloud-Push. Plattformadapter unterstützen Claude Code, Codex, Cursor, OpenClaw und Antigravity. Acht Vitest-Dateien prüfen unter anderem Ablage, Diagrammregeln und Cloud-Pfade; sie messen keine Genauigkeit der KI-generierten Architektur. Der letzte Commit am 07.04.2026 verbessert die Windows-Befehlserkennung. MIT-Lizenz vorhanden.
+
+Relevant für Onboarding, Architekturkommunikation und gezielte Detailanalysen. Empfehlung: zunächst nur Referenz; [Wissensaufarbeitung](../80_Knowledge/Sources/2026-10-10-repo-oh-my-mermaid-architektur.md) mit verifizierten Dateibelegen vorhanden. Vor einer Installation sind globale Skill-Verknüpfungen zu prüfen. Der Viewer bindet nicht ausdrücklich an Loopback, erlaubt CORS `*` und lädt CDN-Scripts, darunter eine ungepinnte `marked`-Version. Cloud-Push überträgt sämtliche `.omm/`-Dateien. Weder Scan-Skill noch CLI wurden ausgeführt oder installiert; Cloud- und Laufzeitverhalten bleiben ungeprüft.
 
 ---
 

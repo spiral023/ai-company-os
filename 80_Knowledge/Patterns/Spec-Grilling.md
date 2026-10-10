@@ -45,6 +45,8 @@ Ein eigener Skill verhört den Nutzer gezielt zu einem Vorhaben, bis jeder Ast d
 - 2026-02-25 · [[2026-02-25-heynavtoor-claude-cowork-setup-guide]] · meinung — Vor der Arbeit `AskUserQuestion` erzwingen, statt zu raten; Sekundärquelle, Büro-Kontext statt Code.
 - 2026-07-03 · [[2026-07-03-trq212-2073100352921215386]] · meinung — Interview-Technik: Claude fragt eine Frage nach der anderen, priorisiert nach Architekturwirkung. Nur ein Beispielprompt, keine Evaluation.
 - 2026-10-08 · [[2026-10-08-mattpocockuk-2108216899439894574]] · meinung — Pocock begrenzt Vorabklärung auf Änderungen mit relevantem oder unbekanntem Umfang: bei winzigen, schnell prüfbaren Diffs sei One Shot vertretbar, bei visueller Präzision könne schnelle /prototype-Iteration helfen; damit relativiert er pauschales Grilling vor jeder Umsetzung, ohne Änderungsrisiken oder Skill-Wirkung empirisch zu prüfen.
+- 2026-07-23 · [[2026-07-23-ccarlosai-2080339591014261034]] · meinung — Fünf vom Modell gestellte Projektfragen sollen Informationslücken vor dem Masterplan aufdecken. Die Anzahl ist ein Prompt-Beispiel, kein Nachweis vollständiger Anforderungen.
+- 2026-07-31 · [[2026-07-31-alexfinn-2082982462012227648]] · meinung — Reverse Prompting lässt nach einer Zielbeschreibung fehlende Informationen erfragen und anschließend konkrete Aufgaben vorschlagen. Bekannte Kontextklärung statt eigenständiger neuer Methode; pauschale Modellüberlegenheit und hundertfacher Erkenntnisgewinn bleiben unbelegte Werbeaussagen.
 
 ## Spannungen & offene Fragen
 

@@ -29,6 +29,7 @@ Benötigte Aktionen vor Ergebnisse und Hintergrund stellen, die stärkste Blocka
 ## Belege
 
 - 2026-10-05 · [[2026-10-05-voxyz_ai-2107123654219743712]] · meinung — Vox stellt konkrete menschliche Aktionen mit Ort und erwarteter Rückgabe vor lange Ergebnisberichte; der berichtete Lesbarkeitsgewinn ist persönliche Erfahrung ohne Vergleichsmessung.
+- 2026-10-09 · [[2026-10-09-voxyz_ai-2108573215224160393]] · meinung — Vox fordert, fehlgeschlagene Quellenzugriffe sichtbar zu melden statt als fehlende Neuigkeiten zu behandeln; das unterstützt erkennbare Blockaden, enthält aber keine Untersuchung der Berichtswirkung.
 
 ## Spannungen & offene Fragen
 

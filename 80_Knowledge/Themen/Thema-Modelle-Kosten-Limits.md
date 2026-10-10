@@ -1,6 +1,6 @@
 # Modelle, Kosten & Limits
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Caching, Benchmarks und Provider-Umleitung. Verfügbarkeit offener Gewichte, lokale Inferenz, Hardware und Fine-Tuning gehören vorrangig zu open-source-llms; Kostenvergleiche bleiben hier.
 
@@ -9,7 +9,7 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 - **Hauptkeyword:** Claude Code Kosten
 - **Long-Tail:** Claude Code Usage Limits; Kosten pro Task statt pro Token; Prompt Caching Claude Code; Claude Code mit lokalem Modell; Reasoning Effort wählen; Modell-Eskalation günstig nach teuer
 - **Fragen:** Welches Modell für welche Aufgabe? / Warum sind meine Limits so schnell leer?
-- **Häufig in den Quellen:** modell-eskalation (24), modell (21), effort (15), kosten pro task (14), kosten (14), gpt-6 (13), preis (11), terminal-bench (9), benchmark (9), token (7), opus 5.5 (7), coding agent index (6), sonnet (6), modellwahl (5), pareto (5), preise (5), anthropic_base_url (4), cost per task (4), intelligence index (4), /compact (4)
+- **Häufig in den Quellen:** modell-eskalation (30), modell (28), effort (21), kosten (20), benchmark (18), preis (16), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), preise (8), intelligence index (7), sonnet (7), opus 5.5 (7), pareto (6), anthropic_base_url (4), cost per task (4), /compact (4)
 
 ## Verwandte Themen
 
@@ -22,14 +22,18 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 ## Patterns (4)
 
 - [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 4 Belege
-- [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 8 Belege
-- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 45 Belege
+- [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 9 Belege
+- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 48 Belege
 - [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 2 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]]
 
-## Quellen (43)
+## Quellen (56)
 
+- [[2026-10-10-developers-using-gpt-6-openai-api]] — Der am 10.10.2026 archivierte OpenAI-Guide ergänzt die regionalen Verfügbarkeitsangaben gegenüber dem erfassten Stand vom 02.10.2026.
+- [[2026-10-09-satyanadella-2108627923888754862]] — Satya Nadella stellt `Microsoft-Decision-1` für schnelle strukturierte Entscheidungen vor und nennt interne Tests sowie Vertriebskanäle.
+- [[2026-10-09-openrouter-2108689756372775370]] — OpenRouter meldet `Microsoft-Decision-1` als verfügbar und nennt Preis, Kontextumfang und Microsoft-Benchmarkzahlen.
+- [[2026-10-09-natebjones-thats-model-vs-effort-in-plain-english]] — Nate Jones erklärt Modellwahl und Effort als zwei getrennte Entscheidungen: Welches Fähigkeitsniveau braucht die Aufgabe, und wie viel Denkaufwand soll das gewählte Modell investieren?
 - [[2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker]] — Vox empfiehlt für Claude Code eine feste Rollenteilung: `Opus 5.5` plant und prüft, `Haiku 5.5` liest Code und recherchiert Dokumentation.
 - [[2026-10-07-kimmonismus-2107894978332557756]] — Chubby meldet `Claude Haiku 5.5`: Nach Herstellerangaben liegen durchschnittliche Betriebskosten rund **75 % unter** `Haiku 4.5`.
 - [[2026-10-07-artificialanlys-2107911905822351609]] — Artificial Analysis (AA) berichtet Modellmerkmale von `Claude Haiku 5.5`: adaptive thinking, Effort-Einstellungen, 1 Million Kontexttokens, Text-/Bildinput, Textoutput.
@@ -59,8 +63,17 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-08-14-claude-maximizing-the-value-of-your-claude-code-session]] — Tool-Outputs bleiben in jedem Folgeturn im Kontext, und Modell- oder Effort-Wechsel sowie Compact entwerten den Prompt Cache, daher Sitzungen aufgabenweise mit /clear führen.
 - [[2026-08-07-theaicareercoach-vor-einem-jahr-noch-teuer-heute-fast-geschenkt-die-preise-fuer-ki]] — Ein Creator (Norman, Daten- und KI-Leiter einer Beratung) meldet Anfang August 2026 eine Preissenkung von OpenAI und nennt drei Treiber für sinkende Modellpreise.
 - [[2026-08-03-floknowsai-die-preise-fuer-ki-fallen-wirklich-und-trotzdem-ist-dein-limit-genauso]] — Trotz fallender Preise für festes Können bleibt das Limit gleich schnell leer, weil Kontextlänge, Denkstufe, Tokenizer, Subagents und Langläufer den Verbrauch pro Aufgabe erhöhen.
+- [[2026-08-01-arena-2083348755559207047]] — Arena berichtet am 1.
+- [[2026-07-31-kimmonismus-2083144340176609556]] — Der Post vom 31.
 - [[2026-07-27-techfeed5-1-reason-why-the-cloud-limits-could-hit-directly-that-we-talk-to-opus-in]] — Der Token-Verbrauch hängt von der Sprache ab und Deutsch verbraucht bei Claude Opus laut Clip deutlich mehr als Englisch, allerdings ohne belegte Quelle und Methode.
 - [[2026-07-27-cerebras-gpt-5-6-modellwahl-und-reasoning]] — Mit dem günstigsten tragfähigen Modell starten und bei Stillstand eskalieren, denn jede Reasoning-Stufe kostet rund 50 Prozent mehr bei sinkendem Grenznutzen; warme Sessions sparen Cache-Kosten.
+- [[2026-07-25-valsai-2080817011157094511]] — Vals AI veröffentlicht am 25.
+- [[2026-07-24-kimmonismus-2080751641393836085]] — Der Post vom 24.
+- [[2026-07-24-artificialanlys-2080734447717298483]] — Artificial Analysis veröffentlicht am 24.
+- [[2026-07-24-andrew_n_carr-2080727000004878593]] — Andrew Carr kommentiert am 24.
+- [[2026-07-17-hedgeye-2078165516657549710]] — Hedgeye behauptet am 17.
+- [[2026-07-16-kimmonismus-2077828228282982886]] — Chubby kommentiert am 16.
+- [[2026-07-16-artificialanlys-2077832874183860404]] — Artificial Analysis beschreibt `Kimi K3` als leistungsfähiges Modell mit höheren Tokenpreisen als sein Vorgänger.
 - [[2026-07-15-xudong07452910-2077246527756775933]] — Der Tweet fasst auf Chinesisch den Prompt-Guide von OpenAI zu GPT-5.6 Sol zusammen (Stand 2026-07-15) und zieht daraus eine Folgerung für `AGENTS.md`.
 - [[2026-07-10-rasbt-2075573860796436626]] — Sebastian Raschka liest aus einem Chart des Artificial Analysis Coding Agent Index v1.1 Faustregeln für agentisches Coding ab: Statt auf die nächsthöhere Modellstufe zu wechseln, lohnt sich häufig das
 - [[2026-07-10-matthewberman-2075597710435266674]] — @MatthewBerman gibt eine DeepSWE-Auswertung weiter und stimmt ihr zu, dass GPT-5.6 Sol in der Stufe `high` das beste Preis-Leistungs-Modell sei.
@@ -83,8 +96,10 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-09-28-unslothai-2104592692072304916]]
 - [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]]
 - [[2026-09-27-voxyz_ai-2104254744722383210]]
+- [[2026-09-14-shadcn-2099534231114314145]]
 - [[2026-09-09-voxyz_ai-2097814698204832116]]
 - [[2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo]]
+- [[2026-07-31-unslothai-2083231049434435596]]
 - [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]]
 - [[2026-07-06-claudedevs-2074208949205881033]]
 - [[2026-07-01-0xcodila-2072329149520232639]]

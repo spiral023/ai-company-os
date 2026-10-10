@@ -64,6 +64,8 @@ external_repos/*
 *.wav
 *.m4a
 *.mp4
+# Unvollständige TikTok-Downloads und Downloader-Zustand bleiben ebenfalls lokal
+00_Inbox/Quellen/TikTok/medien/**/02-video.mp4.*
 *.mov
 
 # Agent-Werkzeuge: lokaler Laufzeit-State

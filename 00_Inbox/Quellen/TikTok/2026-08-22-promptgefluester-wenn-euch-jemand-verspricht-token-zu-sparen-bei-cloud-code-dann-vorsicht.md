@@ -49,3 +49,7 @@ sucht sich halbfertige Daten Aus irgend nem Graf zusammen ihr müsst auch immer 
 dieses ganze Lockdown Pfeil auslagern und kommentieren
 
 ist deshalb gefährlich weil ihr irgendwann mal n alten entwicklungstand habt das heißt müsst immer wieder am Ende eurer entwicklungsprozesses evaluieren OB die Daten die am Anfang einer Session geschrieben wurden OB die noch stimmen und OB die nicht gelöscht oder geändert gehören weil jeder Text der im Repo steht steht irgendwann mal wieder auf euer in eurem Kontext weil die das einlesen und denken das sei die Wahrheit Wahrheit verändert sich und das dürft ihr nicht vergessen
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht/02-video.mp4)

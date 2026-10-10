@@ -75,3 +75,7 @@ aber X high ist für mich n gutes Level.
 Max ist etwas das ich zum Beispiel nur für den orchestrator nutzen würde. damit kann man auf jeden Fall 1 bestmögliches Ergebnis erzielen. an der orchestrator bewertet ja die Eingaben und Ausgaben und der setzt Prioritäten.
 
 es kostet nicht so viel Token wie zum Beispiel die Programmierung von 5.000 Zeilen Code die jedes mal über Max Everett laufen. hier ist einer der größten. Hebel für deine Token Limits.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit/02-video.mp4)

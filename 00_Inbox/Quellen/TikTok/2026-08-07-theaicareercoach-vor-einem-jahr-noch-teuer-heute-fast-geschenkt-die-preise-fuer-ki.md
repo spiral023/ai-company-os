@@ -50,3 +50,7 @@ aber einfach weniger energiefrist das senkt die kosten bei den Anbietern die dad
 hi Mein Name ist Norman ich leite den Daten und KI Bereich in einer der größten artieberatungen von Mir bekommst du hier an der Stelle Daten und KI wissen ungefiltert Aus der Praxis
 
 wenn dir das hilft wenn dich das weiterbringt lass gern n Like da oder folgt Mir auch gerne für mehr
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-08-07-theaicareercoach-vor-einem-jahr-noch-teuer-heute-fast-geschenkt-die-preise-fuer-ki/02-video.mp4)

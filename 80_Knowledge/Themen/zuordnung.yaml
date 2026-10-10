@@ -36,6 +36,11 @@ muster:
     keywords: [Advisor Agent, Agent Drift, Goal Drift, Long-Running Agents, Multi-Agent, Worker-Advisor, Session Monitoring, Kurskorrektur]
     neben: [autonomie]
     synonyme: [Advisor Pattern, Watcher Agent, Supervisor Agent, Drift Detection]
+  Agent-CLI-mit-Live-Ansicht:
+    haupt: frameworks
+    keywords: [cli, live-reload, live-ansicht, zustandskonsistenz, menschliche-pruefung]
+    neben: [prototyping]
+    synonyme: []
   Agent-Rechte-umfassen-Kommunikationswege:
     haupt: sicherheit
     keywords: [Agent-to-Agent-Kommunikation, Agent-Identität, Least Agency, Indirekte Rechte, Delegierte Aktionen, Berechtigungsgrenzen, Audit-Logging, Modellwechsel]
@@ -51,6 +56,11 @@ muster:
     keywords: [Anti-Rationalization, Rationalization Table, Agent Skills, Red Flags, Skill-Anatomie, Workflow-Disziplin, Ausreden-Tabelle, Verifikation überspringen]
     neben: [verifikation]
     synonyme: [Rationalizations Table, Anti-Rationalisierung, Ausreden-Widerlegung]
+  Architektur-in-Perspektiven-dokumentieren:
+    haupt: planung
+    keywords: [Architekturperspektiven, Codebase Understanding, Mermaid, Request-Lifecycle, Datenfluss, Dateibelege, rekursive Detailansichten]
+    neben: [rolle-markt]
+    synonyme: [Architekturkarte, Architecture Map, Perspective-Based Architecture, Codearchitektur dokumentieren]
   Blockierende-Task-Abhaengigkeiten:
     haupt: orchestrierung
     keywords: [Task Dependencies, addBlockedBy, addBlocks, Claude Code Tasks, Task-Graph, Blocked Tasks, Abhängigkeitsgraph, Agent Task Management]
@@ -71,6 +81,11 @@ muster:
     keywords: [Learning Mode, Explanatory Output Style, Code verstehen, Claude Code /config, ASCII-Diagramme, HTML-Präsentation, Onboarding in Codebasen, Codebase Understanding]
     neben: []
     synonyme: [Learning Style, Explanatory Mode, Lernmodus, Claude Code Output Styles]
+  Codepfad-vor-Aenderung-nachvollziehen:
+    haupt: planung
+    keywords: [Codepfad, Repo-Onboarding, Datenfluss, Validierung, Persistenz]
+    neben: [sdlc]
+    synonyme: [Codepfad verstehen, Repo-Onboarding, Request Flow]
   Decision-Head-Finetuning:
     haupt: open-source-llms
     keywords: [Decision Models, Decision Head, LoRA Fine-Tuning, Clef Head, Unsloth, Holdout Accuracy, Probability Calibration, Lokale Modelle]
@@ -91,6 +106,11 @@ muster:
     keywords: [Claude Code Extension Layers, Skills vs. Subagents, Claude Code Hooks, MCP-Kosten, CLAUDE.md, Slash Commands, Progressive Disclosure, Extension Points]
     neben: [skills]
     synonyme: [Erweiterungsebenen, Customization Layers, Skill vs. Rule, Claude Code Features Vergleich]
+  Externe-Evaluatoren-mit-dauerhaftem-Zugang:
+    haupt: verifikation
+    keywords: [Embedded Evaluators, externe Prüfung, dauerhafter Zugang, unabhängige Berichterstattung, Sicherheitszusagen, Frontier Pacing, Governance]
+    neben: [ki-risiken, sicherheit]
+    synonyme: [Embedded Evaluators, Dauerhafte externe Prüfung, Unabhängiger Prüfeinblick]
   Fable-Unknowns-vor-Prompt-Qualitaet:
     haupt: prompting
     keywords: [Unknown Unknowns, Prompt Engineering, Known Unknowns, Change Quiz, Karte und Territorium, Implicit Knowledge, Ambiguität, Prompt-Qualität]
@@ -186,6 +206,11 @@ muster:
     keywords: [Graduated Autonomy, Sigma-Abweichung, Anomaly Detection, Runbook Automation, Agentic Ops, Baseline Metrics, Read-only Diagnose, Incident Response]
     neben: [sicherheit, sdlc]
     synonyme: [Gestufte Autonomie, Autonomy Tiers, Metrik-Schwellen]
+  Mobile-Webapp-nach-Eingabefaehigkeit-pruefen:
+    haupt: prototyping
+    keywords: [Mobile UI-Design, Webapp am Handy, Eingabefähigkeit, Touch-Hover, Viewport, Safe Areas, dvh, Bildschirmtastatur]
+    neben: []
+    synonyme: [Mobile Webapp Prüfung, Touch-Hover, Mobile-native, Eingabefähigkeit]
   Modell-Eskalation-von-guenstig-nach-teuer:
     haupt: modelle-kosten
     keywords: [Model Escalation, Reasoning Effort, Modellwahl, Kosten pro Task, GPT-5.6, Codex Reasoning Levels, Artificial Analysis, Modell-Routing]
@@ -206,11 +231,21 @@ muster:
     keywords: [projektkarte, projektstatus, meilenstein, blockaden, entscheidung, autonomer agent]
     neben: [autonomie]
     synonyme: [Project Map, Projektstatuskarte]
+  Quellen-Bookmarks-fuer-Agent-Automationen:
+    haupt: autonomie
+    keywords: [Quellen-Bookmark, Fortschrittsmarker, Watermark, Cursor, Agent-Automationen, Zeitfenster, Zustellbestätigung, Retry, Duplikatprüfung]
+    neben: [verifikation, sicherheit]
+    synonyme: [Source Bookmark, Quellen-Cursor, Watermark, Persistenter Quellenfortschritt]
   Ralph-Loop-Frischer-Kontext-pro-Iteration:
     haupt: autonomie
     keywords: [Ralph Loop, Ralph Wiggum, Autonomous Coding Loop, Fresh Context, Overnight Agents, STEERING.md, Context Saturation, Brownfield]
     neben: [kontext]
     synonyme: [Ralph Wiggum Loop, Ralph, Loop Agent, Iterations-Loop]
+  Refactoring-mit-Verhaltensvergleich:
+    haupt: verifikation
+    keywords: [Refactoring, Verhaltensvergleich, Regressionstests, öffentliche Schnittstelle]
+    neben: [sdlc]
+    synonyme: [Verhaltenserhaltendes Refactoring, Behavioral Parity, Regression Comparison]
   Review-Autonomie-mit-Shadow-Mode-und-Stichproben:
     haupt: verifikation
     keywords: [Risikobasiertes Human Review, Shadow Mode, Review-Stichproben, Automatische PR-Freigabe, Review-Kapazität, Human-in-the-Loop, Menschliche Freigabe, Befundnachweis]
@@ -281,6 +316,11 @@ muster:
     keywords: [testharness, adversarial, test, verifikation, skill.md, skill]
     neben: [prototyping]
     synonyme: [Worst-case fixtures, Break UI]
+  Variantenvergleich-vor-Produktionsabnahme:
+    haupt: prototyping
+    keywords: [UI-Varianten, Gestaltungsachsen, interaktiver Prototyp, isolierte Vorschau, Variantenwahl, Gewinnerintegration, Produktionsabnahme]
+    neben: [planung, verifikation]
+    synonyme: [UI-Variantenvergleich, Interaktive Designexploration, Prototype Then Verify]
   Visuelle-Abnahme-mit-Live-Lokal-Vergleich:
     haupt: verifikation
     keywords: [screenshot, layout, testharness, test]
@@ -291,6 +331,11 @@ muster:
     keywords: [Voice Prompting, Diktierfunktion, Speech-to-Text, Prompt-Kontext, Voice Coding, Transkription, Context-rich Prompts, Dictation]
     neben: [planung]
     synonyme: [Voice Input, Sprachprompts, Spracheingabe, Dictation Mode]
+  Zustandslose-CI-Listener-mit-Ergebnisjournal:
+    haupt: verifikation
+    keywords: [Test Impact Analysis, CI-Listener, Ergebnisjournal, Testhistorie, Listener-Lag, Backlog, zustandslose Worker, Historienverdichtung]
+    neben: [autonomie, sdlc]
+    synonyme: [CI-Ergebnisjournal, Testhistorien-Pipeline, Test-Impact-Analyse]
 quellen:
   2025-10-31-agenticjames-best-claude-skills-for-agentic-coding:
     haupt: skills
@@ -979,11 +1024,31 @@ quellen:
     kernaussage: Replit-CEO Amjad Masad beschreibt, wie Replit zwischen Januar und Juni 2026 interne Agents in Engineering, Data, Sales, Marketing und Support eingeführt hat.
     keywords: [review, test, tests, qualität, ci, reviewer, sandbox, microvm, ci-agent, loop engineering, Risikobasiertes Human Review, Menschliche Freigabe, Review-Latenz, Agentische PR-Freigabe]
     neben: [sicherheit, autonomie]
+  2026-07-16-artificialanlys-2077832874183860404:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis beschreibt `Kimi K3` als leistungsfähiges Modell mit höheren Tokenpreisen als sein Vorgänger.
+    keywords: [effort, modellwahl, intelligence index, modell-eskalation, benchmark, token, modell, tokens]
+    neben: []
+  2026-07-16-kimmonismus-2077828228282982886:
+    haupt: modelle-kosten
+    kernaussage: Chubby kommentiert am 16.
+    keywords: [kimi k3, design arena, frontend, benchmark, ranglisten-snapshot]
+    neben: [open-source-llms, prototyping]
+  2026-07-17-hedgeye-2078165516657549710:
+    haupt: modelle-kosten
+    kernaussage: Hedgeye behauptet am 17.
+    keywords: [modell-eskalation, preis, token, modell, preise, kosten, tokens]
+    neben: []
   2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt:
     haupt: planung
     kernaussage: Eine ausführliche Spezifikation mit verweisenden Task-Listen und mehrfacher Agent-Prüfung des Plans ist billiger als spätes Nachbessern, verursacht aber eigene Pflegekosten.
     keywords: [Spec-Driven Development, große Spezifikation, Task-Markdown, Plan Review durch Agents, Git-Commit als Rollback, Session-Wechsel, Datenmodell-Review, Vibe Coding]
     neben: [kontext]
+  2026-07-17-reach_vb-2078108681678299194:
+    haupt: skills
+    kernaussage: Vaibhav Srivastav empfiehlt, Workflow-Skills durch Codex gegen vergangene eigene Sitzungen prüfen zu lassen und die Prüfung bei veränderten Arbeitsweisen zu wiederholen.
+    keywords: [skill, eval, skills, trigger, baseline-vergleich]
+    neben: []
   2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev:
     haupt: sdlc
     kernaussage: Anthropic staffelt Review-Autonomie nach Risiko, prüft neue Reviewer im Shadow Mode und kontrolliert automatische Freigaben durch menschliche Stichproben; Agent-Rechte müssen auch Kommunikationswege
@@ -991,26 +1056,93 @@ quellen:
     keywords: [AI-native SDLC, Human-in-the-Loop, Risikobasiertes Human Review, Shadow Mode, Review-Stichproben, Automatische PR-Freigabe, Befundnachweis, SAST und DAST, Invariantentests, Least Agency,
       Agent-Identität, Agent-to-Agent-Kommunikation, SIEM, Egress-Allowlist]
     neben: [verifikation, sicherheit]
+  2026-07-21-claudeai-2079595988998554047:
+    haupt: skills
+    kernaussage: Claude kündigt am 21.
+    keywords: [skill, trigger, eval, skills]
+    neben: []
+  2026-07-21-claudedevs-2079654423828304282:
+    haupt: verifikation
+    kernaussage: Anthropic beschreibt Sprachmigrationen anhand eines Zig-zu-Rust-Ports von Bun und eines Python-zu-TypeScript-Ports eines internen Werkzeugs.
+    keywords: [sprachmigration, verhaltensvergleich, judge-validierung, gegenproben, regressionen, warteschlangen, zentrale-builds]
+    neben: [orchestrierung, planung]
   2026-07-21-promptgefluester-prompt-engineering-ist-tot-und-keiner-hats-gemerkt-was-meine-ich-damit:
     haupt: skills
     kernaussage: Statt eines langen Initial-Prompts erzeugen Rückfrage-Skills sauberen Basis-Kontext und Hook-Skills laden Regeln im Prozess nach, weil frühe Regeln im wachsenden Kontext verblassen.
     keywords: [Prompt Engineering, Hook-basierte Skills, Claude Code Hooks, Superpowers Brainstorming, Context Rot, Spec-Grilling, Skill-Trigger, Initial-Prompt]
     neben: [kontext]
+  2026-07-22-mattpocockuk-2079879414297330146:
+    haupt: kontext
+    kernaussage: Matt Pococks Grafik ordnet fünf Fortsetzungen einer Agent-Session nach Entscheidungsfragen.
+    keywords: [handoff, kontext-hygiene, /compact, /clear, kontext, session, token]
+    neben: []
+  2026-07-23-ccarlosai-2080339591014261034:
+    haupt: planung
+    kernaussage: Carlos beschreibt eine Planungssitzung, die vorhandenen Projektkontext durch Rückfragen ergänzt und anschließend in Dateien für Claude Code überführt.
+    keywords: [plan-first, spec-grilling, grilling, plan, spec, planung]
+    neben: []
+  2026-07-23-colebemis-2080392348836790395:
+    haupt: verifikation
+    kernaussage: Cole Bemis empfiehlt, den Coding Agent annotierte Screenshots an einen Pull Request anhängen zu lassen.
+    keywords: [annotierte screenshots, pull request, visuelles review, abnahmenachweis]
+    neben: [prototyping]
+  2026-07-23-mattpocockuk-2080277204970143986:
+    haupt: frameworks
+    kernaussage: 'Matt Pocock beschreibt für Arbeiten außerhalb des Codings eine wiederkehrende Aufteilung: Ein Agent bearbeitet Inhalte über eine CLI; ein Mensch sieht das Ergebnis in einer speziell dafür
+      gebauten, au'
+    keywords: [cli, live-reload, live-ansicht, kurserstellung, menschliche-pruefung]
+    neben: [prototyping]
+  2026-07-23-unclebobmartin-2080257779395154409:
+    haupt: verifikation
+    kernaussage: Robert C.
+    keywords: [testharness, test, tests, review, qualität]
+    neben: []
   2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding:
     haupt: autonomie
     kernaussage: Das Vier-Stufen-Modell von Pair Programming bis Agentenflotte trägt nur mit automatischer Verifikation, und Fehlläufe sollten systematisch in besseren Startkontext übersetzt werden.
     keywords: [Vier Stufen KI-Coding, Auto Mode, Git Worktrees, Parallele Claude-Code-Sessions, Agentenflotte, Meta-Loop, Code-Review-Skills, Claude Code]
     neben: [verifikation]
+  2026-07-24-andrew_n_carr-2080727000004878593:
+    haupt: modelle-kosten
+    kernaussage: Andrew Carr kommentiert am 24.
+    keywords: [effort, reasoning-stufe, modell-eskalation, benchmark, modell, kosten]
+    neben: []
+  2026-07-24-artificialanlys-2080734447717298483:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis veröffentlicht am 24.
+    keywords: [effort, terminal-bench, benchmark, intelligence index, coding agent index, cache, preis, token]
+    neben: []
+  2026-07-24-claude-the-new-rules-of-context-engineering-for-claude:
+    haupt: kontext
+    kernaussage: Thariq Shihipar beschreibt, wie Anthropic den System Prompt von Claude Code für `Claude Opus 5` und `Claude Fable 5` um mehr als 80 Prozent verkürzt habe, ohne messbaren Verlust in den
+      eigenen Coding-
+    keywords: [context engineering, system prompt, modellwechsel, progressive disclosure, tool-schemas, claude.md, gotchas]
+    neben: [agent-dateien, skills]
+  2026-07-24-kimmonismus-2080751641393836085:
+    haupt: modelle-kosten
+    kernaussage: Der Post vom 24.
+    keywords: [effort, benchmark, modellwahl, intelligence index, coding agent index, modell-eskalation, modell, kosten]
+    neben: []
   2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the:
     haupt: agent-dateien
     kernaussage: Neuere Modelle arbeiten mit weniger vorgegebenem Kontext besser; lange CLAUDE.md-Dateien sollten gekürzt und Wissen in bei Bedarf ladbare Skills ausgelagert werden.
     keywords: [CLAUDE.md kürzen, Claude Code System Prompt, Progressive Disclosure, Skills statt Regeln, präskriptive Regeln, Context Engineering, Sonnet vs. Opus, Regeldatei]
     neben: [kontext]
+  2026-07-25-valsai-2080817011157094511:
+    haupt: modelle-kosten
+    kernaussage: Vals AI veröffentlicht am 25.
+    keywords: [effort, modell-eskalation, reasoning-stufe, benchmark, kosten, modell, preis, preise]
+    neben: []
   2026-07-26-promptgefluester-ich-hab-ne-unbequeme-wahrheit-und-zwar-ich-wurde-gefragt-wieso:
     haupt: verifikation
     kernaussage: Bei größeren Codebasen liefern dichte deterministische Prüfungen die Qualität, nicht das Modell allein, und kosten bewusst Zeit und Pflege.
     keywords: [Quality Gates, Code Guard, statische Codeanalyse, Business-Logik-Drift, AI Slop, Vibe Coding Grenzen, Impact-Analyse, Testharness]
     neben: [planung]
+  2026-07-27-anthropic-our-position-on-open-weights-models:
+    haupt: open-source-llms
+    kernaussage: Dario Amodei erläutert am 27.
+    keywords: [open weights, herstellerposition, empirische sicherheitspruefung, faehigkeitsabhaengige tests, distillation]
+    neben: [sicherheit]
   2026-07-27-cerebras-gpt-5-6-modellwahl-und-reasoning:
     haupt: modelle-kosten
     kernaussage: Mit dem günstigsten tragfähigen Modell starten und bei Stillstand eskalieren, denn jede Reasoning-Stufe kostet rund 50 Prozent mehr bei sinkendem Grenznutzen; warme Sessions sparen Cache-Kosten.
@@ -1036,6 +1168,26 @@ quellen:
     kernaussage: Ein Skill kann Briefing, Curriculum-Freigabe und Medienproduktion zu einem wiederholbaren Kurs-Workflow verbinden, wobei ein menschliches Review-Gate teure Fehlproduktion verhindert.
     keywords: [Interaktive Schulung, Claude Code Skill, Curriculum-Gate, Higgsfield MCP, HyperFrames, HTML-Kurs, KI-Video-Generierung, Human-in-the-Loop]
     neben: [planung]
+  2026-07-31-alexfinn-2082982462012227648:
+    haupt: planung
+    kernaussage: 'Alex Finn nennt seine Vorgehensweise Reverse Prompting: Nach einer Beschreibung von Zielen und Umständen soll der Agent fehlende Informationen erfragen und mögliche Aufgaben vorschlagen.'
+    keywords: [spec-grilling, grilling, spec, task]
+    neben: []
+  2026-07-31-kimmonismus-2083144340176609556:
+    haupt: modelle-kosten
+    kernaussage: Der Post vom 31.
+    keywords: [benchmark, terminal-bench, effort, sonnet, preis, token, modell, kosten]
+    neben: []
+  2026-07-31-unslothai-2083231049434435596:
+    haupt: open-source-llms
+    kernaussage: Unsloth kündigt am 31.
+    keywords: [gguf, quantisierung, deepseek, ram, vram, parameter, terminal-bench, benchmark]
+    neben: [modelle-kosten]
+  2026-08-01-arena-2083348755559207047:
+    haupt: modelle-kosten
+    kernaussage: Arena berichtet am 1.
+    keywords: [pareto, terminal-bench, modell-eskalation, preis, modell, kosten, preise, token]
+    neben: []
   2026-08-02-promptgefluester-wenn-ihr-versucht-euer-software-projekt-mit-fable-five-oder-o-plus-5:
     haupt: verifikation
     kernaussage: Vor einem KI-Refactoring deterministische statische Analyse laufen lassen, toten Code entfernen und Architekturregeln festlegen, statt das Modell Abhängigkeiten selbst abgleichen zu lassen.
@@ -1146,6 +1298,11 @@ quellen:
     kernaussage: Ein Agent-Loop braucht ein binäres Erfolgskriterium, ein Iterationslimit und einen unabhängigen Prüfer; große Aufträge laufen als Schritte mit frischem Kontext und Artefakt-Übergaben.
     keywords: [Loop Engineering, Graph Engineering, Reward Hacking, Goal-based Loop, Claude Code /goal, /loop und /schedule, Context Rot, Dark Software Factory, Spec-driven Development, Akzeptanzkriterien]
     neben: [verifikation]
+  2026-09-04-guinnesschen-2095920936172335278:
+    haupt: prompting
+    kernaussage: Guinness Chen kündigt am 04.09.2026 an, dass Voice in bestehenden `Codex`-Chats verfügbar ist.
+    keywords: [Codex Voice, Sprachdialog, Voice Prompting, bestehender Chat, Architekturklärung, PR-Besprechung]
+    neben: [kontext]
   2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re:
     haupt: kontext
     kernaussage: 'Weniger Anweisungen, mehr Absicht und messbares Abschlusskriterium: Kontext klein halten, Garantien in Hooks legen und das Setup bei jedem Modellwechsel ausdünnen.'
@@ -1156,6 +1313,16 @@ quellen:
     kernaussage: 'Bei stärkeren Modellen werden angesammelte Skills und AGENTS.md-Regeln zum Ballast: Descriptions kurz und triggerbasiert halten, Pflichtlektüre und Rezepte streichen.'
     keywords: [AGENTS.md, Skill Descriptions, Progressive Disclosure, GPT-6 Astra, Codex skill-creator, Trigger-Beschreibung, Modellwechsel, Überregulierung, Instruktions-Audit]
     neben: [skills]
+  2026-09-05-waynesutton-2096296858343846261:
+    haupt: prompting
+    kernaussage: Wayne Sutton empfiehlt einen Prompt, der Entscheidungen zugleich an User Experience, Developer Experience und Agent Experience ausrichtet.
+    keywords: [Intent Engineering, User Experience, Developer Experience, Agent Experience, UX, DX, AX, Zielkonflikte, Prompting]
+    neben: [planung]
+  2026-09-06-karl_lauterbach-2096616768974327822:
+    haupt: rolle-markt
+    kernaussage: Karl Lauterbach verbindet am 06.09.2026 eine Economist-Grafik mit einer politischen Bewertung von KI und Europas Exportstrategie.
+    keywords: [KI-Arbeitsmarkt, US-Beschäftigung, Softwareentwicklung, Data Science, KI-Kausalität, Bureau of Labor Statistics, The Economist]
+    neben: []
   2026-09-07-sairahul1-2096902575035683147:
     haupt: prompting
     kernaussage: Alte Prompts, die Testen und Selbstprüfen erzwingen, schaden stärkeren Modellen; gesteuert werden sollten Autonomie, Prioritäten, Verifikationsumfang und prüfbare Stop-Bedingungen.
@@ -1177,11 +1344,21 @@ quellen:
     kernaussage: Günstige Modelle explorieren, ein mittleres implementiert, das stärkste prüft nur bei Bedarf; Rollen gehören per Konfiguration statt Prosa festgelegt und in den Logs verifiziert.
     keywords: [Codex Subagents, Agent Tree, GPT-6 Astra, GPT-6 Luna, GPT-6 Sol, model_reasoning_effort, Custom Agents, Modell-Routing pro Rolle, Kosten pro Task]
     neben: [modelle-kosten]
+  2026-09-12-darioamodei-2098773920774074715:
+    haupt: ki-risiken
+    kernaussage: Dario Amodei kündigt am 12.09.2026 einen Vorschlag zum langsameren Fortschritt an der KI-Frontier an.
+    keywords: [Frontier Pacing, Embedded Evaluators, externe Prüfung, dauerhafter Zugang, unabhängige Berichterstattung, Alignment, Governance, Selbstverpflichtung]
+    neben: [verifikation, rolle-markt]
   2026-09-13-stefanantonelli-du-brauchst-keinen-entwickler-um-mit-ki-etwas-zu-bauen:
     haupt: rolle-markt
     kernaussage: Fachexpertise statt Programmierkenntnis erhöht laut Caption die Autonomie pro Anweisung, weil sie Ziel und Prüfkriterien liefert; die Studie selbst wurde nicht gelesen.
     keywords: [Domänenwissen, Claude Code für Nicht-Entwickler, Vibe Coding, Anthropic Studie 400.000 Sessions, Erfolgsquote, Spezifikation als Engpass, KI im Mittelstand]
     neben: []
+  2026-09-14-claude-agentic-coding-is-straining-ci-here-s-how-we-sca:
+    haupt: verifikation
+    kernaussage: Sachin Malhotra beschreibt, wie Anthropic seine Test-Impact-Analyse nach mehreren kurzlebigen Patches neu aufbaute.
+    keywords: [Test Impact Analysis, Testselektion, CI-Last, Listener-Lag, Ergebnisjournal, Testhistorie, zustandslose Worker, Backlog, Single Writer]
+    neben: [autonomie, sdlc]
   2026-09-14-code-test-plugins-with-evals-claude-code-docs:
     haupt: skills
     kernaussage: Plugins und Skills lassen sich per Eval mit und ohne Plugin vergleichen; das Delta zeigt den Beitrag, ein negatives Delta verdächtigt zuerst den Judge.
@@ -1192,6 +1369,21 @@ quellen:
     kernaussage: Anweisungen veralten modellabhängig und schaden bei stärkeren Modellen aktiv; Skills als Router mit engen Triggern und schlanke AGENTS.md sind der Ausweg.
     keywords: [GPT-6 Astra, AGENTS.md, Skill Descriptions, Progressive Disclosure, Codex skill-creator, Prompt-Audit, Überregulierung, Modellwechsel, Router-Skill]
     neben: [skills]
+  2026-09-14-shadcn-2099534231114314145:
+    haupt: prototyping
+    kernaussage: shadcn zeigt am 14.09.2026, wie `shadcn/lint` erlaubte Änderungen prüft und Agenten zum vorgesehenen Komponentenweg führt.
+    keywords: [shadcn/lint, shadcn/no-restyle, Designsystem-Verträge, Tailwind, Components, Variants, Theme, Oxlint, ESLint, Korrekturkosten, Herstellerharness]
+    neben: [verifikation, modelle-kosten]
+  2026-09-14-voxyz_ai-2099528601557496220:
+    haupt: verifikation
+    kernaussage: Vox empfiehlt konkrete Handlungen und erwartete Ergebnisse für die Abnahme durch Agenten.
+    keywords: [Browser-Abnahme, Abnahmekriterien, UI, UX, Persistenz nach Refresh, Regression, Desktop, Mobile, Screenshots, Prüfgrenzen]
+    neben: [prototyping]
+  2026-09-15-emilkowalski-2099948779864793303:
+    haupt: prototyping
+    kernaussage: Emil Kowalski berichtet, Animationen und Interaktionen weitgehend über Agenten statt durch eigene Codeänderungen zu entwickeln.
+    keywords: [Prototype, Animate, Variantenvergleich, Gestaltungsachsen, isolierte Vorschau, Easing, Timing, Reduced Motion, Produktionsabnahme, prep-for-prod]
+    neben: [planung, verifikation]
   2026-09-17-agenticjames-i-think-code-mode-mcps-are-probably-the-best-way-to-give-agents-access:
     haupt: erweiterungen
     kernaussage: Ein einzelnes Skript-Tool vor vielen MCP-Servern macht Aufrufe komposierbar und filtert große Ausgaben, bevor sie das Context Window füllen; Sandbox und Gateway-Vertrauen kosten zusätzlich.
@@ -1297,6 +1489,11 @@ quellen:
     kernaussage: Opus 5.5 in Claude Code führt den Coding Agent Index, kostet aber pro Task 21 Prozent mehr, weil der Tokenverbrauch die Preissenkung überkompensiert.
     keywords: [Coding Agent Index, Claude Code Opus 5.5, Kosten pro Task, Tokenverbrauch, Terminal-Bench 4.0, DeepSWE, Pareto-Front, Codex GPT-6 Sol, Coding Agent Benchmark]
     neben: []
+  2026-09-24-mattpocock-ai-coding-dictionary:
+    haupt: kontext
+    kernaussage: Matt Pococks AI Coding Dictionary ordnet 71 Begriffe in sieben Bereiche.
+    keywords: [ai coding dictionary, harness, context window, handoff, compaction, human review, grilling]
+    neben: [verifikation, planung]
   2026-09-24-orf-ex-google-manager-warnt-vor-ki-gefahren-fuer-kin:
     haupt: ki-risiken
     kernaussage: ORF.at berichtet über eine Warnung des früheren Google-Managers für Nutzersicherheit Tom Siegel gegenüber Reuters.
@@ -1401,6 +1598,11 @@ quellen:
     kernaussage: Artificial Analysis (Drittanbieter) misst am 01.10.2026 Kosten pro Intelligence-Index-Task für OpenAI-Modelle nach.
     keywords: [gpt-6, pareto, kosten pro task, effort, modell-eskalation, modell, kosten, token]
     neben: []
+  2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du:
+    haupt: rolle-markt
+    kernaussage: Florian Schünemann beschreibt Fähigkeiten für den sinnvollen Einsatz von Agenten.
+    keywords: [Agent-Kompetenz, Harness, Context Window, Projektwissen, MCP, Tool-Freigaben, Ergebnisprüfung]
+    neben: [kontext, verifikation]
   2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi:
     haupt: prototyping
     kernaussage: Ein Creator zeigt drei Selbsttests, in denen Claude Code mit Opus 5.5 und HyperFrames (Open Source von HeyGen) Videos baut.
@@ -1588,8 +1790,103 @@ quellen:
     kernaussage: Unsloth kündigt eine Integration von Microsoft eXecution Container (`MXC`) für die Ausführung von Code unter Windows an.
     keywords: [Windows Sandboxing, Microsoft eXecution Container, MXC, Unsloth, OS-Level Sandboxing, Bubblewrap, Seatbelt, Sandbox Permissions, Software Sandbox, Process Isolation]
     neben: []
+  2026-10-08-voxyz_ai-2108324058739745228:
+    haupt: prototyping
+    kernaussage: Vox kuratiert Begriffe und einen Prompt für `Opus 5.5`.
+    keywords: [Scroll-triggered, Scroll-linked, Parallax, Sticky, Pin, Scroll Snap, Horizontal Scroll, Stagger, Text Reveal, Progress Bar, Reduced Motion]
+    neben: [planung, verifikation]
   2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker:
     haupt: modelle-kosten
     kernaussage: 'Vox empfiehlt für Claude Code eine feste Rollenteilung: `Opus 5.5` plant und prüft, `Haiku 5.5` liest Code und recherchiert Dokumentation.'
     keywords: [Claude Code Subagents, Haiku 5.5, Opus 5.5, Explore Agent, Agent Tree, Model Inheritance, Reasoning Effort, CLAUDE_CODE_EFFORT_LEVEL, Kosten pro Task]
     neben: [orchestrierung]
+  2026-10-09-git-worktree:
+    haupt: orchestrierung
+    kernaussage: Getrennte Worktrees teilen das Repository, isolieren aber keine Laufzeitressourcen.
+    keywords: [Git Worktree, Parallelisierung, Integration, gemeinsame Laufzeit]
+    neben: []
+  2026-10-09-natebjones-thats-model-vs-effort-in-plain-english:
+    haupt: modelle-kosten
+    kernaussage: 'Nate Jones erklärt Modellwahl und Effort als zwei getrennte Entscheidungen: Welches Fähigkeitsniveau braucht die Aufgabe, und wie viel Denkaufwand soll das gewählte Modell investieren?'
+    keywords: [Modellwahl, Reasoning Effort, Aufgabenschwierigkeit, Überkomplizierung]
+    neben: []
+  2026-10-09-ollama-kontext-speicher:
+    haupt: open-source-llms
+    kernaussage: Größerer Kontext erhöht den Speicherbedarf; die CPU/GPU-Zuordnung muss am tatsächlichen Lauf geprüft werden.
+    keywords: [Ollama, Kontextlänge, VRAM, CPU-Offloading, lokale Inferenz]
+    neben: [kontext]
+  2026-10-09-openai-codebase-onboarding:
+    haupt: planung
+    kernaussage: Ein begrenzter Codepfad wird durch Dateien, Zustandswechsel und offene Fragen nachvollzogen.
+    keywords: [Codepfad, Repo-Onboarding, Codex, Validierung, Persistenz]
+    neben: [sdlc]
+  2026-10-09-openai-refactoring:
+    haupt: verifikation
+    kernaussage: Kleine Refactoring-Schritte erhalten öffentliche Schnittstellen und werden am vereinbarten Verhalten geprüft.
+    keywords: [Refactoring, Verhaltensvergleich, Codex, Regressionstests, öffentliche Schnittstelle]
+    neben: [sdlc]
+  2026-10-09-openaidevs-2108573188703781190:
+    haupt: sicherheit
+    kernaussage: OpenAI Developers meldet am 09.10.2026 einen neuen `Codex`-Sandboxmodus mit `Microsoft Execution Containers` (`MXC`) unter Windows.
+    keywords: [Codex, Windows 11, MXC, Microsoft Execution Containers, Sandboxing, Netzwerkdurchsetzung, Dateizugriff]
+    neben: [frameworks]
+  2026-10-09-openaidevs-2108624138369929725:
+    haupt: frameworks
+    kernaussage: 'OpenAI Developers kündigt am 09.10.2026 `Composer Predictions` an: Vorschläge für die nächste Nachricht, abgeleitet aus Gespräch und persönlicher Ausdrucksweise.'
+    keywords: [Codex, Composer Predictions, Pro-Beta, Desktop-App, Nachrichtenvorschlag]
+    neben: []
+  2026-10-09-openrouter-2108689756372775370:
+    haupt: modelle-kosten
+    kernaussage: OpenRouter meldet `Microsoft-Decision-1` als verfügbar und nennt Preis, Kontextumfang und Microsoft-Benchmarkzahlen.
+    keywords: [Microsoft-Decision-1, OpenRouter, Decision Model, Benchmark, Inputpreis, Qwen3.5-9B]
+    neben: []
+  2026-10-09-repo-emilkowalski-mobile-native:
+    haupt: prototyping
+    kernaussage: Read-only-Prüfung von `external_repos/emilkowalski/skills/skills/mobile-native/SKILL.md` am 09.10.2026, Checkout `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`.
+    keywords: [mobile-native, Webapp am Handy, Mobile UI-Design, Touch-Hover, Viewport, Safe Areas, dvh, Bildschirmtastatur]
+    neben: []
+  2026-10-09-repo-gsd-workflow:
+    haupt: frameworks
+    kernaussage: GSD Core dokumentiert einen Phasenablauf mit persistentem Stand und Entscheidungen.
+    keywords: [GSD Core, STATE.md, CONTEXT.md, Handoff, Phasenplanung]
+    neben: [kontext]
+  2026-10-09-repo-gstack-workflow:
+    haupt: frameworks
+    kernaussage: gstack dokumentiert Rollen und Browser-QA mit verschiedenen Änderungsrechten.
+    keywords: [gstack, Browser-QA, Rollen, Review, qa-only]
+    neben: [verifikation]
+  2026-10-09-repo-superpowers-workflow:
+    haupt: frameworks
+    kernaussage: Superpowers dokumentiert Designfreigabe, kleine Pläne, TDD und planbezogene Reviews.
+    keywords: [Superpowers, Designfreigabe, TDD, Review, Worktrees]
+    neben: [verifikation]
+  2026-10-09-satyanadella-2108627923888754862:
+    haupt: modelle-kosten
+    kernaussage: Satya Nadella stellt `Microsoft-Decision-1` für schnelle strukturierte Entscheidungen vor und nennt interne Tests sowie Vertriebskanäle.
+    keywords: [Microsoft-Decision-1, Foundry, JevBench, Accuracy, Kalibrierung, Latenz, Herstellerbenchmark]
+    neben: [verifikation]
+  2026-10-09-shadcn-2108574564586332615:
+    haupt: prototyping
+    kernaussage: shadcn berichtet am 09.10.2026 über verbesserte `DESIGN.md`-Unterstützung der `shadcn/ui`-Skills.
+    keywords: [shadcn/ui, DESIGN.md, Designsystem, Preset, Design Tokens, Typografieskala, Primitives]
+    neben: [skills, planung]
+  2026-10-09-voxyz_ai-2108543002830360775:
+    haupt: prototyping
+    kernaussage: Vox verbindet einen verlinkten Claude-Motion-Guide mit einem eigenen Prompt für `Opus 5.5` in Claude Code.
+    keywords: [Claude Motion, HyperFrames, Storyboard, Szenendauer, Projektmaterial, zentrale Parameter, Entwurfsrender, Render-Abnahme]
+    neben: [planung, verifikation]
+  2026-10-09-voxyz_ai-2108573215224160393:
+    haupt: autonomie
+    kernaussage: Vox beschreibt wiederkehrende Agent-Aufgaben und ergänzt seine Zusammenfassung eines verlinkten Anthropic-Guides um einen Audit-Prompt.
+    keywords: [Agent-Automationen, Quellen-Bookmark, Fortschrittsmarker, Zeitfenster, Lesefehler, Zustellbestätigung, Duplikatprüfung, Ausgabenobergrenze]
+    neben: [verifikation, sicherheit]
+  2026-10-10-developers-using-gpt-6-openai-api:
+    haupt: modelle-kosten
+    kernaussage: Der am 10.10.2026 archivierte OpenAI-Guide ergänzt die regionalen Verfügbarkeitsangaben gegenüber dem erfassten Stand vom 02.10.2026.
+    keywords: [GPT-6 Astra, GPT-6.1 Sol, GPT-6 Sol, GPT-6 Luna, Fast mode, Ultrafast, EU-Datenresidenz, regionale Modellverfügbarkeit]
+    neben: []
+  2026-10-10-repo-oh-my-mermaid-architektur:
+    haupt: frameworks
+    kernaussage: Oh-my-mermaid verbindet eine agentengestützte Codeanalyse mit einer dateibasierten Architekturkarte.
+    keywords: [Oh-my-mermaid, Architekturdokumentation, Codebase Understanding, Mermaid, Request-Lifecycle, rekursive Codeanalyse, Dateibelege]
+    neben: [planung, rolle-markt]

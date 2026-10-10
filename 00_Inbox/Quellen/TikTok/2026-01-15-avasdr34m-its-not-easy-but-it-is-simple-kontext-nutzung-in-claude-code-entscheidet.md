@@ -47,3 +47,7 @@ und das letzte is eigentlich das aller aller Wichtigste
 arbeite in Phasen. es gibt ne Research Phase, da legst du fest wie und was implementiert werden sollte und dann nimmst du n neuen Kontext in der implementierungsphase und setzt das ganze eben mit frischem Kontext um.
 
 Fragen gerne. in die Kommentare, hoffe das hilft.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-01-15-avasdr34m-its-not-easy-but-it-is-simple-kontext-nutzung-in-claude-code-entscheidet/02-video.mp4)

@@ -15,6 +15,7 @@ Einzelne Softwareprojekte liegen später in eigenen GitHub-Repositories. Dieses 
 | Health Check | `python 70_Scripts/company_os_healthcheck.py` |
 | Obsidian | Markdown, Wiki-Links und kurze Index-Dateien |
 | Knowledge-System | Patterns und Source-Notizen unter `80_Knowledge/`; Rohquellen nach Quelltyp unter `00_Inbox/Quellen/` |
+| KI-Kanalliste | [Interaktive HTML-Liste](docs/ki-quellen/index.html) mit Suche, Themenfiltern und Merkliste; aktualisieren mit `python ai.py social` |
 
 ## Was dieses Repo ist
 
@@ -73,6 +74,7 @@ Häufige Befehle:
 python ai.py health
 python ai.py new
 python ai.py skills
+python ai.py social
 python ai.py external
 python ai.py ingest <url-oder-pdf-pfad>
 python ai.py feeds list

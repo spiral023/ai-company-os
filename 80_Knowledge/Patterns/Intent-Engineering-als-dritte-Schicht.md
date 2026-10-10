@@ -33,11 +33,14 @@ Drei Entwicklungsstufen werden unterschieden: **Prompt Engineering** (Anweisung 
 - 2025-12-31 · [[2025-12-31-natebjones-seriously-not-worth-it-now]] · meinung — Gleicher Autor wie die Intent-Engineering-Quelle: Steuerung über Instruktionen und Guide Rails statt Modelländerung. Nur Standpunkt in 111 Sekunden, keine Methode und keine Belege.
 - 2026-09-13 · [[2026-09-13-stefanantonelli-du-brauchst-keinen-entwickler-um-mit-ki-etwas-zu-bauen]] · meinung — Erfahrene Fachleute lösen pro Anweisung rund zwölf Agent-Schritte aus, Anfänger fünf (Caption, Zahlen ungeprüft). Stützt die These, dass Domänenwissen die Absicht und Qualitätskriterien liefert.
 - 2026-02-20 · [[2026-02-20-boris-tane-sdlc-is-dead]] · meinung — These: Loop aus Intent, Kontext, Build, Observe; Kontextqualität bestimmt Ergebnis. Reine Position, Sekundärquelle.
+- 2026-09-05 · [[2026-09-05-waynesutton-2096296858343846261]] · meinung — UX, DX und Agent Experience als gemeinsame Entscheidungsziele benennen; ohne Gewichtung, Konfliktregeln und Eskalationskriterien entsteht noch keine organisatorische Zielhierarchie.
 
 ## Spannungen & offene Fragen
 
 - Einzige bisherige Quelle ist eine Video-Analyse eines einzelnen Autors, keine unabhängige Zweitquelle.
 - Offene Frage: Wie lässt sich Intent Engineering konkret in unser eigenes AGENTS.md-System übertragen — reicht die bestehende „Freigabe durch Philipp erforderlich“-Liste als Intent-Schicht, oder fehlt die explizite Trade-off-/Eskalationslogik dahinter?
+
+- Ergänzung 2026-10-10: [[2026-09-05-waynesutton-2096296858343846261]] benennt UX, DX und AX als gemeinsame Ziele, ohne Gewichtung oder Konfliktregeln. Diese Zielliste ergänzt Intent, ersetzt aber keine Priorisierung, Eskalationskriterien oder Regressionsprüfung.
 
 ## Verwandte Patterns
 

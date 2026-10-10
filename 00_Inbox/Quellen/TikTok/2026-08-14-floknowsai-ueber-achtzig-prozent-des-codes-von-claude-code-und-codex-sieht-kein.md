@@ -22,3 +22,7 @@ transkript: nicht verfügbar
 ## Caption
 
 Über achtzig Prozent des Codes von Claude Code und Codex sieht kein Mensch mehr an. Geprüft wird er von einem Agenten. Die Universität Toruń hat über 932.000 Pull Requests ausgewertet: 61,38 Prozent der KI-generierten hatten keine dokumentierte Review, von den geprüften wurden 58,77 Prozent nur von Agenten angesehen und 10,14 Prozent nur von Menschen. Hochgerechnet hat bei rund 84 Prozent kein Mensch draufgeschaut. Ein Agent meldet Fehler seltener, wenn sie im selben Gesprächsverlauf entstanden sind. Übergibst du die Prüfung frisch und mit deiner ursprünglichen Aufgabe, steigt die Endkorrektheit von 71,6 auf 89,7 Prozent. Das prüfende Modell muss dabei mindestens gleich stark sein. Zu den Tests: Nicht jede Änderung braucht einen Test, sondern jedes geänderte Verhalten. Ein Refactoring muss unter den unveränderten Tests grün bleiben. Passt ein Agent die Tests an, damit sie grün werden, ist das der Moment zum Hinsehen. Die Einstellung heißt "Require status checks to pass before merging", zu finden unter Settings, Rules, Rulesets.
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-08-14-floknowsai-ueber-achtzig-prozent-des-codes-von-claude-code-und-codex-sieht-kein/02-video.mp4)

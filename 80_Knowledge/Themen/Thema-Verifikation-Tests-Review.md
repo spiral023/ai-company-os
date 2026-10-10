@@ -1,6 +1,6 @@
 # Verifikation, Tests & Review
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates und getrennte Autor-/Prüfkontexte. Dazu gehören risikobasiertes Human Review, menschliche Verantwortung und Freigaben (Human in the Loop), Review-Kapazität sowie PR-Größe und Aufteilung in überschaubare Änderungen. Agent-Autonomie gehört hier hinein, soweit sie Prüf- und Freigabeentscheidungen betrifft; autonome Ausführung steht in autonomie, der gesamte Entwicklungsprozess in sdlc.
 
@@ -9,7 +9,7 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass; Codequalität mit KI und Menschen; Human in the Loop beim Code Review; Risikobasiertes Human Review; Agent-Autonomie und menschliche Freigaben; Große KI-generierte PRs prüfen; Pull Requests in prüfbare Änderungen aufteilen; Review-Kapazität bei parallelen Agents
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug? / Welche Änderungen brauchen menschliches Review und welche automatische Checks? / Wer trägt die Verantwortung, wenn ein Agent Code freigibt? / Was tun, wenn PRs zu groß für ein gründliches manuelles Review werden? / Wie begrenzt Review-Kapazität die Agent-Autonomie und Parallelisierung?
-- **Häufig in den Quellen:** test (12), testharness (9), tests (7), review (6), tdd (6), verifikation (5), human-in-the-loop (5), risikobasiertes human review (4), menschliche freigabe (4), skill (4), deep modules (3), verifier (3), /goal (3), qualität (3), auto mode (3), llm-as-judge (3), skill.md (3), gstack (3), retro (3), ai-native sdlc (3)
+- **Häufig in den Quellen:** test (13), testharness (10), review (9), tests (8), tdd (7), verifikation (5), human-in-the-loop (5), qualität (4), risikobasiertes human review (4), menschliche freigabe (4), skill (4), gstack (4), deep modules (3), verifier (3), /goal (3), verhaltensvergleich (3), auto mode (3), refactoring (3), llm-as-judge (3), skill.md (3)
 
 ## Verwandte Themen
 
@@ -21,22 +21,26 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - [[Thema-Sicherheit-Sandboxing]] — Sicherheit & Sandboxing
 - [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
 
-## Patterns (9)
+## Patterns (12)
 
 - [[Abstraktionswert-mit-Deletion-Test-pruefen]] · verifiziert · 2 Belege
+- [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]] · meinung · 1 Belege
 - [[Fachregel-Konsolidierung-vor-Featureaenderung]] · meinung · 1 Belege
-- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 1 Belege
+- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 2 Belege
 - [[Hillclimbing-mit-Holdout-Split]] · meinung · 3 Belege
+- [[Refactoring-mit-Verhaltensvergleich]] · meinung · 2 Belege
 - [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 1 Belege
 - [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 13 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 29 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 33 Belege
 - [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]] · verifiziert · 2 Belege
-- [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] · meinung · 1 Belege
+- [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] · meinung · 5 Belege
+- [[Zustandslose-CI-Listener-mit-Ergebnisjournal]] · meinung · 1 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Great-Decoupling-Rollenverstaendnis]], [[Kontrollierte-Agent-Parallelisierung]], [[Plan-first-mit-getrenntem-Review]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Great-Decoupling-Rollenverstaendnis]], [[Kontrollierte-Agent-Parallelisierung]], [[Plan-first-mit-getrenntem-Review]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Variantenvergleich-vor-Produktionsabnahme]]
 
-## Quellen (23)
+## Quellen (29)
 
+- [[2026-10-09-openai-refactoring]] — Kleine Refactoring-Schritte erhalten öffentliche Schnittstellen und werden am vereinbarten Verhalten geprüft.
 - [[2026-10-06-voxyz_ai-2107576635578855461]] — Vox schlägt eine Regel für `Claude Code` vor: Nach visuellen Codeänderungen prüft ein Subagent mit `codex-cu` die betroffenen Seiten im bereits freigegebenen Browser.
 - [[2026-10-05-repo-millionco-react-doctor-skill]] — Im Klon von millionco/react-doctor (Stand Commit `1b149bae`) liegt der Agent-Skill `skills/react-doctor/SKILL.md` (Version 1.2.0).
 - [[2026-10-05-repo-mattpocock-skills-retro]] — Im Klon von mattpocock/skills (Stand Commit `4588b32`, Version 1.3.1) liegt `retro` unter `skills/engineering/retro/SKILL.md`.
@@ -47,6 +51,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-10-01-mattpocockuk-2105563604384915639]] — Pocock schlägt vor, mit `/codebase-design` nach Shallow Modules zu suchen und den **Deletion Test** auf mögliche Entfernungskandidaten anzuwenden.
 - [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] — Anthropic beschreibt Prinzipien für Eval-Design und für das schrittweise Verbessern gegen ein Eval (Hillclimbing) und zeigt, wie die Befehle `/claude-api build-eval` und `/claude-api hillclimb` im `cl
 - [[2026-09-24-ai-engineer-matt-pocock-fixing-the-pr-bottleneck]] — Mehr Agent-Output verschärft den Review-Flaschenhals: deterministische Checks, ein separater Review-Agent mit Commits und risikobasiertes Human Review bremsen ihn in drei Stufen.
+- [[2026-09-14-voxyz_ai-2099528601557496220]] — Vox empfiehlt konkrete Handlungen und erwartete Ergebnisse für die Abnahme durch Agenten.
+- [[2026-09-14-claude-agentic-coding-is-straining-ci-here-s-how-we-sca]] — Sachin Malhotra beschreibt, wie Anthropic seine Test-Impact-Analyse nach mehreren kurzlebigen Patches neu aufbaute.
 - [[2026-08-25-vikingmute-2092059170812108811]] — Ein strenger Review-Skill sucht zuerst Vereinfachungen der Struktur statt Detailkritik, erzeugt aber bei Bestandscode schnell mehr Befunde, als sich abarbeiten lassen.
 - [[2026-08-19-matt-pocock-live-uncle-bob-on-software-fundamentals-in-the-a]] — Statt langer Regeltexte gehören deterministische Tools wie Mutation Testing und Komplexitätsmetriken in eine Agent-Schleife, weil Modelle lange Regeldokumente nur als Richtlinie behandeln.
 - [[2026-08-18-floknowsai-hoer-auf-den-code-deines-ki-agenten-zu-lesen]] — Autor und Prüfer müssen getrennt sein: Mutation Testing prüft die Tests selbst, ein zweiter Agent mit frischem Kontext bewertet Code und Testqualität.
@@ -55,6 +61,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-08-04-anthropic-docs-claude-code-best-practices]] — Anthropic empfiehlt Verifikation als vierstufige Eskalation vom Prompt über Goal-Evaluator und Stop-Hook bis zur zweiten Meinung durch ein frisches Modell, ergänzt um Plan-first und Session-Hygiene.
 - [[2026-08-02-promptgefluester-wenn-ihr-versucht-euer-software-projekt-mit-fable-five-oder-o-plus-5]] — Vor einem KI-Refactoring deterministische statische Analyse laufen lassen, toten Code entfernen und Architekturregeln festlegen, statt das Modell Abhängigkeiten selbst abgleichen zu lassen.
 - [[2026-07-26-promptgefluester-ich-hab-ne-unbequeme-wahrheit-und-zwar-ich-wurde-gefragt-wieso]] — Bei größeren Codebasen liefern dichte deterministische Prüfungen die Qualität, nicht das Modell allein, und kosten bewusst Zeit und Pflege.
+- [[2026-07-23-unclebobmartin-2080257779395154409]] — Robert C.
+- [[2026-07-23-colebemis-2080392348836790395]] — Cole Bemis empfiehlt, den Coding Agent annotierte Screenshots an einen Pull Request anhängen zu lassen.
+- [[2026-07-21-claudedevs-2079654423828304282]] — Anthropic beschreibt Sprachmigrationen anhand eines Zig-zu-Rust-Ports von Bun und eines Python-zu-TypeScript-Ports eines internen Werkzeugs.
 - [[2026-07-16-amasad-2077802290304684404]] — Replit-CEO Amjad Masad beschreibt, wie Replit zwischen Januar und Juni 2026 interne Agents in Engineering, Data, Sales, Marketing und Support eingeführt hat.
 - [[2026-07-01-0xcodila-2072329149520232639]] — Der X-Artikel erklärt Loops als Ziel, auf das ein Agent ohne Prompt pro Schritt hinarbeitet, und stützt sich auf Karpathys `autoresearch` und eine Bilevel-Arbeit.
 - [[2026-02-14-matt-pocock-skill-tdd-claude-code]] — Ein Test, eine Implementierung, wiederholen: Vertikale Tracer-Bullet-Zyklen verhindern, dass das Modell Tests umschreibt oder nur Mocks verifiziert.
@@ -63,6 +72,12 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-09-voxyz_ai-2108573215224160393]]
+- [[2026-10-09-voxyz_ai-2108543002830360775]]
+- [[2026-10-09-satyanadella-2108627923888754862]]
+- [[2026-10-09-repo-superpowers-workflow]]
+- [[2026-10-09-repo-gstack-workflow]]
+- [[2026-10-08-voxyz_ai-2108324058739745228]]
 - [[2026-10-07-unslothai-decision-model-finetuning]]
 - [[2026-10-05-repo-garrytan-gstack-retro]]
 - [[2026-10-05-repo-bmad-method-retrospective]]
@@ -71,12 +86,17 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-10-04-voxyz_ai-2106783910055006342]]
 - [[2026-10-04-emilkowalski-2106752670405099523]]
 - [[2026-10-02-voxyz_ai-2106006290954592332]]
+- [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]]
 - [[2026-09-27-voxyz_ai-2104224555040452925]]
 - [[2026-09-27-anthropic-academy-sdlc-playbook]]
 - [[2026-09-25-voxyz_ai-2103586663393853636]]
 - [[2026-09-25-trq212-2103576349499855160]]
+- [[2026-09-24-mattpocock-ai-coding-dictionary]]
 - [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]]
+- [[2026-09-15-emilkowalski-2099948779864793303]]
+- [[2026-09-14-shadcn-2099534231114314145]]
 - [[2026-09-14-code-test-plugins-with-evals-claude-code-docs]]
+- [[2026-09-12-darioamodei-2098773920774074715]]
 - [[2026-08-30-alex-sprogis-loop-graph-engineering-das-letzte-video-was-du-s]]
 - [[2026-08-05-floknowsai-dein-vibe-coding-projekt-bricht-nicht-am-coding-agent-zusammen-sondern]]
 - [[2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding]]

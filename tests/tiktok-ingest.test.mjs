@@ -18,6 +18,7 @@ import {
   tiktokTitle,
   buildTiktokSlug,
   formatTiktokNote,
+  attachLocalTiktokVideo,
 } from '../scripts/lib/tiktok-ingest.mjs';
 
 const VTT = [
@@ -39,6 +40,7 @@ test('parseArgs liest Eingabe und Optionen', () => {
     force: true,
     refetch: false,
     media: true,
+    video: true,
     gap: 1.5,
   });
 });
@@ -48,6 +50,22 @@ test('parseArgs: --refetch impliziert --force, --no-media schaltet Medien ab', (
   assert.equal(args.refetch, true);
   assert.equal(args.force, true);
   assert.equal(args.media, false);
+});
+
+test('--no-video lässt den Cover-Download aktiv', () => {
+  const args = parseArgs(['123', '--no-video']);
+  assert.equal(args.video, false);
+  assert.equal(args.media, true);
+});
+
+test('Video-Link ergänzt verarbeitete Notiz einmalig und erhält ihren Inhalt', () => {
+  const original = '---\r\nstatus: verarbeitet\r\nsource_notiz: 80_Knowledge/Sources/test.md\r\n---\r\n\r\n# Quelle\r\n\r\n## Transkript\r\n\r\nOriginaltext und eigene Notiz.\r\n';
+  const video = { file: '02-video.mp4', ok: true };
+  const updated = attachLocalTiktokVideo(original, 'test', video);
+  assert.ok(updated.startsWith(original.trimEnd()));
+  assert.match(updated, /\[Video lokal abspielen\]\(medien\/test\/02-video.mp4\)/);
+  assert.equal(attachLocalTiktokVideo(updated, 'test', video), updated);
+  assert.equal(attachLocalTiktokVideo(original, 'test', { ok: false }), original);
 });
 
 test('parseTiktokUrl liest Handle und ID, auch mit Query-Parametern', () => {

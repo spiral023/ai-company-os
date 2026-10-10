@@ -44,3 +44,7 @@ also pack diesen Plan so 1 dass er auf eine Serviette passt lass alles raus was 
 checkt diese Proms Aus Grüße gehen raus an den Leben lieben Manuel hints denn er hat diese Proms entwickelt mit Mir geteilt ich find die Welt Klasse deswegen wollt ich sie heute hier mit euch teilen hat er auf Link D gemacht ich Mach sie auf TikTok
 
 try it out hier macht euch n Screenshot im Hintergrund im Greenscreen müsstet ihrs äh ja gesehen haben viel Freude und Grüße bis zum nächsten Video servus tschau tschau
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-07-14-fredrikharkort-5-prompts-die-weh-tun/02-video.mp4)

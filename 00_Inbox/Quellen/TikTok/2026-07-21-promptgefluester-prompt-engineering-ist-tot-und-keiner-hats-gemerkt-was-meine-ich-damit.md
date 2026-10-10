@@ -45,3 +45,7 @@ und dann braucht ihr Skills die während des Prozesses beim Code schreiben beim 
 ich weiß es hört sich vielleicht n bisschen komplex an aber die Entwickler die hier zuschauen würden genau wissen was ich Mein das heißt vor einfach gesprochen macht euch nicht so viel Gedanken über prompt Engineering schaut euch die Skills an die ihr braucht und Skills Holt ihr euch am besten
 
 auf YouTube auf TikTok lasst euch die besten Skills anschauen und so wie ich das Mach is ich hab einen zentralen Skill den ich immer wieder einbinde und ich immer wenn ich neue Skills finde extrahier ich dort die coolen Features um meine Code Qualität zu verbessern nur so als Idee wenn ihr Fragen zu dem ganzen Thema promed Engineering oder zum Thema Skills habt schreibt gerne in die Kommentare und wenn euch das Thema generell interessiert dann lasst gern n Daumen hoch oder n also n Herzchen oder n Abo da dann kann ich euch auf diesem Kanal noch mehr Infos zu dem Thema bereit
+
+## Lokales Video
+
+[Video lokal abspielen](medien/2026-07-21-promptgefluester-prompt-engineering-ist-tot-und-keiner-hats-gemerkt-was-meine-ich-damit/02-video.mp4)

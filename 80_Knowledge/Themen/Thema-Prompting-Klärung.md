@@ -1,6 +1,6 @@
 # Prompting & Klärung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns, Voice-Prompting, Anweisungen bei Modellwechsel ausdünnen, Anti-Sycophancy.
 
@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), change quiz (2), known unknowns (2), progressive disclosure (2), skill descriptions (2), modellwechsel (2), überregulierung (2), gpt-6 astra (2), codex skill-creator (2), risikoanalyse, prompt-tricks, frühwarnsignale, sycophancy, pre-mortem prompt, ai agent zustimmungsneigung, spec grilling, projektplanung mit ai, spec-driven development, implementation notes
+- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), known unknowns (2), change quiz (2), voice prompting (2), skill descriptions (2), codex skill-creator (2), modellwechsel (2), überregulierung (2), progressive disclosure (2), gpt-6 astra (2), intent engineering (2), projektplanung mit ai, frühwarnsignale, prompt-tricks, risikoanalyse, ai agent zustimmungsneigung, pre-mortem prompt, spec grilling, sycophancy
 
 ## Verwandte Themen
 
@@ -21,17 +21,19 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 ## Patterns (3)
 
 - [[Fable-Unknowns-vor-Prompt-Qualitaet]] · meinung · 3 Belege
-- [[Intent-Engineering-als-dritte-Schicht]] · meinung · 4 Belege
-- [[Voice-Prompting-fuer-Kontextreichtum]] · meinung · 3 Belege
+- [[Intent-Engineering-als-dritte-Schicht]] · meinung · 5 Belege
+- [[Voice-Prompting-fuer-Kontextreichtum]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-statt-Generierung]], [[Handlungsbedarf-zuerst-im-Agent-Bericht]]
 
-## Quellen (7)
+## Quellen (9)
 
 - [[2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c]] — Bei Opus 5.5 helfen ein klares Ziel, eine einzige Stopp-Bedingung und eine Task-Datei, die Kontext-Zusammenfassungen überlebt; weniger Stopps brauchen Gates.
 - [[2026-09-14-developers-rethinking-skills-and-prompts-for-gpt-6-astra-op]] — Anweisungen veralten modellabhängig und schaden bei stärkeren Modellen aktiv; Skills als Router mit engen Triggern und schlanke AGENTS.md sind der Ausweg.
 - [[2026-09-07-sairahul1-2096902575035683147]] — Alte Prompts, die Testen und Selbstprüfen erzwingen, schaden stärkeren Modellen; gesteuert werden sollten Autonomie, Prioritäten, Verifikationsumfang und prüfbare Stop-Bedingungen.
+- [[2026-09-05-waynesutton-2096296858343846261]] — Wayne Sutton empfiehlt einen Prompt, der Entscheidungen zugleich an User Experience, Developer Experience und Agent Experience ausrichtet.
 - [[2026-09-04-pvncher-2095991462416490862]] — Bei stärkeren Modellen werden angesammelte Skills und AGENTS.md-Regeln zum Ballast: Descriptions kurz und triggerbasiert halten, Pflichtlektüre und Rezepte streichen.
+- [[2026-09-04-guinnesschen-2095920936172335278]] — Guinness Chen kündigt am 04.09.2026 an, dass Voice in bestehenden `Codex`-Chats verfügbar ist.
 - [[2026-07-14-fredrikharkort-5-prompts-die-weh-tun]] — Prompts, die Rückfragen und unbequemes Feedback erzwingen, verbessern Entscheidungen, hängen aber davon ab, wie viel Kontext die KI über Person und Geschäft hat.
 - [[2026-07-03-trq212-2073100352921215386]] — Die Qualität langer Fable-Aufgaben hängt laut Thariq daran, die Unknowns zwischen Prompt und Codebasis zu klären; Techniken vor, während und nach der Umsetzung, vom Blind Spot Pass bis zum Quiz vor dem Merge.
 - [[2026-05-02-vincentmumme-das-muesst-ihr-unbedingt-testen]] — Wer den Agenten aus der Rückschau auf ein gescheitertes Projekt argumentieren lässt, umgeht seine Zustimmungsneigung und deckt Risiken vor der Entwicklung auf.

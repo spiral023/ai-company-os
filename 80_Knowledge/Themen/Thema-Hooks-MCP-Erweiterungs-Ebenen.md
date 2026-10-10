@@ -1,6 +1,6 @@
 # Hooks, MCP & Erweiterungs-Ebenen
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-09. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook, MCP, Plugin) und wie Hooks, MCP-Server und Plugins konfiguriert werden.
 
@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), progressive disclosure (4), subagents (4), plugins (4), hooks (4), claude code skills (3), pretooluse (3), mcp (3), hook (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), plugin (2), codex (2), erweiterung (2), /doctor (2), agents.md (2)
+- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), subagents (4), progressive disclosure (4), hooks (4), plugins (4), claude code skills (3), pretooluse (3), mcp (3), hook (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), plugin (2), codex (2), erweiterung (2), /doctor (2), agents.md (2)
 
 ## Verwandte Themen
 
@@ -20,7 +20,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 
 ## Patterns (4)
 
-- [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 5 Belege
+- [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 6 Belege
 - [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 18 Belege
 - [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 7 Belege
 - [[MCP-Code-Execution-statt-Tool-Definitionen]] · meinung · 4 Belege
