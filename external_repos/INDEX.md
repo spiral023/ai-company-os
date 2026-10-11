@@ -46,6 +46,7 @@ Lokale Referenzbibliothek geklonter GitHub-Repos für AI-gestützte Produkt- und
 | Dateien (PDF, Office, Bilder, Audio) für LLM-Pipelines vorbereiten | [microsoft/markitdown](#microsoftmarkitdown) | Konvertierung diverser Formate nach Markdown, als CLI, Python-API oder MCP-Server |
 | Eigene Skills entwickeln | [anthropics/skills](#anthropicsskills), [mattpocock/skills](#mattpocockskills), [addyosmani/agent-skills](#addyosmaniagent-skills) | Offizielles Format, kleine komponierbare Skills und disziplinierte Skill-Anatomien |
 | Fremde Skills vor der Installation prüfen | [NVIDIA/SkillSpector](#nvidiaskillspector) | Statischer Security-Scan, optionales LLM-Review, Risk Score und SARIF-Reports |
+| Qualität und Nutzen eigener Skills messen | [NVIDIA/skillevaluator](#nvidiaskillevaluator) | Qualitätsprüfungen, semantische Duplikaterkennung und Vergleichsläufe mit und ohne Skill |
 | Skills installieren und verteilen | [vercel-labs/skills](#vercel-labsskills), [wshobson/agents](#wshobsonagents) | Multi-Agent-Installer und Beispiele für Multi-Harness-Distribution |
 | Skills passend zum Stack auswählen | [midudev/autoskills](#midudevautoskills), [davila7/claude-code-templates](#davila7claude-code-templates) | Stack-Erkennung mit verifizierter Registry beziehungsweise großer Komponenten-Katalog |
 | Ein großes Skill- oder Plugin-System aufbauen | [wshobson/agents](#wshobsonagents), [affaan-m/ECC](#affaan-mecc), [alirezarezvani/claude-skills](#alirezarezvaniclaude-skills), [msitarzewski/agency-agents](#msitarzewskiagency-agents) | Plugin-Architektur, Generierung für mehrere Harnesses, Evals, Security und große Skill-Kataloge |
@@ -98,6 +99,7 @@ Skill-Format, große Skill-Ökosysteme, Auswahl, Installation und Security-Prüf
 | [davila7/claude-code-templates](#davila7claude-code-templates) | Claude-Code-Komponenten recherchieren | Großer Katalog für Agents, Commands, MCPs, Settings, Hooks und Skills | Sammlung / Marketplace | `external_repos/davila7/claude-code-templates/` |
 | [midudev/autoskills](#midudevautoskills) | Passende Skills automatisch zum Tech-Stack wählen | Stack-Scan, kuratierte Registry, SHA-256-Verifikation und Lockfile | Tool / Sammlung | `external_repos/midudev/autoskills/` |
 | [msitarzewski/agency-agents](#msitarzewskiagency-agents) | Breite Business-/Domänen-Personas über viele Tools verteilen | ~250 Agenten in 17 Divisions, Konvertierungspipeline für 8+ Tools, Desktop-Installer | Sammlung | `external_repos/msitarzewski/agency-agents/` |
+| [NVIDIA/skillevaluator](#nvidiaskillevaluator) | Qualität und tatsächlichen Nutzen von Agent-Skills evaluieren | Drei Prüfstufen, synthetische Eval-Datasets, Skill Lift und Harbor-Agentenläufe | Tool | `external_repos/NVIDIA/skillevaluator/src/skillevaluator/` |
 | [NVIDIA/SkillSpector](#nvidiaskillspector) | Agent-Skills und MCPs sicherheitlich prüfen | 68 statische Muster, optionales LLM-Review, Baselines, JSON/Markdown/SARIF | Tool | `external_repos/NVIDIA/SkillSpector/` |
 | [vercel-labs/skills](#vercel-labsskills) | Skills über viele Coding-Agenten installieren | Quellcode der `npx skills`-CLI und Agent-Erkennung | Tool | `external_repos/vercel-labs/skills/src/` |
 | [wshobson/agents](#wshobsonagents) | Ein Multi-Harness-Plugin-Ökosystem untersuchen | Viele Agents, Skills und Commands, Generatoren sowie mehrstufige Evals | Sammlung / Marketplace | `external_repos/wshobson/agents/plugins/` |
@@ -251,10 +253,10 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 <!-- OVERVIEW:START (automatisch generiert von 70_Scripts/update_external_repos.py — nicht von Hand bearbeiten) -->
 ## Übersicht
 
-- **Repos gesamt:** 64
-- **Gesamtgröße:** ca. 2.502 MB
-- **Dateien gesamt:** ca. 120.461 (ohne `.git`)
-- **Stand:** 2026-10-10
+- **Repos gesamt:** 65
+- **Gesamtgröße:** ca. 2.512 MB
+- **Dateien gesamt:** ca. 120.872 (ohne `.git`)
+- **Stand:** 2026-10-11
 
 | Repo | Dateien | Größe | ⭐ |
 |---|---:|---:|---:|
@@ -293,6 +295,7 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 | github/spec-kit | 873 | 13M | 140.208 |
 | thedaviddias/Front-End-Checklist | 1.977 | 12M | 74.367 |
 | anthropics/skills | 441 | 11M | 179.738 |
+| NVIDIA/skillevaluator | 411 | 10M | 560 |
 | wshobson/agents | 1.150 | 8,1M | 40.212 |
 | vercel-labs/agent-skills | 447 | 7,6M | 31.953 |
 | NVIDIA/SkillSpector | 421 | 7,4M | 19.428 |
@@ -878,6 +881,19 @@ Das Repository ist kein Code- oder Anwendungsprojekt, sondern ein einzelnes Prom
 - **Struktur:** Monorepo mit Desktop-/Daemon-Code in `apps/`, wiederverwendbaren Skills, Templates und Datenbanken in `skills/`, `design-templates/`, `design-systems/`, `prompt-templates/` und `data/`; Provider-Ausgaben in `.claude/` <!-- manual -->
 
 Open Design positioniert sich als Open-Source-Alternative zu Claude Design und als agent-native, lokale Design-Umgebung für macOS und Windows. Statt eines klassischen Canvas-Editors organisiert es einen Dateibestand aus Skills, `DESIGN.md`-Designsystemen, Templates und Plugins; ein Coding-Agent erzeugt daraus reale Artefakte. Das Studio kann Web-, Desktop- und Mobile-Prototypen, editierbare Live-Dashboards, HTML-basierte Decks, Bilder sowie Video-/HyperFrame-Animationen erzeugen und nach HTML, PDF, PPTX oder MP4 exportieren. Die lokale Desktop-App kann über CLI und MCP mit zahlreichen Agenten wie Claude Code, Codex, Cursor, OpenCode, Copilot und Gemini verbunden werden; alternativ bietet sie eine BYOK-Proxy-Schicht oder den neuen Managed-Dienst „Open Design Cloud" (nutzungsbasiert abgerechneter Zugriff auf 20+ Modelle von GPT, Claude, Gemini und DeepSeek ohne eigene API-Keys). Seit Version 0.13.0 überstehen lange Design-Sessions Unterbrechungen besser: Runs bei Codex, OpenCode, Pi und Open Design Cloud lassen sich über mehrere Turns fortsetzen, ergänzt um einen verbesserten Modellwähler und direkten Screenshot-Export nach PPTX/PDF. Besonders interessant sind die explizite Brand-Contract-Datei `DESIGN.md`, das breite Template-/Prompt-Material und die Plugin-Architektur. Relevant als große Referenz für einen nachvollziehbaren „Brief → Designsystem → Artefakt → Kritik → Export“-Workflow und dafür, wie Skills als Produktoberfläche nutzbar werden. Der Umfang, eingebundene Drittinhalte, Modellprovider und die Proxy-/MCP-Integration machen es jedoch zu einer Referenzquelle, nicht zu einem ungeprüften Standard-Plugin. Apache-2.0-lizenziert.
+
+---
+
+## NVIDIA/skillevaluator
+
+- **URL:** https://github.com/NVIDIA/SkillEvaluator
+- **Stars:** ⭐ 560
+- **Heruntergeladen:** 2026-10-11
+- **Zuletzt aktualisiert:** 2026-10-11
+- **Dateien:** 411 · **Größe:** 10M
+- **Struktur:** Python-CLI und Evaluationspipeline in `src/skillevaluator/`, Dokumentation in `docs/`, Tests in `tests/` und CI-Prüfwerkzeuge in `scripts/`; Referenz-Skills unter `src/skillevaluator/tier3/reference_skills/`, kein installierbares Skill-Pack <!-- manual -->
+
+NVIDIAs SkillEvaluator ist ein experimentelles Open-Source-Framework zur Bewertung von Agent-Skills. Es verbindet drei unabhängig ausführbare Prüfstufen: Tier 1 kontrolliert Format, Qualität, Abhängigkeiten und Sicherheitsbefunde; Tier 2 erkennt wiederholte oder semantisch überlappende Anweisungen innerhalb eines Skills und optional gegenüber einem lokalen Katalog; Tier 3 untersucht mit paarweisen Agentenläufen mit und ohne Skill den tatsächlichen Leistungsbeitrag („Skill Lift“). Dafür lassen sich synthetische Eval-Datasets erzeugen, vorhandene Aufgaben wiederverwenden und Berichte für nachvollziehbare Entscheidungen erstellen. Technisch ist Version 0.5.0 eine Python-CLI für Python 3.12/3.13 mit Click, Pydantic und optionalen Provider-Clients. Die Live-Evaluation nutzt Harbor und standardmäßig Docker; unterstützt werden unter anderem Codex, Claude Code und OpenCode. Die Basisinstallation ermöglicht statische Prüfungen, während zusätzliche Scanner wie SkillSpector, Semgrep und Gitleaks die Sicherheitsabdeckung erweitern. Für unser Repo ist das eine Referenz für messbare Skill-Qualität und wiederholbare Eval-Gates, ergänzend zum bereits vorhandenen SkillSpector. Einstiegspunkte sind `README.md`, `pyproject.toml`, die drei Tier-Module und die Referenz-Skills. Die Qualität der Aufgaben und Bewertungsregeln bestimmt die Aussagekraft; ein automatisch erzeugter Starterfall liefert nur begrenzte Abdeckung. LLM-Prüfungen, Embeddings und Agentenläufe benötigen Provider-Zugriff, können Inhalte übertragen und Kosten verursachen. Das Projekt bezeichnet seinen Support als experimentell. Lizenz laut Repository: Apache-2.0; Drittanbieterhinweise stehen in `THIRD_PARTY_NOTICES.md`. Vorerst ausschließlich lokale Analyse-Referenz, ohne Installation oder Ausführung fremder Scripts.
 
 ---
 
