@@ -38,6 +38,7 @@ Drei Entwicklungsstufen werden unterschieden: **Prompt Engineering** (Anweisung 
 - 2026-04-12 · [[2026-04-12-digitale-profis-so-ersetzt-du-dein-unternehmen-mit-ki-agenten-pa]] · meinung — Das Onboarding verbindet eine Mission mit Agentenrollen und Anweisungen, während der Mensch Agentenvorschläge genehmigt oder überarbeiten lässt. Diese Ausgangsstruktur belegt noch keine vollständige Zielhierarchie, fachliche Abnahme oder präzise Grenze erlaubter Entscheidungen.
 - 2026-04-01 · [[2026-04-01-ai-mit-arnie-claude-code-und-paperclip-aendern-alles]] · meinung — Arnie verbindet Rollen und proaktive Aufgaben mit einer Unternehmensmission. Der Content-Agent erzeugt jedoch schon Skripte, obwohl der Autor noch nichts erstellen wollte; das zeigt im Beispiel die Grenze eines Ziels ohne ausreichend konkrete Handlungs- und Prioritätsregeln.
 - 2026-04-03 · [[2026-04-03-julian-ivanov-ki-automat-ich-habe-eine-firma-ohne-menschen-gebaut-papercl]] · meinung — Ivanov verbindet eine menschlich vorgegebene Mission mit Rollen, Berichtslinien und zielbezogenen Aufgaben. Das Tutorial erklärt die organisatorische Zuordnung, misst aber weder Zieltreue noch verringerte menschliche Steuerung.
+- 2026-10-10 · [[2026-10-10-boristane-self-improving-software-is-inevitable]] · meinung — Verlangt explizite Fitnessfunktionen, harte Grenzen und Zielgewichtungen vor Agent-Optimierung; Backpropagation ist eine Analogie ohne gemessene Umsetzung.
 
 ## Spannungen & offene Fragen
 

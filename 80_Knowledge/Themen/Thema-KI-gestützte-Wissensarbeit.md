@@ -9,7 +9,7 @@ Quellen aufnehmen, aufbereiten, wiederfinden und regelmäßig pflegen: Markdown-
 - **Hauptkeyword:** Wissensmanagement mit KI
 - **Long-Tail:** Obsidian und Claude Code; Markdown-Wissensvault pflegen; RAG mit OCR und Tabellen; RAG Quellen aktualisieren; Videoanalyse mit Frames und Transkript; KI-Betriebssystem für Wissensarbeit
 - **Fragen:** Wie wird aus einer Inbox nutzbares KI-Wissen? / Wann brauche ich RAG, Tabellenabfragen oder das vollständige Dokument? / Wie bleiben automatisch erzeugte Wissensnotizen nachvollziehbar? / Was ergänzen Bildframes zu einem Videotranskript?
-- **Häufig in den Quellen:** quellenlebenszyklus (2), volltextpfad (2), ocr (2), rag (2), tabellenabfragen (2), weekly review (2), wissenspflege (2), daily notes (2), inbox-routing (2), zeitmarken (2), bildframes (2), videoanalyse (2), transkript (2), szenenprüfung (2), obsidian, ki-betriebssystem, routinen, ausführungsort, wissen, skills
+- **Häufig in den Quellen:** volltextpfad (3), rag (3), quellenlebenszyklus (2), tabellenabfragen (2), ocr (2), daily notes (2), wissenspflege (2), weekly review (2), inbox-routing (2), zeitmarken (2), bildframes (2), szenenprüfung (2), transkript (2), videoanalyse (2), obsidian, skills, ki-betriebssystem, ausführungsort, wissen, routinen
 
 ## Verwandte Themen
 
@@ -23,7 +23,7 @@ Quellen aufnehmen, aufbereiten, wiederfinden und regelmäßig pflegen: Markdown-
 
 - [[RAG-mit-Text-Tabellen-und-Volltextpfad]] · meinung · 1 Belege
 - [[Videoanalyse-mit-Frames-und-Transkript]] · meinung · 1 Belege
-- [[Wissenspflege-mit-Inbox-und-Review]] · meinung · 3 Belege
+- [[Wissenspflege-mit-Inbox-und-Review]] · meinung · 4 Belege
 
 ## Quellen (4)
 
@@ -31,3 +31,8 @@ Quellen aufnehmen, aufbereiten, wiederfinden und regelmäßig pflegen: Markdown-
 - [[2026-06-07-julian-ivanov-ki-automat-so-laesst-du-claude-jedes-video-fuer-dich-anscha]] — Transkript und zeitmarkierte Bildframes ergänzen sich bei Videoanalyse; ausgewählte Szenen belegen keine vollständige visuelle Sichtung.
 - [[2026-03-29-julian-ivanov-ki-automat-obsidian-claude-code-so-baust-du-dein-zweites-ge]] — Inbox-Routing, Tagesnotizen und regelmäßige Reviews strukturieren den Markdown-Wissensvault; die gezeigte Arbeitsweise belegt keine automatische Qualitätssteigerung.
 - [[2025-09-22-julian-ivanov-ki-automat-das-ultimative-rag-system-n8n-nextcloud-mistral]] — Die RAG-Demo verbindet Textsuche, Tabellenabfragen und Volltextnachladen über Datei-IDs; Antwortqualität und Wiederanlauf benötigen zusätzliche Prüfung.
+
+## Quellen mit diesem Thema als Nebenthema
+
+- [[2026-10-09-lukepierceops-2108655186080342138]]
+- [[2025-06-23-boristane-context-engineering-is-what-makes-ai-magical]]

@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), subagents (4), claude code skills (4), progressive disclosure (4), hooks (4), plugins (4), pretooluse (3), mcp (3), hook (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2), plugin (2), codex (2), erweiterung (2)
+- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), claude code skills (4), subagents (4), progressive disclosure (4), hooks (4), mcp (4), plugins (4), erweiterung (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2), plugin (2)
 
 ## Verwandte Themen
 
@@ -21,14 +21,16 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 ## Patterns (4)
 
 - [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 8 Belege
-- [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 22 Belege
+- [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 24 Belege
 - [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 8 Belege
 - [[MCP-Code-Execution-statt-Tool-Definitionen]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Hook-erzwungene-Skill-Aktivierung]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]
 
-## Quellen (15)
+## Quellen (17)
 
+- [[2026-10-11-developers-codex-as-a-platform-build-on-the-open-agent-harn]] — OpenAI beschreibt Codex als offene Ausführungsschicht für eigene Produkte, nicht nur als App, CLI oder IDE-Erweiterung.
+- [[2026-10-10-voxyz_ai-2108905392776360333]] — Vox ordnet fünfzehn Repositories den Aufgaben Launchvideo, Schnitt, animierter Kurzfilm und Webanimation zu.
 - [[2026-10-05-repo-claude-code-doctor-insights]] — Aus `CHANGELOG.md` von anthropics/claude-code (Stand 2.1.289).
 - [[2026-10-02-voxyz_ai-2106006290954592332]] — Vox bündelt `Claude Code`-Befehle zu einem Wartungsplan gegen Duplikate, Strukturdrift und veraltete Regeln.
 - [[2026-10-02-repo-anthropics-claude-code]] — Laut `CHANGELOG.md` (Eintrag 2.1.287, Repo-Stand Commit `52c76441`) gibt es „Claude Mods“, also Plugins, die tieferes Verhalten ändern dürfen.
@@ -47,11 +49,13 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-E
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-10-voxyz_ai-2109026189298012522]]
 - [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]]
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]]
 - [[2026-10-02-repo-jakubantalik-transitions-dev]]
 - [[2026-09-18-repo-anthropics-claude-code-agents-md-support]]
 - [[2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk]]
+- [[2026-08-13-openai-2087912623883051300]]
 - [[2026-08-09-julian-ivanov-ki-automat-5-claude-code-skills-die-dir-wirklich-arbeit-abn]]
 - [[2026-06-18-julian-ivanov-ki-automat-bau-dir-dein-ki-betriebssystem-mit-claude-code-k]]
 - [[2026-04-30-zodchiii-claude-code-env-security]]

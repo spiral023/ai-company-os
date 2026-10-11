@@ -50,6 +50,8 @@ Der Lebenszyklus eines Skills läuft über: Ziel/Scope klären → Entwurf schre
 
 - 2026-09-20 · [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] · meinung — Modell- und Regeländerungen gegen 20 bis 50 reale Aufgaben mit erwarteten Ergebnissen in CI prüfen; Agent-Evals von Anwendungstests unterscheiden. Empfehlung aus dem Anthropic-Playbook, keine unabhängige Validierung der Startgröße.
 - 2026-07-17 · [[2026-07-17-reach_vb-2078108681678299194]] · meinung — Eigene vergangene Sitzungen liefern Fälle für die Prüfung und regelmäßige Anpassung von Workflow-Skills. Der Screenshot zeigt die Planung eines wiederholbaren Evals, aber keine abgeschlossenen Ergebnisse; beobachtetes Verhalten braucht eigenständige Erfolgskriterien.
+- 2026-08-14 · [[2026-08-14-mattpocockuk-2088256432265167185]] · meinung — Überträgt die Gotchas-Regel auf Review: reale Agent-Fehler werden zu repo-spezifischen CODING_STANDARDS-Regeln; keine deterministische Erzwingung oder Wirksamkeitsmessung.
+- 2026-08-19 · [[2026-08-19-developer-evaluating-ai-agent-skill-performance-with-nvidi]] · meinung — NVIDIA operationalisiert Skill-Prüfung in Struktur/Sicherheit, Überlappung und isolierten Vergleichsläufen mit und ohne Skill. Die publizierten Ergebnisse zeigen Nutzen auf NVIDIA-Produktaufgaben, ersetzen aber keine eigenen Evaluationsfälle und Wiederholungen.
 
 ## Spannungen & offene Fragen
 

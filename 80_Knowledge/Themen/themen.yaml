@@ -161,6 +161,17 @@ cluster:
       longtail: ["KI-Gefahren für Kinder", "Risiken von KI-Chatbots", "KI und kritisches Denken", "KI-gestützte Hackerangriffe", "Sicherheitsvorfälle mit KI-Agents", "Hugging Face KI-Vorfall", "Sandbox Escape bei AI-Evaluierungen", "KI-Warnungen und belegte Vorfälle unterscheiden", "Kontrollverlust durch KI", "Existenzielle KI-Risiken", "KI zur Verteidigung gegen KI"]
       fragen: ["Welche KI-Risiken sind belegt und welche sind Warnungen?", "Welche Risiken betreffen Minderjährige besonders?", "Welche Rolle hatte KI bei einem Angriff: Werkzeug, Zielsystem oder handelnder Agent?", "Was lässt sich aus konkreten KI-Sicherheitsvorfällen lernen?"]
 
+  ki-anwendungen-forschung:
+    name: "KI-Anwendungen & Forschung"
+    beschreibung: "Konkrete Anwendungen von KI außerhalb der Softwareentwicklung, insbesondere Medizin und wissenschaftliche Forschung: Einsatzrolle, Verfahren, Studienlage und Grenzen. Hersteller-Topline, veröffentlichte Studie und allgemeine Zukunftsbehauptung unterscheiden. Modellbenchmarks gehören zu modelle-kosten, Risikoszenarien zu ki-risiken."
+    kern: [ki-anwendungen, ai for science, ki in der medizin, medizinische ki, wissenschaftliche forschung, klinische studie, klinische studien, phase 2b, phase 3, neoantigen, neoantigene, mrna, intismeran, interpath, interpath-001]
+    weit: [medizin, forschung, therapie, immuntherapie, melanoma, melanom, kontrollgruppe, randomisiert, studienphase, topline]
+    verwandt: [rolle-markt, ki-risiken, verifikation]
+    blog:
+      hauptkeyword: "KI-Anwendungen und Forschung"
+      longtail: ["KI in der Medizin", "KI in wissenschaftlicher Forschung", "Klinische KI-Ergebnisse einordnen", "KI-Studien und Herstellerankündigungen unterscheiden"]
+      fragen: ["Welche Rolle hatte KI in einer konkreten Anwendung?", "Welche Ergebnisse sind veröffentlicht und welche nur angekündigt?", "Welche Grenzen hat die Übertragung auf andere Anwendungen?"]
+
   frameworks:
     name: "Workflow-Frameworks & Tools"
     beschreibung: "Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Matt Pococks Skills, Superpowers, GSD, gstack, Everything Claude Code, Terminal- und Multiplexer-Tools."

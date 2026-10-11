@@ -52,6 +52,7 @@ Die Komposition umfasst auch Infrastruktur: `/setup-matt-pocock-skills` schreibt
 
 - 2026-10-09 · [[2026-10-09-repo-superpowers-workflow]] · meinung — Das gesichtete README beschreibt einen umfangreichen Ablauf aus Skills und Übergaben. Er liefert Auswahlkriterien nach dem konkreten Engpass, aber keinen gemessenen Vorteil gegenüber einer kurzen lokalen Anweisung. Einrichtung und Pflege müssen mitbewertet werden.
 - 2026-10-09 · [[2026-10-09-repo-gstack-workflow]] · meinung — Das gesichtete README beschreibt mehrere Rollen und aufeinander aufbauende Arbeitsergebnisse. Welche Rollen gebraucht werden, muss an der konkreten Aufgabe geprüft werden; kein eigener Vergleich der Wirksamkeit.
+- 2026-10-11 · [[2026-10-11-developers-codex-as-a-platform-build-on-the-open-agent-harn]] · meinung — Ein begrenzter Hintergrundjob kann laut Hersteller mit `codex exec` auskommen; programmatische Fortsetzung nutzt das SDK und ein interaktives Produkt mit Gesprächs- und Freigabe-Lifecycle `app-server`. Diese Auswahl begrenzt Integrationsaufwand anhand realer Produktanforderungen, ohne aus dem Beispiel bereits eine neue Integration abzuleiten.
 
 ## Spannungen & offene Fragen
 

@@ -9,7 +9,7 @@ Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Mat
 - **Hauptkeyword:** Claude Code Workflow
 - **Long-Tail:** Superpowers vs. GSD; Matt Pocock Skills Wayfinder; gstack Claude Code; Everything Claude Code; Agent Framework Vergleich; cmux Terminal für Agents
 - **Fragen:** Welches Workflow-Framework passt zu mir? / Brauche ich ein Framework oder reichen eigene Skills?
-- **Häufig in den Quellen:** wayfinder (7), gstack (5), matt pocock skills (5), spec-driven development (4), superpowers (4), review (4), tdd (3), gsd (2), plan-first (2), everything claude code (2), gsd-map-codebase (2), claude code skills (2), grill-me (2), to-spec (2), implement (2), to-tickets (2), planung (2), live-reload (2), menschliche-pruefung (2), cli (2)
+- **Häufig in den Quellen:** wayfinder (7), gstack (5), matt pocock skills (5), spec-driven development (4), review (4), superpowers (4), tdd (3), gsd (2), plan-first (2), everything claude code (2), gsd-map-codebase (2), claude code skills (2), grill-me (2), to-tickets (2), implement (2), to-spec (2), planung (2), cli (2), live-reload (2), live-ansicht (2)
 
 ## Verwandte Themen
 

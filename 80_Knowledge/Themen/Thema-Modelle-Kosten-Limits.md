@@ -9,7 +9,7 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 - **Hauptkeyword:** Claude Code Kosten
 - **Long-Tail:** Claude Code Usage Limits; Kosten pro Task statt pro Token; Prompt Caching Claude Code; Claude Code mit lokalem Modell; Reasoning Effort wählen; Modell-Eskalation günstig nach teuer
 - **Fragen:** Welches Modell für welche Aufgabe? / Warum sind meine Limits so schnell leer?
-- **Häufig in den Quellen:** modell-eskalation (30), modell (28), effort (21), kosten (20), benchmark (18), preis (16), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), preise (8), intelligence index (7), sonnet (7), opus 5.5 (7), pareto (6), anthropic_base_url (4), cost per task (4), /compact (4)
+- **Häufig in den Quellen:** modell-eskalation (31), modell (29), kosten (21), effort (21), benchmark (19), preis (17), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), preise (8), intelligence index (7), pareto (7), sonnet (7), opus 5.5 (7), anthropic_base_url (4), cost per task (4), /compact (4)
 
 ## Verwandte Themen
 
@@ -19,17 +19,19 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 - [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
 - [[Thema-Open-Source-LLMs-lokale-Modelle]] — Open-Source-LLMs & lokale Modelle
 
-## Patterns (4)
+## Patterns (5)
 
 - [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 4 Belege
 - [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 10 Belege
-- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 48 Belege
+- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 49 Belege
+- [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]] · meinung · 1 Belege
 - [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]]
 
-## Quellen (56)
+## Quellen (58)
 
+- [[2026-10-10-voxyz_ai-2109056129884123370]] — Vox empfiehlt längere Prompt-Caches für Subagents, die auf Builds oder Tests warten.
 - [[2026-10-10-developers-using-gpt-6-openai-api]] — Der am 10.10.2026 archivierte OpenAI-Guide ergänzt die regionalen Verfügbarkeitsangaben gegenüber dem erfassten Stand vom 02.10.2026.
 - [[2026-10-09-satyanadella-2108627923888754862]] — Satya Nadella stellt `Microsoft-Decision-1` für schnelle strukturierte Entscheidungen vor und nennt interne Tests sowie Vertriebskanäle.
 - [[2026-10-09-openrouter-2108689756372775370]] — OpenRouter meldet `Microsoft-Decision-1` als verfügbar und nennt Preis, Kontextumfang und Microsoft-Benchmarkzahlen.
@@ -60,6 +62,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-09-22-artificialanlys-2102438210798514391]] — Opus 5.5 führt den Intelligence Index bei niedrigerem Listenpreis, verbraucht aber mehr Tokens; maßgeblich sind Kosten pro Task, nicht der Preis pro Million Token.
 - [[2026-09-20-avichawla-2101563610644496464]] — Avi Chawla zeigt, wie sich ein offenes LLM ohne Training als schnelle lokale Entscheidungsmaschine nutzen lässt, wenn die erlaubten Antworten vorab feststehen: Statt Text zu erzeugen, liest der Server
 - [[2026-09-18-akshay_pachaar-2101037514945597645]] — Kleine Urteile in Agent-Schleifen brauchen kein generatives LLM: ein typisiertes, kalibriertes Entscheidungsmodell liefert Wahrscheinlichkeiten, Schwellen und Verzweigung bleiben im Code.
+- [[2026-09-14-arena-2099606881845321841]] — Arena berichtet für `DeepSeek-V4.1-Flash (Max)` eine günstige Position auf der eigenen Pareto-Grenze.
 - [[2026-08-14-claude-maximizing-the-value-of-your-claude-code-session]] — Tool-Outputs bleiben in jedem Folgeturn im Kontext, und Modell- oder Effort-Wechsel sowie Compact entwerten den Prompt Cache, daher Sitzungen aufgabenweise mit /clear führen.
 - [[2026-08-07-theaicareercoach-vor-einem-jahr-noch-teuer-heute-fast-geschenkt-die-preise-fuer-ki]] — Ein Creator (Norman, Daten- und KI-Leiter einer Beratung) meldet Anfang August 2026 eine Preissenkung von OpenAI und nennt drei Treiber für sinkende Modellpreise.
 - [[2026-08-03-floknowsai-die-preise-fuer-ki-fallen-wirklich-und-trotzdem-ist-dein-limit-genauso]] — Trotz fallender Preise für festes Können bleibt das Limit gleich schnell leer, weil Kontextlänge, Denkstufe, Tokenizer, Subagents und Langläufer den Verbrauch pro Aufgabe erhöhen.
@@ -100,6 +103,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-09-14-shadcn-2099534231114314145]]
 - [[2026-09-09-voxyz_ai-2097814698204832116]]
 - [[2026-09-01-ai-mit-arnie-lokale-ki-kauf-nicht-die-falsche-hardware]]
+- [[2026-08-19-developer-evaluating-ai-agent-skill-performance-with-nvidi]]
 - [[2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo]]
 - [[2026-07-31-unslothai-2083231049434435596]]
 - [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]]

@@ -30,6 +30,7 @@ Den Ablauf von UI oder Eingangsdaten durch Validierung, Business-Logik und Persi
 - 2026-10-09 · [[2026-10-09-openai-codebase-onboarding]] · meinung — offizielle Anleitung zu begrenzter Analyse von Datenfluss und Zuständigkeiten, ohne eigene Qualitätsmessung.
 - 2025-06-28 · [[2025-06-28-the-morpheus-tutorials-ai-ersetzt-uns-itler-jetzt-also]] · meinung — Ein eigener Agent verfolgt Aufrufe und betroffene Funktionen, bevor ein anderer implementiert. Unzutreffende Issues können damit vor einer Änderung geschlossen werden; das persönliche Beispiel liefert keine allgemeine Erfolgsquote.
 - 2026-10-05 · [[2026-10-05-venelin-valkov-stop-ai-code-slop-yes-you-still-need-to-refactor]] · meinung — Eine Rückfrage korrigiert die ursprüngliche Vermutung, die Seite rendere pro Token: Tatsächlich beschreibt der Review eine regelmäßig laufende Aktualisierungsschleife. Die daraus abgeleitete Maßnahme isoliert Streaming-Abonnements in Blattkomponenten und benachrichtigt bei Änderungen; der gezeigte Code wurde hier nicht unabhängig geprüft.
+- 2026-10-11 · [[2026-10-11-voxyz_ai-2109297975013081587]] · meinung — Erweitert die Untersuchung auf beobachtbare App-Funktionen und fordert Datei-/Funktions-/Adressbelege sowie getrennte Vermutungen; Toolreichweite unverifiziert.
 
 ## Spannungen & offene Fragen
 

@@ -131,6 +131,11 @@ muster:
     keywords: [tdd, test, tests, review, verifikation]
     neben: [planung]
     synonyme: [Rule deduplication, Behavior-preserving refactor]
+  Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme:
+    haupt: prototyping
+    keywords: [Framebasierte Motion, Filmvertrag, deterministische Frames, Ereignisframes, begrenzte Reparatur, Bild-Ton-Abnahme, Exportabnahme]
+    neben: [verifikation]
+    synonyme: []
   Framework-Quellcode-als-idiomatische-Referenz:
     haupt: verifikation
     keywords: [Framework-Quellcode, idiomatische Referenz, Versionspassung, Verhaltensprüfung]
@@ -256,6 +261,11 @@ muster:
     keywords: [projektkarte, projektstatus, meilenstein, blockaden, entscheidung, autonomer agent]
     neben: [autonomie]
     synonyme: [Project Map, Projektstatuskarte]
+  Prompt-Cache-TTL-nach-Agent-Pausen-waehlen:
+    haupt: modelle-kosten
+    keywords: [Prompt Cache, Cache-TTL, Agent-Pausen, Kontextwiederverwendung, Schreibkosten, Cache-Hit, Overrides]
+    neben: [kontext, orchestrierung]
+    synonyme: []
   Quellen-Bookmarks-fuer-Agent-Automationen:
     haupt: autonomie
     keywords: [Quellen-Bookmark, Fortschrittsmarker, Watermark, Cursor, Agent-Automationen, Zeitfenster, Zustellbestätigung, Retry, Duplikatprüfung]
@@ -286,6 +296,11 @@ muster:
     keywords: [Agent Sandbox, Windows Sandbox, Restricted Token, Synthetic SID, OS-Level Sandboxing, Codex Sandbox, Process Isolation, Filesystem Permissions]
     neben: []
     synonyme: [Sandboxing, Coding Agent Sandbox, OS-Sandbox]
+  Schema-als-Vertrag-mit-generierten-Clients:
+    haupt: verifikation
+    keywords: [Schema-first, API-Vertrag, generierte Clients, Laufzeitvalidator, Verbraucher-Typecheck, Versionskompatibilität]
+    neben: []
+    synonyme: []
   Screenshot-als-Spezifikationsmedium:
     haupt: prototyping
     keywords: [Screenshot Prompting, Multimodal Input, Vision, Mockup to Code, UI Debugging, Visuelle Verifikation, Bild-Kontext, Design-Mockup]
@@ -392,6 +407,11 @@ quellen:
     kernaussage: KI-Chancen werden anhand persönlicher Beispiele diskutiert; gelöste Benchmarkaufgaben entsprechen keiner vollständigen Automatisierung der Softwareentwicklung.
     keywords: [KI-Chancen, SWE-bench, Benchmarkgrenzen]
     neben: [verifikation]
+  2025-06-23-boristane-context-engineering-is-what-makes-ai-magical:
+    haupt: kontext
+    kernaussage: 'Boris Tane beschreibt Context Engineering als Produktaufgabe: Agents sollen passende Informationen zur Laufzeit erhalten, statt nur wenige Retrieval-Chunks.'
+    keywords: [kontext-hygiene, context engineering, kontext, rag, volltextpfad, intent-engineering, frage]
+    neben: [wissensarbeit, prompting]
   2025-06-28-the-morpheus-tutorials-ai-ersetzt-uns-itler-jetzt-also:
     haupt: verifikation
     kernaussage: Issues, Codepfadprüfung, Implementierung, Review und manuelle Ausführung bilden einen beschriebenen Entwicklungsablauf; Arbeitsmarktprognosen bleiben unbestätigt.
@@ -1388,6 +1408,11 @@ quellen:
     kernaussage: Vibe-Coding-Projekte scheitern am fehlenden Fundament aus Architektur, Datenfluss und Fehlerfällen, nicht am Agenten, und Rules allein setzen Qualität nicht durch.
     keywords: [Vibe Coding, MVP vs. Produktion, Fundament vor Code, statische Code-Analyse, Rules in Coding Agents, DSGVO, Architektur-Entscheidungen, Fehlerfälle]
     neben: [verifikation]
+  2026-08-07-claude-auto-mode-is-now-the-default-in-claude-code-for:
+    haupt: sicherheit
+    kernaussage: Anthropic begründet den Auto-Mode mit Messungen gegen tatsächlich beobachtetes Freigabeverhalten.
+    keywords: [deny-rule, deny-rules, sicherheit, permission, isolation, security, rechte, risiko]
+    neben: []
   2026-08-07-theaicareercoach-vor-einem-jahr-noch-teuer-heute-fast-geschenkt-die-preise-fuer-ki:
     haupt: modelle-kosten
     kernaussage: Ein Creator (Norman, Daten- und KI-Leiter einer Beratung) meldet Anfang August 2026 eine Preissenkung von OpenAI und nennt drei Treiber für sinkende Modellpreise.
@@ -1403,11 +1428,26 @@ quellen:
     kernaussage: Wenn KI die Ausführung übernimmt, bleiben nur schwere Entscheidungen beim Menschen, was Erholung erfordert und bei vielen parallelen Agents zum Engpass wird.
     keywords: [Decision Fatigue, Entscheidungsermüdung, KI und Arbeitszeit, Review-Last, parallele Agents, Rolle des Menschen, Trade-offs, 40-Stunden-Woche]
     neben: [autonomie]
+  2026-08-12-kimmonismus-2087452378299564147:
+    haupt: ki-risiken
+    kernaussage: Der Post behauptet, 19 von 24 Vorhersagen seien eingetroffen.
+    keywords: [AI 2027, Prognoseprüfung, Trefferquote, Bewertungskriterien, Szenario]
+    neben: [verifikation]
+  2026-08-12-shannholmberg-2087539757052285200:
+    haupt: planung
+    kernaussage: 'Shann Holmberg überträgt Wayfinder auf Kampagnenplanung: Ein übergeordnetes Issue enthält die Karte, einzelne Tickets klären jeweils eine Entscheidung.'
+    keywords: [grilling, wayfinder, ticket, task]
+    neben: []
   2026-08-12-voxyz_ai-2087579867139264681:
     haupt: autonomie
     kernaussage: Ungenutztes Agent-Kontingent lässt sich über einen reinen Kandidatenbericht verplanen, wenn nur umkehrbare Aufgaben mit Prüfbefehl in isolierten Branches zugelassen sind.
     keywords: [Overnight Agents, Agent-Kontingent nutzen, Triage-Prompt, Git Worktree, Prüfbefehl, Handoff-Notizen, Nachtläufe, Usage Limits]
     neben: [kontext, prompt-vorlagen]
+  2026-08-13-openai-2087912623883051300:
+    haupt: rolle-markt
+    kernaussage: OpenAIs Grafik zeigt höhere Nutzeranteile für Plugins und Skills in einer als führend bezeichneten Unternehmensgruppe.
+    keywords: [Enterprise-Adoption, Plugin-Nutzeranteil, Skill-Nutzeranteil, OpenAI Enterprise Signals, Kausalität]
+    neben: [skills, erweiterungen]
   2026-08-14-agenticjames-ai-memory-is-trash-heres-some-solutions:
     haupt: kontext
     kernaussage: 'Agent Memory ist nicht ein Problem, sondern vier: Ablage, Turn-Erinnerung, multimodale Suche und Abrufzeitpunkt, wobei Pull durch den Agenten und Push per Hook Kosten und Nutzen tauschen.'
@@ -1418,11 +1458,22 @@ quellen:
     kernaussage: Tool-Outputs bleiben in jedem Folgeturn im Kontext, und Modell- oder Effort-Wechsel sowie Compact entwerten den Prompt Cache, daher Sitzungen aufgabenweise mit /clear führen.
     keywords: [Prompt Cache, Cache-Ablauf, Claude Code Kosten, /clear, /compact, Subagent Modell Haiku, Kontextgröße, Quiet-Flags]
     neben: [kontext]
+  2026-08-14-claudedevs-2088332927189049738:
+    haupt: sicherheit
+    kernaussage: ClaudeDevs meldet am `2026-08-14` den Rollout von Auto mode als Standard für Pro, Max und Team.
+    keywords: [Auto mode, Default Permission Mode, defaultMode, Rollout, Freigaben]
+    neben: [autonomie]
   2026-08-14-floknowsai-ueber-achtzig-prozent-des-codes-von-claude-code-und-codex-sieht-kein:
     haupt: verifikation
     kernaussage: Ein Agent findet eigene Fehler seltener im selben Verlauf, weshalb eine frische Prüf-Session mit gleich starkem Modell und erzwungenen Status-Checks besser verifiziert.
     keywords: [Agent Code Review, Pull Requests ohne Review, frische Review-Session, Selbstkontrolle von Agents, Branch Protection, Required Status Checks, TDD, Refactoring-Tests]
     neben: []
+  2026-08-14-mattpocockuk-2088256432265167185:
+    haupt: verifikation
+    kernaussage: 'Matt Pocock beschreibt einen kurzen Lernkreislauf: unerwünschtes Agent-Verhalten beobachten, eine konkrete Regel in `CODING_STANDARDS.md` im Repo-Root festhalten und `/code-review` diese
+      Regel beim Re'
+    keywords: [CODING_STANDARDS.md, Code Review, Agent-Fehler, Review-Standards, Gotchas]
+    neben: [skills, agent-dateien]
   2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo:
     haupt: open-source-llms
     kernaussage: Speicherbedarf und Tempo lokaler Modelle lassen sich mit einfachen Faustformeln aus Parametern, Quantisierung und Speicherbandbreite vorab abschätzen; Kontext und KV-Cache fehlen dabei.
@@ -1438,11 +1489,31 @@ quellen:
     kernaussage: 'Autor und Prüfer müssen getrennt sein: Mutation Testing prüft die Tests selbst, ein zweiter Agent mit frischem Kontext bewertet Code und Testqualität.'
     keywords: [Mutation Testing, Code-Review durch Agents, Unit-Tests, Zweiter Agent, Frischer Kontext, Testqualität, Coding Agents, Uncle Bob]
     neben: []
+  2026-08-19-developer-evaluating-ai-agent-skill-performance-with-nvidi:
+    haupt: skills
+    kernaussage: NVIDIA berichtet bessere Ergebnisse mit Skills in eigenen Produktaufgaben.
+    keywords: [SkillEvaluator, Skill-Baseline, Correctness, Effectiveness, Efficiency, Discoverability, Tokenverbrauch, Einzelversuche]
+    neben: [verifikation, modelle-kosten]
+  2026-08-19-kimmonismus-2090082088087150979:
+    haupt: ki-anwendungen-forschung
+    kernaussage: Mercks offizielle Meldung vom 19.
+    keywords: [INTerpath-001, Intismeran autogene, KEYNOTE-942, Phase 3, Phase 2b, mRNA, Neoantigene, Hersteller-Topline]
+    neben: []
   2026-08-19-matt-pocock-live-uncle-bob-on-software-fundamentals-in-the-a:
     haupt: verifikation
     kernaussage: Statt langer Regeltexte gehören deterministische Tools wie Mutation Testing und Komplexitätsmetriken in eine Agent-Schleife, weil Modelle lange Regeldokumente nur als Richtlinie behandeln.
     keywords: [Mutation Testing, CRAP-Score, Code Coverage, Lost in the Middle, Deterministische Checks, Clean Code, TDD mit Agents, Regeldokumente, Coding Agents]
     neben: [prompting]
+  2026-08-19-openai-2090165328290701800:
+    haupt: sicherheit
+    kernaussage: OpenAI kündigt am `2026-08-19` Private Safety Processing als Vorschau an.
+    keywords: [Private Safety Processing, Zero Data Retention, Hersteller-Vorschau, Sicherheitsanalyse, Verarbeitungskontext]
+    neben: [ki-risiken]
+  2026-08-20-latent-the-wayfinder-skill-navigating-the-fog-of-war-of:
+    haupt: planung
+    kernaussage: Im Interview erklärt Matt Pocock Wayfinder als Orchestrierung über mehrere Planungssessions.
+    keywords: [grilling, wayfinder, spec-grilling, plan, ticket, planung, spec]
+    neben: []
   2026-08-21-ai-mit-arnie-diese-skills-machen-claude-design-unfair:
     haupt: prototyping
     kernaussage: Gemeinsame Branding-Referenzen werden für Pitch, Landingpage und weitere Medien genutzt; Demo-Artefakte belegen keine realen Produkt- oder Geschäftserfolge.
@@ -1548,6 +1619,11 @@ quellen:
     haupt: rolle-markt
     kernaussage: Fachexpertise statt Programmierkenntnis erhöht laut Caption die Autonomie pro Anweisung, weil sie Ziel und Prüfkriterien liefert; die Studie selbst wurde nicht gelesen.
     keywords: [Domänenwissen, Claude Code für Nicht-Entwickler, Vibe Coding, Anthropic Studie 400.000 Sessions, Erfolgsquote, Spezifikation als Engpass, KI im Mittelstand]
+    neben: []
+  2026-09-14-arena-2099606881845321841:
+    haupt: modelle-kosten
+    kernaussage: Arena berichtet für `DeepSeek-V4.1-Flash (Max)` eine günstige Position auf der eigenen Pareto-Grenze.
+    keywords: [benchmark, pareto, modell-eskalation, modell, kosten, preis]
     neben: []
   2026-09-14-claude-agentic-coding-is-straining-ci-here-s-how-we-sca:
     haupt: verifikation
@@ -1793,6 +1869,16 @@ quellen:
     kernaussage: Artificial Analysis (Drittanbieter-Messung, Intelligence Index v4.3.2 mit 10 Evaluations) bewertet am 30.09.2026 Googles Gemini 4 Argon mit `high` Reasoning, der höchsten verfügbaren Stufe.
     keywords: [gpt-6, sonnet, opus 5.5, kosten pro task, token-verbrauch, intelligence index, terminal-bench, modell-eskalation]
     neben: []
+  2026-09-30-flxrnc-2105311836190978392:
+    haupt: prototyping
+    kernaussage: Florence beschreibt drei mit `Opus 5.5` erzeugte Code-Animationen und ihre Korrekturschleifen.
+    keywords: [Motion Engineering, Framevertrag, deterministischer Renderer, Ereignisframes, A/B-Vergleich, Korrekturaufwand, Soundabnahme]
+    neben: [verifikation]
+  2026-10-01-0xwhrrari-2105643919119696297:
+    haupt: prototyping
+    kernaussage: 'rari entwirft einen wiederverwendbaren Prozess für Code-Videos: Brief, belegte Assets, Zustände und Beats, deterministischer Renderer, visuelle Reparatur und Exportabnahme.'
+    keywords: [Motion Studio, Produktbrief, seekbarer Renderer, Contact Sheet, Zustandsgrenzen, reale Assets, Exportabnahme]
+    neben: [verifikation]
   2026-10-01-artificialanlys-2105491868608004578:
     haupt: modelle-kosten
     kernaussage: Artificial Analysis (Drittanbieter) misst am 01.10.2026 Kosten pro Intelligence-Index-Task für OpenAI-Modelle nach.
@@ -2020,6 +2106,11 @@ quellen:
     kernaussage: 'Vox empfiehlt für Claude Code eine feste Rollenteilung: `Opus 5.5` plant und prüft, `Haiku 5.5` liest Code und recherchiert Dokumentation.'
     keywords: [Claude Code Subagents, Haiku 5.5, Opus 5.5, Explore Agent, Agent Tree, Model Inheritance, Reasoning Effort, CLAUDE_CODE_EFFORT_LEVEL, Kosten pro Task]
     neben: [orchestrierung]
+  2026-10-09-beamnxw-2108616740846420354:
+    haupt: prototyping
+    kernaussage: beamnxw beschreibt eine kleine Remotion-Produktion rund um eine reale Produktaktion, mit Referenzanalyse, Brief, Stills, Playback und finalem Exportcheck.
+    keywords: [Launchvideo, Remotion, Ereignisframes, lokale Reparatur, Copygrenzen, Lesefenster, Playback-Abnahme]
+    neben: [verifikation]
   2026-10-09-git-worktree:
     haupt: orchestrierung
     kernaussage: Getrennte Worktrees teilen das Repository, isolieren aber keine Laufzeitressourcen.
@@ -2030,6 +2121,11 @@ quellen:
     kernaussage: Suchdaten und Seitenzweck gehen der Gestaltung voraus; Varianten und mobile Darstellung werden geprüft, während SEO-Erfolg ungemessen bleibt.
     keywords: [Suchintention, DataForSEO, Webdesign, Mobile-Abnahme]
     neben: [planung, verifikation]
+  2026-10-09-lukepierceops-2108655186080342138:
+    haupt: rolle-markt
+    kernaussage: 'Luke Pierce beschreibt KI-Adoption als laufende Organisationsaufgabe: Ein Champion mit geschützter Arbeitszeit führt ein Team mit Fachbereichsvertretern.'
+    keywords: [KI-Adoption, AI Champion, geschützte Lernzeit, rollenbezogene Schulung, Use-Case-Backlog, Vorher-Nachher-Messung]
+    neben: [wissensarbeit]
   2026-10-09-natebjones-thats-model-vs-effort-in-plain-english:
     haupt: modelle-kosten
     kernaussage: 'Nate Jones erklärt Modellwahl und Effort als zwei getrennte Entscheidungen: Welches Fähigkeitsniveau braucht die Aufgabe, und wie viel Denkaufwand soll das gewählte Modell investieren?'
@@ -2105,6 +2201,16 @@ quellen:
     kernaussage: Vox beschreibt wiederkehrende Agent-Aufgaben und ergänzt seine Zusammenfassung eines verlinkten Anthropic-Guides um einen Audit-Prompt.
     keywords: [Agent-Automationen, Quellen-Bookmark, Fortschrittsmarker, Zeitfenster, Lesefehler, Zustellbestätigung, Duplikatprüfung, Ausgabenobergrenze]
     neben: [verifikation, sicherheit]
+  2026-10-09-voxyz_ai-2108663797091127377:
+    haupt: planung
+    kernaussage: Vox empfiehlt, vor Planung und Code zehn Fachbegriffe samt Bedeutung für die Spezifikation erklären zu lassen.
+    keywords: [spec-grilling, grilling, spec, plan, spezifikation, planung, anforderungen]
+    neben: []
+  2026-10-10-boristane-self-improving-software-is-inevitable:
+    haupt: sdlc
+    kernaussage: Boris Tane beschreibt einen Entwicklungsprozess, in dem Agents Logs, Traces, Produktmetriken, Session Replays und Supporttickets gemeinsam untersuchen und Verbesserungen vorbereiten.
+    keywords: [self-improving software, Produktionssignale, Observability, Feedback-Schleife, Fitnessfunktion, Zielhierarchie, Fix-PR]
+    neben: [autonomie, verifikation]
   2026-10-10-developers-using-gpt-6-openai-api:
     haupt: modelle-kosten
     kernaussage: Der am 10.10.2026 archivierte OpenAI-Guide ergänzt die regionalen Verfügbarkeitsangaben gegenüber dem erfassten Stand vom 02.10.2026.
@@ -2120,3 +2226,53 @@ quellen:
     kernaussage: Oh-my-mermaid verbindet eine agentengestützte Codeanalyse mit einer dateibasierten Architekturkarte.
     keywords: [Oh-my-mermaid, Architekturdokumentation, Codebase Understanding, Mermaid, Request-Lifecycle, rekursive Codeanalyse, Dateibelege]
     neben: [planung, rolle-markt]
+  2026-10-10-satyanadella-2108931348857827686:
+    haupt: sicherheit
+    kernaussage: Satya Nadella argumentiert im X-Artikel für eine Architektur, die leistungsfähige Modelle wie potenzielle Insider-Risiken behandelt.
+    keywords: [Insider Risk, Modellautorität, externe Kontrolle, Containment, CoT-Treue, unabhängige Belege]
+    neben: [ki-risiken]
+  2026-10-10-voxyz_ai-2108875199164871053:
+    haupt: prototyping
+    kernaussage: Vox zeigt einen read-only CSS-Auditprompt für mobile Eingabe, passende CSS-Funktionen und visuelle Details.
+    keywords: [CSS-Audit, Hover-Fähigkeit, pointer fine, Touchfläche, user-invalid, scroll-padding, tabular-nums, Browserunterstützung]
+    neben: [verifikation]
+  2026-10-10-voxyz_ai-2108905392776360333:
+    haupt: erweiterungen
+    kernaussage: Vox ordnet fünfzehn Repositories den Aufgaben Launchvideo, Schnitt, animierter Kurzfilm und Webanimation zu.
+    keywords: [erweiterungs-ebenen, erweiterung]
+    neben: []
+  2026-10-10-voxyz_ai-2109026189298012522:
+    haupt: verifikation
+    kernaussage: Vox beschreibt am `2026-10-10` ein als offiziell bezeichnetes Game-Studio-Plugin für Codex mit neun Skills.
+    keywords: [testharness, test, qualität, erweiterungs-ebenen, erweiterung]
+    neben: [erweiterungen]
+  2026-10-10-voxyz_ai-2109056129884123370:
+    haupt: modelle-kosten
+    kernaussage: Vox empfiehlt längere Prompt-Caches für Subagents, die auf Builds oder Tests warten.
+    keywords: [Prompt Cache, Cache-TTL, cacheTtl, Subagent-Pausen, Cache-Schreibkosten, TTL-Overrides, Usage Credits]
+    neben: [kontext, orchestrierung]
+  2026-10-11-ai-2027-ai-2027:
+    haupt: ki-risiken
+    kernaussage: AI 2027 beschreibt einen möglichen Weg von Coding-Agenten zu stark automatisierter KI-Forschung und einer Kontrollkrise.
+    keywords: [AI 2027, bedingte Prognose, Szenarioplanung, Alignment, Verifier-Anpassung, Kontrollverlust, Medienlücken]
+    neben: [rolle-markt]
+  2026-10-11-developers-codex-as-a-platform-build-on-the-open-agent-harn:
+    haupt: erweiterungen
+    kernaussage: OpenAI beschreibt Codex als offene Ausführungsschicht für eigene Produkte, nicht nur als App, CLI oder IDE-Erweiterung.
+    keywords: [Codex Harness, codex exec, Codex SDK, app-server, Agent-Lifecycle, Produktverantwortung, MCP, Approval]
+    neben: [sdlc, sicherheit]
+  2026-10-11-emilkowalski-2109277388437868623:
+    haupt: skills
+    kernaussage: Emil Kowalski kündigt am `2026-10-11` den Skill `/animation-performance` an.
+    keywords: [skill-call, skill, skills]
+    neben: []
+  2026-10-11-shiptypes-ship-types-not-docs:
+    haupt: verifikation
+    kernaussage: Der Beitrag auf Ship types schlägt vor, maschinenlesbare Schemas als gemeinsamen Vertrag zwischen Services, Clients und Coding Agents zu pflegen.
+    keywords: [Schema-first, API-Vertrag, generierte Clients, Zod, Typed RPC, Laufzeitvalidierung, CI-Typecheck, SDK-Generation]
+    neben: []
+  2026-10-11-voxyz_ai-2109297975013081587:
+    haupt: planung
+    kernaussage: Vox stellt REA als Werkzeug für schrittweise Softwareanalyse vor.
+    keywords: [plan-first, plan]
+    neben: []

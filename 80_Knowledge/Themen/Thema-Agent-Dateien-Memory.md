@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** agents.md (9), claude.md (8), progressive disclosure (6), context engineering (4), agent-datei (4), agent_docs (2), instruktionsbudget (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), obsidian (2), llm wiki (2), /doctor (2), test (2), regeln (2), handlungsbedarf (2), blockadebericht (2), agent bericht (2), auto mode (2)
+- **Häufig in den Quellen:** agents.md (9), claude.md (8), progressive disclosure (6), context engineering (4), agent-datei (4), instruktionsbudget (2), agent_docs (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), llm wiki (2), obsidian (2), /doctor (2), regeln (2), test (2), handlungsbedarf (2), blockadebericht (2), agent bericht (2), auto mode (2)
 
 ## Verwandte Themen
 
@@ -51,6 +51,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-er
 - [[2026-10-05-repo-mattpocock-skills-retro]]
 - [[2026-10-05-repo-claude-code-doctor-insights]]
 - [[2026-10-04-voxyz_ai-2106829206134931539]]
+- [[2026-08-14-mattpocockuk-2088256432265167185]]
 - [[2026-08-04-anthropic-docs-claude-code-best-practices]]
 - [[2026-07-30-floknowsai-ki-gibt-dir-das-gefuehl-dass-du-so-schnell-wie-noch-nie-arbeitest]]
 - [[2026-07-24-claude-the-new-rules-of-context-engineering-for-claude]]

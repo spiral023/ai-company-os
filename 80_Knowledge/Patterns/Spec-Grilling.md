@@ -49,6 +49,7 @@ Ein eigener Skill verhört den Nutzer gezielt zu einem Vorhaben, bis jeder Ast d
 - 2026-07-31 · [[2026-07-31-alexfinn-2082982462012227648]] · meinung — Reverse Prompting lässt nach einer Zielbeschreibung fehlende Informationen erfragen und anschließend konkrete Aufgaben vorschlagen. Bekannte Kontextklärung statt eigenständiger neuer Methode; pauschale Modellüberlegenheit und hundertfacher Erkenntnisgewinn bleiben unbelegte Werbeaussagen.
 - 2026-08-21 · [[2026-08-21-ai-mit-arnie-diese-skills-machen-claude-design-unfair]] · meinung — Das Interview klärt visuelle Richtung, vorhandene Assets und mehrere geplante Medien, bevor ein Brand-Kit-Ordner erzeugt wird. Der Autor beurteilt den Nutzen qualitativ; der Ablauf liefert keine gemessene Verbesserung gegenüber einer kürzeren Klärung.
 - 2026-07-31 · [[2026-07-31-alex-sprogis-dieser-claude-code-skill-ist-genial]] · meinung — Die Demo integriert ein sequenzielles Interview mit Empfehlungen und vorgelagerter Projektrecherche in einen eigenen Spezifikations-Skill. Entscheidend ist die anschließende Formulierung konkreter Akzeptanzkriterien; ein gemeinsames Verständnis allein nimmt die Umsetzung noch nicht ab.
+- 2026-10-09 · [[2026-10-09-voxyz_ai-2108663797091127377]] · meinung — Fokussiert vor der Umsetzung die erste architekturprägende Frage statt sofort einen vollständigen Plan zu erzeugen; Tokenanekdote unverifiziert.
 
 ## Spannungen & offene Fragen
 

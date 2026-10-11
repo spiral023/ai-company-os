@@ -9,7 +9,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 - **Hauptkeyword:** Context Engineering
 - **Long-Tail:** Context Rot vermeiden; Claude Code /compact oder /clear; Claude Code Kontextfenster verwalten; Session Handoff Dokument; Rewind statt Korrektur; Subagents als Kontextgrenze
 - **Fragen:** Wann sollte ich /clear statt /compact nutzen? / Warum wird mein Agent in langen Sessions schlechter?
-- **Häufig in den Quellen:** context window (8), context rot (8), claude.md (8), /compact (7), /clear (7), progressive disclosure (7), context engineering (5), handoff (5), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), kontext-hygiene (4), prompt caching (4), context pollution (3), token (3), kontext (3), state.md (3), plan mode (3), mcp tools (2)
+- **Häufig in den Quellen:** context window (8), context rot (8), claude.md (8), /compact (7), /clear (7), progressive disclosure (7), context engineering (6), kontext-hygiene (5), handoff (5), kontext (4), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), token (3), state.md (3), plan mode (3), mcp tools (2)
 
 ## Verwandte Themen
 
@@ -21,11 +21,11 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 ## Patterns (2)
 
 - [[Handoff-Doc]] · verifiziert · 21 Belege
-- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 47 Belege
+- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 49 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[Framework-Quellcode-als-idiomatische-Referenz]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]], [[Wissenspflege-mit-Inbox-und-Review]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[Framework-Quellcode-als-idiomatische-Referenz]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]], [[Wissenspflege-mit-Inbox-und-Review]]
 
-## Quellen (22)
+## Quellen (23)
 
 - [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]] — Handoffs werden vor und nach Compaction verglichen; Cache-Anzeigen, Wartezeiten und Warmhalte-Versprechen belegen keine gemessene Ersparnis.
 - [[2026-09-24-mattpocock-ai-coding-dictionary]] — Matt Pococks AI Coding Dictionary ordnet 71 Begriffe in sieben Bereiche.
@@ -49,9 +49,11 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 - [[2026-01-21-aiedge-claude-50-pro-tips]] — Bei anhaltender Verwirrung Kontext zurücksetzen, günstig prototypen und autonome Desktop-Agenten wie Cowork per Ordner-Isolation und Backups absichern.
 - [[2026-01-15-avasdr34m-its-not-easy-but-it-is-simple-kontext-nutzung-in-claude-code-entscheidet]] — Je länger der Kontext, desto schlechter das Modell: MCP-Overhead vermeiden, Aufgaben in frischen Sessions abarbeiten und Research von Implementierung trennen.
 - [[2026-01-06-jarrodwatts-context-engineering-guide]] — Wer den Kontext als einzigen Stellhebel versteht, hält ihn schlank, setzt schlechte Sessions zurück und lagert teure Recherche in Subagents aus.
+- [[2025-06-23-boristane-context-engineering-is-what-makes-ai-magical]] — Boris Tane beschreibt Context Engineering als Produktaufgabe: Agents sollen passende Informationen zur Laufzeit erhalten, statt nur wenige Retrieval-Chunks.
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-10-voxyz_ai-2109056129884123370]]
 - [[2026-10-09-repo-gsd-workflow]]
 - [[2026-10-09-ollama-kontext-speicher]]
 - [[2026-10-08-moritz-brandes-sauberer-code-mit-claude-code-so-geht-s-wirklich]]

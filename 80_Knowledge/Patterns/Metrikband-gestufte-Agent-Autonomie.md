@@ -30,8 +30,11 @@ Ein deterministisches Skript ohne Modell berechnet für eine Metrik mit rolliere
 ## Belege
 
 - 2026-09-27 · [[2026-09-27-anthropic-academy-sdlc-playbook]] · meinung — Lektion 13 beschreibt das Schema mit `bands.yaml` und Western-Electric-Regeln als Herstellerempfehlung ohne Praxisdaten.
+- 2026-10-10 · [[2026-10-10-boristane-self-improving-software-is-inevitable]] · meinung — Verknüpft Logs, Traces, Analytics, Replays und Tickets in gemeinsamen Untersuchungen mit Fix-PRs; Vision vollständiger Selbstverbesserung und Kostenbehauptungen sind nicht gemessen.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-11: [[2026-10-10-boristane-self-improving-software-is-inevitable]] fordert in seiner Vision die Abgabe menschlicher Kontrolle, während seine praktischen Prompts nur Fix-PRs eröffnen. Gemeinsame Untersuchungen mehrerer Signalquellen ergänzen die Erkennung; sie begründen keine automatische Ausweitung der hier abgestuften Eingriffsrechte.
 
 - Keine bekannt. Offen ist, ob sich die Stufen aus der Praxis bestätigen lassen; die Quelle ist eine Anleitung, keine Auswertung.
 

@@ -29,6 +29,8 @@ Projektteile und Meilensteine aus Code, Historie und Issues ableiten. Teile als 
 ## Belege
 
 - 2026-10-06 · [[2026-10-06-voxyz_ai-2107455844992299272]] · meinung — Vox beschreibt einen dedizierten Projektkarten-Agenten mit Meilensteinen, Blockaden, verbleibenden Aufgaben und Entscheidungsfeldern; das Beispiel belässt Stripe ohne Antwort im Testmodus und belegt keine Produktionswirkung oder Statusaktualität.
+- 2026-08-20 · [[2026-08-20-latent-the-wayfinder-skill-navigating-the-fog-of-war-of]] · meinung — Das Interview trennt gemeinsame Karte, einzelne Entscheidungstickets und Sessions; es begrenzt Wayfinder auf Vorhaben mit unklarem Weg.
+- 2026-08-12 · [[2026-08-12-shannholmberg-2087539757052285200]] · meinung — Überträgt vier Ticketarten auf eine einzelne Kampagne und dokumentiert Entscheidungen schrittweise im Brief; warnt vor veraltenden Gesamtstrategiekarten.
 
 ## Spannungen & offene Fragen
 

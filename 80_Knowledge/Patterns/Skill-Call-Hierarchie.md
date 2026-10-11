@@ -43,6 +43,7 @@ Version 1.1 macht diese Trennung im Lifecycle sichtbar: `wayfinder`, `to-spec`, 
 - 2026-07-25 · [[2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the]] · meinung — Ausgelagerter Kontext gehört in Skills zur progressiven Offenlegung. Bekannte Aussage, hier nur wiederholt.
 - 2026-02-01 · [[2026-02-01-anthropic-docs-extend-claude-with-skills]] · meinung — Frontmatter `disable-model-invocation`, `user-invocable`, `context: fork` steuern Auslösung und Isolation; Sekundärquelle.
 - 2026-10-02 · [[2026-10-02-developers-using-gpt-6-openai-api]] · meinung — OpenAI rät, den Vorrang der Nutzeranweisung vor Skill-Anweisungen explizit zu setzen, weil Astra empfindlicher auf Skills und `AGENTS.md` reagiert und bei Widersprüchen früh pausiert. Selbstbericht, verhaltensbasiert, nicht gemessen.
+- 2026-10-11 · [[2026-10-11-emilkowalski-2109277388437868623]] · meinung — Der Autor bevorzugt explizites Laden auf Anforderung für bewusstere Auswahl und Kontrolle; der neue Performance-Skill wird nur angekündigt und ist nicht geprüft.
 
 ## Spannungen & offene Fragen
 

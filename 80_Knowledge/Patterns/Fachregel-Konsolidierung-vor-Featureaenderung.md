@@ -29,6 +29,7 @@ Betroffene Regelimplementierungen, Aufrufer und Ergebnisse für identische Einga
 ## Belege
 
 - 2026-10-02 · [[2026-10-02-voxyz_ai-2106104334035435572]] · meinung — Vox kartiert Kopien einer Fachregel vor der Featureänderung, klärt divergierende Ergebnisse fachlich und trennt Verhaltenskorrektur von erhaltendem Refactor; das Rabattbild ist eine Illustration mit drei Kopien und zwei Abweichungen.
+- 2026-10-11 · [[2026-10-11-shiptypes-ship-types-not-docs]] · meinung — Beschreibt gemeinsame Schemaquelle und generierte Clients für strukturelle API-Verträge; Originaldatum unsicher, Compile-Erfolg ersetzt keine Fach- und Laufzeitprüfung.
 
 ## Spannungen & offene Fragen
 

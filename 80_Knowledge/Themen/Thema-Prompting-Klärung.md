@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), known unknowns (2), change quiz (2), spec-grilling (2), voice prompting (2), überregulierung (2), progressive disclosure (2), codex skill-creator (2), modellwechsel (2), skill descriptions (2), gpt-6 astra (2), intent engineering (2), pre-mortem prompt, projektplanung mit ai, sycophancy, prompt-tricks, frühwarnsignale, ai agent zustimmungsneigung, risikoanalyse
+- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), change quiz (2), spec-grilling (2), known unknowns (2), voice prompting (2), codex skill-creator (2), gpt-6 astra (2), progressive disclosure (2), skill descriptions (2), modellwechsel (2), überregulierung (2), intent engineering (2), context engineering (2), projektplanung mit ai, frühwarnsignale, risikoanalyse, sycophancy, spec grilling, ai agent zustimmungsneigung
 
 ## Verwandte Themen
 
@@ -21,7 +21,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 ## Patterns (3)
 
 - [[Fable-Unknowns-vor-Prompt-Qualitaet]] · meinung · 3 Belege
-- [[Intent-Engineering-als-dritte-Schicht]] · meinung · 9 Belege
+- [[Intent-Engineering-als-dritte-Schicht]] · meinung · 10 Belege
 - [[Voice-Prompting-fuer-Kontextreichtum]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-statt-Generierung]], [[Handlungsbedarf-zuerst-im-Agent-Bericht]]
@@ -47,3 +47,4 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-sta
 - [[2026-07-31-alex-sprogis-dieser-claude-code-skill-ist-genial]]
 - [[2026-01-22-damien-lovable-website-guide]]
 - [[2026-01-17-damien-ghader-prompting-lovable-design]]
+- [[2025-06-23-boristane-context-engineering-is-what-makes-ai-magical]]

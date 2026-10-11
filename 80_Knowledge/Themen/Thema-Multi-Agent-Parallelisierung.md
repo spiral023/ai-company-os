@@ -9,7 +9,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - **Hauptkeyword:** Claude Code Subagents
 - **Long-Tail:** Agent Teams Claude Code; Git Worktrees parallele Agents; Subagents vs. Agent Teams; Multi-Agent Orchestrierung; Task-Abhängigkeiten Claude Code; Kosten paralleler Agents
 - **Fragen:** Wann lohnt sich Parallelisierung? / Subagent oder Agent Team?
-- **Häufig in den Quellen:** subagents (6), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), heartbeats (3), agent-organisation (3), claude code tasks (2), addblockedby (2), multi-agent (2), claude code agent teams (2), modulgrenzen (2), codex cli (2), openclaw (2), rollen (2), budgets (2), freigaben (2), edit-kollisionen (2), parallel agents (2), agent teams (2)
+- **Häufig in den Quellen:** subagents (6), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), agent-organisation (3), heartbeats (3), claude code tasks (2), addblockedby (2), multi-agent (2), claude code agent teams (2), modulgrenzen (2), openclaw (2), codex cli (2), rollen (2), budgets (2), freigaben (2), edit-kollisionen (2), agent teams (2), parallel agents (2)
 
 ## Verwandte Themen
 
@@ -22,10 +22,10 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 
 - [[Advisor-Agent-gegen-Drift]] · meinung · 3 Belege
 - [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]] · meinung · 3 Belege
-- [[Blockierende-Task-Abhaengigkeiten]] · meinung · 4 Belege
+- [[Blockierende-Task-Abhaengigkeiten]] · meinung · 5 Belege
 - [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 45 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]]
 
 ## Quellen (19)
 
@@ -51,6 +51,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-10-voxyz_ai-2109056129884123370]]
 - [[2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker]]
 - [[2026-10-07-alex-sprogis-t3-code-endlich-eine-steuerzentrale-fuer-alle-de]]
 - [[2026-09-27-voxyz_ai-2104224555040452925]]

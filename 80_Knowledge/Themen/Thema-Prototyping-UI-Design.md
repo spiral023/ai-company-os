@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), brand kit (3), suchintention (3), hyperframes (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), designvarianten (2), artefaktbasis (2), reduced motion (2), isolierte vorschau (2), produktionsabnahme (2), gestaltungsachsen (2), codex skills (2), seitenspezifikation (2), dataforseo (2), opus 5.5 (2), mobile-native (2), webdesign (2)
+- **Häufig in den Quellen:** lovable (5), brand kit (3), suchintention (3), ereignisframes (3), hyperframes (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), artefaktbasis (2), designvarianten (2), reduced motion (2), produktionsabnahme (2), gestaltungsachsen (2), isolierte vorschau (2), codex skills (2), seitenspezifikation (2), dataforseo (2), exportabnahme (2), opus 5.5 (2)
 
 ## Verwandte Themen
 
@@ -17,28 +17,33 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - [[Thema-Spezifikation-Planung]] — Spezifikation & Planung
 - [[Thema-Skill-Design]] — Skill-Design
 
-## Patterns (6)
+## Patterns (7)
 
-- [[Brand-Kit-als-gemeinsame-Artefaktbasis]] · meinung · 2 Belege
+- [[Brand-Kit-als-gemeinsame-Artefaktbasis]] · meinung · 5 Belege
+- [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] · meinung · 3 Belege
 - [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 8 Belege
-- [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] · verifiziert · 2 Belege
+- [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] · verifiziert · 3 Belege
 - [[Screenshot-als-Spezifikationsmedium]] · meinung · 10 Belege
 - [[Suchintention-mit-Daten-vor-Webdesign-klaeren]] · meinung · 2 Belege
-- [[Variantenvergleich-vor-Produktionsabnahme]] · verifiziert · 6 Belege
+- [[Variantenvergleich-vor-Produktionsabnahme]] · verifiziert · 7 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]], [[Skill-aus-Demonstration-statt-Beschreibung]], [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]], [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]
 
-## Quellen (25)
+## Quellen (29)
 
+- [[2026-10-10-voxyz_ai-2108875199164871053]] — Vox zeigt einen read-only CSS-Auditprompt für mobile Eingabe, passende CSS-Funktionen und visuelle Details.
 - [[2026-10-09-voxyz_ai-2108543002830360775]] — Vox verbindet einen verlinkten Claude-Motion-Guide mit einem eigenen Prompt für `Opus 5.5` in Claude Code.
 - [[2026-10-09-shadcn-2108574564586332615]] — shadcn berichtet am 09.10.2026 über verbesserte `DESIGN.md`-Unterstützung der `shadcn/ui`-Skills.
 - [[2026-10-09-repo-emilkowalski-mobile-native]] — Read-only-Prüfung von `external_repos/emilkowalski/skills/skills/mobile-native/SKILL.md` am 09.10.2026, Checkout `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`.
 - [[2026-10-09-julian-ivanov-ki-automat-websites-mit-ki-bauen-die-gut-aussehen-und-perfo]] — Suchdaten und Seitenzweck gehen der Gestaltung voraus; Varianten und mobile Darstellung werden geprüft, während SEO-Erfolg ungemessen bleibt.
+- [[2026-10-09-beamnxw-2108616740846420354]] — beamnxw beschreibt eine kleine Remotion-Produktion rund um eine reale Produktaktion, mit Referenzanalyse, Brief, Stills, Playback und finalem Exportcheck.
 - [[2026-10-08-voxyz_ai-2108324058739745228]] — Vox kuratiert Begriffe und einen Prompt für `Opus 5.5`.
 - [[2026-10-04-emilkowalski-2106752670405099523]] — Emil Kowalski kündigt zwei Ergänzungen für sein [Skills-Repository](https://github.com/emilkowalski/skills) an:
 - [[2026-10-02-repo-latent-spaces-brag]] — Neu im Bestand: latent-spaces/brag.
 - [[2026-10-02-repo-jakubantalik-transitions-dev]] — Im Klon von Jakubantalik/transitions.dev (Stand Commit `d8f2c222`) beschreibt `agent/README.md` den Transitions Agent: Er scannt die Codebasis auf fehlende oder uneinheitliche UI-Transitions, vergibt
 - [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]] — Ein Creator zeigt drei Selbsttests, in denen Claude Code mit Opus 5.5 und HyperFrames (Open Source von HeyGen) Videos baut.
+- [[2026-10-01-0xwhrrari-2105643919119696297]] — rari entwirft einen wiederverwendbaren Prozess für Code-Videos: Brief, belegte Assets, Zustände und Beats, deterministischer Renderer, visuelle Reparatur und Exportabnahme.
+- [[2026-09-30-flxrnc-2105311836190978392]] — Florence beschreibt drei mit `Opus 5.5` erzeugte Code-Animationen und ihre Korrekturschleifen.
 - [[2026-09-26-ai-mit-arnie-gpt-6-kann-endlich-design]] — Angebot und belegte Suchintention werden vor Seitenspezifikation und Designvarianten geklärt; generierte Annahmen ersetzen keine Suchdaten.
 - [[2026-09-21-voxyz_ai-2102050225443766571]] — Referenzquelle, Auswahlkriterien und Prüfschritt gehören einmal in den Skill statt in jeden Auftrag; ein Audit-Skill klickt Flows als Erstnutzer durch.
 - [[2026-09-20-voxyz_ai-2101657631249031507]] — Vage Designwünsche durch benannte Operationen ersetzen, Komponentenbibliothek als Skill packen und die Seite per Agent im Browser real bedienen lassen liefert Reproduktionsschritte statt Optik-Urteil.

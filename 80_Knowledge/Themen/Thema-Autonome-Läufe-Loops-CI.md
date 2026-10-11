@@ -9,7 +9,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - **Hauptkeyword:** Ralph Loop
 - **Long-Tail:** Ralph Loop einrichten; Claude Code Headless CI; Claude Code über Nacht; Autonomiestufen Coding Agent; Claude Code GitHub Action; Loop Engineering
 - **Fragen:** Kann ich einen Agent über Nacht laufen lassen? / Wie viel Autonomie ist sicher?
-- **Häufig in den Quellen:** ralph loop (6), steering.md (3), loop (3), auto mode (3), /goal (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), ci-agent (2), über nacht (2), modell (2), testharness (2), overnight agents (2), zeitfenster (2), quellen-bookmark (2), zustellbestätigung (2), duplikatprüfung (2)
+- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), /goal (3), loop (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), über nacht (2), ci-agent (2), modell (2), testharness (2), overnight agents (2), fortschrittsmarker (2), zeitfenster (2), duplikatprüfung (2), quellen-bookmark (2)
 
 ## Verwandte Themen
 
@@ -22,7 +22,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 ## Patterns (4)
 
 - [[CI-Agent-mit-Review-Gate]] · mehrfach-belegt · 11 Belege
-- [[Metrikband-gestufte-Agent-Autonomie]] · meinung · 1 Belege
+- [[Metrikband-gestufte-Agent-Autonomie]] · meinung · 2 Belege
 - [[Quellen-Bookmarks-fuer-Agent-Automationen]] · meinung · 1 Belege
 - [[Ralph-Loop-Frischer-Kontext-pro-Iteration]] · mehrfach-belegt · 15 Belege
 
@@ -46,10 +46,12 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]],
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-10-boristane-self-improving-software-is-inevitable]]
 - [[2026-10-06-voxyz_ai-2107455844992299272]]
 - [[2026-10-05-voxyz_ai-2107214251408433365]]
 - [[2026-09-14-claude-agentic-coding-is-straining-ci-here-s-how-we-sca]]
 - [[2026-08-21-julian-ivanov-ki-automat-hermes-agent-kann-jetzt-viel-mehr-als-du-denkst]]
+- [[2026-08-14-claudedevs-2088332927189049738]]
 - [[2026-08-09-natebjones-decision-exhaustion-is-real-discuss]]
 - [[2026-08-02-promptgefluester-wenn-ihr-versucht-euer-software-projekt-mit-fable-five-oder-o-plus-5]]
 - [[2026-07-16-amasad-2077802290304684404]]

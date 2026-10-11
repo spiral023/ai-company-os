@@ -92,6 +92,7 @@ Ergänzend gilt die Rollenteilung im Multi-Agent-Fall: das starke Modell entsche
 - 2026-07-24 · [[2026-07-24-andrew_n_carr-2080727000004878593]] · meinung — FrontierCode v1.1 zeigt Opus 5 in Main und Extended mit höchstem dargestellten Score bei medium statt max; stützt die Prüfung beider Effort- und Kostenachsen, belegt aber keine universelle Eskalationsregel oder statistische Signifikanz.
 - 2026-07-25 · [[2026-07-25-valsai-2080817011157094511]] · meinung — Effort-Stufen anhand von Qualität und Aufgaben-Kosten gegeneinander prüfen, statt maximalen Aufwand automatisch als bessere Wahl behandeln: Im Vals-Snapshot steigt der Score nur bis high; die Abstände zu xhigh und max liegen laut Post innerhalb der Fehlerbalken. Das ist ein benchmarkgebundener Anlass zur eigenen Evaluation, kein nachgewiesener universeller Sieger.
 - 2026-10-09 · [[2026-10-09-natebjones-thats-model-vs-effort-in-plain-english]] · meinung — Nate Jones trennt Modellfähigkeit nach Aufgabenschwierigkeit von Effort als Denkaufwand des gewählten Modells; gelegentlich senkt er Effort wegen unnötiger Details und Komplexität. Anschauliche Praxisheuristik ohne Qualitäts- oder Kostenmessung und ohne universelle Einstellungswerte.
+- 2026-09-14 · [[2026-09-14-arena-2099606881845321841]] · meinung — Die Arena-Pareto-Grenze zeigt einen günstigen Kandidaten mit geringerer gemessener Aufgabenleistung als teurere Spitzenmodelle. Das motiviert einen lokalen Aufgabenvergleich mit Eskalationspfad; die Benchmark-Verhältnisse sind kein allgemeiner Qualitätsbeweis.
 
 ## Spannungen & offene Fragen
 

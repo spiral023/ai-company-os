@@ -9,7 +9,7 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 - **Hauptkeyword:** AI-nativer SDLC
 - **Long-Tail:** Software Development Lifecycle mit KI; SDLC mit Coding Agents; AI-native SDLC Playbook; SDLC ist tot; Intent Build Observe; Agentic SDLC und ADLC; Menschliche Freigaben im AI-nativen SDLC
 - **Fragen:** Wie verändert sich der SDLC durch Coding Agents? / Welche Kontrollpunkte brauchen Menschen weiterhin? / Wie fließen Erkenntnisse aus dem Betrieb zurück in die Planung?
-- **Häufig in den Quellen:** human-in-the-loop (3), ai-native sdlc (3), intent.md (2), spec.md (2), review.md (2), menschliche freigabe (2), refactoring (2), verhaltensvergleich (2), codex (2), intent build observe, closed loop, adversarial agent code review, feature flags canary, software development lifecycle mit ki, sdlc ist tot, observability als kontext, siem, befundnachweis, sast und dast, agent-identität
+- **Häufig in den Quellen:** human-in-the-loop (3), ai-native sdlc (3), spec.md (2), intent.md (2), review.md (2), menschliche freigabe (2), verhaltensvergleich (2), refactoring (2), codex (2), closed loop, observability als kontext, software development lifecycle mit ki, feature flags canary, intent build observe, adversarial agent code review, sdlc ist tot, agent-identität, least agency, risikobasiertes human review, agent-to-agent-kommunikation
 
 ## Verwandte Themen
 
@@ -24,8 +24,9 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachvollziehen]], [[Metrikband-gestufte-Agent-Autonomie]], [[Refactoring-mit-Verhaltensvergleich]], [[Zustandslose-CI-Listener-mit-Ergebnisjournal]]
 
-## Quellen (4)
+## Quellen (5)
 
+- [[2026-10-10-boristane-self-improving-software-is-inevitable]] — Boris Tane beschreibt einen Entwicklungsprozess, in dem Agents Logs, Traces, Produktmetriken, Session Replays und Supporttickets gemeinsam untersuchen und Verbesserungen vorbereiten.
 - [[2026-09-27-anthropic-academy-sdlc-playbook]] — Jede SDLC-Phase endet mit einem committeten Artefakt; beratende Ebenen wie Skills brauchen erzwingende wie Hooks, und der schreibende Agent genehmigt sich nie selbst.
 - [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] — Eric Tech erläutert Anthropics AI-native SDLC-Playbook als durchgängigen Ablauf mit Claude Code.
 - [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] — Anthropic staffelt Review-Autonomie nach Risiko, prüft neue Reviewer im Shadow Mode und kontrolliert automatische Freigaben durch menschliche Stichproben; Agent-Rechte müssen auch Kommunikationswege erfassen. Herstellerbericht ohne unabhängige Wirkungsmessung.
@@ -33,6 +34,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachv
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-11-developers-codex-as-a-platform-build-on-the-open-agent-harn]]
 - [[2026-10-09-openai-refactoring]]
 - [[2026-10-09-openai-codebase-onboarding]]
 - [[2026-10-05-venelin-valkov-stop-ai-code-slop-yes-you-still-need-to-refactor]]

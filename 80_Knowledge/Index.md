@@ -79,16 +79,21 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]] — Aufgabe, Qualität, Kontext und Parallelität vor Hardwarevergleich mit einem repräsentativen Versuch prüfen.
 - [[Framework-Quellcode-als-idiomatische-Referenz]] — passende Bibliotheksimplementierungen gezielt lesen; Versionspassung und Verhaltensprüfung bleiben eigene Grenzen.
 - [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] — Fachprozess und Verantwortung vor Toolauswahl klären, Anwender befähigen und den Pilot bewusst abnehmen.
+- [[Schema-als-Vertrag-mit-generierten-Clients]] — strukturelle API-Verträge aus einer Schemaquelle ableiten, Clients generieren und angebundene Verbraucher in CI prüfen.
+- [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]] — Cache-Laufzeit anhand tatsächlicher Pausen, Wiederverwendung und Schreibkosten wählen; wirksame Overrides gesondert prüfen.
+- [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] — codebasierte Filme mit Ereignisframes, begrenzten Reparaturen und finaler Bild-, Ton- und Exportabnahme produzieren.
 
 ## Themen
 
-Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 20 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand. [[Thema-KI-Risiken-Sicherheitsvorfälle]] sammelt Warnungen, Risikoszenarien und konkrete Vorfälle mit KI.
+Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 21 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand. [[Thema-KI-Risiken-Sicherheitsvorfälle]] sammelt Warnungen, Risikoszenarien und konkrete Vorfälle mit KI.
 
 [[Thema-KI-gestützte-Wissensarbeit]] bündelt Quellenaufnahme, Markdown-Wissenspflege, RAG mit OCR und Tabellen sowie Videoanalyse aus Frames und Transkript.
 
 [[Thema-Sicherheit-Sandboxing]] bündelt Sandbox-Mechanismen, Permissions und OS-Isolation für die Ausführung von Agent-Tools.
 
 [[Thema-Open-Source-LLMs-lokale-Modelle]] bündelt offene Gewichte, lokale Inferenz, Hardware, Quantisierung und Fine-Tuning; angekündigte und verfügbare Modelle bleiben unterscheidbar.
+
+[[Thema-KI-Anwendungen-Forschung]] bündelt konkrete KI-Anwendungen in Medizin und Wissenschaft mit ihrer Einsatzrolle, Studienlage und Grenzen.
 
 ## Guides
 

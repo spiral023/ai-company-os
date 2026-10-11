@@ -9,7 +9,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - **Hauptkeyword:** Claude Code Skills
 - **Long-Tail:** Skill Description schreiben; Skill Evals Baseline; SKILL.md Aufbau; Skills vs. Slash Commands; Skill Trigger optimieren; Skills als Teamwissen
 - **Fragen:** Wann lohnt sich ein eigener Skill? / Warum löst mein Skill nicht aus?
-- **Häufig in den Quellen:** progressive disclosure (11), claude code skills (8), skill (7), skills (7), skill description (6), eval (6), trigger (6), skill.md (5), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), wayfinder (4), claude.md (4), agents.md (4), claude skills (3), baseline-vergleich (3), skill-creator (3), undertriggering (3)
+- **Häufig in den Quellen:** progressive disclosure (11), claude code skills (8), skill (8), skills (8), skill description (6), eval (6), trigger (6), skill.md (5), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), wayfinder (4), claude.md (4), agents.md (4), claude skills (3), baseline-vergleich (3), skill-creator (3), undertriggering (3)
 
 ## Verwandte Themen
 
@@ -23,21 +23,23 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - [[Anti-Rationalization-Tables]] · verifiziert · 4 Belege
 - [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 10 Belege
 - [[Hook-erzwungene-Skill-Aktivierung]] · meinung · 4 Belege
-- [[Klein-und-komposierbar]] · verifiziert · 20 Belege
+- [[Klein-und-komposierbar]] · verifiziert · 21 Belege
 - [[One-File-per-Failure-Mode]] · verifiziert · 3 Belege
-- [[Skill-Call-Hierarchie]] · verifiziert · 12 Belege
-- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 20 Belege
+- [[Skill-Call-Hierarchie]] · verifiziert · 13 Belege
+- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 22 Belege
 - [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 4 Belege
 - [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 6 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Artefaktbasis]], [[Erweiterungs-Ebenen-Zuordnung]], [[Hillclimbing-mit-Holdout-Split]], [[Videoanalyse-mit-Frames-und-Transkript]]
 
-## Quellen (24)
+## Quellen (26)
 
+- [[2026-10-11-emilkowalski-2109277388437868623]] — Emil Kowalski kündigt am `2026-10-11` den Skill `/animation-performance` an.
 - [[2026-10-05-repo-alirezarezvani-skill-doctor]] — Im Klon von alirezarezvani/claude-skills (Stand Commit `19392f7a`) liegt `engineering/skill-doctor/` mit SKILL.md (Version 1.0.0, MIT), drei Python-Skripten und zwei Bewertungsrubriken.
 - [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]] — Skills 1.3 ergänzt Spec-Umsetzung, PR-Aufbereitung und eine Retro mit menschlicher Auswahl; große Integrationsbranches bleiben eine Review-Grenze.
 - [[2026-10-02-repo-anthropics-skills]] — Im Klon von anthropics/skills (Stand Commit `8a1541c4`) enthält der Skill `skills/claude-api/` unter `shared/evals/` die Anleitungen `build-eval.md`, `eval-hillclimb.md`, `cost-hillclimb.md` und `eval
 - [[2026-09-14-code-test-plugins-with-evals-claude-code-docs]] — Plugins und Skills lassen sich per Eval mit und ohne Plugin vergleichen; das Delta zeigt den Beitrag, ein negatives Delta verdächtigt zuerst den Judge.
+- [[2026-08-19-developer-evaluating-ai-agent-skill-performance-with-nvidi]] — NVIDIA berichtet bessere Ergebnisse mit Skills in eigenen Produktaufgaben.
 - [[2026-08-09-julian-ivanov-ki-automat-5-claude-code-skills-die-dir-wirklich-arbeit-abn]] — Lernprotokolle, Produktbriefing und unabhängige Widerlegung von Audit-Funden ergänzen Skills; Popularität oder mehrere Prüfer belegen keinen Erfolg.
 - [[2026-07-30-julian-ivanov-interaktive-schulungen-mit-claude-code]] — Ein Skill kann Briefing, Curriculum-Freigabe und Medienproduktion zu einem wiederholbaren Kurs-Workflow verbinden, wobei ein menschliches Review-Gate teure Fehlproduktion verhindert.
 - [[2026-07-21-promptgefluester-prompt-engineering-ist-tot-und-keiner-hats-gemerkt-was-meine-ich-damit]] — Statt eines langen Initial-Prompts erzeugen Rückfrage-Skills sauberen Basis-Kontext und Hook-Skills laden Regeln im Prozess nach, weil frühe Regeln im wachsenden Kontext verblassen.
@@ -81,7 +83,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Art
 - [[2026-08-21-promptgefluester-agent-plug-ins-das-ist-der-neue-standard-mit-dem-die-grossen-ai]]
 - [[2026-08-21-julian-ivanov-ki-automat-hermes-agent-kann-jetzt-viel-mehr-als-du-denkst]]
 - [[2026-08-21-ai-mit-arnie-diese-skills-machen-claude-design-unfair]]
+- [[2026-08-14-mattpocockuk-2088256432265167185]]
 - [[2026-08-14-agenticjames-ai-memory-is-trash-heres-some-solutions]]
+- [[2026-08-13-openai-2087912623883051300]]
 - [[2026-08-05-creatoreconomy-use-my-human-review-skill-to-edit-html-and-markd]]
 - [[2026-07-31-alex-sprogis-dieser-claude-code-skill-ist-genial]]
 - [[2026-07-24-claude-the-new-rules-of-context-engineering-for-claude]]

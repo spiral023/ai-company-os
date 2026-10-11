@@ -35,6 +35,8 @@ Als abgeleitete Abnahme gehört der Gesamtaufwand einschließlich Prüfung und N
 ## Belege
 
 - 2025-12-04 · [[2025-12-04-brutkasten-business-vs-technik-wie-man-ki-in-organisationen]] · meinung — Beteiligung an der Use-Case-Sammlung, abgestufte Befähigung und interne Testgruppen werden als Wege in eine tragfähige Einführung beschrieben. Ein Prototyp oder eine Lizenz ersetzt keine fachliche Abnahme; Messergebnisse werden nicht vorgelegt.
+- 2026-08-13 · [[2026-08-13-openai-2087912623883051300]] · meinung — OpenAI berichtet höhere Plugin- und Skill-Nutzeranteile bei führenden Firmen, was die Prüfung passender Erweiterungen motiviert. Der Zusammenhang belegt keine kausale Produktivitätswirkung; Nutzung und verbesserte Arbeit sind getrennt zu messen.
+- 2026-10-09 · [[2026-10-09-lukepierceops-2108655186080342138]] · meinung — Ergänzt den Pilot um Champion, Fachbereichsvertreter, geschützte Lernzeit und rollenbezogene Übungen; über achtzig Kunden sind Selbstbericht ohne Ergebnisdaten.
 
 ## Spannungen & offene Fragen
 

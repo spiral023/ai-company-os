@@ -9,7 +9,7 @@ Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Sys
 - **Hauptkeyword:** Risiken von KI
 - **Long-Tail:** KI-Gefahren für Kinder; Risiken von KI-Chatbots; KI und kritisches Denken; KI-gestützte Hackerangriffe; Sicherheitsvorfälle mit KI-Agents; Hugging Face KI-Vorfall; Sandbox Escape bei AI-Evaluierungen; KI-Warnungen und belegte Vorfälle unterscheiden; Kontrollverlust durch KI; Existenzielle KI-Risiken; KI zur Verteidigung gegen KI
 - **Fragen:** Welche KI-Risiken sind belegt und welche sind Warnungen? / Welche Risiken betreffen Minderjährige besonders? / Welche Rolle hatte KI bei einem Angriff: Werkzeug, Zielsystem oder handelnder Agent? / Was lässt sich aus konkreten KI-Sicherheitsvorfällen lernen?
-- **Häufig in den Quellen:** risiken von ki (2), szenarien, historische einordnung, ki-risiken, scorer-manipulation, primärberichte, kommunikationswege, hugging-face-vorfall, evan hubinger, jakub pachocki, existenzielle ki-risiken, persönliche risikoeinschätzung, jacob coxon, selbstverbessernde ki, forscherwarnung, kontrollverlust durch ki, übermenschliche ki-fähigkeiten, defensive ki, governance, embedded evaluators
+- **Häufig in den Quellen:** ai 2027 (2), risiken von ki (2), alignment (2), ki-risiken, historische einordnung, szenarien, prognoseprüfung, bewertungskriterien, szenario, trefferquote, kommunikationswege, hugging-face-vorfall, primärberichte, scorer-manipulation, persönliche risikoeinschätzung, selbstverbessernde ki, übermenschliche ki-fähigkeiten, forscherwarnung, evan hubinger, jakub pachocki
 
 ## Verwandte Themen
 
@@ -23,10 +23,17 @@ Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Sys
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]]
 
-## Quellen (5)
+## Quellen (7)
 
+- [[2026-10-11-ai-2027-ai-2027]] — AI 2027 beschreibt einen möglichen Weg von Coding-Agenten zu stark automatisierter KI-Forschung und einer Kontrollkrise.
 - [[2026-09-24-orf-ex-google-manager-warnt-vor-ki-gefahren-fuer-kin]] — ORF.at berichtet über eine Warnung des früheren Google-Managers für Nutzersicherheit Tom Siegel gegenüber Reuters.
 - [[2026-09-12-darioamodei-2098773920774074715]] — Dario Amodei kündigt am 12.09.2026 einen Vorschlag zum langsameren Fortschritt an der KI-Frontier an.
 - [[2026-09-09-orf-anthropic-forscher-ki-risiko-fuer-menschen]] — ORF.at berichtet am 09.09.2026 über Warnungen von Forschern aus Anthropic und OpenAI vor künftig übermenschlichen KI-Fähigkeiten.
 - [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]] — Primärberichte ergänzen die Einordnung unerlaubter Kommunikationswege und manipulierter Prüfsignale; die Forschungsumgebung begrenzt allgemeine Schlussfolgerungen.
+- [[2026-08-12-kimmonismus-2087452378299564147]] — Der Post behauptet, 19 von 24 Vorhersagen seien eingetroffen.
 - [[2025-04-09-the-morpheus-ki-ist-ein-fluch]] — Historische Risikoszenarien und persönliche Beispiele liefern keine geprüften Kennzahlen oder belastbaren Zukunftsprognosen.
+
+## Quellen mit diesem Thema als Nebenthema
+
+- [[2026-10-10-satyanadella-2108931348857827686]]
+- [[2026-08-19-openai-2090165328290701800]]

@@ -40,8 +40,11 @@ Als Einordnung müssen Verdichtungen auf ihre Eingänge zurückführbar bleiben.
 - 2026-03-21 · [[2026-03-21-sourfraser-claude-obsidian-ai-employee]] · meinung — Die bereits vorhandene sekundäre Aufarbeitung beschreibt einen Memory Loop aus Call-Transkripten, Entscheidungen, Action Items und Kundendateien. Der Erfahrungsbericht wird konsolidiert, ohne seine Wachstumsbehauptungen als Nachweis zu übernehmen.
 
 - 2026-06-18 · [[2026-06-18-julian-ivanov-ki-automat-bau-dir-dein-ki-betriebssystem-mit-claude-code-k]] · meinung — Trennt Wissen, Tool-Verbindungen, Skills und Routinen; wiederkehrende Ausführung nutzt bestehende Skills und legt Ergebnisse wieder im Wissensbestand ab. Die Demo belegt keine selbstständige Aktualität, konfliktfreie Synchronisation oder Prozessfortsetzung nach einem Server-Neustart.
+- 2026-10-09 · [[2026-10-09-lukepierceops-2108655186080342138]] · meinung — Beschreibt monatliche Prüfung einer Lernbibliothek und einen gemeinsamen Use-Case-Backlog; das vorgeschlagene Löschen veralteter Inhalte passt nicht zu append-only Patterns.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-11: [[2026-10-09-lukepierceops-2108655186080342138]] empfiehlt, überholte Lerninhalte aus einer Trainingsbibliothek zu entfernen. Für unsere append-only Patterns wird daraus eine datierte Einordnung mit erhaltener Historie; das Bibliotheksverfahren ist keine Erlaubnis zum Löschen von Belegen.
 
 - 2026-10-11: Kompakte aktuelle Notizen erleichtern den Wiedereinstieg; ohne nachvollziehbare Eingänge können sie zugleich unbemerkte Verdichtungsfehler zum vermeintlichen Projektwissen machen.
 - 2026-10-11: Wie werden überholte Arbeitsstände und widersprüchliche Entscheidungen erkannt, bevor eine Routine sie erneut verwendet?
