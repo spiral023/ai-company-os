@@ -13,6 +13,45 @@ updater = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(updater)
 
 
+def test_main_refreshes_html_even_without_index_changes(tmp_path, monkeypatch):
+    import argparse
+    repo = tmp_path / "owner/repo"
+    monkeypatch.setattr(updater, "find_repos", lambda: [repo])
+    monkeypatch.setattr(updater, "EXTERNAL_ROOT", tmp_path)
+    monkeypatch.setattr(updater, "scan_repo", lambda _repo: (1, 100, "src/"))
+    monkeypatch.setattr(updater, "update_index", lambda *args: False)
+    calls = []
+    monkeypatch.setattr(updater, "refresh_html", lambda: calls.append("html") or True)
+    parser = argparse.ArgumentParser()
+    parser.set_defaults(repo=None, index_only=True, no_index=False, no_stars=True, dry_run=False)
+    monkeypatch.setattr(updater, "build_parser", lambda: parser)
+    monkeypatch.setattr("sys.argv", ["update_external_repos.py"])
+    assert updater.main() == 0
+    assert calls == ["html"]
+    parser.set_defaults(dry_run=True)
+    calls.clear()
+    assert updater.main() == 0
+    assert calls == []
+    parser.set_defaults(dry_run=False, no_index=True)
+    assert updater.main() == 0
+    assert calls == []
+
+
+def test_main_reports_a_failed_html_build(tmp_path, monkeypatch):
+    import argparse
+    repo = tmp_path / "owner/repo"
+    monkeypatch.setattr(updater, "find_repos", lambda: [repo])
+    monkeypatch.setattr(updater, "EXTERNAL_ROOT", tmp_path)
+    monkeypatch.setattr(updater, "scan_repo", lambda _repo: (1, 100, "src/"))
+    monkeypatch.setattr(updater, "update_index", lambda *args: False)
+    monkeypatch.setattr(updater, "refresh_html", lambda: False)
+    parser = argparse.ArgumentParser()
+    parser.set_defaults(repo=None, index_only=True, no_index=False, no_stars=True, dry_run=False)
+    monkeypatch.setattr(updater, "build_parser", lambda: parser)
+    monkeypatch.setattr("sys.argv", ["update_external_repos.py"])
+    assert updater.main() == 1
+
+
 def test_update_index_adds_missing_mechanical_metadata(tmp_path, monkeypatch):
     """New manually documented repos receive the metadata maintained by the script."""
     index = tmp_path / "INDEX.md"

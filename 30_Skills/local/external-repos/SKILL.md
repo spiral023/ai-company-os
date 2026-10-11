@@ -11,6 +11,10 @@ Pflegt `external_repos/` — eine lokale, nicht versionierte Referenzbibliothek 
 
 Diese Repos sind **Analyse- und Inspirationsquellen**, keine automatisch freigegebenen Abhängigkeiten. Vor produktiver Übernahme (nicht nur Referenz-Lektüre) gilt der Skill `repo-import-review` und Philipps Freigabe.
 
+## HTML-Bibliothek abschließen
+
+Nach der letzten Änderung an `external_repos/INDEX.md` in beiden Abläufen `python ai.py repos build` und anschließend `python ai.py repos check` ausführen. Fertig ist die Pflege, wenn der Check erfolgreich ist. Das Update-Script baut die HTML bereits beim Metadatenlauf; spätere Änderungen an Zusammenfassungen oder Struktur-Zeilen benötigen diesen abschließenden Build. Die erzeugte `external_repos/INDEX.html` bleibt versioniert; ihre modularen Quellen und die Pflegeanleitung liegen unter `70_Scripts/repo_library/`. Reine Lese- und Dry-run-Aufträge bleiben ohne Build.
+
 ## Ablauf A: Neues Repo laden
 
 1. **Klonen:** `git clone <url> external_repos/<owner>/<repo-name>` (Owner als Unterordner gegen Namenskollisionen, kein Submodule/Subtree).

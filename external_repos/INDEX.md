@@ -3,8 +3,9 @@
 Lokale Referenzbibliothek geklonter GitHub-Repos für AI-gestützte Produkt- und Softwareentwicklung: bewährte Workflows vergleichen, einzelne Skills und Regeln studieren, Agenten-Setups verstehen und konkrete Lösungsansätze extrahieren — ohne erneut klonen zu müssen. Gepflegt gemäß `AGENTS.md` → „Fremde GitHub-Repos herunterladen".
 
 - **Ablage:** `external_repos/<owner>/<repo-name>/` (Owner als Unterordner gegen Namenskollisionen, seit 2026-07-10).
-- **Versionierung:** Der Ordner `external_repos/` ist nicht versioniert (siehe `.gitignore`) und nicht im Obsidian-Vault sichtbar (siehe `.obsidian/app.json`); nur dieser Index ist versioniert.
+- **Versionierung:** Die Analysekopien unter `external_repos/` sind nicht versioniert und nicht im Obsidian-Vault sichtbar; Index, erzeugte HTML-Bibliothek und Änderungsprotokolle bleiben versioniert.
 - **Pflege:** Mechanische Felder (Dateien, Größe, Struktur, Übersicht) aktualisiert `70_Scripts/update_external_repos.py`; die Zusammenfassungen sind handgeschrieben.
+- **HTML-Bibliothek:** [Offline öffnen](INDEX.html). Nach Inhaltsänderungen mit `python ai.py repos build` neu erzeugen; `python ai.py repos check` prüft Aktualität und Vollständigkeit. Der Repo-Update-Lauf erzeugt die HTML automatisch. Modulare Quellen und Anleitung: `70_Scripts/repo_library/`.
 
 **So findest du schnell das passende Repo:**
 
@@ -23,20 +24,25 @@ Lokale Referenzbibliothek geklonter GitHub-Repos für AI-gestützte Produkt- und
 | Eine vage Idee schärfen | [mattpocock/skills](#mattpocockskills), [garrytan/gstack](#garrytangstack) | Gezielte Produktfragen, Grilling, Office Hours und Design-Reviews vor der Umsetzung |
 | Einen belastbaren Umsetzungsplan erstellen | [shadcn/improve](#shadcnimprove), [obra/superpowers](#obrasuperpowers), [open-gsd/gsd-core](#open-gsdgsd-core), [github/spec-kit](#githubspec-kit) | Repo-Audit, kleinteilige Pläne, Spec-driven Development und Review-Gates |
 | Strukturiert mit AI entwickeln | [obra/superpowers](#obrasuperpowers), [addyosmani/agent-skills](#addyosmaniagent-skills), [garrytan/gstack](#garrytangstack) | Durchgängige Workflows von Brainstorming und TDD bis Review, QA und Shipping |
+| Research, Planung und Implementierung getrennt durchführen | [humanlayer/skills](#humanlayerskills) | Dokumentierte RPI-Phasen mit frischen Sessions, visuellen Reviews und Vorlagen für begrenzte Agent-Schleifen |
 | Ein vollständiges Agile-Framework mit Rollen nutzen | [bmad-code-org/BMAD-METHOD](#bmad-code-orgbmad-method) | Scale-adaptive Phasen, benannte Experten-Personas, Party Mode, Web-Bundles und Modul-Ökosystem |
 | Kontext über lange Aufgaben erhalten | [OthmanAdi/planning-with-files](#othmanadiplanning-with-files), [open-gsd/gsd-core](#open-gsdgsd-core) | Persistente Plan-, Findings- und Statusdateien sowie frische Kontexte pro Phase |
 | Code testen, reviewen und sicher shippen | [addyosmani/agent-skills](#addyosmaniagent-skills), [garrytan/gstack](#garrytangstack), [shadcn/improve](#shadcnimprove) | Test-, Security-, Performance- und Code-Review-Workflows mit Verifikation |
 | Agenten-Ergebnisse prüfen und Feedback gebündelt zurückgeben | [petergyang/human-review](#petergyanghuman-review) | Direktes Editieren und punktgenau verankerte Kommentare in HTML, Markdown oder localhost-Seiten, als ein Batch an den Agenten |
 | React oder Next.js verbessern | [millionco/react-doctor](#millioncoreact-doctor), [vercel-labs/agent-skills](#vercel-labsagent-skills) | Deterministischer Audit mit CI-Gate sowie Performance-, Composition- und Accessibility-Regeln |
 | Mit shadcn/ui-Komponenten bauen | [shadcn-ui/ui](#shadcn-uiui) | Projektbewusster `shadcn`-Skill: liest `components.json`, empfiehlt Komposition und saubere Registry-Nutzung |
+| Designsystem-Regeln für Coding Agents durchsetzen | [shadcn-ui/lint](#shadcn-uilint) | Tailwind-v4-Regeln für Komponentenverträge, Theme-Tokens und hilfreiche ESLint-/Oxlint-Diagnosen |
 | KI-typische Schreibmuster aus Texten entfernen | [petergyang/no-ai-slop](#petergyangno-ai-slop) | Über 20 benannte Slop-Muster, ein Detect-Modus ohne Umschreiben und eine Selbstprüfung nach jeder Bearbeitung |
 | Web-Oberflächen mit fertigen CSS-Transitions animieren | [Jakubantalik/transitions.dev](#jakubantaliktransitionsdev) | 32 portable Transitions mit Motion-Tokens, Reduced-Motion-Guard, CLI und Live-Refine-Panel |
 | Eine generische AI-Oberfläche aufwerten | [pbakaus/impeccable](#pbakausimpeccable), [Leonxlnx/taste-skill](#leonxlnxtaste-skill), [emilkowalski/skills](#emilkowalskiskills), [jakubkrehel/make-interfaces-feel-better](#jakubkrehelmake-interfaces-feel-better) | Anti-Slop-Regeln, Design-Taste, Animationen, visuelle Reviews und gezielte Polish-Workflows |
 | Ein Design-System ableiten | [nextlevelbuilder/ui-ux-pro-max-skill](#nextlevelbuilderui-ux-pro-max-skill), [pbakaus/impeccable](#pbakausimpeccable), [VoltAgent/awesome-design-md](#voltagentawesome-design-md) | Datenbasierte Stil-, Farb- und Typografieauswahl sowie fertige, markenspezifische DESIGN.md-Tokens |
 | Vom Brief zu Design-Artefakten arbeiten | [nexu-io/open-design](#nexu-ioopen-design), [abi/screenshot-to-code](#abiscreenshot-to-code) | Agent-native Prototypen, Decks, Bild/Video-Artefakte oder Screenshot-zu-Code-Generierung |
+| Videos und Motion Graphics mit HTML erstellen | [heygen-com/hyperframes](#heygen-comhyperframes) | HTML-Kompositionen, Agent-Skills, Browser-Vorschau und lokale MP4-Renderpipeline |
 | Frontend-Qualität mit Checklisten und MCP-Tools prüfen | [thedaviddias/Front-End-Checklist](#thedaviddiasfront-end-checklist) | 385 kuratierte Regeln, 390 generierte Skills und ein gehosteter MCP-Server mit Audit-/Fix-Tools |
 | Eine fremde Codebasis verstehen | [Egonex-AI/Understand-Anything](#egonex-aiunderstand-anything), [shanraisshan/claude-code-best-practice](#shanraisshanclaude-code-best-practice), [Graphify-Labs/graphify](#graphify-labsgraphify) | Knowledge Graph, Architektur- und Domain-Analyse sowie praxisnahe Agenten-Wissensbasis |
 | Eine Codebasis als Architekturkarte dokumentieren | [oh-my-mermaid/oh-my-mermaid](#oh-my-mermaidoh-my-mermaid) | Perspektiven für Struktur, Datenfluss und Request-Lifecycle; Mermaid-Diagramme mit Dateipfaden und rekursiven Detailansichten |
+| Diagramme für Dokumentation und Präsentationen gestalten | [cathrynlavery/diagram-design](#cathrynlaverydiagram-design) | 44 Diagrammtypen, Design-Tokens, HTML mit inline SVG und nachvollziehbare Diagrammimporte |
+| Anwendungen und Binärdateien anhand von Belegen untersuchen | [morluto/rea](#morlutorea) | CLI, MCP und Skill für statische Analyse, Browser- und Laufzeitbeobachtung |
 | Einen Obsidian-Vault mit Agenten bearbeiten | [kepano/obsidian-skills](#kepanoobsidian-skills) | Obsidian-Markdown, Bases, JSON Canvas, CLI-Steuerung und Web-Extraktion |
 | Begriffe des AI-Codings klären und gemeinsam benennen | [mattpocock/dictionary-of-ai-coding](#mattpocockdictionary-of-ai-coding) | 71 knappe Erklärungen von Harness bis Attention Budget, jeweils mit typischem Symptom und Beispieldialog |
 | AI-/LLM-Engineering-Konzepte (Skills, Harness, Kontext, SDD) nachschlagen | [mleibetseder/ai-llm-wiki](#mleibetsederai-llm-wiki) | 380 quellenzitierte Konzept-Seiten, destilliert aus 234 Artikeln und 25 Fach-PDFs |
@@ -78,6 +84,7 @@ Durchgängige Entwicklungs-Workflows: Anforderungen klären, planen, umsetzen, v
 | [bmad-code-org/BMAD-METHOD](#bmad-code-orgbmad-method) | Ein vollständiges Agile-AI-Framework mit Rollen einsetzen | Phasen-Workflows, benannte Personas, Party Mode, Web-Bundles und Modul-Ökosystem | Framework / Sammlung | `external_repos/bmad-code-org/BMAD-METHOD/src/` |
 | [DietrichGebert/ponytail](#dietrichgebertponytail) | Overengineering und Code-Bloat vermeiden | Prioritätenleiter (YAGNI, Wiederverwendung, Stdlib) vor jeder Implementierung, ~20 Agent-Hosts | Skill / Sammlung | `external_repos/DietrichGebert/ponytail/skills/` |
 | [garrytan/gstack](#garrytangstack) | Einen vollständigen AI-Entwicklungszyklus abbilden | Rollen-Reviews, Browser-QA, Security, Shipping und persistentes Wissen | Framework | `external_repos/garrytan/gstack/` |
+| [humanlayer/skills](#humanlayerskills) | Entwicklungsphasen und wiederkehrende Codepflege strukturieren | RPI, visuelle Erklärungen und PRs, begrenzte Agent-Schleifen | Sammlung / Framework | `external_repos/humanlayer/skills/plugins/rpi/skills/rpi/` |
 | [github/spec-kit](#githubspec-kit) | Spec-Driven Development als ausführbaren Prozess etablieren | Python-CLI, Slash-Commands je Phase, Extensions/Presets/Bundles, 30+ Agenten | Framework / Tool | `external_repos/github/spec-kit/templates/` |
 | [mattpocock/skills](#mattpocockskills) | Anforderungen klären, TDD und Debugging | Kleine Engineering-Skills, Grilling, Fachsprache und Architekturpflege | Sammlung | `external_repos/mattpocock/skills/skills/` |
 | [multica-ai/andrej-karpathy-skills](#multica-aiandrej-karpathy-skills) | Ein kompaktes Grundverhalten für Agenten vorgeben | Vier Regeln (Think Before Coding, Simplicity First u.a.) als CLAUDE.md/Cursor-Rule/Skill | Skill | `external_repos/multica-ai/andrej-karpathy-skills/skills/` |
@@ -111,7 +118,9 @@ UI-Qualität, Design-Systeme, Animation, React/Next.js-Audits und Design-Artefak
 | Repo | Am besten geeignet für | Konkret nutzbar | Charakter | Lokaler Einstieg |
 |---|---|---|---|---|
 | [abi/screenshot-to-code](#abiscreenshot-to-code) | Screenshots und Mockups in Frontend-Code überführen | React/FastAPI-App, Multi-Modell-Generierung, Asset-Extraktion und Video-Modus | Tool | `external_repos/abi/screenshot-to-code/` |
+| [cathrynlavery/diagram-design](#cathrynlaverydiagram-design) | Diagramme für Dokumentation, Präsentationen und Blogbeiträge gestalten | 44 Diagrammtypen, inline SVG, Designsystem, Import- und Export-Helfer | Skill | `external_repos/cathrynlavery/diagram-design/skills/diagram-design/` |
 | [emilkowalski/skills](#emilkowalskiskills) | Animation und Design-Details verbessern | Design-Engineering-Regeln, Animation-Reviews und präzises Motion-Vokabular | Sammlung | `external_repos/emilkowalski/skills/skills/` |
+| [heygen-com/hyperframes](#heygen-comhyperframes) | HTML-Kompositionen in Videos und Motion Graphics überführen | CLI, Browser-Vorschau, MP4-Renderer, Studio und 21 veröffentlichte Agent-Skills | Tool / Framework | `external_repos/heygen-com/hyperframes/skills/hyperframes/` |
 | [Jakubantalik/transitions.dev](#jakubantaliktransitionsdev) | Konkrete Interaktionen animieren, ohne Motion selbst zu entwerfen | 32 benannte CSS-Transitions als Skill, Motion-Tokens, `prefers-reduced-motion`, CLI und Refine-Panel | Tool / Skill | `external_repos/Jakubantalik/transitions.dev/skills/transitions-dev/` |
 | [jakubkrehel/make-interfaces-feel-better](#jakubkrehelmake-interfaces-feel-better) | Finaler Polish-Pass für Web-UIs | Regeln zu Radien, Schatten, Hit Areas, Typografie und Animation mit Before/After-Review | Skill | `external_repos/jakubkrehel/make-interfaces-feel-better/skills/` |
 | [Leonxlnx/taste-skill](#leonxlnxtaste-skill) | AI-generierte Frontends weniger generisch machen | Stilvarianten, Layout-, Typografie- und Motion-Regeln, Redesign-Prompts | Sammlung | `external_repos/Leonxlnx/taste-skill/skills/` |
@@ -120,6 +129,7 @@ UI-Qualität, Design-Systeme, Animation, React/Next.js-Audits und Design-Artefak
 | [nexu-io/open-design](#nexu-ioopen-design) | Agent-native Design-Artefakte erzeugen | Desktop-Studio, Skills, `DESIGN.md`, Plugins, MCP und HTML/PDF/PPTX/MP4-Export | Tool / Framework | `external_repos/nexu-io/open-design/` |
 | [pbakaus/impeccable](#pbakausimpeccable) | Bestehende Frontends systematisch polieren | 23 Design-Befehle, Produktkontext und deterministische Anti-Slop-Detektoren | Tool / Skill | `external_repos/pbakaus/impeccable/skill/` |
 | [shadcn-ui/ui](#shadcn-uiui) | Projektbewusst mit shadcn/ui arbeiten | `shadcn`-Skill liest `components.json`, empfiehlt Komposition und saubere Registry-Nutzung | Tool / Skill | `external_repos/shadcn-ui/ui/` |
+| [shadcn-ui/lint](#shadcn-uilint) | Tailwind-v4-Designsysteme konsistent halten | ESLint-/Oxlint-Regeln, Komponentenverträge, Theme- und Klassenprüfungen | Tool | `external_repos/shadcn-ui/lint/packages/lint/src/` |
 | [thedaviddias/Front-End-Checklist](#thedaviddiasfront-end-checklist) | Frontend-Qualität systematisch checken | 385 Regeln, 390 generierte Skills, gehosteter MCP-Server mit Audit-/Fix-Tools | Tool / Sammlung | `external_repos/thedaviddias/Front-End-Checklist/skills/` |
 | [vercel-labs/agent-skills](#vercel-labsagent-skills) | React, Next.js und Web-UIs optimieren | Performance-, Composition-, Accessibility-, Writing- und Animation-Regeln | Sammlung | `external_repos/vercel-labs/agent-skills/skills/` |
 | [VoltAgent/awesome-design-md](#voltagentawesome-design-md) | Marken-Design-Tokens direkt ins Projekt legen | ~70 kuratierte DESIGN.md-Dateien bekannter Marken (Farben, Typografie, Spacing) | Wissensbasis | `external_repos/VoltAgent/awesome-design-md/design-md/` |
@@ -152,6 +162,7 @@ Onboarding in fremde Codebasen, Nachschlagewerke und aktuelle Dokumentation.
 | [mattpocock/dictionary-of-ai-coding](#mattpocockdictionary-of-ai-coding) | Eine gemeinsame Sprache für die Arbeit mit Coding-Agenten aufbauen | 71 quervernetzte Begriffe in 7 Sektionen, je mit Mechanik, Symptom und Usage-Dialog | Wissensbasis | `external_repos/mattpocock/dictionary-of-ai-coding/dictionary/` |
 | [mleibetseder/ai-llm-wiki](#mleibetsederai-llm-wiki) | Verdichtetes, zitiertes AI-/LLM-Engineering-Wissen nachschlagen | 380 Konzept-Seiten zu Skills, Harness, Context Engineering, SDD; 234 Rohquellen inkl. 25 Fach-PDFs | Wissensbasis | `external_knowledge/ai-llm-wiki/wiki/` |
 | [oh-my-mermaid/oh-my-mermaid](#oh-my-mermaidoh-my-mermaid) | Codearchitektur in mehreren Perspektiven nachvollziehen | Rekursive Mermaid-Karten, sieben Dokumentationsfelder und Viewer; Cloud-Abgleich separat prüfpflichtig | Tool / Skill | `external_repos/oh-my-mermaid/oh-my-mermaid/skills/omm-scan/` |
+| [morluto/rea](#morlutorea) | Verhalten bestehender Anwendungen beleggestützt untersuchen | Statische Analyse, native Provider, Browser- und Prozessbeobachtung, MCP | Tool / Skill | `external_repos/morluto/rea/.agents/skills/reverse-engineer-anything/` |
 | [shanraisshan/claude-code-best-practice](#shanraisshanclaude-code-best-practice) | Claude-Code-Methoden vergleichen und nachschlagen | Best Practices, Reports, Community-Tipps und Workflow-Vergleiche | Wissensbasis | `external_repos/shanraisshan/claude-code-best-practice/best-practice/` |
 | [teng-lin/notebooklm-py](#teng-linnotebooklm-py) | NotebookLM automatisieren und als quellengebundenen Agenten-Speicher einsetzen | Python-API, CLI, MCP/REST-Server, Codex-Skill sowie Export von Audio, Reports, Quiz, Mindmaps und mehr | Tool / Skill | `external_repos/teng-lin/notebooklm-py/` |
 | [upstash/context7](#upstashcontext7) | Aktuelle, versionsgenaue Dokumentation abrufen | `ctx7`-CLI, MCP-Server, Library-ID-Auflösung und Docs-Abfragen | Tool / Dienst | `external_repos/upstash/context7/` |
@@ -253,13 +264,14 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 <!-- OVERVIEW:START (automatisch generiert von 70_Scripts/update_external_repos.py — nicht von Hand bearbeiten) -->
 ## Übersicht
 
-- **Repos gesamt:** 65
-- **Gesamtgröße:** ca. 2.512 MB
-- **Dateien gesamt:** ca. 120.872 (ohne `.git`)
+- **Repos gesamt:** 70
+- **Gesamtgröße:** ca. 3.452 MB
+- **Dateien gesamt:** ca. 134.123 (ohne `.git`)
 - **Stand:** 2026-10-11
 
 | Repo | Dateien | Größe | ⭐ |
 |---|---:|---:|---:|
+| heygen-com/hyperframes | 9.254 | 881M | 60.891 |
 | diegosouzapw/OmniRoute | 23.865 | 707M | 73.232 |
 | thedotmack/claude-mem | 2.023 | 157M | 96.451 |
 | paperclipai/paperclip | 8.311 | 130M | 97.483 |
@@ -281,9 +293,11 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 | alirezarezvani/claude-skills | 5.443 | 35M | 27.662 |
 | Jakubantalik/transitions.dev | 301 | 33M | 4.555 |
 | Egonex-AI/Understand-Anything | 515 | 32M | 85.328 |
+| morluto/rea | 2.851 | 30M | 100.259 |
 | midudev/autoskills | 4.610 | 30M | 6.930 |
 | OthmanAdi/planning-with-files | 738 | 30M | 27.290 |
 | router-for-me/CLIProxyAPI | 1.823 | 29M | 54.203 |
+| cathrynlavery/diagram-design | 647 | 26M | 50.171 |
 | microsoft/markitdown | 195 | 26M | 188.585 |
 | Graphify-Labs/graphify | 991 | 25M | 123.967 |
 | bradygaster/squad | 2.070 | 24M | 3.251 |
@@ -308,16 +322,18 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 | coreyhaines31/marketingskills | 515 | 4,0M | 53.324 |
 | abi/screenshot-to-code | 316 | 2,6M | 79.998 |
 | VoltAgent/awesome-design-md | 153 | 2,1M | 119.630 |
-| oh-my-mermaid/oh-my-mermaid | 212 | 2,0M | 2.709 |
+| oh-my-mermaid/oh-my-mermaid | 212 | 2,0M | 3.025 |
 | obra/superpowers | 229 | 1,9M | 295.523 |
 | petergyang/human-review | 52 | 1,8M | 1.363 |
 | DietrichGebert/ponytail | 170 | 1,8M | 155.698 |
+| shadcn-ui/lint | 397 | 1,6M | 3.166 |
 | vercel-labs/skills | 129 | 1,1M | 33.167 |
 | addyosmani/agent-skills | 210 | 1,0M | 101.442 |
 | docker/skills | 176 | 846K | 527 |
 | karpathy/autoresearch | 10 | 747K | 97.331 |
 | mattpocock/skills | 161 | 700K | 276.808 |
 | ayghri/i-have-adhd | 73 | 596K | 53.834 |
+| humanlayer/skills | 102 | 351K | 5.193 |
 | mattpocock/dictionary-of-ai-coding | 90 | 331K | 4.946 |
 | emilkowalski/skills | 28 | 283K | 43.564 |
 | petergyang/no-ai-slop | 14 | 257K | 11.911 |
@@ -480,6 +496,19 @@ Squad baut über GitHub Copilot ein „menschengeführtes“ Team benannter KI-S
 
 ---
 
+## cathrynlavery/diagram-design
+
+- **URL:** https://github.com/cathrynlavery/diagram-design
+- **Stars:** ⭐ 50.171
+- **Heruntergeladen:** 2026-10-11
+- **Zuletzt aktualisiert:** 2026-10-11
+- **Dateien:** 647 · **Größe:** 26M
+- **Struktur:** Einzelner Skill unter `skills/diagram-design/` mit `SKILL.md`, Referenzen, Python-Helfern und Galerie `assets/index.html`; ergänzende Commands, Prompts und Dokumentation unter `commands/`, `prompts/` und `docs/` <!-- manual -->
+
+Diagram Design ist ein einzelner Agent-Skill für gestaltete Diagramme als HTML-Datei mit inline SVG. Laut README umfasst er 44 Diagrammtypen, darunter Architektur, Datenflüsse, Sequenzen, Deployment, Zustandsmodelle und Charts. Zielgruppe sind Entwickler, Autoren und Produktteams, die Grafiken für Dokumentation, Präsentationen oder Blogbeiträge benötigen. Der Ansatz verbindet ein reduziertes Designsystem mit semantischen Verhaltensmustern: wenige hervorgehobene Elemente, ein 4-Pixel-Raster, klare Typografie und gezielt nachgeladene Typreferenzen. Optional kommen zugängliche Animationen und gespeicherte Markenprofile hinzu. Einstieg sind `skills/diagram-design/SKILL.md` und die lokale Galerie `assets/index.html`. `references/style-guide.md` beschreibt Design-Tokens, `references/semantic-patterns.md` die Modellierung, `docs/cookbook.md` praktische Abläufe. Vorhandene draw.io-, Mermaid- und Excalidraw-Dateien werden neu gezeichnet; ein Fidelity Ledger dokumentiert Vereinfachungen. Python-Helfer übernehmen Extraktion, SVG-Export und Ausgabeprüfungen. PNG-Export benötigt Playwright und Chromium. Das Repo enthält eine MIT-Lizenz; `THIRD_PARTY_LICENSES.md` dokumentiert weitere Icon- und Font-Lizenzen sowie Markenhinweise. Standardvorlagen laden Google Fonts; Systemfonts ermöglichen netzfreie Ausgaben. Marken-Onboarding ruft auf Wunsch Websites ab, und Eingaben verarbeitet der gewählte Agent-Anbieter. Modellkosten hängen vom Host ab. Installationswege verändern Skill-Verzeichnisse; Updates können direkte Anpassungen überschreiben. Ergebnisqualität und Layout bleiben modellabhängig. Empfehlung: ausschließlich lokale Referenz für Diagrammgestaltung, progressive Kontextladung und nachvollziehbare Importe; keine automatische Integration.
+
+---
+
 ## coreyhaines31/marketingskills
 
 - **URL:** https://github.com/coreyhaines31/marketingskills
@@ -633,6 +662,32 @@ Graphify ist ein Python-CLI-Tool und PyPI-Paket (`graphifyy`), das Code, Dokumen
 - **Struktur:** Rust-Kern in `crates/`, Python-Paket in `headroom/`, Integrationen in `plugins/`, umfangreiche Evals und Dokumentation; kein klassisches Skill-Paket <!-- manual -->
 
 Headroom ist eine lokale Kontext-Kompressionsschicht für LLM-Anwendungen und Coding-Agenten. Es reduziert nach eigener Darstellung Tool-Ausgaben, Logs, RAG-Chunks, Dateien und Gesprächshistorie, bevor sie ein Modell erreichen, und verbindet das mit einem reversiblen Cache: Originale bleiben lokal verfügbar und können über Retrieval nachgeladen werden. Der Inhalt kann als Python-/TypeScript-Library, lokaler OpenAI-kompatibler Proxy, MCP-Server oder Agent-Wrapper eingesetzt werden; der Wrapper unterstützt unter anderem Claude Code, Codex, Copilot, OpenCode und Cline, inzwischen auch mit Erkennung von Azure-Foundry-Routing und Übernahme einer bereits gesetzten `ANTHROPIC_BASE_URL` als Upstream. Die Architektur routet Inhalte zu JSON-, AST-Code- oder Text-Kompressoren und versucht über CacheAligner zudem Provider-KV-Caches besser nutzbar zu machen. Ergänzend analysiert `headroom learn` vergangene Sitzungen und kann Korrekturen oder Präferenzen in lokale Agenten-Anweisungen schreiben; die Analyse läuft jetzt ohne Tools, und transkriptabgeleitete Inhalte bleiben im verwalteten Block. Die README nennt Benchmarks und Einsparungswerte, die als Herstellerangaben zu verstehen sind. Relevant als Referenz für lokale, wiederherstellbare Kontextreduktion und für die Kombination von Token-Ökonomie, Memory und Agenten-Integration. Zu beachten ist ein kürzlicher Breaking Change rund um Telemetrie: Die Lizenz wird nun über `HEADROOM_LICENSE` gelesen (`HEADROOM_LICENSE_KEY` nur noch als veralteter Alias), und der Cloud-Usage-Reporter, der Lizenz und Nutzungsdaten alle fünf Minuten an die Headroom-Cloud meldet, ist nur noch per ausdrücklichem Opt-in aktiv; zudem sorgt `--stateless` dafür, dass nichts in den Workspace geschrieben wird, und Proxy-Fehlertexte sowie das Proxy-Token bleiben aus der Client-Ausgabe heraus. Wegen Proxy, MCP, Session-Auswertung und möglichen Änderungen an Agenten-Konfigurationen weiterhin nur nach Datenfluss-, Telemetrie- und Berechtigungsprüfung produktiv einsetzen. Apache-2.0-lizenziert.
+
+---
+
+## heygen-com/hyperframes
+
+- **URL:** https://github.com/heygen-com/hyperframes
+- **Stars:** ⭐ 60.891
+- **Heruntergeladen:** 2026-10-11
+- **Zuletzt aktualisiert:** 2026-10-11
+- **Dateien:** 9.254 · **Größe:** 881M
+- **Struktur:** Bun-/TypeScript-Monorepo mit CLI, Renderpipeline und Studio unter `packages/`, 21 veröffentlichten Skills unter `skills/`, Katalog in `registry/`, Beispielen in `examples/` und Dokumentation in `docs/`; Testmedien nutzen Git LFS <!-- manual -->
+
+HyperFrames ist ein Open-Source-Framework, das HTML, CSS, Medien und zeitlich steuerbare Animationen in MP4-Videos überführt. Es richtet sich an Entwickler und Produktteams, die Launch-Videos, Erklärstücke, animierte Datenvisualisierungen oder Motion Graphics mit Coding Agents erstellen möchten. Kompositionen beschreiben Timing, Spuren und Medien über HTML-Attribute; die Engine steuert einzelne Frames in Headless Chrome und encodiert sie mit FFmpeg. Unterstützt werden unter anderem GSAP, CSS, Lottie, Three.js und WAAPI. Zum Repo gehören CLI, Renderpipeline, Browser-Studio, Player, Komponenten-Katalog und 21 veröffentlichte Agent-Skills. Der Router `skills/hyperframes/SKILL.md` verweist auf spezialisierte Workflows für Produktvideos, PR-Erklärungen, Musikvideos und weitere Formate. Technisch handelt es sich um ein Bun-/TypeScript-Monorepo; die CLI verlangt Node.js ab 22 und FFmpeg. Einstiegspunkte sind `README.md`, `packages/cli/`, `packages/engine/`, `packages/producer/` und die Skill-Referenzen. Die Root-Lizenz ist Apache-2.0. Cloud-Rendering, Veröffentlichung, Medienprovider und Telemetrie sind getrennte Datenfluss- und Kostenaspekte; Standalone-Skills können zusätzliche Workflows nachinstallieren. Vorläufig ausschließlich lokale Analyse-Referenz, ohne Installation oder Aktivierung. Beim Download waren 67 normale Git-Dateien zugleich als LFS-Dateien markiert. Ihre Hashes wurden gegen HEAD verifiziert; lokale Ausnahmen unter `.git/info/attributes` beheben diese Inkonsistenz für die Analysekopie, ohne versionierte Quelldateien zu ändern.
+
+---
+
+## humanlayer/skills
+
+- **URL:** https://github.com/humanlayer/skills
+- **Stars:** ⭐ 5.193
+- **Heruntergeladen:** 2026-10-11
+- **Zuletzt aktualisiert:** 2026-10-11
+- **Dateien:** 102 · **Größe:** 351K
+- **Struktur:** Sieben Skills/Plugins unter `plugins/`, RPI-Agenten unter `plugins/rpi/agents/`, Marketplace unter `.claude-plugin/marketplace.json`, Workflow-Vorlagen in Skill-Referenzen und TypeScript-Helfer unter `scripts/` <!-- manual -->
+
+HumanLayer Skills ist eine Sammlung von sieben Agent-Skills für Softwareentwicklung, visuelle Erklärungen und wiederkehrende Codepflege. Sie richtet sich vor allem an Entwickler und Teams mit Claude Code; für den RPI-Ablauf beschreibt die README auch Codex-Nutzung. Es handelt sich um Markdown-Prozesse und Plugin-Pakete mit Referenzen, Templates und Hilfscode. `plugins/rpi/skills/rpi/SKILL.md` führt von Recherchefragen über Designentscheidungen, PRDs und technische Entwürfe bis zur Implementierung. Die Phasen arbeiten standardmäßig in frischen Sessions und übergeben lokale Dokumente; TDD bezeichnet hier Technical Design. `show-me` erklärt Zusammenhänge mit Diagrammen, Code-Skizzen und HTML-Artefakten; `visual-pr` erstellt oder aktualisiert Pull Requests mit einer visuellen Änderungsübersicht. Weitere Skills überarbeiten Agent-Anweisungen und verengen React-Prop-Typen anhand tatsächlich genutzter Codepfade. Besonders relevant sind `build-iterated-agentic-loop` und `design-control-loop`: Sie bereiten wiederkehrende Agent-Aufgaben mit GitHub-Actions-Workflows, Feedback-Dateien und begrenzter Zahl offener PRs vor. Das Repo enthält eine MIT-Lizenz. `.claude-plugin/marketplace.json` verzeichnet die Pakete; `scripts/` enthält TypeScript-Helfer zur Synchronisierung und Prüfung von Referenzen. Workflow-Vorlagen setzen je nach Variante Node/Bun, Agenten-CLIs, GitHub CLI, API-Secrets und weitere Werkzeuge voraus. Sie installieren teilweise aktuelle Pakete, nutzen weitreichende Agent-Berechtigungen und können Branches pushen sowie PRs schreiben. Code und Prompts gehen an den Modellanbieter; API- und Actions-Kosten sind einzuplanen. Empfehlung: ausschließlich lokale Referenz für Entwicklungsphasen, visuelle Reviews und begrenzte Agent-Schleifen; keine automatische Installation oder Workflow-Aktivierung.
 
 ---
 
@@ -832,6 +887,19 @@ Persönliche, LLM-gepflegte Wissenssammlung eines Kollegen (Obsidian-Wissensgrap
 
 ---
 
+## morluto/rea
+
+- **URL:** https://github.com/morluto/rea
+- **Stars:** ⭐ 100.259
+- **Heruntergeladen:** 2026-10-11
+- **Zuletzt aktualisiert:** 2026-10-11
+- **Dateien:** 2.851 · **Größe:** 30M
+- **Struktur:** CLI, MCP und Analyseadapter in `src/`, Host-Brücken in `bridge/` und `native/`, ergänzender Skill unter `.agents/skills/reverse-engineer-anything/`, Dokumentation in `docs/` und Drittanbieterhinweise in `third_party/` und `licenses/` <!-- manual -->
+
+REA („Reverse Engineer Anything“) ist ein umfangreiches CLI- und MCP-Werkzeug für die Untersuchung von Anwendungen, Binärdateien und Laufzeitverhalten. Ein ergänzender Skill beschreibt die Untersuchungsabläufe; das Repository ist daher keine reine Skill-Sammlung. Zielgruppe sind Entwickler und technische Analysten, die Funktionen bestehender Programme anhand konkreter Belege nachvollziehen oder rekonstruieren möchten. Die Dokumentation unterscheidet statische Untersuchungen von JavaScript/Electron und .NET, native Analyse über Hopper, Ghidra oder IDA sowie Browser-, Android-, Firmware- und Prozessbeobachtung. Für die Orientierung eignen sich `README.md`, `docs/installation.md`, `docs/cli.md` und `docs/mcp-contracts.md`. Der Agent-Workflow liegt unter `.agents/skills/reverse-engineer-anything/`; Analyseadapter, MCP-Server und CLI unter `src/`, externe Brücken unter `bridge/`. Erforderlich sind unterstützte Node-Versionen ab 22.19 beziehungsweise 24.11 oder 26; zusätzliche Werkzeuge hängen vom Analyseziel und Betriebssystem ab. Die Root-Lizenz ist MIT; weitere Lizenzhinweise liegen unter `licenses/` und `third_party/`. Sichtbare Abhängigkeiten umfassen MCP-Bibliotheken, `playwright-core`, Prozess-/PTY-Werkzeuge und zahlreiche Parser. Der `prepare`-Hook kann im Source-Checkout Husky installieren. Setup verändert nach Bestätigung Agent-Konfigurationen und kann Hopper installieren. Laut README erfolgt die Analyse lokal, Ergebnisse gelangen jedoch an den verwendeten Agent und dessen Modellanbieter. Laufzeitbeobachtung startet oder bedient Zielprogramme mit Benutzerrechten; Provider können zusätzliche Lizenz- oder Modellkosten mitbringen. Empfehlung: ausschließlich lokale Referenz für beleggestützte Analyseabläufe, keine Installation oder Integration.
+
+---
+
 ## msitarzewski/agency-agents
 
 - **URL:** https://github.com/msitarzewski/agency-agents
@@ -926,7 +994,7 @@ Superpowers ist eine vollständige Softwareentwicklungs-Methodik als Satz kompon
 ## oh-my-mermaid/oh-my-mermaid
 
 - **URL:** https://github.com/oh-my-mermaid/oh-my-mermaid
-- **Stars:** ⭐ 2.709
+- **Stars:** ⭐ 3.025
 - **Heruntergeladen:** 2026-10-10
 - **Zuletzt aktualisiert:** 2026-10-10
 - **Dateien:** 212 · **Größe:** 2,0M
@@ -1054,6 +1122,19 @@ CLIProxyAPI ist ein in Go implementierter lokaler Proxy, der OpenAI-, Gemini-, C
 - **Struktur:** Rust-CLI in `src/`; Integrationen als `hooks/`, `.claude/` und `openclaw/`; 12× SKILL.md für Agenten-Anleitungen <!-- manual -->
 
 RTK („Rust Token Killer“) ist eine einzelne Rust-CLI, die Shell-Ausgaben vor der Übergabe an einen Coding-Agenten verdichtet. Statt Agenten ihre Arbeitsweise neu lernen zu lassen, können Hooks Bash-Aufrufe wie `git status`, `rg`, Test-Runner, Build-Tools, Cloud-CLIs oder Container-Kommandos transparent auf `rtk` umschreiben; der Agent erhält gefilterte, gruppierte, gekürzte und deduplizierte Ergebnisse. Zusätzlich bietet das Tool direkte Befehle für Dateien, Git, GitHub, Tests, Linting, Paketmanager, AWS, Docker und Analytics über erzielte Einsparungen. Unterstützt werden laut README zahlreiche Agenten, darunter Claude Code, Codex, Gemini CLI, Cursor, OpenCode, Copilot, OpenClaw, Trae und neu auch Google Antigravity, für das ein natives Plugin samt Lebenszyklus, Hook-Anbindung und Awareness-Regeln über `rtk init` bereitsteht. Wichtig ist die dokumentierte Grenze: eingebaute Read-/Grep-/Glob-Tools eines Agenten passieren den Bash-Hook nicht. Einzelkommandos ohne auflösbares Programm werden inzwischen über die Plattform-Shell ausgeführt, und die Ausgabe von pip und pytest (Dauer langer Läufe) wird korrekter wiedergegeben. RTK enthält außerdem eine optionale, standardmäßig deaktivierte anonyme Telemetrie, deren Kommando-Label gehärtet ist, damit Nutzerargumente nicht versehentlich mitgeloggt werden. Relevant als fokussierter Gegenentwurf zu großen Kontext-Frameworks: es optimiert vor allem die terminalbasierte Datenquelle, ohne den gesamten Prompt- oder Memory-Stack zu ersetzen. Für eine Produktivnutzung sind die globalen Hooks, die lokale Aufzeichnung von Roh-Ausgaben bei Fehlern („tee“) und die Telemetrie-Einstellung bewusst zu prüfen. Apache-2.0-lizenziert.
+
+---
+
+## shadcn-ui/lint
+
+- **URL:** https://github.com/shadcn-ui/lint
+- **Stars:** ⭐ 3.166
+- **Heruntergeladen:** 2026-10-11
+- **Zuletzt aktualisiert:** 2026-10-11
+- **Dateien:** 397 · **Größe:** 1,6M
+- **Struktur:** Plugin, Regeln und Projektmodell in `packages/lint/src/`, Agent-Evals in `packages/evals/`, Dokumentation in `docs/` und Setup-Anleitung in `SETUP.md` <!-- manual -->
+
+`@shadcn/lint` ist ein programmierbarer Linter für Tailwind-v4-Designsysteme und damit ein ausführbares Entwicklungswerkzeug, kein Skill-Pack. Er richtet sich an Teams, die UI-Code durch Coding Agents erstellen lassen und vorhandene Komponenten, Varianten und Theme-Tokens konsistent halten wollen. Regeln erfassen unter anderem unerlaubtes Restyling, rohe Farben, beliebige Werte, Inline-Styles, unbekannte Klassen und nicht statisch auswertbare Klassen. Konfigurierbare Komponentenverträge und Fehlermeldungen erklären, welche vorhandene Variante oder welcher Theme-Wert stattdessen verwendet werden soll. shadcn/ui ist dafür nicht erforderlich. Gute Einstiegspunkte sind `README.md`, `SETUP.md`, `docs/design-systems.md` und `docs/rules.md`; die Implementierung liegt unter `packages/lint/src/`. Das Paket unterstützt ESLint und Oxlint sowie React, Vue und Svelte. Voraussetzung ist Node.js ab 20.19; bei Vue und Svelte prüft Oxlint nur Script-Blöcke, weshalb die Framework-Unterstützung nicht überall gleich umfassend ist. Die Root-Lizenz ist MIT. Sichtbare Paketabhängigkeiten sind `@eslint/core`, `cn` und optional `oxc-parser`; Build-, Test- und Pack-Scripts erzeugen beziehungsweise verändern lokale Dateien. Die separat enthaltenen Agent-Evals unter `packages/evals/` rufen angemeldete Modell-CLIs auf und verursachen laut Dokumentation Modellkosten. Veröffentlichte Erfolgs- und Kostenwerte ersetzen keine Prüfung im eigenen Projekt. Empfehlung: ausschließlich lokale Referenz für überprüfbare Designsystem-Regeln und hilfreiche Agent-Diagnosen; keine Installation oder Integration wurde vorgenommen.
 
 ---
 

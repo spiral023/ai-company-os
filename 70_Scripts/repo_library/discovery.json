@@ -1,0 +1,32 @@
+{
+  "stopwords": ["ich", "mein", "meine", "meiner", "meinem", "meinen", "wir", "uns", "unser", "unsere", "ein", "eine", "einen", "einer", "einem", "der", "die", "das", "den", "dem", "des", "und", "oder", "mit", "von", "für", "zu", "im", "in", "an", "auf", "aus", "ist", "sind", "sieht", "wirkt", "will", "wollen", "möchte", "möchten", "kann", "können", "wie", "was", "es", "man", "etwas", "the", "a", "and", "to", "my"],
+  "synonyms": [
+    ["generisch", "generic", "austauschbar", "slop", "taste", "polish", "aufwerten"],
+    ["oberfläche", "oberflächen", "ui", "frontend", "interface", "app"],
+    ["verstehen", "untersuchen", "analyse", "analysieren", "onboarding"],
+    ["architektur", "architecture", "codebasis", "codebase"],
+    ["token", "tokens", "kontext", "context", "kompression", "verdichten", "compression"],
+    ["prüfen", "prüfung", "qualität", "audit", "review", "testen", "test", "check"],
+    ["diagramm", "diagramme", "diagram", "mermaid", "grafik"],
+    ["video", "videos", "motion", "animation", "animieren"],
+    ["dokumentation", "dokumentieren", "doku", "docs", "wiki"],
+    ["automatisieren", "automatisch", "automation", "workflow", "workflows"],
+    ["sicher", "sicherheit", "security", "risiko", "scanner"],
+    ["plan", "planen", "planung", "anforderungen", "prd", "spec"],
+    ["react", "next", "nextjs", "next.js"],
+    ["kosten", "budget", "budgets", "cost", "pricing"],
+    ["skill", "skills", "plugin", "plugins"]
+  ],
+  "goals": [
+    {"id":"verstehen","title":"Verstehen","description":"Code, Wissen und Zusammenhänge","terms":["verstehen","klären","nachschlagen","dokumentation","begriffe","architektur","untersuchen"]},
+    {"id":"bauen","title":"Bauen","description":"Von der Idee zur Umsetzung","terms":["idee","entwickeln","bauen","erstellen","design-system","brief","diagramm","video","vorbereiten"]},
+    {"id":"verbessern","title":"Verbessern","description":"Qualität, Gestaltung und Reviews","terms":["verbessern","prüfen","aufwerten","animieren","optimieren","vermeiden","review","entfernen","verdichten","seo"]},
+    {"id":"organisieren","title":"Automatisieren","description":"Workflows, Teams und Infrastruktur","terms":["framework","workflow","kontext","installieren","verteilen","pflegen","team","steuern","verwalten","automatisch","autonom"]}
+  ],
+  "shortcuts": [
+    {"label":"Codebasis verstehen","query":"codebasis verstehen"},
+    {"label":"UI aufwerten","query":"generische oberfläche"},
+    {"label":"Token sparen","query":"token verdichten"},
+    {"label":"Diagramme erstellen","query":"diagramme erstellen"}
+  ]
+}

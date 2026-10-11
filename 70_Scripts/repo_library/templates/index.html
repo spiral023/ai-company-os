@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23236958'/%3E%3Cpath d='M7 8h5v16H7zM15 5h4v19h-4zM22 10l3-1 4 14-3 1z' fill='%23f7f6f1'/%3E%3C/svg%3E">
+  <meta name="description" content="Die lokale Referenzbibliothek des AI-Company-OS. Repos, Aufgaben und Arbeitsrouten in einer offline nutzbaren Datei.">
+  <title>Repo-Bibliothek · AI-Company-OS</title>
+  <style>{{STYLES}}</style>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Zum Inhalt</a>
+  <div id="app">
+    <header class="topbar">
+      <a class="brand" href="#" data-action="home" aria-label="Repo-Bibliothek Startseite"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 8h8v17H5zM16 5h5v20h-5zM23 10l4-1 4 15-4 1z"/></svg></span><span><strong>Repo-Bibliothek</strong><small>AI-COMPANY-OS</small></span></a>
+      <div class="topbar-meta"><span class="online-dot" aria-hidden="true"></span> Lokal. Durchsuchbar. Griffbereit.</div>
+      <div class="header-actions"><button class="icon-button" id="themeButton" type="button" aria-label="Dunkles Design aktivieren"></button><button class="help-button" type="button" data-action="update-help">Aktualisieren <span aria-hidden="true">↗</span></button></div>
+    </header>
+    <div class="app-layout">
+      <aside class="sidebar" aria-label="Navigation und Themen">
+        <nav id="primaryNav" aria-label="Bibliothek"></nav>
+        <div class="sidebar-heading">THEMEN <span id="categoryTotal"></span></div>
+        <nav id="categoryNav" aria-label="Themenbereiche"></nav>
+        <div class="sidebar-bottom"><div id="sourceStamp"></div></div>
+      </aside>
+      <main id="workspace" tabindex="-1">
+        <section class="intro" aria-labelledby="pageTitle">
+          <div><div class="eyebrow" id="pageEyebrow">DEIN WERKZEUGREGAL</div><h1 id="pageTitle">Gute Werkzeuge.<br><em>Klare nächste Schritte.</em></h1><p id="pageDescription">Beschreibe dein Ziel. Entdecke passende Quellen.<br>Und finde den richtigen Einstieg für deine Arbeit.</p></div>
+          <div class="intro-note"><span class="small-label">KURATIERTES WISSEN</span><strong id="profileTotal">—</strong><span>Profile, mit Kontext.<br>Mehr als eine Linkliste.</span><span id="introCounts"></span></div>
+        </section>
+        <section class="search-section" aria-label="Suche">
+          <label class="search-box" for="query"><span id="searchIcon" aria-hidden="true"></span><input id="query" type="search" autocomplete="off" spellcheck="false" placeholder="Woran arbeitest du gerade?" aria-label="Ziel, Problem oder Repo suchen"><button id="clearQuery" class="icon-button" type="button" aria-label="Suchbegriff löschen" hidden>×</button><kbd title="Suche fokussieren">Strg K</kbd></label>
+          <div class="search-bottom"><div id="shortcuts" class="shortcuts"></div><span class="search-hint">Sucht auch in Aufgaben und vollständigen Profilen.</span></div>
+        </section>
+        <div id="viewContent"></div>
+        <footer class="page-footer"><span>Eine Bibliothek für gute Entscheidungen.</span><span id="coverageInfo"></span></footer>
+      </main>
+    </div>
+    <div id="compareBar" class="compare-bar" hidden></div>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <dialog id="repoDialog" class="repo-dialog" aria-labelledby="mobileDetailTitle"><button type="button" class="dialog-close" data-close="repoDialog" aria-label="Zur Ergebnisliste">← Zurück zur Liste</button><div id="mobileDetail"></div></dialog>
+    <dialog id="compareDialog" class="wide-dialog" aria-labelledby="compareTitle"><div class="dialog-heading"><div><div class="eyebrow">NEBENEINANDER ENTSCHEIDEN</div><h2 id="compareTitle">Repos vergleichen</h2></div><button type="button" class="icon-button" data-close="compareDialog" aria-label="Vergleich schließen">×</button></div><div id="compareContent"></div></dialog>
+    <dialog id="copyDialog" aria-labelledby="copyTitle"><div class="dialog-heading"><h2 id="copyTitle">Zum Kopieren bereit</h2><button type="button" class="icon-button" data-close="copyDialog" aria-label="Kopieransicht schließen">×</button></div><p>Dein Browser erlaubt hier keinen direkten Clipboard-Zugriff. Kopiere den markierten Text mit Strg+C.</p><textarea id="copyText" aria-label="Text zum Kopieren" rows="12" readonly></textarea></dialog>
+    <dialog id="updateDialog" aria-labelledby="updateTitle"><div class="dialog-heading"><h2 id="updateTitle">Bibliothek aktualisieren</h2><button type="button" class="icon-button" data-close="updateDialog" aria-label="Aktualisierungshinweise schließen">×</button></div><p>Bearbeite die Inhalte in <code>external_repos/INDEX.md</code> und führe im Repo-Root diesen Befehl aus:</p><pre><code>python ai.py repos build</code></pre><button class="primary-button" type="button" data-action="copy-update">Befehl kopieren</button><p class="muted">Vorlagen, Suche und Datenaufbereitung sind getrennt pflegbar. Der Build erzeugt wieder genau diese eine HTML-Datei. Auch der bestehende Repo-Update-Lauf baut sie automatisch neu.</p><div id="updateCoverage" class="coverage-box"></div></dialog>
+  </div>
+  <noscript><style>#app{display:none}</style><article class="source-document"><p>Für Suche und Filter benötigst du JavaScript. Hier bleibt der vollständige Index lesbar.</p>{{NOSCRIPT}}</article></noscript>
+  <script id="libraryData" type="application/json">{{DATA}}</script>
+  <script>{{SCRIPTS}}</script>
+</body>
+</html>

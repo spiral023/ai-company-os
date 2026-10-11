@@ -484,6 +484,7 @@ def main() -> int:
                     unchanged.add(label)
 
     index_changed = False
+    html_failed = False
     if not args.no_index:
         logging.info("Scan: Dateien/Größe/Struktur für %d Repo(s) ...", len(repos))
         scans: dict[str, tuple[int, int, str]] = {}
@@ -497,6 +498,8 @@ def main() -> int:
             stars = fetch_star_counts(sorted(scans))
 
         index_changed = update_index(scans, changed, date.today().isoformat(), args.dry_run, stars)
+        if not args.dry_run:
+            html_failed = not refresh_html()
 
     logging.info(
         "Zusammenfassung: %d neu, %d Fehler, Index %s",
@@ -512,7 +515,20 @@ def main() -> int:
     if not args.index_only:
         write_run_report(changed, unchanged, failed, commit_ranges)
 
-    return 1 if failed else 0
+    return 1 if failed or html_failed else 0
+
+
+def refresh_html() -> bool:
+    """Rebuild the HTML even when metadata is unchanged but templates changed."""
+    from repo_library.builder import build_library
+
+    try:
+        counts = build_library(INDEX_PATH, INDEX_PATH.with_suffix(".html"))
+    except (OSError, ValueError, KeyError) as error:
+        logging.error("HTML-Bibliothek konnte nicht erstellt werden: %s", error)
+        return False
+    logging.info("INDEX.html aktualisiert: %d Profile, %d Aufgaben.", counts["repos"], counts["tasks"])
+    return True
 
 
 def write_run_report(

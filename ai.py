@@ -92,6 +92,14 @@ def run_social(args: argparse.Namespace) -> int:
     return run_subprocess(command, "KI-Kanalliste erstellen oder prüfen")
 
 
+def run_repos(args: argparse.Namespace) -> int:
+    """Build or verify the self-contained repository library."""
+    command = [sys.executable, script_path("build_repo_library.py")]
+    if args.aktion == "check":
+        command.append("--check")
+    return run_subprocess(command, "Repo-Bibliothek erstellen oder prüfen")
+
+
 def run_status(_args: argparse.Namespace) -> int:
     """Show git status in short format."""
     if shutil.which("git") is None:
@@ -302,6 +310,10 @@ def build_parser() -> argparse.ArgumentParser:
     social = subparsers.add_parser("social", help="Lokale HTML-Liste der KI-Kanäle erstellen")
     social.add_argument("--check", action="store_true", help="HTML-Liste auf Aktualität prüfen")
     social.set_defaults(handler=run_social)
+
+    repos = subparsers.add_parser("repos", help="Offline-HTML der Repo-Bibliothek erstellen oder prüfen")
+    repos.add_argument("aktion", choices=["build", "check"], nargs="?", default="build")
+    repos.set_defaults(handler=run_repos)
 
     external = subparsers.add_parser("external", help="Externe Skills prüfen")
     external.add_argument("--source", help="Nur eine externe Quelle per ID prüfen")

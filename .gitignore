@@ -38,9 +38,10 @@ tmp/
 temp/
 .cache/
 
-# Externe Repos (nur lokale Analyse, nicht versioniert) - Index und Changelog bleiben versioniert
+# Externe Repos (nur lokale Analyse) - Index, HTML und Changelog bleiben versioniert
 external_repos/*
 !external_repos/INDEX.md
+!external_repos/INDEX.html
 !external_repos/changelog/
 !external_repos/changelog/*
 
