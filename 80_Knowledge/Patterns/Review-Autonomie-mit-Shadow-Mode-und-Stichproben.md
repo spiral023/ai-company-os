@@ -33,6 +33,7 @@ Risikogewichtete menschliche Stichproben prüfen automatische Freigaben weiter. 
 ## Belege
 
 - 2026-07-21 · [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] · meinung — Anthropic beschreibt Shadow Mode für neue Reviewer, risikobasierte Automatisierung, menschliche Stichproben und protokollierte Freigaben. Herstellerbericht ohne veröffentlichte Stichprobenquoten oder Freigabeschwellen.
+- 2026-10-02 · [[2026-10-02-matt-pocock-live-poteto-creator-of-pstack-on-shipping-1-000]] · meinung — Tan berichtet nachträgliche Stichproben bei automatischen Merges und überführt wiederkehrende Fehler in Skills, Lint-Regeln und Codekonventionen. Ein vorausgehender Shadow-Mode wird nicht beschrieben; für irreversible oder schwer überprüfbare Änderungen bleibt die Freigabefrage offen.
 
 ## Spannungen & offene Fragen
 

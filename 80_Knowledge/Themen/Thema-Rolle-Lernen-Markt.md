@@ -1,6 +1,6 @@
 # Rolle, Lernen & Markt
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit. Der Wandel des gesamten Entwicklungsprozesses gehört zu sdlc.
 
@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** trust the harness (2), codebase understanding (2), github-app agent, spec mode, cli statt mcp, droid factory cli, agent coding ohne code, agents.md, e2e-tests, vibe coding kritik, tdd für agenten, context rot, sub-agents, vibe engineering, great decoupling, golden master testing, devdocs, cli vs. ide, coding atrophy, senior engineer review
+- **Häufig in den Quellen:** use case (2), befähigung (2), pilotbewertung (2), ki-adoption (2), evals (2), trust the harness (2), codebase understanding (2), review (2), benchmarkgrenzen, ki-chancen, swe-bench, arbeitsmarkt, junior-entwickler, studieninterpretation, lernen, entwicklerrolle, agent-steuerung, vibe coding kritik, agent coding ohne code, spec mode
 
 ## Verwandte Themen
 
@@ -19,15 +19,16 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - [[Thema-Einstieg-Best-Practices]] — Einstieg & Best Practices
 - [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
 
-## Patterns (3)
+## Patterns (4)
 
-- [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 2 Belege
-- [[Claude-als-Lernwerkzeug]] · meinung · 2 Belege
-- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 10 Belege
+- [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 3 Belege
+- [[Claude-als-Lernwerkzeug]] · meinung · 4 Belege
+- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 12 Belege
+- [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] · meinung · 1 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-dokumentieren]], [[Intent-Engineering-als-dritte-Schicht]]
 
-## Quellen (10)
+## Quellen (14)
 
 - [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]] — Florian Schünemann beschreibt Fähigkeiten für den sinnvollen Einsatz von Agenten.
 - [[2026-09-17-anthropic-how-claude-code-is-used-in-practice]] — Menschen treffen die Planungsentscheidungen, der Agent die Ausführung, und mehr Domänenwissen bringt längere autonome Ketten und höhere Erfolgsquoten; Steuerung verlagert sich auf Spezifikation und Verifikation.
@@ -39,6 +40,10 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-
 - [[2026-01-26-karpathy-coding-workflow-2026]] — Agenten machen keine Syntaxfehler mehr, sondern konzeptionelle; Leverage entsteht durch deklarative Erfolgskriterien, Tests und ein menschliches Architektur-Review.
 - [[2026-01-20-mrexodia-vibe-engineering]] — Die Rolle wandelt sich zu Tech Lead und QA Lead: Ergebnisse statt Zeilen prüfen, Tests als Harness bauen und Kontext knapp halten.
 - [[2026-01-20-ben-tossell-agent-coding]] — Agenten-Output konsequent zu lesen baut echtes Systemverständnis auf; CLIs sind MCPs oft vorzuziehen, weil MCPs zu viel Kontext verbrauchen.
+- [[2026-01-04-ai-news-strategy-daily-n-why-andrej-karpathy-feels-behind-and-what-it-mea]] — Neue Entwicklerrollen verbinden Delegation mit Entscheidungen, Beobachtbarkeit und Evaluation; das Rollenmodell belegt keine Karriere- oder Produktivitätsgewinne.
+- [[2025-12-04-brutkasten-business-vs-technik-wie-man-ki-in-organisationen]] — Das Panel verbindet KI-Adoption mit Use Case, Verantwortung, Integration und Anwenderbefähigung; die Erfahrungen sind keine allgemeine Wirkungsmessung.
+- [[2025-09-08-the-morpheus-tutorials-studien-ai-verdraengt-also-junior-itler]] — Altersgruppen, Berufserfahrung, Beschäftigtenbestand und Einstellungen müssen getrennt betrachtet werden; spätere Studienrevisionen gehören nicht rückwirkend zum Video.
+- [[2025-04-09-the-morpheus-ki-ist-ein-segen]] — KI-Chancen werden anhand persönlicher Beispiele diskutiert; gelöste Benchmarkaufgaben entsprechen keiner vollständigen Automatisierung der Softwareentwicklung.
 
 ## Quellen mit diesem Thema als Nebenthema
 
@@ -49,4 +54,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-
 - [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]]
 - [[2026-07-27-techfeed5-1-reason-why-the-cloud-limits-could-hit-directly-that-we-talk-to-opus-in]]
 - [[2026-02-20-boris-tane-sdlc-is-dead]]
+- [[2026-02-19-lenny-s-podcast-head-of-claude-code-what-happens-after-coding-is]]
 - [[2025-12-31-natebjones-seriously-not-worth-it-now]]
+- [[2025-06-28-the-morpheus-tutorials-ai-ersetzt-uns-itler-jetzt-also]]
+- [[2025-04-09-the-morpheus-ki-ist-ein-fluch]]

@@ -42,6 +42,7 @@ Der Katalog lässt sich mit Security-Checklisten erweitern: Row Level Security, 
 - 2026-09-27 · [[2026-09-27-voxyz_ai-2104224555040452925]] · meinung — Vier Breaker-Subagents (Security, Daten, Abläufe, Umgebung) mit 16 Fragen, Effort `high` bzw. `xhigh` für Security und Sicherheitsrahmen für die Testumgebung; Praxistipp ohne Messung.
 - 2026-09-29 · [[2026-09-29-suraj_sharma14-2104790775397830755]] · meinung — Security-Checkliste mit 30 Punkten, die dem Katalog fehlende Punkte liefert (RLS, CORS, CSRF, Backups, Prompt Injection, Ausgabenlimits); letzter Punkt empfiehlt, die KI die App angreifen zu lassen.
 - 2026-10-04 · [[2026-10-04-emilkowalski-2106752670405099523]] · meinung — `/break-ui` benennt lange Namen, ungewöhnliche E-Mail-Adressen und lange Listen als Belastungsfälle; der zentrale Repo-Check bestätigt realistische Extremdaten, Daten-Fixture, Worst-case-Toggle und eine Befundliste mit Fix je Defekt. Das konkretisiert adversariale UI-Prüfungen als dokumentierten Mechanismus, belegt aber keinen durchgeführten Volltest oder eine Reparaturwirkung.
+- 2026-08-09 · [[2026-08-09-julian-ivanov-ki-automat-5-claude-code-skills-die-dir-wirklich-arbeit-abn]] · meinung — Die Skill-Übersicht beschreibt eine Kartierung von Eingabeflächen, spezialisierte Fehlersuche und Widerlegungsversuche durch andere Agenten als die Finder. Der Ablauf kann Befunde nachvollziehbarer machen, beweist aber weder vollständige Sicherheitsabdeckung noch einen wirtschaftlichen Vorteil der zusätzlichen Parallelisierung.
 
 ## Spannungen & offene Fragen
 

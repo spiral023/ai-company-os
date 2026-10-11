@@ -36,6 +36,8 @@ Die Prüfung findet im freigegebenen Browser statt. Bestehende Tabs bleiben unbe
 - 2026-09-14 · [[2026-09-14-voxyz_ai-2099528601557496220]] · meinung — Abnahmekriterien in beobachtbare Handlungen und Ergebnisse übersetzen, Designreferenz mit gerenderter Seite vergleichen und Screenshots samt Prüfgrenzen berichten; der Post liefert keine eigene ausgeführte Abnahme oder Zeitmessung.
 - 2026-09-15 · [[2026-09-15-emilkowalski-2099948779864793303]] · meinung — Gewählte Animationen nach Iteration auf Performance, Accessibility und Mobile prüfen; der Thread nennt Kategorien, berichtet aber keine konkreten Browserprüfungen oder Messergebnisse.
 - 2026-07-23 · [[2026-07-23-colebemis-2080392348836790395]] · meinung — Annotierte PR-Screenshots erklären betroffene UI-Bereiche für Reviewer. Das Beispiel ist ein Review-Artefakt mit berichteten Checks; es belegt selbst keinen vollständigen Live/Lokal-Vergleich oder Produktionszustand.
+- 2026-09-26 · [[2026-09-26-ai-mit-arnie-gpt-6-kann-endlich-design]] · meinung — Der Autor beschreibt eine lokale Browserprüfung in mehreren Bildschirmgrößen und gespeicherte Screenshots, bevor er die Vorschau selbst durchgeht. Ein vorheriger Live-Zustand und ein systematischer Nachweis aller Prüfergebnisse fehlen; die Demo ist keine Produktionsabnahme.
+- 2026-10-09 · [[2026-10-09-julian-ivanov-ki-automat-websites-mit-ki-bauen-die-gut-aussehen-und-perfo]] · meinung — Ein gesonderter Prüfagent meldet mobile Darstellungsfehler, der Builder korrigiert sie und legt sie erneut zur Prüfung vor. Berichtete Lighthouse-Werte und positive Agentenurteile wurden hier nicht reproduziert; ein Vergleich mit einem bisherigen Live-Zustand fehlt.
 
 ## Spannungen & offene Fragen
 

@@ -39,6 +39,7 @@ Eine Codebase durch getrennte Architekturfragen verständlich machen und zwische
 - 2026-10-10 · external_repos/oh-my-mermaid/oh-my-mermaid/skills/omm-scan/SKILL.md · verifiziert — Perspektivenkatalog, gezielte Codelektüre, rekursive Detailanalyse, Dateipfade und beschriftete Kanten sind ausdrücklich vorgegeben.
 - 2026-10-10 · external_repos/oh-my-mermaid/oh-my-mermaid/src/lib/store.ts · verifiziert — verschachtelte Verzeichnisse und getrennte Dokumentationsfelder bilden die Architekturkarte lokal ab.
 - 2026-10-10 · external_repos/oh-my-mermaid/oh-my-mermaid/src/lib/validate.ts · verifiziert — Diagrammregeln prüfen Format und Referenzen, aber keine semantische Übereinstimmung mit dem Anwendungscode.
+- 2026-03-26 · [[2026-03-26-alex-sprogis-gsd-framework-fuer-claude-code-version-1-2-im-pr]] · meinung — Die historische Bestandsanalyse dokumentiert Stack, Architektur, Struktur, Konventionen, Tests, Integrationen und bekannte Problemstellen als lesbare Gesprächsgrundlage. Vollständigkeit und fachliche Richtigkeit dieser Analyse wurden hier nicht unabhängig geprüft; ein erzeugtes Dokument ersetzt keine Validierung am Bestandsprojekt.
 
 ## Spannungen & offene Fragen
 

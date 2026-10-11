@@ -1,6 +1,6 @@
 # AI-nativer SDLC
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Coding Agents den gesamten Software Development Lifecycle verändern: von Intent und Spezifikation über Build, Tests und Review bis Deployment, Betrieb und Rückkopplung. Einzelne Techniken stehen in ihren Fachclustern; hier gehören phasenübergreifende Abläufe, Übergaben, Kontrollpunkte und der Wandel vom linearen Prozess zur Schleife hinein.
 
@@ -9,7 +9,7 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 - **Hauptkeyword:** AI-nativer SDLC
 - **Long-Tail:** Software Development Lifecycle mit KI; SDLC mit Coding Agents; AI-native SDLC Playbook; SDLC ist tot; Intent Build Observe; Agentic SDLC und ADLC; Menschliche Freigaben im AI-nativen SDLC
 - **Fragen:** Wie verändert sich der SDLC durch Coding Agents? / Welche Kontrollpunkte brauchen Menschen weiterhin? / Wie fließen Erkenntnisse aus dem Betrieb zurück in die Planung?
-- **Häufig in den Quellen:** human-in-the-loop (3), ai-native sdlc (3), review.md (2), menschliche freigabe (2), spec.md (2), intent.md (2), codex (2), adversarial agent code review, software development lifecycle mit ki, intent build observe, observability als kontext, closed loop, sdlc ist tot, feature flags canary, least agency, siem, risikobasiertes human review, befundnachweis, review-stichproben, sast und dast
+- **Häufig in den Quellen:** human-in-the-loop (3), ai-native sdlc (3), intent.md (2), spec.md (2), review.md (2), menschliche freigabe (2), refactoring (2), verhaltensvergleich (2), codex (2), intent build observe, closed loop, adversarial agent code review, feature flags canary, software development lifecycle mit ki, sdlc ist tot, observability als kontext, siem, befundnachweis, sast und dast, agent-identität
 
 ## Verwandte Themen
 
@@ -35,4 +35,6 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachv
 
 - [[2026-10-09-openai-refactoring]]
 - [[2026-10-09-openai-codebase-onboarding]]
+- [[2026-10-05-venelin-valkov-stop-ai-code-slop-yes-you-still-need-to-refactor]]
+- [[2026-10-02-matt-pocock-live-poteto-creator-of-pstack-on-shipping-1-000]]
 - [[2026-09-14-claude-agentic-coding-is-straining-ci-here-s-how-we-sca]]

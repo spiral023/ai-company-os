@@ -33,6 +33,8 @@ Statt einen Skill ausschließlich aus einer verbalen Spezifikation zu bauen, ent
 - 2025-10-31 · [[2025-10-31-agenticjames-best-claude-skills-for-agentic-coding]] · meinung — Skill-Generator, der wiederkehrende Chat-Muster zu Skills abstrahiert; nicht demonstriert, Wildwuchs-Risiko.
 - 2026-09-20 · [[2026-09-20-voxyz_ai-2101657631249031507]] · meinung — Eigene Komponentenbibliothek und benannte Design-Operationen als Skill statt vager Prompts; Erfahrungsbericht ohne Messung.
 - 2026-07-21 · [[2026-07-21-claudeai-2079595988998554047]] · meinung — Claude kündigt Skill-Erstellung durch Bildschirmaufnahme und gesprochene Erläuterung in Cowork an; das UI zeigt erfasste Klicks, Eingaben und Stimme sowie einen gespeicherten Skill. Dies ist ein Herstellerbeispiel zum Demonstrationsprinzip, kein unabhängig getesteter Wiederholungsnachweis.
+- 2026-06-18 · [[2026-06-18-julian-ivanov-ki-automat-bau-dir-dein-ki-betriebssystem-mit-claude-code-k]] · meinung — Empfiehlt, eine wiederkehrende Aufgabe zuerst mit dem Agenten gemeinsam erfolgreich durchzuführen und anschließend den Ablauf als Skill festzuhalten. Der Bericht enthält keine kontrollierte Evaluation des abgeleiteten Skills.
+- 2026-06-07 · [[2026-06-07-julian-ivanov-ki-automat-so-laesst-du-claude-jedes-video-fuer-dich-anscha]] · meinung — Zeitmarkierte Frames erschließen auch stumme oder nur visuell erklärte Abläufe als Eingabe für spätere Skill-Ableitung. Die Videoanalyse selbst ist ein vorgelagerter Evidenzprozess; ungeprüfte Stichproben dürfen nicht als vollständige Arbeitsanleitung gelten.
 
 ## Spannungen & offene Fragen
 

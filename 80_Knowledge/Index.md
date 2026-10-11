@@ -70,10 +70,21 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Codepfad-vor-Aenderung-nachvollziehen]] — einen begrenzten Ablauf durch Dateien und Zustandswechsel verfolgen, bevor die Umsetzung beginnt.
 - [[Architektur-in-Perspektiven-dokumentieren]] — Codearchitektur durch passende Perspektiven, Dateibelege und rekursive Detailansichten dokumentieren; Format und fachliche Richtigkeit getrennt prüfen.
 - [[Refactoring-mit-Verhaltensvergleich]] — vereinbarte Eingaben und öffentliche Schnittstellen vor und nach einem kleinen Refactor vergleichen.
+- [[Wissenspflege-mit-Inbox-und-Review]] — Eingänge, Entscheidungen und Arbeitsstände über Session-Abschluss und regelmäßigen Review in wiederverwendbares Wissen überführen.
+- [[RAG-mit-Text-Tabellen-und-Volltextpfad]] — Textsuche, Tabellenabfragen und vollständige Dokumente über gemeinsame Quellenidentität verbinden.
+- [[Videoanalyse-mit-Frames-und-Transkript]] — gesprochene und visuelle Quelleninformationen zeitlich zuordnen, Stichprobengrenzen ausdrücklich festhalten.
+- [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]] — wiederkehrende Agent-Arbeit über Zuständigkeiten, Issues, Auslöser, Kostenansichten und menschliche Abnahme steuern.
+- [[Brand-Kit-als-gemeinsame-Artefaktbasis]] — dieselbe Markenreferenz für mehrere Medien nutzen und jedes Artefakt getrennt abnehmen.
+- [[Suchintention-mit-Daten-vor-Webdesign-klaeren]] — recherchierte Suchresultate, Angebotsdaten und generierte Annahmen vor Seitenstruktur und Gestaltung unterscheiden.
+- [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]] — Aufgabe, Qualität, Kontext und Parallelität vor Hardwarevergleich mit einem repräsentativen Versuch prüfen.
+- [[Framework-Quellcode-als-idiomatische-Referenz]] — passende Bibliotheksimplementierungen gezielt lesen; Versionspassung und Verhaltensprüfung bleiben eigene Grenzen.
+- [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] — Fachprozess und Verantwortung vor Toolauswahl klären, Anwender befähigen und den Pilot bewusst abnehmen.
 
 ## Themen
 
-Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 19 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand. [[Thema-KI-Risiken-Sicherheitsvorfälle]] sammelt Warnungen, Risikoszenarien und konkrete Vorfälle mit KI.
+Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 20 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand. [[Thema-KI-Risiken-Sicherheitsvorfälle]] sammelt Warnungen, Risikoszenarien und konkrete Vorfälle mit KI.
+
+[[Thema-KI-gestützte-Wissensarbeit]] bündelt Quellenaufnahme, Markdown-Wissenspflege, RAG mit OCR und Tabellen sowie Videoanalyse aus Frames und Transkript.
 
 [[Thema-Sicherheit-Sandboxing]] bündelt Sandbox-Mechanismen, Permissions und OS-Isolation für die Ausführung von Agent-Tools.
 

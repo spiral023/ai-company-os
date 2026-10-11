@@ -36,6 +36,8 @@ Als Einordnung für die eigene Bewertung: Freigabe-Regeln, aktive Backends und e
 
 - 2026-10-08 · [[2026-10-08-unslothai-windows-sandboxing-mxc]] · meinung — Unsloth zeigt getrennte Freigabe-Modi und Low-/High-Isolation, Status pro Python-/Terminal-Tool und Full access als Abschaltung beider Sandbox-Stufen; der ergänzende Windows-Screenshot enthält eine ausdrückliche Preview-Einschränkung.
 - 2026-10-01 · [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]] · meinung — Bei Connectoren wie MCP sollen Anwender erlaubte Tool-Zugriffe und sinnvolle Freigaben bewusst einschätzen; Harness, Tools und Regeln sind Teil der Agent-Kompetenz. Stützt die menschliche Zugriffsentscheidung, liefert aber keinen technischen Isolationsnachweis oder konkreten Freigabeplan.
+- 2026-10-07 · [[2026-10-07-alex-sprogis-t3-code-endlich-eine-steuerzentrale-fuer-alle-de]] · meinung — Die Demo zeigt getrennte Einstellungen für Freigabemodus und neue Worktrees, zugleich aber weitreichenden Zugriff als Voreinstellung. Ein Moduswechsel ist kein Beleg dafür, dass destruktive Aktionen zuverlässig verhindert werden.
+- 2026-01-04 · [[2026-01-04-ai-news-strategy-daily-n-why-andrej-karpathy-feels-behind-and-what-it-mea]] · meinung — Ergebnisentscheidung, Herkunftsnachweise und begrenzte Werkzeugrechte bleiben im umgebenden Workflow verankert, während das Modell Vorschläge erzeugt. Die allgemeine Empfehlung liefert kein konkret geprüftes Berechtigungsmodell.
 
 ## Spannungen & offene Fragen
 

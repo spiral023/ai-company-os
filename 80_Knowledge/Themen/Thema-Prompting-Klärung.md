@@ -1,6 +1,6 @@
 # Prompting & Klärung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns, Voice-Prompting, Anweisungen bei Modellwechsel ausdünnen, Anti-Sycophancy.
 
@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), known unknowns (2), change quiz (2), voice prompting (2), skill descriptions (2), codex skill-creator (2), modellwechsel (2), überregulierung (2), progressive disclosure (2), gpt-6 astra (2), intent engineering (2), projektplanung mit ai, frühwarnsignale, prompt-tricks, risikoanalyse, ai agent zustimmungsneigung, pre-mortem prompt, spec grilling, sycophancy
+- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), known unknowns (2), change quiz (2), spec-grilling (2), voice prompting (2), überregulierung (2), progressive disclosure (2), codex skill-creator (2), modellwechsel (2), skill descriptions (2), gpt-6 astra (2), intent engineering (2), pre-mortem prompt, projektplanung mit ai, sycophancy, prompt-tricks, frühwarnsignale, ai agent zustimmungsneigung, risikoanalyse
 
 ## Verwandte Themen
 
@@ -21,7 +21,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 ## Patterns (3)
 
 - [[Fable-Unknowns-vor-Prompt-Qualitaet]] · meinung · 3 Belege
-- [[Intent-Engineering-als-dritte-Schicht]] · meinung · 5 Belege
+- [[Intent-Engineering-als-dritte-Schicht]] · meinung · 9 Belege
 - [[Voice-Prompting-fuer-Kontextreichtum]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-statt-Generierung]], [[Handlungsbedarf-zuerst-im-Agent-Bericht]]
@@ -44,5 +44,6 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-sta
 - [[2026-09-19-voxyz_ai-2101355643882065971]]
 - [[2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re]]
 - [[2026-08-19-matt-pocock-live-uncle-bob-on-software-fundamentals-in-the-a]]
+- [[2026-07-31-alex-sprogis-dieser-claude-code-skill-ist-genial]]
 - [[2026-01-22-damien-lovable-website-guide]]
 - [[2026-01-17-damien-ghader-prompting-lovable-design]]

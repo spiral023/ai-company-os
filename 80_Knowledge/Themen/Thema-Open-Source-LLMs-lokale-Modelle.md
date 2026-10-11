@@ -1,6 +1,6 @@
 # Open-Source-LLMs & lokale Modelle
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Offene LLMs und Open-Weight-Modelle: verfügbare oder angekündigte Gewichte, lokale Inferenz und Serving, Hardwarebedarf, Quantisierung und Fine-Tuning. Eine Gewichtsankündigung ist kein Release; die Bezeichnung Open Source setzt eine gesonderte Prüfung der Lizenz und Offenheit voraus. Allgemeine Modellpreise und Benchmark-Kostenvergleiche stehen in modelle-kosten.
 
@@ -9,7 +9,7 @@ Offene LLMs und Open-Weight-Modelle: verfügbare oder angekündigte Gewichte, lo
 - **Hauptkeyword:** Open Source LLM
 - **Long-Tail:** Open-Weight vs. Open Source; LLM lokal betreiben; Claude Code mit lokalem Modell; Ollama vs. llama.cpp; LLM Hardware und VRAM; GGUF Quantisierung; Offene LLMs fine-tunen; Mistral offene Gewichte
 - **Fragen:** Welche LLM-Gewichte sind tatsächlich verfügbar? / Was unterscheidet Open Weight von Open Source? / Welche Hardware brauche ich für lokale Modelle? / Wann lohnt sich lokales Serving oder Fine-Tuning?
-- **Häufig in den Quellen:** unsloth (3), terminal-bench (3), vram (3), benchmark (3), ollama (2), anthropic_base_url (2), claude code lokal (2), lokale llms (2), open weights (2), kimi k3 (2), deepseek (2), modell-eskalation (2), modell (2), token (2), decision models (2), probability calibration (2), holdout accuracy (2), clef head (2), lora fine-tuning (2), qwen2.5-coder
+- **Häufig in den Quellen:** unsloth (3), terminal-bench (3), quantisierung (3), benchmark (3), vram (3), lokale inferenz (3), claude code lokal (2), ollama (2), anthropic_base_url (2), lokale llms (2), open weights (2), kimi k3 (2), deepseek (2), speicherbedarf (2), arbeitslast (2), hardware-pilot (2), modell (2), token (2), modell-eskalation (2), probability calibration (2)
 
 ## Verwandte Themen
 
@@ -19,17 +19,19 @@ Offene LLMs und Open-Weight-Modelle: verfügbare oder angekündigte Gewichte, lo
 - [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
 - [[Thema-Verifikation-Tests-Review]] — Verifikation, Tests & Review
 
-## Patterns (1)
+## Patterns (2)
 
 - [[Decision-Head-Finetuning]] · meinung · 1 Belege
+- [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]] · meinung · 1 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Lokale-Modell-Umleitung-Muster]]
 
-## Quellen (10)
+## Quellen (11)
 
 - [[2026-10-09-ollama-kontext-speicher]] — Größerer Kontext erhöht den Speicherbedarf; die CPU/GPU-Zuordnung muss am tatsächlichen Lauf geprüft werden.
 - [[2026-10-07-unslothai-decision-model-finetuning]] — Unsloth erweitert den lokalen Betrieb von Decision-Modellen um eigenes Training: Ein LLM soll vorgegebene Optionen bewerten und Wahrscheinlichkeiten liefern, statt eine Antwort auszuformulieren.
 - [[2026-09-28-unslothai-2104592692072304916]] — Unsloth kündigt am 28.09.2026 an, dass sich das Decision-Modell „Laya“ (laut Guide eine offene Jev-Alternative) lokal über Unsloth Desktop betreiben lässt, auf CPU, Mac, Windows, Linux und GPU.
+- [[2026-09-01-ai-mit-arnie-lokale-ki-kauf-nicht-die-falsche-hardware]] — Lokale Inferenz wird nach Qualitätsziel, Modell, Kontext und Parallelität dimensioniert; historische Preise und unklare Formeln sind keine aktuelle Kaufgrundlage.
 - [[2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo]] — Speicherbedarf und Tempo lokaler Modelle lassen sich mit einfachen Faustformeln aus Parametern, Quantisierung und Speicherbandbreite vorab abschätzen; Kontext und KV-Cache fehlen dabei.
 - [[2026-07-31-unslothai-2083231049434435596]] — Unsloth kündigt am 31.
 - [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]] — Offene Modelle liegen nur etwa einen Release-Zyklus hinter der Frontier, und Benchmark-Ergebnisse hängen stark vom Harness, nicht nur vom Modell ab.

@@ -1,6 +1,6 @@
 # Verifikation, Tests & Review
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates und getrennte Autor-/Prüfkontexte. Dazu gehören risikobasiertes Human Review, menschliche Verantwortung und Freigaben (Human in the Loop), Review-Kapazität sowie PR-Größe und Aufteilung in überschaubare Änderungen. Agent-Autonomie gehört hier hinein, soweit sie Prüf- und Freigabeentscheidungen betrifft; autonome Ausführung steht in autonomie, der gesamte Entwicklungsprozess in sdlc.
 
@@ -9,7 +9,7 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass; Codequalität mit KI und Menschen; Human in the Loop beim Code Review; Risikobasiertes Human Review; Agent-Autonomie und menschliche Freigaben; Große KI-generierte PRs prüfen; Pull Requests in prüfbare Änderungen aufteilen; Review-Kapazität bei parallelen Agents
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug? / Welche Änderungen brauchen menschliches Review und welche automatische Checks? / Wer trägt die Verantwortung, wenn ein Agent Code freigibt? / Was tun, wenn PRs zu groß für ein gründliches manuelles Review werden? / Wie begrenzt Review-Kapazität die Agent-Autonomie und Parallelisierung?
-- **Häufig in den Quellen:** test (13), testharness (10), review (9), tests (8), tdd (7), verifikation (5), human-in-the-loop (5), qualität (4), risikobasiertes human review (4), menschliche freigabe (4), skill (4), gstack (4), deep modules (3), verifier (3), /goal (3), verhaltensvergleich (3), auto mode (3), refactoring (3), llm-as-judge (3), skill.md (3)
+- **Häufig in den Quellen:** review (13), test (13), testharness (10), tests (8), tdd (8), verifikation (5), human-in-the-loop (5), qualität (4), risikobasiertes human review (4), menschliche freigabe (4), verhaltensvergleich (4), refactoring (4), skill (4), gstack (4), deep modules (3), /goal (3), verifier (3), auto mode (3), llm-as-judge (3), skill.md (3)
 
 ## Verwandte Themen
 
@@ -21,27 +21,30 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - [[Thema-Sicherheit-Sandboxing]] — Sicherheit & Sandboxing
 - [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
 
-## Patterns (12)
+## Patterns (13)
 
 - [[Abstraktionswert-mit-Deletion-Test-pruefen]] · verifiziert · 2 Belege
 - [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]] · meinung · 1 Belege
 - [[Fachregel-Konsolidierung-vor-Featureaenderung]] · meinung · 1 Belege
-- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 2 Belege
+- [[Framework-Quellcode-als-idiomatische-Referenz]] · meinung · 2 Belege
+- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 3 Belege
 - [[Hillclimbing-mit-Holdout-Split]] · meinung · 3 Belege
-- [[Refactoring-mit-Verhaltensvergleich]] · meinung · 2 Belege
-- [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 1 Belege
-- [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 13 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 33 Belege
+- [[Refactoring-mit-Verhaltensvergleich]] · meinung · 3 Belege
+- [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 2 Belege
+- [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 14 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 39 Belege
 - [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]] · verifiziert · 2 Belege
-- [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] · meinung · 5 Belege
+- [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] · meinung · 7 Belege
 - [[Zustandslose-CI-Listener-mit-Ergebnisjournal]] · meinung · 1 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Great-Decoupling-Rollenverstaendnis]], [[Kontrollierte-Agent-Parallelisierung]], [[Plan-first-mit-getrenntem-Review]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Variantenvergleich-vor-Produktionsabnahme]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Great-Decoupling-Rollenverstaendnis]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Plan-first-mit-getrenntem-Review]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Videoanalyse-mit-Frames-und-Transkript]]
 
-## Quellen (29)
+## Quellen (32)
 
 - [[2026-10-09-openai-refactoring]] — Kleine Refactoring-Schritte erhalten öffentliche Schnittstellen und werden am vereinbarten Verhalten geprüft.
+- [[2026-10-08-moritz-brandes-sauberer-code-mit-claude-code-so-geht-s-wirklich]] — Lokal lesbarer Framework-Code ergänzt idiomatische Referenzen; Versionspassung, gezielte Lesegrenzen und eigene Verhaltenstests bleiben Übernahmebedingungen.
 - [[2026-10-06-voxyz_ai-2107576635578855461]] — Vox schlägt eine Regel für `Claude Code` vor: Nach visuellen Codeänderungen prüft ein Subagent mit `codex-cu` die betroffenen Seiten im bereits freigegebenen Browser.
+- [[2026-10-05-venelin-valkov-stop-ai-code-slop-yes-you-still-need-to-refactor]] — Refactoring erhält konkrete Mess- und Verhaltensprüfungen; Renderzählungen einzelner Komponenten belegen keine vollständige Gleichheit oder schnellere Gesamtlaufzeit.
 - [[2026-10-05-repo-millionco-react-doctor-skill]] — Im Klon von millionco/react-doctor (Stand Commit `1b149bae`) liegt der Agent-Skill `skills/react-doctor/SKILL.md` (Version 1.2.0).
 - [[2026-10-05-repo-mattpocock-skills-retro]] — Im Klon von mattpocock/skills (Stand Commit `4588b32`, Version 1.3.1) liegt `retro` unter `skills/engineering/retro/SKILL.md`.
 - [[2026-10-04-voxyz_ai-2106829206134931539]] — Vox empfiehlt, wiederholte Agentkorrekturen in fertige Funktionen oder Typen zu überführen und alternative Implementierungen mit `Lint` zu verbieten.
@@ -69,6 +72,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-02-14-matt-pocock-skill-tdd-claude-code]] — Ein Test, eine Implementierung, wiederholen: Vertikale Tracer-Bullet-Zyklen verhindern, dass das Modell Tests umschreibt oder nur Mocks verifiziert.
 - [[2026-02-04-tweag-tdd-agentic-coding]] — Ein Test ist ein präziser Prompt: Der Agent baut Logik Test für Test, wobei die Testqualität beim Menschen liegt.
 - [[2026-01-12-dhruv1103-lessons-learned-500k-lines-claude-code]] — Modulare Architektur, TDD gegen echte Container, Read-only-MCP-Diagnose und gründliches Review machen große KI-Codebasen beherrschbar.
+- [[2025-06-28-the-morpheus-tutorials-ai-ersetzt-uns-itler-jetzt-also]] — Issues, Codepfadprüfung, Implementierung, Review und manuelle Ausführung bilden einen beschriebenen Entwicklungsablauf; Arbeitsmarktprognosen bleiben unbestätigt.
 
 ## Quellen mit diesem Thema als Nebenthema
 
@@ -77,6 +81,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-10-09-satyanadella-2108627923888754862]]
 - [[2026-10-09-repo-superpowers-workflow]]
 - [[2026-10-09-repo-gstack-workflow]]
+- [[2026-10-09-julian-ivanov-ki-automat-websites-mit-ki-bauen-die-gut-aussehen-und-perfo]]
 - [[2026-10-08-voxyz_ai-2108324058739745228]]
 - [[2026-10-07-unslothai-decision-model-finetuning]]
 - [[2026-10-05-repo-garrytan-gstack-retro]]
@@ -89,6 +94,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]]
 - [[2026-09-27-voxyz_ai-2104224555040452925]]
 - [[2026-09-27-anthropic-academy-sdlc-playbook]]
+- [[2026-09-26-ai-mit-arnie-gpt-6-kann-endlich-design]]
 - [[2026-09-25-voxyz_ai-2103586663393853636]]
 - [[2026-09-25-trq212-2103576349499855160]]
 - [[2026-09-24-mattpocock-ai-coding-dictionary]]
@@ -97,16 +103,33 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-09-14-shadcn-2099534231114314145]]
 - [[2026-09-14-code-test-plugins-with-evals-claude-code-docs]]
 - [[2026-09-12-darioamodei-2098773920774074715]]
+- [[2026-09-01-ai-mit-arnie-lokale-ki-kauf-nicht-die-falsche-hardware]]
 - [[2026-08-30-alex-sprogis-loop-graph-engineering-das-letzte-video-was-du-s]]
+- [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]]
+- [[2026-08-09-julian-ivanov-ki-automat-5-claude-code-skills-die-dir-wirklich-arbeit-abn]]
 - [[2026-08-05-floknowsai-dein-vibe-coding-projekt-bricht-nicht-am-coding-agent-zusammen-sondern]]
+- [[2026-07-30-matt-pocock-wayfinder-nothing-is-too-big-to-plan-anymore]]
 - [[2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding]]
 - [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]]
+- [[2026-07-16-matt-pocock-mattpocock-skills-a-complete-ai-coding-workflow]]
+- [[2026-07-13-matt-pocock-live-the-wayfinder-demo]]
 - [[2026-07-06-claudedevs-2074208949205881033]]
+- [[2026-06-10-ai-news-strategy-daily-n-codex-vs-claude-code-stop-picking-one-here-s-wha]]
+- [[2026-06-07-julian-ivanov-ki-automat-so-laesst-du-claude-jedes-video-fuer-dich-anscha]]
 - [[2026-04-16-wiki-compiler-gstack]]
+- [[2026-04-13-alex-sprogis-superkraefte-fuer-claude-code]]
 - [[2026-04-10-paulsolt-2042716870512353294]]
+- [[2026-03-26-alex-sprogis-gsd-framework-fuer-claude-code-version-1-2-im-pr]]
 - [[2026-02-23-d4m1n-ralph-loop-setup-primaer]]
+- [[2026-02-19-lenny-s-podcast-head-of-claude-code-what-happens-after-coding-is]]
 - [[2026-02-13-vincanger-claude-code-fullstack-essentials]]
 - [[2026-02-05-carlini-anthropic-c-compiler]]
 - [[2026-02-03-svpino-claude-code-md-tips]]
 - [[2026-01-26-karpathy-coding-workflow-2026]]
 - [[2026-01-20-mrexodia-vibe-engineering]]
+- [[2026-01-04-ai-news-strategy-daily-n-why-andrej-karpathy-feels-behind-and-what-it-mea]]
+- [[2025-12-06-the-morpheus-tutorials-software-entwickeln-mit-ki-einsteiger-guide]]
+- [[2025-12-04-brutkasten-business-vs-technik-wie-man-ki-in-organisationen]]
+- [[2025-09-22-julian-ivanov-ki-automat-das-ultimative-rag-system-n8n-nextcloud-mistral]]
+- [[2025-09-08-the-morpheus-tutorials-studien-ai-verdraengt-also-junior-itler]]
+- [[2025-04-09-the-morpheus-ki-ist-ein-segen]]

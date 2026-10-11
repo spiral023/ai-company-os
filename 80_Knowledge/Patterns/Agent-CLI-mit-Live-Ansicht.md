@@ -30,6 +30,7 @@ Geeignet, wenn Inhalte programmatisch bearbeitet werden können und die menschli
 ## Belege
 
 - 2026-07-23 · [[2026-07-23-mattpocockuk-2080277204970143986]] · meinung — Matt Pocock beschreibt CLI-Bearbeitung durch einen Agenten und eine eigene Live-Ansicht für den Menschen, eingesetzt bei Kurserstellung. Persönlicher Praxisbericht ohne bereitgestellte Implementierung oder Vergleichsmessung.
+- 2026-10-07 · [[2026-10-07-alex-sprogis-t3-code-endlich-eine-steuerzentrale-fuer-alle-de]] · meinung — T3 Code verbindet Sessionstatus, Dateien, Diffs und Browservorschau in einer Oberfläche. Modellwechsel und Provider-Anbindung wurden in einer Nightly-Version im Alpha-Stadium gezeigt und bleiben versionsabhängig.
 
 ## Spannungen & offene Fragen
 

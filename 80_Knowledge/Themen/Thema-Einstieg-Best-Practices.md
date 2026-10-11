@@ -1,6 +1,6 @@
 # Einstieg & Best Practices
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices, Anfängerfehler, Tippsammlungen. Sobald ein Thema tiefer behandelt wird, gehört die Quelle in den Fachcluster.
 
@@ -9,7 +9,7 @@ Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices,
 - **Hauptkeyword:** Claude Code Tutorial
 - **Long-Tail:** Claude Code für Einsteiger; Claude Code Best Practices; Claude Code Tipps; Claude Code Setup; Claude Code Anfängerfehler; Claude Code Lernpfad
 - **Fragen:** Wie fange ich mit Claude Code an? / Welche Fehler machen Einsteiger?
-- **Häufig in den Quellen:** plan mode (3), claude code anfänger (2), headless mode (2), extended thinking (2), claude code best practices (2), claude code tutorial, context degradation, claude.md, scratchpad.md, opus sonnet arbeitsteilung, vibe coding, prompt-präzision, alltagsautomatisierung, python-skript, rückfragen des modells, aufgaben zerlegen, escape-korrektur, pretooluse, anthropic academy, claude code hooks
+- **Häufig in den Quellen:** plan mode (3), headless mode (2), claude code anfänger (2), extended thinking (2), claude code best practices (2), browserabnahme, git-diff, kleine änderungen, ki-coding einstieg, claude code tutorial, opus sonnet arbeitsteilung, claude.md, scratchpad.md, context degradation, aufgaben zerlegen, vibe coding, alltagsautomatisierung, rückfragen des modells, python-skript, prompt-präzision
 
 ## Verwandte Themen
 
@@ -20,7 +20,7 @@ Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices,
 ## Patterns (0)
 
 
-## Quellen (8)
+## Quellen (9)
 
 - [[2026-02-27-meer-claude-code-best-practices]] — Über die offizielle Doku hinaus helfen Voice Dictation für kontextreichere Prompts und eine zweite Claude-Instanz, die den Plan vor der Umsetzung prüft.
 - [[2026-02-13-vincanger-claude-code-fullstack-essentials]] — Ein Agent, der Dev-Server-Output und Browser selbst sieht, korrigiert autonom; ein meinungsstarker Stack und aktuelle Docs reduzieren Raten mehr als viele Features.
@@ -30,6 +30,7 @@ Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices,
 - [[2026-01-22-hooeem-claude-code-7-schritte-plan]] — Ein Überblick über Kernschleife, Kontextsteuerung, Plan Mode vs. Ultrathink, Panic-Buttons, Hooks als Guardrails und CI-Skalierung.
 - [[2026-01-15-elenakvcs-vibe-coding-beginner-guide]] — Beim Vibe Coding entscheidet nicht Syntax, sondern präzise Auftragsbeschreibung und die Zerlegung in kleine, einzeln geprüfte Schritte.
 - [[2026-01-10-eyad-khrais-claude-code-tutorial]] — Erst im Plan Mode denken, CLAUDE.md kurz halten, pro Feature eine Konversation führen und Kontextgrenzen mit externem Speicher abfangen.
+- [[2025-12-06-the-morpheus-tutorials-software-entwickeln-mit-ki-einsteiger-guide]] — Kleine Änderungen, verständliche Diffs und manuelle Ausführung erleichtern den Einstieg; ein positiver Agent-Review kann sichtbare Fehler übersehen.
 
 ## Quellen mit diesem Thema als Nebenthema
 

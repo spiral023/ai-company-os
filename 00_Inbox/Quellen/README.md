@@ -89,6 +89,26 @@ Das Script übernimmt die Videobeschreibung und eine vorhandene deutsche oder en
 
 Bei `transkript_generiert: ja` handelt es sich um automatische Spracherkennung. Eigennamen, Produktnamen und Fachbegriffe können falsch sein und werden im Roharchiv nicht stillschweigend korrigiert. Vor Zitaten oder der Übernahme kritischer Aussagen ins Knowledge-System den Inhalt gegen das Video prüfen. Stellt YouTube keine Untertitelspur bereit, bricht der Abruf mit einer klaren Meldung ab.
 
+### Fehlende YouTube-Transkripte lokal nachholen
+
+Wenn YouTube den Untertitelabruf blockiert, kann `python ai.py transkribieren <Video-ID-oder-URL>` die vollständige Tonspur mit `yt-dlp` laden und auf der lokalen NVIDIA-GPU mit `faster-whisper` transkribieren. Der Standard ist `large-v3` mit Float16. Sprache und Zeitstempel werden automatisch erkannt. Dafür wird einmal das Modell heruntergeladen; die Verarbeitung benötigt keinen API-Key und keinen kostenpflichtigen Dienst.
+
+Die optionale Python-Umgebung getrennt einrichten (Windows mit CUDA 12):
+
+```powershell
+uv venv --python 3.12 .venv/youtube-transcription
+uv pip install --python .venv/youtube-transcription/Scripts/python.exe "faster-whisper==1.2.1" "av==18.0.0" "nvidia-cublas-cu12==12.9.2.10" "nvidia-cudnn-cu12==9.27.0.42" "yt-dlp[default]==2026.8.19" pyyaml
+python ai.py transkribieren 2EoNRuFJfBo
+```
+
+Für den YouTube-Abruf wird zusätzlich Node.js ab Version 22 oder Deno ab Version 2.3 im `PATH` benötigt. Die Routine aktiviert beide unterstützten Laufzeiten; die passende EJS-Komponente wird mit `yt-dlp[default]` installiert ([yt-dlp-Anleitung](https://github.com/yt-dlp/yt-dlp/wiki/EJS)).
+
+Liefert der direkte Audio-Download HTTP 403, kann `python ai.py transkribieren <ID> --hls` eine alternative HLS-Tonspur verwenden. Die Dauer wird aus den decodierten Audio-Frames bestimmt, damit fehlende Container-Zeitstempel den Abruf nicht verhindern. Vor dem Schreiben wird sie mit der YouTube-Videodauer verglichen; eine Abweichung über drei Sekunden stoppt die Ergänzung.
+
+Mehrere IDs sind zulässig; zwischen Videos liegt eine Pause von zehn Sekunden. Bei einem Fehler stoppt der Lauf. Erneutes Ausführen nutzt fertige Audiodateien und Transkripte aus `tmp/youtube-transcription/` und überspringt bereits vollständige Rohnotizen. `--audio <Datei>` verwendet für genau ein Video eine vorhandene Tonspur. Die optionale Umgebung, Audio, Modell und JSON mit Segment-Zeitstempeln bleiben lokal und sind gitignored; für `large-v3` mehrere GB freien Speicher vorhalten.
+
+Der Befehl ergänzt fehlende Transkripte erst nach erfolgreicher Verarbeitung. Beschreibung, Veröffentlichungsdatum, Bearbeitungsstatus, Source-Verweise und manuelle Hinweise bleiben erhalten. `transkript_quelle: lokale Audio-Transkription`, Modell, Werkzeugversion und Erfassungsdatum kennzeichnen die Herkunft. Besteht schon eine Knowledge-Source ohne Rohnotiz, wird die neue Rohnotiz mit ihr verknüpft. Das Nachholen erzeugt keine neuen Knowledge-Artikel oder Patterns. Die Regeln zur Prüfung automatischer Spracherkennung gelten weiterhin.
+
 ### Was TikTok-Notizen ausmacht
 
 Videos werden beim Ingest zusätzlich als `medien/<slug>/02-video.mp4` lokal gespeichert und in der Rohquelle verlinkt. Der Download nutzt `yt-dlp` ohne zusätzliche API-Gebühren. Einmal installieren: `python -m pip install --user "yt-dlp[default,curl-cffi]"`. Bei abweichendem Python-Pfad kann `TIKTOK_PYTHON` auf den Interpreter zeigen. `--no-video` überspringt nur die MP4, `--no-media` überspringt Cover und Video.

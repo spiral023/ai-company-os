@@ -31,10 +31,13 @@ Bei der Wahl von Framework, Bibliothek oder Version wird neben technischer Eignu
 
 - 2026-01-12 · [[2026-01-12-dhruv1103-lessons-learned-500k-lines-claude-code]] · meinung — Reddit-Erfahrungsbericht (über vibedeck-Sekundärfassung) empfiehlt populäre, etwas ältere Stacks statt Bleeding-Edge-Versionen mit der Begründung, Modelle machten bei trainingsdaten-dichtem Code deutlich weniger Fehler — unbelegt, einzelquellig.
 - 2026-02-13 · [[2026-02-13-vincanger-claude-code-fullstack-essentials]] · meinung — Argumentiert für meinungsstarke Frameworks (Wasp, Next.js, Laravel, Rails), weil klare Ablageorte und weniger Boilerplate das Raten reduzieren; Zahl 97 % weniger Code ist Herstellerbeispiel (Wasp-Team) und ungeprüft.
+- 2026-10-08 · [[2026-10-08-moritz-brandes-sauberer-code-mit-claude-code-so-geht-s-wirklich]] · meinung — Der Autor berichtet Vorteile expliziter, für Agenten gedachter Konstrukte und lokal zugänglicher Framework-Implementierungen, berücksichtigt aber ein kleineres Komponentenökosystem als Wechselgrenze. Das ergänzt beziehungsweise relativiert die Heuristik verbreiteter Trainingsdaten: Struktur und gezielte Referenzen könnten ebenfalls helfen, ohne dass vergleichende Fehlerraten vorliegen.
 
 ## Spannungen & offene Fragen
 
 - Einzige bisherige Quelle, selbst unbelegt und aus zweiter Hand (vibedeck-Aufarbeitung, keine geprüfte Primärquelle) — keine unabhängige Zweitbestätigung, keine Zahl zur tatsächlichen Fehlerratendifferenz.
+
+- 2026-10-11: [[2026-10-08-moritz-brandes-sauberer-code-mit-claude-code-so-geht-s-wirklich]] berichtet Vorteile expliziter Framework-Konstrukte und gezielter lokaler Referenzen. Das relativiert die Trainingsdaten-Heuristik, belegt ohne vergleichbare Fehlerraten aber keine allgemeine Rangfolge. Siehe [[Framework-Quellcode-als-idiomatische-Referenz]].
 
 ## Verwandte Patterns
 

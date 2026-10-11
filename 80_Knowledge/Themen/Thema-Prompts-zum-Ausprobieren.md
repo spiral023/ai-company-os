@@ -1,6 +1,6 @@
 # Prompts zum Ausprobieren
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, Codex oder einem Chat einsetzen können: Wortlaut, Zweck, Einsatzort, erwartetes Ergebnis. Jeder Prompt bleibt bei seiner Quelle; Varianten derselben Idee von verschiedenen Autoren werden nicht zusammengeführt. Prinzipien der Prompt-Technik gehören zu prompting.
 
@@ -9,7 +9,7 @@ Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, C
 - **Hauptkeyword:** Prompts für Claude Code
 - **Long-Tail:** Prompts zum Ausprobieren; Claude Code Prompt-Vorlagen; Blindspot Pass Prompt; Claude interviewt mich Prompt; Debugging-Prompt für Coding Agents; Prompt mit klarem Zielzustand; Plan vor Code Prompt
 - **Fragen:** Welche Prompts kann ich direkt in Claude Code ausprobieren? / Wie sage ich dem Agent, wann er fertig ist? / Wie verhindere ich, dass der Agent Fehler nur versteckt?
-- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), requirements lead, claude code prompts, reviewer-agent, codex, ergebnisverantwortung, rollen-prompts, task brief, tech lead prompt, verifikation vor abschluss, erfolgskriterien, coding-agent-fehler, annahmen offenlegen, karpathy system prompt, claude.md prompt, test-first, scope begrenzen, plan mode
+- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), requirements lead, reviewer-agent, claude code prompts, tech lead prompt, verifikation vor abschluss, codex, task brief, rollen-prompts, ergebnisverantwortung, scope begrenzen, annahmen offenlegen, test-first, claude.md prompt, karpathy system prompt, coding-agent-fehler, erfolgskriterien, root cause statt symptom
 
 ## Verwandte Themen
 

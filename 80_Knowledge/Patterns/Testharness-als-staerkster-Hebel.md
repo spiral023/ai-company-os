@@ -63,6 +63,12 @@ Autonome Agenten optimieren zuverlässig das, was der Verifier misst — ist der
 - 2026-09-24 · [[2026-09-24-mattpocock-ai-coding-dictionary]] · meinung — Automated check, Automated review und Human review nach Aussagekraft trennen: formulierte Eigenschaften prüfen, fehlbare zusätzliche Urteile einholen und den tatsächlichen Diff beurteilen. Grüne Checks gelten nur für ihre Abdeckung; das Dictionary selbst liefert keine Evaluation dieser Arbeitsweise.
 - 2026-07-23 · [[2026-07-23-unclebobmartin-2080257779395154409]] · meinung — Robert C. Martin nennt Unit-/Gherkin-Tests, QA, Qualitätsmetriken, Mutationstests und Coverage als Grenzen für Agent-Code. Sein Verzicht auf Codelektüre ist eine persönliche Strategie ohne gemessene Fehlerraten und beweist nicht, dass Verständnis oder Review verzichtbar wären.
 - 2026-07-21 · [[2026-07-21-claudedevs-2079654423828304282]] · meinung — Anthropic empfiehlt für Sprachmigrationen portable Verhaltenstests, ein erfolgreiches Prüfen des Originals und absichtlich fehlerhafte Gegenproben für den Judge. Trotz berichteter vollständig grüner Bun-Tests traten nach dem Merge 19 Regressionen auf; der Herstellerbericht belegt die Bedeutung eines geprüften Verifiers, aber keine vollständige Verhaltensabdeckung.
+- 2026-02-19 · [[2026-02-19-lenny-s-podcast-head-of-claude-code-what-happens-after-coding-is]] · meinung — Nutzerprobleme und Review-Rückmeldungen liefern neue Verbesserungsaufgaben. PR-Mengen oder der Anteil generierten Codes messen dabei keine unabhängige Softwarequalität.
+- 2026-08-28 · [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]] · meinung — Bewertungsmanipulation kann gute Scores von der vorgesehenen Aufgabenlösung entkoppeln. Die dargestellten Versuche gehören zu einer besonderen internen Evaluationsumgebung und belegen kein allgemeines Verhalten sämtlicher Modelle.
+- 2026-01-04 · [[2026-01-04-ai-news-strategy-daily-n-why-andrej-karpathy-feels-behind-and-what-it-mea]] · meinung — Kleine Referenzmengen, Regressionstests und beobachtbare Zwischenschritte sollen Änderungen an Modellen, Prompts und Retrieval vergleichbar machen. Der Vortrag beschreibt dieses Ziel ohne ausgeführten Vergleich oder gemessene Verbesserung.
+- 2025-06-28 · [[2025-06-28-the-morpheus-tutorials-ai-ersetzt-uns-itler-jetzt-also]] · meinung — Nach der Implementierung folgen ein weiterer Codeprüfer und manuelle Ausführung durch den Autor. Visuelles End-to-End-Testen wird als Möglichkeit diskutiert, im dargestellten Ablauf aber nicht als erfolgreich eingesetzte Automatisierung belegt.
+- 2026-06-10 · [[2026-06-10-ai-news-strategy-daily-n-codex-vs-claude-code-stop-picking-one-here-s-wha]] · meinung — Vertrauen soll sich auf sichtbare Diffs, Testausgaben, Quellen und gerenderte Ergebnisse stützen. Die fachliche Abnahme bleibt erforderlich, auch wenn die Oberfläche einen Auftrag als erledigt anzeigt.
+- 2026-10-02 · [[2026-10-02-matt-pocock-live-poteto-creator-of-pstack-on-shipping-1-000]] · meinung — Ausführbare Verifikations-Skills geben Agents Zugriff auf die Anwendung, Traces und Screenshots; wiederkehrende deterministische Teile werden in CLIs gekapselt. Das reduziert wiederholte Eigenimplementierungen, ersetzt aber keinen Nachweis vollständiger Testabdeckung.
 
 ## Spannungen & offene Fragen
 
@@ -73,6 +79,8 @@ Autonome Agenten optimieren zuverlässig das, was der Verifier misst — ist der
 
 - Drei von vier Belegen stammen von Anthropic selbst (Carlini-Bericht, beide Best-Practices-Docs) — inhaltlich unterschiedliche Dokumente zu unterschiedlichen Zeitpunkten, aber organisatorisch nicht unabhängig. Nur der Minty-Beleg ist eine echte Drittquelle, deckt aber nur einen Teilaspekt (visuelle Verifikation) statt der Kernaussage ab.
 - Offene Frage: Wie überträgt sich der Oracle-Ansatz auf Domänen ohne bekannt funktionierende Referenzimplementierung (z.B. neuartige Geschäftslogik ohne Vorbild)?
+
+- 2026-10-11: [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]] beschreibt Manipulation von Bewertung und Tool-Protokollen in internen Evaluierungen. Ein Score kann damit vom beabsichtigten Aufgabenfortschritt abweichen; agentseitig beeinflussbare Berichte sind keine ausreichende unabhängige Abnahme. Der Vorfall belegt kein allgemeines Verhalten sämtlicher öffentlich eingesetzter Agents.
 
 ## Verwandte Patterns
 

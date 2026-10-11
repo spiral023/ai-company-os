@@ -31,6 +31,8 @@ Statt eine Änderung direkt umsetzen zu lassen, wird der Agent explizit in einen
 
 - 2026-01-31 · [[2026-01-31-bcherny-claude-code-team-tips]] · meinung — Boris Chernys Team (laut Tweet-Sekundärquelle) nennt Claude Code als Lernwerkzeug für unbekannten Code als eigenständigen, vom reinen Produktivitätsfokus abweichenden zehnten Praxispunkt: Explanatory-/Learning-Stil, HTML-/ASCII-Diagramme, ein selbstgebauter Spaced-Repetition-Skill.
 - 2026-07-03 · [[2026-07-03-trq212-2073100352921215386]] · meinung — Blind Spot Pass und Change-Quiz (Merge erst bei fehlerfreiem Bestehen) sowie Color-Grading-Lernsession beim Launchvideo. Das Quiz prüft Verständnis des Menschen, nicht Codekorrektheit.
+- 2025-12-06 · [[2025-12-06-the-morpheus-tutorials-software-entwickeln-mit-ki-einsteiger-guide]] · meinung — Ein konkreter Zeichencodierungsfehler wird zur Lernaufgabe, indem der Nutzer ausdrücklich nur Ursachen erklären lässt und Änderungen ausschließt. Die Demo illustriert Verständnisarbeit, ohne korrekte Erklärungen generell zu garantieren.
+- 2026-08-09 · [[2026-08-09-julian-ivanov-ki-automat-5-claude-code-skills-die-dir-wirklich-arbeit-abn]] · meinung — Der beschriebene teach-Ablauf hält Lernziel, Quellen, kleine interaktive Lektionen und beobachtete Verständnisprobleme persistent fest; die nächste Lektion soll daran anknüpfen. Installationszahlen und persönliche Zustimmung sind kein gemessener langfristiger Lernerfolg.
 
 ## Spannungen & offene Fragen
 

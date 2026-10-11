@@ -1,15 +1,15 @@
 # Agent-Dateien & Memory
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
-CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen.
+CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen. Inhaltliche Aufnahme, Aufbereitung, Retrieval und regelmäßige Pflege von Quellen stehen in wissensarbeit.
 
 ## Suchbegriffe
 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** agents.md (9), claude.md (8), progressive disclosure (6), context engineering (4), agent-datei (4), instruktionsbudget (2), agent_docs (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), llm wiki (2), /doctor (2), test (2), regeln (2), blockadebericht (2), agent bericht (2), handlungsbedarf (2), auto mode (2), claude.md schreiben
+- **Häufig in den Quellen:** agents.md (9), claude.md (8), progressive disclosure (6), context engineering (4), agent-datei (4), agent_docs (2), instruktionsbudget (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), obsidian (2), llm wiki (2), /doctor (2), test (2), regeln (2), handlungsbedarf (2), blockadebericht (2), agent bericht (2), auto mode (2)
 
 ## Verwandte Themen
 
@@ -20,10 +20,10 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 
 ## Patterns (2)
 
-- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 38 Belege
+- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 40 Belege
 - [[Handlungsbedarf-zuerst-im-Agent-Bericht]] · meinung · 2 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-erzwingen]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-erzwingen]], [[Wissenspflege-mit-Inbox-und-Review]]
 
 ## Quellen (18)
 
@@ -58,6 +58,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-er
 - [[2026-07-12-agenticjames-claude-codes-new-feature-checkup-makes-claude-more-token-efficient-and]]
 - [[2026-07-08-bcherny-2074997570317779038]]
 - [[2026-06-06-agenticjames-your-agent-is-referencing-documentation-when-it-should-be-reading-the]]
+- [[2026-03-29-julian-ivanov-ki-automat-obsidian-claude-code-so-baust-du-dein-zweites-ge]]
 - [[2026-02-24-nate-b-jones-intent-engineering]]
 - [[2026-02-05-kloss-xyz-feature-intelligence-architect]]
 - [[2026-02-04-rudrank-using-minimax-with-claude-code]]

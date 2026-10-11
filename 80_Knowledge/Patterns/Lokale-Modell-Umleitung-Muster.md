@@ -39,6 +39,7 @@ Claude Code liest Modell und Endpunkt aus Umgebungsvariablen (bzw. `~/.claude/se
 - 2026-09-28 · [[2026-09-28-unslothai-2104592692072304916]] · meinung — Unsloth Desktop stellt eine Jev-kompatible API bereit, bestehende Integrationen werden auf den lokalen Server gezeigt; gleiche Umleitungslogik, aber für eine Decision-API statt Chat-API.
 
 - 2026-10-09 · [[2026-10-09-ollama-kontext-speicher]] · meinung — Größere konfigurierte Kontextlänge benötigt zusätzlich Speicher; `ollama ps` zeigt CPU/GPU-Zuordnung und Kontext. Modellgewichte sind deshalb nur ein Teil der Vorabschätzung. Die Dokumentation enthält keine Messung einer konkreten Coding-Aufgabe.
+- 2026-09-01 · [[2026-09-01-ai-mit-arnie-lokale-ki-kauf-nicht-die-falsche-hardware]] · meinung — Die Hardware-Einführung ergänzt das Routing auf lokale Modelle um eine vorgeschaltete Prüfung von Aufgabenqualität, Modellgewichten, Kontext und gleichzeitigen Sitzungen. Ein erreichbarer Endpunkt und eine passende Modelldateigröße belegen allein noch keine brauchbare Laufzeit unter der tatsächlichen Arbeitslast; die Gerätebeispiele bleiben historisch und nicht vollständig vermessen.
 
 ## Spannungen & offene Fragen
 

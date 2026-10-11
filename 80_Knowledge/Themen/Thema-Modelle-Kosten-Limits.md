@@ -1,6 +1,6 @@
 # Modelle, Kosten & Limits
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Caching, Benchmarks und Provider-Umleitung. Verfügbarkeit offener Gewichte, lokale Inferenz, Hardware und Fine-Tuning gehören vorrangig zu open-source-llms; Kostenvergleiche bleiben hier.
 
@@ -22,11 +22,11 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 ## Patterns (4)
 
 - [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 4 Belege
-- [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 9 Belege
+- [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 10 Belege
 - [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 48 Belege
-- [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 2 Belege
+- [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 3 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]]
 
 ## Quellen (56)
 
@@ -89,6 +89,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]]
 - [[2026-10-07-unslothai-decision-model-finetuning]]
 - [[2026-10-02-repo-anthropics-skills]]
 - [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]]
@@ -98,11 +99,13 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-09-27-voxyz_ai-2104254744722383210]]
 - [[2026-09-14-shadcn-2099534231114314145]]
 - [[2026-09-09-voxyz_ai-2097814698204832116]]
+- [[2026-09-01-ai-mit-arnie-lokale-ki-kauf-nicht-die-falsche-hardware]]
 - [[2026-08-16-floknowsai-in-einem-jahr-ersetzt-ein-lokales-modell-dein-claude-abo]]
 - [[2026-07-31-unslothai-2083231049434435596]]
 - [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]]
 - [[2026-07-06-claudedevs-2074208949205881033]]
 - [[2026-07-01-0xcodila-2072329149520232639]]
+- [[2026-06-10-ai-news-strategy-daily-n-codex-vs-claude-code-stop-picking-one-here-s-wha]]
 - [[2026-06-04-agenticjames-most-people-have-not-touched-the-best-parts-of-claude-code-skills-forked]]
 - [[2026-05-09-zodchiii-15-claude-code-settings-most-developers]]
 - [[2026-05-04-wiki-compiler-claude-session-und-token-management]]

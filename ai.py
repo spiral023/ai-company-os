@@ -122,6 +122,21 @@ def run_ingest(args: argparse.Namespace) -> int:
     return run_subprocess(command, "Quelle erfassen")
 
 
+def run_transcribe(args: argparse.Namespace) -> int:
+    """Optionalen lokalen Audio-Fallback in seiner eigenen Umgebung ausführen."""
+    executable = ROOT / ".venv" / "youtube-transcription" / ("Scripts/python.exe" if sys.platform == "win32" else "bin/python")
+    if not executable.is_file():
+        print("Lokale Transkriptionsumgebung fehlt. Einrichtung: 00_Inbox/Quellen/README.md → Fehlende YouTube-Transkripte lokal nachholen")
+        return 1
+    command = [str(executable), "-X", "utf8", script_path("youtube_transcribe.py"), *args.eingaben,
+               "--modell", args.modell, "--batch-size", str(args.batch_size), "--pause", str(args.pause)]
+    if args.hls:
+        command.append("--hls")
+    if args.audio:
+        command.extend(["--audio", args.audio])
+    return run_subprocess(command, "YouTube lokal transkribieren")
+
+
 def run_skills(args: argparse.Namespace) -> int:
     """List or install local project skills."""
     command = [sys.executable, script_path("install_project_skills.py")]
@@ -303,6 +318,15 @@ def build_parser() -> argparse.ArgumentParser:
     ingest.add_argument("--force", action="store_true", help="Bestehende Notiz überschreiben")
     ingest.add_argument("--titel", help="Automatisch erkannten Titel überschreiben")
     ingest.set_defaults(handler=run_ingest)
+
+    transcribe = subparsers.add_parser("transkribieren", help="Fehlende YouTube-Transkripte lokal aus Audio ergänzen")
+    transcribe.add_argument("eingaben", nargs="+", help="YouTube-IDs oder URLs")
+    transcribe.add_argument("--audio", help="Vorhandene Tonspur für ein Video")
+    transcribe.add_argument("--modell", default="large-v3")
+    transcribe.add_argument("--batch-size", type=int, default=4)
+    transcribe.add_argument("--pause", type=float, default=10)
+    transcribe.add_argument("--hls", action="store_true", help="Alternative HLS-Tonspur bei HTTP 403 verwenden")
+    transcribe.set_defaults(handler=run_transcribe)
 
     feeds = subparsers.add_parser("feeds", help="RSS-/Atom-Feeds registrieren und prüfen")
     feeds_sub = feeds.add_subparsers(dest="aktion", required=True)

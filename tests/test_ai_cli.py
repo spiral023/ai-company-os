@@ -26,6 +26,20 @@ def load_ai_module():
 class AiCliTest(unittest.TestCase):
     """Check that ai.py forwards commands to existing scripts."""
 
+    def test_local_transcription_uses_isolated_environment(self) -> None:
+        ai = load_ai_module()
+        with patch.object(Path, "is_file", return_value=True), patch.object(ai, "run_subprocess", return_value=0) as run:
+            result = ai.main(["transkribieren", "2EoNRuFJfBo", "--audio", "pilot.webm", "--batch-size", "2", "--hls"])
+        self.assertEqual(result, 0)
+        command, label = run.call_args.args
+        self.assertIn("youtube-transcription", command[0])
+        self.assertEqual(command[1:4], ["-X", "utf8", str(ROOT / "70_Scripts/youtube_transcribe.py")])
+        self.assertIn("2EoNRuFJfBo", command)
+        self.assertIn("--hls", command)
+        self.assertEqual(command[command.index("--batch-size") + 1], "2")
+        self.assertEqual(command[-2:], ["--audio", "pilot.webm"])
+        self.assertEqual(label, "YouTube lokal transkribieren")
+
     def test_feed_check_forwards_filter_and_limit(self) -> None:
         ai = load_ai_module()
         with patch.object(ai, "run_subprocess", return_value=0) as run:

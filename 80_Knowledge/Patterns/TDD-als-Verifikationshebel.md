@@ -42,6 +42,7 @@ Kontextmenge, Prüfbarkeit und Arbeitspaketgröße bestimmen gemeinsam die Quali
 - 2026-02-04 · [[2026-02-04-tweag-tdd-agentic-coding]] · meinung — Sekundärquelle des Tweag-Handbuchs: Test als präziser Prompt, ein Verhalten pro Prompt, Refactoring nur bei grünen Tests. Deckt sich mit dem Bestand; kein Messwert.
 - 2026-10-04 · [[2026-10-04-voxyz_ai-2106783910055006342]] · meinung — Der vorgeschlagene Ablauf setzt Dokumentationsabgleich, zunächst fehlschlagende Verhaltenstests, minimale Umsetzung und Bereinigung in Reihenfolge; echte Testausgaben und ausgelassene Checks sind zu berichten, ein Effizienzgewinn bleibt unbelegt.
 - 2026-10-02 · [[2026-10-02-voxyz_ai-2106104334035435572]] · meinung — Aktuelle Ausgaben sollen vor Refactors durch Tests festgehalten werden, Assertions bleiben in Strukturänderungen unverändert; Erhaltung gilt nur für abgedeckte Fälle und der vorgeschlagene Architektur-Check braucht konkrete Duplikaterkennung.
+- 2026-04-13 · [[2026-04-13-alex-sprogis-superkraefte-fuer-claude-code]] · meinung — Akzeptanzkriterien werden vor der Implementierung in Tests übersetzt und im Red-Green-Refactor-Zyklus verwendet. Die zunächst erfundenen API-Endpunkte zeigen, dass grüne Tests ohne passende Außenbezüge keine funktionierende Integration beweisen.
 
 ## Spannungen & offene Fragen
 

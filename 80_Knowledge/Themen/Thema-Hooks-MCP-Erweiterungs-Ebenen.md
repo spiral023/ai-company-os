@@ -1,6 +1,6 @@
 # Hooks, MCP & Erweiterungs-Ebenen
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook, MCP, Plugin) und wie Hooks, MCP-Server und Plugins konfiguriert werden.
 
@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), subagents (4), progressive disclosure (4), hooks (4), plugins (4), claude code skills (3), pretooluse (3), mcp (3), hook (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), plugin (2), codex (2), erweiterung (2), /doctor (2), agents.md (2)
+- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), subagents (4), claude code skills (4), progressive disclosure (4), hooks (4), plugins (4), pretooluse (3), mcp (3), hook (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2), plugin (2), codex (2), erweiterung (2)
 
 ## Verwandte Themen
 
@@ -20,14 +20,14 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 
 ## Patterns (4)
 
-- [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 6 Belege
-- [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 18 Belege
-- [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 7 Belege
+- [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 8 Belege
+- [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 22 Belege
+- [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 8 Belege
 - [[MCP-Code-Execution-statt-Tool-Definitionen]] · meinung · 4 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Hook-erzwungene-Skill-Aktivierung]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Hook-erzwungene-Skill-Aktivierung]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]
 
-## Quellen (14)
+## Quellen (15)
 
 - [[2026-10-05-repo-claude-code-doctor-insights]] — Aus `CHANGELOG.md` von anthropics/claude-code (Stand 2.1.289).
 - [[2026-10-02-voxyz_ai-2106006290954592332]] — Vox bündelt `Claude Code`-Befehle zu einem Wartungsplan gegen Duplikate, Strukturdrift und veraltete Regeln.
@@ -37,6 +37,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-E
 - [[2026-07-08-bcherny-2074997570317779038]] — Boris Cherny kündigt den Befehl `/checkup` für Claude Code an (Stand 2026-07-08).
 - [[2026-05-09-zodchiii-15-claude-code-settings-most-developers]] — Viele Qualitätsprobleme in Claude Code stammen aus schlechten Defaults und losen Permissions; Effort, Deny-Regeln, Modell-Routing und Hooks lassen sich konfigurieren.
 - [[2026-04-17-wiki-compiler-skills-subagents-hooks-mcp-pragmatisch]] — Jede Anforderung gehört auf genau eine Ebene (CLAUDE.md, Skill, Subagent, Hook, MCP); Mehrfachmodellierung ist ein Designfehler, Einführung schrittweise vom knappen Kern aus.
+- [[2026-03-19-julian-ivanov-ki-automat-die-10-besten-claude-code-skills-plugins]] — Erweiterungen werden projektbezogen ausgewählt und Plan-Artefakte persistiert; Installation allein belegt weder Aktivierung noch funktionierende Recherche.
 - [[2026-02-04-affaanmustafa-shorthand-guide-primaer]] — Viele MCPs installieren, aber unter zehn aktivieren: Zu viele aktive Tools schrumpfen das effektive Kontextfenster drastisch.
 - [[2026-02-01-anthropic-docs-extend-claude-code]] — Jede Erweiterungsebene hat ihren Zweck und Kontext-Preis: CLAUDE.md für immer geltende Regeln, Skills bei Bedarf, Subagents isoliert, MCP extern, Hooks kostenlos.
 - [[2026-02-01-anthropic-docs-create-custom-subagents]] — Subagents mit eigenem Kontext, Tool-Rechten und Modell halten laute Exploration aus dem Hauptthread und begrenzen Rechte deterministisch.
@@ -46,13 +47,17 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-E
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]]
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]]
 - [[2026-10-02-repo-jakubantalik-transitions-dev]]
 - [[2026-09-18-repo-anthropics-claude-code-agents-md-support]]
 - [[2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk]]
+- [[2026-08-09-julian-ivanov-ki-automat-5-claude-code-skills-die-dir-wirklich-arbeit-abn]]
+- [[2026-06-18-julian-ivanov-ki-automat-bau-dir-dein-ki-betriebssystem-mit-claude-code-k]]
 - [[2026-04-30-zodchiii-claude-code-env-security]]
 - [[2026-02-01-anthropic-docs-extend-claude-with-skills]]
 - [[2026-02-01-anthropic-docs-claude-code-gitlab-ci]]
 - [[2026-01-22-hooeem-claude-code-7-schritte-plan]]
 - [[2026-01-21-tempoimmaterial-agent-skills-vs-rules-vs-commands]]
 - [[2026-01-20-ben-tossell-agent-coding]]
+- [[2025-09-22-julian-ivanov-ki-automat-das-ultimative-rag-system-n8n-nextcloud-mistral]]

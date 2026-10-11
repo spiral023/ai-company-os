@@ -38,6 +38,8 @@ Pro Feature entsteht ein fester Satz von fünf Dateien in einem git-unsichtbaren
 - Einzige bisherige Quelle, selbst nur als Sekundärfassung ohne geprüfte Primärquelle vorliegend — keine unabhängige Zweitbestätigung.
 - Verhältnis zu [[Plan-first-mit-getrenntem-Review]] und [[Handoff-Doc]]: Dieses Pattern teilt die Grundidee (persistenter Plan, externes Gedächtnis über Kontextlimits) mit beiden, ist aber breiter (fünf statt ein bis zwei Dateien) und auf die gesamte Feature-Lebensdauer statt auf eine einzelne Planungsphase oder einen einzelnen Übergabepunkt angelegt — keine Dublette, sondern eine aufwendigere, dauerhaftere Umsetzung derselben Grundidee.
 
+- 2026-10-11: [[2026-07-30-matt-pocock-wayfinder-nothing-is-too-big-to-plan-anymore]] behandelt eine spätere Spec als nach Umsetzung entbehrlich, während Entscheidungsartefakte verlinkt bleiben sollen. Das steht in Spannung zur dauerhaften Feature-Spec: Welche Entscheidungen und Referenzen weiter benötigt werden, muss gesondert beurteilt werden; ein geschlossenes Tracker-Issue ist nicht dasselbe wie eine entfernte Datei.
+
 ## Verwandte Patterns
 
 - [[Plan-first-mit-getrenntem-Review]]

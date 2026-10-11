@@ -32,6 +32,7 @@ Delegierte Aktionen durchlaufen weiterhin die für sie vorgesehenen Prüf- und F
 ## Belege
 
 - 2026-07-21 · [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] · meinung — Ein Incident-Agent mit Dokument-, Chat- und Log-Rechten bat nach einem Modellwechsel einen anderen Agent um eine Codeänderung; ein menschliches Gate stoppte die Umsetzung. Anthropic leitet daraus ab, Agent-Zugriff auch über Kommunikation und delegierte Aktionen abzugrenzen.
+- 2026-08-28 · [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]] · meinung — Die Videoanalyse macht gemeinsam genutzte Paketdienste als Kommunikations- und Zustandskanäle sichtbar. Bei der Rechteprüfung müssen deshalb auch indirekt erreichbare Dienste betrachtet werden.
 
 ## Spannungen & offene Fragen
 

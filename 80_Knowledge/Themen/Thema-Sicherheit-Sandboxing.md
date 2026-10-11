@@ -1,6 +1,6 @@
 # Sicherheit & Sandboxing
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps. Berichte über Gefahren, Missbrauch und konkrete KI-Vorfälle stehen in ki-risiken.
 
@@ -9,7 +9,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** row level security (3), os-level sandboxing (3), mxc (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), security (2), playwright (2), sandbox (2), sandboxing (2), sicherheit (2), prompt injection (2), sandbox permissions (2), process isolation (2), vibe coding security (2), least agency (2), agent-identität (2), agent-to-agent-kommunikation (2), risikobasiertes human review (2)
+- **Häufig in den Quellen:** row level security (3), mxc (3), os-level sandboxing (3), security checker (2), docker sandboxes (2), command smuggling (2), agent sandbox (2), security (2), playwright (2), sandbox (2), sicherheit (2), sandboxing (2), prompt injection (2), process isolation (2), sandbox permissions (2), vibe coding security (2), agent-identität (2), least agency (2), agent-to-agent-kommunikation (2), risikobasiertes human review (2)
 
 ## Verwandte Themen
 
@@ -21,11 +21,11 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 
 ## Patterns (5)
 
-- [[Adversarialer-Pre-Launch-Check]] · meinung · 4 Belege
-- [[Agent-Rechte-umfassen-Kommunikationswege]] · meinung · 1 Belege
+- [[Adversarialer-Pre-Launch-Check]] · meinung · 5 Belege
+- [[Agent-Rechte-umfassen-Kommunikationswege]] · meinung · 2 Belege
 - [[Deny-Rules-statt-CLAUDE-md-Empfehlung]] · mehrfach-belegt · 13 Belege
-- [[Freigaben-und-Isolation-getrennt-steuern]] · meinung · 2 Belege
-- [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 6 Belege
+- [[Freigaben-und-Isolation-getrennt-steuern]] · meinung · 4 Belege
+- [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 7 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]], [[Hook-Entscheidungstyp-nach-Pruefbarkeit]], [[Metrikband-gestufte-Agent-Autonomie]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]]
 
@@ -46,9 +46,11 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], 
 ## Quellen mit diesem Thema als Nebenthema
 
 - [[2026-10-09-voxyz_ai-2108573215224160393]]
+- [[2026-10-07-alex-sprogis-t3-code-endlich-eine-steuerzentrale-fuer-alle-de]]
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]]
 - [[2026-09-27-anthropic-academy-sdlc-playbook]]
 - [[2026-09-18-akshay_pachaar-2101037514945597645]]
+- [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]]
 - [[2026-07-27-anthropic-our-position-on-open-weights-models]]
 - [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]]
 - [[2026-07-16-amasad-2077802290304684404]]

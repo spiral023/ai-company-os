@@ -32,6 +32,7 @@ Jede Skill (oder jeder Workflow) enthält eine Tabelle mit zwei Spalten: links d
 - o. D. (gesichtet 2026-07-14) · external_knowledge/ai-llm-wiki/raw/addyosmani-agent-skills-blog.md (Addy Osmani, Google) · meinung — Primärbeschreibung des Patterns als eines von fünf Kernprinzipien, mit den drei Beispielzeilen und der Begründung „LLMs are excellent at rationalisation"; empfiehlt es explizit auch als Team-Praxis.
 - 2026-07-14 · external_repos/addyosmani/agent-skills/skills/ · verifiziert — 22 der Skills im geklonten Repo enthalten eine solche Tabelle; z. B. `test-driven-development/SKILL.md` („Common Rationalizations": „I'll write tests after the code works" → „You won't. And tests written after the fact test implementation, not behavior.").
 - 2026-07-14 · external_repos/obra/superpowers/skills/ · verifiziert — Unabhängige zweite Umsetzung (anderer Autor, Jesse Vincent): `test-driven-development/SKILL.md` enthält eine „Common Rationalizations"-Tabelle (Excuse/Reality) plus Red-Flag-Liste („Rationalizing ‚just this once'"); auch `using-superpowers` und `systematic-debugging` nutzen das Muster.
+- 2026-04-13 · [[2026-04-13-alex-sprogis-superkraefte-fuer-claude-code]] · meinung — Der gezeigte Skill behandelt typische Ausreden zum Überspringen von Tests mit expliziten Gegenargumenten. Das formuliert eine klare Arbeitsregel, belegt aber keine technische Erzwingung oder ausnahmslose Einhaltung.
 
 ## Spannungen & offene Fragen
 

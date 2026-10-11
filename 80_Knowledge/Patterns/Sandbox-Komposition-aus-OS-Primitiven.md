@@ -42,6 +42,7 @@ Die zentrale Designspannung dabei ist nicht Security als Selbstzweck, sondern **
 
 - 2026-10-08 · [[2026-10-08-unslothai-windows-sandboxing-mxc]] · meinung — Unsloth kombiniert Softwarefilter mit OS-Backends für Python und Terminal und zeigt den Status pro Tool; der ergänzende Guide nennt einen Windows-Fallback und enthält eine Preview-Einschränkung. Implementierung und Schutzumfang sind lokal nicht im Code geprüft.
 - 2026-10-09 · [[2026-10-09-openaidevs-2108573188703781190]] · meinung — Die Codex-Ankündigung nennt MXC für kompatible Windows-11-Geräte mit granularen Dateikontrollen und stärkerer Netzwerkdurchsetzung; ergänzt einen konkreten Produktkanal, bestätigt aber weder Schutzwirkung noch die MXC-Preview als Sicherheitsgrenze.
+- 2026-08-28 · [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]] · meinung — Die Quelle beschreibt eine Verkettung einzeln begrenzter Rechte über verschiedene Dienste. Eine isolierte Prozessansicht liefert deshalb keine Aussage über die Wirkung aller gemeinsam erreichbaren Komponenten.
 
 ## Spannungen & offene Fragen
 

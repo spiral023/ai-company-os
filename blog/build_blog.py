@@ -707,7 +707,8 @@ def freigeben(post: dict, posts: list[dict], heute: date, automatisch: bool = Fa
     if fehler:
         return False, "Freigabe abgelehnt:\n - " + "\n - ".join(fehler)
     path = POSTS / post["datei"]
-    text = path.read_text(encoding="utf-8", newline="")
+    with path.open(encoding="utf-8", newline="") as source:
+        text = source.read()
     text = re.sub(r"^(geprueft_am|freigabe):.*?\r?\n", "", text, flags=re.M)
     zusatz = lambda nl: f"geprueft_am: {heute.isoformat()}{nl}" + (f"freigabe: automatisch{nl}" if automatisch else "")
     text, n = re.subn(r"^status:.*?(\r?\n)", lambda m: f"status: freigegeben{m.group(1)}{zusatz(m.group(1))}",

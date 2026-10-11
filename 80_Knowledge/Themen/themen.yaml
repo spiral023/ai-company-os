@@ -29,9 +29,20 @@ cluster:
       longtail: ["Context Rot vermeiden", "Claude Code /compact oder /clear", "Claude Code Kontextfenster verwalten", "Session Handoff Dokument", "Rewind statt Korrektur", "Subagents als Kontextgrenze"]
       fragen: ["Wann sollte ich /clear statt /compact nutzen?", "Warum wird mein Agent in langen Sessions schlechter?"]
 
+  wissensarbeit:
+    name: "KI-gestützte Wissensarbeit"
+    beschreibung: "Quellen aufnehmen, aufbereiten, wiederfinden und regelmäßig pflegen: Markdown-Wissensvaults, Inbox-Routing und Reviews, OCR, RAG mit Text- und Tabellenpfaden sowie Videoanalyse aus Frames und Transkript. Agent-Onboarding und Regeldateien stehen in agent-dateien, Skill-Aufbau in skills."
+    kern: [rag, retrieval-augmented generation, retrieval augmented generation, ocr, wissensvault, wissenspflege, markdown-wissensvault, second brain, obsidian, inbox-routing, tagesreview, weekly review, quellenlebenszyklus, volltextpfad, tabellenpfad, videoanalyse, bildframes, frames und transkript]
+    weit: [quellenaufnahme, quellenverarbeitung, wissensbestand, dokumentenbestand, retrieval, chunking, reranking, volltext, dokumentensuche, tabellenabfragen, wissensmanagement, markdown-vault, daily notes]
+    verwandt: [agent-dateien, kontext, erweiterungen, skills, verifikation]
+    blog:
+      hauptkeyword: "Wissensmanagement mit KI"
+      longtail: ["Obsidian und Claude Code", "Markdown-Wissensvault pflegen", "RAG mit OCR und Tabellen", "RAG Quellen aktualisieren", "Videoanalyse mit Frames und Transkript", "KI-Betriebssystem für Wissensarbeit"]
+      fragen: ["Wie wird aus einer Inbox nutzbares KI-Wissen?", "Wann brauche ich RAG, Tabellenabfragen oder das vollständige Dokument?", "Wie bleiben automatisch erzeugte Wissensnotizen nachvollziehbar?", "Was ergänzen Bildframes zu einem Videotranskript?"]
+
   agent-dateien:
     name: "Agent-Dateien & Memory"
-    beschreibung: "CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen."
+    beschreibung: "CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen. Inhaltliche Aufnahme, Aufbereitung, Retrieval und regelmäßige Pflege von Quellen stehen in wissensarbeit."
     kern: [claude.md, agents.md, gemini.md, agent-datei, agent_docs, instruktionsbudget, regelbudget, /init, llm wiki, llm-wiki, memory-system, memory-store, onboarding-datei, system-reminder, steering.md, cursor rules, .claude/rules]
     weit: [progressive disclosure, regeldatei, regeln, memory, wissensbasis, knowledge graph, repo-onboarding, instruction following]
     verwandt: [kontext, skills, erweiterungen, prompting]
@@ -87,7 +98,7 @@ cluster:
   orchestrierung:
     name: "Multi-Agent & Parallelisierung"
     beschreibung: "Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-Abhängigkeiten, Rollen, Advisor. Dauerläufe ohne Aufsicht stehen in autonomie."
-    kern: [subagent, subagents, agent teams, agent team, git worktree, git worktrees, multi-agent, parallele agents, parallele coding agents, swarm, sub-agents, task-abhängigkeit, addblockedby, orchestrator, advisor-agent, agent-tree, delegation, taskcreate, teammates, dynamic workflows]
+    kern: [subagent, subagents, agent teams, agent team, git worktree, git worktrees, multi-agent, parallele agents, parallele coding agents, swarm, sub-agents, task-abhängigkeit, addblockedby, orchestrator, advisor-agent, agent-tree, delegation, taskcreate, teammates, dynamic workflows, paperclip, agent-organisation, agentenorganisation]
     weit: [parallel, worktree, rollen, agent drift, koordination, multi-session]
     verwandt: [autonomie, kontext, modelle-kosten, verifikation]
     blog:
@@ -98,7 +109,7 @@ cluster:
   autonomie:
     name: "Autonome Läufe, Loops & CI"
     beschreibung: "Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agents, Autonomiestufen und ihre Grenzen."
-    kern: [ralph loop, ralph wiggum, long-running agent, long-running agents, /goal, nachtlauf, über nacht, headless, claude -p, ci-agent, ci agent, github action, merge request, autonomiestufe, auto mode, loop engineering, autonome agents, steering, metrikband, unattended]
+    kern: [ralph loop, ralph wiggum, long-running agent, long-running agents, /goal, nachtlauf, über nacht, headless, claude -p, ci-agent, ci agent, github action, merge request, autonomiestufe, auto mode, loop engineering, autonome agents, steering, metrikband, unattended, heartbeat, heartbeats]
     weit: [autonom, autonomie, loop, cron, pipeline, review gate, oidc, sandboxed runner]
     verwandt: [orchestrierung, verifikation, sicherheit, kontext, sdlc]
     blog:
@@ -153,7 +164,7 @@ cluster:
   frameworks:
     name: "Workflow-Frameworks & Tools"
     beschreibung: "Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Matt Pococks Skills, Superpowers, GSD, gstack, Everything Claude Code, Terminal- und Multiplexer-Tools."
-    kern: [wayfinder, matt pocock, mattpocock, superpowers, gsd, gstack, everything claude code, get shit done, spec-driven development framework, cmux, conductor, ghostty, zellij, context7, workflow-framework, wiki-compiler, swiftui skill]
+    kern: [wayfinder, matt pocock, mattpocock, superpowers, gsd, gstack, everything claude code, get shit done, spec-driven development framework, cmux, conductor, ghostty, zellij, context7, workflow-framework, wiki-compiler, swiftui skill, t3 code, hermes agent]
     weit: [framework, workflow, toolkit, terminal, tmux, xcode, agent-skills]
     verwandt: [skills, planung, orchestrierung]
     blog:
@@ -208,7 +219,7 @@ cluster:
   prototyping:
     name: "Prototyping & UI-Design"
     beschreibung: "Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents."
-    kern: [lovable, website-builder, design system, design tokens, design-skill, component-first, screenshot, hero section, landingpage, ui-design, ux-audit, tailwind prompting, prototyp-handoff, frontend first, supabase, remix]
+    kern: [lovable, website-builder, design system, design tokens, design-skill, component-first, screenshot, hero section, landingpage, ui-design, ux-audit, tailwind prompting, prototyp-handoff, frontend first, supabase, remix, brand kit, brand-kit, claude design, webdesign, suchintention, dataforseo]
     weit: [prototyp, design, ui, ux, komponente, layout, responsive, spacing, typografie]
     verwandt: [sicherheit, planung, skills]
     blog:

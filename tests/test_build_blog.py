@@ -5,6 +5,8 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
+import pytest
+
 REPO = Path(__file__).resolve().parent.parent
 SPEC = importlib.util.spec_from_file_location("build_blog", REPO / "blog" / "build_blog.py")
 bb = importlib.util.module_from_spec(SPEC)
@@ -164,6 +166,19 @@ class TestFreigeben:
         ok, _ = bb.freigeben(p, [p], HEUTE)
         text = f.read_text(encoding="utf-8")
         assert ok and "status: freigegeben\ngeprueft_am: 2026-09-29\n" in text
+
+    @pytest.mark.parametrize("newline", [b"\n", b"\r\n"])
+    def test_erhaelt_zeilenenden_und_utf8_inhalt(self, tmp_path, monkeypatch, newline):
+        f, p = self._setup(tmp_path, monkeypatch, body="Grüße aus Österreich.\n\nZweite Zeile.")
+        original = f.read_bytes().replace(b"\n", newline)
+        f.write_bytes(original)
+        ok, _ = bb.freigeben(p, [p], HEUTE)
+        expected = original.replace(
+            b"status: entwurf" + newline,
+            b"status: freigegeben" + newline + b"geprueft_am: 2026-09-29" + newline,
+            1,
+        )
+        assert ok and f.read_bytes() == expected
 
     def test_zweimal_ersetzt_datum(self, tmp_path, monkeypatch):
         f, p = self._setup(tmp_path, monkeypatch)

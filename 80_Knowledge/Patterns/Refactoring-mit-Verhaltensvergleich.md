@@ -29,6 +29,7 @@ Altes Verhalten, geplante Strukturverbesserung und konkrete Prüfung pro Umbau d
 
 - 2026-10-09 · [[2026-10-09-openai-refactoring]] · meinung — offizielle Anleitung für kleine Umbauten und explizite Prüfungen des Verhaltenserhalts; identische Eingaben sind die eigene konkretisierende Methode.
 - 2026-07-21 · [[2026-07-21-claudedevs-2079654423828304282]] · meinung — Die Sprachmigration verwendet identische Eingaben und externe Assertions gegen Original und Port als Verhaltensreferenz. Dieser Prüfgedanke ergänzt das Pattern, während Migration und mögliche Architekturänderungen gesonderte Scope- und Abnahmekriterien benötigen; das Original ist zudem nicht automatisch fachlich fehlerfrei.
+- 2026-10-05 · [[2026-10-05-venelin-valkov-stop-ai-code-slop-yes-you-still-need-to-refactor]] · meinung — Der Autor koppelt den Umbau des Streaming-Zustands an Renderzählungen vor und nach der Änderung und prüft anschließend sichtbare Antwortaktualisierung. Die behauptete Reduktion betrifft bestimmte Komponenten; vollständige funktionale Gleichheit und entsprechend kürzere Gesamtlaufzeit sind damit nicht nachgewiesen.
 
 ## Spannungen & offene Fragen
 

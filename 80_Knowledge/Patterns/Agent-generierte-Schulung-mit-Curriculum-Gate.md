@@ -34,11 +34,14 @@ Ein user-invoked Skill orchestriert fünf Phasen: (1) Briefing zu Zielgruppe, Vo
 
 - 2026-07-30 · [[2026-07-30-julian-ivanov-interaktive-schulungen-mit-claude-code]] · meinung — Creator-Demo zeigt den vollständigen Ablauf vom Agenten-Briefing über Curriculum-Review und Mediengenerierung bis zu einer interaktiven Single-File-HTML-Schulung.
 - 2026-10-09 · [[2026-10-09-voxyz_ai-2108543002830360775]] · meinung — Zielgruppenbriefing und freigegebenes Storyboard übertragen das bekannte Inhalts-Gate auf Motion-Produktion; der Post belegt weder Lernerfolg noch Produktivität.
+- 2025-12-04 · [[2025-12-04-brutkasten-business-vs-technik-wie-man-ki-in-organisationen]] · meinung — Befähigung sollte beim vorhandenen digitalen Vorwissen und den tatsächlichen Aufgaben beginnen, statt allen Beschäftigten denselben KI-Kurs anzubieten. Schulungsproduktion allein weist weder Adoption noch einen Produktivitätsgewinn nach; Unterstützung, Erprobungszeit und Nacharbeit gehören ebenfalls zur Einführung.
 
 ## Spannungen & offene Fragen
 
 - Die Single-File-Auslieferung vereinfacht Prototyping und lokale Nutzung, steht aber im Spannungsverhältnis zu LMS-Anforderungen wie Tracking, Rollen, Updates und Nachweisen.
 - Offen ist, wie gut fachliche Richtigkeit, Lernwirkung und Barrierefreiheit über viele Themen und Kurslängen hinweg erhalten bleiben.
+
+- 2026-10-11: [[2025-12-04-brutkasten-business-vs-technik-wie-man-ki-in-organisationen]] trennt erzeugtes Lernangebot von tatsächlicher Befähigung. Eine Curriculum-Freigabe weist weder Adoption noch fachliche Prüffähigkeit nach; Unterstützung und Nacharbeit bleiben Teil der Einführung. Siehe [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]].
 
 ## Verwandte Patterns
 

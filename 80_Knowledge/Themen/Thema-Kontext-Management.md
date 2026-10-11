@@ -1,6 +1,6 @@
 # Kontext-Management
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, Clear, Rewind, Handoff zwischen Sessions, Kontextkosten von Tools. Regeldateien gehören zu agent-dateien, die Kosten des Cachings zu modelle-kosten.
 
@@ -9,7 +9,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 - **Hauptkeyword:** Context Engineering
 - **Long-Tail:** Context Rot vermeiden; Claude Code /compact oder /clear; Claude Code Kontextfenster verwalten; Session Handoff Dokument; Rewind statt Korrektur; Subagents als Kontextgrenze
 - **Fragen:** Wann sollte ich /clear statt /compact nutzen? / Warum wird mein Agent in langen Sessions schlechter?
-- **Häufig in den Quellen:** context window (8), context rot (8), claude.md (8), /compact (7), /clear (7), progressive disclosure (7), context engineering (5), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), handoff (4), kontext-hygiene (4), prompt caching (4), context pollution (3), kontext (3), token (3), state.md (3), plan mode (3), autocompact-puffer (2)
+- **Häufig in den Quellen:** context window (8), context rot (8), claude.md (8), /compact (7), /clear (7), progressive disclosure (7), context engineering (5), handoff (5), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), kontext-hygiene (4), prompt caching (4), context pollution (3), token (3), kontext (3), state.md (3), plan mode (3), mcp tools (2)
 
 ## Verwandte Themen
 
@@ -21,12 +21,13 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 ## Patterns (2)
 
 - [[Handoff-Doc]] · verifiziert · 21 Belege
-- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 44 Belege
+- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 47 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[Framework-Quellcode-als-idiomatische-Referenz]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]], [[Wissenspflege-mit-Inbox-und-Review]]
 
-## Quellen (20)
+## Quellen (22)
 
+- [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]] — Handoffs werden vor und nach Compaction verglichen; Cache-Anzeigen, Wartezeiten und Warmhalte-Versprechen belegen keine gemessene Ersparnis.
 - [[2026-09-24-mattpocock-ai-coding-dictionary]] — Matt Pococks AI Coding Dictionary ordnet 71 Begriffe in sieben Bereiche.
 - [[2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re]] — Weniger Anweisungen, mehr Absicht und messbares Abschlusskriterium: Kontext klein halten, Garantien in Hooks legen und das Setup bei jedem Modellwechsel ausdünnen.
 - [[2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht]] — Der Creator warnt vor GitHub-Tools, die Claude Code Tokens sparen sollen, indem sie Kontext vorab aus einem Graphen zusammensuchen.
@@ -42,6 +43,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 - [[2026-04-29-wiki-compiler-claude-code-session-management-1m-context]] — Nach jedem Arbeitsblock bewusst zwischen Continue, Rewind, Compact, Clear und Subagent wählen, weil mehr Kontext ab etwa 300k Tokens Context Rot riskiert.
 - [[2026-04-22-agenticjames-everything-you-need-to-know-about-context-engineering-in-1-minute]] — Was nicht im Context Window landet, kennt der Agent nicht; CLAUDE.md oder AGENTS.md ist der immer geladene Stamm, von dem Verweise bei Bedarf abzweigen.
 - [[2026-04-15-trq212-claude-code-session-management-1m-context-primaer]] — Ein 1M-Kontext ist kein pauschaler Gewinn: Früh und aktiv kompaktieren, neue Aufgabe meist neue Session, Subagents als Kontextgrenze nutzen.
+- [[2026-03-15-julian-ivanov-ki-automat-claude-code-8-best-practices-fuer-bessere-ergebn]] — Plan und Fortschritt werden vor Kontextwechseln als Artefakte gesichert; Parallelisierung garantiert keine geringeren Gesamtkosten.
 - [[2026-02-14-gmoney-eth-25-claude-code-lessons]] — Das Context Window wie RAM behandeln: früh löschen, Subagents nutzen, 3 bis 5 parallele Sessions in eigenen Worktrees fahren und bei Misserfolg neu ansetzen.
 - [[2026-01-25-sankalp-claude-code-experience]] — Subagents, Checkpoints und frühe Handoffs steuern das 200k-Budget; ein zweites Modell (Codex) reviewt besser als das bauende Claude.
 - [[2026-01-21-aiedge-claude-50-pro-tips]] — Bei anhaltender Verwirrung Kontext zurücksetzen, günstig prototypen und autonome Desktop-Agenten wie Cowork per Ordner-Isolation und Backups absichern.
@@ -52,6 +54,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 
 - [[2026-10-09-repo-gsd-workflow]]
 - [[2026-10-09-ollama-kontext-speicher]]
+- [[2026-10-08-moritz-brandes-sauberer-code-mit-claude-code-so-geht-s-wirklich]]
 - [[2026-10-07-voxyz_ai-2107939019091005836]]
 - [[2026-10-02-voxyz_ai-2106006290954592332]]
 - [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]]
@@ -77,6 +80,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 - [[2026-04-17-wiki-compiler-agent-teams-in-claude-code]]
 - [[2026-04-16-wiki-compiler-context7]]
 - [[2026-04-13-wiki-compiler-gute-agents-md-schreiben]]
+- [[2026-03-29-julian-ivanov-ki-automat-obsidian-claude-code-so-baust-du-dein-zweites-ge]]
 - [[2026-03-29-0x-kaize-claude-usage-limits-primaer]]
 - [[2026-03-21-sourfraser-claude-obsidian-ai-employee]]
 - [[2026-02-27-thariq-lessons-building-claude-code]]

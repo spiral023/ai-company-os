@@ -34,6 +34,10 @@ Drei Entwicklungsstufen werden unterschieden: **Prompt Engineering** (Anweisung 
 - 2026-09-13 · [[2026-09-13-stefanantonelli-du-brauchst-keinen-entwickler-um-mit-ki-etwas-zu-bauen]] · meinung — Erfahrene Fachleute lösen pro Anweisung rund zwölf Agent-Schritte aus, Anfänger fünf (Caption, Zahlen ungeprüft). Stützt die These, dass Domänenwissen die Absicht und Qualitätskriterien liefert.
 - 2026-02-20 · [[2026-02-20-boris-tane-sdlc-is-dead]] · meinung — These: Loop aus Intent, Kontext, Build, Observe; Kontextqualität bestimmt Ergebnis. Reine Position, Sekundärquelle.
 - 2026-09-05 · [[2026-09-05-waynesutton-2096296858343846261]] · meinung — UX, DX und Agent Experience als gemeinsame Entscheidungsziele benennen; ohne Gewichtung, Konfliktregeln und Eskalationskriterien entsteht noch keine organisatorische Zielhierarchie.
+- 2025-12-04 · [[2025-12-04-brutkasten-business-vs-technik-wie-man-ki-in-organisationen]] · meinung — Die Podiumsdiskussion empfiehlt, Fachprozess, angestrebten Nutzen und Verantwortung vor der Toolauswahl zu klären; sichtbare Nutzung und vermeintlich gesparte Zeit belegen noch keinen Unternehmenswert. Ihre Praxisanekdoten ergänzen die organisatorische Zielklärung, liefern aber keine kontrollierte Wirkungsmessung.
+- 2026-04-12 · [[2026-04-12-digitale-profis-so-ersetzt-du-dein-unternehmen-mit-ki-agenten-pa]] · meinung — Das Onboarding verbindet eine Mission mit Agentenrollen und Anweisungen, während der Mensch Agentenvorschläge genehmigt oder überarbeiten lässt. Diese Ausgangsstruktur belegt noch keine vollständige Zielhierarchie, fachliche Abnahme oder präzise Grenze erlaubter Entscheidungen.
+- 2026-04-01 · [[2026-04-01-ai-mit-arnie-claude-code-und-paperclip-aendern-alles]] · meinung — Arnie verbindet Rollen und proaktive Aufgaben mit einer Unternehmensmission. Der Content-Agent erzeugt jedoch schon Skripte, obwohl der Autor noch nichts erstellen wollte; das zeigt im Beispiel die Grenze eines Ziels ohne ausreichend konkrete Handlungs- und Prioritätsregeln.
+- 2026-04-03 · [[2026-04-03-julian-ivanov-ki-automat-ich-habe-eine-firma-ohne-menschen-gebaut-papercl]] · meinung — Ivanov verbindet eine menschlich vorgegebene Mission mit Rollen, Berichtslinien und zielbezogenen Aufgaben. Das Tutorial erklärt die organisatorische Zuordnung, misst aber weder Zieltreue noch verringerte menschliche Steuerung.
 
 ## Spannungen & offene Fragen
 
@@ -41,6 +45,8 @@ Drei Entwicklungsstufen werden unterschieden: **Prompt Engineering** (Anweisung 
 - Offene Frage: Wie lässt sich Intent Engineering konkret in unser eigenes AGENTS.md-System übertragen — reicht die bestehende „Freigabe durch Philipp erforderlich“-Liste als Intent-Schicht, oder fehlt die explizite Trade-off-/Eskalationslogik dahinter?
 
 - Ergänzung 2026-10-10: [[2026-09-05-waynesutton-2096296858343846261]] benennt UX, DX und AX als gemeinsame Ziele, ohne Gewichtung oder Konfliktregeln. Diese Zielliste ergänzt Intent, ersetzt aber keine Priorisierung, Eskalationskriterien oder Regressionsprüfung.
+
+- 2026-10-11: Eine Mission kann proaktive Arbeit auslösen, ohne konkrete Handlungen ausreichend zu begrenzen. [[2026-04-01-ai-mit-arnie-claude-code-und-paperclip-aendern-alles]] zeigt unbestellte Skripterstellung; Rollen und erfolgreiche Run-Meldungen ersetzen weder Handlungsfreigabe noch fachliche Abnahme.
 
 ## Verwandte Patterns
 

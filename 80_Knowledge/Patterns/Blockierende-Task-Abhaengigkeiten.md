@@ -32,6 +32,8 @@ Tasks bekommen über `addBlockedBy`/`addBlocks` explizite, append-only Abhängig
 - 2026-01-23 · [[2026-01-23-nummanali-claude-task-system]] · meinung — X-Artikel von @nummanali beschreibt die vier Tools `TaskCreate`/`TaskUpdate`/`TaskGet`/`TaskList`, die Blockierlogik `addBlockedBy`/`addBlocks`, die Datei-pro-Task-Persistenz unter `~/.claude/tasks/<list-id>/` und `owner` als reines Filter-Label, anhand einer siebenteiligen JWT-Migration und einer achtteiligen Hochzeitsplanung als Beispielgraphen.
 
 - 2026-10-05 · [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]] · meinung — `/implement-spec` startet Implementierer für nicht mehr blockierte Tickets in eigenen Worktrees, führt Ergebnisse auf einer Integrationsbranch zusammen und überprüft den Gesamtstand anschließend mit `/code-review`; der Autor benennt große Branches und semantische Merge-Kollisionen ausdrücklich als ungelöste Grenzen.
+- 2026-07-13 · [[2026-07-13-matt-pocock-live-the-wayfinder-demo]] · meinung — Pocock bearbeitet unabhängige Klärungen parallel, wartet bei abhängigen Punkten und erklärt manuelles Nachführen neu entdeckter Wechselwirkungen. Der Ablauf zeigt fachliche Sperren, aber keinen Nachweis automatischer Konfliktfreiheit zwischen Sessions.
+- 2026-07-30 · [[2026-07-30-matt-pocock-wayfinder-nothing-is-too-big-to-plan-anymore]] · meinung — Offene Entscheidungen werden hinter noch ausstehender Recherche, Prototypen oder anderen Entscheidungen gesperrt; nach Auflösung verschiebt sich die nächste bearbeitbare Grenze. Das erklärt fachliche Abhängigkeiten vor Implementierung, ohne unabhängige Wirkungsmessung.
 
 ## Spannungen & offene Fragen
 

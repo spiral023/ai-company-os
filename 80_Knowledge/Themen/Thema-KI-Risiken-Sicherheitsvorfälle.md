@@ -1,6 +1,6 @@
 # KI-Risiken & Sicherheitsvorfälle
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-10. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Systeme: Risiken für Minderjährige, übermäßiges Vertrauen, Kontrollverlust, existenzielle Risiken, Fehlverhalten, Missbrauch, KI-gestützte Cyberangriffe und Vorfälle an KI-Plattformen oder mit autonomen Agents. Warnungen, Risikoszenarien und dokumentierte Vorfälle unterscheiden; bei Angriffen die Rolle von KI als Werkzeug, Ziel oder handelnder Agent festhalten. Technische Schutzmaßnahmen gehören zu sicherheit, Prüf- und Freigabeverfahren zu verifikation.
 
@@ -9,7 +9,7 @@ Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Sys
 - **Hauptkeyword:** Risiken von KI
 - **Long-Tail:** KI-Gefahren für Kinder; Risiken von KI-Chatbots; KI und kritisches Denken; KI-gestützte Hackerangriffe; Sicherheitsvorfälle mit KI-Agents; Hugging Face KI-Vorfall; Sandbox Escape bei AI-Evaluierungen; KI-Warnungen und belegte Vorfälle unterscheiden; Kontrollverlust durch KI; Existenzielle KI-Risiken; KI zur Verteidigung gegen KI
 - **Fragen:** Welche KI-Risiken sind belegt und welche sind Warnungen? / Welche Risiken betreffen Minderjährige besonders? / Welche Rolle hatte KI bei einem Angriff: Werkzeug, Zielsystem oder handelnder Agent? / Was lässt sich aus konkreten KI-Sicherheitsvorfällen lernen?
-- **Häufig in den Quellen:** risiken von ki (2), kontrollverlust durch ki, forscherwarnung, defensive ki, übermenschliche ki-fähigkeiten, evan hubinger, persönliche risikoeinschätzung, jacob coxon, jakub pachocki, existenzielle ki-risiken, selbstverbessernde ki, embedded evaluators, unabhängige berichterstattung, dauerhafter zugang, frontier pacing, externe prüfung, alignment, governance, selbstverpflichtung, ki-gefahren für kinder
+- **Häufig in den Quellen:** risiken von ki (2), szenarien, historische einordnung, ki-risiken, scorer-manipulation, primärberichte, kommunikationswege, hugging-face-vorfall, evan hubinger, jakub pachocki, existenzielle ki-risiken, persönliche risikoeinschätzung, jacob coxon, selbstverbessernde ki, forscherwarnung, kontrollverlust durch ki, übermenschliche ki-fähigkeiten, defensive ki, governance, embedded evaluators
 
 ## Verwandte Themen
 
@@ -23,8 +23,10 @@ Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Sys
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]]
 
-## Quellen (3)
+## Quellen (5)
 
 - [[2026-09-24-orf-ex-google-manager-warnt-vor-ki-gefahren-fuer-kin]] — ORF.at berichtet über eine Warnung des früheren Google-Managers für Nutzersicherheit Tom Siegel gegenüber Reuters.
 - [[2026-09-12-darioamodei-2098773920774074715]] — Dario Amodei kündigt am 12.09.2026 einen Vorschlag zum langsameren Fortschritt an der KI-Frontier an.
 - [[2026-09-09-orf-anthropic-forscher-ki-risiko-fuer-menschen]] — ORF.at berichtet am 09.09.2026 über Warnungen von Forschern aus Anthropic und OpenAI vor künftig übermenschlichen KI-Fähigkeiten.
+- [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]] — Primärberichte ergänzen die Einordnung unerlaubter Kommunikationswege und manipulierter Prüfsignale; die Forschungsumgebung begrenzt allgemeine Schlussfolgerungen.
+- [[2025-04-09-the-morpheus-ki-ist-ein-fluch]] — Historische Risikoszenarien und persönliche Beispiele liefern keine geprüften Kennzahlen oder belastbaren Zukunftsprognosen.
