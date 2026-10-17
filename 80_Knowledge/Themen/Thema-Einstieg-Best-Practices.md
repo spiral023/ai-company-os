@@ -1,6 +1,6 @@
 # Einstieg & Best Practices
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices, Anfängerfehler, Tippsammlungen. Sobald ein Thema tiefer behandelt wird, gehört die Quelle in den Fachcluster.
 
@@ -9,7 +9,7 @@ Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices,
 - **Hauptkeyword:** Claude Code Tutorial
 - **Long-Tail:** Claude Code für Einsteiger; Claude Code Best Practices; Claude Code Tipps; Claude Code Setup; Claude Code Anfängerfehler; Claude Code Lernpfad
 - **Fragen:** Wie fange ich mit Claude Code an? / Welche Fehler machen Einsteiger?
-- **Häufig in den Quellen:** plan mode (3), headless mode (2), claude code anfänger (2), extended thinking (2), claude code best practices (2), kleine änderungen, ki-coding einstieg, git-diff, browserabnahme, context degradation, claude code tutorial, scratchpad.md, claude.md, opus sonnet arbeitsteilung, rückfragen des modells, vibe coding, prompt-präzision, python-skript, aufgaben zerlegen, alltagsautomatisierung
+- **Häufig in den Quellen:** plan mode (3), claude code anfänger (2), headless mode (2), extended thinking (2), claude code best practices (2), git-diff, kleine änderungen, browserabnahme, ki-coding einstieg, claude.md, opus sonnet arbeitsteilung, claude code tutorial, context degradation, scratchpad.md, vibe coding, prompt-präzision, aufgaben zerlegen, python-skript, alltagsautomatisierung, rückfragen des modells
 
 ## Verwandte Themen
 

@@ -1,6 +1,6 @@
 # Spezifikation & Planung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerung, Spec-Ordner, persistente Pläne. Prompt-Methoden für Klärung (Pre-Mortem, Unknowns) stehen in prompting.
 
@@ -9,7 +9,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - **Hauptkeyword:** Spec-Driven Development
 - **Long-Tail:** Plan Mode Claude Code; Spec-First Development; Grill Me Skill; Plan vor Code; Spec Ordner pro Feature; Plan Annotation Workflow
 - **Fragen:** Lohnt sich Plan Mode? / Wie schreibe ich eine Spec für einen Coding Agent?
-- **Häufig in den Quellen:** wayfinder (8), grilling (8), spec-driven development (7), spec-grilling (7), spec (6), plan-first (5), planung (5), plan (5), plan mode (4), review (4), ticket (4), design.md (3), claude code (3), plan.md (3), vibe coding (3), paperclip (3), matt pocock skills (3), session-kontinuität (2), handoff-dokument (2), claude code workflow (2)
+- **Häufig in den Quellen:** wayfinder (8), grilling (8), spec-driven development (7), spec-grilling (7), spec (6), plan-first (5), plan (5), planung (5), plan mode (4), review (4), ticket (4), design.md (3), claude code (3), plan.md (3), vibe coding (3), paperclip (3), matt pocock skills (3), handoff-dokument (2), session-kontinuität (2), claude code workflow (2)
 
 ## Verwandte Themen
 
@@ -23,8 +23,8 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 
 - [[Architektur-in-Perspektiven-dokumentieren]] · verifiziert · 5 Belege
 - [[CONTEXT-Glossar]] · verifiziert · 10 Belege
-- [[Codepfad-vor-Aenderung-nachvollziehen]] · meinung · 4 Belege
-- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 55 Belege
+- [[Codepfad-vor-Aenderung-nachvollziehen]] · meinung · 11 Belege
+- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 56 Belege
 - [[Projektkarte-als-Status-und-Entscheidungsartefakt]] · meinung · 3 Belege
 - [[Spec-Grilling]] · verifiziert · 21 Belege
 - [[Spec-Ordner-pro-Feature]] · meinung · 2 Belege

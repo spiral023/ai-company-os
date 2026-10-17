@@ -51,6 +51,11 @@ muster:
     keywords: [Agent-to-Agent-Kommunikation, Agent-Identität, Least Agency, Indirekte Rechte, Delegierte Aktionen, Berechtigungsgrenzen, Audit-Logging, Modellwechsel]
     neben: [orchestrierung, autonomie]
     synonyme: [Kommunikationsrechte von Agents, Indirekte Agent-Berechtigungen, Agent-to-Agent Permission Boundaries]
+  Agent-Tracing-nach-Beobachtungsebene:
+    haupt: erweiterungen
+    keywords: [Agent Tracing, OpenTelemetry, Harness-Instrumentierung, Sitzungsgrenzen, Tool-Wirkungsnachweis]
+    neben: [verifikation]
+    synonyme: [Agent Observability, mehrschichtiges Agent-Tracing]
   Agent-generierte-Schulung-mit-Curriculum-Gate:
     haupt: rolle-markt
     keywords: [Interaktive Schulung, Curriculum, Lernziele, Human Review Gate, E-Learning mit KI, Voiceover, Interaktive HTML-Anwendung, User-invoked Skill]
@@ -66,6 +71,11 @@ muster:
     keywords: [Architekturperspektiven, Codebase Understanding, Mermaid, Request-Lifecycle, Datenfluss, Dateibelege, rekursive Detailansichten]
     neben: [rolle-markt]
     synonyme: [Architekturkarte, Architecture Map, Perspective-Based Architecture, Codearchitektur dokumentieren]
+  Bedarfsorientierter-Repositoryzugriff:
+    haupt: sdlc
+    keywords: [Scion, Lazy Checkout, serverseitige Metadatenabfrage, unveränderliche Blob-Caches, Monorepo-Infrastruktur]
+    neben: [orchestrierung]
+    synonyme: [bedarfsgesteuerte Repository-Materialisierung, On-demand Checkout]
   Blockierende-Task-Abhaengigkeiten:
     haupt: orchestrierung
     keywords: [Task Dependencies, addBlockedBy, addBlocks, Claude Code Tasks, Task-Graph, Blocked Tasks, Abhängigkeitsgraph, Agent Task Management]
@@ -1953,6 +1963,11 @@ quellen:
     kernaussage: Im Klon von thedaviddias/Front-End-Checklist (Stand Commit `7bfd8680`) beschreibt `packages/cli/README.md` die CLI `@frontendchecklist/cli`; die Regeln liegen im Paket, sie läuft offline.
     keywords: [front-end-checkliste, cli, mcp-server, ci-gate, audit]
     neben: [sicherheit, erweiterungen]
+  2026-10-02-seeconvm-2106096193235259564:
+    haupt: prototyping
+    kernaussage: 'Seecos Kernthese: Hinter viralen „One-Prompt“-Filmen stehen Produktionsbrief, echte Assets, Renderwerkzeuge, Audioarbeit und wiederholte Sichtprüfung.'
+    keywords: [Motion Design mit KI, Render Contract, deterministisches Rendering, Frame-Abnahme, Audio-Synchronisation]
+    neben: [verifikation]
   2026-10-02-voxyz_ai-2106006290954592332:
     haupt: erweiterungen
     kernaussage: Vox bündelt `Claude Code`-Befehle zu einem Wartungsplan gegen Duplikate, Strukturdrift und veraltete Regeln.
@@ -1963,6 +1978,11 @@ quellen:
     kernaussage: 'Vox empfiehlt, vor Änderungen sämtliche Implementierungen der betroffenen Regel zu kartieren: Dateien, Kopien und Ergebnisse für identische Eingaben.'
     keywords: [tdd, test, tests, review, verifikation, qualität]
     neben: []
+  2026-10-02-zdfheute-nachrichten-videopodcast-droht-die-ki-apokalypse-lanz-precht:
+    haupt: ki-risiken
+    kernaussage: Markus Lanz und Richard David Precht diskutieren, welche KI-Risiken konkret begründbar sind und welche Rolle wirtschaftliche sowie politische Interessen in Warnungen spielen.
+    keywords: [KI-Risikonarrative, Lanz und Precht, KI-Unternehmensanreize, menschliche Kontrolle, Risikokommunikation]
+    neben: [rolle-markt]
   2026-10-04-emilkowalski-2106752670405099523:
     haupt: prototyping
     kernaussage: 'Emil Kowalski kündigt zwei Ergänzungen für sein [Skills-Repository](https://github.com/emilkowalski/skills) an:'
@@ -2081,6 +2101,11 @@ quellen:
     kernaussage: Vox empfiehlt unter **200 Zeilen** je Agent-Datei und nennt **32 KiB insgesamt** als Codex-Standardlimit.
     keywords: [agents.md, agent-datei, claude.md, regeln]
     neben: [kontext, skills]
+  2026-10-08-heise-dekompilierung-per-ki-warum-closed-source-laut-r:
+    haupt: rolle-markt
+    kernaussage: Malte Kirchner berichtet bei Heise über Eric S.
+    keywords: [Eric S. Raymond, Closed Source, KI-Dekompilierung, Software-Geschäftsmodelle, Reverse Engineering]
+    neben: [verifikation]
   2026-10-08-mattpocockuk-2108216899439894574:
     haupt: planung
     kernaussage: 'Matt Pocock empfiehlt bei winzigen Änderungen direktes Umsetzen: Ist der Diff schnell prüfbar und ein neuer Versuch fast kostenlos, lohnt ausführliches „Grilling“ weniger.'
@@ -2266,6 +2291,11 @@ quellen:
     kernaussage: Emil Kowalski kündigt am `2026-10-11` den Skill `/animation-performance` an.
     keywords: [skill-call, skill, skills]
     neben: []
+  2026-10-11-hood-informatik-wird-code-jetzt-wertlos:
+    haupt: rolle-markt
+    kernaussage: Hood Informatik argumentiert, dass KI die Kosten des Verstehens und Nachbauens von Software senkt, während Wartung, Fachverständnis und verlässlicher Betrieb ihren Wert behalten.
+    keywords: [Softwarewert, Dekompilierung, Rekonstruierbarkeit, Produktqualität, Reverse Engineering]
+    neben: [verifikation]
   2026-10-11-shiptypes-ship-types-not-docs:
     haupt: verifikation
     kernaussage: Der Beitrag auf Ship types schlägt vor, maschinenlesbare Schemas als gemeinsamen Vertrag zwischen Services, Clients und Coding Agents zu pflegen.
@@ -2276,3 +2306,95 @@ quellen:
     kernaussage: Vox stellt REA als Werkzeug für schrittweise Softwareanalyse vor.
     keywords: [plan-first, plan]
     neben: []
+  2026-10-12-0xcodila-2109623431763292649:
+    haupt: verifikation
+    kernaussage: Der übertragbare Kern von Codilas REA-Kurs ist die Kette Untersuchung → Verhaltensspezifikation → eigene Implementierung → Vergleichstest.
+    keywords: [REA, Reverse Engineer Anything, Electron-Analyse, Verhaltensspezifikation, Verifier-Gegenprobe]
+    neben: [erweiterungen]
+  2026-10-12-0xmovez-2109604520770548146:
+    haupt: verifikation
+    kernaussage: Movez beschreibt einen Workflow, in dem `Opus 5.5` über REA spezialisierte Analysewerkzeuge bedient und Erkenntnisse schrittweise in eine Spezifikation und Reimplementierung überführt.
+    keywords: [REA, Reverse Engineering, Ghidra, Hopper, Evidenzprotokoll, Funktionscluster]
+    neben: [orchestrierung, erweiterungen]
+  2026-10-12-josharosen-2109649928276341191:
+    haupt: erweiterungen
+    kernaussage: Josh Rosen unterscheidet Architekturansätze für Agent-Tracing danach, welchen Ausschnitt der Ausführung sie tatsächlich erfassen.
+    keywords: [Agent Tracing, OpenTelemetry, Harness-Instrumentierung, JSONL-Sitzungslogs, Tool-Wirkungsnachweis]
+    neben: [verifikation]
+  2026-10-12-julian-ivanov-ki-automat-ki-kopiert-jetzt-jede-software-und-keiner-kann-e:
+    haupt: erweiterungen
+    kernaussage: 'Julian Ivanov unterscheidet zwei Arbeitsweisen: ausgelieferte Programmdateien analysieren oder ein bestehendes Programm bedienen und sein beobachtetes Verhalten neu implementieren.'
+    keywords: [REA, PhotoCraft, ArtCraft, Reverse Engineering, Showcase-Grenzen]
+    neben: [verifikation, rolle-markt]
+  2026-10-12-sarahfim-2109736893198016898:
+    haupt: verifikation
+    kernaussage: Sarah beschreibt aus ihrer Rolle als Product-Engineering-Leiterin bei Composio, wie Repositorystruktur und automatisierte Prüfungen Beiträge verschiedener Agenten beherrschbar machen sollen.
+    keywords: [Software Factory, Anti-Slop, Compiler-Leitplanken, Lint-Regeln, tRPC, Schema-Verträge]
+    neben: [erweiterungen, sdlc]
+  2026-10-13-ai-mit-arnie-ki-kopiert-jede-software-und-jetzt:
+    haupt: rolle-markt
+    kernaussage: 'Arnie vertritt eine Marktthese: Viele Nutzer werden keine Entwickler, sondern beschreiben einer KI ihren Bedarf und erhalten im Hintergrund kleine passende Anwendungen oder Zugriff auf
+      vorhandene Soft'
+    keywords: [KI-Softwarewert, Mini-Apps im Chat, REA, bedarfsgetriebene Software, Geschäftsmodelle]
+    neben: [prototyping, erweiterungen]
+  2026-10-13-alex-sprogis-so-nutzt-du-rea-um-jede-app-in-minuten-zu-kopier:
+    haupt: erweiterungen
+    kernaussage: Alex Sprogis stellt REA als Verbindung zwischen Coding Agent und Analysewerkzeugen vor und berichtet von zwei eigenen Versuchen.
+    keywords: [REA Praxistest, Electron-Analyse, MCP versus CLI, native App-Analyse, Textsuche]
+    neben: [verifikation]
+  2026-10-13-anthropic-redesigning-source-control-at-anthropic:
+    haupt: sdlc
+    kernaussage: Anthropic beschreibt mit Scion einen zentralen Source-Control-Dienst für extrem viele ständig verbundene Agenten und CI-Jobs.
+    keywords: [Scion, bedarfsorientierter Checkout, Monorepo-Skalierung, Blob Cache, Source-Control-Infrastruktur]
+    neben: [orchestrierung, verifikation]
+  2026-10-13-emilkowalski-2109974810650390696:
+    haupt: rolle-markt
+    kernaussage: Emil Kowalski warnt davor, mit der Ausführung auch das Denken an Agenten zu delegieren.
+    keywords: [Emil Kowalski, gestalterische Autorschaft, Delegation an KI, eigene Urteilskraft]
+    neben: []
+  2026-10-13-matt-pocock-tell-your-agents-to-care-about-the-codebase:
+    haupt: sdlc
+    kernaussage: Matt Pocock unterscheidet taktische Aufgabenlösung von strategischer Pflege der Codebasis.
+    keywords: [strategische Codequalität, Modulvertiefung, Architekturverantwortung, Matt Pocock]
+    neben: [rolle-markt, verifikation]
+  2026-10-13-mattpocockuk-2109973273924579720:
+    haupt: verifikation
+    kernaussage: 'Matt Pocock nennt typische Reibungsverluste: überhöhten Effort, lange Skills, aufgeblähte globale Regeln und fehlende Selbstprüfung.'
+    keywords: [globale Agent-Regeln kürzen, Tests an Modulschnittstellen, Skill-Evals, aufgabengerechte Abstimmung]
+    neben: [agent-dateien, skills]
+  2026-10-14-andrewcurran-2110444907966181544:
+    haupt: modelle-kosten
+    kernaussage: Andrew Curran begegnet dem Einwand, lange Agentenläufe könnten vor allem kapitalkräftigen Entwicklern helfen, mit einer Behauptung über rapide sinkende KI-Kosten.
+    keywords: [KI-Inferenzkosten, relativer Preisrückgang, Projektbudget, Kosten je akzeptiertem Ergebnis]
+    neben: [rolle-markt]
+  2026-10-15-claude-how-the-claude-code-team-does-code-review-claude:
+    haupt: verifikation
+    kernaussage: 'Addy Osmani beschreibt den internen Review-Prozess des Claude-Code-Teams: Maschinen übernehmen wiederholbare Fehlersuche, Menschen beurteilen Absicht, Architektur, Risiko und verbleibende
+      Prüflücken.'
+    keywords: [risikobasiertes Code Review, menschliche Review-Zeit, Reverts, Rollback, commitgebundene Freigabe]
+    neben: [sdlc, autonomie]
+  2026-10-16-voxyz_ai-2111079716832886886:
+    haupt: sicherheit
+    kernaussage: Vox schlägt einen Pre-Launch-Test mit normalen Konten A und B sowie einem Admin vor.
+    keywords: [Adversarial Testing, Kontentrennung, Autorisierungsprüfung, lokale Gegenprobe, Testnachweis]
+    neben: [verifikation]
+  2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena:
+    haupt: verifikation
+    kernaussage: OpenAIs Core-Experimentation-Team beschreibt, wie Coding-Agenten Wartungskandidaten finden, Produktionsbelege sammeln und kleine Änderungen zur Prüfung vorbereiten.
+    keywords: [evidenzbasierte Codebereinigung, stale Feature Flags, Produktions-Telemetrie, Kosten je Finding, Modell-Effort-Vergleich]
+    neben: [modelle-kosten, autonomie]
+  2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl:
+    haupt: prototyping
+    kernaussage: 'Julian Ivanov beschreibt eine hybride Videoproduktion: Figuren und Gegenstände entstehen als Bilder, während Code Text, Diagramme, Bewegung und Timing steuert.'
+    keywords: [Motion Graphics, freigestellte KI-Bilder, echte Markenassets, Voiceover-Synchronisierung, Render-Abnahme]
+    neben: [verifikation]
+  2026-10-17-kimmonismus-2111385805449048181:
+    haupt: modelle-kosten
+    kernaussage: Chubby berichtet am 17.10.2026 über `DeepSeek V4.1 Flash-1017`.
+    keywords: [DeepSeek V4.1 Flash-1017, DeepSWE v1.1, Terminal-Bench 4.0, Automation-Bench v1.0.6, Harness-Vergleich]
+    neben: [open-source-llms, verifikation]
+  2026-10-17-voxyz_ai-2111442102756463077:
+    haupt: verifikation
+    kernaussage: Vox bündelt 23 Prüfideen vor der ersten Zahlung einer agentengestützt gebauten App.
+    keywords: [Pre-Launch-Check, Payment-Idempotenz, Zahlungszustände, isolierter Restore-Test, Zugriffsende]
+    neben: [sicherheit]

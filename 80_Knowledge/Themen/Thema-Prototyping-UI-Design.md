@@ -1,6 +1,6 @@
 # Prototyping & UI-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents.
 
@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), brand kit (3), suchintention (3), ereignisframes (3), hyperframes (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), artefaktbasis (2), designvarianten (2), reduced motion (2), produktionsabnahme (2), gestaltungsachsen (2), isolierte vorschau (2), codex skills (2), seitenspezifikation (2), dataforseo (2), exportabnahme (2), opus 5.5 (2)
+- **Häufig in den Quellen:** lovable (5), brand kit (3), suchintention (3), ereignisframes (3), hyperframes (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), artefaktbasis (2), designvarianten (2), isolierte vorschau (2), reduced motion (2), gestaltungsachsen (2), produktionsabnahme (2), codex skills (2), dataforseo (2), seitenspezifikation (2), exportabnahme (2), motion graphics (2)
 
 ## Verwandte Themen
 
@@ -20,7 +20,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 ## Patterns (7)
 
 - [[Brand-Kit-als-gemeinsame-Artefaktbasis]] · meinung · 5 Belege
-- [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] · meinung · 3 Belege
+- [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] · meinung · 5 Belege
 - [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 8 Belege
 - [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] · verifiziert · 3 Belege
 - [[Screenshot-als-Spezifikationsmedium]] · meinung · 10 Belege
@@ -29,8 +29,9 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]], [[Skill-aus-Demonstration-statt-Beschreibung]], [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]], [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]
 
-## Quellen (29)
+## Quellen (31)
 
+- [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]] — Julian Ivanov beschreibt eine hybride Videoproduktion: Figuren und Gegenstände entstehen als Bilder, während Code Text, Diagramme, Bewegung und Timing steuert.
 - [[2026-10-10-voxyz_ai-2108875199164871053]] — Vox zeigt einen read-only CSS-Auditprompt für mobile Eingabe, passende CSS-Funktionen und visuelle Details.
 - [[2026-10-09-voxyz_ai-2108543002830360775]] — Vox verbindet einen verlinkten Claude-Motion-Guide mit einem eigenen Prompt für `Opus 5.5` in Claude Code.
 - [[2026-10-09-shadcn-2108574564586332615]] — shadcn berichtet am 09.10.2026 über verbesserte `DESIGN.md`-Unterstützung der `shadcn/ui`-Skills.
@@ -39,6 +40,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]]
 - [[2026-10-09-beamnxw-2108616740846420354]] — beamnxw beschreibt eine kleine Remotion-Produktion rund um eine reale Produktaktion, mit Referenzanalyse, Brief, Stills, Playback und finalem Exportcheck.
 - [[2026-10-08-voxyz_ai-2108324058739745228]] — Vox kuratiert Begriffe und einen Prompt für `Opus 5.5`.
 - [[2026-10-04-emilkowalski-2106752670405099523]] — Emil Kowalski kündigt zwei Ergänzungen für sein [Skills-Repository](https://github.com/emilkowalski/skills) an:
+- [[2026-10-02-seeconvm-2106096193235259564]] — Seecos Kernthese: Hinter viralen „One-Prompt“-Filmen stehen Produktionsbrief, echte Assets, Renderwerkzeuge, Audioarbeit und wiederholte Sichtprüfung.
 - [[2026-10-02-repo-latent-spaces-brag]] — Neu im Bestand: latent-spaces/brag.
 - [[2026-10-02-repo-jakubantalik-transitions-dev]] — Im Klon von Jakubantalik/transitions.dev (Stand Commit `d8f2c222`) beschreibt `agent/README.md` den Transitions Agent: Er scannt die Codebasis auf fehlende oder uneinheitliche UI-Transitions, vergibt
 - [[2026-10-01-julian-ivanov-ki-automat-claude-code-ist-unglaublich-gut-in-motion-graphi]] — Ein Creator zeigt drei Selbsttests, in denen Claude Code mit Opus 5.5 und HyperFrames (Open Source von HeyGen) Videos baut.
@@ -63,6 +65,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]]
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-13-ai-mit-arnie-ki-kopiert-jede-software-und-jetzt]]
 - [[2026-10-08-mattpocockuk-2108216899439894574]]
 - [[2026-10-06-voxyz_ai-2107576635578855461]]
 - [[2026-09-26-voxyz_ai-2103977414711767244]]

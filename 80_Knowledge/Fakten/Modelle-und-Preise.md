@@ -1,6 +1,6 @@
 # Fakten: Modelle, Preise, Benchmarks
 
-**Stand:** 2026-10-11
+**Stand:** 2026-10-17
 
 Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). Anders als ein Pattern beschreibt dieses Register keine Arbeitsweise, sondern hält fest, **wer was wann gemessen oder angekündigt hat**. Jede Zeile führt Datum, Gegenstand, Aussage, Einschränkung und Quelle.
 
@@ -74,6 +74,11 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 
 | Datum | Gegenstand | Aussage | Einschränkung | Quelle |
 |---|---|---|---|---|
+| 2026-10-17 | GPT-6 Luna im Chubby-Vergleich | 0,10 USD Input und 0,50 USD Output je Million ungecachter Token | Sekundärangabe vom 17.10.2026; kein aktueller Preisnachweis | [[2026-10-17-kimmonismus-2111385805449048181]] |
+| 2026-10-17 | GPT-5.6 Sol im Chubby-Vergleich | 4 USD Input und 20 USD Output je Million ungecachter Token | Sekundärangabe vom 17.10.2026; kein aktueller Preisnachweis | [[2026-10-17-kimmonismus-2111385805449048181]] |
+| 2026-10-17 | DeepSeek V4.1 Flash-1017 außerhalb Spitzenzeit | 0,15 USD Input und 0,60 USD Output je Million ungecachter Token | Datierter Preis laut Chubby-Post, keine aktuelle Anbieterpreisprüfung | [[2026-10-17-kimmonismus-2111385805449048181]] |
+| 2026-10-17 | DeepSeek V4.1 Flash-1017 Spitzenzeit | 0,30 USD Input und 1,20 USD Output je Million ungecachter Token | Datierter Preis laut Chubby-Post, keine aktuelle Anbieterpreisprüfung | [[2026-10-17-kimmonismus-2111385805449048181]] |
+| 2026-10-17 | Claude Opus 5 im Chubby-Vergleich | 5 USD Input und 25 USD Output je Million ungecachter Token | Sekundärangabe vom 17.10.2026; kein aktueller Preisnachweis | [[2026-10-17-kimmonismus-2111385805449048181]] |
 | 2026-10-09 | Microsoft-Decision-1 / Output | Outputtoken kostenfrei | OpenRouter-Preisangabe vom 09.10.2026; nicht live aktualisiert | [[2026-10-09-openrouter-2108689756372775370]] |
 | 2026-10-09 | Microsoft-Decision-1 / Input | `$0.042` je Million Inputtoken | OpenRouter-Preisangabe vom 09.10.2026; nicht live aktualisiert | [[2026-10-09-openrouter-2108689756372775370]] |
 | 2026-10-07 | Claude Sonnet 5.5 Cache Reads | Laut zitiertem Hersteller halbierter Cache-Read-Preis, typische Agent-Arbeit dadurch rund 20 % günstiger | Keine absoluten Preise genannt, durchschnittlicher Workload-Effekt | [[2026-10-07-kimmonismus-2107894978332557756]] |
@@ -165,6 +170,14 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 
 | Datum | Gegenstand | Aussage | Einschränkung | Quelle |
 |---|---|---|---|---|
+| 2026-10-17 | GPT-6.1 Sol Ultra im internen Wartungsaudit | API-Kosten 15,12 USD; 131 Findings; Kosten je Finding 0,12 USD | interne Hersteller-Selbstmessung, spezifischer Task/Harness und unsicheres Publikationsdatum; gleicher Prompt für Unterverzeichnisse mit über 6.000 Dateien und einer Million Codezeilen, Autor prüfte Befunde, Standard-API-Kosten einschließlich Recherche-Subagents und automatischer Folgeturns; native HTML-Diagrammwerte im Roharchiv | [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]] |
+| 2026-10-17 | GPT-6.1 Sol Medium im internen Wartungsaudit | API-Kosten 5,27 USD; 86 Findings; Kosten je Finding 0,06 USD | interne Hersteller-Selbstmessung, spezifischer Task/Harness und unsicheres Publikationsdatum; gleicher Prompt für Unterverzeichnisse mit über 6.000 Dateien und einer Million Codezeilen, Autor prüfte Befunde, Standard-API-Kosten einschließlich Recherche-Subagents und automatischer Folgeturns; native HTML-Diagrammwerte im Roharchiv | [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]] |
+| 2026-10-17 | GPT-6 Astra Ultra im internen Wartungsaudit | API-Kosten 109,06 USD; 142 Findings; Kosten je Finding 0,77 USD | interne Hersteller-Selbstmessung, spezifischer Task/Harness und unsicheres Publikationsdatum; gleicher Prompt für Unterverzeichnisse mit über 6.000 Dateien und einer Million Codezeilen, Autor prüfte Befunde, Standard-API-Kosten einschließlich Recherche-Subagents und automatischer Folgeturns; native HTML-Diagrammwerte im Roharchiv | [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]] |
+| 2026-10-17 | DeepSeek V4.1 Flash-1017 / Terminal-Bench 4.0 | 42,3 gegenüber bisherigem Flash 31,2, GPT-5.6 Sol 39,9 und Opus 5 51,8 | Weitergereichte Herstellerwerte; Claude-Code-Framework, kein unabhängiger Test | [[2026-10-17-kimmonismus-2111385805449048181]] |
+| 2026-10-17 | DeepSeek V4.1 Flash-1017 / ProgramBench | 29,1 gegenüber bisherigem Flash 20,3, GPT-5.6 Sol 23,0 und Opus 5 37,0 | Weitergereichte Herstellerwerte; Gegenbeispiel zu pauschaler Überlegenheit | [[2026-10-17-kimmonismus-2111385805449048181]] |
+| 2026-10-17 | DeepSeek V4.1 Flash-1017 / NL2Repo-Bench | 68,2 gegenüber bisherigem Flash 65,4, GPT-5.6 Sol 56,8 und Opus 5 75,3 | Weitergereichte Herstellerwerte; Gegenbeispiel zu pauschaler Überlegenheit | [[2026-10-17-kimmonismus-2111385805449048181]] |
+| 2026-10-17 | DeepSeek V4.1 Flash-1017 / DeepSWE v1.1 | 77,0 gegenüber bisherigem Flash 74,2, GPT-5.6 Sol 73,0 und Opus 5 74,0 | Weitergereichte Herstellerwerte; Mini-SWE-v2; Chart Pass@1, kein unabhängiger Test | [[2026-10-17-kimmonismus-2111385805449048181]] |
+| 2026-10-17 | DeepSeek V4.1 Flash-1017 / Automation-Bench v1.0.6 | 60,5 gegenüber bisherigem Flash 54,8, GPT-5.6 Sol 45,8 und Opus 5 50,3 | Weitergereichte Herstellerwerte; Testaufbau nicht unabhängig geprüft | [[2026-10-17-kimmonismus-2111385805449048181]] |
 | 2026-10-09 | Microsoft-Decision-1 / mittlere Accuracy | Videografik nennt `83,5 %` über `36` Benchmarks | Microsoft-Grafik bei 10,0 s; Herstellerinhalt visuell bestätigt, keine reproduzierte Evaluation | [[2026-10-09-satyanadella-2108627923888754862]] |
 | 2026-10-09 | Microsoft-Decision-1 / genaue Fragensatzangabe | Videografik nennt `147.137` Fragen | Herstellerangabe als Präzisierung der gerundeten OpenRouter-Angabe; keine unabhängige Bestätigung | [[2026-10-09-satyanadella-2108627923888754862]] |
 | 2026-10-09 | Microsoft-Decision-1 / Vergleichsumfang | Microsoft berichtet höchste Accuracy über `36` Blindbenchmarks | Microsoft-Selbstbericht; Auswahl und Bedingungen unklar, keine allgemeine Aufgabenüberlegenheit | [[2026-10-09-openrouter-2108689756372775370]] |

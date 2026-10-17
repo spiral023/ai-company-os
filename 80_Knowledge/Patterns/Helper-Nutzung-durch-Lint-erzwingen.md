@@ -31,6 +31,7 @@ Korrekturen, Fixes und Reverts auf wiederholte Fehlermuster prüfen. Herkunft un
 - 2026-10-04 · [[2026-10-04-voxyz_ai-2106829206134931539]] · meinung — Vox bietet einen API-Helper und Lint-Meldungen mit benanntem Ersatz an; die illustrierten zentralen Tokens, Retries und Fehlerformate sind kein ausgeführter Fix oder Wirkungsnachweis.
 - 2026-09-14 · [[2026-09-14-shadcn-2099534231114314145]] · meinung — `shadcn/no-restyle` beanstandet Vertragsbrüche in Tailwind-Klassen und nennt gültige Größenvarianten sowie die Komponentendatei aus dem vorhandenen Designsystem; ergänzt kontextabhängige Ersatzwege, setzt aber einen verbindlichen Lintlauf voraus und garantiert keine gesamte App-Qualität.
 - 2026-10-08 · [[2026-10-08-moritz-brandes-sauberer-code-mit-claude-code-so-geht-s-wirklich]] · meinung — Brandes empfiehlt, wiederkehrende frameworkbezogene Agentfehler in projektspezifische statische Regeln zu übersetzen und Codeerzeugung, Prüfung und Korrektur zu einer Schleife zu verbinden. Die behauptete Wirkung ist Projekterfahrung; vorhandene Regeln müssen tatsächlich ausgeführt und relevante Verstöße im Arbeitsablauf behandelt werden.
+- 2026-10-12 · [[2026-10-12-sarahfim-2109736893198016898]] · meinung — Composio-Praxisbericht nennt 38 eigene Lint-Regeln für Theming, globale Primitive und Struktur; unmittelbare Regel- und Korrekturmeldungen sollen unterschiedliche Agenten führen, während lokale UX-Komposition dupliziert werden darf. Anzahl und Nutzen sind Selbstauskunft; Hook- und Ordnerverbote sind projektspezifisch.
 
 ## Spannungen & offene Fragen
 

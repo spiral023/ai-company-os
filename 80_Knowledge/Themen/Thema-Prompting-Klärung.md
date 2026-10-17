@@ -1,6 +1,6 @@
 # Prompting & Klärung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns, Voice-Prompting, Anweisungen bei Modellwechsel ausdünnen, Anti-Sycophancy.
 
@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), change quiz (2), spec-grilling (2), known unknowns (2), voice prompting (2), codex skill-creator (2), gpt-6 astra (2), progressive disclosure (2), skill descriptions (2), modellwechsel (2), überregulierung (2), intent engineering (2), context engineering (2), projektplanung mit ai, frühwarnsignale, risikoanalyse, sycophancy, spec grilling, ai agent zustimmungsneigung
+- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), change quiz (2), known unknowns (2), spec-grilling (2), voice prompting (2), progressive disclosure (2), gpt-6 astra (2), skill descriptions (2), modellwechsel (2), überregulierung (2), codex skill-creator (2), intent engineering (2), context engineering (2), ai agent zustimmungsneigung, projektplanung mit ai, frühwarnsignale, spec grilling, sycophancy, risikoanalyse
 
 ## Verwandte Themen
 
@@ -21,7 +21,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 ## Patterns (3)
 
 - [[Fable-Unknowns-vor-Prompt-Qualitaet]] · meinung · 3 Belege
-- [[Intent-Engineering-als-dritte-Schicht]] · meinung · 10 Belege
+- [[Intent-Engineering-als-dritte-Schicht]] · meinung · 11 Belege
 - [[Voice-Prompting-fuer-Kontextreichtum]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-statt-Generierung]], [[Handlungsbedarf-zuerst-im-Agent-Bericht]]

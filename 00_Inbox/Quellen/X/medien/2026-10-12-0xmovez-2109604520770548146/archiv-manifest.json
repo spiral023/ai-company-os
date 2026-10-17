@@ -1,0 +1,199 @@
+{
+  "hauptpost": "2109604520770548146",
+  "erfasst_am": "2026-10-17",
+  "eingebettete_posts": [
+    {
+      "id": "2109235513102057828",
+      "url": "https://x.com/yuhasbeentaken/status/2109235513102057828",
+      "autor": "yuhasbeentaken"
+    },
+    {
+      "id": "2106690704244420687",
+      "url": "https://x.com/_vmlops/status/2106690704244420687",
+      "autor": "_vmlops"
+    },
+    {
+      "id": "2108884063515746410",
+      "url": "https://x.com/0xMovez/status/2108884063515746410",
+      "autor": "0xMovez"
+    },
+    {
+      "id": "2109466356454510612",
+      "url": "https://x.com/victor_explore/status/2109466356454510612",
+      "autor": "victor_explore"
+    },
+    {
+      "id": "2107671204639465961",
+      "url": "https://x.com/amasad/status/2107671204639465961",
+      "autor": "amasad"
+    },
+    {
+      "id": "2108389060192706674",
+      "url": "https://x.com/0x0SojalSec/status/2108389060192706674",
+      "autor": "0x0SojalSec"
+    }
+  ],
+  "zitat_posts": [
+    {
+      "id": "2109038503497527420",
+      "url": "https://x.com/yuhasbeentaken/status/2109038503497527420",
+      "autor": "yuhasbeentaken"
+    },
+    {
+      "id": "2104216919033192746",
+      "url": "https://x.com/0xMovez/status/2104216919033192746",
+      "autor": "0xMovez"
+    },
+    {
+      "id": "2108031166502896035",
+      "url": "https://x.com/0x0SojalSec/status/2108031166502896035",
+      "autor": "0x0SojalSec"
+    }
+  ],
+  "medien": [
+    {
+      "post": "2106690704244420687",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTx4BmKboAAlkvU.jpg",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2106690704244420687/01-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2108884063515746410",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HURCn-7WAAApVuX.jpg",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2108884063515746410/01-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2109466356454510612",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HUZUciNbgAANu9T.jpg",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2109466356454510612/01-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2108389060192706674",
+      "type": "video",
+      "url": "https://video.twimg.com/amplify_video/2108388999090012160/vid/avc1/2458x1518/32T26FnyPGNZXObF.mp4",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2108389060192706674/01-video.mp4",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOuGahXEAEryHt.jpg",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/01-cover.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOeqeQWwAEjlq7.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/02-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOoLAPW0AA_pFU.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/03-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOh8wpXQAAR5wU.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/04-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOp2EfXsAAkeF-.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/05-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOi1VyWAAA5XaP.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/06-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOfyu6WEAIvt7h.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/07-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOpFvCXAAAxG2u.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/08-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOljbuWQAAn_sR.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/09-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOoxaBXQAAO7pu.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/10-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOdW0kW4AEzPtU.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/11-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOkUz-W4AAaItz.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/12-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOeQEGXoAAi6MW.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/13-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOi9f0W0AEOxkr.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/14-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2104216919033192746",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HTOmSUNWIAAuTXY.png",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2104216919033192746/15-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2108031166502896035",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HUE51S8aAAAvvGL.jpg",
+      "lokal": "medien/2026-10-12-0xmovez-2109604520770548146/eingebettet/2108031166502896035/01-photo.jpg",
+      "fehler": null
+    }
+  ],
+  "grenzen": [
+    "2104216919033192746: 21 weitere Artikel-Einbettungen nur verlinkt",
+    "1 weitere Zitatposts: nur mitgelieferter Text und Link, Medien nicht nachgeladen"
+  ]
+}

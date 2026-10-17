@@ -1,6 +1,6 @@
 # Modelle, Kosten & Limits
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Caching, Benchmarks und Provider-Umleitung. Verfügbarkeit offener Gewichte, lokale Inferenz, Hardware und Fine-Tuning gehören vorrangig zu open-source-llms; Kostenvergleiche bleiben hier.
 
@@ -23,14 +23,16 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 
 - [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 4 Belege
 - [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 10 Belege
-- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 49 Belege
+- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 51 Belege
 - [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]] · meinung · 1 Belege
 - [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]]
 
-## Quellen (58)
+## Quellen (60)
 
+- [[2026-10-17-kimmonismus-2111385805449048181]] — Chubby berichtet am 17.10.2026 über `DeepSeek V4.1 Flash-1017`.
+- [[2026-10-14-andrewcurran-2110444907966181544]] — Andrew Curran begegnet dem Einwand, lange Agentenläufe könnten vor allem kapitalkräftigen Entwicklern helfen, mit einer Behauptung über rapide sinkende KI-Kosten.
 - [[2026-10-10-voxyz_ai-2109056129884123370]] — Vox empfiehlt längere Prompt-Caches für Subagents, die auf Builds oder Tests warten.
 - [[2026-10-10-developers-using-gpt-6-openai-api]] — Der am 10.10.2026 archivierte OpenAI-Guide ergänzt die regionalen Verfügbarkeitsangaben gegenüber dem erfassten Stand vom 02.10.2026.
 - [[2026-10-09-satyanadella-2108627923888754862]] — Satya Nadella stellt `Microsoft-Decision-1` für schnelle strukturierte Entscheidungen vor und nennt interne Tests sowie Vertriebskanäle.
@@ -92,6 +94,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]]
 - [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]]
 - [[2026-10-07-unslothai-decision-model-finetuning]]
 - [[2026-10-02-repo-anthropics-skills]]

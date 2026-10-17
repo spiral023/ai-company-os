@@ -1,6 +1,6 @@
 # Autonome Läufe, Loops & CI
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agents, Autonomiestufen und ihre Grenzen.
 
@@ -9,7 +9,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - **Hauptkeyword:** Ralph Loop
 - **Long-Tail:** Ralph Loop einrichten; Claude Code Headless CI; Claude Code über Nacht; Autonomiestufen Coding Agent; Claude Code GitHub Action; Loop Engineering
 - **Fragen:** Kann ich einen Agent über Nacht laufen lassen? / Wie viel Autonomie ist sicher?
-- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), /goal (3), loop (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), über nacht (2), ci-agent (2), modell (2), testharness (2), overnight agents (2), fortschrittsmarker (2), zeitfenster (2), duplikatprüfung (2), quellen-bookmark (2)
+- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), /goal (3), loop (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), über nacht (2), ci-agent (2), testharness (2), modell (2), overnight agents (2), zeitfenster (2), zustellbestätigung (2), duplikatprüfung (2), fortschrittsmarker (2)
 
 ## Verwandte Themen
 
@@ -46,6 +46,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]],
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]]
+- [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]]
 - [[2026-10-10-boristane-self-improving-software-is-inevitable]]
 - [[2026-10-06-voxyz_ai-2107455844992299272]]
 - [[2026-10-05-voxyz_ai-2107214251408433365]]

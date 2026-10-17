@@ -1,6 +1,6 @@
 # Kontext-Management
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, Clear, Rewind, Handoff zwischen Sessions, Kontextkosten von Tools. Regeldateien gehören zu agent-dateien, die Kosten des Cachings zu modelle-kosten.
 
@@ -21,7 +21,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 ## Patterns (2)
 
 - [[Handoff-Doc]] · verifiziert · 21 Belege
-- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 49 Belege
+- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 50 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[Framework-Quellcode-als-idiomatische-Referenz]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]], [[Wissenspflege-mit-Inbox-und-Review]]
 

@@ -1,6 +1,6 @@
 # Verifikation, Tests & Review
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates und getrennte Autor-/Prüfkontexte. Dazu gehören risikobasiertes Human Review, menschliche Verantwortung und Freigaben (Human in the Loop), Review-Kapazität sowie PR-Größe und Aufteilung in überschaubare Änderungen. Agent-Autonomie gehört hier hinein, soweit sie Prüf- und Freigabeentscheidungen betrifft; autonome Ausführung steht in autonomie, der gesamte Entwicklungsprozess in sdlc.
 
@@ -9,7 +9,7 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass; Codequalität mit KI und Menschen; Human in the Loop beim Code Review; Risikobasiertes Human Review; Agent-Autonomie und menschliche Freigaben; Große KI-generierte PRs prüfen; Pull Requests in prüfbare Änderungen aufteilen; Review-Kapazität bei parallelen Agents
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug? / Welche Änderungen brauchen menschliches Review und welche automatische Checks? / Wer trägt die Verantwortung, wenn ein Agent Code freigibt? / Was tun, wenn PRs zu groß für ein gründliches manuelles Review werden? / Wie begrenzt Review-Kapazität die Agent-Autonomie und Parallelisierung?
-- **Häufig in den Quellen:** test (14), review (13), testharness (11), tests (8), tdd (8), verifikation (5), qualität (5), human-in-the-loop (5), risikobasiertes human review (4), menschliche freigabe (4), verhaltensvergleich (4), refactoring (4), skill (4), gstack (4), deep modules (3), /goal (3), verifier (3), auto mode (3), llm-as-judge (3), skill.md (3)
+- **Häufig in den Quellen:** test (14), review (13), testharness (11), tests (8), tdd (8), qualität (5), verifikation (5), human-in-the-loop (5), risikobasiertes human review (4), menschliche freigabe (4), verhaltensvergleich (4), refactoring (4), skill (4), gstack (4), reverse engineering (4), deep modules (3), verifier (3), /goal (3), auto mode (3), llm-as-judge (3)
 
 ## Verwandte Themen
 
@@ -27,21 +27,28 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]] · meinung · 1 Belege
 - [[Fachregel-Konsolidierung-vor-Featureaenderung]] · meinung · 2 Belege
 - [[Framework-Quellcode-als-idiomatische-Referenz]] · meinung · 2 Belege
-- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 3 Belege
+- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 4 Belege
 - [[Hillclimbing-mit-Holdout-Split]] · meinung · 3 Belege
-- [[Refactoring-mit-Verhaltensvergleich]] · meinung · 3 Belege
-- [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 4 Belege
-- [[Schema-als-Vertrag-mit-generierten-Clients]] · meinung · 1 Belege
+- [[Refactoring-mit-Verhaltensvergleich]] · meinung · 4 Belege
+- [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 5 Belege
+- [[Schema-als-Vertrag-mit-generierten-Clients]] · meinung · 2 Belege
 - [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 14 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 43 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 54 Belege
 - [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]] · verifiziert · 3 Belege
 - [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] · meinung · 10 Belege
 - [[Zustandslose-CI-Listener-mit-Ergebnisjournal]] · meinung · 1 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]], [[Great-Decoupling-Rollenverstaendnis]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Plan-first-mit-getrenntem-Review]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Videoanalyse-mit-Frames-und-Transkript]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Tracing-nach-Beobachtungsebene]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]], [[Great-Decoupling-Rollenverstaendnis]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Plan-first-mit-getrenntem-Review]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Videoanalyse-mit-Frames-und-Transkript]]
 
-## Quellen (35)
+## Quellen (42)
 
+- [[2026-10-17-voxyz_ai-2111442102756463077]] — Vox bündelt 23 Prüfideen vor der ersten Zahlung einer agentengestützt gebauten App.
+- [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]] — OpenAIs Core-Experimentation-Team beschreibt, wie Coding-Agenten Wartungskandidaten finden, Produktionsbelege sammeln und kleine Änderungen zur Prüfung vorbereiten.
+- [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]] — Addy Osmani beschreibt den internen Review-Prozess des Claude-Code-Teams: Maschinen übernehmen wiederholbare Fehlersuche, Menschen beurteilen Absicht, Architektur, Risiko und verbleibende Prüflücken.
+- [[2026-10-13-mattpocockuk-2109973273924579720]] — Matt Pocock nennt typische Reibungsverluste: überhöhten Effort, lange Skills, aufgeblähte globale Regeln und fehlende Selbstprüfung.
+- [[2026-10-12-sarahfim-2109736893198016898]] — Sarah beschreibt aus ihrer Rolle als Product-Engineering-Leiterin bei Composio, wie Repositorystruktur und automatisierte Prüfungen Beiträge verschiedener Agenten beherrschbar machen sollen.
+- [[2026-10-12-0xmovez-2109604520770548146]] — Movez beschreibt einen Workflow, in dem `Opus 5.5` über REA spezialisierte Analysewerkzeuge bedient und Erkenntnisse schrittweise in eine Spezifikation und Reimplementierung überführt.
+- [[2026-10-12-0xcodila-2109623431763292649]] — Der übertragbare Kern von Codilas REA-Kurs ist die Kette Untersuchung → Verhaltensspezifikation → eigene Implementierung → Vergleichstest.
 - [[2026-10-11-shiptypes-ship-types-not-docs]] — Der Beitrag auf Ship types schlägt vor, maschinenlesbare Schemas als gemeinsamen Vertrag zwischen Services, Clients und Coding Agents zu pflegen.
 - [[2026-10-10-voxyz_ai-2109026189298012522]] — Vox beschreibt am `2026-10-10` ein als offiziell bezeichnetes Game-Studio-Plugin für Codex mit neun Skills.
 - [[2026-10-09-openai-refactoring]] — Kleine Refactoring-Schritte erhalten öffentliche Schnittstellen und werden am vereinbarten Verhalten geprüft.
@@ -80,6 +87,15 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-17-kimmonismus-2111385805449048181]]
+- [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]]
+- [[2026-10-16-voxyz_ai-2111079716832886886]]
+- [[2026-10-13-matt-pocock-tell-your-agents-to-care-about-the-codebase]]
+- [[2026-10-13-anthropic-redesigning-source-control-at-anthropic]]
+- [[2026-10-13-alex-sprogis-so-nutzt-du-rea-um-jede-app-in-minuten-zu-kopier]]
+- [[2026-10-12-julian-ivanov-ki-automat-ki-kopiert-jetzt-jede-software-und-keiner-kann-e]]
+- [[2026-10-12-josharosen-2109649928276341191]]
+- [[2026-10-11-hood-informatik-wird-code-jetzt-wertlos]]
 - [[2026-10-10-voxyz_ai-2108875199164871053]]
 - [[2026-10-10-boristane-self-improving-software-is-inevitable]]
 - [[2026-10-09-voxyz_ai-2108573215224160393]]
@@ -90,6 +106,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-10-09-julian-ivanov-ki-automat-websites-mit-ki-bauen-die-gut-aussehen-und-perfo]]
 - [[2026-10-09-beamnxw-2108616740846420354]]
 - [[2026-10-08-voxyz_ai-2108324058739745228]]
+- [[2026-10-08-heise-dekompilierung-per-ki-warum-closed-source-laut-r]]
 - [[2026-10-07-unslothai-decision-model-finetuning]]
 - [[2026-10-05-repo-garrytan-gstack-retro]]
 - [[2026-10-05-repo-bmad-method-retrospective]]
@@ -98,6 +115,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-10-04-voxyz_ai-2106783910055006342]]
 - [[2026-10-04-emilkowalski-2106752670405099523]]
 - [[2026-10-02-voxyz_ai-2106006290954592332]]
+- [[2026-10-02-seeconvm-2106096193235259564]]
 - [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]]
 - [[2026-10-01-0xwhrrari-2105643919119696297]]
 - [[2026-09-30-flxrnc-2105311836190978392]]

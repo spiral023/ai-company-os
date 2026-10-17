@@ -30,6 +30,7 @@ Requests und Responses in einem versionierten, maschinenlesbaren Schema definier
 ## Belege
 
 - 2026-10-11 · [[2026-10-11-shiptypes-ship-types-not-docs]] · meinung — Beschreibt Schema-first, Laufzeitvalidierung, generierte Clients und CI-Typechecks; das Veröffentlichungsdatum ist im Archiv unsicher, Codeschnipsel und behauptete Einsparungen wurden nicht verifiziert.
+- 2026-10-12 · [[2026-10-12-sarahfim-2109736893198016898]] · meinung — Die Autorin empfiehlt Ende-zu-Ende-Typisierung mit tRPC und OpenAPI, damit der Compiler bei Schemaänderungen betroffene Aufrufer aufzeigt; der Bericht belegt weder eine automatische fachliche Konsistenzprüfung noch die isolierte Wirksamkeit dieses Mechanismus.
 
 ## Spannungen & offene Fragen
 

@@ -83,6 +83,9 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]] — Cache-Laufzeit anhand tatsächlicher Pausen, Wiederverwendung und Schreibkosten wählen; wirksame Overrides gesondert prüfen.
 - [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] — codebasierte Filme mit Ereignisframes, begrenzten Reparaturen und finaler Bild-, Ton- und Exportabnahme produzieren.
 
+- [[Agent-Tracing-nach-Beobachtungsebene]] — Modell-, Harness-, Prozess- und Wirkungssicht getrennt erfassen; Korrelation und Abdeckungsgrenzen offenlegen.
+- [[Bedarfsorientierter-Repositoryzugriff]] — Metadaten und Dateiobjekte nach tatsächlichem Bedarf bereitstellen, wenn vollständige Checkouts zum gemessenen Engpass werden.
+
 ## Themen
 
 Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 21 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand. [[Thema-KI-Risiken-Sicherheitsvorfälle]] sammelt Warnungen, Risikoszenarien und konkrete Vorfälle mit KI.
@@ -107,4 +110,4 @@ Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 21 
 
 ## Fakten
 
-- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-10.
+- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-17.

@@ -1,6 +1,6 @@
 # Hooks, MCP & Erweiterungs-Ebenen
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook, MCP, Plugin) und wie Hooks, MCP-Server und Plugins konfiguriert werden.
 
@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), claude code skills (4), subagents (4), progressive disclosure (4), hooks (4), mcp (4), plugins (4), erweiterung (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2), plugin (2)
+- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), progressive disclosure (4), subagents (4), claude code skills (4), hooks (4), mcp (4), plugins (4), erweiterung (4), rea (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2)
 
 ## Verwandte Themen
 
@@ -18,17 +18,21 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - [[Thema-Agent-Dateien-Memory]] — Agent-Dateien & Memory
 - [[Thema-Kontext-Management]] — Kontext-Management
 
-## Patterns (4)
+## Patterns (5)
 
-- [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 8 Belege
+- [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 9 Belege
+- [[Agent-Tracing-nach-Beobachtungsebene]] · meinung · 1 Belege
 - [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 24 Belege
 - [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 8 Belege
 - [[MCP-Code-Execution-statt-Tool-Definitionen]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Hook-erzwungene-Skill-Aktivierung]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]
 
-## Quellen (17)
+## Quellen (20)
 
+- [[2026-10-13-alex-sprogis-so-nutzt-du-rea-um-jede-app-in-minuten-zu-kopier]] — Alex Sprogis stellt REA als Verbindung zwischen Coding Agent und Analysewerkzeugen vor und berichtet von zwei eigenen Versuchen.
+- [[2026-10-12-julian-ivanov-ki-automat-ki-kopiert-jetzt-jede-software-und-keiner-kann-e]] — Julian Ivanov unterscheidet zwei Arbeitsweisen: ausgelieferte Programmdateien analysieren oder ein bestehendes Programm bedienen und sein beobachtetes Verhalten neu implementieren.
+- [[2026-10-12-josharosen-2109649928276341191]] — Josh Rosen unterscheidet Architekturansätze für Agent-Tracing danach, welchen Ausschnitt der Ausführung sie tatsächlich erfassen.
 - [[2026-10-11-developers-codex-as-a-platform-build-on-the-open-agent-harn]] — OpenAI beschreibt Codex als offene Ausführungsschicht für eigene Produkte, nicht nur als App, CLI oder IDE-Erweiterung.
 - [[2026-10-10-voxyz_ai-2108905392776360333]] — Vox ordnet fünfzehn Repositories den Aufgaben Launchvideo, Schnitt, animierter Kurzfilm und Webanimation zu.
 - [[2026-10-05-repo-claude-code-doctor-insights]] — Aus `CHANGELOG.md` von anthropics/claude-code (Stand 2.1.289).
@@ -49,6 +53,10 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-E
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-13-ai-mit-arnie-ki-kopiert-jede-software-und-jetzt]]
+- [[2026-10-12-sarahfim-2109736893198016898]]
+- [[2026-10-12-0xmovez-2109604520770548146]]
+- [[2026-10-12-0xcodila-2109623431763292649]]
 - [[2026-10-10-voxyz_ai-2109026189298012522]]
 - [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]]
 - [[2026-10-02-repo-thedaviddias-front-end-checklist]]

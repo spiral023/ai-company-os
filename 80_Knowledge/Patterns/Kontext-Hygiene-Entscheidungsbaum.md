@@ -78,6 +78,7 @@ Nach jedem abgeschlossenen Arbeitsblock wird bewusst zwischen fünf Optionen ent
 - 2026-08-21 · [[2026-08-21-julian-ivanov-ki-automat-hermes-agent-kann-jetzt-viel-mehr-als-du-denkst]] · meinung — Rollenbezogene Gedächtnisse, Werkzeuge und Skills sollen aufgabenfremden Kontext reduzieren. Das Beispiel beweist weder stetige Qualitätsverbesserung durch Nutzung noch einen festen, modellübergreifenden Schwellenwert für Kontextverschlechterung.
 - 2025-06-23 · [[2025-06-23-boristane-context-engineering-is-what-makes-ai-magical]] · meinung — Erweitert Kontextauswahl um Nutzerabsicht, Umgebung, Dokumentstruktur und Laufzeitsignale; Beispiele statt Eval, mehr Kontext wird nicht als unbegrenzt besser belegt.
 - 2026-10-10 · [[2026-10-10-voxyz_ai-2109056129884123370]] · meinung — Cache-TTL richtet sich nach Agent-Pausen, nicht nach Kontextqualität; die vorgeschlagene 400k-Kompaktierung bleibt eine separate ungeprüfte Heuristik.
+- 2026-10-17 · [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]] · meinung — Neuer Chat oder /clear für ein unabhängiges Video soll Übernahme alter Komponenten verhindern; genannte 61-Prozent-Kontextfüllung ist keine validierte Qualitätsgrenze und die Persistenz behaupteter Präferenzen bleibt unerklärt.
 
 ## Spannungen & offene Fragen
 

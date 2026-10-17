@@ -1,6 +1,6 @@
 # Skill-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und Baselines, Skills als Teamwissen. Wayfinder und Frameworks aus Skill-Sammlungen stehen in frameworks.
 
@@ -9,7 +9,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - **Hauptkeyword:** Claude Code Skills
 - **Long-Tail:** Skill Description schreiben; Skill Evals Baseline; SKILL.md Aufbau; Skills vs. Slash Commands; Skill Trigger optimieren; Skills als Teamwissen
 - **Fragen:** Wann lohnt sich ein eigener Skill? / Warum löst mein Skill nicht aus?
-- **Häufig in den Quellen:** progressive disclosure (11), claude code skills (8), skill (8), skills (8), skill description (6), eval (6), trigger (6), skill.md (5), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), wayfinder (4), claude.md (4), agents.md (4), claude skills (3), baseline-vergleich (3), skill-creator (3), undertriggering (3)
+- **Häufig in den Quellen:** progressive disclosure (11), claude code skills (8), skill (8), skills (8), skill description (6), eval (6), trigger (6), skill.md (5), slash commands (4), skill evals (4), grill-me (4), mattpocock/skills (4), claude code hooks (4), wayfinder (4), claude.md (4), agents.md (4), claude skills (3), baseline-vergleich (3), skill-creator (3), undertriggering (3)
 
 ## Verwandte Themen
 
@@ -21,12 +21,12 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 ## Patterns (9)
 
 - [[Anti-Rationalization-Tables]] · verifiziert · 4 Belege
-- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 10 Belege
+- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 11 Belege
 - [[Hook-erzwungene-Skill-Aktivierung]] · meinung · 4 Belege
 - [[Klein-und-komposierbar]] · verifiziert · 21 Belege
 - [[One-File-per-Failure-Mode]] · verifiziert · 3 Belege
 - [[Skill-Call-Hierarchie]] · verifiziert · 13 Belege
-- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 22 Belege
+- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 24 Belege
 - [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 4 Belege
 - [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 6 Belege
 
@@ -63,6 +63,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Art
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-13-mattpocockuk-2109973273924579720]]
 - [[2026-10-09-shadcn-2108574564586332615]]
 - [[2026-10-07-voxyz_ai-2107939019091005836]]
 - [[2026-10-05-repo-squad-retro-enforcement]]

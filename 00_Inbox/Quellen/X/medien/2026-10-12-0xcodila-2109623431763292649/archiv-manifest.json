@@ -1,0 +1,230 @@
+{
+  "hauptpost": "2109623431763292649",
+  "erfasst_am": "2026-10-17",
+  "eingebettete_posts": [
+    {
+      "id": "2109358375209427301",
+      "url": "https://x.com/Pirat_Nation/status/2109358375209427301",
+      "autor": "Pirat_Nation"
+    },
+    {
+      "id": "2109281121749856655",
+      "url": "https://x.com/celineodier/status/2109281121749856655",
+      "autor": "celineodier"
+    },
+    {
+      "id": "2109361546505966046",
+      "url": "https://x.com/karpathy/status/2109361546505966046",
+      "autor": "karpathy"
+    },
+    {
+      "id": "2109060856466264566",
+      "url": "https://x.com/AIWarper/status/2109060856466264566",
+      "autor": "AIWarper"
+    },
+    {
+      "id": "2108437553615425881",
+      "url": "https://x.com/Pirat_Nation/status/2108437553615425881",
+      "autor": "Pirat_Nation"
+    },
+    {
+      "id": "2102957888477995067",
+      "url": "https://x.com/chasemdev/status/2102957888477995067",
+      "autor": "chasemdev"
+    },
+    {
+      "id": "2098033761317446083",
+      "url": "https://x.com/cr3ghost/status/2098033761317446083",
+      "autor": "cr3ghost"
+    },
+    {
+      "id": "2108761607857992104",
+      "url": "https://x.com/firesidealpha/status/2108761607857992104",
+      "autor": "firesidealpha"
+    },
+    {
+      "id": "2109018088872239310",
+      "url": "https://x.com/lauriewired/status/2109018088872239310",
+      "autor": "lauriewired"
+    },
+    {
+      "id": "2108245653843509415",
+      "url": "https://x.com/MatthewBerman/status/2108245653843509415",
+      "autor": "MatthewBerman"
+    },
+    {
+      "id": "2109165852578992582",
+      "url": "https://x.com/RoundtableSpace/status/2109165852578992582",
+      "autor": "RoundtableSpace"
+    },
+    {
+      "id": "2109347169316839434",
+      "url": "https://x.com/RohOnChain/status/2109347169316839434",
+      "autor": "RohOnChain"
+    }
+  ],
+  "zitat_posts": [
+    {
+      "id": "2042334451611693415",
+      "url": "https://x.com/karpathy/status/2042334451611693415",
+      "autor": "karpathy"
+    },
+    {
+      "id": "2108756295876780127",
+      "url": "https://x.com/firesidealpha/status/2108756295876780127",
+      "autor": "firesidealpha"
+    },
+    {
+      "id": "2101311813908652069",
+      "url": "https://x.com/RohOnChain/status/2101311813908652069",
+      "autor": "RohOnChain"
+    }
+  ],
+  "medien": [
+    {
+      "post": "2109358375209427301",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HUXJgruXUAA7hSb.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2109358375209427301/01-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2109358375209427301",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HUXJgruWAAE6rYs.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2109358375209427301/02-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2109281121749856655",
+      "type": "video",
+      "url": "https://video.twimg.com/amplify_video/2109280913771106304/vid/avc1/1920x1080/7mQ9ksxU7JWLkNl8.mp4",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2109281121749856655/01-video.mp4",
+      "fehler": null
+    },
+    {
+      "post": "2108437553615425881",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HUHXSEvXkAEjh0L.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2108437553615425881/01-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2102957888477995067",
+      "type": "video",
+      "url": "https://video.twimg.com/amplify_video/2102957497224945664/vid/avc1/1280x720/RGQpe-6sCTusRkJf.mp4?tag=14",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2102957888477995067/01-video.mp4",
+      "fehler": null
+    },
+    {
+      "post": "2098033761317446083",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HRw7fIJasAA5KBL.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2098033761317446083/01-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2098033761317446083",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HRw7fIEaMAAbZy2.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2098033761317446083/02-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2108761607857992104",
+      "type": "video",
+      "url": "https://video.twimg.com/amplify_video/2108760960307777536/vid/avc1/1280x720/cemQJThwl7IkNM1l.mp4",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2108761607857992104/01-video.mp4",
+      "fehler": null
+    },
+    {
+      "post": "2108245653843509415",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HUH93PGbwAAgsUn.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2108245653843509415/01-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2109347169316839434",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HUXoCcIaMAEEG75.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2109347169316839434/01-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2108756295876780127",
+      "type": "video",
+      "url": "https://video.twimg.com/amplify_video/2108754538601828352/vid/avc1/1280x720/PK-fZwmwFCCw0EQZ.mp4",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2108756295876780127/01-video.mp4",
+      "fehler": null
+    },
+    {
+      "post": "2101311813908652069",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HSkhxrzbQAImte7.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2101311813908652069/01-cover.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2101311813908652069",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HSkF_5zbAAEUnBR.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2101311813908652069/02-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2101311813908652069",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HSkE8WLbAAAnldH.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2101311813908652069/03-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2101311813908652069",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HSj_0d7aQAAJfl4.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2101311813908652069/04-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2101311813908652069",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HSkAxpVaIAAd1p9.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2101311813908652069/05-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2101311813908652069",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HSkGQbcbUAANRSm.png",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2101311813908652069/06-photo.png",
+      "fehler": null
+    },
+    {
+      "post": "2101311813908652069",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HSkFONqbUAEFzOk.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2101311813908652069/07-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2101311813908652069",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HSkF5O7bkAAe31j.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2101311813908652069/08-photo.jpg",
+      "fehler": null
+    },
+    {
+      "post": "2101311813908652069",
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HSkFfjsaQAAbaFH.jpg",
+      "lokal": "medien/2026-10-12-0xcodila-2109623431763292649/eingebettet/2101311813908652069/09-photo.jpg",
+      "fehler": null
+    }
+  ],
+  "grenzen": [
+    "2091221918561317355: Authorization Error; Text und Medien fehlen",
+    "2101311813908652069: 4 weitere Artikel-Einbettungen nur verlinkt",
+    "2 weitere Zitatposts: nur mitgelieferter Text und Link, Medien nicht nachgeladen"
+  ]
+}

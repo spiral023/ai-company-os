@@ -37,6 +37,7 @@ Der „Action Space“ ist die Menge an Dingen, die ein Agent praktisch tun kann
 - 2026-07-24 · [[2026-07-24-claude-the-new-rules-of-context-engineering-for-claude]] · meinung — Das TodoWrite-Beispiel ersetzt ungefähr 9.100 Zeichen Anleitung durch eine kurze Beschreibung, Status-Enum und eine Zustandsregel. Tool-Schnittstellen und nachgeladene Definitionen tragen gezielten Kontext; die Grafik ist ein Designbeispiel ohne isolierten Wirksamkeitsvergleich.
 - 2025-09-22 · [[2025-09-22-julian-ivanov-ki-automat-das-ultimative-rag-system-n8n-nextcloud-mistral]] · meinung — Das Tutorial trennt semantische Textsuche, Nachladen eines vollständigen Dokuments und SQL-Abfragen auf strukturierten Tabellen. Die ausgewählten erfolgreichen Demos zeigen die Toolrollen, aber keine systematisch gemessene Antwortqualität oder zuverlässige Toolauswahl.
 - 2026-02-19 · [[2026-02-19-lenny-s-podcast-head-of-claude-code-what-happens-after-coding-is]] · meinung — Boris Cherny empfiehlt Ziele, Werkzeuge und bedarfsgerechten Kontext statt umfangreicher Gerüste. Das ist die Sicht des Claude-Code-Anbieters und muss an tatsächlichen Modellgrenzen geprüft werden.
+- 2026-10-13 · [[2026-10-13-ai-mit-arnie-ki-kopiert-jede-software-und-jetzt]] · meinung — Sprecher sieht Chancen in agentengerechten MCP-Zugängen zu bestehender Software und noch nicht intern beherrschten Funktionen; Marktthese ohne spezifizierte oder überprüfte Integration, kein Ersatz für tatsächliche Fähigkeits- und Verhaltensprüfung.
 
 ## Spannungen & offene Fragen
 

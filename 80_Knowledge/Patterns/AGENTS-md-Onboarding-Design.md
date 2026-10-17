@@ -71,6 +71,7 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 - 2026-07-24 · [[2026-07-24-claude-the-new-rules-of-context-engineering-for-claude]] · meinung — Thariq Shihipar empfiehlt Repo-Dateien für schwer erkennbare Besonderheiten statt wiederholter Code-Übersichten und ausgelagerte Verifikations-Skills. Anthropic berichtet mehr als 80 Prozent weniger System Prompt ohne Verlust in eigenen Coding-Evals; Methodik und Rohdaten fehlen, URL und X-Artikel sind eine Primärquelle.
 - 2026-03-29 · [[2026-03-29-julian-ivanov-ki-automat-obsidian-claude-code-so-baust-du-dein-zweites-ge]] · meinung — Ein Interview erzeugt die Vault-Struktur; anschließend dient CLAUDE.md als knappe Karte mit Sessionabläufen. Die gezeigte Wiederverwendung hängt von der Qualität der gespeicherten Arbeitsstände ab, nicht von einer umfangreichen Startdatei.
 - 2026-07-16 · [[2026-07-16-matt-pocock-mattpocock-skills-a-complete-ai-coding-workflow]] · meinung — Das Setup verankert Links auf Issue-Ablage, Labels und Domain-Dokumentation in der Agent-Datei; das Interview pflegt Kontext und Architekturentscheidungen als Artefakte. Für Teams empfiehlt der Autor ein gemeinsames projektbezogenes Skill-Set, ohne damit dessen Qualität oder zuverlässige Aktivierung nachzuweisen.
+- 2026-10-13 · [[2026-10-13-mattpocockuk-2109973273924579720]] · meinung — Pocock empfiehlt regelmäßiges Kürzen globaler Steuerungsdateien und kurze Skills; die Checkliste enthält Erfahrungsurteile und keine isolierte Messung der Regelwirkung.
 
 ## Spannungen & offene Fragen
 

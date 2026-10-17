@@ -1,6 +1,6 @@
 # Sicherheit & Sandboxing
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-11. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps. Berichte über Gefahren, Missbrauch und konkrete KI-Vorfälle stehen in ki-risiken.
 
@@ -9,7 +9,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** row level security (3), sicherheit (3), security (3), os-level sandboxing (3), mxc (3), security checker (2), docker sandboxes (2), command smuggling (2), deny-rules (2), agent sandbox (2), freigaben (2), playwright (2), sandbox (2), sandboxing (2), prompt injection (2), sandbox permissions (2), process isolation (2), vibe coding security (2), agent-identität (2), agent-to-agent-kommunikation (2)
+- **Häufig in den Quellen:** row level security (3), sicherheit (3), security (3), mxc (3), os-level sandboxing (3), security checker (2), docker sandboxes (2), command smuggling (2), deny-rules (2), agent sandbox (2), freigaben (2), playwright (2), sandboxing (2), sandbox (2), prompt injection (2), sandbox permissions (2), process isolation (2), vibe coding security (2), agent-to-agent-kommunikation (2), agent-identität (2)
 
 ## Verwandte Themen
 
@@ -21,16 +21,17 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 
 ## Patterns (5)
 
-- [[Adversarialer-Pre-Launch-Check]] · meinung · 5 Belege
-- [[Agent-Rechte-umfassen-Kommunikationswege]] · meinung · 4 Belege
+- [[Adversarialer-Pre-Launch-Check]] · meinung · 7 Belege
+- [[Agent-Rechte-umfassen-Kommunikationswege]] · meinung · 5 Belege
 - [[Deny-Rules-statt-CLAUDE-md-Empfehlung]] · mehrfach-belegt · 13 Belege
-- [[Freigaben-und-Isolation-getrennt-steuern]] · meinung · 8 Belege
+- [[Freigaben-und-Isolation-getrennt-steuern]] · meinung · 9 Belege
 - [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 7 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]], [[Hook-Entscheidungstyp-nach-Pruefbarkeit]], [[Metrikband-gestufte-Agent-Autonomie]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]]
 
-## Quellen (15)
+## Quellen (16)
 
+- [[2026-10-16-voxyz_ai-2111079716832886886]] — Vox schlägt einen Pre-Launch-Test mit normalen Konten A und B sowie einem Admin vor.
 - [[2026-10-10-satyanadella-2108931348857827686]] — Satya Nadella argumentiert im X-Artikel für eine Architektur, die leistungsfähige Modelle wie potenzielle Insider-Risiken behandelt.
 - [[2026-10-09-openaidevs-2108573188703781190]] — OpenAI Developers meldet am 09.10.2026 einen neuen `Codex`-Sandboxmodus mit `Microsoft Execution Containers` (`MXC`) unter Windows.
 - [[2026-10-08-unslothai-windows-sandboxing-mxc]] — Unsloth kündigt eine Integration von Microsoft eXecution Container (`MXC`) für die Ausführung von Code unter Windows an.
@@ -49,6 +50,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], 
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-17-voxyz_ai-2111442102756463077]]
 - [[2026-10-11-developers-codex-as-a-platform-build-on-the-open-agent-harn]]
 - [[2026-10-09-voxyz_ai-2108573215224160393]]
 - [[2026-10-07-alex-sprogis-t3-code-endlich-eine-steuerzentrale-fuer-alle-de]]
