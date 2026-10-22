@@ -1,6 +1,6 @@
 # Spezifikation & Planung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerung, Spec-Ordner, persistente Pläne. Prompt-Methoden für Klärung (Pre-Mortem, Unknowns) stehen in prompting.
 
@@ -9,7 +9,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - **Hauptkeyword:** Spec-Driven Development
 - **Long-Tail:** Plan Mode Claude Code; Spec-First Development; Grill Me Skill; Plan vor Code; Spec Ordner pro Feature; Plan Annotation Workflow
 - **Fragen:** Lohnt sich Plan Mode? / Wie schreibe ich eine Spec für einen Coding Agent?
-- **Häufig in den Quellen:** wayfinder (8), grilling (8), spec-driven development (7), spec-grilling (7), spec (6), plan-first (5), plan (5), planung (5), plan mode (4), review (4), ticket (4), design.md (3), claude code (3), plan.md (3), vibe coding (3), paperclip (3), matt pocock skills (3), handoff-dokument (2), session-kontinuität (2), claude code workflow (2)
+- **Häufig in den Quellen:** wayfinder (8), grilling (8), spec-driven development (7), spec-grilling (7), spec (6), plan-first (5), planung (5), plan (5), plan mode (4), review (4), ticket (4), design.md (3), claude code (3), plan.md (3), vibe coding (3), paperclip (3), matt pocock skills (3), handoff-dokument (2), session-kontinuität (2), claude code workflow (2)
 
 ## Verwandte Themen
 
@@ -23,16 +23,16 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 
 - [[Architektur-in-Perspektiven-dokumentieren]] · verifiziert · 5 Belege
 - [[CONTEXT-Glossar]] · verifiziert · 10 Belege
-- [[Codepfad-vor-Aenderung-nachvollziehen]] · meinung · 11 Belege
-- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 56 Belege
+- [[Codepfad-vor-Aenderung-nachvollziehen]] · meinung · 12 Belege
+- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 57 Belege
 - [[Projektkarte-als-Status-und-Entscheidungsartefakt]] · meinung · 3 Belege
 - [[Spec-Grilling]] · verifiziert · 21 Belege
-- [[Spec-Ordner-pro-Feature]] · meinung · 2 Belege
+- [[Spec-Ordner-pro-Feature]] · meinung · 3 Belege
 - [[Task-basierte-Steuerung]] · verifiziert · 25 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletion-Test-pruefen]], [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]], [[Agent-generierte-Schulung-mit-Curriculum-Gate]], [[Blockierende-Task-Abhaengigkeiten]], [[Brand-Kit-als-gemeinsame-Artefaktbasis]], [[Fable-Unknowns-vor-Prompt-Qualitaet]], [[Fachregel-Konsolidierung-vor-Featureaenderung]], [[Handoff-Doc]], [[Intent-Engineering-als-dritte-Schicht]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Lovable-Prototyp-dann-lokaler-Handoff]], [[Screenshot-als-Spezifikationsmedium]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Voice-Prompting-fuer-Kontextreichtum]]
 
-## Quellen (28)
+## Quellen (29)
 
 - [[2026-10-11-voxyz_ai-2109297975013081587]] — Vox stellt REA als Werkzeug für schrittweise Softwareanalyse vor.
 - [[2026-10-09-voxyz_ai-2108663797091127377]] — Vox empfiehlt, vor Planung und Code zehn Fachbegriffe samt Bedeutung für die Spezifikation erklären zu lassen.
@@ -43,6 +43,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletio
 - [[2026-10-05-repo-squad-retro-enforcement]] — Im Klon von bradygaster/squad (Branch `dev`, Stand Commit `d2364dfe`) liegt die Skill-Vorlage `templates/skills/retro-enforcement/SKILL.md`.
 - [[2026-10-05-repo-bmad-method-retrospective]] — Im Klon von bmad-code-org/BMAD-METHOD (Stand Commit `8f2c13d`) liegt `skills/bmad-retrospective/` mit `workflow.md` und fünf Referenzdateien.
 - [[2026-10-02-repo-mattpocock-skills]] — Im Klon von mattpocock/skills (Stand Commit `d81f3a18`) liegen `implement-spec`, `pr` und `retro` unter `skills/engineering/`.
+- [[2026-09-10-promptgefluester-einer-der-groessten-fehler-den-ich-bei-vielen-vibe-codern-mit-ki]] — `@promptgefluester` vergleicht Softwareentwicklung mit dem Aufbau einer Fertigung: Vor dem Produkt werden benötigte Werkzeuge, Prozesse und Rahmenbedingungen betrachtet.
 - [[2026-08-20-latent-the-wayfinder-skill-navigating-the-fog-of-war-of]] — Im Interview erklärt Matt Pocock Wayfinder als Orchestrierung über mehrere Planungssessions.
 - [[2026-08-12-shannholmberg-2087539757052285200]] — Shann Holmberg überträgt Wayfinder auf Kampagnenplanung: Ein übergeordnetes Issue enthält die Karte, einzelne Tickets klären jeweils eine Entscheidung.
 - [[2026-08-05-floknowsai-dein-vibe-coding-projekt-bricht-nicht-am-coding-agent-zusammen-sondern]] — Vibe-Coding-Projekte scheitern am fehlenden Fundament aus Architektur, Datenfluss und Fehlerfällen, nicht am Agenten, und Rules allein setzen Qualität nicht durch.
@@ -65,6 +66,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletio
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-19-promptgefluester-wir-neigen-dazu-dass-wir-beim-aehm-prompting-der-ki-sagen-aehm-8]]
+- [[2026-10-18-mattpocockuk-2111708560715292675]]
 - [[2026-10-10-repo-oh-my-mermaid-architektur]]
 - [[2026-10-09-voxyz_ai-2108543002830360775]]
 - [[2026-10-09-shadcn-2108574564586332615]]
@@ -72,6 +75,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletio
 - [[2026-10-08-voxyz_ai-2108324058739745228]]
 - [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]]
 - [[2026-10-01-mattpocockuk-2105563604384915639]]
+- [[2026-09-28-vincentmumme-prompt-engineering-ist-schon-lange-tot-und-ich-weiss-nicht-ob-ihr-euch]]
 - [[2026-09-26-ai-mit-arnie-gpt-6-kann-endlich-design]]
 - [[2026-09-24-mattpocock-ai-coding-dictionary]]
 - [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]]

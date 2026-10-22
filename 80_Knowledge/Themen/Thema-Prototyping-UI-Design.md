@@ -1,6 +1,6 @@
 # Prototyping & UI-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents.
 
@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), brand kit (3), suchintention (3), ereignisframes (3), hyperframes (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), artefaktbasis (2), designvarianten (2), isolierte vorschau (2), reduced motion (2), gestaltungsachsen (2), produktionsabnahme (2), codex skills (2), dataforseo (2), seitenspezifikation (2), exportabnahme (2), motion graphics (2)
+- **Häufig in den Quellen:** lovable (5), brand kit (3), suchintention (3), ereignisframes (3), hyperframes (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), designvarianten (2), artefaktbasis (2), isolierte vorschau (2), reduced motion (2), produktionsabnahme (2), gestaltungsachsen (2), codex skills (2), dataforseo (2), seitenspezifikation (2), exportabnahme (2), opus 5.5 (2)
 
 ## Verwandte Themen
 
@@ -22,15 +22,16 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - [[Brand-Kit-als-gemeinsame-Artefaktbasis]] · meinung · 5 Belege
 - [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] · meinung · 5 Belege
 - [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 8 Belege
-- [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] · verifiziert · 3 Belege
-- [[Screenshot-als-Spezifikationsmedium]] · meinung · 10 Belege
-- [[Suchintention-mit-Daten-vor-Webdesign-klaeren]] · meinung · 2 Belege
+- [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] · verifiziert · 4 Belege
+- [[Screenshot-als-Spezifikationsmedium]] · meinung · 11 Belege
+- [[Suchintention-mit-Daten-vor-Webdesign-klaeren]] · meinung · 3 Belege
 - [[Variantenvergleich-vor-Produktionsabnahme]] · verifiziert · 7 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]], [[Skill-aus-Demonstration-statt-Beschreibung]], [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]], [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]
 
-## Quellen (31)
+## Quellen (33)
 
+- [[2026-10-21-vincentmumme-ich-wurde-gefragt-wie-man-mit-ki-aktuell-die-beste-ui-erstellt-also-die]] — Vincent Mumme empfiehlt, eine eigene Referenzbibliothek aufzubauen und gewünschte Gestaltungsmerkmale damit zu zeigen.
 - [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]] — Julian Ivanov beschreibt eine hybride Videoproduktion: Figuren und Gegenstände entstehen als Bilder, während Code Text, Diagramme, Bewegung und Timing steuert.
 - [[2026-10-10-voxyz_ai-2108875199164871053]] — Vox zeigt einen read-only CSS-Auditprompt für mobile Eingabe, passende CSS-Funktionen und visuelle Details.
 - [[2026-10-09-voxyz_ai-2108543002830360775]] — Vox verbindet einen verlinkten Claude-Motion-Guide mit einem eigenen Prompt für `Opus 5.5` in Claude Code.
@@ -39,6 +40,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]]
 - [[2026-10-09-julian-ivanov-ki-automat-websites-mit-ki-bauen-die-gut-aussehen-und-perfo]] — Suchdaten und Seitenzweck gehen der Gestaltung voraus; Varianten und mobile Darstellung werden geprüft, während SEO-Erfolg ungemessen bleibt.
 - [[2026-10-09-beamnxw-2108616740846420354]] — beamnxw beschreibt eine kleine Remotion-Produktion rund um eine reale Produktaktion, mit Referenzanalyse, Brief, Stills, Playback und finalem Exportcheck.
 - [[2026-10-08-voxyz_ai-2108324058739745228]] — Vox kuratiert Begriffe und einen Prompt für `Opus 5.5`.
+- [[2026-10-04-promptgefluester-ich-zeig-ja-grade-wie-ich-ueber-280-webseiten-in-den-naechsten-paar]] — `@promptgefluester` beschreibt einen geplanten agentischen Relaunch vieler Affiliate-Portale: Technische `SEO`-Prüfungen und Nutzungssignale sollen Änderungen an Inhalt, Struktur und Conversion-Elemen
 - [[2026-10-04-emilkowalski-2106752670405099523]] — Emil Kowalski kündigt zwei Ergänzungen für sein [Skills-Repository](https://github.com/emilkowalski/skills) an:
 - [[2026-10-02-seeconvm-2106096193235259564]] — Seecos Kernthese: Hinter viralen „One-Prompt“-Filmen stehen Produktionsbrief, echte Assets, Renderwerkzeuge, Audioarbeit und wiederholte Sichtprüfung.
 - [[2026-10-02-repo-latent-spaces-brag]] — Neu im Bestand: latent-spaces/brag.
@@ -65,6 +67,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]]
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-19-voxyz_ai-2112302775547679169]]
 - [[2026-10-13-ai-mit-arnie-ki-kopiert-jede-software-und-jetzt]]
 - [[2026-10-08-mattpocockuk-2108216899439894574]]
 - [[2026-10-06-voxyz_ai-2107576635578855461]]

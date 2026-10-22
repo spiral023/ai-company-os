@@ -36,6 +36,7 @@ Tatsächliche Sichtbarkeit und Anfragen müssen anschließend am eigenen Einsatz
 
 - 2026-09-26 · [[2026-09-26-ai-mit-arnie-gpt-6-kann-endlich-design]] · meinung — Die Demo trennt Suchabsichten für Beratung und Lernen und ordnet ihnen Seitenzwecke zu. Anbieterantworten und spätere Suchwirkung wurden hier nicht unabhängig verifiziert.
 - 2026-10-09 · [[2026-10-09-julian-ivanov-ki-automat-websites-mit-ki-bauen-die-gut-aussehen-und-perfo]] · meinung — Keyword-Recherche und Wettbewerberbeobachtung führen zu Textdateien vor dem endgültigen Design. Erfundenes Beispielangebot sowie fehlende spätere Rankings und Anfragen begrenzen die Aussage über Nachfrage und Geschäftswirkung.
+- 2026-10-04 · [[2026-10-04-promptgefluester-ich-zeig-ja-grade-wie-ich-ueber-280-webseiten-in-den-naechsten-paar]] · meinung — Promptgeflüster beschreibt die Rückkopplung technischer SEO-Prüfungen sowie von Besuchsquellen, Rankings und zugeordneten Umsätzen auf Seitenstruktur, Texte und Conversion-Elemente und konkretisiert damit die nachgelagerte Beobachtung tatsächlicher Nutzung. Es handelt sich um eine geplante beziehungsweise selbstberichtete Arbeitsweise ohne gezeigte Analytics, kontrollierte Einzeländerungen, Vergleichsgruppe oder belegte Wirkung.
 
 ## Spannungen & offene Fragen
 

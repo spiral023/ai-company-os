@@ -1,6 +1,6 @@
 # Skill-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und Baselines, Skills als Teamwissen. Wayfinder und Frameworks aus Skill-Sammlungen stehen in frameworks.
 
@@ -9,7 +9,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - **Hauptkeyword:** Claude Code Skills
 - **Long-Tail:** Skill Description schreiben; Skill Evals Baseline; SKILL.md Aufbau; Skills vs. Slash Commands; Skill Trigger optimieren; Skills als Teamwissen
 - **Fragen:** Wann lohnt sich ein eigener Skill? / Warum löst mein Skill nicht aus?
-- **Häufig in den Quellen:** progressive disclosure (11), claude code skills (8), skill (8), skills (8), skill description (6), eval (6), trigger (6), skill.md (5), slash commands (4), skill evals (4), grill-me (4), mattpocock/skills (4), claude code hooks (4), wayfinder (4), claude.md (4), agents.md (4), claude skills (3), baseline-vergleich (3), skill-creator (3), undertriggering (3)
+- **Häufig in den Quellen:** progressive disclosure (11), claude code skills (8), skill (8), skills (8), skill description (6), trigger (6), eval (6), skill.md (5), slash commands (4), skill evals (4), grill-me (4), mattpocock/skills (4), claude code hooks (4), wayfinder (4), claude.md (4), agents.md (4), claude skills (3), baseline-vergleich (3), skill-creator (3), undertriggering (3)
 
 ## Verwandte Themen
 
@@ -21,19 +21,22 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 ## Patterns (9)
 
 - [[Anti-Rationalization-Tables]] · verifiziert · 4 Belege
-- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 11 Belege
+- [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 13 Belege
 - [[Hook-erzwungene-Skill-Aktivierung]] · meinung · 4 Belege
 - [[Klein-und-komposierbar]] · verifiziert · 21 Belege
 - [[One-File-per-Failure-Mode]] · verifiziert · 3 Belege
-- [[Skill-Call-Hierarchie]] · verifiziert · 13 Belege
-- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 24 Belege
-- [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 4 Belege
+- [[Skill-Call-Hierarchie]] · verifiziert · 15 Belege
+- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 25 Belege
+- [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 5 Belege
 - [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 6 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Artefaktbasis]], [[Erweiterungs-Ebenen-Zuordnung]], [[Hillclimbing-mit-Holdout-Split]], [[Videoanalyse-mit-Frames-und-Transkript]]
 
-## Quellen (26)
+## Quellen (29)
 
+- [[2026-10-14-poteto-2110496830429839869]] — Lauren beschreibt für `pstack` knappe Prinzipien-Skills, die sie überwiegend aus eigenen Korrekturen von Agenten gewonnen hat.
+- [[2026-10-12-promptgefluester-wisst-ihr-was-der-krasseste-trick-is-der-ziemlich-einfach-is-aber-den]] — `@promptgefluester` empfiehlt, abgeschlossene Agentprozesse auf Fehler und wiederkehrende Arbeit zu untersuchen.
+- [[2026-10-12-promptgefluester-mit-diesem-video-geh-ich-in-risiko-1]] — `@promptgefluester` beschreibt „Skillchains“ als Antwort auf einen gewachsenen Haupt-Skill, dessen wiederkehrende Fehler durch Retrospektiven allein nicht verschwanden.
 - [[2026-10-11-emilkowalski-2109277388437868623]] — Emil Kowalski kündigt am `2026-10-11` den Skill `/animation-performance` an.
 - [[2026-10-05-repo-alirezarezvani-skill-doctor]] — Im Klon von alirezarezvani/claude-skills (Stand Commit `19392f7a`) liegt `engineering/skill-doctor/` mit SKILL.md (Version 1.0.0, MIT), drei Python-Skripten und zwei Bewertungsrubriken.
 - [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]] — Skills 1.3 ergänzt Spec-Umsetzung, PR-Aufbereitung und eine Retro mit menschlicher Auswahl; große Integrationsbranches bleiben eine Review-Grenze.
@@ -63,6 +66,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Art
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-22-cursor-pstack-engineering-skills]]
+- [[2026-10-16-0xkense1-2111105138290987198]]
+- [[2026-10-15-poteto-2110757066709356851]]
 - [[2026-10-13-mattpocockuk-2109973273924579720]]
 - [[2026-10-09-shadcn-2108574564586332615]]
 - [[2026-10-07-voxyz_ai-2107939019091005836]]

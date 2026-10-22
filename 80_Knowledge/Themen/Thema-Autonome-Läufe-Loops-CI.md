@@ -1,6 +1,6 @@
 # Autonome Läufe, Loops & CI
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agents, Autonomiestufen und ihre Grenzen.
 
@@ -9,7 +9,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - **Hauptkeyword:** Ralph Loop
 - **Long-Tail:** Ralph Loop einrichten; Claude Code Headless CI; Claude Code über Nacht; Autonomiestufen Coding Agent; Claude Code GitHub Action; Loop Engineering
 - **Fragen:** Kann ich einen Agent über Nacht laufen lassen? / Wie viel Autonomie ist sicher?
-- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), /goal (3), loop (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), über nacht (2), ci-agent (2), testharness (2), modell (2), overnight agents (2), zeitfenster (2), zustellbestätigung (2), duplikatprüfung (2), fortschrittsmarker (2)
+- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), /goal (3), loop (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), ci-agent (2), über nacht (2), testharness (2), modell (2), overnight agents (2), fortschrittsmarker (2), zustellbestätigung (2), agent-automationen (2), quellen-bookmark (2)
 
 ## Verwandte Themen
 
@@ -21,15 +21,16 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 
 ## Patterns (4)
 
-- [[CI-Agent-mit-Review-Gate]] · mehrfach-belegt · 11 Belege
+- [[CI-Agent-mit-Review-Gate]] · mehrfach-belegt · 12 Belege
 - [[Metrikband-gestufte-Agent-Autonomie]] · meinung · 2 Belege
 - [[Quellen-Bookmarks-fuer-Agent-Automationen]] · meinung · 1 Belege
 - [[Ralph-Loop-Frischer-Kontext-pro-Iteration]] · mehrfach-belegt · 15 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]], [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Freigaben-und-Isolation-getrennt-steuern]], [[Projektkarte-als-Status-und-Entscheidungsartefakt]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]], [[Testharness-als-staerkster-Hebel]], [[Zustandslose-CI-Listener-mit-Ergebnisjournal]]
 
-## Quellen (13)
+## Quellen (14)
 
+- [[2026-10-15-mardehaym-2110763129885835505]] — Mark Ajzenstadt beschreibt am 15.10.2026 den Agentenprozess von Limestone.
 - [[2026-10-09-voxyz_ai-2108573215224160393]] — Vox beschreibt wiederkehrende Agent-Aufgaben und ergänzt seine Zusammenfassung eines verlinkten Anthropic-Guides um einen Audit-Prompt.
 - [[2026-08-12-voxyz_ai-2087579867139264681]] — Ungenutztes Agent-Kontingent lässt sich über einen reinen Kandidatenbericht verplanen, wenn nur umkehrbare Aufgaben mit Prüfbefehl in isolierten Branches zugelassen sind.
 - [[2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding]] — Das Vier-Stufen-Modell von Pair Programming bis Agentenflotte trägt nur mit automatischer Verifikation, und Fehlläufe sollten systematisch in besseren Startkontext übersetzt werden.

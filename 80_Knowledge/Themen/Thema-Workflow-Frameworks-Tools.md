@@ -1,6 +1,6 @@
 # Workflow-Frameworks & Tools
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Matt Pococks Skills, Superpowers, GSD, gstack, Everything Claude Code, Terminal- und Multiplexer-Tools.
 
@@ -9,7 +9,7 @@ Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Mat
 - **Hauptkeyword:** Claude Code Workflow
 - **Long-Tail:** Superpowers vs. GSD; Matt Pocock Skills Wayfinder; gstack Claude Code; Everything Claude Code; Agent Framework Vergleich; cmux Terminal für Agents
 - **Fragen:** Welches Workflow-Framework passt zu mir? / Brauche ich ein Framework oder reichen eigene Skills?
-- **Häufig in den Quellen:** wayfinder (7), gstack (5), matt pocock skills (5), spec-driven development (4), superpowers (4), review (4), tdd (3), gsd (2), plan-first (2), everything claude code (2), gsd-map-codebase (2), claude code skills (2), grill-me (2), to-tickets (2), to-spec (2), implement (2), planung (2), menschliche-pruefung (2), live-reload (2), live-ansicht (2)
+- **Häufig in den Quellen:** wayfinder (7), gstack (5), matt pocock skills (5), spec-driven development (4), superpowers (4), review (4), tdd (3), gsd (2), plan-first (2), everything claude code (2), gsd-map-codebase (2), openclaw (2), claude code skills (2), grill-me (2), to-tickets (2), to-spec (2), implement (2), planung (2), live-reload (2), menschliche-pruefung (2)
 
 ## Verwandte Themen
 
@@ -23,8 +23,12 @@ Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Mat
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Framework-Quellcode-als-idiomatische-Referenz]], [[Klein-und-komposierbar]]
 
-## Quellen (26)
+## Quellen (31)
 
+- [[2026-10-22-cursor-pstack-engineering-skills]] — `pstack` verbindet Lauren Tans Engineering-Prinzipien mit aufgabenspezifischen Playbooks und getrennten Agent-Rollen.
+- [[2026-10-15-poteto-2110757066709356851]] — Lauren Tan beschreibt am 15.10.2026 den Einstieg in ihr `pstack`-Skillpaket.
+- [[2026-10-15-floknowsai-mit-tea-free-code-steuere-ich-alle-meine-cloud-code-und-kodex-abos-aus]] — Floknowsai beschreibt am 15.10.2026 Zusammenarbeit zwischen `Claude Code` und `Codex` über `T3 Code`.
+- [[2026-10-13-vincentmumme-wenn-du-das-problem-kennst-dass-du-2-chat-gpt-abos-hast-1-clot-abo-open]] — Vincent Mumme empfiehlt am 13.10.2026 `T3 Code`, um mehrere Coding-Agenten und Accounts in einer Oberfläche zu nutzen.
 - [[2026-10-10-repo-oh-my-mermaid-architektur]] — Oh-my-mermaid verbindet eine agentengestützte Codeanalyse mit einer dateibasierten Architekturkarte.
 - [[2026-10-09-repo-superpowers-workflow]] — Superpowers dokumentiert Designfreigabe, kleine Pläne, TDD und planbezogene Reviews.
 - [[2026-10-09-repo-gstack-workflow]] — gstack dokumentiert Rollen und Browser-QA mit verschiedenen Änderungsrechten.
@@ -33,6 +37,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Framework-Quellcode-als-idio
 - [[2026-10-07-alex-sprogis-t3-code-endlich-eine-steuerzentrale-fuer-alle-de]] — T3 Code bündelt Agent-Ansichten und Worktrees; Freigabemodi und Isolation sind getrennte, weiterhin zu konfigurierende Eigenschaften.
 - [[2026-10-05-repo-garrytan-gstack-retro]] — Im Klon von garrytan/gstack (Stand Commit `857466f`) liegt `retro/SKILL.md` (Skill-Version 2.0.0, rund 1.200 Zeilen, aus einer Vorlage generiert).
 - [[2026-10-04-mattpocockuk-2106730768789602313]] — Pocock empfiehlt für `mattpocock/skills v1.3` einen gezielten Update-Check: `CONTEXT.md` in `GLOSSARY.md` umbenennen, nötige Anpassungen für `/setup-matt-pocock-skills` prüfen und die eigenen Skill-Da
+- [[2026-09-24-floknowsai-open-claw-ist-zurueck-und-spielt-jetzt-wieder-in-einer-liga-mit-kodex]] — Floknowsai beschreibt am 24.09.2026 eine erneuerte `OpenClaw`-Oberfläche für selbstgehostete Team-Agenten.
 - [[2026-08-21-julian-ivanov-ki-automat-hermes-agent-kann-jetzt-viel-mehr-als-du-denkst]] — Rollenbezogene Gedächtnisse und sichtbare Aufgaben erleichtern Agent-Steuerung; getrennte Rollen belegen keine technische Isolation oder automatische Selbstverbesserung.
 - [[2026-07-23-mattpocockuk-2080277204970143986]] — Matt Pocock beschreibt für Arbeiten außerhalb des Codings eine wiederkehrende Aufteilung: Ein Agent bearbeitet Inhalte über eine CLI; ein Mensch sieht das Ergebnis in einer speziell dafür gebauten, au
 - [[2026-07-16-matt-pocock-mattpocock-skills-a-complete-ai-coding-workflow]] — Spezifikation und Tickets überbrücken Sessions; getrennte Reviewer prüfen Anforderungen und Repo-Standards, während der Nutzer unnötige Aufteilung korrigiert.
@@ -54,6 +59,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Framework-Quellcode-als-idio
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-21-floknowsai-entropic-hat-gitt-komplett-ersetzt-zumindest-klingt-es-so-auf-social]]
 - [[2026-10-09-openaidevs-2108573188703781190]]
 - [[2026-10-08-moritz-brandes-sauberer-code-mit-claude-code-so-geht-s-wirklich]]
 - [[2026-10-08-mattpocockuk-2108216899439894574]]

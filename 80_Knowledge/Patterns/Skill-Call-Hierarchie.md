@@ -44,8 +44,12 @@ Version 1.1 macht diese Trennung im Lifecycle sichtbar: `wayfinder`, `to-spec`, 
 - 2026-02-01 · [[2026-02-01-anthropic-docs-extend-claude-with-skills]] · meinung — Frontmatter `disable-model-invocation`, `user-invocable`, `context: fork` steuern Auslösung und Isolation; Sekundärquelle.
 - 2026-10-02 · [[2026-10-02-developers-using-gpt-6-openai-api]] · meinung — OpenAI rät, den Vorrang der Nutzeranweisung vor Skill-Anweisungen explizit zu setzen, weil Astra empfindlicher auf Skills und `AGENTS.md` reagiert und bei Widersprüchen früh pausiert. Selbstbericht, verhaltensbasiert, nicht gemessen.
 - 2026-10-11 · [[2026-10-11-emilkowalski-2109277388437868623]] · meinung — Der Autor bevorzugt explizites Laden auf Anforderung für bewusstere Auswahl und Kontrolle; der neue Performance-Skill wird nur angekündigt und ist nicht geprüft.
+- 2026-10-22 · [[2026-10-22-cursor-pstack-engineering-skills]] · meinung — Die pstack-README trennt Router im Hauptchat, aufgabenspezifische Playbooks, nachgeladene Fachskills und begrenzte Delegates. Der lokale Teil-Checkout bestätigt die Dateistruktur; die behauptete Qualität paralleler Arbeit wurde nicht gemessen, und der Erfassungsstand ist kein Publikationsdatum.
+- 2026-10-12 · [[2026-10-12-promptgefluester-mit-diesem-video-geh-ich-in-risiko-1]] · meinung — Die vorgeschlagene Skillchain zerlegt einen gewachsenen Haupt-Skill in verlinkte Markdown-Teilprozesse und soll deren chronologischen Aufruf per Python-Script erzwingen, während der übergeordnete Kontext erhalten bleibt. Die befürwortete weitere Verschachtelung steht in Spannung zu begrenzten Skill-Aufrufhierarchien; Abbruch, Zyklenkontrolle, Kontextvertrag und Ergebnisverifikation werden nicht technisch demonstriert, weniger Fehler nur behauptet.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-22: [[2026-10-12-promptgefluester-mit-diesem-video-geh-ich-in-risiko-1]] befürwortet weitere rekursive Skill-Verschachtelung bei erhaltenem Hauptkontext. Das steht in Spannung zur begrenzten Aufrufhierarchie: Zyklenkontrolle, Abbruch, Kontextübergabe und Ergebnisverifikation sind im Beitrag nicht technisch nachgewiesen.
 
 - Keine bekannt.
 

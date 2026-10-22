@@ -54,6 +54,7 @@ Ein Handoff kann außerdem bewusst zwischen unterschiedlichen Arbeitsmodi vermit
 - 2026-10-09 · [[2026-10-09-repo-gsd-workflow]] · meinung — GSD Core beschreibt persistente `STATE.md`- und `CONTEXT.md`-Dateien für Arbeitsstand und Entscheidungen über Phasen und frische Kontexte hinweg. Dokumentierter Ablauf, kein eigener Vergleich seiner Wirksamkeit.
 - 2026-09-24 · [[2026-09-24-mattpocock-ai-coding-dictionary]] · meinung — Übergaben als Sekundärquelle gestalten: Entscheidungen mit Gründen, konkrete Pfade, offener Umfang und Prüfbelege samt Rückweg zum tatsächlichen Code erhalten. Eine übernommene Fertigmeldung belegt den Stand nicht; wichtige Aussagen muss die nächste Session am Primärbeleg prüfen.
 - 2026-07-22 · [[2026-07-22-mattpocockuk-2079879414297330146]] · meinung — Die Originalgrafik nennt eine Markdown-Übergabe gezielt beim Wechsel zu anderem Agenten, Ordner oder Kollegen; handoff und compact erfüllen unterschiedliche Zwecke. Übergabebedarf ist ein eigenes Kriterium nach der Prüfung, ob alter Kontext entbehrlich ist.
+- 2026-10-15 · [[2026-10-15-floknowsai-mit-tea-free-code-steuere-ich-alle-meine-cloud-code-und-kodex-abos-aus]] · meinung — Der T3-Erfahrungsbericht beschreibt Anbieterwechsel als neue Sitzung mit ausgewählten Nachrichten statt vollständigem Agentenzustand; interne Denkschritte und laufende Tool Calls fehlen, die tatsächliche Übergabe wurde nicht getestet.
 
 ## Spannungen & offene Fragen
 

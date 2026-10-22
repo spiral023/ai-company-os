@@ -1,6 +1,6 @@
 # AI-nativer SDLC
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Coding Agents den gesamten Software Development Lifecycle verändern: von Intent und Spezifikation über Build, Tests und Review bis Deployment, Betrieb und Rückkopplung. Einzelne Techniken stehen in ihren Fachclustern; hier gehören phasenübergreifende Abläufe, Übergaben, Kontrollpunkte und der Wandel vom linearen Prozess zur Schleife hinein.
 
@@ -9,7 +9,7 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 - **Hauptkeyword:** AI-nativer SDLC
 - **Long-Tail:** Software Development Lifecycle mit KI; SDLC mit Coding Agents; AI-native SDLC Playbook; SDLC ist tot; Intent Build Observe; Agentic SDLC und ADLC; Menschliche Freigaben im AI-nativen SDLC
 - **Fragen:** Wie verändert sich der SDLC durch Coding Agents? / Welche Kontrollpunkte brauchen Menschen weiterhin? / Wie fließen Erkenntnisse aus dem Betrieb zurück in die Planung?
-- **Häufig in den Quellen:** human-in-the-loop (3), ai-native sdlc (3), review.md (2), menschliche freigabe (2), intent.md (2), spec.md (2), scion (2), verhaltensvergleich (2), refactoring (2), codex (2), adversarial agent code review, closed loop, sdlc ist tot, software development lifecycle mit ki, feature flags canary, observability als kontext, intent build observe, risikobasiertes human review, befundnachweis, automatische pr-freigabe
+- **Häufig in den Quellen:** human-in-the-loop (3), ai-native sdlc (3), review.md (2), spec.md (2), menschliche freigabe (2), intent.md (2), scion (2), verhaltensvergleich (2), refactoring (2), codex (2), software development lifecycle mit ki, adversarial agent code review, sdlc ist tot, observability als kontext, closed loop, feature flags canary, intent build observe, befundnachweis, siem, invariantentests
 
 ## Verwandte Themen
 
@@ -21,7 +21,7 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 
 ## Patterns (1)
 
-- [[Bedarfsorientierter-Repositoryzugriff]] · meinung · 1 Belege
+- [[Bedarfsorientierter-Repositoryzugriff]] · meinung · 2 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachvollziehen]], [[Metrikband-gestufte-Agent-Autonomie]], [[Refactoring-mit-Verhaltensvergleich]], [[Zustandslose-CI-Listener-mit-Ergebnisjournal]]
 

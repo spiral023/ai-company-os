@@ -39,6 +39,7 @@ Ein Bild (Screenshot, Mockup, Fehlerdarstellung) wird per Drag & Drop, Copy & Pa
 - 2026-06-07 · [[2026-06-07-julian-ivanov-ki-automat-so-laesst-du-claude-jedes-video-fuer-dich-anscha]] · meinung — Eine Bildschirmaufnahme ergänzt den einzelnen Screenshot um die zeitliche Folge von Bedienhandlungen und UI-Zuständen. Extrahierte Frames können wichtige Übergänge auslassen; sichtbarer Fehlerzustand und tatsächliche Codeursache bleiben getrennte Fragen.
 - 2026-07-06 · [[2026-07-06-alex-sprogis-claude-design-2-0-ist-der-wahnsinn-kompletter-gu]] · meinung — Sprogis gibt visuelle Inspiration und später markierte Kommentare an konkreten Prototyp-Elementen mit. Das Tutorial zeigt präzisere Feedbackzuordnung, aber keinen Vergleich der Fehlerquote oder Umsetzungszeit.
 - 2026-08-21 · [[2026-08-21-ai-mit-arnie-diese-skills-machen-claude-design-unfair]] · meinung — Webseiten und Vorlagenbilder dienen als Ausgangspunkt für die Interpretation von Markenregeln. Die wiederverwendbaren Guidelines sind eine zusätzliche explizite Referenz; die gezeigte Inspiration begründet keine überprüften Nutzungsrechte an fremden Assets.
+- 2026-10-21 · [[2026-10-21-vincentmumme-ich-wurde-gefragt-wie-man-mit-ki-aktuell-die-beste-ui-erstellt-also-die]] · meinung — Mumme ergänzt visuelle Vorgaben um eine laufend gepflegte Referenzbibliothek und das Benennen einzelner Vorlieben wie Aufbau oder Typografie; die behauptete Dominanz dieses Hebels ist nicht gemessen und garantiert keine Bedienbarkeit.
 
 ## Spannungen & offene Fragen
 

@@ -25,6 +25,7 @@ Lokale Referenzbibliothek geklonter GitHub-Repos für AI-gestützte Produkt- und
 | Einen belastbaren Umsetzungsplan erstellen | [shadcn/improve](#shadcnimprove), [obra/superpowers](#obrasuperpowers), [open-gsd/gsd-core](#open-gsdgsd-core), [github/spec-kit](#githubspec-kit) | Repo-Audit, kleinteilige Pläne, Spec-driven Development und Review-Gates |
 | Strukturiert mit AI entwickeln | [obra/superpowers](#obrasuperpowers), [addyosmani/agent-skills](#addyosmaniagent-skills), [garrytan/gstack](#garrytangstack) | Durchgängige Workflows von Brainstorming und TDD bis Review, QA und Shipping |
 | Research, Planung und Implementierung getrennt durchführen | [humanlayer/skills](#humanlayerskills) | Dokumentierte RPI-Phasen mit frischen Sessions, visuellen Reviews und Vorlagen für begrenzte Agent-Schleifen |
+| Agent-Arbeit nach Aufgabentyp routen und mit Laufzeitevidenz prüfen | [cursor/plugins](#cursorplugins) (`pstack`) | Engineering-Prinzipien, Task-Playbooks, Modellrollen, Verifikations- und Review-Workflows |
 | Ein vollständiges Agile-Framework mit Rollen nutzen | [bmad-code-org/BMAD-METHOD](#bmad-code-orgbmad-method) | V7 Preview: Phasen, Expertenrollen, Sofia-Produktplanung und Toolsmith; stabile v6-Linie separat |
 | Kontext über lange Aufgaben erhalten | [OthmanAdi/planning-with-files](#othmanadiplanning-with-files), [open-gsd/gsd-core](#open-gsdgsd-core) | Persistente Plan-, Findings- und Statusdateien sowie frische Kontexte pro Phase |
 | Code testen, reviewen und sicher shippen | [addyosmani/agent-skills](#addyosmaniagent-skills), [garrytan/gstack](#garrytangstack), [shadcn/improve](#shadcnimprove) | Test-, Security-, Performance- und Code-Review-Workflows mit Verifikation |
@@ -82,6 +83,7 @@ Durchgängige Entwicklungs-Workflows: Anforderungen klären, planen, umsetzen, v
 |---|---|---|---|---|
 | [addyosmani/agent-skills](#addyosmaniagent-skills) | Produktionsreife Engineering-Abläufe etablieren | Define–Plan–Build–Verify–Review–Ship, Personas und Verification-Gates | Framework / Sammlung | `external_repos/addyosmani/agent-skills/skills/` |
 | [bmad-code-org/BMAD-METHOD](#bmad-code-orgbmad-method) | Ein vollständiges Agile-AI-Framework mit Rollen einsetzen | V7 Preview mit Phasen, Sofia-Produktplanung, Toolsmith und Review-Linsen | Framework / Sammlung | `external_repos/bmad-code-org/BMAD-METHOD/skills/` |
+| [cursor/plugins](#cursorplugins) (`pstack`) | Rigorous Engineering mit aufgabenspezifischem Routing untersuchen | 23 Playbooks, 24 Prinzipien, Multi-Model-Reviews und evidenzbasierte Verifikation | Framework / Sammlung | `external_repos/cursor/plugins/pstack/skills/poteto-mode/` |
 | [DietrichGebert/ponytail](#dietrichgebertponytail) | Overengineering und Code-Bloat vermeiden | Prioritätenleiter (YAGNI, Wiederverwendung, Stdlib) vor jeder Implementierung, ~20 Agent-Hosts | Skill / Sammlung | `external_repos/DietrichGebert/ponytail/skills/` |
 | [garrytan/gstack](#garrytangstack) | Einen vollständigen AI-Entwicklungszyklus abbilden | Rollen-Reviews, Browser-QA, Security, Shipping und persistentes Wissen | Framework | `external_repos/garrytan/gstack/` |
 | [humanlayer/skills](#humanlayerskills) | Entwicklungsphasen und wiederkehrende Codepflege strukturieren | RPI, visuelle Erklärungen und PRs, begrenzte Agent-Schleifen | Sammlung / Framework | `external_repos/humanlayer/skills/plugins/rpi/skills/rpi/` |
@@ -264,10 +266,10 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 <!-- OVERVIEW:START (automatisch generiert von 70_Scripts/update_external_repos.py — nicht von Hand bearbeiten) -->
 ## Übersicht
 
-- **Repos gesamt:** 70
-- **Gesamtgröße:** ca. 3.724 MB
-- **Dateien gesamt:** ca. 148.012 (ohne `.git`)
-- **Sterne gesamt:** ca. 5.664.106 (70/70 Repos abgerufen)
+- **Repos gesamt:** 71
+- **Gesamtgröße:** ca. 3.727 MB
+- **Dateien gesamt:** ca. 148.187 (ohne `.git`)
+- **Sterne gesamt:** ca. 5.677.515 (71/71 Repos abgerufen)
 - **Stand:** 2026-10-22
 
 | Repo | Dateien | Größe | ⭐ |
@@ -321,6 +323,7 @@ Bei Infrastruktur, die OAuth-Tokens, API-Keys, Agenten-Accounts oder Netzwerkver
 | AgriciDaniel/claude-seo | 494 | 5,4M | 19.603 |
 | msitarzewski/agency-agents | 383 | 4,7M | 162.957 |
 | bmad-code-org/BMAD-METHOD | 584 | 4,5M | 54.423 |
+| cursor/plugins | 175 | 3,4M | 13.409 |
 | Leonxlnx/taste-skill | 69 | 3,0M | 100.612 |
 | abi/screenshot-to-code | 316 | 2,6M | 80.602 |
 | VoltAgent/awesome-design-md | 173 | 2,4M | 122.766 |
@@ -556,6 +559,21 @@ Sammlung von 52 Marketing-Skills für Coding-Agenten von Corey Haines; die Plugi
 Alle Skills beziehen zuerst ein gemeinsames `product-marketing`-Kontextdokument ein. Dieses enthält inzwischen eine aus Belegen entwickelte Brand Voice, optionale Paid-Ads-Daten und ein Learnings Ledger, das Copywriting, E-Mails und Anzeigen vor neuen Entwürfen lesen. Wiederkehrende Marketing-Loops dokumentieren Entscheidungen und schlagen neue Erkenntnisse vor. Ads-Reviews sollen in eine konkrete Betriebsentscheidung münden; `ai-seo` ergänzt Claim Ledger, mehrschichtige Attribution, Prompt-Portfolios, Agent-Defaults und getrennte Crawler-Zwecke. Ein geführtes Tool-Onboarding beginnt mit begrenzten Zugangsdaten und einem read-only Ergebnis.
 
 Die MIT-lizenzierte Bibliothek bietet CLI-/Plugin-Installationen sowie separate Claude-Web-ZIPs; diese richten keine MCPs oder Zugangsdaten ein. Offen ausgewiesene Partnerintegrationen und Verweise auf das Eigenprodukt Magister sind bei Empfehlungen mitzulesen. Referenz für zentrale Produktkontexte, nachvollziehbare Marketing-Evidenz und wiederverwendbare Workflows; externe Dienste, Kosten und Schreibrechte bleiben pro Komponente zu prüfen.
+
+---
+
+## cursor/plugins
+
+- **URL:** https://github.com/cursor/plugins
+- **Stars:** ⭐ 13.409
+- **Heruntergeladen:** 2026-10-22
+- **Zuletzt aktualisiert:** 2026-10-22
+- **Dateien:** 175 · **Größe:** 3,4M
+- **Struktur:** Partieller Checkout: `pstack/` mit Skills, Agents, Playbooks, Guide und Automation-Pack; Root-Dateien des Monorepos bleiben vorhanden. Andere Plugin-Unterordner und `harness/pstack/` sind nicht ausgecheckt. <!-- manual -->
+
+Gezielt als Referenz erfasster Unterordner [pstack](https://github.com/cursor/plugins/tree/main/pstack), Lauren Tans Engineering-Workflows im offiziellen Cursor-Plugin-Monorepo. Der lokale Sparse Checkout unter `external_repos/cursor/plugins/` enthält `pstack/` und die Root-Dateien, nicht den gesamten Plugin-Katalog. Stand der Sichtung: Version `0.15.29`, Checkout-Commit `f2bad5225cb2d4f5e58b45aa36be89d16a558c13`; die letzte Änderung am Teilbaum stammt vom 20.10.2026. Einstieg ist `pstack/README.md`, danach `pstack/skills/poteto-mode/SKILL.md` und `pstack/docs/guide/`. Der Router ordnet Aufgaben 23 Playbooks zu, darunter Investigation, Bugfix, Performance, Refactoring, Prototyping, Verifikation und Shipping. 24 kurze Prinzipien behandeln Datenmodelle, Typen, Idempotenz, Ursachenanalyse, Prüfbarkeit und Kontextdisziplin. Weitere Skills liefern konkurrierende Lösungsversuche, getrennte Reviews sowie projektspezifische Verifikations-Skills. Das ist besonders nützlich, um unsere Skill-Hierarchie und Builder-/Reviewer-Trennung mit einem anderen Ansatz zu vergleichen; Qualitäts- und Parallelisierungsversprechen sind dabei Autorenaussagen, keine eigenen Messungen.
+
+`pstack/LICENSE` und die Plugin-Manifeste nennen MIT; daraus folgt keine Lizenzannahme für sämtliche anderen Monorepo-Inhalte. Claude Code nutzt laut Dokumentation einen generierten Adapter unter `harness/pstack/`, der hier bewusst nicht enthalten ist. Manche Abläufe benötigen zusätzlich `cursor-team-kit`, Cursor-spezifische Funktionen oder das dormant mitgelieferte Benny-Automation-Pack. Shell- und TypeScript-Helfer können GitHub, Worktrees und PR-Abläufe berühren; die TypeScript-Werkzeuge setzen Bun und weitere Pakete voraus. Nur statisch gelesen, keine Installation, Script-Ausführung oder produktive Aktivierung. Übernahmeprüfung: [pstack-Review](../30_Skills/external/reviews/cursor-pstack.md).
 
 ---
 

@@ -1,6 +1,6 @@
 # Sicherheit & Sandboxing
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps. Berichte über Gefahren, Missbrauch und konkrete KI-Vorfälle stehen in ki-risiken.
 
@@ -9,7 +9,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** row level security (3), sicherheit (3), security (3), mxc (3), os-level sandboxing (3), security checker (2), docker sandboxes (2), command smuggling (2), deny-rules (2), agent sandbox (2), freigaben (2), playwright (2), sandboxing (2), sandbox (2), prompt injection (2), sandbox permissions (2), process isolation (2), vibe coding security (2), agent-to-agent-kommunikation (2), agent-identität (2)
+- **Häufig in den Quellen:** row level security (3), security (3), sicherheit (3), sandbox (3), os-level sandboxing (3), mxc (3), security checker (2), docker sandboxes (2), deny-rules (2), command smuggling (2), agent sandbox (2), ki-vertragsprüfung (2), produktedition (2), freigaben (2), playwright (2), sandboxing (2), prompt injection (2), process isolation (2), sandbox permissions (2), vibe coding security (2)
 
 ## Verwandte Themen
 
@@ -19,17 +19,18 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
 - [[Thema-KI-Risiken-Sicherheitsvorfälle]] — KI-Risiken & Sicherheitsvorfälle
 
-## Patterns (5)
+## Patterns (6)
 
-- [[Adversarialer-Pre-Launch-Check]] · meinung · 7 Belege
+- [[Adversarialer-Pre-Launch-Check]] · meinung · 8 Belege
 - [[Agent-Rechte-umfassen-Kommunikationswege]] · meinung · 5 Belege
 - [[Deny-Rules-statt-CLAUDE-md-Empfehlung]] · mehrfach-belegt · 13 Belege
 - [[Freigaben-und-Isolation-getrennt-steuern]] · meinung · 9 Belege
+- [[KI-Dienste-nach-Vertrag-und-Datenfluss-pruefen]] · meinung · 1 Belege
 - [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 7 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]], [[Hook-Entscheidungstyp-nach-Pruefbarkeit]], [[Metrikband-gestufte-Agent-Autonomie]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]]
 
-## Quellen (16)
+## Quellen (17)
 
 - [[2026-10-16-voxyz_ai-2111079716832886886]] — Vox schlägt einen Pre-Launch-Test mit normalen Konten A und B sowie einem Admin vor.
 - [[2026-10-10-satyanadella-2108931348857827686]] — Satya Nadella argumentiert im X-Artikel für eine Architektur, die leistungsfähige Modelle wie potenzielle Insider-Risiken behandelt.
@@ -42,6 +43,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], 
 - [[2026-08-18-docker-2089789519788728379]] — MicroVM-Isolation mit eigenem Kernel pro Sandbox gilt laut Docker inzwischen als empfohlener Standardpfad für Claude Code, ist aber nur als Herstellermeldung belegt.
 - [[2026-08-14-claudedevs-2088332927189049738]] — ClaudeDevs meldet am `2026-08-14` den Rollout von Auto mode als Standard für Pro, Max und Team.
 - [[2026-08-07-claude-auto-mode-is-now-the-default-in-claude-code-for]] — Anthropic begründet den Auto-Mode mit Messungen gegen tatsächlich beobachtetes Freigabeverhalten.
+- [[2026-07-14-vischer-teil-31-ki-tools-wie-es-um-den-schutz-der-daten]] — Die VISCHER-Autoren David Rosenthal, Lucian Hunger und Jonas Baeriswyl beurteilen KI-Angebote am `14.07.2026` anhand konkreter Vertrags- und Konfigurationskombinationen.
 - [[2026-05-13-david-wiesen-openai-codex-windows-sandbox]] — Kein einzelnes OS-Feature reichte für eine Agent-Sandbox; sie wurde aus mehreren Primitiven komponiert, und rein advisory Netzwerkschutz genügt nicht.
 - [[2026-04-30-zodchiii-claude-code-env-security]] — Nur Deny-Regeln in settings.json erzwingen Zugriffssperren, CLAUDE.md-Hinweise sind Empfehlungen; Secrets lecken auch über Runtime-Output und Grep-Treffer.
 - [[2026-02-28-openai-codex-rules-guide]] — Eine Grenze wirkt nur, wenn eine Regel-Engine sie vor der Ausführung erzwingt; Codex Rules zerlegen verpackte Shell-Aufrufe, um Command Smuggling zu verhindern.
@@ -51,6 +53,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], 
 ## Quellen mit diesem Thema als Nebenthema
 
 - [[2026-10-17-voxyz_ai-2111442102756463077]]
+- [[2026-10-15-mardehaym-2110763129885835505]]
 - [[2026-10-11-developers-codex-as-a-platform-build-on-the-open-agent-harn]]
 - [[2026-10-09-voxyz_ai-2108573215224160393]]
 - [[2026-10-07-alex-sprogis-t3-code-endlich-eine-steuerzentrale-fuer-alle-de]]

@@ -44,6 +44,7 @@ Der Agent läuft als eigener, sandboxed Job in der CI-Pipeline (z. B. GitLab CI,
 - 2026-09-20 · [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] · meinung — Eric Tech empfiehlt, wiederkehrende menschliche PR-Kommentare als Kandidaten für Regeln in REVIEW.md auszuwerten; Hooks ergänzen Grenzen für sensible Aktionen. Aufarbeitung des Anthropic-Playbooks mit eigener Empfehlung, ohne Wirkungsnachweis.
 
 - 2026-07-21 · [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] · meinung — Anthropic kombiniert spezialisierte Review-Agents, Befundnachweise, SAST und menschliche Freigaben nach Risiko; automatische Entscheidungen werden protokolliert und stichprobenartig von Menschen geprüft. Herstellerbericht, keine unabhängige Validierung der Automatik.
+- 2026-10-15 · [[2026-10-15-mardehaym-2110763129885835505]] · meinung — Limestone beschreibt getrennte Plan- und PR-Freigaben, eine nur zum Modell vernetzte Sandbox und freigegebenes Reviewfeedback als Regeln für Folgeläufe; Anbieter-Selbstbericht ohne geprüfte Isolations- oder Sicherheitswirkung.
 
 ## Spannungen & offene Fragen
 

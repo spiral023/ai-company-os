@@ -25,6 +25,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Testharness-als-staerkster-Hebel]] — bei autonomen Agenten entscheidet die Qualität des Verifiers über echten Fortschritt, nicht der Prompt.
 - [[Zustandslose-CI-Listener-mit-Ergebnisjournal]] — CI-Ergebnisannahme von Testhistorienbildung trennen; Aktualität, Durchsatz und Wiederherstellung gesondert prüfen.
 - [[Intent-Engineering-als-dritte-Schicht]] — nach Prompt- und Context Engineering fehlt oft die explizite Zielhierarchie/Trade-off-Logik für Agenten.
+- [[Ambitionscheck-mit-Zielhoehe-Tiefe-und-Reichweite]] — Ergebnis, methodische Tiefe und zusätzliche Fachperspektiven eines Auftrags prüfen und durch konkrete Untersuchungen validieren.
 - [[Fable-Unknowns-vor-Prompt-Qualitaet]] — der Engpass ist nicht der Prompt, sondern unaufgeschriebene Annahmen; acht Techniken zum systematischen Aufdecken.
 - [[Action-Space-Design-nach-Modellfaehigkeit]] — Agent-Tools am tatsächlichen Fähigkeitsprofil des Modells ausrichten statt an Feature-Vollständigkeit.
 - [[Lokale-Modell-Umleitung-Muster]] — Claude Code per Umgebungsvariablen auf lokale oder alternative Cloud-Modelle umleiten, CLI bleibt gleich.
@@ -55,7 +56,9 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Entscheidung-per-Scoring-statt-Generierung]] — bei festem Antwortraum Label-Logits auslesen statt Text erzeugen; Verteilung plus Schwellen im Code entscheiden über Automatik oder Review.
 - [[Decision-Head-Finetuning]] — kleine LLMs mit Decision-Head und LoRA auf vorgegebene Optionen spezialisieren; Accuracy, Kalibrierung und Testdaten getrennt prüfen.
 - [[Adversarialer-Pre-Launch-Check]] — vor dem Release read-only Prüfagenten mit festen Fragenkatalogen die eigene App in einer sicheren Testumgebung brechen lassen.
+- [[Produktreife-durch-echte-Testnutzer]] — tatsächliche Nutzung in einem kleinen Nutzerkreis als Lernschleife vor einer breiteren Veröffentlichung nutzen; simulierte Personas liefern andere Evidenz.
 - [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] — automatische Review-Freigaben nur in abgegrenzten Risikobereichen, mit Shadow Mode, protokollierten Entscheidungen und menschlichen Stichproben.
+- [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]] — tatsächliches menschliches Urteil mit Vorabentscheidungen, bekannten Antwortaufgaben und nachvollziehbaren Revieweinheiten untersuchen.
 - [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]] — fortlaufender externer Einblick und eigenständige Berichte sollen Sicherheitszusagen prüfbar machen; angekündigte Governance-Methode.
 - [[Agent-Rechte-umfassen-Kommunikationswege]] — direkte Rechte reichen nicht: erreichbare Agents und delegierte Aktionen gehören zur Berechtigungsgrenze.
 
@@ -79,6 +82,9 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]] — Aufgabe, Qualität, Kontext und Parallelität vor Hardwarevergleich mit einem repräsentativen Versuch prüfen.
 - [[Framework-Quellcode-als-idiomatische-Referenz]] — passende Bibliotheksimplementierungen gezielt lesen; Versionspassung und Verhaltensprüfung bleiben eigene Grenzen.
 - [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] — Fachprozess und Verantwortung vor Toolauswahl klären, Anwender befähigen und den Pilot bewusst abnehmen.
+- [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]] — Fachdaten, fachkundige Prüfaufgaben, Handlungsgrenzen und menschliches Review als zusammenhängenden Entwurf behandeln.
+- [[Produktwert-jenseits-des-reproduzierbaren-Codes]] — Funktionsnachbau getrennt von Betrieb, Nutzerzugang, Feedback und laufenden Leistungen bewerten.
+- [[KI-Dienste-nach-Vertrag-und-Datenfluss-pruefen]] — konkrete Edition, Vertrag, Konfiguration und Integrationen mit Datum und offenen Punkten dokumentieren; keine pauschale Anbieterfreigabe ableiten.
 - [[Schema-als-Vertrag-mit-generierten-Clients]] — strukturelle API-Verträge aus einer Schemaquelle ableiten, Clients generieren und angebundene Verbraucher in CI prüfen.
 - [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]] — Cache-Laufzeit anhand tatsächlicher Pausen, Wiederverwendung und Schreibkosten wählen; wirksame Overrides gesondert prüfen.
 - [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] — codebasierte Filme mit Ereignisframes, begrenzten Reparaturen und finaler Bild-, Ton- und Exportabnahme produzieren.
@@ -106,8 +112,8 @@ Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 21 
 
 ## Vergleiche
 
-- [[Workflow-Frameworks]] — Gegenüberstellung von mattpocock/skills, Superpowers, GSD Core, gstack, addyosmani/agent-skills und Squad mit ersten Empfehlungen.
+- [[Workflow-Frameworks]] — Gegenüberstellung von mattpocock/skills, Superpowers, GSD Core, gstack, addyosmani/agent-skills, Squad und dem statisch gesichteten pstack-Teilbaum.
 
 ## Fakten
 
-- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-17.
+- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-22.

@@ -203,14 +203,20 @@ npm run ingest:tiktok -- <tiktok-url>
 python ai.py ingest <youtube-url-artikel-url-oder-pdf-pfad>
 ```
 
-Fortschritt und nächste Schritte für bereits erfasste Rohquellen stehen in `00_Inbox/Quellen/VERARBEITUNGSPLAN.md`.
+Abrufen legt die Rohquelle mit `status: neu` an. Erst der Skill [quellen-verarbeiten](30_Skills/local/quellen-verarbeiten/SKILL.md) erstellt die deutsche Source-Notiz, ergänzt passende Pattern-Belege und Themen und verknüpft die Inbox über `source_notiz:` mit dem Ergebnis. Modell-, Preis- und Benchmark-Angaben landen mit Originaldatum und Messgrenzen im [Fakten-Register](80_Knowledge/Fakten/Modelle-und-Preise.md). Bereits verarbeitete Quellen werden wiederverwendet.
 
-Neue Quelle einarbeiten: Skill `quellen-verarbeiten` (`30_Skills/local/quellen-verarbeiten/`). Validieren:
+X-Threads werden über die API erfasst. Die Anzahl erfasster Posts garantiert keine Vollständigkeit; auch Bilder aus Folgeposts müssen geprüft werden. Bilder bleiben neben der Rohquelle, Audios und Videos gemäß `.gitignore` nur lokal. Der API-Cache und Arbeitsberichte unter `tmp/quellen-lauf/` bleiben ebenfalls lokal. Abrufregeln und Einschränkungen: [Quellen-Eingang](00_Inbox/Quellen/README.md).
+
+Vor und nach der Verarbeitung den Knowledge-Validator ausführen und bestehende Fehler getrennt von neuen Befunden ausweisen. Typografie zuerst für die berührten Knowledge-Dateien korrigieren, dann abschließend prüfen:
 
 ```bash
-python 70_Scripts/validate_knowledge.py
 python 70_Scripts/fix_typography.py 80_Knowledge/Sources/<neue-datei>.md
+python 70_Scripts/validate_knowledge.py
+python 70_Scripts/quellen_pipeline.py check
+python 70_Scripts/themen.py check
 ```
+
+`00_Inbox/Quellen/VERARBEITUNGSPLAN.md` dokumentiert frühere Verarbeitungsschritte; der aktuelle Inbox-Status wird über `quellen_pipeline.py check` ermittelt.
 
 ## Obsidian
 

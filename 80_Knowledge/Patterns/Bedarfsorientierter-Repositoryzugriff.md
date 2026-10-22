@@ -32,6 +32,7 @@ Cache-Schichten bilden explizite Ausfall- und Lastgrenzen. Ein Cache-Miss darf d
 ## Belege
 
 - 2026-10-13 · [[2026-10-13-anthropic-redesigning-source-control-at-anthropic]] · meinung — Scion trennt Server-Metadaten von bedarfsorientiertem Tree-/Blob-Zugriff und gemeinsam genutzten Objektcaches; der Herstellerbericht betrifft ein außergewöhnlich großes Monorepo und wurde nicht unabhängig nachgemessen.
+- 2026-10-21 · [[2026-10-21-floknowsai-entropic-hat-gitt-komplett-ersetzt-zumindest-klingt-es-so-auf-social]] · meinung — Florian erklärt Scions bedarfsorientierte Datei- und Metadatenabfragen und grenzt die Sonderlast vom allgemeinen Git-Einsatz ab; seine Leistungsdarstellung referiert denselben Anthropic-Bericht und ist keine unabhängige Bestätigung.
 
 ## Spannungen & offene Fragen
 

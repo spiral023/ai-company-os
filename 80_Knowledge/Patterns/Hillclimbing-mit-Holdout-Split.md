@@ -41,6 +41,7 @@ Gut geeignete Oberflächen sind billig änderbar und eindeutig zurechenbar, etwa
 - 2026-09-28 · [[2026-09-28-claude-automating-eval-design-and-hillclimbing-with-cla]] · meinung — Anthropic beschreibt Eval-Design-Regeln und den Hillclimb-Loop samt Revert-Regeln (`/claude-api build-eval`, `/claude-api hillclimb`); Support-Benchmark auf Holdout 90,5 % gegen 78,6 % bei etwa einem Fünftel der Kosten und `claude-api`-Skill von 66 % auf etwa 88 % als Selbstmessung.
 - 2026-07-01 · [[2026-07-01-0xcodila-2072329149520232639]] · meinung — Karpathys `autoresearch`: nur `train.py` änderbar, Evaluator gesperrt, Commit bei Verbesserung, sonst Rollback; Bilevel-Variante mit äußerem Loop soll laut Paper -0,045 statt -0,009 `val_bpb` erreichen. Kein Holdout erwähnt, Zahlen ungeprüft aus zweiter Hand.
 - 2026-07-16 · [[2026-07-16-amasad-2077802290304684404]] · meinung — Replit Agent verbessert sich per Schleife aus Benchmarks vor dem Release und A/B-Tests mit geclusterten Traces danach. Nur als Skizze beschrieben, kein Holdout oder Rausch-Check erwähnt.
+- 2026-10-13 · [[2026-10-13-felixrieseberg-how-to-be-more-ambitious-a-tutorial-for-humans-w]] · meinung — Ein vorgeschlagenes Abwanderungsmodell soll historische Logs reproduzieren und neue Frühindikatoren auf ungesehenen Daten bestätigen; dies überträgt die Holdout-Idee auf explorative Analyse, berichtet aber keinen erzielten Vorhersagegewinn.
 
 ## Spannungen & offene Fragen
 

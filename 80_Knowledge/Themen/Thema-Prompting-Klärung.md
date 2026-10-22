@@ -1,6 +1,6 @@
 # Prompting & Klärung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns, Voice-Prompting, Anweisungen bei Modellwechsel ausdünnen, Anti-Sycophancy.
 
@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), change quiz (2), known unknowns (2), spec-grilling (2), voice prompting (2), progressive disclosure (2), gpt-6 astra (2), skill descriptions (2), modellwechsel (2), überregulierung (2), codex skill-creator (2), intent engineering (2), context engineering (2), ai agent zustimmungsneigung, projektplanung mit ai, frühwarnsignale, spec grilling, sycophancy, risikoanalyse
+- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), known unknowns (2), change quiz (2), spec-grilling (2), voice prompting (2), überregulierung (2), gpt-6 astra (2), modellwechsel (2), codex skill-creator (2), skill descriptions (2), progressive disclosure (2), intent engineering (2), ambitionscheck (2), context engineering (2), sycophancy, frühwarnsignale, prompt-tricks, spec grilling, ai agent zustimmungsneigung
 
 ## Verwandte Themen
 
@@ -18,16 +18,20 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
 - [[Thema-Prompts-zum-Ausprobieren]] — Prompts zum Ausprobieren
 
-## Patterns (3)
+## Patterns (4)
 
+- [[Ambitionscheck-mit-Zielhoehe-Tiefe-und-Reichweite]] · meinung · 1 Belege
 - [[Fable-Unknowns-vor-Prompt-Qualitaet]] · meinung · 3 Belege
-- [[Intent-Engineering-als-dritte-Schicht]] · meinung · 11 Belege
+- [[Intent-Engineering-als-dritte-Schicht]] · meinung · 12 Belege
 - [[Voice-Prompting-fuer-Kontextreichtum]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-statt-Generierung]], [[Handlungsbedarf-zuerst-im-Agent-Bericht]]
 
-## Quellen (9)
+## Quellen (12)
 
+- [[2026-10-19-promptgefluester-wir-neigen-dazu-dass-wir-beim-aehm-prompting-der-ki-sagen-aehm-8]] — Der Autor warnt, dass wenige genannte Beispiele eine Recherche unbeabsichtigt verengen können.
+- [[2026-10-13-felixrieseberg-how-to-be-more-ambitious-a-tutorial-for-humans-w]] — Felix Rieseberg schlägt vor, KI nicht nur für schnellere Ausführung einzusetzen, sondern Aufgaben auf drei weitere Arten anspruchsvoller zu gestalten: am übergeordneten Ergebnis ausrichten, mit besser
+- [[2026-09-28-vincentmumme-prompt-engineering-ist-schon-lange-tot-und-ich-weiss-nicht-ob-ihr-euch]] — Vincent Mumme erläutert am 28.09.2026 ein Agenten-Promptschema.
 - [[2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c]] — Bei Opus 5.5 helfen ein klares Ziel, eine einzige Stopp-Bedingung und eine Task-Datei, die Kontext-Zusammenfassungen überlebt; weniger Stopps brauchen Gates.
 - [[2026-09-14-developers-rethinking-skills-and-prompts-for-gpt-6-astra-op]] — Anweisungen veralten modellabhängig und schaden bei stärkeren Modellen aktiv; Skills als Router mit engen Triggern und schlanke AGENTS.md sind der Ausweg.
 - [[2026-09-07-sairahul1-2096902575035683147]] — Alte Prompts, die Testen und Selbstprüfen erzwingen, schaden stärkeren Modellen; gesteuert werden sollten Autonomie, Prioritäten, Verifikationsumfang und prüfbare Stop-Bedingungen.

@@ -98,6 +98,19 @@ external_knowledge/
 # Arbeitsordner der Quellen-Pipeline
 tmp/quellen-lauf/
 
+# Lokaler Zustand von Videoprojekten; editierbare Quellen und Assets bleiben sichtbar
+/videos/**/.runtime/
+/videos/**/.media/
+/videos/**/.thumbnails/
+/videos/**/.waveform-cache/
+/videos/**/.hyperframes/artifacts/
+/videos/**/.hyperframes/preview*
+/videos/**/.hyperframes/hf-ids-stamped.json
+/videos/**/.hyperframes/history-id
+/videos/**/.hyperframes/render-outputs.json
+/videos/**/.hyperframes/video-state.json
+/videos/**/renders/
+
 # Blog-Build
 blog/_site/
 blog/_preview/

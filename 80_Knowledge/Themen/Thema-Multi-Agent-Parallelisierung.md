@@ -1,6 +1,6 @@
 # Multi-Agent & Parallelisierung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-Abhängigkeiten, Rollen, Advisor. Dauerläufe ohne Aufsicht stehen in autonomie.
 
@@ -9,7 +9,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - **Hauptkeyword:** Claude Code Subagents
 - **Long-Tail:** Agent Teams Claude Code; Git Worktrees parallele Agents; Subagents vs. Agent Teams; Multi-Agent Orchestrierung; Task-Abhängigkeiten Claude Code; Kosten paralleler Agents
 - **Fragen:** Wann lohnt sich Parallelisierung? / Subagent oder Agent Team?
-- **Häufig in den Quellen:** subagents (6), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), agent-organisation (3), heartbeats (3), addblockedby (2), multi-agent (2), claude code tasks (2), modulgrenzen (2), claude code agent teams (2), codex cli (2), openclaw (2), rollen (2), budgets (2), freigaben (2), parallel agents (2), agent teams (2), edit-kollisionen (2)
+- **Häufig in den Quellen:** subagents (6), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), agent-organisation (3), heartbeats (3), claude code tasks (2), addblockedby (2), multi-agent (2), claude code agent teams (2), modulgrenzen (2), codex cli (2), rollen (2), budgets (2), freigaben (2), edit-kollisionen (2), agent teams (2), parallel agents (2)
 
 ## Verwandte Themen
 
@@ -23,17 +23,19 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - [[Advisor-Agent-gegen-Drift]] · meinung · 3 Belege
 - [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]] · meinung · 3 Belege
 - [[Blockierende-Task-Abhaengigkeiten]] · meinung · 5 Belege
-- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 47 Belege
+- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 49 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Bedarfsorientierter-Repositoryzugriff]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]]
 
-## Quellen (19)
+## Quellen (21)
 
 - [[2026-10-09-git-worktree]] — Getrennte Worktrees teilen das Repository, isolieren aber keine Laufzeitressourcen.
+- [[2026-10-06-promptgefluester-vielleicht-mal-zur-begruendung-warum-ich-euch-zeig-wie-ich-280-website]] — `@promptgefluester` beschreibt eine zusätzliche Koordinationsebene über einzelnen Projekt-Orchestratoren.
 - [[2026-10-02-matt-pocock-live-poteto-creator-of-pstack-on-shipping-1-000]] — Verifikations-CLIs und gebündelte Befunde stützen parallele Agent-Arbeit; PR-Mengen bleiben Selbstauskunft und automatische Merges werden nur stichprobenartig geprüft.
 - [[2026-09-29-voxyz_ai-2105012597796057438]] — Vox beschreibt für GPT-6.1 Sol (Stand 2026-09-29) einen Agent-Tree in Codex: Orchestrator `high`, explorer/worker/researcher auf `medium`, `gpt-6-astra` auf `xhigh` nur als Reviewer vor großen Änderun
 - [[2026-09-27-voxyz_ai-2104254744722383210]] — Vox lässt Opus 5.5 aus 1.500+ eigenen Posts ein Repo mit 66 Skills bauen: Mining (71 Agenten), Planning (9), Scaffold (1), Build (21), QA (3).
 - [[2026-09-26-voxyz_ai-2103977414711767244]] — Ein read-only Subagent pro Prüfgruppe erstellt Befunde, der Hauptagent behebt sie nach Freigabe allein, damit nie zwei Agents dieselbe Datei editieren.
+- [[2026-09-25-promptgefluester-weil-mich-viele-danach-gefragt-haben-wollt-ich-jetzt-kurz-noch-n]] — `@promptgefluester` erläutert ein Terminal-Setup, in dem ein Orchestrator laufende Sessions betreut und ein separater Aufgabenmanager Prioritäten und Aufgabenstand hält.
 - [[2026-09-09-voxyz_ai-2097814698204832116]] — Günstige Modelle explorieren, ein mittleres implementiert, das stärkste prüft nur bei Bedarf; Rollen gehören per Konfiguration statt Prosa festgelegt und in den Logs verifiziert.
 - [[2026-08-30-alex-sprogis-loop-graph-engineering-das-letzte-video-was-du-s]] — Ein Agent-Loop braucht ein binäres Erfolgskriterium, ein Iterationslimit und einen unabhängigen Prüfer; große Aufträge laufen als Schritte mit frischem Kontext und Artefakt-Übergaben.
 - [[2026-06-02-trq212-2061907337154367865]] — Claude erzeugt pro Aufgabe ein Skript mit Subagents in eigenen Kontexten; Verifier und Classifier vermeiden Selbstbewertung, kosten aber deutlich mehr Tokens.
@@ -51,13 +53,18 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-19-voxyz_ai-2112302775547679169]]
+- [[2026-10-15-floknowsai-mit-tea-free-code-steuere-ich-alle-meine-cloud-code-und-kodex-abos-aus]]
+- [[2026-10-13-vincentmumme-wenn-du-das-problem-kennst-dass-du-2-chat-gpt-abos-hast-1-clot-abo-open]]
 - [[2026-10-13-anthropic-redesigning-source-control-at-anthropic]]
+- [[2026-10-12-promptgefluester-ich-werde-oft-gefragt-was-arbeite-ich-denn-eigentlich-noch-wenn-die-ki]]
 - [[2026-10-12-0xmovez-2109604520770548146]]
 - [[2026-10-10-voxyz_ai-2109056129884123370]]
 - [[2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker]]
 - [[2026-10-07-alex-sprogis-t3-code-endlich-eine-steuerzentrale-fuer-alle-de]]
 - [[2026-09-27-voxyz_ai-2104224555040452925]]
 - [[2026-09-25-voxyz_ai-2103586663393853636]]
+- [[2026-09-24-floknowsai-open-claw-ist-zurueck-und-spielt-jetzt-wieder-in-einer-liga-mit-kodex]]
 - [[2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c]]
 - [[2026-09-19-voxyz_ai-2101355643882065971]]
 - [[2026-09-07-sairahul1-2096902575035683147]]

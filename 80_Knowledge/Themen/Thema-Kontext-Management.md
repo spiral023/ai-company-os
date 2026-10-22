@@ -1,6 +1,6 @@
 # Kontext-Management
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, Clear, Rewind, Handoff zwischen Sessions, Kontextkosten von Tools. Regeldateien gehören zu agent-dateien, die Kosten des Cachings zu modelle-kosten.
 
@@ -9,7 +9,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 - **Hauptkeyword:** Context Engineering
 - **Long-Tail:** Context Rot vermeiden; Claude Code /compact oder /clear; Claude Code Kontextfenster verwalten; Session Handoff Dokument; Rewind statt Korrektur; Subagents als Kontextgrenze
 - **Fragen:** Wann sollte ich /clear statt /compact nutzen? / Warum wird mein Agent in langen Sessions schlechter?
-- **Häufig in den Quellen:** context window (8), context rot (8), claude.md (8), /compact (7), /clear (7), progressive disclosure (7), context engineering (6), kontext-hygiene (5), handoff (5), kontext (4), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), token (3), state.md (3), plan mode (3), mcp tools (2)
+- **Häufig in den Quellen:** context window (8), context rot (8), claude.md (8), /compact (7), /clear (7), progressive disclosure (7), context engineering (6), kontext-hygiene (5), handoff (5), kontext (4), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), token (3), state.md (3), compaction (3), plan mode (3)
 
 ## Verwandte Themen
 
@@ -20,13 +20,14 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 
 ## Patterns (2)
 
-- [[Handoff-Doc]] · verifiziert · 21 Belege
-- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 50 Belege
+- [[Handoff-Doc]] · verifiziert · 22 Belege
+- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 51 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[Framework-Quellcode-als-idiomatische-Referenz]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]], [[Wissenspflege-mit-Inbox-und-Review]]
 
-## Quellen (23)
+## Quellen (24)
 
+- [[2026-10-21-floknowsai-entropic-hat-gitt-komplett-ersetzt-zumindest-klingt-es-so-auf-social]] — Florian ordnet Anthropics `Scion` als spezialisiertes Versionssystem für sehr viele ständig verbundene Agenten und Testjobs ein.
 - [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]] — Handoffs werden vor und nach Compaction verglichen; Cache-Anzeigen, Wartezeiten und Warmhalte-Versprechen belegen keine gemessene Ersparnis.
 - [[2026-09-24-mattpocock-ai-coding-dictionary]] — Matt Pococks AI Coding Dictionary ordnet 71 Begriffe in sieben Bereiche.
 - [[2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re]] — Weniger Anweisungen, mehr Absicht und messbares Abschlusskriterium: Kontext klein halten, Garantien in Hooks legen und das Setup bei jedem Modellwechsel ausdünnen.
@@ -53,6 +54,10 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-18-mattpocockuk-2111708560715292675]]
+- [[2026-10-16-0xkense1-2111105138290987198]]
+- [[2026-10-14-promptgefluester-entropic-baut-sich-seinen-eigenen-aehm-gitt-baut-sich-sein-eigenes-gitt]]
+- [[2026-10-12-promptgefluester-mit-diesem-video-geh-ich-in-risiko-1]]
 - [[2026-10-10-voxyz_ai-2109056129884123370]]
 - [[2026-10-09-repo-gsd-workflow]]
 - [[2026-10-09-ollama-kontext-speicher]]

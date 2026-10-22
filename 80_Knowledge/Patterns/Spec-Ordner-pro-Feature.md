@@ -32,8 +32,11 @@ Pro Feature entsteht ein fester Satz von fünf Dateien in einem git-unsichtbaren
 
 - 2026-01-14 · [[2026-01-14-ashpreetbedi-claude-code-spec-first]] · meinung — X-Thread-Aufarbeitung (über vibedeck-Sekundärfassung) beschreibt ein privates, per Symlink eingebundenes `specs/`-Repository mit den fünf Dateien `design.md`/`implementation.md`/`decisions.md`/`prompts.md`/`future-work.md` pro Feature am Beispiel des eigenen Agno-Repos.
 - 2026-07-17 · [[2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt]] · meinung — Gegenposition zu kleinen Specs: eine monolithische 126-Seiten-Spezifikation; ohne Vergleich.
+- 2026-10-18 · [[2026-10-18-mattpocockuk-2111708560715292675]] · meinung — Gegenposition: Pocock empfiehlt Specs und PRDs in abschließbaren GitHub-Issues und nur ADRs im Repo; dies widerspricht der dauerhaften Feature-Spec, ohne einen Vergleich der Ablageformen zu liefern.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-22: [[2026-10-18-mattpocockuk-2111708560715292675]] empfiehlt Specs und PRDs in abschließbaren GitHub-Issues, ADRs dagegen im Repo. Das widerspricht der dauerhaften Feature-Spec als Standardablage. Offen bleibt je Projekt, welche Anforderungen nach der Umsetzung weiter benötigt werden und wie deren Auffindbarkeit erhalten wird; die Quelle liefert keinen Vergleich beider Ablageformen.
 
 - Einzige bisherige Quelle, selbst nur als Sekundärfassung ohne geprüfte Primärquelle vorliegend — keine unabhängige Zweitbestätigung.
 - Verhältnis zu [[Plan-first-mit-getrenntem-Review]] und [[Handoff-Doc]]: Dieses Pattern teilt die Grundidee (persistenter Plan, externes Gedächtnis über Kontextlimits) mit beiden, ist aber breiter (fünf statt ein bis zwei Dateien) und auf die gesamte Feature-Lebensdauer statt auf eine einzelne Planungsphase oder einen einzelnen Übergabepunkt angelegt — keine Dublette, sondern eine aufwendigere, dauerhaftere Umsetzung derselben Grundidee.

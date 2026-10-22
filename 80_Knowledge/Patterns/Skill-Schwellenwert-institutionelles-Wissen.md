@@ -33,8 +33,11 @@ Faustregel für den Zeitpunkt der Skill-Erstellung: Alles, was mehr als einmal a
 - 2026-09-27 · [[2026-09-27-anthropic-academy-sdlc-playbook]] · meinung — Anthropic nennt dieselbe Faustregel (Skill nur für konsistent anzuwendendes institutionelles Wissen) und ergänzt, dass Skills beratend sind und Pflichtregeln zusätzlich einen Hook oder Review-Durchgang brauchen. Herstellerleitfaden ohne Messdaten.
 - 2025-10-31 · [[2025-10-31-agenticjames-best-claude-skills-for-agentic-coding]] · meinung — Brand- und Debugging-Skills als dynamisch geladene Dokumente; reine Empfehlung ohne Belege.
 - 2026-07-03 · [[2026-07-03-neilzegh-2072977540193378428]] · meinung — Pflichtfrage in `CLAUDE.md` nach jeder Aufgabe, ob wiederverwendbares Wissen entstand; Erfahrungsaussage ohne Messung, Filterkriterium fehlt.
+- 2026-10-12 · [[2026-10-12-promptgefluester-wisst-ihr-was-der-krasseste-trick-is-der-ziemlich-einfach-is-aber-den]] · meinung — Eine Retrospektive nach abgeschlossenen Prozessen soll wiederholt neu ausgeführte Aufgaben erkennen und daraus Skill-Kandidaten vorschlagen; damit wird die Wiederholung als beobachtbares Signal in einen laufenden Reviewprozess eingebaut. Die behaupteten Migrationserleichterungen sind unkontrollierte Selbstberichte beziehungsweise Prognosen; weder Wirksamkeit neuer Skills noch automatische Qualitätssteigerung ist belegt.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-22: [[2026-10-12-promptgefluester-wisst-ihr-was-der-krasseste-trick-is-der-ziemlich-einfach-is-aber-den]] verspricht Verbesserung durch Retrospektiven und Skill-Vorschläge; [[2026-10-12-promptgefluester-mit-diesem-video-geh-ich-in-risiko-1]] berichtet vom selben Autor wiederkehrende Fehler trotz Retrospektiven. Wiederholung ist ein Signal für einen Kandidaten, kein Nachweis der Wirksamkeit des erzeugten Skills.
 
 - Einzige bisherige Quelle, unbelegte Team-Selbstauskunft ohne Vorher-Nachher-Messung.
 - Offene Frage: Wie unterscheidet sich dieser Schwellenwert-Ansatz von der bereits belegten Faustregel „Skill vs. Rule“ in [[Erweiterungs-Ebenen-Zuordnung]] (Litmus-Test „würde ich wollen, dass die Instruktion auch gilt, wenn ich nicht aktiv daran denke?“) — beide adressieren, wann etwas ein Skill wird, aber aus unterschiedlichen Richtungen (Häufigkeit vs. Geltungsbereich).

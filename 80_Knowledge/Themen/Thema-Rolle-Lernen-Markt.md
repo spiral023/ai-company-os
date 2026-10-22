@@ -1,6 +1,6 @@
 # Rolle, Lernen & Markt
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit. Der Wandel des gesamten Entwicklungsprozesses gehört zu sdlc.
 
@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** ki-adoption (3), reverse engineering (3), pilotbewertung (2), befähigung (2), use case (2), evals (2), trust the harness (2), rea (2), codebase understanding (2), review (2), alignment (2), ki-chancen, benchmarkgrenzen, swe-bench, arbeitsmarkt, junior-entwickler, studieninterpretation, lernen, agent-steuerung, entwicklerrolle
+- **Häufig in den Quellen:** ki-adoption (3), reverse engineering (3), rea (3), pilotbewertung (2), use case (2), befähigung (2), evals (2), trust the harness (2), betriebsleistung (2), nutzerfeedback (2), produktwert (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), ki-chancen, swe-bench, benchmarkgrenzen, studieninterpretation
 
 ## Verwandte Themen
 
@@ -19,22 +19,29 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - [[Thema-Einstieg-Best-Practices]] — Einstieg & Best Practices
 - [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
 
-## Patterns (4)
+## Patterns (5)
 
 - [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 3 Belege
 - [[Claude-als-Lernwerkzeug]] · meinung · 4 Belege
-- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 16 Belege
-- [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] · meinung · 3 Belege
+- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 20 Belege
+- [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] · meinung · 4 Belege
+- [[Produktwert-jenseits-des-reproduzierbaren-Codes]] · meinung · 2 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-dokumentieren]], [[Intent-Engineering-als-dritte-Schicht]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-dokumentieren]], [[Intent-Engineering-als-dritte-Schicht]], [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]], [[Produktreife-durch-echte-Testnutzer]]
 
-## Quellen (20)
+## Quellen (26)
 
+- [[2026-10-14-promptgefluester-rea-reverse-engine-anything-im-augenblick-auf-github-trending-mit-239]] — Promptgeflüster nutzt den Hype um `REA` als Anlass, den Wert eines Nachbaus von Wartung, Infrastruktur und Nutzerbeziehungen abzugrenzen.
+- [[2026-10-14-promptgefluester-entropic-baut-sich-seinen-eigenen-aehm-gitt-baut-sich-sein-eigenes-gitt]] — Promptgefluester leitet am 14.10.2026 aus Anthropics Source-Control-Projekt weitreichende Zukunftsthesen ab.
+- [[2026-10-14-kimmonismus-2110279443998445652]] — `@kimmonismus` meint, Jack Clarks Annahmen passten zur Prognose rekursiver Selbstverbesserung aus `AI 2027`.
 - [[2026-10-13-emilkowalski-2109974810650390696]] — Emil Kowalski warnt davor, mit der Ausführung auch das Denken an Agenten zu delegieren.
 - [[2026-10-13-ai-mit-arnie-ki-kopiert-jede-software-und-jetzt]] — Arnie vertritt eine Marktthese: Viele Nutzer werden keine Entwickler, sondern beschreiben einer KI ihren Bedarf und erhalten im Hintergrund kleine passende Anwendungen oder Zugriff auf vorhandene Soft
+- [[2026-10-12-promptgefluester-warum-meiner-meinung-nach-software-service-und-aeh-plattformen-mit-ki]] — Promptgeflüster argumentiert gegen die Gleichsetzung von leicht reproduzierbarem Code und wertloser Software.
+- [[2026-10-12-promptgefluester-ich-werde-oft-gefragt-was-arbeite-ich-denn-eigentlich-noch-wenn-die-ki]] — Promptgefluester beschreibt am 12.10.2026 seine Rolle beim parallelen Betrieb zahlreicher Projekte.
 - [[2026-10-11-hood-informatik-wird-code-jetzt-wertlos]] — Hood Informatik argumentiert, dass KI die Kosten des Verstehens und Nachbauens von Software senkt, während Wartung, Fachverständnis und verlässlicher Betrieb ihren Wert behalten.
 - [[2026-10-09-lukepierceops-2108655186080342138]] — Luke Pierce beschreibt KI-Adoption als laufende Organisationsaufgabe: Ein Champion mit geschützter Arbeitszeit führt ein Team mit Fachbereichsvertretern.
 - [[2026-10-08-heise-dekompilierung-per-ki-warum-closed-source-laut-r]] — Malte Kirchner berichtet bei Heise über Eric S.
+- [[2026-10-03-philgueth-kaum-jemand-versteht-welche-jobs-wirklich-von-ki-bedroht-sind-ich-sprech]] — Philgueth argumentiert am 03.10.2026 über KI und Berufe.
 - [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]] — Florian Schünemann beschreibt Fähigkeiten für den sinnvollen Einsatz von Agenten.
 - [[2026-09-17-anthropic-how-claude-code-is-used-in-practice]] — Menschen treffen die Planungsentscheidungen, der Agent die Ausführung, und mehr Domänenwissen bringt längere autonome Ketten und höhere Erfolgsquoten; Steuerung verlagert sich auf Spezifikation und Verifikation.
 - [[2026-09-13-stefanantonelli-du-brauchst-keinen-entwickler-um-mit-ki-etwas-zu-bauen]] — Fachexpertise statt Programmierkenntnis erhöht laut Caption die Autonomie pro Anweisung, weil sie Ziel und Prüfkriterien liefert; die Studie selbst wurde nicht gelesen.
@@ -53,6 +60,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-21-mattpocockuk-2112880319934165307]]
+- [[2026-10-16-math_rachel-2111238648188584306]]
+- [[2026-10-15-vincentmumme-greg-isenberg-ist-wahrscheinlich-aktuell-einer-der-wichtigsten]]
 - [[2026-10-14-andrewcurran-2110444907966181544]]
 - [[2026-10-13-matt-pocock-tell-your-agents-to-care-about-the-codebase]]
 - [[2026-10-12-julian-ivanov-ki-automat-ki-kopiert-jetzt-jede-software-und-keiner-kann-e]]

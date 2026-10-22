@@ -45,8 +45,11 @@ Der Katalog lässt sich mit Security-Checklisten erweitern: Row Level Security, 
 - 2026-08-09 · [[2026-08-09-julian-ivanov-ki-automat-5-claude-code-skills-die-dir-wirklich-arbeit-abn]] · meinung — Die Skill-Übersicht beschreibt eine Kartierung von Eingabeflächen, spezialisierte Fehlersuche und Widerlegungsversuche durch andere Agenten als die Finder. Der Ablauf kann Befunde nachvollziehbarer machen, beweist aber weder vollständige Sicherheitsabdeckung noch einen wirtschaftlichen Vorteil der zusätzlichen Parallelisierung.
 - 2026-10-16 · [[2026-10-16-voxyz_ai-2111079716832886886]] · meinung — Drei Testkonten und getrennte Prüfgruppen machen Kontengrenzen, direkte API-Aufrufe und nicht nachgewiesene Fälle explizit; der Post beschreibt einen Auftrag, keine hier ausgeführten Angriffe.
 - 2026-10-17 · [[2026-10-17-voxyz_ai-2111442102756463077]] · meinung — Die Checkliste verbindet Idempotenz, Zahlungszustände, Zugriffsende und isolierte Restore-Tests mit getrennten Code- und Dashboardbelegen; Anbieter- und Rechtsaussagen sind ungeprüfter Prüfbedarf.
+- 2026-10-19 · [[2026-10-19-voxyz_ai-2112302775547679169]] · meinung — Vox präzisiert den Prüfumfang bis zum ersten Produkterfolg durch vier Personas, sequenzielle Browsernutzung, Screenshotbelege, deduplizierte Befunde und einen erneuten Durchlauf mit vier frischen Agents ohne Befundliste. Die Zahl betroffener Personas ist keine empirische Nutzerhäufigkeit und ersetzt keine reale Testgruppe.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-22: [[2026-10-19-voxyz_ai-2112302775547679169]] erweitert den ursprünglich lesenden Prüfauftrag um lokale oder Preview-Testinteraktionen und einen begrenzten Korrekturlauf. Testdaten, erlaubte Änderungen und menschlich zu prüfende Preis-, Rechts- und Datenschutzbefunde brauchen einen expliziten Scope. Vier simulierte Personas und ihre Rückkehrabsicht sind keine reale Nutzerstichprobe; [[Produktreife-durch-echte-Testnutzer]] liefert eine andere Art von Evidenz.
 
 - 2026-10-09 · [[2026-10-04-emilkowalski-2106752670405099523]] beschreibt mit `/break-ui` eine Variante mit Daten-Fixture und anschließenden Korrekturen. Das erweitert den ursprünglich lesenden Prüfauftrag; Prüfen, Erzeugen von Testdaten und Codeänderungen brauchen jeweils klaren Scope. Rendering mit Extremdaten belegt keine vollständige Release- oder Hardware-Abnahme.
 

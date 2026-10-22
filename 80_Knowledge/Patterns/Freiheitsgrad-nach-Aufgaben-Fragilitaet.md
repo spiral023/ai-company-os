@@ -40,8 +40,12 @@ Instruktions-Spezifität wird entlang einer Skala von High Freedom bis Low Freed
 - 2026-07-15 · [[2026-07-15-xudong07452910-2077246527756775933]] · meinung — Fasst die GPT-5.6-Prompt-Guidance als Task-Vertrag zusammen (Ziel, Erfolgskriterium, Pflichtbelege, Stopp-Regel, Bestätigungsaktionen) statt Schrittvorgaben. Stützt den Gradienten bei robusten Aufgaben, sagt aber nichts zu fragilen Operationen; Zweitverwertung ohne Messdaten.
 - 2026-07-24 · [[2026-07-24-claude-the-new-rules-of-context-engineering-for-claude]] · meinung — Starre Kommentarverbote werden im Herstellerbericht durch Orientierung an Kommentarhäufigkeit und Idiom des umgebenden Codes ersetzt. Der zusätzliche Urteilsspielraum ist modell- und aufgabenabhängig; er begründet keine Lockerung kritischer Sicherheits- oder Freigabegrenzen.
 - 2026-10-17 · [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]] · meinung — Vorgestellter Skill führt kreative Arbeit über erkennbare Ergebnismerkmale wie bewegliche Assets und wortbezogene Animation statt jeden Umsetzungsschritt; höhere Qualität durch mehr Freiheit ist nicht vergleichend geprüft, konkrete Branding-/Timing-Verträge bleiben nötig.
+- 2026-10-19 · [[2026-10-19-promptgefluester-wir-neigen-dazu-dass-wir-beim-aehm-prompting-der-ki-sagen-aehm-8]] · meinung — Der Autor warnt vor einer unbeabsichtigten Rechercheverengung durch wenige Beispiele und schlägt strukturierte Recherche mit abgeleiteten Suchfragen vor; das rechtfertigt keine allgemeine Ablehnung präziser Vorgaben oder unbegrenzte Recherche.
+- 2026-10-14 · [[2026-10-14-poteto-2110496830429839869]] · meinung — Lauren verdichtet wiederkehrende Agentenkorrekturen in kurze Engineering-Prinzipien und lässt benennen, welche konkrete Entscheidung ein Prinzip verändert hat; diese deklarierte Anwendung ist kein gemessener Qualitätsgewinn und ersetzt bei fragilen Operationen keine deterministische Vorgabe.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-22: [[2026-10-19-promptgefluester-wir-neigen-dazu-dass-wir-beim-aehm-prompting-der-ki-sagen-aehm-8]] fordert breite, tiefe Recherche und warnt vor verengenden Beispielen. Die pauschale Forderung ist nicht auf jede Aufgabe übertragbar: Bei fragilen Operationen können präzise Vorgaben weiterhin erforderlich sein; Rechercheumfang braucht eine auftragsbezogene Grenze.
 
 - Keine bekannt.
 

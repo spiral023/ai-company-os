@@ -1,6 +1,6 @@
 # KI-Risiken & Sicherheitsvorfälle
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Systeme: Risiken für Minderjährige, übermäßiges Vertrauen, Kontrollverlust, existenzielle Risiken, Fehlverhalten, Missbrauch, KI-gestützte Cyberangriffe und Vorfälle an KI-Plattformen oder mit autonomen Agents. Warnungen, Risikoszenarien und dokumentierte Vorfälle unterscheiden; bei Angriffen die Rolle von KI als Werkzeug, Ziel oder handelnder Agent festhalten. Technische Schutzmaßnahmen gehören zu sicherheit, Prüf- und Freigabeverfahren zu verifikation.
 
@@ -9,7 +9,7 @@ Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Sys
 - **Hauptkeyword:** Risiken von KI
 - **Long-Tail:** KI-Gefahren für Kinder; Risiken von KI-Chatbots; KI und kritisches Denken; KI-gestützte Hackerangriffe; Sicherheitsvorfälle mit KI-Agents; Hugging Face KI-Vorfall; Sandbox Escape bei AI-Evaluierungen; KI-Warnungen und belegte Vorfälle unterscheiden; Kontrollverlust durch KI; Existenzielle KI-Risiken; KI zur Verteidigung gegen KI
 - **Fragen:** Welche KI-Risiken sind belegt und welche sind Warnungen? / Welche Risiken betreffen Minderjährige besonders? / Welche Rolle hatte KI bei einem Angriff: Werkzeug, Zielsystem oder handelnder Agent? / Was lässt sich aus konkreten KI-Sicherheitsvorfällen lernen?
-- **Häufig in den Quellen:** ai 2027 (2), risiken von ki (2), alignment (2), historische einordnung, ki-risiken, szenarien, trefferquote, szenario, bewertungskriterien, prognoseprüfung, primärberichte, hugging-face-vorfall, kommunikationswege, scorer-manipulation, defensive ki, persönliche risikoeinschätzung, jacob coxon, selbstverbessernde ki, übermenschliche ki-fähigkeiten, kontrollverlust durch ki
+- **Häufig in den Quellen:** ai 2027 (3), risiken von ki (2), alignment (2), ki-risiken, szenarien, historische einordnung, trefferquote, szenario, bewertungskriterien, prognoseprüfung, kommunikationswege, scorer-manipulation, hugging-face-vorfall, primärberichte, persönliche risikoeinschätzung, defensive ki, existenzielle ki-risiken, kontrollverlust durch ki, jacob coxon, forscherwarnung
 
 ## Verwandte Themen
 
@@ -36,5 +36,6 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Externe-Evaluatoren-mit-daue
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-14-kimmonismus-2110279443998445652]]
 - [[2026-10-10-satyanadella-2108931348857827686]]
 - [[2026-08-19-openai-2090165328290701800]]

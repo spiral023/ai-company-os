@@ -1,6 +1,6 @@
 # Agent-Dateien & Memory
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen. Inhaltliche Aufnahme, Aufbereitung, Retrieval und regelmäßige Pflege von Quellen stehen in wissensarbeit.
 
@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** agents.md (9), claude.md (8), progressive disclosure (6), context engineering (4), agent-datei (4), agent_docs (2), instruktionsbudget (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), llm wiki (2), obsidian (2), /doctor (2), test (2), regeln (2), blockadebericht (2), agent bericht (2), handlungsbedarf (2), auto mode (2)
+- **Häufig in den Quellen:** agents.md (9), claude.md (8), progressive disclosure (6), context engineering (4), agent-datei (4), agent_docs (2), instruktionsbudget (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), obsidian (2), llm wiki (2), /doctor (2), regeln (2), test (2), blockadebericht (2), agent bericht (2), handlungsbedarf (2), auto mode (2)
 
 ## Verwandte Themen
 
@@ -48,6 +48,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-er
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-16-poteto-2111133080526495985]]
 - [[2026-10-13-mattpocockuk-2109973273924579720]]
 - [[2026-10-05-repo-mattpocock-skills-retro]]
 - [[2026-10-05-repo-claude-code-doctor-insights]]

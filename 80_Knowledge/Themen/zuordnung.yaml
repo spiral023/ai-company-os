@@ -61,6 +61,11 @@ muster:
     keywords: [Interaktive Schulung, Curriculum, Lernziele, Human Review Gate, E-Learning mit KI, Voiceover, Interaktive HTML-Anwendung, User-invoked Skill]
     neben: [planung]
     synonyme: [Trainingskurs, Kursgenerierung, Curriculum-Freigabe, Agent-Generated Training]
+  Ambitionscheck-mit-Zielhoehe-Tiefe-und-Reichweite:
+    haupt: prompting
+    keywords: [Ambitionscheck, Zielhöhe, methodische Tiefe, fachliche Reichweite]
+    neben: [verifikation]
+    synonyme: [Ambition Check, Ziel-Tiefe-Reichweite]
   Anti-Rationalization-Tables:
     haupt: skills
     keywords: [Anti-Rationalization, Rationalization Table, Agent Skills, Red Flags, Skill-Anatomie, Workflow-Disziplin, Ausreden-Tabelle, Verifikation überspringen]
@@ -116,6 +121,11 @@ muster:
     keywords: [Claude Code Deny Rules, Secrets Protection, .env schützen, Permission Rules, managed-settings.json, Advisory vs. Enforcement, Command Smuggling, requirements.toml]
     neben: [erweiterungen]
     synonyme: [Permissions Deny, Deny-Liste, Secret-Schutz, Enforcement statt Empfehlung]
+  Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review:
+    haupt: verifikation
+    keywords: [Vertical Harness, Domänen-Evals, Datenqualität, Agent-Rechte, Reviewoberfläche]
+    neben: [wissensarbeit, erweiterungen]
+    synonyme: [Vertical Harness, Domänen-Harness]
   Entscheidung-per-Scoring-statt-Generierung:
     haupt: modelle-kosten
     keywords: [Fixed-Answer Scoring, Decision Model, Logits, SGLang, Klassifikation, LLM-Routing, Kalibrierung, Decisions API]
@@ -206,6 +216,11 @@ muster:
     keywords: [KI-Adoption, Use Case, Befähigung, Pilotbewertung]
     neben: [planung, verifikation]
     synonyme: []
+  KI-Dienste-nach-Vertrag-und-Datenfluss-pruefen:
+    haupt: sicherheit
+    keywords: [KI-Vertragsprüfung, Produktedition, Datenfluss, Connectoren, Konfigurationsprüfung]
+    neben: [erweiterungen]
+    synonyme: [KI-Dienst-Prüfung, Edition-Vertrag-Datenfluss]
   Klein-und-komposierbar:
     haupt: skills
     keywords: [mattpocock/skills, Composable Skills, Skill-Bibliothek, GSD, BMAD, Spec-Kit, Workflow-Frameworks, Wayfinder]
@@ -241,6 +256,11 @@ muster:
     keywords: [MCP, Model Context Protocol, Code Execution with MCP, Tool Definitions, Context Bloat, Tool Schemas, Sandbox, Token-Kosten von MCP]
     neben: [kontext]
     synonyme: [MCP Code Mode, MCP-Kontextkosten, Code Execution MCP]
+  Menschliche-Aufsicht-als-eigene-Leistung-pruefen:
+    haupt: verifikation
+    keywords: [Human in the Loop, Aufsichtsqualität, Pre-Commitment, Canary-Aufgaben, Reviewermüdung]
+    neben: [rolle-markt]
+    synonyme: [HITL-Qualitätsprüfung, Menschliche Reviewleistung]
   Metrikband-gestufte-Agent-Autonomie:
     haupt: autonomie
     keywords: [Graduated Autonomy, Sigma-Abweichung, Anomaly Detection, Runbook Automation, Agentic Ops, Baseline Metrics, Read-only Diagnose, Incident Response]
@@ -266,6 +286,16 @@ muster:
     keywords: [Plan Mode, plan.md, Plan-then-Implement, Builder Reviewer Verifier, Single-Model-Blindheit, Discovery, Code Review Agent, Separate Reviewer]
     neben: [verifikation]
     synonyme: [Plan First, Planning Mode, Plan-Review-Trennung, Research Plan Implement]
+  Produktreife-durch-echte-Testnutzer:
+    haupt: verifikation
+    keywords: [echte Testnutzer, Produktreife, User Feedback, Pilotnutzer, QA-Verantwortung, simulierte Personas]
+    neben: [rolle-markt]
+    synonyme: [Reale Testnutzer, Pilotnutzer-Feedback, Produktreife durch Nutzung]
+  Produktwert-jenseits-des-reproduzierbaren-Codes:
+    haupt: rolle-markt
+    keywords: [Produktwert, Software-Clones, Betriebsleistung, Nutzerfeedback, Netzwerkeffekte]
+    neben: [verifikation]
+    synonyme: [Code versus Produkt, SaaS-Wert trotz KI]
   Projektkarte-als-Status-und-Entscheidungsartefakt:
     haupt: planung
     keywords: [projektkarte, projektstatus, meilenstein, blockaden, entscheidung, autonomer agent]
@@ -1199,6 +1229,11 @@ quellen:
     kernaussage: Prompts, die Rückfragen und unbequemes Feedback erzwingen, verbessern Entscheidungen, hängen aber davon ab, wie viel Kontext die KI über Person und Geschäft hat.
     keywords: [Pre-Mortem, Self-Interview, Board Member Prompt, Serviettentest, Entscheidungs-Prompts, Prompt Engineering, KI als Sparringspartner, Strategieplanung]
     neben: [planung]
+  2026-07-14-vischer-teil-31-ki-tools-wie-es-um-den-schutz-der-daten:
+    haupt: sicherheit
+    kernaussage: Die VISCHER-Autoren David Rosenthal, Lucian Hunger und Jonas Baeriswyl beurteilen KI-Angebote am `14.07.2026` anhand konkreter Vertrags- und Konfigurationskombinationen.
+    keywords: [KI-Vertragsprüfung, Produktedition, Connector-Datenfluss, DSG und DSGVO, Vertragsstand Juli 2026]
+    neben: [erweiterungen]
   2026-07-15-xudong07452910-2077246527756775933:
     haupt: modelle-kosten
     kernaussage: Der Tweet fasst auf Chinesisch den Prompt-Guide von OpenAI zu GPT-5.6 Sol zusammen (Stand 2026-07-15) und zieht daraus eine Folgerung für `AGENTS.md`.
@@ -1620,6 +1655,11 @@ quellen:
     kernaussage: Günstige Modelle explorieren, ein mittleres implementiert, das stärkste prüft nur bei Bedarf; Rollen gehören per Konfiguration statt Prosa festgelegt und in den Logs verifiziert.
     keywords: [Codex Subagents, Agent Tree, GPT-6 Astra, GPT-6 Luna, GPT-6 Sol, model_reasoning_effort, Custom Agents, Modell-Routing pro Rolle, Kosten pro Task]
     neben: [modelle-kosten]
+  2026-09-10-promptgefluester-einer-der-groessten-fehler-den-ich-bei-vielen-vibe-codern-mit-ki:
+    haupt: planung
+    kernaussage: '`@promptgefluester` vergleicht Softwareentwicklung mit dem Aufbau einer Fertigung: Vor dem Produkt werden benötigte Werkzeuge, Prozesse und Rahmenbedingungen betrachtet.'
+    keywords: [Arbeitsumgebung vor Code, Verifikationsstrategie, Vibe Coding Vorbereitung]
+    neben: [verifikation]
   2026-09-12-darioamodei-2098773920774074715:
     haupt: ki-risiken
     kernaussage: Dario Amodei kündigt am 12.09.2026 einen Vorschlag zum langsameren Fortschritt an der KI-Frontier an.
@@ -1770,6 +1810,11 @@ quellen:
     kernaussage: Opus 5.5 in Claude Code führt den Coding Agent Index, kostet aber pro Task 21 Prozent mehr, weil der Tokenverbrauch die Preissenkung überkompensiert.
     keywords: [Coding Agent Index, Claude Code Opus 5.5, Kosten pro Task, Tokenverbrauch, Terminal-Bench 4.0, DeepSWE, Pareto-Front, Codex GPT-6 Sol, Coding Agent Benchmark]
     neben: []
+  2026-09-24-floknowsai-open-claw-ist-zurueck-und-spielt-jetzt-wieder-in-einer-liga-mit-kodex:
+    haupt: frameworks
+    kernaussage: Floknowsai beschreibt am 24.09.2026 eine erneuerte `OpenClaw`-Oberfläche für selbstgehostete Team-Agenten.
+    keywords: [OpenClaw, gemeinsame Agent-Sitzungen, Session-Zuständigkeiten]
+    neben: [orchestrierung]
   2026-09-24-mattpocock-ai-coding-dictionary:
     haupt: kontext
     kernaussage: Matt Pococks AI Coding Dictionary ordnet 71 Begriffe in sieben Bereiche.
@@ -1780,6 +1825,11 @@ quellen:
     kernaussage: ORF.at berichtet über eine Warnung des früheren Google-Managers für Nutzersicherheit Tom Siegel gegenüber Reuters.
     keywords: [Risiken von KI, KI-Gefahren für Kinder, Risiken von KI-Chatbots, Minderjährige, Jugendschutz, Kritisches Denken, Altersüberprüfung, Youth AI Safety Institute, Tom Siegel, Common Sense Media]
     neben: []
+  2026-09-25-promptgefluester-weil-mich-viele-danach-gefragt-haben-wollt-ich-jetzt-kurz-noch-n:
+    haupt: orchestrierung
+    kernaussage: '`@promptgefluester` erläutert ein Terminal-Setup, in dem ein Orchestrator laufende Sessions betreut und ein separater Aufgabenmanager Prioritäten und Aufgabenstand hält.'
+    keywords: [Orchestrator und Taskmanager, ToDoManager, Fehler als Testfälle]
+    neben: [verifikation]
   2026-09-25-trq212-2103576349499855160:
     haupt: modelle-kosten
     kernaussage: Effort kauft Verifikationstiefe und übersehene Randfälle, keinen besseren Ansatz; ein stärkeres Modell auf High kann ein schwächeres auf Max bei halben Tokens einholen.
@@ -1838,6 +1888,11 @@ quellen:
       und GPU.
     keywords: [modell-eskalation, modell, token]
     neben: [modelle-kosten]
+  2026-09-28-vincentmumme-prompt-engineering-ist-schon-lange-tot-und-ich-weiss-nicht-ob-ihr-euch:
+    haupt: prompting
+    kernaussage: Vincent Mumme erläutert am 28.09.2026 ein Agenten-Promptschema.
+    keywords: [Goal Return Format Warnings Context, Zielklärung, Auftragsstruktur]
+    neben: [planung]
   2026-09-29-artificialanlys-2105025585332605357:
     haupt: modelle-kosten
     kernaussage: Artificial Analysis (Drittanbieter, Intelligence Index v4.3.2) misst `GPT-6.1 Sol`, das `GPT-6 Sol` nach sieben Tagen ablöst.
@@ -1983,6 +2038,16 @@ quellen:
     kernaussage: Markus Lanz und Richard David Precht diskutieren, welche KI-Risiken konkret begründbar sind und welche Rolle wirtschaftliche sowie politische Interessen in Warnungen spielen.
     keywords: [KI-Risikonarrative, Lanz und Precht, KI-Unternehmensanreize, menschliche Kontrolle, Risikokommunikation]
     neben: [rolle-markt]
+  2026-10-03-philgueth-kaum-jemand-versteht-welche-jobs-wirklich-von-ki-bedroht-sind-ich-sprech:
+    haupt: rolle-markt
+    kernaussage: Philgueth argumentiert am 03.10.2026 über KI und Berufe.
+    keywords: [implizites Wissen, Informationszugang, KI und Berufsprognosen]
+    neben: [wissensarbeit]
+  2026-10-03-vincentmumme-andrej-karpathy-einer-der-fuehrenden-ki-forscher-erfinder-vom-llm-wiki:
+    haupt: wissensarbeit
+    kernaussage: Vincent Mumme empfiehlt, umfangreiche KI-Ausgaben gezielt in andere Darstellungen übersetzen zu lassen.
+    keywords: [KI-Output verständlich machen, HTML statt Text, Diagramme und Erklärvideos]
+    neben: [verifikation]
   2026-10-04-emilkowalski-2106752670405099523:
     haupt: prototyping
     kernaussage: 'Emil Kowalski kündigt zwei Ergänzungen für sein [Skills-Repository](https://github.com/emilkowalski/skills) an:'
@@ -1994,6 +2059,11 @@ quellen:
       eigenen Skill-Da'
     keywords: [mattpocock/skills v1.3, GLOSSARY.md, skill diff, plugin updates, session usage, skill, skills, plugin, trigger, eval, mattpocock, workflow]
     neben: [skills]
+  2026-10-04-promptgefluester-ich-zeig-ja-grade-wie-ich-ueber-280-webseiten-in-den-naechsten-paar:
+    haupt: prototyping
+    kernaussage: '`@promptgefluester` beschreibt einen geplanten agentischen Relaunch vieler Affiliate-Portale: Technische `SEO`-Prüfungen und Nutzungssignale sollen Änderungen an Inhalt, Struktur und Conversion-Elemen'
+    keywords: [datenbasierte Websiteoptimierung, technisches SEO, Wirkungsmessung]
+    neben: [verifikation]
   2026-10-04-voxyz_ai-2106783910055006342:
     haupt: agent-dateien
     kernaussage: Vox empfiehlt eine kompakte `AGENTS.md` gegen vorschnelle Kompatibilitätsschichten, ungenutzte Altdateien und Tests für belanglose Details.
@@ -2066,6 +2136,11 @@ quellen:
       Textoutput.'
     keywords: [intelligence index, gpt-6, benchmark, terminal-bench, modell-eskalation, modell, kosten, token, mistral, deepseek, open weights, offene gewichte, preview]
     neben: [open-source-llms]
+  2026-10-06-promptgefluester-vielleicht-mal-zur-begruendung-warum-ich-euch-zeig-wie-ich-280-website:
+    haupt: orchestrierung
+    kernaussage: '`@promptgefluester` beschreibt eine zusätzliche Koordinationsebene über einzelnen Projekt-Orchestratoren.'
+    keywords: [Meta-Orchestrator, projektübergreifende Agenten, Nutzungslimits drosseln]
+    neben: [modelle-kosten]
   2026-10-06-voxyz_ai-2107455844992299272:
     haupt: planung
     kernaussage: 'Vox schlägt für längere autonome Arbeit mit `Opus 5.5` einen `project-map`-Subagent vor: `medium` für die Karte, während die Hauptsession mit `high` weiterarbeitet.'
@@ -2326,6 +2401,26 @@ quellen:
     kernaussage: 'Julian Ivanov unterscheidet zwei Arbeitsweisen: ausgelieferte Programmdateien analysieren oder ein bestehendes Programm bedienen und sein beobachtetes Verhalten neu implementieren.'
     keywords: [REA, PhotoCraft, ArtCraft, Reverse Engineering, Showcase-Grenzen]
     neben: [verifikation, rolle-markt]
+  2026-10-12-promptgefluester-ich-werde-oft-gefragt-was-arbeite-ich-denn-eigentlich-noch-wenn-die-ki:
+    haupt: rolle-markt
+    kernaussage: Promptgefluester beschreibt am 12.10.2026 seine Rolle beim parallelen Betrieb zahlreicher Projekte.
+    keywords: [menschliche Agentensteuerung, Kundenanforderungen, Entscheidungsarbeit]
+    neben: [orchestrierung]
+  2026-10-12-promptgefluester-mit-diesem-video-geh-ich-in-risiko-1:
+    haupt: skills
+    kernaussage: '`@promptgefluester` beschreibt „Skillchains“ als Antwort auf einen gewachsenen Haupt-Skill, dessen wiederkehrende Fehler durch Retrospektiven allein nicht verschwanden.'
+    keywords: [Skillchain, rekursive Skills, Kontextvertrag, Abbruchbedingungen]
+    neben: [kontext]
+  2026-10-12-promptgefluester-warum-meiner-meinung-nach-software-service-und-aeh-plattformen-mit-ki:
+    haupt: rolle-markt
+    kernaussage: Promptgeflüster argumentiert gegen die Gleichsetzung von leicht reproduzierbarem Code und wertloser Software.
+    keywords: [SaaS trotz KI, Produktwert, Nutzerfeedback, Betriebsleistung]
+    neben: [verifikation]
+  2026-10-12-promptgefluester-wisst-ihr-was-der-krasseste-trick-is-der-ziemlich-einfach-is-aber-den:
+    haupt: skills
+    kernaussage: '`@promptgefluester` empfiehlt, abgeschlossene Agentprozesse auf Fehler und wiederkehrende Arbeit zu untersuchen.'
+    keywords: [Retrospektive zu Skill, wiederkehrende Agent-Aufgaben, Skill-Kandidaten]
+    neben: [wissensarbeit]
   2026-10-12-sarahfim-2109736893198016898:
     haupt: verifikation
     kernaussage: Sarah beschreibt aus ihrer Rolle als Product-Engineering-Leiterin bei Composio, wie Repositorystruktur und automatisierte Prüfungen Beiträge verschiedener Agenten beherrschbar machen sollen.
@@ -2347,11 +2442,22 @@ quellen:
     kernaussage: Anthropic beschreibt mit Scion einen zentralen Source-Control-Dienst für extrem viele ständig verbundene Agenten und CI-Jobs.
     keywords: [Scion, bedarfsorientierter Checkout, Monorepo-Skalierung, Blob Cache, Source-Control-Infrastruktur]
     neben: [orchestrierung, verifikation]
+  2026-10-13-artificialanlys-2110081938140582085:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis berichtet am 13.10.2026 über `Fish Audio Drama 3 Preview`.
+    keywords: [Drama 3 Preview, TTS-Aussprache-Robustheit, Provider Voice Elo, Controlled Voice Elo]
+    neben: [open-source-llms]
   2026-10-13-emilkowalski-2109974810650390696:
     haupt: rolle-markt
     kernaussage: Emil Kowalski warnt davor, mit der Ausführung auch das Denken an Agenten zu delegieren.
     keywords: [Emil Kowalski, gestalterische Autorschaft, Delegation an KI, eigene Urteilskraft]
     neben: []
+  2026-10-13-felixrieseberg-how-to-be-more-ambitious-a-tutorial-for-humans-w:
+    haupt: prompting
+    kernaussage: 'Felix Rieseberg schlägt vor, KI nicht nur für schnellere Ausführung einzusetzen, sondern Aufgaben auf drei weitere Arten anspruchsvoller zu gestalten: am übergeordneten Ergebnis ausrichten,
+      mit besser'
+    keywords: [Ambitionscheck, Zielhöhe Tiefe Reichweite, Expertenmethoden, externe Validierung]
+    neben: [verifikation]
   2026-10-13-matt-pocock-tell-your-agents-to-care-about-the-codebase:
     haupt: sdlc
     kernaussage: Matt Pocock unterscheidet taktische Aufgabenlösung von strategischer Pflege der Codebasis.
@@ -2362,17 +2468,82 @@ quellen:
     kernaussage: 'Matt Pocock nennt typische Reibungsverluste: überhöhten Effort, lange Skills, aufgeblähte globale Regeln und fehlende Selbstprüfung.'
     keywords: [globale Agent-Regeln kürzen, Tests an Modulschnittstellen, Skill-Evals, aufgabengerechte Abstimmung]
     neben: [agent-dateien, skills]
+  2026-10-13-vincentmumme-wenn-du-das-problem-kennst-dass-du-2-chat-gpt-abos-hast-1-clot-abo-open:
+    haupt: frameworks
+    kernaussage: Vincent Mumme empfiehlt am 13.10.2026 `T3 Code`, um mehrere Coding-Agenten und Accounts in einer Oberfläche zu nutzen.
+    keywords: [T3 Code, Providerwechsel, Accountwechsel, gemeinsame Agentenoberfläche]
+    neben: [orchestrierung]
   2026-10-14-andrewcurran-2110444907966181544:
     haupt: modelle-kosten
     kernaussage: Andrew Curran begegnet dem Einwand, lange Agentenläufe könnten vor allem kapitalkräftigen Entwicklern helfen, mit einer Behauptung über rapide sinkende KI-Kosten.
     keywords: [KI-Inferenzkosten, relativer Preisrückgang, Projektbudget, Kosten je akzeptiertem Ergebnis]
     neben: [rolle-markt]
+  2026-10-14-kimmonismus-2110279443998445652:
+    haupt: rolle-markt
+    kernaussage: '`@kimmonismus` meint, Jack Clarks Annahmen passten zur Prognose rekursiver Selbstverbesserung aus `AI 2027`.'
+    keywords: [AI 2027, Recursive Self Improvement, RSI-Szenario, Jack Clark]
+    neben: [ki-risiken]
+  2026-10-14-poteto-2110496830429839869:
+    haupt: skills
+    kernaussage: Lauren beschreibt für `pstack` knappe Prinzipien-Skills, die sie überwiegend aus eigenen Korrekturen von Agenten gewonnen hat.
+    keywords: [pstack Engineering-Prinzipien, Entscheidungsnachweis, kurze Prinzipien-Skills]
+    neben: [verifikation]
+  2026-10-14-promptgefluester-entropic-baut-sich-seinen-eigenen-aehm-gitt-baut-sich-sein-eigenes-gitt:
+    haupt: rolle-markt
+    kernaussage: Promptgefluester leitet am 14.10.2026 aus Anthropics Source-Control-Projekt weitreichende Zukunftsthesen ab.
+    keywords: [Scion, Git-Ende als Prognose, Agentendurchsatz, Softwareengineering-Rollen]
+    neben: [kontext]
+  2026-10-14-promptgefluester-rea-reverse-engine-anything-im-augenblick-auf-github-trending-mit-239:
+    haupt: rolle-markt
+    kernaussage: Promptgeflüster nutzt den Hype um `REA` als Anlass, den Wert eines Nachbaus von Wartung, Infrastruktur und Nutzerbeziehungen abzugrenzen.
+    keywords: [REA, Clone versus Produktbetrieb, Wartung, Netzwerkeffekte]
+    neben: [verifikation]
   2026-10-15-claude-how-the-claude-code-team-does-code-review-claude:
     haupt: verifikation
     kernaussage: 'Addy Osmani beschreibt den internen Review-Prozess des Claude-Code-Teams: Maschinen übernehmen wiederholbare Fehlersuche, Menschen beurteilen Absicht, Architektur, Risiko und verbleibende
       Prüflücken.'
     keywords: [risikobasiertes Code Review, menschliche Review-Zeit, Reverts, Rollback, commitgebundene Freigabe]
     neben: [sdlc, autonomie]
+  2026-10-15-floknowsai-mit-tea-free-code-steuere-ich-alle-meine-cloud-code-und-kodex-abos-aus:
+    haupt: frameworks
+    kernaussage: Floknowsai beschreibt am 15.10.2026 Zusammenarbeit zwischen `Claude Code` und `Codex` über `T3 Code`.
+    keywords: [T3 Code Nightly, Session-Handoff, selektive Nachrichtenübergabe, MCP-Delegation]
+    neben: [orchestrierung, erweiterungen]
+  2026-10-15-mardehaym-2110763129885835505:
+    haupt: autonomie
+    kernaussage: Mark Ajzenstadt beschreibt am 15.10.2026 den Agentenprozess von Limestone.
+    keywords: [Limestone, ADLC, Plan-Gate, PR-Gate, Sandbox]
+    neben: [verifikation, sicherheit]
+  2026-10-15-poteto-2110757066709356851:
+    haupt: frameworks
+    kernaussage: Lauren Tan beschreibt am 15.10.2026 den Einstieg in ihr `pstack`-Skillpaket.
+    keywords: [pstack, setup-pstack, poteto-mode, Reasoning Budget]
+    neben: [skills]
+  2026-10-15-vincentmumme-greg-isenberg-ist-wahrscheinlich-aktuell-einer-der-wichtigsten:
+    haupt: verifikation
+    kernaussage: Vincent Mumme ordnet Greg Isenbergs Marktbeobachtungen ein.
+    keywords: [Vertical Harness, Domänen-Evals, Datenqualität, Handlungsgrenzen, Reviewoberfläche]
+    neben: [wissensarbeit, rolle-markt]
+  2026-10-16-0xkense1-2111105138290987198:
+    haupt: modelle-kosten
+    kernaussage: 'Kenseis Eigenbenchmark legt nahe: Wiederholt mitgesendeter Kontext bietet mehr Einsparpotenzial als kurze Antworten.'
+    keywords: [Claude Code Token Benchmark, Context Reset, Compaction, Skill Progressive Disclosure, Notizindex Qualitätsverlust, Reasoning Effort, API-Kosten versus Abo-Limits]
+    neben: [kontext, skills]
+  2026-10-16-artificialanlys-2111052531166249039:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis meldet am 16.10.2026 `Liquid AI d1-ultra` auf Rang 1 seines Decision Index `v1.0`.
+    keywords: [Liquid AI d1-ultra, Decision Index v1.0, Non-Hallucination Rate, Accuracy, Latenz]
+    neben: [verifikation]
+  2026-10-16-math_rachel-2111238648188584306:
+    haupt: verifikation
+    kernaussage: Rachel Thomas diskutiert einen Fachbeitrag zur menschlichen Aufsicht über KI-Agenten.
+    keywords: [Human in the Loop, Aufsichtsqualität, Pre-Commitment, Canary-Aufgaben, Batch Review]
+    neben: [rolle-markt]
+  2026-10-16-poteto-2111133080526495985:
+    haupt: verifikation
+    kernaussage: 'Lauren schlägt vor, wiederkehrende Agentkorrekturen möglichst in der Codebasis zu verankern: Architektur vor automatischen Checks, knapper Prosa und gezieltem menschlichem Review.'
+    keywords: [Agent Trust, Architektur-Invarianten, statische Analyse, Testharness, Human Review, Agent Environment Design]
+    neben: [erweiterungen, agent-dateien]
   2026-10-16-voxyz_ai-2111079716832886886:
     haupt: sicherheit
     kernaussage: Vox schlägt einen Pre-Launch-Test mit normalen Konten A und B sowie einem Admin vor.
@@ -2398,3 +2569,58 @@ quellen:
     kernaussage: Vox bündelt 23 Prüfideen vor der ersten Zahlung einer agentengestützt gebauten App.
     keywords: [Pre-Launch-Check, Payment-Idempotenz, Zahlungszustände, isolierter Restore-Test, Zugriffsende]
     neben: [sicherheit]
+  2026-10-18-floknowsai-ria-ist-aktuell-der-gehypteste-ki-skill-macht-deine-ki-agenten-zu:
+    haupt: verifikation
+    kernaussage: Florian beschreibt `REA` als Workflow zum Untersuchen, Verstehen und anschließenden eigenen Umsetzen bestehender Software.
+    keywords: [REA Reverse Engineer Anything, Codefundstellen, Dekompilierung, Pseudocode]
+    neben: [wissensarbeit]
+  2026-10-18-mattpocockuk-2111708560715292675:
+    haupt: erweiterungen
+    kernaussage: Matt Pocock empfiehlt einen schnellen Pre-Commit-Hook gegen übergroße, von Agents bearbeitete Dateien.
+    keywords: [Pre-Commit Hook, Staged Files, Dateigrößenlimit, Bytes pro Token, Lockfile-Ausnahme, Specs in GitHub Issues]
+    neben: [kontext, planung]
+  2026-10-19-artificialanlys-2112218661432000694:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis meldet am 19.10.2026 Fortschritte für `DeepSeek V4.1 Flash 1017`.
+    keywords: [DeepSeek V4.1 Flash 1017, Artificial Analysis Intelligence Index v4.3.2, GDPval-AA, AA-Briefcase, AA-Omniscience, Halluzinationsrate]
+    neben: [open-source-llms]
+  2026-10-19-promptgefluester-wir-neigen-dazu-dass-wir-beim-aehm-prompting-der-ki-sagen-aehm-8:
+    haupt: prompting
+    kernaussage: Der Autor warnt, dass wenige genannte Beispiele eine Recherche unbeabsichtigt verengen können.
+    keywords: [Recherchebreite, Recherchetiefe, Beispiele und Suchraum, Ankereffekt]
+    neben: [planung]
+  2026-10-19-unslothai-2112212605930778830:
+    haupt: open-source-llms
+    kernaussage: Unsloth beschreibt am 19.10.2026 die lokale Ausführung von `DeepSeek V4.1-Flash-1017` mit Dynamic GGUFs.
+    keywords: [DeepSeek V4.1 Flash 1017, Unsloth GGUF, 1-Bit Quantisierung, Top-1-Übereinstimmung, F32-Referenz, Engram SSD Offloading, RAM und VRAM]
+    neben: [modelle-kosten]
+  2026-10-19-voxyz_ai-2112302775547679169:
+    haupt: verifikation
+    kernaussage: Vox beschreibt vier Agent-Perspektiven für den Weg von der Landingpage zum ersten Produkterfolg.
+    keywords: [First User Testing, simulierte Nutzer-Personas, Time to First Success, Playwright Browser QA, Mobile 375px, frischer Review-Kontext]
+    neben: [prototyping, orchestrierung]
+  2026-10-20-artificialanlys-2112582116651466965:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis vergleicht am 20.10.2026 sinkende Kosten fester Intelligence-Index-Schwellen mit steigenden Spitzenkosten.
+    keywords: [Cost of Intelligence, Artificial Analysis Intelligence Index v4.3.2, Benchmark-Schwellen, Kosten pro Aufgabe, aktuelle Preise historischer Modelle]
+    neben: [verifikation]
+  2026-10-21-floknowsai-entropic-hat-gitt-komplett-ersetzt-zumindest-klingt-es-so-auf-social:
+    haupt: kontext
+    kernaussage: Florian ordnet Anthropics `Scion` als spezialisiertes Versionssystem für sehr viele ständig verbundene Agenten und Testjobs ein.
+    keywords: [Scion, bedarfsorientierter Repositoryzugriff, Git-Monorepo, Sekundärbericht]
+    neben: [frameworks]
+  2026-10-21-mattpocockuk-2112880319934165307:
+    haupt: verifikation
+    kernaussage: Matt Pocock empfiehlt eine Lernfolge von persönlicher über interne zu öffentlich zugänglicher Software.
+    keywords: [echte Testnutzer, Produktreife, User Feedback, interne Software, öffentliche Software, QA-Verantwortung]
+    neben: [rolle-markt]
+  2026-10-21-vincentmumme-ich-wurde-gefragt-wie-man-mit-ki-aktuell-die-beste-ui-erstellt-also-die:
+    haupt: prototyping
+    kernaussage: Vincent Mumme empfiehlt, eine eigene Referenzbibliothek aufzubauen und gewünschte Gestaltungsmerkmale damit zu zeigen.
+    keywords: [UI-Referenzbibliothek, Screenshot-Spezifikation, 21st.dev, Stilreferenzen]
+    neben: [wissensarbeit]
+  2026-10-22-cursor-pstack-engineering-skills:
+    haupt: frameworks
+    kernaussage: '`pstack` verbindet Lauren Tans Engineering-Prinzipien mit aufgabenspezifischen Playbooks und getrennten Agent-Rollen.'
+    keywords: [pstack 0.15.29, poteto-mode, Engineering-Playbooks, Verifikations-Skills, Modellrollen]
+    neben: [skills, verifikation]

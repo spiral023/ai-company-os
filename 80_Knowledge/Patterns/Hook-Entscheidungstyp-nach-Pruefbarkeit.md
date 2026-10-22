@@ -38,6 +38,7 @@ Drei Entscheidungsformen stehen zwischen starrem Skript und freiem, unstrukturie
 
 - 2026-10-05 · [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]] · meinung — Pococks `/retro` ordnet mechanische Coding-Verstöße einem Linter, Pre-Commit-Hook oder CI-Job zu und hält `CODING_STANDARDS.md` für Ermessensfragen frei. Nutzer wählen die Vorschläge vor Änderungen aus; automatische Retro-Schleifen bergen laut Autor das Risiko fortgesetzter Umbauten wegen falsch positiver Funde.
 - 2026-10-10 · [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]] · meinung — Die Übersicht unterscheidet ein beschriebenes Anhalten riskanter Befehle mit Bestätigung von Anzeigen für Fortschritt, Cache und Dateiaktivität. Ob ein konkreter Hook die fragliche Aktion vollständig abdeckt und tatsächlich blockiert, müsste separat geprüft werden; ein Panel oder Warntext ist dafür kein allgemeiner Nachweis.
+- 2026-10-18 · [[2026-10-18-mattpocockuk-2111708560715292675]] · meinung — Pocock empfiehlt einen schnellen Pre-Commit-Check nur für gestagte, eigenständig bearbeitete Dateien mit Ausnahmen für Lockfiles und Codegen sowie konkreter Aufteilhilfe. Die Grenze von 5.000 geschätzten Tokens bei Bytes/4 ist bewusst willkürlich und kein empirisches Optimum.
 
 ## Spannungen & offene Fragen
 

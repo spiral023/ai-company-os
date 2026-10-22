@@ -1,6 +1,6 @@
 # Verifikation, Tests & Review
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-17. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates und getrennte Autor-/Prüfkontexte. Dazu gehören risikobasiertes Human Review, menschliche Verantwortung und Freigaben (Human in the Loop), Review-Kapazität sowie PR-Größe und Aufteilung in überschaubare Änderungen. Agent-Autonomie gehört hier hinein, soweit sie Prüf- und Freigabeentscheidungen betrifft; autonome Ausführung steht in autonomie, der gesamte Entwicklungsprozess in sdlc.
 
@@ -9,7 +9,7 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass; Codequalität mit KI und Menschen; Human in the Loop beim Code Review; Risikobasiertes Human Review; Agent-Autonomie und menschliche Freigaben; Große KI-generierte PRs prüfen; Pull Requests in prüfbare Änderungen aufteilen; Review-Kapazität bei parallelen Agents
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug? / Welche Änderungen brauchen menschliches Review und welche automatische Checks? / Wer trägt die Verantwortung, wenn ein Agent Code freigibt? / Was tun, wenn PRs zu groß für ein gründliches manuelles Review werden? / Wie begrenzt Review-Kapazität die Agent-Autonomie und Parallelisierung?
-- **Häufig in den Quellen:** test (14), review (13), testharness (11), tests (8), tdd (8), qualität (5), verifikation (5), human-in-the-loop (5), risikobasiertes human review (4), menschliche freigabe (4), verhaltensvergleich (4), refactoring (4), skill (4), gstack (4), reverse engineering (4), deep modules (3), verifier (3), /goal (3), auto mode (3), llm-as-judge (3)
+- **Häufig in den Quellen:** test (14), review (13), testharness (12), tests (8), tdd (8), qualität (5), verifikation (5), human-in-the-loop (5), risikobasiertes human review (4), menschliche freigabe (4), verhaltensvergleich (4), refactoring (4), skill (4), gstack (4), rea (4), reverse engineering (4), deep modules (3), /goal (3), verifier (3), auto mode (3)
 
 ## Verwandte Themen
 
@@ -21,29 +21,38 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - [[Thema-Sicherheit-Sandboxing]] — Sicherheit & Sandboxing
 - [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
 
-## Patterns (14)
+## Patterns (17)
 
 - [[Abstraktionswert-mit-Deletion-Test-pruefen]] · verifiziert · 2 Belege
+- [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]] · meinung · 1 Belege
 - [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]] · meinung · 1 Belege
 - [[Fachregel-Konsolidierung-vor-Featureaenderung]] · meinung · 2 Belege
 - [[Framework-Quellcode-als-idiomatische-Referenz]] · meinung · 2 Belege
-- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 4 Belege
-- [[Hillclimbing-mit-Holdout-Split]] · meinung · 3 Belege
+- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 6 Belege
+- [[Hillclimbing-mit-Holdout-Split]] · meinung · 4 Belege
+- [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]] · meinung · 1 Belege
+- [[Produktreife-durch-echte-Testnutzer]] · meinung · 2 Belege
 - [[Refactoring-mit-Verhaltensvergleich]] · meinung · 4 Belege
-- [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 5 Belege
+- [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 6 Belege
 - [[Schema-als-Vertrag-mit-generierten-Clients]] · meinung · 2 Belege
 - [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 14 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 54 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 58 Belege
 - [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]] · verifiziert · 3 Belege
 - [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] · meinung · 10 Belege
 - [[Zustandslose-CI-Listener-mit-Ergebnisjournal]] · meinung · 1 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Tracing-nach-Beobachtungsebene]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]], [[Great-Decoupling-Rollenverstaendnis]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Plan-first-mit-getrenntem-Review]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Videoanalyse-mit-Frames-und-Transkript]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Tracing-nach-Beobachtungsebene]], [[Ambitionscheck-mit-Zielhoehe-Tiefe-und-Reichweite]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]], [[Great-Decoupling-Rollenverstaendnis]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Plan-first-mit-getrenntem-Review]], [[Produktwert-jenseits-des-reproduzierbaren-Codes]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Videoanalyse-mit-Frames-und-Transkript]]
 
-## Quellen (42)
+## Quellen (48)
 
+- [[2026-10-21-mattpocockuk-2112880319934165307]] — Matt Pocock empfiehlt eine Lernfolge von persönlicher über interne zu öffentlich zugänglicher Software.
+- [[2026-10-19-voxyz_ai-2112302775547679169]] — Vox beschreibt vier Agent-Perspektiven für den Weg von der Landingpage zum ersten Produkterfolg.
+- [[2026-10-18-floknowsai-ria-ist-aktuell-der-gehypteste-ki-skill-macht-deine-ki-agenten-zu]] — Florian beschreibt `REA` als Workflow zum Untersuchen, Verstehen und anschließenden eigenen Umsetzen bestehender Software.
 - [[2026-10-17-voxyz_ai-2111442102756463077]] — Vox bündelt 23 Prüfideen vor der ersten Zahlung einer agentengestützt gebauten App.
 - [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]] — OpenAIs Core-Experimentation-Team beschreibt, wie Coding-Agenten Wartungskandidaten finden, Produktionsbelege sammeln und kleine Änderungen zur Prüfung vorbereiten.
+- [[2026-10-16-poteto-2111133080526495985]] — Lauren schlägt vor, wiederkehrende Agentkorrekturen möglichst in der Codebasis zu verankern: Architektur vor automatischen Checks, knapper Prosa und gezieltem menschlichem Review.
+- [[2026-10-16-math_rachel-2111238648188584306]] — Rachel Thomas diskutiert einen Fachbeitrag zur menschlichen Aufsicht über KI-Agenten.
+- [[2026-10-15-vincentmumme-greg-isenberg-ist-wahrscheinlich-aktuell-einer-der-wichtigsten]] — Vincent Mumme ordnet Greg Isenbergs Marktbeobachtungen ein.
 - [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]] — Addy Osmani beschreibt den internen Review-Prozess des Claude-Code-Teams: Maschinen übernehmen wiederholbare Fehlersuche, Menschen beurteilen Absicht, Architektur, Risiko und verbleibende Prüflücken.
 - [[2026-10-13-mattpocockuk-2109973273924579720]] — Matt Pocock nennt typische Reibungsverluste: überhöhten Effort, lange Skills, aufgeblähte globale Regeln und fehlende Selbstprüfung.
 - [[2026-10-12-sarahfim-2109736893198016898]] — Sarah beschreibt aus ihrer Rolle als Product-Engineering-Leiterin bei Composio, wie Repositorystruktur und automatisierte Prüfungen Beiträge verschiedener Agenten beherrschbar machen sollen.
@@ -87,12 +96,20 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-22-cursor-pstack-engineering-skills]]
+- [[2026-10-20-artificialanlys-2112582116651466965]]
 - [[2026-10-17-kimmonismus-2111385805449048181]]
 - [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]]
 - [[2026-10-16-voxyz_ai-2111079716832886886]]
+- [[2026-10-16-artificialanlys-2111052531166249039]]
+- [[2026-10-15-mardehaym-2110763129885835505]]
+- [[2026-10-14-promptgefluester-rea-reverse-engine-anything-im-augenblick-auf-github-trending-mit-239]]
+- [[2026-10-14-poteto-2110496830429839869]]
 - [[2026-10-13-matt-pocock-tell-your-agents-to-care-about-the-codebase]]
+- [[2026-10-13-felixrieseberg-how-to-be-more-ambitious-a-tutorial-for-humans-w]]
 - [[2026-10-13-anthropic-redesigning-source-control-at-anthropic]]
 - [[2026-10-13-alex-sprogis-so-nutzt-du-rea-um-jede-app-in-minuten-zu-kopier]]
+- [[2026-10-12-promptgefluester-warum-meiner-meinung-nach-software-service-und-aeh-plattformen-mit-ki]]
 - [[2026-10-12-julian-ivanov-ki-automat-ki-kopiert-jetzt-jede-software-und-keiner-kann-e]]
 - [[2026-10-12-josharosen-2109649928276341191]]
 - [[2026-10-11-hood-informatik-wird-code-jetzt-wertlos]]
@@ -113,7 +130,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-10-05-repo-alirezarezvani-skill-doctor]]
 - [[2026-10-05-aihero-v1-3-implement-spec-pr-retro-and-glossary-md]]
 - [[2026-10-04-voxyz_ai-2106783910055006342]]
+- [[2026-10-04-promptgefluester-ich-zeig-ja-grade-wie-ich-ueber-280-webseiten-in-den-naechsten-paar]]
 - [[2026-10-04-emilkowalski-2106752670405099523]]
+- [[2026-10-03-vincentmumme-andrej-karpathy-einer-der-fuehrenden-ki-forscher-erfinder-vom-llm-wiki]]
 - [[2026-10-02-voxyz_ai-2106006290954592332]]
 - [[2026-10-02-seeconvm-2106096193235259564]]
 - [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]]
@@ -124,12 +143,14 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-09-26-ai-mit-arnie-gpt-6-kann-endlich-design]]
 - [[2026-09-25-voxyz_ai-2103586663393853636]]
 - [[2026-09-25-trq212-2103576349499855160]]
+- [[2026-09-25-promptgefluester-weil-mich-viele-danach-gefragt-haben-wollt-ich-jetzt-kurz-noch-n]]
 - [[2026-09-24-mattpocock-ai-coding-dictionary]]
 - [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]]
 - [[2026-09-15-emilkowalski-2099948779864793303]]
 - [[2026-09-14-shadcn-2099534231114314145]]
 - [[2026-09-14-code-test-plugins-with-evals-claude-code-docs]]
 - [[2026-09-12-darioamodei-2098773920774074715]]
+- [[2026-09-10-promptgefluester-einer-der-groessten-fehler-den-ich-bei-vielen-vibe-codern-mit-ki]]
 - [[2026-09-01-ai-mit-arnie-lokale-ki-kauf-nicht-die-falsche-hardware]]
 - [[2026-08-30-alex-sprogis-loop-graph-engineering-das-letzte-video-was-du-s]]
 - [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]]

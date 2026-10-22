@@ -40,6 +40,7 @@ Drei Entwicklungsstufen werden unterschieden: **Prompt Engineering** (Anweisung 
 - 2026-04-03 · [[2026-04-03-julian-ivanov-ki-automat-ich-habe-eine-firma-ohne-menschen-gebaut-papercl]] · meinung — Ivanov verbindet eine menschlich vorgegebene Mission mit Rollen, Berichtslinien und zielbezogenen Aufgaben. Das Tutorial erklärt die organisatorische Zuordnung, misst aber weder Zieltreue noch verringerte menschliche Steuerung.
 - 2026-10-10 · [[2026-10-10-boristane-self-improving-software-is-inevitable]] · meinung — Verlangt explizite Fitnessfunktionen, harte Grenzen und Zielgewichtungen vor Agent-Optimierung; Backpropagation ist eine Analogie ohne gemessene Umsetzung.
 - 2026-10-13 · [[2026-10-13-anthropic-redesigning-source-control-at-anthropic]] · meinung — Engineers begrenzen Agenten anhand systemweiter Trade-offs: gezielte Review-API statt linearer Commit-Log-Suche und angemessene Komplexität statt überdefensiver interner Validierung; der Bericht belegt konkrete Fehloptimierungen, aber keinen allgemeinen Produktivitätsfaktor.
+- 2026-10-13 · [[2026-10-13-felixrieseberg-how-to-be-more-ambitious-a-tutorial-for-humans-w]] · meinung — Rieseberg leitet von der Quartalspräsentation zu Entscheidungen und früher Problemerkennung über; der vorgeschlagene historische Vergleich mit anschließendem Parallelbetrieb ist eine Konkretisierung der Zielklärung, kein durchgeführter Wirksamkeitsnachweis.
 
 ## Spannungen & offene Fragen
 
