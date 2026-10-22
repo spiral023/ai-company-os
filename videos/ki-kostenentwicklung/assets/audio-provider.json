@@ -1,0 +1,10 @@
+{
+  "provider": "ElevenLabs",
+  "voice": "George",
+  "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+  "model": "eleven_multilingual_v2",
+  "language": "de",
+  "timing": "word boundaries from provider character alignment",
+  "billing": "existing free character allowance, no overage enabled",
+  "heygen": "Request declined: only 6 seconds of free generation remained"
+}

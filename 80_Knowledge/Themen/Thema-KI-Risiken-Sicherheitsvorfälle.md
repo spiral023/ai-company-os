@@ -9,7 +9,7 @@ Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Sys
 - **Hauptkeyword:** Risiken von KI
 - **Long-Tail:** KI-Gefahren für Kinder; Risiken von KI-Chatbots; KI und kritisches Denken; KI-gestützte Hackerangriffe; Sicherheitsvorfälle mit KI-Agents; Hugging Face KI-Vorfall; Sandbox Escape bei AI-Evaluierungen; KI-Warnungen und belegte Vorfälle unterscheiden; Kontrollverlust durch KI; Existenzielle KI-Risiken; KI zur Verteidigung gegen KI
 - **Fragen:** Welche KI-Risiken sind belegt und welche sind Warnungen? / Welche Risiken betreffen Minderjährige besonders? / Welche Rolle hatte KI bei einem Angriff: Werkzeug, Zielsystem oder handelnder Agent? / Was lässt sich aus konkreten KI-Sicherheitsvorfällen lernen?
-- **Häufig in den Quellen:** ai 2027 (3), risiken von ki (2), alignment (2), historische einordnung, ki-risiken, szenarien, prognoseprüfung, bewertungskriterien, trefferquote, szenario, hugging-face-vorfall, primärberichte, kommunikationswege, scorer-manipulation, forscherwarnung, defensive ki, existenzielle ki-risiken, übermenschliche ki-fähigkeiten, kontrollverlust durch ki, persönliche risikoeinschätzung
+- **Häufig in den Quellen:** ai 2027 (3), risiken von ki (2), alignment (2), historische einordnung, ki-risiken, szenarien, prognoseprüfung, szenario, trefferquote, bewertungskriterien, kommunikationswege, hugging-face-vorfall, scorer-manipulation, primärberichte, selbstverbessernde ki, übermenschliche ki-fähigkeiten, kontrollverlust durch ki, persönliche risikoeinschätzung, jacob coxon, jakub pachocki
 
 ## Verwandte Themen
 

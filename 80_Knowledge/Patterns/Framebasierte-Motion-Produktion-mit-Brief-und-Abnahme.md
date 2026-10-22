@@ -29,6 +29,8 @@ Einen Brief mit Botschaft, echten Assets, unveränderlichen Stilmerkmalen, Copyg
 
 ## Belege
 
+- 2026-10-17 · [[2026-10-17-nutzerquelle-motion-video-qualitaetskriterien]] · meinung — Die vollständig gelieferte Vorlage konkretisiert eigenständige Szenenideen, transparente Bildobjekte als bewegliche Ebenen, Wortzeitstempel, natürliche Sprechertexte und Soundakzente; Skriptabnahme erfolgt vor kostenpflichtigen Schritten, ihre Provider-/Modellvorgaben wurden nicht technisch geprüft.
+
 - 2026-09-30 · [[2026-09-30-flxrnc-2105311836190978392]] · meinung — Das Labor beschreibt Frameverträge, begrenzte Korrekturen und getrennte Soundmessung; die ungleichen A/B-Korrekturen und fehlenden Originalblöcke begrenzen Reproduktion und Vergleich.
 - 2026-10-01 · [[2026-10-01-0xwhrrari-2105643919119696297]] · meinung — Der Studiovorschlag verbindet reale Assets, narrative Zustände, direkt abrufbare Frames und Artefaktgates für nächste Läufe; die Diagramme sind keine dokumentierte Produktionsabnahme.
 - 2026-10-09 · [[2026-10-09-beamnxw-2108616740846420354]] · meinung — Das Launch-Beispiel konkretisiert lokale und globale Ereignisframes, vier Korrekturfelder, längste Copy und finale Playback-/Metadatenprüfung; Angebot und Pilotpreis sind unbewiesene Vermarktungshypothesen.
@@ -36,6 +38,8 @@ Einen Brief mit Botschaft, echten Assets, unveränderlichen Stilmerkmalen, Copyg
 - 2026-10-17 · [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]] · meinung — Ergänzt die Produktion um freigestellte KI-Objekte und echte Logos/Produktbilder, während Text, Diagramme, Bewegung und Sprach-Timing im Code bleiben; Sprechtext, Assetplan und Kosten werden vor Generierung vorgelegt, Frameprüfung ist nur als Sprecherbericht dokumentiert, keine visuelle Ergebnisabnahme.
 
 ## Spannungen & offene Fragen
+
+- Ergänzung 2026-10-17: [[2026-10-17-nutzerquelle-motion-video-qualitaetskriterien]] fordert durchgehende Bewegung auch im Hintergrund und eine eigene Bildidee je Szene. Dies ist ein Stilziel, kein gemessener Verständlichkeitsgewinn. Ruhige Lesefenster und eine wiederkehrende visuelle Erzählung bleiben begründbare Gegenpole. Wortzeitstempel können Animationen an Sprache binden; Lautheitsziel und tatsächliche Hör-/Playback-Abnahme sind getrennte Prüfungen. Provider-, Modell- und Cloud-Angaben der Vorlage sind kein verifizierter technischer Vertrag.
 
 - Ergänzung 2026-10-17: [[2026-10-02-seeconvm-2106096193235259564]] konkretisiert Brief, Render-Vertrag und sechs Abnahme-Gates, verlangt aber bei einer Kritikprobe ausschließlich gerenderte Frames und zugleich Bewertung der Soundsynchronität. Einzelbilder belegen den Ton nicht; eine subjektive Selbstscore-Schwelle ersetzt weder Playback noch Exportabnahme. [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]] ergänzt freigestellte KI-Objekte und Sprachsynchronisierung; seine kleine Einzelkostenangabe ist keine vollständige Produktionskostenrechnung, und eine genannte Kontextprozentgrenze wurde nicht nachgemessen.
 - 2026-10-11: Florence setzt Audiohits einen Frame nach das Bild, beamnxw orientiert den stärksten Hit am sichtbaren Ereignis. Die fertige Ton-Bild-Wirkung ist zu prüfen; daraus folgt keine universelle Verschiebung.

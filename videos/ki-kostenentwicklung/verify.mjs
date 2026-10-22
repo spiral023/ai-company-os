@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import {execFileSync,spawnSync} from 'node:child_process';
+const file='renders/raitec-ki-kostenentwicklung-9x16.mp4';
+const timing=JSON.parse(fs.readFileSync('timing.json','utf8'));
+const probe=JSON.parse(execFileSync('ffprobe',['-v','error','-show_format','-show_streams','-of','json',file],{encoding:'utf8'}));
+const v=probe.streams.find(s=>s.codec_type==='video'),a=probe.streams.find(s=>s.codec_type==='audio');
+const decode=spawnSync('ffmpeg',['-hide_banner','-v','error','-i',file,'-f','null','-'],{encoding:'utf8'});
+const signal=spawnSync('ffmpeg',['-hide_banner','-i',file,'-vf','blackdetect=d=0.1:pix_th=0.05','-af','loudnorm=I=-16:TP=-1.5:LRA=7:print_format=json','-f','null','-'],{encoding:'utf8',maxBuffer:4*1024*1024});
+const logs=signal.stderr??'';
+const loud=logs.match(/\{\s*"input_i"[\s\S]*?\}/)?.[0];
+const black=logs.split(/\r?\n/).filter(s=>s.includes('black_start:'));
+const measured=loud?JSON.parse(loud):null;
+const checks={dimensions:v.width===1080&&v.height===1920,fps:v.avg_frame_rate==='30/1',duration:Math.abs(Number(probe.format.duration)-timing.total)<.05,hasAudio:Boolean(a),fullDecode:decode.status===0&&!decode.stderr.trim(),noBlackIntervals:black.length===0,loudness:measured!==null&&Math.abs(Number(measured.input_i)+16)<.5&&Number(measured.input_tp)<-1};
+const report={file,bytes:fs.statSync(file).size,video:{codec:v.codec_name,width:v.width,height:v.height,fps:v.avg_frame_rate,duration:Number(probe.format.duration),pixelFormat:v.pix_fmt},audio:{codec:a?.codec_name,sampleRate:a?.sample_rate,loudness:measured},checks,blackIntervals:black,sceneTimes:timing.scenes,visualReview:'Mounted scene snapshots inspected before render; decoded scene contact sheet inspected after render. Live playback could not be tested: IAB unavailable, Playwright browser occupied, CUA timed out. No subjective listening certification.'};
+fs.writeFileSync('renders/verification.json',JSON.stringify(report,null,2));
+for(const [key,passed] of Object.entries(checks))if(!passed)throw Error('Verification failed: '+key);
+console.log(JSON.stringify({checks,duration:report.video.duration,bytes:report.bytes,loudness:report.audio.loudness},null,2));

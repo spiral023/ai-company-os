@@ -1,0 +1,6 @@
+.runtime/
+.media/
+.hyperframes/artifacts/
+.hyperframes/preview*
+renders/
+assets/narration.*

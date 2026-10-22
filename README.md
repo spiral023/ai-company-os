@@ -218,6 +218,12 @@ python 70_Scripts/themen.py check
 
 `00_Inbox/Quellen/VERARBEITUNGSPLAN.md` dokumentiert frühere Verarbeitungsschritte; der aktuelle Inbox-Status wird über `quellen_pipeline.py check` ermittelt.
 
+## Berichte und Medienprojekte
+
+- [Berichte](docs/berichte/) enthalten thematische Auswertungen mit eigenem Quellenstand.
+- [KI-Kostenentwicklung](videos/ki-kostenentwicklung/README.md) ist ein lokales, editierbares RAITEC-HyperFrames-Projekt. Projektquellen und Gestaltung bleiben nachvollziehbar; Renderdateien, Audio und lokale Vorschau-Caches sind ausgeschlossen.
+- Für RAITEC-Arbeiten ist das eigenständige Repo [raitec-ci](https://github.com/spiral023/raitec-ci) die führende Designquelle. Die konkreten Einstiegspunkte stehen in [AGENTS.md](AGENTS.md#raitec-corporate-design).
+
 ## Obsidian
 
 Das Repo ist als Obsidian Vault nutzbar:

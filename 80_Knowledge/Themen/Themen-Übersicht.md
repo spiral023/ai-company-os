@@ -8,7 +8,7 @@ Jede Source und jedes Pattern hat einen Haupt-Cluster und höchstens zwei Nebenc
 |---|---|---|---|---|
 | Modelle, Kosten & Limits | [[Thema-Modelle-Kosten-Limits]] | 65 | 5 | Claude Code Kosten |
 | Verifikation, Tests & Review | [[Thema-Verifikation-Tests-Review]] | 51 | 19 | AI Code Review |
-| Prototyping & UI-Design | [[Thema-Prototyping-UI-Design]] | 33 | 7 | Lovable |
+| Prototyping & UI-Design | [[Thema-Prototyping-UI-Design]] | 34 | 7 | Lovable |
 | Spezifikation & Planung | [[Thema-Spezifikation-Planung]] | 31 | 8 | Spec-Driven Development |
 | Workflow-Frameworks & Tools | [[Thema-Workflow-Frameworks-Tools]] | 31 | 1 | Claude Code Workflow |
 | Skill-Design | [[Thema-Skill-Design]] | 29 | 9 | Claude Code Skills |

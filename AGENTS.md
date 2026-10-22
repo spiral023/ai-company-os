@@ -155,6 +155,14 @@ Mechanische INDEX.md-Felder (`Dateien`, `Größe`, `Struktur`, `Stars`, Übersic
 
 Ziel: Anhand dieses Index später effizient (ohne erneutes Klonen) passende GitHub-Repos empfehlen, direkt zu den relevanten Skill-/Agent-Ordnern springen und Informationen/Arbeitsweisen daraus extrahieren können.
 
+## RAITEC Corporate Design
+
+Bei RAITEC-Videos, Grafiken, Webseiten, Dokumenten oder Präsentationen zuerst die [Agentenregeln](../raitec-ci/AGENTS.md) und die [README](../raitec-ci/README.md) im eigenständigen Repo **[raitec-ci](https://github.com/spiral023/raitec-ci)** lesen. Es ist die führende Quelle für Farben, Schriften, Original-Logos, Medien und deren Nutzungsstatus; lokal liegt es unter `C:\Users\asi\Documents\GitHub\raitec-ci`.
+
+- **HyperFrames-Videos:** zusätzlich [hyperframes/README.md](../raitec-ci/hyperframes/README.md) lesen und das neue Videoprojekt mit `node "C:/Users/asi/Documents/GitHub/raitec-ci/hyperframes/apply.mjs" "<Videoprojekt>"` einrichten. Dadurch werden Designbeschreibung, Untertitel-Look, lokale Schriften, Original-Logos und GSAP übernommen.
+- **Gestaltung:** die zentrale [hyperframes/FRAME.md](../raitec-ci/hyperframes/FRAME.md) verwenden und die daraus erzeugte Projektdatei `frame.md` bei weiteren Workflow-Schritten als Designgrundlage beibehalten.
+- **Assets:** vorhandene Motive über die [Assetbibliothek](../raitec-ci/index.html) auswählen; Original-Logos und kreative Materialstudien gemäß den Regeln des CI-Repos unterscheiden.
+
 ## Design-Inspiration
 
 `docs/design-inspiration/webapps/` enthält Bilder mit Webapp-Design-Inspirationen aus X-Posts (Dashboards, Websites, Mobile Apps). `REGISTER.md` darin verzeichnet je Bild Autor, Link, Datum, Kategorie, Typ und Tweet-Text. Neue Bilder als `<thema>_<tweet-id>.jpg` ablegen und im Register ergänzen.

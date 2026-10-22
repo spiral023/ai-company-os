@@ -9,7 +9,7 @@ Quellen aufnehmen, aufbereiten, wiederfinden und regelmäßig pflegen: Markdown-
 - **Hauptkeyword:** Wissensmanagement mit KI
 - **Long-Tail:** Obsidian und Claude Code; Markdown-Wissensvault pflegen; RAG mit OCR und Tabellen; RAG Quellen aktualisieren; Videoanalyse mit Frames und Transkript; KI-Betriebssystem für Wissensarbeit
 - **Fragen:** Wie wird aus einer Inbox nutzbares KI-Wissen? / Wann brauche ich RAG, Tabellenabfragen oder das vollständige Dokument? / Wie bleiben automatisch erzeugte Wissensnotizen nachvollziehbar? / Was ergänzen Bildframes zu einem Videotranskript?
-- **Häufig in den Quellen:** volltextpfad (3), rag (3), tabellenabfragen (2), quellenlebenszyklus (2), ocr (2), daily notes (2), inbox-routing (2), weekly review (2), wissenspflege (2), zeitmarken (2), transkript (2), videoanalyse (2), szenenprüfung (2), bildframes (2), obsidian, ausführungsort, wissen, routinen, ki-betriebssystem, skills
+- **Häufig in den Quellen:** volltextpfad (3), rag (3), tabellenabfragen (2), ocr (2), quellenlebenszyklus (2), daily notes (2), wissenspflege (2), weekly review (2), inbox-routing (2), zeitmarken (2), szenenprüfung (2), transkript (2), videoanalyse (2), bildframes (2), obsidian, skills, ausführungsort, ki-betriebssystem, routinen, wissen
 
 ## Verwandte Themen
 

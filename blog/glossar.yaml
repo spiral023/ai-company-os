@@ -680,3 +680,45 @@ begriffe:
   - begriff: CPU
     text: "Der allgemeine Hauptprozessor eines Rechners. Er führt Programme aus und kann auch Modellberechnungen übernehmen, abhängig von der verwendeten Laufzeit."
     siehe: [GPU, RAM]
+
+  - begriff: RAG
+    aliase: [Retrieval-Augmented Generation]
+    text: "Ein Verfahren, das für eine Modellantwort zusätzliche Inhalte aus einem zugänglichen Bestand abruft. Welche Dokumente und Ausschnitte gefunden werden, beeinflusst die Antwort. Aktualität und richtige Auswahl der Inhalte müssen gesondert geprüft werden."
+    siehe: [Chunk, OCR]
+
+  - begriff: OCR
+    text: "Die automatische Erkennung von Text in Bildern oder gescannten Dokumenten. Das Ergebnis kann Zeichen, Reihenfolgen oder Tabellenstrukturen falsch wiedergeben. Für wichtige Aussagen hilft der Vergleich mit dem Original."
+
+  - begriff: Chunk
+    aliase: [Chunking]
+    text: "Ein Ausschnitt eines größeren Dokuments, der getrennt verarbeitet oder durchsucht wird. Chunking bezeichnet das Aufteilen in solche Ausschnitte. Ihre Grenzen beeinflussen, ob zusammengehörige Informationen gemeinsam gefunden werden."
+    siehe: [RAG]
+
+  - begriff: API-Schema
+    text: "Eine maschinenlesbare Beschreibung von Daten an einer Schnittstelle. Sie kann etwa Pflichtfelder, Datentypen und erlaubte Werte festlegen. Typen, Prüfungen oder Clients lassen sich daraus ableiten, wenn entsprechende Werkzeuge eingerichtet sind."
+    siehe: [API, Datenvertrag, OpenAPI]
+
+  - begriff: OpenAPI
+    text: "Ein Format zur maschinenlesbaren Beschreibung von HTTP-Schnittstellen. Es beschreibt unter anderem Operationen, Eingaben und Antworten. Passende Werkzeuge können daraus Dokumentation oder Clients erzeugen."
+    siehe: [API, API-Schema]
+
+  - begriff: Laufzeitvalidierung
+    text: "Das Prüfen tatsächlich verarbeiteter Daten während der Ausführung eines Programms. Ein Validator kann etwa Pflichtfelder und erlaubte Werte kontrollieren. Welche fachlichen Bedingungen er erkennt, hängt von seinen implementierten Regeln ab."
+    siehe: [API-Schema, Datenvertrag]
+
+  - begriff: Typecheck
+    text: "Eine Prüfung, ob der untersuchte Code zu den festgelegten Typen passt. Sie kann beispielsweise einen falschen Feldnamen in einem typisierten Aufruf erkennen. Laufzeitdaten und fachlich richtiges Verhalten sind damit nicht vollständig geprüft."
+    siehe: [API-Schema, Laufzeitvalidierung]
+
+  - begriff: Trace
+    aliase: [Tracing, Agent-Tracing]
+    text: "Eine verknüpfte Aufzeichnung beobachteter Schritte eines Ablaufs. Sie kann etwa Modellaufrufe und Werkzeugausführungen verbinden. Ihre Aussagekraft hängt davon ab, welche Teile tatsächlich erfasst und einander zugeordnet wurden."
+    siehe: [Instrumentierung, OpenTelemetry]
+
+  - begriff: Instrumentierung
+    text: "Das Einrichten von Beobachtungspunkten in einer Software oder ihrer Laufzeit. Sie liefern beispielsweise Ereignisse, Laufzeiten und Ergebnisse für die Fehlersuche. Nicht erfasste Bereiche bleiben auch in einer ausführlichen Auswertung unbeobachtet."
+    siehe: [Trace]
+
+  - begriff: OpenTelemetry
+    text: "Ein offenes Projekt mit Schnittstellen und Werkzeugen zum Erfassen und Weitergeben von Telemetriedaten. Damit lassen sich unter anderem Beobachtungen aus verschiedenen Prozessen verbinden. Die beteiligten Systeme müssen die benötigten Ereignisse und Zusammenhänge selbst liefern."
+    siehe: [Trace, Instrumentierung]

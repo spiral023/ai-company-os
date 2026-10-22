@@ -9,7 +9,7 @@ Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices,
 - **Hauptkeyword:** Claude Code Tutorial
 - **Long-Tail:** Claude Code für Einsteiger; Claude Code Best Practices; Claude Code Tipps; Claude Code Setup; Claude Code Anfängerfehler; Claude Code Lernpfad
 - **Fragen:** Wie fange ich mit Claude Code an? / Welche Fehler machen Einsteiger?
-- **Häufig in den Quellen:** plan mode (3), claude code anfänger (2), headless mode (2), extended thinking (2), claude code best practices (2), kleine änderungen, ki-coding einstieg, git-diff, browserabnahme, scratchpad.md, opus sonnet arbeitsteilung, context degradation, claude code tutorial, claude.md, rückfragen des modells, aufgaben zerlegen, alltagsautomatisierung, vibe coding, prompt-präzision, python-skript
+- **Häufig in den Quellen:** plan mode (3), claude code anfänger (2), headless mode (2), extended thinking (2), claude code best practices (2), ki-coding einstieg, browserabnahme, git-diff, kleine änderungen, opus sonnet arbeitsteilung, scratchpad.md, claude.md, context degradation, claude code tutorial, vibe coding, aufgaben zerlegen, alltagsautomatisierung, python-skript, rückfragen des modells, prompt-präzision
 
 ## Verwandte Themen
 

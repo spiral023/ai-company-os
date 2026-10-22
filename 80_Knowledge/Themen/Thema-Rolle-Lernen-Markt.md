@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** ki-adoption (3), reverse engineering (3), rea (3), swe-bench (2), use case (2), pilotbewertung (2), befähigung (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), nutzerfeedback (2), betriebsleistung (2), produktwert (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), ki-chancen
+- **Häufig in den Quellen:** ki-adoption (3), reverse engineering (3), rea (3), swe-bench (2), befähigung (2), pilotbewertung (2), use case (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), produktwert (2), betriebsleistung (2), nutzerfeedback (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), benchmarkgrenzen
 
 ## Verwandte Themen
 

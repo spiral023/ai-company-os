@@ -1,0 +1,43 @@
+{
+  "audioDuration": 42.678292,
+  "total": 45.8,
+  "scenes": [
+    {
+      "id": "s01-hook",
+      "start": 0,
+      "duration": 4.853,
+      "poster": 4.053
+    },
+    {
+      "id": "s02-rate",
+      "start": 4.853,
+      "duration": 9.485,
+      "poster": 8.684999999999999
+    },
+    {
+      "id": "s03-example",
+      "start": 14.338,
+      "duration": 8.708,
+      "poster": 7.908
+    },
+    {
+      "id": "s04-consumption",
+      "start": 23.046,
+      "duration": 8.312000000000001,
+      "poster": 7.512000000000001
+    },
+    {
+      "id": "s05-result",
+      "start": 31.358,
+      "duration": 11.570291999999998,
+      "poster": 10.770291999999998
+    },
+    {
+      "id": "s06-brand",
+      "start": 42.928292,
+      "duration": 2.871707999999998,
+      "poster": 2.0717079999999983
+    }
+  ],
+  "words": 81
+}

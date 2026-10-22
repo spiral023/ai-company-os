@@ -89,7 +89,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[KI-Dienste-nach-Vertrag-und-Datenfluss-pruefen]] — konkrete Edition, Vertrag, Konfiguration und Integrationen mit Datum und offenen Punkten dokumentieren; keine pauschale Anbieterfreigabe ableiten.
 - [[Schema-als-Vertrag-mit-generierten-Clients]] — strukturelle API-Verträge aus einer Schemaquelle ableiten, Clients generieren und angebundene Verbraucher in CI prüfen.
 - [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]] — Cache-Laufzeit anhand tatsächlicher Pausen, Wiederverwendung und Schreibkosten wählen; wirksame Overrides gesondert prüfen.
-- [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] — codebasierte Filme mit Ereignisframes, begrenzten Reparaturen und finaler Bild-, Ton- und Exportabnahme produzieren.
+- [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] — codebasierte Filme mit sprachgebundenen Ereignisframes, freigestellten Bildebenen, begrenzten Reparaturen und finaler Bild-, Ton- und Exportabnahme produzieren.
 
 - [[Agent-Tracing-nach-Beobachtungsebene]] — Modell-, Harness-, Prozess- und Wirkungssicht getrennt erfassen; Korrelation und Abdeckungsgrenzen offenlegen.
 - [[Bedarfsorientierter-Repositoryzugriff]] — Metadaten und Dateiobjekte nach tatsächlichem Bedarf bereitstellen, wenn vollständige Checkouts zum gemessenen Engpass werden.

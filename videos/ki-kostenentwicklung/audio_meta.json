@@ -1,0 +1,419 @@
+{
+  "voices": [
+    {
+      "id": "narration",
+      "path": "assets/narration.wav",
+      "duration_s": 42.678292,
+      "words": [
+        {
+          "text": "Was",
+          "start": 0,
+          "end": 0.221
+        },
+        {
+          "text": "kostet",
+          "start": 0.29,
+          "end": 0.662
+        },
+        {
+          "text": "KI",
+          "start": 0.72,
+          "end": 0.964
+        },
+        {
+          "text": "heute?",
+          "start": 1.08,
+          "end": 1.695
+        },
+        {
+          "text": "Dieselbe",
+          "start": 2.136,
+          "end": 2.589
+        },
+        {
+          "text": "Leistung",
+          "start": 2.635,
+          "end": 3.042
+        },
+        {
+          "text": "wird",
+          "start": 3.088,
+          "end": 3.239
+        },
+        {
+          "text": "rasant",
+          "start": 3.309,
+          "end": 3.669
+        },
+        {
+          "text": "günstiger.",
+          "start": 3.727,
+          "end": 4.528
+        },
+        {
+          "text": "Epoch",
+          "start": 4.853,
+          "end": 5.236
+        },
+        {
+          "text": "AI",
+          "start": 5.306,
+          "end": 5.724
+        },
+        {
+          "text": "misst",
+          "start": 5.968,
+          "end": 6.246
+        },
+        {
+          "text": "seit",
+          "start": 6.293,
+          "end": 6.455
+        },
+        {
+          "text": "2023",
+          "start": 6.525,
+          "end": 7.674
+        },
+        {
+          "text": "im",
+          "start": 7.825,
+          "end": 7.895
+        },
+        {
+          "text": "Mittel",
+          "start": 7.941,
+          "end": 8.185
+        },
+        {
+          "text": "rund",
+          "start": 8.255,
+          "end": 8.452
+        },
+        {
+          "text": "47",
+          "start": 8.522,
+          "end": 9.207
+        },
+        {
+          "text": "Prozent",
+          "start": 9.3,
+          "end": 9.683
+        },
+        {
+          "text": "weniger",
+          "start": 9.741,
+          "end": 10.112
+        },
+        {
+          "text": "Kosten",
+          "start": 10.159,
+          "end": 10.53
+        },
+        {
+          "text": "pro",
+          "start": 10.588,
+          "end": 10.716
+        },
+        {
+          "text": "Quartal,",
+          "start": 10.786,
+          "end": 11.54
+        },
+        {
+          "text": "bei",
+          "start": 11.819,
+          "end": 11.958
+        },
+        {
+          "text": "vergleichbarer",
+          "start": 12.005,
+          "end": 12.655
+        },
+        {
+          "text": "Benchmark-Leistung.",
+          "start": 12.713,
+          "end": 13.827
+        },
+        {
+          "text": "Rechnerisch",
+          "start": 14.338,
+          "end": 14.93
+        },
+        {
+          "text": "schrumpft",
+          "start": 15,
+          "end": 15.441
+        },
+        {
+          "text": "ein",
+          "start": 15.488,
+          "end": 15.569
+        },
+        {
+          "text": "Kostenindex",
+          "start": 15.639,
+          "end": 16.44
+        },
+        {
+          "text": "von",
+          "start": 16.649,
+          "end": 16.834
+        },
+        {
+          "text": "hundert",
+          "start": 16.892,
+          "end": 17.217
+        },
+        {
+          "text": "nach",
+          "start": 17.287,
+          "end": 17.438
+        },
+        {
+          "text": "vier",
+          "start": 17.473,
+          "end": 17.67
+        },
+        {
+          "text": "Quartalen",
+          "start": 17.705,
+          "end": 18.251
+        },
+        {
+          "text": "auf",
+          "start": 18.309,
+          "end": 18.413
+        },
+        {
+          "text": "ungefähr",
+          "start": 18.506,
+          "end": 18.936
+        },
+        {
+          "text": "acht.",
+          "start": 19.029,
+          "end": 19.563
+        },
+        {
+          "text": "Das",
+          "start": 19.946,
+          "end": 20.108
+        },
+        {
+          "text": "ist",
+          "start": 20.166,
+          "end": 20.294
+        },
+        {
+          "text": "ein",
+          "start": 20.34,
+          "end": 20.433
+        },
+        {
+          "text": "Rechenbeispiel,",
+          "start": 20.515,
+          "end": 21.455
+        },
+        {
+          "text": "keine",
+          "start": 21.571,
+          "end": 21.838
+        },
+        {
+          "text": "Prognose.",
+          "start": 21.885,
+          "end": 22.72
+        },
+        {
+          "text": "Trotzdem",
+          "start": 23.046,
+          "end": 23.522
+        },
+        {
+          "text": "kann",
+          "start": 23.591,
+          "end": 23.731
+        },
+        {
+          "text": "die",
+          "start": 23.765,
+          "end": 23.847
+        },
+        {
+          "text": "Rechnung",
+          "start": 23.893,
+          "end": 24.241
+        },
+        {
+          "text": "steigen:",
+          "start": 24.288,
+          "end": 24.95
+        },
+        {
+          "text": "Mehr",
+          "start": 25.333,
+          "end": 25.565
+        },
+        {
+          "text": "Denkaufwand,",
+          "start": 25.623,
+          "end": 26.529
+        },
+        {
+          "text": "längerer",
+          "start": 26.703,
+          "end": 27.121
+        },
+        {
+          "text": "Kontext",
+          "start": 27.179,
+          "end": 27.771
+        },
+        {
+          "text": "und",
+          "start": 27.98,
+          "end": 28.119
+        },
+        {
+          "text": "zusätzliche",
+          "start": 28.166,
+          "end": 28.769
+        },
+        {
+          "text": "Versuche",
+          "start": 28.827,
+          "end": 29.35
+        },
+        {
+          "text": "verbrauchen",
+          "start": 29.466,
+          "end": 29.988
+        },
+        {
+          "text": "mehr",
+          "start": 30.035,
+          "end": 30.232
+        },
+        {
+          "text": "Tokens.",
+          "start": 30.29,
+          "end": 30.975
+        },
+        {
+          "text": "Entscheidend",
+          "start": 31.358,
+          "end": 31.939
+        },
+        {
+          "text": "sind",
+          "start": 31.997,
+          "end": 32.148
+        },
+        {
+          "text": "deshalb",
+          "start": 32.194,
+          "end": 32.578
+        },
+        {
+          "text": "die",
+          "start": 32.647,
+          "end": 32.729
+        },
+        {
+          "text": "Kosten",
+          "start": 32.787,
+          "end": 33.181
+        },
+        {
+          "text": "je",
+          "start": 33.274,
+          "end": 33.437
+        },
+        {
+          "text": "akzeptiertem",
+          "start": 33.506,
+          "end": 34.203
+        },
+        {
+          "text": "Ergebnis.",
+          "start": 34.273,
+          "end": 34.992
+        },
+        {
+          "text": "Modelle",
+          "start": 35.434,
+          "end": 35.863
+        },
+        {
+          "text": "regelmäßig",
+          "start": 35.933,
+          "end": 36.56
+        },
+        {
+          "text": "vergleichen,",
+          "start": 36.595,
+          "end": 37.28
+        },
+        {
+          "text": "den",
+          "start": 37.489,
+          "end": 37.64
+        },
+        {
+          "text": "Denkaufwand",
+          "start": 37.698,
+          "end": 38.383
+        },
+        {
+          "text": "passend",
+          "start": 38.464,
+          "end": 38.859
+        },
+        {
+          "text": "wählen",
+          "start": 38.917,
+          "end": 39.323
+        },
+        {
+          "text": "und",
+          "start": 39.567,
+          "end": 39.718
+        },
+        {
+          "text": "die",
+          "start": 39.741,
+          "end": 39.822
+        },
+        {
+          "text": "Qualität",
+          "start": 39.869,
+          "end": 40.414
+        },
+        {
+          "text": "am",
+          "start": 40.472,
+          "end": 40.565
+        },
+        {
+          "text": "eigenen",
+          "start": 40.658,
+          "end": 41.03
+        },
+        {
+          "text": "Anwendungsfall",
+          "start": 41.111,
+          "end": 41.854
+        },
+        {
+          "text": "prüfen.",
+          "start": 41.912,
+          "end": 42.678
+        }
+      ]
+    }
+  ],
+  "bgm": null,
+  "sfx": [],
+  "total_duration_s": 42.678292
+}

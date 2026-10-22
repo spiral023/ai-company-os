@@ -1,0 +1,14 @@
+{
+  "name": "ki-kostenentwicklung",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "finish": "node finish.mjs",
+    "verify": "node verify.mjs",
+    "dev": "npx --yes hyperframes@0.8.169 preview",
+    "check": "npx --yes hyperframes@0.8.169 check",
+    "render": "npx --yes hyperframes@0.8.169 render",
+    "publish": "npx --yes hyperframes@0.8.169 publish"
+  }
+}

@@ -2604,6 +2604,11 @@ quellen:
     kernaussage: Chubby berichtet am 17.10.2026 über `DeepSeek V4.1 Flash-1017`.
     keywords: [DeepSeek V4.1 Flash-1017, DeepSWE v1.1, Terminal-Bench 4.0, Automation-Bench v1.0.6, Harness-Vergleich]
     neben: [open-source-llms, verifikation]
+  2026-10-17-nutzerquelle-motion-video-qualitaetskriterien:
+    haupt: prototyping
+    kernaussage: Die am 17.10.2026 vollständig bereitgestellte Vorlage „Motion-Video“ beschreibt Qualitätskriterien für Erklärfilme und Werbung.
+    keywords: [Motion Graphics, HyperFrames, freigestellte Bildobjekte, Wortzeitstempel, Sprechertext, Sounddesign, LUFS, Skriptabnahme]
+    neben: [verifikation]
   2026-10-17-voxyz_ai-2111442102756463077:
     haupt: verifikation
     kernaussage: Vox bündelt 23 Prüfideen vor der ersten Zahlung einer agentengestützt gebauten App.

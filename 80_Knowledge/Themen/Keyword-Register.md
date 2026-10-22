@@ -66,6 +66,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | claude code subagents | 5 | Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | gpt-6 astra | 5 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung, Prompting & Klärung, Prototyping & UI-Design |
 | gstack | 5 | Verifikation, Tests & Review, Workflow-Frameworks & Tools |
+| hyperframes | 5 | Prototyping & UI-Design, Skill-Design |
 | kontext-hygiene | 5 | Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Modelle, Kosten & Limits |
 | lovable | 5 | Prototyping & UI-Design |
 | mcp | 5 | Hooks, MCP & Erweiterungs-Ebenen, Rolle, Lernen & Markt |
@@ -88,7 +89,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | erweiterung | 4 | Hooks, MCP & Erweiterungs-Ebenen, Verifikation, Tests & Review |
 | gpt-6 luna | 4 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | hooks | 4 | Hooks, MCP & Erweiterungs-Ebenen |
-| hyperframes | 4 | Prototyping & UI-Design, Skill-Design |
 | kontext | 4 | Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management |
 | llm-as-judge | 4 | Hooks, MCP & Erweiterungs-Ebenen, Skill-Design, Verifikation, Tests & Review |
 | long-running agents | 4 | Autonome Läufe, Loops & CI, Multi-Agent & Parallelisierung, Verifikation, Tests & Review |
@@ -160,6 +160,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | loop engineering | 3 | Autonome Läufe, Loops & CI, Multi-Agent & Parallelisierung, Verifikation, Tests & Review |
 | mattpocock | 3 | Spezifikation & Planung, Workflow-Frameworks & Tools |
 | modellpreise | 3 | Modelle, Kosten & Limits |
+| motion graphics | 3 | Prototyping & UI-Design |
 | mxc | 3 | Sicherheit & Sandboxing |
 | ollama | 3 | Modelle, Kosten & Limits, Open-Source-LLMs & lokale Modelle |
 | os-level sandboxing | 3 | Sicherheit & Sandboxing |
@@ -370,7 +371,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | model context protocol | 2 | Hooks, MCP & Erweiterungs-Ebenen |
 | model routing | 2 | Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits |
 | modulgrenzen | 2 | Multi-Agent & Parallelisierung |
-| motion graphics | 2 | Prototyping & UI-Design |
 | multi-agent | 2 | Multi-Agent & Parallelisierung |
 | netzwerkeffekte | 2 | Rolle, Lernen & Markt |
 | nutzerfeedback | 2 | Rolle, Lernen & Markt |
