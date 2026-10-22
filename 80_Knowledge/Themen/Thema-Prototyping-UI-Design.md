@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), brand kit (3), suchintention (3), ereignisframes (3), hyperframes (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), designvarianten (2), artefaktbasis (2), isolierte vorschau (2), reduced motion (2), produktionsabnahme (2), gestaltungsachsen (2), codex skills (2), dataforseo (2), seitenspezifikation (2), exportabnahme (2), opus 5.5 (2)
+- **Häufig in den Quellen:** lovable (5), brand kit (3), suchintention (3), ereignisframes (3), hyperframes (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), artefaktbasis (2), designvarianten (2), claude design (2), gestaltungsachsen (2), reduced motion (2), produktionsabnahme (2), isolierte vorschau (2), codex skills (2), seitenspezifikation (2), dataforseo (2), exportabnahme (2)
 
 ## Verwandte Themen
 
@@ -67,6 +67,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]]
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-20-alex-sprogis-hoer-auf-software-abos-zu-kaufen]]
 - [[2026-10-19-voxyz_ai-2112302775547679169]]
 - [[2026-10-13-ai-mit-arnie-ki-kopiert-jede-software-und-jetzt]]
 - [[2026-10-08-mattpocockuk-2108216899439894574]]

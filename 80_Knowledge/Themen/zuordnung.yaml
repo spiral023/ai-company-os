@@ -276,6 +276,11 @@ muster:
     keywords: [Model Escalation, Reasoning Effort, Modellwahl, Kosten pro Task, GPT-5.6, Codex Reasoning Levels, Artificial Analysis, Modell-Routing]
     neben: []
     synonyme: [Model Selection, Effort Level, Cheap-to-Expensive Escalation, Reasoning-Stufen]
+  Mutationstests-fuer-Agent-geschriebene-Tests:
+    haupt: verifikation
+    keywords: [Mutation Testing, Stryker.js, Surviving Mutants, Mutationswert, Testqualität]
+    neben: []
+    synonyme: [Mutation Testing, Mutationstests, surviving mutants, mutation score]
   One-File-per-Failure-Mode:
     haupt: skills
     keywords: [Failure Modes, mattpocock/skills, grill-me, Skill-Bibliothek, Agent-Fehlermodi, Skill Design, tdd Skill, Fokussierte Skills]
@@ -306,6 +311,11 @@ muster:
     keywords: [Prompt Cache, Cache-TTL, Agent-Pausen, Kontextwiederverwendung, Schreibkosten, Cache-Hit, Overrides]
     neben: [kontext, orchestrierung]
     synonyme: []
+  Pruefungen-nach-Feedbackzeitpunkt-staffeln:
+    haupt: verifikation
+    keywords: [Pre-Commit Hooks, CI-Prüfungen, Feedbackzeitpunkt, Prüflaufzeit, inkonsistente Zwischenstände]
+    neben: [erweiterungen]
+    synonyme: [Feedbackstaffelung, Pre-Commit-Checks, Prüfzeitpunkt, CI-Feedback]
   Quellen-Bookmarks-fuer-Agent-Automationen:
     haupt: autonomie
     keywords: [Quellen-Bookmark, Fortschrittsmarker, Watermark, Cursor, Agent-Automationen, Zeitfenster, Zustellbestätigung, Retry, Duplikatprüfung]
@@ -1254,6 +1264,11 @@ quellen:
     kernaussage: Chubby kommentiert am 16.
     keywords: [kimi k3, design arena, frontend, benchmark, ranglisten-snapshot]
     neben: [open-source-llms, prototyping]
+  2026-07-16-matt-pocock-do-software-fundamentals-still-matter:
+    haupt: verifikation
+    kernaussage: Matt Pocock begründet am 16.
+    keywords: [Codequalität, Softwareentropie, Agent Experience, Moduldesign, Testschnittstellen]
+    neben: [rolle-markt]
   2026-07-16-matt-pocock-mattpocock-skills-a-complete-ai-coding-workflow:
     haupt: frameworks
     kernaussage: Spezifikation und Tickets überbrücken Sessions; getrennte Reviewer prüfen Anforderungen und Repo-Standards, während der Nutzer unnötige Aufteilung korrigiert.
@@ -1264,6 +1279,11 @@ quellen:
     kernaussage: Hedgeye behauptet am 17.
     keywords: [modell-eskalation, preis, token, modell, preise, kosten, tokens]
     neben: []
+  2026-07-17-matt-pocock-kill-your-memory-md:
+    haupt: agent-dateien
+    kernaussage: Matt Pocock bevorzugt im Beitrag vom 17.
+    keywords: [Auto-Memory, MEMORY.md, Präferenzübertragung, explizite Repo-Regeln, zustandslose Agents]
+    neben: [kontext]
   2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt:
     haupt: planung
     kernaussage: Eine ausführliche Spezifikation mit verweisenden Task-Listen und mehrfacher Agent-Prüfung des Plans ist billiger als spätes Nachbessern, verursacht aber eigene Pflegekosten.
@@ -1274,6 +1294,11 @@ quellen:
     kernaussage: Vaibhav Srivastav empfiehlt, Workflow-Skills durch Codex gegen vergangene eigene Sitzungen prüfen zu lassen und die Prüfung bei veränderten Arbeitsweisen zu wiederholen.
     keywords: [skill, eval, skills, trigger, baseline-vergleich]
     neben: []
+  2026-07-20-matt-pocock-do-you-even-need-human-review:
+    haupt: planung
+    kernaussage: Matt Pocock betrachtet menschliche Prüfung als gezielt platzierbare Kontrollpunkte.
+    keywords: [Human Review, Kontrollpunkte, Korrekturkosten, Änderungsrisiko, grill-me]
+    neben: [verifikation]
   2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev:
     haupt: sdlc
     kernaussage: Anthropic staffelt Review-Autonomie nach Risiko, prüft neue Reviewer im Shadow Mode und kontrolliert automatische Freigaben durch menschliche Stichproben; Agent-Rechte müssen auch Kommunikationswege
@@ -2458,6 +2483,11 @@ quellen:
       mit besser'
     keywords: [Ambitionscheck, Zielhöhe Tiefe Reichweite, Expertenmethoden, externe Validierung]
     neben: [verifikation]
+  2026-10-13-matt-pocock-stop-running-your-checks-in-harness-hooks:
+    haupt: verifikation
+    kernaussage: Matt Pocock empfiehlt am 13.
+    keywords: [Pre-Commit Hooks, CI-Prüfungen, Feedbackzeitpunkt, Zwischenzustände, Prüflaufzeit]
+    neben: [erweiterungen]
   2026-10-13-matt-pocock-tell-your-agents-to-care-about-the-codebase:
     haupt: sdlc
     kernaussage: Matt Pocock unterscheidet taktische Aufgabenlösung von strategischer Pflege der Codebasis.
@@ -2483,6 +2513,11 @@ quellen:
     kernaussage: '`@kimmonismus` meint, Jack Clarks Annahmen passten zur Prognose rekursiver Selbstverbesserung aus `AI 2027`.'
     keywords: [AI 2027, Recursive Self Improvement, RSI-Szenario, Jack Clark]
     neben: [ki-risiken]
+  2026-10-14-matt-pocock-mutation-testing-is-awesome:
+    haupt: verifikation
+    kernaussage: Matt Pocock stellt am 14.
+    keywords: [Mutation Testing, Stryker.js, Surviving Mutants, agentengeschriebene Tests, Assertions]
+    neben: []
   2026-10-14-poteto-2110496830429839869:
     haupt: skills
     kernaussage: Lauren beschreibt für `pstack` knappe Prinzipien-Skills, die sie überwiegend aus eigenen Korrekturen von Agenten gewonnen hat.
@@ -2539,6 +2574,11 @@ quellen:
     kernaussage: Rachel Thomas diskutiert einen Fachbeitrag zur menschlichen Aufsicht über KI-Agenten.
     keywords: [Human in the Loop, Aufsichtsqualität, Pre-Commitment, Canary-Aufgaben, Batch Review]
     neben: [rolle-markt]
+  2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert:
+    haupt: rolle-markt
+    kernaussage: Niklas Steenfatt beschreibt im Oktober 2026 einen Wechsel von kleinteiligen Coding-Anweisungen zu stärker delegierter Entwicklung.
+    keywords: [Product Owner, AGENTS.md, Context Engineering, SWE-bench, Agent-Parallelisierung, Security Review]
+    neben: [agent-dateien, planung]
   2026-10-16-poteto-2111133080526495985:
     haupt: verifikation
     kernaussage: 'Lauren schlägt vor, wiederkehrende Agentkorrekturen möglichst in der Codebasis zu verankern: Architektur vor automatischen Checks, knapper Prosa und gezieltem menschlichem Review.'
@@ -2569,6 +2609,11 @@ quellen:
     kernaussage: Vox bündelt 23 Prüfideen vor der ersten Zahlung einer agentengestützt gebauten App.
     keywords: [Pre-Launch-Check, Payment-Idempotenz, Zahlungszustände, isolierter Restore-Test, Zugriffsende]
     neben: [sicherheit]
+  2026-10-18-ai-news-strategy-daily-n-what-really-happens-when-ai-agents-meet-in-the-w:
+    haupt: sicherheit
+    kernaussage: Nate B Jones verbindet am 18.10.2026 Berichte über koordinierte Agenten mit Konsequenzen für den Betrieb eigener Systeme.
+    keywords: [Agent Swarms, Agent-zu-Agent-Kommunikation, Harnesskontrolle, Audit Trails, Selbstreplikation, Vertrauensgrenzen]
+    neben: [orchestrierung]
   2026-10-18-floknowsai-ria-ist-aktuell-der-gehypteste-ki-skill-macht-deine-ki-agenten-zu:
     haupt: verifikation
     kernaussage: Florian beschreibt `REA` als Workflow zum Untersuchen, Verstehen und anschließenden eigenen Umsetzen bestehender Software.
@@ -2599,6 +2644,11 @@ quellen:
     kernaussage: Vox beschreibt vier Agent-Perspektiven für den Weg von der Landingpage zum ersten Produkterfolg.
     keywords: [First User Testing, simulierte Nutzer-Personas, Time to First Success, Playwright Browser QA, Mobile 375px, frischer Review-Kontext]
     neben: [prototyping, orchestrierung]
+  2026-10-20-alex-sprogis-hoer-auf-software-abos-zu-kaufen:
+    haupt: planung
+    kernaussage: Alex Sprogis erläutert am `20.10.2026` die Entwicklung einer persönlichen `macOS`-Menüleisten-App für Systemübersicht, Speicherbereinigung und Shortcuts.
+    keywords: [Product Brief, Nicht-Ziele, Feature-Spezifikation, Claude Design, macOS-App, Abnahmekriterien]
+    neben: [prototyping]
   2026-10-20-artificialanlys-2112582116651466965:
     haupt: modelle-kosten
     kernaussage: Artificial Analysis vergleicht am 20.10.2026 sinkende Kosten fester Intelligence-Index-Schwellen mit steigenden Spitzenkosten.

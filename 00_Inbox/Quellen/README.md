@@ -89,6 +89,21 @@ Das Script übernimmt die Videobeschreibung und eine vorhandene deutsche oder en
 
 Bei `transkript_generiert: ja` handelt es sich um automatische Spracherkennung. Eigennamen, Produktnamen und Fachbegriffe können falsch sein und werden im Roharchiv nicht stillschweigend korrigiert. Vor Zitaten oder der Übernahme kritischer Aussagen ins Knowledge-System den Inhalt gegen das Video prüfen. Stellt YouTube keine Untertitelspur bereit, bricht der Abruf mit einer klaren Meldung ab.
 
+`RequestBlocked` und `IpBlocked` bedeuten dagegen einen blockierten Abruf, nicht nachgewiesen fehlende Untertitel. Bei einer solchen Meldung weitere automatische Batch-Aufrufe anhalten. Eine Bot-Abfrage kann auch mit HTTP 200 und dem Playerstatus `LOGIN_REQUIRED` erscheinen; ein erfolgreicher Seitenabruf allein bestätigt keinen Zugriff auf Untertitel oder Audio.
+
+### YouTube-Untertitel über den verbundenen Browser erfassen
+
+Wenn der direkte Abruf blockiert ist, kann die Originalseite im bereits verbundenen normalen Chrome-Browser weiterhin funktionieren. Im Quellenlauf vom 22.10.2026 gelang so der integrierte Transkript-Export für acht Videos, während Python- und Audio-Abruf blockiert blieben. Das ist ein geprüfter alternativer Erfassungsweg, keine Zusage dauerhafter Verfügbarkeit.
+
+1. Originalvideo öffnen und die Video-ID mit dem Auftrag abgleichen.
+2. Beschreibung aufklappen und das konkrete Veröffentlichungsdatum, Titel und Kanal erfassen; relative Altersangaben nicht als Datum umrechnen.
+3. Den integrierten YouTube-Transkript-Export des Browserwerkzeugs verwenden. Sitzungscookies müssen dafür nicht exportiert oder an CLI-Werkzeuge übertragen werden.
+4. Den unveränderten UTF-8-Export mit Video-ID, Sprache, Kennzeichnung der Erzeugung und Zeitmarken unter `YouTube/medien/<slug>/transkript-browser.txt` aufbewahren. Die Rohnotiz enthält wie üblich lesbare Absätze ohne Zeitmarken und verlinkt den Export.
+5. Sprache und Herkunft ausdrücklich markieren: Der Export kann eine deutsche automatisch erzeugte Spur eines ursprünglich englischen, automatisch synchronisierten Videos wählen. Dann `originalsprache: en`, `sprache_abweichung: true` und einen erklärenden Hinweis setzen. Diese Fassung ist kein wortgetreues englisches Original und taugt ohne Originalabgleich nicht für Zitate.
+6. Erst nach Erfassung des Untertitelinhalts verarbeiten. Bei fehlendem Inhalt `status: neu` und `transkript: nicht verfügbar` erhalten; keine Aussagen aus Titel oder Suchtreffern rekonstruieren.
+
+Diagnose und aktuelle Primärdokumentation: [Quellenlauf und Abrufdiagnose vom 22.10.2026](../../reports/2026-10-22-youtube-quellenimport.md).
+
 ### Fehlende YouTube-Transkripte lokal nachholen
 
 Wenn YouTube den Untertitelabruf blockiert, kann `python ai.py transkribieren <Video-ID-oder-URL>` die vollständige Tonspur mit `yt-dlp` laden und auf der lokalen NVIDIA-GPU mit `faster-whisper` transkribieren. Der Standard ist `large-v3` mit Float16. Sprache und Zeitstempel werden automatisch erkannt. Dafür wird einmal das Modell heruntergeladen; die Verarbeitung benötigt keinen API-Key und keinen kostenpflichtigen Dienst.
@@ -97,7 +112,7 @@ Die optionale Python-Umgebung getrennt einrichten (Windows mit CUDA 12):
 
 ```powershell
 uv venv --python 3.12 .venv/youtube-transcription
-uv pip install --python .venv/youtube-transcription/Scripts/python.exe "faster-whisper==1.2.1" "av==18.0.0" "nvidia-cublas-cu12==12.9.2.10" "nvidia-cudnn-cu12==9.27.0.42" "yt-dlp[default]==2026.8.19" pyyaml
+uv pip install --python .venv/youtube-transcription/Scripts/python.exe "faster-whisper==1.2.1" "av==18.0.0" "nvidia-cublas-cu12==12.9.2.10" "nvidia-cudnn-cu12==9.27.0.42" "yt-dlp[default]==2026.10.21" pyyaml
 python ai.py transkribieren 2EoNRuFJfBo
 ```
 

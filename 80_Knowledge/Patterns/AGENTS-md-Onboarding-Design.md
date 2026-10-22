@@ -72,6 +72,8 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 - 2026-03-29 · [[2026-03-29-julian-ivanov-ki-automat-obsidian-claude-code-so-baust-du-dein-zweites-ge]] · meinung — Ein Interview erzeugt die Vault-Struktur; anschließend dient CLAUDE.md als knappe Karte mit Sessionabläufen. Die gezeigte Wiederverwendung hängt von der Qualität der gespeicherten Arbeitsstände ab, nicht von einer umfangreichen Startdatei.
 - 2026-07-16 · [[2026-07-16-matt-pocock-mattpocock-skills-a-complete-ai-coding-workflow]] · meinung — Das Setup verankert Links auf Issue-Ablage, Labels und Domain-Dokumentation in der Agent-Datei; das Interview pflegt Kontext und Architekturentscheidungen als Artefakte. Für Teams empfiehlt der Autor ein gemeinsames projektbezogenes Skill-Set, ohne damit dessen Qualität oder zuverlässige Aktivierung nachzuweisen.
 - 2026-10-13 · [[2026-10-13-mattpocockuk-2109973273924579720]] · meinung — Pocock empfiehlt regelmäßiges Kürzen globaler Steuerungsdateien und kurze Skills; die Checkliste enthält Erfahrungsurteile und keine isolierte Messung der Regelwirkung.
+- 2026-07-17 · [[2026-07-17-matt-pocock-kill-your-memory-md]] · meinung — Bewusst bearbeitete Agent-Dateien oder kleine Repo-Dokumente dienen als Alternative zu ungeprüft angesammeltem Auto-Memory; Empfehlung aus persönlicher Arbeitsweise.
+- 2026-10-16 · [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] · meinung — Steenfatt will gewachsene Einzelfallregeln durch knappe Repository-Besonderheiten sowie Skripte und Lint-/CI-Prüfungen ersetzen; seine zeitweise pauschale Ablehnung von Kontextdateien geht über den engeren, primär geprüften Forschungsbefund hinaus.
 
 ## Spannungen & offene Fragen
 
@@ -83,6 +85,8 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 
 - Die ETH-Studie ist die bislang stärkste Einzelquelle (kontrollierter Benchmark statt Erfahrungsbericht), bleibt aber eine einzelne Studie mit einem spezifischen Benchmark-Design (AGENTbench, wenig populäre Python-Repos) — Übertragbarkeit auf andere Sprachen/Repo-Typen ungeprüft.
 - Offene Frage: Ab welcher Projektgröße lohnt sich die zusätzliche Navigationsebene der Progressive-Disclosure-Struktur gegenüber einer einzigen, etwas längeren Datei? Aus den Quellen nicht abschließend beantwortbar.
+
+- 2026-10-22: [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] deutet die AGENTS.md-Studie zeitweise pauschaler als der in der Source dokumentierte Primärabgleich. Dessen Abstract und Versionshistorie begrenzen den Befund auf untersuchte Setups und lassen Nutzen nicht standardmäßiger Regeln zu; die ältere feinere Ergebnisdarstellung hier bleibt als datierter Bestand erhalten. Aus der Kürzung spezifischer Claude-5-Systemprompts folgt ebenfalls keine Abschaffung von Repo-Kontext oder Skills.
 
 ## Verwandte Patterns
 

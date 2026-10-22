@@ -1,0 +1,368 @@
+YouTube transcript
+Video ID: DN7bHOVmE88
+Language: de
+Captions: auto-generated
+
+[0:00] Wir sind mittlerweile in der Ära von
+[0:01] Personal Software angekommen. Das heißt
+[0:03] also, statt sich irgendwie Standard
+[0:05] Software einzukaufen, baut sich einfach
+[0:07] jeder seine eigenen kleinen Lösungen mit
+[0:09] Cloud Code, Codex und Co. Das gilt auch
+[0:12] für mich und ich möchte dir heute mal
+[0:14] zeigen, wie ich vorgegangen bin, um mir
+[0:15] selber eine eigene macOS App zu
+[0:17] entwickeln, die meine Systemperformance
+[0:20] überwacht, meinen Festplattenspeicher
+[0:21] optimiert und mir diverse Shortcuts für
+[0:24] den alltäglichen Bedarf bereitstellt.
+[0:26] Ich zeig dir einmal den kompletten
+[0:27] Prozess, worauf du achten solltest und
+[0:30] wie du sowas ohne Vorkenntnisse
+[0:31] professionell entwickeln kannst. Also
+[0:33] kurz zum Hintergrund, die letzten Monate
+[0:35] hat sich bei mir einiges an Rohmaterial
+[0:37] von Content auf meiner lokalen
+[0:39] Festplatte angesiedelt und ich bin immer
+[0:41] wieder kurz vor der Kapazitätsgrenze
+[0:43] meines Festplattenspeichers angekommen.
+[0:44] Selbst mit externen Festplatten und Co.
+[0:46] sammelt sich, ja, über die Zeit einfach
+[0:48] extrem viel Datenmüll an, auch wenn es
+[0:49] immer nur wieder kleine Video Snippets
+[0:51] sind, die ich kurz mal brauche und dann
+[0:52] eigentlich verwerfen kann. Müllt das
+[0:54] Ganze dann Stück für Stück meinen
+[0:55] Rechner zu. Ich habe mir im Laufe der
+[0:56] Zeit natürlich immer wieder Lösungen am
+[0:58] Markt angeschaut. Es gibt da super viele
+[0:59] kostenlose Tools, die deinen
+[1:01] Festplattenspeicher aufräumen,
+[1:02] Festplattenkarten erstellen, um zu
+[1:04] gucken, okay, wo wird denn der meiste
+[1:06] Speicherplatz belegt und so weiter. Aber
+[1:08] am Ende kommen dann doch wieder
+[1:09] irgendwelche Abos, die du abschließen
+[1:10] musst oder irgendwelche
+[1:12] Premiumfunktionen, die sich hinter einer
+[1:13] Paywall verstecken. Und ja, da habe ich
+[1:16] natürlich selber keine Lust mehr drauf
+[1:18] und deswegen dachte ich mir, okay, mir
+[1:20] reicht's jetzt, ich entwickle mir meine
+[1:22] eigene App für mich selbst. Jetzt kann
+[1:24] man natürlich so vorgehen, das Ganze
+[1:25] einfach los zu prompten in Cloud Code
+[1:27] und der wird dir dann irgendwie schon so
+[1:29] eine App entwickeln. Aber mit diesem
+[1:31] Ansatz läufst du zwangsläufig in
+[1:33] verschiedene Probleme, gerade wenn alle
+[1:35] Informationen über dein Produkt quasi
+[1:37] nur im Chatverlauf liegen. Denn dann
+[1:39] verliert der Coding Agent zwangsweise
+[1:41] irgendwann den kompletten Überblick,
+[1:43] genauso wie du selbst und du merkst das
+[1:45] dann vor allem, wenn sich Cloud oder
+[1:47] Codex immer wieder in Fehlerschleifen
+[1:48] verfängt, Entscheidungen vergisst, die
+[1:50] ihr mal getroffen habt oder auch eben
+[1:52] bestimmte Features wieder kaputt macht,
+[1:53] die eigentlich schon funktioniert haben.
+[1:55] In diesem Video möchte ich dir also mal
+[1:57] ein strukturiertes Vorgehen zeigen, mit
+[1:59] dem du Software KI-gestützt entwickeln
+[2:00] solltest, um eben direkt solche Probleme
+[2:03] von Anfang an vermeiden zu können.
+[2:04] Fangen wir erstmal damit an, welche
+[2:05] Werkzeuge du überhaupt für eine Mac OS
+[2:07] App brauchst. Natürlich brauchst du
+[2:09] einmal einen Coding Agent, das kann
+[2:10] Cloud Code sein, das kann Codex sein,
+[2:12] das kann Cursor sein oder oder oder, das
+[2:14] ist eigentlich ziemlich egal. Ich
+[2:16] persönlich nutze z.B. einmal den Max
+[2:17] Plan von Cloud Code, als auch den Max
+[2:19] Plan von ChatGPT und komme damit
+[2:21] eigentlich wunderbar klar. Je nachdem,
+[2:23] wie umfangreich deine App werden soll,
+[2:25] reicht gegebenenfalls auch der Pro Plan,
+[2:26] dann musst du vielleicht nur hier und da
+[2:27] eine kleine Pause einlegen, wenn dein
+[2:29] Limit ausgeschöpft ist. Dann brauchst du
+[2:31] Xcode, das ist quasi die
+[2:32] Entwicklungsumgebung von Apple. Die
+[2:34] erlaubt es dir nämlich, native Mac OS
+[2:36] und iOS Apps zu entwickeln. Es gibt noch
+[2:38] andere Frameworks, mit denen du Mac OS
+[2:40] Apps entwickeln kannst, das geht auch
+[2:41] z.B. mit JavaScript und Electron. Das
+[2:44] ist dann aber ein bisschen hacky, wenn
+[2:45] du auf Systemfunktionen des
+[2:47] Betriebssystems zugreifen möchtest, um
+[2:49] z.B. eben die Systemperformance, wie in
+[2:50] meinem Fall, auszulesen. Am Ende klappt
+[2:52] das schon irgendwie, ne, es gibt dafür
+[2:54] zusätzliche Bibliotheken, die man dann
+[2:56] installieren oder hinzuziehen muss. Ich
+[2:58] habe mich jetzt aber dazu entschieden,
+[2:59] das mit einer nativen Swift-Entwicklung
+[3:01] deutlich schlanker zu gestalten. Also
+[3:03] geh am Mac einfach mal am besten in den
+[3:04] App Store und lade dir die aktuelle
+[3:06] Xcode-Version runter. Bevor ich mit der
+[3:09] eigentlichen Entwicklung starte,
+[3:10] erarbeite ich erstmal ein
+[3:11] Produktbriefing, also ein Dokument, wo
+[3:13] erstmal alle Rahmendaten zu meinem
+[3:14] Projekt drinne stehen. Das heißt also,
+[3:16] ich lege einmal fest, für wen ist das
+[3:18] Produkt eigentlich, für welche Plattform
+[3:20] möchte ich sie entwickeln, also ist das
+[3:22] eine native App oder ist das eine
+[3:23] Webanwendung oder sonstiges. Dann welche
+[3:26] Funktionen soll die App abdecken und was
+[3:28] soll sie vor allem auch nicht sein, denn
+[3:30] das ist auch super wichtig, weil Coding
+[3:32] Agents nach wie vor immer noch sehr dazu
+[3:33] neigen, Overengineering zu betreiben.
+[3:35] Das heißt einfach, sie bauen viel mehr
+[3:37] als eigentlich notwendig ist. Und das
+[3:39] hier schon mal einzugrenzen, das hilft
+[3:40] uns später bei der Entwicklung eben
+[3:42] enorm. Jetzt musst du dir dabei
+[3:43] natürlich nicht alle Informationen aus
+[3:44] den Fingern ziehen. Vielleicht kannst du
+[3:46] auch noch gar nicht alles beantworten
+[3:48] oder hast noch gar kein ganz genaues
+[3:49] Bild deiner Anwendung vor Augen. Ich
+[3:51] nutze dafür sehr gerne den Grill me
+[3:53] Skill von Matt Pocock, einem AI Engineer
+[3:55] und auch äh YouTuber, denn der versucht
+[3:58] mit dir ein gemeinsames Verständnis
+[4:00] aufzubauen und wird dir in einem
+[4:02] Interview sozusagen alle Antworten
+[4:04] entlocken, die es braucht, um eben das
+[4:06] vollständige Bild der Anwendung zu
+[4:07] formen. Wenn ich dieses Briefing habe,
+[4:09] dann geht es weiter in eine
+[4:10] Konzeptionsphase. Das heißt, hier suche
+[4:13] ich mir erstmal ein bisschen
+[4:14] Inspiration, schaue mir an, wie meine
+[4:15] App am Ende überhaupt aussehen soll und
+[4:17] dann gehe ich erstmal in Cloud Design
+[4:19] und er arbeite einen Prototyp. Wenn du
+[4:21] Cloud nutzt, ist Cloud Design in deinem
+[4:23] Abo integriert. Nutz dafür einfach mal
+[4:25] die Seite cloud.ai/design.
+[4:27] Warum mache ich das überhaupt und starte
+[4:29] nicht direkt in Cloud Code mit der
+[4:30] Entwicklung? Also vor allem aus dem
+[4:32] Grund, wenn ich jetzt schon direkt
+[4:33] anfangen würde, meine echte App zu
+[4:35] entwickeln und mir später dann überlege,
+[4:36] okay, das Design soll doch anders
+[4:38] aussehen, dann kann das am Ende für eine
+[4:40] enorme Fehleranfälligkeit sorgen. Wenn
+[4:42] ich jetzt einmal die bestehende App auf
+[4:44] eine komplett neue Struktur oder ein
+[4:46] kompletten neues Aussehen umziehen muss,
+[4:48] sozusagen. Das heißt also, ich überlege
+[4:49] mir am Anfang einmal direkt, wie soll
+[4:51] meine App eigentlich konkret aussehen
+[4:52] und kann das Ganze dann eben problemlos
+[4:54] in Cloud Design anhand eines Prototyps
+[4:56] rausfinden und damit rumspielen. Der
+[4:57] Code, der da im Hintergrund geschrieben
+[4:59] wird, ist zu dem Zeitpunkt noch
+[5:00] überhaupt nicht wichtig, weil es erstmal
+[5:01] primär um das Aussehen und eine grobe
+[5:04] Funktionalität geht. Wenn dir das Video
+[5:05] bis hierhin gefällt, dann würde ich mich
+[5:07] sehr über ein Like und ein Abo von dir
+[5:08] freuen. Aktuell haben nämlich ca. 80%
+[5:10] der Zuschauer den Kanal noch nicht
+[5:11] abonniert und mit dem einen Klick
+[5:13] würdest du mir wirklich sehr
+[5:13] weiterhelfen. Also, vielen Dank und
+[5:15] weiter geht's. Wir haben jetzt also
+[5:16] einmal das Briefing als auch das
+[5:18] Aussehen unserer App. Jetzt ist also
+[5:20] dann der Punkt gekommen, um das Ganze
+[5:22] von unserem Coding Agent auch umsetzen
+[5:23] zu lassen. Das heißt, jetzt startest du
+[5:25] deine Cloud oder Codex Desktop App, den
+[5:27] Terminal oder welche Oberfläche du auch
+[5:29] immer nutzen möchtest. Ich für meinen
+[5:30] Teil habe in den letzten Wochen sehr
+[5:31] gute Erfahrung mit T3 Code gemacht. Das
+[5:33] ist sozusagen ein Harnes für Coding
+[5:36] Harnes ist. Ich kann also innerhalb
+[5:37] eines Chats ganz einfach meinen Agent
+[5:39] von z.B. Opus auf GPT, Astra und Co
+[5:42] wechseln und habe zudem eine sehr gute
+[5:43] Übersicht über alle meine
+[5:44] Projektdateien. Wenn du Xcode
+[5:46] installiert hast, dann kannst du aus all
+[5:48] diesen Werkzeugen heraus native macOS
+[5:50] Apps entwickeln. Der Agent kann die Apps
+[5:52] dann auch selbstständig starten und
+[5:53] testen, ohne dass du überhaupt Xcode als
+[5:55] Entwicklungsumgebung starten musst.
+[5:57] Jetzt kannst du natürlich einfach dein
+[5:59] Briefing und dein Prototyp Design dem
+[6:01] Coding Agent vor die Füße schmeißen und
+[6:02] darauf hoffen, dass er dann ja gute
+[6:04] Arbeit leistet und dir am Ende eine
+[6:05] fertige App präsentiert. Und um ehrlich
+[6:07] zu sein, wenn du diese App nur für dich
+[6:09] selber entwickelst, dann kannst du auch
+[6:11] genauso vorgehen. Dann würde Claude
+[6:12] jetzt wahrscheinlich erstmal ein paar
+[6:13] Stunden entwickeln, je nach Umfang
+[6:15] meiner Anwendung und dann hast du am
+[6:16] Ende eine fertige App. Wenn du jetzt
+[6:18] aber möchtest, dass deine App von
+[6:19] anderen Nutzern verwendet wird, dann
+[6:21] würde ich diesen Ansatz nicht unbedingt
+[6:23] empfehlen. Denn sobald andere Nutzer am
+[6:25] Spiel sind und du z.B. auch deren Daten
+[6:28] verarbeitest, dann braucht es einfach
+[6:29] komplett andere Grundvoraussetzungen.
+[6:31] Und das sind dann vielleicht Sachen, die
+[6:33] du aktuell vielleicht noch gar nicht auf
+[6:34] dem Schirm hast. Für den Fall meiner
+[6:36] Companion App habe ich entschieden, dass
+[6:37] ich ebenfalls einen Schritt weitergehen
+[6:38] möchte, denn gerade wenn es um das
+[6:40] Löschen von Dateien geht und ich den
+[6:42] Cache leeren möchte oder dass mir die
+[6:43] App Empfehlung ausspricht, möchte ich
+[6:46] einfach sicher sein, dass hier im
+[6:47] Hintergrund die richtigen Dinge
+[6:48] passieren und ich die volle Kontrolle
+[6:50] darüber behalte. Denn lass uns das mal
+[6:52] ganz kurz mit dem Hausbau vergleichen.
+[6:54] Mit dem Briefing würdest du jetzt ganz
+[6:55] klar sagen: "Hey, bau mir mal bitte eine
+[6:57] Stadtvilla. Ich möchte kein Reihenhaus,
+[6:59] kein Bungalow, ich hätte gern eine
+[7:00] Stadtvilla. Das Ding soll fünf Zimmer
+[7:02] haben, 150 qm Wohnfläche und that's it."
+[7:05] Und dann würde Claude jetzt sozusagen
+[7:07] dann eben die Umsetzung planen. Das
+[7:08] heißt, Architektur Entscheidungen für
+[7:10] uns treffen und eben die Reihenfolge
+[7:11] seiner zu bearbeitenden Aufgaben
+[7:12] festlegen. Und darin sind die Modelle
+[7:14] wirklich extrem gut mittlerweile. Was
+[7:16] jetzt aber vielleicht noch nicht in
+[7:18] unserem Briefing steht, ist, wie groß
+[7:19] sollen denn überhaupt die einzelnen
+[7:20] Räume sein? Wo sollen Türen und Fenster
+[7:22] eingebaut werden und wo genau wollen wir
+[7:24] vielleicht auch die Steckdosen in diesem
+[7:26] Raum haben? Diese Informationen in dem
+[7:28] Detailgrad stehen aktuell noch nicht im
+[7:30] Briefing. Und das macht es später auch
+[7:31] schwierig für Claude, diese Details
+[7:33] immer wieder bei einer Weiterentwicklung
+[7:35] aus dem Code rauszuziehen. Außerdem ist
+[7:37] es so, dass wenn wir diese Informationen
+[7:38] eben nicht mitgeben, der Agent einfach
+[7:41] Annahmen trifft und diese Entscheidung
+[7:43] für dich festlegt. Und das muss ja
+[7:44] natürlich nicht dem entsprechen, was du
+[7:46] dir eigentlich darunter vorstellst. Was
+[7:48] ich also stattdessen mache ist, ich
+[7:49] nehme das Briefing und lass Claude das
+[7:51] in einzelne Features runterbrechen. Das
+[7:53] heißt, wenn wir wieder an das Haus
+[7:54] zurückdenken, an die Stadtvilla, dann
+[7:56] lasse ich Claude jetzt jeden einzelnen
+[7:58] Raum im Detail planen. Und das mache ich
+[7:59] mit Hilfe von Spezifikationen, also
+[8:01] Anforderungsdokumenten. Da steht im
+[8:03] Detail drinne, was wohin kommt, welche
+[8:06] Funktionen vorhanden sein müssen, wie
+[8:07] die Funktion geprüft werden können und
+[8:09] das wird sozusagen dann unser Vertrag
+[8:11] mit Claude, an den er sich unbedingt
+[8:13] halten muss. Das hilft uns dann auch
+[8:15] wirklich alle Details zu durchdenken,
+[8:17] inklusive z.B. Sonderfälle, die im
+[8:19] Normalbetrieb nicht auftreten, aber
+[8:21] dennoch bedenken müssen. Und es ist
+[8:23] gleichzeitig auch eine nachvollziehbare
+[8:24] Dokumentation, die wir uns immer wieder
+[8:25] klar in Erinnerung rufen können. Ich
+[8:27] habe dir mal einen kleinen Prompt
+[8:28] inklusive der Struktur von so einer
+[8:30] Spezifikation runtergeschrieben, damit
+[8:32] du das für dich und dein Projekt eben
+[8:33] verwenden kannst. Den Link dazu findest
+[8:34] du in der Videobeschreibung. Und auf
+[8:36] Basis dessen lasse ich Claude dann am
+[8:38] Ende entwickeln. Ich gehe sogar noch
+[8:39] einen Schritt weiter, plan sogar noch
+[8:41] ein bisschen die Architektur und dann
+[8:42] eben den Ablauf der Aufgabenbearbeitung.
+[8:44] Und ich habe am Ende noch eine
+[8:45] Qualitätssicherung eingebaut, also ein
+[8:48] unabhängiger Agent, der dann eben noch
+[8:49] mal gezielt die Ergebnisse prüft und mir
+[8:52] dann auch noch mal einen Testbericht
+[8:53] liefert, in dem dann auch Bugs etc.
+[8:55] dokumentiert sind. Das ist aber
+[8:56] natürlich optional für dich. Wenn du
+[8:58] Interesse hast, dir auch sowas
+[8:59] aufzubauen, also so eine Art Framework,
+[9:01] dann kann ich dir meinen kostenlosen AI
+[9:02] Engineering Blueprint ans Herz legen. Da
+[9:04] habe ich dir einmal alles
+[9:05] runtergeschrieben, was du genau dafür
+[9:06] benötigst und wie du vorgehst. Den Link
+[9:08] findest du ebenfalls in der
+[9:09] Videobeschreibung. Jedenfalls sind die
+[9:10] Spezifikationen eben das, was du selbst
+[9:12] überprüfst, ob das Ganze inhaltlich
+[9:14] korrekt ist. Weil wie gesagt, alles
+[9:16] andere kann der Coding Agent dann von
+[9:18] sich aus übernehmen. Aber das ist eben
+[9:19] die Basis für die gesamte Zusammenarbeit
+[9:21] mit dem Agent. Und das ist jetzt nichts,
+[9:23] was ich mir irgendwie ausgedacht habe
+[9:24] oder sowas, sondern das ist das
+[9:26] sogenannte Spec Driven Development, also
+[9:28] eine Softwareentwicklungsmethode, die in
+[9:29] den letzten Jahrzehnten quasi der
+[9:31] Standard in der professionellen
+[9:32] Softwareentwicklung war und immer noch
+[9:34] ist. Ja, und den Rest der Arbeit, den
+[9:36] erledigt Claude dann quasi von selbst
+[9:38] und am Ende musst du dann nur einmal
+[9:40] testen, ob das Ganze dann eben auch so
+[9:42] umgesetzt worden ist, wie du es eingangs
+[9:44] geplant hast. Und so hast du quasi alle
+[9:47] Werkzeuge und Bausteine, die du
+[9:48] brauchst, um deine eigene Mac OS App zu
+[9:50] entwickeln. Mich würde natürlich auch
+[9:52] interessieren, wie du da genau vorgehst.
+[9:54] Also, hast du schon mal eine native App
+[9:56] mit Claude Code entwickelt? Und wie bist
+[9:58] du dabei vorgegangen? Wie testest du
+[10:00] überhaupt die Ergebnisse, die Claude da
+[10:01] gebaut hat? Schreib mir das gerne mal in
+[10:03] die Kommentare. Wenn dir das Video
+[10:04] gefallen hat, dann lass gerne ein Like
+[10:06] und ein Abo für den Kanal da, darüber
+[10:07] würde ich mich sehr freuen. Und wenn du
+[10:08] den Workflow mal selber ausprobieren
+[10:10] möchtest, dann schau dir noch mal meinen
+[10:12] kostenlosen AI Engineering Blueprint an.
+[10:15] Da habe ich dir das Stück für Stück
+[10:16] runtergeschrieben, was du brauchst und
+[10:17] wie du vorgehst. Den Link dazu findest
+[10:19] du in der Videobeschreibung. Also,
+[10:21] nochmal vielen Dank fürs Zuschauen und
+[10:22] dann hoffe ich, dass wir uns beim
+[10:23] nächsten Video wiedersehen. Bis dahin,
+[10:25] mach's gut.

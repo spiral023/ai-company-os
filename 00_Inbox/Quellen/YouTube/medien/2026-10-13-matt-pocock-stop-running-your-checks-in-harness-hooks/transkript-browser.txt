@@ -1,0 +1,54 @@
+YouTube transcript
+Video ID: zgy8_ApYNDk
+Language: de
+Captions: auto-generated
+
+[0:00] Viele Leute empfehlen: „Okay, du hast
+[0:03] diese Hooks für dein Agent-Harness. Du
+[0:06] solltest automatisierte Prüfungen in
+[0:07] diesen Hooks laufen lassen, um
+[0:08] sicherzugehen, dass der Agent tut, was
+[0:10] du willst.“ Generell halte ich
+[0:12] automatisierte Prüfungen für den
+[0:14] Agenten für wirklich sehr nützlich,
+[0:16] weil er so versteht, was er falsch
+[0:18] macht, und er bekommt Feedback genau im
+[0:20] richtigen Moment. Viele empfehlen, dies
+[0:23] bei jeder einzelnen Dateiänderung
+[0:25] auszuführen, aber das kann extrem
+[0:27] störend sein, da man in einer Sitzung
+[0:29] 100 Dateiänderungen haben kann–etwa
+[0:30] bei einem großen Refactoring–und
+[0:32] diese automatisierten Prüfungen
+[0:34] verlangsamen alles, wenn man jede
+[0:36] einzelne Datei beim Speichern prüft.
+[0:38] Es ist auch für den Agenten
+[0:40] unglaublich verwirrend. Der Agent
+[0:41] erhält bei jeder Datei eine Menge
+[0:43] Tokens und weiß oft selbst, dass er
+[0:45] die Datei in einen fehlerhaften Zustand
+[0:48] versetzt. Man sagt dem Agenten also nur
+[0:50] etwas, das er bereits weiß. Wenn man
+[0:53] diese Prüfungen stattdessen in einen
+[0:55] Pre-Commit-Hook legt, erzielt man ein
+[0:56] besseres Ergebnis. Du ermutigst deinen
+[0:59] Agenten also zu einem Commit, und
+[1:00] sobald er committet, wird die
+[1:02] Information an ihn zurückgegeben: „
+[1:04] Oh, das ist eigentlich falsch.“ Das
+[1:06] bedeutet, du bündelst all diese
+[1:07] Informationen für den richtigen Moment
+[1:09] , nämlich wenn der Agent sie
+[1:10] tatsächlich in die Historie schreibt.
+[1:12] Du solltest dort nicht unbedingt alle
+[1:14] Prüfungen laufen lassen, denn diese
+[1:15] Pre-Commit-Checks sollen nicht etwa
+[1:16] zwei Minuten dauern. Idealerweise
+[1:18] sollten sie unter drei Sekunden bleiben
+[1:20] . Alles, was sehr umfangreich ist und
+[1:22] mehr Zeit benötigt, kannst du an die
+[1:24] CI delegieren, die vor dem Mergen des
+[1:26] PR läuft. Das ist also die Art und
+[1:27] Weise, wie ich die Einrichtung
+[1:28] automatisierter Prüfungen für deinen
+[1:29] Agenten empfehle.

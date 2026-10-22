@@ -1,0 +1,39 @@
+YouTube transcript
+Video ID: djSbndoByr8
+Language: de
+Captions: auto-generated
+
+[0:00] Eine hochwertige Testsuite ist für
+[0:01] Agents unerlässlich, aber woher wissen
+[0:03] Sie, ob Ihre Testsuite so gut ist, wie
+[0:05] sie sein könnte? Nun, eine
+[0:07] Möglichkeit, Ihre Testsuite zu
+[0:08] verbessern, ist die Durchführung von
+[0:10] Mutationstests. Mutationstests
+[0:11] funktionieren so, dass sie Ihren
+[0:13] Quellcode betrachten und Mutationen
+[0:15] daran vornehmen. Hier wurde zum
+[0:17] Beispiel dieser JavaScript-String in
+[0:18] einen leeren String umgewandelt.
+[0:20] Anschließend werden Ihre Tests erneut
+[0:21] ausgeführt, um zu prüfen, ob sie
+[0:23] fehlschlagen. Jede dieser Mutationen,
+[0:25] die Ihre Tests überlebt, ist ein
+[0:27] überlebender Mutant. Und das ist ein
+[0:29] Mutant, der eliminiert werden muss.
+[0:31] Dies liefert Ihrem Agenten sehr
+[0:32] wertvolles Feedback über die Qualität
+[0:34] seiner Tests; Sie werden feststellen,
+[0:36] dass er danach viel strengere Tests
+[0:38] erstellt und Sie wissen, dass jeder
+[0:40] dieser Tests tatsächlich einen
+[0:41] potenziellen Fehler in Ihrem System
+[0:43] aufdeckt. Ich liebe Mutationstests
+[0:45] einfach, und ich empfehle sie jedem,
+[0:47] der ein wenig besorgt über die
+[0:48] Qualität der Tests ist, die sein Agent
+[0:50] schreibt. In diesem Beispiel habe ich
+[0:52] Stryker.js für TypeScript verwendet,
+[0:53] aber es gibt viele weitere Optionen, je
+[0:55] nachdem, mit welcher Sprache Sie
+[0:57] arbeiten.

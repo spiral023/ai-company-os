@@ -16,6 +16,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Kontext-Hygiene-Entscheidungsbaum]] — bewusste Entscheidung Continue/rewind/compact/clear/Subagent nach jedem Arbeitsblock statt reflexhaftem Weiterreden.
 - [[Plan-first-mit-getrenntem-Review]] — lesende Discovery, Plan als Artefakt, getrennte Builder/Reviewer/Verifier-Rollen.
 - [[TDD-als-Verifikationshebel]] — vertikale Slices (ein Test, minimaler Code, Refactor) als Tracer-Bullets gegen spekulativen Code.
+- [[Mutationstests-fuer-Agent-geschriebene-Tests]] — kontrollierte Codefehler als Gegenprobe für die Aussagekraft agentengeschriebener Tests verwenden.
 - [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] — Skills als messbare Produkte mit Baseline-Vergleich und Trigger-Optimierung statt Bauchgefühl.
 - [[Ralph-Loop-Frischer-Kontext-pro-Iteration]] — jede Iteration mit frischem Kontext, Zustand in Dateien/Git statt im Modell.
 - [[Kontrollierte-Agent-Parallelisierung]] — Parallelisierung nur bei klaren Modulgrenzen, kurzem gemeinsamem Kontext und klaren Verifikationssignalen.
@@ -48,6 +49,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Agent-generierte-Schulung-mit-Curriculum-Gate]] — Briefing und Curriculum prüfen, bevor ein Agent Medien erzeugt und eine interaktive Single-File-HTML-Schulung montiert.
 - [[Agent-CLI-mit-Live-Ansicht]] — Agent bearbeitet Inhalte per CLI, Mensch betrachtet Änderungen in einer automatisch aktualisierten Ansicht; Sichtbarkeit und Freigabe getrennt prüfen.
 - [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] — deterministisches Skript, Prompt-Hook oder Agent-Hook je nach Prüfbarkeit der Hook-Bedingung wählen.
+- [[Pruefungen-nach-Feedbackzeitpunkt-staffeln]] — Prüffeedback zwischen Dateiänderung, kurzen Pre-Commit-Checks und umfangreicher CI passend zur Arbeitseinheit verteilen.
 - [[Screenshot-als-Spezifikationsmedium]] — Bild statt Prosa als Kontext für UI-Analyse, Fehlerdiagnose und Design-zu-Code-Generierung.
 - [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] — sichtbare Änderungen am gerenderten Ergebnis prüfen, neue Defekte zuordnen und Korrekturen erneut abnehmen.
 - [[Variantenvergleich-vor-Produktionsabnahme]] — unterschiedliche bedienbare UI-Varianten isoliert vergleichen, menschliche Auswahl abwarten und erst den Gewinner integrieren.

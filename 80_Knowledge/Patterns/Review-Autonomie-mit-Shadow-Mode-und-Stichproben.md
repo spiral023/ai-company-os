@@ -38,6 +38,7 @@ Risikogewichtete menschliche Stichproben prüfen automatische Freigaben weiter. 
 - 2026-10-10 · [[2026-10-10-satyanadella-2108931348857827686]] · meinung — Kein Modell soll zugleich seine Arbeit und sämtliche Belege zur eigenen Prüfung kontrollieren; auch Angriffe, Fehler und Randfälle gehören in laufende Systemtests. Mehrere Modelle liefern laut Autor erst mit unabhängiger Beweisführung und Kontrollzuständigkeit mehr als verschachtelte Blackboxes.
 - 2026-10-15 · [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]] · meinung — Claude-Code-Team beschreibt Risikostufen je Änderung, sensible Pflichtpfade, vertrauenswürdige Autoren und commitgebundene Freigaben; Hersteller-Selbstbericht, interne Freigabeautomatisierung übersteigt das öffentliche Befundprodukt und automatische Circuit Breaker fehlen noch.
 - 2026-10-16 · [[2026-10-16-math_rachel-2111238648188584306]] · meinung — Thomas diskutiert Voraburteile, begrenzte autonome Einheiten, gebündelte Reviews und Aufgaben mit bekannten Antworten als Unterstützung menschlicher Aufsicht. Die sichtbaren Papierauszüge sind kein hier replizierter Nachweis; Zustimmung und Widerspruch sind ohne Kontext keine Qualitätsmetriken.
+- 2026-07-20 · [[2026-07-20-matt-pocock-do-you-even-need-human-review]] · meinung — Kontrollpunkte variieren nach Umfang und Art der Änderung; der Beitrag nennt Fälle ohne spätes menschliches Review, liefert aber keine Validierung einer sicheren Produktionsfreigabe.
 
 ## Spannungen & offene Fragen
 
@@ -46,6 +47,8 @@ Risikogewichtete menschliche Stichproben prüfen automatische Freigaben weiter. 
 
 - Spannung (2026-10-05): [[CI-Agent-mit-Review-Gate]] und [[2026-09-27-anthropic-academy-sdlc-playbook]] halten menschliche Freigaben im bestehenden Review-Prozess fest; diese Quelle erlaubt automatische Freigaben in ausgewählten Bereichen. Die Unterschiede nach Zeitpunkt und Codebereich sind nicht abschließend erklärt.
 - Offen: Welche Fehlentscheidungsrate, Nachweise und Stichprobenquote reichen für einen konkret abgegrenzten Automatisierungsbereich?
+
+- 2026-10-22: [[2026-07-20-matt-pocock-do-you-even-need-human-review]] hält für bestimmte interne Arbeiten nur frühe menschliche Abstimmung für ausreichend. Das ist eine Prozessheuristik ohne validierte Freigabeschwelle; tatsächliche Tragweite und bestehende Produktionsfreigaben bleiben eigenständige Bedingungen.
 
 ## Verwandte Patterns
 

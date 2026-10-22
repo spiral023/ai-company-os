@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** agents.md (9), claude.md (8), progressive disclosure (6), context engineering (4), agent-datei (4), agent_docs (2), instruktionsbudget (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), obsidian (2), llm wiki (2), /doctor (2), regeln (2), test (2), blockadebericht (2), agent bericht (2), handlungsbedarf (2), auto mode (2)
+- **Häufig in den Quellen:** agents.md (10), claude.md (8), progressive disclosure (6), context engineering (5), agent-datei (4), agent_docs (2), instruktionsbudget (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), llm wiki (2), obsidian (2), /doctor (2), test (2), regeln (2), handlungsbedarf (2), agent bericht (2), blockadebericht (2), auto mode (2)
 
 ## Verwandte Themen
 
@@ -20,12 +20,12 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 
 ## Patterns (2)
 
-- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 41 Belege
+- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 43 Belege
 - [[Handlungsbedarf-zuerst-im-Agent-Bericht]] · meinung · 2 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-erzwingen]], [[Wissenspflege-mit-Inbox-und-Review]]
 
-## Quellen (18)
+## Quellen (19)
 
 - [[2026-10-07-voxyz_ai-2107939019091005836]] — Vox empfiehlt unter **200 Zeilen** je Agent-Datei und nennt **32 KiB insgesamt** als Codex-Standardlimit.
 - [[2026-10-05-voxyz_ai-2107123654219743712]] — Vox beschreibt lange Abschlussberichte, in denen notwendige Nutzeraktionen zwischen anderen Ergebnissen verschwinden.
@@ -33,6 +33,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-er
 - [[2026-09-18-repo-anthropics-claude-code-agents-md-support]] — Claude Code liest seit 2.1.277 AGENTS.md, wenn keine CLAUDE.md existiert, sodass eine Instruktionsdatei mehrere Agents bedienen kann; eine zusätzliche CLAUDE.md hat Vorrang.
 - [[2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk]] — Lint-Warnungen direkt im Tool-Ergebnis steuern Agents kostengünstig ohne Blockade; harte Durchsetzung braucht weiterhin ein separates CI-Gate.
 - [[2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the]] — Neuere Modelle arbeiten mit weniger vorgegebenem Kontext besser; lange CLAUDE.md-Dateien sollten gekürzt und Wissen in bei Bedarf ladbare Skills ausgelagert werden.
+- [[2026-07-17-matt-pocock-kill-your-memory-md]] — Matt Pocock bevorzugt im Beitrag vom 17.
 - [[2026-07-06-mattpocockuk-2074060484047712521]] — Matt Pocock empfiehlt einen Zwei-Schritt-Trick fürs Debugging: den Dev-Server per `tee` in eine lokale Datei schreiben lassen und in `AGENTS.md` auf diese Datei verweisen.
 - [[2026-04-21-natebjones-this-is-so-important-if-you-use-ai-as-a-solo-business-or-ic-theres-a]] — Ein LLM-Wiki passt zu Verbindungsarbeit einzelner Personen, für zitierbare Fakten im Großen braucht es eine Datenbank und für parallele Agenten ein anderes Modell.
 - [[2026-04-13-wiki-compiler-shorthand-guide-claude-code]] — Hooks automatisieren deterministisch, MCPs und Subagents bewusst klein und eng gescopt halten; das Kontextfenster ist die knappe Ressource.
@@ -49,6 +50,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-er
 ## Quellen mit diesem Thema als Nebenthema
 
 - [[2026-10-16-poteto-2111133080526495985]]
+- [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]]
 - [[2026-10-13-mattpocockuk-2109973273924579720]]
 - [[2026-10-05-repo-mattpocock-skills-retro]]
 - [[2026-10-05-repo-claude-code-doctor-insights]]

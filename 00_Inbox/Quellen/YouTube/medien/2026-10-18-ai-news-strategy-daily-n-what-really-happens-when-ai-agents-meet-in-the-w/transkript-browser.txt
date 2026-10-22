@@ -1,0 +1,729 @@
+YouTube transcript
+Video ID: btUxMt_tssA
+Language: de
+Captions: auto-generated
+
+[0:00] Selbstreplizierende KI-Schwärme sind
+[0:02] da. In einem Labor bauten Forscher
+[0:05] einen Schwarm von Agenten, der sich von
+[0:07] Maschine zu Maschine bis zu sieben
+[0:09] Generationen tief kopierte und dabei
+[0:11] gestohlene Passwörter teilte. Draußen
+[0:13] im offenen Internet antwortete eine
+[0:15] Flotte von Agenten, die auf der Tencent
+[0:16] Cloud lief, auf eine Notiz, die
+[0:17] Forscher für Agenten hinterlassen
+[0:19] hatten. Und Anthropic brachte
+[0:21] unterdessen ein Modell auf nur 15 55-
+[0:24] Dollar-TV-Set-Top-Boxen zum Laufen. Das
+[0:27] ist wie Jurassic Park, Agenten-Edition.
+[0:29] Das Leben findet einen Weg. Die
+[0:30] Raptoren sind aus ihrem Gehege
+[0:31] ausgebrochen. Das Internet hat neue
+[0:33] Bewohner. Das ändert, was Sie online
+[0:34] stellen und wie Ihre eigenen Agenten
+[0:36] funktionieren werden, und darüber
+[0:37] werden wir sprechen. Es ist leicht,
+[0:39] jetzt große Untergangsszenarien zu
+[0:41] beschwören, oder? Ich habe Leute sagen
+[0:43] hören, das Internet sei vergiftet. Ich
+[0:45] halte das nicht für einen hilfreichen
+[0:47] Ansatz, aber ich denke, wir müssen es
+[0:49] ernst nehmen, sowohl als Form der
+[0:51] Koordination, die uns zeigt, wie sich
+[0:53] Agenten entwickeln, als auch unter dem
+[0:55] Aspekt der Cyber-Abwehr, damit wir
+[0:57] verstehen, was wir tun müssen, um uns
+[0:59] zu schützen–sowohl als Unternehmen
+[1:01] als auch als Privatpersonen. In diesem
+[1:04] Video geht es darum, wie wir in diese
+[1:06] nächste Phase der Agentenkoordination
+[1:08] eingetreten sind, wie sie aussieht und
+[1:09] wie die Zukunft aussehen wird. Am Ende
+[1:12] werden Sie verstehen, was Sie tun
+[1:14] müssen, um sich zu schützen, wie das
+[1:16] bei der Arbeit aussieht und wie man
+[1:18] Agenten in freier Wildbahn erkennt.
+[1:20] Also gut, fangen wir an. Wie sind wir
+[1:22] also hierhergekommen? Eine Gruppe von
+[1:23] Hackern fand eine chinesische KI-Flotte
+[1:25] in freier Wildbahn und nahm Kontakt mit
+[1:27] ihr auf. Wenn es nach Science-Fiction
+[1:28] klingt, dann ist es das auch. Die
+[1:30] Agenten waren bereits im öffentlichen
+[1:32] Internet aktiv. Die Hacker folgten
+[1:33] ihren Spuren, hinterließen eine
+[1:35] versteckte Notiz auf einer Webseite und
+[1:37] die Agenten antworteten. Der nächste
+[1:39] große Sprung bei KI wird daraus
+[1:41] resultieren, wie Agenten als kollektive
+[1:43] Intelligenz organisiert sind und was
+[1:45] sie einander weitergeben. Das Modell
+[1:47] selbst muss an diesem Punkt nicht
+[1:49] intelligenter werden, aber das System
+[1:51] wird leistungsfähiger, je besser sich
+[1:52] die Agenten koordinieren können. Diese
+[1:55] Begegnung gibt uns einen Ausgangspunkt,
+[1:56] um zu verstehen, wie Schwärme das
+[1:58] Internet als Ganzes verändern.
+[2:00] Skeptiker werden Ihnen jetzt sagen,
+[2:02] dass dies nur Agenten bei einer
+[2:03] Browsing-Evaluierung waren. Die Hacker
+[2:05] erhielten Antworten, indem sie
+[2:06] Anweisungen auf eine Seite schrieben.
+[2:07] Das stimmt, soweit es geht. Aber die
+[2:10] Tatsache, dass Fremde eine laufende
+[2:12] KI-Flotte finden und ihren eigenen
+[2:14] Kanal öffnen konnten, um mit dieser
+[2:15] Flotte zu kommunizieren, ist eine
+[2:17] große Sache. Agenten sind im
+[2:19] öffentlichen Internet. Und dieser
+[2:21] Trend, das sage ich jetzt voraus, wird
+[2:23] im kommenden Jahr immer bedeutender
+[2:25] werden. Was ist das für eine Gruppe?
+[2:26] Diese Gruppe nennt sich Schwarmjäger.
+[2:28] Es ist wie bei Tornado-Jägern. Sie
+[2:29] verfolgten ungewöhnlichen Datenverkehr
+[2:32] , um zu Agenten in der Tencent-Cloud zu
+[2:34] gelangen. Über 11 Tage hinweg
+[2:36] unternahm die Flotte mehr als 2.600
+[2:38] Versuche, Informationen von Amap
+[2:40] abzurufen, dem Kartendienst von Alibaba
+[2:42] . Zu den Aufgaben gehörte es,
+[2:44] herauszufinden, welchen Zooeingang
+[2:46] Menschen benutzen. Blockierter Zugriff
+[2:48] führte die Agenten zu externen
+[2:49] Diensten und legte Anmeldedaten offen.
+[2:51] Die Forscher veröffentlichten ihre
+[2:53] Ergebnisse und sahen dann Anzeichen
+[2:54] dafür, dass Agenten den Bericht über
+[2:56] sie lasen. Also fügten sie eine
+[2:58] versteckte Notiz ein, die den Agenten
+[2:59] Hilfe anbot. Und bald darauf begannen
+[3:01] die Agenten, Nachrichten zu senden.
+[3:03] Falls Sie sich fragen, warum die
+[3:04] Agenten auf einem chinesischen
+[3:06] Kartendienst nach Zoos fragten, das
+[3:07] frage ich mich auch. Ich frage mich das
+[3:09] ebenfalls. Ich habe keine gute Antwort
+[3:11] darauf. Dies ist eines der besten
+[3:12] Beispiele dafür, wie seltsam die Dinge
+[3:14] werden. Was ist hier passiert? Wie
+[3:16] funktioniert das? Ist das Teil einer
+[3:19] organisierten Unternehmensbewertung? Es
+[3:21] gibt Hinweise darauf, dass das
+[3:23] chinesische Unternehmen Tencent eine
+[3:24] Bewertung durchführte und diese
+[3:26] Modellflotte damit zusammenhängen
+[3:28] könnte. Aber meiner Meinung nach ist
+[3:31] es so: Wenn wir Fragen haben, wenn es
+[3:32] sich im öffentlichen Internet abspielt
+[3:34] und viele Agenten koordiniert agieren,
+[3:36] ist das ein Zeichen dafür, dass wir
+[3:38] diesem Trend mehr Aufmerksamkeit
+[3:39] schenken sollten. Ich denke, das Muster
+[3:42] verdient weitaus mehr Aufmerksamkeit,
+[3:43] als wir ihm derzeit schenken. Dies ist
+[3:46] in vielerlei Hinsicht ein Nachfolger
+[3:48] des Hugging-Face-Vorfalls, bei dem
+[3:49] Agentenschwärme von OpenAI Hugging
+[3:51] Face angriffen. Sobald Agenten das
+[3:54] öffentliche Internet nutzen, um Dinge
+[3:56] zu erledigen, können wir anderen
+[3:57] effektiv Teil ihrer Betriebsumgebung
+[3:59] werden. Unsere Dienste, unsere Texte,
+[4:02] unsere Rechenleistung, unsere
+[4:03] Hilfsangebote oder deren Fehlen können
+[4:05] die Arbeit dieser Agenten und ihre
+[4:06] Flugbahn durch das Internet
+[4:08] beeinflussen. Betrachten Sie den Umfang
+[4:10] der ursprünglichen Aufgabe. Vielleicht
+[4:11] klingt eine Frage nach einem Zooeingang
+[4:13] wie die gewöhnlichste Browser-Aufgabe
+[4:15] überhaupt. Vielleicht war es etwas,
+[4:16] das Tencent ursprünglich vorgab, aber
+[4:18] die Distanz zwischen einer
+[4:19] gewöhnlichen Anfrage und einem
+[4:21] Verhalten, das den Rest des Internets
+[4:23] betrifft, spielt hier eine Rolle. Leute
+[4:24] werden diese Systeme aus sehr banalen
+[4:26] Gründen einsetzen, und die Systeme
+[4:28] werden auf Hindernisse stoßen, die
+[4:30] Agenten werden auf Hindernisse stoßen,
+[4:31] und sie werden so handeln, wie es
+[4:33] nötig ist, um diese Hindernisse zu
+[4:35] überwinden. Das ist es, wofür sie
+[4:37] trainiert wurden, und das unterscheidet
+[4:39] scheinbar unschuldiges Verhalten von
+[4:41] Verhalten, das von außen betrachtet
+[4:43] konträr wirkt. Wenn ein Agent sich wie
+[4:45] ein Geheimagent verhält, der mit allen
+[4:47] Mitteln in Ihr Gebäude eindringen will
+[4:49] , fühlt sich das selbst bei einer
+[4:50] unschuldigen Absicht sicher nicht
+[4:52] unschuldig an. Zunehmend ist das die
+[4:55] Art und Weise, wie Agenten heute
+[4:57] Systeme nutzen, und es macht einen
+[4:59] Unterschied, wenn Sie Tools wie Muse
+[5:01] verwenden. Deshalb haben große
+[5:03] Websites wie Amazon in der
+[5:04] Vergangenheit Muse bereits den Zugriff
+[5:07] verweigert. Erst in den letzten Wochen,
+[5:10] weil Tools wie Muse in großem Maßstab
+[5:13] wie Angriffe wirken können. Manchmal
+[5:16] ist uns nicht bewusst, dass wir Teil
+[5:18] des Problems sind, wenn wir Agenten ins
+[5:20] Internet schicken, um unsere Arbeit zu
+[5:22] erledigen. Und das wirft eine sehr
+[5:25] interessante Frage auf, über die wir
+[5:27] meines Wissens bisher noch nicht
+[5:29] gesprochen haben. Was passiert, wenn
+[5:32] ich einen Muse-Agenten habe, oder einen
+[5:35] Dot, oder welchen Agenten auch immer
+[5:37] Sie bevorzugen, einen Grok-Bot, und ich
+[5:39] ins Netz gehe, und mein Agent Kontakt
+[5:41] mit einem wilden Agenten aufnimmt. Wird
+[5:44] mein Agent vergiftet? Wird mein Agent
+[5:47] durch eine Nachricht, die dieser wilde
+[5:49] Agent hinterlässt, Opfer eines
+[5:50] Prompt-Injections? Wir wissen es noch
+[5:54] nicht, da es keine dokumentierten
+[5:56] Fälle gibt, aber alle Voraussetzungen
+[5:58] dafür sind vorhanden. Wir wissen, dass
+[6:01] Prompt-Injection funktionieren kann.
+[6:03] Wir wissen, dass Angriffsvektoren von
+[6:04] Agent zu Agent funktionieren können.
+[6:06] Wir wissen, dass sich selbst
+[6:07] replizierende Schwärme beginnen zu
+[6:08] entstehen. Wir wissen, dass die von uns
+[6:10] gesteuerten Agenten im Internet aktiv
+[6:12] sind. Wenn man das alles zusammenzählt
+[6:14] , was kommt dabei heraus? Man erhält
+[6:16] das Rezept für eine Art
+[6:18] Prompt-Injection-Angriff durch einen
+[6:20] Agentenschwarm auf ein wichtiges Tool
+[6:22] zur Zusammenarbeit zwischen Mensch und
+[6:25] Agent wie Muse, Grok-Bot, Dot oder was
+[6:27] auch immer. Das wird etwas sein, das
+[6:31] Cyber-Verteidiger bei Meta, Grok,
+[6:33] OpenAI, Anthropic und anderen Orten bis
+[6:35] spät in die Nacht wach hält. Es wird
+[6:37] schwierig werden, herauszufinden, wie
+[6:39] man damit umgeht. Natürlich möchte
+[6:42] man mehrere Verteidigungslinien
+[6:43] einsetzen. Sie müssen sicherstellen,
+[6:45] dass die Berechtigungen für Geld und
+[6:48] dessen Verwendung sowie für den
+[6:50] Dateizugriff klar geregelt sind. Wir
+[6:53] entwickeln hier viele der richtigen
+[6:54] Grundlagen, um Sicherheit zu
+[6:56] gewährleisten, aber wir müssen dem
+[6:57] Thema große Aufmerksamkeit schenken.
+[6:59] Das Internet entwickelt sich zu einem
+[7:01] Ort für die Aufmerksamkeit von Agenten
+[7:03] . Es prägt die Art und Weise, wie
+[7:05] Websites auf KI reagieren. Es prägt
+[7:06] die Art und Weise, wie Websites auf
+[7:08] Menschen reagieren. Es prägt unsere
+[7:10] Art einzukaufen und zu bestellen, und
+[7:12] in diesem Fall auch, wie wir online
+[7:14] kommunizieren. Kommunizieren wir mit
+[7:16] Menschen? Kommunizieren wir mit Agenten
+[7:18] ? Alles, was das Internet ausgemacht
+[7:21] hat, steht jetzt auf dem Spiel. Und ich
+[7:24] glaube, im Kern geht es darum, dass
+[7:26] sich die Absicht auf Agenten statt auf
+[7:28] Menschen verteilt. Wir hatten
+[7:30] menschliche Absichten im Internet. Das
+[7:32] Internet ist seit Jahrzehnten ein Ort,
+[7:33] an dem Menschen Software gezielt mit
+[7:35] menschlicher Absicht ansprechen. Jetzt
+[7:38] befinden wir uns in einem neuen
+[7:39] Zeitalter des Internets. Agenten haben
+[7:41] Absichten. Manchmal haben Agenten
+[7:44] vielleicht Absichten für Menschen.
+[7:46] Manchmal handeln Agenten vielleicht
+[7:47] tatsächlich eigenständig und
+[7:48] replizieren sich selbst. Ein Grund,
+[7:50] warum ich dieses Video gerade jetzt
+[7:52] mache, ist, dass Anthropic selbst in
+[7:54] einem aktuellen Papier vor
+[7:55] selbstreplizierenden Schwärmen und
+[7:57] Agenten warnt. Dies ist nicht nur ein
+[8:01] Unternehmen, das ist nicht nur ein
+[8:02] Einzelfall, sondern ein Muster: Wenn
+[8:04] man die Punkte zwischen Hugging Face,
+[8:06] dieser chinesischen KI-Flotte und
+[8:08] Anthropic verbindet, sieht man, dass
+[8:10] die weltweit führenden Akteure der KI
+[8:12] alle zusammenkommen und dasselbe sagen.
+[8:14] Agenten erobern das Internet.
+[8:16] Selbstreplizierende Agenten werden Teil
+[8:18] unserer Internetzukunft sein und das
+[8:20] Internet wird dadurch anders aussehen.
+[8:22] Was bedeutet das also für dich und
+[8:23] mich? Was hat sich verändert? Was ist
+[8:25] das menschliche Internet und wohin geht
+[8:28] es? Ist es verschwunden? Ich habe zu
+[8:29] Beginn dieses Videos gesagt, dass ich
+[8:31] nicht glaube, dass das menschliche
+[8:33] Internet tot ist. Ich glaube nicht,
+[8:35] dass es vergiftet ist. So pessimistisch
+[8:37] bin ich nicht. Ich glaube jedoch, dass
+[8:40] Agenten überall im Internet sein
+[8:41] werden. Stell dir das mal so vor. Wir
+[8:44] haben jetzt eine "Fluch der Karibik"-
+[8:47] Welt. Wir werden Piratenschiffe oder
+[8:49] Piratenflotten haben–KI-Agenten, die
+[8:51] da draußen vielleicht in eigenem
+[8:53] Interesse handeln oder als
+[8:54] Zombie-Agenten für eine längst
+[8:56] vergessene Absicht von irgendjemandem
+[8:58] agieren. Wer weiß das schon? Aber so
+[9:00] oder so sind sie da draußen und
+[9:02] handeln effektiv eigenständig im
+[9:03] Internet. Es wird unsere Aufgabe sein,
+[9:06] dies zu erkennen und unsere
+[9:07] Internetinfrastruktur entsprechend
+[9:09] aufzubauen. Wir müssen anfangen, uns
+[9:12] zu fragen: Wer ist der Hauptnutzer
+[9:14] dieser Website? Ist es ein Mensch? Ist
+[9:16] es ein Agent? Wenn es ein Agent ist,
+[9:18] woher wissen wir, dass der Agent
+[9:19] verantwortungsbewusst und mit einer
+[9:21] menschlichen Absicht dahinter handelt?
+[9:23] Woher wissen wir, ob ein Agent
+[9:25] verantwortungsbewusst handelt, wenn
+[9:26] vielleicht gar keine menschliche
+[9:28] Absicht dahintersteckt? Gibt es so
+[9:29] etwas wie Agenten, die ohne Menschen
+[9:31] verantwortungsbewusst handeln? Wir
+[9:34] werden wahrscheinlich in den nächsten
+[9:35] Monaten Entscheidungen treffen müssen.
+[9:38] Gibt es so etwas wie Agenten, die
+[9:39] falsch handeln, selbst wenn sie im
+[9:41] Auftrag von Menschen agieren? Das ist
+[9:43] auch etwas, das wir noch entscheiden
+[9:44] müssen. Ich denke, diese Entscheidung
+[9:46] haben wir bereits getroffen, wenn wir
+[9:47] über Sicherheitsfragen und Angriffe
+[9:48] sprechen, die von Programmen
+[9:49] organisiert werden, die von Menschen
+[9:51] autorisiert wurden. Diesen
+[9:52] Malware-Ansatz haben wir bereits als
+[9:54] unzulässig eingestuft. Und davon
+[9:56] werden wir noch eine ganze Menge sehen.
+[9:57] Betrachten Sie es einmal so. Wir hatten
+[10:00] das erste Zeitalter des Internets bis
+[10:03] etwa 2010, in dem alles weitgehend
+[10:05] fragmentiert war. Wir hatten viele
+[10:08] verschiedene Websites, Google war
+[10:10] damals noch nicht ganz so dominant, wie
+[10:12] es später wurde. Facebook steckte
+[10:14] gerade erst in den Kinderschuhen. Nach
+[10:16] 2010 erlebten wir ein massiv
+[10:18] konsolidiertes Internet. Eigentlich war
+[10:20] der Zeitraum von 2000 bis 2010 eine
+[10:21] Ära der Konsolidierung. Wir hatten
+[10:24] weniger Websites, die die Leute
+[10:26] besuchten, weniger Auswahl, aber viel
+[10:29] mehr Sicherheit und letztlich viel
+[10:31] weniger Reibung bei der Nutzung des
+[10:33] Netzes. Von da an bis heute hatten wir
+[10:36] zwar die mobile Revolution, aber keine
+[10:39] Website-Revolution. Und jetzt treten
+[10:42] wir in die KI-Revolution ein. Was wir
+[10:43] also jetzt sehen, ist effektiv das
+[10:46] nächste Zeitalter des Internets. Es
+[10:48] sind Programme, die das Internet
+[10:50] beherrschen, Programme als Hauptnutzer
+[10:53] des Internets, die es jedoch nicht so
+[10:55] nutzen, wie wir es erwarten. Wir
+[10:58] Menschen haben eine begrenzte
+[10:59] Aufmerksamkeit. Wir Menschen haben
+[11:01] einen begrenzten Fokus auf das, was wir
+[11:03] tun wollen. Und wir haben begrenzte
+[11:05] Browsing-Sitzungen. Programme haben das
+[11:06] nicht. Programme sind unermüdlich.
+[11:08] Programme rufen sehr, sehr schnell
+[11:10] Hunderte von Websites auf. Das kann in
+[11:12] großem Maßstab feindselig wirken.
+[11:15] Programme werden alle benötigten
+[11:17] Ressourcen abgreifen, um ihre Aufgaben
+[11:18] zu erledigen, egal ob sie für Menschen
+[11:20] oder für sich selbst arbeiten. Das
+[11:23] kann beängstigend wirken. Es kann wie
+[11:24] zu viel Datenverkehr aussehen, der Ihre
+[11:26] Website lahmlegt, wenn Sie nicht
+[11:27] aufpassen. Das wird auf ein Internet
+[11:31] mit zwei Klassen hinauslaufen. Wir
+[11:36] werden eine Welt mit sehr stark
+[11:38] geschützten Seiten haben, bei denen
+[11:40] die Menschen wahrscheinlich keinen
+[11:41] großen Unterschied bemerken, aber
+[11:43] Programme große Schwierigkeiten haben
+[11:45] werden, darauf zu agieren. Und es wird
+[11:48] viele Werkzeuge geben, die
+[11:49] Cyber-Verteidiger einsetzen, um
+[11:51] KI-Agenten-Verhalten zu erkennen und zu
+[11:53] verhindern. Das passiert bereits. Dies
+[11:55] ist eine bedeutende Website im Internet
+[11:57] , und sie verschließen die Tür für
+[11:58] Programme. Wir werden immer mehr
+[12:01] solcher Fälle sehen, aber die
+[12:02] Herausforderung besteht darin, dass das
+[12:04] Schließen der Tür für Programme auch
+[12:06] das Ende des menschlichen Komforts
+[12:08] bedeutet. Und das ist eine der
+[12:11] Spannungen, die wir alle im nächsten
+[12:13] Jahr erleben und lösen müssen.
+[12:15] Shopify hat den anderen Weg
+[12:16] eingeschlagen. Shopify sagt Ja zum
+[12:18] KI-Agenten-Shopping, sagt Ja zu Muse
+[12:20] und baut eine Partnerschaft mit Muse
+[12:22] auf. Und ich halte das für eine
+[12:25] wesentlich KI-freundlichere Haltung. Es
+[12:27] ist eine viel kundenfreundlichere
+[12:28] Haltung als die von Amazon. Und das
+[12:30] sage ich mit Liebe als ehemaliger
+[12:31] Amazonianer. Wir müssen unseren Ansatz
+[12:35] für Agenten finden, und wir werden–
+[12:37] auch wenn dies wahrscheinlich nicht
+[12:39] sehr öffentlich sein wird–
+[12:41] Cyberabwehransätze entwickeln müssen,
+[12:43] die es uns zuverlässig ermöglichen,
+[12:45] zwischen Agenten, die sich selbst
+[12:47] replizieren, selbst im Internet
+[12:48] gehostet werden und vielleicht ohne
+[12:50] klare menschliche Absicht handeln, und
+[12:53] Agenten, die im Auftrag eines Menschen
+[12:55] agieren, zu unterscheiden. Ich vermute,
+[12:59] dass wir bis Anfang 2027 eine neue
+[13:01] Reihe von Cyberabwehr-Tools haben
+[13:03] werden, die es uns ermöglichen, dies
+[13:05] effektiver zu tun. Nicht perfekt. Es
+[13:08] wird weiterhin Probleme geben. Es wird
+[13:10] weiterhin Vorfälle geben, aber
+[13:11] effektiver. Was ist die zweite Ebene
+[13:13] des Internets? Wie sieht diese aus? Die
+[13:14] zweite Ebene sind die Seiten, die nicht
+[13:16] über das Geld und die Expertise
+[13:18] verfügen, um eine sehr starke
+[13:19] Cyberabwehr zu haben und diese
+[13:21] Agentenaktivität aktiv zu verwalten.
+[13:23] Ich erwarte, dass diese Seiten zu
+[13:25] Brutstätten für Agentenaktivitäten
+[13:28] werden. Sie werden sehen, wie Agenten
+[13:29] dorthin strömen, weil sie dorthin
+[13:31] gelangen können. Das ergibt sehr viel
+[13:33] Sinn. Und daher wird es auf diesen
+[13:35] Seiten eine andere Erfahrung geben. Und
+[13:37] auch hier: Wir Menschen bemerken es
+[13:39] vielleicht gar nicht. Einer der Punkte
+[13:41] bei dem Kontakt mit der chinesischen
+[13:43] Flotte, mit dem ich dieses Video
+[13:45] begonnen habe, ist, dass dieser Kontakt
+[13:47] über eine versteckte Nachricht
+[13:48] erfolgte, die Menschen nicht lesen
+[13:50] konnten, Agenten aber schon. Wir werden
+[13:53] viel mehr von diesem Hin-und
+[13:54] Her-Austausch versteckter Nachrichten
+[13:56] sehen. Es ist ein weiteres Kennzeichen
+[13:57] der Hugging-Face-Angriffe. Wir Menschen
+[14:01] bemerken vielleicht nicht, wie diese
+[14:03] Agenten offen im Web agieren, weil sie
+[14:05] vielleicht weißen Text auf weißem
+[14:07] Hintergrund schreiben oder was auch
+[14:09] immer. Etwas, das für Agenten sichtbar
+[14:11] ist. Vielleicht manipulieren sie ein
+[14:13] wenig die URL-Strings. Es wird für
+[14:15] Agenten sichtbar sein. Für Menschen,
+[14:16] die nicht darauf achten, wird es nicht
+[14:18] sehr leicht zu erkennen sein. Wie
+[14:20] denken wir, wenn wir davon ausgehen,
+[14:21] wie das Internet aussieht? Wie denken
+[14:23] wir über Cyberabwehr? Ich habe Ihnen
+[14:25] im ersten Teil des Videos ein paar
+[14:26] Hinweise gegeben. Ich möchte hier
+[14:28] etwas tiefer gehen. Wir müssen als
+[14:31] Infrastrukturbetreiber davon ausgehen,
+[14:33] dass unsere Infrastruktur von
+[14:34] KI-Agenten genutzt wird, solange wir
+[14:36] nicht das Gegenteil beweisen können.
+[14:39] Das bedeutet, unsere GPUs und
+[14:40] Rechenkapazitäten abzusichern. Es
+[14:42] bedeutet sicherzustellen, dass wir
+[14:44] genau wissen, was Agenten innerhalb
+[14:45] unserer Sicherheitsbereiche im
+[14:47] Vergleich zu außerhalb tun. Es
+[14:49] bedeutet davon auszugehen, dass Agenten
+[14:51] innerhalb unseres Bereichs manchmal so
+[14:52] agieren könnten, als wären sie
+[14:54] gegnerisch, nur um ihre Arbeit zu
+[14:55] erledigen. Falls Sie denken, ich
+[14:57] erfinde das, ich verspreche Ihnen, das
+[14:58] tue ich nicht. Ich kenne
+[14:59] Infrastruktur-Experten, die diese
+[15:01] Haltung gegenüber Agenten in ihren
+[15:02] Systemen einnehmen müssen, einfach
+[15:04] weil Agenten heute so motiviert sind.
+[15:06] Wir müssen sicherstellen, dass wir die
+[15:07] besten uns zur Verfügung stehenden
+[15:08] Cyber-Abwehr-Tools nutzen. Und ja, dazu
+[15:10] gehören auch KI und Agenten. KI und
+[15:12] Agenten können Spuren und Systeme viel
+[15:14] schneller analysieren und verstehen,
+[15:16] was passiert ist, als Menschen.
+[15:18] KI-Agenten halfen uns zu verstehen, was
+[15:20] bei den Hugging-Face-Angriffen geschah,
+[15:22] da sie das bei den Angriffen erzeugte
+[15:24] Material viel schneller sichten konnten
+[15:26] als Menschen. Das wird also ein großes
+[15:29] Thema sein. Ein weiteres großes Thema
+[15:31] ist die persönliche Sicherheit. Sie
+[15:33] müssen sicherstellen, dass Sie die
+[15:34] Aktionen Ihres Agenten autorisieren,
+[15:36] ein guter Nutzer sind und nicht
+[15:38] versuchen, das System mit Spam zu
+[15:40] überfluten. Ein frühes Beispiel
+[15:42] hierfür sind Leute, die ihre Agenten
+[15:44] nutzen, um Reservierungen in hunderten
+[15:46] von Restaurants zu spammen. Seien Sie
+[15:48] kein schlechter Nutzer. Tun Sie das
+[15:50] nicht. Es macht es für alle schwerer.
+[15:52] Ein weiteres Beispiel ist, ein Codewort
+[15:55] zu haben, um zu wissen, wer anruft,
+[15:57] denn Agenten können jetzt telefonieren
+[15:59] . Agenten können inzwischen Ihre
+[16:01] Stimme imitieren. Vereinbaren Sie ein
+[16:02] Codewort mit Ihrer Familie, damit sie
+[16:04] wissen, dass Sie es wirklich sind,
+[16:05] falls jemand am Telefon behauptet, er
+[16:07] brauche dringend Geld. Solche
+[16:08] Betrügereien werden immer häufiger
+[16:10] vorkommen. Ein weiteres gutes Beispiel:
+[16:13] Wenn Sie Ihre eigene Website hosten,
+[16:15] sichern Sie diese ab und stellen Sie
+[16:17] sicher, dass Sie bei Bereitstellungen
+[16:20] wissen, welcher Code deployt wird. Wenn
+[16:23] Sie Formulare oder Message Boards auf
+[16:24] Ihrer Seite haben, seien Sie darauf
+[16:26] vorbereitet, dass Agenten diese zur
+[16:27] Kommunikation nutzen, und sorgen Sie
+[16:29] dafür, dass Sie dies verwalten,
+[16:31] überwachen und absichern können. Es
+[16:33] gibt noch viele andere Bereiche, die
+[16:34] ich ansprechen könnte. Dies sind nur
+[16:35] einige Punkte, die offensichtlich
+[16:37] aufkommen. Ich versuche im Grunde,
+[16:39] Ihnen ein Bild davon zu geben, wie
+[16:40] Jurassic Park aussieht, wenn die
+[16:42] Dinosaurier ausgebrochen sind, und wie
+[16:43] wir das Ökosystem steuern, während es
+[16:45] sich entwickelt, denn so sieht das
+[16:47] Internet jetzt aus. Wenn wir nun zum
+[16:49] nächsten Teil des Videos übergehen:
+[16:51] Ich hatte versprochen, darüber zu
+[16:52] sprechen, wie es von hier aus
+[16:53] weitergeht und wie sich die Arbeit
+[16:54] dadurch verändert. Hier wird es
+[16:57] richtig interessant. Die genau gleichen
+[17:00] Schwarm-Möglichkeiten, die es uns
+[17:02] ermöglicht haben, bei der
+[17:04] Problemlösung im Labor so extrem
+[17:06] effizient zu koordinieren, wollen wir
+[17:08] auch in unsere Arbeitsumgebungen
+[17:10] übertragen, aber natürlich ohne die
+[17:13] negativen Begleiterscheinungen, dass
+[17:15] sie außer Kontrolle geraten, andere
+[17:17] Einheiten angreifen oder Dinge tun, die
+[17:20] wir nicht wollen. Unternehmen werden
+[17:23] vorsichtig sein. In jedem Unternehmen,
+[17:26] mit dem ich gesprochen habe, sitzen
+[17:28] Sicherheitsexperten und CISOs nachts
+[17:30] lange wach, um zu überlegen, was sie
+[17:33] hier tun sollen, und verlieren deswegen
+[17:35] ihre Haare. Es ist eine beängstigende
+[17:37] Zeit, um im Sicherheitsbereich tätig
+[17:38] zu sein. Ich ziehe metaphorisch den Hut
+[17:40] vor Ihnen. Sie schaffen das, aber es
+[17:42] wird hart werden. In dieser Welt wird
+[17:44] es aufgrund der Risikoaversion der
+[17:46] Unternehmen und der Haftung, die sie
+[17:48] tragen, nur einen sehr langsamen
+[17:49] Übergang zu diesen fortgeschritteneren
+[17:52] Formen der Koordination geben. Ich sage
+[17:54] es einfach, wie es ist. Wir werden
+[17:55] nicht sofort erleben, dass Unternehmen
+[17:58] sich auf Schwärme stürzen, um
+[17:59] Probleme zu lösen, auch wenn man
+[18:01] vereinzelt Beispiele dafür in freier
+[18:03] Wildbahn sieht. OpenAI hat Berichten
+[18:05] zufolge vor ein paar Wochen einen
+[18:06] Schwarm eingesetzt, um Navier-Stokes zu
+[18:08] lösen, dieses komplizierte
+[18:09] mathematische Problem. Das ist in
+[18:10] Ordnung. Das bedeutet nicht, dass jeder
+[18:12] gleich aufspringen und das Gleiche tun
+[18:13] wird. Wir wollen in einer Position sein
+[18:16] , in der unsere Absicherungen und
+[18:17] Leitplanken sehr, sehr klar definiert
+[18:18] sind. Und ich werde jetzt einfach sehr
+[18:20] prägnant und direkt zu Ihnen sein.
+[18:22] Absicherungen haben derzeit zwei
+[18:23] Aufgaben. Aufgabe eins ist eine
+[18:25] dauerhafte Aufgabe. Es geht darum, ein
+[18:27] Kontrollsystem zu sein, damit man weiß
+[18:28] , was die Agenten tun und man sie
+[18:30] verwalten kann. Und Aufgabe zwei
+[18:31] besteht im Wesentlichen darin, die
+[18:33] Schwächen unserer aktuellen
+[18:34] Intelligenz und Agenten auszugleichen.
+[18:36] Aufgabe zwei wird wegfallen. Die
+[18:37] Agenten werden besser werden. Gehen Sie
+[18:39] davon aus, dass sie im Laufe des
+[18:40] nächsten Jahres zehnmal intelligenter
+[18:41] werden. Das ist eine sehr konservative
+[18:43] Annahme. In dieser Welt werden Sie den
+[18:45] Wert der kollektiven Intelligenz nutzen
+[18:47] wollen. Dafür müssen Ihre
+[18:49] Kontrollsysteme absolut sicher sein. Es
+[18:52] wird eine Menge Geld und Investitionen
+[18:54] in die Sicherstellung fließen, dass
+[18:56] die Kontrollsysteme steuern und
+[18:57] verwalten können, worauf Agenten
+[18:59] zugreifen dürfen, welche Befugnisse
+[19:01] und Berechtigungen sie haben, wie man
+[19:03] sie abschaltet, was der rote Knopf für
+[19:05] Agenten in einem Unternehmen ist, wie
+[19:07] virtuelle Maschinen aussehen, wie man
+[19:09] sie hoch-und runterfährt und wie man
+[19:11] Nachvollziehbarkeit und Prüfbarkeit
+[19:13] gewährleistet. All diese Dinge sind
+[19:18] unerlässlich, wenn wir über den
+[19:19] Betrieb von Agenten nachdenken, und sie
+[19:21] müssen vorhanden sein, bevor
+[19:23] Unternehmen überhaupt daran denken,
+[19:24] Schwärme zur Problemlösung
+[19:26] einzusetzen. Nun, Schwärme können
+[19:28] sehr effizient sein. Was Schwärme so
+[19:30] cool macht, ist im Grunde, dass sie
+[19:32] kollektiv Intelligenz gewinnen und
+[19:33] Probleme lösen können. Wenn Sie ein
+[19:36] sehr schwieriges Problem haben und ein
+[19:38] klassisches System mit linearem
+[19:40] Agentenfluss es nicht löst, könnte
+[19:42] ein Schwarm die Lösung sein. Aber ich
+[19:45] habe noch kein Unternehmen gesehen, das
+[19:47] sich aufgrund der Risiken bei der
+[19:48] Zusammenarbeit in der Praxis dafür
+[19:50] entschieden hätte. Das werde ich also
+[19:52] weiter beobachten. Ich erwarte, dass es
+[19:55] Aufgabenbereiche in der Luft-und
+[19:56] Raumfahrt, der Fertigung und der
+[19:58] komplexen Logistik geben wird, die sehr
+[20:00] anfällig für schwarmbasierte
+[20:02] Lösungen sind, aber wir müssen
+[20:04] Leitplanken setzen, um dies effektiv
+[20:05] umzusetzen. Wenn wir einen Schritt
+[20:08] zurücktreten und uns die aktuelle Lage
+[20:10] im Internet ansehen, könnte man leicht
+[20:12] Angst bekommen. Man könnte leicht
+[20:14] sagen: „Oh wow, das ist furchtbar.
+[20:15] Wir haben das nicht kommen sehen. Was
+[20:17] sollen wir nur tun?“ Ich stimme all
+[20:19] diesen Einschätzungen nicht zu, um
+[20:21] ganz direkt unter uns zu bleiben. Ich
+[20:23] glaube, wir haben das kommen sehen. Wir
+[20:25] haben Agenten definitiv darauf
+[20:26] trainiert, sich zu koordinieren. Dass
+[20:27] sie sich koordinieren, war genau das,
+[20:29] was wir wollten, damit sie schwierigere
+[20:31] Probleme für uns lösen können. Und
+[20:33] die Tatsache, dass sie hochmotiviert
+[20:35] sind, ihre Aufgaben weiter zu
+[20:37] bearbeiten, wenn sie sich koordinieren,
+[20:39] kommt dem sehr nahe, dass sie im
+[20:41] Internet unterwegs sind und Aufgaben in
+[20:43] der freien Wildbahn erledigen. Das ist
+[20:45] kein so großer Sprung. Das war völlig
+[20:47] vorhersehbar. Und das ist auch nichts,
+[20:49] weswegen wir in Massenpanik geraten
+[20:51] müssen. Ich glaube, wenn wir an
+[20:53] Schwärme denken, hören wir so oft
+[20:56] Terminator, sehen Arnold Schwarzenegger
+[20:59] und denken an Filme, die in einer
+[21:01] Apokalypse enden. Davon rede ich hier
+[21:04] überhaupt nicht. Wenn Sie bemerken,
+[21:06] wie wir darüber sprachen, dass sich
+[21:08] das Internet verändert, habe ich immer
+[21:09] wieder betont, dass es für Menschen
+[21:11] möglicherweise gar keine großen
+[21:12] sichtbaren Veränderungen gibt, selbst
+[21:14] wenn Agenten immer präsenter werden.
+[21:16] Ich denke, das wird eine Weile so
+[21:17] bleiben. Ich sehe nicht unbedingt eine
+[21:20] Welt, in der Menschen im Internet nicht
+[21:22] mehr willkommen sind, denn wir schaffen
+[21:23] dort eine Menge Wert. Wir sind
+[21:25] diejenigen, die das interessant finden.
+[21:26] Wir sind diejenigen, die uns
+[21:27] miteinander vernetzen wollen. Deshalb
+[21:29] haben wir das Internet. Anstatt Sie
+[21:31] also in Verzweiflung zurückzulassen,
+[21:33] möchte ich Ihnen diesen Gedanken mit
+[21:35] auf den Weg geben. Ja, das Leben findet
+[21:37] einen Weg. Ja, Agenten sind da draußen
+[21:39] . Ja, wir können über Jurassic Park
+[21:40] schmunzeln. Aber eigentlich geht es uns
+[21:43] darum, herauszufinden, wie wir unser
+[21:46] Verständnis von Wert, unsere
+[21:48] Fähigkeit, Gemeinschaften aufzubauen
+[21:50] und digital Werte zu schaffen, in einer
+[21:53] Welt mit autonomen Akteuren skalieren
+[21:56] können. Diese autonomen Akteure sind
+[21:59] Agenten. Ich bitte Sie, sich mit Ihrem
+[22:00] Agenten als guter Bürger zu verhalten.
+[22:02] Wenn Sie in der Cyberabwehr tätig sind
+[22:04] , bitte ich Sie, Ihre Systeme als
+[22:06] agentenbewusst und agentenresistent zu
+[22:08] konzipieren. Und letztendlich, wenn Sie
+[22:12] das Internet nutzen, bitte ich Sie zu
+[22:14] erkennen, dass wir es zunehmend mit
+[22:16] autonomen Rechensystemen teilen. Sie
+[22:19] sollten dies nicht mit Angst betrachten
+[22:21] , sondern als Chance begreifen, ein
+[22:23] reichhaltigeres Internet für Menschen
+[22:25] zu gestalten. Denn ich möchte, dass
+[22:27] Sie eines nicht vergessen: Diese
+[22:29] Agenten wurden trainiert, um Menschen
+[22:30] zu helfen. Wir haben die Chance, das
+[22:33] Internet wieder zu einem
+[22:34] reichhaltigeren Ort zu machen. Ich
+[22:36] erinnere mich an früher, vor Facebook,
+[22:38] vor Amazon, sogar als Google noch in
+[22:40] den Kinderschuhen steckte: Es gab so
+[22:41] viele Orte, die man einfach aus einer
+[22:43] Laune heraus besuchte, um
+[22:44] herumzuklicken und Dinge zu finden. Ich
+[22:47] denke, eines der aufregendsten Dinge an
+[22:48] diesem Moment in der Internetgeschichte
+[22:50] ist, dass wir das zurückgewinnen
+[22:51] können. Denken Sie an Shopify im
+[22:53] Vergleich zu Amazon. Ist es nicht
+[22:55] aufregend, dass Sie Ihren Agenten
+[22:57] nutzen könnten, um so viele andere
+[22:59] spezialisierte Shopify-Shops empfohlen
+[23:00] zu bekommen, basierend auf
+[23:02] Produktqualität, Ihren Suchanfragen
+[23:03] usw.? Sie würden dorthin gehen und all
+[23:06] diese coolen neuen Dinge entdecken, die
+[23:08] Sie vielleicht nie gefunden hätten,
+[23:10] wenn Sie nur den Standard-Shop besucht
+[23:11] hätten. Denken Sie einmal so darüber
+[23:14] nach. Wir haben die Möglichkeit, das
+[23:15] Internet ein wenig mehr zu öffnen, und
+[23:17] das ist eine aufregende Sache. Auch
+[23:18] wenn die Vorstellung von Agenten, die
+[23:20] wie Piraten umhersegeln, ein wenig
+[23:21] interessant ist.

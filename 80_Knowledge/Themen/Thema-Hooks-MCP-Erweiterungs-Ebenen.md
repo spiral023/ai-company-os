@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), subagents (4), claude code skills (4), progressive disclosure (4), hooks (4), plugins (4), mcp (4), erweiterung (4), rea (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2)
+- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), subagents (4), progressive disclosure (4), claude code skills (4), hooks (4), plugins (4), mcp (4), erweiterung (4), rea (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2)
 
 ## Verwandte Themen
 
@@ -21,12 +21,12 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 ## Patterns (5)
 
 - [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 9 Belege
-- [[Agent-Tracing-nach-Beobachtungsebene]] · meinung · 1 Belege
+- [[Agent-Tracing-nach-Beobachtungsebene]] · meinung · 2 Belege
 - [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 27 Belege
-- [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 9 Belege
+- [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 10 Belege
 - [[MCP-Code-Execution-statt-Tool-Definitionen]] · meinung · 4 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]], [[Hook-erzwungene-Skill-Aktivierung]], [[KI-Dienste-nach-Vertrag-und-Datenfluss-pruefen]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]], [[Hook-erzwungene-Skill-Aktivierung]], [[KI-Dienste-nach-Vertrag-und-Datenfluss-pruefen]], [[Pruefungen-nach-Feedbackzeitpunkt-staffeln]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]
 
 ## Quellen (21)
 
@@ -56,6 +56,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-E
 
 - [[2026-10-16-poteto-2111133080526495985]]
 - [[2026-10-15-floknowsai-mit-tea-free-code-steuere-ich-alle-meine-cloud-code-und-kodex-abos-aus]]
+- [[2026-10-13-matt-pocock-stop-running-your-checks-in-harness-hooks]]
 - [[2026-10-13-ai-mit-arnie-ki-kopiert-jede-software-und-jetzt]]
 - [[2026-10-12-sarahfim-2109736893198016898]]
 - [[2026-10-12-0xmovez-2109604520770548146]]

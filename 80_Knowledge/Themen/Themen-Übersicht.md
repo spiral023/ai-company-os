@@ -7,17 +7,17 @@ Jede Source und jedes Pattern hat einen Haupt-Cluster und höchstens zwei Nebenc
 | Thema | Hub-Notiz | Quellen | Patterns | Hauptkeyword |
 |---|---|---|---|---|
 | Modelle, Kosten & Limits | [[Thema-Modelle-Kosten-Limits]] | 65 | 5 | Claude Code Kosten |
-| Verifikation, Tests & Review | [[Thema-Verifikation-Tests-Review]] | 48 | 17 | AI Code Review |
+| Verifikation, Tests & Review | [[Thema-Verifikation-Tests-Review]] | 51 | 19 | AI Code Review |
 | Prototyping & UI-Design | [[Thema-Prototyping-UI-Design]] | 33 | 7 | Lovable |
+| Spezifikation & Planung | [[Thema-Spezifikation-Planung]] | 31 | 8 | Spec-Driven Development |
 | Workflow-Frameworks & Tools | [[Thema-Workflow-Frameworks-Tools]] | 31 | 1 | Claude Code Workflow |
 | Skill-Design | [[Thema-Skill-Design]] | 29 | 9 | Claude Code Skills |
-| Spezifikation & Planung | [[Thema-Spezifikation-Planung]] | 29 | 8 | Spec-Driven Development |
-| Rolle, Lernen & Markt | [[Thema-Rolle-Lernen-Markt]] | 26 | 5 | Vibe Coding |
+| Rolle, Lernen & Markt | [[Thema-Rolle-Lernen-Markt]] | 27 | 5 | Vibe Coding |
 | Kontext-Management | [[Thema-Kontext-Management]] | 24 | 2 | Context Engineering |
 | Hooks, MCP & Erweiterungs-Ebenen | [[Thema-Hooks-MCP-Erweiterungs-Ebenen]] | 21 | 5 | Claude Code Hooks |
 | Multi-Agent & Parallelisierung | [[Thema-Multi-Agent-Parallelisierung]] | 21 | 4 | Claude Code Subagents |
-| Agent-Dateien & Memory | [[Thema-Agent-Dateien-Memory]] | 18 | 2 | CLAUDE.md |
-| Sicherheit & Sandboxing | [[Thema-Sicherheit-Sandboxing]] | 17 | 6 | Claude Code Sicherheit |
+| Agent-Dateien & Memory | [[Thema-Agent-Dateien-Memory]] | 19 | 2 | CLAUDE.md |
+| Sicherheit & Sandboxing | [[Thema-Sicherheit-Sandboxing]] | 18 | 6 | Claude Code Sicherheit |
 | Autonome Läufe, Loops & CI | [[Thema-Autonome-Läufe-Loops-CI]] | 14 | 4 | Ralph Loop |
 | Open-Source-LLMs & lokale Modelle | [[Thema-Open-Source-LLMs-lokale-Modelle]] | 12 | 2 | Open Source LLM |
 | Prompting & Klärung | [[Thema-Prompting-Klärung]] | 12 | 4 | Prompt Engineering |

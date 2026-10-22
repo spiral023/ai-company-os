@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** ki-adoption (3), reverse engineering (3), rea (3), pilotbewertung (2), use case (2), befähigung (2), evals (2), trust the harness (2), betriebsleistung (2), nutzerfeedback (2), produktwert (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), ki-chancen, swe-bench, benchmarkgrenzen, studieninterpretation
+- **Häufig in den Quellen:** ki-adoption (3), reverse engineering (3), rea (3), swe-bench (2), use case (2), pilotbewertung (2), befähigung (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), nutzerfeedback (2), betriebsleistung (2), produktwert (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), ki-chancen
 
 ## Verwandte Themen
 
@@ -23,14 +23,15 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 
 - [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 3 Belege
 - [[Claude-als-Lernwerkzeug]] · meinung · 4 Belege
-- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 20 Belege
+- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 22 Belege
 - [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] · meinung · 4 Belege
 - [[Produktwert-jenseits-des-reproduzierbaren-Codes]] · meinung · 2 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-dokumentieren]], [[Intent-Engineering-als-dritte-Schicht]], [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]], [[Produktreife-durch-echte-Testnutzer]]
 
-## Quellen (26)
+## Quellen (27)
 
+- [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] — Niklas Steenfatt beschreibt im Oktober 2026 einen Wechsel von kleinteiligen Coding-Anweisungen zu stärker delegierter Entwicklung.
 - [[2026-10-14-promptgefluester-rea-reverse-engine-anything-im-augenblick-auf-github-trending-mit-239]] — Promptgeflüster nutzt den Hype um `REA` als Anlass, den Wert eines Nachbaus von Wartung, Infrastruktur und Nutzerbeziehungen abzugrenzen.
 - [[2026-10-14-promptgefluester-entropic-baut-sich-seinen-eigenen-aehm-gitt-baut-sich-sein-eigenes-gitt]] — Promptgefluester leitet am 14.10.2026 aus Anthropics Source-Control-Projekt weitreichende Zukunftsthesen ab.
 - [[2026-10-14-kimmonismus-2110279443998445652]] — `@kimmonismus` meint, Jack Clarks Annahmen passten zur Prognose rekursiver Selbstverbesserung aus `AI 2027`.
@@ -74,6 +75,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-
 - [[2026-09-09-alex-sprogis-so-erstellst-du-interaktive-architektur-diagramm]]
 - [[2026-07-28-pdf-state-of-open-source-ai-v1-0-1]]
 - [[2026-07-27-techfeed5-1-reason-why-the-cloud-limits-could-hit-directly-that-we-talk-to-opus-in]]
+- [[2026-07-16-matt-pocock-do-software-fundamentals-still-matter]]
 - [[2026-02-20-boris-tane-sdlc-is-dead]]
 - [[2026-02-19-lenny-s-podcast-head-of-claude-code-what-happens-after-coding-is]]
 - [[2025-12-31-natebjones-seriously-not-worth-it-now]]

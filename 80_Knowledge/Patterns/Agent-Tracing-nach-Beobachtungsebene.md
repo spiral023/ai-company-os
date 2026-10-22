@@ -32,6 +32,7 @@ Strukturierte Rohereignisse und Verweise auf Diffs, Tests oder andere Ergebnisar
 ## Belege
 
 - 2026-10-12 · [[2026-10-12-josharosen-2109649928276341191]] · meinung — Die Architekturübersicht trennt Modell-, Harness-, Sitzungs-, verteilte und Umgebungssicht sowie semantische Anreicherung; sie liefert keine quantitative Abdeckungs- oder Genauigkeitsprüfung.
+- 2026-10-18 · [[2026-10-18-ai-news-strategy-daily-n-what-really-happens-when-ai-agents-meet-in-the-w]] · meinung — Die Forderung nach Auditierbarkeit wird auf die nachvollziehbare Verbindung von Identität, Auftrag, Freigabe, Agentenkontakt, Ausführung und Wirkung bezogen; dieses Schema ist eine gekennzeichnete Engineering-Ableitung, die Quelle liefert weder eine vollständige Instrumentierung noch eigene Messabdeckung.
 
 ## Spannungen & offene Fragen
 

@@ -36,11 +36,14 @@ Delegierte Aktionen durchlaufen weiterhin die für sie vorgesehenen Prüf- und F
 - 2026-08-07 · [[2026-08-07-claude-auto-mode-is-now-the-default-in-claude-code-for]] · meinung — Der Classifier berücksichtigt laut Hersteller das öffentliche, private oder vertrauenswürdige Ziel von Push/PR sowie Geheimnis- und Vertraulichkeitsregeln. Ein gleichartiger Transfer kann deshalb innerhalb der vorgesehenen Umgebung zulässig und zu einem anderen Ziel eine unerlaubte Offenlegung sein; die wirksame Durchsetzung bleibt separat zu prüfen.
 - 2026-10-10 · [[2026-10-10-satyanadella-2108931348857827686]] · meinung — Nadella behandelt offene und geschlossene Frontier-Modelle als potenzielle Insider-Risiken, ohne ihnen böswillige Absicht zu unterstellen. Identität, minimale Privilegien und nachvollziehbare Aktivität müssen deshalb außerhalb des Modells auch den Zugriff auf sensible Daten und dessen Folgeaktionen begrenzen.
 - 2026-10-02 · [[2026-10-02-zdfheute-nachrichten-videopodcast-droht-die-ki-apokalypse-lanz-precht]] · meinung — Die Sendung diskutiert zusätzliche Risiken durch Kommunikation und koordinierte Handlungen mehrerer Agenten; die wiedergegebene Vorfallserzählung liefert ohne Primärprotokolle keinen eigenständigen Nachweis des genauen Ablaufs oder genereller Fähigkeiten. Als Diskussionsbeleg relevant, nicht als neue technische Verifikation.
+- 2026-10-18 · [[2026-10-18-ai-news-strategy-daily-n-what-really-happens-when-ai-agents-meet-in-the-w]] · meinung — Der Sekundärbericht beschreibt fremde Webseitenmitteilungen als möglichen Kontaktkanal zu laufenden Agenten; zulässige Empfänger und indirekte Auftragsweitergabe gehören deshalb zur Rechtebetrachtung, während Betreiberzuordnung, tatsächliche Autonomie und erfolgreiche Rechteausweitung hier ungeprüft bleiben.
 
 ## Spannungen & offene Fragen
 
 - Offen: Wie werden Weitergabe und Ausführung eines Agent-Auftrags über mehrere Zwischenstationen technisch begrenzt und nachvollziehbar gemacht?
 - Abgrenzung: Die Quelle beschreibt Koordination über dieselben Kanäle wie Menschen, keine pauschale Freigabe aller Agent-Nachrichten.
+
+- 2026-10-22: [[2026-10-18-ai-news-strategy-daily-n-what-really-happens-when-ai-agents-meet-in-the-w]] verbindet Laborberichte, beobachteten Webverkehr und Prognosen. Für die konkret skizzierte Vergiftung persönlicher Agenten durch wilde Agenten nennt der Autor selbst keine dokumentierten Fälle; ein mögliches Kontakt- und Delegationsrisiko ist damit nicht schon ein beobachteter erfolgreicher Angriff.
 
 ## Verwandte Patterns
 

@@ -49,6 +49,8 @@ Löst die Frustration und das Mikromanagement, die entstehen, wenn Entwickler ve
 - 2026-10-03 · [[2026-10-03-vincentmumme-andrej-karpathy-einer-der-fuehrenden-ki-forscher-erfinder-vom-llm-wiki]] · meinung — Mumme beschreibt menschliches Verstehen und Überwachen wachsender Agentenergebnisse als verbleibende Aufgabe und empfiehlt KI-gestützte Aufbereitung; die sekundäre Einordnung misst weder Verständlichkeit noch Qualität der Ergebnisprüfung.
 - 2026-10-12 · [[2026-10-12-promptgefluester-ich-werde-oft-gefragt-was-arbeite-ich-denn-eigentlich-noch-wenn-die-ki]] · meinung — Der Erfahrungsbericht konkretisiert verbleibende Arbeit als Entscheidungen über Projektberichte, Kundenübersetzung, Kampagnenkontrolle und Skill-Tests; Projektzahlen, Geschäftserfolg und wirtschaftliches Zeitfenster sind ungeprüfter Selbstbericht.
 - 2026-10-16 · [[2026-10-16-math_rachel-2111238648188584306]] · meinung — Als Gegenakzent zur reinen Rollenverschiebung auf QA betont Thomas, dass Volumen, Komplexität und Ermüdung die menschlichen Fähigkeiten der Aufsicht beeinträchtigen können. Die Source diskutiert Gestaltung und Prüfung von Aufsicht, keine gemessene allgemeine Dequalifizierung.
+- 2026-07-16 · [[2026-07-16-matt-pocock-do-software-fundamentals-still-matter]] · meinung — Pocock beschreibt verständlichen Code, Tests an passenden Schnittstellen und Moduldesign als Gestaltung der Agent-Arbeitsumgebung; seine behauptete menschliche Überlegenheit in schlechten Codebasen wurde nicht gemessen.
+- 2026-10-16 · [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] · meinung — Steenfatt beschreibt Produktumfang und das Ablehnen zusätzlicher Features als verbleibende menschliche Arbeit bei delegierter Implementierung und Architektur; seine behauptete Sicherheitsüberlegenheit aktueller Modelle ist nicht durch einen passenden Vergleich belegt.
 
 ## Spannungen & offene Fragen
 
@@ -58,6 +60,8 @@ Löst die Frustration und das Mikromanagement, die entstehen, wenn Entwickler ve
 - Alle Quellen sind persönliche Erfahrungsberichte (X-Posts), keine kontrollierten Studien — die Konvergenz mehrerer unabhängiger Autoren stützt aber die Kernaussage über bloße Einzelmeinung hinaus.
 - Offene Frage: Wo genau verläuft die Grenze, ab der „Trust the Harness” in gefährliche Sorglosigkeit kippt — die Quellen selbst mahnen weiterhin Architektur- und Sicherheitsreview an, ohne diese Grenze scharf zu ziehen.
 - Ergänzung 2026-01-12: Ein weiterer Erfahrungsbericht ([[2026-01-12-dhruv1103-lessons-learned-500k-lines-claude-code]]) fordert „Vibe Reviewing“ — die gesamte Codebase mindestens auf Funktionsebene zu kennen — was in Spannung zu „Trust the Harness, not your Eyes“ steht, ohne es zu widerlegen: Ergebnis-Review auf Funktionsebene ist gröber als Zeile-für-Zeile-Korrektur, beide Positionen markieren aber unterschiedliche Guardrail-Intensität.
+
+- 2026-10-22: [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] sieht mehr Architektur- und Implementierungsarbeit beim Agent, hält aber Produktumfang und Verantwortung beim Menschen. Behauptete autonome Projekterfolge und Sicherheitsüberlegenheit sind keine passenden Vergleichsmessungen; daraus folgt keine pauschale Entbehrlichkeit von Planung oder Prüfung.
 
 ## Verwandte Patterns
 

@@ -14,10 +14,10 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | progressive disclosure | 18 | Agent-Dateien & Memory, Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Prompting & Klärung, Skill-Design |
 | preis | 17 | Modelle, Kosten & Limits |
 | claude.md | 15 | Agent-Dateien & Memory, Einstieg & Best Practices, Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Modelle, Kosten & Limits, Verifikation, Tests & Review |
+| agents.md | 14 | Agent-Dateien & Memory, Kontext-Management, Modelle, Kosten & Limits, Prompting & Klärung, Rolle, Lernen & Markt, Verifikation, Tests & Review |
 | kosten pro task | 14 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | test | 14 | Agent-Dateien & Memory, Modelle, Kosten & Limits, Verifikation, Tests & Review |
 | token | 14 | Kontext-Management, Modelle, Kosten & Limits, Open-Source-LLMs & lokale Modelle |
-| agents.md | 13 | Agent-Dateien & Memory, Kontext-Management, Modelle, Kosten & Limits, Prompting & Klärung, Rolle, Lernen & Markt, Verifikation, Tests & Review |
 | claude code hooks | 13 | AI-nativer SDLC, Agent-Dateien & Memory, Einstieg & Best Practices, Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Skill-Design |
 | gpt-6 | 13 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | review | 13 | Spezifikation & Planung, Verifikation, Tests & Review, Workflow-Frameworks & Tools |
@@ -29,8 +29,8 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | skill | 11 | Hooks, MCP & Erweiterungs-Ebenen, Prototyping & UI-Design, Skill-Design, Spezifikation & Planung, Verifikation, Tests & Review, Workflow-Frameworks & Tools |
 | skills | 11 | Hooks, MCP & Erweiterungs-Ebenen, KI-gestützte Wissensarbeit, Kontext-Management, Prototyping & UI-Design, Skill-Design, Verifikation, Tests & Review, Workflow-Frameworks & Tools |
 | codex | 10 | Agent-Dateien & Memory, Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits, Prompts zum Ausprobieren, Prototyping & UI-Design, Sicherheit & Sandboxing, Spezifikation & Planung, Verifikation, Tests & Review, Workflow-Frameworks & Tools |
+| context engineering | 10 | Agent-Dateien & Memory, Autonome Läufe, Loops & CI, Kontext-Management, Prompting & Klärung, Rolle, Lernen & Markt |
 | context rot | 10 | Kontext-Management, Multi-Agent & Parallelisierung, Rolle, Lernen & Markt, Skill-Design |
-| context engineering | 9 | Agent-Dateien & Memory, Autonome Läufe, Loops & CI, Kontext-Management, Prompting & Klärung, Rolle, Lernen & Markt |
 | opus 5.5 | 9 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung, Prototyping & UI-Design, Spezifikation & Planung |
 | spec-driven development | 9 | Multi-Agent & Parallelisierung, Prompting & Klärung, Spezifikation & Planung, Workflow-Frameworks & Tools |
 | /clear | 8 | Einstieg & Best Practices, Kontext-Management, Modelle, Kosten & Limits, Spezifikation & Planung |
@@ -54,6 +54,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | claude code | 6 | Autonome Läufe, Loops & CI, Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Prototyping & UI-Design, Spezifikation & Planung |
 | eval | 6 | Prototyping & UI-Design, Skill-Design, Verifikation, Tests & Review, Workflow-Frameworks & Tools |
 | git worktrees | 6 | Agent-Dateien & Memory, Autonome Läufe, Loops & CI, Kontext-Management, Multi-Agent & Parallelisierung, Verifikation, Tests & Review |
+| grill-me | 6 | Skill-Design, Spezifikation & Planung, Workflow-Frameworks & Tools |
 | handoff | 6 | Kontext-Management, Skill-Design, Spezifikation & Planung, Workflow-Frameworks & Tools |
 | matt pocock skills | 6 | Kontext-Management, Skill-Design, Workflow-Frameworks & Tools |
 | ralph loop | 6 | Autonome Läufe, Loops & CI, Kontext-Management |
@@ -64,7 +65,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | vibe coding | 6 | Einstieg & Best Practices, Prototyping & UI-Design, Rolle, Lernen & Markt, Spezifikation & Planung |
 | claude code subagents | 5 | Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | gpt-6 astra | 5 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung, Prompting & Klärung, Prototyping & UI-Design |
-| grill-me | 5 | Skill-Design, Spezifikation & Planung, Workflow-Frameworks & Tools |
 | gstack | 5 | Verifikation, Tests & Review, Workflow-Frameworks & Tools |
 | kontext-hygiene | 5 | Hooks, MCP & Erweiterungs-Ebenen, Kontext-Management, Modelle, Kosten & Limits |
 | lovable | 5 | Prototyping & UI-Design |
@@ -96,6 +96,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | mcp-server | 4 | Agent-Dateien & Memory, Prototyping & UI-Design, Verifikation, Tests & Review |
 | menschliche freigabe | 4 | AI-nativer SDLC, Verifikation, Tests & Review |
 | modellwechsel | 4 | Kontext-Management, Prompting & Klärung, Sicherheit & Sandboxing |
+| mutation testing | 4 | Verifikation, Tests & Review |
 | openclaw | 4 | Multi-Agent & Parallelisierung, Workflow-Frameworks & Tools |
 | paperclip | 4 | Multi-Agent & Parallelisierung |
 | plugins | 4 | Hooks, MCP & Erweiterungs-Ebenen |
@@ -116,6 +117,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | unsloth | 4 | Open-Source-LLMs & lokale Modelle, Sicherheit & Sandboxing |
 | verhaltensvergleich | 4 | Verifikation, Tests & Review |
 | /rewind | 3 | Agent-Dateien & Memory, Einstieg & Best Practices, Kontext-Management |
+| abnahmekriterien | 3 | Spezifikation & Planung, Verifikation, Tests & Review |
 | agent drift | 3 | Multi-Agent & Parallelisierung, Spezifikation & Planung |
 | agent harness | 3 | Kontext-Management, Open-Source-LLMs & lokale Modelle, Workflow-Frameworks & Tools |
 | agent teams | 3 | Multi-Agent & Parallelisierung, Verifikation, Tests & Review |
@@ -148,6 +150,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | heartbeats | 3 | Multi-Agent & Parallelisierung |
 | hook | 3 | Hooks, MCP & Erweiterungs-Ebenen |
 | human in the loop | 3 | Skill-Design, Verifikation, Tests & Review |
+| human review | 3 | Kontext-Management, Spezifikation & Planung, Verifikation, Tests & Review |
 | intent engineering | 3 | Prompting & Klärung, Rolle, Lernen & Markt |
 | kalibrierung | 3 | Modelle, Kosten & Limits |
 | ki-adoption | 3 | Rolle, Lernen & Markt |
@@ -163,6 +166,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | pareto-front | 3 | Modelle, Kosten & Limits |
 | plan.md | 3 | AI-nativer SDLC, Spezifikation & Planung |
 | plugin | 3 | Hooks, MCP & Erweiterungs-Ebenen, Workflow-Frameworks & Tools |
+| pre-commit hooks | 3 | Verifikation, Tests & Review |
 | pretooluse | 3 | Einstieg & Best Practices, Hooks, MCP & Erweiterungs-Ebenen |
 | prompt cache | 3 | Modelle, Kosten & Limits |
 | quantisierung | 3 | Open-Source-LLMs & lokale Modelle |
@@ -191,10 +195,10 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | /doctor | 2 | Agent-Dateien & Memory, Hooks, MCP & Erweiterungs-Ebenen |
 | 5-stunden-fenster | 2 | Modelle, Kosten & Limits |
 | aa-omniscience | 2 | Modelle, Kosten & Limits |
-| abnahmekriterien | 2 | Spezifikation & Planung, Verifikation, Tests & Review |
 | accuracy | 2 | Modelle, Kosten & Limits |
 | addblockedby | 2 | Multi-Agent & Parallelisierung |
 | agent bericht | 2 | Agent-Dateien & Memory |
+| agent experience | 2 | Prompting & Klärung, Verifikation, Tests & Review |
 | agent memory | 2 | Kontext-Management |
 | agent sandbox | 2 | Sicherheit & Sandboxing |
 | agent skills | 2 | Skill-Design |
@@ -202,6 +206,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | agent tree | 2 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | agent-automationen | 2 | Autonome Läufe, Loops & CI |
 | agent-identität | 2 | AI-nativer SDLC, Sicherheit & Sandboxing |
+| agent-parallelisierung | 2 | Multi-Agent & Parallelisierung, Rolle, Lernen & Markt |
 | agent-to-agent-kommunikation | 2 | AI-nativer SDLC, Sicherheit & Sandboxing |
 | agent_docs | 2 | Agent-Dateien & Memory |
 | agentbench | 2 | Agent-Dateien & Memory |
@@ -238,6 +243,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | canary-aufgaben | 2 | Verifikation, Tests & Review |
 | change quiz | 2 | Prompting & Klärung |
 | ci-agent | 2 | Autonome Läufe, Loops & CI, Verifikation, Tests & Review |
+| ci-prüfungen | 2 | Verifikation, Tests & Review |
 | claude code /goal | 2 | Autonome Läufe, Loops & CI, Multi-Agent & Parallelisierung |
 | claude code agent teams | 2 | Multi-Agent & Parallelisierung |
 | claude code anfänger | 2 | Einstieg & Best Practices |
@@ -247,12 +253,14 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | claude code tipps | 2 | Agent-Dateien & Memory, Kontext-Management |
 | claude code workflow | 2 | Spezifikation & Planung |
 | claude cowork | 2 | Agent-Dateien & Memory, Kontext-Management |
+| claude design | 2 | Prototyping & UI-Design, Spezifikation & Planung |
 | claude opus 5.5 | 2 | Modelle, Kosten & Limits, Prompting & Klärung |
 | claude usage limits | 2 | Modelle, Kosten & Limits |
 | claude.md größe | 2 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | clef head | 2 | Open-Source-LLMs & lokale Modelle |
 | code review | 2 | Autonome Läufe, Loops & CI, Verifikation, Tests & Review |
 | codepfad | 2 | Spezifikation & Planung |
+| codequalität | 2 | Verifikation, Tests & Review |
 | codex cli | 2 | Multi-Agent & Parallelisierung |
 | codex harness | 2 | Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits |
 | codex skill-creator | 2 | Prompting & Klärung |
@@ -296,6 +304,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | externe prüfung | 2 | KI-Risiken & Sicherheitsvorfälle, Verifikation, Tests & Review |
 | extra usage | 2 | Modelle, Kosten & Limits |
 | fast mode | 2 | Modelle, Kosten & Limits |
+| feedbackzeitpunkt | 2 | Verifikation, Tests & Review |
 | fixed-answer scoring | 2 | Modelle, Kosten & Limits |
 | fortschrittsmarker | 2 | Autonome Läufe, Loops & CI |
 | framework-quellcode | 2 | Verifikation, Tests & Review |
@@ -322,7 +331,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | hillclimbing | 2 | Verifikation, Tests & Review |
 | holdout accuracy | 2 | Open-Source-LLMs & lokale Modelle |
 | hook matcher | 2 | Hooks, MCP & Erweiterungs-Ebenen, Skill-Design |
-| human review | 2 | Kontext-Management, Verifikation, Tests & Review |
 | idiomatische referenz | 2 | Verifikation, Tests & Review |
 | implement | 2 | Workflow-Frameworks & Tools |
 | inbox-routing | 2 | KI-gestützte Wissensarbeit |
@@ -336,6 +344,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | klassifikation | 2 | Modelle, Kosten & Limits |
 | knowledge graph | 2 | Kontext-Management |
 | known unknowns | 2 | Prompting & Klärung |
+| korrekturkosten | 2 | Prototyping & UI-Design, Spezifikation & Planung |
 | landingpage | 2 | Prototyping & UI-Design |
 | latenz | 2 | Modelle, Kosten & Limits |
 | launch-checkliste | 2 | Multi-Agent & Parallelisierung, Sicherheit & Sandboxing |
@@ -363,7 +372,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | modulgrenzen | 2 | Multi-Agent & Parallelisierung |
 | motion graphics | 2 | Prototyping & UI-Design |
 | multi-agent | 2 | Multi-Agent & Parallelisierung |
-| mutation testing | 2 | Verifikation, Tests & Review |
 | netzwerkeffekte | 2 | Rolle, Lernen & Markt |
 | nutzerfeedback | 2 | Rolle, Lernen & Markt |
 | obsidian | 2 | Agent-Dateien & Memory, KI-gestützte Wissensarbeit |
@@ -400,6 +408,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | prompt injection | 2 | Sicherheit & Sandboxing |
 | prompt-audit | 2 | Hooks, MCP & Erweiterungs-Ebenen, Prompting & Klärung |
 | prompt-based hooks | 2 | Hooks, MCP & Erweiterungs-Ebenen |
+| prüflaufzeit | 2 | Verifikation, Tests & Review |
 | pstack | 2 | Multi-Agent & Parallelisierung, Workflow-Frameworks & Tools |
 | qa-verantwortung | 2 | Verifikation, Tests & Review |
 | quellen-bookmark | 2 | Autonome Läufe, Loops & CI |
@@ -447,9 +456,12 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | spec.md | 2 | AI-nativer SDLC |
 | speicherbedarf | 2 | Open-Source-LLMs & lokale Modelle |
 | statische code-analyse | 2 | Spezifikation & Planung, Verifikation, Tests & Review |
+| stryker.js | 2 | Verifikation, Tests & Review |
 | subagent | 2 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | subagent-kosten | 2 | Kontext-Management, Modelle, Kosten & Limits |
 | subagents als kontextgrenze | 2 | Kontext-Management |
+| surviving mutants | 2 | Verifikation, Tests & Review |
+| swe-bench | 2 | Rolle, Lernen & Markt |
 | szenenprüfung | 2 | KI-gestützte Wissensarbeit |
 | t3 code | 2 | Workflow-Frameworks & Tools |
 | tabellenabfragen | 2 | KI-gestützte Wissensarbeit |
@@ -457,6 +469,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | task-basierte steuerung | 2 | Autonome Läufe, Loops & CI, Workflow-Frameworks & Tools |
 | test impact analysis | 2 | Verifikation, Tests & Review |
 | testhistorie | 2 | Verifikation, Tests & Review |
+| testqualität | 2 | Verifikation, Tests & Review |
 | token-verbrauch quadratisch | 2 | Modelle, Kosten & Limits |
 | tokenizer | 2 | Modelle, Kosten & Limits |
 | tokens | 2 | Modelle, Kosten & Limits |

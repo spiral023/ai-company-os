@@ -33,6 +33,7 @@ Pro Feature entsteht ein fester Satz von fünf Dateien in einem git-unsichtbaren
 - 2026-01-14 · [[2026-01-14-ashpreetbedi-claude-code-spec-first]] · meinung — X-Thread-Aufarbeitung (über vibedeck-Sekundärfassung) beschreibt ein privates, per Symlink eingebundenes `specs/`-Repository mit den fünf Dateien `design.md`/`implementation.md`/`decisions.md`/`prompts.md`/`future-work.md` pro Feature am Beispiel des eigenen Agno-Repos.
 - 2026-07-17 · [[2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt]] · meinung — Gegenposition zu kleinen Specs: eine monolithische 126-Seiten-Spezifikation; ohne Vergleich.
 - 2026-10-18 · [[2026-10-18-mattpocockuk-2111708560715292675]] · meinung — Gegenposition: Pocock empfiehlt Specs und PRDs in abschließbaren GitHub-Issues und nur ADRs im Repo; dies widerspricht der dauerhaften Feature-Spec, ohne einen Vergleich der Ablageformen zu liefern.
+- 2026-10-20 · [[2026-10-20-alex-sprogis-hoer-auf-software-abos-zu-kaufen]] · meinung — Das grobe Briefing wird in einzelne Feature-Anforderungen mit Details, Sonderfällen und konkreten Prüfmöglichkeiten zerlegt, die der Mensch inhaltlich überprüft und die als gemeinsame Referenz außerhalb des Chats dienen. Die Quelle beschreibt damit die dauerhafte Spezifikationsfunktion, belegt jedoch weder das konkrete fünfteilige Dateiset des Patterns noch automatische Aktualität oder technisch erzwungene Einhaltung; das externe Template war im Beschreibungsexport nur verkürzt verlinkt.
 
 ## Spannungen & offene Fragen
 

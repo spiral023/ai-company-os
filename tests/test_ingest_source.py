@@ -16,6 +16,38 @@ sys.modules["ingest_source"] = ingest
 SPEC.loader.exec_module(ingest)
 
 
+class TestYoutubeAbruffehler:
+    @pytest.mark.parametrize("error_name", ["RequestBlocked", "IpBlocked"])
+    def test_blockierter_zugriff_beweist_keine_fehlenden_untertitel(self, monkeypatch, error_name):
+        api = pytest.importorskip("youtube_transcript_api")
+        calls = []
+
+        def blocked(self, video):
+            calls.append(video)
+            raise getattr(api, error_name)(video)
+
+        monkeypatch.setattr(api.YouTubeTranscriptApi, "list", blocked)
+        with pytest.raises(SystemExit) as error:
+            ingest.lade_youtube("https://www.youtube.com/watch?v=A0scuiiGBC4")
+        message = str(error.value)
+        assert "YouTube blockiert den Abruf" in message
+        assert "Untertitel fehlen" not in message
+        assert "Kein Transkript verfuegbar" not in message
+        assert calls == ["A0scuiiGBC4"]
+
+    def test_deaktivierte_untertitel_bleiben_ein_eigener_fehler(self, monkeypatch):
+        api = pytest.importorskip("youtube_transcript_api")
+
+        def disabled(self, video):
+            raise api.TranscriptsDisabled(video)
+
+        monkeypatch.setattr(api.YouTubeTranscriptApi, "list", disabled)
+        with pytest.raises(SystemExit) as error:
+            ingest.lade_youtube("https://www.youtube.com/watch?v=A0scuiiGBC4")
+        assert "Untertitel sind deaktiviert" in str(error.value)
+        assert "YouTube blockiert den Abruf" not in str(error.value)
+
+
 class TestDatum:
     def test_iso_bleibt(self):
         assert ingest.iso_datum("2026-07-28T10:00:00Z") == "2026-07-28"

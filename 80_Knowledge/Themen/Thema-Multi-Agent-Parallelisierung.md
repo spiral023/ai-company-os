@@ -9,7 +9,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - **Hauptkeyword:** Claude Code Subagents
 - **Long-Tail:** Agent Teams Claude Code; Git Worktrees parallele Agents; Subagents vs. Agent Teams; Multi-Agent Orchestrierung; Task-Abhängigkeiten Claude Code; Kosten paralleler Agents
 - **Fragen:** Wann lohnt sich Parallelisierung? / Subagent oder Agent Team?
-- **Häufig in den Quellen:** subagents (6), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), agent-organisation (3), heartbeats (3), claude code tasks (2), addblockedby (2), multi-agent (2), claude code agent teams (2), modulgrenzen (2), codex cli (2), rollen (2), budgets (2), freigaben (2), edit-kollisionen (2), agent teams (2), parallel agents (2)
+- **Häufig in den Quellen:** subagents (6), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), heartbeats (3), agent-organisation (3), addblockedby (2), multi-agent (2), claude code tasks (2), claude code agent teams (2), modulgrenzen (2), codex cli (2), rollen (2), budgets (2), freigaben (2), parallel agents (2), agent teams (2), edit-kollisionen (2)
 
 ## Verwandte Themen
 
@@ -23,7 +23,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - [[Advisor-Agent-gegen-Drift]] · meinung · 3 Belege
 - [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]] · meinung · 3 Belege
 - [[Blockierende-Task-Abhaengigkeiten]] · meinung · 5 Belege
-- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 49 Belege
+- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 50 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Bedarfsorientierter-Repositoryzugriff]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]]
 
@@ -54,6 +54,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 ## Quellen mit diesem Thema als Nebenthema
 
 - [[2026-10-19-voxyz_ai-2112302775547679169]]
+- [[2026-10-18-ai-news-strategy-daily-n-what-really-happens-when-ai-agents-meet-in-the-w]]
 - [[2026-10-15-floknowsai-mit-tea-free-code-steuere-ich-alle-meine-cloud-code-und-kodex-abos-aus]]
 - [[2026-10-13-vincentmumme-wenn-du-das-problem-kennst-dass-du-2-chat-gpt-abos-hast-1-clot-abo-open]]
 - [[2026-10-13-anthropic-redesigning-source-control-at-anthropic]]

@@ -1,0 +1,81 @@
+YouTube transcript
+Video ID: Yn8h5Ip-L9c
+Language: de-DE
+Captions: auto-generated
+
+[0:00] Alle sind besessen davon, die Arbeit
+[0:01] von Ingenieuren zu automatisieren. Und
+[0:03] am besten gelingt das, indem man
+[0:04] herausfindet, wo man eine menschliche
+[0:06] Überprüfung braucht. Nehmen wir an,
+[0:07] Sie haben einen Prozess, der so
+[0:09] aussieht. Stellen Sie sich eine Zeit
+[0:11] vor völlig ohne KI, in der man
+[0:12] vielleicht Arbeit plant, dann Arbeit
+[0:14] ausliefert und dann vielleicht Arbeit
+[0:16] überprüft. Und all diese
+[0:17] Kontrollpunkte, all die Momente, in
+[0:19] denen man die Arbeit prüft, sind rein
+[0:21] menschlich. Der Traum vieler Leute ist
+[0:24] es, glaube ich, all das auf einmal auf
+[0:26] KI zu übertragen. Aber für mich
+[0:28] ergibt das nicht wirklich Sinn. Bei
+[0:30] sehr großen Arbeitsbereichen sollte
+[0:31] man sich wahrscheinlich zuerst mit der
+[0:33] KI abstimmen. Mit anderen Worten: Man
+[0:34] möchte bereits in der anfänglichen
+[0:35] Planungsphase eingebunden sein. Genau
+[0:37] das tun meine Skills wie „Grill me“
+[0:38] , „Grill with Docs“ und „
+[0:40] Wayfinder“. Und dann möchte man
+[0:41] wahrscheinlich auch eine menschliche
+[0:42] Überprüfung direkt am Ende, bevor man
+[0:44] es in die Produktion gibt. Es gibt
+[0:45] jedoch Situationen, in denen man am
+[0:47] Ende nicht so viel menschliche
+[0:48] Überprüfung braucht, weil es
+[0:50] vielleicht nur ein Refactoring oder
+[0:51] eine interne Umbenennung von Dokumenten
+[0:53] ist. Vielleicht kann sich der Mensch
+[0:55] einfach frühzeitig abstimmen. Man kann
+[0:56] davon ausgehen, dass der Plan fertig
+[0:58] ist, und dann kann die KI die Arbeit
+[0:59] direkt bis in die Produktion bringen.
+[1:00] Das ist für einige Fälle gut. Es gibt
+[1:02] auch Fälle, in denen man die zu
+[1:03] erledigende Arbeit einfach in einem
+[1:05] einzigen Prompt spezifizieren kann,
+[1:06] sich nicht wirklich mit der KI
+[1:08] abstimmen muss, nicht grillen muss und
+[1:09] sie einfach durch den Prozess laufen
+[1:11] lässt, um sie dann erst kurz vor dem
+[1:13] Livegang zu überprüfen. Das kann bei
+[1:14] sehr einfachen Änderungen, sehr
+[1:16] kleinen Diffs, Dingen, die keinen
+[1:17] großen Wirbel verursachen oder keine
+[1:19] großen Auswirkungen haben–wie etwa
+[1:21] die Farbe eines Buttons oder den Namen
+[1:22] eines Titels zu ändern–sehr effektiv
+[1:24] sein. Sogar bei Dingen wie der Behebung
+[1:26] eines kleinen Fehlers, der nur ein paar
+[1:27] Zeilen Code betrifft, sollte man diesen
+[1:29] Kontrollpunkt wahrscheinlich nach
+[1:30] rechts verschieben. Und das ist die
+[1:32] richtige Sprache, die man hier
+[1:32] verwenden sollte. Man verschiebt die
+[1:34] Kontrollpunkte nach links bei großen
+[1:35] Aufgaben, bei denen man sich zuerst
+[1:36] abstimmen muss, und man kann sie nach
+[1:38] rechts verschieben bei kleinen Aufgaben
+[1:39] . Der Grund dafür ist, dass es umso
+[1:41] einfacher ist, den Code komplett neu zu
+[1:43] generieren und im Kontext zu halten, je
+[1:45] kleiner der Diff ist. Wenn man also
+[1:47] wirklich umfangreiche Arbeit hat,
+[1:48] möchte man sich vorher abstimmen, weil
+[1:50] eine Korrektur in einem späteren
+[1:52] Stadium sehr teuer ist. Das ist also
+[1:54] die Theorie. Bei großen Aufgaben
+[1:55] verschiebt man die Überprüfung nach
+[1:56] links. Bei kleinen Aufgaben verschiebt
+[1:57] man die Überprüfung nach rechts.

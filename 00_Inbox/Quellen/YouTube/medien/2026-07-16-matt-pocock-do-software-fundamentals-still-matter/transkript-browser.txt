@@ -1,0 +1,74 @@
+YouTube transcript
+Video ID: eEjBhVI9Qok
+Language: de-DE
+Captions: auto-generated
+
+[0:00] Sind Software-Grundlagen heute noch
+[0:01] wichtig? Oder ist der Programmierer als
+[0:04] Beruf einfach tot? Sollten wir den Code
+[0:06] einfach ignorieren und uns nur auf die
+[0:08] Ergebnisse der KI konzentrieren? Es
+[0:10] einfach als Blackbox betrachten. Nun,
+[0:13] ich habe da eine Idee: Der Code ist die
+[0:15] Umgebung, in der der Agent arbeitet,
+[0:17] und die Qualität dieser Umgebung
+[0:19] beeinflusst das Ergebnis des Agenten in
+[0:21] der Codebasis. Wenn man also eine
+[0:24] miserable Codebasis hat, wird der Agent
+[0:26] auch nur Müll produzieren. Das
+[0:28] Tückische an einer schlechten
+[0:29] Codebasis ist, dass sie sich unbemerkt
+[0:30] einschleicht. Es gibt ein Konzept
+[0:32] namens Software-Entropie: Wenn man
+[0:35] nicht sehr sorgfältig bei der
+[0:36] Organisation vorgeht, strategisch denkt
+[0:39] , eine langfristige Vision hat und
+[0:41] Software-Grundlagen anwendet, wird die
+[0:43] Codebasis mit der Zeit immer schlechter
+[0:46] , unübersichtlicher und schwieriger zu
+[0:48] bearbeiten. Nach dem, was ich bisher
+[0:51] von KI gesehen habe, sind Menschen bei
+[0:53] der Arbeit in schlechten Codebasen
+[0:55] deutlich besser als KI. Menschen haben
+[0:57] ein Gedächtnis und können sich daran
+[0:59] erinnern, was in einer Codebasis
+[1:01] funktioniert und was nicht. Das ist
+[1:02] natürlich nicht perfekt, aber es
+[1:04] bedeutet, dass sie mit der Zeit ein
+[1:05] Gespür für eine schlechte Codebasis
+[1:07] entwickeln und darin relativ produktiv
+[1:08] bleiben können. Agenten haben kein
+[1:10] Gedächtnis. Es sei denn, man baut
+[1:12] ihnen eine Art behelfsmäßiges
+[1:14] Speichersystem an, was bisher ein
+[1:15] ungelöstes Problem ist. Sie sind ein
+[1:17] bisschen wie die Hauptfigur aus Memento
+[1:19] , die in der Codebasis aufwacht und
+[1:20] sagt: „Okay, ich bin wach. Was weiß
+[1:22] ich noch?“„Nichts.“ Also muss man
+[1:24] ihnen während der Arbeit immer wieder
+[1:26] alles über diese schlechte Codebasis
+[1:27] neu beibringen. Das bedeutet, dass KI
+[1:29] in Ihrer Codebasis immer wieder
+[1:31] dieselben Fehler machen wird, es sei
+[1:32] denn, man denkt strategisch, arbeitet
+[1:34] mit Leitplanken, führt sie an ihr Ziel
+[1:36] und verhindert ihre Fehler. Das gilt
+[1:38] für einfache Modelle genauso wie für
+[1:40] intelligente Modelle. Das Problem ist
+[1:42] nicht die Fähigkeit zu schlussfolgern,
+[1:44] sondern die Tatsache, dass diese
+[1:45] Codebasen schwer zu durchschauen,
+[1:47] schwer zu bearbeiten und schwer zu
+[1:48] ändern sind–ein schwieriges Umfeld
+[1:50] für die KI. Die wertvollsten Leute
+[1:53] sind derzeit diejenigen, die
+[1:54] großartige Agenten-Erfahrungen in
+[1:55] ihrer Codebasis schaffen können. Das
+[1:57] erreicht man durch leicht
+[1:59] verständlichen Code, Tests an den
+[2:01] richtigen Schnittstellen sowie ein
+[2:02] gutes Modul-und Interface-Design. Und
+[2:05] deshalb sind Software-Grundlagen heute
+[2:07] wichtiger denn je, denn gute Codebasen
+[2:10] sind wichtiger denn je.

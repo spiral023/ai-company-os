@@ -369,7 +369,11 @@ def youtube_id(url: str) -> str:
 
 def lade_youtube(url: str) -> Quelle:
     try:
-        from youtube_transcript_api import YouTubeTranscriptApi
+        from youtube_transcript_api import (
+            RequestBlocked,
+            TranscriptsDisabled,
+            YouTubeTranscriptApi,
+        )
     except ImportError:
         raise SystemExit(
             "[FEHLER] youtube-transcript-api fehlt. Installieren:\n"
@@ -388,8 +392,17 @@ def lade_youtube(url: str) -> Quelle:
         eintraege = spur.fetch()
         sprache = getattr(spur, "language_code", "?")
         generiert = getattr(spur, "is_generated", None)
+    except RequestBlocked as err:  # schließt die Unterklasse IpBlocked ein
+        raise SystemExit(
+            f"[FEHLER] YouTube blockiert den Abruf für {vid} ({type(err).__name__}). "
+            "Ob Untertitel verfügbar sind, lässt sich so nicht feststellen. "
+            "Weitere automatische Versuche anhalten; die Originalseite im verbundenen "
+            "Browser prüfen. Erfassungswege: 00_Inbox/Quellen/README.md."
+        ) from err
+    except TranscriptsDisabled as err:
+        raise SystemExit(f"[FEHLER] Untertitel sind deaktiviert für {vid}.") from err
     except Exception as err:  # noqa: BLE001 — API wirft heterogene Fehler
-        raise SystemExit(f"[FEHLER] Kein Transkript verfuegbar für {vid}: {err}")
+        raise SystemExit(f"[FEHLER] Transkript-Abruf fehlgeschlagen für {vid}: {err}") from err
 
     segmente: list[str] = []
     for eintrag in eintraege:

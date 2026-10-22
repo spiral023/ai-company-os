@@ -1,0 +1,653 @@
+YouTube transcript
+Video ID: W4m_8ovS0RY
+Language: de
+Captions: auto-generated
+
+[0:00] Softwareentwicklung hat sich verändert.
+[0:02] Und damit meine ich nicht dieses Jahr,
+[0:03] damit meine ich eher diesen Sommer,
+[0:05] damit meine ich wirklich seit letztem
+[0:06] Monat, September 2026 wurden die Regeln
+[0:10] neu geschrieben. Und wenn du dich
+[0:11] vielleicht schon mal ein bisschen mit
+[0:12] agentischer Softwareentwicklung
+[0:13] beschäftigt hast und Konzepte gelernt
+[0:15] hast, wie man richtig promptet, wie man
+[0:17] den Kontext [musik] managed, wie man
+[0:18] vielleicht Loops baut, dann lass mich
+[0:20] dir sagen, das alles ist jetzt schon
+[0:22] wieder überholt. Selbst der Wert von
+[0:24] Skills und Markdown-Dateien wie der
+[0:26] agents.md, selbst all das ist jetzt
+[0:28] schon wieder komplett in Frage gestellt.
+[0:30] ist Niklas, ich bin Informatiker, ich
+[0:32] habe selbst viele Jahre als
+[0:33] professioneller Entwickler bei Meta
+[0:34] gearbeitet und heute gebe ich dir meinen
+[0:36] unaufgeregten Blick auf die doch aber
+[0:38] sehr aufregende Entwicklung, die gerade
+[0:40] in der Programmierung stattfindet. Ich
+[0:41] habe mal selbst gerade ChatGPT gefragt,
+[0:43] welche Ratschläge bezüglich Vibe Coding
+[0:46] es vor einem Jahr gegeben hätte und wie
+[0:48] es das heute ganz anders einschätzen
+[0:50] würde. Sehr spannend, was es erzählt.
+[0:52] Schauen wir mal. Vor einem Jahr noch
+[0:53] haben wir den KIs immer relativ genau
+[0:55] erklärt, wie sie jeden Schritt
+[0:57] implementieren sollen. Da wurde im Netz
+[0:58] auch ganz viel von der Kunst des
+[1:00] Promptens gesprochen, Prompt
+[1:02] Engineering, ganze Cheat Sheets haben
+[1:04] Leute verkauft, verkaufen sie teilweise
+[1:06] wahrscheinlich immer noch, dass wenn man
+[1:07] so und so mit der KI spricht, besonders
+[1:10] gute Ergebnisse herauskämen. Das ist
+[1:12] vollkommen überholt. Ich meine, ich habe
+[1:14] gerade erst ein Video zum Thema Reverse
+[1:16] Engineering gemacht, da habe ich der KI
+[1:18] gesagt, in dem Fall Claude, bau mal die
+[1:19] Software Screen Studio auf diesem Mac
+[1:21] nach hier. Das ist der ganze Prompt, ich
+[1:24] habe nichts dazu gesagt, dann hat das
+[1:26] Ding 24 Stunden programmiert und am Ende
+[1:29] ist ein perfekter Klon dieser Software
+[1:30] rausgekommen. Also wirklich hier, ich
+[1:32] muss es einfach noch mal zeigen, wir
+[1:34] können hier originale Screen Studio
+[1:36] Dateien in dieser Screen Forge Software,
+[1:39] wie er es eigenständig genannt hat,
+[1:41] öffnen und es ist so smooth, ja, wie ich
+[1:44] hier in dieser Timeline arbeiten kann,
+[1:47] wie die Zooms weiterhin korrekt
+[1:48] funktionieren und aber auch eben
+[1:50] editierbar sind. Also einfach top notch
+[1:52] und ich habe als Mensch, selbst als
+[1:53] professioneller Entwickler überhaupt
+[1:55] nichts zur Software-Architektur gesagt,
+[1:57] er hat alle Entscheidungen selbst
+[1:58] getroffen. Und das ist ja der große
+[1:59] Trend, den wir sehen gerade wirklich
+[2:01] erst in den letzten Monaten sind die
+[2:02] Modelle so so smart geworden, dass sie
+[2:05] in der Regel bessere Ergebnisse leisten,
+[2:07] wenn ich als Mensch weniger Vorgaben
+[2:08] mache. Und das übrigens in ganz
+[2:10] verschiedenen Bereichen, ich habe auf
+[2:11] dem Kanal ja auch schon ein paar Videos
+[2:13] zum Thema Videogenerierung gemacht mit
+[2:14] den Seed Dance Modellen z.B. Auch da
+[2:17] kommt mittlerweile oft was viel besseres
+[2:19] raus, wenn ich einfach sag: "Mach einen
+[2:20] tollen Film", als wenn ich genau vorgebe
+[2:22] diese Beleuchtung, jener Kamerawinkel
+[2:24] und diesen langen Prompt womöglich mit
+[2:26] einer anderen KI noch generieren lasse,
+[2:28] da kommen oft schlechtere Sachen raus,
+[2:29] als wenn ich einfach nur beschreibe, wie
+[2:30] es ungefähr aussehen soll. Weniger
+[2:32] Prompt nun mehr zu erreichen. Der Trend
+[2:34] geht soweit, dass Claude selbst, also
+[2:36] Anthropic, ja im Juli schon 80% der
+[2:39] Claude Code System Prompt entfernt
+[2:41] haben, weil sie einfach gemerkt haben,
+[2:43] dass die Modelle das nicht brauchen,
+[2:44] dass sie besser arbeiten, wenn wir
+[2:45] Menschen weniger eingreifen. Und das ist
+[2:47] so ein bisschen das Theme, das Leitmotiv
+[2:49] dieser Tabelle. Der nächste Punkt, wir
+[2:51] haben vor einem Jahr immer noch sehr
+[2:52] viel Kontextmanagement betreiben müssen.
+[2:55] Gerade in der Programmierung gibt's da
+[2:56] auch ganz tolle Tutorials von anderen
+[2:58] Creatorn und Entwicklern, wie Matt
+[2:59] Pocock und Konsorten. Tolle Tutorials,
+[3:01] die jetzt aber schon wieder längst
+[3:03] überholt sind. Die Idee, ein LLM kann
+[3:05] sich immer nur so und so viel Sachen auf
+[3:06] einmal merken, es hat so ein gewisses
+[3:08] Kontextfenster und wenn das zu voll ist,
+[3:10] wird es immer weniger klug, weil es
+[3:12] immer weniger neue Sachen verarbeiten
+[3:13] kann. Deswegen ist das kleinschrittige
+[3:15] Arbeiten und das regelmäßige Starten
+[3:17] frischer Agent Sessions immer so wichtig
+[3:19] gewesen. Ich kann mich immer nur
+[3:21] wiederholen, Claude hat hier 24 Stunden
+[3:23] an einem Projekt ununterbrochen
+[3:25] programmiert und überhaupt keine
+[3:26] Probleme mit dem eigenständigen
+[3:28] Kontextmanagement gehabt. Die LLMs sind
+[3:30] inzwischen so viel besser im
+[3:31] automatischen Kompakten und übrigens
+[3:33] auch, wie man sieht, darin, in einer
+[3:35] Schleife zu arbeiten, bis das hier
+[3:37] wirklich erreicht ist. Das kommt in der
+[3:38] Tabelle hier gar nicht vor, Loop
+[3:39] Engineering, ein bisschen ein Konzept
+[3:41] der Vergangenheit. Also, wenn du dir
+[3:42] selbst, wie so viele Entwickler vor
+[3:44] einiger Zeit vielleicht noch komplexe
+[3:46] Konstrukte mit allen möglichen Schleifen
+[3:47] gebaut hast, dann kannst du ganz ehrlich
+[3:49] deiner KI einfach jetzt eine ausreichend
+[3:51] anspruchsvolle Aufgabe geben und die
+[3:53] wird sehr lange daran arbeiten. Im Video
+[3:54] von Matthew Berman hat er gezeigt, wie
+[3:56] sein Codex einfach seit drei, vier Tagen
+[3:58] an einem Prompt arbeitet. Wenn man
+[3:59] natürlich auch für den entsprechenden
+[4:01] Tarif bezahlt, dann geben die Hannes ist
+[4:02] das inzwischen durchaus her. Ich würde
+[4:04] damit übrigens jetzt noch nicht so weit
+[4:06] gehen, dass ich einfach in ein Asian
+[4:07] Fenster all meine Aufgaben reinwerfe,
+[4:09] ist auch für mich als Menschen dann ein
+[4:10] bisschen unübersichtlich und ich glaube
+[4:12] schon auch noch ein bisschen verwirrend
+[4:13] für die KI. Gerade wenn wir verschiedene
+[4:14] Themen diskutiert haben und ich selbst
+[4:16] vielleicht auch meine Meinung im
+[4:18] Verlaufe des Gesprächs mal geändert
+[4:19] habe, dann können so verwirrende
+[4:20] Anweisungen durchaus weiterhin
+[4:22] verwirrend sein. Ich würde also für ganz
+[4:24] unterschiedliche Aufgaben, ganz
+[4:25] unterschiedliche Tasks weiterhin
+[4:27] verschiedene Threads und verschiedene
+[4:28] Sessions verwenden, aber jede einzelne
+[4:30] Session kann halt super intensiv, super
+[4:32] lang, super komplex sein und ich muss da
+[4:34] nicht selbst mit Schleifen arbeiten. Wir
+[4:35] haben dann auch bis vor kurzem immer
+[4:36] noch sehr viel Energie da rein
+[4:38] investiert, Fehler der Agenten zu
+[4:39] catchen und vor allem für die Zukunft zu
+[4:41] vermeiden. Haben dann hier immer mehr
+[4:43] Instruktionen, Regeln für die Agenten
+[4:45] kumuliert. Immer wenn was falsch läuft
+[4:47] oder der Agent was in Zukunft anders
+[4:49] machen soll, schreibt der die Regel in
+[4:51] der Markdown Datei, die wird dann von
+[4:52] den zukünftigen Agenten wieder gelesen
+[4:54] und so wird das Repository mit immer
+[4:55] mehr Textanweisungen zugemüllt. Die
+[4:58] agents.md wird immer länger und jetzt
+[5:00] kommt der absolute Knüller, obwohl gar
+[5:02] nicht mehr klar ist, ob das überhaupt
+[5:04] was nützt. Jetzt haltet euch fest,
+[5:06] Leute, wenn du dich schon ein bisschen
+[5:07] mit Agenten beschäftigt hast, dann hol
+[5:08] dir einen Stuhl, ja? Sieh zu, dass du
+[5:10] sitzt, denn guckt euch mal dieses Paper
+[5:12] hier an. Das ist ganz neu, vor zwei
+[5:14] Wochen erschienen. Da haben sie mal
+[5:16] untersucht, ob die agents.md Datei
+[5:18] überhaupt was bringt. Paper von der ETH
+[5:20] Zürich und sie sind tatsächlich zu dem
+[5:22] Ergebnis gekommen, ich kann es selbst
+[5:24] noch kaum glauben, dass Kontextdateien
+[5:26] allgemein die Erfolgsrate nicht
+[5:29] verbessern, die Inferenzkosten aber um
+[5:31] 20 % erhöhen. Also die sagen mir ja
+[5:33] gerade einfach, lösch deine Markdown
+[5:34] Datei. Wahnsinn, Leute, denn es stimmt
+[5:36] natürlich, diese Dateien sind sehr
+[5:38] gewachsen. Passt mal auf, ich entwickle
+[5:40] gerade selbst einen neuen Task Manager,
+[5:41] ist in der Closed Beta und da haben wir
+[5:42] hier natürlich auch eine agents.md Datei
+[5:46] und die ist lang, ich sag's euch, schaut
+[5:49] es mal an. Und ich habe das meiste hier
+[5:50] gar nicht selbst geschrieben, die
+[5:51] Agenten haben wahrscheinlich auf meine
+[5:53] indirekte Anweisung hin da immer mehr
+[5:55] Instruktionen reingepackt. Und da stehen
+[5:56] dann wirklich so weird spezifische
+[5:58] Sachen drin, hier ein ganzer Absatz, ein
+[6:00] Paragraph zum Filtern von Quests, von
+[6:03] Tasks auf dem Homescreen, weil der
+[6:05] Founder, also ich in dem Fall, sich auf
+[6:07] irgendeinem Linear Issue an dem und dem
+[6:09] Datum dazu geäußert hat. Da sind so
+[6:11] Kommandos dokumentiert für das Projekt
+[6:13] und da stehen alle möglichen Best
+[6:14] Practices für die Programmierung, was
+[6:16] die Agenten unbedingt zu tun oder auch
+[6:18] zu unterlassen haben. Ja, besten Dank.
+[6:20] Ich würde sagen, so leid es mir tut, das
+[6:22] ist ein weiteres Relikt der
+[6:23] Vergangenheit. Die KIs sind inzwischen
+[6:25] so fähige Entwickler, dass sie die Best
+[6:27] Practices der Codebase einfach anhand
+[6:29] der Codebase einhalten werden. In die
+[6:31] Markdown-Dateien solltest du wirklich
+[6:32] höchstens sehr, sehr spezielle, fast
+[6:34] exotische, exzentrische Regeln packen,
+[6:36] die nur für dein Repo gelten und selbst
+[6:38] ein fähiger Entwickler unmöglich wissen
+[6:40] kann. Und in den meisten Fällen sollten
+[6:41] es sowieso eben gar keine Textregeln
+[6:43] mehr sein, sondern wie hier schön
+[6:44] geschrieben, enforceable Checks, bzw.
+[6:47] Skripte, deterministische Hooks. Anstatt
+[6:49] beispielsweise in Markdown zu schreiben,
+[6:51] "Liebe Agenten, legt bitte für neue
+[6:52] Features immer neue Branches und
+[6:54] Worktrees an", habe ich neulich im Video
+[6:56] schon gezeigt, habe ich einfach ein
+[6:56] Skript, dass ich selbst einen Hotkey
+[6:58] drücke, dann geht mein Agentenfenster
+[7:00] auf und hat automatisch schon
+[7:01] deterministisch neuen Worktree und eine
+[7:03] neue Branch angelegt. Oder wenn wir
+[7:04] bestimmte Regeln, bestimmte Konventionen
+[7:06] für die Codebase haben, dann ist es
+[7:07] besser, die wirklich als feste
+[7:08] Lint-Regeln anzulegen oder als CI-Checks
+[7:10] in GitHub. Zukünftige Agenten werden
+[7:12] sich eh die Codebase anschauen, werden
+[7:13] sich die Konfigurationen anschauen,
+[7:15] werden gucken, "Ah, was gibt es für
+[7:16] CI-Checks, was gibt es für den Rules?"
+[7:18] und sich daran entsprechend orientieren.
+[7:20] Generell auch diese Idee, immer erst
+[7:21] alles ganz vorsichtig runterzubrechen
+[7:23] und dann in die Umsetzung zu gehen, ist
+[7:24] was einerseits sehr menschliches und
+[7:26] andererseits auch was, was vor allem die
+[7:27] älteren Modelle noch benötigt haben. Ich
+[7:29] habe selbst vor einiger Zeit noch mit
+[7:30] dem Plan-Modus der KI gearbeitet, habe
+[7:33] für meinen eigenen Task-Manager ein
+[7:34] 10.000 Wörter Architekturdokument
+[7:37] erstellt, bevor wir dann irgendwann in
+[7:38] die Umsetzung gegangen sind. Und Und
+[7:40] sage ich jetzt nicht, dass
+[7:40] Projektplanung völlig überholt ist Und
+[7:42] ich glaube, es ist auch gerade für den
+[7:44] Menschen wichtig ist, sich Gedanken zu
+[7:46] machen, was denn überhaupt entwickelt
+[7:47] werden soll. Die Entscheidung liegt
+[7:48] natürlich weiterhin beim Menschen.
+[7:49] Welche Features soll die App denn
+[7:51] überhaupt haben, bzw. welche soll sie
+[7:53] nicht haben. Ich habe gerade ein
+[7:54] Beta-Test laufen, wie gesagt, da kommen
+[7:56] super viele coole Vorschläge rein für
+[7:57] meine App und ich sehe meine Aufgabe
+[7:59] auch durchaus sehr viel im Verhindern.
+[8:01] Denn wenn ich jetzt einfach alles
+[8:02] durchwinke und per KI die tollsten und
+[8:03] tollsten und tollsten Features
+[8:04] implementiere, habe ich am Ende eine
+[8:06] App, die viel zu überladen ist. Also
+[8:07] nein, ich setze mich jetzt natürlich
+[8:08] nicht komplett auf den Beifahrer Sitz.
+[8:10] Ich spreche schon noch mit den KIs. Ich
+[8:12] bin auch der klare Product Owner. Aber
+[8:14] was die Architektur angeht, da geht die
+[8:16] Entwicklung schon sehr stark in die
+[8:17] Richtung autonomer KI-Entscheidung. Und
+[8:19] das hat sich halt so schnell geändert.
+[8:20] Da muss man jetzt wirklich vorsichtig
+[8:21] sein, dass man sich nicht vor sechs
+[8:23] Monaten eine Meinung gemacht hat von der
+[8:25] KI und sich dann auf die versteift. Ja,
+[8:27] am Anfang war es noch so eine reine Art
+[8:28] Autocomplete, so eine statistische
+[8:30] Vorhersage. Ich wollte eine Funktion
+[8:31] definieren und konnte den Programmcode
+[8:33] dann mit KI ein bisschen schneller
+[8:34] ausfüllen. Dann hat die KI angefangen
+[8:36] ganze Funktionen selbst zu schreiben und
+[8:37] dann ganze Pakete, größere Teile der
+[8:40] Software. Und ich als Mensch habe aber
+[8:41] immer noch die
+[8:42] High-Level-Architektur-Entscheidung
+[8:43] getroffen. Und jetzt kommen wir langsam
+[8:45] in den Bereich und das sage ich als
+[8:46] professioneller Entwickler, wo ich nicht
+[8:48] mehr sicher bin, ob ich die besseren
+[8:49] Architektur-Entscheidungen treffe. GPT-6
+[8:51] Astra hat mehr Wissen gespeichert über
+[8:53] Software-Architektur als du oder ich.
+[8:55] Und von den Halluzinationen, die Anfang
+[8:57] des Jahres ja noch ein riesen ungelöstes
+[8:59] Problem waren, kriegt man in der Praxis
+[9:01] wirklich immer weniger mit. Was übrigens
+[9:03] nicht nur, das finde ich schön, dass er
+[9:04] es hier mit reingenommen hat, daran
+[9:05] liegt, dass die Modelle besser werden,
+[9:06] sondern auch das ganze drumherum, gerade
+[9:08] auch die Harnesses. Wie gesagt, Context
+[9:10] Management, auch Computer Use, natürlich
+[9:12] ein riesen Durchbruch gerade. Nicht nur
+[9:14] das Gehirn, die KI selbst wird besser,
+[9:16] sondern auch die Arme, plötzlich kann es
+[9:17] den ganzen Computer bedienen, kann sich
+[9:19] in alle möglichen sekundären Tools
+[9:20] eindocken und die für dich
+[9:21] konfigurieren. Es ist alles so viel
+[9:23] selbstständiger geworden und das halt
+[9:24] wirklich erst in letzter Zeit. Ich würde
+[9:26] sagen, Fable 5.1, Opus 5.5, GPT-6 Astra
+[9:30] sind die größten Sprünge, die wir dieses
+[9:32] Jahr gesehen haben. Diese Updates haben
+[9:33] mich wirklich überrumpelt und es hat
+[9:34] wirklich an den Punkt gebracht, dass ich
+[9:36] jetzt erst langsam Tag für Tag
+[9:37] realisiere, wie selbständig, wie gut
+[9:40] diese KIs wirklich wie ein Entwickler
+[9:42] arbeiten können.
+[9:43] Spannend finde ich da dann auch, dass
+[9:44] GPT hier sagt, damals hätte man viele
+[9:47] Agenten parallel eingesetzt und jetzt
+[9:49] sei Parallelismus okay. Vor allem dann
+[9:51] sinnvoll, wenn die Aufgaben klar
+[9:52] separiert sind. Ich glaube, ich weiß,
+[9:54] was gemeint ist, denn generell muss ich
+[9:55] sagen, habe ich schon sehr viele
+[9:56] parallele Agenten gerade gleichzeitig
+[9:58] offen. Da hat mich Anfang des Jahres
+[9:59] auch durchaus der Open Claw Entwickler
+[10:01] Peter Steinberger inspiriert, als er da
+[10:03] gezeigt hat, wie er diese ganzen ganzen
+[10:04] Terminals offen hat und ständig immer
+[10:06] wieder nur hier und da die Agenten neu
+[10:08] anstößt. Das mache ich durchaus auch
+[10:09] selbst. Ich versuche Leerlauf zu
+[10:11] vermeiden, arbeite an mehreren Projekten
+[10:13] auf dem Desktop wie hier Hörder, auf dem
+[10:14] Handy nutze ich gerade einen Slack
+[10:16] Workflow mit Slack Threads, kann ich
+[10:18] auch alles mal in einem eigenen Video
+[10:19] zeigen, so Code mit mir oder so,
+[10:20] vielleicht mal ein ganz cooles Format.
+[10:22] Aber der Punkt, der glaube ich gemeint
+[10:23] ist, die Modelle sind sehr gut darin
+[10:25] inzwischen, selbständig eigene
+[10:27] Agentenschwärme zu spawnen mit Ultra
+[10:29] Code Modus und so. Das heißt, ich muss
+[10:30] mich auf jeden Fall jetzt nicht als
+[10:32] Mensch hinsetzen und einen
+[10:33] Agentenschwarm basteln, um an einer App
+[10:35] zu arbeiten. Ich meine, ich
+[10:36] experimentiere selbst gerne mit Tools
+[10:37] wie Paperclip und so weiter, aber dann
+[10:39] nur, wenn es halt wirklich ganz
+[10:40] unterschiedliche Bereiche sind. Also
+[10:41] vielleicht ein Agent für meine
+[10:43] persönliche Assistenz und einer für den
+[10:44] Kundensupport und einer halt für die
+[10:46] Entwicklung. Aber jetzt zu sagen, dieser
+[10:47] Agent heißt Hugo und er ist unser
+[10:49] Frontend Entwickler und dann haben wir
+[10:50] hier noch Jimmy, den Backend Entwickler,
+[10:52] das ist natürlich sehr flashy und kommt
+[10:54] gut in YouTube Videos, bin ich selbst da
+[10:55] weiß ich schuldig. Das macht einfach
+[10:57] Spaß, solche Sachen auszuprobieren. Ist
+[10:59] nicht besonders effizient. Codex und
+[11:00] Cloud Code kriegen das schon sehr gut
+[11:02] alleine hin, ihre Sub Agents so zu
+[11:04] spawnen, wie sie sie brauchen. Und sie
+[11:05] arbeiten in einem Tempo, das ist
+[11:07] natürlich kaum noch möglich ist als
+[11:09] Mensch mitzulesen. Beziehungsweise wäre
+[11:11] das eine unglaubliche
+[11:12] Einschränkung, wenn ich selbst wirklich
+[11:14] den Code noch lesen möchte. Und das ist
+[11:15] jetzt hier die spannende Frage, denn
+[11:17] früher [schnauben] haben wir gesagt,
+[11:18] immer den ganzen Code noch menschlich
+[11:19] überprüfen, weil das ja die
+[11:21] Verantwortung ist. Und jetzt steht hier,
+[11:23] die Review ist viel selektiver, aber
+[11:25] natürlich Responsibility Evidence
+[11:27] Requirements remain, das ist vorsichtig
+[11:29] formuliert, wie die Modelle ja auch
+[11:31] immer generell relativ vorsichtig sind
+[11:33] in ihren Aussagen. Aber gut, das ist
+[11:34] natürlich ein sehr kontroverses Thema.
+[11:36] Ich sehe da immer viele Kommentare,
+[11:37] viele Leute, die sehr schnell getriggert
+[11:38] sind. Auch dieser Trade-off Sicherheit
+[11:40] versus Risiko und Geschwindigkeit der
+[11:42] Entwicklung, was natürlich ein bisschen
+[11:43] davon abhängt, was für eine Art von
+[11:45] Software wir gerade bauen. Mein
+[11:46] Taskmanager würde ich schon ganz gerne
+[11:48] einfach mal in der Beta launchen, auch
+[11:49] wenn noch Bugs drin sind. Ein
+[11:51] Flugzeugsteuerungssystem,
+[11:53] da sind wir natürlich vorsichtiger, ganz
+[11:54] klar. Das ist nicht einfach ein Prompt
+[11:56] von GPT-6 Astra. Es ist aber ja auch
+[11:58] nicht einfach eine Aufgabe für einen
+[12:00] Entwickler. Und ich glaube, dass da
+[12:02] wirklich sehr viel falsche Informationen
+[12:04] und viel falsches Wissen bzw. einfach
+[12:06] veraltetes Wissen kursiert. Ja, noch vor
+[12:08] ein paar Monaten haben die Modelle
+[12:09] meinetwegen Fehler gemacht bei der
+[12:11] Sicherheit, haben viele Lücken gelassen.
+[12:12] Aber das stimmt einfach nicht mehr. Ganz
+[12:14] ehrlich, wenn ich mir einen
+[12:15] Top-Top-Top-Notch-Entwickler,
+[12:17] einen wirklich richtig, richtig guten
+[12:19] Entwickler nehme und auf der anderen
+[12:21] Seite GPT-6 Astra Ultra und beide sollen
+[12:24] Feature implementieren, da bin ich mir
+[12:25] nicht ganz sicher, wer das sicherer
+[12:27] machen wird. Der Star-Entwickler hat
+[12:29] sicher noch eine einzigartige
+[12:31] menschliche Kompetenz. Auf der anderen
+[12:32] Seite haben halt, gerade im Bereich
+[12:34] Sicherheit, die Modelle den Vorteil,
+[12:35] dass sie sehr viel abdecken können, dass
+[12:37] sie sehr viele Schwachstellen
+[12:38] ausprobieren können. Also wirklich, ganz
+[12:40] im Ernst, Star-Entwickler gegen die
+[12:41] besten Modelle gerade, ich weiß nicht,
+[12:43] wer automatisch bei der
+[12:45] Feature-Entwicklung mehr auf die
+[12:46] Sicherheit achten würde. Wenn ihr mich
+[12:48] fragt, durchschnittlicher Entwickler die
+[12:49] meisten Software-Entwickler da draußen
+[12:51] oder die KI, dann bin ich mir sicher,
+[12:53] dann ist es ganz klar, dass GPT-6 Astra
+[12:55] natürlich viel mehr zuzutrauen ist und
+[12:57] Febe 5.1 genauso und selbst Opus 5. 5
+[13:00] auch. Das hat sich wirklich in den
+[13:01] letzten Monaten drastisch geändert. Die
+[13:03] neuesten KIs schreiben richtig guten und
+[13:05] in der Regel auch sehr sicheren Code.
+[13:07] Das soll natürlich nicht heißen, dass
+[13:07] ich dann gar nichts mehr machen muss. Es
+[13:09] lohnt sich natürlich auch auf Sicherheit
+[13:11] ausdrücklich zu prompten bei kritischen
+[13:12] Features. Make it safe, sagst du dem
+[13:14] Modell und dann wird es tatsächlich noch
+[13:16] mehr drauf achten. Oder natürlich auch
+[13:18] per KI zusätzliche Security Reviews zu
+[13:20] machen. Mal wirklich einen Agenten
+[13:22] herzunehmen und zu sagen, review die
+[13:24] Codebase und such aktiv nach
+[13:25] Vulnerabilities. Und dann findet es
+[13:27] potenziell Lücken, die es vorher nicht
+[13:29] gesehen hat. Aber das würde ja Menschen
+[13:31] genauso gehen. Wenn ich ein menschliches
+[13:32] Entwicklerteam sage, implementiert
+[13:33] dieses Feature, dann implementieren sie
+[13:35] es. Und wenn ich dann denselben Menschen
+[13:37] sage, so jetzt nehmt euch mal den ganzen
+[13:38] Tag nur nach Sicherheits-Schwachstellen
+[13:40] zu suchen, dann werden sie womöglich im
+[13:42] eigenen Code auch wieder Schwachstellen
+[13:43] finden. Das ist eine Frage des Fokus,
+[13:45] eine Frage der investierten Energie. Der
+[13:47] Mensch muss weiterhin den Anstoß geben
+[13:49] und sagen, mach das und ja, ich zahle
+[13:50] für die Tokens, denn der Mensch hat
+[13:52] weiterhin am Ende die Verantwortung.
+[13:53] Jetzt ist aber der häufige Denkfehler,
+[13:55] heißt das, dass ich die Verantwortung
+[13:56] habe, dass ich dann jede Zeile Code
+[13:58] lesen muss? Natürlich nicht. Bei
+[14:00] Software-Projekten trägt ja am Ende auch
+[14:01] der Chef, der Manager die Verantwortung
+[14:03] und nicht nur der einzelne Entwickler,
+[14:05] obwohl der Manager den Code gar nicht
+[14:06] geschrieben und wahrscheinlich auch
+[14:07] nicht gelesen hat. Wenn bei Meta, bei
+[14:09] Instagram z.B. morgen eine riesen
+[14:10] Sicherheitslücke auftaucht, ein riesen
+[14:12] Skandal passiert, wer trägt die
+[14:13] Verantwortung? Mark Zuckerberg trägt die
+[14:15] Verantwortung. Vielleicht nicht die
+[14:16] Schuld in dem Fall, aber die
+[14:17] Verantwortung natürlich. Soll er sich
+[14:19] also den ganzen Instagram-Code
+[14:20] durchlesen? Unmöglich. Und das ist der
+[14:22] Punkt. Du bist nicht mehr der
+[14:24] Programmierer. Du bist der Manager. Du
+[14:26] bist Mark Zuckerberg in deinen
+[14:27] Projekten. Die Rolle von uns
+[14:29] Entwicklern, uns Informatikern, ITlern
+[14:31] ganz allgemein, die verändert sich
+[14:33] gerade ganz stark. Was übrigens nicht
+[14:35] heißt, dass wir keine IT-Fachkräfte mehr
+[14:37] benötigen, keine Experten mehr brauchen.
+[14:39] Ich sehe sogar zwei ganz klare Pfade für
+[14:40] den menschlichen Experten schon nur im
+[14:42] Bereich der Software. Einmal eben die
+[14:44] Produktseite, wo die Rolle des Menschen
+[14:45] einfach immer seniorer geworden ist.
+[14:48] Klar, Junior-Entwickler, Script-Kiddie
+[14:49] zu sein, schwer angesichts der KI.
+[14:52] Anfang des Jahres mussten wir alle
+[14:53] deswegen schon Senior-Entwickler einfach
+[14:55] werden, Software-Architekten und jetzt
+[14:56] werden die KIs auch in der Architektur
+[14:58] so gut, dass wir quasi Produktmanager
+[15:00] werden, Project Owner, Chef, sozusagen,
+[15:02] derjenige, der entscheidet, was mit dem
+[15:04] Produkt passieren soll. Und gut, auf der
+[15:06] anderen Seite gibt es den Pfad des
+[15:07] Beraters und Begleiters, denn die große
+[15:10] Herausforderung der nächsten Jahre und
+[15:12] vielleicht Jahrzehnte ist ja auch die
+[15:13] digitale Transformation, die Umstellung.
+[15:16] Nur weil KI plötzlich theoretisch die
+[15:17] tollsten Softwaresysteme schreiben kann,
+[15:19] heißt es ja nicht, dass die sofort auch
+[15:21] überall ankommen. Wenn wir uns mal sowas
+[15:22] hier angucken z.B. Modernisierung einer
+[15:25] Anlagensoftware. MSG ein 20-jähriges
+[15:27] Technologiesystem für
+[15:29] Nahtlosrohr-Weitverkehrsanlagen
+[15:31] modernisiert. Ja, in so einer Fabrik, wo
+[15:34] Software auf Maschinen läuft. Das sind
+[15:36] die Herausforderungen, die da draußen
+[15:37] gerade auf uns warten. Da kann man nicht
+[15:38] mal eben einen Prompt schreiben und das
+[15:40] war's. Da läuft Hardware mit uralter
+[15:41] Software, Maschinen und dann wieder
+[15:43] Menschen, die die Maschinen bedienen.
+[15:44] Kennt ihr übrigens MSG? Einige werden es
+[15:46] kennen, das ist eine internationale
+[15:47] Unternehmensgruppe, wo eben solche
+[15:49] Experten, wie wir sie durchaus noch
+[15:50] brauchen, arbeiten. MSG hat über 10.000
+[15:53] solche Experten in 34 verschiedenen
+[15:54] Ländern. Und wenn du dir jetzt denkst,
+[15:55] Moment mal, ist das gerade Werbung? Dann
+[15:57] schalte nicht weg, denn irgendwie ja,
+[15:58] aber irgendwie auch nicht im ganz
+[16:00] herkömmlichen Sinne. Denn es gibt nichts
+[16:01] zu kaufen. Guck selbst in die
+[16:02] Videobeschreibung, nichts wird verkauft.
+[16:04] Aber es sind halt gerade Firmen wie MSG,
+[16:06] die in den nächsten Jahren eine riesen
+[16:08] Rolle spielen werden bei dieser
+[16:09] Umstellung, bei diesem
+[16:10] Paradigmenwechsel. Denn es kommt da
+[16:12] wirklich der vielleicht größte Umwurf in
+[16:14] der Menschheitsgeschichte auf uns zu. Es
+[16:16] passiert ja wirklich in allen Sektoren,
+[16:18] überall wird KI eine hundertfache
+[16:20] Beschleunigung hervorrufen. Wir sehen
+[16:21] auch hier, allein MSG begleitet ja
+[16:23] wirklich Firmen in allen möglichen
+[16:25] Branchen. Egal ob Bank Care, Health
+[16:26] Care, Insurance, Fabrikanlagen,
+[16:29] überall wird transformiert. Diese
+[16:30] Transformation wird noch Jahre und
+[16:32] Jahrzehnte dauern und deswegen will ich
+[16:34] euch an der Stelle auch den Mut machen,
+[16:35] wir werden euch noch brauchen. Ja, die
+[16:38] jungen Informatikstudenten da draußen
+[16:40] und alle, die sich fragen, wo soll die
+[16:41] Reise hingehen? Natürlich brauchen wir
+[16:42] noch die Experten, weil solche
+[16:44] Umstellungen ja auch nicht nur
+[16:45] technisch, sondern für den Menschen
+[16:46] funktionieren muss, strategisch
+[16:48] geschehen muss. Also bei all der
+[16:49] wirklich enormen Entwicklung, die man ja
+[16:51] auch hier allein in diesem Video schon
+[16:52] gesehen hat, wie sich die
+[16:53] Entwicklungsworkflows verschoben haben,
+[16:55] da kann man natürlich sagen, ja,
+[16:56] bestimmte Aufgaben brauchen wir nicht
+[16:58] mehr, wir brauchen keine Script Kiddies
+[16:59] mehr, die von Hand Chrome Erweiterungen
+[17:01] programmieren, das stimmt. Aber daraus
+[17:03] zu schließen, wir bräuchten gar keine
+[17:04] Informatiker mehr, wäre natürlich völlig
+[17:06] überholt, zumal Informatiker ja noch nie
+[17:08] ein Beruf und schon immer ein
+[17:09] Studienhintergrund war. Also IT
+[17:11] Expertise aufzubauen, sich mit diesen
+[17:13] ganzen Themen zu beschäftigen, das lohnt
+[17:14] weiterhin. Aber man muss natürlich mit
+[17:16] der Zeit gehen, viel stärker als je
+[17:17] zuvor. Man darf sich nicht versteifen.
+[17:19] Noch mal, ich glaube, es gibt wirklich
+[17:20] viele, die da draußen sich vor einigen
+[17:22] Monaten noch eine Meinung von KI gemacht
+[17:24] haben, z.B. beim Thema Sicherheit und
+[17:26] jetzt auf dieser Meinung festgefahren
+[17:28] sind. Ich meine, wenn man sich mal nur
+[17:29] die linke Spalte hier anguckt, dann
+[17:31] klingt das und klang das ja damals auch
+[17:33] erstmal ganz sinnvoll. Hat ja auch
+[17:34] gestimmt. Stimmt aber jetzt eben nicht
+[17:36] mehr. Die Regeln werden gerade auf
+[17:37] monatlicher Basis neu geschrieben. Wer
+[17:39] da noch KI-Skeptiker ist, in dem Sinne,
+[17:41] dass er der KI nicht genug zutraut, der
+[17:43] handelt glaube ich leider ein bisschen
+[17:44] nach dem Motto: "Also Schlossers Messer
+[17:46] scharf, dass nicht sein kann, was nicht
+[17:48] sein darf." Ich verstehe es ja auch,
+[17:49] Leute. Ich komme ja selbst auch aus dem
+[17:51] Staunen nicht raus. Und ich freue mich
+[17:52] natürlich auch manchmal, ganz abgesehen
+[17:54] von den Programmiererfolgen der KI,
+[17:55] frage ich mich, welche Auswirkungen das
+[17:57] sonst auf den Menschen hat, auf unsere
+[17:59] intellektuelle Kompetenz, unsere
+[18:01] Neugierde. Was macht das mit uns, dass
+[18:03] wir immer mehr des Denkens an die
+[18:05] Maschinen delegieren? Das ist eine ganz
+[18:06] andere Frage und es ist super wichtig,
+[18:08] solche Fragen zu diskutieren. Mach ich
+[18:09] auch hier auf dem Kanal. Was aber die
+[18:11] Frage der konkreten Programmierkompetenz
+[18:13] angeht, so sehr ich selbst das manuelle
+[18:15] Programmieren nostalgisch vermisse, muss
+[18:17] ich leider zugeben, spätestens jetzt
+[18:19] kann es die KI einfach viel, viel besser
+[18:21] als du und ich.

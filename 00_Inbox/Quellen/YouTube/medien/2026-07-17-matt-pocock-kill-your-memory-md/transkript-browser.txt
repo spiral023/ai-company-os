@@ -1,0 +1,55 @@
+YouTube transcript
+Video ID: A0scuiiGBC4
+Language: de-DE
+Captions: auto-generated
+
+[0:00] Ja, das würde ich tatsächlich nicht
+[0:02] empfehlen. Ich empfehle, fast alles zu
+[0:04] löschen, was der Agent in seinen
+[0:06] eigenen Speicherbänken speichert. Im
+[0:08] Claude-Code kannst du das tun, indem du
+[0:10] in den Speicher gehst und dort einfach
+[0:12] die automatische Speicherung
+[0:13] ausschaltest. Ich habe sie einfach
+[0:14] komplett ausgeschaltet. Wenn sie an ist
+[0:16] , speichert er die Daten in einer
+[0:18] lokalen Datei namens uppercase
+[0:19] memory.md und verwendet diese, um sich
+[0:21] deine Einstellungen zu merken.
+[0:23] Allerdings ist er viel zu begierig
+[0:25] darauf, sich deine Einstellungen zu
+[0:27] merken und sie zu speichern. Du hast
+[0:30] also eine Art Präferenz für ein
+[0:31] bestimmtes Feature und wie dieses
+[0:33] Feature erstellt werden soll, und das
+[0:34] wird dann in deine Speicherbänke
+[0:36] wandern und überall hingehen und jede
+[0:37] einzelne Unterhaltung beeinflussen, die
+[0:39] du dann mit dem Agenten führst. Ich
+[0:41] bevorzuge es, wenn mein Agent völlig
+[0:43] zustandslos ist, denn wenn er
+[0:45] zustandslos ist, weiß er nichts aus
+[0:47] vorherigen Sitzungen, und dann ist er
+[0:49] viel vorhersehbarer. Ich weiß, wie er
+[0:51] sich verhalten wird, weil ich jedes Mal
+[0:52] von einer gleichbleibenden Basis aus
+[0:54] arbeite. Wenn man jedoch diesen
+[0:56] Speicheraufbau hat, diese Art von
+[0:57] Ballast, der sich mit der Zeit
+[0:59] ansammelt, dann wird es jedes Mal, wenn
+[1:01] man es benutzt, etwas anders sein,
+[1:03] etwas weniger vorhersehbar. Man sollte
+[1:05] die Kontrolle über die Steuerung haben
+[1:07] . Man sollte die Kontrolle darüber
+[1:09] haben, wohin man geht. Und das bedeutet
+[1:11] , wenn man eine Präferenz hat, die man
+[1:13] ausdrücken möchte, dann sollte man
+[1:15] das tun. Man kann einfach seine claw.md
+[1:16] bearbeiten oder ein kleines Dokument in
+[1:18] seinem Repository erstellen oder so
+[1:20] etwas. Die Leute sind besessen von der
+[1:21] Vorstellung, dass sich Agenten einfach
+[1:23] mit der Zeit an Dinge erinnern sollten.
+[1:25] Aber ich finde, es funktioniert einfach
+[1:26] besser, wenn man den Speicher komplett
+[1:28] löscht.

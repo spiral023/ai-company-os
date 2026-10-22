@@ -9,7 +9,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** row level security (3), security (3), sicherheit (3), sandbox (3), os-level sandboxing (3), mxc (3), security checker (2), docker sandboxes (2), deny-rules (2), command smuggling (2), agent sandbox (2), ki-vertragsprüfung (2), produktedition (2), freigaben (2), playwright (2), sandboxing (2), prompt injection (2), process isolation (2), sandbox permissions (2), vibe coding security (2)
+- **Häufig in den Quellen:** row level security (3), sicherheit (3), security (3), sandbox (3), os-level sandboxing (3), mxc (3), security checker (2), docker sandboxes (2), command smuggling (2), deny-rules (2), agent sandbox (2), produktedition (2), ki-vertragsprüfung (2), freigaben (2), playwright (2), sandboxing (2), prompt injection (2), sandbox permissions (2), process isolation (2), vibe coding security (2)
 
 ## Verwandte Themen
 
@@ -22,16 +22,17 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 ## Patterns (6)
 
 - [[Adversarialer-Pre-Launch-Check]] · meinung · 8 Belege
-- [[Agent-Rechte-umfassen-Kommunikationswege]] · meinung · 5 Belege
+- [[Agent-Rechte-umfassen-Kommunikationswege]] · meinung · 6 Belege
 - [[Deny-Rules-statt-CLAUDE-md-Empfehlung]] · mehrfach-belegt · 13 Belege
-- [[Freigaben-und-Isolation-getrennt-steuern]] · meinung · 9 Belege
+- [[Freigaben-und-Isolation-getrennt-steuern]] · meinung · 10 Belege
 - [[KI-Dienste-nach-Vertrag-und-Datenfluss-pruefen]] · meinung · 1 Belege
 - [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 7 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]], [[Hook-Entscheidungstyp-nach-Pruefbarkeit]], [[Metrikband-gestufte-Agent-Autonomie]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]]
 
-## Quellen (17)
+## Quellen (18)
 
+- [[2026-10-18-ai-news-strategy-daily-n-what-really-happens-when-ai-agents-meet-in-the-w]] — Nate B Jones verbindet am 18.10.2026 Berichte über koordinierte Agenten mit Konsequenzen für den Betrieb eigener Systeme.
 - [[2026-10-16-voxyz_ai-2111079716832886886]] — Vox schlägt einen Pre-Launch-Test mit normalen Konten A und B sowie einem Admin vor.
 - [[2026-10-10-satyanadella-2108931348857827686]] — Satya Nadella argumentiert im X-Artikel für eine Architektur, die leistungsfähige Modelle wie potenzielle Insider-Risiken behandelt.
 - [[2026-10-09-openaidevs-2108573188703781190]] — OpenAI Developers meldet am 09.10.2026 einen neuen `Codex`-Sandboxmodus mit `Microsoft Execution Containers` (`MXC`) unter Windows.

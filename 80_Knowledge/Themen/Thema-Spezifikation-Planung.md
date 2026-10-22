@@ -9,7 +9,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - **Hauptkeyword:** Spec-Driven Development
 - **Long-Tail:** Plan Mode Claude Code; Spec-First Development; Grill Me Skill; Plan vor Code; Spec Ordner pro Feature; Plan Annotation Workflow
 - **Fragen:** Lohnt sich Plan Mode? / Wie schreibe ich eine Spec für einen Coding Agent?
-- **Häufig in den Quellen:** wayfinder (8), grilling (8), spec-driven development (7), spec-grilling (7), spec (6), plan-first (5), planung (5), plan (5), plan mode (4), review (4), ticket (4), design.md (3), claude code (3), plan.md (3), vibe coding (3), paperclip (3), matt pocock skills (3), handoff-dokument (2), session-kontinuität (2), claude code workflow (2)
+- **Häufig in den Quellen:** wayfinder (8), grilling (8), spec-driven development (7), spec-grilling (7), spec (6), plan-first (5), plan (5), planung (5), plan mode (4), review (4), ticket (4), design.md (3), claude code (3), plan.md (3), vibe coding (3), paperclip (3), matt pocock skills (3), handoff-dokument (2), session-kontinuität (2), claude code workflow (2)
 
 ## Verwandte Themen
 
@@ -24,16 +24,17 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - [[Architektur-in-Perspektiven-dokumentieren]] · verifiziert · 5 Belege
 - [[CONTEXT-Glossar]] · verifiziert · 10 Belege
 - [[Codepfad-vor-Aenderung-nachvollziehen]] · meinung · 12 Belege
-- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 57 Belege
+- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 59 Belege
 - [[Projektkarte-als-Status-und-Entscheidungsartefakt]] · meinung · 3 Belege
-- [[Spec-Grilling]] · verifiziert · 21 Belege
-- [[Spec-Ordner-pro-Feature]] · meinung · 3 Belege
+- [[Spec-Grilling]] · verifiziert · 22 Belege
+- [[Spec-Ordner-pro-Feature]] · meinung · 4 Belege
 - [[Task-basierte-Steuerung]] · verifiziert · 25 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletion-Test-pruefen]], [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]], [[Agent-generierte-Schulung-mit-Curriculum-Gate]], [[Blockierende-Task-Abhaengigkeiten]], [[Brand-Kit-als-gemeinsame-Artefaktbasis]], [[Fable-Unknowns-vor-Prompt-Qualitaet]], [[Fachregel-Konsolidierung-vor-Featureaenderung]], [[Handoff-Doc]], [[Intent-Engineering-als-dritte-Schicht]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Lovable-Prototyp-dann-lokaler-Handoff]], [[Screenshot-als-Spezifikationsmedium]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Voice-Prompting-fuer-Kontextreichtum]]
 
-## Quellen (29)
+## Quellen (31)
 
+- [[2026-10-20-alex-sprogis-hoer-auf-software-abos-zu-kaufen]] — Alex Sprogis erläutert am `20.10.2026` die Entwicklung einer persönlichen `macOS`-Menüleisten-App für Systemübersicht, Speicherbereinigung und Shortcuts.
 - [[2026-10-11-voxyz_ai-2109297975013081587]] — Vox stellt REA als Werkzeug für schrittweise Softwareanalyse vor.
 - [[2026-10-09-voxyz_ai-2108663797091127377]] — Vox empfiehlt, vor Planung und Code zehn Fachbegriffe samt Bedeutung für die Spezifikation erklären zu lassen.
 - [[2026-10-09-openai-codebase-onboarding]] — Ein begrenzter Codepfad wird durch Dateien, Zustandswechsel und offene Fragen nachvollzogen.
@@ -51,6 +52,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletio
 - [[2026-07-31-alex-sprogis-dieser-claude-code-skill-ist-genial]] — Ein strukturiertes Interview klärt Annahmen vor Akzeptanzkriterien und Umsetzung; Auswahlantworten brauchen teilweise ergänzenden Freitext.
 - [[2026-07-30-matt-pocock-wayfinder-nothing-is-too-big-to-plan-anymore]] — Wayfinder zerlegt Entscheidungen und blockierende Aufgaben; wegwerfbare Specs stehen in Spannung zur Aufbewahrung relevanter Entscheidungen.
 - [[2026-07-23-ccarlosai-2080339591014261034]] — Carlos beschreibt eine Planungssitzung, die vorhandenen Projektkontext durch Rückfragen ergänzt und anschließend in Dateien für Claude Code überführt.
+- [[2026-07-20-matt-pocock-do-you-even-need-human-review]] — Matt Pocock betrachtet menschliche Prüfung als gezielt platzierbare Kontrollpunkte.
 - [[2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt]] — Eine ausführliche Spezifikation mit verweisenden Task-Listen und mehrfacher Agent-Prüfung des Plans ist billiger als spätes Nachbessern, verursacht aber eigene Pflegekosten.
 - [[2026-07-13-matt-pocock-live-the-wayfinder-demo]] — Entscheidungstickets und Abhängigkeiten strukturieren die Wayfinder-Demo; eine zunächst ungeprüfte Map und Integrationsblocker bleiben sichtbar.
 - [[2026-06-10-ai-news-strategy-daily-n-codex-vs-claude-code-stop-picking-one-here-s-wha]] — Die Aufgabenreife entscheidet zwischen gemeinsamer Klärung und Delegation; überprüfbare Artefakte und fachliche Abnahme bleiben erforderlich.
@@ -68,6 +70,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletio
 
 - [[2026-10-19-promptgefluester-wir-neigen-dazu-dass-wir-beim-aehm-prompting-der-ki-sagen-aehm-8]]
 - [[2026-10-18-mattpocockuk-2111708560715292675]]
+- [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]]
 - [[2026-10-10-repo-oh-my-mermaid-architektur]]
 - [[2026-10-09-voxyz_ai-2108543002830360775]]
 - [[2026-10-09-shadcn-2108574564586332615]]

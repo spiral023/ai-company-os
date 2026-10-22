@@ -41,6 +41,7 @@ Als Einordnung müssen Verdichtungen auf ihre Eingänge zurückführbar bleiben.
 
 - 2026-06-18 · [[2026-06-18-julian-ivanov-ki-automat-bau-dir-dein-ki-betriebssystem-mit-claude-code-k]] · meinung — Trennt Wissen, Tool-Verbindungen, Skills und Routinen; wiederkehrende Ausführung nutzt bestehende Skills und legt Ergebnisse wieder im Wissensbestand ab. Die Demo belegt keine selbstständige Aktualität, konfliktfreie Synchronisation oder Prozessfortsetzung nach einem Server-Neustart.
 - 2026-10-09 · [[2026-10-09-lukepierceops-2108655186080342138]] · meinung — Beschreibt monatliche Prüfung einer Lernbibliothek und einen gemeinsamen Use-Case-Backlog; das vorgeschlagene Löschen veralteter Inhalte passt nicht zu append-only Patterns.
+- 2026-07-17 · [[2026-07-17-matt-pocock-kill-your-memory-md]] · meinung — Pocock lehnt automatisch gesammelte Präferenzen wegen ungewollter Übertragung zwischen Aufgaben ab, bevorzugt aber explizit gepflegte Repo-Regeln; keine Messung gegen kuratierte Wissenspflege.
 
 ## Spannungen & offene Fragen
 
@@ -48,6 +49,8 @@ Als Einordnung müssen Verdichtungen auf ihre Eingänge zurückführbar bleiben.
 
 - 2026-10-11: Kompakte aktuelle Notizen erleichtern den Wiedereinstieg; ohne nachvollziehbare Eingänge können sie zugleich unbemerkte Verdichtungsfehler zum vermeintlichen Projektwissen machen.
 - 2026-10-11: Wie werden überholte Arbeitsstände und widersprüchliche Entscheidungen erkannt, bevor eine Routine sie erneut verwendet?
+
+- 2026-10-22: [[2026-07-17-matt-pocock-kill-your-memory-md]] lehnt automatisch gesammelte Präferenzen wegen unerwünschter Übertragung auf andere Aufgaben ab. Der Beitrag unterscheidet das von bewusst bearbeiteten Repo-Regeln; ein kuratierter Wissensbestand wird damit nicht gegenstandslos. Wo automatische Erinnerung endet und geprüfte Wissenspflege beginnt, bleibt eine explizite Designentscheidung.
 
 ## Verwandte Patterns
 
