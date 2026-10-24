@@ -32,6 +32,7 @@ Kurze, aussagekräftige Checks vor einem Commit bündeln und aufwendige Suiten v
 ## Belege
 
 - 2026-10-13 · [[2026-10-13-matt-pocock-stop-running-your-checks-in-harness-hooks]] · meinung — Schnelle Pre-Commit-Checks und umfangreiche CI sollen wiederholte Rückmeldungen zu absichtlich inkonsistenten Edit-Zwischenständen begrenzen; keine gemessene Beschleunigung.
+- 2026-10-22 · [[2026-10-22-cu30rry-2113242716473602270]] · meinung — Der Workflow kombiniert E2E und formale Verifikation, anschließendes Thermos-Review sowie react-doctor und fallow in CI; die Tool-Aufzählung belegt keine vollständige Prüfungsabdeckung.
 
 ## Spannungen & offene Fragen
 

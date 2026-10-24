@@ -1,6 +1,6 @@
 # Prompts zum Ausprobieren
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, Codex oder einem Chat einsetzen können: Wortlaut, Zweck, Einsatzort, erwartetes Ergebnis. Jeder Prompt bleibt bei seiner Quelle; Varianten derselben Idee von verschiedenen Autoren werden nicht zusammengeführt. Prinzipien der Prompt-Technik gehören zu prompting.
 
@@ -9,7 +9,7 @@ Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, C
 - **Hauptkeyword:** Prompts für Claude Code
 - **Long-Tail:** Prompts zum Ausprobieren; Claude Code Prompt-Vorlagen; Blindspot Pass Prompt; Claude interviewt mich Prompt; Debugging-Prompt für Coding Agents; Prompt mit klarem Zielzustand; Plan vor Code Prompt
 - **Fragen:** Welche Prompts kann ich direkt in Claude Code ausprobieren? / Wie sage ich dem Agent, wann er fertig ist? / Wie verhindere ich, dass der Agent Fehler nur versteckt?
-- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), ergebnisverantwortung, claude code prompts, codex, verifikation vor abschluss, reviewer-agent, task brief, tech lead prompt, rollen-prompts, requirements lead, coding-agent-fehler, claude.md prompt, erfolgskriterien, annahmen offenlegen, karpathy system prompt, test-first, scope begrenzen, prompting für kritische bereiche
+- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), ergebnisverantwortung, verifikation vor abschluss, requirements lead, rollen-prompts, claude code prompts, task brief, tech lead prompt, codex, reviewer-agent, diagnoseprotokoll, rechnerdiagnose, freigabeliste, read-only-inventar, claude.md prompt, karpathy system prompt, scope begrenzen, coding-agent-fehler
 
 ## Verwandte Themen
 
@@ -20,12 +20,15 @@ Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, C
 ## Patterns (0)
 
 
-## Quellen (1)
+## Quellen (2)
 
+- [[2026-10-21-voxyz_ai-2112986024955744544]] — Vox beschreibt am 21.10.2026 zwölf Diagnosepunkte für einen langsamen Rechner mit `Claude Code`.
 - [[2026-09-19-voxyz_ai-2101355643882065971]] — Coding Agents führt man besser über Ergebnisverantwortung mit prüfbarem Endergebnis und Berichtspflicht als über Einzelschritte; der Reviewer läuft getrennt vom Implementierer.
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-22-mattpocockuk-2113196247964074322]]
+- [[2026-10-22-franzbruckhoff-2113401002355298410]]
 - [[2026-10-02-developers-using-gpt-6-openai-api]]
 - [[2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog]]
 - [[2026-09-26-voxyz_ai-2103977414711767244]]

@@ -26,6 +26,17 @@ def load_ai_module():
 class AiCliTest(unittest.TestCase):
     """Check that ai.py forwards commands to existing scripts."""
 
+    def test_source_statistics_forwards_snapshot_and_filters(self) -> None:
+        ai = load_ai_module()
+        with patch.object(ai, "run_subprocess", return_value=0) as run:
+            self.assertEqual(ai.main(["quellen", "statistik", "--snapshot", "--autor", "matt-pocock",
+                                      "--thema", "verifikation", "--keyword", "TDD", "--bestand", "sources"]), 0)
+        command = run.call_args.args[0]
+        self.assertEqual(command[:4], [sys.executable, "-X", "utf8", str(ROOT / "70_Scripts/quellen_statistik.py")])
+        self.assertIn("--snapshot", command)
+        for flag, value in (("--autor", "matt-pocock"), ("--thema", "verifikation"), ("--keyword", "TDD"), ("--bestand", "sources")):
+            self.assertEqual(command[command.index(flag) + 1], value)
+
     def test_local_transcription_uses_isolated_environment(self) -> None:
         ai = load_ai_module()
         with patch.object(Path, "is_file", return_value=True), patch.object(ai, "run_subprocess", return_value=0) as run:
@@ -38,7 +49,21 @@ class AiCliTest(unittest.TestCase):
         self.assertIn("--hls", command)
         self.assertEqual(command[command.index("--batch-size") + 1], "2")
         self.assertEqual(command[-2:], ["--audio", "pilot.webm"])
-        self.assertEqual(label, "YouTube lokal transkribieren")
+        self.assertEqual(label, "Video lokal transkribieren")
+
+    def test_tiktok_transcription_uses_the_same_local_environment(self) -> None:
+        ai = load_ai_module()
+        url = "https://www.tiktok.com/@a/video/7699871396729507105"
+        with patch.object(Path, "is_file", return_value=True), patch.object(ai, "run_subprocess", return_value=0) as run:
+            self.assertEqual(ai.main(["transkribieren", url]), 0)
+        self.assertIn(url, run.call_args.args[0])
+        self.assertIn("youtube-transcription", run.call_args.args[0][0])
+
+    def test_ingest_can_disable_the_automatic_audio_fallback(self) -> None:
+        ai = load_ai_module()
+        with patch.object(ai, "run_subprocess", return_value=0) as run:
+            self.assertEqual(ai.main(["ingest", "https://youtu.be/2EoNRuFJfBo", "--no-whisper"]), 0)
+        self.assertIn("--no-whisper", run.call_args.args[0])
 
     def test_feed_check_forwards_filter_and_limit(self) -> None:
         ai = load_ai_module()

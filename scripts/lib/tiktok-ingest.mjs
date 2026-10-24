@@ -10,6 +10,7 @@ export function parseArgs(argv) {
     refetch: false,
     media: true,
     video: true,
+    whisper: true,
     gap: 0.4,
   };
   for (let i = 0; i < argv.length; i += 1) {
@@ -20,6 +21,7 @@ export function parseArgs(argv) {
       args.force = true;
     } else if (a === '--no-media') args.media = false;
     else if (a === '--no-video') args.video = false;
+    else if (a === '--no-whisper') args.whisper = false;
     else if (a === '--gap') {
       const v = Number(argv[i + 1]);
       if (Number.isFinite(v) && v >= 0) args.gap = v;

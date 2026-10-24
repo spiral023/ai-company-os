@@ -1,0 +1,38 @@
+{
+  "video_id": "7663144929610173718",
+  "model": "large-v3",
+  "version": "1.2.1",
+  "date": "2026-10-24",
+  "language": "de",
+  "language_probability": 0.99951171875,
+  "audio_duration": 74.8393125,
+  "speech_duration": 74.528,
+  "audio_sha256": "98868cbea05e8e643dda566ea51a32c5786ee831f686170c44ef0d9894bfceaf",
+  "elapsed_seconds": 5.89100000000326,
+  "segments": [
+    {
+      "start": 0.3,
+      "end": 28.34,
+      "text": " Es gibt drei essentielle Punkte, drei wirklich essentielle Punkte, die ihr braucht, um mit KI erfolgreich zu werden. Punkt Nummer eins, das ist das A und O, Daten. Data is the new oil. Ihr braucht Daten, strukturiert oder unstrukturiert. Ihr braucht ein Data Lake. Wo liegen die Daten? Wenn ihr keine Daten habt, könnt ihr diese Daten synthetisch generieren, zum Beispiel über KI oder andere Mechanismen. Punkt Nummer zwei, ihr braucht einen Pain Point. Es muss ein Schmerz sein, der so stark ist, dass er gelöst werden muss, am besten über Automatisierung oder zum Beispiel in dem Fall natürlich...",
+      "avg_logprob": -0.025732777632065933,
+      "no_speech_prob": 0.00312042236328125,
+      "compression_ratio": 1.7690058479532165
+    },
+    {
+      "start": 28.34,
+      "end": 53.63,
+      "text": " KI, damit ihr zum Beispiel aufs nächste Umsatzlevel kommt oder eure Mitarbeiter dadurch drastisch entlastet werden. Punkt Nummer drei, last but not least, ihr braucht auf jeden Fall Kenntnis darüber, was kann KI, was kann KI nicht. Es müssen diese drei Punkte erfüllt sein, dann könnt ihr die Chancen, dass ein KI-Use Case erfolgreich wird, drastisch erhöhen. Wenn ihr die Sachen einzeln betrachtet, die Punkte einzeln betrachtet, aber die anderen ignoriert, kann ihr...",
+      "avg_logprob": -0.036492599370448214,
+      "no_speech_prob": 0.023590087890625,
+      "compression_ratio": 1.6006711409395973
+    },
+    {
+      "start": 53.63,
+      "end": 74.83,
+      "text": " könnt ihr schon mal davon ausgehen, dass der Use Case sehr, sehr wahrscheinlich nicht umsetzbar ist. Wenn ihr zum Beispiel einen Pain Point habt, aber keine Daten und keine Kenntnis darüber, wie es umzusetzen ist, nicht erfolgreich. Wenn ihr einen Pain Point habt, aber keine Daten oder zum Beispiel einen anderen Punkt erfüllt, auch nicht möglich. Das heißt, die Kombination dieser drei Punkte ist essentiell und bildet die Basis dafür, dass ihr erfolgreich mit KI werdet.",
+      "avg_logprob": -0.02067683327298325,
+      "no_speech_prob": 0.01113128662109375,
+      "compression_ratio": 1.7712177121771218
+    }
+  ]
+}

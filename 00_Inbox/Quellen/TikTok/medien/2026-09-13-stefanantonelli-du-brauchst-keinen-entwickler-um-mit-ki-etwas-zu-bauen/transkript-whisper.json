@@ -1,0 +1,38 @@
+{
+  "video_id": "7685007734546107670",
+  "model": "large-v3",
+  "version": "1.2.1",
+  "date": "2026-10-24",
+  "language": "de",
+  "language_probability": 0.99951171875,
+  "audio_duration": 70.4275625,
+  "speech_duration": 70.4275625,
+  "audio_sha256": "1f16b05cc1c56804a01c7f84faa42093892ffd2574279c24c01a64e3bd398f36",
+  "elapsed_seconds": 3.48499999998603,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 24.54,
+      "text": " Habe die Ehre. Du brauchst keinen Entwickler, um mit KI was zu bauen. Das sagt jetzt sogar eine Studie mit 400.000 Sessions. Anthropic hat ausgewertet, wie Leute mit Cloud Code arbeiten. Cloud Code ist der Rapper für Cloud, der zum Entwickeln gedacht ist. Das Teil gibt's auch für normale Aufgaben und heißt dann Coburg. Ich bin übrigens Stefan, ich hab 20 Jahre lang selbst Software gemacht und jetzt hab ich Bock auf KI. Lass gerne ein Follow da und speichere das Video, dann siehst du in Zukunft mehr davon.",
+      "avg_logprob": -0.04462500178813934,
+      "no_speech_prob": 0.0439453125,
+      "compression_ratio": 1.501457725947522
+    },
+    {
+      "start": 24.54,
+      "end": 53.74,
+      "text": " Software-Entwickler kommen auf rund 30% erfolgreiche Sessions, alle anderen Berufe auf 29%. Der Unterschied ist also quasi nicht vorhanden. Was den Unterschied macht, ist, ob du in deinem Fachgebiet was drauf hast. Bei Leuten mit Erfahrung erledigt die KI pro Anweisung rund 12 Arbeitsschritte. Bei Anfängern sind es gerade mal 5. Wenn bei dir jemand seit 15 Jahren die Angebote schreibt, dann ist genau der dein bester KI-Anwender, nicht der AI-Bro aus der IT. In unseren Workshops sehe ich das genau jedes Mal.",
+      "avg_logprob": -0.02124763254753568,
+      "no_speech_prob": 0.006000518798828125,
+      "compression_ratio": 1.5162241887905605
+    },
+    {
+      "start": 53.74,
+      "end": 70.43,
+      "text": " Die besten Ergebnisse kommen von den Leuten, die den Vorgang seit Jahren im Kopf haben. Und noch was Beruhigendes, zwischen Mittelmaß und Profi ist der Abstand gering. Du musst also nicht jahrelang üben, bis was Gutes dabei rauskommt. Den Link zur Studie packe ich dir unter das Video. Traust du dir das ohne Entwickler zu? Ab in die Kommentare.",
+      "avg_logprob": -0.02341603655572776,
+      "no_speech_prob": 0.00804901123046875,
+      "compression_ratio": 1.403225806451613
+    }
+  ]
+}

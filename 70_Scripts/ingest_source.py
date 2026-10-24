@@ -20,6 +20,7 @@ import argparse
 import datetime as dt
 import mimetypes
 import re
+import subprocess
 import sys
 import urllib.error
 import urllib.parse
@@ -82,6 +83,18 @@ HOST_TRACKING_PARAMETER = {
 }
 # Bilder unter dieser Groesse sind praktisch immer Icons, Spacer oder Tracking-Pixel.
 MIN_IMAGE_BYTES = 15_000
+
+
+class YoutubeSubtitlesMissing(SystemExit):
+    """Tatsächlich fehlende Untertitel, getrennt von Abrufsperren und API-Fehlern."""
+
+
+def whisper_fallback(url: str, titel: str | None = None) -> int:
+    print("[WHISPER] Keine Untertitel abrufbar; transkribiere die Tonspur lokal.", flush=True)
+    command = [sys.executable, str(REPO_ROOT / "ai.py"), "transkribieren", url]
+    if titel:
+        command.extend(["--titel", titel])
+    return subprocess.run(command, cwd=REPO_ROOT).returncode
 
 
 # ---------------------------------------------------------------- Datenmodell
@@ -370,6 +383,7 @@ def youtube_id(url: str) -> str:
 def lade_youtube(url: str) -> Quelle:
     try:
         from youtube_transcript_api import (
+            NoTranscriptFound,
             RequestBlocked,
             TranscriptsDisabled,
             YouTubeTranscriptApi,
@@ -400,7 +414,9 @@ def lade_youtube(url: str) -> Quelle:
             "Browser prüfen. Erfassungswege: 00_Inbox/Quellen/README.md."
         ) from err
     except TranscriptsDisabled as err:
-        raise SystemExit(f"[FEHLER] Untertitel sind deaktiviert für {vid}.") from err
+        raise YoutubeSubtitlesMissing(f"[INFO] Untertitel sind deaktiviert für {vid}.") from err
+    except (NoTranscriptFound, StopIteration) as err:
+        raise YoutubeSubtitlesMissing(f"[INFO] Keine Untertitelspur verfügbar für {vid}.") from err
     except Exception as err:  # noqa: BLE001 — API wirft heterogene Fehler
         raise SystemExit(f"[FEHLER] Transkript-Abruf fehlgeschlagen für {vid}: {err}") from err
 
@@ -410,6 +426,9 @@ def lade_youtube(url: str) -> Quelle:
         if not text:
             continue
         segmente.append(re.sub(r"\s+", " ", text))
+
+    if not segmente:
+        raise YoutubeSubtitlesMissing(f"[INFO] Untertitelspur ist leer für {vid}.")
 
     titel, autor, datum, beschreibung = youtube_metadaten(url, vid)
     return Quelle(
@@ -770,6 +789,7 @@ def main() -> int:
     parser.add_argument("--no-media", action="store_true", help="keine Bilder laden")
     parser.add_argument("--force", action="store_true", help="bestehende Notiz überschreiben")
     parser.add_argument("--titel", help="Titel überschreiben (falls schlecht erkannt)")
+    parser.add_argument("--no-whisper", action="store_true", help="Lokalen Whisper-Fallback deaktivieren")
     args = parser.parse_args()
 
     typ = args.typ if args.typ != "auto" else erkenne_typ(args.eingabe)
@@ -778,6 +798,13 @@ def main() -> int:
     if not args.force:
         vorhanden = finde_dublette(args.eingabe)
         if vorhanden:
+            if typ == "youtube":
+                from youtube_transcribe import has_transcript
+                if not has_transcript(vorhanden.read_text(encoding="utf-8")):
+                    if args.no_whisper:
+                        print("[INFO] Rohquelle vorhanden, Transkript fehlt; Whisper-Fallback deaktiviert.")
+                        return 1
+                    return whisper_fallback(args.eingabe)
             print(f"[INFO] Quelle bereits erfasst: {vorhanden.relative_to(REPO_ROOT)}")
             print("  Unverändert gelassen. --force überschreibt sie.")
             return 0
@@ -785,7 +812,13 @@ def main() -> int:
     if typ == "pdf":
         quelle = lade_pdf(args.eingabe, medien_laden)
     elif typ == "youtube":
-        quelle = lade_youtube(args.eingabe)
+        try:
+            quelle = lade_youtube(args.eingabe)
+        except YoutubeSubtitlesMissing as error:
+            print(str(error))
+            if args.no_whisper:
+                return 1
+            return whisper_fallback(args.eingabe, args.titel) if args.titel else whisper_fallback(args.eingabe)
     else:
         quelle = lade_artikel(args.eingabe)
 

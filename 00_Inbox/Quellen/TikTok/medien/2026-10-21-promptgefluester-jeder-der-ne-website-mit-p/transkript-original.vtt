@@ -1,0 +1,155 @@
+WEBVTT
+
+
+00:00:00.840 --> 00:00:03.320
+jeder der ne Website mit P. R.
+
+00:00:03.321 --> 00:00:07.280
+P betreibt oder ne Webserver hat auf dem P. R. P drauf läuft
+
+00:00:07.480 --> 00:00:11.520
+ganz wichtig muss sich drauf einstellen dass er gehackt wird.
+
+00:00:11.640 --> 00:00:14.720
+wir haben im Augenblick ne ganz ganz kritische Situation.
+
+00:00:14.880 --> 00:00:16.960
+wir sind schon gepatcht also wir haben schon
+
+00:00:17.320 --> 00:00:21.640
+die neuesten Updates gemacht äh die perpetition 82 ähm
+
+00:00:21.960 --> 00:00:23.920
+plask bietet auch schon 1 Patch an
+
+00:00:24.360 --> 00:00:28.480
+ähm es is eine Sicherheitslücke bekannt geworden die schon über 12 Jahre alt is
+
+00:00:28.880 --> 00:00:31.240
+und die ermöglicht angreifen äh
+
+00:00:31.680 --> 00:00:34.480
+Code auf nem Server auszuführen das heißt äh Sicherheits
+
+00:00:35.000 --> 00:00:38.760
+ähm Passwort da auszulesen Sicherheits äh Features um zu umgehen
+
+00:00:39.280 --> 00:00:43.360
+äh firewords abzuschalten ähm Services einzurichten und so weiter
+
+00:00:43.960 --> 00:00:48.040
+und ähm das Problem ist bei Open Source ähm dass halt wenn dieses Patch
+
+00:00:48.440 --> 00:00:49.600
+der Patch rauskommt
+
+00:00:50.200 --> 00:00:54.120
+sehen die Hacker über nen Abgleich was diese Sicherheitslücke ist.
+
+00:00:54.280 --> 00:00:57.440
+das heißt die die rausgefunden haben dass die Sicherheitslücke existiert
+
+00:00:57.520 --> 00:00:58.600
+müssen den jetzt patchen
+
+00:00:59.160 --> 00:01:00.840
+also n Update einspielen
+
+00:01:01.040 --> 00:01:02.120
+ähm das Problem ist das
+
+00:01:02.280 --> 00:01:05.360
+Update ist quasi auch schon die Antwort darauf wie dieses
+
+00:01:05.760 --> 00:01:07.720
+diese Sicherheitslücke auszunutzen ist.
+
+00:01:08.080 --> 00:01:08.960
+das heißt ähm
+
+00:01:09.040 --> 00:01:13.320
+wenn's Hacker da draußen gab oder Kais die äh Sicherheitslücken ausnutzen
+
+00:01:13.760 --> 00:01:16.520
+die bisher noch nicht wussten dass es die Sicherheitslücke gibt
+
+00:01:16.521 --> 00:01:18.040
+die wissen das dann seit dem Patch.
+
+00:01:18.880 --> 00:01:21.200
+also ihr wenn ihr n Vibe Coding Projekt habt
+
+00:01:21.240 --> 00:01:23.600
+euch n Netz Server äh irgend ne Server bei hetzner.
+
+00:01:23.640 --> 00:01:25.920
+net Cup oder an nem Hosting Provider geholt habt
+
+00:01:26.520 --> 00:01:28.680
+und dort äh mit P. R. P irgendwas macht.
+
+00:01:28.880 --> 00:01:31.080
+updated auf die neueste Version guckt dass ihr.
+
+00:01:31.081 --> 00:01:32.880
+den Patch einspielt ähm
+
+00:01:32.881 --> 00:01:36.200
+der released wird und guckt dass die Software die auf der ihr arbeitet
+
+00:01:36.320 --> 00:01:37.160
+mit der neuesten P. R.
+
+00:01:37.161 --> 00:01:38.640
+P. Version geupdatet wird
+
+00:01:39.080 --> 00:01:44.120
+äh froxler hat leider noch immer kein Update für ähm für diese Version.
+
+00:01:44.240 --> 00:01:47.120
+das heißt froxler ist gerade 1 sehr gefährdetes System
+
+00:01:47.160 --> 00:01:48.640
+das zu sehr sehr vielen Server
+
+00:01:49.000 --> 00:01:50.280
+Management Systemen genutzt wird
+
+00:01:50.800 --> 00:01:54.480
+ähm also äh guckt dass ihr da im Zweifel eure Plattform,
+
+00:01:54.600 --> 00:01:56.600
+eure Anwendung oder den Server abschaltet.
+
+00:01:57.040 --> 00:01:58.160
+also wenn ihr irgend nen Vibe Coding
+
+00:01:58.360 --> 00:02:00.560
+Projekt habt bei dem ihr noch nich wisst OB das irgendwie
+
+00:02:01.080 --> 00:02:01.920
+äh sinnvoll is
+
+00:02:02.240 --> 00:02:03.680
+dann ähm schaltet ähm
+
+00:02:03.720 --> 00:02:05.960
+blockiert alles von außen mit ner Firewall
+
+00:02:06.120 --> 00:02:08.320
+und guckt dass ihr nur per ssr reinkommt
+
+00:02:08.680 --> 00:02:10.760
+ähm und dann eure Patches macht
+
+00:02:11.200 --> 00:02:13.080
+ähm hier wichtiger Hinweis an meiner Stelle
+
+00:02:13.240 --> 00:02:16.560
+an dieser Stelle äh wenn ihr da Fragen habt schreibt gern in die Kommentare
+
+00:02:16.880 --> 00:02:20.600
+und ähm genau ähm hoffe euch ihr bleibt von diesem Hack
+
+00:02:20.960 --> 00:02:23.000
+wenn es dann einer kommt verschont.

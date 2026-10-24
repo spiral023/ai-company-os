@@ -41,6 +41,7 @@ test('parseArgs liest Eingabe und Optionen', () => {
     refetch: false,
     media: true,
     video: true,
+    whisper: true,
     gap: 1.5,
   });
 });
@@ -55,6 +56,13 @@ test('parseArgs: --refetch impliziert --force, --no-media schaltet Medien ab', (
 test('--no-video lässt den Cover-Download aktiv', () => {
   const args = parseArgs(['123', '--no-video']);
   assert.equal(args.video, false);
+  assert.equal(args.media, true);
+});
+
+test('--no-whisper deaktiviert nur den lokalen Fallback', () => {
+  const args = parseArgs(['123', '--no-whisper']);
+  assert.equal(args.whisper, false);
+  assert.equal(args.video, true);
   assert.equal(args.media, true);
 });
 

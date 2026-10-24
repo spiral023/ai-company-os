@@ -1,6 +1,6 @@
 # Kontext-Management
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, Clear, Rewind, Handoff zwischen Sessions, Kontextkosten von Tools. Regeldateien gehören zu agent-dateien, die Kosten des Cachings zu modelle-kosten.
 
@@ -9,7 +9,7 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 - **Hauptkeyword:** Context Engineering
 - **Long-Tail:** Context Rot vermeiden; Claude Code /compact oder /clear; Claude Code Kontextfenster verwalten; Session Handoff Dokument; Rewind statt Korrektur; Subagents als Kontextgrenze
 - **Fragen:** Wann sollte ich /clear statt /compact nutzen? / Warum wird mein Agent in langen Sessions schlechter?
-- **Häufig in den Quellen:** context window (8), context rot (8), claude.md (8), /compact (7), /clear (7), progressive disclosure (7), context engineering (6), kontext-hygiene (5), handoff (5), kontext (4), subagents (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), token (3), state.md (3), compaction (3), plan mode (3)
+- **Häufig in den Quellen:** progressive disclosure (9), context window (8), context rot (8), claude.md (8), /compact (7), /clear (7), context engineering (6), kontext-hygiene (5), subagents (5), handoff (5), compaction (5), kontext (4), rewind (4), claude code hooks (4), claude code skills (4), prompt caching (4), context pollution (3), token (3), state.md (3), plan mode (3)
 
 ## Verwandte Themen
 
@@ -21,17 +21,18 @@ Was im Kontextfenster steht und wie man es sauber hält: Context Rot, Compact, C
 ## Patterns (2)
 
 - [[Handoff-Doc]] · verifiziert · 22 Belege
-- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 51 Belege
+- [[Kontext-Hygiene-Entscheidungsbaum]] · mehrfach-belegt · 56 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]], [[CONTEXT-Glossar]], [[Framework-Quellcode-als-idiomatische-Referenz]], [[MCP-Code-Execution-statt-Tool-Definitionen]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]], [[Ralph-Loop-Frischer-Kontext-pro-Iteration]], [[Spec-Ordner-pro-Feature]], [[Wissenspflege-mit-Inbox-und-Review]]
 
-## Quellen (24)
+## Quellen (25)
 
 - [[2026-10-21-floknowsai-entropic-hat-gitt-komplett-ersetzt-zumindest-klingt-es-so-auf-social]] — Florian ordnet Anthropics `Scion` als spezialisiertes Versionssystem für sehr viele ständig verbundene Agenten und Testjobs ein.
 - [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]] — Handoffs werden vor und nach Compaction verglichen; Cache-Anzeigen, Wartezeiten und Warmhalte-Versprechen belegen keine gemessene Ersparnis.
 - [[2026-09-24-mattpocock-ai-coding-dictionary]] — Matt Pococks AI Coding Dictionary ordnet 71 Begriffe in sieben Bereiche.
 - [[2026-09-04-julian-ivanov-ki-automat-so-nutzt-du-claude-code-nach-anthropics-neuen-re]] — Weniger Anweisungen, mehr Absicht und messbares Abschlusskriterium: Kontext klein halten, Garantien in Hooks legen und das Setup bei jedem Modellwechsel ausdünnen.
 - [[2026-08-22-promptgefluester-wenn-euch-jemand-verspricht-token-zu-sparen-bei-cloud-code-dann-vorsicht]] — Der Creator warnt vor GitHub-Tools, die Claude Code Tokens sparen sollen, indem sie Kontext vorab aus einem Graphen zusammensuchen.
+- [[2026-08-15-undefinedki-2088611136027361368]] — Yarchi bündelt Praxisempfehlungen und berichtete Studien-/Firmenzahlen; deren Primärbelege sind im Archiv nicht nachprüfbar. Der vollständige Artikel und fünf Bilder liegen vor, mögliche Folgeposts bleiben wegen der Sieben-Tage-Abrufgrenze offen.
 - [[2026-08-14-agenticjames-ai-memory-is-trash-heres-some-solutions]] — Agent Memory ist nicht ein Problem, sondern vier: Ablage, Turn-Erinnerung, multimodale Suche und Abrufzeitpunkt, wobei Pull durch den Agenten und Push per Hook Kosten und Nutzen tauschen.
 - [[2026-08-03-steffen_hauptmann-die-meisten-lassen-sich-ein-handover-erst-schreiben-wenn-das]] — Eine fortlaufend gepflegte Zustandsdatei macht den Handover schon vor vollem Context Window verfügbar, kostet aber laufend Tokens und kann bei falschem Stand irreführen.
 - [[2026-07-30-floknowsai-ki-gibt-dir-das-gefuehl-dass-du-so-schnell-wie-noch-nie-arbeitest]] — Erfahrene Entwickler fühlen sich mit KI schneller, messen aber langsamer, und falscher Kontext schadet mehr als gar keiner, weshalb Pflege wichtiger ist als Sammeln.
@@ -54,6 +55,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-23-anthropic-an-alignment-assessment-of-the-uk-aisi-cybertest]]
+- [[2026-10-22-claude-building-agents-when-to-fold-subagents-into-your]]
 - [[2026-10-18-mattpocockuk-2111708560715292675]]
 - [[2026-10-16-0xkense1-2111105138290987198]]
 - [[2026-10-14-promptgefluester-entropic-baut-sich-seinen-eigenen-aehm-gitt-baut-sich-sein-eigenes-gitt]]
@@ -65,6 +68,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 - [[2026-10-07-voxyz_ai-2107939019091005836]]
 - [[2026-10-02-voxyz_ai-2106006290954592332]]
 - [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]]
+- [[2026-09-26-mattpocockuk-2103748049906397613]]
 - [[2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit]]
 - [[2026-09-17-agenticjames-i-think-code-mode-mcps-are-probably-the-best-way-to-give-agents-access]]
 - [[2026-09-04-guinnesschen-2095920936172335278]]
@@ -76,6 +80,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 - [[2026-07-21-promptgefluester-prompt-engineering-ist-tot-und-keiner-hats-gemerkt-was-meine-ich-damit]]
 - [[2026-07-17-promptgefluester-ich-werd-gerade-extrem-dafuer-kritisiert-dass-ich-an-meine-videos-gesagt]]
 - [[2026-07-17-matt-pocock-kill-your-memory-md]]
+- [[2026-07-17-matt-pocock-framework-hell-tutorial-hell-now-skill-hell]]
 - [[2026-07-10-voxyz-mattpocock-skills]]
 - [[2026-07-08-claudedevs-modell-vs-effort]]
 - [[2026-07-08-bcherny-2074997570317779038]]
@@ -88,6 +93,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[AGENTS-md-Onboarding-Design]
 - [[2026-04-17-wiki-compiler-agent-teams-in-claude-code]]
 - [[2026-04-16-wiki-compiler-context7]]
 - [[2026-04-13-wiki-compiler-gute-agents-md-schreiben]]
+- [[2026-04-07-claude-how-and-when-to-use-subagents-in-claude-code]]
 - [[2026-03-29-julian-ivanov-ki-automat-obsidian-claude-code-so-baust-du-dein-zweites-ge]]
 - [[2026-03-29-0x-kaize-claude-usage-limits-primaer]]
 - [[2026-03-21-sourfraser-claude-obsidian-ai-employee]]

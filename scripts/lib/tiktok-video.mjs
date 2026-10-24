@@ -6,6 +6,31 @@ import { promisify } from 'node:util';
 const run = promisify(execFile);
 export const TIKTOK_VIDEO_FILE = '02-video.mp4';
 
+// Nur fehlende Untertitel ergänzen. Ein fehlgeschlagener Lauf lässt die
+// bereits archivierte Quelle bestehen und meldet die Einschränkung zurück.
+export async function transcribeMissingTiktok(notePath, url, rootDir, options = {}) {
+  const note = fs.readFileSync(notePath, 'utf8');
+  if (options.whisper === false || !/^transkript: nicht verfügbar\r?$/m.test(note)) {
+    return { ok: true, skipped: true };
+  }
+  const video = path.join(path.dirname(notePath), 'medien', path.basename(notePath, '.md'), TIKTOK_VIDEO_FILE);
+  if (!fs.existsSync(video) || !fs.statSync(video).size) {
+    return { ok: false, error: 'Lokales Video fehlt; Whisper benötigt die Tonspur. Erneut ohne --no-video erfassen.' };
+  }
+  try {
+    const result = await (options.run ?? run)(process.env.TIKTOK_PYTHON ?? 'python', [
+      path.join(rootDir, 'ai.py'), 'transkribieren', url,
+    ], { cwd: rootDir, windowsHide: true, timeout: 600_000, maxBuffer: 1024 * 1024 });
+    const updated = fs.readFileSync(notePath, 'utf8');
+    if (/^transkript: nicht verfügbar\r?$/m.test(updated) || !/^## Transkript\r?$/m.test(updated)) {
+      throw new Error('Whisper hat kein Transkript ergänzt; die Rohquelle bleibt unvollständig.');
+    }
+    return { ok: true, skipped: false, output: String(result.stdout ?? '').trim() };
+  } catch (error) {
+    return { ok: false, error: String(error.stderr || error.message || error).trim().slice(-1000) };
+  }
+}
+
 // Gemeinsame MP4 mit Bild und Ton, ohne ffmpeg. yt-dlp benennt die .part-
 // Datei erst nach abgeschlossenem Download zur fertigen MP4 um.
 export async function downloadTiktokVideo(url, targetDir, options = {}) {

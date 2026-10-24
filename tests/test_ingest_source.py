@@ -17,6 +17,45 @@ SPEC.loader.exec_module(ingest)
 
 
 class TestYoutubeAbruffehler:
+    @pytest.mark.parametrize("disabled", [True, False])
+    def test_only_missing_subtitles_trigger_local_fallback(self, monkeypatch, disabled):
+        monkeypatch.setattr(sys, "argv", ["ingest_source.py", "https://youtu.be/A0scuiiGBC4"])
+        monkeypatch.setattr(ingest, "finde_dublette", lambda _: None)
+        calls = []
+        def fail(_):
+            if disabled:
+                raise ingest.YoutubeSubtitlesMissing("Keine Untertitel")
+            raise SystemExit("YouTube blockiert den Abruf")
+        monkeypatch.setattr(ingest, "lade_youtube", fail)
+        monkeypatch.setattr(ingest, "whisper_fallback", lambda url: calls.append(url) or 0)
+        if disabled:
+            assert ingest.main() == 0
+            assert calls == ["https://youtu.be/A0scuiiGBC4"]
+        else:
+            with pytest.raises(SystemExit, match="blockiert"):
+                ingest.main()
+            assert not calls
+
+    def test_local_fallback_can_be_disabled(self, monkeypatch):
+        monkeypatch.setattr(sys, "argv", ["ingest_source.py", "https://youtu.be/A0scuiiGBC4", "--no-whisper"])
+        monkeypatch.setattr(ingest, "finde_dublette", lambda _: None)
+        def missing(_):
+            raise ingest.YoutubeSubtitlesMissing("Keine Untertitel")
+        monkeypatch.setattr(ingest, "lade_youtube", missing)
+        monkeypatch.setattr(ingest, "whisper_fallback", lambda _: pytest.fail("Fallback deaktiviert"))
+        assert ingest.main() == 1
+
+    def test_local_fallback_keeps_explicit_title(self, monkeypatch):
+        monkeypatch.setattr(sys, "argv", ["ingest_source.py", "https://youtu.be/A0scuiiGBC4", "--titel", "Eigener Titel"])
+        monkeypatch.setattr(ingest, "finde_dublette", lambda _: None)
+        def missing(_):
+            raise ingest.YoutubeSubtitlesMissing("Keine Untertitel")
+        monkeypatch.setattr(ingest, "lade_youtube", missing)
+        calls = []
+        monkeypatch.setattr(ingest, "whisper_fallback", lambda *args: calls.append(args) or 0)
+        assert ingest.main() == 0
+        assert calls == [("https://youtu.be/A0scuiiGBC4", "Eigener Titel")]
+
     @pytest.mark.parametrize("error_name", ["RequestBlocked", "IpBlocked"])
     def test_blockierter_zugriff_beweist_keine_fehlenden_untertitel(self, monkeypatch, error_name):
         api = pytest.importorskip("youtube_transcript_api")

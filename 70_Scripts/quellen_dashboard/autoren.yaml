@@ -1,0 +1,24 @@
+# Explizite Identitäten aus dem lokalen Kanal-Guide und den Quellenmetadaten.
+# Andere Namen bleiben nach Plattform getrennt; keine unscharfen Zusammenführungen.
+# Referenz: 80_Knowledge/Guides/AI-Coding-Agents-Social-Media-Uebersicht.md
+matt-pocock:
+  name: Matt Pocock
+  aliases: ["X:mattpocockuk", "YouTube:matt pocock", "URL:matt pocock"]
+vox:
+  name: Vox
+  aliases: ["X:voxyz_ai"]
+artificial-analysis:
+  name: Artificial Analysis
+  aliases: ["X:artificialanlys"]
+promptgefluester:
+  name: Promptgeflüster
+  aliases: ["TikTok:promptgefluester"]
+florian-schuenemann:
+  name: Florian Schünemann
+  aliases: ["TikTok:floknowsai"]
+agentic-james:
+  name: Agentic James
+  aliases: ["TikTok:agentic.james"]
+julian-ivanov:
+  name: Julian Ivanov
+  aliases: ["YouTube:julian ivanov | ki-automatisierung", "YouTube:julian ivanov"]

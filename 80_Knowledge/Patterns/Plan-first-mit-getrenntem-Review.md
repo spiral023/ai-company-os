@@ -89,6 +89,10 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-09-10 · [[2026-09-10-promptgefluester-einer-der-groessten-fehler-den-ich-bei-vielen-vibe-codern-mit-ki]] · meinung — Die Vorbereitung umfasst nicht nur einen Produktplan, sondern auch Umgebung, Frameworkgrenzen, Abhängigkeiten, Wiederverwendung versus Eigenbau, Gestaltung und Verifikation vor der eigentlichen Implementierung. Die Fertigungsmetapher liefert keine belegte Erfolgsquote und rechtfertigt keinen unbegrenzten Werkzeugbau; konkrete Notwendigkeit und Kosten bleiben zu prüfen.
 - 2026-07-20 · [[2026-07-20-matt-pocock-do-you-even-need-human-review]] · meinung — Pocock verlagert menschliche Abstimmung bei großen Änderungen vor die Umsetzung und erlaubt bei kleinen Änderungen spätere Prüfung; Korrekturkosten sind die Begründung, keine gemessene Risikoschwelle.
 - 2026-10-20 · [[2026-10-20-alex-sprogis-hoer-auf-software-abos-zu-kaufen]] · meinung — Der beschriebene Ablauf trennt Produktbrief, zunächst codeunabhängigen Design-Prototyp, Feature-Spezifikationen, Architektur-/Aufgabenplanung und Umsetzung; ein zusätzlicher unabhängiger Agent soll einen Bug- und Testbericht liefern. Auch die private App erhält wegen Dateilöschung und Cachebereinigung einen höheren Prüfbedarf, doch der Beitrag demonstriert keine unabhängige Verhaltensabnahme und behandelt den separaten Prüfagenten nur als optionalen Ausbau.
+- 2026-10-21 · [[2026-10-21-githubnext-2112936525457740139]] · meinung — Das angekündigte PDD Kit lässt Menschen die formale Verus-Spezifikation vor der Verifikation bestätigen; die Rollentrennung verschiebt Review auf Anforderungen, garantiert aber nicht deren Vollständigkeit.
+- 2026-10-21 · [[2026-10-21-voxyz_ai-2112986024955744544]] · meinung — Der Diagnoseprompt verlangt zuerst ein lesendes Inventar und eine gespeicherte Tabelle mit Bedeutung, Maßnahmen und Freigabebedarf; erst separat ausgewählte Änderungen dürfen folgen, wobei die Checks betriebssystemspezifisch angepasst werden müssen.
+- 2026-10-22 · [[2026-10-22-mattpocockuk-2113264229453033684]] · meinung — Pocock betont ausführbaren Code und dessen Qualität, relativiert im Thread aber die anfängliche Gegenüberstellung mit Specs; das ergänzt Plan-first um eine Grenze gegen dokumentzentrierten Qualitätsersatz, ohne Planung pauschal abzulehnen.
+- 2026-10-19 · [[2026-10-19-zazencodes-factory-works-in-this-loop-a-feature-comes-through-the-spec-writer-which]] · meinung — Die gesponserte Demonstration trennt Spezifikation, Builder und UX-/UI-/Security-/Codereviews mit Reparaturschleife. Ein Approver kann eskalieren; im gezeigten Durchlauf führt erst die menschliche Freigabe zum Merge, ohne Nachweis allgemeiner Review-Zuverlässigkeit.
 
 ## Spannungen & offene Fragen
 
@@ -98,6 +102,8 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - Offene Frage: Wie genau lässt sich die hier beschriebene Rollentrennung (Builder/Reviewer/Verifier) mit [[Kontrollierte-Agent-Parallelisierung]] kombinieren, wenn Builder und Reviewer parallel statt sequentiell arbeiten sollen?
 
 - 2026-10-22: [[2026-07-20-matt-pocock-do-you-even-need-human-review]] verschiebt Kontrollpunkte nach Änderungsumfang und späteren Korrekturkosten. Kleine Diffs und interne Refactorings sind jedoch keine hinreichende Risikoklasse. [[2026-10-20-alex-sprogis-hoer-auf-software-abos-zu-kaufen]] zeigt, warum selbst eine private Desktop-App mit Dateilöschung eine eigene Verhaltensprüfung braucht; ein zusätzlicher Agentenbericht ist noch keine unabhängige Abnahme.
+
+- 2026-10-24 · [[2026-10-22-mattpocockuk-2113264229453033684]] setzt ausführbaren Code als Qualitätsgegenstand gegen eine einseitige Spec-Zentrierung. Der Thread relativiert die ursprüngliche Gegenüberstellung: Planung und Spezifikation bleiben sinnvoll, benötigen aber einen fortlaufenden Abgleich mit dem tatsächlich ausgeführten Code.
 
 ## Verwandte Patterns
 

@@ -1,6 +1,6 @@
 # Autonome Läufe, Loops & CI
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agents, Autonomiestufen und ihre Grenzen.
 
@@ -9,7 +9,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - **Hauptkeyword:** Ralph Loop
 - **Long-Tail:** Ralph Loop einrichten; Claude Code Headless CI; Claude Code über Nacht; Autonomiestufen Coding Agent; Claude Code GitHub Action; Loop Engineering
 - **Fragen:** Kann ich einen Agent über Nacht laufen lassen? / Wie viel Autonomie ist sicher?
-- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), /goal (3), loop (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), ci-agent (2), über nacht (2), testharness (2), modell (2), overnight agents (2), zustellbestätigung (2), duplikatprüfung (2), agent-automationen (2), zeitfenster (2)
+- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), loop (3), /goal (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), ci-agent (2), über nacht (2), testharness (2), modell (2), overnight agents (2), zeitfenster (2), duplikatprüfung (2), agent-automationen (2), zustellbestätigung (2)
 
 ## Verwandte Themen
 
@@ -19,18 +19,20 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - [[Thema-Kontext-Management]] — Kontext-Management
 - [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
 
-## Patterns (4)
+## Patterns (5)
 
 - [[CI-Agent-mit-Review-Gate]] · mehrfach-belegt · 12 Belege
 - [[Metrikband-gestufte-Agent-Autonomie]] · meinung · 2 Belege
 - [[Quellen-Bookmarks-fuer-Agent-Automationen]] · meinung · 1 Belege
 - [[Ralph-Loop-Frischer-Kontext-pro-Iteration]] · mehrfach-belegt · 15 Belege
+- [[Sicherer-Fallback-vor-menschlicher-Eskalation]] · meinung · 1 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]], [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Freigaben-und-Isolation-getrennt-steuern]], [[Projektkarte-als-Status-und-Entscheidungsartefakt]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]], [[Testharness-als-staerkster-Hebel]], [[Zustandslose-CI-Listener-mit-Ergebnisjournal]]
 
-## Quellen (14)
+## Quellen (15)
 
 - [[2026-10-15-mardehaym-2110763129885835505]] — Mark Ajzenstadt beschreibt am 15.10.2026 den Agentenprozess von Limestone.
+- [[2026-10-13-voxyz_ai-2109977464201957531]] — Der Post liefert ein konkretes Prompt-Template samt Ablaufgrafik, aber keinen dokumentierten Erfolgslauf. Die Reichweitenbehauptung über Agentennutzung bleibt unbelegt.
 - [[2026-10-09-voxyz_ai-2108573215224160393]] — Vox beschreibt wiederkehrende Agent-Aufgaben und ergänzt seine Zusammenfassung eines verlinkten Anthropic-Guides um einen Audit-Prompt.
 - [[2026-08-12-voxyz_ai-2087579867139264681]] — Ungenutztes Agent-Kontingent lässt sich über einen reinen Kandidatenbericht verplanen, wenn nur umkehrbare Aufgaben mit Prüfbefehl in isolierten Branches zugelassen sind.
 - [[2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding]] — Das Vier-Stufen-Modell von Pair Programming bis Agentenflotte trägt nur mit automatischer Verifikation, und Fehlläufe sollten systematisch in besseren Startkontext übersetzt werden.
@@ -47,11 +49,14 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]],
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-22-voxyz_ai-2113314439294570515]]
+- [[2026-10-22-itamar_mar-2113255396299128887]]
 - [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]]
 - [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]]
 - [[2026-10-10-boristane-self-improving-software-is-inevitable]]
 - [[2026-10-06-voxyz_ai-2107455844992299272]]
 - [[2026-10-05-voxyz_ai-2107214251408433365]]
+- [[2026-09-23-claude-how-we-made-claude-ai-3x-faster-in-two-weeks-cla]]
 - [[2026-09-14-claude-agentic-coding-is-straining-ci-here-s-how-we-sca]]
 - [[2026-08-21-julian-ivanov-ki-automat-hermes-agent-kann-jetzt-viel-mehr-als-du-denkst]]
 - [[2026-08-14-claudedevs-2088332927189049738]]

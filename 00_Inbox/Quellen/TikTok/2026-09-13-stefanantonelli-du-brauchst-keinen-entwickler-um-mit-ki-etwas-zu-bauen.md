@@ -12,7 +12,16 @@ source_notiz: 80_Knowledge/Sources/2026-09-13-stefanantonelli-du-brauchst-keinen
 titel: "Du brauchst keinen Entwickler, um mit KI etwas zu bauen."
 video_id: "7685007734546107670"
 hashtags: "ki, künstlicheintelligenz, mittelstand, unternehmen, business, claude, anthropic"
-transkript: nicht verfügbar
+transkript: "automatisch"
+transkript_quelle: "lokale Audio-Transkription"
+transkript_werkzeug: "faster-whisper 1.2.1"
+transkript_modell: "large-v3"
+transkript_sprache: "de"
+transkript_generiert: "ja"
+transkript_segmente: "3"
+transkript_erfasst: "2026-10-24"
+sprache: "de"
+transkript_datei: "medien/2026-09-13-stefanantonelli-du-brauchst-keinen-entwickler-um-mit-ki-etwas-zu-bauen/transkript-whisper.json"
 ---
 
 # Du brauchst keinen Entwickler, um mit KI etwas zu bauen.
@@ -26,3 +35,9 @@ Du brauchst keinen Entwickler, um mit KI etwas zu bauen. Anthropic hat 400.000 S
 ## Lokales Video
 
 [Video lokal abspielen](medien/2026-09-13-stefanantonelli-du-brauchst-keinen-entwickler-um-mit-ki-etwas-zu-bauen/02-video.mp4)
+
+## Transkript
+
+Habe die Ehre. Du brauchst keinen Entwickler, um mit KI was zu bauen. Das sagt jetzt sogar eine Studie mit 400.000 Sessions. Anthropic hat ausgewertet, wie Leute mit Cloud Code arbeiten. Cloud Code ist der Rapper für Cloud, der zum Entwickeln gedacht ist. Das Teil gibt's auch für normale Aufgaben und heißt dann Coburg. Ich bin übrigens Stefan, ich hab 20 Jahre lang selbst Software gemacht und jetzt hab ich Bock auf KI. Lass gerne ein Follow da und speichere das Video, dann siehst du in Zukunft mehr davon. Software-Entwickler kommen auf rund 30% erfolgreiche Sessions, alle anderen Berufe auf 29%. Der Unterschied ist also quasi nicht vorhanden. Was den Unterschied macht, ist, ob du in deinem Fachgebiet was drauf hast. Bei Leuten mit Erfahrung erledigt die KI pro Anweisung rund 12 Arbeitsschritte. Bei Anfängern sind es gerade mal 5. Wenn bei dir jemand seit 15 Jahren die Angebote schreibt, dann ist genau der dein bester KI-Anwender, nicht der AI-Bro aus der IT. In unseren Workshops sehe ich das genau jedes Mal.
+
+Die besten Ergebnisse kommen von den Leuten, die den Vorgang seit Jahren im Kopf haben. Und noch was Beruhigendes, zwischen Mittelmaß und Profi ist der Abstand gering. Du musst also nicht jahrelang üben, bis was Gutes dabei rauskommt. Den Link zur Studie packe ich dir unter das Video. Traust du dir das ohne Entwickler zu? Ab in die Kommentare.

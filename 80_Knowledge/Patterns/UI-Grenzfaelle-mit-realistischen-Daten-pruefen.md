@@ -31,6 +31,7 @@ Gerenderte Werte und ihre Verträge identifizieren. Realistische lange Namen, un
 - 2026-10-04 · [[2026-10-04-emilkowalski-2106752670405099523]] · meinung — Kowalski kündigt /break-ui für lange Namen, ungewöhnliche E-Mail-Adressen und lange Listen mit anschließender Korrektur an; der Post liefert keinen Testlauf oder Abdeckungsnachweis.
 - 2026-10-09 · external_repos/emilkowalski/skills/skills/break-ui/SKILL.md · verifiziert — Checkout e8a175d dokumentiert realistische Extremdaten-Fixtures, Demo-/Worst-case-Toggle sowie Befund und Fix je Rendering-Defekt; bestätigt den Skill-Ablauf, keine ausgeführte UI-Abnahme oder Wirksamkeit.
 - 2026-10-10 · [[2026-10-10-voxyz_ai-2108875199164871053]] · meinung — Ergänzt Formvalidierung vor Interaktion, verdeckte Ankerziele und springende Zahlen als sichtbare Grenzfälle; der vorgeschlagene Skill wurde nicht getestet.
+- 2026-10-22 · [[2026-10-22-pbakaus-2113065895069368804]] · meinung — Der Impeccable-Screenshot dokumentiert zwei auf Telefonlayouts bezogene Defekte neben der gestalterischen Bewertung einer 3D-Szene. Das illustriert den Nutzen eines gesonderten mobilen Prüfschritts, liefert aber weder die auslösenden Daten noch Screenshots des Fehlers oder seiner erfolgreichen Korrektur.
 
 ## Spannungen & offene Fragen
 

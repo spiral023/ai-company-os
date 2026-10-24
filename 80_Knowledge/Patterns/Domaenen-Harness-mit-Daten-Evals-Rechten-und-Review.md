@@ -32,6 +32,8 @@ Wähle anschließend eine Modellkonfiguration anhand dieser Aufgaben und Prüfun
 ## Belege
 
 - 2026-10-15 · [[2026-10-15-vincentmumme-greg-isenberg-ist-wahrscheinlich-aktuell-einer-der-wichtigsten]] · meinung — Mumme referiert Isenbergs vierteiligen Domänen-Harness aus Konnektoren, fachlichen Evals, Handlungsregeln und Reviewoberfläche; die Marktbeobachtung belegt keinen bestimmten Modellanteil oder Wirksamkeitsgewinn.
+- 2026-10-22 · [[2026-10-22-itamar_mar-2113255396299128887]] · meinung — Friedman konkretisiert begrenzte Autonomie als Kombination aus zulässiger Arbeit, Voraussetzungen, erlaubten Aktionen und vorgeplantem sicherem Fallback. Sein vorgeschlagenes L4-Raster gilt pro Workflow und Arbeitsbereich, nicht als Reifezertifikat für eine ganze Organisation.
+- 2026-10-23 · [[2026-10-23-theo-2113424203345265053]] · meinung — Theo trennt menschliche Oberfläche, Modell und Harness als ausführende Vermittlung von Tool-Angebot, Aufrufen und Ergebnissen. Der Vergleich von Coding-Agenten betrifft dadurch ein konfiguriertes Gesamtsystem; die Koch-Küche-Analogie ersetzt keine Betrachtung von Kontext, Rechten und Sicherheitskontrollen.
 
 ## Spannungen & offene Fragen
 

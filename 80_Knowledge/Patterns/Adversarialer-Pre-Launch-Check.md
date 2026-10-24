@@ -46,6 +46,10 @@ Der Katalog lässt sich mit Security-Checklisten erweitern: Row Level Security, 
 - 2026-10-16 · [[2026-10-16-voxyz_ai-2111079716832886886]] · meinung — Drei Testkonten und getrennte Prüfgruppen machen Kontengrenzen, direkte API-Aufrufe und nicht nachgewiesene Fälle explizit; der Post beschreibt einen Auftrag, keine hier ausgeführten Angriffe.
 - 2026-10-17 · [[2026-10-17-voxyz_ai-2111442102756463077]] · meinung — Die Checkliste verbindet Idempotenz, Zahlungszustände, Zugriffsende und isolierte Restore-Tests mit getrennten Code- und Dashboardbelegen; Anbieter- und Rechtsaussagen sind ungeprüfter Prüfbedarf.
 - 2026-10-19 · [[2026-10-19-voxyz_ai-2112302775547679169]] · meinung — Vox präzisiert den Prüfumfang bis zum ersten Produkterfolg durch vier Personas, sequenzielle Browsernutzung, Screenshotbelege, deduplizierte Befunde und einen erneuten Durchlauf mit vier frischen Agents ohne Befundliste. Die Zahl betroffener Personas ist keine empirische Nutzerhäufigkeit und ersetzt keine reale Testgruppe.
+- 2026-10-22 · [[2026-10-22-franzbruckhoff-2113401002355298410]] · meinung — Der Prompt fordert reproduzierte Befunde mit Schweregrad, Dateizeile, Ursache, Angriffsweg und Patchvorschlag; der Thread warnt zugleich vor False Positives durch erzwungenes Weitersuchen und empfiehlt repospezifische Prüfdurchgänge.
+- 2026-10-23 · [[2026-10-23-openai-securing-our-frontier-model-training-environment]] · meinung — Konkrete Grenzverletzungsziele, Versuche unter angenommenem Kontrollversagen und wiederholte Infrastrukturtests ergänzen den einmaligen Pre-Launch-Check; hoher Compute-Einsatz und menschliche Fundreproduktion begrenzen die direkte Übertragbarkeit.
+- 2026-10-21 · [[2026-10-21-promptgefluester-jeder-der-ne-website-mit-p]] · meinung — Die sekundäre Warnung verbindet Patchmanagement mit öffentlich erreichbaren Vibe-Coding-Servern. Ohne CVE, Advisory und verlässliche Versionsangaben bleibt der Fall ungeprüft; er belegt vor allem die Notwendigkeit eines nachvollziehbaren Betroffenheitschecks, keine konkrete Patch-Anweisung.
+- 2026-10-22 · [[2026-10-22-promptgefluester-im-kanal-leo-tech-coding-und-it-beschreibt-sie-ganz-gut-ist-ne]] · meinung — Ein dokumentiertes Inventar von Anwendung und Server samt Versionen ermöglicht erst den wiederkehrenden Abgleich mit Herstellerhinweisen. Die TikTok-Praxisaussage ergänzt den einmaligen Launch-Check um laufende Wartung; automatisch erzeugte Update-Befehle und Angriffsbehauptungen sind nicht validiert.
 
 ## Spannungen & offene Fragen
 
@@ -55,6 +59,8 @@ Der Katalog lässt sich mit Security-Checklisten erweitern: Row Level Security, 
 
 - Die beiden Vox-Fassungen prüfen unterschiedliche Bereiche (26.09.: Design, Mobile, UI-Zustände; 27.09.: Security, Daten, Abläufe, Umgebung). Offen ist, ob beide Kataloge zusammen gehören oder je nach App-Typ gewählt werden.
 - Zwei der drei Belege stammen vom selben Autor; unabhängig ist bisher nur die Checkliste.
+
+- 2026-10-24: [[2026-10-22-franzbruckhoff-2113401002355298410]] warnt, dass erzwungenes Weitersuchen False Positives erzeugen kann; reproduzierbare Befunde sind wichtiger als eine behauptete Vollständigkeit. [[2026-10-23-openai-securing-our-frontier-model-training-environment]] ergänzt kontinuierliche, isolierte Infrastrukturtests unter angenommenem Versagen innerer Kontrollen. Das ist nicht derselbe Scope wie ein lesender App-Audit; belastende Versuche benötigen eine dafür freigegebene Testumgebung.
 
 ## Verwandte Patterns
 

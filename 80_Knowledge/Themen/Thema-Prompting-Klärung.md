@@ -1,6 +1,6 @@
 # Prompting & Klärung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns, Voice-Prompting, Anweisungen bei Modellwechsel ausdünnen, Anti-Sycophancy.
 
@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), spec-grilling (2), known unknowns (2), change quiz (2), voice prompting (2), skill descriptions (2), modellwechsel (2), gpt-6 astra (2), codex skill-creator (2), überregulierung (2), progressive disclosure (2), intent engineering (2), ambitionscheck (2), context engineering (2), sycophancy, spec grilling, frühwarnsignale, ai agent zustimmungsneigung, pre-mortem prompt
+- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), change quiz (2), known unknowns (2), spec-grilling (2), voice prompting (2), codex skill-creator (2), gpt-6 astra (2), überregulierung (2), progressive disclosure (2), modellwechsel (2), skill descriptions (2), intent engineering (2), ambitionscheck (2), context engineering (2), spec grilling, risikoanalyse, prompt-tricks, projektplanung mit ai, pre-mortem prompt
 
 ## Verwandte Themen
 
@@ -27,8 +27,9 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Entscheidung-per-Scoring-statt-Generierung]], [[Handlungsbedarf-zuerst-im-Agent-Bericht]]
 
-## Quellen (12)
+## Quellen (13)
 
+- [[2026-10-23-voxyz_ai-2113632785759973649]] — Vox schlägt eine Agent-Regel gegen ungefragte Absicherung unwahrscheinlicher Race Conditions und Security-Sonderfälle vor: Der Agent soll Schaden, Wahrscheinlichkeit und zusätzliche Komplexität verstä
 - [[2026-10-19-promptgefluester-wir-neigen-dazu-dass-wir-beim-aehm-prompting-der-ki-sagen-aehm-8]] — Der Autor warnt, dass wenige genannte Beispiele eine Recherche unbeabsichtigt verengen können.
 - [[2026-10-13-felixrieseberg-how-to-be-more-ambitious-a-tutorial-for-humans-w]] — Felix Rieseberg schlägt vor, KI nicht nur für schnellere Ausführung einzusetzen, sondern Aufgaben auf drei weitere Arten anspruchsvoller zu gestalten: am übergeordneten Ergebnis ausrichten, mit besser
 - [[2026-09-28-vincentmumme-prompt-engineering-ist-schon-lange-tot-und-ich-weiss-nicht-ob-ihr-euch]] — Vincent Mumme erläutert am 28.09.2026 ein Agenten-Promptschema.

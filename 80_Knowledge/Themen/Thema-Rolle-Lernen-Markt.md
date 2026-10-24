@@ -1,6 +1,6 @@
 # Rolle, Lernen & Markt
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit. Der Wandel des gesamten Entwicklungsprozesses gehört zu sdlc.
 
@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** ki-adoption (3), reverse engineering (3), rea (3), swe-bench (2), befähigung (2), pilotbewertung (2), use case (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), produktwert (2), betriebsleistung (2), nutzerfeedback (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), benchmarkgrenzen
+- **Häufig in den Quellen:** ki-adoption (4), reverse engineering (3), rea (3), swe-bench (2), pilotbewertung (2), befähigung (2), use case (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), produktwert (2), nutzerfeedback (2), betriebsleistung (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), ki-chancen
 
 ## Verwandte Themen
 
@@ -23,13 +23,13 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 
 - [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 3 Belege
 - [[Claude-als-Lernwerkzeug]] · meinung · 4 Belege
-- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 22 Belege
-- [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] · meinung · 4 Belege
+- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 23 Belege
+- [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] · meinung · 5 Belege
 - [[Produktwert-jenseits-des-reproduzierbaren-Codes]] · meinung · 2 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-dokumentieren]], [[Intent-Engineering-als-dritte-Schicht]], [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]], [[Produktreife-durch-echte-Testnutzer]]
 
-## Quellen (27)
+## Quellen (29)
 
 - [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] — Niklas Steenfatt beschreibt im Oktober 2026 einen Wechsel von kleinteiligen Coding-Anweisungen zu stärker delegierter Entwicklung.
 - [[2026-10-14-promptgefluester-rea-reverse-engine-anything-im-augenblick-auf-github-trending-mit-239]] — Promptgeflüster nutzt den Hype um `REA` als Anlass, den Wert eines Nachbaus von Wartung, Infrastruktur und Nutzerbeziehungen abzugrenzen.
@@ -42,6 +42,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-
 - [[2026-10-11-hood-informatik-wird-code-jetzt-wertlos]] — Hood Informatik argumentiert, dass KI die Kosten des Verstehens und Nachbauens von Software senkt, während Wartung, Fachverständnis und verlässlicher Betrieb ihren Wert behalten.
 - [[2026-10-09-lukepierceops-2108655186080342138]] — Luke Pierce beschreibt KI-Adoption als laufende Organisationsaufgabe: Ein Champion mit geschützter Arbeitszeit führt ein Team mit Fachbereichsvertretern.
 - [[2026-10-08-heise-dekompilierung-per-ki-warum-closed-source-laut-r]] — Malte Kirchner berichtet bei Heise über Eric S.
+- [[2026-10-07-kimmonismus-2107804082106782041]] — @kimmonismus deutet berichtete mathematische KI-Ergebnisse als Wendepunkt und erwartet weitreichende Veränderungen von Arbeit und Vermögensverteilung. Der Beitrag ist eine persönliche Zukunftsposition mit sekundär zitierten Herstellerergebnissen.
 - [[2026-10-03-philgueth-kaum-jemand-versteht-welche-jobs-wirklich-von-ki-bedroht-sind-ich-sprech]] — Philgueth argumentiert am 03.10.2026 über KI und Berufe.
 - [[2026-10-01-floknowsai-diese-faehigkeiten-helfen-dir-2026-bei-deiner-arbeit-mit-ki-damit-du]] — Florian Schünemann beschreibt Fähigkeiten für den sinnvollen Einsatz von Agenten.
 - [[2026-09-17-anthropic-how-claude-code-is-used-in-practice]] — Menschen treffen die Planungsentscheidungen, der Agent die Ausführung, und mehr Domänenwissen bringt längere autonome Ketten und höhere Erfolgsquoten; Steuerung verlagert sich auf Spezifikation und Verifikation.
@@ -50,6 +51,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-
 - [[2026-08-21-promptgefluester-wie-macht-man-refactering-bei-einer-richtig-grossen-code-base-mit-aeh]] — Große Refactorings gelingen stufenweise: erst nur analysieren, leichte vor schweren Funden beheben und dabei Business-Logik dokumentieren, die später als Kontext dient.
 - [[2026-08-13-openai-2087912623883051300]] — OpenAIs Grafik zeigt höhere Nutzeranteile für Plugins und Skills in einer als führend bezeichneten Unternehmensgruppe.
 - [[2026-08-09-natebjones-decision-exhaustion-is-real-discuss]] — Wenn KI die Ausführung übernimmt, bleiben nur schwere Entscheidungen beim Menschen, was Erholung erfordert und bei vielen parallelen Agents zum Engpass wird.
+- [[2026-07-16-jousefmurad-es-gibt-eine-simple-regel-die-erklaert-warum-95-prozent-aller-ki]] — @jousefmurad nennt drei Voraussetzungen für KI-Projekte: verfügbare Daten, einen konkreten Pain Point und Verständnis der Fähigkeiten und Grenzen von KI. Das lokale Whisper-Transkript liefert die Methode; die Caption enthält zusätzlich unbelegte Erfolgsversprechen.
 - [[2026-02-24-nate-b-jones-intent-engineering]] — Kontext sagt der KI, was sie wissen soll, Intent, was sie wollen soll: Ohne explizite Ziele und Eskalationsregeln optimiert ein Agent die falsche Metrik.
 - [[2026-01-26-karpathy-coding-workflow-2026]] — Agenten machen keine Syntaxfehler mehr, sondern konzeptionelle; Leverage entsteht durch deklarative Erfolgskriterien, Tests und ein menschliches Architektur-Review.
 - [[2026-01-20-mrexodia-vibe-engineering]] — Die Rolle wandelt sich zu Tech Lead und QA Lead: Ergebnisse statt Zeilen prüfen, Tests als Harness bauen und Kontext knapp halten.

@@ -1,6 +1,6 @@
 # AI-nativer SDLC
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Coding Agents den gesamten Software Development Lifecycle verändern: von Intent und Spezifikation über Build, Tests und Review bis Deployment, Betrieb und Rückkopplung. Einzelne Techniken stehen in ihren Fachclustern; hier gehören phasenübergreifende Abläufe, Übergaben, Kontrollpunkte und der Wandel vom linearen Prozess zur Schleife hinein.
 
@@ -9,7 +9,7 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 - **Hauptkeyword:** AI-nativer SDLC
 - **Long-Tail:** Software Development Lifecycle mit KI; SDLC mit Coding Agents; AI-native SDLC Playbook; SDLC ist tot; Intent Build Observe; Agentic SDLC und ADLC; Menschliche Freigaben im AI-nativen SDLC
 - **Fragen:** Wie verändert sich der SDLC durch Coding Agents? / Welche Kontrollpunkte brauchen Menschen weiterhin? / Wie fließen Erkenntnisse aus dem Betrieb zurück in die Planung?
-- **Häufig in den Quellen:** human-in-the-loop (3), ai-native sdlc (3), review.md (2), menschliche freigabe (2), intent.md (2), spec.md (2), scion (2), verhaltensvergleich (2), refactoring (2), codex (2), intent build observe, feature flags canary, closed loop, sdlc ist tot, adversarial agent code review, observability als kontext, software development lifecycle mit ki, agent-to-agent-kommunikation, siem, egress-allowlist
+- **Häufig in den Quellen:** ai-native sdlc (3), human-in-the-loop (3), software factory (3), spec.md (2), intent.md (2), review.md (2), menschliche freigabe (2), scion (2), refactoring (2), verhaltensvergleich (2), codex (2), adversarial agent code review, feature flags canary, sdlc ist tot, closed loop, software development lifecycle mit ki, observability als kontext, intent build observe, review-stichproben, befundnachweis
 
 ## Verwandte Themen
 
@@ -23,10 +23,11 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 
 - [[Bedarfsorientierter-Repositoryzugriff]] · meinung · 2 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachvollziehen]], [[Metrikband-gestufte-Agent-Autonomie]], [[Refactoring-mit-Verhaltensvergleich]], [[Zustandslose-CI-Listener-mit-Ergebnisjournal]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachvollziehen]], [[Metrikband-gestufte-Agent-Autonomie]], [[Refactoring-mit-Verhaltensvergleich]], [[Sicherer-Fallback-vor-menschlicher-Eskalation]], [[Zustandslose-CI-Listener-mit-Ergebnisjournal]]
 
-## Quellen (7)
+## Quellen (8)
 
+- [[2026-10-22-itamar_mar-2113255396299128887]] — Itamar Friedman unterscheidet agentische Beteiligung am Software Development Lifecycle von einer Software Factory, die einen autorisierten Arbeitsablauf einschließlich Fehlerbegrenzung tragen kann.
 - [[2026-10-13-matt-pocock-tell-your-agents-to-care-about-the-codebase]] — Matt Pocock unterscheidet taktische Aufgabenlösung von strategischer Pflege der Codebasis.
 - [[2026-10-13-anthropic-redesigning-source-control-at-anthropic]] — Anthropic beschreibt mit Scion einen zentralen Source-Control-Dienst für extrem viele ständig verbundene Agenten und CI-Jobs.
 - [[2026-10-10-boristane-self-improving-software-is-inevitable]] — Boris Tane beschreibt einen Entwicklungsprozess, in dem Agents Logs, Traces, Produktmetriken, Session Replays und Supporttickets gemeinsam untersuchen und Verbesserungen vorbereiten.
@@ -37,6 +38,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachv
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-22-mattpocockuk-2113196247964074322]]
 - [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]]
 - [[2026-10-12-sarahfim-2109736893198016898]]
 - [[2026-10-11-developers-codex-as-a-platform-build-on-the-open-agent-harn]]

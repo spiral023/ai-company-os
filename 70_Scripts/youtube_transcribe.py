@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fehlende YouTube-Transkripte aus lokalem Audio ergänzen, ohne Notizen zu ersetzen.
+"""Fehlende YouTube-/TikTok-Transkripte lokal ergänzen, ohne Notizen zu ersetzen.
 
 Benötigt die optionale Umgebung .venv/youtube-transcription; Einrichtung und
 normaler Einstieg über `python ai.py transkribieren --help`.
@@ -14,6 +14,7 @@ import os
 import re
 import sys
 import time
+import urllib.parse
 from pathlib import Path
 
 import ingest_source as ingest
@@ -47,7 +48,17 @@ def set_field(fm: str, key: str, value: str | None) -> str:
 def has_transcript(text: str) -> bool:
     _, body = frontmatter(text)
     section = re.search(r"(?ms)^## Transkript\n(.*?)(?=^## |\Z)", body)
-    return bool(section and len(section[1].strip()) >= 100 and "_(kein Text extrahiert)_" not in section[1])
+    return bool(section and section[1].strip() and "_(kein Text extrahiert)_" not in section[1])
+
+
+def tiktok_id(value: str) -> str | None:
+    if re.fullmatch(r"\d{15,25}", value):
+        return value
+    parsed = urllib.parse.urlparse(value)
+    if parsed.hostname not in {"www.tiktok.com", "tiktok.com"}:
+        return None
+    match = re.fullmatch(r"/@[^/]+/video/(\d{15,25})/?", parsed.path)
+    return match[1] if match else None
 
 
 def supplement(text: str, result: dict) -> str:
@@ -60,7 +71,11 @@ def supplement(text: str, result: dict) -> str:
         raise ValueError("Transkription leer oder zu kurz; Notiz bleibt unverändert")
     fm, body = frontmatter(text)
     original_url = ingest.normalisiere_url(field(fm, "url"))
-    if original_url != f'https://www.youtube.com/watch?v={result["video_id"]}':
+    is_tiktok = tiktok_id(original_url) is not None
+    expected_id = tiktok_id(original_url) if is_tiktok else ingest.youtube_id(original_url)
+    if expected_id != result["video_id"] or (
+        field(fm, "video_id") and field(fm, "video_id") != result["video_id"]
+    ):
         raise ValueError("Video-ID der Transkription passt nicht zur Notiz")
     updates = {
         "video_id": result["video_id"], "transkript": "automatisch",
@@ -70,6 +85,8 @@ def supplement(text: str, result: dict) -> str:
         "transkript_generiert": "ja", "transkript_segmente": str(len(words)),
         "transkript_erfasst": result["date"],
     }
+    if is_tiktok:
+        updates["sprache"] = result["language"]
     for key, value in updates.items():
         fm = set_field(fm, key, value)
     note = field(fm, "notiz")
@@ -103,6 +120,30 @@ def find_notes(video: str) -> tuple[Path | None, Path | None]:
             raise ValueError(f"Mehrere Notizen zu {video} in {directory}; manuell prüfen")
         matches.append(hits[0] if hits else None)
     return tuple(matches)
+
+
+def find_tiktok_note(video: str) -> Path:
+    hits = []
+    for path in (ROOT / "00_Inbox/Quellen/TikTok").glob("*.md"):
+        fm, _ = frontmatter(path.read_text(encoding="utf-8"))
+        if tiktok_id(field(fm, "url")) == video:
+            hits.append(path)
+    if len(hits) != 1:
+        raise ValueError(
+            f"Erwartet genau eine TikTok-Rohquelle für {video}, gefunden: {len(hits)}. "
+            "Zuerst mit npm run ingest:tiktok -- <URL> erfassen."
+        )
+    return hits[0]
+
+
+def tiktok_audio(note: Path) -> Path:
+    video = note.parent / "medien" / note.stem / "02-video.mp4"
+    if not video.is_file() or not video.stat().st_size:
+        raise ValueError(
+            "Lokales TikTok-Video fehlt. Erneut mit npm run ingest:tiktok -- <URL> "
+            "ohne --no-video erfassen oder --audio <Datei> angeben."
+        )
+    return video
 
 
 def configure_cuda() -> list:
@@ -168,7 +209,7 @@ def transcribe(model, audio: Path, video: str, model_name: str, batch_size: int)
             "elapsed_seconds": time.monotonic() - started, "segments": rows}
 
 
-def new_note(video: str, directory: Path, source: Path | None) -> tuple[Path, str]:
+def new_note(video: str, directory: Path, source: Path | None, titel: str | None = None) -> tuple[Path, str]:
     data_path = directory / "metadata.json"
     data = json.loads(data_path.read_text(encoding="utf-8"))
     published = ingest.parse_datum(data.get("upload_date"))
@@ -176,7 +217,7 @@ def new_note(video: str, directory: Path, source: Path | None) -> tuple[Path, st
         source_fm, _ = frontmatter(source.read_text(encoding="utf-8"))
         published = field(source_fm, "datum") or published
     obj = ingest.Quelle(url=f"https://www.youtube.com/watch?v={video}", typ="youtube",
-                       titel=data["title"], text="", autor=data.get("uploader") or "",
+                       titel=titel or data["title"], text="", autor=data.get("uploader") or "",
                        datum=published, beschreibung=data.get("description") or "")
     target_dir = ROOT / "00_Inbox/Quellen/YouTube"
     slug = ingest.eindeutiger_slug(ingest.baue_slug(obj), obj.url, target_dir)
@@ -195,32 +236,42 @@ def new_note(video: str, directory: Path, source: Path | None) -> tuple[Path, st
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("eingaben", nargs="+", help="YouTube-IDs oder URLs")
+    parser.add_argument("eingaben", nargs="+", help="YouTube-/TikTok-IDs oder URLs")
     parser.add_argument("--audio", type=Path, help="Vorhandene Tonspur für genau ein Video")
     parser.add_argument("--modell", default="large-v3")
     parser.add_argument("--batch-size", type=int, default=4)
     parser.add_argument("--pause", type=float, default=10, help="Pause zwischen Videos in Sekunden")
     parser.add_argument("--hls", action="store_true", help="Alternative HLS-Tonspur bei HTTP 403 verwenden")
+    parser.add_argument("--titel", help="Titel beim erstmaligen Anlegen der YouTube-Rohquelle")
     args = parser.parse_args(argv)
     if args.audio and len(args.eingaben) != 1:
         parser.error("--audio ist nur für ein Video zulässig")
     videos = []
     for value in args.eingaben:
-        video = value if re.fullmatch(r"[\w-]{11}", value, flags=re.ASCII) else ingest.youtube_id(value)
+        video = tiktok_id(value) or (
+            value if re.fullmatch(r"[\w-]{11}", value, flags=re.ASCII) else ingest.youtube_id(value)
+        )
         if video not in videos:
             videos.append(video)
     handles = configure_cuda()
     model = None
     for index, video in enumerate(videos):
-        path, source = find_notes(video)
+        is_tiktok = tiktok_id(video) is not None
+        try:
+            path, source = (find_tiktok_note(video), None) if is_tiktok else find_notes(video)
+        except ValueError as error:
+            print(f"[FEHLER] {video}: {error}", file=sys.stderr, flush=True)
+            return 1
         before = path.read_text(encoding="utf-8") if path else None
         if before and has_transcript(before):
             print(f"[BESTAND] {video}: vorhandenes Transkript unverändert", flush=True)
             continue
-        directory = CACHE / video
+        directory = CACHE / (f"tiktok-{video}" if is_tiktok else video)
         directory.mkdir(parents=True, exist_ok=True)
         try:
-            audio = args.audio.resolve() if args.audio else download_audio(video, directory, args.hls)
+            audio = args.audio.resolve() if args.audio else (
+                tiktok_audio(path) if is_tiktok else download_audio(video, directory, args.hls)
+            )
             result_path = directory / f"{args.modell}-transcript.json"
             digest = hashlib.sha256(audio.read_bytes()).hexdigest()
             result = json.loads(result_path.read_text(encoding="utf-8")) if result_path.exists() else None
@@ -242,10 +293,17 @@ def main(argv=None) -> int:
                 if expected_duration and abs(expected_duration - result["audio_duration"]) > 3:
                     raise ValueError("Decodierte Tonspur passt zeitlich nicht zur Videodauer; Notiz bleibt unverändert")
             if before is None:
-                path, before = new_note(video, directory, source)
+                path, before = new_note(video, directory, source, args.titel)
             after = supplement(before, result)
             if path.exists() and path.read_text(encoding="utf-8") != before:
                 raise ValueError("Notiz während des Abrufs verändert; Schreiben abgebrochen")
+            if is_tiktok:
+                export = path.parent / "medien" / path.stem / "transkript-whisper.json"
+                export.parent.mkdir(parents=True, exist_ok=True)
+                export.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
+                fm, body = frontmatter(after)
+                fm = set_field(fm, "transkript_datei", export.relative_to(path.parent).as_posix())
+                after = "---\n" + fm + "\n---\n" + body
             (directory / "before.md").write_text(before, encoding="utf-8")
             path.parent.mkdir(parents=True, exist_ok=True)
             temporary = path.with_suffix(".md.tmp")

@@ -51,6 +51,7 @@ Löst die Frustration und das Mikromanagement, die entstehen, wenn Entwickler ve
 - 2026-10-16 · [[2026-10-16-math_rachel-2111238648188584306]] · meinung — Als Gegenakzent zur reinen Rollenverschiebung auf QA betont Thomas, dass Volumen, Komplexität und Ermüdung die menschlichen Fähigkeiten der Aufsicht beeinträchtigen können. Die Source diskutiert Gestaltung und Prüfung von Aufsicht, keine gemessene allgemeine Dequalifizierung.
 - 2026-07-16 · [[2026-07-16-matt-pocock-do-software-fundamentals-still-matter]] · meinung — Pocock beschreibt verständlichen Code, Tests an passenden Schnittstellen und Moduldesign als Gestaltung der Agent-Arbeitsumgebung; seine behauptete menschliche Überlegenheit in schlechten Codebasen wurde nicht gemessen.
 - 2026-10-16 · [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] · meinung — Steenfatt beschreibt Produktumfang und das Ablehnen zusätzlicher Features als verbleibende menschliche Arbeit bei delegierter Implementierung und Architektur; seine behauptete Sicherheitsüberlegenheit aktueller Modelle ist nicht durch einen passenden Vergleich belegt.
+- 2026-10-07 · [[2026-10-07-kimmonismus-2107804082106782041]] · meinung — Der Zukunftskommentar verbindet berichtete Fortschritte von Forschungsagenten mit Fragen nach Erwerbsarbeit, Sinn und Vermögensverteilung. Superintelligenz 2027 und Nettostellenverluste sind Positionen des Autors, keine belegten Befunde; eine beigefügte Essaypassage verweist ausdrücklich auf physische und praktische Grenzen.
 
 ## Spannungen & offene Fragen
 

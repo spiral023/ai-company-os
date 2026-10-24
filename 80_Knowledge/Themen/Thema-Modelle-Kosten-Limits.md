@@ -1,6 +1,6 @@
 # Modelle, Kosten & Limits
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Caching, Benchmarks und Provider-Umleitung. Verfügbarkeit offener Gewichte, lokale Inferenz, Hardware und Fine-Tuning gehören vorrangig zu open-source-llms; Kostenvergleiche bleiben hier.
 
@@ -9,7 +9,7 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 - **Hauptkeyword:** Claude Code Kosten
 - **Long-Tail:** Claude Code Usage Limits; Kosten pro Task statt pro Token; Prompt Caching Claude Code; Claude Code mit lokalem Modell; Reasoning Effort wählen; Modell-Eskalation günstig nach teuer
 - **Fragen:** Welches Modell für welche Aufgabe? / Warum sind meine Limits so schnell leer?
-- **Häufig in den Quellen:** modell-eskalation (31), modell (29), kosten (21), effort (21), benchmark (19), preis (17), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), preise (8), intelligence index (7), pareto (7), sonnet (7), opus 5.5 (7), anthropic_base_url (4), cost per task (4), /compact (4)
+- **Häufig in den Quellen:** modell-eskalation (31), modell (29), effort (22), kosten (21), benchmark (19), preis (17), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), preise (8), pareto (7), intelligence index (7), sonnet (7), opus 5.5 (7), terminal-bench 4.0 (6), gpt-6 luna (5), anthropic_base_url (4)
 
 ## Verwandte Themen
 
@@ -23,14 +23,20 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 
 - [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 4 Belege
 - [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 10 Belege
-- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 53 Belege
+- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 61 Belege
 - [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]] · meinung · 1 Belege
 - [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]]
 
-## Quellen (65)
+## Quellen (82)
 
+- [[2026-10-23-undefinedki-2113689331412156666]] — Die Sekundärdarstellung von Shopifys Sidekick enthält eine ausführliche Grafik. Sie schreibt Zahlen Shopify zu; Primärartikel und Messdaten wurden hier nicht geprüft.
+- [[2026-10-23-kimmonismus-2113685048478077197]] — Chubby vergleicht am 23.10.2026 die gemeldeten Tokenpreise von `Kimi K3.1 Pro` mit US-Frontiermodellen.
+- [[2026-10-23-kimmonismus-2113681534792183863]] — Chubby kommentiert am 23.10.2026 die Ankündigung von `Kimi K3.1 Pro` und teilt einen Benchmarkvergleich von Moonshot.
+- [[2026-10-23-artificialanlys-2113688083145314416]] — Artificial Analysis berichtet am 23.10.2026 über eigene Messungen von `Kimi K3.1 Pro`.
+- [[2026-10-23-artificialanlys-2113424551396934134]] — Artificial Analysis veröffentlicht am 23.10.2026 einen überarbeiteten Coding-Agent-Vergleich.
+- [[2026-10-22-voxyz_ai-2113344640959250912]] — Vox beschreibt am 22.10.2026 die neue Wiederverwendungslogik von `Ponytail 5` und berichtet über Tests des Herstellers.
 - [[2026-10-20-artificialanlys-2112582116651466965]] — Artificial Analysis vergleicht am 20.10.2026 sinkende Kosten fester Intelligence-Index-Schwellen mit steigenden Spitzenkosten.
 - [[2026-10-19-artificialanlys-2112218661432000694]] — Artificial Analysis meldet am 19.10.2026 Fortschritte für `DeepSeek V4.1 Flash 1017`.
 - [[2026-10-17-kimmonismus-2111385805449048181]] — Chubby berichtet am 17.10.2026 über `DeepSeek V4.1 Flash-1017`.
@@ -38,21 +44,32 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-10-16-0xkense1-2111105138290987198]] — Kenseis Eigenbenchmark legt nahe: Wiederholt mitgesendeter Kontext bietet mehr Einsparpotenzial als kurze Antworten.
 - [[2026-10-14-andrewcurran-2110444907966181544]] — Andrew Curran begegnet dem Einwand, lange Agentenläufe könnten vor allem kapitalkräftigen Entwicklern helfen, mit einer Behauptung über rapide sinkende KI-Kosten.
 - [[2026-10-13-artificialanlys-2110081938140582085]] — Artificial Analysis berichtet am 13.10.2026 über `Fish Audio Drama 3 Preview`.
+- [[2026-10-13-artificialanlys-2110068185793970576]] — Artificial Analysis meldete am 13.10.2026 die allgemeine Verfügbarkeit von `Gemini 4 Argon` und berichtete eigene Benchmarkmessungen. Der gesichtete Videochart nennt den **Intelligence Index `v4.3.2`** mit zehn Evaluationen. Preis und Verfügbarkeit sind hier der archivierte Quellenstand, keine heutige Auskunft.
+- [[2026-10-13-artificialanlys-2110046565691949058]] — Artificial Analysis stellte am 13.10.2026 eigene Primärmessungen im **Decision Index `v1.0`** vor. Vier gesichtete Grafiken ergänzen Score, Aufgabenpreis, mediane Dauer und Kalibrierung. Der Test betrifft strukturierte Entscheidungen; er misst keine allgemeine Coding-Agent-Leistung.
+- [[2026-10-12-artificialanlys-2109697083519447118]] — Artificial Analysis berichtete am 12.10.2026 eigene Messungen zu `Muse Wonder` und `Muse Wonder Full`. Der Text nennt den Intelligence Index `v4.3`; die gesichtete Hauptgrafik präzisiert **`v4.3.2` mit zehn Evaluationen**. Verfügbarkeits- und Preisangaben sind der archivierte Quellenstand.
 - [[2026-10-10-voxyz_ai-2109056129884123370]] — Vox empfiehlt längere Prompt-Caches für Subagents, die auf Builds oder Tests warten.
 - [[2026-10-10-developers-using-gpt-6-openai-api]] — Der am 10.10.2026 archivierte OpenAI-Guide ergänzt die regionalen Verfügbarkeitsangaben gegenüber dem erfassten Stand vom 02.10.2026.
 - [[2026-10-09-satyanadella-2108627923888754862]] — Satya Nadella stellt `Microsoft-Decision-1` für schnelle strukturierte Entscheidungen vor und nennt interne Tests sowie Vertriebskanäle.
 - [[2026-10-09-openrouter-2108689756372775370]] — OpenRouter meldet `Microsoft-Decision-1` als verfügbar und nennt Preis, Kontextumfang und Microsoft-Benchmarkzahlen.
 - [[2026-10-09-natebjones-thats-model-vs-effort-in-plain-english]] — Nate Jones erklärt Modellwahl und Effort als zwei getrennte Entscheidungen: Welches Fähigkeitsniveau braucht die Aufgabe, und wie viel Denkaufwand soll das gewählte Modell investieren?
 - [[2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker]] — Vox empfiehlt für Claude Code eine feste Rollenteilung: `Opus 5.5` plant und prüft, `Haiku 5.5` liest Code und recherchiert Dokumentation.
+- [[2026-10-07-openai-2107894997538525580]] — OpenAI beschrieb am 07.10.2026 als **Hersteller** den Rollout von `GPT-6` und „Intelligent UI“. Die archivierten sieben Posts belegen die Ankündigung und Produktabgrenzung, keine unabhängige Qualitätsmessung. Produktdemo-Videos sind vorhanden; daraus wurden keine Leistungszahlen abgeleitet.
 - [[2026-10-07-kimmonismus-2107894978332557756]] — Chubby meldet `Claude Haiku 5.5`: Nach Herstellerangaben liegen durchschnittliche Betriebskosten rund **75 % unter** `Haiku 4.5`.
 - [[2026-10-07-artificialanlys-2107911905822351609]] — Artificial Analysis (AA) berichtet Modellmerkmale von `Claude Haiku 5.5`: adaptive thinking, Effort-Einstellungen, 1 Million Kontexttokens, Text-/Bildinput, Textoutput.
 - [[2026-10-06-artificialanlys-2107467221421420919]] — Artificial Analysis (AA) berichtet `Mistral Large 4 Preview`: „Research Public Preview“ über Mistrals API, 1 Billion Parameter, 49 Milliarden aktiv, 512k Kontexttokens, Text-/Bildinput, Textoutput.
 - [[2026-10-02-repo-farion1231-cc-switch]] — Im Klon von farion1231/cc-switch (Stand Commit `b9e96202`) beschreibt `src/i18n/locales/en.json` einen „Stack“-Modus: Du legst mehrere Anbieter an, und alle ihre Modelle erscheinen im Modellmenü von C
 - [[2026-10-02-developers-using-gpt-6-openai-api]] — Die Entwicklerseite „Using GPT-6“ beschreibt die drei GPT-6-Modelle, neue API-Funktionen und Prompt-Bausteine für Astra.
+- [[2026-10-02-artificialanlys-2106165480876863549]] — Artificial Analysis stellt am 02.10.2026 sein Modellvergleichswerkzeug vor. Neben dem Gesamtindex bietet es laut Anbieter Einzelbenchmarks und fachbezogene Capability-Indizes.
+- [[2026-10-02-artificialanlys-2105814318294114720]] — Artificial Analysis veröffentlichte am 02.10.2026 eigene Benchmarkmessungen, keine Hersteller-Selbstauskunft. Text und Grafik stimmen bei den drei hervorgehobenen Ergebnissen überein. Die Grafik präzisiert den **Coding Agent Index auf `v1.5`** mit `DeepSWE v1.1`, `Terminal-Bench 4.0` und `SWE-Atlas-QnA`.
+- [[2026-10-02-arena-2106109027923140928]] — Arena meldet am 02.10.2026 Rang 5 für `GPT-6.1 Sol (Max)` und zeigt Rangliste sowie Kosten-Score-Grafik. Das ist ein datierter Betreiberbericht; Harness-Version, Stichprobe und genaue Baseline sind im Archiv nicht dokumentiert.
+- [[2026-10-02-arena-2106105400487821764]] — Der Arena-Post vom 02.10.2026 erläutert die Preis-Leistungs-Einordnung von `Claude Sonnet 5.5`. Die beigefügte Grafik zeigt einen Betreiber-Snapshot; eine unabhängige Messung oder vollständige Methodik liegt hier nicht vor.
+- [[2026-10-02-arena-2106104809514516541]] — Der Arena-Post vom 02.10.2026 ist ein datierter Betreiberbericht mit Ranglistengrafik. Er berichtet über `Agent Arena`, nicht über einen allgemeinen Modelltest. Harness-Version, Stichprobengröße und genaue Baseline fehlen im Archiv.
 - [[2026-10-01-artificialanlys-2105491868608004578]] — Artificial Analysis (Drittanbieter) misst am 01.10.2026 Kosten pro Intelligence-Index-Task für OpenAI-Modelle nach.
 - [[2026-09-30-artificialanlys-2105392625788637299]] — Artificial Analysis (Drittanbieter-Messung, Intelligence Index v4.3.2 mit 10 Evaluations) bewertet am 30.09.2026 Googles Gemini 4 Argon mit `high` Reasoning, der höchsten verfügbaren Stufe.
 - [[2026-09-29-voxyz_ai-2104919123918479521]] — Vox liefert einen Prompt, mit dem Claude Code das eigene Setup gegen Anthropics Leitfaden zu Sonnet 5.5 prüft ([[2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog]]).
+- [[2026-09-29-thsottiaux-2105006253986738615]] — Der am 29.09.2026 veröffentlichte Einzelpost von Tibo (`@thsottiaux`) ist eine Produktankündigung. Die archivierte Quelle enthält keine Partnerliste, Vertragsbedingungen oder unabhängige Nutzungsprüfung.
 - [[2026-09-29-thsottiaux-2104823812042940713]] — Tibo (@thsottiaux, signiert „Codexingly“, also aus dem Codex-Umfeld bei OpenAI) kündigt am 29.09.2026 an, dass das Pro-$200-Abo am Folgetag wieder für Neukunden öffnet.
+- [[2026-09-29-theo-2105063015712465094]] — Der am 29.09.2026 veröffentlichte Thread dokumentiert eine persönliche Selbstmessung von Theo und eine zugehörige Grafik, keine unabhängig reproduzierte Evaluation. Erfasst wurden drei Posts; daraus folgt keine Vollständigkeit des Threads.
 - [[2026-09-29-openai-rueckblick-auf-den-devday-2026]] — OpenAI fasst am 29.09.2026 mehr als 20 Ankündigungen zusammen.
 - [[2026-09-29-artificialanlys-2105025585332605357]] — Artificial Analysis (Drittanbieter, Intelligence Index v4.3.2) misst `GPT-6.1 Sol`, das `GPT-6 Sol` nach sieben Tagen ablöst.
 - [[2026-09-28-claude-building-with-claude-sonnet-5-5-claude-dev-blog]] — Der Herstellerleitfaden zu `claude-sonnet-5-5` (Stand 2026-09-28) behauptet: gleicher Token-Preis wie Sonnet 5, aber deutlich weniger Tokens pro Aufgabe, daher „bis zu 30 % weniger“ Kosten.
@@ -99,6 +116,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-23-theo-2113424203345265053]]
 - [[2026-10-19-unslothai-2112212605930778830]]
 - [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]]
 - [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]]

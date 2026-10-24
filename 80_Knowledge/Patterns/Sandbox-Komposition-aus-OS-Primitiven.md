@@ -43,6 +43,8 @@ Die zentrale Designspannung dabei ist nicht Security als Selbstzweck, sondern **
 - 2026-10-08 · [[2026-10-08-unslothai-windows-sandboxing-mxc]] · meinung — Unsloth kombiniert Softwarefilter mit OS-Backends für Python und Terminal und zeigt den Status pro Tool; der ergänzende Guide nennt einen Windows-Fallback und enthält eine Preview-Einschränkung. Implementierung und Schutzumfang sind lokal nicht im Code geprüft.
 - 2026-10-09 · [[2026-10-09-openaidevs-2108573188703781190]] · meinung — Die Codex-Ankündigung nennt MXC für kompatible Windows-11-Geräte mit granularen Dateikontrollen und stärkerer Netzwerkdurchsetzung; ergänzt einen konkreten Produktkanal, bestätigt aber weder Schutzwirkung noch die MXC-Preview als Sicherheitsgrenze.
 - 2026-08-28 · [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]] · meinung — Die Quelle beschreibt eine Verkettung einzeln begrenzter Rechte über verschiedene Dienste. Eine isolierte Prozessansicht liefert deshalb keine Aussage über die Wirkung aller gemeinsam erreichbaren Komponenten.
+- 2026-08-20 · [[2026-08-20-jasondclinton-2090543566682718542]] · meinung — Clinton empfiehlt angesichts erwarteter Patch-Engpässe Netzwerkisolation über Air-Gaps und Data Diodes; der archivierte Einzelpost liefert weder konkrete Architektur noch Wirksamkeitsnachweis und mögliche Folgeposts fehlen.
+- 2026-10-23 · [[2026-10-23-openai-securing-our-frontier-model-training-environment]] · meinung — OpenAI berichtet voneinander unabhängige Tests von Container-, VM- und Cloud-Grenzen einschließlich bereits kompromittiertem Host sowie eine Offline-Welt ohne Live-Fallback bei Cache-Misses; Herstellerbericht über Forschungsinfrastruktur, keine eigene Sicherheitsverifikation.
 
 ## Spannungen & offene Fragen
 
@@ -57,6 +59,8 @@ Die zentrale Designspannung dabei ist nicht Security als Selbstzweck, sondern **
 - 2026-10-09: Die pauschale Darstellung im Post-Bild, OS-Schäden seien ausgeschlossen, steht gegen den Guide-Screenshot, der MXC als Preview und nicht als Sicherheitsgrenze bezeichnet. Die Frage nach belastbaren Datei-, Netzwerk- und Prozessgrenzen bleibt damit offen. → [[2026-10-08-unslothai-windows-sandboxing-mxc]]
 - 2026-10-09: Der Post nennt weniger als 100 ms Overhead, der Guide 164 ms für Windows High. Low/High-Werte und 1–2 ms für reine Softwarechecks haben unklare Messbedingungen. Der behauptete geringe Overhead ist nicht reproduziert. → [[2026-10-08-unslothai-windows-sandboxing-mxc]]
 - 2026-10-09: Die frühere Aussage einer einzigen Herstellerquelle ist inzwischen überholt; Unsloth ergänzt einen weiteren Bericht. Das verifiziert die konkrete OS-Komposition jedoch nicht. Freigabe-Automatik und aktive Isolation sind zudem verschiedene Ebenen. → [[Freigaben-und-Isolation-getrennt-steuern]]
+
+- 2026-10-24 · [[2026-10-23-openai-securing-our-frontier-model-training-environment]]: Frontier-RL benötigt laut Bericht eine Offline-Welt und äußere Perimeter, während die Gesamtinfrastruktur wegen Betriebsverbindungen nicht vollständig air-gapped ist. Clintons [[2026-08-20-jasondclinton-2090543566682718542|Air-Gap-Empfehlung]] ist deshalb kein universell direkt einsetzbarer Entwurf; Trainingssysteme und interaktive Entwicklerumgebungen haben unterschiedliche Zugriffsbedarfe.
 
 ## Verwandte Patterns
 

@@ -25,20 +25,21 @@ import {
 } from './lib/tiktok-ingest.mjs';
 import { runTranscriptActor, fetchOembed, resolveShortUrl } from './lib/tiktok-client.mjs';
 import { downloadMedia, writeInboxNote, mediaTargetDir, sourceInboxRel } from './lib/inbox-store.mjs';
-import { downloadTiktokVideo } from './lib/tiktok-video.mjs';
+import { downloadTiktokVideo, transcribeMissingTiktok } from './lib/tiktok-video.mjs';
 
 const rootDir = process.cwd();
 const ingestDir = path.join(rootDir, 'scripts/.ingest');
 
 function usage() {
   console.log(
-    'Usage: npm run ingest:tiktok -- <video-url-oder-id> [--force] [--refetch] [--no-media] [--no-video] [--gap <sek>]',
+    'Usage: npm run ingest:tiktok -- <video-url-oder-id> [--force] [--refetch] [--no-media] [--no-video] [--no-whisper] [--gap <sek>]',
   );
   console.log(`  Ablage: ${sourceInboxRel('tiktok')}/<slug>.md · Cover: ${sourceInboxRel('tiktok')}/medien/<slug>/`);
   console.log('  --force    Notiz neu schreiben (aus dem Cache, kein Actor-Run).');
   console.log('  --refetch  Transkript neu holen — kostet $0.001. Impliziert --force.');
   console.log('  --no-video MP4-Download überspringen (Standard: Video lokal speichern).');
   console.log('  --no-media Cover und Video überspringen.');
+  console.log('  --no-whisper Lokalen Whisper-Fallback bei fehlenden Untertiteln überspringen.');
   console.log('  --gap      Sprechpause in Sekunden, ab der ein neuer Absatz beginnt (Default 0.8).');
 }
 
@@ -77,6 +78,19 @@ async function resolveInput(input) {
     if (!/Kurzlink/.test(err.message)) throw err;
     const resolved = await resolveShortUrl(input);
     return parseTiktokUrl(resolved);
+  }
+}
+
+async function completeTranscript(notePath, videoUrl, args) {
+  const missing = /^transkript: nicht verfügbar\r?$/m.test(fs.readFileSync(notePath, 'utf8'));
+  if (!missing || !args.whisper) return;
+  console.log('→ Fehlende Untertitel mit lokalem Whisper ergänzen …');
+  const result = await transcribeMissingTiktok(notePath, videoUrl, rootDir);
+  if (result.ok) {
+    if (result.output) console.log(result.output);
+  } else {
+    console.warn(`⚠ Whisper-Fallback fehlgeschlagen: ${result.error}`);
+    process.exitCode = 1;
   }
 }
 
@@ -214,6 +228,7 @@ async function main() {
     if (withVideo !== original) fs.writeFileSync(notePath, withVideo, 'utf8');
     console.log(`● Notiz existiert bereits: ${path.relative(rootDir, notePath)}`);
     console.log(withVideo !== original ? '  Nur den lokalen Video-Link ergänzt.' : '  Unverändert gelassen. --force überschreibt sie.');
+    await completeTranscript(notePath, videoUrl, args);
     return;
   }
 
@@ -241,8 +256,9 @@ async function main() {
   });
   writeInboxNote(rootDir, 'tiktok', slug, note);
 
-  if (!transcript) {
-    console.warn('⚠ Kein Transkript verfügbar — TikTok hat für dieses Video keine Untertitel.');
+  if (!parseVtt(transcript).length) {
+    console.warn('⚠ Keine abrufbare Untertitelspur; die archivierte Notiz enthält zunächst nur Metadaten.');
+    await completeTranscript(notePath, videoUrl, args);
   } else {
     const transcriptLang = detectLanguage(parseVtt(transcript).map((c) => c.text).join(' '));
     const captionLang = detectLanguage(splitCaption(payload.oembed?.title).text);
@@ -254,8 +270,9 @@ async function main() {
   }
   const okCount = downloads.filter((d) => d.ok).length;
   const mediaNote = downloads.length ? ` · Cover: ${okCount}/${downloads.length} lokal` : '';
+  const localTranscript = /^transkript_quelle: "?lokale Audio-Transkription"?\r?$/m.test(fs.readFileSync(notePath, 'utf8'));
   console.log(
-    `✔ Quelle: ${path.relative(rootDir, notePath)} · ${transcript.length} Zeichen Transkript${mediaNote}`,
+    `✔ Quelle: ${path.relative(rootDir, notePath)} · ${localTranscript ? 'Transkript lokal mit Whisper erzeugt' : `${transcript.length} Zeichen Transkript`}${mediaNote}`,
   );
 }
 

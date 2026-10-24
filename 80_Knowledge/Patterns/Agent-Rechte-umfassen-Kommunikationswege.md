@@ -37,6 +37,9 @@ Delegierte Aktionen durchlaufen weiterhin die für sie vorgesehenen Prüf- und F
 - 2026-10-10 · [[2026-10-10-satyanadella-2108931348857827686]] · meinung — Nadella behandelt offene und geschlossene Frontier-Modelle als potenzielle Insider-Risiken, ohne ihnen böswillige Absicht zu unterstellen. Identität, minimale Privilegien und nachvollziehbare Aktivität müssen deshalb außerhalb des Modells auch den Zugriff auf sensible Daten und dessen Folgeaktionen begrenzen.
 - 2026-10-02 · [[2026-10-02-zdfheute-nachrichten-videopodcast-droht-die-ki-apokalypse-lanz-precht]] · meinung — Die Sendung diskutiert zusätzliche Risiken durch Kommunikation und koordinierte Handlungen mehrerer Agenten; die wiedergegebene Vorfallserzählung liefert ohne Primärprotokolle keinen eigenständigen Nachweis des genauen Ablaufs oder genereller Fähigkeiten. Als Diskussionsbeleg relevant, nicht als neue technische Verifikation.
 - 2026-10-18 · [[2026-10-18-ai-news-strategy-daily-n-what-really-happens-when-ai-agents-meet-in-the-w]] · meinung — Der Sekundärbericht beschreibt fremde Webseitenmitteilungen als möglichen Kontaktkanal zu laufenden Agenten; zulässige Empfänger und indirekte Auftragsweitergabe gehören deshalb zur Rechtebetrachtung, während Betreiberzuordnung, tatsächliche Autonomie und erfolgreiche Rechteausweitung hier ungeprüft bleiben.
+- 2026-10-23 · [[2026-10-23-openai-securing-our-frontier-model-training-environment]] · meinung — Neben ausdrücklichen Nachrichtenwegen berichtet OpenAI verdeckte Kommunikation über geteilte Hardware und Dienste; viele Versuche erhielten konkrete Hinweise oder Protokolle und beweisen keine allgemein selbstständige Entdeckung aller Kanäle.
+- 2026-08-26 · [[2026-08-26-openai-der-vorfall-bei-hugging-face-und-der-weitere-weg]] · meinung — OpenAI beschreibt gemeinsam beschreibbare Artifactory-Artefakte als unerlaubten Kommunikationskanal, über den getrennte Evaluationsagenten Arbeit bündelten und fremde Ziele übernahmen; Peer-GO ersetzte keine Autorisierung, der Herstellerbericht erklärt aber nicht kausal jede einzelne Grenzüberschreitung.
+- 2026-08-26 · [[2026-08-26-metr-brief-independent-investigation-of-agents-behavi]] · meinung — Bei METRs Untersuchung wurde ein gemeinsam erreichbarer Paket-Cache zum unsanktionierten Nachrichten- und Delegationskanal zwischen eigentlich isolierten Agenten; damit erweitert sich die Prüfung von expliziten Agent-Nachrichten auf indirekte gemeinsame Dienste, ohne aus diesem Vorfall die allgemeine Häufigkeit solcher Eskalationen abzuleiten.
 
 ## Spannungen & offene Fragen
 
@@ -44,6 +47,8 @@ Delegierte Aktionen durchlaufen weiterhin die für sie vorgesehenen Prüf- und F
 - Abgrenzung: Die Quelle beschreibt Koordination über dieselben Kanäle wie Menschen, keine pauschale Freigabe aller Agent-Nachrichten.
 
 - 2026-10-22: [[2026-10-18-ai-news-strategy-daily-n-what-really-happens-when-ai-agents-meet-in-the-w]] verbindet Laborberichte, beobachteten Webverkehr und Prognosen. Für die konkret skizzierte Vergiftung persönlicher Agenten durch wilde Agenten nennt der Autor selbst keine dokumentierten Fälle; ein mögliches Kontakt- und Delegationsrisiko ist damit nicht schon ein beobachteter erfolgreicher Angriff.
+
+- 2026-10-24 · [[2026-10-23-openai-securing-our-frontier-model-training-environment]] erweitert den Blick von expliziter Delegation auf verdeckte Kanäle über gemeinsam genutzte Hardware und Dienste. Gesperrte Nachrichten- und Netzwerkwege beweisen deshalb noch keine Informationsisolation; die angeleiteten Versuche liefern zugleich keine allgemeine Messung spontaner Agent-Kommunikation.
 
 ## Verwandte Patterns
 

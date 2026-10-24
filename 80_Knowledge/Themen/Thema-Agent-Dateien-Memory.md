@@ -1,6 +1,6 @@
 # Agent-Dateien & Memory
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen. Inhaltliche Aufnahme, Aufbereitung, Retrieval und regelmäßige Pflege von Quellen stehen in wissensarbeit.
 
@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** agents.md (10), claude.md (8), progressive disclosure (6), context engineering (5), agent-datei (4), instruktionsbudget (2), agent_docs (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), obsidian (2), llm wiki (2), /doctor (2), test (2), regeln (2), agent bericht (2), blockadebericht (2), handlungsbedarf (2), auto mode (2)
+- **Häufig in den Quellen:** agents.md (11), claude.md (8), progressive disclosure (7), context engineering (5), agent-datei (4), coding_standards.md (3), agent_docs (2), instruktionsbudget (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), llm wiki (2), obsidian (2), /doctor (2), retro (2), test (2), regeln (2), agent bericht (2), handlungsbedarf (2)
 
 ## Verwandte Themen
 
@@ -21,15 +21,16 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 ## Patterns (2)
 
 - [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 43 Belege
-- [[Handlungsbedarf-zuerst-im-Agent-Bericht]] · meinung · 2 Belege
+- [[Handlungsbedarf-zuerst-im-Agent-Bericht]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-erzwingen]], [[Wissenspflege-mit-Inbox-und-Review]]
 
-## Quellen (19)
+## Quellen (20)
 
 - [[2026-10-07-voxyz_ai-2107939019091005836]] — Vox empfiehlt unter **200 Zeilen** je Agent-Datei und nennt **32 KiB insgesamt** als Codex-Standardlimit.
 - [[2026-10-05-voxyz_ai-2107123654219743712]] — Vox beschreibt lange Abschlussberichte, in denen notwendige Nutzeraktionen zwischen anderen Ergebnissen verschwinden.
 - [[2026-10-04-voxyz_ai-2106783910055006342]] — Vox empfiehlt eine kompakte `AGENTS.md` gegen vorschnelle Kompatibilitätsschichten, ungenutzte Altdateien und Tests für belanglose Details.
+- [[2026-09-26-mattpocockuk-2103748049906397613]] — Matt Pocock empfiehlt, wiederkehrende Agentenfehler in `CODING_STANDARDS.md` festzuhalten. Die Regeln entstehen aus tatsächlichen Fehlversuchen statt aus einer vorab möglichst vollständigen Standardsammlung.
 - [[2026-09-18-repo-anthropics-claude-code-agents-md-support]] — Claude Code liest seit 2.1.277 AGENTS.md, wenn keine CLAUDE.md existiert, sodass eine Instruktionsdatei mehrere Agents bedienen kann; eine zusätzliche CLAUDE.md hat Vorrang.
 - [[2026-08-21-openknowledge-open-knowledge-format-plugin-for-llm-wikis-openk]] — Lint-Warnungen direkt im Tool-Ergebnis steuern Agents kostengünstig ohne Blockade; harte Durchsetzung braucht weiterhin ein separates CI-Gate.
 - [[2026-07-25-agenticjames-they-cut-claude-code-system-prompt-by-80-and-you-should-be-doing-the]] — Neuere Modelle arbeiten mit weniger vorgegebenem Kontext besser; lange CLAUDE.md-Dateien sollten gekürzt und Wissen in bei Bedarf ladbare Skills ausgelagert werden.
@@ -49,12 +50,16 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-er
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-22-voxyz_ai-2113254050170843418]]
+- [[2026-10-22-luinlee-2113085361836744764]]
+- [[2026-10-22-cu30rry-2113242716473602270]]
 - [[2026-10-16-poteto-2111133080526495985]]
 - [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]]
 - [[2026-10-13-mattpocockuk-2109973273924579720]]
 - [[2026-10-05-repo-mattpocock-skills-retro]]
 - [[2026-10-05-repo-claude-code-doctor-insights]]
 - [[2026-10-04-voxyz_ai-2106829206134931539]]
+- [[2026-10-04-mattpocockuk-2106729173511188654]]
 - [[2026-08-14-mattpocockuk-2088256432265167185]]
 - [[2026-08-04-anthropic-docs-claude-code-best-practices]]
 - [[2026-07-30-floknowsai-ki-gibt-dir-das-gefuehl-dass-du-so-schnell-wie-noch-nie-arbeitest]]

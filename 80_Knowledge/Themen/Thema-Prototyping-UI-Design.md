@@ -1,6 +1,6 @@
 # Prototyping & UI-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents.
 
@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), hyperframes (4), brand kit (3), suchintention (3), ereignisframes (3), motion graphics (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), claude design (2), designvarianten (2), artefaktbasis (2), gestaltungsachsen (2), reduced motion (2), produktionsabnahme (2), isolierte vorschau (2), codex skills (2), seitenspezifikation (2), dataforseo (2)
+- **Häufig in den Quellen:** lovable (5), hyperframes (4), brand kit (3), suchintention (3), ereignisframes (3), motion graphics (3), ui-texte (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), artefaktbasis (2), designvarianten (2), claude design (2), produktionsabnahme (2), isolierte vorschau (2), reduced motion (2), gestaltungsachsen (2), codex skills (2), seitenspezifikation (2)
 
 ## Verwandte Themen
 
@@ -17,10 +17,11 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - [[Thema-Spezifikation-Planung]] — Spezifikation & Planung
 - [[Thema-Skill-Design]] — Skill-Design
 
-## Patterns (7)
+## Patterns (8)
 
 - [[Brand-Kit-als-gemeinsame-Artefaktbasis]] · meinung · 5 Belege
 - [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] · meinung · 6 Belege
+- [[Layout-vor-Hilfstext-pruefen]] · meinung · 2 Belege
 - [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 8 Belege
 - [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] · verifiziert · 4 Belege
 - [[Screenshot-als-Spezifikationsmedium]] · meinung · 11 Belege
@@ -29,8 +30,11 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]], [[Skill-aus-Demonstration-statt-Beschreibung]], [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]], [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]
 
-## Quellen (34)
+## Quellen (37)
 
+- [[2026-10-22-voxyz_ai-2113254050170843418]] — Vox schlägt zwei Regeln für `AGENTS.md` vor: erklärende Nebentexte reduzieren und Entscheidungen zugleich nach UX, DX und Agent Experience bewerten.
+- [[2026-10-22-pbakaus-2113065895069368804]] — Paul Bakaus kündigt einen automatisch beteiligten Impeccable-Subagenten an, der Frontend-Arbeit nach dem Aufbau prüft und mit dem Hauptagenten verbessert.
+- [[2026-10-22-luinlee-2113085361836744764]] — Zihua empfiehlt nach eigener Arbeit mit `Opus` und `Astra` eine Regel gegen überflüssige Erklärungen in generierten Oberflächen:
 - [[2026-10-21-vincentmumme-ich-wurde-gefragt-wie-man-mit-ki-aktuell-die-beste-ui-erstellt-also-die]] — Vincent Mumme empfiehlt, eine eigene Referenzbibliothek aufzubauen und gewünschte Gestaltungsmerkmale damit zu zeigen.
 - [[2026-10-17-nutzerquelle-motion-video-qualitaetskriterien]] — Die am 17.10.2026 vollständig bereitgestellte Vorlage „Motion-Video“ beschreibt Qualitätskriterien für Erklärfilme und Werbung.
 - [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]] — Julian Ivanov beschreibt eine hybride Videoproduktion: Figuren und Gegenstände entstehen als Bilder, während Code Text, Diagramme, Bewegung und Timing steuert.
@@ -74,6 +78,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]]
 - [[2026-10-08-mattpocockuk-2108216899439894574]]
 - [[2026-10-06-voxyz_ai-2107576635578855461]]
 - [[2026-09-26-voxyz_ai-2103977414711767244]]
+- [[2026-09-23-claude-how-we-made-claude-ai-3x-faster-in-two-weeks-cla]]
 - [[2026-09-14-voxyz_ai-2099528601557496220]]
 - [[2026-07-23-mattpocockuk-2080277204970143986]]
 - [[2026-07-23-colebemis-2080392348836790395]]

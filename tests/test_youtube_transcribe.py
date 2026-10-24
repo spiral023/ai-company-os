@@ -51,6 +51,75 @@ def test_existing_transcript_is_unchanged():
     assert transcribe.supplement(text, {"segments": []}) == text
 
 
+def test_short_existing_subtitles_are_never_replaced():
+    text = example() + "\n## Transkript\n\nEin kurzes Originaltranskript.\n"
+    assert transcribe.supplement(text, result()) == text
+
+
+def tiktok_example():
+    return (
+        '---\nurl: https://www.tiktok.com/@autor/video/7699871396729507105\n'
+        'video_id: "7699871396729507105"\nquelle: tiktok\ntyp: video\n'
+        'datum: 2026-10-23\nerfasst: 2026-10-24\nstatus: verarbeitet\n'
+        'source_notiz: 80_Knowledge/Sources/bestand.md\ntranskript: nicht verfügbar\n'
+        'notiz: "Manuelle Einordnung erhalten"\n---\n\n# Titel\n\n'
+        '## Caption\n\nUnveränderte Caption mit Links.\n\n'
+        '## Lokales Video\n\n[Video](medien/quelle/02-video.mp4)\n'
+    )
+
+
+def test_tiktok_supplement_keeps_processing_caption_and_video():
+    data = result() | {"video_id": "7699871396729507105"}
+    text = transcribe.supplement(tiktok_example(), data)
+    fm, body = transcribe.frontmatter(text)
+    assert transcribe.field(fm, "status") == "verarbeitet"
+    assert transcribe.field(fm, "source_notiz") == "80_Knowledge/Sources/bestand.md"
+    assert transcribe.field(fm, "notiz") == "Manuelle Einordnung erhalten"
+    assert transcribe.field(fm, "sprache") == "de"
+    assert transcribe.field(fm, "transkript") == "automatisch"
+    assert "Unveränderte Caption mit Links." in body
+    assert "[Video](medien/quelle/02-video.mp4)" in body
+    with pytest.raises(ValueError, match="Video-ID"):
+        transcribe.supplement(tiktok_example(), result())
+
+
+def test_tiktok_cached_audio_is_local_atomic_and_idempotent(tmp_path, monkeypatch):
+    monkeypatch.setattr(transcribe, "ROOT", tmp_path)
+    monkeypatch.setattr(transcribe, "CACHE", tmp_path / "cache")
+    monkeypatch.setattr(transcribe, "configure_cuda", lambda: [])
+    monkeypatch.setattr(transcribe, "download_audio", lambda *a: pytest.fail("Kein Netzwerkabruf"))
+    note = tmp_path / "00_Inbox/Quellen/TikTok/quelle.md"
+    note.parent.mkdir(parents=True)
+    note.write_text(tiktok_example(), encoding="utf-8", newline="\n")
+    media = note.parent / "medien/quelle"
+    media.mkdir(parents=True)
+    video = media / "02-video.mp4"
+    video.write_bytes(b"lokale Videodatei")
+    directory = transcribe.CACHE / "tiktok-7699871396729507105"
+    directory.mkdir(parents=True)
+    data = result() | dict(video_id="7699871396729507105", audio_duration=12,
+        elapsed_seconds=1, audio_sha256=hashlib.sha256(video.read_bytes()).hexdigest())
+    (directory / "large-v3-transcript.json").write_text(json.dumps(data), encoding="utf-8")
+    assert transcribe.main(["https://www.tiktok.com/@autor/video/7699871396729507105"]) == 0
+    updated = note.read_bytes()
+    assert transcribe.has_transcript(updated.decode("utf-8"))
+    assert json.loads((media / "transkript-whisper.json").read_text(encoding="utf-8"))["video_id"] == data["video_id"]
+    assert transcribe.main(["7699871396729507105"]) == 0
+    assert note.read_bytes() == updated
+
+
+def test_tiktok_missing_audio_does_not_touch_the_note(tmp_path, monkeypatch):
+    monkeypatch.setattr(transcribe, "ROOT", tmp_path)
+    monkeypatch.setattr(transcribe, "CACHE", tmp_path / "cache")
+    monkeypatch.setattr(transcribe, "configure_cuda", lambda: [])
+    note = tmp_path / "00_Inbox/Quellen/TikTok/quelle.md"
+    note.parent.mkdir(parents=True)
+    note.write_text(tiktok_example(), encoding="utf-8", newline="\n")
+    before = note.read_bytes()
+    assert transcribe.main(["7699871396729507105"]) == 1
+    assert note.read_bytes() == before
+
+
 @pytest.mark.parametrize("changes", [{"segments": []}, {"video_id": "dX0a9L4f_Lc"}])
 def test_invalid_result_is_rejected(changes):
     data = result() | changes

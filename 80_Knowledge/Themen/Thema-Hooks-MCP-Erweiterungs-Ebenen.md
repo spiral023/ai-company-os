@@ -1,6 +1,6 @@
 # Hooks, MCP & Erweiterungs-Ebenen
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook, MCP, Plugin) und wie Hooks, MCP-Server und Plugins konfiguriert werden.
 
@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), claude.md (5), claude code skills (4), subagents (4), progressive disclosure (4), plugins (4), hooks (4), mcp (4), erweiterung (4), rea (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2)
+- **Häufig in den Quellen:** claude code hooks (6), subagents (5), claude.md (5), plugins (5), mcp (5), progressive disclosure (4), claude code skills (4), hooks (4), erweiterung (4), rea (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2)
 
 ## Verwandte Themen
 
@@ -21,15 +21,17 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 ## Patterns (5)
 
 - [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 9 Belege
-- [[Agent-Tracing-nach-Beobachtungsebene]] · meinung · 2 Belege
-- [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 27 Belege
+- [[Agent-Tracing-nach-Beobachtungsebene]] · meinung · 5 Belege
+- [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 31 Belege
 - [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 10 Belege
 - [[MCP-Code-Execution-statt-Tool-Definitionen]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]], [[Hook-erzwungene-Skill-Aktivierung]], [[KI-Dienste-nach-Vertrag-und-Datenfluss-pruefen]], [[Pruefungen-nach-Feedbackzeitpunkt-staffeln]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]
 
-## Quellen (21)
+## Quellen (24)
 
+- [[2026-10-23-theo-2113424203345265053]] — Theo erklärt am 23.10.2026, warum Oberfläche, Modell und ausführende Agenten-Laufzeit unterschiedliche Aufgaben erfüllen.
+- [[2026-10-23-codexreleases-2113499625571188984]] — Der Release-Thread meldet `Codex CLI 0.164.0` mit Stand `23.10.2026`; weder Original-Release-Notes noch installiertes Verhalten wurden hier unabhängig geprüft.
 - [[2026-10-18-mattpocockuk-2111708560715292675]] — Matt Pocock empfiehlt einen schnellen Pre-Commit-Hook gegen übergroße, von Agents bearbeitete Dateien.
 - [[2026-10-13-alex-sprogis-so-nutzt-du-rea-um-jede-app-in-minuten-zu-kopier]] — Alex Sprogis stellt REA als Verbindung zwischen Coding Agent und Analysewerkzeugen vor und berichtet von zwei eigenen Versuchen.
 - [[2026-10-12-julian-ivanov-ki-automat-ki-kopiert-jetzt-jede-software-und-keiner-kann-e]] — Julian Ivanov unterscheidet zwei Arbeitsweisen: ausgelieferte Programmdateien analysieren oder ein bestehendes Programm bedienen und sein beobachtetes Verhalten neu implementieren.
@@ -39,6 +41,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-E
 - [[2026-10-05-repo-claude-code-doctor-insights]] — Aus `CHANGELOG.md` von anthropics/claude-code (Stand 2.1.289).
 - [[2026-10-02-voxyz_ai-2106006290954592332]] — Vox bündelt `Claude Code`-Befehle zu einem Wartungsplan gegen Duplikate, Strukturdrift und veraltete Regeln.
 - [[2026-10-02-repo-anthropics-claude-code]] — Laut `CHANGELOG.md` (Eintrag 2.1.287, Repo-Stand Commit `52c76441`) gibt es „Claude Mods“, also Plugins, die tieferes Verhalten ändern dürfen.
+- [[2026-10-01-claudedevs-2105721434807083061]] — ClaudeDevs kündigt am 01.10.2026 TypeScript-Mods für `Claude Code` an. Laut Hersteller können sie Verhalten, UI und Funktionen verändern und innerhalb von Plugins über `/plugin` installiert werden.
 - [[2026-09-17-agenticjames-i-think-code-mode-mcps-are-probably-the-best-way-to-give-agents-access]] — Ein einzelnes Skript-Tool vor vielen MCP-Servern macht Aufrufe komposierbar und filtert große Ausgaben, bevor sie das Context Window füllen; Sandbox und Gateway-Vertrauen kosten zusätzlich.
 - [[2026-08-21-promptgefluester-agent-plug-ins-das-ist-der-neue-standard-mit-dem-die-grossen-ai]] — Ein gemeinsames Plugin-Paketformat aus Manifest, Skills und MCP-Konfiguration würde Erweiterungen zwischen Coding Agents portierbar machen; der Standard ist bisher nur schwach belegt.
 - [[2026-07-08-bcherny-2074997570317779038]] — Boris Cherny kündigt den Befehl `/checkup` für Claude Code an (Stand 2026-07-08).
@@ -72,6 +75,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-E
 - [[2026-07-14-vischer-teil-31-ki-tools-wie-es-um-den-schutz-der-daten]]
 - [[2026-06-18-julian-ivanov-ki-automat-bau-dir-dein-ki-betriebssystem-mit-claude-code-k]]
 - [[2026-04-30-zodchiii-claude-code-env-security]]
+- [[2026-04-07-claude-how-and-when-to-use-subagents-in-claude-code]]
 - [[2026-02-01-anthropic-docs-extend-claude-with-skills]]
 - [[2026-02-01-anthropic-docs-claude-code-gitlab-ci]]
 - [[2026-01-22-hooeem-claude-code-7-schritte-plan]]

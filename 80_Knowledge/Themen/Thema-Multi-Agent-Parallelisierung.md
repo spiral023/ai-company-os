@@ -1,6 +1,6 @@
 # Multi-Agent & Parallelisierung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-Abhängigkeiten, Rollen, Advisor. Dauerläufe ohne Aufsicht stehen in autonomie.
 
@@ -9,7 +9,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - **Hauptkeyword:** Claude Code Subagents
 - **Long-Tail:** Agent Teams Claude Code; Git Worktrees parallele Agents; Subagents vs. Agent Teams; Multi-Agent Orchestrierung; Task-Abhängigkeiten Claude Code; Kosten paralleler Agents
 - **Fragen:** Wann lohnt sich Parallelisierung? / Subagent oder Agent Team?
-- **Häufig in den Quellen:** subagents (6), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), heartbeats (3), agent-organisation (3), addblockedby (2), multi-agent (2), claude code tasks (2), modulgrenzen (2), claude code agent teams (2), codex cli (2), budgets (2), rollen (2), freigaben (2), edit-kollisionen (2), agent teams (2), parallel agents (2)
+- **Häufig in den Quellen:** subagents (7), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), heartbeats (3), agent-organisation (3), multi-agent (2), addblockedby (2), claude code tasks (2), modulgrenzen (2), claude code agent teams (2), codex cli (2), budgets (2), rollen (2), freigaben (2), delegation (2), parallel agents (2), agent teams (2)
 
 ## Verwandte Themen
 
@@ -23,12 +23,14 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - [[Advisor-Agent-gegen-Drift]] · meinung · 3 Belege
 - [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]] · meinung · 3 Belege
 - [[Blockierende-Task-Abhaengigkeiten]] · meinung · 5 Belege
-- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 50 Belege
+- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 53 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Bedarfsorientierter-Repositoryzugriff]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Bedarfsorientierter-Repositoryzugriff]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]], [[Verhaltens-Spec-als-Grenze-zwischen-Analyse-und-Nachbau]]
 
-## Quellen (21)
+## Quellen (24)
 
+- [[2026-10-22-claude-building-agents-when-to-fold-subagents-into-your]] — Anthropics Artikel berichtet Erfahrungen aus Enterprise-Agenten und empfiehlt, geeignete Spezialisten schrittweise in einen gemeinsamen Agent-Loop zu überführen. Die Belastbarkeit bleibt begrenzt: Vergleichsdaten, Stichprobengrößen und vollständige Eval-Sets fehlen. Ein einzelner Kunde habe ungefähr doppelte Geschwindigkeit erreicht; das ist ein berichteter Einzelfall, keine übertragbare Benchmark. Die Rohmetadaten nennen „Claude“, der Artikel selbst Diane Sarkis.
+- [[2026-10-19-zazencodes-factory-works-in-this-loop-a-feature-comes-through-the-spec-writer-which]] — @zazencodes demonstriert einen wiederholbaren Feature-Ablauf mit getrennten Subagents. Die Caption kennzeichnet das Video als von Anthropic gesponsert; es zeigt einen einzelnen erfolgreichen Durchlauf.
 - [[2026-10-09-git-worktree]] — Getrennte Worktrees teilen das Repository, isolieren aber keine Laufzeitressourcen.
 - [[2026-10-06-promptgefluester-vielleicht-mal-zur-begruendung-warum-ich-euch-zeig-wie-ich-280-website]] — `@promptgefluester` beschreibt eine zusätzliche Koordinationsebene über einzelnen Projekt-Orchestratoren.
 - [[2026-10-02-matt-pocock-live-poteto-creator-of-pstack-on-shipping-1-000]] — Verifikations-CLIs und gebündelte Befunde stützen parallele Agent-Arbeit; PR-Mengen bleiben Selbstauskunft und automatische Merges werden nur stichprobenartig geprüft.
@@ -42,6 +44,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-05-21-christophmagnussen-ki-agenten-weichen-ab]] — Agent Drift entsteht unbemerkt bei Subagent- und Tool-Aufrufen; Prävention durch vorab definierte Entscheidungsregeln schlägt reine Sichtbarkeit.
 - [[2026-04-17-wiki-compiler-agent-teams-in-claude-code]] — Agent Teams lohnen sich nur bei klaren Modulgrenzen, kurzem gemeinsamem Kontext und Verifikationssignalen, und erst nach Hauptthread und Subagents.
 - [[2026-04-12-digitale-profis-so-ersetzt-du-dein-unternehmen-mit-ki-agenten-pa]] — Organigramm, Issues und Heartbeats machen Agent-Aufgaben sichtbar; rollenabhängige Auslösung ist kein Nachweis einer funktionierenden menschenfreien Firma.
+- [[2026-04-07-claude-how-and-when-to-use-subagents-in-claude-code]] — Anthropics Praxisartikel beschreibt Einsatzentscheidungen für `Claude Code`. Belastbar ist die dokumentierte Arbeitsweise als Herstellerempfehlung; er liefert keine kontrollierte Messung von Qualität, Geschwindigkeit oder Tokenkosten. Die archivierte Textfassung kündigt mehrfach Code- und Promptbeispiele an, enthält deren Inhalt aber nicht. Sie trägt daher die konzeptionelle Auswertung, keine Rekonstruktion dieser Beispiele.
 - [[2026-04-03-julian-ivanov-ki-automat-ich-habe-eine-firma-ohne-menschen-gebaut-papercl]] — Eine dauerhafte Agent-Organisation erhält Aufgaben und Freigaben; unvollständige Ergebnisse und manuelles Setup begrenzen die Autonomiebehauptung.
 - [[2026-04-01-ai-mit-arnie-claude-code-und-paperclip-aendern-alles]] — Paperclip verbindet Agent-Rollen, Aufgaben, Budgets und Heartbeats; die Demo zeigt auch nicht beauftragte Arbeit und manuelle Eingriffe.
 - [[2026-02-28-openai-codex-multi-agents-guide]] — Codex Sub-Agenten haben eng gefasste Rollen, begrenzte Parallelität und erben die Sandbox, laufen aber mit non-interaktiven Approvals.
@@ -53,6 +56,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-23-undefinedki-2113689331412156666]]
+- [[2026-10-22-anthropic-llms-are-making-formal-software-verification-fea]]
+- [[2026-10-21-milesdeutscher-2112924796866699336]]
 - [[2026-10-19-voxyz_ai-2112302775547679169]]
 - [[2026-10-18-ai-news-strategy-daily-n-what-really-happens-when-ai-agents-meet-in-the-w]]
 - [[2026-10-15-floknowsai-mit-tea-free-code-steuere-ich-alle-meine-cloud-code-und-kodex-abos-aus]]
@@ -69,6 +75,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-09-22-claude-getting-the-most-out-of-opus-5-5-in-claude-and-c]]
 - [[2026-09-19-voxyz_ai-2101355643882065971]]
 - [[2026-09-07-sairahul1-2096902575035683147]]
+- [[2026-08-15-undefinedki-2088611136027361368]]
 - [[2026-07-21-claudedevs-2079654423828304282]]
 - [[2026-04-17-wiki-compiler-praktische-claude-code-workflows]]
 - [[2026-04-17-wiki-compiler-codex-claude-code-lovable-workflow]]

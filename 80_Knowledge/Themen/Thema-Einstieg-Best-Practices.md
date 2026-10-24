@@ -1,6 +1,6 @@
 # Einstieg & Best Practices
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices, Anfängerfehler, Tippsammlungen. Sobald ein Thema tiefer behandelt wird, gehört die Quelle in den Fachcluster.
 
@@ -9,7 +9,7 @@ Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices,
 - **Hauptkeyword:** Claude Code Tutorial
 - **Long-Tail:** Claude Code für Einsteiger; Claude Code Best Practices; Claude Code Tipps; Claude Code Setup; Claude Code Anfängerfehler; Claude Code Lernpfad
 - **Fragen:** Wie fange ich mit Claude Code an? / Welche Fehler machen Einsteiger?
-- **Häufig in den Quellen:** plan mode (3), claude code anfänger (2), headless mode (2), extended thinking (2), claude code best practices (2), ki-coding einstieg, browserabnahme, git-diff, kleine änderungen, opus sonnet arbeitsteilung, scratchpad.md, claude.md, context degradation, claude code tutorial, vibe coding, aufgaben zerlegen, alltagsautomatisierung, python-skript, rückfragen des modells, prompt-präzision
+- **Häufig in den Quellen:** plan mode (3), claude code anfänger (2), headless mode (2), extended thinking (2), claude code best practices (2), kleine änderungen, git-diff, browserabnahme, ki-coding einstieg, opus sonnet arbeitsteilung, claude.md, context degradation, scratchpad.md, claude code tutorial, alltagsautomatisierung, aufgaben zerlegen, python-skript, prompt-präzision, rückfragen des modells, vibe coding
 
 ## Verwandte Themen
 
@@ -34,5 +34,6 @@ Grundlagen und Überblicke zu Claude Code: Tutorials, offizielle Best Practices,
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-23-julian-ivanov-ki-automat-die-5-level-von-ki-nutzern-auf-welchem-bist-du]]
 - [[2026-02-25-heynavtoor-claude-cowork-setup-guide]]
 - [[2026-02-01-anthropic-docs-claude-code-common-workflows]]

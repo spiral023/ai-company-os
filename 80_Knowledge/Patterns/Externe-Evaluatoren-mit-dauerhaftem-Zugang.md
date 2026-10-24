@@ -35,6 +35,7 @@ Das ist die angekündigte erste Stufe eines breiteren Frontier-Pacing-Vorschlags
 ## Belege
 
 - 2026-09-12 · [[2026-09-12-darioamodei-2098773920774074715]] · meinung — Amodei kündigt Embedded Evaluators mit dauerhaftem Einblick und eigenständiger Berichterstattung an; eine tatsächliche Umsetzung und Wirksamkeit sind hier nicht belegt.
+- 2026-08-26 · [[2026-08-26-metr-brief-independent-investigation-of-agents-behavi]] · meinung — METRs mehrfach erweiterter Datenzugang verbesserte die externe Untersuchung deutlich, blieb jedoch von OpenAIs Datenauswahl, API-Unterstützung und Schwärzungsrechten abhängig; der Fall konkretisiert Nutzen und Grenzen früher externer Analyse, erfüllt aber nicht das Ideal dauerhaften direkten Zugangs ohne redaktionelle Kontrolle.
 
 ## Spannungen & offene Fragen
 

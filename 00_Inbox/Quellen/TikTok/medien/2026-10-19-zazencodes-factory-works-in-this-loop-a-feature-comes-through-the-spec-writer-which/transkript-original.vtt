@@ -1,0 +1,155 @@
+WEBVTT
+
+
+00:00:00.020 --> 00:00:01.580
+Factory works in this loop
+
+00:00:01.581 --> 00:00:05.081
+a feature comes through the spec writer which goes into the builder,
+
+00:00:05.100 --> 00:00:08.840
+which then gets verified by various review agents
+
+00:00:08.940 --> 00:00:11.660
+and once those are done, if we need changes,
+
+00:00:11.661 --> 00:00:14.301
+this happens in a loop and then we go to the approver
+
+00:00:14.302 --> 00:00:18.681
+which either merges to main the feature or we get a human review.
+
+00:00:18.840 --> 00:00:20.900
+And this is a system we can use repeatedly
+
+00:00:20.901 --> 00:00:24.021
+every time we wanna build a new feature for our project.
+
+00:00:24.022 --> 00:00:26.141
+And we could imagine in the future we want you know,
+
+00:00:26.142 --> 00:00:28.541
+we can bring in data sources from the outside world.
+
+00:00:28.542 --> 00:00:31.081
+Let's see if our factory can handle this feature
+
+00:00:31.100 --> 00:00:32.580
+inside my actual website.
+
+00:00:32.581 --> 00:00:34.781
+This is my production site that we're working in right now.
+
+00:00:34.782 --> 00:00:37.381
+And now we can see we're starting to use our subagents.
+
+00:00:37.382 --> 00:00:38.141
+Here's the first one.
+
+00:00:38.142 --> 00:00:41.341
+We're creating a spec using the spec writer background agent
+
+00:00:41.342 --> 00:00:45.021
+and I can see our builder has just started working on this. Okay,
+
+00:00:45.022 --> 00:00:46.801
+sweet. We just went to review
+
+00:00:46.860 --> 00:00:49.420
+and we just kicked off all of our review subagents.
+
+00:00:49.421 --> 00:00:52.021
+So these guys are representing our review.
+
+00:00:52.022 --> 00:00:52.901
+They're doing it. Okay,
+
+00:00:52.902 --> 00:00:57.301
+the UX round finished the UI round finished and they passed.
+
+00:00:57.302 --> 00:01:00.421
+But we're doing the security over here considering. Okay,
+
+00:01:00.422 --> 00:01:03.001
+that's done code review. This is this is epic.
+
+00:01:03.020 --> 00:01:03.780
+Oh, look at this
+
+00:01:03.781 --> 00:01:06.541
+you guys. We can even see the little icons.
+
+00:01:06.542 --> 00:01:09.461
+It's deciding if this feature should be pulled in or not.
+
+00:01:09.462 --> 00:01:10.701
+I'm actually blown away.
+
+00:01:10.702 --> 00:01:14.041
+This is this is How I want to develop features now.
+
+00:01:14.540 --> 00:01:15.940
+Why have I not done this yet?
+
+00:01:15.941 --> 00:01:18.581
+So what's Opus deciding? It's escalating.
+
+00:01:18.582 --> 00:01:20.761
+So I think it'll go to the human review.
+
+00:01:20.762 --> 00:01:23.781
+There it is. So it's sitting in the human review phase.
+
+00:01:23.782 --> 00:01:25.301
+And now I need to approve this.
+
+00:01:25.302 --> 00:01:27.861
+Click on this. Okay.
+
+00:01:27.862 --> 00:01:30.941
+I can get all sorts of information from the dashboard.
+
+00:01:30.942 --> 00:01:33.021
+Escalate, why the build is clean,
+
+00:01:33.022 --> 00:01:35.681
+every acceptance criteria for the human,
+
+00:01:36.060 --> 00:01:36.880
+if both.
+
+00:01:37.580 --> 00:01:39.220
+So here's how I would approve it.
+
+00:01:39.221 --> 00:01:41.841
+I would need to know the ID of this feature
+
+00:01:41.900 --> 00:01:44.460
+and then I could run factory approve.
+
+00:01:44.461 --> 00:01:46.101
+Let me do that in a new session.
+
+00:01:46.102 --> 00:01:50.581
+So I'm gonna clear this and I'm gonna say factory approve.
+
+00:01:50.582 --> 00:01:53.741
+And then this. And we're done.
+
+00:01:53.742 --> 00:01:56.581
+It has merged it into my actual code.
+
+00:01:56.582 --> 00:01:59.221
+This is what it did. So it went off onto a branch.
+
+00:01:59.222 --> 00:02:01.101
+It did a few different commits.
+
+00:02:01.102 --> 00:02:02.841
+It kind of built out our feature
+
+00:02:02.860 --> 00:02:04.100
+and then it merged it back.
+
+00:02:04.101 --> 00:02:06.812
+And that merge was done when I approved it. Very cool.

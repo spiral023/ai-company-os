@@ -15,6 +15,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Erweiterungs-Ebenen-Zuordnung]] — CLAUDE.md/Skill/Subagent/Hook/MCP tragen unterschiedliche Verantwortung; dieselbe Anforderung nicht mehrfach modellieren.
 - [[Kontext-Hygiene-Entscheidungsbaum]] — bewusste Entscheidung Continue/rewind/compact/clear/Subagent nach jedem Arbeitsblock statt reflexhaftem Weiterreden.
 - [[Plan-first-mit-getrenntem-Review]] — lesende Discovery, Plan als Artefakt, getrennte Builder/Reviewer/Verifier-Rollen.
+- [[Verhaltens-Spec-als-Grenze-zwischen-Analyse-und-Nachbau]] — Originalanalyse über einen Verhaltensvertrag an einen Builder ohne Originalzugriff übergeben und separat vergleichen.
 - [[TDD-als-Verifikationshebel]] — vertikale Slices (ein Test, minimaler Code, Refactor) als Tracer-Bullets gegen spekulativen Code.
 - [[Mutationstests-fuer-Agent-geschriebene-Tests]] — kontrollierte Codefehler als Gegenprobe für die Aussagekraft agentengeschriebener Tests verwenden.
 - [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] — Skills als messbare Produkte mit Baseline-Vergleich und Trigger-Optimierung statt Bauchgefühl.
@@ -24,6 +25,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Deny-Rules-statt-CLAUDE-md-Empfehlung]] — Secret-Schutz braucht technisch erzwungene Deny-Regeln statt bloßer Hinweise in der Agent-Datei.
 - [[Great-Decoupling-Rollenverstaendnis]] — Programming und Engineering entkoppeln sich; neue Rolle ist Tech Lead + QA Lead statt Zeile-für-Zeile-Reviewer.
 - [[Testharness-als-staerkster-Hebel]] — bei autonomen Agenten entscheidet die Qualität des Verifiers über echten Fortschritt, nicht der Prompt.
+- [[Formale-Verifikation-mit-unabhaengigem-Proof-Checker]] — generierte Beweise extern prüfen; Spezifikation, Patches und Modellannahmen bleiben eigene Abnahmegrenzen.
 - [[Zustandslose-CI-Listener-mit-Ergebnisjournal]] — CI-Ergebnisannahme von Testhistorienbildung trennen; Aktualität, Durchsatz und Wiederherstellung gesondert prüfen.
 - [[Intent-Engineering-als-dritte-Schicht]] — nach Prompt- und Context Engineering fehlt oft die explizite Zielhierarchie/Trade-off-Logik für Agenten.
 - [[Ambitionscheck-mit-Zielhoehe-Tiefe-und-Reichweite]] — Ergebnis, methodische Tiefe und zusätzliche Fachperspektiven eines Auftrags prüfen und durch konkrete Untersuchungen validieren.
@@ -52,6 +54,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Pruefungen-nach-Feedbackzeitpunkt-staffeln]] — Prüffeedback zwischen Dateiänderung, kurzen Pre-Commit-Checks und umfangreicher CI passend zur Arbeitseinheit verteilen.
 - [[Screenshot-als-Spezifikationsmedium]] — Bild statt Prosa als Kontext für UI-Analyse, Fehlerdiagnose und Design-zu-Code-Generierung.
 - [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] — sichtbare Änderungen am gerenderten Ergebnis prüfen, neue Defekte zuordnen und Korrekturen erneut abnehmen.
+- [[Layout-vor-Hilfstext-pruefen]] — überflüssige Erklärungstexte als Anlass zur Layoutprüfung nutzen, notwendige Hilfe und Accessibility erhalten.
 - [[Variantenvergleich-vor-Produktionsabnahme]] — unterschiedliche bedienbare UI-Varianten isoliert vergleichen, menschliche Auswahl abwarten und erst den Gewinner integrieren.
 - [[Metrikband-gestufte-Agent-Autonomie]] — Rechte des Agents wachsen mit der Schwere einer Metrik-Abweichung (1σ loggen, 2σ read-only, 3σ PR); Erkennung deterministisch ohne Modell.
 - [[Hillclimbing-mit-Holdout-Split]] — Prompt, Skill oder Modellwahl gegen ein Eval verbessern: Train/Test-Split, eine Änderung pro Runde, Revert wenn nur Train steigt.
@@ -60,6 +63,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Adversarialer-Pre-Launch-Check]] — vor dem Release read-only Prüfagenten mit festen Fragenkatalogen die eigene App in einer sicheren Testumgebung brechen lassen.
 - [[Produktreife-durch-echte-Testnutzer]] — tatsächliche Nutzung in einem kleinen Nutzerkreis als Lernschleife vor einer breiteren Veröffentlichung nutzen; simulierte Personas liefern andere Evidenz.
 - [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] — automatische Review-Freigaben nur in abgegrenzten Risikobereichen, mit Shadow Mode, protokollierten Entscheidungen und menschlichen Stichproben.
+- [[Sicherer-Fallback-vor-menschlicher-Eskalation]] — pro autonomer Arbeitsklasse einen geprüften Fehlerpfad vorsehen, bevor menschliche Reaktionszeit zum Sicherheitsfaktor wird.
 - [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]] — tatsächliches menschliches Urteil mit Vorabentscheidungen, bekannten Antwortaufgaben und nachvollziehbaren Revieweinheiten untersuchen.
 - [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]] — fortlaufender externer Einblick und eigenständige Berichte sollen Sicherheitszusagen prüfbar machen; angekündigte Governance-Methode.
 - [[Agent-Rechte-umfassen-Kommunikationswege]] — direkte Rechte reichen nicht: erreichbare Agents und delegierte Aktionen gehören zur Berechtigungsgrenze.
@@ -118,4 +122,4 @@ Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 21 
 
 ## Fakten
 
-- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-22.
+- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-24.

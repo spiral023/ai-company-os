@@ -1,6 +1,6 @@
 # Visuelle-Abnahme-mit-Live-Lokal-Vergleich
 
-**Konfidenz:** meinung
+**Konfidenz:** verifiziert
 
 ## Zweck
 
@@ -41,6 +41,9 @@ Die Prüfung findet im freigegebenen Browser statt. Bestehende Tabs bleiben unbe
 - 2026-09-30 · [[2026-09-30-flxrnc-2105311836190978392]] · meinung — Florence ergänzt Contact Sheets um dichte Framefolgen an schnellen Übergängen und wenige lokale Korrekturen je Runde. Die Produktionszeiten und 71 numerischen Maskottchenchecks sind Selbstberichte; Bildstichproben belegen weder nahtfreien Lauf noch Tonqualität.
 - 2026-10-01 · [[2026-10-01-0xwhrrari-2105643919119696297]] · meinung — rari überträgt sichtbare Abnahme auf wichtige Beats und schnelle Übergänge, ergänzt um Sound und eigene Layoutprüfung je Ausgabeformat. Contact Sheets sind Stichproben; der Artikel enthält keinen abgenommenen Film oder gemessenen Erfolg des vorgeschlagenen Verfahrens.
 - 2026-10-09 · [[2026-10-09-beamnxw-2108616740846420354]] · meinung — Eine Motion-Korrektur benennt Ort, beobachteten Fehler, konkrete Änderung und unveränderliche Elemente; danach werden Zwischenframes, benachbarte Szenengrenzen und Playback geprüft. Drei Stills helfen der Richtungsklärung, beweisen aber weder Timing noch Audioqualität oder einen fehlerfreien Gesamtfilm.
+- 2026-10-22 · [[2026-10-22-pbakaus-2113065895069368804]] · meinung — Impeccable ergänzt laut Hersteller einen Reviewer nach dem Frontend-Aufbau; neue Arbeit mit Stop-Gates und allgemeines Browser-Review sind unterschiedliche Modi. Der Screenshot meldet 5,5–6/10 und zwei mobile Layoutdefekte, zeigt aber einen Änderungsplan statt eines abgenommenen Resultats; der zentral geprüfte lokale Stand verlangt bei fehlenden Screenshots erneute Erfassung und bleibt lesend, ohne garantierte Übereinstimmung mit dem Tweetstand.
+- 2026-10-24 · external_repos/pbakaus/impeccable/skill/agents/impeccable-finish-reviewer.md · verifiziert — Der lokal gelesene Reviewer-Vertrag arbeitet lesend mit Screenshots und verlangt bei fehlender oder ungültiger Evidenz recapture statt eines Qualitätsurteils; geprüft ist die Anweisung im Snapshot, nicht ihre zuverlässige Ausführung oder Gleichheit mit dem Tweetstand.
+- 2026-09-23 · [[2026-09-23-claude-how-we-made-claude-ai-3x-faster-in-two-weeks-cla]] · meinung — Ein benannter Mensch entscheidet pro Performance-Thread anhand von Vorher-/Nachher-Aufnahmen über nutzerwirksame Änderungen und Wartungskosten. Der statische Composer ergänzt 14-Viewport-Vergleiche und Tastatureingabetests durch internen Rollout, nachdem reale Chrome-Aufnahmen einen im Headless-Test unsichtbaren Layoutsprung zeigten; Hersteller-Selbstauskunft.
 
 ## Spannungen & offene Fragen
 

@@ -1,6 +1,6 @@
 # Skill-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und Baselines, Skills als Teamwissen. Wayfinder und Frameworks aus Skill-Sammlungen stehen in frameworks.
 
@@ -9,7 +9,7 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - **Hauptkeyword:** Claude Code Skills
 - **Long-Tail:** Skill Description schreiben; Skill Evals Baseline; SKILL.md Aufbau; Skills vs. Slash Commands; Skill Trigger optimieren; Skills als Teamwissen
 - **Fragen:** Wann lohnt sich ein eigener Skill? / Warum löst mein Skill nicht aus?
-- **Häufig in den Quellen:** progressive disclosure (11), claude code skills (8), skill (8), skills (8), skill description (6), trigger (6), eval (6), skill.md (5), slash commands (4), skill evals (4), mattpocock/skills (4), grill-me (4), claude code hooks (4), wayfinder (4), claude.md (4), agents.md (4), claude skills (3), baseline-vergleich (3), skill-creator (3), undertriggering (3)
+- **Häufig in den Quellen:** progressive disclosure (12), claude code skills (8), skill (8), skills (8), skill description (6), trigger (6), eval (6), skill.md (5), slash commands (4), skill evals (4), grill-me (4), mattpocock/skills (4), claude code hooks (4), wayfinder (4), claude.md (4), agents.md (4), claude skills (3), baseline-vergleich (3), skill-creator (3), undertriggering (3)
 
 ## Verwandte Themen
 
@@ -23,16 +23,16 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - [[Anti-Rationalization-Tables]] · verifiziert · 4 Belege
 - [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 13 Belege
 - [[Hook-erzwungene-Skill-Aktivierung]] · meinung · 4 Belege
-- [[Klein-und-komposierbar]] · verifiziert · 21 Belege
+- [[Klein-und-komposierbar]] · verifiziert · 23 Belege
 - [[One-File-per-Failure-Mode]] · verifiziert · 3 Belege
 - [[Skill-Call-Hierarchie]] · verifiziert · 15 Belege
 - [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 25 Belege
-- [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 5 Belege
+- [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 7 Belege
 - [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 6 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Artefaktbasis]], [[Erweiterungs-Ebenen-Zuordnung]], [[Hillclimbing-mit-Holdout-Split]], [[Videoanalyse-mit-Frames-und-Transkript]]
 
-## Quellen (29)
+## Quellen (30)
 
 - [[2026-10-14-poteto-2110496830429839869]] — Lauren beschreibt für `pstack` knappe Prinzipien-Skills, die sie überwiegend aus eigenen Korrekturen von Agenten gewonnen hat.
 - [[2026-10-12-promptgefluester-wisst-ihr-was-der-krasseste-trick-is-der-ziemlich-einfach-is-aber-den]] — `@promptgefluester` empfiehlt, abgeschlossene Agentprozesse auf Fehler und wiederkehrende Arbeit zu untersuchen.
@@ -48,6 +48,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Art
 - [[2026-07-21-promptgefluester-prompt-engineering-ist-tot-und-keiner-hats-gemerkt-was-meine-ich-damit]] — Statt eines langen Initial-Prompts erzeugen Rückfrage-Skills sauberen Basis-Kontext und Hook-Skills laden Regeln im Prozess nach, weil frühe Regeln im wachsenden Kontext verblassen.
 - [[2026-07-21-claudeai-2079595988998554047]] — Claude kündigt am 21.
 - [[2026-07-17-reach_vb-2078108681678299194]] — Vaibhav Srivastav empfiehlt, Workflow-Skills durch Codex gegen vergangene eigene Sitzungen prüfen zu lassen und die Prüfung bei veränderten Arbeitsweisen zu wiederholen.
+- [[2026-07-17-matt-pocock-framework-hell-tutorial-hell-now-skill-hell]] — Pocock kritisiert im automatisch erzeugten Transkript das ungeprüfte Zusammenladen mehrerer Skill- und Entwicklungsframeworks. Der Kurzbeitrag liefert eine Position zur Prozesssteuerung, keine gemessene Leistungsanalyse.
 - [[2026-07-10-voxyz-mattpocock-skills]] — Eine kleine Sammlung Markdown-Skills mit Aufrufhierarchie, gemeinsamem Projekt-Glossar und Handoff ist ein leichtgewichtiger, komponierbarer Agent-Stack unter menschlicher Prozesskontrolle.
 - [[2026-07-08-mattpocock-custom-issue-tracker]] — Workflow-Skills lassen sich per Setup-Befehl an jeden programmierbar erreichbaren Issue-Tracker anbinden, weil Arbeitslogik und Tracker-Anbindung getrennt sind.
 - [[2026-07-06-mattpocock-writing-great-skills-beyond-skills]] — Struktur, Leading Words und Pruning, entwickelt für Skills, verbessern jeden Text, den Agenten lesen, von AGENTS.md über Specs bis zu AFK-Prompts.
@@ -66,7 +67,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Art
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-23-julian-ivanov-ki-automat-die-5-level-von-ki-nutzern-auf-welchem-bist-du]]
 - [[2026-10-22-cursor-pstack-engineering-skills]]
+- [[2026-10-22-claude-building-agents-when-to-fold-subagents-into-your]]
 - [[2026-10-16-0xkense1-2111105138290987198]]
 - [[2026-10-15-poteto-2110757066709356851]]
 - [[2026-10-13-mattpocockuk-2109973273924579720]]
@@ -77,6 +80,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Art
 - [[2026-10-05-repo-mattpocock-skills-retro]]
 - [[2026-10-05-repo-claude-code-doctor-insights]]
 - [[2026-10-04-mattpocockuk-2106730768789602313]]
+- [[2026-10-04-mattpocockuk-2106729173511188654]]
 - [[2026-10-04-emilkowalski-2106752670405099523]]
 - [[2026-10-02-repo-mattpocock-skills]]
 - [[2026-10-02-repo-latent-spaces-brag]]

@@ -34,6 +34,8 @@ Faustregel für den Zeitpunkt der Skill-Erstellung: Alles, was mehr als einmal a
 - 2025-10-31 · [[2025-10-31-agenticjames-best-claude-skills-for-agentic-coding]] · meinung — Brand- und Debugging-Skills als dynamisch geladene Dokumente; reine Empfehlung ohne Belege.
 - 2026-07-03 · [[2026-07-03-neilzegh-2072977540193378428]] · meinung — Pflichtfrage in `CLAUDE.md` nach jeder Aufgabe, ob wiederverwendbares Wissen entstand; Erfahrungsaussage ohne Messung, Filterkriterium fehlt.
 - 2026-10-12 · [[2026-10-12-promptgefluester-wisst-ihr-was-der-krasseste-trick-is-der-ziemlich-einfach-is-aber-den]] · meinung — Eine Retrospektive nach abgeschlossenen Prozessen soll wiederholt neu ausgeführte Aufgaben erkennen und daraus Skill-Kandidaten vorschlagen; damit wird die Wiederholung als beobachtbares Signal in einen laufenden Reviewprozess eingebaut. Die behaupteten Migrationserleichterungen sind unkontrollierte Selbstberichte beziehungsweise Prognosen; weder Wirksamkeit neuer Skills noch automatische Qualitätssteigerung ist belegt.
+- 2026-07-17 · [[2026-07-17-matt-pocock-framework-hell-tutorial-hell-now-skill-hell]] · meinung — Skills sollen vom Nutzer ausgewählte Abläufe und Schleifen wiederholbar machen; auch unbeaufsichtigte Ausführung lässt die Prozessverantwortung beim Nutzer, ohne Wirksamkeitsnachweis.
+- 2026-10-23 · [[2026-10-23-julian-ivanov-ki-automat-die-5-level-von-ki-nutzern-auf-welchem-bist-du]] · meinung — Nach einer gelungenen gemeinsamen Aufgabe hält Ivanov individuelle Vorgaben, Geschmack, Werkzeuge und Beispiele als Skill fest; daraus folgt weder automatische Ergebnisqualität noch vollständige Prozessdokumentation.
 
 ## Spannungen & offene Fragen
 

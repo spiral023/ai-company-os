@@ -1,6 +1,6 @@
 # Spezifikation & Planung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerung, Spec-Ordner, persistente Pläne. Prompt-Methoden für Klärung (Pre-Mortem, Unknowns) stehen in prompting.
 
@@ -9,7 +9,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - **Hauptkeyword:** Spec-Driven Development
 - **Long-Tail:** Plan Mode Claude Code; Spec-First Development; Grill Me Skill; Plan vor Code; Spec Ordner pro Feature; Plan Annotation Workflow
 - **Fragen:** Lohnt sich Plan Mode? / Wie schreibe ich eine Spec für einen Coding Agent?
-- **Häufig in den Quellen:** wayfinder (8), grilling (8), spec-driven development (7), spec-grilling (7), spec (6), plan-first (5), planung (5), plan (5), plan mode (4), review (4), ticket (4), design.md (3), claude code (3), plan.md (3), vibe coding (3), paperclip (3), matt pocock skills (3), handoff-dokument (2), session-kontinuität (2), claude code workflow (2)
+- **Häufig in den Quellen:** wayfinder (8), spec-driven development (8), grilling (8), spec-grilling (7), spec (6), plan-first (5), planung (5), plan (5), plan mode (4), review (4), ticket (4), design.md (3), claude code (3), plan.md (3), vibe coding (3), grill-me (3), paperclip (3), matt pocock skills (3), handoff-dokument (2), session-kontinuität (2)
 
 ## Verwandte Themen
 
@@ -19,21 +19,25 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - [[Thema-Kontext-Management]] — Kontext-Management
 - [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
 
-## Patterns (8)
+## Patterns (9)
 
 - [[Architektur-in-Perspektiven-dokumentieren]] · verifiziert · 5 Belege
 - [[CONTEXT-Glossar]] · verifiziert · 10 Belege
-- [[Codepfad-vor-Aenderung-nachvollziehen]] · meinung · 12 Belege
-- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 59 Belege
+- [[Codepfad-vor-Aenderung-nachvollziehen]] · meinung · 14 Belege
+- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 63 Belege
 - [[Projektkarte-als-Status-und-Entscheidungsartefakt]] · meinung · 3 Belege
-- [[Spec-Grilling]] · verifiziert · 22 Belege
+- [[Spec-Grilling]] · verifiziert · 25 Belege
 - [[Spec-Ordner-pro-Feature]] · meinung · 4 Belege
 - [[Task-basierte-Steuerung]] · verifiziert · 25 Belege
+- [[Verhaltens-Spec-als-Grenze-zwischen-Analyse-und-Nachbau]] · meinung · 1 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletion-Test-pruefen]], [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]], [[Agent-generierte-Schulung-mit-Curriculum-Gate]], [[Blockierende-Task-Abhaengigkeiten]], [[Brand-Kit-als-gemeinsame-Artefaktbasis]], [[Fable-Unknowns-vor-Prompt-Qualitaet]], [[Fachregel-Konsolidierung-vor-Featureaenderung]], [[Handoff-Doc]], [[Intent-Engineering-als-dritte-Schicht]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Lovable-Prototyp-dann-lokaler-Handoff]], [[Screenshot-als-Spezifikationsmedium]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Voice-Prompting-fuer-Kontextreichtum]]
 
-## Quellen (31)
+## Quellen (34)
 
+- [[2026-10-22-mattpocockuk-2113264229453033684]] — Matt Pocock setzt im Startpost Code ins Zentrum der Entwicklung.
+- [[2026-10-22-mattpocockuk-2113196247964074322]] — Matt Pocock empfiehlt ein gezieltes Interview, bevor ein Team eine Software Factory aufbaut.
+- [[2026-10-21-milesdeutscher-2112924796866699336]] — Miles Deutscher präsentiert einen werblich gerahmten Einsteigerleitfaden zu REA. Volltext und zehn Medien sind archiviert; mehrere angekündigte Befehle/Prompts fehlen im Text. Sein persönlicher Setup-Bericht und fremde Fallstudien belegen keinen universellen Nachbau-Erfolg.
 - [[2026-10-20-alex-sprogis-hoer-auf-software-abos-zu-kaufen]] — Alex Sprogis erläutert am `20.10.2026` die Entwicklung einer persönlichen `macOS`-Menüleisten-App für Systemübersicht, Speicherbereinigung und Shortcuts.
 - [[2026-10-11-voxyz_ai-2109297975013081587]] — Vox stellt REA als Werkzeug für schrittweise Softwareanalyse vor.
 - [[2026-10-09-voxyz_ai-2108663797091127377]] — Vox empfiehlt, vor Planung und Code zehn Fachbegriffe samt Bedeutung für die Spezifikation erklären zu lassen.
@@ -68,6 +72,11 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletio
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-23-voxyz_ai-2113632785759973649]]
+- [[2026-10-22-cu30rry-2113242716473602270]]
+- [[2026-10-21-voxyz_ai-2112986024955744544]]
+- [[2026-10-21-githubnext-2112936525457740139]]
+- [[2026-10-19-zazencodes-factory-works-in-this-loop-a-feature-comes-through-the-spec-writer-which]]
 - [[2026-10-19-promptgefluester-wir-neigen-dazu-dass-wir-beim-aehm-prompting-der-ki-sagen-aehm-8]]
 - [[2026-10-18-mattpocockuk-2111708560715292675]]
 - [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]]
@@ -89,6 +98,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletio
 - [[2026-07-26-promptgefluester-ich-hab-ne-unbequeme-wahrheit-und-zwar-ich-wurde-gefragt-wieso]]
 - [[2026-07-21-claudedevs-2079654423828304282]]
 - [[2026-07-16-matt-pocock-mattpocock-skills-a-complete-ai-coding-workflow]]
+- [[2026-07-16-jousefmurad-es-gibt-eine-simple-regel-die-erklaert-warum-95-prozent-aller-ki]]
 - [[2026-07-14-fredrikharkort-5-prompts-die-weh-tun]]
 - [[2026-07-13-mattpocock-handoff-to-teach]]
 - [[2026-07-11-mattpocock-wayfinder-to-implementation]]

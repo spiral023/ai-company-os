@@ -1,6 +1,6 @@
 # Workflow-Frameworks & Tools
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-22. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Matt Pococks Skills, Superpowers, GSD, gstack, Everything Claude Code, Terminal- und Multiplexer-Tools.
 
@@ -9,7 +9,7 @@ Komplette Arbeitsabläufe und Werkzeugpakete um Coding Agents: Wayfinder und Mat
 - **Hauptkeyword:** Claude Code Workflow
 - **Long-Tail:** Superpowers vs. GSD; Matt Pocock Skills Wayfinder; gstack Claude Code; Everything Claude Code; Agent Framework Vergleich; cmux Terminal für Agents
 - **Fragen:** Welches Workflow-Framework passt zu mir? / Brauche ich ein Framework oder reichen eigene Skills?
-- **Häufig in den Quellen:** wayfinder (7), gstack (5), matt pocock skills (5), spec-driven development (4), superpowers (4), review (4), tdd (3), gsd (2), plan-first (2), everything claude code (2), gsd-map-codebase (2), openclaw (2), claude code skills (2), grill-me (2), implement (2), to-spec (2), to-tickets (2), planung (2), live-reload (2), menschliche-pruefung (2)
+- **Häufig in den Quellen:** wayfinder (7), gstack (5), matt pocock skills (5), spec-driven development (4), superpowers (4), review (4), tdd (3), gsd (2), plan-first (2), everything claude code (2), gsd-map-codebase (2), openclaw (2), claude code skills (2), grill-me (2), to-tickets (2), implement (2), to-spec (2), planung (2), cli (2), live-reload (2)
 
 ## Verwandte Themen
 
@@ -59,12 +59,15 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Framework-Quellcode-als-idio
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-23-codexreleases-2113499625571188984]]
 - [[2026-10-21-floknowsai-entropic-hat-gitt-komplett-ersetzt-zumindest-klingt-es-so-auf-social]]
 - [[2026-10-09-openaidevs-2108573188703781190]]
 - [[2026-10-08-moritz-brandes-sauberer-code-mit-claude-code-so-geht-s-wirklich]]
 - [[2026-10-08-mattpocockuk-2108216899439894574]]
+- [[2026-10-07-openai-2107894997538525580]]
 - [[2026-10-02-repo-garrytan-gstack]]
 - [[2026-10-02-matt-pocock-live-poteto-creator-of-pstack-on-shipping-1-000]]
+- [[2026-09-29-thsottiaux-2105006253986738615]]
 - [[2026-07-30-matt-pocock-wayfinder-nothing-is-too-big-to-plan-anymore]]
 - [[2026-07-13-matt-pocock-live-the-wayfinder-demo]]
 - [[2026-07-08-mattpocock-custom-issue-tracker]]
