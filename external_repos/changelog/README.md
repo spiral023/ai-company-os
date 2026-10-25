@@ -10,6 +10,7 @@ Gepflegt vom Skill `70_Scripts/../30_Skills/local/external-repos/SKILL.md` (sieh
 
 | Datum | Repos geprüft | geändert | unverändert | Fehler | Datei |
 |---|---:|---:|---:|---:|---|
+| 2026-10-25 | 72 (+1 separat: ai-llm-wiki) | 39 | 33 | 0 | [2026-10-25.md](2026-10-25.md) |
 | 2026-10-22 | 71 (+1 separat: ai-llm-wiki) | 59 | 12 | 0 | [2026-10-22.md](2026-10-22.md) |
 | 2026-10-05 | 63 (+1 separat: ai-llm-wiki) | 42 | 21 | 0 | [2026-10-05.md](2026-10-05.md) |
 | 2026-10-02 | 63 (+1 separat: ai-llm-wiki) | 43 | 20 | 0 | [2026-10-02.md](2026-10-02.md) |
