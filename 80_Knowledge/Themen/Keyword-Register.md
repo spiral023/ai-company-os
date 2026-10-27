@@ -194,6 +194,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | review.md | 3 | AI-nativer SDLC, Verifikation, Tests & Review |
 | reward hacking | 3 | KI-Risiken & Sicherheitsvorfälle, Multi-Agent & Parallelisierung, Verifikation, Tests & Review |
 | rollen | 3 | Multi-Agent & Parallelisierung, Workflow-Frameworks & Tools |
+| screenshot | 3 | Prototyping & UI-Design, Verifikation, Tests & Review |
 | security | 3 | Sicherheit & Sandboxing |
 | session | 3 | Kontext-Management, Spezifikation & Planung |
 | shadow mode | 3 | AI-nativer SDLC, Modelle, Kosten & Limits, Verifikation, Tests & Review |
@@ -483,7 +484,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | sandboxing | 2 | Sicherheit & Sandboxing |
 | schema-first | 2 | Verifikation, Tests & Review |
 | scout | 2 | Spezifikation & Planung |
-| screenshot | 2 | Verifikation, Tests & Review |
 | security checker | 2 | Prototyping & UI-Design, Sicherheit & Sandboxing |
 | seitenspezifikation | 2 | Prototyping & UI-Design |
 | self-verification | 2 | Einstieg & Best Practices, Spezifikation & Planung |

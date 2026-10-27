@@ -32,6 +32,10 @@ Der Mensch wählt eine Richtung und iteriert deren Details. Erst die gewählte V
 - Einsetzen: wenn mehrere plausible Antworten auf eine konkrete UI- oder Motion-Frage bestehen und Verhalten für die Auswahl wichtig ist.
 - Nicht einsetzen: für einen bekannten kleinen Defekt oder eine bereits verbindlich festgelegte Gestaltung.
 
+## Ergänzung 2026-10-27: Bildentwurf für begrenzten Designfeinschliff
+
+Für kleine gestalterische Änderungen kann vor einem bedienbaren Prototyp ein Vergleich zwischen bestehendem Screenshot und generiertem Bildentwurf stehen. Philipps Prompt verlangt eine separate lokale Vergleichsseite mit Umschalter, Schieberegler, Nebeneinander-Ansicht, Zoom und Vollbild, gespeicherte Bilder und Prompt sowie eine Browserprüfung der Vergleichsseite. Inhalte, Branding und Bildausschnitt sollen möglichst gleich bleiben; die Anwendung bleibt zunächst unverändert und der Entwurf wird als noch nicht implementiert gekennzeichnet. Diese frühere Entscheidungsstufe prüft eine visuelle Richtung, während das bisherige Verfahren bedienbare Alternativen prüft. Quelle: [[2026-10-27-philipp-asanger-imagegen-designvergleich]].
+
 ## Belege
 
 - 2026-09-15 · [[2026-09-15-emilkowalski-2099948779864793303]] · meinung — Emil beschreibt Variantenwahl, Iteration und anschließende Produktionsprüfung als persönlichen Workflow; kein eigener Erfolgstest oder gemessener Produktivitätsgewinn.
@@ -41,8 +45,11 @@ Der Mensch wählt eine Richtung und iteriert deren Details. Erst die gewählte V
 - 2026-10-09 · [[2026-10-09-julian-ivanov-ki-automat-websites-mit-ki-bauen-die-gut-aussehen-und-perfo]] · meinung — Logo und Design entstehen in sichtbar beschriebenen Konzeptrunden mit menschlicher Auswahl; anschließend wird ein Entwurf anhand konkreter Rückmeldung weiterentwickelt. Der gestalterische Vergleich liefert keine gemessene Conversion, und generierte Beispieldaten bleiben getrennt von bestätigten Angeboten.
 - 2026-08-09 · [[2026-08-09-julian-ivanov-ki-automat-5-claude-code-skills-die-dir-wirklich-arbeit-abn]] · meinung — Die impeccable-Demo stellt Produktfragen vor die Designbeschreibung und lässt sichtbare Alternativen vor der Übernahme vergleichen. Das ästhetische Urteil und der einzelne Promptvergleich liefern keine belastbare allgemeine Qualitäts- oder Conversion-Messung.
 - 2026-09-30 · [[2026-09-30-flxrnc-2105311836190978392]] · meinung — Ein Kopfhörerfilm stellt vagen und gerichteten Prompt sichtbar gegenüber, korrigiert aber nur die gerichtete Variante mit 15 Folgeanweisungen. Der Vergleich veranschaulicht Richtungen, isoliert den Einfluss des Briefs jedoch nicht; vergleichbarer Korrekturaufwand wäre für eine Qualitätsaussage nötig.
+- 2026-10-27 · [[2026-10-27-philipp-asanger-imagegen-designvergleich]] · meinung — Ein generierter Bildentwurf wird vor Änderungen an der Anwendung als noch nicht implementierte Alternative auf einer separaten Vergleichsseite betrachtet. Der Vorschlag ergänzt bedienbare Prototypen um eine frühere visuelle Entscheidungsstufe für Detailverbesserungen; die Browserprüfung der Vergleichsseite ersetzt keine Produktabnahme.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-27: Der Bildvergleich eignet sich laut Philipps Vorschlag gerade für kleine Detailverbesserungen, für die das ursprüngliche Pattern keinen Variantenlauf empfiehlt. Das ist eine zusätzliche visuelle Vorstufe: Die Bedienbarkeit der Vergleichsseite sagt nichts über Interaktionen, Responsive-Verhalten oder Accessibility der dargestellten Entwurfsoberfläche aus. [[2026-10-27-philipp-asanger-imagegen-designvergleich]]
 
 - 2026-10-10: Variantenexploration ergänzt [[Plan-first-mit-getrenntem-Review]], ersetzt aber keinen unabhängigen fachlichen Review.
 - 2026-10-10: Wie viele Varianten sind im konkreten Fall sinnvoll? Drei ist die Vorgabe des geprüften Skills, keine universelle optimale Zahl.

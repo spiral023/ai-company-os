@@ -27,6 +27,10 @@ Ein Bild (Screenshot, Mockup, Fehlerdarstellung) wird per Drag & Drop, Copy & Pa
 - Einsetzen: UI-Bugs, Design-zu-Code-Übersetzung, jede Aufgabe, bei der der Ist- oder Soll-Zustand primär visuell ist.
 - Nicht einsetzen: Aufgaben mit rein textuellem oder strukturellem Kontext, bei denen ein Bild nur zusätzliches Kontext-Budget ohne Mehrwert kosten würde.
 
+## Ergänzung 2026-10-27: Designfeinschliff vorab vergleichen
+
+Ein Screenshot kann auch die Ausgangsbasis für einen Bildmodell-Entwurf sein, der zunächst nur als visuelle Entscheidungsgrundlage dient. Philipps Prompt hält Inhalte, Branding und Bildausschnitt möglichst gleich und macht die Unterschiede auf einer separaten lokalen Vergleichsseite mit Umschalter, Schieberegler, Nebeneinander-Ansicht, Zoom und Vollbild sichtbar. Bilder und Prompt bleiben im Projekt; die eigentliche Anwendung wird zunächst nicht verändert. Der Entwurf soll ausdrücklich als noch nicht implementiert gekennzeichnet sein. Das Beispielbild veranschaulicht den Vergleich, belegt aber weder dessen Bedienbarkeit noch die Umsetzbarkeit des Entwurfs. Quelle: [[2026-10-27-philipp-asanger-imagegen-designvergleich]].
+
 ## Belege
 
 - 2026-02-01 · [[2026-02-01-anthropic-docs-claude-code-common-workflows]] · meinung — Anthropics Common-Workflows-Doku beschreibt Screenshot-Einbindung (Drag & Drop, Paste, Pfad) für UI-Analyse, Fehlerdiagnose und Design-zu-Code-Generierung als eigenständige Technik. Beleglage dünn: reine Feature-Aufzählung ohne Tiefe, kein Vorher-Nachher-Vergleich.
@@ -40,8 +44,11 @@ Ein Bild (Screenshot, Mockup, Fehlerdarstellung) wird per Drag & Drop, Copy & Pa
 - 2026-07-06 · [[2026-07-06-alex-sprogis-claude-design-2-0-ist-der-wahnsinn-kompletter-gu]] · meinung — Sprogis gibt visuelle Inspiration und später markierte Kommentare an konkreten Prototyp-Elementen mit. Das Tutorial zeigt präzisere Feedbackzuordnung, aber keinen Vergleich der Fehlerquote oder Umsetzungszeit.
 - 2026-08-21 · [[2026-08-21-ai-mit-arnie-diese-skills-machen-claude-design-unfair]] · meinung — Webseiten und Vorlagenbilder dienen als Ausgangspunkt für die Interpretation von Markenregeln. Die wiederverwendbaren Guidelines sind eine zusätzliche explizite Referenz; die gezeigte Inspiration begründet keine überprüften Nutzungsrechte an fremden Assets.
 - 2026-10-21 · [[2026-10-21-vincentmumme-ich-wurde-gefragt-wie-man-mit-ki-aktuell-die-beste-ui-erstellt-also-die]] · meinung — Mumme ergänzt visuelle Vorgaben um eine laufend gepflegte Referenzbibliothek und das Benennen einzelner Vorlieben wie Aufbau oder Typografie; die behauptete Dominanz dieses Hebels ist nicht gemessen und garantiert keine Bedienbarkeit.
+- 2026-10-27 · [[2026-10-27-philipp-asanger-imagegen-designvergleich]] · meinung — Philipps eigener Prompt ergänzt generierte Referenzbilder um einen lokalen Vorher-Nachher-Vergleich für Designfeinschliff bei möglichst gleichen Inhalten, Branding und Bildausschnitt. Originalprompt und Beispielbild sind archiviert; Bedienbarkeit, Umsetzbarkeit und Qualitätsgewinn wurden nicht getestet.
 
 ## Spannungen & offene Fragen
+
+- 2026-10-27: Ein Bildmodell kann trotz Erhaltungsvorgabe Inhalte oder Bildausschnitt verändern; diese Abweichungen müssen vor dem gestalterischen Urteil kontrolliert werden. Der Bildentwurf ersetzt keine spätere Abnahme der implementierten Oberfläche. [[2026-10-27-philipp-asanger-imagegen-designvergleich]]
 
 - Einzige bisherige Quelle, dort nur als knappe Feature-Liste ohne Vertiefung — eine zweite, unabhängige Quelle würde die Aussage stärken.
 - Verwandte, bereits belegte Grenze: [[Testharness-als-staerkster-Hebel]] hält fest, dass ein Modell CSS-/Rendering-Fixes rein aus dem Code ableitet, ohne das tatsächliche Rendering zu sehen — dieses Pattern sollte deshalb nie ohne begleitende visuelle Verifikation (Vorher-Nachher-Screenshot) eingesetzt werden, sonst wird die Eingabe visuell, die Prüfung aber nicht.

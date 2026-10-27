@@ -24,14 +24,15 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - [[Layout-vor-Hilfstext-pruefen]] · meinung · 2 Belege
 - [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 8 Belege
 - [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] · verifiziert · 4 Belege
-- [[Screenshot-als-Spezifikationsmedium]] · meinung · 11 Belege
+- [[Screenshot-als-Spezifikationsmedium]] · meinung · 12 Belege
 - [[Suchintention-mit-Daten-vor-Webdesign-klaeren]] · meinung · 3 Belege
-- [[Variantenvergleich-vor-Produktionsabnahme]] · verifiziert · 7 Belege
+- [[Variantenvergleich-vor-Produktionsabnahme]] · verifiziert · 8 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]], [[Skill-aus-Demonstration-statt-Beschreibung]], [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]], [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]
 
-## Quellen (38)
+## Quellen (39)
 
+- [[2026-10-27-philipp-asanger-imagegen-designvergleich]] — Philipps eigener Prompt nutzt ein Bildmodell, um kleine Designverbesserungen an einer bestehenden Seite vorab sichtbar zu machen.
 - [[2026-10-22-voxyz_ai-2113254050170843418]] — Vox schlägt zwei Regeln für `AGENTS.md` vor: erklärende Nebentexte reduzieren und Entscheidungen zugleich nach UX, DX und Agent Experience bewerten.
 - [[2026-10-22-pbakaus-2113065895069368804]] — Paul Bakaus kündigt einen automatisch beteiligten Impeccable-Subagenten an, der Frontend-Arbeit nach dem Aufbau prüft und mit dem Hauptagenten verbessert.
 - [[2026-10-22-luinlee-2113085361836744764]] — Zihua empfiehlt nach eigener Arbeit mit `Opus` und `Astra` eine Regel gegen überflüssige Erklärungen in generierten Oberflächen:
