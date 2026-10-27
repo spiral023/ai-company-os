@@ -26,6 +26,30 @@ def load_ai_module():
 class AiCliTest(unittest.TestCase):
     """Check that ai.py forwards commands to existing scripts."""
 
+    def test_wissen_search_preserves_query_and_filters(self) -> None:
+        ai = load_ai_module()
+        with patch.object(ai, "run_subprocess", return_value=0) as run:
+            self.assertEqual(ai.main(["wissen", "suche", "Factory Review", "--repo", "cursor/plugins", "--art", "skill", "--limit", "3"]), 0)
+        self.assertEqual(run.call_args.args[0], [sys.executable, "-X", "utf8", str(ROOT / "70_Scripts/wissen.py"), "suche", "Factory Review", "--limit", "3", "--repo", "cursor/plugins", "--art", "skill"])
+
+    def test_wissen_plan_forwards_output_and_budget(self) -> None:
+        ai = load_ai_module()
+        with patch.object(ai, "run_subprocess", return_value=0) as run:
+            self.assertEqual(ai.main(["wissen", "analyse-plan", "--ausgabe", "tmp/plan.json", "--budget", "40000"]), 0)
+        self.assertEqual(run.call_args.args[0][-4:], ["--ausgabe", "tmp/plan.json", "--budget", "40000"])
+
+    def test_wissen_analysis_check_forwards_artifacts(self) -> None:
+        ai = load_ai_module()
+        with patch.object(ai, "run_subprocess", return_value=0) as run:
+            self.assertEqual(ai.main(["wissen", "analyse-check", "--plan", "plan.json", "--ergebnisse", "results.jsonl"]), 0)
+        self.assertEqual(run.call_args.args[0][-4:], ["--plan", "plan.json", "--ergebnisse", "results.jsonl"])
+
+    def test_wissen_read_forwards_line_range(self) -> None:
+        ai = load_ai_module()
+        with patch.object(ai, "run_subprocess", return_value=0) as run:
+            self.assertEqual(ai.main(["wissen", "lesen", "note.md", "--von", "3", "--bis", "9"]), 0)
+        self.assertEqual(run.call_args.args[0][-5:], ["note.md", "--von", "3", "--bis", "9"])
+
     def test_quellen_feed_forwards_build_and_output(self) -> None:
         ai = load_ai_module()
         with patch.object(ai, "run_subprocess", return_value=0) as run:

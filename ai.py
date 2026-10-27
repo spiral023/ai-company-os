@@ -24,19 +24,19 @@ def script_path(name: str) -> str:
     return str(SCRIPT_ROOT / name)
 
 
-def run_subprocess(command: list[str], label: str) -> int:
+def run_subprocess(command: list[str], label: str, *, error_stream=None) -> int:
     """Run a command in the repository root with understandable errors."""
     try:
         result = subprocess.run(command, cwd=ROOT, check=False)
     except FileNotFoundError as error:
-        print(f"{label} konnte nicht gestartet werden: {error.filename} wurde nicht gefunden.")
+        print(f"{label} konnte nicht gestartet werden: {error.filename} wurde nicht gefunden.", file=error_stream)
         return 1
     except OSError as error:
-        print(f"{label} konnte nicht gestartet werden: {error}")
+        print(f"{label} konnte nicht gestartet werden: {error}", file=error_stream)
         return 1
 
     if result.returncode != 0:
-        print(f"{label} wurde mit Fehler beendet (Exit {result.returncode}).")
+        print(f"{label} wurde mit Fehler beendet (Exit {result.returncode}).", file=error_stream)
     return result.returncode
 
 
@@ -82,6 +82,39 @@ def run_health(_args: argparse.Namespace) -> int:
         [sys.executable, script_path("company_os_healthcheck.py")],
         "Health Check",
     )
+
+
+def run_wissen(args: argparse.Namespace) -> int:
+    """Den lokalen Wissenskatalog ohne Modell- oder Netzwerkaufrufe bedienen."""
+    if args.aktion in {"pilot-check", "karten", "kontext"}:
+        command = [sys.executable, "-X", "utf8", script_path("wissens_pilot.py"), args.aktion]
+        if args.aktion == "kontext":
+            command.append(args.frage)
+            if args.thema:
+                command.extend(["--thema", args.thema])
+        elif args.aktion == "karten" and args.check:
+            command.append("--check")
+        return run_subprocess(command, "Wissenspilot", error_stream=sys.stderr)
+    command = [sys.executable, "-X", "utf8", script_path("wissen.py"), args.aktion]
+    if args.aktion == "index":
+        command.extend(["--max-bytes", str(args.max_bytes)])
+        if args.progress:
+            command.append("--progress")
+    elif args.aktion == "suche":
+        command.extend([args.frage, "--limit", str(args.limit)])
+        for option in ("repo", "art"):
+            value = getattr(args, option, None)
+            if value:
+                command.extend([f"--{option}", value])
+    elif args.aktion == "analyse-plan":
+        command.extend(["--ausgabe", args.ausgabe, "--budget", str(args.budget)])
+    elif args.aktion == "analyse-check":
+        command.extend(["--plan", args.plan, "--ergebnisse", args.ergebnisse])
+    elif args.aktion == "lesen":
+        command.extend([args.pfad, "--von", str(args.von)])
+        if args.bis is not None:
+            command.extend(["--bis", str(args.bis)])
+    return run_subprocess(command, "Wissenskatalog")
 
 
 def run_social(args: argparse.Namespace) -> int:
@@ -336,6 +369,43 @@ def build_parser() -> argparse.ArgumentParser:
 
     status = subparsers.add_parser("status", help="Git-Status anzeigen")
     status.set_defaults(handler=run_status)
+
+    wissen = subparsers.add_parser("wissen", help="Gesamtbestand durchsuchen und Wissensanalysen vorbereiten")
+    wissen_sub = wissen.add_subparsers(dest="aktion", required=True)
+    pilotcheck = wissen_sub.add_parser("pilot-check", help="Versionierte Aussagen und Fähigkeitskarten prüfen")
+    pilotcheck.set_defaults(handler=run_wissen)
+    pilotkarten = wissen_sub.add_parser("karten", help="Fähigkeitskandidaten aus der Pilot-Registry erzeugen")
+    pilotkarten.add_argument("--check", action="store_true")
+    pilotkarten.set_defaults(handler=run_wissen)
+    pilotkontext = wissen_sub.add_parser("kontext", help="Aussagen, Spannungen und Kandidaten aus dem semantischen Pilot abrufen")
+    pilotkontext.add_argument("frage")
+    pilotkontext.add_argument("--thema", help="Explizite Synthese-ID aus der Pilot-Registry")
+    pilotkontext.set_defaults(handler=run_wissen)
+    wissensindex = wissen_sub.add_parser("index", help="Lokalen Katalog einschließlich externer Repos erzeugen")
+    wissensindex.add_argument("--max-bytes", type=int, default=1_000_000)
+    wissensindex.add_argument("--progress", action="store_true")
+    wissensindex.set_defaults(handler=run_wissen)
+    wissensstatus = wissen_sub.add_parser("status", help="Abdeckung des gespeicherten Katalogs anzeigen")
+    wissensstatus.set_defaults(handler=run_wissen)
+    wissenssuche = wissen_sub.add_parser("suche", help="Abschnitte mit Quellen und Versionsständen finden")
+    wissenssuche.add_argument("frage")
+    wissenssuche.add_argument("--limit", type=int, default=10)
+    wissenssuche.add_argument("--repo")
+    wissenssuche.add_argument("--art")
+    wissenssuche.set_defaults(handler=run_wissen)
+    wissenslesen = wissen_sub.add_parser("lesen", help="Textbereich eines Treffers mit geprüftem Hash nachladen")
+    wissenslesen.add_argument("pfad")
+    wissenslesen.add_argument("--von", type=int, default=1)
+    wissenslesen.add_argument("--bis", type=int)
+    wissenslesen.set_defaults(handler=run_wissen)
+    wissensplan = wissen_sub.add_parser("analyse-plan", help="Offene Prüfpakete für alle indexierten Inhalte planen")
+    wissensplan.add_argument("--ausgabe", required=True)
+    wissensplan.add_argument("--budget", type=int, default=60000)
+    wissensplan.set_defaults(handler=run_wissen)
+    wissenscheck = wissen_sub.add_parser("analyse-check", help="Bearbeitungsnachweise gegen einen Gesamtprüfplan prüfen")
+    wissenscheck.add_argument("--plan", required=True)
+    wissenscheck.add_argument("--ergebnisse", required=True)
+    wissenscheck.set_defaults(handler=run_wissen)
 
     quellen = subparsers.add_parser("quellen", help="Quellenbestand auswerten")
     quellen_sub = quellen.add_subparsers(dest="aktion", required=True)

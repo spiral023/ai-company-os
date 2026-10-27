@@ -4,6 +4,8 @@ Für die normale Bedienung bevorzugt `python ai.py` im Repo-Root verwenden. Die 
 
 Kleine lokale Hilfsscripts für Phase 1.
 
+- `wissen.py`: gemeinsamer lokaler SQLite-Katalog mit Abschnittssuche, Herkunft/Hashes/Commitständen und Abdeckungsprüfung für Gesamtanalysen; Bedienung über `python ai.py wissen` und Anleitung unter `docs/wissensfabrik/wissenskatalog.md`. Keine Modelle, neuen Abhängigkeiten oder Netzwerkaufrufe.
+- `wissens_pilot.py`: prüft den kuratierten semantischen Pilot und seine Belegversionen, erzeugt Kandidatenkarten und liefert themenbezogene Kontextpakete; `python ai.py wissen pilot-check`, `karten`, `kontext`. Führende Daten und Grenzen: `80_Knowledge/Factory/README.md`. Keine Skill-Aktivierung oder Modellaufrufe.
 - `skill_registry_check.py`: prüft Registry und lokale Skill-Pfade.
 - `skill_autoreview.py`: zeigt Zeilenanzahl lokaler Skills und warnt bei langen Skills.
 - `create_project_kit.py`: kopiert Projekt-Kits in Zielordner.

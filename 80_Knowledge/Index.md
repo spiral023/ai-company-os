@@ -119,6 +119,13 @@ Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 21 
 ## Vergleiche
 
 - [[Workflow-Frameworks]] — Gegenüberstellung von mattpocock/skills, Superpowers, GSD Core, gstack, addyosmani/agent-skills, Squad und dem statisch gesichteten pstack-Teilbaum.
+- [[Factory-Kontextbereitstellung]] — Aufgaben-/Rollenkontext, gestufter Abruf, versionierte Belege und erkennbare Grenzen als gemeinsamer Entwurf.
+- [[Factory-Spec-Build-Review]] — Klärung, Spec-Synthese, Verhaltenstickets, Ausführungspläne und getrennte Abnahme mit Bedingungen und Spannungen.
+- [[Factory-Wissenspflege-Methodenauswahl]] — Herkunftsfamilien, Aktualität, Ableitungen und bewusste Auswahl von Fähigkeitskandidaten.
+
+## Factory-Pilot und Fähigkeiten
+
+Der [semantische Pilot](Factory/README.md) verbindet 24 Aussagen mit konkreten Belegen und Beziehungen. Die [fünf Fähigkeitskarten](Faehigkeiten/README.md) beschreiben Inputs, Outputs, Grenzen und vorbereitete Versuche. Mit `python ai.py wissen kontext "<Frage>"` lassen sich passende Aussagen, Spannungen und Kandidaten gemeinsam abrufen; eine vollständige Bestandsanalyse wird dadurch nicht behauptet.
 
 ## Fakten
 

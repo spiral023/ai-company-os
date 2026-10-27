@@ -98,6 +98,10 @@ Skills liegen unter `30_Skills/`.
 - Nicht alle Skills sind automatisch aktiv.
 - Externe Skills müssen geprüft werden, bevor sie in Projekt-Kits übernommen werden.
 
+## Wissen für die Agentic Software Factory
+
+Bei themenübergreifender Recherche, Auswahl von Factory-Methoden oder erneuter Gesamtanalyse den Einstieg `docs/wissensfabrik/README.md` nutzen. Er führt zu Zielarchitektur, gemeinsamem Wissenskatalog und dem Ablauf mit Abdeckungsnachweis. `python ai.py wissen suche "<Frage>"` durchsucht eigene Wissensbereiche und externe Referenzen; Katalogstand und Analyseumfang ausdrücklich unterscheiden. Die bestehende Skill-Registry bleibt für die Nutzung externer Skills maßgeblich.
+
 ## Knowledge-System
 
 Wissen über KI-Arbeitsweisen (Skills, Agent-Workflows, Frameworks) lebt unter `80_Knowledge/`. Regeln und Templates: `80_Knowledge/README.md`.

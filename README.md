@@ -98,6 +98,20 @@ RSS-/Atom-Feeds lassen sich mit `python ai.py feeds add <feed-url>` registrieren
 6. Zielprojekt separat als Git-Repository initialisieren.
 7. ersten Arbeitsauftrag mit `20_Workflows/Erster_Arbeitsauftrag_für_Coding_Agents.md` formulieren.
 
+## Wissensbasis für die Software Factory
+
+[Zielarchitektur und Einstieg](docs/wissensfabrik/README.md) verbinden Firmenwissen, Quellen, Patterns und externe Repo-/Skill-/Prompt-Referenzen. Ein lokaler Katalog bietet bereits Suche mit Herkunft und Versionsständen sowie offene Prüfpakete für wiederholbare Gesamtanalysen:
+
+```bash
+python ai.py wissen index
+python ai.py wissen suche "software factory"
+python ai.py wissen kontext "Wie prüfen wir Spec, Standards und Verhalten?"
+python ai.py wissen pilot-check
+python ai.py wissen analyse-plan --ausgabe .wissen/analysen/baseline-01.json
+```
+
+Indexierung und Prüfplanung bilden die technische Grundlage. Ein begrenzter [semantischer Pilot](80_Knowledge/Factory/README.md) verbindet bereits Aussagen, Quersynthesen und fünf Fähigkeitskandidaten mit aktuellen Belegen. Vollständige Bestandsanalyse, praktische Methodenvergleiche und Factory-Anbindung sind weitere Ausbaustufen; ein Katalogeintrag aktiviert keinen externen Skill.
+
 ## Projekt-Kits
 
 | Kit | Zweck | Pfad |

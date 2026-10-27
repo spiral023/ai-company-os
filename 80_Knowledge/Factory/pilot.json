@@ -1,0 +1,1089 @@
+{
+  "schema_version": 1,
+  "stand": "2026-10-26",
+  "status": "semantischer-pilot",
+  "belege": [
+    {
+      "id": "b01",
+      "pfad": "external_repos/langchain-ai/openwiki/src/claims/core/types.ts",
+      "von": 4,
+      "bis": 14,
+      "familie": "repo:langchain-ai/openwiki",
+      "original": "https://github.com/langchain-ai/openwiki/blob/305599f8e44203f9ca6b74bb6b38eebaf0b0405e/src/claims/core/types.ts#L4-L14",
+      "sha256": "ca5d45605c66002b156320704e3c99726456e827f5ce73de809db100af2fe838",
+      "bereich_sha256": "88d2101482427cea70f549f4265b4375b2b494d1bd31ce1e90f04aead8f74426",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/langchain-ai/openwiki",
+      "revision": "305599f8e44203f9ca6b74bb6b38eebaf0b0405e",
+      "lizenzdatei": "external_repos/langchain-ai/openwiki/LICENSE"
+    },
+    {
+      "id": "b02",
+      "pfad": "external_repos/langchain-ai/openwiki/src/claims/brains/code/preflight.ts",
+      "von": 63,
+      "bis": 96,
+      "familie": "repo:langchain-ai/openwiki",
+      "original": "https://github.com/langchain-ai/openwiki/blob/305599f8e44203f9ca6b74bb6b38eebaf0b0405e/src/claims/brains/code/preflight.ts#L63-L96",
+      "sha256": "d00bcab818eafa6b1bb7d97e75d54a6fa35e60fe3d160c1af334241486a646bf",
+      "bereich_sha256": "7640879eacfef4f8a9262102b7a86f5e421e9c970ec45e8c9c4a614542874b46",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/langchain-ai/openwiki",
+      "revision": "305599f8e44203f9ca6b74bb6b38eebaf0b0405e",
+      "lizenzdatei": "external_repos/langchain-ai/openwiki/LICENSE"
+    },
+    {
+      "id": "b03",
+      "pfad": "external_repos/Graphify-Labs/graphify/graphify/cache.py",
+      "von": 1016,
+      "bis": 1045,
+      "familie": "repo:Graphify-Labs/graphify",
+      "original": "https://github.com/Graphify-Labs/graphify/blob/92741d162b2094ffc2fed58cfbd8ee823e9da62c/graphify/cache.py#L1016-L1045",
+      "sha256": "2070eb1b8e6a8c4c0f95d8b0153d4b85ed46e9633778fd8e6b89b4bb52d43150",
+      "bereich_sha256": "a58a2db8c0465305b0fe387abf9e3ccf901cf0393ff563eb55d9f878f330d5d8",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/Graphify-Labs/graphify",
+      "revision": "92741d162b2094ffc2fed58cfbd8ee823e9da62c",
+      "lizenzdatei": "external_repos/Graphify-Labs/graphify/LICENSE"
+    },
+    {
+      "id": "b04",
+      "pfad": "external_repos/thedotmack/claude-mem/src/shared/progressive-search.ts",
+      "von": 205,
+      "bis": 227,
+      "familie": "repo:thedotmack/claude-mem",
+      "original": "https://github.com/thedotmack/claude-mem/blob/bab040941390f6c1e82c0508ec806f2fc8255cbb/src/shared/progressive-search.ts#L205-L227",
+      "sha256": "43d745b8d8f1f36e72ff2023fd98c0ad5f47659f36d920b01d228879d1c3f3a0",
+      "bereich_sha256": "83e74e8d1e1efac0df23d2403bd086b8c7903b1f828cea4a3408fe073b8b67f3",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/thedotmack/claude-mem",
+      "revision": "bab040941390f6c1e82c0508ec806f2fc8255cbb",
+      "lizenzdatei": "external_repos/thedotmack/claude-mem/LICENSE"
+    },
+    {
+      "id": "b05",
+      "pfad": "external_repos/open-gsd/gsd-core/gsd-core/workflows/resume-project.md",
+      "von": 322,
+      "bis": 333,
+      "familie": "repo:open-gsd/gsd-core",
+      "original": "https://github.com/open-gsd/gsd-core/blob/7129a135c7271ccea59df7561df83ac11cbc94bd/gsd-core/workflows/resume-project.md#L322-L333",
+      "sha256": "bfaa76506389f8b10efdde14b08c27eff0d98cf7433b6a4fd2de822555aafcda",
+      "bereich_sha256": "f28edbf376d9132c089f7bca73ddf7abaa601b944fd715ba20fe20d14dd6c28c",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/open-gsd/gsd-core",
+      "revision": "7129a135c7271ccea59df7561df83ac11cbc94bd",
+      "lizenzdatei": "external_repos/open-gsd/gsd-core/LICENSE"
+    },
+    {
+      "id": "b06",
+      "pfad": "external_repos/open-gsd/gsd-core/docs/reference/state-md.md",
+      "von": 230,
+      "bis": 236,
+      "familie": "repo:open-gsd/gsd-core",
+      "original": "https://github.com/open-gsd/gsd-core/blob/7129a135c7271ccea59df7561df83ac11cbc94bd/docs/reference/state-md.md#L230-L236",
+      "sha256": "9a9edcd996460ef247514d5a2aeaa7a9b656dbda62da93dce068172318903571",
+      "bereich_sha256": "8f9e9ed946458bb57446f39a22f513ded140f0b9ba56e1a98b3657f3977b04b5",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/open-gsd/gsd-core",
+      "revision": "7129a135c7271ccea59df7561df83ac11cbc94bd",
+      "lizenzdatei": "external_repos/open-gsd/gsd-core/LICENSE"
+    },
+    {
+      "id": "b07",
+      "pfad": "external_repos/mattpocock/skills/README.md",
+      "von": 15,
+      "bis": 19,
+      "familie": "repo:mattpocock/skills",
+      "original": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/README.md#L15-L19",
+      "sha256": "b1ff8acade606a4df470c25017b7f1de0d2814e8f294f1d9e07a0b89c472154b",
+      "bereich_sha256": "3c0b5d323d9787448db41799f31303aae37b622032a709d7efd9b4c890b3253d",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "lizenzdatei": "external_repos/mattpocock/skills/LICENSE"
+    },
+    {
+      "id": "b08",
+      "pfad": "external_repos/mattpocock/skills/skills/productivity/grilling/SKILL.md",
+      "von": 6,
+      "bis": 8,
+      "familie": "repo:mattpocock/skills",
+      "original": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling/SKILL.md#L6-L8",
+      "sha256": "26d225ea8a36f4acacbe267e789cfb97d73964412f4243dd4b65b6cb806ddebc",
+      "bereich_sha256": "ff18192bcd87c35e307469d31dec7e9f202e857a1e04a264cfe00d60d3421b23",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "lizenzdatei": "external_repos/mattpocock/skills/LICENSE"
+    },
+    {
+      "id": "b09",
+      "pfad": "external_repos/mattpocock/skills/skills/productivity/grilling/SKILL.md",
+      "von": 28,
+      "bis": 30,
+      "familie": "repo:mattpocock/skills",
+      "original": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/grilling/SKILL.md#L28-L30",
+      "sha256": "26d225ea8a36f4acacbe267e789cfb97d73964412f4243dd4b65b6cb806ddebc",
+      "bereich_sha256": "e71defdb40e2bc833bc002d275358a297d48ad7c5245117a2da50bdb16a7d5cd",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "lizenzdatei": "external_repos/mattpocock/skills/LICENSE"
+    },
+    {
+      "id": "b10",
+      "pfad": "external_repos/mattpocock/skills/skills/engineering/to-spec/SKILL.md",
+      "von": 7,
+      "bis": 19,
+      "familie": "repo:mattpocock/skills",
+      "original": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/to-spec/SKILL.md#L7-L19",
+      "sha256": "c73a2250beac0479e384f5466e834bb54ce6e30b7f8705e9999ba840d9d59b36",
+      "bereich_sha256": "e0747b6fb0bc8ffd15dce2253aa7394b99f092659e95e10b6cb238675a598114",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "lizenzdatei": "external_repos/mattpocock/skills/LICENSE"
+    },
+    {
+      "id": "b11",
+      "pfad": "external_repos/mattpocock/skills/skills/engineering/to-tickets/SKILL.md",
+      "von": 31,
+      "bis": 40,
+      "familie": "repo:mattpocock/skills",
+      "original": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/to-tickets/SKILL.md#L31-L40",
+      "sha256": "b8eb6dca1085e85220b0f5990ed787ebf8a924844d090689f1073b06367e2f7a",
+      "bereich_sha256": "09dec7634a461d86991c0f959ad1b6f95ca8604763255849d1540dc7d2dcb3df",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "lizenzdatei": "external_repos/mattpocock/skills/LICENSE"
+    },
+    {
+      "id": "b12",
+      "pfad": "external_repos/mattpocock/skills/skills/engineering/to-tickets/SKILL.md",
+      "von": 105,
+      "bis": 105,
+      "familie": "repo:mattpocock/skills",
+      "original": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/to-tickets/SKILL.md#L105-L105",
+      "sha256": "b8eb6dca1085e85220b0f5990ed787ebf8a924844d090689f1073b06367e2f7a",
+      "bereich_sha256": "cb410cd8ebb18765e4a44b7a746884985c980a8a7d72be36a7afe01f2978253c",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "lizenzdatei": "external_repos/mattpocock/skills/LICENSE"
+    },
+    {
+      "id": "b13",
+      "pfad": "external_repos/mattpocock/skills/skills/engineering/code-review/SKILL.md",
+      "von": 27,
+      "bis": 41,
+      "familie": "repo:mattpocock/skills",
+      "original": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/code-review/SKILL.md#L27-L41",
+      "sha256": "9e6d1b00c31e10a002ac3e5fb49014c9589166f668c62996e80a36d23ca21e70",
+      "bereich_sha256": "8aa596e76e2957e94994efb35c5d5aef9f361f9e6487bdbd5690f4492f0bf7fc",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "lizenzdatei": "external_repos/mattpocock/skills/LICENSE"
+    },
+    {
+      "id": "b14",
+      "pfad": "external_repos/mattpocock/skills/skills/engineering/code-review/SKILL.md",
+      "von": 62,
+      "bis": 80,
+      "familie": "repo:mattpocock/skills",
+      "original": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/engineering/code-review/SKILL.md#L62-L80",
+      "sha256": "9e6d1b00c31e10a002ac3e5fb49014c9589166f668c62996e80a36d23ca21e70",
+      "bereich_sha256": "32bea39ffbbf54e47e5a20323614c4bc5951262c6ba740b64c52f39bed0b6db4",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "lizenzdatei": "external_repos/mattpocock/skills/LICENSE"
+    },
+    {
+      "id": "b15",
+      "pfad": "external_repos/cursor/plugins/pstack/skills/poteto-mode/SKILL.md",
+      "von": 121,
+      "bis": 141,
+      "familie": "repo:cursor/plugins",
+      "original": "https://github.com/cursor/plugins/blob/99b609a72323b70204eab407c622f436e858e112/pstack/skills/poteto-mode/SKILL.md#L121-L141",
+      "sha256": "ae84eff9f31161ebf389daf7fd7b27045cf858f60897e7cb8152f91dd27ce765",
+      "bereich_sha256": "b9c31136007c797622d6d2d615ca2dfa688e39a272d77175d114ef99c3b23cb6",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/cursor/plugins",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
+      "lizenzdatei": "external_repos/cursor/plugins/pstack/LICENSE"
+    },
+    {
+      "id": "b16",
+      "pfad": "external_repos/cursor/plugins/pstack/skills/poteto-mode/playbooks/multi-phase-plan.md",
+      "von": 3,
+      "bis": 24,
+      "familie": "repo:cursor/plugins",
+      "original": "https://github.com/cursor/plugins/blob/99b609a72323b70204eab407c622f436e858e112/pstack/skills/poteto-mode/playbooks/multi-phase-plan.md#L3-L24",
+      "sha256": "1241c43becc36d38e93903a5aefee196200a022a9c1fe86b9dffd4d288d2b007",
+      "bereich_sha256": "4d7e8ce640247145493181d58f6d3eee7dea07fe076fee8081c1524155f401cf",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/cursor/plugins",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
+      "lizenzdatei": "external_repos/cursor/plugins/pstack/LICENSE"
+    },
+    {
+      "id": "b17",
+      "pfad": "external_repos/cursor/plugins/pstack/skills/poteto-mode/playbooks/multi-phase-plan.md",
+      "von": 78,
+      "bis": 94,
+      "familie": "repo:cursor/plugins",
+      "original": "https://github.com/cursor/plugins/blob/99b609a72323b70204eab407c622f436e858e112/pstack/skills/poteto-mode/playbooks/multi-phase-plan.md#L78-L94",
+      "sha256": "1241c43becc36d38e93903a5aefee196200a022a9c1fe86b9dffd4d288d2b007",
+      "bereich_sha256": "f471560a3356bdba5451e3b03434043e409384e4a9aa28cf45033fb75f85dae4",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/cursor/plugins",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
+      "lizenzdatei": "external_repos/cursor/plugins/pstack/LICENSE"
+    },
+    {
+      "id": "b18",
+      "pfad": "external_repos/cursor/plugins/pstack/skills/principle-prove-it-works/SKILL.md",
+      "von": 9,
+      "bis": 22,
+      "familie": "repo:cursor/plugins",
+      "original": "https://github.com/cursor/plugins/blob/99b609a72323b70204eab407c622f436e858e112/pstack/skills/principle-prove-it-works/SKILL.md#L9-L22",
+      "sha256": "06c9fc738540384e78fafc43c251e04d053f4e2dc5acef73245396da6cc8c60f",
+      "bereich_sha256": "90c50829a8bc203a9458363a0c1a32fb592598b26c60d0443b1c19cfe40ff2c0",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/cursor/plugins",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
+      "lizenzdatei": "external_repos/cursor/plugins/pstack/LICENSE"
+    },
+    {
+      "id": "b19",
+      "pfad": "external_repos/cursor/plugins/pstack/skills/create-verification-skill/SKILL.md",
+      "von": 13,
+      "bis": 40,
+      "familie": "repo:cursor/plugins",
+      "original": "https://github.com/cursor/plugins/blob/99b609a72323b70204eab407c622f436e858e112/pstack/skills/create-verification-skill/SKILL.md#L13-L40",
+      "sha256": "106cd3c3edb1409989629da69186fcc1f06f26f9b645eb11b380489b75c5b86e",
+      "bereich_sha256": "d2e9395c1a50092a8281fa976f874de46ed22a30edb713037135d2720b150b84",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/cursor/plugins",
+      "revision": "99b609a72323b70204eab407c622f436e858e112",
+      "lizenzdatei": "external_repos/cursor/plugins/pstack/LICENSE"
+    },
+    {
+      "id": "b20",
+      "pfad": "external_repos/paperclipai/paperclip/skills/paperclip/references/company-skills.md",
+      "von": 5,
+      "bis": 20,
+      "familie": "repo:paperclipai/paperclip",
+      "original": "https://github.com/paperclipai/paperclip/blob/50797ea03ce0b2a84e4df80864ac6e3652382ed5/skills/paperclip/references/company-skills.md#L5-L20",
+      "sha256": "f9fe3cc3486d92a5a26419360e3c23cd027b6ac7ac07518199dda827feb55de3",
+      "bereich_sha256": "ae966fe8dc628f71dc7391e78a43215d35b0640b175616e17e7987f2928a7bb7",
+      "geprueft": "2026-10-26",
+      "repo": "external_repos/paperclipai/paperclip",
+      "revision": "50797ea03ce0b2a84e4df80864ac6e3652382ed5",
+      "lizenzdatei": "external_repos/paperclipai/paperclip/LICENSE"
+    },
+    {
+      "id": "b21",
+      "pfad": "80_Knowledge/Sources/2025-06-23-boristane-context-engineering-is-what-makes-ai-magical.md",
+      "von": 14,
+      "bis": 24,
+      "familie": "url:boristane-context-engineering",
+      "original": "https://boristane.com/blog/context-engineering/",
+      "sha256": "0aa67d8ec2e61c387f1f5efb13eeb7302cbd6783340388a7f420e7abdb0ed62b",
+      "bereich_sha256": "f122518dfcac1b4e6a23441d9a530e82ca9d4ce6ffdd719a0fca617d6dfd89a1",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "b22",
+      "pfad": "80_Knowledge/Sources/2026-08-30-alex-sprogis-loop-graph-engineering-das-letzte-video-was-du-s.md",
+      "von": 39,
+      "bis": 46,
+      "familie": "youtube:bKt-GZicIlM",
+      "original": "https://www.youtube.com/watch?v=bKt-GZicIlM",
+      "sha256": "be843459f9864738c77ec6fa50ca0a982c1dfd340ceab75d03b60533b09295a1",
+      "bereich_sha256": "1e2c2d5b825e58208d0f30de6c3048ef701411a34995e6c8ae54296a6be03434",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "b23",
+      "pfad": "80_Knowledge/Sources/2026-10-22-itamar_mar-2113255396299128887.md",
+      "von": 37,
+      "bis": 41,
+      "familie": "x:2113255396299128887",
+      "original": "https://x.com/itamar_mar/status/2113255396299128887",
+      "sha256": "0de8e44b44cc1d0a7ed37f7676f24957e80343de745c3e17826be0c2c9c2639b",
+      "bereich_sha256": "03cc47eb2f208be50281f6366a3da8f65df2780c060310f0f36bfc79ad114ab8",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "b24",
+      "pfad": "00_Inbox/Quellen/X/2026-10-22-itamar_mar-2113255396299128887.md",
+      "von": 62,
+      "bis": 72,
+      "familie": "x:2113255396299128887",
+      "original": "https://x.com/itamar_mar/status/2113255396299128887",
+      "sha256": "bba8ec1c8bedd14453496f7ee796f27a248f79aa03c848c1edfb3615f7edf957",
+      "bereich_sha256": "94fa03d5663d26fcf8b04011155232cd6f56a553e2efcfacfec3635e77cfd4aa",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "b25",
+      "pfad": "80_Knowledge/Sources/2026-10-19-zazencodes-factory-works-in-this-loop-a-feature-comes-through-the-spec-writer-which.md",
+      "von": 14,
+      "bis": 24,
+      "familie": "tiktok:7698415925753564424",
+      "original": "https://www.tiktok.com/@zazencodes/video/7698415925753564424",
+      "sha256": "c76bb252eee1e89d6c0c991c56f3769dd9882c114df5fa4853855546b7538045",
+      "bereich_sha256": "8a30eaa28dc5a9b0d4677b3e798f9ec8b5ac701df922c9036a8ca3d3149dcaed",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "b26",
+      "pfad": "00_Inbox/Quellen/TikTok/2026-10-19-zazencodes-factory-works-in-this-loop-a-feature-comes-through-the-spec-writer-which.md",
+      "von": 30,
+      "bis": 33,
+      "familie": "tiktok:7698415925753564424",
+      "original": "https://www.tiktok.com/@zazencodes/video/7698415925753564424",
+      "sha256": "2824d6eb8f6d9950d6ec5a58b12c9ab867980664e78611bf0f87fed72746d0bb",
+      "bereich_sha256": "391122c67153698a2144bf62eddfac29ff19046740c8c07556da7a2e89e9f0fa",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "b27",
+      "pfad": "AGENTS.md",
+      "von": 52,
+      "bis": 86,
+      "familie": "eigene-regeln:company-os",
+      "original": "AGENTS.md",
+      "sha256": "be0324d993deded733a0ea806c79b66f8b72a758b42a2d67df91de36808f2250",
+      "bereich_sha256": "4cffaf93e960d46531693b876f5029e094d508d709a809e54eb2861721a91234",
+      "geprueft": "2026-10-26"
+    }
+  ],
+  "aussagen": [
+    {
+      "id": "c01",
+      "aussage": "Kontextbereitstellung soll Aufgabe, Dokumentstruktur, Absicht und Umgebung gemeinsam berücksichtigen.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b21"
+      ],
+      "aus": [],
+      "grenze": "Boris Tane beschreibt ein Entwurfsprinzip anhand von Beispielen; eine Vergleichsmessung ist nicht enthalten.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c02",
+      "aussage": "Claude-Mem beschreibt und implementiert einen gestuften Suchablauf bis zum gezielten Detailabruf.",
+      "nachweisart": "statisch-nachgelesen",
+      "beleg_ids": [
+        "b04"
+      ],
+      "aus": [],
+      "grenze": "Die gelesene Stelle belegt den Abrufvertrag, keine bessere Factory-Entscheidung oder vollständige Recherche.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c03",
+      "aussage": "OpenWiki trennt Ressourcenidentität und Belegversion im Evidenzmodell.",
+      "nachweisart": "statisch-nachgelesen",
+      "beleg_ids": [
+        "b01"
+      ],
+      "aus": [],
+      "grenze": "Das Typschema belegt die Unterscheidung; die Wahrheit einer Aussage ergibt sich daraus nicht.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c04",
+      "aussage": "OpenWikis Preflight unterscheidet nicht auflösbare Belege von geänderten Belegversionen.",
+      "nachweisart": "statisch-nachgelesen",
+      "beleg_ids": [
+        "b02"
+      ],
+      "aus": [],
+      "grenze": "Der gelesene Prüfpfad garantiert keine automatische fachliche Korrektur abhängiger Aussagen.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c05",
+      "aussage": "Graphify versioniert AST-Caches nach Extraktor, Schema und Grammar und kann semantische Caches nach übergebenem Promptfingerprint trennen.",
+      "nachweisart": "statisch-nachgelesen",
+      "beleg_ids": [
+        "b03"
+      ],
+      "aus": [],
+      "grenze": "Der semantische Zweig nutzt den Promptfingerprint nur bei dessen Übergabe; historische flache Einträge bleiben möglich. Ein Cachetreffer ist keine fachliche Bestätigung.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c06",
+      "aussage": "Unabhängige Abnahme braucht geschützte Kriterien und Zuständigkeit; die Rolle Reviewer allein stellt sie nicht her.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b23",
+        "b24"
+      ],
+      "aus": [],
+      "grenze": "Friedmans Beitrag ist eine begründete Entwurfsposition ohne allgemeine Zuverlässigkeitsmessung; Rohtext und Source-Notiz sind eine Herkunftsfamilie.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c07",
+      "aussage": "Ein Factory-Loop soll ein prüfbares Erfolgskriterium und ein Iterationslimit erhalten.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b22"
+      ],
+      "aus": [],
+      "grenze": "Sprogis berichtet einen Ansatz; mehr Prüfer und Loops können zugleich zusätzliche Kosten verursachen.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c08",
+      "aussage": "Der Code-Review-Skill trennt Spec- und Standards-Ergebnisse bis zur gemeinsamen Ausgabe.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b14"
+      ],
+      "aus": [],
+      "grenze": "Beide Achsen stammen aus derselben Originalanweisung; sie sind keine unabhängigen Bestätigungen und keine Laufzeitbeweise.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c09",
+      "aussage": "Fehlt die Spec, soll der Spec-Review ausdrücklich als ausgelassen berichtet werden.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b13"
+      ],
+      "aus": [],
+      "grenze": "Ein anderer Reviewteil darf dadurch nicht als Beleg für Spec-Erfüllung ausgegeben werden.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c10",
+      "aussage": "Matt Pocock beschreibt seine Skills als kleine anpassbare Methoden und kritisiert vollständig prozessbesitzende Frameworks.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b07"
+      ],
+      "aus": [],
+      "grenze": "Das ist eine Designposition des Autors und kein Leistungsvergleich mit GSD oder anderen Frameworks.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c11",
+      "aussage": "pstack ordnet Arbeit einem Playbook zu und lädt darüber benötigte Methoden.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b15"
+      ],
+      "aus": [],
+      "grenze": "Der gelesene Ablauf enthält eigene Harness- und Autonomieannahmen; seine Existenz belegt keinen gemessenen Nutzen.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c12",
+      "aussage": "Verhaltenstickets sollen schmale verifizierbare Slices und explizite Blocker enthalten; mechanische Migrationen sind eine benannte Ausnahme.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b11"
+      ],
+      "aus": [],
+      "grenze": "Expand–Contract und eine überprüfbare Integrationsgrenze müssen zur konkreten Migration passen; eine Ticketstruktur beweist keine gute Umsetzung.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c13",
+      "aussage": "Grilling trennt recherchierbare Fakten von Nutzerentscheidungen und klärt die aktuelle Entscheidungsfrontier.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b08",
+        "b09"
+      ],
+      "aus": [],
+      "grenze": "Eine leere Frontier ist nur so vollständig wie der erkannte Entscheidungsbaum; offene Entscheidungen bleiben offen.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c14",
+      "aussage": "pstack fordert Funktionsnachweise an der realen Einstiegsschnittstelle mit sichtbarer Evidenz.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b18"
+      ],
+      "aus": [],
+      "grenze": "Eine Verifikationsanweisung ist noch kein tatsächlich ausgeführter oder bestandener Test.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c15",
+      "aussage": "Ein erzeugter Verifikationsskill bleibt ohne bestätigten Prüflauf ein Entwurf.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b19"
+      ],
+      "aus": [],
+      "grenze": "Validierung gilt für die geprüfte Umgebung und Eingabe; sie belegt keine universelle Qualität.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c16",
+      "aussage": "Paperclips Dokumentation trennt Aufnahme in den Skill-Katalog von Agent-Zuweisung und Komposition.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b20"
+      ],
+      "aus": [],
+      "grenze": "Die Schnittstelle ist eine Referenz für Zuständigkeiten; unser Pilot übernimmt oder installiert dadurch keinen Skill.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c17",
+      "aussage": "GSD beschreibt die Rekonstruktion fehlenden Status aus Artefakten und trennt aktuelle Entscheidungszusammenfassung vom vollständigen Log.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b05",
+        "b06"
+      ],
+      "aus": [],
+      "grenze": "Die gelesenen Stellen sind eine Workflowanweisung und Dokumentation; sie belegen keine deterministisch korrekte Rekonstruktion.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c18",
+      "aussage": "Die ZazenCodes-Demo beschreibt Spec-Writer, Builder, Fachreviews und einen Approver mit Reparaturschleife.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b25",
+        "b26"
+      ],
+      "aus": [],
+      "grenze": "Eine gesponserte Einzelvorführung belegt weder Review-Vollständigkeit noch zuverlässigen autonomen Betrieb; beide Belege zählen als eine Herkunftsfamilie.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c19",
+      "aussage": "In diesem Repo benötigen Commits einen ausdrücklichen Auftrag; Produktions-Deployments benötigen Freigabe. Lokale Entwürfe sind autonom erlaubt.",
+      "nachweisart": "eigene-regel",
+      "beleg_ids": [
+        "b27"
+      ],
+      "aus": [],
+      "grenze": "Die Aussage beschreibt die vorliegenden Repo-Regeln. Der Pilot erteilt keine zusätzlichen Betriebs- oder Kommunikationsrechte.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c20",
+      "aussage": "Für den Pilot verbinden wir versionierte Aussagen, gestuften Abruf und bewusste Methodenauswahl zu einer wiederverwendbaren Wissensschicht.",
+      "nachweisart": "eigene-ableitung",
+      "beleg_ids": [],
+      "aus": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c10",
+        "c11",
+        "c16",
+        "c17"
+      ],
+      "grenze": "Dies ist unsere Architekturhypothese. Die Implementierung und Quellenprüfung ersetzen keinen Vergleich realer Factory-Ergebnisse.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c21",
+      "aussage": "To-spec synthetisiert bereits vorhandenen Kontext und fordert an dieser Stelle kein neues Interview.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b10"
+      ],
+      "aus": [],
+      "grenze": "Diese Anweisung setzt geklärten Kontext voraus. Sie rechtfertigt nicht, offene Produktentscheidungen auszulassen.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c22",
+      "aussage": "To-tickets vermeidet im langlebigen Ticket grundsätzlich konkrete Dateipfade und Codefragmente; präzise prototypische Entscheidungen sind eine Ausnahme.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b12"
+      ],
+      "aus": [],
+      "grenze": "Die Empfehlung betrifft das Ticketformat und nicht jede Form eines unmittelbar auszuführenden Implementierungsplans.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c23",
+      "aussage": "Der große pstack-Plan benennt konkrete Dateien, Symbole und beobachtbare Resultate; im Planmodus wird noch nicht implementiert.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b16",
+        "b17"
+      ],
+      "aus": [],
+      "grenze": "Die detaillierte Planung ist für größere Aufgaben gedacht; offensichtliche kleine Änderungen sollen den großen Plan auslassen.",
+      "geprueft": "2026-10-26"
+    },
+    {
+      "id": "c24",
+      "aussage": "Beim Standards-Review haben dokumentierte Repo-Regeln Vorrang; allgemeine Smells bleiben begründete Heuristiken.",
+      "nachweisart": "quellenaussage",
+      "beleg_ids": [
+        "b13",
+        "b14"
+      ],
+      "aus": [],
+      "grenze": "Standards-Konformität belegt weder Spec-Erfüllung noch Laufzeitverhalten oder Sicherheit.",
+      "geprueft": "2026-10-26"
+    }
+  ],
+  "synthesen": [
+    {
+      "id": "s-kontext",
+      "titel": "Kontextbereitstellung mit Herkunft und gezieltem Nachladen",
+      "pfad": "80_Knowledge/Vergleiche/Factory-Kontextbereitstellung.md",
+      "tags": [
+        "kontext",
+        "context",
+        "retrieval",
+        "memory",
+        "handoff",
+        "rollen",
+        "suche",
+        "belege"
+      ],
+      "kurzfassung": "Aufgabe und Rolle bestimmen die Auswahl. Fundstellen, Versionen und Gegenargumente bleiben nachladbar; ein Suchtreffer ist kein Gesamtverständnis.",
+      "aussage_ids": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c17",
+        "c18"
+      ],
+      "faehigkeit_ids": []
+    },
+    {
+      "id": "s-ablauf",
+      "titel": "Spec, Planung, Build und getrennte Abnahme",
+      "pfad": "80_Knowledge/Vergleiche/Factory-Spec-Build-Review.md",
+      "tags": [
+        "spec",
+        "spezifikation",
+        "planung",
+        "plan",
+        "tickets",
+        "review",
+        "standards",
+        "tests",
+        "verifikation",
+        "feature",
+        "umsetzung",
+        "builder",
+        "grilling"
+      ],
+      "kurzfassung": "Offene Entscheidungen, fertige Specs, Verhaltenstickets und Ausführungspläne sind verschiedene Artefakte. Spec-, Standards- und Funktionsprüfung behalten eigene Ergebnisse.",
+      "aussage_ids": [
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10",
+        "c11",
+        "c12",
+        "c13",
+        "c14",
+        "c15",
+        "c18",
+        "c19",
+        "c21",
+        "c22",
+        "c23",
+        "c24"
+      ],
+      "faehigkeit_ids": [
+        "f-spec-klaerung",
+        "f-implementierungsplanung",
+        "f-spec-review",
+        "f-standards-review",
+        "f-ergebnisverifikation"
+      ]
+    },
+    {
+      "id": "s-wissenspflege",
+      "titel": "Wissenspflege und bewusste Methodenauswahl",
+      "pfad": "80_Knowledge/Vergleiche/Factory-Wissenspflege-Methodenauswahl.md",
+      "tags": [
+        "wissen",
+        "wissenspflege",
+        "quelle",
+        "quellen",
+        "beleg",
+        "herkunft",
+        "familien",
+        "faehigkeit",
+        "fähigkeiten",
+        "methoden",
+        "skill",
+        "skills",
+        "version",
+        "aktualitaet",
+        "aktualität",
+        "cache",
+        "entscheidung",
+        "lernen"
+      ],
+      "kurzfassung": "Belege und Ableitungen werden versioniert. Herkunftsfamilien verhindern Mehrfachzählung; Fähigkeitskandidaten bleiben von Aktivierung und praktischem Erfolgsnachweis getrennt.",
+      "aussage_ids": [
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c10",
+        "c11",
+        "c16",
+        "c17",
+        "c18",
+        "c20"
+      ],
+      "faehigkeit_ids": [
+        "f-spec-klaerung",
+        "f-implementierungsplanung",
+        "f-spec-review",
+        "f-standards-review",
+        "f-ergebnisverifikation"
+      ]
+    }
+  ],
+  "faehigkeiten": [
+    {
+      "id": "f-spec-klaerung",
+      "titel": "Spec-Klärung",
+      "pfad": "80_Knowledge/Faehigkeiten/spec-klaerung.md",
+      "status": "kandidat",
+      "zweck": "Offene Produktentscheidungen klären und belastbare Fakten von gewählten Annahmen trennen.",
+      "aussage_ids": [
+        "c13",
+        "c21",
+        "c19"
+      ],
+      "eingaben": [
+        "Nutzerziel, vorhandene Anforderungen und bekannte Entscheidungen.",
+        "Zugänglicher Projektkontext und erreichbarer Entscheidungsträger."
+      ],
+      "ausgaben": [
+        "Entscheidungsbaum mit offenen und beantworteten Punkten.",
+        "Lokaler Spec-Entwurf mit Akzeptanzkriterien, Annahmen, Quellen und Scope-Grenzen."
+      ],
+      "voraussetzungen": [
+        "Interviewmodus bei offenen Entscheidungen; Synthesemodus bei ausreichend geklärtem Kontext."
+      ],
+      "vorgehen": [
+        "Bestehende Informationen lesen und recherchierbare Fakten selbst prüfen.",
+        "Abhängigkeiten der Entscheidungen ordnen und nur entscheidbare Fragen stellen.",
+        "Antworten und verbleibende Annahmen mit Herkunft dokumentieren.",
+        "Aus geklärtem Kontext einen lokalen Spec-Entwurf formulieren."
+      ],
+      "pruefung": [
+        "Offene Entscheidungen sind erkennbar und werden nicht stillschweigend als entschieden behandelt.",
+        "Jedes Akzeptanzkriterium beschreibt beobachtbares Verhalten."
+      ],
+      "stop": [
+        "Unbeantwortete Nutzerentscheidung mit wesentlichem Einfluss offen zurückgeben.",
+        "Der Spec-Entwurf erweitert den erteilten Umsetzungsauftrag nicht."
+      ],
+      "laufzeit": [
+        "Benötigt Datei-/Recherchezugriff und bei offenen Fragen einen Antwortkanal.",
+        "Originalskills erwarten teilweise Subagents/Tracker; der Kandidat installiert oder startet diese nicht."
+      ],
+      "grenzen": [
+        "Ein vollständiger Entscheidungsbaum oder bessere Produktqualität sind nicht belegt."
+      ],
+      "experiment": "Eine absichtlich mehrdeutige Feature-Idee und eine bereits geklärte Spec vergleichen: Nur der erste Fall soll offene Entscheidungen zurückgeben; beide müssen Annahmen und Fakten unterscheiden."
+    },
+    {
+      "id": "f-implementierungsplanung",
+      "titel": "Implementierungsplanung",
+      "pfad": "80_Knowledge/Faehigkeiten/implementierungsplanung.md",
+      "status": "kandidat",
+      "zweck": "Eine geklärte Spec in überprüfbare Arbeitseinheiten und tatsächliche Abhängigkeiten übersetzen.",
+      "aussage_ids": [
+        "c12",
+        "c22",
+        "c23",
+        "c19"
+      ],
+      "eingaben": [
+        "Spec, Architekturgrenzen, aktuelle Codeversion und erkennbare Testmöglichkeiten."
+      ],
+      "ausgaben": [
+        "Lokaler Aufgabenplan mit Verhalten, Abnahmekriterien und Blockern.",
+        "Für größere Aufgaben ein getrennter Ausführungsplan mit aktuellen Dateien, Symbolen und Prüfnachweisen."
+      ],
+      "voraussetzungen": [
+        "Ziel und Scope sind hinreichend geklärt.",
+        "Mechanische Migrationen brauchen eine begründete Integrationsgrenze statt künstlicher isolierter Slices."
+      ],
+      "vorgehen": [
+        "Demonstrierbare Arbeitseinheiten schneiden und echte Blocker benennen.",
+        "Das Ticket beschreibt Verhalten; ein zeitnaher Ausführungsplan konkretisiert bei Bedarf Dateien und Symbole.",
+        "Für jede Einheit einen prüfbaren Abschluss und benötigte Eingaben angeben.",
+        "Planumfang proportional zur Aufgabe halten und unklare Abhängigkeiten sichtbar lassen."
+      ],
+      "pruefung": [
+        "Jede Einheit besitzt ein beobachtbares Ergebnis und einen benannten Nachweis.",
+        "Blocker sind begründet; eine Reihenfolge ohne Abhängigkeit wird nicht als harte Blockade dargestellt."
+      ],
+      "stop": [
+        "Fehlende Spec oder Prüfmöglichkeit klären, bevor der Plan als ausführbar gilt.",
+        "Keine Tracker-Publikation oder Umsetzung allein durch die Erstellung dieses Kandidaten."
+      ],
+      "laufzeit": [
+        "Lesender Projektzugriff genügt für den lokalen Entwurf.",
+        "pstack-Checker, Spezialagenten und Tracker bleiben optionale, gesondert zu prüfende Adapter."
+      ],
+      "grenzen": [
+        "Der Plan beweist weder eine richtige Aufwandsschätzung noch funktionierende Umsetzung."
+      ],
+      "experiment": "Eine kleine Feature-Erweiterung und einen mechanischen Refactor planen lassen. Prüfen, ob unterschiedliche Zuschnitte und Integrationsgrenzen begründet werden und jedes Ergebnis überprüfbar ist."
+    },
+    {
+      "id": "f-spec-review",
+      "titel": "Spec-Review",
+      "pfad": "80_Knowledge/Faehigkeiten/spec-review.md",
+      "status": "kandidat",
+      "zweck": "Anforderungserfüllung und Scope eines konkreten Diffs nachvollziehbar prüfen.",
+      "aussage_ids": [
+        "c08",
+        "c09",
+        "c06",
+        "c19"
+      ],
+      "eingaben": [
+        "Auflösbarer Vergleichspunkt, Diff und identifizierbare Spec mit zitierbaren Anforderungen."
+      ],
+      "ausgaben": [
+        "Findings mit Datei-/Diffbezug und genauer Anforderungsreferenz.",
+        "Expliziter Status pro geprüfter Anforderung sowie fehlende oder unklare Eingaben."
+      ],
+      "voraussetzungen": [
+        "Der Vergleichspunkt ist gültig; der Diff enthält relevante Änderungen."
+      ],
+      "vorgehen": [
+        "Spec und Diff auf den gleichen Arbeitsauftrag beziehen.",
+        "Fehlende, teilweise und nicht beauftragte Änderungen getrennt benennen.",
+        "Jedes Finding an die konkrete Anforderung und Fundstelle binden.",
+        "Offene Runtime-Fragen an die Verifikation weitergeben."
+      ],
+      "pruefung": [
+        "Bei fehlender Spec lautet das Ergebnis nicht geprüft statt erfüllt.",
+        "Jedes Finding ist aus der Spec nachvollziehbar; unklare Anforderungen bleiben offene Fragen."
+      ],
+      "stop": [
+        "Fehlender Vergleichspunkt oder Spec verhindert eine vollständige Aussage über Spec-Erfüllung."
+      ],
+      "laufzeit": [
+        "Benötigt lesenden Git-/Spec-Zugriff.",
+        "Der Ursprungsworkflow verwendet Tracker und parallele Prüfer; der fachliche Kandidat ist ein lokaler Lesevertrag."
+      ],
+      "grenzen": [
+        "Lesendes Review beweist kein Laufzeitverhalten und keine unabhängige Release-Freigabe.",
+        "Spec- und Standards-Review stammen hier aus derselben Herkunftsfamilie."
+      ],
+      "experiment": "Einen bekannten Diff mit einer absichtlich fehlenden Anforderung und einmal ohne Spec prüfen: Erwartet werden eine belegte Lücke beziehungsweise ausdrücklich nicht geprüfte Spec-Erfüllung."
+    },
+    {
+      "id": "f-standards-review",
+      "titel": "Standards-Review",
+      "pfad": "80_Knowledge/Faehigkeiten/standards-review.md",
+      "status": "kandidat",
+      "zweck": "Einen Diff gegen tatsächliche Projektregeln prüfen und Heuristiken erkennbar getrennt halten.",
+      "aussage_ids": [
+        "c08",
+        "c24",
+        "c19"
+      ],
+      "eingaben": [
+        "Diff, Vergleichspunkt und vorhandene Standards, etwa CODING_STANDARDS.md oder CONTRIBUTING.md."
+      ],
+      "ausgaben": [
+        "Findings mit Datei-/Hunkbezug und zitierter Projektregel.",
+        "Getrennte Liste begründeter Heuristiken sowie nicht geprüfter Aspekte."
+      ],
+      "voraussetzungen": [
+        "Verfügbare Regelquellen und deren Geltungsbereich sind bekannt."
+      ],
+      "vorgehen": [
+        "Anwendbare Projektstandards ermitteln und widersprüchliche Vorgaben benennen.",
+        "Dokumentierte Regeln vor allgemeinen Smell-Heuristiken anwenden.",
+        "Bereits technisch geprüfte Eigenschaften nicht als eigene manuelle Erkenntnis verkaufen.",
+        "Standards-Ergebnis getrennt vom Spec-Ergebnis ausgeben."
+      ],
+      "pruefung": [
+        "Jede behauptete Regelverletzung hat eine tatsächliche Regelquelle.",
+        "Ohne dokumentierte Regel wird ein Befund als Heuristik bezeichnet."
+      ],
+      "stop": [
+        "Unklare Regelpriorität als offene Frage zurückgeben.",
+        "Fehlende Standards werden nicht durch erfundene Projektregeln ersetzt."
+      ],
+      "laufzeit": [
+        "Benötigt lesenden Diff- und Dateizugriff; kein produktiver Schreibzugriff."
+      ],
+      "grenzen": [
+        "Standards-Konformität belegt weder Anforderungserfüllung noch Funktion oder Sicherheit.",
+        "Die Aufteilung in zwei Kandidaten erzeugt keine zweite unabhängige Quelle."
+      ],
+      "experiment": "Einen Diff mit echter Regelverletzung und einem bloßen Code-Smell vorlegen. Erwartet werden unterschiedliche Begründungsarten und keine erfundene Regel."
+    },
+    {
+      "id": "f-ergebnisverifikation",
+      "titel": "Ergebnisverifikation",
+      "pfad": "80_Knowledge/Faehigkeiten/ergebnisverifikation.md",
+      "status": "kandidat",
+      "zweck": "Für eine abgegrenzte Änderung tatsächliches Verhalten gegen einen vorab benannten Prüfvertrag nachweisen.",
+      "aussage_ids": [
+        "c14",
+        "c15",
+        "c06",
+        "c07",
+        "c19"
+      ],
+      "eingaben": [
+        "Änderung, Abnahmekriterien, zulässige Prüfumgebung und tatsächlich erreichbare Einstiegsschnittstelle."
+      ],
+      "ausgaben": [
+        "Prüfbericht mit Eingaben, Umgebung, beobachtetem Ergebnis, Evidenzpfaden und Grenzen.",
+        "Getrennter Status bestanden, fehlgeschlagen oder nicht prüfbar je Kriterium."
+      ],
+      "voraussetzungen": [
+        "Die Prüfumgebung und ausgeführten Aktionen sind vom Auftrag gedeckt.",
+        "Abnahmebedingungen und erlaubte Nacharbeit stehen vor dem Lauf fest."
+      ],
+      "vorgehen": [
+        "Die reale CLI/API/UI oder passende Testoberfläche wählen.",
+        "Beobachtbare Kriterien und konkrete Nachweise vor dem Lauf benennen.",
+        "Prüfung innerhalb des erlaubten Scopes durchführen und Ergebnisse sichern.",
+        "Entwurf, ausgeführten Lauf und bestandenen Nachweis unterscheiden; begrenzte Nacharbeit dokumentieren."
+      ],
+      "pruefung": [
+        "Der Bericht enthält tatsächliche Beobachtungen und lässt unbewiesene Kriterien offen.",
+        "Die produzierende Instanz verschiebt nicht stillschweigend die Abnahmebedingungen."
+      ],
+      "stop": [
+        "Nicht erreichbare Oberfläche oder fehlende Berechtigung als nicht prüfbar melden.",
+        "Bei ausgeschöpftem Iterationslimit oder unklarer Abnahme eskalieren."
+      ],
+      "laufzeit": [
+        "Benötigt projektabhängige Test-/CLI-/Browserwerkzeuge.",
+        "Ein Runtime-Adapter muss erlaubte Aktionen konkret festlegen; die Karte führt nichts aus."
+      ],
+      "grenzen": [
+        "Grüne Checks liefern nur Evidenz für ihre Eingaben, Umgebung und Spezifikation.",
+        "Reviewer-Rolle und erzeugter Verifikationsskill sind für sich kein Unabhängigkeits- oder Erfolgsnachweis."
+      ],
+      "experiment": "In einer lokalen Testumgebung einen bekannten Defekt und einen nicht startbaren Dienst prüfen. Erwartet werden reproduzierbarer Fehlschlag beziehungsweise nicht prüfbar, jeweils mit Evidenz statt pauschalem Erfolg."
+    }
+  ],
+  "beziehungen": [
+    {
+      "id": "r01",
+      "von": "c02",
+      "typ": "implementiert",
+      "nach": "c01",
+      "begruendung": "Gestufter Abruf ist ein möglicher Mechanismus für rollen- und aufgabenbezogene Kontextbereitstellung; die Übertragung ist unsere Einordnung.",
+      "nachweisart": "eigene-ableitung"
+    },
+    {
+      "id": "r02",
+      "von": "c04",
+      "typ": "setzt-voraus",
+      "nach": "c03",
+      "begruendung": "Eine Versionsabweichung lässt sich erst gegen identifizierte und versionierte Belege prüfen.",
+      "nachweisart": "eigene-ableitung"
+    },
+    {
+      "id": "r03",
+      "von": "c05",
+      "typ": "ergaenzt",
+      "nach": "c03",
+      "begruendung": "Datei-/Belegversionen und Extraktor-/Promptversionen beschreiben verschiedene Ursachen veralteter Ableitungen.",
+      "nachweisart": "eigene-ableitung"
+    },
+    {
+      "id": "r04",
+      "von": "c10",
+      "typ": "steht-in-spannung",
+      "nach": "c11",
+      "begruendung": "Kleine frei kombinierbare Methoden und ein übergeordnetes Playbook brauchen eine bewusste Entscheidung darüber, wer den Ablauf besitzt.",
+      "nachweisart": "eigene-ableitung"
+    },
+    {
+      "id": "r05",
+      "von": "c13",
+      "typ": "steht-in-spannung",
+      "nach": "c21",
+      "begruendung": "Grilling klärt offene Entscheidungen; To-spec setzt für die Synthese ausreichend geklärten Kontext voraus. Die Aktivierungsbedingung löst den scheinbaren Widerspruch.",
+      "nachweisart": "eigene-ableitung"
+    },
+    {
+      "id": "r06",
+      "von": "c22",
+      "typ": "steht-in-spannung",
+      "nach": "c23",
+      "begruendung": "Langlebige Verhaltenstickets und dateigenaue Ausführungspläne brauchen unterschiedliche Detailtiefe. Beide werden als getrennte Artefakte verwendet.",
+      "nachweisart": "eigene-ableitung"
+    },
+    {
+      "id": "r07",
+      "von": "c08",
+      "typ": "ergaenzt",
+      "nach": "c06",
+      "begruendung": "Getrennte Reviewachsen helfen bei nachvollziehbaren Befunden; die Zuständigkeit für geschützte Abnahme muss zusätzlich feststehen.",
+      "nachweisart": "eigene-ableitung"
+    },
+    {
+      "id": "r08",
+      "von": "c14",
+      "typ": "ergaenzt",
+      "nach": "c08",
+      "begruendung": "Laufzeitbelege ergänzen lesende Diff-Prüfungen. Keine dieser Prüfarten ersetzt automatisch die andere.",
+      "nachweisart": "eigene-ableitung"
+    },
+    {
+      "id": "r09",
+      "von": "c15",
+      "typ": "setzt-voraus",
+      "nach": "c14",
+      "begruendung": "Ein Verifikationsentwurf wird erst durch einen nachgewiesenen Lauf zu einem bestätigten Prüfer für diesen Scope.",
+      "nachweisart": "eigene-ableitung"
+    },
+    {
+      "id": "r10",
+      "von": "c16",
+      "typ": "ergaenzt",
+      "nach": "c19",
+      "begruendung": "Katalogisierung, Zuordnung und erlaubte Nutzung werden getrennt beurteilt; maßgeblich bleiben unsere eigenen Freigaberegeln.",
+      "nachweisart": "eigene-ableitung"
+    },
+    {
+      "id": "r11",
+      "von": "c18",
+      "typ": "ergaenzt",
+      "nach": "c07",
+      "begruendung": "Der demonstrierte Rollenablauf liefert eine Illustration für begrenzte Reparaturschleifen, keinen unabhängigen Wirksamkeitsnachweis.",
+      "nachweisart": "eigene-ableitung"
+    }
+  ],
+  "offene_fragen": [
+    "Welche konkrete Projekt- und Aufgabenklasse bildet den ersten Factory-Vergleich?",
+    "Welche Eingriffshäufigkeit, Ergebnisqualität und Kosten rechtfertigen die zusätzliche Methodik?",
+    "Welche Runtime-/Tracker-/Tool-Adapter werden tatsächlich benötigt?",
+    "Wie werden neue oder widersprechende Belege außerhalb dieses begrenzten Piloten erschlossen?"
+  ]
+}
