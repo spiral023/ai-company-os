@@ -15,5 +15,6 @@ Kleine lokale Hilfsscripts für Phase 1.
 - `build_social_directory.py`: erzeugt die eigenständig nutzbare HTML-Kanalliste unter `docs/ki-quellen/index.html` aus Guide, Profilmetadaten und lokalen Bildern; Bedienung über `python ai.py social`, Aktualitätsprüfung mit `--check`.
 - `themen.py`: Themencluster für `80_Knowledge/` (`check`, `zuordnen`, `verwandt`, `luecken`, `index`, `blog`); Taxonomie und Zuordnung liegen in `80_Knowledge/Themen/`.
 - `quellen_statistik.py`: lokale Quellenstatistik mit Offline-HTML, JSON, Markdown und unveränderlichen Bestandsmessungen; `python ai.py quellen statistik --snapshot`. Bedienung und Zählregeln: `reports/quellen/README.md`. HTML-Vorlage und explizite Autoren-Aliase unter `70_Scripts/quellen_dashboard/`.
+- `build_quellen_feed.py`: baut den lokalen chronologischen Quellenfeed mit Originalposts, Videos, Volltextsuche und Filtern; `python ai.py quellen feed`. Statische Ausgabe unter `feed/_site/`, Bedienung und Hosting-Vorbereitung in `feed/README.md`.
 - `company_os_healthcheck.py`: führt die zentralen Repo-Checks gesammelt aus.
 - `sync_ai_coding_dictionary.py`: spiegelt das AI Coding Dictionary aus `external_repos/mattpocock/dictionary-of-ai-coding/` mit Sektionsordnern nach `00_Inbox/Quellen/URL/aihero-ai-coding-dictionary/`.

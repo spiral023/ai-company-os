@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { extractTweetText, extractArticleText, extractLinks } from './x-ingest.mjs';
+import {filterSourceThread, SOURCE_THREAD_POLICY} from './x-thread-source.mjs';
 
 // Ablage nach Quelltyp, Medien jeweils neben den Notizen des Typs:
 //   00_Inbox/Quellen/X/<slug>.md
@@ -115,6 +116,8 @@ export function formatInboxNote({
   fetchedAt,
 }) {
   const username = author?.username ?? 'i';
+  const selection=thread?.length ? filterSourceThread(tweet,thread) : null;
+  if(selection)thread=selection.thread;
   const title = tweet?.article?.title ?? '';
   const articleText = extractArticleText(tweet);
   const tweetText = extractTweetText(tweet);
@@ -134,6 +137,10 @@ export function formatInboxNote({
     'status: neu',
   ];
   if (title) fm.push(`titel: ${yamlString(title)}`);
+  const validLanguage=lang=>typeof lang==='string'&&/^[a-z]{2,3}(?:-[a-z0-9]+)*$/i.test(lang);
+  if(validLanguage(tweet.lang))fm.push(`sprache: ${tweet.lang.toLowerCase()}`);
+  const languages=[...new Set([tweet,...(thread??[])].map(post=>post.lang).filter(validLanguage).map(lang=>lang.toLowerCase()))];
+  if(languages.length)fm.push(`inhalt_sprachen: ${JSON.stringify(languages)}`);
   fm.push(`tweet_id: "${tweet.id}"`);
   // Klammert die Posts eines Threads zu einer Quelle: Ein späterer Lauf über
   // einen anderen Post desselben Strangs erkennt die Notiz daran wieder.
@@ -147,7 +154,7 @@ export function formatInboxNote({
   const okCount = (downloads ?? []).filter((d) => d.ok).length;
   const total = (downloads ?? []).length;
   if (total) fm.push(`medien: "${okCount}/${total} lokal"`);
-  if (thread?.length) fm.push(`thread_posts: ${thread.length}`, `thread_methode: ${threadMethod ?? '?'}`);
+  if (thread?.length) fm.push(`thread_posts: ${thread.length}`, `thread_methode: ${threadMethod ?? '?'}`,`thread_filter: ${SOURCE_THREAD_POLICY.version}`);
   fm.push('---', '');
 
   const lines = [...fm];
@@ -213,15 +220,9 @@ export function formatInboxNote({
 
   if (thread?.length) {
     lines.push('## Thread', '');
-    // Der Rückwärts-Walk folgt der Antwortkette und nimmt dabei auch Posts
-    // Dritter mit. Sie als Primärinhalt des Autors zu lesen wäre eine falsche
-    // Zuschreibung, deshalb steht ihr Urheber in der Überschrift.
-    const handles = new Map((threadUsers ?? []).map((u) => [u?.id, u?.username]).filter(([id]) => id));
     thread.forEach((t, i) => {
       const text = extractTweetText(t).trim();
-      const fremd = t?.author_id && tweet?.author_id && t.author_id !== tweet.author_id;
-      const handle = fremd ? handles.get(t.author_id) : null;
-      const marke = fremd ? ` · Reply von @${handle ?? 'unbekannt'} (nicht vom Autor)` : '';
+      const marke=selection?.supplements.includes(t.id)?' · Geprüfte Ergänzung des Autors':'';
       lines.push(`### ${i + 1}/${thread.length}${marke}`, '', text || '(kein Text)', '');
     });
   }

@@ -1,6 +1,6 @@
 # Quellen-Eingang
 
-Roh erfasste externe Quellen, vollständig und unbearbeitet. Eingangsstufe vor `80_Knowledge/`.
+Roh erfasste externe Quellen mit unverändertem Originaltext der ausgewählten Inhalte. Eingangsstufe vor `80_Knowledge/`. Bei X bilden Hauptpost und belegte Fortsetzungen die Quelle; die Gesprächsauswahl ist im [X-Playbook](../../30_Skills/local/knowledge-ingest/references/quellen-playbooks.md#xtwitter) beschrieben.
 
 ## Struktur
 
@@ -76,6 +76,8 @@ npm run ingest:tiktok -- <video-url-oder-id> [--force] [--refetch] [--no-media] 
 Eine bestehende Notiz wird **nicht** überschrieben — so gehen manuelle Ergänzungen und ein bereits gesetzter Status nicht verloren. `--force` überschreibt bewusst; `--refetch` holt zusätzlich die API-Antwort neu (kostet einen Request bzw. $0.001).
 
 Der JSON-Cache unter `scripts/.ingest/` verhindert doppelte API-Calls und ist gitignored.
+
+X-Threads werden vor Speicherung und beim Lesen älterer Caches nach Autor und Antwortkette gefiltert. `thread_posts` zählt die übernommenen Posts, nicht alle Antworten und nicht die Vollständigkeit eines Threads. Bestehende Notizen können mit `node scripts/clean-x-threads.mjs` ohne Netzwerk geprüft werden; `--apply` übernimmt die Vorschau mit Sicherungen und Prüfbericht unter `tmp/quellen-lauf/` und erhält Verarbeitungsstatus sowie manuelle Ergänzungen.
 
 ### Woher das Veröffentlichungsdatum kommt
 

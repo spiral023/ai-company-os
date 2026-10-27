@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import {filterCachedThread} from './lib/x-thread-source.mjs';
 import {
   parseArgs,
   parseTweetId,
@@ -227,9 +228,14 @@ async function main() {
       thread,
       threadMethod,
     };
+    payload=filterCachedThread(payload).payload;
     fs.writeFileSync(jsonPath, JSON.stringify(payload, null, 2), 'utf8');
   }
 
+  // Auch alte Cache-Treffer durchlaufen dieselbe Inhaltsauswahl.
+  const filtered=filterCachedThread(payload);
+  payload=filtered.payload;
+  if(filtered.excluded.length)console.log(`  ${filtered.excluded.length} Gesprächsantworten/Fremdposts aus dem Quelleninhalt ausgeschlossen.`);
   const abgerufen = payload.tweet;
   const author = findAuthor(payload.includes, abgerufen.author_id);
   // Der Strang ankert an seinem ältesten eigenen Post, nicht an der übergebenen

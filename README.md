@@ -16,6 +16,7 @@ Einzelne Softwareprojekte liegen später in eigenen GitHub-Repositories. Dieses 
 | Obsidian | Markdown, Wiki-Links und kurze Index-Dateien |
 | Knowledge-System | Patterns und Source-Notizen unter `80_Knowledge/`; Rohquellen nach Quelltyp unter `00_Inbox/Quellen/` |
 | KI-Kanalliste | [Interaktive HTML-Liste](docs/ki-quellen/index.html) mit Suche, Themenfiltern und Merkliste; aktualisieren mit `python ai.py social` |
+| Quellenfeed | [Lokaler Reader für Originalquellen](feed/README.md) mit Videos, Volltextsuche und Filtern; starten mit `python ai.py quellen feed` |
 
 ## Was dieses Repo ist
 
@@ -75,6 +76,7 @@ python ai.py health
 python ai.py new
 python ai.py skills
 python ai.py social
+python ai.py quellen feed
 python ai.py external
 python ai.py ingest <url-oder-pdf-pfad>
 python ai.py feeds list

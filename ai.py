@@ -112,6 +112,20 @@ def run_quellen_statistik(args: argparse.Namespace) -> int:
     return run_subprocess(command, "Quellenstatistik erstellen")
 
 
+def run_quellen_feed(args: argparse.Namespace) -> int:
+    """Quellenfeed bauen und optional den lokalen Server starten."""
+    command = [sys.executable, "-X", "utf8", script_path("build_quellen_feed.py"), "--port", str(args.port)]
+    if args.build:
+        command.append("--build")
+    if args.kopieren:
+        command.append("--kopieren")
+    if args.avatare_aktualisieren:
+        command.append("--avatare-aktualisieren")
+    if args.ausgabe:
+        command.extend(["--ausgabe", args.ausgabe])
+    return run_subprocess(command, "Quellenfeed erstellen")
+
+
 def run_status(_args: argparse.Namespace) -> int:
     """Show git status in short format."""
     if shutil.which("git") is None:
@@ -333,6 +347,14 @@ def build_parser() -> argparse.ArgumentParser:
     statistik.add_argument("--bestand", choices=["raw", "sources"], default="raw")
     statistik.add_argument("--ausgabe", help="Anderer Ausgabeordner")
     statistik.set_defaults(handler=run_quellen_statistik)
+
+    feed = quellen_sub.add_parser("feed", help="Originalquellen im lokalen chronologischen Feed lesen")
+    feed.add_argument("--build", action="store_true", help="Nur die statische Website erzeugen")
+    feed.add_argument("--port", type=int, default=8766, help="Lokaler Port (Standard: 8766)")
+    feed.add_argument("--ausgabe", help="Anderer Ausgabeordner")
+    feed.add_argument("--kopieren", action="store_true", help="Medien kopieren statt Hardlinks verwenden")
+    feed.add_argument("--avatare-aktualisieren", action="store_true", help="Fehlende Profilbilder öffentlich abrufen und lokal speichern")
+    feed.set_defaults(handler=run_quellen_feed)
 
     social = subparsers.add_parser("social", help="Lokale HTML-Liste der KI-Kanäle erstellen")
     social.add_argument("--check", action="store_true", help="HTML-Liste auf Aktualität prüfen")

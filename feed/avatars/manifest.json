@@ -1,0 +1,887 @@
+{
+  "authors": {
+    "X:thierryborgeat": {
+      "image": "images/8e88de9138b7a8d76135.jpg",
+      "source": "https://x.com/ThierryBorgeat",
+      "image_url": "https://pbs.twimg.com/profile_images/1651137004967534593/-xGFqI_x_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/ThierryBorgeat/status/2113916644946833884"
+    },
+    "X:gothburz": {
+      "image": "images/16d2bd77249ef02bd2c9.jpg",
+      "source": "https://x.com/gothburz",
+      "image_url": "https://pbs.twimg.com/profile_images/2098147575798939655/I5HUsl34_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/gothburz/status/2113727457744265517"
+    },
+    "X:theo": {
+      "image": "images/432227fe4f18bd82cb1a.jpg",
+      "source": "https://x.com/theo",
+      "image_url": "https://pbs.twimg.com/profile_images/2106484435382333440/vXOVE8EX_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/theo/status/2113424203345265053"
+    },
+    "X:codexreleases": {
+      "image": "images/dbcb4bb807f5653fe4b4.jpg",
+      "source": "https://x.com/CodexReleases",
+      "image_url": "https://pbs.twimg.com/profile_images/2060445873285296131/FNkE7_y2_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/CodexReleases/status/2113499625571188984"
+    },
+    "X:nickadobos": {
+      "image": "images/f4350feb978ebdc7a7ac.jpg",
+      "source": "https://x.com/NickADobos",
+      "image_url": "https://pbs.twimg.com/profile_images/1489416790316748804/iXxGy6-B_normal.png",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/NickADobos/status/2113430301183823901"
+    },
+    "X:cu30rry_": {
+      "image": "images/efe877fdafe220e561c9.jpg",
+      "source": "https://x.com/cu30rry_",
+      "image_url": "https://pbs.twimg.com/profile_images/2101959420439834625/ucyJOshP_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/cu30rry_/status/2113242716473602270"
+    },
+    "X:itamar_mar": {
+      "image": "images/7db326ff8c47b6119f00.jpg",
+      "source": "https://x.com/itamar_mar",
+      "image_url": "https://pbs.twimg.com/profile_images/1608739169756405760/6pH5vnWV_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/itamar_mar/status/2113255396299128887"
+    },
+    "X:jasondclinton": {
+      "image": "images/d4b32e647bd1ac2b257a.jpg",
+      "source": "https://x.com/JasonDClinton",
+      "image_url": "https://pbs.twimg.com/profile_images/1836256630121598976/D4QeJuxW_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/JasonDClinton/status/2113325263157395456"
+    },
+    "X:franzbruckhoff": {
+      "image": "images/c9a00cf0e705eab64aba.jpg",
+      "source": "https://x.com/franzbruckhoff",
+      "image_url": "https://pbs.twimg.com/profile_images/2107454147112968192/lXTSgXqq_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/franzbruckhoff/status/2113401002355298410"
+    },
+    "X:undefinedki": {
+      "image": "images/aece5a4d2a9d21bbc2bc.jpg",
+      "source": "https://x.com/undefinedKi",
+      "image_url": "https://pbs.twimg.com/profile_images/2054664188417413120/DZKz0Tqn_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/undefinedKi/status/2113689331412156666"
+    },
+    "X:luinlee": {
+      "image": "images/c849e390233427634e35.jpg",
+      "source": "https://x.com/luinlee",
+      "image_url": "https://pbs.twimg.com/profile_images/2111297667779432448/O7iHassM_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/luinlee/status/2113085361836744764"
+    },
+    "X:githubnext": {
+      "image": "images/f69f39bdfa3d7562ab2d.jpg",
+      "source": "https://x.com/GitHubNext",
+      "image_url": "https://pbs.twimg.com/profile_images/1445094957354655745/-znTubDN_normal.png",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/GitHubNext/status/2112936525457740139"
+    },
+    "X:pbakaus": {
+      "image": "images/16ca1530ad260d93813e.jpg",
+      "source": "https://x.com/pbakaus",
+      "image_url": "https://pbs.twimg.com/profile_images/1550292580117622784/cT3WhwXw_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/pbakaus/status/2113065895069368804"
+    },
+    "X:shanaka86": {
+      "image": "images/a55940a650dead374df0.jpg",
+      "source": "https://x.com/shanaka86",
+      "image_url": "https://pbs.twimg.com/profile_images/1891509660630269952/kR7B-kAC_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/shanaka86/status/2113146345657954463"
+    },
+    "X:milesdeutscher": {
+      "image": "images/eab40310d2a2ab0920d4.jpg",
+      "source": "https://x.com/milesdeutscher",
+      "image_url": "https://pbs.twimg.com/profile_images/2043255869513601025/wFHeLjZX_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/milesdeutscher/status/2112924796866699336"
+    },
+    "X:unslothai": {
+      "image": "images/f1d71a5d63aef67c13f7.jpg",
+      "source": "https://x.com/UnslothAI",
+      "image_url": "https://pbs.twimg.com/profile_images/2036313340616777728/OLALWB2__normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/UnslothAI/status/2112212605930778830"
+    },
+    "X:0xkense1": {
+      "image": "images/2fec3139a6304f67cabf.jpg",
+      "source": "https://x.com/0xKense1",
+      "image_url": "https://pbs.twimg.com/profile_images/2107841269409968128/WutMru1k_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/0xKense1/status/2111105138290987198"
+    },
+    "TikTok:vincentmumme": {
+      "image": "images/d68abc3c90bb4d3db856.jpg",
+      "source": "https://www.tiktok.com/@vincentmumme",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/373e62b1de72114a9ad07c94345762a2~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=ae4fd4df&x-expires=1793113200&x-signature=ubAIUpLSZMLGMQVgaSlEmhFQy68%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@vincentmumme/video/7699008074752757025"
+    },
+    "X:math_rachel": {
+      "image": "images/ba2ef3313dc494e444e3.jpg",
+      "source": "https://x.com/math_rachel",
+      "image_url": "https://pbs.twimg.com/profile_images/1606468642375602177/OwMf0hll_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/math_rachel/status/2111238648188584306"
+    },
+    "X:poteto": {
+      "image": "images/7457265d2c42de434ca4.jpg",
+      "source": "https://x.com/poteto",
+      "image_url": "https://pbs.twimg.com/profile_images/2093473719830315008/oo09g1Ov_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/poteto/status/2111133080526495985"
+    },
+    "TikTok:zazencodes": {
+      "image": "images/4c975a9fc74276f12e4e.jpg",
+      "source": "https://www.tiktok.com/@zazencodes",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/1c78427231b2c09b018bddbf11f042d1~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=f3461c3e&x-expires=1793113200&x-signature=l336lnWRcY7pamI7TlqKXOhj1FY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@zazencodes/video/7698415925753564424"
+    },
+    "X:mardehaym": {
+      "image": "images/f341e777b97e091e0601.jpg",
+      "source": "https://x.com/mardehaym",
+      "image_url": "https://pbs.twimg.com/profile_images/1217178205863514112/73FfYSrY_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/mardehaym/status/2110763129885835505"
+    },
+    "X:andrewcurran_": {
+      "image": "images/a677dbcb1d7ae3a0ba99.jpg",
+      "source": "https://x.com/AndrewCurran_",
+      "image_url": "https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/AndrewCurran_/status/2110444907966181544"
+    },
+    "X:emilkowalski": {
+      "image": "images/ac823cf64634645a86da.jpg",
+      "source": "https://x.com/emilkowalski",
+      "image_url": "https://pbs.twimg.com/profile_images/1469017066795679751/CjEOyirb_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/emilkowalski/status/2109974810650390696"
+    },
+    "X:0xcodila": {
+      "image": "images/85b0cc379b3d6d2d9f84.jpg",
+      "source": "https://x.com/0xCodila",
+      "image_url": "https://pbs.twimg.com/profile_images/2064453666661441536/nj8n8Mei_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/0xCodila/status/2109623431763292649"
+    },
+    "YouTube:niklas steenfatt": {
+      "image": "images/5b67940d4b1b888ab9d0.jpg",
+      "source": "https://www.youtube.com/@NiklasSteenfatt",
+      "image_url": "https://yt3.ggpht.com/-3NUqVqxSDHQ3bHDuXUj3Xd1wM2mqltFJzaRMXxtH-3Imb_JvPVeLfdPRmPcyC0MQafa-wredwg=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=W4m_8ovS0RY"
+    },
+    "X:0xmovez": {
+      "image": "images/39ab70335e1dff843388.jpg",
+      "source": "https://x.com/0xMovez",
+      "image_url": "https://pbs.twimg.com/profile_images/1998148360478322688/851J4fBL_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/0xMovez/status/2109604520770548146"
+    },
+    "X:josharosen": {
+      "image": "images/694857aeba6776983f8d.jpg",
+      "source": "https://x.com/JoshARosen",
+      "image_url": "https://pbs.twimg.com/profile_images/1418279052805353474/zn_g71-U_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/JoshARosen/status/2109649928276341191"
+    },
+    "TikTok:helphannaa": {
+      "image": "images/7ea3963c96cecec3752b.jpg",
+      "source": "https://www.tiktok.com/@helphannaa",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/3bfaa236ecad87cb7b48090226a3392e~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=988e69d3&x-expires=1793113200&x-signature=czKjsZkQLhoc1SBmmmO%2BToHRlNw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@helphannaa/video/7695765886849912096"
+    },
+    "X:sarahfim": {
+      "image": "images/a07b9a3654de9858efd6.jpg",
+      "source": "https://x.com/sarahfim",
+      "image_url": "https://pbs.twimg.com/profile_images/2101833100242169856/ADNAggJy_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/sarahfim/status/2109736893198016898"
+    },
+    "X:satyanadella": {
+      "image": "images/6e2c90af8155b068f3fa.jpg",
+      "source": "https://x.com/satyanadella",
+      "image_url": "https://pbs.twimg.com/profile_images/1221837516816306177/_Ld4un5A_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/satyanadella/status/2108931348857827686"
+    },
+    "X:beamnxw": {
+      "image": "images/86fb79a0d1048e43684d.jpg",
+      "source": "https://x.com/beamnxw",
+      "image_url": "https://pbs.twimg.com/profile_images/2074793345314861056/3FE1i0oW_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/beamnxw/status/2108616740846420354"
+    },
+    "X:karl_lauterbach": {
+      "image": "images/7dea2660cc69f3066b9b.jpg",
+      "source": "https://x.com/Karl_Lauterbach",
+      "image_url": "https://pbs.twimg.com/profile_images/601388878554079232/db5tdAsW_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/Karl_Lauterbach/status/2108478065072374233"
+    },
+    "YouTube:hood informatik": {
+      "image": "images/2a633207a325eee1932f.jpg",
+      "source": "https://www.youtube.com/@HoodInformatik",
+      "image_url": "https://yt3.ggpht.com/rK8ytWJO4xtmLT_T0mX3rUc_UEKjrZjG1fGOqi1M2SOm9K71NN2XREVfbwMOyA7ELbYZLcITFVo=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=l5SbBoauUNE"
+    },
+    "X:openrouter": {
+      "image": "images/a1da3515d4522607c431.jpg",
+      "source": "https://x.com/OpenRouter",
+      "image_url": "https://pbs.twimg.com/profile_images/2076693957258727424/AyRghTGJ_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/OpenRouter/status/2108689756372775370"
+    },
+    "X:shadcn": {
+      "image": "images/34542bff72c96ff6b5c0.jpg",
+      "source": "https://x.com/shadcn",
+      "image_url": "https://pbs.twimg.com/profile_images/1593304942210478080/TUYae5z7_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/shadcn/status/2108574564586332615"
+    },
+    "X:openai": {
+      "image": "images/453159ea33ed994556fa.jpg",
+      "source": "https://x.com/OpenAI",
+      "image_url": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/OpenAI/status/2107894997538525580"
+    },
+    "X:lukepierceops": {
+      "image": "images/9b8941b8f868ca7a1d56.jpg",
+      "source": "https://x.com/lukepierceops",
+      "image_url": "https://pbs.twimg.com/profile_images/1858706582768340992/BKbyrKsQ_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/lukepierceops/status/2108655186080342138"
+    },
+    "TikTok:philgueth": {
+      "image": "images/d7020bb730d543c89e2e.jpg",
+      "source": "https://www.tiktok.com/@philgueth",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/ed9d8e30cd3b2c972340231107d293b6~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=a1ac2083&x-expires=1793113200&x-signature=KdDWOPjO6lqO36hpDcKZYnAyr%2Fs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@philgueth/video/7692403362586774817"
+    },
+    "X:arena": {
+      "image": "images/cded83cf6ba7aec8c4aa.jpg",
+      "source": "https://x.com/arena",
+      "image_url": "https://pbs.twimg.com/profile_images/2017015061454438400/iNKfXZ_I_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/arena/status/2106104809514516541"
+    },
+    "YouTube:venelin valkov": {
+      "image": "images/0902daf25cd3e9025d10.jpg",
+      "source": "https://www.youtube.com/@venelin_valkov",
+      "image_url": "https://yt3.ggpht.com/ytc/AIdro_m9F-OOM0CgNbRBAhvii19iZgiK7aQUBO8rIjGDXIk55A=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=VZ7HkHYs9Ag"
+    },
+    "YouTube:moritz brandes": {
+      "image": "images/098fff868f349a1b79f8.jpg",
+      "source": "https://www.youtube.com/@moritz-brandes",
+      "image_url": "https://yt3.ggpht.com/KpGDV4T0ZtMaXJoEWcV_OJ_9HqxCgNYYvAveg2RBE9r6CYbEJI2atXh0EvZwYDe3z0BCpWFetyU=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=3gmpWRVeTI8"
+    },
+    "X:seeconvm": {
+      "image": "images/c4e769d68e4c6c21fbcc.jpg",
+      "source": "https://x.com/seeconvm",
+      "image_url": "https://pbs.twimg.com/profile_images/1970163836767305732/7m5LsQRP_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/seeconvm/status/2106096193235259564"
+    },
+    "X:0xwhrrari": {
+      "image": "images/621e42ff26ff80ca41e3.jpg",
+      "source": "https://x.com/0xwhrrari",
+      "image_url": "https://pbs.twimg.com/profile_images/2113768413889769472/CTeA0eDH_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/0xwhrrari/status/2105643919119696297"
+    },
+    "X:flxrnc": {
+      "image": "images/fee2bcbefaac12a0555d.jpg",
+      "source": "https://x.com/flxrnc",
+      "image_url": "https://pbs.twimg.com/profile_images/2100596838915092480/4Mv5e9Qa_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/flxrnc/status/2105311836190978392"
+    },
+    "X:suraj_sharma14": {
+      "image": "images/c6ad212f7b6085631f3e.jpg",
+      "source": "https://x.com/suraj_sharma14",
+      "image_url": "https://pbs.twimg.com/profile_images/2079192339889938432/WEbyDq4I_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/suraj_sharma14/status/2104790775397830755"
+    },
+    "X:epochairesearch": {
+      "image": "images/c929c55addfdb52c354b.jpg",
+      "source": "https://x.com/EpochAIResearch",
+      "image_url": "https://pbs.twimg.com/profile_images/1866142753127616512/DYcE9bN1_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/EpochAIResearch/status/2102510281176023529"
+    },
+    "X:_avichawla": {
+      "image": "images/150cea5b6df6a073f96f.jpg",
+      "source": "https://x.com/_avichawla",
+      "image_url": "https://pbs.twimg.com/profile_images/1868297128801390593/Ovl677JQ_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/_avichawla/status/2101563610644496464"
+    },
+    "YouTube:zdfheute nachrichten": {
+      "image": "images/e9f0e2103f263856c3fa.jpg",
+      "source": "https://www.youtube.com/@ZDFheute",
+      "image_url": "https://yt3.ggpht.com/ytc/AIdro_kdfkzxAw6EEII0JcY7HsYyZMwAGe1ycdDDrHwAxRky5Xg=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=sFxhYEmaamA"
+    },
+    "X:akshay_pachaar": {
+      "image": "images/0d40f76a312bc09d3610.jpg",
+      "source": "https://x.com/akshay_pachaar",
+      "image_url": "https://pbs.twimg.com/profile_images/1578327351544360960/YFpWSWIX_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/akshay_pachaar/status/2101037514945597645"
+    },
+    "YouTube:ai engineer": {
+      "image": "images/2e3c3d4c996e2860d3dd.jpg",
+      "source": "https://www.youtube.com/@aiDotEngineer",
+      "image_url": "https://yt3.ggpht.com/ajVemEB89DAOemsbfuMY6ZOWXJAACx3cbty9z21jeqRKODaVkDBSRun1b1xfQJljEsziOWS_Mg=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=g0vqT_wZtXA"
+    },
+    "X:darioamodei": {
+      "image": "images/f28bff25e39ac6d1fc72.jpg",
+      "source": "https://x.com/DarioAmodei",
+      "image_url": "https://pbs.twimg.com/profile_images/2015835742577012736/uOwdzrEz_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/DarioAmodei/status/2098773920774074715"
+    },
+    "YouTube:eric tech": {
+      "image": "images/2bd32ac7befca015f52d.jpg",
+      "source": "https://www.youtube.com/@EricWTech",
+      "image_url": "https://yt3.ggpht.com/-fAZCNoiUQ0xrOaqyCUPXW4MRRTNbJyWSN-KFzFSJlWNrl36J0h5EwfMKJi3GaNY0A5Ml1mLbS0=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=6CaQ9ZFuuKI"
+    },
+    "X:sairahul1": {
+      "image": "images/c8707cc98eba26a1ea99.jpg",
+      "source": "https://x.com/sairahul1",
+      "image_url": "https://pbs.twimg.com/profile_images/1999441729800536065/6-3Y5xyR_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/sairahul1/status/2096902575035683147"
+    },
+    "X:guinnesschen": {
+      "image": "images/7bd07371190409904fdf.jpg",
+      "source": "https://x.com/guinnesschen",
+      "image_url": "https://pbs.twimg.com/profile_images/1973296494670389255/K5zOPlJY_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/guinnesschen/status/2095920936172335278"
+    },
+    "X:waynesutton": {
+      "image": "images/2d83e180c32f6e5ee66e.jpg",
+      "source": "https://x.com/waynesutton",
+      "image_url": "https://pbs.twimg.com/profile_images/1951519225123840002/RF_QFrOA_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/waynesutton/status/2096296858343846261"
+    },
+    "X:joedevon": {
+      "image": "images/f8411dceb934a9553745.jpg",
+      "source": "https://x.com/joedevon",
+      "image_url": "https://pbs.twimg.com/profile_images/1842232541266456577/5adeKohf_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/joedevon/status/2095996826596024745"
+    },
+    "X:pvncher": {
+      "image": "images/aada3dcd041474cc4af4.jpg",
+      "source": "https://x.com/pvncher",
+      "image_url": "https://pbs.twimg.com/profile_images/2104274058095513600/_e2nlZX-_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/pvncher/status/2095991462416490862"
+    },
+    "X:vikingmute": {
+      "image": "images/e4f778f3b8519f9a457f.jpg",
+      "source": "https://x.com/vikingmute",
+      "image_url": "https://pbs.twimg.com/profile_images/725179208528322560/TPjU7qop_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/vikingmute/status/2092059170812108811"
+    },
+    "X:nvidiaai": {
+      "image": "images/0b77df858cc8f65e8b5b.jpg",
+      "source": "https://x.com/NVIDIAAI",
+      "image_url": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/NVIDIAAI/status/2090113635683340622"
+    },
+    "TikTok:stefan.antonelli": {
+      "image": "images/dc9219694ff5279d6cf5.jpg",
+      "source": "https://www.tiktok.com/@stefan.antonelli",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/6e6951366a92a25c65bd9560908c1e03~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=b8b77b42&x-expires=1793113200&x-signature=ewCehimmz1WL6byfmymVP5WbD80%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@stefan.antonelli/video/7685007734546107670"
+    },
+    "X:docker": {
+      "image": "images/766ae50d038ea54d7ee1.jpg",
+      "source": "https://x.com/Docker",
+      "image_url": "https://pbs.twimg.com/profile_images/2102946150831828992/5lpInj4b_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/Docker/status/2089789519788728379"
+    },
+    "X:limestonehq": {
+      "image": "images/8400ee2f191b813ad2f2.jpg",
+      "source": "https://x.com/LimestoneHQ",
+      "image_url": "https://pbs.twimg.com/profile_images/2057105154575392768/VIztEzTo_normal.png",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/LimestoneHQ/status/2089711978914725979"
+    },
+    "X:shannholmberg": {
+      "image": "images/2a2b40ca691a11e6da0f.jpg",
+      "source": "https://x.com/shannholmberg",
+      "image_url": "https://pbs.twimg.com/profile_images/2018272759122440192/JJPUdPDs_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/shannholmberg/status/2087539757052285200"
+    },
+    "YouTube:the morpheus": {
+      "image": "images/342f82d3f4b3537a4077.jpg",
+      "source": "https://www.youtube.com/@TheMorpheusVlogs",
+      "image_url": "https://yt3.ggpht.com/5tg8OMP_2gPwbHKlmlDWChyg7IRgBR56V2CEljNd0CgT78u78oD3Hwt-LBG6BiuJRuSlhSlp9A=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=T5H9nTE34CI"
+    },
+    "X:alexfinn": {
+      "image": "images/9010193af3674170482d.jpg",
+      "source": "https://x.com/AlexFinn",
+      "image_url": "https://pbs.twimg.com/profile_images/1745232634278461440/7gQcr_R__normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/AlexFinn/status/2082982462012227648"
+    },
+    "X:chatgpt": {
+      "image": "images/73e85944e1336de8c199.jpg",
+      "source": "https://x.com/ChatGPT",
+      "image_url": "https://pbs.twimg.com/profile_images/2081980424666935296/qU5G7mQg_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/ChatGPT/status/2082970812584432115"
+    },
+    "TikTok:the.ai.career.coach": {
+      "image": "images/8916c3a1f17ef9762d83.jpg",
+      "source": "https://www.tiktok.com/@the.ai.career.coach",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/6dfaf7b21b5df4fbb44cf97eafafb073~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=f1dcb2fb&x-expires=1793113200&x-signature=AkRWSZJf%2Fp1OmfDCqXnDLVSX%2FYA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@the.ai.career.coach/video/7671162234608864544"
+    },
+    "X:cerebras": {
+      "image": "images/a2b8a6304d0ea4eef88c.jpg",
+      "source": "https://x.com/cerebras",
+      "image_url": "https://pbs.twimg.com/profile_images/1894806880804913152/zLdh072p_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/cerebras/status/2081828128952095022"
+    },
+    "X:valsai": {
+      "image": "images/5bb8cb1eb63699031896.jpg",
+      "source": "https://x.com/ValsAI",
+      "image_url": "https://pbs.twimg.com/profile_images/2087888189185007616/r9Zu091v_normal.png",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/ValsAI/status/2080817011157094511"
+    },
+    "TikTok:steffen_hauptmann": {
+      "image": "images/976b02dad0f1c5c6938f.jpg",
+      "source": "https://www.tiktok.com/@steffen_hauptmann",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/f3e05a07193f63dc8332a143979f9438~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=3409098f&x-expires=1793113200&x-signature=NEYfl4LBLqHQraK8tCWgtdOKXdw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@steffen_hauptmann/video/7669828414232136982"
+    },
+    "X:andrew_n_carr": {
+      "image": "images/3b301e0e71fc80f121a6.jpg",
+      "source": "https://x.com/andrew_n_carr",
+      "image_url": "https://pbs.twimg.com/profile_images/2069224163307659264/ASh-yk_b_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/andrew_n_carr/status/2080727000004878593"
+    },
+    "X:ccarlosai": {
+      "image": "images/291a8f0978da40a028f8.jpg",
+      "source": "https://x.com/ccarlosai",
+      "image_url": "https://pbs.twimg.com/profile_images/2082204479684788224/8AF33cXt_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/ccarlosai/status/2080339591014261034"
+    },
+    "X:unclebobmartin": {
+      "image": "images/b0237f267e6a052fcc4b.jpg",
+      "source": "https://x.com/unclebobmartin",
+      "image_url": "https://pbs.twimg.com/profile_images/2037262183751704577/54AiU968_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/unclebobmartin/status/2080257779395154409"
+    },
+    "X:colebemis": {
+      "image": "images/16c7ee9d28ed99dc918f.jpg",
+      "source": "https://x.com/colebemis",
+      "image_url": "https://pbs.twimg.com/profile_images/1950087739187351552/9aa-zJbF_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/colebemis/status/2080392348836790395"
+    },
+    "X:hedgeye": {
+      "image": "images/76f506ff14cf65918296.jpg",
+      "source": "https://x.com/Hedgeye",
+      "image_url": "https://pbs.twimg.com/profile_images/1075083234260803584/LLWz7WJH_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/Hedgeye/status/2078165516657549710"
+    },
+    "X:claudeai": {
+      "image": "images/75e07e42a4ad9c34bad3.jpg",
+      "source": "https://x.com/claudeai",
+      "image_url": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/claudeai/status/2079595988998554047"
+    },
+    "TikTok:niklas_volland": {
+      "image": "images/1cd320bfbc6b38dda552.jpg",
+      "source": "https://www.tiktok.com/@niklas_volland",
+      "image_url": "https://p19-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/abf2ceba834af005ab55d2695e62e796~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=0b0900bb&x-expires=1793113200&x-signature=LVGyyUHHyhEXu0pUinABH%2BmtTSw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@niklas_volland/video/7666143066742459680"
+    },
+    "X:reach_vb": {
+      "image": "images/58d16cc50856fc5567e1.jpg",
+      "source": "https://x.com/reach_vb",
+      "image_url": "https://pbs.twimg.com/profile_images/1509901130670747666/JFlrSzB4_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/reach_vb/status/2078108681678299194"
+    },
+    "X:amasad": {
+      "image": "images/94bd93863b190ccba6be.jpg",
+      "source": "https://x.com/amasad",
+      "image_url": "https://pbs.twimg.com/profile_images/1897858917507776512/TRVTyKFk_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/amasad/status/2077802290304684404"
+    },
+    "X:xudong07452910": {
+      "image": "images/cae597464fe5bcbe01fa.jpg",
+      "source": "https://x.com/Xudong07452910",
+      "image_url": "https://pbs.twimg.com/profile_images/1327292688736034816/vJTxjjLU_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/Xudong07452910/status/2077246527756775933"
+    },
+    "TikTok:jousefmurad": {
+      "image": "images/d101945cbed878a3666c.jpg",
+      "source": "https://www.tiktok.com/@jousefmurad",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/3543ed37590599a396c08e970cc442db~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=64c27b2c&x-expires=1793113200&x-signature=H2ZKkjqk%2BKRjG5tnatO6zS%2Bombo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@jousefmurad/video/7663144929610173718"
+    },
+    "X:rasbt": {
+      "image": "images/36c9fa861c965a01c9dd.jpg",
+      "source": "https://x.com/rasbt",
+      "image_url": "https://pbs.twimg.com/profile_images/1661187442043486209/a3E4t1eV_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/rasbt/status/2075573860796436626"
+    },
+    "X:saboo_shubham_": {
+      "image": "images/5b7d0fcc49e728c515d0.jpg",
+      "source": "https://x.com/Saboo_Shubham_",
+      "image_url": "https://pbs.twimg.com/profile_images/2011150989668270080/wQ4NP39W_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/Saboo_Shubham_/status/2076380344631398606"
+    },
+    "X:matthewberman": {
+      "image": "images/252c624e7c3400f7627a.jpg",
+      "source": "https://x.com/MatthewBerman",
+      "image_url": "https://pbs.twimg.com/profile_images/2051399921467830272/9RGo_6vv_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/MatthewBerman/status/2075597710435266674"
+    },
+    "TikTok:fredrikharkort": {
+      "image": "images/65051ec7ea96ccfad8d0.jpg",
+      "source": "https://www.tiktok.com/@fredrikharkort",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/6ffb2af63a82be9ce32edee21b039e84~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=3981a316&x-expires=1793113200&x-signature=OUpwAByY4yzXXVo5Qx%2B6UHTZ%2BMk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@fredrikharkort/video/7662423861232717089"
+    },
+    "X:emanueledpt": {
+      "image": "images/74842f5751084907a479.jpg",
+      "source": "https://x.com/emanueledpt",
+      "image_url": "https://pbs.twimg.com/profile_images/2100337918988443649/40mAXpDI_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/emanueledpt/status/2073013891752251574"
+    },
+    "X:neilzegh": {
+      "image": "images/d46c94923ccb8749ded4.jpg",
+      "source": "https://x.com/neilzegh",
+      "image_url": "https://pbs.twimg.com/profile_images/1922791965805903872/0jK1csVd_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/neilzegh/status/2072977540193378428"
+    },
+    "TikTok:calebwritescode": {
+      "image": "images/fabf5b9ba3458f81d2e1.jpg",
+      "source": "https://www.tiktok.com/@calebwritescode",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/5dfa402418f053ec0cba6da22354624e~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=ccefe74d&x-expires=1793113200&x-signature=ETzWXXdZqrtvSXKIJu%2B%2FJ1h0fuw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@calebwritescode/video/7658324465037675789"
+    },
+    "X:mvanhorn": {
+      "image": "images/4633f59fc540da603dd4.jpg",
+      "source": "https://x.com/mvanhorn",
+      "image_url": "https://pbs.twimg.com/profile_images/1565403341647400960/55RW_HGX_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/mvanhorn/status/2063865685558903149"
+    },
+    "TikTok:levanty_ch": {
+      "image": "images/ebf8de573458b879ade1.jpg",
+      "source": "https://www.tiktok.com/@levanty_ch",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/779aca61e0a0627e57428de1d5989229~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=83500ae8&x-expires=1793113200&x-signature=YGggDcNY3IBUQHTg%2BJngMhZaiVg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@levanty_ch/video/7654489369960566038"
+    },
+    "X:darkzodchi (@zodchiii)": {
+      "image": "images/b197efb0b0923b6c781c.jpg",
+      "source": "https://x.com/zodchiii",
+      "image_url": "https://pbs.twimg.com/profile_images/1999509933302124544/ABxY9N7S_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/zodchiii/status/2053042131111927976"
+    },
+    "X:alibaba qwen": {
+      "image": "images/d24b4f6af3f722898e77.jpg",
+      "source": "https://x.com/Alibaba_Qwen",
+      "image_url": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/Alibaba_Qwen/status/2046939764428009914"
+    },
+    "X:fraser cottrell (@sourfraser)": {
+      "image": "images/7698143fb404cf5deba0.jpg",
+      "source": "https://x.com/sourfraser",
+      "image_url": "https://pbs.twimg.com/profile_images/1700116844965777408/-oMtJXV__normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/sourfraser/status/2035454870204100810"
+    },
+    "X:paulsolt": {
+      "image": "images/46845723442e233c814a.jpg",
+      "source": "https://x.com/PaulSolt",
+      "image_url": "https://pbs.twimg.com/profile_images/1876014019967864832/ucFysJCn_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/PaulSolt/status/2042716870512353294"
+    },
+    "TikTok:christophmagnussen": {
+      "image": "images/adc9d026bb1ae910a2c7.jpg",
+      "source": "https://www.tiktok.com/@christophmagnussen",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-useast2a-avt-0068-euttp/6d2e10d8bd943b1730485e70bac9eb80~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=a2523cf3&x-expires=1793113200&x-signature=g8KbM2UxUeJ9ly2iRXFKEnHy1DM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@christophmagnussen/video/7642335774192569632"
+    },
+    "X:meer | ai tools & news": {
+      "image": "images/91da25b76a37e3d5e54b.jpg",
+      "source": "https://x.com/Meer_AIIT",
+      "image_url": "https://pbs.twimg.com/profile_images/1912624182577229824/37ydjzvn_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/Meer_AIIT/status/2027509711722188976"
+    },
+    "X:gmoney.eth": {
+      "image": "images/0bda905fa8b4710f630c.jpg",
+      "source": "https://x.com/gmoneyNFT",
+      "image_url": "https://pbs.twimg.com/profile_images/1626216945698881541/kF6xM_Cb_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/gmoneyNFT/status/2022454519741767800"
+    },
+    "X:avid": {
+      "image": "images/9dbef9749a3ae395d0b3.jpg",
+      "source": "https://x.com/Av1dlive",
+      "image_url": "https://pbs.twimg.com/profile_images/2010392290590912512/x7vtAe5W_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/Av1dlive/status/2023086925817729306"
+    },
+    "X:minty": {
+      "image": "images/216690ab34b6b5ed208e.jpg",
+      "source": "https://x.com/DeFiMinty",
+      "image_url": "https://pbs.twimg.com/profile_images/1580943652045701120/yc9sUEj9_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/DeFiMinty/status/2022470560505090071"
+    },
+    "X:damien": {
+      "image": "images/35da2882be1209628242.jpg",
+      "source": "https://x.com/damienghader",
+      "image_url": "https://pbs.twimg.com/profile_images/2001034503138033668/hu7rhoQa_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/damienghader/status/2023780178128728201"
+    },
+    "YouTube:lenny's podcast": {
+      "image": "images/996805ced120c4b25bd8.jpg",
+      "source": "https://www.youtube.com/@LennysPodcast",
+      "image_url": "https://yt3.ggpht.com/Wk7-4UW17JqDXgVWDiE7s1gJxDkt_UwNa2oNw8OYRwc9deiCv2V2fFAdNgByDi0K9AAF0YMj=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=We7BZVKbCVw"
+    },
+    "X:rohit (@rohit4verse)": {
+      "image": "images/33f515755d663ea158ef.jpg",
+      "source": "https://x.com/rohit4verse",
+      "image_url": "https://pbs.twimg.com/profile_images/2005314466255360000/XtVoqVdV_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/rohit4verse/status/2021622526112358663"
+    },
+    "X:tom crawshaw": {
+      "image": "images/472d4a7046eb7407c88b.jpg",
+      "source": "https://x.com/tomcrawshaw01",
+      "image_url": "https://pbs.twimg.com/profile_images/1912749702828945408/kgtfnQn4_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/tomcrawshaw01/status/2020866308230009189"
+    },
+    "X:harshil tomar": {
+      "image": "images/a10e5fd3b30406ce263a.jpg",
+      "source": "https://x.com/Hartdrawss",
+      "image_url": "https://pbs.twimg.com/profile_images/2112230856932880384/zgE3tuxw_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/Hartdrawss/status/2019433363287806243"
+    },
+    "X:klöss (@kloss_xyz)": {
+      "image": "images/4da18528337e92914ed8.jpg",
+      "source": "https://x.com/kloss_xyz",
+      "image_url": "https://pbs.twimg.com/profile_images/1999391201162633219/zKXohr6m_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/kloss_xyz/status/2019152438910165393?s=20"
+    },
+    "X:tadas petra": {
+      "image": "images/fc161e3d0e13c99b570a.jpg",
+      "source": "https://x.com/tadaspetra",
+      "image_url": "https://pbs.twimg.com/profile_images/2089346712057884672/shSyc6Zt_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/tadaspetra/status/2019204136982532407"
+    },
+    "X:aiedge_": {
+      "image": "images/2590c518c1a800fff901.jpg",
+      "source": "https://x.com/aiedge_",
+      "image_url": "https://pbs.twimg.com/profile_images/1910271186442846208/vrYKSYRn_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/aiedge_/status/2018356670070718614"
+    },
+    "X:meer_aiit": {
+      "image": "images/076abdba73d63815293c.jpg",
+      "source": "https://x.com/Meer_AIIT",
+      "image_url": "https://pbs.twimg.com/profile_images/1912624182577229824/37ydjzvn_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/Meer_AIIT/status/2017984668205756551"
+    },
+    "X:santiago (@svpino)": {
+      "image": "images/409c85ad3a3995afb95b.jpg",
+      "source": "https://x.com/svpino",
+      "image_url": "https://pbs.twimg.com/profile_images/1581385027757264898/j5GjtUiq_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/svpino/status/2018682144361734368"
+    },
+    "X:anthony riera": {
+      "image": "images/2337b59f8e48851f841d.jpg",
+      "source": "https://x.com/anthonyriera",
+      "image_url": "https://pbs.twimg.com/profile_images/1952043514692280321/v4gOT-jg_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/anthonyriera/status/2018221220160827828"
+    },
+    "X:ai edge (@aiedge_)": {
+      "image": "images/61820c31d9300aaf0f29.jpg",
+      "source": "https://x.com/aiedge_",
+      "image_url": "https://pbs.twimg.com/profile_images/1910271186442846208/vrYKSYRn_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/aiedge_/status/2011108297152082250"
+    },
+    "X:google ai studio": {
+      "image": "images/cf733a449b7c61f822c8.jpg",
+      "source": "https://x.com/GoogleAIStudio",
+      "image_url": "https://pbs.twimg.com/profile_images/2089794087998156800/eZOMHRVb_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/GoogleAIStudio/status/1992267030050083091"
+    },
+    "X:hoeem (@hooeem)": {
+      "image": "images/f4a83e8b91744c28e856.jpg",
+      "source": "https://x.com/hooeem",
+      "image_url": "https://pbs.twimg.com/profile_images/1583462717498728455/puvD9UlZ_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/hooeem/status/2007914329748668472"
+    },
+    "X:ai edge": {
+      "image": "images/265478a9d58efbed8450.jpg",
+      "source": "https://x.com/aiedge_",
+      "image_url": "https://pbs.twimg.com/profile_images/1910271186442846208/vrYKSYRn_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/aiedge_/status/2014009389427101949"
+    },
+    "X:meta alchemist (@meta_alchemist)": {
+      "image": "images/f986e712274dedd41376.jpg",
+      "source": "https://x.com/meta_alchemist",
+      "image_url": "https://pbs.twimg.com/profile_images/2100871727282843648/4D7rectJ_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/meta_alchemist/status/2007388392850641182"
+    },
+    "X:ashpreet bedi (@ashpreetbedi)": {
+      "image": "images/acd6e0f6f5967635071b.jpg",
+      "source": "https://x.com/ashpreetbedi",
+      "image_url": "https://pbs.twimg.com/profile_images/2054969725961318400/ti_f07zy_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/ashpreetbedi/status/2011220028453241218"
+    },
+    "X:eyad khrais (@eyad_khrais)": {
+      "image": "images/e8203349077d3ca73043.jpg",
+      "source": "https://x.com/eyad_khrais",
+      "image_url": "https://pbs.twimg.com/profile_images/2042359879063482368/h1ZuX1sl_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/eyad_khrais/status/2010076957938188661"
+    },
+    "X:elenakvcs": {
+      "image": "images/cdd8e3512b2f85c96774.jpg",
+      "source": "https://x.com/elenakvcs",
+      "image_url": "https://pbs.twimg.com/profile_images/2011653232095879168/iGH5ida9_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/elenakvcs/status/2008228601980985550"
+    },
+    "X:eyad (@eyad_khrais)": {
+      "image": "images/6a2999d59b0bc8bb13cf.jpg",
+      "source": "https://x.com/eyad_khrais",
+      "image_url": "https://pbs.twimg.com/profile_images/2042359879063482368/h1ZuX1sl_normal.jpg",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://x.com/eyad_khrais/status/2010810802023141688"
+    },
+    "YouTube:the morpheus tutorials": {
+      "image": "images/533d1c4471a74ba5e2fc.jpg",
+      "source": "https://www.youtube.com/@TheMorpheusTutorials",
+      "image_url": "https://yt3.ggpht.com/snC0LnsxtKffzBiXAA-TQkusoCEpRtbxlfa1gU8RnI4GWHf4sOzog1Pl7pt6XuSPzR8DhCudhRE=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=BA8ieZxiocU"
+    },
+    "YouTube:brutkasten": {
+      "image": "images/9d6eed6084d6e641718d.jpg",
+      "source": "https://www.youtube.com/@brutkasten",
+      "image_url": "https://yt3.ggpht.com/TtkPL8Hb9eCWi8jpnBOeO0FWgMcAeSBPQwJfPk6HAfANFMJJlS9qxy9P8h-eVmjbqUkZ3eHn=s176-c-k-c0x00ffffff-no-rj",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.youtube.com/watch?v=KlbIwEHFLCU"
+    },
+    "TikTok:silviu.technology": {
+      "image": "images/066be9359fe280a7592f.jpg",
+      "source": "https://www.tiktok.com/@silviu.technology",
+      "image_url": "https://p16-common-sign.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/ccfe87cf906b811f6f8302585099ce7d~tplv-tiktokx-cropcenter:720:720.jpeg?dr=10399&refresh_token=b7622e5e&x-expires=1793113200&x-signature=Lbj1RYnCCaVwyKHfmOaSgnhpMDg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a",
+      "checked_at": "2026-10-25",
+      "verified_via": "https://www.tiktok.com/@silviu.technology/video/7554320240696462614"
+    }
+  },
+  "last_checked": "2026-10-25",
+  "unavailable": [
+    {
+      "author": "TikTok:techfeed5",
+      "reason": "TikTok-Profil konnte nicht zugeordnet werden"
+    },
+    {
+      "author": "X:god of prompt",
+      "reason": "Post-Autor stimmt nicht mit dem Profil überein"
+    },
+    {
+      "author": "X:dhruv1103",
+      "reason": "Post-ID fehlt"
+    }
+  ],
+  "profile_links": {
+    "matt-pocock": {
+      "url": "https://www.youtube.com/@mattpocockuk",
+      "source": "https://www.youtube.com/watch?v=251hsWgoTPM",
+      "checked_at": "2026-10-25"
+    }
+  }
+}

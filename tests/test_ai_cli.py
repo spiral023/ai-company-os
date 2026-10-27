@@ -26,6 +26,12 @@ def load_ai_module():
 class AiCliTest(unittest.TestCase):
     """Check that ai.py forwards commands to existing scripts."""
 
+    def test_quellen_feed_forwards_build_and_output(self) -> None:
+        ai = load_ai_module()
+        with patch.object(ai, "run_subprocess", return_value=0) as run:
+            self.assertEqual(ai.main(["quellen", "feed", "--build", "--port", "8770", "--kopieren", "--ausgabe", "mein-feed"]), 0)
+        self.assertEqual(run.call_args.args[0], [sys.executable, "-X", "utf8", str(ROOT / "70_Scripts/build_quellen_feed.py"), "--port", "8770", "--build", "--kopieren", "--ausgabe", "mein-feed"])
+
     def test_source_statistics_forwards_snapshot_and_filters(self) -> None:
         ai = load_ai_module()
         with patch.object(ai, "run_subprocess", return_value=0) as run:

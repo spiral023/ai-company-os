@@ -53,6 +53,8 @@ Der Katalog lässt sich mit Security-Checklisten erweitern: Row Level Security, 
 
 ## Spannungen & offene Fragen
 
+- Korrektur 2026-10-25: Bei [[2026-10-22-franzbruckhoff-2113401002355298410]] wurden Gesprächsantworten aus der Rohquelle entfernt. Der Beleg vom 22.10. stützt sich weiterhin auf den Hauptprompt und die gekennzeichnete Ergänzung zu False Positives. Die damalige Aussage zu repospezifischen mehreren Prüfdurchgängen stammt aus einer entfernten Gesprächsantwort und gehört nicht mehr zum übernommenen Quelleninhalt.
+
 - 2026-10-22: [[2026-10-19-voxyz_ai-2112302775547679169]] erweitert den ursprünglich lesenden Prüfauftrag um lokale oder Preview-Testinteraktionen und einen begrenzten Korrekturlauf. Testdaten, erlaubte Änderungen und menschlich zu prüfende Preis-, Rechts- und Datenschutzbefunde brauchen einen expliziten Scope. Vier simulierte Personas und ihre Rückkehrabsicht sind keine reale Nutzerstichprobe; [[Produktreife-durch-echte-Testnutzer]] liefert eine andere Art von Evidenz.
 
 - 2026-10-09 · [[2026-10-04-emilkowalski-2106752670405099523]] beschreibt mit `/break-ui` eine Variante mit Daten-Fixture und anschließenden Korrekturen. Das erweitert den ursprünglich lesenden Prüfauftrag; Prüfen, Erzeugen von Testdaten und Codeänderungen brauchen jeweils klaren Scope. Rendering mit Extremdaten belegt keine vollständige Release- oder Hardware-Abnahme.

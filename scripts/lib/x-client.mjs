@@ -4,11 +4,13 @@ export const TWEET_FIELDS = [
   'note_tweet',
   'article',
   'created_at',
+  'lang',
   'public_metrics',
   'entities',
   'author_id',
   'conversation_id',
   'referenced_tweets',
+  'in_reply_to_user_id',
   'attachments',
 ];
 export const EXPANSIONS = [

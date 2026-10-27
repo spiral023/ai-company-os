@@ -22,3 +22,20 @@ agentic-james:
 julian-ivanov:
   name: Julian Ivanov
   aliases: ["YouTube:julian ivanov | ki-automatisierung", "YouTube:julian ivanov"]
+# Namensvarianten sind durch identische Handles beziehungsweise explizite
+# Autorenangaben im archivierten Beitrag belegt; keine reine Namensähnlichkeit.
+boris-cherny:
+  name: Boris Cherny
+  aliases: ["X:bcherny", "X:boris cherny (@bcherny)"]
+jarrod-watts:
+  name: Jarrod Watts
+  aliases: ["X:jarrodwatts", "X:jarrod watts (@jarrodwatts)"]
+lauren-tan:
+  name: Lauren Tan
+  aliases: ["X:poteto", "URL:lauren tan (@poteto)"]
+claude-developers:
+  name: Claude Developers
+  aliases: ["X:claudedevs", "X:claude developers (@claudedevs)"]
+dario-amodei:
+  name: Dario Amodei
+  aliases: ["X:darioamodei", "URL:darioamodei", "URL:dario amodei"]

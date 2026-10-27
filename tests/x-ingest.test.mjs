@@ -187,6 +187,7 @@ test('downloadMedia schreibt Dateien und übersteht einzelne Fehlschläge', asyn
 test('Inbox-Notiz trägt Status, lokale Bildpfade und Thread', () => {
   const tweet = {
     id: '42',
+    author_id: 'a',
     conversation_id: '42',
     created_at: '2026-07-27T19:44:39.000Z',
     text: 'https://t.co/x',
@@ -199,7 +200,7 @@ test('Inbox-Notiz trägt Status, lokale Bildpfade und Thread', () => {
     slug: '2026-07-27-ada-42',
     media: [],
     articleMedia: [{ type: 'photo', cover: true, alt: 'Chart', url: 'https://pbs.twimg.com/media/a.jpg' }],
-    thread: [tweet, { id: '43', text: 'Zweiter Post' }],
+    thread: [tweet, { id: '43', author_id: 'a', text: 'Zweiter Post', referenced_tweets: [{type: 'replied_to', id: '42'}] }],
     threadMethod: 'backward-walk',
     downloads: [{ url: 'https://pbs.twimg.com/media/a.jpg', file: '01-cover.jpg', ok: true }],
     fetchedAt: '2026-08-04T10:00:00.000Z',
@@ -216,6 +217,13 @@ test('Inbox-Notiz trägt Status, lokale Bildpfade und Thread', () => {
   assert.match(note, /## Artikel-Volltext\n\nVolltext hier/);
   assert.match(note, /!\[Chart\]\(medien\/2026-07-27-ada-42\/01-cover\.jpg\)/);
   assert.match(note, /### 2\/2\n\nZweiter Post/);
+});
+
+test('X-Notizen bewahren die API-Sprachen von Hauptpost und übernommenem Thread', () => {
+  const tweet={id:'42',author_id:'a',text:'Root',lang:'ja'};
+  const note=formatInboxNote({tweet,author:{username:'author'},slug:'test',thread:[tweet,{id:'43',author_id:'a',lang:'en',text:'Useful continuation',referenced_tweets:[{type:'replied_to',id:'42'}]}],fetchedAt:'2026-10-25'});
+  assert.match(note,/\nsprache: ja\n/);
+  assert.match(note,/\ninhalt_sprachen: \["ja","en"\]\n/);
 });
 
 test('Nicht geladene Bilder behalten die Remote-URL und werden markiert', () => {
@@ -286,9 +294,7 @@ test('Ohne conversation_id faellt das Feld auf die Tweet-ID zurueck', () => {
   assert.match(note, /\nconversation_id: "9"\n/);
 });
 
-test('Posts Dritter im Thread werden ihrem Urheber zugeschrieben', () => {
-  // Der Rueckwaerts-Walk nimmt Antworten Dritter mit. Ohne Kennzeichnung
-  // laesen sie sich wie Aussagen des Autors.
+test('Posts Dritter und Antworten darauf werden aus dem Quellthread entfernt', () => {
   const note = formatInboxNote({
     tweet: { id: '1', author_id: 'a', conversation_id: '1', text: 'Erstpost', created_at: '2026-01-01T10:00:00.000Z' },
     author: { name: 'Ada', username: 'ada' },
@@ -297,8 +303,8 @@ test('Posts Dritter im Thread werden ihrem Urheber zugeschrieben', () => {
     articleMedia: [],
     thread: [
       { id: '1', author_id: 'a', text: 'Erstpost' },
-      { id: '2', author_id: 'b', text: 'Fremde Antwort' },
-      { id: '3', author_id: 'a', text: 'Antwort des Autors' },
+      { id: '2', author_id: 'b', text: 'Fremde Antwort', referenced_tweets: [{type: 'replied_to', id: '1'}] },
+      { id: '3', author_id: 'a', text: 'Antwort des Autors', referenced_tweets: [{type: 'replied_to', id: '2'}] },
     ],
     threadMethod: 'backward-walk',
     threadUsers: [
@@ -308,12 +314,11 @@ test('Posts Dritter im Thread werden ihrem Urheber zugeschrieben', () => {
     fetchedAt: '2026-01-02T00:00:00.000Z',
   });
 
-  assert.match(note, /### 1\/3\n/);
-  assert.match(note, /### 2\/3 · Reply von @grace \(nicht vom Autor\)/);
-  assert.match(note, /### 3\/3\n/);
+  assert.match(note, /thread_posts: 1/);
+  assert.doesNotMatch(note, /Fremde Antwort|Antwort des Autors/);
 });
 
-test('Ohne bekannten Handle bleibt der fremde Post trotzdem markiert', () => {
+test('Auch ohne bekannten Handle wird der fremde Post ausgeschlossen', () => {
   const note = formatInboxNote({
     tweet: { id: '1', author_id: 'a', text: 'Erstpost', created_at: '2026-01-01T10:00:00.000Z' },
     author: { name: 'Ada', username: 'ada' },
@@ -327,5 +332,6 @@ test('Ohne bekannten Handle bleibt der fremde Post trotzdem markiert', () => {
     threadMethod: 'backward-walk',
     fetchedAt: '2026-01-02T00:00:00.000Z',
   });
-  assert.match(note, /### 2\/2 · Reply von @unbekannt \(nicht vom Autor\)/);
+  assert.doesNotMatch(note, /Fremde Antwort/);
+  assert.match(note, /thread_posts: 1/);
 });

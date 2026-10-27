@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Originalposts, Videos und Artikel aus deinem Quellenarchiv.">
+  <title>Quellenfeed · AI Company OS</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f5138'/%3E%3Cpath d='M10 8h8l5 5v12H10zM18 8v6h5M13 18h7M13 21h7' fill='none' stroke='white' stroke-width='1.6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="feed.css">
+  <script>try {document.documentElement.dataset.theme=localStorage.getItem('quellenfeed-theme')||'light'} catch {}</script>
+  <script type="module" src="feed.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Quellenfeed</a>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-mark" aria-hidden="true">▤</span> AI Company OS <span class="breadcrumb">/ Quellen</span></a><div class="top-actions"><span id="local-badge" class="local-badge">● Lokal</span><button id="theme" class="icon-button" aria-label="Farbschema wechseln" title="Farbschema wechseln">☾</button><button id="mobile-filters" class="mobile-only" aria-expanded="false" aria-controls="sidebar">Filter</button></div></header>
+  <aside id="sidebar" class="sidebar" aria-label="Quellenfilter">
+    <p class="eyebrow">Bibliothek</p><button class="library-button" id="all-sources" aria-pressed="true">▤ <span>Alle Quellen</span><span id="total-count" class="count"></span></button>
+    <nav class="personal-library" aria-label="Deine Leselisten">
+      <button class="library-button" data-library="later" aria-pressed="false">◷ <span>Später lesen</span><span class="count" data-library-count="later">0</span></button>
+      <button class="library-button" data-library="saved" aria-pressed="false">☆ <span>Merkliste</span><span class="count" data-library-count="saved">0</span></button>
+      <button class="library-button" data-library="read" aria-pressed="false">✓ <span>Gelesen</span><span class="count" data-library-count="read">0</span></button>
+    </nav>
+    <section><h2>Autoren</h2><label class="sr-only" for="author-search">Autoren durchsuchen</label><input id="author-search" class="author-search" type="search" placeholder="Autor finden …"><div id="author-list" class="filter-list"></div><label class="sr-only" for="author">Alle Autoren</label><select id="author"><option value="">Alle Autoren</option></select></section>
+    <section><h2>Themen</h2><div id="topic-list" class="filter-list"></div><label class="sr-only" for="topic">Alle Themen</label><select id="topic"><option value="">Alle Themen</option></select></section>
+    <section><h2>Zeitraum</h2><label class="sr-only" for="month">Zeitraum</label><select id="month"><option value="">Alle Monate</option></select></section>
+    <details class="more-filters"><summary>Weitere Filter</summary><label for="status">Verarbeitung</label><select id="status"><option value="">Alle Status</option><option value="verarbeitet">Verarbeitet</option><option value="neu">Neu</option><option value="ignoriert">Ignoriert</option></select><p class="muted small">„Ignoriert“ kann auch bedeuten, dass der Inhalt bereits durch eine andere Quelle abgedeckt ist.</p></details>
+    <button id="reset" class="reset-button">↺ Filter zurücksetzen</button>
+    <p class="sidebar-note">Dein Archiv, im Original.<br>Externe Inhalte laden beim Öffnen.</p>
+  </aside>
+  <main id="main" tabindex="-1">
+    <div class="page-heading"><div><p class="eyebrow" id="page-eyebrow">Deine Quellenbibliothek</p><h1 id="page-title">Quellenfeed</h1><p class="intro" id="page-intro">Originalposts, Videos und Artikel aus deinem Archiv.</p></div><span id="archive-count" class="archive-count"></span></div>
+    <div class="search-wrap"><span aria-hidden="true">⌕</span><label class="sr-only" for="search">Quellen durchsuchen</label><input id="search" type="search" placeholder="Quellen, Autoren und Inhalte durchsuchen …" autocomplete="off"><kbd aria-hidden="true">Strg K</kbd></div>
+    <div class="feed-controls"><div id="platforms" class="platforms" role="group" aria-label="Plattform"></div><label class="sort-label" for="sort">Sortieren nach<select id="sort"><option value="published">Veröffentlichung ↓</option><option value="captured">Erfassung ↓</option></select></label></div>
+    <div class="results-line"><p id="result-count" role="status" aria-live="polite">Quellen werden geladen …</p><span class="muted small">Neueste zuerst</span></div>
+    <div id="active-filters" class="active-filters" aria-label="Aktive Filter"></div>
+    <section id="topic-overview" class="topic-overview" aria-label="Themenübersicht" hidden></section>
+    <div id="feed" aria-label="Chronologischer Quellenfeed"></div>
+    <button id="more" class="load-more" hidden>Weitere Quellen laden</button>
+    <noscript><p>Für Suche, Filter und die Anzeige der Quellen bitte JavaScript aktivieren.</p></noscript>
+    <footer>AI Company OS <span>·</span> Aus deinem Markdown-Archiv <span>·</span> <a href="#main">Nach oben ↑</a></footer>
+  </main>
+  <dialog id="viewer" class="viewer" aria-labelledby="viewer-title">
+    <header class="viewer-header"><h2 id="viewer-title"></h2><button id="viewer-close" aria-label="Ansicht schließen" autofocus>×</button></header>
+    <div id="viewer-content" class="viewer-content"></div>
+    <p id="viewer-status" class="viewer-status" role="status" aria-live="polite"></p>
+  </dialog>
+  <p id="library-status" class="app-status" role="status" aria-live="polite"></p>
+  <button id="to-top" class="to-top" aria-label="Nach oben" hidden>↑</button>
+</body>
+</html>

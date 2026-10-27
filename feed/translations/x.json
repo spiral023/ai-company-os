@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "notes": {
+    "00_Inbox/Quellen/X/2026-07-15-xudong07452910-2077246527756775933.md": {
+      "source_language": "zh",
+      "target_language": "de",
+      "translated_at": "2026-10-25",
+      "method": "KI-Übersetzung aus dem vollständigen archivierten Post-Text; Absatzstruktur, Links und technische Bezeichner geprüft.",
+      "segments": [
+        {
+          "original": "OpenAI 公布了 GPT-5.6 Sol 的最新提示词指南，核心可能就一句话：少写点废话，把任务边界讲清楚。\n\n这份文档真的很值得看，它并不是教你继续堆更长的 system prompt，而是建议把 prompt 做轻：目标是什么、成功标准是什么、哪些证据必须有、什么时候该停、哪些动作需要确认。\n\n这其实很符合新一代 Agent 的变化。\n\n模型越来越强以后，过度规定每一步流程，反而可能拖慢它、增加 token、制造冲突。真正重要的是给它一个清楚的任务契约，让它在安全边界内自己选择路径。\n\n我觉得这对 AI coding 特别有启发。\n\n以后写 AGENTS.md / system prompt，重点不再是把模型管得越死越好，最重要的是把验收标准、权限边界和验证流程写得足够清楚。\n\nhttps://t.co/Y0o9n4Cjp0",
+          "translated": "OpenAI hat den neuesten Prompt-Leitfaden für GPT-5.6 Sol veröffentlicht. Sein Kern lässt sich vielleicht in einem Satz zusammenfassen: Weniger überflüssiges Gerede, dafür klare Aufgabengrenzen.\n\nDie Lektüre lohnt sich wirklich. Die Dokumentation zeigt nicht, wie man immer längere System-Prompts aufhäuft, sondern empfiehlt schlanke Prompts: Was ist das Ziel? Was sind die Erfolgskriterien? Welche Belege müssen vorliegen? Wann soll der Agent aufhören? Welche Aktionen benötigen eine Bestätigung?\n\nDas passt sehr gut zur Entwicklung der neuen Agentengeneration.\n\nJe leistungsfähiger die Modelle werden, desto eher kann eine übermäßige Vorgabe jedes einzelnen Arbeitsschritts sie ausbremsen, den Tokenverbrauch erhöhen und Widersprüche erzeugen. Entscheidend ist ein klarer Aufgabenvertrag, innerhalb dessen Sicherheitsgrenzen der Agent seinen Weg selbst wählen kann.\n\nFür AI Coding finde ich das besonders aufschlussreich.\n\nBeim Schreiben von AGENTS.md oder System-Prompts geht es künftig weniger darum, das Modell möglichst eng zu führen. Wichtiger ist, Abnahmekriterien, Berechtigungsgrenzen und Verifikationsabläufe ausreichend klar zu beschreiben.\n\nhttps://t.co/Y0o9n4Cjp0"
+        }
+      ]
+    },
+    "00_Inbox/Quellen/X/2026-08-25-vikingmute-2092059170812108811.md": {
+      "source_language": "zh",
+      "target_language": "de",
+      "translated_at": "2026-10-25",
+      "method": "KI-Übersetzung aus dem vollständigen archivierten Post-Text; Absatzstruktur, Links und technische Bezeichner geprüft.",
+      "segments": [
+        {
+          "original": "昨天看到一个变态的 Code Review skills  应该是 Cursor 官方一个非常严格的代码质量审查技能。Thermo-Nuclear Code Quality Review  热核级别代码审查....\n\nhttps://t.co/Xcj2nKn6FT\n\n里面的 rule 翻译一下是这样的:\n\n结构简化优先： 要主动找能让整段分支、helper、mode、条件判断直接消失的重构方案\n\n1k 行红线：不允许 PR 把一个原本不到 1000 行的文件推过 1000 行，优先拆分，有点变态。\n\n拒绝意面式增长：高度警惕往无关流程里塞临时 if、特殊分支、一次性布尔标志 这是设计问题，不是风格问题。\n\n警惕串行编排与非原子更新：这个有用！review 的好多 bug 都是这个问题\n\n还有几条不写了，大家可以自己去看\n\n我给项目用了一下，然后就哭了，找到太多干脆不修了，新开一个项目我可能会用一下，假如大家希望用极高标准去找结构问题 强迫做大幅简化 可以用它试试看。",
+          "translated": "Gestern habe ich einen ziemlich extremen Code-Review-Skill gesehen. Es dürfte ein offizieller, sehr strenger Codequalitätsskill von Cursor sein: Thermo-Nuclear Code Quality Review – Code-Review auf thermonuklearem Niveau …\n\nhttps://t.co/Xcj2nKn6FT\n\nSinngemäß übersetzt lauten einige seiner Regeln so:\n\nStrukturvereinfachung zuerst: Suche aktiv nach Refactorings, durch die ganze Verzweigungen, Helper, Modi oder Bedingungen vollständig entfallen können.\n\nDie 1.000-Zeilen-Grenze: Ein PR darf eine Datei, die vorher unter 1.000 Zeilen hatte, nicht über 1.000 Zeilen bringen. Aufteilen hat Vorrang. Schon ziemlich extrem.\n\nKein Wachstum zu Spaghetticode: Sei besonders misstrauisch gegenüber temporären if-Abfragen, Sonderzweigen und einmalig verwendeten booleschen Flags, die in sachfremde Abläufe geschoben werden. Das ist ein Designproblem, keine Stilfrage.\n\nAchte auf serielle Orchestrierung und nicht atomare Aktualisierungen: Das ist nützlich! Viele Bugs, die beim Review auffallen, entstehen genau dadurch.\n\nEin paar weitere Regeln lasse ich hier aus; die könnt ihr selbst nachlesen.\n\nIch habe den Skill auf ein Projekt losgelassen und hätte danach heulen können. Er fand so viel, dass ich die Befunde schließlich gar nicht mehr behoben habe. Bei einem neuen Projekt würde ich ihn vielleicht einsetzen. Wer mit extrem hohen Maßstäben nach Strukturproblemen suchen und weitreichende Vereinfachungen erzwingen möchte, kann ihn ausprobieren."
+        }
+      ]
+    },
+    "00_Inbox/Quellen/X/2026-10-22-cu30rry-2113242716473602270.md": {
+      "source_language": "ja",
+      "target_language": "de",
+      "translated_at": "2026-10-25",
+      "method": "KI-Übersetzung aus dem vollständigen archivierten Post-Text; Absatzstruktur, Links und technische Bezeichner geprüft.",
+      "segments": [
+        {
+          "original": "最近のスタメン plugin・Skill\n\n- pstack\n- Cursor Team Kit\n- Thermos\n- /grill-with-docs\n- 検証レイヤー e2e /create-verification-skil・react-doctor・fallow\n\n基本はpstackで、細かい仕様決め・用語決めが必要な設計は /grill-with-docsを先にやってからpstack\n\n検証はe2eの /create-verification-skill と pstackの /create-formal-verification-skill で E2E と形式検証をして品質を担保\n\nその後のレビューは Thermos でコード品質とバグ・セキュリティ・仕様の漏れをチェック\n\nCIでreact-doctor・fallowなど追加の検証を実施する",
+          "translated": "Meine aktuelle Stammaufstellung an Plugins und Skills:\n\n- pstack\n- Cursor Team Kit\n- Thermos\n- /grill-with-docs\n- Verifikationsschicht: e2e /create-verification-skil · react-doctor · fallow\n\nDie Grundlage ist pstack. Bei Entwürfen, für die genaue Spezifikationen oder Begriffe geklärt werden müssen, verwende ich zuerst /grill-with-docs und danach pstack.\n\nZur Qualitätssicherung führe ich mit /create-verification-skill E2E-Prüfungen und mit /create-formal-verification-skill aus pstack formale Verifikation durch.\n\nIm anschließenden Review prüft Thermos Codequalität, Bugs, Security und Lücken in der Spezifikation.\n\nIn der CI folgen zusätzliche Prüfungen mit react-doctor, fallow und ähnlichen Werkzeugen."
+        }
+      ],
+      "unchanged_segments": [
+        {
+          "original": "@jscraik The answers of /grill-with-docs are saved in a coordinator agent's session in Cursor or Claude Projects.\n\nADR and GLOSSARY.md are saved by /grill-with-docs",
+          "language": "en"
+        },
+        {
+          "original": "Yes, I commit GLOSSARY.md and ADR these are the parts of the codebases and at the same time they are the important contexts for agents.\n\nGLOSSARY.md has terms we use in the project and it can fix them so agents can use fixed terms.\n\nSpeaking of GLOSSARY.md, for example, todo has a lot of ways to call such as task, job and ticket.\nWhen agents call it, they have trouble choosing which one they should use.\n\nOn the other hand, ADR lets us and agents know the history happened in the project including our decision, constraints and so on so agents can track the history easily.\nIn short, it helps agents find solutions and reasons why the codebases are the way they are.",
+          "language": "en"
+        }
+      ]
+    },
+    "00_Inbox/Quellen/X/2026-10-22-luinlee-2113085361836744764.md": {
+      "source_language": "zh",
+      "target_language": "de",
+      "translated_at": "2026-10-25",
+      "method": "KI-Übersetzung aus dem vollständigen archivierten Post-Text; Absatzstruktur, Links und technische Bezeichner geprüft.",
+      "segments": [
+        {
+          "original": "最近用 Opus 和 Astra 写了不少 UI，发现一个避免 AI slop 并且让界面更好看的秘诀：\n\n在 AGENTS.md 里加上 “Avoid unnecessary secondary labels and descriptions. Let the layout do the explaining.”",
+          "translated": "Ich habe in letzter Zeit mit Opus und Astra viele UIs gebaut und dabei einen Trick gefunden, der AI Slop vermeidet und Oberflächen besser aussehen lässt:\n\nErgänze in AGENTS.md: “Avoid unnecessary secondary labels and descriptions. Let the layout do the explaining.”"
+        },
+        {
+          "original": "不加这个的话，这两个模型（尤其是 Opus）生成的页面经常有各种莫名其妙的 slogan 类似的文字，而且界面很容易变得和说明书一样。大部分时候这些说明性文字是可以用更好的设计来避免的。这句话可以让模型把时间花在思考 UI/UX 上，而不是把所有含糊的问题都加上说明",
+          "translated": "Ohne diese Vorgabe erzeugen beide Modelle, besonders Opus, häufig Seiten mit allen möglichen seltsamen, sloganartigen Texten. Die Oberfläche sieht dann schnell wie eine Bedienungsanleitung aus. Meist lassen sich diese erklärenden Texte durch besseres Design vermeiden. Der Satz bringt das Modell dazu, Zeit in UI/UX zu investieren, anstatt jede Unklarheit mit einer zusätzlichen Erklärung zu versehen."
+        },
+        {
+          "original": "@hammercha1n 哈哈哈我的 AGENTS.md 也有第一性原理：Fix a bug at its cause, reasoning from first principles and established best practice. Do not patch over the symptom\n就是观察到 AI 修 bug 时经常打补丁...",
+          "translated": "@hammercha1n Haha, in meiner AGENTS.md stehen auch First Principles: Fix a bug at its cause, reasoning from first principles and established best practice. Do not patch over the symptom\n\nDas habe ich ergänzt, weil mir aufgefallen ist, dass KI beim Beheben von Bugs oft nur Patches aufsetzt …"
+        },
+        {
+          "original": "也可以试试我们做的 https://t.co/nJOKqvvAcZ 这个 AI code review 工具来约束：创建一个 check file 来要求 review 时避免 secondary labels and descriptions 即可（具体可以让你的 coding agent 看看 https://t.co/DfFRAvONud）。",
+          "translated": "Ihr könnt auch unser AI-Code-Review-Tool https://t.co/nJOKqvvAcZ ausprobieren, um das durchzusetzen: Legt eine Check-Datei an, die beim Review verlangt, unnötige zusätzliche Beschriftungen und Beschreibungen zu vermeiden. Für die Details könnt ihr euren Coding-Agenten https://t.co/DfFRAvONud ansehen lassen."
+        }
+      ],
+      "unchanged_segments": [
+        {
+          "original": "@tuyussr @hammercha1n yup! double check if they are needed every time you switch a model ;-) https://t.co/BDBQs3xYmJ",
+          "language": "en"
+        }
+      ]
+    }
+  }
+}

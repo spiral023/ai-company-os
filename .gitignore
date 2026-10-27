@@ -115,6 +115,9 @@ tmp/quellen-lauf/
 blog/_site/
 blog/_preview/
 
+# Lokaler Quellenfeed: aus Markdown und Medien erzeugte Website
+feed/_site/
+
 # NotebookLM-Audio (groß, wird erzeugt)
 reports/notebooklm/*.m4a
 
