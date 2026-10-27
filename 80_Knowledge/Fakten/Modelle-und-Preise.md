@@ -1,6 +1,6 @@
 # Fakten: Modelle, Preise, Benchmarks
 
-**Stand:** 2026-10-24
+**Stand:** 2026-10-27
 
 Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). Anders als ein Pattern beschreibt dieses Register keine Arbeitsweise, sondern hält fest, **wer was wann gemessen oder angekündigt hat**. Jede Zeile führt Datum, Gegenstand, Aussage, Einschränkung und Quelle.
 
@@ -82,6 +82,10 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 
 | Datum | Gegenstand | Aussage | Einschränkung | Quelle |
 |---|---|---|---|---|
+| 2026-10-26 | GPT-6.1 Terra Output | 5 USD je Million Output-Tokens | Preisangabe von Artificial Analysis; Vorversion GPT-5.6 Terra 12 USD; Stand der Quelle | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra Input | 1 USD je Million Input-Tokens | Preisangabe von Artificial Analysis; Vorversion GPT-5.6 Terra 2 USD; keine hier geprüfte aktuelle Preisliste | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra Cache-Schreiben | 1,25 USD je Million Tokens | Preisangabe von Artificial Analysis; laut Quelle halbiert gegenüber Vorversion; Cache-TTL nicht angegeben | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra Cache-Lesen | 0,05 USD je Million Tokens | Preisangabe von Artificial Analysis; Vorversion GPT-5.6 Terra 0,20 USD; Cache-TTL nicht angegeben | [[2026-10-26-artificialanlys-2114781865811063259]] |
 | 2026-10-23 | Kimi K3.1 Pro gegenüber Opus 5.5 und GPT-6 Astra laut Chubby | Gemeldete Standardraten pro Million Input/Outputtokens 2/10 USD gegenüber 4/20 USD und 10/50 USD: 50 % beziehungsweise 80 % darunter | Sekundärbericht; Abstand der Tokenraten, keine garantierte Aufgabenkostenersparnis | [[2026-10-23-kimmonismus-2113685048478077197]] |
 | 2026-10-23 | Kimi K3.1 Pro API laut Artificial Analysis | 2 USD Input, 10 USD Output und 0,20 USD Cache-Hit je Million Tokens | Gemeldete First-Party-Tarife zum Quelldatum, jeweils rund 33 % unter Kimi K3; keine heutige Preisprüfung | [[2026-10-23-artificialanlys-2113688083145314416]] |
 | 2026-10-20 | Intelligence-Index-Schwelle 50 | GPT-6.1 Sol high erreicht Schwelle für 0,32 USD/Aufgabe; Faktor 18 günstiger als erstes Erreichen | AA v4.3.2 und aktuelle Preise; gewichtete Benchmark-Aufgaben | [[2026-10-20-artificialanlys-2112582116651466965]] |
@@ -196,6 +200,21 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 
 | Datum | Gegenstand | Aussage | Einschränkung | Quelle |
 |---|---|---|---|---|
+| 2026-10-26 | GPT-6.1 Terra Terminal-Bench 4.0 | 55,6 % bei max | Artificial Analysis Drittmessung; GPT-5.6 Terra max 35,4 %, GPT-6.1 Sol max 56,1 %; aus separatem Terminal-Bench-Chart | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra SciCode | 55 % bei max | Artificial Analysis Einzeltestübersicht; Coding; Chart mit Updated markiert | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra Intelligence-Kosten pro Task | 0,40 USD bei max | Artificial Analysis Intelligence Index; GPT-5.6 Terra max 1,40 USD; keine Coding-Agent-Taskkosten | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra Intelligence Index v4.3.2 | 48 Punkte bei max | Artificial Analysis Drittmessung; GPT-5.6 Terra max 42, GPT-6.1 Sol max 52, GPT-6 Luna max 38; nicht hier reproduziert | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra Humanity's Last Exam | 46 % bei max | Artificial Analysis Einzeltestübersicht; Reasoning und Wissen | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra GDPval-AA v2.1 | 1468 Elo bei max | Artificial Analysis Einzeltestübersicht; agentische reale Arbeitsaufgaben | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra GDP.pdf | 24 % bei max | Artificial Analysis Einzeltestübersicht; All-pass für professionelle Dokumentaufgaben; GPT-5.6 Terra max 19 % | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra CritPt | 28 % bei max | Artificial Analysis Einzeltestübersicht; Physik-Reasoning | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra AutomationBench-AA | 60 % bei max | Artificial Analysis Einzeltestübersicht; agentische SaaS-Workflows | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra AA-Omniscience Index | 30 Punkte bei max | Artificial Analysis; Skala -100 bis 100, belohnt korrekte Antworten und bestraft Halluzinationen; GPT-5.6 Terra max 0 | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra AA-Omniscience Halluzinationsrate | 38 % bei max | Artificial Analysis; falsche Antworten relativ zu nicht korrekten Antworten einschließlich Teilantworten und Nichtversuchen; GPT-5.6 Terra max 88 % | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra AA-Omniscience Accuracy | 49 % bei max | Artificial Analysis; Anteil korrekter Antworten an allen Fragen; GPT-5.6 Terra max 47 % | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra AA-LCR v1.1 | 83 % bei max | Artificial Analysis Einzeltestübersicht; Long-Context-Reasoning | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | GPT-6.1 Terra AA-Briefcase v1.1 | 1402 Elo bei max | Artificial Analysis Einzeltestübersicht; agentische Wissensarbeit; nicht mit Prozentwerten anderer Untertests vergleichen | [[2026-10-26-artificialanlys-2114781865811063259]] |
+| 2026-10-26 | Codex GPT-6.1 Terra Coding Agent Index v2.0 | 48 Punkte bei max | Artificial Analysis Drittmessung über FrontierCode v1.1, Terminal-Bench 4.0 und SWE-Atlas-QnA-AA; Codex Sol max 54, Codex Luna max 31 | [[2026-10-26-artificialanlys-2114781865811063259]] |
 | 2026-10-23 | Moonshot-Herstellerchart zu Kimi K3.1 Pro | Sechs erste Plätze unter 14 dargestellten Benchmarks; SWE Marathon 51,7 gegenüber 46,3 für Opus 5.5 | Herstellerwerte, von Chubby geteilt; maximaler Thinking-Effort, Claude kann Fallbacks und GPT Cyberguards enthalten | [[2026-10-23-kimmonismus-2113681534792183863]] |
 | 2026-10-23 | Moonshot-Herstellerchart Terminal-Bench 4.0 | Kimi K3.1 Pro 65,7 gegenüber Opus 5.5 mit 66,4 | Herstellervergleich, keine unabhängige AA-Bestätigung; genaue Harnessdetails fehlen im Post | [[2026-10-23-kimmonismus-2113681534792183863]] |
 | 2026-10-23 | Kimi K3.1 Pro im AA Intelligence Index | 1,98 USD je Aufgabe und 55.000 Outputtokens gegenüber 2,00 USD und 48.000 beim Vorgänger | Gewichtet über AA-Intelligence-Index-Aufgaben, nicht Coding-Agent-Index-Kosten; günstigere Tokenpreise bedeuten kaum niedrigere Aufgabenkosten | [[2026-10-23-artificialanlys-2113688083145314416]] |
@@ -554,6 +573,13 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 
 | Datum | Gegenstand | Aussage | Einschränkung | Quelle |
 |---|---|---|---|---|
+| 2026-10-26 | Anthropic tägliches Codevolumen je Engineer | Mehr als Faktor 45 im Quartal bis 30.09.2026 gegenüber Kalenderjahr 2024 | Zugeschriebene Selbstangabe im Screenshot; Definition, Nacharbeit und Ergebnisqualität offen; keine unabhängige Produktivitätsmessung | [[2026-10-26-kimmonismus-2114729823033590134]] |
+| 2026-10-26 | Anthropic Umsatz relativ zu Compute-/Infrastrukturaufwand | Faktor 5,2 von 0,40x in Q1/2025 auf 2,08x in Q2/2026 | Zugeschriebene Selbstangabe aus Diagramm im Folgepost; Verhältnis von Umsatz zu Aufwand, keine gemessene Token- oder Energieeffizienz | [[2026-10-26-kimmonismus-2114729823033590134]] |
+| 2026-10-26 | Anthropic Umsatz Q2/2026 | 11,6 Mrd. USD | Gerundeter Diagrammwert aus sekundär veröffentlichtem Dokumentausschnitt; vollständige Originalunterlage nicht geprüft | [[2026-10-26-kimmonismus-2114729823033590134]] |
+| 2026-10-26 | Anthropic Umsatz Q1/2025 | 0,4 Mrd. USD | Gerundeter Diagrammwert aus sekundär veröffentlichtem Dokumentausschnitt; vollständige Originalunterlage nicht geprüft | [[2026-10-26-kimmonismus-2114729823033590134]] |
+| 2026-10-26 | Anthropic Compute-/Infrastrukturaufwand Q2/2026 | 5,6 Mrd. USD | Gerundeter Diagrammwert aus sekundär veröffentlichtem Dokumentausschnitt; nicht mit isoliertem Inferenzaufwand gleichsetzen | [[2026-10-26-kimmonismus-2114729823033590134]] |
+| 2026-10-26 | Anthropic Compute-/Infrastrukturaufwand Q1/2025 | 0,9 Mrd. USD | Gerundeter Diagrammwert aus sekundär veröffentlichtem Dokumentausschnitt; nicht mit isoliertem Inferenzaufwand gleichsetzen | [[2026-10-26-kimmonismus-2114729823033590134]] |
+| 2026-10-26 | Anthropic Codebeiträge September 2026 | Mehr als 90 % laut Dokumentausschnitt von Claude geschrieben | Sekundärquelle kimmonismus mit angeblichem IPO-Dokumentausschnitt; vollständige Primärquelle und Metrikdefinition nicht geprüft; keine Qualitäts-/Produktivitätsmessung | [[2026-10-26-kimmonismus-2114729823033590134]] |
 | 2026-10-20 | Kostenhalbierung nach Erreichen fester Benchmark-Schwellen | Schwelle 40 nach 42 Tagen, Schwelle 50 nach 41 Tagen mindestens 50 % günstiger | AA-Thread und Zeitdiagramm; gemessene Modelle unter v4.3.2 mit aktuellen Preisen | [[2026-10-20-artificialanlys-2112582116651466965]] |
 | 2026-10-20 | Höchster gemessener Intelligence-Index-Wert | Innerhalb eines Jahres 21 auf 58 Punkte bei etwa elffachen Kosten; Spitze 5,98 USD/Aufgabe | AA v4.3.2; Claude Opus 5.5 Adaptive Reasoning Max Effort Default Fallback; aktuelle Preise auch historischer Modelle | [[2026-10-20-artificialanlys-2112582116651466965]] |
 | 2026-10-06 | Frontier-Modellvergleich nach Land | Frankreich liegt mit Mistral Preview (38) auf Platz drei hinter USA (Claude Opus 5.5 max, 58) und China (MiMo-V2.6-Pro, 46) | AAs datierte Auswahl gemessener Frontier-Modelle; 05-thread-photo.jpg und Thread-Text; keine allgemeine Rangliste aller KI-Fähigkeiten von Ländern | [[2026-10-06-artificialanlys-2107467221421420919]] |

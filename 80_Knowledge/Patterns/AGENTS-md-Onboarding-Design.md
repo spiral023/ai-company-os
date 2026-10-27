@@ -74,6 +74,8 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 - 2026-10-13 · [[2026-10-13-mattpocockuk-2109973273924579720]] · meinung — Pocock empfiehlt regelmäßiges Kürzen globaler Steuerungsdateien und kurze Skills; die Checkliste enthält Erfahrungsurteile und keine isolierte Messung der Regelwirkung.
 - 2026-07-17 · [[2026-07-17-matt-pocock-kill-your-memory-md]] · meinung — Bewusst bearbeitete Agent-Dateien oder kleine Repo-Dokumente dienen als Alternative zu ungeprüft angesammeltem Auto-Memory; Empfehlung aus persönlicher Arbeitsweise.
 - 2026-10-16 · [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] · meinung — Steenfatt will gewachsene Einzelfallregeln durch knappe Repository-Besonderheiten sowie Skripte und Lint-/CI-Prüfungen ersetzen; seine zeitweise pauschale Ablehnung von Kontextdateien geht über den engeren, primär geprüften Forschungsbefund hinaus.
+- 2026-10-24 · [[2026-10-24-voxyz_ai-2114069417902403786]] · meinung — Vox schlägt einen gemeinsamen Regel-Audit von Projekt-/Globaldateien und Skills vor: widersprüchliche, doppelte und veraltete Regeln nummerieren, Konfliktstellen gegenüberstellen und erst ausgewählte Befunde ändern. Das ergänzt einen nachvollziehbaren menschlichen Auswahlpunkt, belegt aber weder Vollständigkeit noch tatsächliche Regelbefolgung.
+- 2026-10-25 · [[2026-10-25-voxyz_ai-2114446907355648062]] · meinung — Der Post empfiehlt bei Dokumentationsdrift, bestehende Codekonventionen zu prüfen und Widersprüche ausdrücklich zu berichten; seine Versuchszahlen sind ohne identifizierte Primärstudie nicht überprüfbar. Die Orientierung am Code darf Sicherheitsanforderungen oder notwendige Verhaltenskorrekturen nicht pauschal überstimmen.
 
 ## Spannungen & offene Fragen
 
@@ -87,6 +89,8 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 - Offene Frage: Ab welcher Projektgröße lohnt sich die zusätzliche Navigationsebene der Progressive-Disclosure-Struktur gegenüber einer einzigen, etwas längeren Datei? Aus den Quellen nicht abschließend beantwortbar.
 
 - 2026-10-22: [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] deutet die AGENTS.md-Studie zeitweise pauschaler als der in der Source dokumentierte Primärabgleich. Dessen Abstract und Versionshistorie begrenzen den Befund auf untersuchte Setups und lassen Nutzen nicht standardmäßiger Regeln zu; die ältere feinere Ergebnisdarstellung hier bleibt als datierter Bestand erhalten. Aus der Kürzung spezifischer Claude-5-Systemprompts folgt ebenfalls keine Abschaffung von Repo-Kontext oder Skills.
+
+- 2026-10-25 · [[2026-10-25-voxyz_ai-2114446907355648062]]: Bestehende Codekonventionen sind ein Indiz für Dokumentationsdrift, keine normative Wahrheit. Sicherheitsanforderungen, ausdrückliche Verhaltensvorgaben und berechtigte Fehlerkorrekturen dürfen nicht pauschal vom aktuellen Code überstimmt werden. Die genannten Versuchszahlen haben hier keine identifizierte Primärstudie.
 
 ## Verwandte Patterns
 

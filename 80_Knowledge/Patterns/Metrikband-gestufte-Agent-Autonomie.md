@@ -31,12 +31,15 @@ Ein deterministisches Skript ohne Modell berechnet für eine Metrik mit rolliere
 
 - 2026-09-27 · [[2026-09-27-anthropic-academy-sdlc-playbook]] · meinung — Lektion 13 beschreibt das Schema mit `bands.yaml` und Western-Electric-Regeln als Herstellerempfehlung ohne Praxisdaten.
 - 2026-10-10 · [[2026-10-10-boristane-self-improving-software-is-inevitable]] · meinung — Verknüpft Logs, Traces, Analytics, Replays und Tickets in gemeinsamen Untersuchungen mit Fix-PRs; Vision vollständiger Selbstverbesserung und Kostenbehauptungen sind nicht gemessen.
+- 2026-09-22 · [[2026-09-22-vateo-after-waterfall-agile-and-devops-anthropic-s-ai]] · meinung — Vateo beschreibt deterministische Überwachung mit 1σ-Protokollierung, 2σ-Diagnose und bei 3σ ausschließlich PR oder vorab freigegebenem Runbook; die Diagnose fließt als neuer Intent zurück. Diese Darstellung desselben Playbook-Ansatzes ist keine unabhängige Bestätigung und validiert die Schwellen nicht für andere Metriken.
 
 ## Spannungen & offene Fragen
 
 - 2026-10-11: [[2026-10-10-boristane-self-improving-software-is-inevitable]] fordert in seiner Vision die Abgabe menschlicher Kontrolle, während seine praktischen Prompts nur Fix-PRs eröffnen. Gemeinsame Untersuchungen mehrerer Signalquellen ergänzen die Erkennung; sie begründen keine automatische Ausweitung der hier abgestuften Eingriffsrechte.
 
 - Keine bekannt. Offen ist, ob sich die Stufen aus der Praxis bestätigen lassen; die Quelle ist eine Anleitung, keine Auswertung.
+
+- 2026-09-22 · [[2026-09-22-vateo-after-waterfall-agile-and-devops-anthropic-s-ai]] gibt dasselbe Anthropic-Playbook sekundär wieder. Seine Sigma-Schwellen und die illustrierte Incident-Zeitfolge sind keine unabhängige Validierung; passende Baselines, Fehlalarme und konkret freigegebene Handlungen bleiben einsatzabhängig zu prüfen.
 
 ## Verwandte Patterns
 

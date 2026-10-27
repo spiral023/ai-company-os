@@ -1,6 +1,6 @@
 # Sicherheit & Sandboxing
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps. Berichte über Gefahren, Missbrauch und konkrete KI-Vorfälle stehen in ki-risiken.
 
@@ -9,7 +9,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** row level security (3), security (3), sicherheit (3), sandbox (3), os-level sandboxing (3), mxc (3), security checker (2), docker sandboxes (2), deny-rules (2), command smuggling (2), agent sandbox (2), ki-vertragsprüfung (2), produktedition (2), freigaben (2), playwright (2), sandboxing (2), prompt injection (2), sandbox permissions (2), process isolation (2), containment (2)
+- **Häufig in den Quellen:** row level security (4), sicherheit (3), security (3), sandbox (3), os-level sandboxing (3), mxc (3), security checker (2), docker sandboxes (2), command smuggling (2), deny-rules (2), agent sandbox (2), produktedition (2), ki-vertragsprüfung (2), freigaben (2), playwright (2), sandboxing (2), prompt injection (2), process isolation (2), sandbox permissions (2), containment (2)
 
 ## Verwandte Themen
 
@@ -19,22 +19,24 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
 - [[Thema-KI-Risiken-Sicherheitsvorfälle]] — KI-Risiken & Sicherheitsvorfälle
 
-## Patterns (6)
+## Patterns (7)
 
-- [[Adversarialer-Pre-Launch-Check]] · meinung · 12 Belege
+- [[Adversarialer-Pre-Launch-Check]] · meinung · 13 Belege
 - [[Agent-Rechte-umfassen-Kommunikationswege]] · meinung · 9 Belege
-- [[Deny-Rules-statt-CLAUDE-md-Empfehlung]] · mehrfach-belegt · 13 Belege
+- [[Angriffsflaeche-durch-Erreichbarkeitsanalyse-reduzieren]] · meinung · 1 Belege
+- [[Deny-Rules-statt-CLAUDE-md-Empfehlung]] · mehrfach-belegt · 14 Belege
 - [[Freigaben-und-Isolation-getrennt-steuern]] · meinung · 13 Belege
 - [[KI-Dienste-nach-Vertrag-und-Datenfluss-pruefen]] · meinung · 1 Belege
-- [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 9 Belege
+- [[Sandbox-Komposition-aus-OS-Primitiven]] · meinung · 10 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]], [[Hook-Entscheidungstyp-nach-Pruefbarkeit]], [[Metrikband-gestufte-Agent-Autonomie]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]], [[Sicherer-Fallback-vor-menschlicher-Eskalation]]
 
-## Quellen (21)
+## Quellen (22)
 
 - [[2026-10-23-openai-securing-our-frontier-model-training-environment]] — OpenAI beschreibt, wie interne Trainings- und Evaluierungsumgebungen nach Sicherheitsvorfällen stärker eingegrenzt wurden.
 - [[2026-10-22-promptgefluester-im-kanal-leo-tech-coding-und-it-beschreibt-sie-ganz-gut-ist-ne]] — @promptgefluester beschreibt ein praktisches Betriebsproblem: Wer den eigenen Stack nicht kennt, erkennt auch fällige Sicherheitsupdates nicht. Das automatisch erzeugte Transkript enthält zahlreiche fehlerhafte Produktbegriffe.
 - [[2026-10-21-promptgefluester-jeder-der-ne-website-mit-p]] — @promptgefluester warnt vor einer angeblich kritischen Server-Sicherheitslücke und drängt zum Patchen. Das automatische Transkript verstümmelt Produktnamen und Versionsangaben; eine CVE oder ein Hersteller-Advisory fehlt.
+- [[2026-10-20-anthropic-using-claude-to-reduce-the-attack-surface-of-cod]] — Angriffsfläche lässt sich verkleinern, ohne jede darin liegende Schwachstelle zu kennen: Komplexer Code wird erst nach der passenden Authentifizierung, Konfigurationsprüfung oder Protokollphase erreic
 - [[2026-10-18-ai-news-strategy-daily-n-what-really-happens-when-ai-agents-meet-in-the-w]] — Nate B Jones verbindet am 18.10.2026 Berichte über koordinierte Agenten mit Konsequenzen für den Betrieb eigener Systeme.
 - [[2026-10-16-voxyz_ai-2111079716832886886]] — Vox schlägt einen Pre-Launch-Test mit normalen Konten A und B sowie einem Admin vor.
 - [[2026-10-10-satyanadella-2108931348857827686]] — Satya Nadella argumentiert im X-Artikel für eine Architektur, die leistungsfähige Modelle wie potenzielle Insider-Risiken behandelt.
@@ -56,6 +58,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], 
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-26-cohere-concerning-behavior-from-a-popular-open-weight-a]]
 - [[2026-10-23-anthropic-an-alignment-assessment-of-the-uk-aisi-cybertest]]
 - [[2026-10-22-shanaka86-2113146345657954463]]
 - [[2026-10-22-kimmonismus-2113141875368468508]]
@@ -64,6 +67,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[CI-Agent-mit-Review-Gate]], 
 - [[2026-10-17-voxyz_ai-2111442102756463077]]
 - [[2026-10-15-mardehaym-2110763129885835505]]
 - [[2026-10-12-kimmonismus-2109776878307336696]]
+- [[2026-10-11-voxyz_ai-2109328172273606771]]
 - [[2026-10-11-developers-codex-as-a-platform-build-on-the-open-agent-harn]]
 - [[2026-10-09-voxyz_ai-2108573215224160393]]
 - [[2026-10-07-alex-sprogis-t3-code-endlich-eine-steuerzentrale-fuer-alle-de]]

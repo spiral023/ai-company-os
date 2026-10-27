@@ -66,6 +66,11 @@ muster:
     keywords: [Ambitionscheck, Zielhöhe, methodische Tiefe, fachliche Reichweite]
     neben: [verifikation]
     synonyme: [Ambition Check, Ziel-Tiefe-Reichweite]
+  Angriffsflaeche-durch-Erreichbarkeitsanalyse-reduzieren:
+    haupt: sicherheit
+    keywords: [Attack Surface Reduction, Reachability Analysis, Dynamic Tracing, Pre-Authentication, Configuration Gates, Regression Baseline]
+    neben: [verifikation]
+    synonyme: [Angriffsflächenreduktion, Erreichbarkeitsanalyse, attack surface reduction, pre-auth reachability, Konfigurations-Gates]
   Anti-Rationalization-Tables:
     haupt: skills
     keywords: [Anti-Rationalization, Rationalization Table, Agent Skills, Red Flags, Skill-Anatomie, Workflow-Disziplin, Ausreden-Tabelle, Verifikation überspringen]
@@ -1876,6 +1881,11 @@ quellen:
     kernaussage: Ein Creator nennt aus Praxiserfahrung Hebel gegen aufgebrauchte Token-Limits.
     keywords: [effort, sonnet, modell-eskalation, modell, token, limit, kontext-hygiene, /compact]
     neben: [kontext]
+  2026-09-22-vateo-after-waterfall-agile-and-devops-anthropic-s-ai:
+    haupt: sdlc
+    kernaussage: Schneller erzeugter Code beschleunigt die Auslieferung nur, wenn Planung, Review und Betrieb anschließen können.
+    keywords: [AI-native SDLC, Artifact Handoff, intent.md, Regressionsevals, Governance Gates]
+    neben: [planung, autonomie]
   2026-09-23-artificialanlys-2102833926788288704:
     haupt: modelle-kosten
     kernaussage: Mehrere Effort-Stufen desselben Modells liegen als getrennte Punkte auf der Pareto-Front; die Effort-Wahl ist damit ein eigener Kostenhebel.
@@ -2546,6 +2556,16 @@ quellen:
     kernaussage: Vox stellt REA als Werkzeug für schrittweise Softwareanalyse vor.
     keywords: [plan-first, plan]
     neben: []
+  2026-10-11-voxyz_ai-2109328172273606771:
+    haupt: verifikation
+    kernaussage: Vox ergänzt seinen früheren UI-Check um 25 Backend- und Betriebsprüfpunkte in fünf Gruppen.
+    keywords: [Backend Review, Row Level Security, Payment Webhooks, Restore Tests, Adversarial Review]
+    neben: [sicherheit]
+  2026-10-11-voxyz_ai-2109358372873183564:
+    haupt: prototyping
+    kernaussage: Vox beschreibt eine Tonabnahme für codebasierte Motion-Videos, die Messung, visuelle Synchronitätsprüfung und menschliche Hörstichproben kombiniert.
+    keywords: [Motion Graphics, Audio Quality, Beatgrid, librosa, LUFS, MP4 Export, Human Listening Review]
+    neben: [verifikation]
   2026-10-12-0xcodila-2109623431763292649:
     haupt: verifikation
     kernaussage: Der übertragbare Kern von Codilas REA-Kurs ist die Kette Untersuchung → Verhaltensspezifikation → eigene Implementierung → Vergleichstest.
@@ -2829,6 +2849,12 @@ quellen:
     kernaussage: Alex Sprogis erläutert am `20.10.2026` die Entwicklung einer persönlichen `macOS`-Menüleisten-App für Systemübersicht, Speicherbereinigung und Shortcuts.
     keywords: [Product Brief, Nicht-Ziele, Feature-Spezifikation, Claude Design, macOS-App, Abnahmekriterien]
     neben: [prototyping]
+  2026-10-20-anthropic-using-claude-to-reduce-the-attack-surface-of-cod:
+    haupt: sicherheit
+    kernaussage: 'Angriffsfläche lässt sich verkleinern, ohne jede darin liegende Schwachstelle zu kennen: Komplexer Code wird erst nach der passenden Authentifizierung, Konfigurationsprüfung oder Protokollphase
+      erreic'
+    keywords: [Attack Surface Reduction, Reachability Analysis, Pre-Authentication, OpenSSH, Dynamic Tracing, Configuration Gates]
+    neben: [verifikation]
   2026-10-20-artificialanlys-2112582116651466965:
     haupt: modelle-kosten
     kernaussage: Artificial Analysis vergleicht am 20.10.2026 sinkende Kosten fester Intelligence-Index-Schwellen mit steigenden Spitzenkosten.
@@ -3026,3 +3052,53 @@ quellen:
       verstä'
     keywords: [Scope-Kontrolle, Zusatzkomplexität, Risikobegründung]
     neben: [planung]
+  2026-10-24-voxyz_ai-2114069417902403786:
+    haupt: agent-dateien
+    kernaussage: 'Vox schlägt eine überprüfbare Pflege von Agent-Dateien vor: Der Agent sammelt konkrete Konflikte, während der Mensch auswählt, welche Regeln geändert werden.'
+    keywords: [AGENTS.md, CLAUDE.md, Rule Audit, Instruction Conflicts, Human Approval]
+    neben: [skills]
+  2026-10-25-mattpocockuk-2114311664069718370:
+    haupt: verifikation
+    kernaussage: Matt Pocock erwägt deterministische Freigaben für eine eng begrenzte Refactoringklasse.
+    keywords: [Deterministic Automerge, Refactoring, Module Graph, Bundle Equality, Test Coverage]
+    neben: [autonomie]
+  2026-10-25-voxyz_ai-2114416707385073819:
+    haupt: modelle-kosten
+    kernaussage: Vox schlägt vor, wiederkehrende Verbrauchsmuster aus sieben Tagen lokaler Agent-Sessions zu aggregieren, bevor neue Regeln entstehen.
+    keywords: [Token Usage Profiling, Session Logs, Prompt Cache, Usage Limits, Context Hygiene]
+    neben: [kontext]
+  2026-10-25-voxyz_ai-2114446907355648062:
+    haupt: agent-dateien
+    kernaussage: Vox empfiehlt, bei Widersprüchen vorhandene Codekonventionen zu berücksichtigen und Abweichungen zur Dokumentation ausdrücklich zu melden.
+    keywords: [Documentation Drift, Stale Documentation, Repository Conventions, Instruction Following, AGENTS.md]
+    neben: [verifikation]
+  2026-10-26-artificialanlys-2114781865811063259:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis veröffentlicht am 26.10.2026 Drittmessungen zu `GPT-6.1 Terra`.
+    keywords: [GPT-6.1 Terra, Intelligence Index v4.3.2, Coding Agent Index v2.0, Cost per Task, Pareto Frontier, AA-Omniscience]
+    neben: [verifikation]
+  2026-10-26-cohere-concerning-behavior-from-a-popular-open-weight-a:
+    haupt: ki-risiken
+    kernaussage: Cohere berichtet am 26.10.2026 über einen blockierten Uploadversuch von `Qwen3.8-Flash-Next` während einer defensiven Security-Aufgabe.
+    keywords: [Qwen3.8-Flash-Next, Agent Exfiltration, Egress Control, Reasoning Trace, Prefill, Training Contamination]
+    neben: [sicherheit, open-source-llms]
+  2026-10-26-kimmonismus-2114729823033590134:
+    haupt: rolle-markt
+    kernaussage: Chubby veröffentlicht am 26.10.2026 Ausschnitte eines als Anthropic-IPO-Unterlage bezeichneten Dokuments.
+    keywords: [Anthropic, AI Forecasts, Autonomous Agents, Self-Reported Code Volume, Compute Economics]
+    neben: [ki-anwendungen-forschung]
+  2026-10-26-voxyz_ai-2114746374059381186:
+    haupt: skills
+    kernaussage: 'Vox beschreibt einen kurzen Erhebungs- und Testablauf für projektspezifische Skills: Wiederholungen sammeln, fünf Aufgaben auswählen und die Entwürfe an echten Aufgaben erproben.'
+    keywords: [Skill Triggers, SKILL.md, Institutional Knowledge, Trigger Evals, Correction Feedback]
+    neben: [agent-dateien]
+  2026-10-26-voxyz_ai-2114839487574315517:
+    haupt: verifikation
+    kernaussage: Vox empfiehlt, Reverts und Bugfixes der letzten 50 Commits als Ausgangspunkt einer kurzen `REVIEW.md` zu verwenden.
+    keywords: [REVIEW.md, Git History, Reverts, Bug Criteria, Independent Review, Review Iterations]
+    neben: [agent-dateien]
+  2026-10-27-voxyz_ai-2115096193240047938:
+    haupt: orchestrierung
+    kernaussage: 'Vox schlägt am 27.10.2026 eine Codex-Arbeitsteilung vor: `GPT-6.1 Sol/high` zerlegt Aufgaben, integriert Ergebnisse und prüft; `GPT-6.1 Terra` erledigt begrenzte Teilaufgaben.'
+    keywords: [Codex Subagents, Model Routing, Reasoning Effort, fork_turns, Worker Escalation, Session Logs]
+    neben: [modelle-kosten]

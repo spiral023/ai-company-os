@@ -36,6 +36,7 @@ Einen Brief mit Botschaft, echten Assets, unveränderlichen Stilmerkmalen, Copyg
 - 2026-10-09 · [[2026-10-09-beamnxw-2108616740846420354]] · meinung — Das Launch-Beispiel konkretisiert lokale und globale Ereignisframes, vier Korrekturfelder, längste Copy und finale Playback-/Metadatenprüfung; Angebot und Pilotpreis sind unbewiesene Vermarktungshypothesen.
 - 2026-10-02 · [[2026-10-02-seeconvm-2106096193235259564]] · meinung — Seeco ergänzt den Ablauf um einen timerfreien seek(t)-Render-Contract mit Seed, direkt zeitadressierbare Federn, State-Lists mit erzählerischem Zweck, sechs Produktionsgates und konkrete Abnahmeproben bis zum Hashvergleich desselben Frames; zugeschriebene Produktionsbeispiele und Qualitätswirkungen wurden nicht unabhängig geprüft.
 - 2026-10-17 · [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]] · meinung — Ergänzt die Produktion um freigestellte KI-Objekte und echte Logos/Produktbilder, während Text, Diagramme, Bewegung und Sprach-Timing im Code bleiben; Sprechtext, Assetplan und Kosten werden vor Generierung vorgelegt, Frameprüfung ist nur als Sprecherbericht dokumentiert, keine visuelle Ergebnisabnahme.
+- 2026-10-11 · [[2026-10-11-voxyz_ai-2109358372873183564]] · meinung — Der Audio-Pass ergänzt die Motion-Abnahme um einen gegen die Wellenform unter 120 Hz geprüften Beatgrid, Messung der finalen MP4 statt des WAV-Zwischenstands sowie fünf menschliche Hörstichproben. Die vorgeschlagenen −16 LUFS und Spitzen unter −4 dBFS sind Zielwerte des Autors; der berichtete Rasterfehler von 0,22 s bleibt eine Anekdote.
 
 ## Spannungen & offene Fragen
 
@@ -45,6 +46,8 @@ Einen Brief mit Botschaft, echten Assets, unveränderlichen Stilmerkmalen, Copyg
 - 2026-10-11: Florence setzt Audiohits einen Frame nach das Bild, beamnxw orientiert den stärksten Hit am sichtbaren Ereignis. Die fertige Ton-Bild-Wirkung ist zu prüfen; daraus folgt keine universelle Verschiebung.
 - 2026-10-11: Florence korrigiert nur die gerichtete A/B-Variante mit fünfzehn Folgeanweisungen. Der Vergleich trennt die Wirkung des Briefs nicht vom zusätzlichen Korrekturaufwand.
 - 2026-10-11: Illustrative Timelines und Schichtzahlen unterscheiden sich zwischen Text und Bildern. Für eine Umsetzung ist ein konkreter Filmvertrag nötig, keine Mischung sämtlicher Beispiele.
+
+- 2026-10-11 · [[2026-10-11-voxyz_ai-2109358372873183564]] nennt −16 LUFS und Spitzen unter −4 dBFS als Autorenziele, keinen allgemeingültigen Pegelstandard. Beatgrid- und Exportmessung begrenzen technische Fehler; die geforderten fünf menschlichen Hörstichproben bleiben eine eigene Abnahme, und der berichtete Fehler von 0,22 Sekunden ist eine Anekdote.
 
 ## Verwandte Patterns
 

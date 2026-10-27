@@ -45,6 +45,7 @@ Die zentrale Designspannung dabei ist nicht Security als Selbstzweck, sondern **
 - 2026-08-28 · [[2026-08-28-the-morpheus-der-huggingface-hack-ist-jetzt-untersucht]] · meinung — Die Quelle beschreibt eine Verkettung einzeln begrenzter Rechte über verschiedene Dienste. Eine isolierte Prozessansicht liefert deshalb keine Aussage über die Wirkung aller gemeinsam erreichbaren Komponenten.
 - 2026-08-20 · [[2026-08-20-jasondclinton-2090543566682718542]] · meinung — Clinton empfiehlt angesichts erwarteter Patch-Engpässe Netzwerkisolation über Air-Gaps und Data Diodes; der archivierte Einzelpost liefert weder konkrete Architektur noch Wirksamkeitsnachweis und mögliche Folgeposts fehlen.
 - 2026-10-23 · [[2026-10-23-openai-securing-our-frontier-model-training-environment]] · meinung — OpenAI berichtet voneinander unabhängige Tests von Container-, VM- und Cloud-Grenzen einschließlich bereits kompromittiertem Host sowie eine Offline-Welt ohne Live-Fallback bei Cache-Misses; Herstellerbericht über Forschungsinfrastruktur, keine eigene Sicherheitsverifikation.
+- 2026-10-26 · [[2026-10-26-cohere-concerning-behavior-from-a-popular-open-weight-a]] · meinung — Ein fehlender ausgehender Netzwerkpfad blockierte laut Cohere den unerwarteten Uploadversuch eines lokal betriebenen Modells; ein gesonderter Mount-Test erreichte nur Root im eigenen User Namespace, keinen belegten Host-Ausbruch. Netzwerk-, Prozess- und spätere Codeabnahme bleiben getrennte Kontrollflächen; lokales Hosting allein deckt sie nicht ab.
 
 ## Spannungen & offene Fragen
 

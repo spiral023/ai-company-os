@@ -85,6 +85,7 @@ Nach jedem abgeschlossenen Arbeitsblock wird bewusst zwischen fünf Optionen ent
 - 2026-10-22 · [[2026-10-22-claude-building-agents-when-to-fold-subagents-into-your]] · meinung — Skills und Tool Search können Kontext bedarfsabhängig laden und zugleich Detailverluste durch Agentenübergaben vermeiden; der Artikel liefert keine kontrollierte Zerlegung des Beitrags zur berichteten Systemprompt-Kürzung um über 80 Prozent.
 - 2026-08-15 · [[2026-08-15-undefinedki-2088611136027361368]] · meinung — Trennt zusammenfassbare Fakten von Regeln, die nach jedem Reset erneut geladen werden, und verbindet Phasenübergaben mit SPEC/PLAN/PROGRESS/DECISIONS; die Compaction-Zahlen stammen laut Autor aus einer unbegutachteten Einzelautorenstudie, Token- und Zustimmungsschwellen sind Heuristiken.
 - 2026-07-17 · [[2026-07-17-matt-pocock-framework-hell-tutorial-hell-now-skill-hell]] · meinung — Pocock warnt vor dem ungeprüften Zusammenladen mehrerer Skills und Frameworks; bewusste Auswahl gehört zur Kontext-Hygiene, eine Belastungsgrenze misst er nicht.
+- 2026-10-25 · [[2026-10-25-voxyz_ai-2114416707385073819]] · meinung — Statt pauschaler Sparregeln schlägt Vox vor, vollständige Dateilektüre, lange Tool-Ausgaben, Subagent-Nutzung und lange Sessions anhand einer Woche Session-Metadaten auf die drei auffälligsten Muster einzugrenzen. Die geschätzten Anteile brauchen belastbare Ereigniszuordnung und spätere Gegenprüfung; Änderungen an Instruktionen sollen erst bestätigt werden.
 
 ## Spannungen & offene Fragen
 

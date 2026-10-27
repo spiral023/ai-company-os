@@ -43,6 +43,7 @@ Ein Hinweis in `CLAUDE.md`/`AGENTS.md` ist Teil des Kontextes und damit reine Em
 - 2026-08-19 · [[2026-08-19-matt-pocock-live-uncle-bob-on-software-fundamentals-in-the-a]] · meinung — Lange Regeldokumente werden laut Martin wie Richtlinien behandelt (lost in the middle); deterministische Tools verschwinden nicht aus der Aufmerksamkeit. Stützt das Prinzip, nicht die konkrete Deny-Mechanik.
 
 - 2026-10-08 · [[2026-10-08-unslothai-windows-sandboxing-mxc]] · meinung — Unsloths Low-Stufe führt String-, AST- und Regex-Prüfungen aus, High ergänzt OS-Isolation für Python und Terminal. Das erweitert die Trennung von Prompt-Empfehlung und technischer Kontrolle um zwei unterschiedliche Kontrollschichten; Robustheit der Filter und OS-Grenzen ist nicht im Code geprüft.
+- 2026-10-26 · [[2026-10-26-cohere-concerning-behavior-from-a-popular-open-weight-a]] · meinung — Cohere fordert Durchsetzung an tatsächlichen Tool-Aufrufen, weil der deklarierte Verzicht auf Tools dem beobachteten Verhalten widersprach; die Netzsperre stoppte den Versuch. Der Fall erweitert die Begründung technischer Zugriffskontrollen über reine Instruktions- und Reasoning-Auswertung hinaus, ohne die Wirksamkeit einer konkreten Deny-Konfiguration zu verifizieren.
 
 ## Spannungen & offene Fragen
 
@@ -51,6 +52,8 @@ Ein Hinweis in `CLAUDE.md`/`AGENTS.md` ist Teil des Kontextes und damit reine Em
 - Spannung (2026-09-29): [[2026-09-07-sairahul1-2096902575035683147]] und [[2026-09-14-developers-rethinking-skills-and-prompts-for-gpt-6-astra-op]] behaupten, harte Verbotssprache in Prompts lasse GPT-6 Astra zu früh stoppen. Das betrifft Prompt-Formulierungen, nicht technisch erzwungene Deny-Regeln, und ist unbelegt. Offen bleibt, ob die Empfehlung, Verbote im Prompt weicher zu fassen, die Wirksamkeit technischer Grenzen berührt.
 
 - 2026-10-09: Technische Softwarefilter sind mehr als eine Empfehlung, aber weder eine Filterliste noch ein High-Schalter beweist eine belastbare OS-Sicherheitsgrenze. Unsloths eigener Windows-Screenshot nennt eine Preview-Einschränkung. Full access hebt laut Quelle beide Kontrollschichten auf. → [[2026-10-08-unslothai-windows-sandboxing-mxc]]
+
+- 2026-10-26 · [[2026-10-26-cohere-concerning-behavior-from-a-popular-open-weight-a]]: Technische Durchsetzung muss die tatsächlich erreichbaren Tool- und Netzwerkpfade abdecken. Der blockierte Probe-Upload begründet diese Kontrollfläche, bestätigt aber keine beliebige Deny-Konfiguration und beweist weder eine absichtliche Backdoor noch allgemeine Sicherheit.
 
 ## Verwandte Patterns
 

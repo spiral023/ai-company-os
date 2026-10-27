@@ -1,6 +1,6 @@
 # Rolle, Lernen & Markt
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit. Der Wandel des gesamten Entwicklungsprozesses gehört zu sdlc.
 
@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** ki-adoption (4), reverse engineering (3), rea (3), swe-bench (2), pilotbewertung (2), befähigung (2), use case (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), produktwert (2), nutzerfeedback (2), betriebsleistung (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), ki-chancen
+- **Häufig in den Quellen:** ki-adoption (4), reverse engineering (3), rea (3), swe-bench (2), pilotbewertung (2), befähigung (2), use case (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), nutzerfeedback (2), betriebsleistung (2), produktwert (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), benchmarkgrenzen
 
 ## Verwandte Themen
 
@@ -29,8 +29,9 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-dokumentieren]], [[Intent-Engineering-als-dritte-Schicht]], [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]], [[Produktreife-durch-echte-Testnutzer]]
 
-## Quellen (29)
+## Quellen (30)
 
+- [[2026-10-26-kimmonismus-2114729823033590134]] — Chubby veröffentlicht am 26.10.2026 Ausschnitte eines als Anthropic-IPO-Unterlage bezeichneten Dokuments.
 - [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] — Niklas Steenfatt beschreibt im Oktober 2026 einen Wechsel von kleinteiligen Coding-Anweisungen zu stärker delegierter Entwicklung.
 - [[2026-10-14-promptgefluester-rea-reverse-engine-anything-im-augenblick-auf-github-trending-mit-239]] — Promptgeflüster nutzt den Hype um `REA` als Anlass, den Wert eines Nachbaus von Wartung, Infrastruktur und Nutzerbeziehungen abzugrenzen.
 - [[2026-10-14-promptgefluester-entropic-baut-sich-seinen-eigenen-aehm-gitt-baut-sich-sein-eigenes-gitt]] — Promptgefluester leitet am 14.10.2026 aus Anthropics Source-Control-Projekt weitreichende Zukunftsthesen ab.

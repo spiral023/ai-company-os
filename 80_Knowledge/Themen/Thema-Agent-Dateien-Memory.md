@@ -1,6 +1,6 @@
 # Agent-Dateien & Memory
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen. Inhaltliche Aufnahme, Aufbereitung, Retrieval und regelmäßige Pflege von Quellen stehen in wissensarbeit.
 
@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** agents.md (11), claude.md (8), progressive disclosure (7), context engineering (5), agent-datei (4), coding_standards.md (3), agent_docs (2), instruktionsbudget (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), llm wiki (2), obsidian (2), /doctor (2), retro (2), test (2), regeln (2), agent bericht (2), handlungsbedarf (2)
+- **Häufig in den Quellen:** agents.md (13), claude.md (9), progressive disclosure (7), context engineering (5), agent-datei (4), coding_standards.md (3), instruktionsbudget (2), instruction following (2), agent_docs (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), llm wiki (2), obsidian (2), /doctor (2), retro (2), regeln (2), test (2), agent bericht (2)
 
 ## Verwandte Themen
 
@@ -20,13 +20,15 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 
 ## Patterns (2)
 
-- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 43 Belege
+- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 45 Belege
 - [[Handlungsbedarf-zuerst-im-Agent-Bericht]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-erzwingen]], [[Wissenspflege-mit-Inbox-und-Review]]
 
-## Quellen (20)
+## Quellen (22)
 
+- [[2026-10-25-voxyz_ai-2114446907355648062]] — Vox empfiehlt, bei Widersprüchen vorhandene Codekonventionen zu berücksichtigen und Abweichungen zur Dokumentation ausdrücklich zu melden.
+- [[2026-10-24-voxyz_ai-2114069417902403786]] — Vox schlägt eine überprüfbare Pflege von Agent-Dateien vor: Der Agent sammelt konkrete Konflikte, während der Mensch auswählt, welche Regeln geändert werden.
 - [[2026-10-07-voxyz_ai-2107939019091005836]] — Vox empfiehlt unter **200 Zeilen** je Agent-Datei und nennt **32 KiB insgesamt** als Codex-Standardlimit.
 - [[2026-10-05-voxyz_ai-2107123654219743712]] — Vox beschreibt lange Abschlussberichte, in denen notwendige Nutzeraktionen zwischen anderen Ergebnissen verschwinden.
 - [[2026-10-04-voxyz_ai-2106783910055006342]] — Vox empfiehlt eine kompakte `AGENTS.md` gegen vorschnelle Kompatibilitätsschichten, ungenutzte Altdateien und Tests für belanglose Details.
@@ -50,6 +52,8 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-er
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-26-voxyz_ai-2114839487574315517]]
+- [[2026-10-26-voxyz_ai-2114746374059381186]]
 - [[2026-10-22-voxyz_ai-2113254050170843418]]
 - [[2026-10-22-luinlee-2113085361836744764]]
 - [[2026-10-22-cu30rry-2113242716473602270]]

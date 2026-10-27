@@ -1,6 +1,6 @@
 # Prototyping & UI-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents.
 
@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), hyperframes (4), brand kit (3), suchintention (3), ereignisframes (3), motion graphics (3), ui-texte (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), artefaktbasis (2), designvarianten (2), claude design (2), produktionsabnahme (2), isolierte vorschau (2), reduced motion (2), gestaltungsachsen (2), codex skills (2), seitenspezifikation (2)
+- **Häufig in den Quellen:** lovable (5), hyperframes (4), motion graphics (4), brand kit (3), suchintention (3), ereignisframes (3), ui-texte (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), designvarianten (2), artefaktbasis (2), claude design (2), produktionsabnahme (2), isolierte vorschau (2), gestaltungsachsen (2), reduced motion (2), codex skills (2), dataforseo (2)
 
 ## Verwandte Themen
 
@@ -20,7 +20,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 ## Patterns (8)
 
 - [[Brand-Kit-als-gemeinsame-Artefaktbasis]] · meinung · 5 Belege
-- [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] · meinung · 6 Belege
+- [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] · meinung · 7 Belege
 - [[Layout-vor-Hilfstext-pruefen]] · meinung · 2 Belege
 - [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 8 Belege
 - [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] · verifiziert · 4 Belege
@@ -30,7 +30,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]], [[Skill-aus-Demonstration-statt-Beschreibung]], [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]], [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]
 
-## Quellen (37)
+## Quellen (38)
 
 - [[2026-10-22-voxyz_ai-2113254050170843418]] — Vox schlägt zwei Regeln für `AGENTS.md` vor: erklärende Nebentexte reduzieren und Entscheidungen zugleich nach UX, DX und Agent Experience bewerten.
 - [[2026-10-22-pbakaus-2113065895069368804]] — Paul Bakaus kündigt einen automatisch beteiligten Impeccable-Subagenten an, der Frontend-Arbeit nach dem Aufbau prüft und mit dem Hauptagenten verbessert.
@@ -38,6 +38,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]]
 - [[2026-10-21-vincentmumme-ich-wurde-gefragt-wie-man-mit-ki-aktuell-die-beste-ui-erstellt-also-die]] — Vincent Mumme empfiehlt, eine eigene Referenzbibliothek aufzubauen und gewünschte Gestaltungsmerkmale damit zu zeigen.
 - [[2026-10-17-nutzerquelle-motion-video-qualitaetskriterien]] — Die am 17.10.2026 vollständig bereitgestellte Vorlage „Motion-Video“ beschreibt Qualitätskriterien für Erklärfilme und Werbung.
 - [[2026-10-17-julian-ivanov-ki-automat-motion-graphics-mit-ki-bildern-kombinieren-in-cl]] — Julian Ivanov beschreibt eine hybride Videoproduktion: Figuren und Gegenstände entstehen als Bilder, während Code Text, Diagramme, Bewegung und Timing steuert.
+- [[2026-10-11-voxyz_ai-2109358372873183564]] — Vox beschreibt eine Tonabnahme für codebasierte Motion-Videos, die Messung, visuelle Synchronitätsprüfung und menschliche Hörstichproben kombiniert.
 - [[2026-10-10-voxyz_ai-2108875199164871053]] — Vox zeigt einen read-only CSS-Auditprompt für mobile Eingabe, passende CSS-Funktionen und visuelle Details.
 - [[2026-10-09-voxyz_ai-2108543002830360775]] — Vox verbindet einen verlinkten Claude-Motion-Guide mit einem eigenen Prompt für `Opus 5.5` in Claude Code.
 - [[2026-10-09-shadcn-2108574564586332615]] — shadcn berichtet am 09.10.2026 über verbesserte `DESIGN.md`-Unterstützung der `shadcn/ui`-Skills.

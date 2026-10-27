@@ -41,6 +41,7 @@ Den Ablauf von UI oder Eingangsdaten durch Validierung, Business-Logik und Persi
 - 2026-10-18 · [[2026-10-18-floknowsai-ria-ist-aktuell-der-gehypteste-ki-skill-macht-deine-ki-agenten-zu]] · meinung — Florian überträgt die Untersuchung einer begrenzten bestehenden Funktion auf die eigene Implementierung und verlangt Codefundstellen; die REA-Erklärung ist sekundär und belegt weder vollständigen Nachbau noch höhere Ergebnisqualität.
 - 2026-10-22 · [[2026-10-22-voxyz_ai-2113344640959250912]] · meinung — Der beschriebene Review liest auch betroffene Bestandsdateien außerhalb des Diffs; die berichtete Erkennung aller dort platzierten Fehler ist ein nicht unabhängig replizierter Herstellertest.
 - 2026-10-22 · [[2026-10-22-franzbruckhoff-2113401002355298410]] · meinung — Der Auditansatz verfolgt nicht vertrauenswürdige Eingaben bis zu Ausführungssenken und prüft Zugriffsrechte im Zusammenhang; eine auffällige Einzelzeile ersetzt keine Fundreproduktion in eigener autorisierter Umgebung.
+- 2026-10-20 · [[2026-10-20-anthropic-using-claude-to-reduce-the-attack-surface-of-cod]] · meinung — Anthropic vergleicht beabsichtigte Exposition mit tatsächlich erreichbaren Eingangspfaden und bestätigt Befunde laut Herstellerbericht durch dynamische Traces. Der OpenSSH-Fall zeigt, dass Prüfungen des angekündigten Algorithmus verschachtelte Parser- und CA-Signaturpfade übersehen können; ein ausbleibender Trace beweist keine allgemeine Unerreichbarkeit.
 
 ## Spannungen & offene Fragen
 

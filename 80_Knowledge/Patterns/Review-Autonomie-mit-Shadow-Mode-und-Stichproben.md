@@ -41,6 +41,7 @@ Risikogewichtete menschliche Stichproben prüfen automatische Freigaben weiter. 
 - 2026-07-20 · [[2026-07-20-matt-pocock-do-you-even-need-human-review]] · meinung — Kontrollpunkte variieren nach Umfang und Art der Änderung; der Beitrag nennt Fälle ohne spätes menschliches Review, liefert aber keine Validierung einer sicheren Produktionsfreigabe.
 - 2026-10-22 · [[2026-10-22-voxyz_ai-2113314439294570515]] · meinung — Vox trennt fünf gewichtete PR-Risikokriterien von menschlichen Freigaberegeln und schlägt eine lesende Kalibrierung an zehn PRs vor; sensible Pfade und CI-Konfiguration bleiben menschlich zu prüfen, die berichtete Revert-Verbesserung ist kein kausaler Wirksamkeitsnachweis.
 - 2026-10-22 · [[2026-10-22-itamar_mar-2113255396299128887]] · meinung — Der Einstieg erfolgt mit einer begrenzten Arbeitsklasse unter menschlicher Aufsicht; Interventionen zeigen fehlenden Kontext, unzureichende Checks oder zu weite Grenzen. Verantwortung wächst mit beobachtetem Verhalten; der Artikel nennt jedoch keine gemessenen Erfolgsquoten oder Freigabeschwellen.
+- 2026-10-25 · [[2026-10-25-mattpocockuk-2114311664069718370]] · meinung — Pocock erwägt deterministischen Automerge ausschließlich für Codeumordnung bei unverändertem Modulgraphen und nicht verschlechterter Testabdeckung; Features sind ausgeschlossen. Im zweiten Threadpost nennt er zusätzliche Grenzen und hält die Idee schließlich selbst für wahrscheinlich nicht umsetzbar; es handelt sich um keine verfügbare oder validierte Freigabetechnik.
 
 ## Spannungen & offene Fragen
 
@@ -51,6 +52,8 @@ Risikogewichtete menschliche Stichproben prüfen automatische Freigaben weiter. 
 - Offen: Welche Fehlentscheidungsrate, Nachweise und Stichprobenquote reichen für einen konkret abgegrenzten Automatisierungsbereich?
 
 - 2026-10-22: [[2026-07-20-matt-pocock-do-you-even-need-human-review]] hält für bestimmte interne Arbeiten nur frühe menschliche Abstimmung für ausreichend. Das ist eine Prozessheuristik ohne validierte Freigabeschwelle; tatsächliche Tragweite und bestehende Produktionsfreigaben bleiben eigenständige Bedingungen.
+
+- 2026-10-25 · [[2026-10-25-mattpocockuk-2114311664069718370]]: Pocock bezweifelt seinen eigenen Vorschlag im zweiten Threadpost bis zur Vermutung, dass er wahrscheinlich nicht möglich sei. Eine Ideenskizze zu unverändertem Modulgraphen, Coverage oder Bundle-Output ist weder ein vorhandenes Automerge-Tool noch eine validierte Freigabegrenze.
 
 ## Verwandte Patterns
 

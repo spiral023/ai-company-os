@@ -1,6 +1,6 @@
 # Autonome Läufe, Loops & CI
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agents, Autonomiestufen und ihre Grenzen.
 
@@ -9,7 +9,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - **Hauptkeyword:** Ralph Loop
 - **Long-Tail:** Ralph Loop einrichten; Claude Code Headless CI; Claude Code über Nacht; Autonomiestufen Coding Agent; Claude Code GitHub Action; Loop Engineering
 - **Fragen:** Kann ich einen Agent über Nacht laufen lassen? / Wie viel Autonomie ist sicher?
-- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), loop (3), /goal (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), ci-agent (2), über nacht (2), testharness (2), modell (2), overnight agents (2), zeitfenster (2), duplikatprüfung (2), agent-automationen (2), zustellbestätigung (2)
+- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), loop (3), /goal (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), über nacht (2), ci-agent (2), testharness (2), modell (2), overnight agents (2), zustellbestätigung (2), zeitfenster (2), fortschrittsmarker (2), quellen-bookmark (2)
 
 ## Verwandte Themen
 
@@ -22,7 +22,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 ## Patterns (5)
 
 - [[CI-Agent-mit-Review-Gate]] · mehrfach-belegt · 12 Belege
-- [[Metrikband-gestufte-Agent-Autonomie]] · meinung · 2 Belege
+- [[Metrikband-gestufte-Agent-Autonomie]] · meinung · 3 Belege
 - [[Quellen-Bookmarks-fuer-Agent-Automationen]] · meinung · 1 Belege
 - [[Ralph-Loop-Frischer-Kontext-pro-Iteration]] · mehrfach-belegt · 15 Belege
 - [[Sicherer-Fallback-vor-menschlicher-Eskalation]] · meinung · 1 Belege
@@ -49,6 +49,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]],
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-25-mattpocockuk-2114311664069718370]]
 - [[2026-10-22-voxyz_ai-2113314439294570515]]
 - [[2026-10-22-itamar_mar-2113255396299128887]]
 - [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]]
@@ -57,6 +58,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]],
 - [[2026-10-06-voxyz_ai-2107455844992299272]]
 - [[2026-10-05-voxyz_ai-2107214251408433365]]
 - [[2026-09-23-claude-how-we-made-claude-ai-3x-faster-in-two-weeks-cla]]
+- [[2026-09-22-vateo-after-waterfall-agile-and-devops-anthropic-s-ai]]
 - [[2026-09-14-claude-agentic-coding-is-straining-ci-here-s-how-we-sca]]
 - [[2026-08-21-julian-ivanov-ki-automat-hermes-agent-kann-jetzt-viel-mehr-als-du-denkst]]
 - [[2026-08-14-claudedevs-2088332927189049738]]

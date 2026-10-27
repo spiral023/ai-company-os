@@ -1,6 +1,6 @@
 # Multi-Agent & Parallelisierung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-24. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-Abhängigkeiten, Rollen, Advisor. Dauerläufe ohne Aufsicht stehen in autonomie.
 
@@ -9,7 +9,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - **Hauptkeyword:** Claude Code Subagents
 - **Long-Tail:** Agent Teams Claude Code; Git Worktrees parallele Agents; Subagents vs. Agent Teams; Multi-Agent Orchestrierung; Task-Abhängigkeiten Claude Code; Kosten paralleler Agents
 - **Fragen:** Wann lohnt sich Parallelisierung? / Subagent oder Agent Team?
-- **Häufig in den Quellen:** subagents (7), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), heartbeats (3), agent-organisation (3), multi-agent (2), addblockedby (2), claude code tasks (2), modulgrenzen (2), claude code agent teams (2), codex cli (2), budgets (2), rollen (2), freigaben (2), delegation (2), parallel agents (2), agent teams (2)
+- **Häufig in den Quellen:** subagents (7), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), heartbeats (3), agent-organisation (3), multi-agent (2), claude code tasks (2), addblockedby (2), modulgrenzen (2), claude code agent teams (2), codex cli (2), budgets (2), rollen (2), freigaben (2), delegation (2), parallel agents (2), edit-kollisionen (2)
 
 ## Verwandte Themen
 
@@ -23,12 +23,13 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - [[Advisor-Agent-gegen-Drift]] · meinung · 3 Belege
 - [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]] · meinung · 3 Belege
 - [[Blockierende-Task-Abhaengigkeiten]] · meinung · 5 Belege
-- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 53 Belege
+- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 55 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Bedarfsorientierter-Repositoryzugriff]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]], [[Verhaltens-Spec-als-Grenze-zwischen-Analyse-und-Nachbau]]
 
-## Quellen (24)
+## Quellen (25)
 
+- [[2026-10-27-voxyz_ai-2115096193240047938]] — Vox schlägt am 27.10.2026 eine Codex-Arbeitsteilung vor: `GPT-6.1 Sol/high` zerlegt Aufgaben, integriert Ergebnisse und prüft; `GPT-6.1 Terra` erledigt begrenzte Teilaufgaben.
 - [[2026-10-22-claude-building-agents-when-to-fold-subagents-into-your]] — Anthropics Artikel berichtet Erfahrungen aus Enterprise-Agenten und empfiehlt, geeignete Spezialisten schrittweise in einen gemeinsamen Agent-Loop zu überführen. Die Belastbarkeit bleibt begrenzt: Vergleichsdaten, Stichprobengrößen und vollständige Eval-Sets fehlen. Ein einzelner Kunde habe ungefähr doppelte Geschwindigkeit erreicht; das ist ein berichteter Einzelfall, keine übertragbare Benchmark. Die Rohmetadaten nennen „Claude“, der Artikel selbst Diane Sarkis.
 - [[2026-10-19-zazencodes-factory-works-in-this-loop-a-feature-comes-through-the-spec-writer-which]] — @zazencodes demonstriert einen wiederholbaren Feature-Ablauf mit getrennten Subagents. Die Caption kennzeichnet das Video als von Anthropic gesponsert; es zeigt einen einzelnen erfolgreichen Durchlauf.
 - [[2026-10-09-git-worktree]] — Getrennte Worktrees teilen das Repository, isolieren aber keine Laufzeitressourcen.

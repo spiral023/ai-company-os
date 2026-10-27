@@ -77,6 +77,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]] — plausible Extremwerte als Fixture vergleichen und Rendering-Defekte gezielt nachprüfen.
 - [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] — mobile Eingabe-, Viewport- und Gestenprobleme gezielt korrigieren und auf Zielhardware prüfen.
 - [[Codepfad-vor-Aenderung-nachvollziehen]] — einen begrenzten Ablauf durch Dateien und Zustandswechsel verfolgen, bevor die Umsetzung beginnt.
+- [[Angriffsflaeche-durch-Erreichbarkeitsanalyse-reduzieren]] — unnötig exponierte Pfade durch getrennte Erreichbarkeitsanalysen finden, mit Traces bestätigen und Gates gegen eine Baseline prüfen.
 - [[Architektur-in-Perspektiven-dokumentieren]] — Codearchitektur durch passende Perspektiven, Dateibelege und rekursive Detailansichten dokumentieren; Format und fachliche Richtigkeit getrennt prüfen.
 - [[Refactoring-mit-Verhaltensvergleich]] — vereinbarte Eingaben und öffentliche Schnittstellen vor und nach einem kleinen Refactor vergleichen.
 - [[Wissenspflege-mit-Inbox-und-Review]] — Eingänge, Entscheidungen und Arbeitsstände über Session-Abschluss und regelmäßigen Review in wiederverwendbares Wissen überführen.
