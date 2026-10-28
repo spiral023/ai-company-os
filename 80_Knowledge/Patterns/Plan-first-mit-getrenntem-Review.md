@@ -98,6 +98,8 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-10-27 · external_repos/anthropics/claude-code/plugins/code-review/commands/code-review.md · verifiziert — Lokale Stichprobe trennt in Schritt 4 parallele Regel-/Bug-Prüfung und in Schritt 5 die Validierung der Befunde durch weitere Agents; dies bestätigt die öffentliche Review-Anweisung, nicht den gehosteten Abstimmungsprozess oder interne Erfolgszahlen aus Addys Artikel.
 
 - 2026-10-27 · [[2026-10-27-voxyz_ai-2115228299400196368]] · meinung — Zuerst wird ein Loggingplan mit Session-ID und Ausschluss sensibler Daten zur Freigabe vorgelegt; die spätere Log-Triage darf Befunde und einen Test vorbereiten, aber noch keinen Anwendungscode ändern. Die Quelle trennt damit Planung und Diagnose von der menschlich ausgewählten Umsetzung, ohne eine wirksame technische Durchsetzung nachzuweisen.
+- 2026-10-28 · [[2026-10-28-housecor-2115482034906800200]] · meinung — Grilling, Ticketprüfung und Recherche sollen den Plan vor Arbeitsbeginn absichern; Code- und Security-Review folgen vor dem PR. Die zeitliche Trennung ergänzt das Vorgehen, belegt aber weder eine unabhängige Reviewer-Rolle noch verbindliche Abnahmekriterien.
+- 2026-10-25 · [[2026-10-25-alex-sprogis-die-qualitaet-von-ki-code-ist-nicht-so-gut-wie-d]] · meinung — Sprogis beschreibt eine Spezifikation mit Sonderfällen und Akzeptanzkriterien vor der Umsetzung; ein separater Agent soll nur diese Spec und das fertige Ergebnis prüfen. Dies konkretisiert die Informationsgrenze, belegt aber weder Unabhängigkeit aller Fehlerbilder noch eine gemessene Erkennungsleistung.
 
 ## Spannungen & offene Fragen
 
@@ -109,6 +111,8 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-10-22: [[2026-07-20-matt-pocock-do-you-even-need-human-review]] verschiebt Kontrollpunkte nach Änderungsumfang und späteren Korrekturkosten. Kleine Diffs und interne Refactorings sind jedoch keine hinreichende Risikoklasse. [[2026-10-20-alex-sprogis-hoer-auf-software-abos-zu-kaufen]] zeigt, warum selbst eine private Desktop-App mit Dateilöschung eine eigene Verhaltensprüfung braucht; ein zusätzlicher Agentenbericht ist noch keine unabhängige Abnahme.
 
 - 2026-10-24 · [[2026-10-22-mattpocockuk-2113264229453033684]] setzt ausführbaren Code als Qualitätsgegenstand gegen eine einseitige Spec-Zentrierung. Der Thread relativiert die ursprüngliche Gegenüberstellung: Planung und Spezifikation bleiben sinnvoll, benötigen aber einen fortlaufenden Abgleich mit dem tatsächlich ausgeführten Code.
+
+- 2026-10-28 · [[2026-10-28-housecor-2115482034906800200]] benennt Planprüfung vor der Umsetzung und Qualitätsprüfungen vor dem PR. Zeitlich getrennte Skill-Aufrufe belegen für sich keine unabhängige Reviewer-Rolle oder festgelegte Abnahmekriterien; die Aufrufnamen und Verfügbarkeit bleiben umgebungsspezifisch.
 
 ## Verwandte Patterns
 

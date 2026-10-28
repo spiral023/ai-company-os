@@ -1,6 +1,6 @@
 # Hook-Entscheidungstyp-nach-Pruefbarkeit
 
-**Konfidenz:** meinung
+**Konfidenz:** verifiziert
 
 ## Zweck
 
@@ -40,6 +40,8 @@ Drei Entscheidungsformen stehen zwischen starrem Skript und freiem, unstrukturie
 - 2026-10-10 · [[2026-10-10-julian-ivanov-ki-automat-diese-10-claude-code-mods-solltest-du-unbedingt]] · meinung — Die Übersicht unterscheidet ein beschriebenes Anhalten riskanter Befehle mit Bestätigung von Anzeigen für Fortschritt, Cache und Dateiaktivität. Ob ein konkreter Hook die fragliche Aktion vollständig abdeckt und tatsächlich blockiert, müsste separat geprüft werden; ein Panel oder Warntext ist dafür kein allgemeiner Nachweis.
 - 2026-10-18 · [[2026-10-18-mattpocockuk-2111708560715292675]] · meinung — Pocock empfiehlt einen schnellen Pre-Commit-Check nur für gestagte, eigenständig bearbeitete Dateien mit Ausnahmen für Lockfiles und Codegen sowie konkreter Aufteilhilfe. Die Grenze von 5.000 geschätzten Tokens bei Bytes/4 ist bewusst willkürlich und kein empirisches Optimum.
 - 2026-10-13 · [[2026-10-13-matt-pocock-stop-running-your-checks-in-harness-hooks]] · meinung — Pocock kritisiert Prüfungen nach jeder Dateiänderung und empfiehlt schnelle Pre-Commit-Checks plus umfangreiche CI; Zeitpunkt des Feedbacks ist von der technischen Hook-Entscheidungsart zu trennen.
+- 2026-10-28 · external_repos/mattpocock/skills/skills/engineering/retro/SKILL.md · verifiziert — Statische Stichprobe auf Commit 5beb35b ordnet mechanische Regelverstöße deterministischen Checks und echte Ermessensfragen Reviewstandards zu; vorhandene Checks werden vorher gelesen und Kandidaten anschließend nach Schwere präsentiert. Dies bestätigt die dokumentierte Entscheidungsregel, keine automatische Umsetzung oder Wirksamkeit eines Harness-Hooks.
+- 2026-10-13 · [[2026-10-13-matt-pocock-retro-is-a-banger-of-a-skill]] · meinung — Pocock unterscheidet mechanisch prüfbare Fehler von solchen, für die fachliche Reviewregeln benötigt werden; das ergänzt das Auswahlkriterium der Prüfbarkeit um einen konkreten Retrospektiven-Anlass. Die Übertragung betrifft das Entscheidungskriterium, nicht eine Empfehlung für Harness-Hooks; fachliche Reviewregeln bleiben urteilsabhängig und bieten keine deterministische Garantie.
 
 ## Spannungen & offene Fragen
 
@@ -47,6 +49,8 @@ Drei Entscheidungsformen stehen zwischen starrem Skript und freiem, unstrukturie
 - Offene Frage: Wie verhält sich die Zuverlässigkeit eines Prompt-Hooks gegenüber einem Skript-Hook in der Praxis — gibt es Bedingungen, bei denen der Prompt-Hook trotz sprachlicher Flexibilität systematisch unzuverlässiger entscheidet?
 
 - 2026-10-22: [[2026-10-13-matt-pocock-stop-running-your-checks-in-harness-hooks]] kritisiert den Zeitpunkt umfangreicher Checks nach jeder Dateiänderung, nicht automatisierte Prüfungen insgesamt. Die Wahl zwischen Skript-, Prompt- und Agent-Entscheidung ist von [[Pruefungen-nach-Feedbackzeitpunkt-staffeln]] zu unterscheiden.
+
+- 2026-10-28 · [[2026-10-13-matt-pocock-retro-is-a-banger-of-a-skill]] konkretisiert den Anlass einer nachträglichen Absicherung. Die am lokalen Checkout bestätigte Trennung mechanischer Verstöße von fachlichen Ermessensfragen ist eine dokumentierte Entscheidungsregel; sie belegt weder einen bestimmten Harness-Hook noch automatische Umsetzung oder Schutzwirkung. Der gesichtete Retro-Ablauf präsentiert priorisierte Kandidaten.
 
 ## Verwandte Patterns
 

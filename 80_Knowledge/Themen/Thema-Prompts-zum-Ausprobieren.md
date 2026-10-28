@@ -9,7 +9,7 @@ Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, C
 - **Hauptkeyword:** Prompts für Claude Code
 - **Long-Tail:** Prompts zum Ausprobieren; Claude Code Prompt-Vorlagen; Blindspot Pass Prompt; Claude interviewt mich Prompt; Debugging-Prompt für Coding Agents; Prompt mit klarem Zielzustand; Plan vor Code Prompt
 - **Fragen:** Welche Prompts kann ich direkt in Claude Code ausprobieren? / Wie sage ich dem Agent, wann er fertig ist? / Wie verhindere ich, dass der Agent Fehler nur versteckt?
-- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), codex, requirements lead, rollen-prompts, reviewer-agent, ergebnisverantwortung, task brief, claude code prompts, tech lead prompt, verifikation vor abschluss, freigabeliste, rechnerdiagnose, diagnoseprotokoll, read-only-inventar, erfolgskriterien, scope begrenzen, coding-agent-fehler, annahmen offenlegen
+- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), claude code prompts, requirements lead, tech lead prompt, rollen-prompts, verifikation vor abschluss, reviewer-agent, codex, task brief, ergebnisverantwortung, diagnoseprotokoll, freigabeliste, read-only-inventar, rechnerdiagnose, erfolgskriterien, karpathy system prompt, scope begrenzen, annahmen offenlegen
 
 ## Verwandte Themen
 

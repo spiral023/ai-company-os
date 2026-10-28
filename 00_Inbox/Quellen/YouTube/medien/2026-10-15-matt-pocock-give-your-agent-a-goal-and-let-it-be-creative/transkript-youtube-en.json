@@ -1,0 +1,175 @@
+{
+  "url": "https://www.youtube.com/watch?v=fn3iRGgRuWU",
+  "video_id": "fn3iRGgRuWU",
+  "erfasst": "2026-10-28",
+  "language_code": "en",
+  "language": "English (auto-generated)",
+  "is_generated": true,
+  "segments": [
+    {
+      "text": "Verifying agent's work is unbelievably",
+      "start": 0.0,
+      "duration": 4.2
+    },
+    {
+      "text": "important, and I've started putting more",
+      "start": 2.44,
+      "duration": 3.56
+    },
+    {
+      "text": "emphasis on this with my agents. For",
+      "start": 4.2,
+      "duration": 3.04
+    },
+    {
+      "text": "instance, I'm using a custom video",
+      "start": 6.0,
+      "duration": 3.12
+    },
+    {
+      "text": "editor to record this right now, and I",
+      "start": 7.24,
+      "duration": 4.6
+    },
+    {
+      "text": "wanted to drop my dependency on OBS. And",
+      "start": 9.12,
+      "duration": 5.88
+    },
+    {
+      "text": "so, I needed to build a replacement OBS.",
+      "start": 11.84,
+      "duration": 4.44
+    },
+    {
+      "text": "Now, of course, it didn't need to have",
+      "start": 15.0,
+      "duration": 3.0
+    },
+    {
+      "text": "all the features of OBS, it just had the",
+      "start": 16.28,
+      "duration": 4.04
+    },
+    {
+      "text": "features that I needed, but I wanted it",
+      "start": 18.0,
+      "duration": 4.56
+    },
+    {
+      "text": "to have exactly the same performance.",
+      "start": 20.32,
+      "duration": 3.56
+    },
+    {
+      "text": "And so, what I did, I got the agent to",
+      "start": 22.56,
+      "duration": 3.44
+    },
+    {
+      "text": "build a recorder scorecard, which would",
+      "start": 23.88,
+      "duration": 4.64
+    },
+    {
+      "text": "score OBS on a bunch of metrics and",
+      "start": 26.0,
+      "duration": 4.56
+    },
+    {
+      "text": "score us based on how well it performs",
+      "start": 28.52,
+      "duration": 3.88
+    },
+    {
+      "text": "against it. This script takes about 20",
+      "start": 30.56,
+      "duration": 3.28
+    },
+    {
+      "text": "minutes to run, and it gives me all",
+      "start": 32.4,
+      "duration": 3.08
+    },
+    {
+      "text": "sorts of metrics. And the way I'm going",
+      "start": 33.84,
+      "duration": 3.04
+    },
+    {
+      "text": "to get this working is the agent is",
+      "start": 35.48,
+      "duration": 4.52
+    },
+    {
+      "text": "going to, once a day, try to rerun this",
+      "start": 36.88,
+      "duration": 4.88
+    },
+    {
+      "text": "and get the results better and better,",
+      "start": 40.0,
+      "duration": 3.2
+    },
+    {
+      "text": "looking for improvements every single",
+      "start": 41.76,
+      "duration": 3.8
+    },
+    {
+      "text": "time. Now, it's got a very clear set of",
+      "start": 43.2,
+      "duration": 4.12
+    },
+    {
+      "text": "metrics that it needs to track over",
+      "start": 45.56,
+      "duration": 3.8
+    },
+    {
+      "text": "time, it can just look for more and more",
+      "start": 47.32,
+      "duration": 4.0
+    },
+    {
+      "text": "creative ways to try to make those",
+      "start": 49.36,
+      "duration": 3.56
+    },
+    {
+      "text": "metrics better. This is a massively",
+      "start": 51.32,
+      "duration": 3.64
+    },
+    {
+      "text": "underused way of using agents. You just",
+      "start": 52.92,
+      "duration": 4.2
+    },
+    {
+      "text": "give it a goal, and over time it will",
+      "start": 54.96,
+      "duration": 3.6
+    },
+    {
+      "text": "get closer to that goal. This is a",
+      "start": 57.12,
+      "duration": 3.92
+    },
+    {
+      "text": "really amazing for performance-sensitive",
+      "start": 58.56,
+      "duration": 4.32
+    },
+    {
+      "text": "software, of which, honestly, most",
+      "start": 61.04,
+      "duration": 4.36
+    },
+    {
+      "text": "software is",
+      "start": 62.88,
+      "duration": 2.52
+    }
+  ]
+}

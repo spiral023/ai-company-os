@@ -9,7 +9,7 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 - **Hauptkeyword:** Claude Code Kosten
 - **Long-Tail:** Claude Code Usage Limits; Kosten pro Task statt pro Token; Prompt Caching Claude Code; Claude Code mit lokalem Modell; Reasoning Effort wählen; Modell-Eskalation günstig nach teuer
 - **Fragen:** Welches Modell für welche Aufgabe? / Warum sind meine Limits so schnell leer?
-- **Häufig in den Quellen:** modell-eskalation (31), modell (29), effort (22), kosten (21), benchmark (19), preis (17), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), preise (8), pareto (7), cost per task (7), intelligence index (7), sonnet (7), opus 5.5 (7), terminal-bench 4.0 (6), reasoning effort (6)
+- **Häufig in den Quellen:** modell-eskalation (31), modell (29), effort (22), kosten (21), benchmark (19), preis (17), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), cost per task (8), preise (8), intelligence index (7), pareto (7), sonnet (7), opus 5.5 (7), terminal-bench 4.0 (6), reasoning effort (6)
 
 ## Verwandte Themen
 
@@ -23,14 +23,15 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 
 - [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 4 Belege
 - [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 10 Belege
-- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 66 Belege
+- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 67 Belege
 - [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]] · meinung · 1 Belege
 - [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Mehrquellen-Synthese-mit-Haeufigkeiten-und-Widerspruechen]]
 
-## Quellen (87)
+## Quellen (89)
 
+- [[2026-10-28-artificialanlys-2115494553780367384]] — Artificial Analysis berichtet am 28.10.2026 über `Gemini 4 Carbon (high)`.
 - [[2026-10-28-artificialanlys-2115265133467635877]] — Artificial Analysis veröffentlicht am 28.10.2026 den Intelligence Index `v5`: neun Evaluationen, `60 %` mit privaten Testsets oder zurückgehaltenen Antworten.
 - [[2026-10-28-aibattle-2115269739069026766]] — AiBattle stellt am 28.10.2026 zwei Artificial-Analysis-Ranglisten gegenüber.
 - [[2026-10-27-petergostev-2115085935285248010]] — Peter Gostev hält die Inferenz großer Modellanbieter für unterschätzt effizient.
@@ -118,6 +119,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 - [[2026-03-29-0x-kaize-claude-usage-limits-primaer]] — Der Tokenverbrauch wächst in langen Chats quadratisch, weil der Verlauf neu eingelesen wird; kurze Chats, Haiku für Routine und Nutzung außerhalb der Peak Hours sparen Limit.
 - [[2026-02-04-rudrank-using-minimax-with-claude-code]] — Claude Code lässt sich per drei Umgebungsvariablen auf jeden Anthropic-kompatiblen Provider umleiten; vorher alte Overrides löschen und Routing mit /status prüfen.
 - [[2025-12-31-natebjones-seriously-not-worth-it-now]] — Vor jedem Fine-Tuning zuerst Instruktionen, Constraints und Evals als Harness ausreizen, da neue Modellgenerationen Trainingsprojekte schnell überholen.
+- [[2025-06-17-matt-pocock-the-bitter-lesson]] — Grundlage sind Videobeschreibung und automatisch erzeugtes englisches Transkript.
 
 ## Quellen mit diesem Thema als Nebenthema
 

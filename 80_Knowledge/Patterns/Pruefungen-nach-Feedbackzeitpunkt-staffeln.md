@@ -33,10 +33,13 @@ Kurze, aussagekräftige Checks vor einem Commit bündeln und aufwendige Suiten v
 
 - 2026-10-13 · [[2026-10-13-matt-pocock-stop-running-your-checks-in-harness-hooks]] · meinung — Schnelle Pre-Commit-Checks und umfangreiche CI sollen wiederholte Rückmeldungen zu absichtlich inkonsistenten Edit-Zwischenständen begrenzen; keine gemessene Beschleunigung.
 - 2026-10-22 · [[2026-10-22-cu30rry-2113242716473602270]] · meinung — Der Workflow kombiniert E2E und formale Verifikation, anschließendes Thermos-Review sowie react-doctor und fallow in CI; die Tool-Aufzählung belegt keine vollständige Prüfungsabdeckung.
+- 2026-10-28 · [[2026-10-28-housecor-2115482034906800200]] · meinung — House ergänzt die technische Staffelung von Prüfungen um den Arbeitsablauf: Plan vor der Umsetzung prüfen, Qualität vor dem PR sichern, Kommentare anschließend bearbeiten und Architektur beziehungsweise Instruktionen wiederkehrend untersuchen. Persönliche Auswahlheuristik ohne gemessenen Nutzen oder universellen Zeitplan.
 
 ## Spannungen & offene Fragen
 
 - 2026-10-22: Frühzeitige Fehlererkennung konkurriert mit dem Wunsch, zusammenhängende Änderungen zunächst abzuschließen. Der sinnvolle Zeitpunkt hängt vom Prüfsignal und der Aufgabe ab; ein starres Laufzeitlimit löst diesen Zielkonflikt nicht.
+
+- 2026-10-28 · [[2026-10-28-housecor-2115482034906800200]] verteilt manuell aufgerufene Skills über Arbeitsbeginn, PR-Vorbereitung, Kommentar-Bearbeitung und wiederkehrende Audits. Das ergänzt die technische Edit-/Pre-Commit-/CI-Staffelung um Entscheidungspunkte im Arbeitstag; die Quelle liefert keine optimale Frequenz oder Wirksamkeitsmessung.
 
 ## Verwandte Patterns
 

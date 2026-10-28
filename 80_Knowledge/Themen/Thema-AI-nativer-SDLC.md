@@ -9,7 +9,7 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 - **Hauptkeyword:** AI-nativer SDLC
 - **Long-Tail:** Software Development Lifecycle mit KI; SDLC mit Coding Agents; AI-native SDLC Playbook; SDLC ist tot; Intent Build Observe; Agentic SDLC und ADLC; Menschliche Freigaben im AI-nativen SDLC
 - **Fragen:** Wie verändert sich der SDLC durch Coding Agents? / Welche Kontrollpunkte brauchen Menschen weiterhin? / Wie fließen Erkenntnisse aus dem Betrieb zurück in die Planung?
-- **Häufig in den Quellen:** ai-native sdlc (4), human-in-the-loop (3), intent.md (3), software factory (3), review.md (2), spec.md (2), menschliche freigabe (2), scion (2), verhaltensvergleich (2), refactoring (2), codex (2), sdlc ist tot, observability als kontext, intent build observe, software development lifecycle mit ki, feature flags canary, adversarial agent code review, closed loop, risikobasiertes human review, befundnachweis
+- **Häufig in den Quellen:** ai-native sdlc (4), human-in-the-loop (3), intent.md (3), software factory (3), refactoring (3), review.md (2), spec.md (2), menschliche freigabe (2), scion (2), verhaltensvergleich (2), codex (2), observability als kontext, intent build observe, feature flags canary, adversarial agent code review, closed loop, software development lifecycle mit ki, sdlc ist tot, review-stichproben, befundnachweis
 
 ## Verwandte Themen
 
@@ -23,7 +23,7 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 
 - [[Bedarfsorientierter-Repositoryzugriff]] · meinung · 2 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachvollziehen]], [[Metrikband-gestufte-Agent-Autonomie]], [[Refactoring-mit-Verhaltensvergleich]], [[Sicherer-Fallback-vor-menschlicher-Eskalation]], [[Zustandslose-CI-Listener-mit-Ergebnisjournal]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachvollziehen]], [[Metrikband-gestufte-Agent-Autonomie]], [[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]], [[Refactoring-mit-Verhaltensvergleich]], [[Sicherer-Fallback-vor-menschlicher-Eskalation]], [[Zustandslose-CI-Listener-mit-Ergebnisjournal]]
 
 ## Quellen (9)
 
@@ -40,6 +40,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachv
 ## Quellen mit diesem Thema als Nebenthema
 
 - [[2026-10-27-aboutamazon-an-update-from-amazon-engineering-leadership-on]]
+- [[2026-10-25-alex-sprogis-die-qualitaet-von-ki-code-ist-nicht-so-gut-wie-d]]
 - [[2026-10-22-mattpocockuk-2113196247964074322]]
 - [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]]
 - [[2026-10-12-sarahfim-2109736893198016898]]
@@ -49,3 +50,4 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachv
 - [[2026-10-05-venelin-valkov-stop-ai-code-slop-yes-you-still-need-to-refactor]]
 - [[2026-10-02-matt-pocock-live-poteto-creator-of-pstack-on-shipping-1-000]]
 - [[2026-09-14-claude-agentic-coding-is-straining-ci-here-s-how-we-sca]]
+- [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]]

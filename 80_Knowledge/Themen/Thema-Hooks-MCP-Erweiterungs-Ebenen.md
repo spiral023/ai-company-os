@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), subagents (5), claude.md (5), mcp (5), plugins (5), progressive disclosure (4), claude code skills (4), hooks (4), erweiterung (4), rea (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2)
+- **Häufig in den Quellen:** claude code hooks (6), subagents (5), claude.md (5), plugins (5), mcp (5), progressive disclosure (4), claude code skills (4), hooks (4), erweiterung (4), rea (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2)
 
 ## Verwandte Themen
 
@@ -20,10 +20,10 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 
 ## Patterns (5)
 
-- [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 9 Belege
+- [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 10 Belege
 - [[Agent-Tracing-nach-Beobachtungsebene]] · meinung · 8 Belege
 - [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 31 Belege
-- [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 10 Belege
+- [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · verifiziert · 12 Belege
 - [[MCP-Code-Execution-statt-Tool-Definitionen]] · meinung · 4 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-Empfehlung]], [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]], [[Hook-erzwungene-Skill-Aktivierung]], [[KI-Dienste-nach-Vertrag-und-Datenfluss-pruefen]], [[Pruefungen-nach-Feedbackzeitpunkt-staffeln]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Trainingsdaten-Dichte-als-Stack-Kriterium]]
@@ -82,3 +82,4 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Deny-Rules-statt-CLAUDE-md-E
 - [[2026-01-21-tempoimmaterial-agent-skills-vs-rules-vs-commands]]
 - [[2026-01-20-ben-tossell-agent-coding]]
 - [[2025-09-22-julian-ivanov-ki-automat-das-ultimative-rag-system-n8n-nextcloud-mistral]]
+- [[2025-06-17-matt-pocock-the-bitter-lesson]]

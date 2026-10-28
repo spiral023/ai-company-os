@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** ki-adoption (4), reverse engineering (3), rea (3), swe-bench (2), befähigung (2), use case (2), pilotbewertung (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), betriebsleistung (2), nutzerfeedback (2), produktwert (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), ki-chancen
+- **Häufig in den Quellen:** ki-adoption (4), matt pocock (3), reverse engineering (3), rea (3), swe-bench (2), befähigung (2), use case (2), pilotbewertung (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), nutzerfeedback (2), produktwert (2), betriebsleistung (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2)
 
 ## Verwandte Themen
 
@@ -22,14 +22,14 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 ## Patterns (5)
 
 - [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 3 Belege
-- [[Claude-als-Lernwerkzeug]] · meinung · 4 Belege
+- [[Claude-als-Lernwerkzeug]] · verifiziert · 6 Belege
 - [[Great-Decoupling-Rollenverstaendnis]] · meinung · 25 Belege
 - [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] · meinung · 7 Belege
 - [[Produktwert-jenseits-des-reproduzierbaren-Codes]] · meinung · 2 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-dokumentieren]], [[Intent-Engineering-als-dritte-Schicht]], [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]], [[Produktreife-durch-echte-Testnutzer]]
 
-## Quellen (32)
+## Quellen (34)
 
 - [[2026-10-27-felixrieseberg-hunger-beats-tenure-advice-for-junior-engineers]] — Felix Rieseberg beschreibt eine Chance für Entwickler ohne viel Status oder organisatorischen Einfluss: KI kann die Umsetzung einer Idee so weit erleichtern, dass ein greifbarer Prototyp die Diskussio
 - [[2026-10-27-aboutamazon-an-update-from-amazon-engineering-leadership-on]] — Amazon richtet seine überarbeiteten Entwicklerrollen an der Wirkung für Kunden, Geschäft und Teams aus.
@@ -54,7 +54,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-
 - [[2026-08-21-promptgefluester-wie-macht-man-refactering-bei-einer-richtig-grossen-code-base-mit-aeh]] — Große Refactorings gelingen stufenweise: erst nur analysieren, leichte vor schweren Funden beheben und dabei Business-Logik dokumentieren, die später als Kontext dient.
 - [[2026-08-13-openai-2087912623883051300]] — OpenAIs Grafik zeigt höhere Nutzeranteile für Plugins und Skills in einer als führend bezeichneten Unternehmensgruppe.
 - [[2026-08-09-natebjones-decision-exhaustion-is-real-discuss]] — Wenn KI die Ausführung übernimmt, bleiben nur schwere Entscheidungen beim Menschen, was Erholung erfordert und bei vielen parallelen Agents zum Engpass wird.
+- [[2026-07-16-matt-pocock-my-1-book-recommendation-for-strategic-programmi]] — Grundlage sind Videobeschreibung und automatisch erzeugtes englisches Transkript; keine visuelle Prüfung.
 - [[2026-07-16-jousefmurad-es-gibt-eine-simple-regel-die-erklaert-warum-95-prozent-aller-ki]] — @jousefmurad nennt drei Voraussetzungen für KI-Projekte: verfügbare Daten, einen konkreten Pain Point und Verständnis der Fähigkeiten und Grenzen von KI. Das lokale Whisper-Transkript liefert die Methode; die Caption enthält zusätzlich unbelegte Erfolgsversprechen.
+- [[2026-06-08-matt-pocock-learn-anything-with-the-teach-skill]] — Matt Pocock beschreibt im [Video zum `teach`-Skill](https://www.youtube.com/watch?v=s5T5oQJcJ6U) einen persönlichen Lernarbeitsraum, der Ziele, Ressourcen und Fortschritt außerhalb des Chats festhält.
 - [[2026-02-24-nate-b-jones-intent-engineering]] — Kontext sagt der KI, was sie wissen soll, Intent, was sie wollen soll: Ohne explizite Ziele und Eskalationsregeln optimiert ein Agent die falsche Metrik.
 - [[2026-01-26-karpathy-coding-workflow-2026]] — Agenten machen keine Syntaxfehler mehr, sondern konzeptionelle; Leverage entsteht durch deklarative Erfolgskriterien, Tests und ein menschliches Architektur-Review.
 - [[2026-01-20-mrexodia-vibe-engineering]] — Die Rolle wandelt sich zu Tech Lead und QA Lead: Ergebnisse statt Zeilen prüfen, Tests als Harness bauen und Kontext knapp halten.

@@ -49,6 +49,10 @@ external_repos/*
 # Lokale Vault-Kopien fremder Inhalte ohne Lizenz (Repo ist öffentlich) - erzeugt per Script
 00_Inbox/Quellen/URL/aihero-ai-coding-dictionary/
 
+# Lokales Bucharchiv: Original und extrahierter Text bleiben außerhalb von Git
+00_Inbox/Quellen/PDF/lokal/the-pragmatic-programmer-20th-anniversary-edition/
+00_Inbox/Quellen/PDF/2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition.md
+
 # Quell-Binärdateien (PDFs, Office-Dokumente, Medien, Archive)
 # Bleiben lokal, z. B. in 00_Inbox/. Versioniert wird die Markdown-Auswertung
 # einer Quelle, nicht das Original. Einzelfall bewusst aufnehmen: git add -f <datei>

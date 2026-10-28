@@ -70,6 +70,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Art
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-28-housecor-2115482034906800200]]
 - [[2026-10-24-voxyz_ai-2114069417902403786]]
 - [[2026-10-23-julian-ivanov-ki-automat-die-5-level-von-ki-nutzern-auf-welchem-bist-du]]
 - [[2026-10-22-cursor-pstack-engineering-skills]]
@@ -77,6 +78,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Art
 - [[2026-10-16-0xkense1-2111105138290987198]]
 - [[2026-10-15-poteto-2110757066709356851]]
 - [[2026-10-13-mattpocockuk-2109973273924579720]]
+- [[2026-10-13-matt-pocock-retro-is-a-banger-of-a-skill]]
 - [[2026-10-09-shadcn-2108574564586332615]]
 - [[2026-10-07-voxyz_ai-2107939019091005836]]
 - [[2026-10-05-repo-squad-retro-enforcement]]
@@ -107,6 +109,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Art
 - [[2026-07-08-mattpocock-skills-v1-1]]
 - [[2026-07-06-nightmoon-wayfinder]]
 - [[2026-07-06-alex-sprogis-claude-design-2-0-ist-der-wahnsinn-kompletter-gu]]
+- [[2026-06-08-matt-pocock-learn-anything-with-the-teach-skill]]
 - [[2026-06-07-julian-ivanov-ki-automat-so-laesst-du-claude-jedes-video-fuer-dich-anscha]]
 - [[2026-04-22-agenticjames-everything-you-need-to-know-about-context-engineering-in-1-minute]]
 - [[2026-04-17-wiki-compiler-skills-subagents-hooks-mcp-pragmatisch]]

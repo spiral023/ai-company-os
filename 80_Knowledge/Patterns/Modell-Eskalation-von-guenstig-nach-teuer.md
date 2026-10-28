@@ -111,6 +111,7 @@ Ergänzend gilt die Rollenteilung im Multi-Agent-Fall: das starke Modell entsche
 
 - 2026-10-28 · [[2026-10-28-artificialanlys-2115265133467635877]] · meinung — AA misst im Intelligence Index v5 für Sol max 55 Punkte bei 1,27 USD je Aufgabe gegenüber Opus max with fallback mit 58 bei 10,04 USD; Opus low erreicht 35 bei 0,98 USD. Der Betreiberbericht stützt die getrennte Prüfung von Modell und Effort auf derselben Aufgabenbasis, belegt aber weder einen universellen Sieger noch eigene Produktionskosten.
 - 2026-10-27 · [[2026-10-27-petergostev-2115085935285248010]] · meinung — Gostevs unbelegte Ableitung interner Serving-Kosten aus einer behaupteten Bruttomarge illustriert die Grenze von Preisvergleichen: Der Post liefert weder Einheiten noch eine modellbezogene Kostenbasis und ist kein Nachweis günstigerer Kosten je akzeptierter Aufgabe.
+- 2026-10-28 · [[2026-10-28-artificialanlys-2115494553780367384]] · meinung — AA berichtet Carbon high mit 59 Punkten und 7,76 USD je Intelligence-Index-v5-Aufgabe bei Standardpreisen. Ein zusätzlicher 50-Prozent-Launchrabatt und eingeschränkter Zugang sind eigene Bedingungen; der Betreiberbericht liefert keinen universellen Sieger oder verifizierte eigene Produktionskosten.
 
 ## Spannungen & offene Fragen
 
@@ -137,6 +138,8 @@ Ergänzend gilt die Rollenteilung im Multi-Agent-Fall: das starke Modell entsche
 - 2026-10-27 · [[2026-10-27-petergostev-2115085935285248010]] leitet Serving-Kosten aus einer behaupteten Bruttomarge ab, ohne Einheit oder modellbezogene Kostenbasis nachzuweisen. Interne Kosten, API-Verkaufspreise und Kosten je akzeptiertem Ergebnis sind getrennte Größen; der Post trägt keine belastbare Kostenvergleichszahl bei.
 
 - 2026-10-28 · [[2026-10-28-artificialanlys-2115265133467635877]] misst Aufgabenpreise und Scores im Intelligence Index v5; der höhere Tokenbedarf gegenüber v4.3 enthält einen Wechsel der Aufgabenzusammensetzung. Claude-Konfigurationen heißen in den Charts teilweise `max with fallback`. Effort, Harness, Indexversion und Verfügbarkeit der Gewichte gehören deshalb zum Vergleich; die v5-Werte ersetzen keine eigene Qualitäts- und Kostenmessung.
+
+- 2026-10-28 · [[2026-10-28-artificialanlys-2115494553780367384]] verwendet für Carbon-Indexvergleiche Standard-Aufgabenkosten, erwähnt daneben einen Launchrabatt ohne bestätigtes Enddatum und einen eingeschränkten Rollout. Vergleichbare Preise und tatsächlicher Zugang sind getrennte Auswahlbedingungen; Betreiberwerte sind weder ein überprüfter aktueller Tarif noch eigene Produktionskosten.
 
 ## Verwandte Patterns
 

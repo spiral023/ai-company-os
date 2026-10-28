@@ -100,6 +100,9 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Agent-Tracing-nach-Beobachtungsebene]] — Modell-, Harness-, Prozess- und Wirkungssicht getrennt erfassen; Korrelation und Abdeckungsgrenzen offenlegen.
 - [[Bedarfsorientierter-Repositoryzugriff]] — Metadaten und Dateiobjekte nach tatsächlichem Bedarf bereitstellen, wenn vollständige Checkouts zum gemessenen Engpass werden.
 
+- [[Frontend-Zustandslogik-mit-Reducer-isolieren]] — Zustandsübergänge aus Ereignissen getrennt vom Rendering prüfen und UI-Anbindung gesondert abnehmen.
+- [[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]] — Ausfallfolgen, Neubaukosten, Abhängigkeiten und Wartung als Grundlage der Prüftiefe untersuchen.
+
 ## Themen
 
 Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 21 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand. [[Thema-KI-Risiken-Sicherheitsvorfälle]] sammelt Warnungen, Risikoszenarien und konkrete Vorfälle mit KI.

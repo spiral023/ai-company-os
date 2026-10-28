@@ -1,6 +1,6 @@
 # Vergleich: Spec, Build und Review in der Factory
 
-**Stand:** 2026-10-27 · **Pilot-ID:** `s-ablauf` · **Status:** kuratierter Entwurf, kein aktivierter Produktionsworkflow
+**Stand:** 2026-10-28 · **Pilot-ID:** `s-ablauf` · **Status:** kuratierter Entwurf, kein aktivierter Produktionsworkflow
 
 ## Kernaussage
 
@@ -42,6 +42,12 @@ Diese drei Auflösungen sind unsere Einordnung der Originalanweisungen, keine ge
 Spec-, Standards- und Funktionsprüfung behalten eigene Aussagen. Fehlt eine Spec, lautet der entsprechende Status nicht geprüft (`c09`). Ein Standardsbefund zitiert eine vorhandene Projektregel oder kennzeichnet eine Heuristik (`c24`). Ein Verifikationsentwurf wird erst durch einen tatsächlichen Prüflauf bestätigt (`c15`). Kein einzelnes grünes Ergebnis beweist alle übrigen Eigenschaften.
 
 Abnahmebedingungen und erlaubte Nacharbeit stehen vor der Umsetzung fest. Eine Reparaturschleife bekommt einen konkreten Befund und ein Limit (`c07`). Nicht prüfbare Kriterien und ungelöste Abhängigkeiten bleiben offen. Für Commits und Produktion gelten die vorhandenen Freigaberegeln (`c19`); die Kandidatenkarten erweitern den Auftrag nicht.
+
+## Ergänzung aus dem Quellenlauf vom 28.10.2026
+
+[[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]] begründet die Prüftiefe mit Ausfallfolgen, Neubaukosten, Abhängigkeiten und Wartung. Das aus Sprogis vermittelte Raster ist eine Heuristik, keine neue Freigabepolicy. Die ausgewählten Kriterien brauchen weiterhin tatsächliche Nachweise.
+
+Das [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition|Buch]] unterscheidet wegwerfbare Prototypen von weiterverwendetem Tracer Code und warnt vor grünen Tests ohne fachlichen Fortschritt. [[Frontend-Zustandslogik-mit-Reducer-isolieren]] konkretisiert eine mögliche Prüfgrenze: Zustandsübergänge separat testen, anschließend Browser-Anbindung und Effekte abnehmen. Diese Ergänzungen ändern weder Pilot-Registry noch aktivierte Workflows.
 
 ## Belegpfad
 

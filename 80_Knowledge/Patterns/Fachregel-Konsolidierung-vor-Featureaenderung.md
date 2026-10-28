@@ -30,11 +30,14 @@ Betroffene Regelimplementierungen, Aufrufer und Ergebnisse für identische Einga
 
 - 2026-10-02 · [[2026-10-02-voxyz_ai-2106104334035435572]] · meinung — Vox kartiert Kopien einer Fachregel vor der Featureänderung, klärt divergierende Ergebnisse fachlich und trennt Verhaltenskorrektur von erhaltendem Refactor; das Rabattbild ist eine Illustration mit drei Kopien und zwei Abweichungen.
 - 2026-10-11 · [[2026-10-11-shiptypes-ship-types-not-docs]] · meinung — Beschreibt gemeinsame Schemaquelle und generierte Clients für strukturelle API-Verträge; Originaldatum unsicher, Compile-Erfolg ersetzt keine Fach- und Laufzeitprüfung.
+- 2019-09-13 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] · meinung — Hunt und Thomas bestimmen DRY als Vermeidung mehrfacher Repräsentationen desselben Wissens oder derselben Absicht: Eine fachliche Änderung soll keine verteilten manuellen Nachführungen erfordern. Ausdrücklich ausgenommen ist gleicher Code für unabhängig veränderliche Regeln; die Source stützt deshalb fachliche Klärung vor Konsolidierung, keinen pauschalen Abstraktionszwang.
 
 ## Spannungen & offene Fragen
 
 - Das Quellenbild illustriert drei Rabattkopien und zwei Fehler; es ist kein gemessener Projektbefund.
 - Ein Verbot weiterer Implementierungen braucht eine konkrete Erkennungsregel und muss tatsächliche Ausnahmen berücksichtigen.
+
+- 2026-10-28 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] beschreibt DRY als Vermeidung mehrfacher Repräsentationen desselben Wissens oder derselben Absicht. Ähnlich aussehender Code für unabhängig veränderliche Fachregeln ist deshalb kein ausreichender Konsolidierungsgrund; ein neuer gemeinsamer Helper kann sonst falsche Kopplung erzeugen.
 
 ## Verwandte Patterns
 

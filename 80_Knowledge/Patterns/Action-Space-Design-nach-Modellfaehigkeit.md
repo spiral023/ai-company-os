@@ -38,11 +38,14 @@ Der „Action Space“ ist die Menge an Dingen, die ein Agent praktisch tun kann
 - 2025-09-22 · [[2025-09-22-julian-ivanov-ki-automat-das-ultimative-rag-system-n8n-nextcloud-mistral]] · meinung — Das Tutorial trennt semantische Textsuche, Nachladen eines vollständigen Dokuments und SQL-Abfragen auf strukturierten Tabellen. Die ausgewählten erfolgreichen Demos zeigen die Toolrollen, aber keine systematisch gemessene Antwortqualität oder zuverlässige Toolauswahl.
 - 2026-02-19 · [[2026-02-19-lenny-s-podcast-head-of-claude-code-what-happens-after-coding-is]] · meinung — Boris Cherny empfiehlt Ziele, Werkzeuge und bedarfsgerechten Kontext statt umfangreicher Gerüste. Das ist die Sicht des Claude-Code-Anbieters und muss an tatsächlichen Modellgrenzen geprüft werden.
 - 2026-10-13 · [[2026-10-13-ai-mit-arnie-ki-kopiert-jede-software-und-jetzt]] · meinung — Sprecher sieht Chancen in agentengerechten MCP-Zugängen zu bestehender Software und noch nicht intern beherrschten Funktionen; Marktthese ohne spezifizierte oder überprüfte Integration, kein Ersatz für tatsächliche Fähigkeits- und Verhaltensprüfung.
+- 2025-06-17 · [[2025-06-17-matt-pocock-the-bitter-lesson]] · meinung — Pococks Interpretation von Sutton legt nahe, Hilfskonstrukte für heutige Modellgrenzen bei wachsender Modellfähigkeit erneut zu prüfen. Das ist ein übertragener Gestaltungsimpuls aus seiner Zuspitzung, keine neue empirische Prüfung und kein Beleg gegen notwendige aktuelle Optimierungen.
 
 ## Spannungen & offene Fragen
 
 - Zwei unabhängige Erfahrungsberichte (Thariq aus der Claude-Code-Entwicklung selbst, Sankalp als externer Anwender mit eigener Reverse-Engineering-Messung) stützen die Kernaussage jetzt über bloße Einzelmeinung hinaus, auch ohne kontrollierte Studie.
 - Offene Frage: Wie lässt sich „Tool-Nutzung messen, nicht nur Verfügbarkeit“ in unserem eigenen Skill-System (30_Skills/) praktisch umsetzen, ohne ein aufwendiges Instrumentierungssystem zu bauen?
+
+- 2026-10-28 · [[2025-06-17-matt-pocock-the-bitter-lesson]] überträgt Suttons historische These auf das Veralten heutiger Hilfskonstrukte. Daraus folgt weder eine Prognose für einen konkreten Modellfortschritt noch die Entbehrlichkeit aktueller Optimierungen und Schutzgrenzen; deren Nutzen bleibt im tatsächlichen Einsatz zu prüfen.
 
 ## Verwandte Patterns
 

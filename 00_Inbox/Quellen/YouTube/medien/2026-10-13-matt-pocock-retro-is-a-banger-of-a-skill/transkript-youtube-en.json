@@ -1,0 +1,170 @@
+{
+  "url": "https://www.youtube.com/watch?v=Q8XzzKUbp0Y",
+  "video_id": "Q8XzzKUbp0Y",
+  "erfasst": "2026-10-28",
+  "language_code": "en",
+  "language": "English (auto-generated)",
+  "is_generated": true,
+  "segments": [
+    {
+      "text": "What do you do when your agent makes a",
+      "start": 0.0,
+      "duration": 3.36
+    },
+    {
+      "text": "mistake? Do you get angry? Do you get",
+      "start": 1.64,
+      "duration": 3.72
+    },
+    {
+      "text": "frustrated? Or do you think, \"How do I",
+      "start": 3.36,
+      "duration": 3.92
+    },
+    {
+      "text": "make that mistake harder for the agent",
+      "start": 5.36,
+      "duration": 3.48
+    },
+    {
+      "text": "to make next time?\" And so, the question",
+      "start": 7.28,
+      "duration": 3.28
+    },
+    {
+      "text": "becomes, \"Okay, what mechanisms do I",
+      "start": 8.84,
+      "duration": 3.96
+    },
+    {
+      "text": "have to achieve that?\" Well, you have",
+      "start": 10.56,
+      "duration": 4.32
+    },
+    {
+      "text": "the retro skill. This is a skill that's",
+      "start": 12.8,
+      "duration": 5.36
+    },
+    {
+      "text": "fresh in my skills repo for v1.3. And",
+      "start": 14.88,
+      "duration": 4.36
+    },
+    {
+      "text": "what it does is it conducts a",
+      "start": 18.16,
+      "duration": 3.96
+    },
+    {
+      "text": "retrospective on your previous sessions.",
+      "start": 19.24,
+      "duration": 4.0
+    },
+    {
+      "text": "So, if a mistake happens in your",
+      "start": 22.12,
+      "duration": 3.76
+    },
+    {
+      "text": "previous sessions, you run retro, and it",
+      "start": 23.24,
+      "duration": 4.64
+    },
+    {
+      "text": "will do a retrospective, and it will try",
+      "start": 25.88,
+      "duration": 4.0
+    },
+    {
+      "text": "to find the mistakes, try to find the",
+      "start": 27.88,
+      "duration": 4.52
+    },
+    {
+      "text": "inefficiencies in your process, and turn",
+      "start": 29.88,
+      "duration": 5.0
+    },
+    {
+      "text": "them into either automated checks that",
+      "start": 32.4,
+      "duration": 5.0
+    },
+    {
+      "text": "deterministically check that your agent",
+      "start": 34.88,
+      "duration": 4.36
+    },
+    {
+      "text": "is doing the right thing, or it will add",
+      "start": 37.4,
+      "duration": 3.52
+    },
+    {
+      "text": "them into steering files like coding",
+      "start": 39.24,
+      "duration": 3.72
+    },
+    {
+      "text": "standards.md to make sure that code",
+      "start": 40.92,
+      "duration": 4.04
+    },
+    {
+      "text": "review agents catch those mistakes",
+      "start": 42.96,
+      "duration": 3.76
+    },
+    {
+      "text": "before they go to production. Retro has",
+      "start": 44.96,
+      "duration": 3.96
+    },
+    {
+      "text": "been absolutely invaluable for me. It's",
+      "start": 46.72,
+      "duration": 4.04
+    },
+    {
+      "text": "really forced me to consider that maybe",
+      "start": 48.92,
+      "duration": 3.76
+    },
+    {
+      "text": "my code base is not as good as I thought",
+      "start": 50.76,
+      "duration": 3.4
+    },
+    {
+      "text": "it was. And I really recommend you give",
+      "start": 52.68,
+      "duration": 3.64
+    },
+    {
+      "text": "it a go cuz it's surprising what your",
+      "start": 54.16,
+      "duration": 4.44
+    },
+    {
+      "text": "agents will put up with without moaning.",
+      "start": 56.32,
+      "duration": 4.24
+    },
+    {
+      "text": "And retro gives them an outlet to",
+      "start": 58.6,
+      "duration": 3.6
+    },
+    {
+      "text": "actually improve the code base that they",
+      "start": 60.56,
+      "duration": 4.32
+    },
+    {
+      "text": "operate in.",
+      "start": 62.2,
+      "duration": 2.68
+    }
+  ]
+}

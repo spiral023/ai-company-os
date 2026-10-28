@@ -1,0 +1,240 @@
+{
+  "url": "https://www.youtube.com/watch?v=r8FYE2ZOj0E",
+  "video_id": "r8FYE2ZOj0E",
+  "erfasst": "2026-10-28",
+  "language_code": "en",
+  "language": "English (auto-generated)",
+  "is_generated": true,
+  "segments": [
+    {
+      "text": "You know what feels absolutely",
+      "start": 0.0,
+      "duration": 3.36
+    },
+    {
+      "text": "incredible to use from a front-end point",
+      "start": 0.88,
+      "duration": 4.32
+    },
+    {
+      "text": "of view when you're working with agents,",
+      "start": 3.36,
+      "duration": 4.68
+    },
+    {
+      "text": "reducers, and state machines. A reducer",
+      "start": 5.2,
+      "duration": 4.28
+    },
+    {
+      "text": "kind of looks like this. It's got some",
+      "start": 8.04,
+      "duration": 3.24
+    },
+    {
+      "text": "persistent state, and then it has a",
+      "start": 9.48,
+      "duration": 3.64
+    },
+    {
+      "text": "bunch of actions. So, here we've got",
+      "start": 11.28,
+      "duration": 3.96
+    },
+    {
+      "text": "open the camera, and then close the",
+      "start": 13.12,
+      "duration": 4.16
+    },
+    {
+      "text": "camera, and then photo captured, etc.",
+      "start": 15.24,
+      "duration": 4.0
+    },
+    {
+      "text": "All of these actions are things that can",
+      "start": 17.28,
+      "duration": 5.44
+    },
+    {
+      "text": "happen based on the front-end UI. So,",
+      "start": 19.24,
+      "duration": 5.76
+    },
+    {
+      "text": "these are events that could trigger",
+      "start": 22.72,
+      "duration": 4.44
+    },
+    {
+      "text": "based on user actions or things failing,",
+      "start": 25.0,
+      "duration": 3.96
+    },
+    {
+      "text": "etc. And then all the reducer does is it",
+      "start": 27.16,
+      "duration": 5.24
+    },
+    {
+      "text": "takes in those actions and returns a new",
+      "start": 28.96,
+      "duration": 5.28
+    },
+    {
+      "text": "state. So, on a very basic level, you've",
+      "start": 32.4,
+      "duration": 4.12
+    },
+    {
+      "text": "got open camera, which returns open",
+      "start": 34.24,
+      "duration": 3.76
+    },
+    {
+      "text": "camera true, and then close camera,",
+      "start": 36.52,
+      "duration": 4.44
+    },
+    {
+      "text": "which returns open camera open false.",
+      "start": 38.0,
+      "duration": 4.44
+    },
+    {
+      "text": "Now, this does something very, very",
+      "start": 40.96,
+      "duration": 3.52
+    },
+    {
+      "text": "important, which is it separates the",
+      "start": 42.44,
+      "duration": 4.16
+    },
+    {
+      "text": "user interface from the logic that",
+      "start": 44.48,
+      "duration": 4.04
+    },
+    {
+      "text": "controls that user interface. That means",
+      "start": 46.6,
+      "duration": 3.88
+    },
+    {
+      "text": "that this function, this thumbnail state",
+      "start": 48.52,
+      "duration": 3.6
+    },
+    {
+      "text": "reducer, what it can do, it can be",
+      "start": 50.48,
+      "duration": 4.08
+    },
+    {
+      "text": "tested independently outside of the",
+      "start": 52.12,
+      "duration": 4.48
+    },
+    {
+      "text": "browser. So, the tests for it are very,",
+      "start": 54.56,
+      "duration": 3.8
+    },
+    {
+      "text": "very fast. And we can see, for instance,",
+      "start": 56.6,
+      "duration": 3.8
+    },
+    {
+      "text": "in the thumbnails page where we have a",
+      "start": 58.36,
+      "duration": 4.96
+    },
+    {
+      "text": "button on click dispatch open camera, it",
+      "start": 60.4,
+      "duration": 4.92
+    },
+    {
+      "text": "means that the actual user interface is",
+      "start": 63.32,
+      "duration": 4.16
+    },
+    {
+      "text": "very stupid. The React code is very",
+      "start": 65.32,
+      "duration": 3.24
+    },
+    {
+      "text": "dumb. In other words, we're",
+      "start": 67.48,
+      "duration": 3.2
+    },
+    {
+      "text": "concentrating a lot of the logic for the",
+      "start": 68.56,
+      "duration": 4.32
+    },
+    {
+      "text": "front-end code in a single place that's",
+      "start": 70.68,
+      "duration": 4.84
+    },
+    {
+      "text": "easy to test, easy to modify, and easy",
+      "start": 72.88,
+      "duration": 4.44
+    },
+    {
+      "text": "to see the entire thing of how it all",
+      "start": 75.52,
+      "duration": 3.4
+    },
+    {
+      "text": "works together. And so, I can actually",
+      "start": 77.32,
+      "duration": 3.24
+    },
+    {
+      "text": "feel the difference when I work with a",
+      "start": 78.92,
+      "duration": 3.44
+    },
+    {
+      "text": "page that has a reducer in it that an",
+      "start": 80.56,
+      "duration": 3.56
+    },
+    {
+      "text": "agent has edited. The whole thing just",
+      "start": 82.36,
+      "duration": 3.92
+    },
+    {
+      "text": "feels so much more robust, and it feels",
+      "start": 84.12,
+      "duration": 4.24
+    },
+    {
+      "text": "like most of the edge cases are handled.",
+      "start": 86.28,
+      "duration": 3.44
+    },
+    {
+      "text": "So, I'm actually going back over old",
+      "start": 88.36,
+      "duration": 2.92
+    },
+    {
+      "text": "projects that I'm working on and",
+      "start": 89.72,
+      "duration": 6.32
+    },
+    {
+      "text": "cranking up the number of reducers.",
+      "start": 91.28,
+      "duration": 4.76
+    }
+  ]
+}

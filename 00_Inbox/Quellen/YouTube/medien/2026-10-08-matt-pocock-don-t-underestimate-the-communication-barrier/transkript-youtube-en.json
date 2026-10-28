@@ -1,0 +1,185 @@
+{
+  "url": "https://www.youtube.com/watch?v=LGj1oUidC7Q",
+  "video_id": "LGj1oUidC7Q",
+  "erfasst": "2026-10-28",
+  "language_code": "en",
+  "language": "English (auto-generated)",
+  "is_generated": true,
+  "segments": [
+    {
+      "text": "Something that drives me crazy is that",
+      "start": 0.0,
+      "duration": 4.24
+    },
+    {
+      "text": "people just underestimate, massively",
+      "start": 2.08,
+      "duration": 4.4
+    },
+    {
+      "text": "underestimate the communication gap",
+      "start": 4.24,
+      "duration": 4.4
+    },
+    {
+      "text": "between them and the agents. When you're",
+      "start": 6.48,
+      "duration": 3.8
+    },
+    {
+      "text": "asking the agent to do stuff, right, it",
+      "start": 8.64,
+      "duration": 3.68
+    },
+    {
+      "text": "is like a colleague or someone you're",
+      "start": 10.28,
+      "duration": 4.24
+    },
+    {
+      "text": "employing to do something for you, to",
+      "start": 12.32,
+      "duration": 3.84
+    },
+    {
+      "text": "build some code for you.",
+      "start": 14.52,
+      "duration": 2.88
+    },
+    {
+      "text": "And just like when you work with an",
+      "start": 16.16,
+      "duration": 3.0
+    },
+    {
+      "text": "employee, there is a communication",
+      "start": 17.4,
+      "duration": 3.88
+    },
+    {
+      "text": "barrier between you and the agent. And",
+      "start": 19.16,
+      "duration": 3.68
+    },
+    {
+      "text": "the thing about that barrier is it's not",
+      "start": 21.28,
+      "duration": 4.24
+    },
+    {
+      "text": "going to go away as models get better.",
+      "start": 22.84,
+      "duration": 5.08
+    },
+    {
+      "text": "The model is never going to know exactly",
+      "start": 25.52,
+      "duration": 3.92
+    },
+    {
+      "text": "what you're thinking. And so, you're",
+      "start": 27.92,
+      "duration": 4.24
+    },
+    {
+      "text": "always going to have to improve and get",
+      "start": 29.44,
+      "duration": 4.44
+    },
+    {
+      "text": "over that communication barrier. That's",
+      "start": 32.16,
+      "duration": 3.52
+    },
+    {
+      "text": "because it's not a model problem, it is",
+      "start": 33.88,
+      "duration": 4.0
+    },
+    {
+      "text": "a human problem. We often don't know",
+      "start": 35.68,
+      "duration": 4.64
+    },
+    {
+      "text": "what we want. We have complicated",
+      "start": 37.88,
+      "duration": 4.32
+    },
+    {
+      "text": "internal value systems for the things",
+      "start": 40.32,
+      "duration": 3.88
+    },
+    {
+      "text": "that we want to prioritize in the output",
+      "start": 42.2,
+      "duration": 3.24
+    },
+    {
+      "text": "that we're getting from the agent. And",
+      "start": 44.2,
+      "duration": 3.0
+    },
+    {
+      "text": "crucially, the agent doesn't know what",
+      "start": 45.44,
+      "duration": 4.08
+    },
+    {
+      "text": "we care about. We care about complicated",
+      "start": 47.2,
+      "duration": 4.32
+    },
+    {
+      "text": "things in complicated orders. And",
+      "start": 49.52,
+      "duration": 3.76
+    },
+    {
+      "text": "communicating that to an agent is really",
+      "start": 51.52,
+      "duration": 3.16
+    },
+    {
+      "text": "hard cuz we often don't know it",
+      "start": 53.28,
+      "duration": 2.68
+    },
+    {
+      "text": "ourselves. So, when you want to get",
+      "start": 54.68,
+      "duration": 3.4
+    },
+    {
+      "text": "better outputs from your agent, then",
+      "start": 55.96,
+      "duration": 4.24
+    },
+    {
+      "text": "think about that communication barrier.",
+      "start": 58.08,
+      "duration": 4.68
+    },
+    {
+      "text": "Keep it always in mind. And think, what",
+      "start": 60.2,
+      "duration": 4.76
+    },
+    {
+      "text": "does the agent not know about me? Or",
+      "start": 62.76,
+      "duration": 4.48
+    },
+    {
+      "text": "what does it not know about what I want",
+      "start": 64.96,
+      "duration": 4.88
+    },
+    {
+      "text": "right now?",
+      "start": 67.24,
+      "duration": 2.6
+    }
+  ]
+}

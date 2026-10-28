@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** agents.md (14), claude.md (9), progressive disclosure (7), context engineering (5), agent-datei (4), coding_standards.md (3), instruction following (2), instruktionsbudget (2), agent_docs (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), llm wiki (2), obsidian (2), /doctor (2), retro (2), test (2), regeln (2), blockadebericht (2)
+- **Häufig in den Quellen:** agents.md (14), claude.md (9), progressive disclosure (7), context engineering (5), coding_standards.md (4), agent-datei (4), agent_docs (2), instruction following (2), instruktionsbudget (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), llm wiki (2), obsidian (2), /doctor (2), retro (2), regeln (2), test (2), handlungsbedarf (2)
 
 ## Verwandte Themen
 
@@ -61,6 +61,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-er
 - [[2026-10-16-poteto-2111133080526495985]]
 - [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]]
 - [[2026-10-13-mattpocockuk-2109973273924579720]]
+- [[2026-10-13-matt-pocock-retro-is-a-banger-of-a-skill]]
 - [[2026-10-05-repo-mattpocock-skills-retro]]
 - [[2026-10-05-repo-claude-code-doctor-insights]]
 - [[2026-10-04-voxyz_ai-2106829206134931539]]
@@ -72,6 +73,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-er
 - [[2026-07-15-xudong07452910-2077246527756775933]]
 - [[2026-07-12-agenticjames-claude-codes-new-feature-checkup-makes-claude-more-token-efficient-and]]
 - [[2026-07-08-bcherny-2074997570317779038]]
+- [[2026-06-08-matt-pocock-learn-anything-with-the-teach-skill]]
 - [[2026-06-06-agenticjames-your-agent-is-referencing-documentation-when-it-should-be-reading-the]]
 - [[2026-03-29-julian-ivanov-ki-automat-obsidian-claude-code-so-baust-du-dein-zweites-ge]]
 - [[2026-02-24-nate-b-jones-intent-engineering]]

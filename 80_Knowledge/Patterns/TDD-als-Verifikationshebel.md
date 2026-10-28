@@ -45,6 +45,7 @@ Kontextmenge, Prüfbarkeit und Arbeitspaketgröße bestimmen gemeinsam die Quali
 - 2026-04-13 · [[2026-04-13-alex-sprogis-superkraefte-fuer-claude-code]] · meinung — Akzeptanzkriterien werden vor der Implementierung in Tests übersetzt und im Red-Green-Refactor-Zyklus verwendet. Die zunächst erfundenen API-Endpunkte zeigen, dass grüne Tests ohne passende Außenbezüge keine funktionierende Integration beweisen.
 
 - 2026-10-27 · [[2026-10-27-voxyz_ai-2115228299400196368]] · meinung — Ein priorisierter Logbefund soll vor jeder Korrektur in einen reproduzierenden Test überführt werden; ein Mensch wählt anschließend den Fix. Der vorgeschlagene Ablauf liefert ein konkretes Eingangssignal für einen Regressionstest, berichtet jedoch weder eine ausgeführte Reproduktion noch eine gemessene Verbesserung.
+- 2019-09-13 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] · meinung — Kleine Schritte sollen nur so weit reichen, wie unabhängiges Feedback sie bestätigen oder widerlegen kann; Tracer Bullets verbinden Anforderungen und Integration über ein dünnes, weiterverwendbares End-to-End-Gerüst. Die Autoren warnen zugleich vor grünen TDD-Tests ohne fachlichen Lösungsfortschritt; die Anwendung dieses Maßstabs auf heutige Coding Agents ist redaktionelle Übertragung und kein im Buch geprüfter Modellbefund.
 
 ## Spannungen & offene Fragen
 
@@ -55,6 +56,8 @@ Kontextmenge, Prüfbarkeit und Arbeitspaketgröße bestimmen gemeinsam die Quali
 - Offene Frage: Wie lässt sich TDD-Pflicht mit sehr frühen, explorativen Prototyping-Phasen (siehe [[Lovable-Prototyp-dann-lokaler-Handoff]]) vereinbaren, wo noch kein stabiler Prüfpfad existiert?
 
 - 2026-10-27 · [[2026-10-27-voxyz_ai-2115228299400196368]] nutzt Log-Triage als Eingang für einen Regressionstest vor dem Fix. Erst die tatsächlich ausgeführte Reproduktion bestätigt das Fehlerbild; ein Agentenbericht oder nur entworfener Test ist kein Nachweis.
+
+- 2026-10-28 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] warnt vor grünen Tests ohne Lösung des eigentlichen Problems. Tracer Code ist ein angemessen geprüftes, dünnes End-to-End-Gerüst zur Weiterverwendung; Prototypen sind begrenzte Lernmittel zum Verwerfen. Der Transfer dieser Unterscheidung auf heutige Coding Agents ist redaktionelle Einordnung, kein im Buch geprüfter Modellbefund.
 
 ## Verwandte Patterns
 

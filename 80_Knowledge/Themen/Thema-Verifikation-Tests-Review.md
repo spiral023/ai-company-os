@@ -9,7 +9,7 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass; Codequalität mit KI und Menschen; Human in the Loop beim Code Review; Risikobasiertes Human Review; Agent-Autonomie und menschliche Freigaben; Große KI-generierte PRs prüfen; Pull Requests in prüfbare Änderungen aufteilen; Review-Kapazität bei parallelen Agents
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug? / Welche Änderungen brauchen menschliches Review und welche automatische Checks? / Wer trägt die Verantwortung, wenn ein Agent Code freigibt? / Was tun, wenn PRs zu groß für ein gründliches manuelles Review werden? / Wie begrenzt Review-Kapazität die Agent-Autonomie und Parallelisierung?
-- **Häufig in den Quellen:** test (14), review (13), testharness (12), tests (8), tdd (8), qualität (5), verifikation (5), human-in-the-loop (5), refactoring (5), rea (5), risikobasiertes human review (4), menschliche freigabe (4), verhaltensvergleich (4), mutation testing (4), skill (4), gstack (4), agents.md (4), reverse engineering (4), human review (4), pre-commit hooks (3)
+- **Häufig in den Quellen:** test (14), review (13), testharness (12), tests (8), tdd (8), refactoring (6), verifikation (5), qualität (5), human-in-the-loop (5), rea (5), menschliche freigabe (4), risikobasiertes human review (4), verhaltensvergleich (4), mutation testing (4), skill (4), gstack (4), agents.md (4), reverse engineering (4), human review (4), tracer bullets (3)
 
 ## Verwandte Themen
 
@@ -21,38 +21,41 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - [[Thema-Sicherheit-Sandboxing]] — Sicherheit & Sandboxing
 - [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
 
-## Patterns (20)
+## Patterns (22)
 
 - [[Abstraktionswert-mit-Deletion-Test-pruefen]] · verifiziert · 3 Belege
 - [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]] · meinung · 3 Belege
 - [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]] · meinung · 2 Belege
-- [[Fachregel-Konsolidierung-vor-Featureaenderung]] · meinung · 2 Belege
+- [[Fachregel-Konsolidierung-vor-Featureaenderung]] · meinung · 3 Belege
 - [[Formale-Verifikation-mit-unabhaengigem-Proof-Checker]] · meinung · 2 Belege
 - [[Framework-Quellcode-als-idiomatische-Referenz]] · meinung · 2 Belege
-- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 6 Belege
+- [[Frontend-Zustandslogik-mit-Reducer-isolieren]] · meinung · 1 Belege
+- [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 7 Belege
 - [[Hillclimbing-mit-Holdout-Split]] · meinung · 7 Belege
 - [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]] · meinung · 1 Belege
 - [[Mutationstests-fuer-Agent-geschriebene-Tests]] · meinung · 1 Belege
 - [[Produktreife-durch-echte-Testnutzer]] · meinung · 2 Belege
-- [[Pruefungen-nach-Feedbackzeitpunkt-staffeln]] · meinung · 2 Belege
-- [[Refactoring-mit-Verhaltensvergleich]] · meinung · 6 Belege
+- [[Pruefungen-nach-Feedbackzeitpunkt-staffeln]] · meinung · 3 Belege
+- [[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]] · meinung · 1 Belege
+- [[Refactoring-mit-Verhaltensvergleich]] · meinung · 7 Belege
 - [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 11 Belege
 - [[Schema-als-Vertrag-mit-generierten-Clients]] · meinung · 3 Belege
-- [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 15 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 72 Belege
+- [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 16 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 76 Belege
 - [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]] · verifiziert · 4 Belege
 - [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] · verifiziert · 13 Belege
 - [[Zustandslose-CI-Listener-mit-Ergebnisjournal]] · meinung · 1 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Tracing-nach-Beobachtungsebene]], [[Ambitionscheck-mit-Zielhoehe-Tiefe-und-Reichweite]], [[Angriffsflaeche-durch-Erreichbarkeitsanalyse-reduzieren]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]], [[Great-Decoupling-Rollenverstaendnis]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Plan-first-mit-getrenntem-Review]], [[Produktwert-jenseits-des-reproduzierbaren-Codes]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Verhaltens-Spec-als-Grenze-zwischen-Analyse-und-Nachbau]], [[Videoanalyse-mit-Frames-und-Transkript]]
 
-## Quellen (63)
+## Quellen (68)
 
 - [[2026-10-27-voxyz_ai-2115228299400196368]] — Vox schlägt eine tägliche Log-Triage mit menschlicher Auswahl vor.
 - [[2026-10-27-voxyz_ai-2115198100465697038]] — Vox empfiehlt am 27.10.2026 Regeln gegen wiederholte defensive Prüfungen und vorschnelle Helferfunktionen in Agent-Code.
 - [[2026-10-26-voxyz_ai-2114839487574315517]] — Vox empfiehlt, Reverts und Bugfixes der letzten 50 Commits als Ausgangspunkt einer kurzen `REVIEW.md` zu verwenden.
 - [[2026-10-26-addyosmani-2114604912520921136]] — Addy Osmani veröffentlicht eine überarbeitete Fassung des bereits erfassten [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude|Herstellerberichts zum Claude-Code-Review]].
 - [[2026-10-25-mattpocockuk-2114311664069718370]] — Matt Pocock erwägt deterministische Freigaben für eine eng begrenzte Refactoringklasse.
+- [[2026-10-25-alex-sprogis-die-qualitaet-von-ki-code-ist-nicht-so-gut-wie-d]] — Alex Sprogis verbindet Verständlichkeit und Änderbarkeit mit dem Risiko eines Softwareprojekts.
 - [[2026-10-22-voxyz_ai-2113314439294570515]] — Vox beschreibt am 22.
 - [[2026-10-22-franzbruckhoff-2113401002355298410]] — Franz Bruckhoff empfiehlt am 22.10.2026 einen Prompt für anwendungsweite Security-Reviews.
 - [[2026-10-22-cu30rry-2113242716473602270]] — Kaito beschreibt einen eigenen Workflow; die acht erfassten Posts enthalten keine Vergleichsmessung und belegen keine vollständige Thread-Erfassung.
@@ -64,12 +67,15 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-10-17-voxyz_ai-2111442102756463077]] — Vox bündelt 23 Prüfideen vor der ersten Zahlung einer agentengestützt gebauten App.
 - [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]] — OpenAIs Core-Experimentation-Team beschreibt, wie Coding-Agenten Wartungskandidaten finden, Produktionsbelege sammeln und kleine Änderungen zur Prüfung vorbereiten.
 - [[2026-10-16-poteto-2111133080526495985]] — Lauren schlägt vor, wiederkehrende Agentkorrekturen möglichst in der Codebasis zu verankern: Architektur vor automatischen Checks, knapper Prosa und gezieltem menschlichem Review.
+- [[2026-10-16-matt-pocock-the-secret-to-building-robust-frontend-apps-with]] — Matt Pocock beschreibt einen Reducer als gemeinsamen Ort für Frontend-Zustandslogik.
 - [[2026-10-16-math_rachel-2111238648188584306]] — Rachel Thomas diskutiert einen Fachbeitrag zur menschlichen Aufsicht über KI-Agenten.
 - [[2026-10-15-vincentmumme-greg-isenberg-ist-wahrscheinlich-aktuell-einer-der-wichtigsten]] — Vincent Mumme ordnet Greg Isenbergs Marktbeobachtungen ein.
+- [[2026-10-15-matt-pocock-give-your-agent-a-goal-and-let-it-be-creative]] — Grundlage sind die deutsche Automatikspur und der Abgleich mit zusätzlich archivierten englischen Untertiteln, ebenfalls automatisch erzeugt.
 - [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]] — Addy Osmani beschreibt den internen Review-Prozess des Claude-Code-Teams: Maschinen übernehmen wiederholbare Fehlersuche, Menschen beurteilen Absicht, Architektur, Risiko und verbleibende Prüflücken.
 - [[2026-10-14-matt-pocock-mutation-testing-is-awesome]] — Matt Pocock stellt am 14.
 - [[2026-10-13-mattpocockuk-2109973273924579720]] — Matt Pocock nennt typische Reibungsverluste: überhöhten Effort, lange Skills, aufgeblähte globale Regeln und fehlende Selbstprüfung.
 - [[2026-10-13-matt-pocock-stop-running-your-checks-in-harness-hooks]] — Matt Pocock empfiehlt am 13.
+- [[2026-10-13-matt-pocock-retro-is-a-banger-of-a-skill]] — Matt Pocock stellt im [kurzen Video zu `retro`](https://www.youtube.com/watch?v=Q8XzzKUbp0Y) eine Retrospektive für Fehler und Reibung in vorangegangenen Agent-Sitzungen vor.
 - [[2026-10-12-sarahfim-2109736893198016898]] — Sarah beschreibt aus ihrer Rolle als Product-Engineering-Leiterin bei Composio, wie Repositorystruktur und automatisierte Prüfungen Beiträge verschiedener Agenten beherrschbar machen sollen.
 - [[2026-10-12-0xmovez-2109604520770548146]] — Movez beschreibt einen Workflow, in dem `Opus 5.5` über REA spezialisierte Analysewerkzeuge bedient und Erkenntnisse schrittweise in eine Spezifikation und Reimplementierung überführt.
 - [[2026-10-12-0xcodila-2109623431763292649]] — Der übertragbare Kern von Codilas REA-Kurs ist die Kette Untersuchung → Verhaltensspezifikation → eigene Implementierung → Vergleichstest.
@@ -111,9 +117,12 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-02-04-tweag-tdd-agentic-coding]] — Ein Test ist ein präziser Prompt: Der Agent baut Logik Test für Test, wobei die Testqualität beim Menschen liegt.
 - [[2026-01-12-dhruv1103-lessons-learned-500k-lines-claude-code]] — Modulare Architektur, TDD gegen echte Container, Read-only-MCP-Diagnose und gründliches Review machen große KI-Codebasen beherrschbar.
 - [[2025-06-28-the-morpheus-tutorials-ai-ersetzt-uns-itler-jetzt-also]] — Issues, Codepfadprüfung, Implementierung, Review und manuelle Ausführung bilden einen beschriebenen Entwicklungsablauf; Arbeitsmarktprognosen bleiben unbestätigt.
+- [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] — Andrew Hunt und David Thomas verbinden in der Jubiläumsausgabe von „The Pragmatic Programmer“ persönliche Verantwortung, Softwaredesign und gemeinsame Produktentwicklung.
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-28-housecor-2115482034906800200]]
+- [[2026-10-28-artificialanlys-2115494553780367384]]
 - [[2026-10-28-artificialanlys-2115265133467635877]]
 - [[2026-10-28-aibattle-2115269739069026766]]
 - [[2026-10-27-alexgoughcooper-2115076988327076296]]
@@ -204,6 +213,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-07-24-agenticjames-the-creator-of-claude-code-released-a-guide-to-the-4-levels-of-ai-coding]]
 - [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]]
 - [[2026-07-20-matt-pocock-do-you-even-need-human-review]]
+- [[2026-07-16-matt-pocock-my-1-book-recommendation-for-strategic-programmi]]
 - [[2026-07-16-matt-pocock-mattpocock-skills-a-complete-ai-coding-workflow]]
 - [[2026-07-13-matt-pocock-live-the-wayfinder-demo]]
 - [[2026-07-06-claudedevs-2074208949205881033]]

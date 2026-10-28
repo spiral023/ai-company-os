@@ -33,12 +33,15 @@ Altes Verhalten, geplante Strukturverbesserung und konkrete Prüfung pro Umbau d
 - 2026-10-17 · [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]] · meinung — Kleine Draft-PRs mit Produktionswerten und Belegen sollen das Verhalten erhalten; als „Permanent“ markierte Flags werden trotz möglicher Einsparung zur menschlichen Prüfung eskaliert, und komplexitätssteigernde Optimierungen können unvorteilhaft sein. Interner Praxisbericht mit unsicherem Publikationsdatum.
 - 2026-10-25 · [[2026-10-25-mattpocockuk-2114311664069718370]] · meinung — Als Ideal nennt Pocock unveränderten Bundle-Output bei Quellcode-Refactorings und schließt dafür import.meta.glob, laufzeitabhängige Quellpositionen und globalen Zustand aus. Die unvollständige, vom Autor später selbst bezweifelte Ideenskizze liefert Prüfgrenzen; gleiche Testabdeckung beweist keine Semantikerhaltung.
 - 2026-10-20 · [[2026-10-20-anthropic-using-claude-to-reduce-the-attack-surface-of-cod]] · meinung — Bei Gates gegen unnötige Default-Erreichbarkeit verlangt Anthropic identische Ergebnisse der Projekt- und Black-Box-Regressionstests gegenüber einer unveränderten Baseline. Nichtstandardmäßige Konfigurationen mit Verhaltensänderung werden zur menschlichen Entscheidung ausgesondert; die Tests belegen nur den geprüften Verhaltensumfang.
+- 2019-09-13 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] · meinung — Refactoring wird als disziplinierte Strukturänderung bei erhaltenem äußerem Verhalten eingegrenzt; Funktionsänderungen bleiben getrennt, Umbauten klein und Regressionstests begleiten die Schritte. Das Buch begründet damit kontinuierliche Verhaltensprüfung, liefert aber keinen empirischen Vergleich von Refactoringverfahren und keine Garantie vollständiger Testabdeckung.
 
 ## Spannungen & offene Fragen
 
 - Fehlende dokumentierte Fachregeln erschweren die Entscheidung, welche Alt-Ergebnisse gelten sollen.
 
 - 2026-10-25 · [[2026-10-25-mattpocockuk-2114311664069718370]] und 2026-10-20 · [[2026-10-20-anthropic-using-claude-to-reduce-the-attack-surface-of-cod]]: Unveränderte Coverage und identische Regressionsergebnisse sichern unterschiedliche, jeweils begrenzte Eigenschaften. Weder daraus noch aus nicht beobachteten Ausführungspfaden folgt vollständige Semantikgleichheit oder Unerreichbarkeit; Änderungen anderer Konfigurationen brauchen eine eigene Entscheidung.
+
+- 2026-10-28 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] trennt Strukturverbesserung von zusätzlicher Funktion und empfiehlt kleine, durch Regressionstests begleitete Schritte. Vollständige Testabdeckung oder heute unbegründete Abstraktionsschichten werden dadurch nicht gerechtfertigt.
 
 ## Verwandte Patterns
 

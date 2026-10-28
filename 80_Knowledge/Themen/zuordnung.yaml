@@ -181,6 +181,11 @@ muster:
     keywords: [Degrees of Freedom, Skill-Instruktionen, Prosa vs. Skript, Fragile Operationen, Deterministische Skripte, Skill Authoring, Pseudocode-Templates, Subagent-Prompts]
     neben: []
     synonyme: [Freedom Levels, Instruktions-Spezifität, Low Freedom High Freedom]
+  Frontend-Zustandslogik-mit-Reducer-isolieren:
+    haupt: verifikation
+    keywords: [Reducer, Frontend-Zustandslogik, Zustandsübergänge, State Machine, Ereignisreihenfolge, Browser-Tests, Effekttests]
+    neben: [prototyping]
+    synonyme: [Reducer-Logik, Frontend State Transitions, UI-Zustandsautomat, State Machine im Frontend]
   Great-Decoupling-Rollenverstaendnis:
     haupt: rolle-markt
     keywords: [The Great Decoupling, Programming vs. Engineering, Tech Lead, QA Lead, Vibe Reviewing, Trust the Harness, Agentic Engineering, Developer Role]
@@ -336,6 +341,11 @@ muster:
     keywords: [Pre-Commit Hooks, CI-Prüfungen, Feedbackzeitpunkt, Prüflaufzeit, inkonsistente Zwischenstände]
     neben: [erweiterungen]
     synonyme: [Feedbackstaffelung, Pre-Commit-Checks, Prüfzeitpunkt, CI-Feedback]
+  Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln:
+    haupt: verifikation
+    keywords: [Qualitätsaufwand, Fehlerfolgen, Risikoeinstufung, Abhängigkeiten, Neubaukosten, Wartungsaufwand, Prüftiefe, Akzeptanzkriterien]
+    neben: [planung, sdlc]
+    synonyme: [Risikobasierte Qualitätsplanung, Risk-based Quality, Prüftiefe nach Fehlerfolgen, Qualitätsbudget nach Abhängigkeiten]
   Quellen-Bookmarks-fuer-Agent-Automationen:
     haupt: autonomie
     keywords: [Quellen-Bookmark, Fortschrittsmarker, Watermark, Cursor, Agent-Automationen, Zeitfenster, Zustellbestätigung, Retry, Duplikatprüfung]
@@ -477,6 +487,11 @@ muster:
     neben: [autonomie, sdlc]
     synonyme: [CI-Ergebnisjournal, Testhistorien-Pipeline, Test-Impact-Analyse]
 quellen:
+  2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition:
+    haupt: verifikation
+    kernaussage: Andrew Hunt und David Thomas verbinden in der Jubiläumsausgabe von „The Pragmatic Programmer“ persönliche Verantwortung, Softwaredesign und gemeinsame Produktentwicklung.
+    keywords: [The Pragmatic Programmer, DRY Wissensduplikation, Orthogonalität, Design by Contract, Tracer Bullets, Prototypen, kleine Schritte, Refactoring, Property-Based Tests, Teamverantwortung]
+    neben: [planung, sdlc]
   2025-04-09-the-morpheus-ki-ist-ein-fluch:
     haupt: ki-risiken
     kernaussage: Historische Risikoszenarien und persönliche Beispiele liefern keine geprüften Kennzahlen oder belastbaren Zukunftsprognosen.
@@ -487,6 +502,11 @@ quellen:
     kernaussage: KI-Chancen werden anhand persönlicher Beispiele diskutiert; gelöste Benchmarkaufgaben entsprechen keiner vollständigen Automatisierung der Softwareentwicklung.
     keywords: [KI-Chancen, SWE-bench, Benchmarkgrenzen]
     neben: [verifikation]
+  2025-06-17-matt-pocock-the-bitter-lesson:
+    haupt: modelle-kosten
+    kernaussage: Grundlage sind Videobeschreibung und automatisch erzeugtes englisches Transkript.
+    keywords: [The Bitter Lesson, Rich Sutton, Rechenleistung, Modellfortschritt, Agent Tooling, alternde Optimierungen]
+    neben: [erweiterungen]
   2025-06-23-boristane-context-engineering-is-what-makes-ai-magical:
     haupt: kontext
     kernaussage: 'Boris Tane beschreibt Context Engineering als Produktaufgabe: Agents sollen passende Informationen zur Laufzeit erhalten, statt nur wenige Retrieval-Chunks.'
@@ -1120,6 +1140,12 @@ quellen:
     kernaussage: Transkript und zeitmarkierte Bildframes ergänzen sich bei Videoanalyse; ausgewählte Szenen belegen keine vollständige visuelle Sichtung.
     keywords: [Videoanalyse, Transkript, Bildframes, Zeitmarken, Szenenprüfung]
     neben: [verifikation, skills]
+  2026-06-08-matt-pocock-learn-anything-with-the-teach-skill:
+    haupt: rolle-markt
+    kernaussage: Matt Pocock beschreibt im [Video zum `teach`-Skill](https://www.youtube.com/watch?v=s5T5oQJcJ6U) einen persönlichen Lernarbeitsraum, der Ziele, Ressourcen und Fortschritt außerhalb des
+      Chats festhält.
+    keywords: [teach Skill, Lernmission, MISSION.md, RESOURCES.md, Lernjournal, interaktive HTML-Lektion, schrittweises Lernen, Lernfortschritt, Matt Pocock]
+    neben: [skills, agent-dateien]
   2026-06-08-mvanhorn-2063865685558903149:
     haupt: autonomie
     kernaussage: Matt Van Horn ordnet die Debatte um Peter Steinbergers Satz ein, man solle Coding Agents nicht mehr prompten, sondern Loops entwerfen, die sie prompten.
@@ -1317,6 +1343,11 @@ quellen:
     kernaussage: Spezifikation und Tickets überbrücken Sessions; getrennte Reviewer prüfen Anforderungen und Repo-Standards, während der Nutzer unnötige Aufteilung korrigiert.
     keywords: [Matt Pocock Skills, Planung, Review, Workflow-Auswahl]
     neben: [planung, verifikation]
+  2026-07-16-matt-pocock-my-1-book-recommendation-for-strategic-programmi:
+    haupt: rolle-markt
+    kernaussage: Grundlage sind Videobeschreibung und automatisch erzeugtes englisches Transkript; keine visuelle Prüfung.
+    keywords: [The Pragmatic Programmer, Buchempfehlung, Matt Pocock, Andrew Hunt, David Thomas, Tracer Bullets, Softwaregrundlagen]
+    neben: [verifikation]
   2026-07-17-hedgeye-2078165516657549710:
     haupt: modelle-kosten
     kernaussage: Hedgeye behauptet am 17.
@@ -2361,6 +2392,11 @@ quellen:
     kernaussage: Malte Kirchner berichtet bei Heise über Eric S.
     keywords: [Eric S. Raymond, Closed Source, KI-Dekompilierung, Software-Geschäftsmodelle, Reverse Engineering]
     neben: [verifikation]
+  2026-10-08-matt-pocock-don-t-underestimate-the-communication-barrier:
+    haupt: planung
+    kernaussage: Grundlage sind die deutsche Automatikspur und der Abgleich mit zusätzlich archivierten englischen Untertiteln, ebenfalls automatisch erzeugt.
+    keywords: [Kommunikationsbarriere, implizite Ziele, Grilling, Unknowns, Modellgrenzen, Absichten klären]
+    neben: [prompting]
   2026-10-08-mattpocockuk-2108216899439894574:
     haupt: planung
     kernaussage: 'Matt Pocock empfiehlt bei winzigen Änderungen direktes Umsetzen: Ist der Diff schnell prüfbar und ein neuer Versuch fast kostenlos, lohnt ausführliches „Grilling“ weniger.'
@@ -2672,6 +2708,11 @@ quellen:
       mit besser'
     keywords: [Ambitionscheck, Zielhöhe Tiefe Reichweite, Expertenmethoden, externe Validierung]
     neben: [verifikation]
+  2026-10-13-matt-pocock-retro-is-a-banger-of-a-skill:
+    haupt: verifikation
+    kernaussage: Matt Pocock stellt im [kurzen Video zu `retro`](https://www.youtube.com/watch?v=Q8XzzKUbp0Y) eine Retrospektive für Fehler und Reibung in vorangegangenen Agent-Sitzungen vor.
+    keywords: [retro Skill, Session-Retrospektive, tatsächliche Fehler, vorhandene CI-Checks, deterministische Regeln, CODING_STANDARDS.md, Review-Urteil]
+    neben: [skills, agent-dateien]
   2026-10-13-matt-pocock-stop-running-your-checks-in-harness-hooks:
     haupt: verifikation
     kernaussage: Matt Pocock empfiehlt am 13.
@@ -2743,6 +2784,11 @@ quellen:
     kernaussage: Mark Ajzenstadt beschreibt am 15.10.2026 den Agentenprozess von Limestone.
     keywords: [Limestone, ADLC, Plan-Gate, PR-Gate, Sandbox]
     neben: [verifikation, sicherheit]
+  2026-10-15-matt-pocock-give-your-agent-a-goal-and-let-it-be-creative:
+    haupt: verifikation
+    kernaussage: Grundlage sind die deutsche Automatikspur und der Abgleich mit zusätzlich archivierten englischen Untertiteln, ebenfalls automatisch erzeugt.
+    keywords: [Agentenziel, OBS Studio, Scorecard, externe Prüfkriterien, Iterationsschleife, Holdout fehlt, Automatiktranskript]
+    neben: [autonomie]
   2026-10-15-poteto-2110757066709356851:
     haupt: frameworks
     kernaussage: Lauren Tan beschreibt am 15.10.2026 den Einstieg in ihr `pstack`-Skillpaket.
@@ -2768,6 +2814,11 @@ quellen:
     kernaussage: Rachel Thomas diskutiert einen Fachbeitrag zur menschlichen Aufsicht über KI-Agenten.
     keywords: [Human in the Loop, Aufsichtsqualität, Pre-Commitment, Canary-Aufgaben, Batch Review]
     neben: [rolle-markt]
+  2026-10-16-matt-pocock-the-secret-to-building-robust-frontend-apps-with:
+    haupt: verifikation
+    kernaussage: Matt Pocock beschreibt einen Reducer als gemeinsamen Ort für Frontend-Zustandslogik.
+    keywords: [Reducer, Zustandsübergänge, State Machine, Kamera-Ereignisse, browserunabhängige Tests, UI-Anbindung, asynchrone Effekte]
+    neben: [prototyping]
   2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert:
     haupt: rolle-markt
     kernaussage: Niklas Steenfatt beschreibt im Oktober 2026 einen Wechsel von kleinteiligen Coding-Anweisungen zu stärker delegierter Entwicklung.
@@ -3062,6 +3113,11 @@ quellen:
     kernaussage: 'Vox schlägt eine überprüfbare Pflege von Agent-Dateien vor: Der Agent sammelt konkrete Konflikte, während der Mensch auswählt, welche Regeln geändert werden.'
     keywords: [AGENTS.md, CLAUDE.md, Rule Audit, Instruction Conflicts, Human Approval]
     neben: [skills]
+  2026-10-25-alex-sprogis-die-qualitaet-von-ki-code-ist-nicht-so-gut-wie-d:
+    haupt: verifikation
+    kernaussage: Alex Sprogis verbindet Verständlichkeit und Änderbarkeit mit dem Risiko eines Softwareprojekts.
+    keywords: [risikobasierte Codequalität, Ausfallfolgen, Neubaukosten, Abhängigkeiten, Wartungsaufwand, Akzeptanzkriterien, getrennter Review-Agent, Max Kanat-Alexander]
+    neben: [planung, sdlc]
   2026-10-25-mattpocockuk-2114311664069718370:
     haupt: verifikation
     kernaussage: Matt Pocock erwägt deterministische Freigaben für eine eng begrenzte Refactoringklasse.
@@ -3168,3 +3224,13 @@ quellen:
     kernaussage: 'Artificial Analysis veröffentlicht am 28.10.2026 den Intelligence Index `v5`: neun Evaluationen, `60 %` mit privaten Testsets oder zurückgehaltenen Antworten.'
     keywords: [Intelligence Index v5, FrontierCode 2.0, Terminal-Bench-Science, Cost per task, Reasoning effort, Private test sets, Open weights]
     neben: [verifikation, open-source-llms]
+  2026-10-28-artificialanlys-2115494553780367384:
+    haupt: modelle-kosten
+    kernaussage: Artificial Analysis berichtet am 28.10.2026 über `Gemini 4 Carbon (high)`.
+    keywords: [Gemini 4 Carbon, Intelligence Index v5, Coding Agent Index v2, Antigravity CLI, AA-Briefcase, AA-Omniscience, Hallucination rate, Cost per task, Launch discount]
+    neben: [verifikation]
+  2026-10-28-housecor-2115482034906800200:
+    haupt: planung
+    kernaussage: Cory House verteilt Skills auf konkrete Entscheidungspunkte im Arbeitstag.
+    keywords: [Skill lifecycle, Plan review, PR review, Review comments, Scheduled audits, Skill selection, Feedback timing]
+    neben: [skills, verifikation]
