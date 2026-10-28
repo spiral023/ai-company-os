@@ -271,6 +271,11 @@ muster:
     keywords: [MCP, Model Context Protocol, Code Execution with MCP, Tool Definitions, Context Bloat, Tool Schemas, Sandbox, Token-Kosten von MCP]
     neben: [kontext]
     synonyme: [MCP Code Mode, MCP-Kontextkosten, Code Execution MCP]
+  Mehrquellen-Synthese-mit-Haeufigkeiten-und-Widerspruechen:
+    haupt: wissensarbeit
+    keywords: [Mehrquellen-Synthese, Quellenvergleich, Video-Transkripte, Widerspruchsregister, Quellenabhängigkeit]
+    neben: [modelle-kosten]
+    synonyme: [Multi-source synthesis, Quellenkonsens, Widerspruchsregister]
   Menschliche-Aufsicht-als-eigene-Leistung-pruefen:
     haupt: verifikation
     keywords: [Human in the Loop, Aufsichtsqualität, Pre-Commitment, Canary-Aufgaben, Reviewermüdung]
@@ -3072,6 +3077,11 @@ quellen:
     kernaussage: Vox empfiehlt, bei Widersprüchen vorhandene Codekonventionen zu berücksichtigen und Abweichungen zur Dokumentation ausdrücklich zu melden.
     keywords: [Documentation Drift, Stale Documentation, Repository Conventions, Instruction Following, AGENTS.md]
     neben: [verifikation]
+  2026-10-26-addyosmani-2114604912520921136:
+    haupt: verifikation
+    kernaussage: Addy Osmani veröffentlicht eine überarbeitete Fassung des bereits erfassten [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude|Herstellerberichts zum Claude-Code-Review]].
+    keywords: [Code Review, Review-Konvergenz, Incident-Evals, False Positives, risikobasierte Freigaben]
+    neben: [autonomie]
   2026-10-26-artificialanlys-2114781865811063259:
     haupt: modelle-kosten
     kernaussage: Artificial Analysis veröffentlicht am 26.10.2026 Drittmessungen zu `GPT-6.1 Terra`.
@@ -3132,6 +3142,11 @@ quellen:
     haupt: orchestrierung
     kernaussage: 'Vox schlägt am 27.10.2026 eine Codex-Arbeitsteilung vor: `GPT-6.1 Sol/high` zerlegt Aufgaben, integriert Ergebnisse und prüft; `GPT-6.1 Terra` erledigt begrenzte Teilaufgaben.'
     keywords: [Codex Subagents, Model Routing, Reasoning Effort, fork_turns, Worker Escalation, Session Logs]
+    neben: [modelle-kosten]
+  2026-10-27-voxyz_ai-2115167901779161148:
+    haupt: wissensarbeit
+    kernaussage: Vox beschreibt die Transkript-Auswertung von 30 Claude-Code-Videos.
+    keywords: [Mehrquellen-Synthese, Video-Transkripte, Quellenvergleich, Widerspruchsregister, Modellrouting]
     neben: [modelle-kosten]
   2026-10-27-voxyz_ai-2115198100465697038:
     haupt: verifikation

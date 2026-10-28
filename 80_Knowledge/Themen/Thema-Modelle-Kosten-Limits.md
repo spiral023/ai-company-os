@@ -9,7 +9,7 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 - **Hauptkeyword:** Claude Code Kosten
 - **Long-Tail:** Claude Code Usage Limits; Kosten pro Task statt pro Token; Prompt Caching Claude Code; Claude Code mit lokalem Modell; Reasoning Effort wählen; Modell-Eskalation günstig nach teuer
 - **Fragen:** Welches Modell für welche Aufgabe? / Warum sind meine Limits so schnell leer?
-- **Häufig in den Quellen:** modell-eskalation (31), modell (29), effort (22), kosten (21), benchmark (19), preis (17), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), preise (8), intelligence index (7), cost per task (7), pareto (7), sonnet (7), opus 5.5 (7), terminal-bench 4.0 (6), reasoning effort (6)
+- **Häufig in den Quellen:** modell-eskalation (31), modell (29), effort (22), kosten (21), benchmark (19), preis (17), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), preise (8), pareto (7), cost per task (7), intelligence index (7), sonnet (7), opus 5.5 (7), terminal-bench 4.0 (6), reasoning effort (6)
 
 ## Verwandte Themen
 
@@ -23,11 +23,11 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 
 - [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 4 Belege
 - [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 10 Belege
-- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 65 Belege
+- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 66 Belege
 - [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]] · meinung · 1 Belege
 - [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 3 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Mehrquellen-Synthese-mit-Haeufigkeiten-und-Widerspruechen]]
 
 ## Quellen (87)
 
@@ -121,6 +121,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Mod
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-27-voxyz_ai-2115167901779161148]]
 - [[2026-10-27-voxyz_ai-2115096193240047938]]
 - [[2026-10-23-theo-2113424203345265053]]
 - [[2026-10-19-unslothai-2112212605930778830]]

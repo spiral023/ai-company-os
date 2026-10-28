@@ -1,6 +1,6 @@
 # Vergleich: Spec, Build und Review in der Factory
 
-**Stand:** 2026-10-26 · **Pilot-ID:** `s-ablauf` · **Status:** kuratierter Entwurf, kein aktivierter Produktionsworkflow
+**Stand:** 2026-10-27 · **Pilot-ID:** `s-ablauf` · **Status:** kuratierter Entwurf, kein aktivierter Produktionsworkflow
 
 ## Kernaussage
 
@@ -44,6 +44,8 @@ Spec-, Standards- und Funktionsprüfung behalten eigene Aussagen. Fehlt eine Spe
 Abnahmebedingungen und erlaubte Nacharbeit stehen vor der Umsetzung fest. Eine Reparaturschleife bekommt einen konkreten Befund und ein Limit (`c07`). Nicht prüfbare Kriterien und ungelöste Abhängigkeiten bleiben offen. Für Commits und Produktion gelten die vorhandenen Freigaberegeln (`c19`); die Kandidatenkarten erweitern den Auftrag nicht.
 
 ## Belegpfad
+
+Ergänzung vom 27.10.2026 außerhalb der unveränderten Pilot-Registry: [[2026-10-26-addyosmani-2114604912520921136]] konkretisiert begrenzte Review-Schleifen mit Ansatzprüfung nach drei erfolglosen Runden, späterem Fokus auf den neuen Diff und separater Bestandsprüfung. Das Diagramm nennt 2,08 gegenüber 1,32 Reviews bis zum Abschluss; ohne Messdesign ist das keine übertragbare Erfolgsquote. Die X-Fassung gehört zur selben Herkunft wie [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]] und zählt nicht als unabhängiger Beleg. Für den lokalen Entwurf folgt als Prüffrage: Werden neue Fehler erkannt oder erzeugen wiederholte Altbefunde nur weitere Runden? Produktionsregeln und Fähigkeitskarten werden damit nicht geändert.
 
 Die Aussagen `c06` bis `c15`, `c18`, `c19` sowie `c21` bis `c24` verweisen in [pilot.json](../Factory/pilot.json) auf Originalskills, Playbooks und archivierte Quellen. Spec- und Standards-Review stammen aus derselben Matt-Pocock-Quelldatei. Ihre getrennte Modellierung erzeugt keine zweite Herkunftsfamilie.
 

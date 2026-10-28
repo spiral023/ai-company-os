@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** agents.md (14), claude.md (9), progressive disclosure (7), context engineering (5), agent-datei (4), coding_standards.md (3), agent_docs (2), instruktionsbudget (2), instruction following (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), obsidian (2), llm wiki (2), /doctor (2), retro (2), test (2), regeln (2), handlungsbedarf (2)
+- **Häufig in den Quellen:** agents.md (14), claude.md (9), progressive disclosure (7), context engineering (5), agent-datei (4), coding_standards.md (3), instruction following (2), instruktionsbudget (2), agent_docs (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), llm wiki (2), obsidian (2), /doctor (2), retro (2), test (2), regeln (2), blockadebericht (2)
 
 ## Verwandte Themen
 
@@ -20,7 +20,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 
 ## Patterns (2)
 
-- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 45 Belege
+- [[AGENTS-md-Onboarding-Design]] · mehrfach-belegt · 46 Belege
 - [[Handlungsbedarf-zuerst-im-Agent-Bericht]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-erzwingen]], [[Wissenspflege-mit-Inbox-und-Review]]

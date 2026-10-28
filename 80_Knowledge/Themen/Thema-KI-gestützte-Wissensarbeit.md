@@ -9,7 +9,7 @@ Quellen aufnehmen, aufbereiten, wiederfinden und regelmäßig pflegen: Markdown-
 - **Hauptkeyword:** Wissensmanagement mit KI
 - **Long-Tail:** Obsidian und Claude Code; Markdown-Wissensvault pflegen; RAG mit OCR und Tabellen; RAG Quellen aktualisieren; Videoanalyse mit Frames und Transkript; KI-Betriebssystem für Wissensarbeit
 - **Fragen:** Wie wird aus einer Inbox nutzbares KI-Wissen? / Wann brauche ich RAG, Tabellenabfragen oder das vollständige Dokument? / Wie bleiben automatisch erzeugte Wissensnotizen nachvollziehbar? / Was ergänzen Bildframes zu einem Videotranskript?
-- **Häufig in den Quellen:** rag (3), volltextpfad (3), quellenlebenszyklus (2), ocr (2), tabellenabfragen (2), weekly review (2), daily notes (2), inbox-routing (2), wissenspflege (2), videoanalyse (2), zeitmarken (2), transkript (2), bildframes (2), szenenprüfung (2), obsidian, wissen, routinen, ki-betriebssystem, ausführungsort, skills
+- **Häufig in den Quellen:** volltextpfad (3), rag (3), ocr (2), tabellenabfragen (2), quellenlebenszyklus (2), weekly review (2), daily notes (2), inbox-routing (2), wissenspflege (2), bildframes (2), szenenprüfung (2), zeitmarken (2), transkript (2), videoanalyse (2), quellenvergleich (2), widerspruchsregister (2), video-transkripte (2), mehrquellen-synthese (2), obsidian, ki-betriebssystem
 
 ## Verwandte Themen
 
@@ -19,16 +19,18 @@ Quellen aufnehmen, aufbereiten, wiederfinden und regelmäßig pflegen: Markdown-
 - [[Thema-Skill-Design]] — Skill-Design
 - [[Thema-Verifikation-Tests-Review]] — Verifikation, Tests & Review
 
-## Patterns (3)
+## Patterns (4)
 
+- [[Mehrquellen-Synthese-mit-Haeufigkeiten-und-Widerspruechen]] · meinung · 1 Belege
 - [[RAG-mit-Text-Tabellen-und-Volltextpfad]] · meinung · 1 Belege
 - [[Videoanalyse-mit-Frames-und-Transkript]] · meinung · 1 Belege
 - [[Wissenspflege-mit-Inbox-und-Review]] · meinung · 8 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]]
 
-## Quellen (7)
+## Quellen (8)
 
+- [[2026-10-27-voxyz_ai-2115167901779161148]] — Vox beschreibt die Transkript-Auswertung von 30 Claude-Code-Videos.
 - [[2026-10-23-julian-ivanov-ki-automat-die-5-level-von-ki-nutzern-auf-welchem-bist-du]] — Ivanovs automatisch erzeugtes Transkript beschreibt seine fünf Stufen der KI-Nutzung und bewirbt seine Community. Es liefert didaktische Orientierung, keinen validierten Reifegradstandard.
 - [[2026-10-04-mattpocockuk-2106729173511188654]] — Matt Pocock kündigt am 04.10.2026 die Version `v1.3` seines Skill-Packs mit `/retro` an; der Link führt zum Release `v1.3.1`. Der konkrete Ansatz ist, vergangene Agententranskripte auf Verbesserungen zu prüfen.
 - [[2026-10-03-vincentmumme-andrej-karpathy-einer-der-fuehrenden-ki-forscher-erfinder-vom-llm-wiki]] — Vincent Mumme empfiehlt, umfangreiche KI-Ausgaben gezielt in andere Darstellungen übersetzen zu lassen.

@@ -146,6 +146,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | ci-gate | 3 | Agent-Dateien & Memory, Skill-Design, Verifikation, Tests & Review |
 | claude skills | 3 | Skill-Design |
 | cli | 3 | Verifikation, Tests & Review, Workflow-Frameworks & Tools |
+| code review | 3 | Autonome Läufe, Loops & CI, Verifikation, Tests & Review |
 | code-review | 3 | Hooks, MCP & Erweiterungs-Ebenen, Verifikation, Tests & Review, Workflow-Frameworks & Tools |
 | codebase understanding | 3 | Rolle, Lernen & Markt, Spezifikation & Planung, Workflow-Frameworks & Tools |
 | codequalität | 3 | Spezifikation & Planung, Verifikation, Tests & Review |
@@ -289,7 +290,6 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | claude usage limits | 2 | Modelle, Kosten & Limits |
 | claude.md größe | 2 | Modelle, Kosten & Limits, Multi-Agent & Parallelisierung |
 | clef head | 2 | Open-Source-LLMs & lokale Modelle |
-| code review | 2 | Autonome Läufe, Loops & CI, Verifikation, Tests & Review |
 | codepfad | 2 | Spezifikation & Planung |
 | codex cli | 2 | Multi-Agent & Parallelisierung |
 | codex harness | 2 | Hooks, MCP & Erweiterungs-Ebenen, Modelle, Kosten & Limits |
@@ -341,6 +341,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | exportabnahme | 2 | Prototyping & UI-Design |
 | externe prüfung | 2 | KI-Risiken & Sicherheitsvorfälle, Verifikation, Tests & Review |
 | extra usage | 2 | Modelle, Kosten & Limits |
+| false positives | 2 | Verifikation, Tests & Review |
 | fast mode | 2 | Modelle, Kosten & Limits |
 | feedbackzeitpunkt | 2 | Verifikation, Tests & Review |
 | fixed-answer scoring | 2 | Modelle, Kosten & Limits |
@@ -410,6 +411,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | lora fine-tuning | 2 | Open-Source-LLMs & lokale Modelle |
 | lufs | 2 | Prototyping & UI-Design |
 | mcp tools | 2 | Kontext-Management |
+| mehrquellen-synthese | 2 | KI-gestützte Wissensarbeit |
 | memory | 2 | Spezifikation & Planung, Workflow-Frameworks & Tools |
 | menschliche-pruefung | 2 | Workflow-Frameworks & Tools |
 | mermaid | 2 | Spezifikation & Planung, Workflow-Frameworks & Tools |
@@ -464,6 +466,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | qa-verantwortung | 2 | Verifikation, Tests & Review |
 | quellen-bookmark | 2 | Autonome Läufe, Loops & CI |
 | quellenlebenszyklus | 2 | KI-gestützte Wissensarbeit |
+| quellenvergleich | 2 | KI-gestützte Wissensarbeit |
 | reachability analysis | 2 | Sicherheit & Sandboxing |
 | reasoning-effort | 2 | Modelle, Kosten & Limits, Prompting & Klärung |
 | reasoning-stufe | 2 | Modelle, Kosten & Limits |
@@ -546,6 +549,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | verus | 2 | Verifikation, Tests & Review |
 | vibe coding security | 2 | Prototyping & UI-Design, Sicherheit & Sandboxing |
 | vibe reviewing | 2 | Rolle, Lernen & Markt, Verifikation, Tests & Review |
+| video-transkripte | 2 | KI-gestützte Wissensarbeit |
 | videoanalyse | 2 | KI-gestützte Wissensarbeit |
 | viewport | 2 | Prototyping & UI-Design |
 | visuelle hierarchie | 2 | Prototyping & UI-Design |
@@ -553,6 +557,7 @@ Begriffe, die in mindestens zwei Notizen vorkommen. Sie zeigen, worüber das Wis
 | webapp am handy | 2 | Prototyping & UI-Design |
 | webdesign | 2 | Prototyping & UI-Design |
 | weekly review | 2 | KI-gestützte Wissensarbeit |
+| widerspruchsregister | 2 | KI-gestützte Wissensarbeit |
 | wissenspflege | 2 | KI-gestützte Wissensarbeit |
 | workflow | 2 | Verifikation, Tests & Review, Workflow-Frameworks & Tools |
 | workflow-frameworks | 2 | Skill-Design, Workflow-Frameworks & Tools |

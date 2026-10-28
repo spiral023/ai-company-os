@@ -45,8 +45,11 @@ Der Agent läuft als eigener, sandboxed Job in der CI-Pipeline (z. B. GitLab CI,
 
 - 2026-07-21 · [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] · meinung — Anthropic kombiniert spezialisierte Review-Agents, Befundnachweise, SAST und menschliche Freigaben nach Risiko; automatische Entscheidungen werden protokolliert und stichprobenartig von Menschen geprüft. Herstellerbericht, keine unabhängige Validierung der Automatik.
 - 2026-10-15 · [[2026-10-15-mardehaym-2110763129885835505]] · meinung — Limestone beschreibt getrennte Plan- und PR-Freigaben, eine nur zum Modell vernetzte Sandbox und freigegebenes Reviewfeedback als Regeln für Folgeläufe; Anbieter-Selbstbericht ohne geprüfte Isolations- oder Sicherheitswirkung.
+- 2026-10-26 · [[2026-10-26-addyosmani-2114604912520921136]] · meinung — Zweitfassung des Herstellerberichts vom 15.10.: nach drei erfolglosen Reviewrunden Ansatz überdenken, später nur den neuen Diff prüfen und Altfehler getrennt behandeln; Diagramm nennt 2,08 gegenüber 1,32 Reviews bis zum Abschluss, ohne kontrollierte Methodik und ohne unabhängige Bestätigung.
 
 ## Spannungen & offene Fragen
+
+- Ergänzung (2026-10-27): [[2026-10-26-addyosmani-2114604912520921136]] beschreibt offene Bug-/Security-Befunde als Merge-Blocker, während [[2026-09-27-anthropic-academy-sdlc-playbook]] Agenten-Befunde nicht blockieren lässt. Das sind unterschiedliche Gate-Policies. Der neue Bericht begrenzt außerdem spätere Reviewrunden auf den neuen Diff und verlangt nach drei erfolglosen Runden eine Ansatzprüfung; zusätzliche Altbefunde dürfen die Abnahme nicht unbegrenzt verlängern. Diese Policy wird hier dokumentiert, nicht für unsere Repositories aktiviert.
 
 - Ergänzung (2026-10-05): [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] beschreibt automatische PR-Freigaben für ausgewählte Risikobereiche mit protokollierten Entscheidungen und menschlichen Stichproben, während kritische Bereiche verpflichtende menschliche Freigaben behalten. Das steht in Spannung zum durchgängigen Team-Review-Gate dieses Patterns und zum späteren [[2026-09-27-anthropic-academy-sdlc-playbook]]; Risikobereiche und Zeitpunkte sind nicht vollständig vergleichbar.
 

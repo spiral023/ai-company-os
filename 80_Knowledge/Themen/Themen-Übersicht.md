@@ -7,7 +7,7 @@ Jede Source und jedes Pattern hat einen Haupt-Cluster und höchstens zwei Nebenc
 | Thema | Hub-Notiz | Quellen | Patterns | Hauptkeyword |
 |---|---|---|---|---|
 | Modelle, Kosten & Limits | [[Thema-Modelle-Kosten-Limits]] | 87 | 5 | Claude Code Kosten |
-| Verifikation, Tests & Review | [[Thema-Verifikation-Tests-Review]] | 62 | 20 | AI Code Review |
+| Verifikation, Tests & Review | [[Thema-Verifikation-Tests-Review]] | 63 | 20 | AI Code Review |
 | Prototyping & UI-Design | [[Thema-Prototyping-UI-Design]] | 39 | 8 | Lovable |
 | Spezifikation & Planung | [[Thema-Spezifikation-Planung]] | 34 | 9 | Spec-Driven Development |
 | Skill-Design | [[Thema-Skill-Design]] | 33 | 9 | Claude Code Skills |
@@ -24,6 +24,6 @@ Jede Source und jedes Pattern hat einen Haupt-Cluster und höchstens zwei Nebenc
 | Open-Source-LLMs & lokale Modelle | [[Thema-Open-Source-LLMs-lokale-Modelle]] | 12 | 2 | Open Source LLM |
 | AI-nativer SDLC | [[Thema-AI-nativer-SDLC]] | 9 | 1 | AI-nativer SDLC |
 | Einstieg & Best Practices | [[Thema-Einstieg-Best-Practices]] | 9 | 0 | Claude Code Tutorial |
-| KI-gestützte Wissensarbeit | [[Thema-KI-gestützte-Wissensarbeit]] | 7 | 3 | Wissensmanagement mit KI |
+| KI-gestützte Wissensarbeit | [[Thema-KI-gestützte-Wissensarbeit]] | 8 | 4 | Wissensmanagement mit KI |
 | Prompts zum Ausprobieren | [[Thema-Prompts-zum-Ausprobieren]] | 2 | 0 | Prompts für Claude Code |
 | KI-Anwendungen & Forschung | [[Thema-KI-Anwendungen-Forschung]] | 1 | 0 | KI-Anwendungen und Forschung |

@@ -83,6 +83,7 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Wissenspflege-mit-Inbox-und-Review]] — Eingänge, Entscheidungen und Arbeitsstände über Session-Abschluss und regelmäßigen Review in wiederverwendbares Wissen überführen.
 - [[RAG-mit-Text-Tabellen-und-Volltextpfad]] — Textsuche, Tabellenabfragen und vollständige Dokumente über gemeinsame Quellenidentität verbinden.
 - [[Videoanalyse-mit-Frames-und-Transkript]] — gesprochene und visuelle Quelleninformationen zeitlich zuordnen, Stichprobengrenzen ausdrücklich festhalten.
+- [[Mehrquellen-Synthese-mit-Haeufigkeiten-und-Widerspruechen]] — Quellen einzeln auswerten, ähnliche Aussagen mit Herkunft zählen und Widersprüche getrennt ausweisen; Häufigkeit ist kein Wirksamkeitsbeleg.
 - [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]] — wiederkehrende Agent-Arbeit über Zuständigkeiten, Issues, Auslöser, Kostenansichten und menschliche Abnahme steuern.
 - [[Brand-Kit-als-gemeinsame-Artefaktbasis]] — dieselbe Markenreferenz für mehrere Medien nutzen und jedes Artefakt getrennt abnehmen.
 - [[Suchintention-mit-Daten-vor-Webdesign-klaeren]] — recherchierte Suchresultate, Angebotsdaten und generierte Annahmen vor Seitenstruktur und Gestaltung unterscheiden.

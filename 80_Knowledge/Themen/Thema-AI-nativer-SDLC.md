@@ -9,7 +9,7 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 - **Hauptkeyword:** AI-nativer SDLC
 - **Long-Tail:** Software Development Lifecycle mit KI; SDLC mit Coding Agents; AI-native SDLC Playbook; SDLC ist tot; Intent Build Observe; Agentic SDLC und ADLC; Menschliche Freigaben im AI-nativen SDLC
 - **Fragen:** Wie verändert sich der SDLC durch Coding Agents? / Welche Kontrollpunkte brauchen Menschen weiterhin? / Wie fließen Erkenntnisse aus dem Betrieb zurück in die Planung?
-- **Häufig in den Quellen:** ai-native sdlc (4), human-in-the-loop (3), intent.md (3), software factory (3), menschliche freigabe (2), review.md (2), spec.md (2), scion (2), refactoring (2), verhaltensvergleich (2), codex (2), feature flags canary, software development lifecycle mit ki, intent build observe, observability als kontext, closed loop, adversarial agent code review, sdlc ist tot, sast und dast, agent-identität
+- **Häufig in den Quellen:** ai-native sdlc (4), human-in-the-loop (3), intent.md (3), software factory (3), review.md (2), spec.md (2), menschliche freigabe (2), scion (2), verhaltensvergleich (2), refactoring (2), codex (2), sdlc ist tot, observability als kontext, intent build observe, software development lifecycle mit ki, feature flags canary, adversarial agent code review, closed loop, risikobasiertes human review, befundnachweis
 
 ## Verwandte Themen
 

@@ -76,6 +76,7 @@ Empirisch bestätigt (ETH-Zürich-Studie, AGENTbench): LLM-generierte Context Fi
 - 2026-10-16 · [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] · meinung — Steenfatt will gewachsene Einzelfallregeln durch knappe Repository-Besonderheiten sowie Skripte und Lint-/CI-Prüfungen ersetzen; seine zeitweise pauschale Ablehnung von Kontextdateien geht über den engeren, primär geprüften Forschungsbefund hinaus.
 - 2026-10-24 · [[2026-10-24-voxyz_ai-2114069417902403786]] · meinung — Vox schlägt einen gemeinsamen Regel-Audit von Projekt-/Globaldateien und Skills vor: widersprüchliche, doppelte und veraltete Regeln nummerieren, Konfliktstellen gegenüberstellen und erst ausgewählte Befunde ändern. Das ergänzt einen nachvollziehbaren menschlichen Auswahlpunkt, belegt aber weder Vollständigkeit noch tatsächliche Regelbefolgung.
 - 2026-10-25 · [[2026-10-25-voxyz_ai-2114446907355648062]] · meinung — Der Post empfiehlt bei Dokumentationsdrift, bestehende Codekonventionen zu prüfen und Widersprüche ausdrücklich zu berichten; seine Versuchszahlen sind ohne identifizierte Primärstudie nicht überprüfbar. Die Orientierung am Code darf Sicherheitsanforderungen oder notwendige Verhaltenskorrekturen nicht pauschal überstimmen.
+- 2026-10-27 · [[2026-10-27-voxyz_ai-2115167901779161148]] · meinung — Vox zählt kurze CLAUDE.md in vier und ausgelagerte Detaildateien in fünf von 30 ausgewählten Tutorials; Transkript-Gruppierung mit unbekannten Quellenabhängigkeiten, keine unabhängige Wirksamkeitsmessung oder Konfidenzsteigerung.
 
 ## Spannungen & offene Fragen
 

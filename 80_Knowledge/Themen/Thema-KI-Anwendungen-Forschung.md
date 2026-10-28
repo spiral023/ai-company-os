@@ -9,7 +9,7 @@ Konkrete Anwendungen von KI außerhalb der Softwareentwicklung, insbesondere Med
 - **Hauptkeyword:** KI-Anwendungen und Forschung
 - **Long-Tail:** KI in der Medizin; KI in wissenschaftlicher Forschung; Klinische KI-Ergebnisse einordnen; KI-Studien und Herstellerankündigungen unterscheiden
 - **Fragen:** Welche Rolle hatte KI in einer konkreten Anwendung? / Welche Ergebnisse sind veröffentlicht und welche nur angekündigt? / Welche Grenzen hat die Übertragung auf andere Anwendungen?
-- **Häufig in den Quellen:** phase 3, keynote-942, interpath-001, mrna, phase 2b, neoantigene, intismeran autogene, hersteller-topline, forschungsagenten, superintelligenz-prognose, vermögensverteilung, zukunft mit ki, erwerbsarbeit, ai forecasts, compute economics, self-reported code volume, autonomous agents, anthropic
+- **Häufig in den Quellen:** phase 2b, interpath-001, keynote-942, intismeran autogene, neoantigene, phase 3, mrna, hersteller-topline, forschungsagenten, erwerbsarbeit, zukunft mit ki, superintelligenz-prognose, vermögensverteilung, ai forecasts, anthropic, self-reported code volume, autonomous agents, compute economics
 
 ## Verwandte Themen
 

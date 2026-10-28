@@ -9,7 +9,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - **Hauptkeyword:** Claude Code Subagents
 - **Long-Tail:** Agent Teams Claude Code; Git Worktrees parallele Agents; Subagents vs. Agent Teams; Multi-Agent Orchestrierung; Task-Abhängigkeiten Claude Code; Kosten paralleler Agents
 - **Fragen:** Wann lohnt sich Parallelisierung? / Subagent oder Agent Team?
-- **Häufig in den Quellen:** subagents (7), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), agent-organisation (3), heartbeats (3), multi-agent (2), claude code tasks (2), addblockedby (2), claude code agent teams (2), modulgrenzen (2), codex cli (2), rollen (2), budgets (2), freigaben (2), delegation (2), agent teams (2), edit-kollisionen (2)
+- **Häufig in den Quellen:** subagents (7), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), heartbeats (3), agent-organisation (3), multi-agent (2), claude code tasks (2), addblockedby (2), modulgrenzen (2), claude code agent teams (2), codex cli (2), budgets (2), rollen (2), freigaben (2), delegation (2), parallel agents (2), agent teams (2)
 
 ## Verwandte Themen
 
