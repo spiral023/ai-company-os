@@ -1,6 +1,6 @@
 # AI-nativer SDLC
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Coding Agents den gesamten Software Development Lifecycle verändern: von Intent und Spezifikation über Build, Tests und Review bis Deployment, Betrieb und Rückkopplung. Einzelne Techniken stehen in ihren Fachclustern; hier gehören phasenübergreifende Abläufe, Übergaben, Kontrollpunkte und der Wandel vom linearen Prozess zur Schleife hinein.
 
@@ -9,7 +9,7 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 - **Hauptkeyword:** AI-nativer SDLC
 - **Long-Tail:** Software Development Lifecycle mit KI; SDLC mit Coding Agents; AI-native SDLC Playbook; SDLC ist tot; Intent Build Observe; Agentic SDLC und ADLC; Menschliche Freigaben im AI-nativen SDLC
 - **Fragen:** Wie verändert sich der SDLC durch Coding Agents? / Welche Kontrollpunkte brauchen Menschen weiterhin? / Wie fließen Erkenntnisse aus dem Betrieb zurück in die Planung?
-- **Häufig in den Quellen:** ai-native sdlc (4), human-in-the-loop (3), intent.md (3), software factory (3), spec.md (2), menschliche freigabe (2), review.md (2), scion (2), refactoring (2), verhaltensvergleich (2), codex (2), software development lifecycle mit ki, intent build observe, closed loop, sdlc ist tot, feature flags canary, observability als kontext, adversarial agent code review, invariantentests, egress-allowlist
+- **Häufig in den Quellen:** ai-native sdlc (4), human-in-the-loop (3), intent.md (3), software factory (3), menschliche freigabe (2), review.md (2), spec.md (2), scion (2), refactoring (2), verhaltensvergleich (2), codex (2), feature flags canary, software development lifecycle mit ki, intent build observe, observability als kontext, closed loop, adversarial agent code review, sdlc ist tot, sast und dast, agent-identität
 
 ## Verwandte Themen
 
@@ -39,6 +39,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachv
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-27-aboutamazon-an-update-from-amazon-engineering-leadership-on]]
 - [[2026-10-22-mattpocockuk-2113196247964074322]]
 - [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]]
 - [[2026-10-12-sarahfim-2109736893198016898]]

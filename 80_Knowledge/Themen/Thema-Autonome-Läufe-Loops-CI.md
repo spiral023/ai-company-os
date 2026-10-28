@@ -1,6 +1,6 @@
 # Autonome Läufe, Loops & CI
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agents, Autonomiestufen und ihre Grenzen.
 
@@ -9,7 +9,7 @@ Agents ohne Aufsicht: Ralph Loop, /goal, Nachtläufe, Headless-Betrieb, CI-Agent
 - **Hauptkeyword:** Ralph Loop
 - **Long-Tail:** Ralph Loop einrichten; Claude Code Headless CI; Claude Code über Nacht; Autonomiestufen Coding Agent; Claude Code GitHub Action; Loop Engineering
 - **Fragen:** Kann ich einen Agent über Nacht laufen lassen? / Wie viel Autonomie ist sicher?
-- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), loop (3), /goal (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), über nacht (2), ci-agent (2), testharness (2), modell (2), overnight agents (2), zustellbestätigung (2), zeitfenster (2), fortschrittsmarker (2), quellen-bookmark (2)
+- **Häufig in den Quellen:** ralph loop (6), auto mode (4), steering.md (3), loop (3), /goal (3), paperclip (3), git worktree (2), sandboxed runner (2), long-running agents (2), playwright vitest (2), loop engineering (2), ci-agent (2), über nacht (2), testharness (2), modell (2), overnight agents (2), fortschrittsmarker (2), agent-automationen (2), zeitfenster (2), quellen-bookmark (2)
 
 ## Verwandte Themen
 
@@ -49,6 +49,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Advisor-Agent-gegen-Drift]],
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-27-voxyz_ai-2115228299400196368]]
 - [[2026-10-25-mattpocockuk-2114311664069718370]]
 - [[2026-10-22-voxyz_ai-2113314439294570515]]
 - [[2026-10-22-itamar_mar-2113255396299128887]]

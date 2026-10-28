@@ -1,6 +1,6 @@
 # Rolle, Lernen & Markt
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit. Der Wandel des gesamten Entwicklungsprozesses gehört zu sdlc.
 
@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** ki-adoption (4), reverse engineering (3), rea (3), swe-bench (2), pilotbewertung (2), befähigung (2), use case (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), nutzerfeedback (2), betriebsleistung (2), produktwert (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), benchmarkgrenzen
+- **Häufig in den Quellen:** ki-adoption (4), reverse engineering (3), rea (3), swe-bench (2), use case (2), befähigung (2), pilotbewertung (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), nutzerfeedback (2), produktwert (2), betriebsleistung (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2), ki-chancen
 
 ## Verwandte Themen
 
@@ -23,14 +23,16 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 
 - [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 3 Belege
 - [[Claude-als-Lernwerkzeug]] · meinung · 4 Belege
-- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 23 Belege
-- [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] · meinung · 5 Belege
+- [[Great-Decoupling-Rollenverstaendnis]] · meinung · 25 Belege
+- [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] · meinung · 7 Belege
 - [[Produktwert-jenseits-des-reproduzierbaren-Codes]] · meinung · 2 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-dokumentieren]], [[Intent-Engineering-als-dritte-Schicht]], [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]], [[Produktreife-durch-echte-Testnutzer]]
 
-## Quellen (30)
+## Quellen (32)
 
+- [[2026-10-27-felixrieseberg-hunger-beats-tenure-advice-for-junior-engineers]] — Felix Rieseberg beschreibt eine Chance für Entwickler ohne viel Status oder organisatorischen Einfluss: KI kann die Umsetzung einer Idee so weit erleichtern, dass ein greifbarer Prototyp die Diskussio
+- [[2026-10-27-aboutamazon-an-update-from-amazon-engineering-leadership-on]] — Amazon richtet seine überarbeiteten Entwicklerrollen an der Wirkung für Kunden, Geschäft und Teams aus.
 - [[2026-10-26-kimmonismus-2114729823033590134]] — Chubby veröffentlicht am 26.10.2026 Ausschnitte eines als Anthropic-IPO-Unterlage bezeichneten Dokuments.
 - [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] — Niklas Steenfatt beschreibt im Oktober 2026 einen Wechsel von kleinteiligen Coding-Anweisungen zu stärker delegierter Entwicklung.
 - [[2026-10-14-promptgefluester-rea-reverse-engine-anything-im-augenblick-auf-github-trending-mit-239]] — Promptgeflüster nutzt den Hype um `REA` als Anlass, den Wert eines Nachbaus von Wartung, Infrastruktur und Nutzerbeziehungen abzugrenzen.
@@ -64,6 +66,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Architektur-in-Perspektiven-
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-27-mho_23-2115187475802890348]]
 - [[2026-10-21-mattpocockuk-2112880319934165307]]
 - [[2026-10-16-math_rachel-2111238648188584306]]
 - [[2026-10-15-vincentmumme-greg-isenberg-ist-wahrscheinlich-aktuell-einer-der-wichtigsten]]

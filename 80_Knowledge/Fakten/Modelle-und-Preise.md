@@ -1,6 +1,6 @@
 # Fakten: Modelle, Preise, Benchmarks
 
-**Stand:** 2026-10-27
+**Stand:** 2026-10-28
 
 Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). Anders als ein Pattern beschreibt dieses Register keine Arbeitsweise, sondern hält fest, **wer was wann gemessen oder angekündigt hat**. Jede Zeile führt Datum, Gegenstand, Aussage, Einschränkung und Quelle.
 
@@ -82,6 +82,11 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 
 | Datum | Gegenstand | Aussage | Einschränkung | Quelle |
 |---|---|---|---|---|
+| 2026-10-28 | GPT-6.1 Terra | 0,96 USD je Intelligence-Index-Aufgabe | AA-Betreiberbericht; Intelligence Index v5, max; niedrigster genannter Aufgabenkostenwert unter den zehn höchstbewerteten Modellen | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6.1 Sol | 1,27 USD je Intelligence-Index-Aufgabe | AA-Betreiberbericht; Intelligence Index v5, max; gewichtete Benchmark-Aufgabenkosten statt Tokenpreis | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6 Astra | 6,24 USD je Intelligence-Index-Aufgabe | AA-Betreiberbericht; Intelligence Index v5, max; gewichtete Benchmark-Aufgabenkosten statt Tokenpreis | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Opus 5.5 | 10,04 USD je Intelligence-Index-Aufgabe | AA-Betreiberbericht; Intelligence Index v5, max with fallback; gewichtete Benchmark-Aufgabenkosten statt Tokenpreis | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Fable 5.1 | 13,04 USD je Intelligence-Index-Aufgabe | AA-Betreiberbericht; Intelligence Index v5, max with fallback; höchster genannter Aufgabenkostenwert unter den zehn höchstbewerteten Modellen | [[2026-10-28-artificialanlys-2115265133467635877]] |
 | 2026-10-26 | GPT-6.1 Terra Output | 5 USD je Million Output-Tokens | Preisangabe von Artificial Analysis; Vorversion GPT-5.6 Terra 12 USD; Stand der Quelle | [[2026-10-26-artificialanlys-2114781865811063259]] |
 | 2026-10-26 | GPT-6.1 Terra Input | 1 USD je Million Input-Tokens | Preisangabe von Artificial Analysis; Vorversion GPT-5.6 Terra 2 USD; keine hier geprüfte aktuelle Preisliste | [[2026-10-26-artificialanlys-2114781865811063259]] |
 | 2026-10-26 | GPT-6.1 Terra Cache-Schreiben | 1,25 USD je Million Tokens | Preisangabe von Artificial Analysis; laut Quelle halbiert gegenüber Vorversion; Cache-TTL nicht angegeben | [[2026-10-26-artificialanlys-2114781865811063259]] |
@@ -200,6 +205,36 @@ Datierte Einzelangaben aus den verarbeiteten Quellen (`80_Knowledge/Sources/`). 
 
 | Datum | Gegenstand | Aussage | Einschränkung | Quelle |
 |---|---|---|---|---|
+| 2026-10-28 | Terminal-Bench-Science 0.1 | 70 agentische Forschungsaufgaben | AA-Betreiberbericht; Index v5; Pass@1 über drei Wiederholungen, alle Tests einer Aufgabe müssen bestehen | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Kimi K3.1 Pro | 46 Punkte im Intelligence Index v5 | AA-Betreiberbericht; angekündigte offene Gewichte noch nicht veröffentlicht, daher kein Nachweis eines aktuell lokal einsetzbaren Modells | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | HLE-Diamond | 1000 Fragen, gleichmäßig auf Reasoning und Wissen verteilt | AA-Betreiberbericht; ersetzt Humanity's Last Exam im Intelligence Index v5 | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6.1 Terra | 51 Punkte im Intelligence Index v5 | AA-Betreiberbericht; max; neun gewichtete Evaluationen | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6.1 Terra | 42,3 Prozent in FrontierCode 2.0 | AA-Betreiberbericht; max; exakter Chartwert statt gerundeter 42 Prozent im Text, Mittel aus drei Versuchen in Stirrup | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6.1 Sol | 55 Punkte im Intelligence Index v5 | AA-Betreiberbericht; max; neun gewichtete Evaluationen, kein Projektqualitätsnachweis | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6.1 Sol | 58,1 Prozent in Terminal-Bench-Science 0.1 | AA-Betreiberbericht; max; exakter Chartwert statt gerundeter 58 Prozent im Text | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6.1 Sol | 68,5 Prozent im CritPt v2 Hard Subset | AA-Betreiberbericht; max; exakter Chartwert statt gerundeter 69 Prozent im Text, offline Python in Stirrup | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6 Astra | 57 Punkte im Intelligence Index v5 | AA-Betreiberbericht; max; neun gewichtete Evaluationen, kein Projektqualitätsnachweis | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6 Astra | 42,4 Prozent in FrontierCode 2.0 | AA-Betreiberbericht; max; exakter Chartwert statt gerundeter 42 Prozent im Text, Mittel aus drei Versuchen in Stirrup | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6 Astra | 63,3 Prozent in Terminal-Bench-Science 0.1 | AA-Betreiberbericht; max; exakter Chartwert, Pass@1 über drei Wiederholungen | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6 Astra | 63,8 Prozent in HLE-Diamond | AA-Betreiberbericht; max; exakter Chartwert statt gerundeter 64 Prozent im Text | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GPT-6 Astra | 71,5 Prozent im CritPt v2 Hard Subset | AA-Betreiberbericht; high; exakter Chartwert statt gerundeter 72 Prozent im Text, offline Python in Stirrup | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | GLM-5.3 | 32 Punkte im Intelligence Index v5 | AA-Betreiberbericht; max; veröffentlichte Gewichte, kein Nachweis eigener lokaler Leistung | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | FrontierCode 2.0 | 132 Repository-Aufgaben; drei Versuche je Aufgabe | AA-Betreiberbericht; privater Cognition-Benchmark in Stirrup; blockierende Fehler oder Lösungssuche ergeben null Punkte | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | DeepSeek V4.1 Flash 1017 | 32 Punkte im Intelligence Index v5 | AA-Betreiberbericht; max; veröffentlichte Gewichte, Chart kennzeichnet kommerzielle Nutzungsbeschränkung | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | DeepSeek V4.1 Flash 1017 | 12,9 Prozent in Terminal-Bench-Science 0.1 | AA-Betreiberbericht; max; exakter Chartwert statt gerundeter 13 Prozent im Text, veröffentlichte Gewichte | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | CritPt v2 Hard Subset | 40 private Fragen aus ursprünglich 70 Forschungsphysik-Aufgaben | AA-Betreiberbericht; 30 zuvor durch sieben Frontier-Modelle in allen fünf Versuchen gelöste Fragen entfernt; offline Python in Stirrup | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Sonnet 5.5 | 54 Punkte im Intelligence Index v5 | AA-Betreiberbericht; Chartkonfiguration max with fallback; neun gewichtete Evaluationen | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Sonnet 5.5 | 41,7 Prozent in FrontierCode 2.0 | AA-Betreiberbericht; max with fallback; exakter Chartwert statt gerundeter 42 Prozent im Text, Mittel aus drei Versuchen in Stirrup | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Opus 5.5 low | 35 Punkte bei 0,98 USD je Intelligence-Index-Aufgabe | AA-Betreiberbericht; Intelligence Index v5; Vergleich zu max mit 58 Punkten und 10,04 USD ist dieselbe Modellfamilie bei verändertem Effort | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Opus 5.5 | 58 Punkte im Intelligence Index v5 | AA-Betreiberbericht; Chartkonfiguration max with fallback; neun gewichtete Evaluationen, kein Projektqualitätsnachweis | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Opus 5.5 | 46,4 Prozent in FrontierCode 2.0 | AA-Betreiberbericht; max with fallback; exakter Chartwert statt gerundeter 46 Prozent im Text, Mittel aus drei Versuchen in Stirrup | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Opus 5.5 | 59,0 Prozent in Terminal-Bench-Science 0.1 | AA-Betreiberbericht; max with fallback; Pass@1 über drei Wiederholungen | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Opus 5.5 | 67,9 Prozent in HLE-Diamond | AA-Betreiberbericht; max with fallback; exakter Chartwert statt gerundeter 68 Prozent im Text | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Opus 5.5 | 48 Punkte im AA-Omniscience Index v1.1 | AA-Betreiberbericht; max with fallback; Skala -100 bis 100 belohnt richtige Antworten und bestraft Halluzinationen, keine Prozent-Accuracy | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Opus 5.5 | 61,0 Prozent im CritPt v2 Hard Subset | AA-Betreiberbericht; max with fallback; offline Python in Stirrup | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | Claude Haiku 5.5 | 36 Punkte im Intelligence Index v5 | AA-Betreiberbericht; max; schlägt in diesem Snapshot alle Modelle mit bereits veröffentlichten Gewichten | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | AA Intelligence Index v5 Outputverbrauch | Median 59.000 statt 35.000 Output-Tokens je Aufgabe gegenüber v4.3; agentische Evaluationen beanspruchen median 88 Prozent der Tokens bei 55 Prozent Indexgewicht | AA-Betreiberbericht; gewichteter Output je Index-Aufgabe, andere Aufgabenzusammensetzung; weder allgemeiner Modellverbrauch noch Tokenpreis | [[2026-10-28-artificialanlys-2115265133467635877]] |
+| 2026-10-28 | AA Intelligence Index v5 | 60 Prozent des Index beruhen auf privaten Testsets oder zurückgehaltenen Antworten | AA-Betreiberbericht; Anteil an Indexgewicht, kein Nachweis vollständiger Kontaminationsfreiheit | [[2026-10-28-artificialanlys-2115265133467635877]] |
 | 2026-10-26 | GPT-6.1 Terra Terminal-Bench 4.0 | 55,6 % bei max | Artificial Analysis Drittmessung; GPT-5.6 Terra max 35,4 %, GPT-6.1 Sol max 56,1 %; aus separatem Terminal-Bench-Chart | [[2026-10-26-artificialanlys-2114781865811063259]] |
 | 2026-10-26 | GPT-6.1 Terra SciCode | 55 % bei max | Artificial Analysis Einzeltestübersicht; Coding; Chart mit Updated markiert | [[2026-10-26-artificialanlys-2114781865811063259]] |
 | 2026-10-26 | GPT-6.1 Terra Intelligence-Kosten pro Task | 0,40 USD bei max | Artificial Analysis Intelligence Index; GPT-5.6 Terra max 1,40 USD; keine Coding-Agent-Taskkosten | [[2026-10-26-artificialanlys-2114781865811063259]] |

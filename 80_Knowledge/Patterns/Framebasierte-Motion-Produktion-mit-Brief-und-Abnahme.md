@@ -49,6 +49,8 @@ Einen Brief mit Botschaft, echten Assets, unveränderlichen Stilmerkmalen, Copyg
 
 - 2026-10-11 · [[2026-10-11-voxyz_ai-2109358372873183564]] nennt −16 LUFS und Spitzen unter −4 dBFS als Autorenziele, keinen allgemeingültigen Pegelstandard. Beatgrid- und Exportmessung begrenzen technische Fehler; die geforderten fünf menschlichen Hörstichproben bleiben eine eigene Abnahme, und der berichtete Fehler von 0,22 Sekunden ist eine Anekdote.
 
+- 2026-10-27 · [[2026-10-27-alexgoughcooper-2115076988327076296]] und der darauf verweisende [[2026-10-27-mho_23-2115187475802890348|Miko]] beschreiben agentischen Anzeigenschnitt, liefern aber keinen unabhängigen Qualitätsvergleich. Wenige interne Freigaberunden oder die Behauptung eines vollständig gelösten Videoschnitts ersetzen keine fallbezogene Bild-, Ton- und Exportabnahme; Modellranking, hundertfacher Nutzen und Ein-Personen-Prognose bleiben unbelegt.
+
 ## Verwandte Patterns
 
 - [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]

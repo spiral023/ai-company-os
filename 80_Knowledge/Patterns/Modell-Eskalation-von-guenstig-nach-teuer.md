@@ -108,6 +108,9 @@ Ergänzend gilt die Rollenteilung im Multi-Agent-Fall: das starke Modell entsche
 - 2026-10-26 · [[2026-10-26-artificialanlys-2114781865811063259]] · meinung — Artificial Analysis sieht Terra low/medium auf der Effizienzgrenze des Intelligence Index, aber low/xhigh im Coding Agent Index v2.0. Modell und Reasoning-Stufe sind anhand des passenden Tests zu wählen; Benchmarkfronten liefern keine pauschal optimale Produktionskonfiguration.
 - 2026-10-27 · [[2026-10-27-voxyz_ai-2115096193240047938]] · meinung — Vox schlägt Sol high als Orchestrator und Terra low für Lesen/Recherche beziehungsweise xhigh für Änderungen/Tests vor, mit Rückgabe nach zwei gescheiterten Testrunden. Das ist eine datierte Rollenkonfiguration und Eskalationsheuristik; der Verweis auf Artificial Analysis zählt nicht als unabhängiger Effizienzbeleg.
 
+- 2026-10-28 · [[2026-10-28-artificialanlys-2115265133467635877]] · meinung — AA misst im Intelligence Index v5 für Sol max 55 Punkte bei 1,27 USD je Aufgabe gegenüber Opus max with fallback mit 58 bei 10,04 USD; Opus low erreicht 35 bei 0,98 USD. Der Betreiberbericht stützt die getrennte Prüfung von Modell und Effort auf derselben Aufgabenbasis, belegt aber weder einen universellen Sieger noch eigene Produktionskosten.
+- 2026-10-27 · [[2026-10-27-petergostev-2115085935285248010]] · meinung — Gostevs unbelegte Ableitung interner Serving-Kosten aus einer behaupteten Bruttomarge illustriert die Grenze von Preisvergleichen: Der Post liefert weder Einheiten noch eine modellbezogene Kostenbasis und ist kein Nachweis günstigerer Kosten je akzeptierter Aufgabe.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-26 · [[2026-10-26-artificialanlys-2114781865811063259]] nennt für `GPT-6.1 Terra` unterschiedliche Effizienzfronten: `low/medium` im Intelligence Index und `low/xhigh` im Coding Agent Index v2.0. Beide Indizes haben hier den Zahlenwert 48, messen aber verschiedene Aufgaben; die `0,40 USD` pro Intelligence-Task sind keine Coding-Agent-Taskkosten. Die Arbeitslast bleibt Auswahlkriterium, nicht ein universeller Effort-Default.
@@ -129,6 +132,10 @@ Ergänzend gilt die Rollenteilung im Multi-Agent-Fall: das starke Modell entsche
 - 2026-10-10: [[2026-10-09-natebjones-thats-model-vs-effort-in-plain-english]] ergänzt die bestehende Spannung zu [[2026-09-22-promptgefluester-ich-arbeite-mit-multiorgastation-und-das-hat-was-mit-meinem-tokenlimit]]: Jones senkt Effort bei unnötigen Details und Komplexität, @promptgefluester empfiehlt `xhigh` zum Programmieren. Beide beschreiben eigene Erfahrungen ohne vergleichbare Qualitätsmessung; offen bleibt die passende Einstellung je Aufgabe, und eine pauschale Effort-Stufe lässt sich daraus nicht ableiten.
 
 - 2026-10-24: [[2026-10-23-artificialanlys-2113688083145314416]] berichtet rund ein Drittel günstigere Kimi-Tokenraten, aber 1,98 statt 2,00 USD je Intelligence-Index-Aufgabe bei höherem Outputverbrauch. Tokenrabatt und Aufgabenkosten sind getrennte Größen. Moonshots [[2026-10-23-kimmonismus-2113681534792183863|Herstellerchart]] und AA messen Terminal-Bench in unterschiedlichen Setups; deren Rangfolge ist kein direkter Widerspruch unter identischen Bedingungen. Auch der [[2026-10-23-artificialanlys-2113424551396934134|Coding Agent Index v2.0]] darf nicht über Versionsgrenzen oder mit dem Intelligence Index direkt verglichen werden.
+
+- 2026-10-27 · [[2026-10-27-petergostev-2115085935285248010]] leitet Serving-Kosten aus einer behaupteten Bruttomarge ab, ohne Einheit oder modellbezogene Kostenbasis nachzuweisen. Interne Kosten, API-Verkaufspreise und Kosten je akzeptiertem Ergebnis sind getrennte Größen; der Post trägt keine belastbare Kostenvergleichszahl bei.
+
+- 2026-10-28 · [[2026-10-28-artificialanlys-2115265133467635877]] misst Aufgabenpreise und Scores im Intelligence Index v5; der höhere Tokenbedarf gegenüber v4.3 enthält einen Wechsel der Aufgabenzusammensetzung. Claude-Konfigurationen heißen in den Charts teilweise `max with fallback`. Effort, Harness, Indexversion und Verfügbarkeit der Gewichte gehören deshalb zum Vergleich; die v5-Werte ersetzen keine eigene Qualitäts- und Kostenmessung.
 
 ## Verwandte Patterns
 

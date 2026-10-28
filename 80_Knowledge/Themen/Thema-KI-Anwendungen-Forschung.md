@@ -1,6 +1,6 @@
 # KI-Anwendungen & Forschung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Konkrete Anwendungen von KI außerhalb der Softwareentwicklung, insbesondere Medizin und wissenschaftliche Forschung: Einsatzrolle, Verfahren, Studienlage und Grenzen. Hersteller-Topline, veröffentlichte Studie und allgemeine Zukunftsbehauptung unterscheiden. Modellbenchmarks gehören zu modelle-kosten, Risikoszenarien zu ki-risiken.
 
@@ -9,7 +9,7 @@ Konkrete Anwendungen von KI außerhalb der Softwareentwicklung, insbesondere Med
 - **Hauptkeyword:** KI-Anwendungen und Forschung
 - **Long-Tail:** KI in der Medizin; KI in wissenschaftlicher Forschung; Klinische KI-Ergebnisse einordnen; KI-Studien und Herstellerankündigungen unterscheiden
 - **Fragen:** Welche Rolle hatte KI in einer konkreten Anwendung? / Welche Ergebnisse sind veröffentlicht und welche nur angekündigt? / Welche Grenzen hat die Übertragung auf andere Anwendungen?
-- **Häufig in den Quellen:** interpath-001, phase 2b, keynote-942, neoantigene, intismeran autogene, mrna, hersteller-topline, phase 3, superintelligenz-prognose, vermögensverteilung, zukunft mit ki, erwerbsarbeit, forschungsagenten, anthropic, ai forecasts, autonomous agents, self-reported code volume, compute economics
+- **Häufig in den Quellen:** phase 3, keynote-942, interpath-001, mrna, phase 2b, neoantigene, intismeran autogene, hersteller-topline, forschungsagenten, superintelligenz-prognose, vermögensverteilung, zukunft mit ki, erwerbsarbeit, ai forecasts, compute economics, self-reported code volume, autonomous agents, anthropic
 
 ## Verwandte Themen
 

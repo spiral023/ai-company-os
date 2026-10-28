@@ -1,6 +1,6 @@
 # Hooks, MCP & Erweiterungs-Ebenen
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook, MCP, Plugin) und wie Hooks, MCP-Server und Plugins konfiguriert werden.
 
@@ -9,7 +9,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 - **Hauptkeyword:** Claude Code Hooks
 - **Long-Tail:** Claude Code Hooks Beispiele; MCP Server Kontextkosten; MCP Code Execution; Hook vs. Skill vs. CLAUDE.md; PreToolUse Hook; Claude Code Plugins
 - **Fragen:** Wann nehme ich einen Hook statt einer Regel? / Was kosten MCP-Server im Kontext?
-- **Häufig in den Quellen:** claude code hooks (6), subagents (5), claude.md (5), mcp (5), plugins (5), claude code skills (4), progressive disclosure (4), hooks (4), erweiterung (4), rea (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2)
+- **Häufig in den Quellen:** claude code hooks (6), subagents (5), claude.md (5), plugins (5), mcp (5), claude code skills (4), progressive disclosure (4), hooks (4), erweiterung (4), rea (4), pretooluse (3), hook (3), erweiterungs-ebenen (3), slash commands (3), mcp-server (3), context window (2), prompt-based hooks (2), model context protocol (2), skills (2), claude code plugins (2)
 
 ## Verwandte Themen
 
@@ -21,7 +21,7 @@ Welche Anforderung in welche Schicht gehört (Regeldatei, Skill, Subagent, Hook,
 ## Patterns (5)
 
 - [[Action-Space-Design-nach-Modellfaehigkeit]] · mehrfach-belegt · 9 Belege
-- [[Agent-Tracing-nach-Beobachtungsebene]] · meinung · 7 Belege
+- [[Agent-Tracing-nach-Beobachtungsebene]] · meinung · 8 Belege
 - [[Erweiterungs-Ebenen-Zuordnung]] · meinung · 31 Belege
 - [[Hook-Entscheidungstyp-nach-Pruefbarkeit]] · meinung · 10 Belege
 - [[MCP-Code-Execution-statt-Tool-Definitionen]] · meinung · 4 Belege

@@ -1,6 +1,6 @@
 # Sicherheit & Sandboxing
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets, Permissions, Plugin-Vertrauen, Sicherheit bei Vibe-Coding-Apps. Berichte über Gefahren, Missbrauch und konkrete KI-Vorfälle stehen in ki-risiken.
 
@@ -9,7 +9,7 @@ Technisch erzwungene Grenzen statt Empfehlungen: Deny-Regeln, Sandboxes, Secrets
 - **Hauptkeyword:** Claude Code Sicherheit
 - **Long-Tail:** Deny Rules statt CLAUDE.md; .env Secrets Claude Code schützen; Agent Sandbox einrichten; Docker Sandbox Claude Code; Codex Execpolicy; Vibe Coding Sicherheit
 - **Fragen:** Wie verhindere ich, dass der Agent meine .env liest? / Reicht eine Regel in CLAUDE.md?
-- **Häufig in den Quellen:** row level security (4), sicherheit (3), security (3), sandbox (3), os-level sandboxing (3), mxc (3), security checker (2), docker sandboxes (2), command smuggling (2), deny-rules (2), agent sandbox (2), produktedition (2), ki-vertragsprüfung (2), freigaben (2), playwright (2), sandboxing (2), prompt injection (2), process isolation (2), sandbox permissions (2), containment (2)
+- **Häufig in den Quellen:** row level security (4), security (3), sicherheit (3), sandbox (3), os-level sandboxing (3), mxc (3), security checker (2), docker sandboxes (2), command smuggling (2), deny-rules (2), agent sandbox (2), ki-vertragsprüfung (2), produktedition (2), freigaben (2), playwright (2), sandboxing (2), prompt injection (2), sandbox permissions (2), process isolation (2), containment (2)
 
 ## Verwandte Themen
 

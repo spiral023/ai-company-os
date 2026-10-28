@@ -1,6 +1,6 @@
 # Spezifikation & Planung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerung, Spec-Ordner, persistente Pläne. Prompt-Methoden für Klärung (Pre-Mortem, Unknowns) stehen in prompting.
 
@@ -24,7 +24,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - [[Architektur-in-Perspektiven-dokumentieren]] · verifiziert · 5 Belege
 - [[CONTEXT-Glossar]] · verifiziert · 10 Belege
 - [[Codepfad-vor-Aenderung-nachvollziehen]] · meinung · 15 Belege
-- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 65 Belege
+- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 66 Belege
 - [[Projektkarte-als-Status-und-Entscheidungsartefakt]] · meinung · 3 Belege
 - [[Spec-Grilling]] · verifiziert · 25 Belege
 - [[Spec-Ordner-pro-Feature]] · meinung · 4 Belege

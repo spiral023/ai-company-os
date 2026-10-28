@@ -31,6 +31,8 @@ Das Entfernen eines Moduls gedanklich durchspielen: Verschwindet Komplexität, i
 - 2026-10-01 · [[2026-10-01-mattpocockuk-2105563604384915639]] · meinung — Pocock schlägt /codebase-design für Shallow Modules und Deletion-Test-Kandidaten vor; sein späteres Plädoyer für tokeneffiziente Abstraktionen beschreibt keine Messung, und der Test autorisiert keine Löschung.
 - 2026-10-09 · external_repos/mattpocock/skills/skills/engineering/codebase-design/SKILL.md · verifiziert — Checkout 4588b32 beschreibt Deep Modules über Verhalten hinter kleiner Schnittstelle und den Deletion Test über verschwindende oder bei Aufrufern wiederkehrende Komplexität; bestätigt die dokumentierte Methode, keine ausgeführte Entfernung oder Tokenersparnis.
 
+- 2026-10-27 · [[2026-10-27-voxyz_ai-2115198100465697038]] · meinung — Einmalige Logik soll nicht vorsorglich in Helferfunktionen ausgelagert werden; Wiederverwendung, verborgene Komplexität oder ein klar erklärender Fachname sind mögliche Gründe für eine Abstraktion. Diese Gestaltungsheuristik ergänzt die Nutzenprüfung eines Moduls, ersetzt aber weder Verhaltensvergleich noch eine Prüfung bestehender Aufrufer.
+
 ## Spannungen & offene Fragen
 
 - Der Autorenpost kritisiert unnötige Abstraktionen und verteidigt sie später als tokeneffizient. Entscheidend bleibt, welche Komplexität eine konkrete Schnittstelle bündelt.

@@ -1,6 +1,6 @@
 # Modelle, Kosten & Limits
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Caching, Benchmarks und Provider-Umleitung. Verfügbarkeit offener Gewichte, lokale Inferenz, Hardware und Fine-Tuning gehören vorrangig zu open-source-llms; Kostenvergleiche bleiben hier.
 
@@ -9,7 +9,7 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 - **Hauptkeyword:** Claude Code Kosten
 - **Long-Tail:** Claude Code Usage Limits; Kosten pro Task statt pro Token; Prompt Caching Claude Code; Claude Code mit lokalem Modell; Reasoning Effort wählen; Modell-Eskalation günstig nach teuer
 - **Fragen:** Welches Modell für welche Aufgabe? / Warum sind meine Limits so schnell leer?
-- **Häufig in den Quellen:** modell-eskalation (31), modell (29), effort (22), kosten (21), benchmark (19), preis (17), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), preise (8), intelligence index (7), pareto (7), sonnet (7), opus 5.5 (7), terminal-bench 4.0 (6), cost per task (5), gpt-6 luna (5)
+- **Häufig in den Quellen:** modell-eskalation (31), modell (29), effort (22), kosten (21), benchmark (19), preis (17), kosten pro task (14), terminal-bench (13), gpt-6 (13), token (12), modellwahl (8), coding agent index (8), preise (8), intelligence index (7), cost per task (7), pareto (7), sonnet (7), opus 5.5 (7), terminal-bench 4.0 (6), reasoning effort (6)
 
 ## Verwandte Themen
 
@@ -23,14 +23,17 @@ Modellwahl, Reasoning-Effort, Preise, Kosten pro Task, Usage Limits, Prompt Cach
 
 - [[Entscheidung-per-Scoring-statt-Generierung]] · meinung · 4 Belege
 - [[Lokale-Modell-Umleitung-Muster]] · mehrfach-belegt · 10 Belege
-- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 63 Belege
+- [[Modell-Eskalation-von-guenstig-nach-teuer]] · mehrfach-belegt · 65 Belege
 - [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]] · meinung · 1 Belege
 - [[Trainingsdaten-Dichte-als-Stack-Kriterium]] · meinung · 3 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Action-Space-Design-nach-Modellfaehigkeit]], [[Decision-Head-Finetuning]], [[Kontext-Hygiene-Entscheidungsbaum]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]]
 
-## Quellen (84)
+## Quellen (87)
 
+- [[2026-10-28-artificialanlys-2115265133467635877]] — Artificial Analysis veröffentlicht am 28.10.2026 den Intelligence Index `v5`: neun Evaluationen, `60 %` mit privaten Testsets oder zurückgehaltenen Antworten.
+- [[2026-10-28-aibattle-2115269739069026766]] — AiBattle stellt am 28.10.2026 zwei Artificial-Analysis-Ranglisten gegenüber.
+- [[2026-10-27-petergostev-2115085935285248010]] — Peter Gostev hält die Inferenz großer Modellanbieter für unterschätzt effizient.
 - [[2026-10-26-artificialanlys-2114781865811063259]] — Artificial Analysis veröffentlicht am 26.10.2026 Drittmessungen zu `GPT-6.1 Terra`.
 - [[2026-10-25-voxyz_ai-2114416707385073819]] — Vox schlägt vor, wiederkehrende Verbrauchsmuster aus sieben Tagen lokaler Agent-Sessions zu aggregieren, bevor neue Regeln entstehen.
 - [[2026-10-23-undefinedki-2113689331412156666]] — Die Sekundärdarstellung von Shopifys Sidekick enthält eine ausführliche Grafik. Sie schreibt Zahlen Shopify zu; Primärartikel und Messdaten wurden hier nicht geprüft.

@@ -96,6 +96,8 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-10-26 · [[2026-10-26-voxyz_ai-2114839487574315517]] · meinung — Ein Reviewer ohne bisherigen Gesprächskontext soll den Diff gegen eine aus Repo-Fehlerhistorie abgeleitete REVIEW.md prüfen; Folgerunden sollen neue Änderungen betrachten und nach drei erfolglosen Runden zur menschlichen Neubewertung führen. Die Rundenbegrenzung ist eine vorgeschlagene Arbeitsregel, kein Wirksamkeitsnachweis.
 - 2026-09-22 · [[2026-09-22-vateo-after-waterfall-agile-and-devops-anthropic-s-ai]] · meinung — Vateos Sekundärdarstellung verbindet Intent, Spec, Implementierungsplan und Review-Befunde als versionierte Übergabeverträge; ein Engineer soll den Plan vor Umsetzung so prüfen, dass auch unbeteiligte Kollegen danach arbeiten könnten. Die Darstellung ergänzt den durchgehenden Lieferprozess, liefert aber keine unabhängige Messung seiner Beschleunigung.
 
+- 2026-10-27 · [[2026-10-27-voxyz_ai-2115228299400196368]] · meinung — Zuerst wird ein Loggingplan mit Session-ID und Ausschluss sensibler Daten zur Freigabe vorgelegt; die spätere Log-Triage darf Befunde und einen Test vorbereiten, aber noch keinen Anwendungscode ändern. Die Quelle trennt damit Planung und Diagnose von der menschlich ausgewählten Umsetzung, ohne eine wirksame technische Durchsetzung nachzuweisen.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-09 · [[2026-10-08-mattpocockuk-2108216899439894574]]: Wayfinder erst bei wachsender Komplexität der begonnenen Klärung einsetzen; zu frühe Planung kann unnötige Karten und Tickets erzeugen. Menschliches Review bleibt eine getrennte Entscheidung, auch wenn kleine Diffs ohne vorgelagerten Plan entstehen.

@@ -1,6 +1,6 @@
 # Verifikation, Tests & Review
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates und getrennte Autor-/Prüfkontexte. Dazu gehören risikobasiertes Human Review, menschliche Verantwortung und Freigaben (Human in the Loop), Review-Kapazität sowie PR-Größe und Aufteilung in überschaubare Änderungen. Agent-Autonomie gehört hier hinein, soweit sie Prüf- und Freigabeentscheidungen betrifft; autonome Ausführung steht in autonomie, der gesamte Entwicklungsprozess in sdlc.
 
@@ -9,7 +9,7 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass; Codequalität mit KI und Menschen; Human in the Loop beim Code Review; Risikobasiertes Human Review; Agent-Autonomie und menschliche Freigaben; Große KI-generierte PRs prüfen; Pull Requests in prüfbare Änderungen aufteilen; Review-Kapazität bei parallelen Agents
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug? / Welche Änderungen brauchen menschliches Review und welche automatische Checks? / Wer trägt die Verantwortung, wenn ein Agent Code freigibt? / Was tun, wenn PRs zu groß für ein gründliches manuelles Review werden? / Wie begrenzt Review-Kapazität die Agent-Autonomie und Parallelisierung?
-- **Häufig in den Quellen:** test (14), review (13), testharness (12), tests (8), tdd (8), verifikation (5), qualität (5), human-in-the-loop (5), refactoring (5), rea (5), menschliche freigabe (4), risikobasiertes human review (4), verhaltensvergleich (4), mutation testing (4), skill (4), gstack (4), reverse engineering (4), pre-commit hooks (3), deep modules (3), verifier (3)
+- **Häufig in den Quellen:** test (14), review (13), testharness (12), tests (8), tdd (8), verifikation (5), qualität (5), human-in-the-loop (5), refactoring (5), rea (5), risikobasiertes human review (4), menschliche freigabe (4), verhaltensvergleich (4), mutation testing (4), skill (4), gstack (4), agents.md (4), reverse engineering (4), human review (4), pre-commit hooks (3)
 
 ## Verwandte Themen
 
@@ -23,7 +23,7 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 
 ## Patterns (20)
 
-- [[Abstraktionswert-mit-Deletion-Test-pruefen]] · verifiziert · 2 Belege
+- [[Abstraktionswert-mit-Deletion-Test-pruefen]] · verifiziert · 3 Belege
 - [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]] · meinung · 3 Belege
 - [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]] · meinung · 2 Belege
 - [[Fachregel-Konsolidierung-vor-Featureaenderung]] · meinung · 2 Belege
@@ -37,17 +37,19 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - [[Pruefungen-nach-Feedbackzeitpunkt-staffeln]] · meinung · 2 Belege
 - [[Refactoring-mit-Verhaltensvergleich]] · meinung · 6 Belege
 - [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 10 Belege
-- [[Schema-als-Vertrag-mit-generierten-Clients]] · meinung · 2 Belege
-- [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 14 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 69 Belege
+- [[Schema-als-Vertrag-mit-generierten-Clients]] · meinung · 3 Belege
+- [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 15 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 71 Belege
 - [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]] · verifiziert · 4 Belege
 - [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] · verifiziert · 13 Belege
 - [[Zustandslose-CI-Listener-mit-Ergebnisjournal]] · meinung · 1 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Tracing-nach-Beobachtungsebene]], [[Ambitionscheck-mit-Zielhoehe-Tiefe-und-Reichweite]], [[Angriffsflaeche-durch-Erreichbarkeitsanalyse-reduzieren]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]], [[Great-Decoupling-Rollenverstaendnis]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Plan-first-mit-getrenntem-Review]], [[Produktwert-jenseits-des-reproduzierbaren-Codes]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Verhaltens-Spec-als-Grenze-zwischen-Analyse-und-Nachbau]], [[Videoanalyse-mit-Frames-und-Transkript]]
 
-## Quellen (60)
+## Quellen (62)
 
+- [[2026-10-27-voxyz_ai-2115228299400196368]] — Vox schlägt eine tägliche Log-Triage mit menschlicher Auswahl vor.
+- [[2026-10-27-voxyz_ai-2115198100465697038]] — Vox empfiehlt am 27.10.2026 Regeln gegen wiederholte defensive Prüfungen und vorschnelle Helferfunktionen in Agent-Code.
 - [[2026-10-26-voxyz_ai-2114839487574315517]] — Vox empfiehlt, Reverts und Bugfixes der letzten 50 Commits als Ausgangspunkt einer kurzen `REVIEW.md` zu verwenden.
 - [[2026-10-25-mattpocockuk-2114311664069718370]] — Matt Pocock erwägt deterministische Freigaben für eine eng begrenzte Refactoringklasse.
 - [[2026-10-22-voxyz_ai-2113314439294570515]] — Vox beschreibt am 22.
@@ -111,6 +113,9 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-28-artificialanlys-2115265133467635877]]
+- [[2026-10-28-aibattle-2115269739069026766]]
+- [[2026-10-27-alexgoughcooper-2115076988327076296]]
 - [[2026-10-26-artificialanlys-2114781865811063259]]
 - [[2026-10-25-voxyz_ai-2114446907355648062]]
 - [[2026-10-23-undefinedki-2113689331412156666]]

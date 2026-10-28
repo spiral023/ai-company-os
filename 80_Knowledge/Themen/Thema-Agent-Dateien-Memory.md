@@ -1,6 +1,6 @@
 # Agent-Dateien & Memory
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive Disclosure, Regelbudget, Memory-Systeme und LLM-Wikis. Skills und Hooks gehören zu skills und erweiterungen. Inhaltliche Aufnahme, Aufbereitung, Retrieval und regelmäßige Pflege von Quellen stehen in wissensarbeit.
 
@@ -9,7 +9,7 @@ CLAUDE.md, AGENTS.md und ähnliche Onboarding-Dateien: Länge, Ort, Progressive 
 - **Hauptkeyword:** CLAUDE.md
 - **Long-Tail:** CLAUDE.md schreiben; AGENTS.md Best Practices; CLAUDE.md zu lang; Progressive Disclosure Agent; Claude Code Memory; LLM Wiki aufbauen
 - **Fragen:** Wie lang darf eine CLAUDE.md sein? / Was gehört in AGENTS.md und was in einen Skill?
-- **Häufig in den Quellen:** agents.md (13), claude.md (9), progressive disclosure (7), context engineering (5), agent-datei (4), coding_standards.md (3), instruktionsbudget (2), instruction following (2), agent_docs (2), mcp-server (2), llm-generierte context files (2), agentbench (2), claude code hooks (2), llm wiki (2), obsidian (2), /doctor (2), retro (2), regeln (2), test (2), agent bericht (2)
+- **Häufig in den Quellen:** agents.md (14), claude.md (9), progressive disclosure (7), context engineering (5), agent-datei (4), coding_standards.md (3), agent_docs (2), instruktionsbudget (2), instruction following (2), mcp-server (2), agentbench (2), llm-generierte context files (2), claude code hooks (2), obsidian (2), llm wiki (2), /doctor (2), retro (2), test (2), regeln (2), handlungsbedarf (2)
 
 ## Verwandte Themen
 
@@ -52,6 +52,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Helper-Nutzung-durch-Lint-er
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-27-voxyz_ai-2115198100465697038]]
 - [[2026-10-26-voxyz_ai-2114839487574315517]]
 - [[2026-10-26-voxyz_ai-2114746374059381186]]
 - [[2026-10-22-voxyz_ai-2113254050170843418]]

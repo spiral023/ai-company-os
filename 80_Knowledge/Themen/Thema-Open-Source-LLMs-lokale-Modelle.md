@@ -1,6 +1,6 @@
 # Open-Source-LLMs & lokale Modelle
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Offene LLMs und Open-Weight-Modelle: verfügbare oder angekündigte Gewichte, lokale Inferenz und Serving, Hardwarebedarf, Quantisierung und Fine-Tuning. Eine Gewichtsankündigung ist kein Release; die Bezeichnung Open Source setzt eine gesonderte Prüfung der Lizenz und Offenheit voraus. Allgemeine Modellpreise und Benchmark-Kostenvergleiche stehen in modelle-kosten.
 
@@ -9,7 +9,7 @@ Offene LLMs und Open-Weight-Modelle: verfügbare oder angekündigte Gewichte, lo
 - **Hauptkeyword:** Open Source LLM
 - **Long-Tail:** Open-Weight vs. Open Source; LLM lokal betreiben; Claude Code mit lokalem Modell; Ollama vs. llama.cpp; LLM Hardware und VRAM; GGUF Quantisierung; Offene LLMs fine-tunen; Mistral offene Gewichte
 - **Fragen:** Welche LLM-Gewichte sind tatsächlich verfügbar? / Was unterscheidet Open Weight von Open Source? / Welche Hardware brauche ich für lokale Modelle? / Wann lohnt sich lokales Serving oder Fine-Tuning?
-- **Häufig in den Quellen:** unsloth (3), terminal-bench (3), benchmark (3), quantisierung (3), vram (3), lokale inferenz (3), kimi k3.1 pro (3), ollama (2), claude code lokal (2), anthropic_base_url (2), lokale llms (2), open weights (2), kimi k3 (2), deepseek (2), hardware-pilot (2), arbeitslast (2), speicherbedarf (2), modell (2), token (2), modell-eskalation (2)
+- **Häufig in den Quellen:** unsloth (3), open weights (3), terminal-bench (3), benchmark (3), quantisierung (3), vram (3), lokale inferenz (3), kimi k3.1 pro (3), ollama (2), claude code lokal (2), anthropic_base_url (2), lokale llms (2), kimi k3 (2), deepseek (2), hardware-pilot (2), arbeitslast (2), speicherbedarf (2), token (2), modell-eskalation (2), modell (2)
 
 ## Verwandte Themen
 
@@ -43,6 +43,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Lokale-Modell-Umleitung-Must
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-28-artificialanlys-2115265133467635877]]
 - [[2026-10-26-cohere-concerning-behavior-from-a-popular-open-weight-a]]
 - [[2026-10-23-kimmonismus-2113685048478077197]]
 - [[2026-10-23-kimmonismus-2113681534792183863]]

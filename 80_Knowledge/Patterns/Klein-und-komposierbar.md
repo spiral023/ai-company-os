@@ -56,6 +56,8 @@ Die Komposition umfasst auch Infrastruktur: `/setup-matt-pocock-skills` schreibt
 - 2026-10-22 · [[2026-10-22-voxyz_ai-2113344640959250912]] · meinung — Ponytail ordnet die Suche nach vorhandenen Komponenten, Standardbibliothek und Browserfunktionen vor Neucode ein; das Date-Picker-Beispiel zeigt 10 statt 335 Zeilen, doch die Zahlen stammen aus Herstellerbeispiel und Selbstbenchmark.
 - 2026-10-23 · [[2026-10-23-voxyz_ai-2113632785759973649]] · meinung — Vox verlangt vor zusätzlicher Absicherung hypothetischer Fehler eine verständliche Erklärung von Schaden, Wahrscheinlichkeit und Komplexität samt menschlicher Entscheidung; Prompt-Vorschlag ohne Wirksamkeitsmessung, kein Anlass zum Überspringen realer Sicherheitsanforderungen.
 
+- 2026-10-27 · [[2026-10-27-alexgoughcooper-2115076988327076296]] · meinung — Cooper schlägt einzelne Mini-Skills für Mashups, UGC und Animationen vor, damit jeweils nur stilrelevanter Kontext geladen wird. Eine gemeinsame Arbeitsumgebung ermöglicht Fachleuten die Verfeinerung; ein Vergleich mit einem monolithischen Skill wurde nicht gemessen.
+
 ## Spannungen & offene Fragen
 
 - Gegenposition zu schwereren Frameworks: `open-gsd/gsd-core` (siehe `external_repos/INDEX.md`) adressiert gezielt „Context Rot“ durch frische Subagent-Kontexte pro Ausführungsschritt und persistente `STATE.md`/`CONTEXT.md` — ein strukturell eingebauter Vorteil, den rein kleine, komponierbare Skills nicht automatisch mitbringen, weil der Nutzer den Gesamtworkflow selbst zusammensetzen muss. Trade-off: Kontrolle & Einfachheit (mattpocock) vs. eingebaute Disziplin gegen Kontext-Verschlechterung (GSD). Offene Frage: Ab welcher Vorhabengröße kippt der Vorteil zugunsten des schwereren, prozess-eigenen Frameworks? Siehe auch [[Workflow-Frameworks]].

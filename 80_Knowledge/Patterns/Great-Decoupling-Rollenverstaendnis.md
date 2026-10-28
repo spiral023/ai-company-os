@@ -53,6 +53,9 @@ Löst die Frustration und das Mikromanagement, die entstehen, wenn Entwickler ve
 - 2026-10-16 · [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] · meinung — Steenfatt beschreibt Produktumfang und das Ablehnen zusätzlicher Features als verbleibende menschliche Arbeit bei delegierter Implementierung und Architektur; seine behauptete Sicherheitsüberlegenheit aktueller Modelle ist nicht durch einen passenden Vergleich belegt.
 - 2026-10-07 · [[2026-10-07-kimmonismus-2107804082106782041]] · meinung — Der Zukunftskommentar verbindet berichtete Fortschritte von Forschungsagenten mit Fragen nach Erwerbsarbeit, Sinn und Vermögensverteilung. Superintelligenz 2027 und Nettostellenverluste sind Positionen des Autors, keine belegten Befunde; eine beigefügte Essaypassage verweist ausdrücklich auf physische und praktische Grenzen.
 
+- 2026-10-27 · [[2026-10-27-aboutamazon-an-update-from-amazon-engineering-leadership-on]] · meinung — Amazon richtet Entwicklerrollen trotz wechselnder KI-Werkzeuge an Kunden-, Geschäfts- und Teamwirkung aus und verlangt eigenes technisches Urteil sowie Produktnähe. Ergebnisorientierung bedeutet hier weder Verzicht auf technische Prüfung noch einen belegten Produktivitätsfaktor.
+- 2026-10-27 · [[2026-10-27-felixrieseberg-hunger-beats-tenure-advice-for-junior-engineers]] · meinung — Rieseberg verschiebt seinen Bewertungsfokus von kleinen Coding-Aufgaben zu Prototypen mit Geschmack, Nutzerempathie und begründetem Denken. Seine als Hiring Manager berichtete Interviewänderung ist persönlich beschrieben und belegt weder eine firmenweite Abschaffung noch eine validierte Ersatzmethode.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-22: [[2026-10-16-math_rachel-2111238648188584306]] problematisiert menschliche QA als möglichen Engpass durch Volumen, Ermüdung und fehlendes Verständnis. Die Rollenverschiebung zum Review genügt daher nicht als Qualitätsnachweis; [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]] behandelt die Aufsicht als gesondert zu prüfende Leistung.
@@ -63,6 +66,8 @@ Löst die Frustration und das Mikromanagement, die entstehen, wenn Entwickler ve
 - Ergänzung 2026-01-12: Ein weiterer Erfahrungsbericht ([[2026-01-12-dhruv1103-lessons-learned-500k-lines-claude-code]]) fordert „Vibe Reviewing“ — die gesamte Codebase mindestens auf Funktionsebene zu kennen — was in Spannung zu „Trust the Harness, not your Eyes“ steht, ohne es zu widerlegen: Ergebnis-Review auf Funktionsebene ist gröber als Zeile-für-Zeile-Korrektur, beide Positionen markieren aber unterschiedliche Guardrail-Intensität.
 
 - 2026-10-22: [[2026-10-16-niklas-steenfatt-vibe-coding-hat-sich-veraendert]] sieht mehr Architektur- und Implementierungsarbeit beim Agent, hält aber Produktumfang und Verantwortung beim Menschen. Behauptete autonome Projekterfolge und Sicherheitsüberlegenheit sind keine passenden Vergleichsmessungen; daraus folgt keine pauschale Entbehrlichkeit von Planung oder Prüfung.
+
+- 2026-10-27 · [[2026-10-27-aboutamazon-an-update-from-amazon-engineering-leadership-on]] richtet Rollen an Kundenwirkung aus, verlangt aber eigenes technisches Urteil und Produktnähe. [[2026-10-27-felixrieseberg-hunger-beats-tenure-advice-for-junior-engineers]] beschreibt eine persönliche Änderung seiner Interviewpraxis. Beide Quellen stützen Ergebnisorientierung, nicht den Wegfall technischer Prüfung oder eine allgemein validierte Ersatzmethode für Recruiting.
 
 ## Verwandte Patterns
 

@@ -58,6 +58,8 @@ Der Lebenszyklus eines Skills läuft über: Ziel/Scope klären → Entwurf schre
 - 2026-10-26 · [[2026-10-26-voxyz_ai-2114746374059381186]] · meinung — Vorgeschlagen werden präzise Triggerbeschreibungen, gute und schlechte Beispiele, reale Testaufgaben mit Wiederholung nach Korrektur und ein Aktivierungstest in einer frischen Session ohne Skill-Nennung. Der Post ergänzt eine Bestätigungsgrenze vor späteren Skill-Anpassungen, enthält aber keinen Baseline-Vergleich oder empirischen Qualitätsgewinn.
 - 2026-09-22 · [[2026-09-22-vateo-after-waterfall-agile-and-devops-anthropic-s-ai]] · meinung — Der Beitrag empfiehlt 20–50 historische Aufgaben als Regressionseval für Änderungen an CLAUDE.md, Skills und Hooks sowie neue Eval-Fälle aus Produktionsvorfällen. Das erweitert den Prüfgegenstand auf die gesamte Agent-Konfiguration; es bleibt eine weitergegebene Vorgehensweise ohne unabhängigen Wirksamkeitsnachweis.
 
+- 2026-10-27 · [[2026-10-27-alexgoughcooper-2115076988327076296]] · meinung — Der Videoschnitt-Skill soll 25 bereits bearbeitete Anzeigen erneut schneiden und anhand gebündelten Senior-Feedbacks iterieren; dafür wird ausdrücklich Fachzeit eingeplant. Wiederholte Bewertung desselben Bestands ist kein Holdout-Test, und die berichteten fünfmal mehr Edits sowie ein bis drei Freigaberunden sind unkontrollierte Selbstberichte.
+
 ## Spannungen & offene Fragen
 
 - Ergänzung 2026-10-17: [[2026-10-13-mattpocockuk-2109973273924579720]] kritisiert naive Outputvergleiche bei offenen Skills wie Grilling. [[2026-10-17-developers-maintaining-software-with-the-gpt-6-family-opena]] beschreibt dagegen eine eng begrenzte Gegenprobe: gleicher Repository-Snapshot, gleicher Auftrag und gleiches Modell, nur eine Regel verändert. Die Gegenprobe präzisiert den Vergleich, löst aber nicht automatisch die Bewertung offener Beratungsqualität; beide Quellen liefern keine universelle Erfolgsmetrik.
@@ -65,6 +67,8 @@ Der Lebenszyklus eines Skills läuft über: Ziel/Scope klären → Entwurf schre
 - Ergänzung 2026-07-14: Die SKILL.md nennt eine wichtige Triggering-Nuance — Claude konsultiert Skills nur bei Aufgaben, die es nicht trivial selbst löst; simple Ein-Schritt-Queries triggern auch bei perfekter Description nicht. Trigger-Evals müssen daher substanzielle Queries verwenden.
 - Ergänzung 2026-07-14 (Quelle: Addy Osmani, external_knowledge/ai-llm-wiki/raw/addyosmani-agent-skills-blog.md): Neben Trigger- und Baseline-Qualität eine dritte Dimension — **Anti-Rationalization-Tables**: Jede Skill listet typische Ausreden, mit denen ein Agent den Workflow überspringen würde, plus vorformulierte Gegenargumente („pre-written rebuttals to lies the agent hasn't yet told“). Seit 2026-07-14 eigenes Pattern: [[Anti-Rationalization-Tables]].
 - Offene Frage: Wie verhält sich diese Trigger-/Baseline-Disziplin zu unserer eigenen [[Skill-Call-Hierarchie]] — sollte die Aufruf-Klassifizierung (user-invoked/model-invoked) selbst Teil der Trigger-Tests sein?
+
+- 2026-10-27 · [[2026-10-27-alexgoughcooper-2115076988327076296]] lässt denselben Bestand von 25 Altedits wiederholt bewerten. Diese Runden sind Trainingsfeedback, kein Holdout-Nachweis für neue Aufgaben. Fünffacher Durchsatz und ein bis drei Freigaberunden bleiben unkontrollierte Selbstberichte.
 
 ## Verwandte Patterns
 

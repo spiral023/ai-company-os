@@ -130,4 +130,4 @@ Der [semantische Pilot](Factory/README.md) verbindet 24 Aussagen mit konkreten B
 
 ## Fakten
 
-- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-24.
+- [[Modelle-und-Preise]] — datierte Angaben zu Modellen, Preisen, Benchmarks und Markt mit Quelle und Einschränkung; Stand 2026-10-28.

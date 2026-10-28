@@ -14,6 +14,8 @@ Eine begrenzte interne Testgruppe erprobt den Einsatz und bewertet Ergebnisse un
 
 Als abgeleitete Abnahme gehört der Gesamtaufwand einschließlich Prüfung und Nacharbeit neben die fachliche Ergebnisqualität. Interne Erprobung und externe Verwendung benötigen jeweils passende Freigabeentscheidungen. Diese Konkretisierung ist eine Einordnung der Diskussion, kein dort gemessener Effekt.
 
+Datierte Ergänzung vom 2026-10-27: [[2026-10-27-aboutamazon-an-update-from-amazon-engineering-leadership-on|Amazons Führungsmemo]] nutzt KI-Nutzung diagnostisch. Prüfe geringe Adoption am 10. Perzentil auf Ursachen und hohe Adoption am 90. Perzentil auf passende Lieferverbesserungen; diese Perzentile sind keine universellen Zielquoten. Führungskräfte sollen aus eigener Arbeit einen hilfreichen und einen nicht hilfreichen KI-Einsatz erklären können und Lernzeit schaffen.
+
 ## Vorteile
 
 - Verbindet Zielklärung mit der praktischen Fähigkeit, ein Ergebnis zu nutzen und zu prüfen.
@@ -40,10 +42,15 @@ Als abgeleitete Abnahme gehört der Gesamtaufwand einschließlich Prüfung und N
 - 2026-07-14 · [[2026-07-14-vischer-teil-31-ki-tools-wie-es-um-den-schutz-der-daten]] · meinung — Die VISCHER-Autoren unterscheiden für den KI-Einsatz konkrete Produkteditionen, Vertragsfamilien, Datenarten und Konfigurationen statt Anbieter pauschal zu beurteilen; dies ergänzt das Use-Case-Gate um eine dokumentierte Zuordnung des tatsächlichen Bezugswegs. Ihre Rechtsbewertungen stammen aus dem Artikel vom 14.07.2026 und Tabellen vom 08.07.2026, beziehen sich insbesondere auf Schweizer Kundenverträge und sind keine heutige Anbieterfreigabe.
 - 2026-07-16 · [[2026-07-16-jousefmurad-es-gibt-eine-simple-regel-die-erklaert-warum-95-prozent-aller-ki]] · meinung — Das nachträglich lokal transkribierte Video verbindet Datenverfügbarkeit, konkreten Pain Point und KI-Befähigung als gemeinsame Voraussetzungen eines Use Cases. Scheiterquote, Erfolgsversprechen und synthetische Daten als Ersatz sind nicht belegt.
 
+- 2026-10-27 · [[2026-10-27-aboutamazon-an-update-from-amazon-engineering-leadership-on]] · meinung — Amazons Führungsmemo verbindet Kundenwirkung mit praktischer Befähigung: Führungskräfte sollen je einen hilfreichen und nicht hilfreichen eigenen KI-Einsatz erklären und Lernzeit schaffen. Tokenverbrauch und Durchsatz bleiben begrenzte Diagnosegrößen; am 10. und 90. Adoptionsperzentil sollen Ursachen beziehungsweise tatsächliche Lieferverbesserungen untersucht werden. Interne Beobachtungen ohne veröffentlichte Produktivitätsmessung.
+- 2026-10-27 · [[2026-10-27-felixrieseberg-hunger-beats-tenure-advice-for-junior-engineers]] · meinung — Ein fokussierter Prototyp soll eine Geschäftschance als Entscheidungsgrundlage sichtbar machen; der Beitrag schildert, wie neue Mitarbeiter damit organisatorischen Einfluss gewinnen können. Fachliche Abnahme und Nutzenprüfung bleiben davon getrennte Anforderungen, nicht durch die Anekdoten belegte Ergebnisse.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-11: Die Aussage, Technologie sei das kleinste Problem, wird in derselben Diskussion durch fehlende Schnittstellen, Datenqualität und betriebliche Integration relativiert. Zielklarheit löst diese Blockaden nicht allein.
 - 2026-10-11: Menschliche Freigabe kann zur Formalität werden, wenn die prüfende Person Ergebnisse fachlich nicht beurteilen kann. Wie wird diese Prüffähigkeit im konkreten Use Case festgestellt?
+
+- 2026-10-27 · [[2026-10-27-aboutamazon-an-update-from-amazon-engineering-leadership-on]] berichtet eine Korrelation von Nutzung und Ergebnissen, warnt aber vor Tokenverbrauch oder Codevolumen als Ziel: Beides kann Kosten beziehungsweise Komplexität erhöhen. Begründet fehlender KI-Nutzen ist ausdrücklich ein Lernbefund; geringe Nutzung allein belegt keine geringe Leistung.
 
 ## Verwandte Patterns
 

@@ -1,6 +1,6 @@
 # Skill-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und Baselines, Skills als Teamwissen. Wayfinder und Frameworks aus Skill-Sammlungen stehen in frameworks.
 
@@ -23,17 +23,19 @@ Aufbau, Trigger und Qualität von Skills (SKILL.md), Aufrufhierarchie, Evals und
 - [[Anti-Rationalization-Tables]] · verifiziert · 4 Belege
 - [[Freiheitsgrad-nach-Aufgaben-Fragilitaet]] · meinung · 13 Belege
 - [[Hook-erzwungene-Skill-Aktivierung]] · meinung · 4 Belege
-- [[Klein-und-komposierbar]] · verifiziert · 23 Belege
+- [[Klein-und-komposierbar]] · verifiziert · 24 Belege
 - [[One-File-per-Failure-Mode]] · verifiziert · 3 Belege
 - [[Skill-Call-Hierarchie]] · verifiziert · 15 Belege
-- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 27 Belege
+- [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]] · verifiziert · 28 Belege
 - [[Skill-Schwellenwert-institutionelles-Wissen]] · meinung · 8 Belege
-- [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 6 Belege
+- [[Skill-aus-Demonstration-statt-Beschreibung]] · meinung · 8 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Brand-Kit-als-gemeinsame-Artefaktbasis]], [[Erweiterungs-Ebenen-Zuordnung]], [[Hillclimbing-mit-Holdout-Split]], [[Videoanalyse-mit-Frames-und-Transkript]]
 
-## Quellen (31)
+## Quellen (33)
 
+- [[2026-10-27-mho_23-2115187475802890348]] — Miko empfiehlt am 27.10.2026, erfahrene Editoren ihr Schnittwissen in einen auf den konkreten Einsatz zugeschnittenen Agenten-Workflow übertragen zu lassen.
+- [[2026-10-27-alexgoughcooper-2115076988327076296]] — Alex Cooper beschreibt am 27.10.2026, wie sein Team Schnittwissen in kleine Stil-Skills überführt.
 - [[2026-10-26-voxyz_ai-2114746374059381186]] — Vox beschreibt einen kurzen Erhebungs- und Testablauf für projektspezifische Skills: Wiederholungen sammeln, fünf Aufgaben auswählen und die Entwürfe an echten Aufgaben erproben.
 - [[2026-10-14-poteto-2110496830429839869]] — Lauren beschreibt für `pstack` knappe Prinzipien-Skills, die sie überwiegend aus eigenen Korrekturen von Agenten gewonnen hat.
 - [[2026-10-12-promptgefluester-wisst-ihr-was-der-krasseste-trick-is-der-ziemlich-einfach-is-aber-den]] — `@promptgefluester` empfiehlt, abgeschlossene Agentprozesse auf Fehler und wiederkehrende Arbeit zu untersuchen.

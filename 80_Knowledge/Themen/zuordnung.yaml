@@ -3097,6 +3097,32 @@ quellen:
     kernaussage: Vox empfiehlt, Reverts und Bugfixes der letzten 50 Commits als Ausgangspunkt einer kurzen `REVIEW.md` zu verwenden.
     keywords: [REVIEW.md, Git History, Reverts, Bug Criteria, Independent Review, Review Iterations]
     neben: [agent-dateien]
+  2026-10-27-aboutamazon-an-update-from-amazon-engineering-leadership-on:
+    haupt: rolle-markt
+    kernaussage: Amazon richtet seine überarbeiteten Entwicklerrollen an der Wirkung für Kunden, Geschäft und Teams aus.
+    keywords: [AI adoption, Customer outcomes, Input metrics, Tokenmaxxing, Engineering leadership, Team productivity]
+    neben: [sdlc]
+  2026-10-27-alexgoughcooper-2115076988327076296:
+    haupt: skills
+    kernaussage: Alex Cooper beschreibt am 27.10.2026, wie sein Team Schnittwissen in kleine Stil-Skills überführt.
+    keywords: [Agentic video editing, Reference edits, Expert feedback, Style skills, Screenrecording, Iterative training]
+    neben: [verifikation]
+  2026-10-27-felixrieseberg-hunger-beats-tenure-advice-for-junior-engineers:
+    haupt: rolle-markt
+    kernaussage: 'Felix Rieseberg beschreibt eine Chance für Entwickler ohne viel Status oder organisatorischen Einfluss: KI kann die Umsetzung einer Idee so weit erleichtern, dass ein greifbarer Prototyp
+      die Diskussio'
+    keywords: [Junior engineers, Business impact, Prototyping, Coding interviews, Product judgment, Fresh perspective]
+    neben: [prototyping]
+  2026-10-27-mho_23-2115187475802890348:
+    haupt: skills
+    kernaussage: Miko empfiehlt am 27.10.2026, erfahrene Editoren ihr Schnittwissen in einen auf den konkreten Einsatz zugeschnittenen Agenten-Workflow übertragen zu lassen.
+    keywords: [Agentic video editing, Creative engineer, Domain harness, Expert feedback, Editorial judgment]
+    neben: [rolle-markt]
+  2026-10-27-petergostev-2115085935285248010:
+    haupt: modelle-kosten
+    kernaussage: Peter Gostev hält die Inferenz großer Modellanbieter für unterschätzt effizient.
+    keywords: [Inference economics, Gross margin, Serving costs, API pricing, Cost per task]
+    neben: []
   2026-10-27-philipp-asanger-imagegen-designvergleich:
     haupt: prototyping
     kernaussage: Philipps eigener Prompt nutzt ein Bildmodell, um kleine Designverbesserungen an einer bestehenden Seite vorab sichtbar zu machen.
@@ -3107,3 +3133,23 @@ quellen:
     kernaussage: 'Vox schlägt am 27.10.2026 eine Codex-Arbeitsteilung vor: `GPT-6.1 Sol/high` zerlegt Aufgaben, integriert Ergebnisse und prüft; `GPT-6.1 Terra` erledigt begrenzte Teilaufgaben.'
     keywords: [Codex Subagents, Model Routing, Reasoning Effort, fork_turns, Worker Escalation, Session Logs]
     neben: [modelle-kosten]
+  2026-10-27-voxyz_ai-2115198100465697038:
+    haupt: verifikation
+    kernaussage: Vox empfiehlt am 27.10.2026 Regeln gegen wiederholte defensive Prüfungen und vorschnelle Helferfunktionen in Agent-Code.
+    keywords: [Boundary validation, Type guarantees, Single-use helpers, Error handling, AGENTS.md, Code quality]
+    neben: [agent-dateien]
+  2026-10-27-voxyz_ai-2115228299400196368:
+    haupt: verifikation
+    kernaussage: Vox schlägt eine tägliche Log-Triage mit menschlicher Auswahl vor.
+    keywords: [Log triage, Session ID, Regression tests, Reproduction, Human review, Observability]
+    neben: [autonomie]
+  2026-10-28-aibattle-2115269739069026766:
+    haupt: modelle-kosten
+    kernaussage: AiBattle stellt am 28.10.2026 zwei Artificial-Analysis-Ranglisten gegenüber.
+    keywords: [Intelligence Index v5, Intelligence Index v4.3.2, Benchmark methodology, Ranking comparability, Source dependence]
+    neben: [verifikation]
+  2026-10-28-artificialanlys-2115265133467635877:
+    haupt: modelle-kosten
+    kernaussage: 'Artificial Analysis veröffentlicht am 28.10.2026 den Intelligence Index `v5`: neun Evaluationen, `60 %` mit privaten Testsets oder zurückgehaltenen Antworten.'
+    keywords: [Intelligence Index v5, FrontierCode 2.0, Terminal-Bench-Science, Cost per task, Reasoning effort, Private test sets, Open weights]
+    neben: [verifikation, open-source-llms]

@@ -1,18 +1,18 @@
 # Themen-Übersicht
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-27.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28.*
 
 Jede Source und jedes Pattern hat einen Haupt-Cluster und höchstens zwei Nebencluster. Ein Cluster bündelt die Notizen eines Themas samt Suchbegriffen für Blog-Beiträge. Beim Ingest schlägt `python 70_Scripts/themen.py zuordnen <datei>` Cluster und verwandte Notizen vor.
 
 | Thema | Hub-Notiz | Quellen | Patterns | Hauptkeyword |
 |---|---|---|---|---|
-| Modelle, Kosten & Limits | [[Thema-Modelle-Kosten-Limits]] | 84 | 5 | Claude Code Kosten |
-| Verifikation, Tests & Review | [[Thema-Verifikation-Tests-Review]] | 60 | 20 | AI Code Review |
+| Modelle, Kosten & Limits | [[Thema-Modelle-Kosten-Limits]] | 87 | 5 | Claude Code Kosten |
+| Verifikation, Tests & Review | [[Thema-Verifikation-Tests-Review]] | 62 | 20 | AI Code Review |
 | Prototyping & UI-Design | [[Thema-Prototyping-UI-Design]] | 39 | 8 | Lovable |
 | Spezifikation & Planung | [[Thema-Spezifikation-Planung]] | 34 | 9 | Spec-Driven Development |
-| Skill-Design | [[Thema-Skill-Design]] | 31 | 9 | Claude Code Skills |
+| Skill-Design | [[Thema-Skill-Design]] | 33 | 9 | Claude Code Skills |
+| Rolle, Lernen & Markt | [[Thema-Rolle-Lernen-Markt]] | 32 | 5 | Vibe Coding |
 | Workflow-Frameworks & Tools | [[Thema-Workflow-Frameworks-Tools]] | 31 | 1 | Claude Code Workflow |
-| Rolle, Lernen & Markt | [[Thema-Rolle-Lernen-Markt]] | 30 | 5 | Vibe Coding |
 | Kontext-Management | [[Thema-Kontext-Management]] | 25 | 2 | Context Engineering |
 | Multi-Agent & Parallelisierung | [[Thema-Multi-Agent-Parallelisierung]] | 25 | 4 | Claude Code Subagents |
 | Hooks, MCP & Erweiterungs-Ebenen | [[Thema-Hooks-MCP-Erweiterungs-Ebenen]] | 24 | 5 | Claude Code Hooks |

@@ -44,6 +44,8 @@ Kontextmenge, Prüfbarkeit und Arbeitspaketgröße bestimmen gemeinsam die Quali
 - 2026-10-02 · [[2026-10-02-voxyz_ai-2106104334035435572]] · meinung — Aktuelle Ausgaben sollen vor Refactors durch Tests festgehalten werden, Assertions bleiben in Strukturänderungen unverändert; Erhaltung gilt nur für abgedeckte Fälle und der vorgeschlagene Architektur-Check braucht konkrete Duplikaterkennung.
 - 2026-04-13 · [[2026-04-13-alex-sprogis-superkraefte-fuer-claude-code]] · meinung — Akzeptanzkriterien werden vor der Implementierung in Tests übersetzt und im Red-Green-Refactor-Zyklus verwendet. Die zunächst erfundenen API-Endpunkte zeigen, dass grüne Tests ohne passende Außenbezüge keine funktionierende Integration beweisen.
 
+- 2026-10-27 · [[2026-10-27-voxyz_ai-2115228299400196368]] · meinung — Ein priorisierter Logbefund soll vor jeder Korrektur in einen reproduzierenden Test überführt werden; ein Mensch wählt anschließend den Fix. Der vorgeschlagene Ablauf liefert ein konkretes Eingangssignal für einen Regressionstest, berichtet jedoch weder eine ausgeführte Reproduktion noch eine gemessene Verbesserung.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-09 · [[2026-10-02-voxyz_ai-2106104334035435572]] friert Assertions für verhaltensgleiche Refactors ein und trennt fachliche Korrekturen davon. Charakterisierungstests können dabei auch bestehendes Fehlverhalten festhalten; widersprüchliche Regelkopien brauchen eine gesonderte fachliche Entscheidung, bevor Tests das gewünschte Verhalten bestätigen.
@@ -51,6 +53,8 @@ Kontextmenge, Prüfbarkeit und Arbeitspaketgröße bestimmen gemeinsam die Quali
 - Vier unabhängige Autoren (Matt Pocock, Duncan Ogilvie, Andrej Karpathy, Addy Osmani — Stand 2026-07-14) konvergieren unabhängig auf TDD/Verifikation als zentralen Mechanismus für Agenten — stützt die Kernaussage über bloße Einzelmeinung hinaus, auch wenn keine kontrollierte Studie vorliegt.
 - Spannung 2026-07-14 (Osmani): Grüne Tests allein können selbst zur Scheinverifikation werden („evidence, not proof“) — der Agent kann Tests passend machen. Konsequenz: Runtime-Check und menschlicher Diff-Read bleiben Teil der Eskalationskette, TDD ersetzt sie nicht.
 - Offene Frage: Wie lässt sich TDD-Pflicht mit sehr frühen, explorativen Prototyping-Phasen (siehe [[Lovable-Prototyp-dann-lokaler-Handoff]]) vereinbaren, wo noch kein stabiler Prüfpfad existiert?
+
+- 2026-10-27 · [[2026-10-27-voxyz_ai-2115228299400196368]] nutzt Log-Triage als Eingang für einen Regressionstest vor dem Fix. Erst die tatsächlich ausgeführte Reproduktion bestätigt das Fehlerbild; ein Agentenbericht oder nur entworfener Test ist kein Nachweis.
 
 ## Verwandte Patterns
 

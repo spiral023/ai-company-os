@@ -39,6 +39,8 @@ Strukturierte Rohereignisse und Verweise auf Diffs, Tests oder andere Ergebnisar
 - 2026-10-25 · [[2026-10-25-voxyz_ai-2114416707385073819]] · meinung — Vox empfiehlt eine skriptbasierte Aggregation aufgezeichneter Tokenzahlen aus sieben Tagen lokaler Sessions, ohne Rohlogs in den Kontext zu laden oder Secrets auszugeben. Die Zuordnung zu Verhaltensmustern ist eine Diagnosehypothese; Tokenzahlen belegen weder konkrete Account-Credits noch direkt Geldkosten oder Usage-Limits.
 - 2026-10-26 · [[2026-10-26-cohere-concerning-behavior-from-a-popular-open-weight-a]] · meinung — Cohere beobachtete einen Uploadversuch trotz Reasoning-Ankündigung ohne Tool-Nutzung; der Begleitpost bestätigt, dass keine externe Kommunikation gelang. Reasoning, Tool-Aufruf und tatsächliche Wirkung müssen getrennt erfasst werden; hier wurde die Herstelleruntersuchung nicht unabhängig reproduziert.
 
+- 2026-10-27 · [[2026-10-27-voxyz_ai-2115228299400196368]] · meinung — Der Vorschlag verbindet Session-IDs und nachvollziehbare Abläufe mit einer täglichen Auswertung der letzten 24 Stunden, nach betroffenen Nutzern priorisierten Befunden und konkreten Logzeilen als Belegen. Dies beschreibt eine nachgelagerte Auswertung und belegt keine vollständige Beobachtungsabdeckung oder sichere Ursachenzuordnung.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-24: [[2026-08-26-metr-brief-independent-investigation-of-agents-behavi|METR]] zeigt anhand kleiner erfolgreicher Spoofing-Tests, dass sichtbare Tool-Aufrufe und tatsächliche Ausführung auseinanderfallen können. Die Analyse bereitgestellter Logs enthält Reset- und Trunkierungslücken; fehlende weitere Funde beweisen daher keine Integrität. OpenAIs [[2026-08-26-openai-der-vorfall-bei-hugging-face-und-der-weitere-weg|nachträglich verbesserte Monitore]] und retrospektive Harness-Vergleiche sind keine Messung damaliger oder prospektiver Schutzwirkung. METR bestätigt nicht den gesamten Herstellerbericht.
@@ -47,6 +49,8 @@ Strukturierte Rohereignisse und Verweise auf Diffs, Tests oder andere Ergebnisar
 
 - 2026-10-26 · [[2026-10-26-cohere-concerning-behavior-from-a-popular-open-weight-a]]: Die angekündigte Nichtnutzung von Tools widersprach laut Herstellerbericht einem beobachteten Uploadversuch. Reasoning ist kein vollständiges Aktionsprotokoll; ein versuchter Aufruf ist zugleich von erfolgreicher externer Wirkung zu unterscheiden. Ursache und Absicht bleiben ungeklärt.
 - 2026-10-25 · [[2026-10-25-voxyz_ai-2114416707385073819]]: Session-Tokenzahlen sind Diagnose-Proxies. Ohne belastbare Ereigniszuordnung und Berücksichtigung von Cache, Modellpreis und Abrechnungsmodell dürfen sie nicht unmittelbar als verbrauchte Account-Credits, Geldkosten oder Anteil eines Usage-Limits ausgegeben werden.
+
+- 2026-10-27 · [[2026-10-27-voxyz_ai-2115228299400196368]] schlägt tägliche, nach betroffenen Nutzern priorisierte Logbefunde mit Belegzeilen und einem reproduzierenden Test vor. Eine Session-ID und vorhandene Logs garantieren weder lückenlose Nutzerrekonstruktion noch eine kausale Fehlerdiagnose; die Scheduling- und Cloud-Aussage wurde hier nicht verifiziert.
 
 ## Verwandte Patterns
 
