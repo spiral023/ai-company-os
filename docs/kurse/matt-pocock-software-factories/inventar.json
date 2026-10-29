@@ -2256,6 +2256,8 @@
         "Q&A"
       ]
     ],
-    "sha256": "0a40c34ff42326a4848cda50dfe5e4cdd8789ed2c237ae644ebbe19521efd666"
+    "sha256": "f0ec5ea0f46992904127afa47a824f1bac6f8c1d24ca312ad82fe27a4bf71e3d",
+    "sha256_lf_normalisiert": "0a40c34ff42326a4848cda50dfe5e4cdd8789ed2c237ae644ebbe19521efd666",
+    "hashkorrektur": "2026-10-29: ursprünglicher Wert bezog sich auf LF-normalisierten Text; sha256 bezeichnet jetzt die tatsächlichen Dateibytes mit Windows-Zeilenenden."
   }
 }

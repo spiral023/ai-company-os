@@ -4,7 +4,7 @@
 
 ## Umfang und Nachweis
 
-Der Nutzer stellte 38 MP4-Dateien und eine HTML-Leseausgabe bereit. Alle 39 Dateien wurden vollständig kopiert und mit SHA-256 gegen den Eingang verglichen: 1.664.537.099 Bytes. Die Analyse umfasst sämtliche 38 HTML-Kapitel, erklärende Prosa, Beispielprompts, Übungen, Lösungen und Quiztexte. Die Videos wurden ausschließlich archiviert und inventarisiert; sie wurden nicht abgespielt oder transkribiert.
+Der Nutzer stellte 38 MP4-Dateien und eine HTML-Leseausgabe bereit. Alle 39 Dateien wurden vollständig kopiert und mit SHA-256 gegen den Eingang verglichen: 1.664.537.099 Bytes. Die inhaltliche Analyse umfasst sämtliche 38 HTML-Kapitel, erklärende Prosa, Beispielprompts, Übungen, Lösungen und Quiztexte. Die Videos wurden archiviert und inventarisiert, für diese Analyse jedoch nicht inhaltlich ausgewertet oder transkribiert. Technische Wiedergabestichproben gehören zur späteren Prüfung des privaten Online-Kurses.
 
 Das ursprüngliche Veröffentlichungsdatum ist nicht ausgewiesen. Der 29.10.2026 ist der Erfassungstag, keine behauptete Kursveröffentlichung. Die Zuordnung zu Matt Pocock stammt vom Nutzer und passt zu den verlinkten Skills und beschriebenen Inhalten; die Herkunft der zusammengestellten Leseausgabe wurde nicht unabhängig festgestellt.
 
@@ -369,4 +369,8 @@ Source und neue Patterns sind bestehenden Themenclustern zugeordnet; Keywords un
 - Quellen-Pipeline und Themenprüfung sind konsistent. Der Knowledge-Validator meldet dieselben 53 vorbestehenden Fehler mit exakt unverändertem Fehlertext; es gibt keine neuen Fehler. Dieser Bestand ist damit ausdrücklich nicht insgesamt fehlerfrei.
 - 67 Blogtests und die Blogprüfung bestehen; die gemeinsame Git-Sicherung umfasst auch die vorangegangene Buchauswertung und zwölf freigegebene Artikel. Fremde vorbestehende Änderungen bleiben getrennt. Die Themenansichten für den Commit werden ohne die uncommittete fremde Source erzeugt.
 
-Das öffentliche Repository enthält die eigene Analyse, Quellenaufbereitung, Belege, Themenzuordnung und das Inventar. Originalkurs, vollständige Übersetzung, Rohtext und Videos bleiben gemäß bestehender Volltext-Ablageregel lokal ignoriert. Die Videos wurden nicht hochgeladen. Quellen-Pipeline und Prüfprotokolle sowie die manuellen Übersetzungsobjekte liegen zusätzlich unter .wissen/analysen/matt-pocock-kurs-2026-10-29.
+Das öffentliche Repository enthält die eigene Analyse, Quellenaufbereitung, Belege, Themenzuordnung und das Inventar. Originalkurs, vollständige Übersetzung, Rohtext und Videos bleiben gemäß bestehender Volltext-Ablageregel von Git ausgeschlossen. Quellen-Pipeline und Prüfprotokolle sowie die manuellen Übersetzungsobjekte liegen zusätzlich unter .wissen/analysen/matt-pocock-kurs-2026-10-29.
+
+### Ergänzung: privater Online-Kurs vom 29.10.2026
+
+Auf ausdrücklichen Auftrag wird die deutsche Leseausgabe unter <https://pocock.sp23.online/> mit Passwortanmeldung bereitgestellt. Alle 38 Videos werden ihrem Kapitel zugeordnet und aus einem privaten Cloudflare-R2-Bucket gestreamt; auch Bilder und direkte Medienadressen benötigen eine gültige Sitzung. Diese Analyse steht im selben geschützten Bereich unter `/analyse/`. Anwendungscode, Metadaten und Betriebsbeschreibung liegen unter [pocock/](../pocock/README.md); fremde Volltexte und Videos bleiben außerhalb des öffentlichen Git-Repositories. Die technische Prüfung von Wiedergabe und Bytebereichen erweitert die inhaltliche Quellenanalyse nicht: Die Videos wurden für diese Auswertung nicht vollständig angesehen oder transkribiert.

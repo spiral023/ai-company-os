@@ -1,0 +1,42 @@
+name: Privater Pocock-Kurs
+
+on:
+  push:
+    branches: [main]
+    paths: ["pocock/**", ".github/workflows/pocock.yml"]
+  pull_request:
+    paths: ["pocock/**", ".github/workflows/pocock.yml"]
+  workflow_dispatch:
+
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: node --test pocock/tests/security.test.mjs
+      - run: pip install beautifulsoup4 markdown-it-py
+      - run: python -m unittest discover -s pocock/tests -p 'test_*.py' -v
+      - run: python -m py_compile pocock/build_course.py pocock/verify_r2.py
+
+  deployen:
+    needs: pruefen
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pocock-deploy
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v6
+      - uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: pocock
+          wranglerVersion: "4.152.0"
+          command: deploy

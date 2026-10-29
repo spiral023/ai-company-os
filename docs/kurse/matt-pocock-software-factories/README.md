@@ -2,7 +2,7 @@
 
 **Erfasst:** 29.10.2026. Vom Nutzer lokal bereitgestellter Kurs mit 38 Videos und einer HTML-Leseausgabe. Das ursprüngliche Veröffentlichungsdatum und die Herkunft der zusammengestellten Leseausgabe sind nicht unabhängig belegt. Im HTML lautet der Seitentitel `Domain Language`; die Kapitel behandeln Sprache, Planung und Review.
 
-Die Videos wurden kopiert und per SHA-256 verglichen. Die inhaltliche Analyse bezieht sich auf die **38 HTML-Kapitel**, ihre Übungen und Lösungen sowie ausgewählte Abbildungen. Die Videos wurden nicht angesehen oder transkribiert.
+Die Videos wurden kopiert und per SHA-256 verglichen. Die inhaltliche Analyse bezieht sich auf die **38 HTML-Kapitel**, ihre Übungen und Lösungen sowie ausgewählte Abbildungen. Die Videos wurden dafür nicht inhaltlich ausgewertet oder transkribiert; technische Wiedergabestichproben gehören zur Veröffentlichung des privaten Online-Kurses.
 
 ## Lesen und weiterarbeiten
 
@@ -41,4 +41,10 @@ Die deutsche Leseansicht zeigt jeweils das gewählte Kapitel. Inhaltsverzeichnis
 
 Der vorhandene Artikel-Ingest wurde mit der lokalen Datei-URL verwendet. Da er den ersten `article`-Container auswählt, erfasste er zunächst nur Kapitel 1. Vor der Einarbeitung wurde die lokale Rohnotiz mit dem vollständigen Originaltext aller 38 Kapitel ergänzt. Das Original-HTML und das Kapitelinventar erlauben den Abgleich; eine Teilerfassung wird dadurch nicht als Gesamterfassung ausgegeben.
 
-Dieses Repository ist öffentlich. Entsprechend seiner bestehenden Ablageregel für fremde Volltexte bleiben Original, vollständige Übersetzung, Rohtext und Kursmedien in der ignorierten lokalen Ablage. Versioniert werden eigene Auswertung, Source-Notiz, Pattern-Belege und Inventar. Es wurde kein externer Kurscode ausgeführt, kein neuer produktiver Skill aktiviert und kein externer Dienst eingerichtet.
+Dieses Repository ist öffentlich. Entsprechend seiner bestehenden Ablageregel für fremde Volltexte bleiben Original, vollständige Übersetzung, Rohtext und Kursmedien in der ignorierten lokalen Ablage. Versioniert werden eigene Auswertung, Source-Notiz, Pattern-Belege und Inventar. Es wurde kein externer Kurscode ausgeführt und kein neuer produktiver Skill aktiviert.
+
+## Privater Online-Kurs
+
+Auf ausdrücklichen Auftrag vom 29.10.2026 wird die deutsche Ausgabe unter <https://pocock.sp23.online/> mit Passwortanmeldung bereitgestellt. Jedes Kapitel enthält sein zugeordnetes Video; die eigene Auswertung ist unter `/analyse/` erreichbar. Auch Bilder und direkte Videozugriffe benötigen eine gültige Sitzung.
+
+Die Medien liegen im privaten Cloudflare-R2-Bucket `sp23-pocock-kurs`; die öffentliche R2-Adresse ist deaktiviert. Volltexte und Binärdateien gelangen weiterhin nicht in das öffentliche Git-Repository. Anwendung, Build, Tests, Betriebsablauf und Sicherheitsgrenzen stehen in [pocock/README.md](../../../pocock/README.md). Das Passwort und die Sitzungsschlüssel werden ausschließlich als Cloudflare-Secrets gepflegt.
