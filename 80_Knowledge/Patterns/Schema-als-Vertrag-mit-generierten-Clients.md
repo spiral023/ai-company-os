@@ -34,11 +34,15 @@ Requests und Responses in einem versionierten, maschinenlesbaren Schema definier
 
 - 2026-10-27 · [[2026-10-27-voxyz_ai-2115198100465697038]] · meinung — Vox empfiehlt, unbekannte Werte einmal am verantwortlichen Eingang zu validieren und typisierte Garantien nach innen weiterzugeben, statt dieselben Eigenschaften wiederholt abzusichern. Dies ergänzt die Nutzung eines verbindlichen Schemas, belegt aber weder Clientgenerierung noch eine gemessene Qualitätsverbesserung; die behauptete Repo-Herkunft bleibt ungeprüft.
 
+- 2003-08-01 · [[2003-08-01-pdf-domain-driven-design]] · meinung — PDF-S. 215–218 und 226–229 unterscheiden Datenübertragung von der Übersetzung fachlicher Bedeutung zwischen Modellen. Eine Anti-Corruption Layer ist weder nur ein generierter API-Client noch zwingend ein separater Dienst; nicht jede Übersetzung ist umkehrbar.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-11: Die Quelle setzt erfolgreichen Compile stellenweise mit korrektem API-Verhalten gleich. Ihr eigenes Schema-first-Beispiel enthält zugleich Laufzeitvalidierung; Versionskompatibilität und fachliche Regeln bleiben separate Prüfaufgaben.
 
 - 2026-10-27 · [[2026-10-27-voxyz_ai-2115198100465697038]] empfiehlt, unbekannte Werte am zuständigen Eingang zu prüfen und belastbare Typgarantien nach innen weiterzugeben. Das setzt einen tatsächlich gesicherten Vertrag voraus und ist kein Beleg für Clientgenerierung. Die im Post unbenannte Repo-Herkunft bleibt ungeprüft; die Heuristik rechtfertigt weder entfallende Eingangsvalidierung noch einen pauschalen Verzicht auf Fehlerbehandlung.
+
+- 2026-10-29: Ein strukturell gültiger Statuswert kann im fremden Modell etwas anderes zusagen. [[Bounded-Contexts-und-Uebersetzungsgrenzen-kartieren]] ergänzt die Schemaverträge um konkrete Bedeutungsbeispiele und Übersetzungsgrenzen.
 
 ## Verwandte Patterns
 

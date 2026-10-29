@@ -4,6 +4,10 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 
 ## Patterns
 
+- [[ADRs-auf-tragende-Entscheidungen-begrenzen]] — schwer umkehrbare, überraschende Trade-offs knapp mit ihrem Entscheidungsgrund bewahren.
+- [[Wayfinder-als-Karte-offener-Entscheidungen]] — mehrteilige Klärung mit Decision Tickets, Abhängigkeiten und Frontier vor der Implementierungsplanung organisieren.
+- [[Review-Findings-in-Agent-Verbesserungen-ueberfuehren]] — konkrete Reviewfehler auf Checks, Standards, Navigation oder fehlende Informationen zurückführen.
+
 - [[Spec-Grilling]] — Agent verhört den Nutzer vor der Umsetzung, bis die Spec klar ist.
 - [[CONTEXT-Glossar]] — geteiltes Projekt-Vokabular in `GLOSSARY.md` (früher `CONTEXT.md`) komprimiert Kommunikation und spart Thinking-Tokens.
 - [[Handoff-Doc]] — Konversation wird in ein Übergabe-Dokument kompaktiert, der nächste Agent macht nahtlos weiter.
@@ -103,6 +107,14 @@ Einstieg ins Knowledge-System. Regeln und Templates: [[80_Knowledge/README|READM
 - [[Frontend-Zustandslogik-mit-Reducer-isolieren]] — Zustandsübergänge aus Ereignissen getrennt vom Rendering prüfen und UI-Anbindung gesondert abnehmen.
 - [[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]] — Ausfallfolgen, Neubaukosten, Abhängigkeiten und Wartung als Grundlage der Prüftiefe untersuchen.
 
+- [[Information-Hiding-an-Aenderungsgruenden-ausrichten]] — gemeinsame Entwurfsentscheidungen bei einem Informationsbesitzer bündeln und notwendiges Aufruferwissen begrenzen.
+- [[Bounded-Contexts-und-Uebersetzungsgrenzen-kartieren]] — Geltungsbereiche von Fachmodellen und tatsächliche Integrationsbeziehungen einschließlich Bedeutungsübersetzung festhalten.
+- [[Aggregate-durch-fachliche-Invarianten-begrenzen]] — kontrollierte Änderungsgrenzen anhand gemeinsam zu schützender fachlicher Bedingungen bestimmen.
+- [[Vertraege-mit-Vorbedingungen-Nachbedingungen-und-Invarianten]] — Aufruferpflicht, Ergebniszusage und beständige Eigenschaften getrennt formulieren und prüfen.
+- [[Tracer-Bullet-und-Lernprototyp-bewusst-waehlen]] — vor dem ersten Demo Lernzweck, Qualitätsumfang und spätere Verwendung des Codes entscheiden.
+- [[Kommentare-als-Schnittstellenwissen-pflegen]] — fehlendes API-Wissen und Entwurfsgründe früh formulieren und mit dem Code aktuell halten.
+- [[Designalternativen-vor-Festlegung-vergleichen]] — unterschiedliche Entwurfsskizzen an denselben konkreten Aufrufen und Schwierigkeiten bewerten.
+
 ## Themen
 
 Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 21 Themenclustern mit Suchbegriffen für Blog-Beiträge, das [[Keyword-Register]] zeigt mehrfach belegte Begriffe. Beim Ingest verknüpft `python 70_Scripts/themen.py zuordnen <datei>` neue Notizen mit dem Bestand. [[Thema-KI-Risiken-Sicherheitsvorfälle]] sammelt Warnungen, Risikoszenarien und konkrete Vorfälle mit KI.
@@ -123,6 +135,9 @@ Quer zu Patterns und Sources: [[Themen-Übersicht]] bündelt alle Notizen in 21 
 
 ## Vergleiche
 
+- [[Matt-Pocock-Software-Factories-Kurstransfer]] — die 38 HTML-Kurskapitel mit Buchgrundlagen und Factory-Methoden verbinden; Archiv, deutsche Leseausgabe und klare Evidenzgrenzen.
+
+- [[Softwaregrundlagen-fuer-Agentic-Engineering]] — vier Fachbücher ausführlich ausgewertet: Design, Domänenmodelle, Verträge, Verifikation und kritischer Transfer auf Coding Agents, mit Buchanalysen und Lese-/Prüfnachweis.
 - [[Workflow-Frameworks]] — Gegenüberstellung von mattpocock/skills, Superpowers, GSD Core, gstack, addyosmani/agent-skills, Squad und dem statisch gesichteten pstack-Teilbaum.
 - [[Factory-Kontextbereitstellung]] — Aufgaben-/Rollenkontext, gestufter Abruf, versionierte Belege und erkennbare Grenzen als gemeinsamer Entwurf.
 - [[Factory-Spec-Build-Review]] — Klärung, Spec-Synthese, Verhaltenstickets, Ausführungspläne und getrennte Abnahme mit Bedingungen und Spannungen.

@@ -59,6 +59,25 @@ class TestFreigabe:
 
 
 class TestQuellen:
+    def test_buchbibliografie_ersetzt_nur_oeffentliche_anzeige(self, monkeypatch):
+        original = {"titel": "Interne Aufarbeitung", "autor": "Autor", "datum": "2021-07-01", "url": ""}
+        monkeypatch.setattr(bb, "_note_entry", lambda q: original)
+        p = post(quellen=["lokales-buch"])
+        cfg = {**CFG, "quellen_anzeige": {"lokales-buch": {
+            "titel": "Buchtitel", "autor": "John Ousterhout", "datum": "Juli 2021",
+            "url": "https://example.org/book", "rohquelle": "nicht-oeffentlich",
+        }}}
+        out = bb.quellen_html(cfg, p)
+        assert 'href="https://example.org/book"' in out
+        assert "Buchtitel" in out and "Juli 2021" in out
+        assert "2021-07-01" not in out and "nicht-oeffentlich" not in out
+        assert p["quellen"] == ["lokales-buch"]
+        assert original["titel"] == "Interne Aufarbeitung" and original["url"] == ""
+
+    def test_quellenanzeige_laesst_nicht_betroffene_quellen_unveraendert(self):
+        p = post(quellen=[{"titel": "Öffentliche Quelle", "url": "https://example.org/original"}])
+        assert bb.quellen_html({**CFG, "quellen_anzeige": {"andere": {"titel": "Anderer Titel"}}}, p) == bb.quellen_html(CFG, p)
+
     def test_ungenutzte_quelle_ist_fehler(self):
         p = post(quellen=[{"titel": "A"}, {"titel": "B"}], body="## Kurz gesagt\n\n- x\n\nText.{q:1}")
         fehler = bb.check_post(p, CFG)

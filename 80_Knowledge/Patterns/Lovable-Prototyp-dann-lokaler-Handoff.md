@@ -38,10 +38,15 @@ Der Ablauf ist bewusst zweigeteilt: (1) Idee, Scope und erste UX in Lovable verd
 - 2026-01-21 · [[2026-01-21-aiedge-claude-50-pro-tips]] · meinung — Nennt Google AI Studio als alternatives, günstigeres Prototyping-Werkzeug vor dem Wechsel zu Claude, sobald der Code größtenteils steht — dieselbe Grundidee wie „günstig prototypen, dann an den produktiven Agenten übergeben“, nur mit einem anderen Erstwerkzeug als Lovable.
 - 2026-02-04 · [[2026-02-04-lovable-docs-lovable-security-guide]] · meinung — Herstellerleitfaden: Secrets, Auth und Validierung gehören ins Backend, RLS früh setzen, Security Checker vor Veröffentlichung. Sekundärquelle, keine unabhängige Prüfung.
 
+- 2025-08-18 · [[2025-08-18-pdf-beyond-vibe-coding]] · meinung — PDF-S. 129–134 verlangen einen bewussten Produktionsübergang und ein Register von Attrappen und Abkürzungen; Osmani erlaubt sowohl Neubau anhand des Prototyps als auch schrittweises Refactoring. Der Wechsel zum Engineering hängt an den Folgen und Qualitätslücken, nicht allein am Export oder Werkzeugwechsel.
+- 2019-09-13 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] · meinung — PDF-S. 109–123 unterscheiden ein weiterverwendbares Tracer-Gerüst von einem Lernprototyp, dessen Versuchscode ausdrücklich verworfen wird. Diese Begriffsverwendung ist strenger als Osmanis mögliche schrittweise Übernahme.
+
 ## Spannungen & offene Fragen
 
 - Die fünf Quellen stammen aus unterschiedlichen Primärquellen (Lovable-Doku direkt, unabhängige X-Posts, Tool-Vergleichsartikel) und widersprechen sich nicht, ergänzen sich aber in unterschiedlichen Facetten (Prompt-Design, Debugging/Security, Werkzeugwahl, Design-System-Aufbau).
 - Bei uns bereits als Workflow-Datei vorhanden: `20_Workflows/Lovable_Prototyping.md` — offene Frage, ob und wie dieses Pattern dort eingearbeitet werden soll (bewusst nicht eigenmächtig entschieden, siehe Skill-Grenzfälle für Meta-Änderungen an bestehenden Workflows).
+
+- 2026-10-29: Beim Handoff müssen Lernziel, bestätigte Interaktionen, Mockdaten, simulierte Wirkungen und fehlende Qualitätsmerkmale sichtbar sein. [[Tracer-Bullet-und-Lernprototyp-bewusst-waehlen]] hält den echten Unterschied zwischen Wegwerfversuch, Integrationsgerüst und bewusst gehärtetem Prototyp fest.
 
 ## Verwandte Patterns
 

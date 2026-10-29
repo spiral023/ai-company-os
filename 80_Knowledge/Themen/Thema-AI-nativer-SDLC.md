@@ -1,6 +1,6 @@
 # AI-nativer SDLC
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-29. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Coding Agents den gesamten Software Development Lifecycle verändern: von Intent und Spezifikation über Build, Tests und Review bis Deployment, Betrieb und Rückkopplung. Einzelne Techniken stehen in ihren Fachclustern; hier gehören phasenübergreifende Abläufe, Übergaben, Kontrollpunkte und der Wandel vom linearen Prozess zur Schleife hinein.
 
@@ -9,7 +9,7 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 - **Hauptkeyword:** AI-nativer SDLC
 - **Long-Tail:** Software Development Lifecycle mit KI; SDLC mit Coding Agents; AI-native SDLC Playbook; SDLC ist tot; Intent Build Observe; Agentic SDLC und ADLC; Menschliche Freigaben im AI-nativen SDLC
 - **Fragen:** Wie verändert sich der SDLC durch Coding Agents? / Welche Kontrollpunkte brauchen Menschen weiterhin? / Wie fließen Erkenntnisse aus dem Betrieb zurück in die Planung?
-- **Häufig in den Quellen:** ai-native sdlc (4), human-in-the-loop (3), intent.md (3), software factory (3), refactoring (3), review.md (2), spec.md (2), menschliche freigabe (2), scion (2), verhaltensvergleich (2), codex (2), observability als kontext, intent build observe, feature flags canary, adversarial agent code review, closed loop, software development lifecycle mit ki, sdlc ist tot, review-stichproben, befundnachweis
+- **Häufig in den Quellen:** ai-native sdlc (4), human-in-the-loop (3), intent.md (3), software factory (3), refactoring (3), review.md (2), spec.md (2), menschliche freigabe (2), scion (2), verhaltensvergleich (2), codex (2), agentic engineering, lernziel, coherent incorrectness, vibe coding, prototyp-handoff, reviewkapazität, software development lifecycle mit ki, closed loop, intent build observe
 
 ## Verwandte Themen
 
@@ -23,9 +23,9 @@ Wie Coding Agents den gesamten Software Development Lifecycle verändern: von In
 
 - [[Bedarfsorientierter-Repositoryzugriff]] · meinung · 2 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachvollziehen]], [[Metrikband-gestufte-Agent-Autonomie]], [[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]], [[Refactoring-mit-Verhaltensvergleich]], [[Sicherer-Fallback-vor-menschlicher-Eskalation]], [[Zustandslose-CI-Listener-mit-Ergebnisjournal]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Bounded-Contexts-und-Uebersetzungsgrenzen-kartieren]], [[Codepfad-vor-Aenderung-nachvollziehen]], [[Kommentare-als-Schnittstellenwissen-pflegen]], [[Metrikband-gestufte-Agent-Autonomie]], [[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]], [[Refactoring-mit-Verhaltensvergleich]], [[Sicherer-Fallback-vor-menschlicher-Eskalation]], [[Tracer-Bullet-und-Lernprototyp-bewusst-waehlen]], [[Zustandslose-CI-Listener-mit-Ergebnisjournal]]
 
-## Quellen (9)
+## Quellen (10)
 
 - [[2026-10-22-itamar_mar-2113255396299128887]] — Itamar Friedman unterscheidet agentische Beteiligung am Software Development Lifecycle von einer Software Factory, die einen autorisierten Arbeitsablauf einschließlich Fehlerbegrenzung tragen kann.
 - [[2026-10-13-matt-pocock-tell-your-agents-to-care-about-the-codebase]] — Matt Pocock unterscheidet taktische Aufgabenlösung von strategischer Pflege der Codebasis.
@@ -36,6 +36,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachv
 - [[2026-09-20-eric-tech-claude-code-the-complete-ai-native-sdlc-guide]] — Eric Tech erläutert Anthropics AI-native SDLC-Playbook als durchgängigen Ablauf mit Claude Code.
 - [[2026-07-21-claude-how-anthropic-secures-its-ai-native-software-dev]] — Anthropic staffelt Review-Autonomie nach Risiko, prüft neue Reviewer im Shadow Mode und kontrolliert automatische Freigaben durch menschliche Stichproben; Agent-Rechte müssen auch Kommunikationswege erfassen. Herstellerbericht ohne unabhängige Wirkungsmessung.
 - [[2026-02-20-boris-tane-sdlc-is-dead]] — Mit Coding-Agents verschmelzen SDLC-Phasen zu einem Loop aus Intent, Build und Observe; Kontextqualität und Telemetrie werden zum Kern (spekulative These).
+- [[2025-08-18-pdf-beyond-vibe-coding]] — Addy Osmani beschreibt KI-gestützte Entwicklung als Verschiebung von der Codeproduktion zur Problembeschreibung, Integration und Validierung.
 
 ## Quellen mit diesem Thema als Nebenthema
 
@@ -50,4 +51,6 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Codepfad-vor-Aenderung-nachv
 - [[2026-10-05-venelin-valkov-stop-ai-code-slop-yes-you-still-need-to-refactor]]
 - [[2026-10-02-matt-pocock-live-poteto-creator-of-pstack-on-shipping-1-000]]
 - [[2026-09-14-claude-agentic-coding-is-straining-ci-here-s-how-we-sca]]
+- [[2021-07-01-pdf-a-philosophy-of-software-design-2nd-edition]]
 - [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]]
+- [[2003-08-01-pdf-domain-driven-design]]

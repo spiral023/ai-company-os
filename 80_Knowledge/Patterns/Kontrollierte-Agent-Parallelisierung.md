@@ -87,6 +87,8 @@ Parallelisierung lohnt sich nur unter drei Voraussetzungen: (1) **klare Modulgre
 - 2026-10-27 · [[2026-10-27-voxyz_ai-2115096193240047938]] · meinung — Vox ergänzt begrenzte Worker-Rollen um die Prüfung tatsächlich verwendeter Modelle in Session-Logs und warnt vor Vererbung bei fork_turns all oder ausgelassenem Parameter. Der Modellbaum soll Kontext- und Modellzuweisung explizit machen; seine behaupteten Geschwindigkeits-/Preisvorteile wurden hier nicht gemessen.
 - 2026-10-11 · [[2026-10-11-voxyz_ai-2109328172273606771]] · meinung — Fünf thematisch abgegrenzte Prüfagenten sollen ausschließlich lesend Befunde samt Datei oder Dashboard liefern, während ein Hauptagent freigegebene Änderungen konsolidiert. Die Trennung verhindert konkurrierende Edits; Secrets werden nur als Fundort berichtet und unbekannte Kostenlimits nicht erfunden.
 
+- 2025-08-18 · [[2025-08-18-pdf-beyond-vibe-coding]] · meinung — PDF-S. 205 und 214–217 ergänzen getrennte Arbeitsbereiche um Reviewwarteschlange, Integrationsreihenfolge und eine Restnutzenentscheidung bei fast fertigen, niedrig priorisierten Agenten-PRs. Weder Modellvielfalt noch Agentenzahl beweist unabhängige Fehler oder höheren Gesamtdurchsatz.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-24: Die Anthropic-Leitfäden vom [[2026-04-07-claude-how-and-when-to-use-subagents-in-claude-code|April]] und [[2026-10-22-claude-building-agents-when-to-fold-subagents-into-your|Oktober]] betonen unterschiedliche Seiten derselben Kontextgrenze: isolierte Recherche und unabhängige Arbeit rechtfertigen Subagents; eng gekoppelte Spezialisten können durch verlustbehaftete Übergaben und Latenz schlechter werden. Progressiv geladene Skills im Hauptloop sind eine Alternative, deren Migration schrittweise gegen Ende-zu-Ende-Evals geprüft wird. Anonymisierte Herstellerbeispiele begründen kein allgemeines Geschwindigkeitsversprechen.
@@ -96,6 +98,8 @@ Parallelisierung lohnt sich nur unter drei Voraussetzungen: (1) **klare Modulgre
 - Offene Frage: Wie lässt sich die Drei-Voraussetzungen-Prüfung praktisch vor jedem Parallelisierungsversuch operationalisieren (z.B. als Checkliste in einem Skill), statt sie nur als Prinzip im Kopf zu behalten?
 
 - 2026-10-09: Vox nennt für eine Managed-Agents-Demo mit zehn Haiku-Subagents geringere Gesamtkosten und kürzere Laufzeit als für Opus allein. Das hebt den vorhandenen Beleg zu hohen Multi-Agent-Tokenkosten nicht auf: Aufgaben, Modelle und Messgrößen unterscheiden sich. Der vorgeschlagene Drei-Rollen-Coding-Baum wurde nicht verglichen. → [[2026-10-08-voxyz_ai-haiku-subagents-und-opus-worker]]
+
+- 2026-10-29: Review- und Integrationskapazität begrenzen die sinnvolle Parallelität mit. Eine Änderung kann trotz unterschiedlicher Dateien dieselbe Invariante oder Ressource betreffen. [[Bounded-Contexts-und-Uebersetzungsgrenzen-kartieren]] und [[Aggregate-durch-fachliche-Invarianten-begrenzen]] ergänzen die technische Arbeitsflächenkarte um fachliche Grenzen; diese Anwendung wurde hier nicht im Produkt gemessen.
 
 ## Verwandte Patterns
 

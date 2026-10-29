@@ -36,12 +36,16 @@ Statt eine Änderung direkt umsetzen zu lassen, wird der Agent explizit in einen
 - 2026-10-28 · external_repos/mattpocock/skills/skills/productivity/teach/SKILL.md · verifiziert — Statische Stichprobe auf Commit 5beb35b bestätigt dokumentierte Arbeitsdateien für Mission, Ressourcen, Lernjournal, Lektionen, Referenzmaterial und Notizen sowie lernstandsbezogene nächste Aufgaben. Bestätigt sind die Skill-Anweisungen, keine ausgeführte Lektion oder nachgewiesene Lernwirkung.
 - 2026-06-08 · [[2026-06-08-matt-pocock-learn-anything-with-the-teach-skill]] · meinung — Pocock konkretisiert fortgesetztes Lernen als Arbeitsraum mit Mission, vertrauenswürdigen Ressourcen, Lernjournal, gezielten HTML-Lektionen, Referenzmaterial und Agentnotizen; Rückmeldungen sollen die nächste Aufgabe am Lernstand ausrichten. Wissen, eingeübte Fertigkeiten und Erfahrungswissen aus einer Praxisgemeinschaft werden getrennt; Rubik-Erfolg und schnelleres Onboarding bleiben persönliche Erfahrung beziehungsweise Anwendungserwartung ohne kontrollierten Wirkungsnachweis.
 
+- 2025-08-18 · [[2025-08-18-pdf-beyond-vibe-coding]] · meinung — PDF-S. 104–110 empfehlen für Lernende eigene Versuche, Grundlagenarbeit, Diagnose und menschliches Feedback. Hilfreiche Erklärungen sind kein Nachweis selbstständig übertragbarer Kompetenz; eine optimale Übungsfrequenz und langfristige Lernwirkung werden nicht kontrolliert untersucht.
+
 ## Spannungen & offene Fragen
 
 - Einzige bisherige Quelle, unbelegte Team-Selbstauskunft ohne Beispiel oder Vorher-Nachher-Vergleich.
 - Offene Frage: Wie verhält sich dieses Pattern zu [[Great-Decoupling-Rollenverstaendnis]], das bereits beschreibt, dass echtes System-Verständnis durch das Lesen von Agenten-Output entsteht — ist „Claude als Lernwerkzeug“ eine eigenständige Technik oder nur eine bewusste Zuspitzung derselben Grundidee auf den Lernfall?
 
 - 2026-10-28 · [[2026-06-08-matt-pocock-learn-anything-with-the-teach-skill]] ergänzt das Lernwerkzeug um Mission, Quellen, gemeldeten Fortschritt und Referenzmaterial. Ein gespeichertes Lernjournal oder eine interaktive Lektion ist keine unabhängige Prüfung langfristigen Könnens. Die statische Repo-Verifikation bestätigt dokumentierte Skill-Anweisungen, keine Lernwirkung oder ausgeführte Unterrichtseinheit.
+
+- 2026-10-29: Osmani warnt vor der Abgabe der gesamten Denkarbeit. Als eigene Gegenprobe kann ein neuer ähnlicher Fall ohne vorgegebene Lösung bearbeitet werden. Eine verständliche KI-Erklärung und die Dokumentation eines Lernmodus beweisen diese Fähigkeit noch nicht.
 
 ## Verwandte Patterns
 

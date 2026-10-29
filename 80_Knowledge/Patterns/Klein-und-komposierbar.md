@@ -58,9 +58,13 @@ Die Komposition umfasst auch Infrastruktur: `/setup-matt-pocock-skills` schreibt
 
 - 2026-10-27 · [[2026-10-27-alexgoughcooper-2115076988327076296]] · meinung — Cooper schlägt einzelne Mini-Skills für Mashups, UGC und Animationen vor, damit jeweils nur stilrelevanter Kontext geladen wird. Eine gemeinsame Arbeitsumgebung ermöglicht Fachleuten die Verfeinerung; ein Vergleich mit einem monolithischen Skill wurde nicht gemessen.
 
+- 2021-07-01 · [[2021-07-01-pdf-a-philosophy-of-software-design-2nd-edition]] · meinung — PDF-S. 35–39 und 82–86 kritisieren kleine Klassen und Helfer ohne entsprechenden Abstraktionsgewinn. Diese Code-Design-Heuristik widerspricht kleinen kontrollierbaren Skills nicht, begrenzt aber die Übertragung auf starre Datei- oder Methodengrößen.
+
 ## Spannungen & offene Fragen
 
 - Gegenposition zu schwereren Frameworks: `open-gsd/gsd-core` (siehe `external_repos/INDEX.md`) adressiert gezielt „Context Rot“ durch frische Subagent-Kontexte pro Ausführungsschritt und persistente `STATE.md`/`CONTEXT.md` — ein strukturell eingebauter Vorteil, den rein kleine, komponierbare Skills nicht automatisch mitbringen, weil der Nutzer den Gesamtworkflow selbst zusammensetzen muss. Trade-off: Kontrolle & Einfachheit (mattpocock) vs. eingebaute Disziplin gegen Kontext-Verschlechterung (GSD). Offene Frage: Ab welcher Vorhabengröße kippt der Vorteil zugunsten des schwereren, prozess-eigenen Frameworks? Siehe auch [[Workflow-Frameworks]].
+
+- 2026-10-29: Komponierbare Skills und tiefe Codemodule haben verschiedene Bezugsebenen. Maßgeblich ist die notwendige Kenntnis ihrer Benutzer, nicht bloß ihre Kürze. Eine lange Kette trivialer Handoffs kann ebenso zusätzliche Komplexität schaffen wie eine einzige überladene Steuerung; siehe [[Information-Hiding-an-Aenderungsgruenden-ausrichten]].
 
 ## Verwandte Patterns
 

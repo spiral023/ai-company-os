@@ -33,6 +33,8 @@ Das Entfernen eines Moduls gedanklich durchspielen: Verschwindet Komplexität, i
 
 - 2026-10-27 · [[2026-10-27-voxyz_ai-2115198100465697038]] · meinung — Einmalige Logik soll nicht vorsorglich in Helferfunktionen ausgelagert werden; Wiederverwendung, verborgene Komplexität oder ein klar erklärender Fachname sind mögliche Gründe für eine Abstraktion. Diese Gestaltungsheuristik ergänzt die Nutzenprüfung eines Moduls, ersetzt aber weder Verhaltensvergleich noch eine Prüfung bestehender Aufrufer.
 
+- 2021-07-01 · [[2021-07-01-pdf-a-philosophy-of-software-design-2nd-edition]] · meinung — PDF-S. 30–49, 61–70 und 82–86 begründen Modultiefe anhand des vollständigen notwendigen Aufruferwissens einschließlich Reihenfolgen, Fehlern und Nebenwirkungen. Informationsbesitz ist stärker als private Felder oder starre Methodenkürze; der konkrete Deletion Test ist hier keine als solche belegte Buchmethode. Juli 2021 ist monatsgenau.
+
 ## Spannungen & offene Fragen
 
 - Der Autorenpost kritisiert unnötige Abstraktionen und verteidigt sie später als tokeneffizient. Entscheidend bleibt, welche Komplexität eine konkrete Schnittstelle bündelt.
@@ -42,3 +44,6 @@ Das Entfernen eines Moduls gedanklich durchspielen: Verschwindet Komplexität, i
 - [[Helper-Nutzung-durch-Lint-erzwingen]]
 - [[Fachregel-Konsolidierung-vor-Featureaenderung]]
 - [[Klein-und-komposierbar]]
+
+- [[Information-Hiding-an-Aenderungsgruenden-ausrichten]]
+- [[Designalternativen-vor-Festlegung-vergleichen]]

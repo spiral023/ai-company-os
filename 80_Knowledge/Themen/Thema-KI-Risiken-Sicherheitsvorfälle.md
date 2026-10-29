@@ -1,6 +1,6 @@
 # KI-Risiken & Sicherheitsvorfälle
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-29. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Systeme: Risiken für Minderjährige, übermäßiges Vertrauen, Kontrollverlust, existenzielle Risiken, Fehlverhalten, Missbrauch, KI-gestützte Cyberangriffe und Vorfälle an KI-Plattformen oder mit autonomen Agents. Warnungen, Risikoszenarien und dokumentierte Vorfälle unterscheiden; bei Angriffen die Rolle von KI als Werkzeug, Ziel oder handelnder Agent festhalten. Technische Schutzmaßnahmen gehören zu sicherheit, Prüf- und Freigabeverfahren zu verifikation.
 
@@ -9,7 +9,7 @@ Gefahren, Grenzen und negative Folgen von KI für Menschen, Gesellschaft und Sys
 - **Hauptkeyword:** Risiken von KI
 - **Long-Tail:** KI-Gefahren für Kinder; Risiken von KI-Chatbots; KI und kritisches Denken; KI-gestützte Hackerangriffe; Sicherheitsvorfälle mit KI-Agents; Hugging Face KI-Vorfall; Sandbox Escape bei AI-Evaluierungen; KI-Warnungen und belegte Vorfälle unterscheiden; Kontrollverlust durch KI; Existenzielle KI-Risiken; KI zur Verteidigung gegen KI
 - **Fragen:** Welche KI-Risiken sind belegt und welche sind Warnungen? / Welche Risiken betreffen Minderjährige besonders? / Welche Rolle hatte KI bei einem Angriff: Werkzeug, Zielsystem oder handelnder Agent? / Was lässt sich aus konkreten KI-Sicherheitsvorfällen lernen?
-- **Häufig in den Quellen:** ai 2027 (3), cyberprognose (2), hugging-face-vorfall (2), risiken von ki (2), alignment (2), containment (2), ki-risiken, szenarien, historische einordnung, trefferquote, prognoseprüfung, szenario, bewertungskriterien, air-gap, data diode, patch-engpass, artifactory, tool-spoofing, hugging-face-untersuchung, metr
+- **Häufig in den Quellen:** ai 2027 (3), cyberprognose (2), hugging-face-vorfall (2), risiken von ki (2), alignment (2), containment (2), historische einordnung, szenarien, ki-risiken, prognoseprüfung, trefferquote, bewertungskriterien, szenario, data diode, air-gap, patch-engpass, artifactory, metr, abdeckungsgrenzen, hugging-face-untersuchung
 
 ## Verwandte Themen
 

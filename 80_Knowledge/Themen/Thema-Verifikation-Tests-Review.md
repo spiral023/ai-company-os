@@ -1,6 +1,6 @@
 # Verifikation, Tests & Review
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-29. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness, Mutation Testing, statische Analyse, Quality Gates und getrennte Autor-/Prüfkontexte. Dazu gehören risikobasiertes Human Review, menschliche Verantwortung und Freigaben (Human in the Loop), Review-Kapazität sowie PR-Größe und Aufteilung in überschaubare Änderungen. Agent-Autonomie gehört hier hinein, soweit sie Prüf- und Freigabeentscheidungen betrifft; autonome Ausführung steht in autonomie, der gesamte Entwicklungsprozess in sdlc.
 
@@ -9,7 +9,7 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - **Hauptkeyword:** AI Code Review
 - **Long-Tail:** TDD mit Coding Agents; Testharness für Agents; Mutation Testing KI; Reward Hacking Tests; Adversarial Review Agent; Review als Engpass; Codequalität mit KI und Menschen; Human in the Loop beim Code Review; Risikobasiertes Human Review; Agent-Autonomie und menschliche Freigaben; Große KI-generierte PRs prüfen; Pull Requests in prüfbare Änderungen aufteilen; Review-Kapazität bei parallelen Agents
 - **Fragen:** Wie prüfe ich KI-generierten Code? / Warum schreibt der Agent Tests passend zum Bug? / Welche Änderungen brauchen menschliches Review und welche automatische Checks? / Wer trägt die Verantwortung, wenn ein Agent Code freigibt? / Was tun, wenn PRs zu groß für ein gründliches manuelles Review werden? / Wie begrenzt Review-Kapazität die Agent-Autonomie und Parallelisierung?
-- **Häufig in den Quellen:** test (14), review (13), testharness (12), tests (8), tdd (8), refactoring (6), verifikation (5), qualität (5), human-in-the-loop (5), rea (5), menschliche freigabe (4), risikobasiertes human review (4), verhaltensvergleich (4), mutation testing (4), skill (4), gstack (4), agents.md (4), reverse engineering (4), human review (4), tracer bullets (3)
+- **Häufig in den Quellen:** test (14), review (13), testharness (12), tests (8), tdd (8), refactoring (6), deep modules (5), qualität (5), verifikation (5), human-in-the-loop (5), rea (5), risikobasiertes human review (4), menschliche freigabe (4), verhaltensvergleich (4), code review (4), mutation testing (4), skill (4), gstack (4), agents.md (4), retrospektive (4)
 
 ## Verwandte Themen
 
@@ -21,10 +21,10 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - [[Thema-Sicherheit-Sandboxing]] — Sicherheit & Sandboxing
 - [[Thema-Rolle-Lernen-Markt]] — Rolle, Lernen & Markt
 
-## Patterns (22)
+## Patterns (26)
 
-- [[Abstraktionswert-mit-Deletion-Test-pruefen]] · verifiziert · 3 Belege
-- [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]] · meinung · 3 Belege
+- [[Abstraktionswert-mit-Deletion-Test-pruefen]] · verifiziert · 4 Belege
+- [[Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review]] · meinung · 4 Belege
 - [[Externe-Evaluatoren-mit-dauerhaftem-Zugang]] · meinung · 2 Belege
 - [[Fachregel-Konsolidierung-vor-Featureaenderung]] · meinung · 3 Belege
 - [[Formale-Verifikation-mit-unabhaengigem-Proof-Checker]] · meinung · 2 Belege
@@ -32,23 +32,27 @@ Wie Menschen und Coding Agents gemeinsam Codequalität sichern: TDD, Testharness
 - [[Frontend-Zustandslogik-mit-Reducer-isolieren]] · meinung · 1 Belege
 - [[Helper-Nutzung-durch-Lint-erzwingen]] · meinung · 7 Belege
 - [[Hillclimbing-mit-Holdout-Split]] · meinung · 7 Belege
+- [[Information-Hiding-an-Aenderungsgruenden-ausrichten]] · meinung · 1 Belege
+- [[Kommentare-als-Schnittstellenwissen-pflegen]] · meinung · 2 Belege
 - [[Menschliche-Aufsicht-als-eigene-Leistung-pruefen]] · meinung · 1 Belege
 - [[Mutationstests-fuer-Agent-geschriebene-Tests]] · meinung · 1 Belege
 - [[Produktreife-durch-echte-Testnutzer]] · meinung · 2 Belege
 - [[Pruefungen-nach-Feedbackzeitpunkt-staffeln]] · meinung · 3 Belege
-- [[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]] · meinung · 1 Belege
-- [[Refactoring-mit-Verhaltensvergleich]] · meinung · 7 Belege
+- [[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]] · meinung · 3 Belege
+- [[Refactoring-mit-Verhaltensvergleich]] · meinung · 8 Belege
 - [[Review-Autonomie-mit-Shadow-Mode-und-Stichproben]] · meinung · 11 Belege
-- [[Schema-als-Vertrag-mit-generierten-Clients]] · meinung · 3 Belege
-- [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 16 Belege
-- [[Testharness-als-staerkster-Hebel]] · meinung · 76 Belege
+- [[Review-Findings-in-Agent-Verbesserungen-ueberfuehren]] · verifiziert · 2 Belege
+- [[Schema-als-Vertrag-mit-generierten-Clients]] · meinung · 4 Belege
+- [[TDD-als-Verifikationshebel]] · mehrfach-belegt · 18 Belege
+- [[Testharness-als-staerkster-Hebel]] · meinung · 77 Belege
 - [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]] · verifiziert · 4 Belege
+- [[Vertraege-mit-Vorbedingungen-Nachbedingungen-und-Invarianten]] · meinung · 2 Belege
 - [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]] · verifiziert · 13 Belege
 - [[Zustandslose-CI-Listener-mit-Ergebnisjournal]] · meinung · 1 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Tracing-nach-Beobachtungsebene]], [[Ambitionscheck-mit-Zielhoehe-Tiefe-und-Reichweite]], [[Angriffsflaeche-durch-Erreichbarkeitsanalyse-reduzieren]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]], [[Great-Decoupling-Rollenverstaendnis]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Plan-first-mit-getrenntem-Review]], [[Produktwert-jenseits-des-reproduzierbaren-Codes]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Verhaltens-Spec-als-Grenze-zwischen-Analyse-und-Nachbau]], [[Videoanalyse-mit-Frames-und-Transkript]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Tracing-nach-Beobachtungsebene]], [[Aggregate-durch-fachliche-Invarianten-begrenzen]], [[Ambitionscheck-mit-Zielhoehe-Tiefe-und-Reichweite]], [[Angriffsflaeche-durch-Erreichbarkeitsanalyse-reduzieren]], [[Anti-Rationalization-Tables]], [[CI-Agent-mit-Review-Gate]], [[Decision-Head-Finetuning]], [[Designalternativen-vor-Festlegung-vergleichen]], [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]], [[Great-Decoupling-Rollenverstaendnis]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Kontrollierte-Agent-Parallelisierung]], [[Lokale-Inferenz-nach-Arbeitslast-dimensionieren]], [[Plan-first-mit-getrenntem-Review]], [[Produktwert-jenseits-des-reproduzierbaren-Codes]], [[Quellen-Bookmarks-fuer-Agent-Automationen]], [[RAG-mit-Text-Tabellen-und-Volltextpfad]], [[Skill-Qualitaet-durch-Trigger-und-Baseline-Evals]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Tracer-Bullet-und-Lernprototyp-bewusst-waehlen]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Verhaltens-Spec-als-Grenze-zwischen-Analyse-und-Nachbau]], [[Videoanalyse-mit-Frames-und-Transkript]]
 
-## Quellen (68)
+## Quellen (69)
 
 - [[2026-10-27-voxyz_ai-2115228299400196368]] — Vox schlägt eine tägliche Log-Triage mit menschlicher Auswahl vor.
 - [[2026-10-27-voxyz_ai-2115198100465697038]] — Vox empfiehlt am 27.10.2026 Regeln gegen wiederholte defensive Prüfungen und vorschnelle Helferfunktionen in Agent-Code.
@@ -117,10 +121,12 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2026-02-04-tweag-tdd-agentic-coding]] — Ein Test ist ein präziser Prompt: Der Agent baut Logik Test für Test, wobei die Testqualität beim Menschen liegt.
 - [[2026-01-12-dhruv1103-lessons-learned-500k-lines-claude-code]] — Modulare Architektur, TDD gegen echte Container, Read-only-MCP-Diagnose und gründliches Review machen große KI-Codebasen beherrschbar.
 - [[2025-06-28-the-morpheus-tutorials-ai-ersetzt-uns-itler-jetzt-also]] — Issues, Codepfadprüfung, Implementierung, Review und manuelle Ausführung bilden einen beschriebenen Entwicklungsablauf; Arbeitsmarktprognosen bleiben unbestätigt.
+- [[2021-07-01-pdf-a-philosophy-of-software-design-2nd-edition]] — John Ousterhout untersucht in *A Philosophy of Software Design*, zweite Auflage, wie Software trotz laufender Änderungen verständlich bleiben kann.
 - [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] — Andrew Hunt und David Thomas verbinden in der Jubiläumsausgabe von „The Pragmatic Programmer“ persönliche Verantwortung, Softwaredesign und gemeinsame Produktentwicklung.
 
 ## Quellen mit diesem Thema als Nebenthema
 
+- [[2026-10-29-matt-pocock-software-factories-real-engineers]]
 - [[2026-10-28-housecor-2115482034906800200]]
 - [[2026-10-28-artificialanlys-2115494553780367384]]
 - [[2026-10-28-artificialanlys-2115265133467635877]]
@@ -235,4 +241,6 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Che
 - [[2025-12-04-brutkasten-business-vs-technik-wie-man-ki-in-organisationen]]
 - [[2025-09-22-julian-ivanov-ki-automat-das-ultimative-rag-system-n8n-nextcloud-mistral]]
 - [[2025-09-08-the-morpheus-tutorials-studien-ai-verdraengt-also-junior-itler]]
+- [[2025-08-18-pdf-beyond-vibe-coding]]
 - [[2025-04-09-the-morpheus-ki-ist-ein-segen]]
+- [[2003-08-01-pdf-domain-driven-design]]

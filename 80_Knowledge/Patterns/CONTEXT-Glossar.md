@@ -43,9 +43,14 @@ Eine Datei `CONTEXT.md` im Projekt hält das gemeinsame Vokabular des Projekts f
 - 2026-08-20 · [[2026-08-20-latent-the-wayfinder-skill-navigating-the-fog-of-war-of]] · meinung — Pocock beschreibt präzise, konsistente Begriffe als Voraussetzung für verständlichen Informationsfluss zwischen Orchestrator und einzelnen Sessions; keine Wirkungsmessung.
 - 2026-10-09 · [[2026-10-09-voxyz_ai-2108663797091127377]] · meinung — Verbindet zehn Fachbegriffe jeweils mit ihrer Bedeutung für die Spezifikation; die Anzahl ist eine Heuristik und die Erklärung wurde nicht evaluiert.
 
+- 2003-08-01 · [[2003-08-01-pdf-domain-driven-design]] · meinung — PDF-S. 12–24 und 205–218 behandeln Ubiquitous Language als tatsächlich verwendetes Modell aus Begriffen, Beziehungen, Regeln und Operationen innerhalb eines Bounded Contexts. Ein Glossar allein oder ein grüner Build prüft diese Bedeutung nicht; der Sortiertag 01 steht für August 2003.
+- 2026-10-29 · [[2026-10-29-matt-pocock-software-factories-real-engineers]] · meinung — Die Kurs-Leseausgabe prüft Fachbegriffe an Refund-Szenarien, gleicht Code und UI ab und hält das Glossar durch Pruning auf Domänenwissen begrenzt. Kapitel 11 erlaubt mehrere Glossare bei mehreren Bounded Contexts und belässt die fachliche Verantwortung beim Menschen; Datum ist der Erfassungstag bei unbekanntem Veröffentlichungsdatum.
+
 ## Spannungen & offene Fragen
 
 - Keine inhaltliche Spannung zu anderen Quellen bekannt; offene Frage: Wie viel Pflegeaufwand ist realistisch, bevor das Glossar veraltet? (aus dem Repo nicht beantwortbar, nur aus eigener Erfahrung zu klären.)
+
+- 2026-10-29: Evans präzisiert die im Zweck verkürzte Glossaridee: Gemeinsame Sprache muss auch Verhalten, Beispiele und Beziehungen tragen und mit Code und Fachgespräch weiterentwickelt werden. Über Contextgrenzen können unterschiedliche Modelle sinnvoll sein. [[Bounded-Contexts-und-Uebersetzungsgrenzen-kartieren]] verhindert eine erzwungene universelle Wortbedeutung. Die Buchauswertung misst keine Tokenersparnis.
 
 ## Verwandte Patterns
 

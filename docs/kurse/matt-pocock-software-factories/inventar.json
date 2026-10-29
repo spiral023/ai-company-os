@@ -1,0 +1,2261 @@
+{
+  "stand": "2026-10-29",
+  "titel": "Software Factories for Real Engineers",
+  "autor_zuordnung": "Matt Pocock; vom Nutzer angegeben",
+  "veroeffentlichungsdatum": null,
+  "eingang": "F:/JDL/c-downloads/software-factories-real-engineers-course/software-factories-real-engineers-course",
+  "analyseumfang": "38 Kapitel der gelieferten HTML-Leseausgabe; Videos ausschließlich kopiert und per SHA-256 geprüft",
+  "originale": [
+    {
+      "name": "001 Domain Language.mp4",
+      "bytes": 46800616,
+      "sha256": "c1792e06401de0d5cb79f0ef18e7e1e024a6a3d08d100cb149f877d55ac778a8",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/001 Domain Language.mp4"
+    },
+    {
+      "name": "002 Using Grill with Docs.mp4",
+      "bytes": 10846072,
+      "sha256": "8c5f2d57308c5256b62c70993d39f2126e98403f74639e268ffb3c8fca88c897",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/002 Using Grill with Docs.mp4"
+    },
+    {
+      "name": "003 Using Grill with Docs Solution.mp4",
+      "bytes": 99536843,
+      "sha256": "c079ee18fcc854cfdeae3ca22f165f9e739a6afb31e52e387eae1c4c4df37db6",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/003 Using Grill with Docs Solution.mp4"
+    },
+    {
+      "name": "004 ADRs _ Domain Language.mp4",
+      "bytes": 49608940,
+      "sha256": "dc368d8075508490c4fbb20f17e9a299be3edd5d488bfbce9ee1fc26a70972b2",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/004 ADRs _ Domain Language.mp4"
+    },
+    {
+      "name": "005 Writing an ADR.mp4",
+      "bytes": 10657394,
+      "sha256": "65d69185dd750e6c2374561409ed1b9c6dc456844acc26a333e3b70b7ded9d61",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/005 Writing an ADR.mp4"
+    },
+    {
+      "name": "006 Writing an ADR Solution.mp4",
+      "bytes": 112360119,
+      "sha256": "6dddb145141b6231bc429335917bb68b41427a695f5149c55b3626c1d1f0c445",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/006 Writing an ADR Solution.mp4"
+    },
+    {
+      "name": "007 Pruning the Glossary.mp4",
+      "bytes": 17208734,
+      "sha256": "0ed406396728710ca4ae80d37ef7dd6df3b971c57d348482f7a716c4b467b9ab",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/007 Pruning the Glossary.mp4"
+    },
+    {
+      "name": "008 Pruning the Glossary Solution.mp4",
+      "bytes": 77604444,
+      "sha256": "3f7d53fb5b8551a200b1af439bca2fd8de1ecbb045faf02db18b6f128ac76669",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/008 Pruning the Glossary Solution.mp4"
+    },
+    {
+      "name": "009 Pruning ADRs.mp4",
+      "bytes": 14054183,
+      "sha256": "c3d8c7baa6cbc28df8e709cc73f8472b328f6c362bc4d8a940b60f9bcbce758c",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/009 Pruning ADRs.mp4"
+    },
+    {
+      "name": "010 Pruning ADRs Solution.mp4",
+      "bytes": 45197010,
+      "sha256": "0c9e163c5715b64810f1792e16765c537e340fbccb99dc59f399b137612d8534",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/010 Pruning ADRs Solution.mp4"
+    },
+    {
+      "name": "011 Q&A _ Domain Language.mp4",
+      "bytes": 67369832,
+      "sha256": "e54f72a1cc37ad7cbec63bb4db77f549866db857b56cc51ffb922abaeab15cfe",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/011 Q&A _ Domain Language.mp4"
+    },
+    {
+      "name": "012 The Limits Of One Session.mp4",
+      "bytes": 49785698,
+      "sha256": "5235ab91be60356bb94d48d0df9405b02aac13770b33713d489dc7d819a7cc65",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/012 The Limits Of One Session.mp4"
+    },
+    {
+      "name": "013 Charting The Way.mp4",
+      "bytes": 72414777,
+      "sha256": "a6f7aa1e258fe9aa7e8ef1c5cbd989fb102cc898bd9d922a22d060e306ce4df2",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/013 Charting The Way.mp4"
+    },
+    {
+      "name": "014 Chart The Map.mp4",
+      "bytes": 14254887,
+      "sha256": "17db12efa4e0f4a4b43ed43c4057fb37e9216e9c14533e372f4665acc98577a0",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/014 Chart The Map.mp4"
+    },
+    {
+      "name": "015 Chart The Map Solution.mp4",
+      "bytes": 85205816,
+      "sha256": "4ebcd9ebf33770775708d6a49801e718b322b0430ae89d55759d24aec3d3bf43",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/015 Chart The Map Solution.mp4"
+    },
+    {
+      "name": "016 Grilling Ticket.mp4",
+      "bytes": 6868790,
+      "sha256": "cd5f172e474d3ea4159445e5ee7e319142b6df637dc8448a1b491f4e64a4e749",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/016 Grilling Ticket.mp4"
+    },
+    {
+      "name": "017 Grilling Ticket Solution.mp4",
+      "bytes": 39702058,
+      "sha256": "8da5222a751c00d4ceebcf7c9f0b7a61ba44e114cd17cb60ceed54e75275eca3",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/017 Grilling Ticket Solution.mp4"
+    },
+    {
+      "name": "018 Grilling Ticket 2.mp4",
+      "bytes": 5540501,
+      "sha256": "d11b1929f1e85a2e1736e460f7f1dd86cec2ea7e5a4b702f9c3da5c49dedbc8c",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/018 Grilling Ticket 2.mp4"
+    },
+    {
+      "name": "019 Grilling Ticket 2 Solution.mp4",
+      "bytes": 29490864,
+      "sha256": "6568d6a981d1bf14a4c9cedd771dbf66131b25a7e299b93bed1e6c2c676c4fe0",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/019 Grilling Ticket 2 Solution.mp4"
+    },
+    {
+      "name": "020 Task Ticket.mp4",
+      "bytes": 14712395,
+      "sha256": "c03d3754c91024f5e4c237271656ffb27925c76e3bf98ffed8b7c495da0098c6",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/020 Task Ticket.mp4"
+    },
+    {
+      "name": "021 Task Ticket Solution.mp4",
+      "bytes": 45201561,
+      "sha256": "1dcfa5ced4204a2cbb80d9e65394b36f199d5712d40ac28db3150ce038a19478",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/021 Task Ticket Solution.mp4"
+    },
+    {
+      "name": "022 Prototype Ticket.mp4",
+      "bytes": 19202377,
+      "sha256": "38a9c9837d7a36cf5d044dc6acc6d8a933c6c862e6e6ba9280a3ee3a8a28df9f",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/022 Prototype Ticket.mp4"
+    },
+    {
+      "name": "023 Prototype Ticket Solution.mp4",
+      "bytes": 99468391,
+      "sha256": "c2189efb33765010d85f465359eec169d1dc626bcd531bea71a0f2764cfc63ac",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/023 Prototype Ticket Solution.mp4"
+    },
+    {
+      "name": "024 Finish The Map.mp4",
+      "bytes": 8621865,
+      "sha256": "0322020dc680f5edaa82d9cd02c36a16b232c4de292377f029962d656e18b06d",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/024 Finish The Map.mp4"
+    },
+    {
+      "name": "025 Finish The Map Solution.mp4",
+      "bytes": 117800533,
+      "sha256": "1ad9a8f6337743332b1dad218d41da7545bf7f907009f4a9f2fa7370a099128c",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/025 Finish The Map Solution.mp4"
+    },
+    {
+      "name": "026 Spec → Implement.mp4",
+      "bytes": 7210657,
+      "sha256": "d44c6d071d2e3727c25a740d0b424f5d9719f0695a54f09bc29d792feca9334c",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/026 Spec → Implement.mp4"
+    },
+    {
+      "name": "027 Spec → Implement Solution.mp4",
+      "bytes": 126401253,
+      "sha256": "92b0da46f8ce3f926baa11967f68c15ba842260ffb36fe14d45dfea03a1079ed",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/027 Spec → Implement Solution.mp4"
+    },
+    {
+      "name": "028 Grill vs Wayfinder vs Ship First.mp4",
+      "bytes": 28241799,
+      "sha256": "3906464e6daaa3363ceca1ac8a039b1aaac8799bfb7bb4088291ff75240c83ec",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/028 Grill vs Wayfinder vs Ship First.mp4"
+    },
+    {
+      "name": "029 The Three Kinds Of Review.mp4",
+      "bytes": 25352821,
+      "sha256": "8dbc4e59752b2875d01788f8757a70229c98f600f10e2927fa8c085d84c4d5ae",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/029 The Three Kinds Of Review.mp4"
+    },
+    {
+      "name": "030 The PR Skill.mp4",
+      "bytes": 64451011,
+      "sha256": "81ebe97dff0e5ec9d0679016703bed8e6d091d8d2e0d5e49b67055d002f4c945",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/030 The PR Skill.mp4"
+    },
+    {
+      "name": "031 Running The PR Skill.mp4",
+      "bytes": 17864697,
+      "sha256": "5c9cba58c567232b0df53b741f736ad7f622a117e83e4c1ddad1fdc574a4ef2a",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/031 Running The PR Skill.mp4"
+    },
+    {
+      "name": "032 Running The PR Skill Solution.mp4",
+      "bytes": 29327246,
+      "sha256": "de452ebf9dde2b26eb7aa6e17daa48c88a4c22080a1d8e11376c1d6abc0e07ba",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/032 Running The PR Skill Solution.mp4"
+    },
+    {
+      "name": "033 The _code-review Skill.mp4",
+      "bytes": 28969829,
+      "sha256": "79ca5b551a3fada92bdf039c90056ffccd56f403635c8503a574f9b6ac8ecc00",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/033 The _code-review Skill.mp4"
+    },
+    {
+      "name": "034 Testing Out The Code Review Skill.mp4",
+      "bytes": 17209308,
+      "sha256": "b9495b95ae29c763c296b41f630f52e08462636ea9a83dcad9a098c513e2ad69",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/034 Testing Out The Code Review Skill.mp4"
+    },
+    {
+      "name": "035 Testing Out The Code Review Skill Solution.mp4",
+      "bytes": 51938330,
+      "sha256": "e13d35a224759893a6e92b7581ac3f617dab19d2952ff611a1013a9471ee2900",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/035 Testing Out The Code Review Skill Solution.mp4"
+    },
+    {
+      "name": "036 Why Retro.mp4",
+      "bytes": 34034251,
+      "sha256": "745cd3483e01e103ac41f1836147748118f2d045fbf93c014c82200fb72af7dd",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/036 Why Retro.mp4"
+    },
+    {
+      "name": "037 Trying Out Retro.mp4",
+      "bytes": 11855606,
+      "sha256": "02bf6f2874f776f40cba9a951bd1868999f6a7dfa8ec9f80b2eda92f10acac89",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/037 Trying Out Retro.mp4"
+    },
+    {
+      "name": "038 Trying Out Retro Solution.mp4",
+      "bytes": 61647227,
+      "sha256": "d90b8ced73ee6423640bc1da12919d833129edb161ead65f9154f293197f19fd",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/videos/038 Trying Out Retro Solution.mp4"
+    },
+    {
+      "name": "index.html",
+      "bytes": 518364,
+      "sha256": "6c6e9579a4227852ca89a9f62f9db4940b2afd57384d0fccd36c2a579ae8ccd6",
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/index.html"
+    }
+  ],
+  "kapitel": [
+    {
+      "nr": 1,
+      "id": "domain-language",
+      "titel": "Domain Language",
+      "zeichen": 6475,
+      "abbildungen": 4
+    },
+    {
+      "nr": 2,
+      "id": "using-grill-with-docs",
+      "titel": "Using Grill with Docs",
+      "zeichen": 2582,
+      "abbildungen": 0
+    },
+    {
+      "nr": 3,
+      "id": "using-grill-with-docs-solution",
+      "titel": "Using Grill with Docs Solution",
+      "zeichen": 10450,
+      "abbildungen": 6
+    },
+    {
+      "nr": 4,
+      "id": "adrs",
+      "titel": "ADRs",
+      "zeichen": 7680,
+      "abbildungen": 1
+    },
+    {
+      "nr": 5,
+      "id": "writing-an-adr",
+      "titel": "Writing an ADR",
+      "zeichen": 1849,
+      "abbildungen": 1
+    },
+    {
+      "nr": 6,
+      "id": "writing-an-adr-solution",
+      "titel": "Writing an ADR Solution",
+      "zeichen": 13719,
+      "abbildungen": 3
+    },
+    {
+      "nr": 7,
+      "id": "pruning-the-glossary",
+      "titel": "Pruning the Glossary",
+      "zeichen": 1997,
+      "abbildungen": 2
+    },
+    {
+      "nr": 8,
+      "id": "pruning-the-glossary-solution",
+      "titel": "Pruning the Glossary Solution",
+      "zeichen": 11010,
+      "abbildungen": 6
+    },
+    {
+      "nr": 9,
+      "id": "pruning-adrs",
+      "titel": "Pruning ADRs",
+      "zeichen": 2260,
+      "abbildungen": 1
+    },
+    {
+      "nr": 10,
+      "id": "pruning-adrs-solution",
+      "titel": "Pruning ADRs Solution",
+      "zeichen": 7737,
+      "abbildungen": 7
+    },
+    {
+      "nr": 11,
+      "id": "q-a",
+      "titel": "Q&A",
+      "zeichen": 9316,
+      "abbildungen": 2
+    },
+    {
+      "nr": 12,
+      "id": "the-limits-of-one-session",
+      "titel": "The Limits Of One Session",
+      "zeichen": 5084,
+      "abbildungen": 6
+    },
+    {
+      "nr": 13,
+      "id": "charting-the-way",
+      "titel": "Charting The Way",
+      "zeichen": 12712,
+      "abbildungen": 14
+    },
+    {
+      "nr": 14,
+      "id": "chart-the-map",
+      "titel": "Chart The Map",
+      "zeichen": 2739,
+      "abbildungen": 0
+    },
+    {
+      "nr": 15,
+      "id": "chart-the-map-solution",
+      "titel": "Chart The Map Solution",
+      "zeichen": 10510,
+      "abbildungen": 10
+    },
+    {
+      "nr": 16,
+      "id": "grilling-ticket",
+      "titel": "Grilling Ticket",
+      "zeichen": 2216,
+      "abbildungen": 1
+    },
+    {
+      "nr": 17,
+      "id": "grilling-ticket-solution",
+      "titel": "Grilling Ticket Solution",
+      "zeichen": 5247,
+      "abbildungen": 5
+    },
+    {
+      "nr": 18,
+      "id": "grilling-ticket-2",
+      "titel": "Grilling Ticket 2",
+      "zeichen": 2160,
+      "abbildungen": 1
+    },
+    {
+      "nr": 19,
+      "id": "grilling-ticket-2-solution",
+      "titel": "Grilling Ticket 2 Solution",
+      "zeichen": 4866,
+      "abbildungen": 4
+    },
+    {
+      "nr": 20,
+      "id": "task-ticket",
+      "titel": "Task Ticket",
+      "zeichen": 2728,
+      "abbildungen": 2
+    },
+    {
+      "nr": 21,
+      "id": "task-ticket-solution",
+      "titel": "Task Ticket Solution",
+      "zeichen": 6118,
+      "abbildungen": 4
+    },
+    {
+      "nr": 22,
+      "id": "prototype-ticket",
+      "titel": "Prototype Ticket",
+      "zeichen": 2819,
+      "abbildungen": 1
+    },
+    {
+      "nr": 23,
+      "id": "prototype-ticket-solution",
+      "titel": "Prototype Ticket Solution",
+      "zeichen": 11894,
+      "abbildungen": 8
+    },
+    {
+      "nr": 24,
+      "id": "finish-the-map",
+      "titel": "Finish The Map",
+      "zeichen": 3337,
+      "abbildungen": 1
+    },
+    {
+      "nr": 25,
+      "id": "finish-the-map-solution",
+      "titel": "Finish The Map Solution",
+      "zeichen": 14493,
+      "abbildungen": 11
+    },
+    {
+      "nr": 26,
+      "id": "spec-implement",
+      "titel": "Spec → Implement",
+      "zeichen": 2334,
+      "abbildungen": 1
+    },
+    {
+      "nr": 27,
+      "id": "spec-implement-solution",
+      "titel": "Spec → Implement Solution",
+      "zeichen": 16338,
+      "abbildungen": 11
+    },
+    {
+      "nr": 28,
+      "id": "grill-vs-wayfinder-vs-ship-first",
+      "titel": "Grill vs Wayfinder vs Ship First",
+      "zeichen": 4548,
+      "abbildungen": 4
+    },
+    {
+      "nr": 29,
+      "id": "the-three-kinds-of-review",
+      "titel": "The Three Kinds Of Review",
+      "zeichen": 2763,
+      "abbildungen": 1
+    },
+    {
+      "nr": 30,
+      "id": "the-pr-skill",
+      "titel": "The PR Skill",
+      "zeichen": 9420,
+      "abbildungen": 8
+    },
+    {
+      "nr": 31,
+      "id": "running-the-pr-skill",
+      "titel": "Running The PR Skill",
+      "zeichen": 2433,
+      "abbildungen": 3
+    },
+    {
+      "nr": 32,
+      "id": "running-the-pr-skill-solution",
+      "titel": "Running The PR Skill Solution",
+      "zeichen": 3673,
+      "abbildungen": 4
+    },
+    {
+      "nr": 33,
+      "id": "the-code-review-skill",
+      "titel": "The /code-review Skill",
+      "zeichen": 5972,
+      "abbildungen": 6
+    },
+    {
+      "nr": 34,
+      "id": "testing-out-the-code-review-skill",
+      "titel": "Testing Out The Code Review Skill",
+      "zeichen": 2671,
+      "abbildungen": 3
+    },
+    {
+      "nr": 35,
+      "id": "testing-out-the-code-review-skill-solution",
+      "titel": "Testing Out The Code Review Skill Solution",
+      "zeichen": 6494,
+      "abbildungen": 5
+    },
+    {
+      "nr": 36,
+      "id": "why-retro",
+      "titel": "Why Retro",
+      "zeichen": 5540,
+      "abbildungen": 3
+    },
+    {
+      "nr": 37,
+      "id": "trying-out-retro",
+      "titel": "Trying Out Retro",
+      "zeichen": 1988,
+      "abbildungen": 1
+    },
+    {
+      "nr": 38,
+      "id": "trying-out-retro-solution",
+      "titel": "Trying Out Retro Solution",
+      "zeichen": 11684,
+      "abbildungen": 5
+    }
+  ],
+  "abbildungen": [
+    {
+      "nr": 1,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791284852/ai-hero-images/iunfjuvfb8fhblm86niw.png",
+      "alt": "Cadence app showing Liam Thompson's Introduction to TypeScript course page",
+      "kapitel": "domain-language",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/001.png",
+      "bytes": 432617,
+      "sha256": "cfd230472e9d71bd518f5e5962febc5aa5ae8d50148a3047b97501b55dc74dec"
+    },
+    {
+      "nr": 2,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791284853/ai-hero-images/gwgutuc3tyaiepqmbe6f.png",
+      "alt": "Account settings page showing 'Pending Chargeback'",
+      "kapitel": "domain-language",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/002.png",
+      "bytes": 142987,
+      "sha256": "1e5d4c5cd3744f0205faa190dac9e61fbf3e9c12cfeab4a5448fe8046422ddff"
+    },
+    {
+      "nr": 3,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791284854/ai-hero-images/acm0783astqyky2m0vw4.png",
+      "alt": "Terminal grep showing cancellation, reversal, and chargeback identifiers across the codebase",
+      "kapitel": "domain-language",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/003.png",
+      "bytes": 468922,
+      "sha256": "e521e9013b0c6ff4a3028c8358a0f46d1eb9111955cc8f67ac65e5fa47d440db"
+    },
+    {
+      "nr": 4,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791284854/ai-hero-images/wrdpzrhjeuyeuhgfztlt.png",
+      "alt": "Skill files shown in .agents/skills/ directory including grill-with-docs, grilling, and domain-modeling",
+      "kapitel": "domain-language",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/004.png",
+      "bytes": 572532,
+      "sha256": "814b3ae577f84ecb5b94d5d8e3a5f674d3bc8da705784fb7d877946d045a4b68"
+    },
+    {
+      "nr": 5,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791285476/ai-hero-images/dyt94wmmptvl7sacnrha.png",
+      "alt": "Claude Code terminal showing the grilling and domain-modeling skills loaded successfully",
+      "kapitel": "using-grill-with-docs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/005.png",
+      "bytes": 547226,
+      "sha256": "7c6cb13c5d98bf7fcc1d6784ee1af0f5ec5404cd44013cab796aac3eb4400d7d"
+    },
+    {
+      "nr": 6,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791285476/ai-hero-images/ewitgozixcrbb2vykuvt.png",
+      "alt": "Scenario table comparing two-term (Refund Request + Refund) against one-term (Refund + status) models",
+      "kapitel": "using-grill-with-docs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/006.png",
+      "bytes": 418077,
+      "sha256": "8714a6acb74384356c3a1beb94ec60e16dff5a72c4c01130f37c8710d1b96e94"
+    },
+    {
+      "nr": 7,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791285477/ai-hero-images/z0wetai5ku8nm3yfroja.png",
+      "alt": "GLOSSARY.md created in the terminal output",
+      "kapitel": "using-grill-with-docs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/007.png",
+      "bytes": 498457,
+      "sha256": "138d72ca4306e8c0aba11d28964f14c403b07f04c93e1ba58100943c01642c2f"
+    },
+    {
+      "nr": 8,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791285478/ai-hero-images/kjbjlxpx8mzqp3o1aft4.png",
+      "alt": "Updated GLOSSARY.md showing Refund, Pending Refund, Issued Refund, and Failed Refund entries",
+      "kapitel": "using-grill-with-docs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/008.png",
+      "bytes": 597233,
+      "sha256": "1d354940d35739677e0448e0e5c006c0834b96b14b95fa44b7d53bf5c695b0b4"
+    },
+    {
+      "nr": 9,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791285478/ai-hero-images/dsx7ptqiipwixhitltsm.png",
+      "alt": "settings.tsx diff showing pendingChargebacks renamed to openRefundRequests and Pending Chargeback replaced with Open",
+      "kapitel": "using-grill-with-docs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/009.png",
+      "bytes": 702237,
+      "sha256": "2b090971edf419da164f70ef70290b083adc9dad2305f11e4dd9f301b26d6473"
+    },
+    {
+      "nr": 10,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791285479/ai-hero-images/yydhjsvpz8fyoewcdshr.png",
+      "alt": "courses.$slug.tsx diff showing getRequestedRefund renamed to getOpenRefundRequest and getCancellationOffer renamed to getRefundOffer",
+      "kapitel": "using-grill-with-docs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/010.png",
+      "bytes": 720322,
+      "sha256": "58d428921a84a25a00e443a89b092372f10c3b5066a47aac22be1855f3b9b185"
+    },
+    {
+      "nr": 11,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791285661/ai-hero-images/ivzmpo5zmtm3j8qdaecx.png",
+      "alt": "VS Code showing the asDayString helper and getRefundOffer function in app/routes/courses.$slug.tsx",
+      "kapitel": "adrs",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/011.png",
+      "bytes": 658427,
+      "sha256": "608d5dca972d0461b1ee8472cd0c7bb505e36954b8ef1c4b40eb14b9944a85af"
+    },
+    {
+      "nr": 12,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791285835/ai-hero-images/p90afobuzw6n5q04f56s.png",
+      "alt": "Cadence app showing Liam's Open Refund Request",
+      "kapitel": "writing-an-adr",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/012.png",
+      "bytes": 412457,
+      "sha256": "e8ed3691f6695985ba0f702a54f6decb48c579eeb30c3309eb5aa45b9c6f2f68"
+    },
+    {
+      "nr": 13,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286249/ai-hero-images/uuehdtcjiupfhwxyhigv.png",
+      "alt": "Agent output showing GLOSSARY.md findings and the four issues discovered",
+      "kapitel": "writing-an-adr-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/013.png",
+      "bytes": 638164,
+      "sha256": "8a80301e1f72648b956df921b9dc30b6a33e6e6c8d65b4136bfaf55da66e2290"
+    },
+    {
+      "nr": 14,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286251/ai-hero-images/tyqwpiigzbikgzxcihxx.png",
+      "alt": "Agent scenario testing output showing S1 through S6 with recommendations",
+      "kapitel": "writing-an-adr-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/014.png",
+      "bytes": 635557,
+      "sha256": "2ea0a19cf84b3a0103ab72436d3a355b66eff9364443f2a909134c79f8874373"
+    },
+    {
+      "nr": 15,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286252/ai-hero-images/pgrpjoc9bekapamcdtuq.png",
+      "alt": "Four new ADR files listed in the docs/adr/ directory",
+      "kapitel": "writing-an-adr-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/015.png",
+      "bytes": 647945,
+      "sha256": "000a6ed64d7763fc682dcb77d4b12bb5acf797a1a5cb2c7367b54cab59c461ce"
+    },
+    {
+      "nr": 16,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286371/ai-hero-images/rycwhhbugi31tarcqiet.png",
+      "alt": "Terminal running npm run reset and selecting the seed-bloated-glossary commit",
+      "kapitel": "pruning-the-glossary",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/016.png",
+      "bytes": 653592,
+      "sha256": "2a0feb0d9ffa506773b50404fdc0ddf62ea2e9e6a2c03bb8512903d84029480c"
+    },
+    {
+      "nr": 17,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286372/ai-hero-images/mvp4hh2innpbmwv9zie8.png",
+      "alt": "GLOSSARY.md open in the editor showing the Other terms section",
+      "kapitel": "pruning-the-glossary",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/017.png",
+      "bytes": 619767,
+      "sha256": "7431ee2a7643e3a4e0283ece6e36c552fdb365ac800487a87c58fe55c2a9d425"
+    },
+    {
+      "nr": 18,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286580/ai-hero-images/sn1opqtrbvsl3hh8k7go.png",
+      "alt": "The agent's first grill question recommending removal of implementation and general programming entries",
+      "kapitel": "pruning-the-glossary-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/018.png",
+      "bytes": 616733,
+      "sha256": "f5b05bd3d54c83b6bb51cace2d89c308d3183f04436feb6afc674be580febb55"
+    },
+    {
+      "nr": 19,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286581/ai-hero-images/wop5abus9rqzku6gaqpq.png",
+      "alt": "The agent noting that the watch limit in the glossary is out of date",
+      "kapitel": "pruning-the-glossary-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/019.png",
+      "bytes": 627120,
+      "sha256": "5792aa6fedf1bf884a49e621bf03193d5280182833f43cd2298fa31d9bea3ca5"
+    },
+    {
+      "nr": 20,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286582/ai-hero-images/cl1lanl1fso4o6ners8f.png",
+      "alt": "The agent asking how to structure the headings in the glossary",
+      "kapitel": "pruning-the-glossary-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/020.png",
+      "bytes": 669282,
+      "sha256": "968349668183cb6e968557e356c8a7152da278912c8c0695f82348928a1df682"
+    },
+    {
+      "nr": 21,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286583/ai-hero-images/hoorkxp5wvzago6hqzrp.png",
+      "alt": "The agent reporting that GLOSSARY.md went from 113 lines to 87",
+      "kapitel": "pruning-the-glossary-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/021.png",
+      "bytes": 656105,
+      "sha256": "7c597450c0688fa9f3ef26498197537a5bf7e09df68ea1427148ec56b7325004"
+    },
+    {
+      "nr": 22,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286584/ai-hero-images/f0alalzkkrqljf8czv5w.png",
+      "alt": "The agent working through the code, mostly updating comments",
+      "kapitel": "pruning-the-glossary-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/022.png",
+      "bytes": 654874,
+      "sha256": "b34a312165fcb60f06a359f1f067f1f9427d30d3421a3b720941514ec91ec40c"
+    },
+    {
+      "nr": 23,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791286584/ai-hero-images/dsnuoierjz2iewak6p0k.png",
+      "alt": "The agent's final summary after the glossary cleanup",
+      "kapitel": "pruning-the-glossary-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/023.png",
+      "bytes": 509536,
+      "sha256": "c882aee4e98838204f2c479def9d047ea47a914f6ac008086871e19e3810919d"
+    },
+    {
+      "nr": 24,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791287390/ai-hero-images/hufy2eqawt9lhutvydxf.png",
+      "alt": "Terminal showing the npm run reset menu with the seed-adr-pile commit",
+      "kapitel": "pruning-adrs",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/024.png",
+      "bytes": 641068,
+      "sha256": "b165b4a7074940bc27d342ead57622d1f4180dae5177c97aabccf2807351dacd"
+    },
+    {
+      "nr": 25,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791287552/ai-hero-images/nafi0njmijw5xu1t4zvk.png",
+      "alt": "The agent exploring the ADRs and checking them against the code",
+      "kapitel": "pruning-adrs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/025.png",
+      "bytes": 527257,
+      "sha256": "f179ecede1430ea187dfce877a0588a0d53151596e565f51acc95866e6fd1c03"
+    },
+    {
+      "nr": 26,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791287552/ai-hero-images/oezt1grdahhhjkyqragi.png",
+      "alt": "Question 1 with options A and B and the agent's recommendation",
+      "kapitel": "pruning-adrs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/026.png",
+      "bytes": 464211,
+      "sha256": "4df9d3891974d0797adeaae96d8e20497ac81d672bade9a32daf5b122548e6e7"
+    },
+    {
+      "nr": 27,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791287553/ai-hero-images/o5nlaobnxtxeiky2hoyn.png",
+      "alt": "The short Prettier ADR open in the editor",
+      "kapitel": "pruning-adrs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/027.png",
+      "bytes": 411991,
+      "sha256": "be7bca224fd192010eaf204daadb6b0c6f37bd3abb53dec329dc32573acce7f0"
+    },
+    {
+      "nr": 28,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791287554/ai-hero-images/kbwgklxixw5jjb30zwbj.png",
+      "alt": "ADR 0008 with its considered options, one of which the code now does",
+      "kapitel": "pruning-adrs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/028.png",
+      "bytes": 624890,
+      "sha256": "60aae7f22459a427c0e2af30e49f752c551b5b508102c33a5b36710ef922adb7"
+    },
+    {
+      "nr": 29,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791287555/ai-hero-images/psnnx2wjppoubugzqgl2.png",
+      "alt": "ADR 0010 saying refund emails go to the server log",
+      "kapitel": "pruning-adrs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/029.png",
+      "bytes": 570816,
+      "sha256": "0550291e3cc7ab2396732dedfdc4dd7bcb9b05e2b99bb6ca37260f2d43df14fb"
+    },
+    {
+      "nr": 30,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791287556/ai-hero-images/tlitpxmm6zjgqxt8cgxi.png",
+      "alt": "The diff showing the new icon line added to AGENTS.md",
+      "kapitel": "pruning-adrs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/030.png",
+      "bytes": 515961,
+      "sha256": "5547f803b5293780a42f6539e0b50e977d364a11f3b47e2d7325878a6c8b206b"
+    },
+    {
+      "nr": 31,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791287557/ai-hero-images/qrz2fchgkwxacxkikomh.png",
+      "alt": "The new ADR 0012 with the old ip-api.com approach as a considered option",
+      "kapitel": "pruning-adrs-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/031.png",
+      "bytes": 629165,
+      "sha256": "acf3f118ef3edaa0a955f0f66024b9f5c0e8d615dab998c4e0debcd8b145ad30"
+    },
+    {
+      "nr": 32,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791287713/ai-hero-images/cxwdwxlqhglz7gwoigip.png",
+      "alt": "The app showing quiz questions and lesson discussion questions",
+      "kapitel": "q-a",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/032.png",
+      "bytes": 293878,
+      "sha256": "74d7443ba1cac755d3615e12f2cc0ce47f04da79f5c080e42910be6199abd9b8"
+    },
+    {
+      "nr": 33,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791287714/ai-hero-images/m07grzhqo8su32czs3uj.png",
+      "alt": "The loop: grill with docs, spec, tickets, implement, code review",
+      "kapitel": "q-a",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/033.png",
+      "bytes": 333248,
+      "sha256": "3b1b19254f2d1b97b91ba878ce3318641897d025d227da79e578d7be96a5fc05"
+    },
+    {
+      "nr": 34,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791474289/ai-hero-images/apyqiqnlsyfk8you6fon.png",
+      "alt": "Grilling as a single session filling up toward the dumb zone",
+      "kapitel": "the-limits-of-one-session",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/034.png",
+      "bytes": 281134,
+      "sha256": "eb058ed5c7737ee7ec8ddd629cff24e71b78e5141dc2cbc979602e79b9eb921e"
+    },
+    {
+      "nr": 35,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791474290/ai-hero-images/dqmz0mihrroxbd77bt01.png",
+      "alt": "Grilling split across multiple sessions",
+      "kapitel": "the-limits-of-one-session",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/035.png",
+      "bytes": 377812,
+      "sha256": "fa5eee52aba5cbd6b99d91e6fbe61bdda3fd9c475965294ef1b54c56fddd2265"
+    },
+    {
+      "nr": 36,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791474291/ai-hero-images/lnack2j62vxpvpyacfam.png",
+      "alt": "Shape Up by Ryan Singer",
+      "kapitel": "the-limits-of-one-session",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/036.png",
+      "bytes": 384870,
+      "sha256": "ed1f4e9af54cf2a31c4e4d3e16da9f4f05181807eed9e8e52c3713025cfc0219"
+    },
+    {
+      "nr": 37,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791474291/ai-hero-images/izajcqkiqb9ks2dit0xk.png",
+      "alt": "Fidelity ladder from discussion through breadboarding, wireframes, prototype and production code",
+      "kapitel": "the-limits-of-one-session",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/037.png",
+      "bytes": 316528,
+      "sha256": "5ff45e8a2db8b30fb77e463e92748e43b84244dd2f3345b2aa98ac6e2b322634"
+    },
+    {
+      "nr": 38,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791474292/ai-hero-images/zp39jtve9hl6emwqrh8y.png",
+      "alt": "Agents making prototypes cheap, allowing higher fidelity",
+      "kapitel": "the-limits-of-one-session",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/038.png",
+      "bytes": 320842,
+      "sha256": "1e005cab43ae2a42b8d6edeaef7d8baea9af5f109d007c26d669ba4b3264f18e"
+    },
+    {
+      "nr": 39,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791474293/ai-hero-images/oaywuxednosc9rbdfjr6.png",
+      "alt": "Wayfinder introduced as a multi-session planning skill",
+      "kapitel": "the-limits-of-one-session",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/039.png",
+      "bytes": 312762,
+      "sha256": "df528bf5a937d79811f56b3111dec8279b4f1708c079134331ff71970bd47753"
+    },
+    {
+      "nr": 40,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486969/ai-hero-images/huejlmjzaoopodursqqe.png",
+      "alt": "Diagram titled Wayfinder: a planning skill that lets you plan work of any size, at the right fidelity",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/040.png",
+      "bytes": 312183,
+      "sha256": "c0064b7b8c2fa0659e39127d468e05072cf80b6b770841fc71b6487e4557174a"
+    },
+    {
+      "nr": 41,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486970/ai-hero-images/ehjyz6tnmkyanm0v66dh.png",
+      "alt": "Diagram of a map (#3) with child tickets #1, #2 and #4",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/041.png",
+      "bytes": 321220,
+      "sha256": "ef8804d28b223b686c9e66f5875cf9acf2afff4ff1132b486ce6e7284cb4c684"
+    },
+    {
+      "nr": 42,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486971/ai-hero-images/tsvyswrzcu9uuje5tcmk.png",
+      "alt": "Diagram of the map with check marks on each ticket as they are resolved",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/042.png",
+      "bytes": 345493,
+      "sha256": "e5b8e9e2deae6abfa74dffb73735d3da2943f152c63212703ad0292fa7be4c88"
+    },
+    {
+      "nr": 43,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486971/ai-hero-images/bgdn8d9xgjazgdasxufe.png",
+      "alt": "Diagram: the destination is the place the wayfinder map is going, either a spec or a finished product",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/043.png",
+      "bytes": 309365,
+      "sha256": "e96dbd6083446c43ecef9489f44971a2cc69e2f257c2525c5405e38815d0011e"
+    },
+    {
+      "nr": 44,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486972/ai-hero-images/dm81mptylfrxywvm6vzz.png",
+      "alt": "Diagram: the map's resolved tickets feed /to-spec, which produces a spec",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/044.png",
+      "bytes": 312630,
+      "sha256": "ce915fdd5ca2d61514383402851f0d5a5a81a7592dbe94c830930c8752028a65"
+    },
+    {
+      "nr": 45,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486973/ai-hero-images/p2kvzb3itdyo93vqyjap.png",
+      "alt": "The v1.1 flow diagram with wayfinder as step 1, leading to to-spec, to-tickets, implement and code-review",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/045.png",
+      "bytes": 332856,
+      "sha256": "37bdb7961dcaac50df336cd5efbdd75fb8fee8af8ac48a0614c05b77e62c1e01"
+    },
+    {
+      "nr": 46,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486974/ai-hero-images/wsn4bmgwdsjndqfzlnmw.png",
+      "alt": "Diagram of the map with a fog-of-war ticket, the destination flag and tickets #2, #3 and #4",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/046.png",
+      "bytes": 304004,
+      "sha256": "905c9867fbf377cb6effc85c516590dc8a8dbb4f4d02520d8620dc3aae5acd96"
+    },
+    {
+      "nr": 47,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486975/ai-hero-images/axmtmznubwqmlo1pwf7x.png",
+      "alt": "Diagram showing tickets #2 and #3 checked, unblocking ticket #4",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/047.png",
+      "bytes": 321338,
+      "sha256": "6cc4d4a93389518fa1e0c0895c61744c2437683ed073062432317577559ba845"
+    },
+    {
+      "nr": 48,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486975/ai-hero-images/zccvb2e3ycn73scxaeus.png",
+      "alt": "Diagram: ticket #4 is blocked by #2 and #3",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/048.png",
+      "bytes": 307099,
+      "sha256": "4dcb0a4cb174aab5492e670f297907940988724028de1692c08a59c34de76cec"
+    },
+    {
+      "nr": 49,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486976/ai-hero-images/nw24rroqp17jowjd3enm.png",
+      "alt": "Diagram: a new ticket #5 is added to the map while resolving #2",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/049.png",
+      "bytes": 310238,
+      "sha256": "43165a95f11c49367c9b33fae52abdf6bb44e7df87ce1432bc799048f835eba3"
+    },
+    {
+      "nr": 50,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486976/ai-hero-images/wydcpycfxsz8ux1gtl15.png",
+      "alt": "Diagram: tickets #5 and #6 added, with check marks showing the way to the destination",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/050.png",
+      "bytes": 316570,
+      "sha256": "3ca04e2c97a92217b2134dd61e1f5989d048b8fe79f68e091c15865fef1f8ab3"
+    },
+    {
+      "nr": 51,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486977/ai-hero-images/iww6s3ei4dzeg49nwgxe.png",
+      "alt": "Diagram of the map with tickets labelled Research, Task, Grilling and Prototype",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/051.png",
+      "bytes": 290846,
+      "sha256": "e93cc5a253c24cbed48ec49b6c165dba4de2ed42fde18c8788374fe44492f3aa"
+    },
+    {
+      "nr": 52,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486978/ai-hero-images/ldpruxxbnjylexkhkif3.png",
+      "alt": "Diagram with the Research ticket checked off, feeding the Prototype ticket",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/052.png",
+      "bytes": 309994,
+      "sha256": "63430f008dcfab9ceab60e03295634fe69d2a12e874661bc7387ba630537158d"
+    },
+    {
+      "nr": 53,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791486978/ai-hero-images/uxfk25ewp5fvgdlyb1be.png",
+      "alt": "Diagram showing the two modes: /wayfinder with a prompt creates a map, and /wayfinder #2 runs a session on ticket #2",
+      "kapitel": "charting-the-way",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/053.png",
+      "bytes": 360030,
+      "sha256": "e1ec2cffb77b110fae020c28102d950fb41df60ef27d93a79c220bf23fdd5aa1"
+    },
+    {
+      "nr": 54,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791526967/ai-hero-images/vo1qqo8v5uvwxgbu8jf1.png",
+      "alt": "The /wayfinder prompt typed into the agent",
+      "kapitel": "chart-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/054.png",
+      "bytes": 436346,
+      "sha256": "45001db6daa5436216a2c681412d7035e2c4ccaed8208ed8f1982810588b8265"
+    },
+    {
+      "nr": 55,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791526967/ai-hero-images/lbnlvlnhlvoprel3vr2t.png",
+      "alt": "The agent's first round of grilling questions",
+      "kapitel": "chart-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/055.png",
+      "bytes": 631227,
+      "sha256": "7e4e01b0a7d0e86f712dc063d0d47d5a28d062d81133bc287aa2c8110e296835"
+    },
+    {
+      "nr": 56,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791526968/ai-hero-images/qht90wfs1xrw52fzqlka.png",
+      "alt": "The second round of grilling questions",
+      "kapitel": "chart-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/056.png",
+      "bytes": 735277,
+      "sha256": "52d30e4631bf0834cdf80d678c6283748de138ef6c2be0d8e96f4ffc4e689f25"
+    },
+    {
+      "nr": 57,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791526969/ai-hero-images/dmeeqpjgmu7asg50zvsp.png",
+      "alt": "The agent's proposed map with tickets and fog",
+      "kapitel": "chart-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/057.png",
+      "bytes": 729819,
+      "sha256": "012dd316d0de31d3f22e435f57a70a8247942284b8348384573faca456f1bcf0"
+    },
+    {
+      "nr": 58,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791526970/ai-hero-images/p8ejarznd65hgdye9inj.png",
+      "alt": "The agent's summary after creating the map and launching two background agents",
+      "kapitel": "chart-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/058.png",
+      "bytes": 569374,
+      "sha256": "f17f481e6869410e29a5ee618e28e69d6d1eef87f9f75b37a3a8208248f2399e"
+    },
+    {
+      "nr": 59,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791526970/ai-hero-images/otay142im1vlqwydouzu.png",
+      "alt": "The Wayfinder map issue showing the destination and notes",
+      "kapitel": "chart-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/059.png",
+      "bytes": 625698,
+      "sha256": "3648e165e432b5764d6a9f0f44afe0313fa7cf86bf86c5b8bcf48f2fa6e682aa"
+    },
+    {
+      "nr": 60,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791526971/ai-hero-images/k4ebmig5rdej6gtuhhjk.png",
+      "alt": "The ticket list showing open, blocked and assigned tickets",
+      "kapitel": "chart-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/060.png",
+      "bytes": 467886,
+      "sha256": "a75a1666c4535e9a0c8a5e84b16acbadb191f5628bc1beb639607315717023a2"
+    },
+    {
+      "nr": 61,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791526972/ai-hero-images/s9dpain1vod0jagvt8rh.png",
+      "alt": "The vendor research ticket with the resolution to use Knock",
+      "kapitel": "chart-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/061.png",
+      "bytes": 617124,
+      "sha256": "faad937d491b7340231d4d197b26bf2ed793542f9103760cfea8f388862055eb"
+    },
+    {
+      "nr": 62,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791526973/ai-hero-images/szzmrlhcalwxulkxojnz.png",
+      "alt": "The full vendor comparison in the research file",
+      "kapitel": "chart-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/062.png",
+      "bytes": 579669,
+      "sha256": "224d391d9255ba098a7b0f1ce5b86aefc2613b613c9d8a5ae414042bc0ca4b09"
+    },
+    {
+      "nr": 63,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791526973/ai-hero-images/qcntoi0muil8l47y60he.png",
+      "alt": "The web push research resolution on the ticket",
+      "kapitel": "chart-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/063.png",
+      "bytes": 803791,
+      "sha256": "914d0772f774b7a7fce22716e36a22b0f674d627c37296a99842f2d715e233df"
+    },
+    {
+      "nr": 64,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527027/ai-hero-images/bbvifklpdz3dwx4tq8bp.png",
+      "alt": "Agent session after running /clear, then /wayfinder with the issue URL",
+      "kapitel": "grilling-ticket",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/064.png",
+      "bytes": 371263,
+      "sha256": "4d14ad2d7336965f7561fd03e362d3237091098e117c54e0d296894e7ad604bc"
+    },
+    {
+      "nr": 65,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527138/ai-hero-images/bvfmxte6pjkbm4hxdshs.png",
+      "alt": "The agent claiming the Wayfinder grilling ticket and running shell commands",
+      "kapitel": "grilling-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/065.png",
+      "bytes": 469660,
+      "sha256": "242bd67181516537418ececdfadace923b72eb840ba61ca39cc867238ff0d049"
+    },
+    {
+      "nr": 66,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527138/ai-hero-images/maxiermc5zxokysw8wzn.png",
+      "alt": "The first round of grilling questions with recommendations on screen",
+      "kapitel": "grilling-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/066.png",
+      "bytes": 695299,
+      "sha256": "e8e82280e844ab364cfe3c6eda5f1ae85095ec60f13d2922c142c41ad72f5d1e"
+    },
+    {
+      "nr": 67,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527139/ai-hero-images/zvwtwqiqtgfmqnichctt.png",
+      "alt": "GLOSSARY.md updated with Discussion Question and Discussion Reply",
+      "kapitel": "grilling-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/067.png",
+      "bytes": 581950,
+      "sha256": "5b3835e7d1e9978315e3f8d556a2930ec28833e0e4f93540dcb6b98bc01d85ed"
+    },
+    {
+      "nr": 68,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527139/ai-hero-images/zc8ospujpnue1gcvpxhz.png",
+      "alt": "The closed ticket with the resolution comment",
+      "kapitel": "grilling-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/068.png",
+      "bytes": 659788,
+      "sha256": "0cf49b37853c702e285591af4bded9e8cacea73e401b6e1b30e2a78b0ec87b20"
+    },
+    {
+      "nr": 69,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527140/ai-hero-images/cjckniakhor4gk51qmmf.png",
+      "alt": "The map showing the closed ticket and the next grilling ticket",
+      "kapitel": "grilling-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/069.png",
+      "bytes": 498363,
+      "sha256": "46393bb6d34a4c407ad6dd826399a6ab8a09ed234df5c74a71b29dab53e04a25"
+    },
+    {
+      "nr": 70,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527189/ai-hero-images/lsonwxhd9hixhoz7g8rp.png",
+      "alt": "The map's next grilling ticket, Pick the notification vendor",
+      "kapitel": "grilling-ticket-2",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/070.png",
+      "bytes": 516346,
+      "sha256": "7b96a0c9a69b2323e80bbe5878ad2571d938ee8e41463905970971af269fe055"
+    },
+    {
+      "nr": 71,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527379/ai-hero-images/kzj50cp57zphzv1rmcxp.png",
+      "alt": "Agent session running /wayfinder on the vendor ticket",
+      "kapitel": "grilling-ticket-2-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/071.png",
+      "bytes": 361715,
+      "sha256": "93d6dcfa88b8ac0e6e18a6f851c0c221910265137462a84df663bb30502747e5"
+    },
+    {
+      "nr": 72,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527380/ai-hero-images/hpn8zd4nozum2cn0bfnj.png",
+      "alt": "Agent's first round of questions answered",
+      "kapitel": "grilling-ticket-2-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/072.png",
+      "bytes": 641691,
+      "sha256": "eaca0e1447072c5db5253836457cfa5b6590ba0f1f031e5677e567295b7439dc"
+    },
+    {
+      "nr": 73,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527381/ai-hero-images/jwsnpvitz9bx2q7pdbth.png",
+      "alt": "The GitHub map showing the new decision and open tickets",
+      "kapitel": "grilling-ticket-2-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/073.png",
+      "bytes": 501265,
+      "sha256": "206b78b6c09b2fe09fa179925bb8f01bbfe3922281293ff9f42d490295d4b8db"
+    },
+    {
+      "nr": 74,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527381/ai-hero-images/xq9d52xasbpdvwiqmcuy.png",
+      "alt": "The Knock prototype ticket with its blocked-by relationship in the sidebar",
+      "kapitel": "grilling-ticket-2-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/074.png",
+      "bytes": 345783,
+      "sha256": "073f95c550eaa2d9d0195059d965b26fcd39f7a9521bbafa1f132f7af3a83ccc"
+    },
+    {
+      "nr": 75,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527424/ai-hero-images/nobijrjew34vdtonpera.png",
+      "alt": "The GitHub issue for the task ticket, showing the wayfinder:task label",
+      "kapitel": "task-ticket",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/075.png",
+      "bytes": 514021,
+      "sha256": "7c0574211a83b6dc99635a4d2481293d7c08f828db51774ced9f1cd14adf91c4"
+    },
+    {
+      "nr": 76,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527425/ai-hero-images/qtds0vw1jgk7vmjha2fs.png",
+      "alt": "The wizard skill's SKILL.md description",
+      "kapitel": "task-ticket",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/076.png",
+      "bytes": 753078,
+      "sha256": "03dc3bf21b7b455facbab0e57c6bbf8244e612b042e5e4c1095b9efcbdc76267"
+    },
+    {
+      "nr": 77,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527531/ai-hero-images/l4qhb2nbdghifpbxt6q7.png",
+      "alt": "The agent deciding on its own to build a wizard for the Knock dashboard signup",
+      "kapitel": "task-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/077.png",
+      "bytes": 547860,
+      "sha256": "5db6d3c591c9b1e00a92c4bab3c91bae48e7a75e919d55e2178f9a600301f8d2"
+    },
+    {
+      "nr": 78,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527532/ai-hero-images/sxmdbvanezj5hcpj0qwl.png",
+      "alt": "Agent on the left, browser on the right, terminal ready to run the wizard",
+      "kapitel": "task-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/078.png",
+      "bytes": 531518,
+      "sha256": "1c2e2323bc0e65c3a1877445f6b20b57de567b161ed9f9c4a410996fa3b77cfd"
+    },
+    {
+      "nr": 79,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527532/ai-hero-images/h0jlczuihepw2n3h1xdj.png",
+      "alt": "The wizard prompting for the signing key while the Knock dashboard is open",
+      "kapitel": "task-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/079.png",
+      "bytes": 571766,
+      "sha256": "9861ba5a41ec4b72e55954017bc93ab1140e46c86733e890b3e40eef7af1dd97"
+    },
+    {
+      "nr": 80,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527533/ai-hero-images/fcuisvhfkoufj62gomjs.png",
+      "alt": "The agent confirming everything checks out, including a signed token call to Knock",
+      "kapitel": "task-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/080.png",
+      "bytes": 552625,
+      "sha256": "0644c05a27adccf97111ed5dfdc0f0425258aaa048ab627fc6c142c2990255a7"
+    },
+    {
+      "nr": 81,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527579/ai-hero-images/mgpo71dmzpe3smu5qu6l.png",
+      "alt": "The prototype ticket in the Cadence map",
+      "kapitel": "prototype-ticket",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/081.png",
+      "bytes": 495806,
+      "sha256": "29308928fb25475a170cf509b9fc76dd5cb40c76b10bb0e0bfb4dde02ad7afe7"
+    },
+    {
+      "nr": 82,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527799/ai-hero-images/yc3abd2cnum2lrhujhfb.png",
+      "alt": "Agent claiming the prototype ticket and loading the prototype skill",
+      "kapitel": "prototype-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/082.png",
+      "bytes": 544816,
+      "sha256": "c3552ac655a1a71dcb13c7de257e84301b6442bd7ab0627eb998ff55fbe3a767"
+    },
+    {
+      "nr": 83,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527800/ai-hero-images/cuh6945lv1kmrqrwv1ex.png",
+      "alt": "Agent report saying check 1 (signed user tokens) looks like a pass and checks 2 to 4 are waiting on the user",
+      "kapitel": "prototype-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/083.png",
+      "bytes": 689949,
+      "sha256": "89103cd855bf7eede9ad98dfaabd8514fced67f5df1cf1efe6663297905afc2f"
+    },
+    {
+      "nr": 84,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527801/ai-hero-images/txpm49ilkgqshda5sclm.png",
+      "alt": "Browser with the Knock dashboard on the right and the wizard running in a terminal on the left",
+      "kapitel": "prototype-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/084.png",
+      "bytes": 471291,
+      "sha256": "09a0888f3c847722f67e5ac172fa961e01ce71f1882c0a24400e575fc25cc374"
+    },
+    {
+      "nr": 85,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527801/ai-hero-images/fr0qccbvkh9g1r1qgpu4.png",
+      "alt": "Knock dashboard preferences screen, with the user clicking around trying to find the enrollment category default",
+      "kapitel": "prototype-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/085.png",
+      "bytes": 539153,
+      "sha256": "b94f177154c2404e4ab81ca9a0b86a9f1ddc05c1e16cad793692d9b8b4bff214"
+    },
+    {
+      "nr": 86,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527802/ai-hero-images/bg4alxljuzhg9nl6asyz.png",
+      "alt": "Agent recommending that Cadence sets the enrollment default in each user's preferences instead of a Knock setting",
+      "kapitel": "prototype-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/086.png",
+      "bytes": 530328,
+      "sha256": "d64b0a1c3c2d735cba2d1fed9856810a78084c5b7531e9a574312ba1b91bcd38"
+    },
+    {
+      "nr": 87,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527803/ai-hero-images/utd5vgycum94a9wwtuqr.png",
+      "alt": "The prototype page at /prototype/knock with buttons for triggering notifications and a headless feed",
+      "kapitel": "prototype-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/087.png",
+      "bytes": 600854,
+      "sha256": "bb9f6a9967e69197c4d9c45b85880cdf2155600a88c766ff2b6e6fe1b421ff64"
+    },
+    {
+      "nr": 88,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527803/ai-hero-images/ibcevnr1ricdkn7fkwee.png",
+      "alt": "Olivia Martinez's headless feed showing notifications with mark read, mark unread and mark all seen controls",
+      "kapitel": "prototype-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/088.png",
+      "bytes": 464446,
+      "sha256": "f12dbef75f0fdcd597be799c7d58b5ab856de4130f8a7439b1639be7de9716bf"
+    },
+    {
+      "nr": 89,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527804/ai-hero-images/norvqovw3np2j3wkjf6v.png",
+      "alt": "The closed prototype ticket with its resolution comment",
+      "kapitel": "prototype-ticket-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/089.png",
+      "bytes": 778312,
+      "sha256": "8eff1d99b82f018f393d2a2508db0d7de8c46d0d27a0289d159b4749cdc4ec40"
+    },
+    {
+      "nr": 90,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791527865/ai-hero-images/ldpavp4sep7ucyyxosdk.png",
+      "alt": "The Wayfinder map issue showing the three remaining open tickets",
+      "kapitel": "finish-the-map",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/090.png",
+      "bytes": 489014,
+      "sha256": "d2c246a740dd329c7a448b9489b747191002d7b3b4642ef55719c9d57dd9ad6d"
+    },
+    {
+      "nr": 91,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528083/ai-hero-images/r5tbtwqpz2szzz1txy78.png",
+      "alt": "The agent asking where email goes on the map, recommending out of scope",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/091.png",
+      "bytes": 681715,
+      "sha256": "4c7b1151bd73fb7b102c18e019c94111cb04996abf7c9b3c08e7eb88bd91edba"
+    },
+    {
+      "nr": 92,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528084/ai-hero-images/ro6bexs5qwppgghs0b9s.png",
+      "alt": "The agent summarising shared understanding with no glossary or ADR changes",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/092.png",
+      "bytes": 649023,
+      "sha256": "19a988a1120013cac4030c4369dedb18ca8ab497b34e3ea8bfb870bfc62e9607"
+    },
+    {
+      "nr": 93,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528085/ai-hero-images/u1bmkvz9ohk0ozrug9yy.png",
+      "alt": "Variant A, the bell popover, listing reply notifications",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/093.png",
+      "bytes": 468554,
+      "sha256": "cd6562b7f32fa54b133a8b2fa97de653a6dcda8ba3b714728e2c05cc7693acdb"
+    },
+    {
+      "nr": 94,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528085/ai-hero-images/zson7h6dmhffq6jm0tfl.png",
+      "alt": "Variant B, a drawer showing eight notifications",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/094.png",
+      "bytes": 306491,
+      "sha256": "991ee562e571e26a2f698412d988ad18608d3ac303c5f406c27f06318a178b96"
+    },
+    {
+      "nr": 95,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528086/ai-hero-images/l1fg50flmy8qbbq9qi3p.png",
+      "alt": "Variant C, the full notifications inbox with filters",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/095.png",
+      "bytes": 514213,
+      "sha256": "7f3c40634634c441023a6b24e20dc4edc524c15a40804afc484e8696627c9e99"
+    },
+    {
+      "nr": 96,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528087/ai-hero-images/hwyqkttwbecglysbjgj7.png",
+      "alt": "Variant A with seeded notifications and a Load more button",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/096.png",
+      "bytes": 510345,
+      "sha256": "9fb1ad9cee4ade01ce9ad820535b5827e767351efd9a3a3c07472a4c10befcd6"
+    },
+    {
+      "nr": 97,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528087/ai-hero-images/kkv3wpr3uycljmqekztm.png",
+      "alt": "Variant A3 showing the latest notifications and a See all button",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/097.png",
+      "bytes": 530049,
+      "sha256": "0aeffcb8f892a7cffe13815969ead65ef42fdb96c3ffff28a325b5d69b9fa970"
+    },
+    {
+      "nr": 98,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528088/ai-hero-images/hgc5vp6oknqngjlx7urk.png",
+      "alt": "The revised A2 popover with a check mark on each row",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/098.png",
+      "bytes": 547295,
+      "sha256": "a57c4ec0c75cd371ebebfa8768ead87f95bb074bbd7fc3f7332e1716a20595e2"
+    },
+    {
+      "nr": 99,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528088/ai-hero-images/xxkg29eybbqsjavg5x2y.png",
+      "alt": "The agent listing four options for what the popover shows over time",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/099.png",
+      "bytes": 760471,
+      "sha256": "5d51ab9313444f98955e5255630d478a1788f1e16fcfc86d4e88eb8cb3b65ba9"
+    },
+    {
+      "nr": 100,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528089/ai-hero-images/fg5ybe6zyveidrbxvvis.png",
+      "alt": "The map's Not yet specified section listing the remaining fog",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/100.png",
+      "bytes": 880413,
+      "sha256": "0b87a3dfcb5b9c4437f07e869a2c5be832bb4e8c37ea2236d0263f672a23739c"
+    },
+    {
+      "nr": 101,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528090/ai-hero-images/b12d76lnvssf3o22afxt.png",
+      "alt": "The agent's mop-up questions about the remaining fog",
+      "kapitel": "finish-the-map-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/101.png",
+      "bytes": 657654,
+      "sha256": "16c1985e9c92b09915e5de38efa49e9089d5edbdc6614aede954dc04c6dd1344"
+    },
+    {
+      "nr": 102,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528152/ai-hero-images/sqx14exxzckzyl3makwh.png",
+      "alt": "The completed Wayfinder map ready to be turned into a spec",
+      "kapitel": "spec-implement",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/102.png",
+      "bytes": 637785,
+      "sha256": "1c8b954c72a2ec52eda7edeee9f81fd34ddc1192efd92fb21935b6c4b71d6dec"
+    },
+    {
+      "nr": 103,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528305/ai-hero-images/mwbayr2a6cco1lhux4iu.png",
+      "alt": "The agent reading through all of the Wayfinder decision tickets",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/103.png",
+      "bytes": 393175,
+      "sha256": "23463cbfb2b8856808f02c78b014ffdf01c2e1ab3f35ad78836eb22749d3f8b9"
+    },
+    {
+      "nr": 104,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528306/ai-hero-images/mcnndl1ytv8rbwduc6ec.png",
+      "alt": "The agent proposing a test seam for the spec",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/104.png",
+      "bytes": 654252,
+      "sha256": "498b360da81f6e53a1f03cb81a66d2dc688db44354d47efd16439da75a3398d7"
+    },
+    {
+      "nr": 105,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528307/ai-hero-images/ztaj8kdymiz8clwxgdak.png",
+      "alt": "The spec issue on GitHub showing the user stories",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/105.png",
+      "bytes": 709392,
+      "sha256": "b9d924fb9f36604453a4affe6b6acae2b94746f7d3461c9725ef2afd58ad1f09"
+    },
+    {
+      "nr": 106,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528307/ai-hero-images/exjxrueezprciewsnslm.png",
+      "alt": "The agent's proposed breakdown of the spec into tickets",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/106.png",
+      "bytes": 649961,
+      "sha256": "6ff716fa6334ef1110fc2747b5714f00cc33d6ce907e2dbfe0f141c46aa8f2e9"
+    },
+    {
+      "nr": 107,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528308/ai-hero-images/kxvxufwtx9nlaktix5he.png",
+      "alt": "The spec on GitHub with eight sub-issues underneath it",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/107.png",
+      "bytes": 514710,
+      "sha256": "b29a21437d4ce50c5f944bb69ba9368bf6959ddc34a3bba5fdc2d075149edfec"
+    },
+    {
+      "nr": 108,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528308/ai-hero-images/nykhgsvnxx89sl7ananm.png",
+      "alt": "The top of the implement-spec session, exploring the Knock prototypes",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/108.png",
+      "bytes": 436627,
+      "sha256": "4d598f8ec3c0839d9316e62d252a3ce8933d58c421a13da8c478e5576b412402"
+    },
+    {
+      "nr": 109,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528309/ai-hero-images/yvvciiksao8x6drfa4gc.png",
+      "alt": "The code review output listing standards violations",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/109.png",
+      "bytes": 552338,
+      "sha256": "6808e9fde1fd5a15ea03dc06a78fd0dec6a934ad14e1625c32e1ff0418e77a1e"
+    },
+    {
+      "nr": 110,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528310/ai-hero-images/bclce41df1brrt4z59ok.png",
+      "alt": "The agent explaining Knock has a management API and a CLI",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/110.png",
+      "bytes": 722693,
+      "sha256": "28efabb42cb522f87deedc2f2fd8ddb480d6d8d349445d654fe58cb2962b3eb2"
+    },
+    {
+      "nr": 111,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528310/ai-hero-images/xijnm8dyyoeb9yfcyqmc.png",
+      "alt": "The knock-workflows SKILL.md open in the editor",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/111.png",
+      "bytes": 588105,
+      "sha256": "49d1edab803bb51b95d84dccae4622673d9a8723df12608ae884c6e0f8ffadca"
+    },
+    {
+      "nr": 112,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528311/ai-hero-images/cnvej6zippjzbwtuvtxn.png",
+      "alt": "The notification popover open with the settings gear icon",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/112.png",
+      "bytes": 128838,
+      "sha256": "c0276155f0b170dc170b18848044833b3c5f661c0cc2278b56ff2189820bb488"
+    },
+    {
+      "nr": 113,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791528311/ai-hero-images/fxxe5lrqrfhjqdfagzky.png",
+      "alt": "Marcus Johnson's notification for Emma Wilson's discussion question",
+      "kapitel": "spec-implement-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/113.png",
+      "bytes": 220087,
+      "sha256": "ec1645a2e071bd12c0b752b11bb9b7b746dc4daceece8b659e26d850b75f2ea2"
+    },
+    {
+      "nr": 114,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791485887/ai-hero-images/izx4qr6gi0qkj7oxifou.png",
+      "alt": "Wayfinder diagram showing grilling, prototype, research, tasks, spec and implementation steps",
+      "kapitel": "grill-vs-wayfinder-vs-ship-first",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/114.png",
+      "bytes": 299109,
+      "sha256": "df67d83256e12a91a28cad77f6c59c3d6230c63d2c6a10e3600c0d20f02351c2"
+    },
+    {
+      "nr": 115,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791485888/ai-hero-images/j3yiuudanvoryeta8k0g.png",
+      "alt": "Diagram comparing one-shot, /grill-with-docs and /wayfinder",
+      "kapitel": "grill-vs-wayfinder-vs-ship-first",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/115.png",
+      "bytes": 362141,
+      "sha256": "ad6e3911a2e599b9e0ee5d38ba81eb9680931016bcf6aa9011d69d9b0046bb52"
+    },
+    {
+      "nr": 116,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791485889/ai-hero-images/kvm8j9wnirbjpvn3a9mg.png",
+      "alt": "Decision tree starting from a new session, branching to one-shot, /grill-with-docs and /wayfinder",
+      "kapitel": "grill-vs-wayfinder-vs-ship-first",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/116.png",
+      "bytes": 355789,
+      "sha256": "701807f597c16288a685c739521343c3a1da4aa565ed78ea7d834d783b8ddf7c"
+    },
+    {
+      "nr": 117,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791485889/ai-hero-images/u41xqr7sqbdhqnbjgsrl.png",
+      "alt": "The full decision tree with one-shot, grill-with-docs and wayfinder branches",
+      "kapitel": "grill-vs-wayfinder-vs-ship-first",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/117.png",
+      "bytes": 361754,
+      "sha256": "e8a6722c75bebfbd5a718941882c92ca80ae0fe8a62b332e0996a3c53b2b0544"
+    },
+    {
+      "nr": 118,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791537143/ai-hero-images/g3tfc1ihhihd61ntzqh8.png",
+      "alt": "Diagram of the three brakes in the software factory: automated checks, automated review and human review",
+      "kapitel": "the-three-kinds-of-review",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/118.png",
+      "bytes": 364957,
+      "sha256": "e7eda2ba4bda72eea9e3747ec7d7c4212f0ceed7e9e43a1f767779e2b1bf7053"
+    },
+    {
+      "nr": 119,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650564/ai-hero-images/53a02670069ad8032ed7c827020d304c.png",
+      "alt": "Review diagram showing Human Review and Automated Review, with automated checks and LLM-as-a-judge",
+      "kapitel": "the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/119.png",
+      "bytes": 369329,
+      "sha256": "074deabd551e6f680af52e64b1faa282df84fa8d3f63fa93c69dfceb8773a3b0"
+    },
+    {
+      "nr": 120,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650565/ai-hero-images/99ba9ce533a25eda7a33c12626f16b0c.png",
+      "alt": "Diagram with Speed and Priority as the two ways of improving review",
+      "kapitel": "the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/120.png",
+      "bytes": 318617,
+      "sha256": "fc8e115409684711c7d85358fd541a70ce88bf43fb69fb216c111926279b07de"
+    },
+    {
+      "nr": 121,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650565/ai-hero-images/720ade91658d5d38662dd2cb89552178.png",
+      "alt": "The show-me skill on GitHub",
+      "kapitel": "the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/121.png",
+      "bytes": 440928,
+      "sha256": "a4ef6941359ac103de7fadc5641db688c631060d025477cbf8b1aef6f980b251"
+    },
+    {
+      "nr": 122,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650566/ai-hero-images/ad4f412dba60c5e2ae9803d2a29a74ec.png",
+      "alt": "The pr skill's SKILL.md open in the editor",
+      "kapitel": "the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/122.png",
+      "bytes": 489257,
+      "sha256": "366222b855e457cb4e44f8bcf715745275f9d2b4d082f726b228233c28cdb65f"
+    },
+    {
+      "nr": 123,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650567/ai-hero-images/61e3d36ee23d7239b1c819a7889d35ad.png",
+      "alt": "The Evidence section of the PR template with Before and After",
+      "kapitel": "the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/123.png",
+      "bytes": 486261,
+      "sha256": "aedf7af0bd671853694255dbfc3008c8bb2decf4aa05bd4ddf6cf88ba97f1e1e"
+    },
+    {
+      "nr": 124,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650568/ai-hero-images/3ab83a95e6c587b26bfc3dfd60484ded.png",
+      "alt": "The Merge Danger section of the PR skill",
+      "kapitel": "the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/124.png",
+      "bytes": 467816,
+      "sha256": "6ce2ecc00c2fb443075a482be74df556daa6cd58749907d18417f102466d150f"
+    },
+    {
+      "nr": 125,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650569/ai-hero-images/27e67c19ea55a4ae43d1e75c34083465.png",
+      "alt": "Diagram of one-way door versus two-way door",
+      "kapitel": "the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/125.png",
+      "bytes": 318206,
+      "sha256": "7d591c3f786a77d1c1da2cb2630d645486646a83a3c432f0f2bb427c556c1783"
+    },
+    {
+      "nr": 126,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650569/ai-hero-images/7f2ba92ed970ee102788dc1f4fbdcd4d.png",
+      "alt": "Review diagram with Human Review and Automated Review",
+      "kapitel": "the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/126.png",
+      "bytes": 392742,
+      "sha256": "6aeed3be469a576ef828b2acfa9d91e2fcaed82eea295786b2ea033464929e5c"
+    },
+    {
+      "nr": 127,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650648/ai-hero-images/4f0163319b5b9675126159dd2024ffb1.png",
+      "alt": "Diagram titled Review: making the actual review faster, with Speed and Priority",
+      "kapitel": "running-the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/127.png",
+      "bytes": 321763,
+      "sha256": "e435dd712710cb261dad801015d6856df255cfb2a0ed101f0c826e5c9b8b14f9"
+    },
+    {
+      "nr": 128,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650648/ai-hero-images/93a25d6e9c76e1911f20ef0a5ad8070d.png",
+      "alt": "Terminal running npm run create-pr and asking whether to replace the existing PR",
+      "kapitel": "running-the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/128.png",
+      "bytes": 579959,
+      "sha256": "feb7eb4b56040a38d52e3dcdde2e899604151a7c08ae6faba85cb56ff02bc517"
+    },
+    {
+      "nr": 129,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650649/ai-hero-images/b87587c2c22af00093a5e2a27efcff30.png",
+      "alt": "GitHub draft PR showing the Files changed tab",
+      "kapitel": "running-the-pr-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/129.png",
+      "bytes": 517146,
+      "sha256": "e705aaec136db296ac8b0bcf45f8244fa645ba7ba47701a42fc0985e153f40f4"
+    },
+    {
+      "nr": 130,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650716/ai-hero-images/7e7e5a616afa98e440b11e142e6496e1.png",
+      "alt": "The prompt asking the agent to write a PR body for PR 34",
+      "kapitel": "running-the-pr-skill-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/130.png",
+      "bytes": 401341,
+      "sha256": "750378ba84f9e23fb4783848ecbe3d9d7e3660e2f72f3e8fb501e7cb920c05bc"
+    },
+    {
+      "nr": 131,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650717/ai-hero-images/d636259c3c77965c41835f9f45632ae1.png",
+      "alt": "The agent loading the pr skill and running typecheck and tests",
+      "kapitel": "running-the-pr-skill-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/131.png",
+      "bytes": 463860,
+      "sha256": "c26336b1f64a7bc936a52720ea23def21f221e01c0274e9b1c2d6921f2768f11"
+    },
+    {
+      "nr": 132,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650718/ai-hero-images/e7a6ab42946a1c252f42588f38515669.png",
+      "alt": "The posted PR body on GitHub with the JSX style diff in the Summary",
+      "kapitel": "running-the-pr-skill-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/132.png",
+      "bytes": 500364,
+      "sha256": "d399e432fc906b708476569e7b351e8130192acbb2278e40ec70f56eb7294dc0"
+    },
+    {
+      "nr": 133,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650718/ai-hero-images/ef6f8135890a5bd235bfac07bd41a703.png",
+      "alt": "The Merge Danger section of the PR body",
+      "kapitel": "running-the-pr-skill-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/133.png",
+      "bytes": 505062,
+      "sha256": "cce01a9134e5289a2d7c6e87a11418d03b05a43fada12def8795020d02145a68"
+    },
+    {
+      "nr": 134,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650794/ai-hero-images/bcc00d8672a42327e39e860aa9eda378.png",
+      "alt": "Review diagram showing automated checks, automated review and human review",
+      "kapitel": "the-code-review-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/134.png",
+      "bytes": 394379,
+      "sha256": "203b32ba4f2c38279fab34612af4d5b73220485b460b4b88c8c1ef8148c8991d"
+    },
+    {
+      "nr": 135,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650795/ai-hero-images/cafc1274e4f914c7aaaa655e9e0b840b.png",
+      "alt": "Diagram showing /code-review and /implement",
+      "kapitel": "the-code-review-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/135.png",
+      "bytes": 302408,
+      "sha256": "b5938735042913de99d641a5611704288ce3e5df97221adabeda3dcc0ccd38c1"
+    },
+    {
+      "nr": 136,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650796/ai-hero-images/a4ea71671cf38fda29bede39a66f4624.png",
+      "alt": "The code-review skill open at the step that identifies the standards sources",
+      "kapitel": "the-code-review-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/136.png",
+      "bytes": 681475,
+      "sha256": "58aaed5e0637bbc47610e4c046e65900042d1c0ca6d8c2157b68b5108ec1fc91"
+    },
+    {
+      "nr": 137,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650797/ai-hero-images/9dadaa533d59950ac1caebeb811b4bd2.png",
+      "alt": "CODING_STANDARDS.md showing the three coding standards",
+      "kapitel": "the-code-review-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/137.png",
+      "bytes": 550439,
+      "sha256": "2b952622b8d712f0a1bdf6f1ce045932b31b29ef4105b2d359896cf99a64d106"
+    },
+    {
+      "nr": 138,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650797/ai-hero-images/6b759bd19acd8cdc5f7840de636a2ddd.png",
+      "alt": "Diagram with CODING_STANDARDS.md and AGENTS.md alongside /code-review and /implement",
+      "kapitel": "the-code-review-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/138.png",
+      "bytes": 299783,
+      "sha256": "a3969fe81a306e5a968c19b159934c49895d29b86a662470097dce9c8fed90e3"
+    },
+    {
+      "nr": 139,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650798/ai-hero-images/8a415a7750d55708b02d9db5ee17ab6c.png",
+      "alt": "Diagram labelling implement as Make It Work and code review as Make It Good",
+      "kapitel": "the-code-review-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/139.png",
+      "bytes": 300396,
+      "sha256": "1a23cc69e1fdf94a39ddf697aa525c7a560f70f75be7ededd927d19fe11613d2"
+    },
+    {
+      "nr": 140,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650925/ai-hero-images/682c0952d5f0e0a73868abc68271e80f.png",
+      "alt": "The low quality PR open on GitHub",
+      "kapitel": "testing-out-the-code-review-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/140.png",
+      "bytes": 537597,
+      "sha256": "930d0e99a6221598e9ae907c05608b183aefc1d3a0022da39ec400c3e990ec18"
+    },
+    {
+      "nr": 141,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650926/ai-hero-images/e768d86eb5a0293cc13a799b08724a78.png",
+      "alt": "The spec gist on GitHub",
+      "kapitel": "testing-out-the-code-review-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/141.png",
+      "bytes": 555342,
+      "sha256": "8271962c816bd9721ca6af51c4a48be821d2b496ceef63dd910fcc6fa0ced3a7"
+    },
+    {
+      "nr": 142,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791650927/ai-hero-images/1b3bcbd3b401049648780c59ee5557e7.png",
+      "alt": "The new GitHub issue containing the spec",
+      "kapitel": "testing-out-the-code-review-skill",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/142.png",
+      "bytes": 555652,
+      "sha256": "eb9bab621bbb292cb56a8a18e5a27d2c0c210876bac2c9afd823cdbeaa312085"
+    },
+    {
+      "nr": 143,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651008/ai-hero-images/467288b4fbd2c2c6c12f418906c6abcc.png",
+      "alt": "The agent launching the standards review and spec review as background agents",
+      "kapitel": "testing-out-the-code-review-skill-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/143.png",
+      "bytes": 483881,
+      "sha256": "0606d9dab3409fbb24994e251db43a7bf67d6737e22f2ac5e06925f1f5011ff6"
+    },
+    {
+      "nr": 144,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651009/ai-hero-images/45b2076caec76c0326cf892739966f14.png",
+      "alt": "The agent's full standards report and spec report",
+      "kapitel": "testing-out-the-code-review-skill-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/144.png",
+      "bytes": 688739,
+      "sha256": "0a0d07d661f6a586698335c36dec3e32a5ef478ae25a9118ba7a4eb99894ec90"
+    },
+    {
+      "nr": 145,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651010/ai-hero-images/bcde9e86308f56e2cf48b7ef60bde7cf.png",
+      "alt": "The agent's summary of what it changed",
+      "kapitel": "testing-out-the-code-review-skill-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/145.png",
+      "bytes": 717837,
+      "sha256": "1eefc8871e9472d0ff8e81f27b11f3d3a749e746a469bf73a2b406ba01fdb5b0"
+    },
+    {
+      "nr": 146,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651010/ai-hero-images/f16a5ba6c52188d70431bcbac17542a2.png",
+      "alt": "The agent rewriting the PR description using the pr skill",
+      "kapitel": "testing-out-the-code-review-skill-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/146.png",
+      "bytes": 500760,
+      "sha256": "adf04248129d8c2621c4e9d053e3e48946ef9e02cb8455011584cd14e97b090e"
+    },
+    {
+      "nr": 147,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651011/ai-hero-images/882a839b24655e04a22721200a5ed2a1.png",
+      "alt": "The PR description showing the saveNote pseudocode",
+      "kapitel": "testing-out-the-code-review-skill-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/147.png",
+      "bytes": 561065,
+      "sha256": "b2202bb0ece50343acb799c5dfdd16895d6cbbf62f1a25f7ef5b8891aab4f1ee"
+    },
+    {
+      "nr": 148,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651094/ai-hero-images/2435b8e740900b398c83711a8c8650fb.png",
+      "alt": "Diagram titled Review with Speed and Priority, plus a third item about taking human review comments and using them to improve the system",
+      "kapitel": "why-retro",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/148.png",
+      "bytes": 320835,
+      "sha256": "3936f3a40966b160c30c776df6dbc860a72582871f2ce4b1d965cd618e446806"
+    },
+    {
+      "nr": 149,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651095/ai-hero-images/0b440955302b7fdce70134de507fa7e2.png",
+      "alt": "Diagram showing Human Review, Automated Review and Automated Checks",
+      "kapitel": "why-retro",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/149.png",
+      "bytes": 379128,
+      "sha256": "3e51639b2eba9cd1ca41af82fec2ca1fc199a6c31b41e872c0cc2ecf11eb308d"
+    },
+    {
+      "nr": 150,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651096/ai-hero-images/918892cc7d8c79fdf714d56ab1b5ae6f.png",
+      "alt": "The retro skill's SKILL.md open in the editor",
+      "kapitel": "why-retro",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/150.png",
+      "bytes": 645267,
+      "sha256": "51940190928fd613156c5b5a23343de3e9e1e2eadc8a8f88ee16d3eaa5a89f33"
+    },
+    {
+      "nr": 151,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651122/ai-hero-images/e8738bcd5f342f7fafbd8bd3b211cd9a.png",
+      "alt": "GitHub PR diff with a line comment being added",
+      "kapitel": "trying-out-retro",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/151.png",
+      "bytes": 253382,
+      "sha256": "de61006a66246ed64dfbe6a66c7f28df4fdd603ab4bf9d25b8405b67b5f38ad1"
+    },
+    {
+      "nr": 152,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651210/ai-hero-images/df142ae55e4c9a70762d5d782dadacf2.png",
+      "alt": "GitHub PR review showing the sidebar component with the Saved label",
+      "kapitel": "trying-out-retro-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/152.png",
+      "bytes": 310435,
+      "sha256": "5b9b5be9bb6668ca9f22defd9140e69a5f64c47538e98eb00bbdfd07168e4c13"
+    },
+    {
+      "nr": 153,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651211/ai-hero-images/7404d8aaa476abd9329b88cd3cb3d0ac.png",
+      "alt": "Agent running the retro skill and loading the writing-for-agents skill",
+      "kapitel": "trying-out-retro-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/153.png",
+      "bytes": 493039,
+      "sha256": "e5b6c8ff9a0836232ad658cac38de0441724d44d6e75912586ee83cdae03f12e"
+    },
+    {
+      "nr": 154,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651212/ai-hero-images/8771e4e813376bc2ef57e2bc174425d5.png",
+      "alt": "Retro report: the fix commit was never reviewed",
+      "kapitel": "trying-out-retro-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/154.png",
+      "bytes": 634546,
+      "sha256": "a7e7e7aeb195559a6437cd8c90ac11fe6c756ebe93909c94dd9a52682d1f4e76"
+    },
+    {
+      "nr": 155,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651212/ai-hero-images/218773162ab79850d948928bdc1b991e.png",
+      "alt": "Agent adding two new rules to CODING_STANDARDS.md",
+      "kapitel": "trying-out-retro-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/155.png",
+      "bytes": 567464,
+      "sha256": "6dbb005f4159d0a672d4e42d0384054fb32fbd4946b3e3185d518dcf1097f64a"
+    },
+    {
+      "nr": 156,
+      "url": "https://res.cloudinary.com/total-typescript/image/upload/v1791651213/ai-hero-images/d2163199ab56e6d3c39a56ee2eaaf848.png",
+      "alt": "Diagram titled Review: making the actual review faster, covering speed and priority",
+      "kapitel": "trying-out-retro-solution",
+      "breite": 1280,
+      "hoehe": 720,
+      "lokal": "00_Inbox/Quellen/URL/lokal/matt-pocock-software-factories-real-engineers/medien/156.png",
+      "bytes": 353638,
+      "sha256": "3e40b0260d49378ddff630264f4c25bedbc57f14794d7b8a8c4fbff0fd750331"
+    }
+  ],
+  "abbildungen_inhaltlich_geprueft": [
+    37,
+    51,
+    118,
+    125,
+    139,
+    148
+  ],
+  "deutsche_ausgabe": {
+    "kapitel": 38,
+    "text_ids": 2932,
+    "textknoten": 2757,
+    "pre_bloecke": 175,
+    "pre_uebersetzt": 110,
+    "quizfragen": 22,
+    "aufgaben": 98,
+    "lokale_bilder": 156,
+    "lokale_videolinks": 38,
+    "inline_code_unveraendert": true,
+    "ids_unveraendert": true,
+    "quizloesungen_unveraendert": true,
+    "grammatik_kontextkorrekturen": 3,
+    "unbekannte_attribute": [
+      [
+        "article",
+        "data-title",
+        "Q&A"
+      ]
+    ],
+    "sha256": "0a40c34ff42326a4848cda50dfe5e4cdd8789ed2c237ae644ebbe19521efd666"
+  }
+}

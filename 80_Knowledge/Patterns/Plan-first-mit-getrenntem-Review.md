@@ -101,6 +101,10 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-10-28 · [[2026-10-28-housecor-2115482034906800200]] · meinung — Grilling, Ticketprüfung und Recherche sollen den Plan vor Arbeitsbeginn absichern; Code- und Security-Review folgen vor dem PR. Die zeitliche Trennung ergänzt das Vorgehen, belegt aber weder eine unabhängige Reviewer-Rolle noch verbindliche Abnahmekriterien.
 - 2026-10-25 · [[2026-10-25-alex-sprogis-die-qualitaet-von-ki-code-ist-nicht-so-gut-wie-d]] · meinung — Sprogis beschreibt eine Spezifikation mit Sonderfällen und Akzeptanzkriterien vor der Umsetzung; ein separater Agent soll nur diese Spec und das fertige Ergebnis prüfen. Dies konkretisiert die Informationsgrenze, belegt aber weder Unabhängigkeit aller Fehlerbilder noch eine gemessene Erkennungsleistung.
 
+- 2003-08-01 · [[2003-08-01-pdf-domain-driven-design]] · meinung — PDF-S. 25–35 und 201–204 verlangen Rückkopplung zwischen Modell, fachlichem Lernen und Implementierung. Eine starre Trennung in fertig denkende Planer und nur ausführende Implementierer würde diesen Kreislauf unterbrechen; die Anwendung auf Agentenrollen ist eigene Ableitung.
+- 2025-08-18 · [[2025-08-18-pdf-beyond-vibe-coding]] · meinung — PDF-S. 201–206 und 213–214 verbinden Plan, Ausführung, Verifikation und Bericht und warnen vor falschen Grundannahmen, die sich konsistent durch viele Artefakte fortsetzen. Frühzeitige fachliche Planprüfung begrenzt diesen Fehlermodus ohne Korrektheitsgarantie.
+- 2026-10-29 · [[2026-10-29-matt-pocock-software-factories-real-engineers]] · meinung — Die HTML-Demo verbindet Decision Map, Spec, Umsetzungstickets, Implementierung und getrenntes Standards-/Spec-Review. Die tatsächliche Integration braucht weiterhin Zuarbeit und Browser-QA; eine geschlossene Map oder grüne Checks allein belegen keine Produktreife. Veröffentlichungsdatum unbekannt, Datum bezeichnet die Erfassung.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-09 · [[2026-10-08-mattpocockuk-2108216899439894574]]: Wayfinder erst bei wachsender Komplexität der begonnenen Klärung einsetzen; zu frühe Planung kann unnötige Karten und Tickets erzeugen. Menschliches Review bleibt eine getrennte Entscheidung, auch wenn kleine Diffs ohne vorgelagerten Plan entstehen.
@@ -113,6 +117,8 @@ Für mittelgroße bis große Änderungen gilt ein Fünf-Schritte-Ablauf: (1) **D
 - 2026-10-24 · [[2026-10-22-mattpocockuk-2113264229453033684]] setzt ausführbaren Code als Qualitätsgegenstand gegen eine einseitige Spec-Zentrierung. Der Thread relativiert die ursprüngliche Gegenüberstellung: Planung und Spezifikation bleiben sinnvoll, benötigen aber einen fortlaufenden Abgleich mit dem tatsächlich ausgeführten Code.
 
 - 2026-10-28 · [[2026-10-28-housecor-2115482034906800200]] benennt Planprüfung vor der Umsetzung und Qualitätsprüfungen vor dem PR. Zeitlich getrennte Skill-Aufrufe belegen für sich keine unabhängige Reviewer-Rolle oder festgelegte Abnahmekriterien; die Aufrufnamen und Verfügbarkeit bleiben umgebungsspezifisch.
+
+- 2026-10-29: Ein bestätigter Plan bleibt eine überprüfbare Hypothese. Erkenntnisse aus der Umsetzung müssen begründet zurück in Fachmodell und Prüfkriterien gelangen können; bloßes Abhaken kann einen falschen Ausgangspunkt konservieren. Das erlaubt keine stillschweigende Änderung beauftragter Fachregeln.
 
 ## Verwandte Patterns
 

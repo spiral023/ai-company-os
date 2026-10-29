@@ -35,6 +35,8 @@ Altes Verhalten, geplante Strukturverbesserung und konkrete Prüfung pro Umbau d
 - 2026-10-20 · [[2026-10-20-anthropic-using-claude-to-reduce-the-attack-surface-of-cod]] · meinung — Bei Gates gegen unnötige Default-Erreichbarkeit verlangt Anthropic identische Ergebnisse der Projekt- und Black-Box-Regressionstests gegenüber einer unveränderten Baseline. Nichtstandardmäßige Konfigurationen mit Verhaltensänderung werden zur menschlichen Entscheidung ausgesondert; die Tests belegen nur den geprüften Verhaltensumfang.
 - 2019-09-13 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] · meinung — Refactoring wird als disziplinierte Strukturänderung bei erhaltenem äußerem Verhalten eingegrenzt; Funktionsänderungen bleiben getrennt, Umbauten klein und Regressionstests begleiten die Schritte. Das Buch begründet damit kontinuierliche Verhaltensprüfung, liefert aber keinen empirischen Vergleich von Refactoringverfahren und keine Garantie vollständiger Testabdeckung.
 
+- 2003-08-01 · [[2003-08-01-pdf-domain-driven-design]] · meinung — PDF-S. 115–122 und 201–204 beschreiben Modellverbesserungen aus tieferem Domänenverständnis und warnen vor technisch reizvollen Umbauten ohne Fachgewinn oder unmittelbar vor dem Release. Eine neue fachliche Bedeutung ist gesondert abzustimmen und kein automatisch verhaltensgleicher Strukturumbau.
+
 ## Spannungen & offene Fragen
 
 - Fehlende dokumentierte Fachregeln erschweren die Entscheidung, welche Alt-Ergebnisse gelten sollen.
@@ -42,6 +44,8 @@ Altes Verhalten, geplante Strukturverbesserung und konkrete Prüfung pro Umbau d
 - 2026-10-25 · [[2026-10-25-mattpocockuk-2114311664069718370]] und 2026-10-20 · [[2026-10-20-anthropic-using-claude-to-reduce-the-attack-surface-of-cod]]: Unveränderte Coverage und identische Regressionsergebnisse sichern unterschiedliche, jeweils begrenzte Eigenschaften. Weder daraus noch aus nicht beobachteten Ausführungspfaden folgt vollständige Semantikgleichheit oder Unerreichbarkeit; Änderungen anderer Konfigurationen brauchen eine eigene Entscheidung.
 
 - 2026-10-28 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] trennt Strukturverbesserung von zusätzlicher Funktion und empfiehlt kleine, durch Regressionstests begleitete Schritte. Vollständige Testabdeckung oder heute unbegründete Abstraktionsschichten werden dadurch nicht gerechtfertigt.
+
+- 2026-10-29: Evans erweitert den Anlass zum Refactoring um eine Diskrepanz zwischen Fachsprache und Modell. Falls ihre Behebung den sichtbaren Vertrag verändert, müssen fachliche Änderung und erhaltender Strukturumbau getrennt geplant und abgenommen werden; vorhandene Tests können bisherige Fehlannahmen konservieren.
 
 ## Verwandte Patterns
 

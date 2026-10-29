@@ -1,6 +1,6 @@
 # Prompts zum Ausprobieren
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-29. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, Codex oder einem Chat einsetzen können: Wortlaut, Zweck, Einsatzort, erwartetes Ergebnis. Jeder Prompt bleibt bei seiner Quelle; Varianten derselben Idee von verschiedenen Autoren werden nicht zusammengeführt. Prinzipien der Prompt-Technik gehören zu prompting.
 
@@ -9,7 +9,7 @@ Konkrete, kopierbare Prompts aus den Quellen, die Leser direkt in Claude Code, C
 - **Hauptkeyword:** Prompts für Claude Code
 - **Long-Tail:** Prompts zum Ausprobieren; Claude Code Prompt-Vorlagen; Blindspot Pass Prompt; Claude interviewt mich Prompt; Debugging-Prompt für Coding Agents; Prompt mit klarem Zielzustand; Plan vor Code Prompt
 - **Fragen:** Welche Prompts kann ich direkt in Claude Code ausprobieren? / Wie sage ich dem Agent, wann er fertig ist? / Wie verhindere ich, dass der Agent Fehler nur versteckt?
-- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), claude code prompts, requirements lead, tech lead prompt, rollen-prompts, verifikation vor abschluss, reviewer-agent, codex, task brief, ergebnisverantwortung, diagnoseprotokoll, freigabeliste, read-only-inventar, rechnerdiagnose, erfolgskriterien, karpathy system prompt, scope begrenzen, annahmen offenlegen
+- **Häufig in den Quellen:** claude code subagents (2), opus 5.5 (2), effort (2), tech lead prompt, ergebnisverantwortung, rollen-prompts, codex, task brief, reviewer-agent, claude code prompts, verifikation vor abschluss, requirements lead, rechnerdiagnose, diagnoseprotokoll, freigabeliste, read-only-inventar, karpathy system prompt, annahmen offenlegen, coding-agent-fehler, erfolgskriterien
 
 ## Verwandte Themen
 

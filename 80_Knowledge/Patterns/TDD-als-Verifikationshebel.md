@@ -47,6 +47,9 @@ Kontextmenge, Prüfbarkeit und Arbeitspaketgröße bestimmen gemeinsam die Quali
 - 2026-10-27 · [[2026-10-27-voxyz_ai-2115228299400196368]] · meinung — Ein priorisierter Logbefund soll vor jeder Korrektur in einen reproduzierenden Test überführt werden; ein Mensch wählt anschließend den Fix. Der vorgeschlagene Ablauf liefert ein konkretes Eingangssignal für einen Regressionstest, berichtet jedoch weder eine ausgeführte Reproduktion noch eine gemessene Verbesserung.
 - 2019-09-13 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] · meinung — Kleine Schritte sollen nur so weit reichen, wie unabhängiges Feedback sie bestätigen oder widerlegen kann; Tracer Bullets verbinden Anforderungen und Integration über ein dünnes, weiterverwendbares End-to-End-Gerüst. Die Autoren warnen zugleich vor grünen TDD-Tests ohne fachlichen Lösungsfortschritt; die Anwendung dieses Maßstabs auf heutige Coding Agents ist redaktionelle Übertragung und kein im Buch geprüfter Modellbefund.
 
+- 2021-07-01 · [[2021-07-01-pdf-a-philosophy-of-software-design-2nd-edition]] · meinung — PDF-S. 163–165 kritisieren TDD als allgemeine Entwurfsroutine zugunsten zusammenhängender Abstraktionen; zugleich befürwortet Ousterhout Unit-Tests zum Refactoring und den zuerst tatsächlich fehlschlagenden Regressionstest beim Bugfix. Kein Testverzicht und kein untersuchter Agentenvergleich.
+- 2025-08-18 · [[2025-08-18-pdf-beyond-vibe-coding]] · meinung — PDF-S. 151, 168 und 213–214 warnen vor Tests, die Implementierungsannahmen nachzeichnen, sowie vor konsistent falscher Fachlichkeit über Code, Schema, UI und Tests; nachträgliche Testgenerierung ist nicht dieselbe Reihenfolge wie Test-First.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-09 · [[2026-10-02-voxyz_ai-2106104334035435572]] friert Assertions für verhaltensgleiche Refactors ein und trennt fachliche Korrekturen davon. Charakterisierungstests können dabei auch bestehendes Fehlverhalten festhalten; widersprüchliche Regelkopien brauchen eine gesonderte fachliche Entscheidung, bevor Tests das gewünschte Verhalten bestätigen.
@@ -58,6 +61,9 @@ Kontextmenge, Prüfbarkeit und Arbeitspaketgröße bestimmen gemeinsam die Quali
 - 2026-10-27 · [[2026-10-27-voxyz_ai-2115228299400196368]] nutzt Log-Triage als Eingang für einen Regressionstest vor dem Fix. Erst die tatsächlich ausgeführte Reproduktion bestätigt das Fehlerbild; ein Agentenbericht oder nur entworfener Test ist kein Nachweis.
 
 - 2026-10-28 · [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]] warnt vor grünen Tests ohne Lösung des eigentlichen Problems. Tracer Code ist ein angemessen geprüftes, dünnes End-to-End-Gerüst zur Weiterverwendung; Prototypen sind begrenzte Lernmittel zum Verwerfen. Der Transfer dieser Unterscheidung auf heutige Coding Agents ist redaktionelle Einordnung, kein im Buch geprüfter Modellbefund.
+
+- 2026-10-29: Ousterhouts ausdrückliche TDD-Kritik (PDF-S. 164–165) betrifft den Abstraktionsentwurf, während das bestehende Pattern TDD als Verifikationsdisziplin für Agents nutzt. Eine mögliche eigene Synthese ist eine begrenzte Schnittstellenskizze mit nachfolgender enger Prüfschleife; sie ist weder vom Buch als TDD bestätigt noch hier experimentell verglichen. [[Designalternativen-vor-Festlegung-vergleichen]] und [[Vertraege-mit-Vorbedingungen-Nachbedingungen-und-Invarianten]] halten die Entwurfsfrage sichtbar.
+- 2026-10-29: Der Tracer Bullet aus Pragmatic ist ein dünner weiterverwendbarer End-to-End-Durchstich mit Qualitätsstruktur (PDF-S. 109–117). Er ist nicht allgemein mit dem einzelnen Red-Green-Testschritt gleichzusetzen; die spätere agentische Begriffsverwendung ist enger.
 
 ## Verwandte Patterns
 

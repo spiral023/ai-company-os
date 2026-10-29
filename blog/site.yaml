@@ -10,6 +10,28 @@ feed_max: 30
 # meldet neue Beiträge, damit Reader wie Feedly sofort abrufen statt nach ihrem eigenen Takt.
 websub_hub: "https://pubsubhubbub.appspot.com/"
 quellenverweise_im_text: false   # {q:n} bleiben im Markdown (Prüfung), erscheinen aber nicht im Text
+# Öffentliche Bibliografie für lokal archivierte Fachbücher; Quellen-IDs bleiben erhalten.
+quellen_anzeige:
+  2021-07-01-pdf-a-philosophy-of-software-design-2nd-edition:
+    titel: "A Philosophy of Software Design, 2nd Edition"
+    autor: "John Ousterhout"
+    datum: "Juli 2021"
+    url: "https://web.stanford.edu/~ouster/cgi-bin/book.php"
+  2003-08-01-pdf-domain-driven-design:
+    titel: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
+    autor: "Eric Evans"
+    datum: "August 2003"
+    url: "https://www.domainlanguage.com/ddd/"
+  2025-08-18-pdf-beyond-vibe-coding:
+    titel: "Beyond Vibe Coding: From Coder to AI-Era Developer"
+    autor: "Addy Osmani"
+    datum: "August 2025"
+    url: "https://www.oreilly.com/library/view/beyond-vibe-coding/9798341634749/"
+  2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition:
+    titel: "The Pragmatic Programmer, 20th Anniversary Edition"
+    autor: "David Thomas und Andrew Hunt"
+    datum: "September 2019"
+    url: "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/"
 kategorien:
   modelle: "Modelle & Kosten"
   arbeitsweisen: "Arbeitsweisen"

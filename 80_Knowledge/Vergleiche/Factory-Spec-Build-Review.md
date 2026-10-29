@@ -1,6 +1,6 @@
 # Vergleich: Spec, Build und Review in der Factory
 
-**Stand:** 2026-10-28 · **Pilot-ID:** `s-ablauf` · **Status:** kuratierter Entwurf, kein aktivierter Produktionsworkflow
+**Stand:** 2026-10-29 · **Pilot-ID:** `s-ablauf` · **Status:** kuratierter Entwurf, kein aktivierter Produktionsworkflow
 
 ## Kernaussage
 
@@ -50,6 +50,8 @@ Abnahmebedingungen und erlaubte Nacharbeit stehen vor der Umsetzung fest. Eine R
 Das [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition|Buch]] unterscheidet wegwerfbare Prototypen von weiterverwendetem Tracer Code und warnt vor grünen Tests ohne fachlichen Fortschritt. [[Frontend-Zustandslogik-mit-Reducer-isolieren]] konkretisiert eine mögliche Prüfgrenze: Zustandsübergänge separat testen, anschließend Browser-Anbindung und Effekte abnehmen. Diese Ergänzungen ändern weder Pilot-Registry noch aktivierte Workflows.
 
 ## Belegpfad
+
+Ergänzung vom 29.10.2026 außerhalb der unveränderten Pilot-Registry: [[2026-10-29-matt-pocock-software-factories-real-engineers]] verbindet Domain Language, sparsame ADRs, Decision Map, Spec und dreistufige Prüfung in einer ausführlichen HTML-Lehrdemo. Decision Tickets beantworten vor der Delivery offene Fragen; sie sind von späteren Implementierungstickets zu unterscheiden. [[Matt-Pocock-Software-Factories-Kurstransfer]] konkretisiert den Anschluss an die vier Softwarebücher und einen begrenzten Prüfversuch. Die Videos wurden nur archiviert; der Kurs erzeugt keine unabhängige zweite Herkunft für bereits vorhandene Pocock-Skills. Die Pilot-Aussagen und Fähigkeitskarten wurden nicht geändert.
 
 Ergänzung vom 27.10.2026 außerhalb der unveränderten Pilot-Registry: [[2026-10-26-addyosmani-2114604912520921136]] konkretisiert begrenzte Review-Schleifen mit Ansatzprüfung nach drei erfolglosen Runden, späterem Fokus auf den neuen Diff und separater Bestandsprüfung. Das Diagramm nennt 2,08 gegenüber 1,32 Reviews bis zum Abschluss; ohne Messdesign ist das keine übertragbare Erfolgsquote. Die X-Fassung gehört zur selben Herkunft wie [[2026-10-15-claude-how-the-claude-code-team-does-code-review-claude]] und zählt nicht als unabhängiger Beleg. Für den lokalen Entwurf folgt als Prüffrage: Werden neue Fehler erkannt oder erzeugen wiederholte Altbefunde nur weitere Runden? Produktionsregeln und Fähigkeitskarten werden damit nicht geändert.
 

@@ -31,6 +31,8 @@ Im Text: `{q:2}` verweist auf die zweite Quelle. Die Prüfung verlangt es, angez
 
 Quellenangaben (Titel, Autor, Datum, Original-URL) erzeugt der Generator aus den Source-Notizen. Wiki-Links in Doppelklammern sind im Text nicht erlaubt.
 
+Für lokal archivierte Bücher kann `quellen_anzeige` in `site.yaml` die öffentliche Bibliografie je Source-ID mit `titel`, `autor`, `datum` und `url` festlegen. So erscheinen Autor-/Verlagsseiten und monatsgenaue Angaben statt lokaler PDF-Pfade oder technischer Sortiertage. Die Quellen-IDs in den Beiträgen und die archivierten Source-Notizen bleiben erhalten.
+
 ## Glossar
 
 `blog/glossar.yaml` enthält die Fachbegriffe (Begriff, Aliase, Erklärung, „Siehe auch“). Der Generator erzeugt daraus die Seite `/glossar/` (mit Schema.org `DefinedTermSet`) und verlinkt in jedem Beitrag die **erste Nennung** eines Begriffs mit Tooltip. Überschriften, Links, Code und Fußnotenmarken bleiben unverlinkt, Pluralformen (s, n, en, es) werden erkannt.

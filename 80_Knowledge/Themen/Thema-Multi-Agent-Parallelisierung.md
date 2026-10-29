@@ -1,6 +1,6 @@
 # Multi-Agent & Parallelisierung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-29. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-Abhängigkeiten, Rollen, Advisor. Dauerläufe ohne Aufsicht stehen in autonomie.
 
@@ -9,7 +9,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - **Hauptkeyword:** Claude Code Subagents
 - **Long-Tail:** Agent Teams Claude Code; Git Worktrees parallele Agents; Subagents vs. Agent Teams; Multi-Agent Orchestrierung; Task-Abhängigkeiten Claude Code; Kosten paralleler Agents
 - **Fragen:** Wann lohnt sich Parallelisierung? / Subagent oder Agent Team?
-- **Häufig in den Quellen:** subagents (7), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), agent-organisation (3), heartbeats (3), addblockedby (2), multi-agent (2), claude code tasks (2), modulgrenzen (2), claude code agent teams (2), codex cli (2), rollen (2), budgets (2), freigaben (2), delegation (2), parallel agents (2), edit-kollisionen (2)
+- **Häufig in den Quellen:** subagents (7), claude code subagents (5), git worktrees (4), paperclip (4), effort (4), openclaw (3), heartbeats (3), agent-organisation (3), claude code tasks (2), multi-agent (2), addblockedby (2), claude code agent teams (2), modulgrenzen (2), codex cli (2), rollen (2), budgets (2), freigaben (2), delegation (2), edit-kollisionen (2), agent teams (2)
 
 ## Verwandte Themen
 
@@ -23,7 +23,7 @@ Mehrere Agents oder Sessions zusammen: Subagents, Agent Teams, Worktrees, Task-A
 - [[Advisor-Agent-gegen-Drift]] · meinung · 3 Belege
 - [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]] · meinung · 3 Belege
 - [[Blockierende-Task-Abhaengigkeiten]] · meinung · 5 Belege
-- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 55 Belege
+- [[Kontrollierte-Agent-Parallelisierung]] · mehrfach-belegt · 56 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Adversarialer-Pre-Launch-Check]], [[Agent-Rechte-umfassen-Kommunikationswege]], [[Bedarfsorientierter-Repositoryzugriff]], [[Prompt-Cache-TTL-nach-Agent-Pausen-waehlen]], [[Verhaltens-Spec-als-Grenze-zwischen-Analyse-und-Nachbau]]
 

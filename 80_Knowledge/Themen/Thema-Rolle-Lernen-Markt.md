@@ -1,6 +1,6 @@
 # Rolle, Lernen & Markt
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-29. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vibe Engineering, Nutzungsdaten, Lernen mit Agents, Marktstrategie und Harness-Abhängigkeit. Der Wandel des gesamten Entwicklungsprozesses gehört zu sdlc.
 
@@ -9,7 +9,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 - **Hauptkeyword:** Vibe Coding
 - **Long-Tail:** Vibe Coding Grenzen; Vibe Engineering; Great Decoupling Entwickler; Claude als Lernwerkzeug; Nutzungsdaten Coding Agents Studie
 - **Fragen:** Was bleibt vom Entwickler übrig? / Macht KI Entwickler wirklich produktiver?
-- **Häufig in den Quellen:** ki-adoption (4), matt pocock (3), reverse engineering (3), rea (3), swe-bench (2), befähigung (2), use case (2), pilotbewertung (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), nutzerfeedback (2), produktwert (2), betriebsleistung (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2)
+- **Häufig in den Quellen:** ki-adoption (4), matt pocock (3), reverse engineering (3), rea (3), swe-bench (2), use case (2), pilotbewertung (2), befähigung (2), evals (2), agents.md (2), trust the harness (2), context engineering (2), betriebsleistung (2), produktwert (2), nutzerfeedback (2), ai 2027 (2), netzwerkeffekte (2), codebase understanding (2), review (2), alignment (2)
 
 ## Verwandte Themen
 
@@ -22,7 +22,7 @@ Was sich für Entwickler und Unternehmen ändert: Rollenbild, Vibe Coding und Vi
 ## Patterns (5)
 
 - [[Agent-generierte-Schulung-mit-Curriculum-Gate]] · meinung · 3 Belege
-- [[Claude-als-Lernwerkzeug]] · verifiziert · 6 Belege
+- [[Claude-als-Lernwerkzeug]] · verifiziert · 7 Belege
 - [[Great-Decoupling-Rollenverstaendnis]] · meinung · 25 Belege
 - [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]] · meinung · 7 Belege
 - [[Produktwert-jenseits-des-reproduzierbaren-Codes]] · meinung · 2 Belege

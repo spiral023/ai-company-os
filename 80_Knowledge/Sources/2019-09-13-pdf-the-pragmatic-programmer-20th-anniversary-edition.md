@@ -66,3 +66,7 @@ Für heutige Coding Agents leite ich daraus kleine überprüfbare Arbeitsaufträ
 
 - [[Fachregel-Konsolidierung-vor-Featureaenderung]] konkretisiert den Umgang mit divergierenden Regelimplementierungen; das Buch liefert die begriffliche DRY-Abgrenzung.
 - [[TDD-als-Verifikationshebel]] überträgt überprüfbare Schritte auf Agentenarbeit. Das Buch ergänzt die Warnung, Tests oder kleinteilige Abstraktionen mit tatsächlichem Lösungsfortschritt zu verwechseln.
+
+- [[Vertraege-mit-Vorbedingungen-Nachbedingungen-und-Invarianten]]
+- [[Tracer-Bullet-und-Lernprototyp-bewusst-waehlen]]
+- [[Kommentare-als-Schnittstellenwissen-pflegen]]

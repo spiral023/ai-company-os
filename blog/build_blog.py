@@ -541,7 +541,11 @@ def quellen_html(cfg: dict, p: dict) -> str:
     if not p.get("quellen"):
         return ""
     items = []
-    for i, q in enumerate(source_entries(p), 1):
+    for i, (ref, entry) in enumerate(zip(p["quellen"], source_entries(p)), 1):
+        # Die Quellen-ID bleibt für Themenabgleich und Herkunft erhalten.
+        # Lokale Bücher können öffentlich mit ihrer Bibliografie erscheinen.
+        override = (cfg.get("quellen_anzeige") or {}).get(ref, {}) if isinstance(ref, str) else {}
+        q = {**entry, **{k: v for k, v in override.items() if k in {"titel", "autor", "datum", "url"}}}
         label = esc(q["titel"])
         if q.get("url"):
             label = f'<a href="{esc(q["url"])}" rel="noopener">{label}</a>'

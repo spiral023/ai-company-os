@@ -35,6 +35,8 @@ Wähle anschließend eine Modellkonfiguration anhand dieser Aufgaben und Prüfun
 - 2026-10-22 · [[2026-10-22-itamar_mar-2113255396299128887]] · meinung — Friedman konkretisiert begrenzte Autonomie als Kombination aus zulässiger Arbeit, Voraussetzungen, erlaubten Aktionen und vorgeplantem sicherem Fallback. Sein vorgeschlagenes L4-Raster gilt pro Workflow und Arbeitsbereich, nicht als Reifezertifikat für eine ganze Organisation.
 - 2026-10-23 · [[2026-10-23-theo-2113424203345265053]] · meinung — Theo trennt menschliche Oberfläche, Modell und Harness als ausführende Vermittlung von Tool-Angebot, Aufrufen und Ergebnissen. Der Vergleich von Coding-Agenten betrifft dadurch ein konfiguriertes Gesamtsystem; die Koch-Küche-Analogie ersetzt keine Betrachtung von Kontext, Rechten und Sicherheitskontrollen.
 
+- 2003-08-01 · [[2003-08-01-pdf-domain-driven-design]] · meinung — PDF-S. 12–35, 70–78 und 156–159 verbinden verwendete Fachsprache, gemeinsame Modellentwicklung und explizite Invarianten. Der eigene Transfer auf ein Agenten-Harness verlangt fachlich bestätigte Prüfregeln; Evans untersucht keine heutigen LLM-Systeme.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-22: Ein gemeinsamer Datenzugang kann Widersprüche bündeln, ohne sie zu beseitigen. Der sichtbare Quellenbeitrag stellt Datenbereinigung deshalb als eigene Vorarbeit heraus.
@@ -44,3 +46,6 @@ Wähle anschließend eine Modellkonfiguration anhand dieser Aufgaben und Prüfun
 - [[Testharness-als-staerkster-Hebel]]
 - [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]]
 - [[Modell-Eskalation-von-guenstig-nach-teuer]]
+
+- [[Aggregate-durch-fachliche-Invarianten-begrenzen]]
+- [[Vertraege-mit-Vorbedingungen-Nachbedingungen-und-Invarianten]]

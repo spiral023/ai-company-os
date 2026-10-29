@@ -1,6 +1,6 @@
 # Prompting & Klärung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-29. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns, Voice-Prompting, Anweisungen bei Modellwechsel ausdünnen, Anti-Sycophancy.
 
@@ -9,7 +9,7 @@ Wie man dem Modell Absicht und Wissen gibt: Prompt-Technik, Pre-Mortem, Unknowns
 - **Hauptkeyword:** Prompt Engineering
 - **Long-Tail:** Pre-Mortem Prompt; Unknowns aufdecken Prompt; Voice Prompting Coding; Anweisungen bei Modellwechsel ausdünnen; Agent Sycophancy vermeiden; Prompt für Coding Agents
 - **Fragen:** Warum sind lange Prompts oft schlechter? / Wie decke ich unbekannte Annahmen auf?
-- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), known unknowns (2), change quiz (2), spec-grilling (2), voice prompting (2), gpt-6 astra (2), überregulierung (2), progressive disclosure (2), skill descriptions (2), codex skill-creator (2), modellwechsel (2), intent engineering (2), ambitionscheck (2), context engineering (2), projektplanung mit ai, spec grilling, pre-mortem prompt, sycophancy, risikoanalyse
+- **Häufig in den Quellen:** prompt engineering (3), agents.md (3), known unknowns (2), change quiz (2), spec-grilling (2), voice prompting (2), modellwechsel (2), gpt-6 astra (2), progressive disclosure (2), skill descriptions (2), codex skill-creator (2), überregulierung (2), intent engineering (2), ambitionscheck (2), context engineering (2), risikoanalyse, spec grilling, ai agent zustimmungsneigung, sycophancy, prompt-tricks
 
 ## Verwandte Themen
 

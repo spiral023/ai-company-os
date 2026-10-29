@@ -1,6 +1,6 @@
 # Open-Source-LLMs & lokale Modelle
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-29. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Offene LLMs und Open-Weight-Modelle: verfügbare oder angekündigte Gewichte, lokale Inferenz und Serving, Hardwarebedarf, Quantisierung und Fine-Tuning. Eine Gewichtsankündigung ist kein Release; die Bezeichnung Open Source setzt eine gesonderte Prüfung der Lizenz und Offenheit voraus. Allgemeine Modellpreise und Benchmark-Kostenvergleiche stehen in modelle-kosten.
 
@@ -9,7 +9,7 @@ Offene LLMs und Open-Weight-Modelle: verfügbare oder angekündigte Gewichte, lo
 - **Hauptkeyword:** Open Source LLM
 - **Long-Tail:** Open-Weight vs. Open Source; LLM lokal betreiben; Claude Code mit lokalem Modell; Ollama vs. llama.cpp; LLM Hardware und VRAM; GGUF Quantisierung; Offene LLMs fine-tunen; Mistral offene Gewichte
 - **Fragen:** Welche LLM-Gewichte sind tatsächlich verfügbar? / Was unterscheidet Open Weight von Open Source? / Welche Hardware brauche ich für lokale Modelle? / Wann lohnt sich lokales Serving oder Fine-Tuning?
-- **Häufig in den Quellen:** unsloth (3), open weights (3), terminal-bench (3), benchmark (3), vram (3), quantisierung (3), lokale inferenz (3), kimi k3.1 pro (3), anthropic_base_url (2), ollama (2), claude code lokal (2), lokale llms (2), kimi k3 (2), deepseek (2), speicherbedarf (2), arbeitslast (2), hardware-pilot (2), modell (2), token (2), modell-eskalation (2)
+- **Häufig in den Quellen:** unsloth (3), open weights (3), terminal-bench (3), quantisierung (3), vram (3), benchmark (3), lokale inferenz (3), kimi k3.1 pro (3), anthropic_base_url (2), claude code lokal (2), ollama (2), lokale llms (2), kimi k3 (2), deepseek (2), arbeitslast (2), hardware-pilot (2), speicherbedarf (2), token (2), modell (2), modell-eskalation (2)
 
 ## Verwandte Themen
 

@@ -1,6 +1,6 @@
 # Prototyping & UI-Design
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-29. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, Design-Systeme und Design-Skills, Screenshots als Eingabe, Handoff an lokale Coding Agents.
 
@@ -9,7 +9,7 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - **Hauptkeyword:** Lovable
 - **Long-Tail:** Lovable Prompts; Lovable Sicherheit; Lovable Prototyp exportieren; Design System für Coding Agents; Screenshot als Prompt; KI-Website-Builder Vergleich
 - **Fragen:** Wann wechsle ich von Lovable zu Claude Code? / Wie bekomme ich konsistentes UI vom Agent?
-- **Häufig in den Quellen:** lovable (5), hyperframes (4), motion graphics (4), brand kit (3), suchintention (3), ereignisframes (3), ui-texte (3), design tokens (2), landingpage (2), security checker (2), vibe coding (2), artefaktbasis (2), claude design (2), designvarianten (2), produktionsabnahme (2), gestaltungsachsen (2), reduced motion (2), isolierte vorschau (2), codex skills (2), seitenspezifikation (2)
+- **Häufig in den Quellen:** lovable (5), hyperframes (4), motion graphics (4), vibe coding (3), brand kit (3), suchintention (3), ereignisframes (3), ui-texte (3), design tokens (2), landingpage (2), prototyp-handoff (2), security checker (2), designvarianten (2), claude design (2), artefaktbasis (2), produktionsabnahme (2), gestaltungsachsen (2), reduced motion (2), isolierte vorschau (2), codex skills (2)
 
 ## Verwandte Themen
 
@@ -17,15 +17,16 @@ Schnelle Prototypen und Oberflächen mit Agents: Lovable, KI-Website-Builder, De
 - [[Thema-Spezifikation-Planung]] — Spezifikation & Planung
 - [[Thema-Skill-Design]] — Skill-Design
 
-## Patterns (8)
+## Patterns (9)
 
 - [[Brand-Kit-als-gemeinsame-Artefaktbasis]] · meinung · 5 Belege
 - [[Framebasierte-Motion-Produktion-mit-Brief-und-Abnahme]] · meinung · 7 Belege
 - [[Layout-vor-Hilfstext-pruefen]] · meinung · 2 Belege
-- [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 8 Belege
+- [[Lovable-Prototyp-dann-lokaler-Handoff]] · meinung · 10 Belege
 - [[Mobile-Webapp-nach-Eingabefaehigkeit-pruefen]] · verifiziert · 4 Belege
 - [[Screenshot-als-Spezifikationsmedium]] · meinung · 12 Belege
 - [[Suchintention-mit-Daten-vor-Webdesign-klaeren]] · meinung · 3 Belege
+- [[Tracer-Bullet-und-Lernprototyp-bewusst-waehlen]] · meinung · 2 Belege
 - [[Variantenvergleich-vor-Produktionsabnahme]] · verifiziert · 8 Belege
 
 Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]], [[Frontend-Zustandslogik-mit-Reducer-isolieren]], [[Skill-aus-Demonstration-statt-Beschreibung]], [[UI-Grenzfaelle-mit-realistischen-Daten-pruefen]], [[Visuelle-Abnahme-mit-Live-Lokal-Vergleich]]
@@ -90,3 +91,4 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Agent-CLI-mit-Live-Ansicht]]
 - [[2026-04-16-wiki-compiler-ui-ux-pro-max-skill]]
 - [[2026-02-15-avid-ai-design-workflow-2026]]
 - [[2026-02-04-lovable-docs-lovable-security-guide]]
+- [[2025-08-18-pdf-beyond-vibe-coding]]

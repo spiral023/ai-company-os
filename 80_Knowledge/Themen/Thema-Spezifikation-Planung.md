@@ -1,6 +1,6 @@
 # Spezifikation & Planung
 
-*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-28. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
+*Automatisch erzeugt von `70_Scripts/themen.py index` am 2026-10-29. Nicht von Hand ändern: Taxonomie in `themen.yaml`, Zuordnung in `zuordnung.yaml`.*
 
 Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerung, Spec-Ordner, persistente Pläne. Prompt-Methoden für Klärung (Pre-Mortem, Unknowns) stehen in prompting.
 
@@ -9,7 +9,7 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - **Hauptkeyword:** Spec-Driven Development
 - **Long-Tail:** Plan Mode Claude Code; Spec-First Development; Grill Me Skill; Plan vor Code; Spec Ordner pro Feature; Plan Annotation Workflow
 - **Fragen:** Lohnt sich Plan Mode? / Wie schreibe ich eine Spec für einen Coding Agent?
-- **Häufig in den Quellen:** grilling (9), wayfinder (8), spec-driven development (8), spec-grilling (7), spec (6), plan-first (5), plan (5), planung (5), plan mode (4), review (4), ticket (4), design.md (3), claude code (3), plan.md (3), vibe coding (3), grill-me (3), paperclip (3), matt pocock skills (3), handoff-dokument (2), session-kontinuität (2)
+- **Häufig in den Quellen:** wayfinder (10), grilling (9), spec-driven development (8), spec-grilling (7), spec (6), plan-first (5), planung (5), plan (5), plan mode (4), review (4), ticket (4), design.md (3), claude code (3), plan.md (3), vibe coding (3), grill-me (3), retrospektive (3), software factory (3), paperclip (3), matt pocock skills (3)
 
 ## Verwandte Themen
 
@@ -19,22 +19,28 @@ Alles, was vor dem Code passiert: Plan Mode, Spec-First, Grilling, Task-Steuerun
 - [[Thema-Kontext-Management]] — Kontext-Management
 - [[Thema-AI-nativer-SDLC]] — AI-nativer SDLC
 
-## Patterns (9)
+## Patterns (14)
 
+- [[ADRs-auf-tragende-Entscheidungen-begrenzen]] · verifiziert · 2 Belege
+- [[Aggregate-durch-fachliche-Invarianten-begrenzen]] · meinung · 1 Belege
 - [[Architektur-in-Perspektiven-dokumentieren]] · verifiziert · 5 Belege
-- [[CONTEXT-Glossar]] · verifiziert · 10 Belege
+- [[Bounded-Contexts-und-Uebersetzungsgrenzen-kartieren]] · meinung · 1 Belege
+- [[CONTEXT-Glossar]] · verifiziert · 12 Belege
 - [[Codepfad-vor-Aenderung-nachvollziehen]] · meinung · 15 Belege
-- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 69 Belege
+- [[Designalternativen-vor-Festlegung-vergleichen]] · meinung · 1 Belege
+- [[Plan-first-mit-getrenntem-Review]] · verifiziert · 72 Belege
 - [[Projektkarte-als-Status-und-Entscheidungsartefakt]] · meinung · 3 Belege
 - [[Spec-Grilling]] · verifiziert · 25 Belege
 - [[Spec-Ordner-pro-Feature]] · meinung · 4 Belege
 - [[Task-basierte-Steuerung]] · verifiziert · 25 Belege
 - [[Verhaltens-Spec-als-Grenze-zwischen-Analyse-und-Nachbau]] · meinung · 1 Belege
+- [[Wayfinder-als-Karte-offener-Entscheidungen]] · verifiziert · 2 Belege
 
-Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletion-Test-pruefen]], [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]], [[Agent-generierte-Schulung-mit-Curriculum-Gate]], [[Blockierende-Task-Abhaengigkeiten]], [[Brand-Kit-als-gemeinsame-Artefaktbasis]], [[Fable-Unknowns-vor-Prompt-Qualitaet]], [[Fachregel-Konsolidierung-vor-Featureaenderung]], [[Handoff-Doc]], [[Intent-Engineering-als-dritte-Schicht]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Lovable-Prototyp-dann-lokaler-Handoff]], [[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]], [[Screenshot-als-Spezifikationsmedium]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Voice-Prompting-fuer-Kontextreichtum]]
+Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletion-Test-pruefen]], [[Agent-Organisation-mit-Rollen-Budgets-und-Heartbeats]], [[Agent-generierte-Schulung-mit-Curriculum-Gate]], [[Blockierende-Task-Abhaengigkeiten]], [[Brand-Kit-als-gemeinsame-Artefaktbasis]], [[Fable-Unknowns-vor-Prompt-Qualitaet]], [[Fachregel-Konsolidierung-vor-Featureaenderung]], [[Handoff-Doc]], [[Information-Hiding-an-Aenderungsgruenden-ausrichten]], [[Intent-Engineering-als-dritte-Schicht]], [[KI-Adoption-mit-Use-Case-und-Befaehigungs-Gate]], [[Lovable-Prototyp-dann-lokaler-Handoff]], [[Qualitaetsaufwand-nach-Folgen-und-Abhaengigkeiten-staffeln]], [[Screenshot-als-Spezifikationsmedium]], [[Suchintention-mit-Daten-vor-Webdesign-klaeren]], [[Variantenvergleich-vor-Produktionsabnahme]], [[Vertraege-mit-Vorbedingungen-Nachbedingungen-und-Invarianten]], [[Voice-Prompting-fuer-Kontextreichtum]]
 
-## Quellen (36)
+## Quellen (38)
 
+- [[2026-10-29-matt-pocock-software-factories-real-engineers]] — Eine gemeinsame Fachsprache, explizite Entscheidungen und überprüfbare Übergaben bilden den Zusammenhang zwischen Planung und Review.
 - [[2026-10-28-housecor-2115482034906800200]] — Cory House verteilt Skills auf konkrete Entscheidungspunkte im Arbeitstag.
 - [[2026-10-22-mattpocockuk-2113264229453033684]] — Matt Pocock setzt im Startpost Code ins Zentrum der Entwicklung.
 - [[2026-10-22-mattpocockuk-2113196247964074322]] — Matt Pocock empfiehlt ein gezieltes Interview, bevor ein Team eine Software Factory aufbaut.
@@ -71,6 +77,7 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletio
 - [[2026-02-05-kloss-xyz-feature-intelligence-architect]] — Analyse und Umsetzung trennen: Ein Read-only-Planer erzeugt eine Plan-Datei, die als Vertrag für den Build-Agenten nach Freigabe dient.
 - [[2026-02-02-anthony-riera-planning-with-files-skill]] — Plan, Erkenntnisse und Fortschritt als drei Dateien halten den Agenten in langen Sessions am Ziel, kosten aber zusätzliche Token beim Wiederlesen.
 - [[2026-01-14-ashpreetbedi-claude-code-spec-first]] — Ein persistenter Spec-Ordner pro Feature mit Design, Fortschritt und Entscheidungen ersetzt Chat-Gedächtnis und trägt Arbeit über Kontextlimits hinweg.
+- [[2003-08-01-pdf-domain-driven-design]] — Eric Evans beschreibt Softwareentwicklung für komplexe Fachdomänen als fortlaufendes gemeinsames Lernen.
 
 ## Quellen mit diesem Thema als Nebenthema
 
@@ -127,4 +134,5 @@ Weitere Patterns mit diesem Thema als Nebenthema: [[Abstraktionswert-mit-Deletio
 - [[2026-01-15-elenakvcs-vibe-coding-beginner-guide]]
 - [[2025-12-04-brutkasten-business-vs-technik-wie-man-ki-in-organisationen]]
 - [[2025-06-28-the-morpheus-tutorials-ai-ersetzt-uns-itler-jetzt-also]]
+- [[2021-07-01-pdf-a-philosophy-of-software-design-2nd-edition]]
 - [[2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition]]

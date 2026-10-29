@@ -34,6 +34,9 @@ Die Ausarbeitung vom 28.10.2026 leitet daraus ab, Erfolgskriterien, Prüftiefe u
 
 - 2026-10-25 · [[2026-10-25-alex-sprogis-die-qualitaet-von-ki-code-ist-nicht-so-gut-wie-d]] · meinung — Sprogis ordnet Entwicklungsqualität über Ausfallfolgen, Neubaukosten, Abhängigkeiten und Wartung ein und übernimmt das Raster aus einem verlinkten Talk. Die Methode ist eine sekundär vermittelte Heuristik ohne gemessene Wirksamkeit oder universelle Schwellen.
 
+- 2025-08-18 · [[2025-08-18-pdf-beyond-vibe-coding]] · meinung — PDF-S. 119, 150–151 und 167–171 staffeln die Verifikation nach Komplexität und Folgen eines Ausfalls; eine schnelle Demo braucht andere Nachweise als ein dauerhaft integriertes System. Eine allgemeine 70-Prozent-Fertigstellungsquote oder kalibrierte Risikoschwelle wird nicht belegt.
+- 2026-10-29 · [[2026-10-29-matt-pocock-software-factories-real-engineers]] · meinung — Die Review-Kapitel ergänzen Reversibilität und Blast Radius als getrennte Beurteilungsfragen sowie Vorher-Nachher-Belege für PRs. Ein lokaler Lernversuch und eine Änderung mit bleibenden Datenfolgen verdienen unterschiedliche Aufmerksamkeit; die Lehrdemo liefert keine gemessene Priorisierungswirkung. Datum ist der Erfassungstag.
+
 ## Spannungen & offene Fragen
 
 - 2026-10-28: Die pauschale Entwarnung des Videos für Wegwerfsoftware wird nicht übernommen. Auch ein schnell ersetzbares Werkzeug kann folgenreiche Aktionen ausführen; die konkreten Folgen zählen zur Einstufung.

@@ -4,6 +4,8 @@ Konkrete Rückfragen, die eine Entscheidung oder Freigabe brauchen.
 
 ## Offen
 
+- 2026-10-29: Das Themen-Scoring erreicht für [[ADRs-auf-tragende-Entscheidungen-begrenzen]] keinen Cluster über der Schwelle. Inhaltlich ist die Dokumentation von Architekturentscheidungen dem bestehenden Cluster `planung` mit Nebencluster `agent-dateien` und präzisen Keywords zugeordnet. Sollen bei der nächsten Taxonomiepflege Suchbegriffe für Architecture Decision Records und Decision Logs ergänzt werden? Die Taxonomie wurde nicht erweitert.
+
 - 2026-10-27: Das Themen-Scoring erreicht für [[2026-10-11-voxyz_ai-2109358372873183564]] und [[2026-10-20-anthropic-using-claude-to-reduce-the-attack-surface-of-cod]] keinen Cluster über der Schwelle. Inhaltlich sind Audio-/Exportabnahme unter `prototyping` mit `verifikation` und Angriffsflächenreduktion unter `sicherheit` mit `verifikation` eingeordnet. Sollen bei der nächsten Taxonomiepflege Suchbegriffe für Motion-Audio-Abnahme und Code-Erreichbarkeitsanalyse ergänzt werden? Die Taxonomie wurde nicht erweitert.
 
 - Zum Hinweis „ein Nutzer auf X liebt `/improve-codebase-architecture`“ fehlen Autor, Veröffentlichungsdatum und Originaltext beziehungsweise URL. Kannst du diese Angaben nachreichen, damit der Tweet als Source-Notiz archiviert werden kann?

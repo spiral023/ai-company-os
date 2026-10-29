@@ -11,6 +11,11 @@
 #   synonyme     Alternativbezeichnungen des Konzepts (nur bei Patterns)
 
 muster:
+  ADRs-auf-tragende-Entscheidungen-begrenzen:
+    haupt: planung
+    keywords: [Architecture Decision Record, ADR, Decision Log, Trade-off]
+    neben: [agent-dateien]
+    synonyme: [Architecture Decision Record, Entscheidungsprotokoll]
   AGENTS-md-Onboarding-Design:
     haupt: agent-dateien
     keywords: [AGENTS.md, CLAUDE.md, Context Engineering, Progressive Disclosure, Instruction-Following-Budget, AGENTbench, LLM-generierte Context Files, Agent Onboarding]
@@ -61,6 +66,11 @@ muster:
     keywords: [Interaktive Schulung, Curriculum, Lernziele, Human Review Gate, E-Learning mit KI, Voiceover, Interaktive HTML-Anwendung, User-invoked Skill]
     neben: [planung]
     synonyme: [Trainingskurs, Kursgenerierung, Curriculum-Freigabe, Agent-Generated Training]
+  Aggregate-durch-fachliche-Invarianten-begrenzen:
+    haupt: planung
+    keywords: [aggregate, fachliche invarianten, aggregate root, konsistenzgrenze]
+    neben: [verifikation]
+    synonyme: []
   Ambitionscheck-mit-Zielhoehe-Tiefe-und-Reichweite:
     haupt: prompting
     keywords: [Ambitionscheck, Zielhöhe, methodische Tiefe, fachliche Reichweite]
@@ -91,6 +101,11 @@ muster:
     keywords: [Task Dependencies, addBlockedBy, addBlocks, Claude Code Tasks, Task-Graph, Blocked Tasks, Abhängigkeitsgraph, Agent Task Management]
     neben: [planung]
     synonyme: [Task-Abhängigkeiten, Blocking Tasks, Dependency Graph]
+  Bounded-Contexts-und-Uebersetzungsgrenzen-kartieren:
+    haupt: planung
+    keywords: [bounded context, context map, anti-corruption layer, semantische übersetzung]
+    neben: [sdlc]
+    synonyme: []
   Brand-Kit-als-gemeinsame-Artefaktbasis:
     haupt: prototyping
     keywords: [Brand Kit, Artefaktbasis, Designrichtlinien, Medienabnahme]
@@ -126,6 +141,11 @@ muster:
     keywords: [Claude Code Deny Rules, Secrets Protection, .env schützen, Permission Rules, managed-settings.json, Advisory vs. Enforcement, Command Smuggling, requirements.toml]
     neben: [erweiterungen]
     synonyme: [Permissions Deny, Deny-Liste, Secret-Schutz, Enforcement statt Empfehlung]
+  Designalternativen-vor-Festlegung-vergleichen:
+    haupt: planung
+    keywords: [design it twice, entwurfsalternativen, api-skizzen, trade-offs]
+    neben: [verifikation]
+    synonyme: []
   Domaenen-Harness-mit-Daten-Evals-Rechten-und-Review:
     haupt: verifikation
     keywords: [Vertical Harness, Domänen-Evals, Datenqualität, Agent-Rechte, Reviewoberfläche]
@@ -221,6 +241,11 @@ muster:
     keywords: [UserPromptSubmit Hook, Skill Activation, Skill Triggering, Claude Code Hooks, Skill Description, Undertriggering, Skill-Aktivierung erzwingen, Hook Matcher]
     neben: [erweiterungen]
     synonyme: [Forced Skill Activation, Skill Auto-Activation, Skill-Trigger-Hook]
+  Information-Hiding-an-Aenderungsgruenden-ausrichten:
+    haupt: verifikation
+    keywords: [information hiding, änderungsgründe, informationsbesitz, deep modules]
+    neben: [planung]
+    synonyme: []
   Intent-Engineering-als-dritte-Schicht:
     haupt: prompting
     keywords: [Intent Engineering, Context Engineering, Prompt Engineering, Zielhierarchie, Organizational Intent, Agent Alignment, Trade-off-Logik, Eskalationsregeln]
@@ -241,6 +266,11 @@ muster:
     keywords: [mattpocock/skills, Composable Skills, Skill-Bibliothek, GSD, BMAD, Spec-Kit, Workflow-Frameworks, Wayfinder]
     neben: [frameworks]
     synonyme: [Small Composable Skills, Process-owning Frameworks, Leichtgewichtige Skills]
+  Kommentare-als-Schnittstellenwissen-pflegen:
+    haupt: verifikation
+    keywords: [schnittstellenkommentare, api-vertrag, entwurfsgründe, ownership]
+    neben: [sdlc]
+    synonyme: []
   Kontext-Hygiene-Entscheidungsbaum:
     haupt: kontext
     keywords: [Context Rot, Context Pollution, Context Window, /clear, /compact, Rewind, Subagents, Prompt Caching, Context Compaction]
@@ -371,6 +401,11 @@ muster:
     keywords: [Risikobasiertes Human Review, Shadow Mode, Review-Stichproben, Automatische PR-Freigabe, Review-Kapazität, Human-in-the-Loop, Menschliche Freigabe, Befundnachweis]
     neben: [autonomie, sicherheit]
     synonyme: [Risikobasierte Review-Autonomie, Shadow Mode für Review-Agents, Menschliche Review-Stichproben]
+  Review-Findings-in-Agent-Verbesserungen-ueberfuehren:
+    haupt: verifikation
+    keywords: [Retrospektive, Review Feedback, Coding Standards, Deterministische Checks]
+    neben: [agent-dateien]
+    synonyme: [Review Feedback Loop, Agent Retrospektive, Retro]
   Sandbox-Komposition-aus-OS-Primitiven:
     haupt: sicherheit
     keywords: [Agent Sandbox, Windows Sandbox, Restricted Token, Synthetic SID, OS-Level Sandboxing, Codex Sandbox, Process Isolation, Filesystem Permissions]
@@ -441,6 +476,11 @@ muster:
     keywords: [Test Harness, Verifier, Oracle Testing, Autonomous Agents, Agent Feedback, Visuelle Verifikation, Long-Running Agents, Reward Hacking]
     neben: [autonomie]
     synonyme: [Testharness, Verifier Quality, Test Oracle, Agent-Feedback-Loop]
+  Tracer-Bullet-und-Lernprototyp-bewusst-waehlen:
+    haupt: prototyping
+    keywords: [tracer bullet, lernprototyp, throwaway prototype, produktionsübergang]
+    neben: [verifikation, sdlc]
+    synonyme: []
   Trainingsdaten-Dichte-als-Stack-Kriterium:
     haupt: modelle-kosten
     keywords: [Training Data Density, Tech Stack Wahl, Bleeding Edge, Framework-Auswahl, LLM-freundliche Stacks, React FastAPI Python, Modellwissen, Library Versions]
@@ -461,6 +501,11 @@ muster:
     keywords: [Verhaltensspezifikation, Scout, Builder ohne Originalzugriff, Comparator, Informationsgrenze]
     neben: [verifikation, orchestrierung]
     synonyme: [Verhaltensvertrag für Nachbau, Spec als Informationsgrenze]
+  Vertraege-mit-Vorbedingungen-Nachbedingungen-und-Invarianten:
+    haupt: verifikation
+    keywords: [design by contract, vorbedingungen, nachbedingungen, invarianten, assertions]
+    neben: [planung]
+    synonyme: []
   Videoanalyse-mit-Frames-und-Transkript:
     haupt: wissensarbeit
     keywords: [Videoanalyse, Bildframes, Transkript, Zeitmarken, Szenenprüfung]
@@ -476,6 +521,11 @@ muster:
     keywords: [Voice Prompting, Diktierfunktion, Speech-to-Text, Prompt-Kontext, Voice Coding, Transkription, Context-rich Prompts, Dictation]
     neben: [planung]
     synonyme: [Voice Input, Sprachprompts, Spracheingabe, Dictation Mode]
+  Wayfinder-als-Karte-offener-Entscheidungen:
+    haupt: planung
+    keywords: [Wayfinder, Decision Ticket, Decision Map, Frontier, Fog of War]
+    neben: [frameworks]
+    synonyme: [Decision Map, Entscheidungslandkarte, Decision Tickets]
   Wissenspflege-mit-Inbox-und-Review:
     haupt: wissensarbeit
     keywords: [Wissenspflege, Inbox-Routing, Daily Notes, Weekly Review]
@@ -487,10 +537,20 @@ muster:
     neben: [autonomie, sdlc]
     synonyme: [CI-Ergebnisjournal, Testhistorien-Pipeline, Test-Impact-Analyse]
 quellen:
+  2003-08-01-pdf-domain-driven-design:
+    haupt: planung
+    kernaussage: Eric Evans beschreibt Softwareentwicklung für komplexe Fachdomänen als fortlaufendes gemeinsames Lernen.
+    keywords: [domain-driven design, domänenmodell, ubiquitous language, bounded context, aggregate, context map]
+    neben: [sdlc, verifikation]
   2019-09-13-pdf-the-pragmatic-programmer-20th-anniversary-edition:
     haupt: verifikation
     kernaussage: Andrew Hunt und David Thomas verbinden in der Jubiläumsausgabe von „The Pragmatic Programmer“ persönliche Verantwortung, Softwaredesign und gemeinsame Produktentwicklung.
     keywords: [The Pragmatic Programmer, DRY Wissensduplikation, Orthogonalität, Design by Contract, Tracer Bullets, Prototypen, kleine Schritte, Refactoring, Property-Based Tests, Teamverantwortung]
+    neben: [planung, sdlc]
+  2021-07-01-pdf-a-philosophy-of-software-design-2nd-edition:
+    haupt: verifikation
+    kernaussage: John Ousterhout untersucht in *A Philosophy of Software Design*, zweite Auflage, wie Software trotz laufender Änderungen verständlich bleiben kann.
+    keywords: [softwaredesign, information hiding, deep modules, schnittstellen, entwurfsvergleich, kommentare]
     neben: [planung, sdlc]
   2025-04-09-the-morpheus-ki-ist-ein-fluch:
     haupt: ki-risiken
@@ -517,6 +577,11 @@ quellen:
     kernaussage: Issues, Codepfadprüfung, Implementierung, Review und manuelle Ausführung bilden einen beschriebenen Entwicklungsablauf; Arbeitsmarktprognosen bleiben unbestätigt.
     keywords: [Codepfadprüfung, Issue-Steuerung, Review, manuelle Ausführung]
     neben: [planung, rolle-markt]
+  2025-08-18-pdf-beyond-vibe-coding:
+    haupt: sdlc
+    kernaussage: Addy Osmani beschreibt KI-gestützte Entwicklung als Verschiebung von der Codeproduktion zur Problembeschreibung, Integration und Validierung.
+    keywords: [vibe coding, agentic engineering, coherent incorrectness, prototyp-handoff, reviewkapazität, lernziel]
+    neben: [verifikation, prototyping]
   2025-09-08-the-morpheus-tutorials-studien-ai-verdraengt-also-junior-itler:
     haupt: rolle-markt
     kernaussage: Altersgruppen, Berufserfahrung, Beschäftigtenbestand und Einstellungen müssen getrennt betrachtet werden; spätere Studienrevisionen gehören nicht rückwirkend zum Video.
@@ -3234,3 +3299,8 @@ quellen:
     kernaussage: Cory House verteilt Skills auf konkrete Entscheidungspunkte im Arbeitstag.
     keywords: [Skill lifecycle, Plan review, PR review, Review comments, Scheduled audits, Skill selection, Feedback timing]
     neben: [skills, verifikation]
+  2026-10-29-matt-pocock-software-factories-real-engineers:
+    haupt: planung
+    kernaussage: Eine gemeinsame Fachsprache, explizite Entscheidungen und überprüfbare Übergaben bilden den Zusammenhang zwischen Planung und Review.
+    keywords: [Software Factory, Domain Language, Architecture Decision Record, Wayfinder, Decision Map, Code Review, Retrospektive]
+    neben: [frameworks, verifikation]

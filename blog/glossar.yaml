@@ -722,3 +722,74 @@ begriffe:
   - begriff: OpenTelemetry
     text: "Ein offenes Projekt mit Schnittstellen und Werkzeugen zum Erfassen und Weitergeben von Telemetriedaten. Damit lassen sich unter anderem Beobachtungen aus verschiedenen Prozessen verbinden. Die beteiligten Systeme müssen die benötigten Ereignisse und Zusammenhänge selbst liefern."
     siehe: [Trace, Instrumentierung]
+
+  - begriff: Vibe Coding
+    text: "Ein explorativer Entwicklungsstil, bei dem eine Anwendung im Gespräch mit einer KI entsteht. Schnelle sichtbare Ergebnisse helfen beim Ausprobieren von Ideen. Welche Teile bereits zuverlässig funktionieren und welche nur simuliert sind, muss gesondert geprüft werden."
+
+  - begriff: Deep Module
+    aliase: [Deep Modules, tiefes Modul]
+    text: "Ein Softwarebaustein, der viel nützliches Verhalten hinter einer überschaubaren Schnittstelle anbietet. Seine Benutzer müssen die verborgenen Entscheidungen nicht selbst nachvollziehen. Zur Schnittstelle gehören auch Fehler, Reihenfolgen und andere Regeln der Benutzung."
+    siehe: [Information Hiding]
+
+  - begriff: Information Hiding
+    text: "Das Bündeln einer Entwurfsentscheidung in dem Baustein, der sie verantwortet. Andere Teile können dessen Fähigkeiten verwenden, ohne diese Entscheidung kennen zu müssen. Private Felder allein gewährleisten diese Trennung noch nicht."
+    siehe: [Deep Module]
+
+  - begriff: Bounded Context
+    text: "Der Geltungsbereich eines fachlich konsistenten Modells. Innerhalb dieser Grenze sollen Begriffe, Regeln und Operationen dieselbe Bedeutung tragen. Andere Bereiche dürfen eigene Modelle verwenden und müssen ihre Bedeutung bei der Zusammenarbeit passend übersetzen."
+    siehe: [Ubiquitous Language, Context Map]
+
+  - begriff: Ubiquitous Language
+    text: "Eine gemeinsam verwendete Fachsprache, die das Modell einer Anwendung ausdrückt. Sie umfasst Begriffe, Beziehungen, Regeln und Handlungen in Gesprächen, Code und Tests. Ein Verzeichnis bevorzugter Wörter allein erfüllt diese Aufgabe nicht."
+    siehe: [Bounded Context]
+
+  - begriff: Context Map
+    text: "Eine Darstellung der tatsächlich vorhandenen Fachmodelle und ihrer Beziehungen. Sie zeigt unter anderem gemeinsame Teile, Übersetzungen und Zuständigkeiten an den Grenzen. Eine gewünschte künftige Struktur muss als solche vom Istzustand unterscheidbar bleiben."
+    siehe: [Bounded Context]
+
+  - begriff: Aggregate
+    text: "Eine fachlich begründete Gruppe von Objekten, deren Änderungen gemeinsam kontrolliert werden. Sie besitzt einen verantwortlichen Zugang, die Aggregate Root. Ihre Grenze richtet sich nach den zusammen zu schützenden fachlichen Bedingungen."
+    siehe: [Aggregate Root, Invariante]
+
+  - begriff: Aggregate Root
+    text: "Das verantwortliche Objekt am Zugang eines Aggregates. Es kontrolliert Änderungen und schützt die gemeinsam geltenden fachlichen Bedingungen. Dauerhafte Verweise von außen auf interne Entities werden auf diesen Zugang begrenzt."
+    siehe: [Aggregate, Entity]
+
+  - begriff: Entity
+    text: "Ein Fachobjekt, dessen Identität über Änderungen seiner Eigenschaften hinweg erhalten bleibt. Welche Kontinuität dabei zählt, bestimmt die Anwendung. Eine Datenbank-ID allein erklärt diese fachliche Bedeutung nicht."
+
+  - begriff: Core Domain
+    text: "Der Teil eines Fachmodells, der den besonderen Nutzen eines konkreten Produkts trägt. Er verdient gezielten Wissensaufbau und sorgfältigen Entwurf. Ein technisch anspruchsvoller Bestandteil gehört dadurch noch nicht automatisch zum fachlichen Kern."
+    siehe: [Generic Subdomain]
+
+  - begriff: Generic Subdomain
+    text: "Ein unterstützender fachlicher Bereich, dessen Fähigkeiten weniger speziell für den besonderen Produktnutzen sind. Er kann durch eine passende vorhandene Lösung oder eine begrenzte eigene Umsetzung abgedeckt werden. Allgemeine Verwendbarkeit auf Vorrat ist dabei kein eigenes Ziel."
+    siehe: [Core Domain]
+
+  - begriff: Tracer Bullet
+    text: "Ein schmaler funktionierender Durchstich durch den tatsächlichen technischen Ablauf einer Anwendung. Trotz begrenzter Funktionsbreite enthält er bereits angemessene Struktur, Fehlerbehandlung und Prüfungen. Sein Code wird als Gerüst weiterentwickelt."
+
+  - begriff: Design by Contract
+    text: "Ein Entwurfsansatz, der Aufruferpflichten, Ergebniszusagen und beständige Eigenschaften ausdrücklich beschreibt. Diese Verträge können durch Typen, Dokumentation, Tests und Laufzeitprüfungen unterstützt werden. Eine richtige Formulierung muss fachlich bestätigt und ihre Umsetzung gesondert geprüft werden."
+    siehe: [Invariante, Assertion]
+
+  - begriff: Invariante
+    text: "Eine Eigenschaft, die an vereinbarten Grenzen eines Systems gültig bleiben muss. Während eines gekapselten Ablaufs kann vorübergehend ein Zwischenzustand bestehen. Der Entwurf muss festlegen, wann die Eigenschaft wieder gilt und wer ihre Einhaltung kontrolliert."
+    siehe: [Design by Contract]
+
+  - begriff: Assertion
+    text: "Eine ausdrückliche Aussage über einen erwarteten Zustand. Als Laufzeit-assert prüft sie eine interne Annahme und kann je nach Sprache oder Konfiguration abgeschaltet sein. Normale Eingabeprüfung und notwendige Zustandsänderungen dürfen davon nicht abhängen."
+    siehe: [Design by Contract]
+
+  - begriff: Property-Based Testing
+    text: "Ein Testverfahren, das erzeugte Eingaben gegen allgemein formulierte Eigenschaften prüft. Es kann Gegenbeispiele finden, die in handgeschriebenen Fällen fehlen. Die gewählte Eigenschaft muss selbst zum gewünschten fachlichen Verhalten passen."
+    siehe: [Regressionstest]
+
+  - begriff: DRY
+    text: "Ein Entwurfsprinzip gegen unabhängig gepflegte Darstellungen derselben fachlichen Entscheidung. Gleiche Codezeilen können dagegen unterschiedliche Regeln mit eigenen Änderungsgründen ausdrücken. Vor einer Zusammenführung muss deshalb die gemeinsame Bedeutung geklärt werden."
+
+  - begriff: Orthogonalität
+    text: "Die möglichst weitgehende Unabhängigkeit verschiedener Entscheidungen und Verantwortungen. Eine Änderung soll andere Bereiche nur dort berühren, wo eine sachliche Abhängigkeit besteht. Versteckter gemeinsamer Zustand erschwert diese Unabhängigkeit."
+
+  - begriff: Coherent incorrectness
+    text: "Eine in sich stimmige Umsetzung einer falschen Ausgangsannahme. Derselbe Fehler kann sich durch Datenmodell, Schnittstelle, Oberfläche und Tests ziehen. Ein unabhängig bestätigter Fachfall hilft, die gemeinsame Annahme zu hinterfragen."
