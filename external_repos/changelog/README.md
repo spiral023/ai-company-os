@@ -4,12 +4,13 @@ Dieses Changelog dokumentiert inhaltliche Änderungen der lokal gepflegten exter
 
 Pro geändertem Repo werden Commit-Spanne, relevante Neuerungen und die Auswirkung auf `external_repos/INDEX.md` festgehalten. Repos, deren Änderungen ausschließlich automatisiert oder rein kosmetisch sind (Star-History-Refreshes, reine Sponsoren-README-Pflege, einzelne Dependabot-Bumps), stehen nur in einer kompakten Sammelzeile am Anfang der jeweiligen Lauf-Datei, nicht als eigener Unterabschnitt — das hält die Datei lesbar, ohne Informationen zu verlieren. Unveränderte Repositories erscheinen nur in der Laufstatistik. Mechanische Metadaten wie Dateizahl, Größe, Struktur und Stars bleiben ausschließlich im `external_repos/INDEX.md`.
 
-Gepflegt vom Skill `70_Scripts/../30_Skills/local/external-repos/SKILL.md` (siehe auch `AGENTS.md` → „Externe Repos aktualisieren").
+Gepflegt nach dem Skill [external-repos](../../30_Skills/local/external-repos/SKILL.md) und `AGENTS.md` → „Fremde GitHub-Repos herunterladen und aktualisieren“.
 
 ## Läufe
 
 | Datum | Repos geprüft | geändert | unverändert | Fehler | Datei |
 |---|---:|---:|---:|---:|---|
+| 2026-10-29 | 72 (+1 separat: ai-llm-wiki) | 44 | 28 | 0 | [2026-10-29.md](2026-10-29.md) |
 | 2026-10-25 | 72 (+1 separat: ai-llm-wiki) | 39 | 33 | 0 | [2026-10-25.md](2026-10-25.md) |
 | 2026-10-22 | 71 (+1 separat: ai-llm-wiki) | 59 | 12 | 0 | [2026-10-22.md](2026-10-22.md) |
 | 2026-10-05 | 63 (+1 separat: ai-llm-wiki) | 42 | 21 | 0 | [2026-10-05.md](2026-10-05.md) |
