@@ -4,12 +4,12 @@ Der Cloudflare Worker `sp23-pocock` liefert unter <https://pocock.sp23.online/> 
 
 ## Ablage und Build
 
-Original, vollständige Übersetzung und Medien bleiben im ignorierten lokalen [Kursarchiv](../docs/kurse/matt-pocock-software-factories/README.md). Im öffentlichen Git-Repository stehen ausschließlich Anwendungscode, Tests, Metadaten und eigene Auswertung. `content-manifest.mjs` enthält R2-Schlüssel, Größen und Prüfsummen, keine Volltexte oder Zugangsdaten.
+Original, vollständige Übersetzung und Medien bleiben im ignorierten lokalen [Kursarchiv](../docs/kurse/matt-pocock-software-factories/README.md). Im öffentlichen Git-Repository stehen Anwendungscode, Tests, Metadaten, eigene Auswertung und das eigens erzeugte Portrait-Icon. `content-manifest.mjs` enthält R2-Schlüssel, Größen und Prüfsummen, keine Volltexte oder Zugangsdaten.
 
 ```powershell
 python -m pip install beautifulsoup4 markdown-it-py
 python -X utf8 pocock/build_course.py --browser-upload
-node --test pocock/tests/security.test.mjs
+node --test pocock/tests/*.test.mjs
 python -m unittest discover -s pocock/tests -p 'test_*.py' -v
 ```
 
@@ -32,13 +32,28 @@ Der Build prüft die lokale HTML-Quelle und jede Mediendatei gegen das Inventar.
 
 Eine reine Codeänderung benötigt keinen erneuten Medienupload. Bei Änderungen an der Übersetzung oder Auswertung müssen die neu erzeugten HTML-Objekte vor dem Manifest-Deployment hochgeladen sein. Für eine Rückkehr zu einem älteren Release dessen Manifest und Code deployen; alte R2-Objekte nicht im selben Schritt löschen.
 
+## Installation auf dem iPhone
+
+1. <https://pocock.sp23.online/> in Safari öffnen.
+2. **Teilen → Zum Home-Bildschirm** wählen.
+3. **Als Web-App öffnen** aktivieren und **Hinzufügen** antippen.
+4. Den neuen Eintrag **Pocock Kurs** öffnen und bei Bedarf mit dem bestehenden Kurs-Passwort anmelden.
+
+Das Manifest definiert die Standalone-Ansicht, den App-Namen und Icons in 192 und 512 Pixeln. Ein Apple-Touch-Icon mit 180 Pixeln und ein mehrstufiges Favicon ergänzen die Browser-Unterstützung. Die Anmeldeseite enthält dieselbe kurze Installationshilfe; in der Standalone-Ansicht wird sie ausgeblendet. Der tatsächliche Installationsdialog liegt beim iPhone und lässt sich von der Website nicht automatisch bestätigen. [Apple-Anleitung](https://support.apple.com/guide/iphone/open-as-web-app-iphea86e5236/ios), [Installierbarkeit laut MDN](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Making_PWAs_installable).
+
+Der Kurs benötigt eine Internetverbindung. Es wird kein Service Worker registriert, und es werden keine Kursseiten oder Videos in einen Offline-Cache geschrieben. Öffentlich abrufbar und cachebar sind ausschließlich die sieben in `pwa.mjs` aufgeführten Manifest- und Icon-Dateien. `assets.run_worker_first: true` stellt sicher, dass auch diese URLs die explizite Worker-Freigabe durchlaufen; die öffentliche Ablage enthält keine Kursdateien.
+
+Login, Kurs und Analyse referenzieren dieselben App-Metadaten. Für Kurs und Analyse ergänzt der Worker den HTML-Head nach erfolgreicher Anmeldung mit Cloudflares HTMLRewriter; die privaten R2-Originale und ihre Script-Inhalte bleiben unverändert. Diese HTML-Antworten haben weder den ETag noch die Content-Length der unveränderten Eingabedatei. Ein bytegenauer Vergleich mit dem R2-Build entfernt zunächst ausschließlich den Zusatz zwischen `<!--pocock-pwa:start-->` und `<!--pocock-pwa:end-->`. Video-Bytebereiche und ihre ETags bleiben unverändert.
+
+Das mit Imagegen erzeugte [Icon-Original und der vollständige Prompt](assets/README.md) sind versioniert. Mit `python -m pip install pillow` und `python pocock/build_icons.py` lassen sich alle Größen reproduzieren. Das gezeichnete Portrait ist eine eigene Illustration für diesen Kurszugang und kein offizielles Autorenlogo.
+
 ## Anmeldung und Grenzen
 
 Die Worker-Secrets `PASSWORD_VERIFIER` und `SESSION_KEY` werden direkt in Cloudflare gepflegt und nicht im Repository gespeichert. Der Passwortverifier hat das Format `pbkdf2_sha256$100000$<16-Byte-Salt als Hex>$<32-Byte-Hash als Hex>`, berechnet mit PBKDF2-HMAC-SHA256. Der Sitzungsschlüssel besteht aus mindestens 32 zufälligen Bytes. Beide Werte können über die Standardeingabe von `wrangler secret bulk` gesetzt werden; Klartextpasswort, Verifier und Sitzungsschlüssel gehören weder in Shell-History noch in Dateien oder Logs.
 
 Ein Austausch eines dieser Secrets macht bestehende Sitzungen ungültig. Das signierte Cookie gilt acht Stunden und hat `Secure`, `HttpOnly`, `SameSite=Strict` und das `__Host-`-Präfix. Login und Logout prüfen den Origin. `Referrer-Policy: same-origin` unterbindet Referrer an fremde Websites und bewahrt den Origin nativer Form-POSTs; `no-referrer` würde diesen auf `null` setzen und die Anmeldung blockieren. Der Login nutzt Cloudflares Rate-Limit-Binding mit fünf Versuchen pro Minute und IP; dessen Zähler sind standortbezogen und näherungsweise, kein weltweites hartes Kontingent.
 
-Auch Bilder, Video-Bytebereiche, HEAD- und bedingte Anfragen prüfen zuerst die Sitzung. Antworten sind `private, no-store`; es gibt keine öffentliche R2-Ausweichadresse. Fehlende Secrets, fehlende Objekte oder unpassende Dateigrößen führen zu einem geschlossenen Fehlerzustand. Videos werden gestreamt und unterstützen einzelne Bytebereiche für natives Springen im Player.
+Auch Kursbilder, Video-Bytebereiche, HEAD- und bedingte Anfragen prüfen zuerst die Sitzung. Kursantworten sind `private, no-store`; es gibt keine öffentliche R2-Ausweichadresse. Fehlende Secrets, fehlende Objekte oder unpassende Dateigrößen führen zu einem geschlossenen Fehlerzustand. Videos werden gestreamt und unterstützen einzelne Bytebereiche für natives Springen im Player.
 
 Das gemeinsame Passwort ist eine Zugangsschranke für diesen privaten Lesebereich. Es gibt keine Benutzerkonten, Einzelberechtigungen oder serverseitige Widerrufsliste pro Sitzung. Wer angemeldet ist, kann ausgelieferte Inhalte speichern. Lernfortschritt bleibt im Browser; die Videos wurden für die inhaltliche Auswertung nicht vollständig angesehen oder transkribiert.
 

@@ -1,5 +1,6 @@
 import { loginPage } from "./login.mjs";
 import { CONTENT, SCRIPT_HASHES } from "./content-manifest.mjs";
+import { PUBLIC_ASSETS, addPwaHead } from "./pwa.mjs";
 
 export const COOKIE_NAME = "__Host-pocock-session";
 export const SESSION_TTL = 8 * 60 * 60;
@@ -72,7 +73,7 @@ function securityHeaders() {
     "permissions-policy": "camera=(), microphone=(), geolocation=(), payment=()",
     "strict-transport-security": "max-age=31536000",
     "x-robots-tag": "noindex, nofollow, noarchive",
-    "content-security-policy": `default-src 'none'; script-src ${SCRIPT_HASHES.length ? SCRIPT_HASHES.map((hash) => `'${hash}'`).join(" ") : "'none'"}; style-src 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'`,
+    "content-security-policy": `default-src 'none'; script-src ${SCRIPT_HASHES.length ? SCRIPT_HASHES.map((hash) => `'${hash}'`).join(" ") : "'none'"}; style-src 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; form-action 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'`,
   });
 }
 
@@ -131,11 +132,38 @@ function etagMatches(value, etag) {
   return value && value.split(",").some((part) => part.trim() === "*" || part.trim().replace(/^W\//, "") === etag);
 }
 
+async function servePublicAsset(request, env, path) {
+  if (!["GET", "HEAD"].includes(request.method)) return respond("Methode nicht erlaubt.", 405, { allow: "GET, HEAD" });
+  if (!env.PUBLIC_FILES) return respond("App-Metadaten vorübergehend nicht verfügbar.", 503);
+  // Sitzungs-Cookies und fremde Request-Header nicht an die öffentliche Ablage geben.
+  const requestHeaders = new Headers();
+  for (const name of ["if-none-match", "if-modified-since"]) {
+    if (request.headers.has(name)) requestHeaders.set(name, request.headers.get(name));
+  }
+  const asset = await env.PUBLIC_FILES.fetch(new Request(request.url, { method: request.method, headers: requestHeaders }));
+  if (![200, 304].includes(asset.status)) return respond("App-Metadaten vorübergehend nicht verfügbar.", 503);
+  const cache = "public, max-age=" + (path === "/manifest.webmanifest" ? "300" : "86400");
+  const headers = { "content-type": PUBLIC_ASSETS[path], "cache-control": cache, "cdn-cache-control": cache, "cloudflare-cdn-cache-control": cache, vary: "Accept-Encoding" };
+  for (const name of ["etag", "last-modified", "content-length", "content-encoding"]) {
+    if (asset.headers.has(name)) headers[name] = asset.headers.get(name);
+  }
+  return respond(request.method === "HEAD" || asset.status === 304 ? null : asset.body, asset.status, headers);
+}
+
 async function serveContent(request, env, path) {
   if (!Object.hasOwn(CONTENT, path)) return respond("Nicht gefunden.", 404, { "content-type": "text/plain; charset=utf-8" });
   const entry = CONTENT[path];
   const metadata = await env.COURSE_BUCKET.head(entry.key);
   if (!metadata || metadata.size !== entry.bytes) return respond("Der Kursinhalt ist vorübergehend nicht verfügbar.", 503);
+  if (entry.type.startsWith("text/html")) {
+    // Nur freigegebene, authentifizierte HTML-Seiten erhalten App-Metadaten.
+    // Der R2-ETag und seine Länge beschreiben die unveränderte Eingabe, nicht diese Ansicht.
+    const htmlHeaders = { "content-type": entry.type };
+    if (request.method === "HEAD") return respond(null, 200, htmlHeaders);
+    const object = await env.COURSE_BUCKET.get(entry.key);
+    if (!object?.body) return respond("Der Kursinhalt ist vorübergehend nicht verfügbar.", 503);
+    return addPwaHead(respond(object.body, 200, htmlHeaders));
+  }
   const headers = { "content-type": entry.type, "etag": metadata.httpEtag, "last-modified": metadata.uploaded.toUTCString(), "accept-ranges": "bytes" };
   if (etagMatches(request.headers.get("if-none-match"), metadata.httpEtag)) return respond(null, 304, headers);
   if (request.method === "HEAD") return respond(null, 200, { ...headers, "content-length": String(metadata.size) });
@@ -159,6 +187,7 @@ export async function handleRequest(request, env) {
     if (url.protocol === "http:" && url.hostname === new URL(origin).hostname) return respond(null, 308, { location: origin + url.pathname + url.search });
     return respond("Nicht gefunden.", 404);
   }
+  if (Object.hasOwn(PUBLIC_ASSETS, url.pathname)) return servePublicAsset(request, env, url.pathname);
   if (!env.SESSION_KEY || env.SESSION_KEY.length < 32 || !env.PASSWORD_VERIFIER || !env.COURSE_BUCKET || !env.LOGIN_LIMITER) return respond("Der Kursbereich wird vorbereitet.", 503);
   if (request.method === "POST" && (url.pathname === "/login" || url.pathname === "/logout")) {
     if (request.headers.get("origin") !== origin) return respond("Anfrage nicht erlaubt.", 403);

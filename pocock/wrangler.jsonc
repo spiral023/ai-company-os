@@ -6,6 +6,7 @@
   "preview_urls": false,
   "routes": [{ "pattern": "pocock.sp23.online", "custom_domain": true }],
   "vars": { "SITE_ORIGIN": "https://pocock.sp23.online" },
+  "assets": { "directory": "./public", "binding": "PUBLIC_FILES", "run_worker_first": true },
   "r2_buckets": [{ "binding": "COURSE_BUCKET", "bucket_name": "sp23-pocock-kurs" }],
   "ratelimits": [{ "name": "LOGIN_LIMITER", "namespace_id": "60291029", "simple": { "limit": 5, "period": 60 } }]
 }
