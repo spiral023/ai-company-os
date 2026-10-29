@@ -1,0 +1,16 @@
+import { DOWNLOADS, DOWNLOAD_IMAGE_MODE } from "./download-manifest.mjs";
+
+function link(language, extension, label) {
+  const route = `/downloads/${language}.${extension}`;
+  const file = DOWNLOADS[route];
+  const size = file.bytes >= 1000000 ? (file.bytes / 1000000).toLocaleString("de-DE", { maximumFractionDigits: 1 }) + " MB" : Math.ceil(file.bytes / 1000) + " KB";
+  return `<a href="${route}" download="${file.filename}" aria-label="${label} als ${extension === "html" ? "HTML" : "Markdown"} herunterladen">${extension === "html" ? "HTML" : "Markdown"}<small>${size}</small></a>`;
+}
+
+const imageNote = DOWNLOAD_IMAGE_MODE === "embedded" ? "Bilder in beiden Formaten eingebettet." : DOWNLOAD_IMAGE_MODE === "text-only" ? "Text und Code ohne Bilddateien." : "HTML mit Bildern. Markdown mit Bildlinks, die Internet benötigen.";
+
+export const DOWNLOAD_PANEL = `<!--pocock-downloads:start--><details class="course-download"><summary>Download</summary><div class="download-menu"><p class="download-title">Gesamter Kurs · ohne Videos</p><div class="download-row"><strong>Deutsch</strong>${link("de", "html", "Deutsch")}${link("de", "md", "Deutsch")}</div><div class="download-row"><strong>Englisch<small>Originaltext</small></strong>${link("en", "html", "Englisch")}${link("en", "md", "Englisch")}</div><p class="download-note">${imageNote}</p></div></details><!--pocock-downloads:end-->`;
+
+export const DOWNLOAD_STYLE = `<!--pocock-download-style:start--><style>
+.course-actions,.bar{position:relative;flex-wrap:wrap}.course-download{position:relative;font:13px/1.5 ui-sans-serif,system-ui,sans-serif;flex-shrink:0}.course-download summary{list-style:none;cursor:pointer;border:1px solid #d9cebd;border-radius:6px;padding:7px 11px;color:#594c3f;white-space:nowrap}.course-download summary::-webkit-details-marker{display:none}.course-download summary:after{content:' ↓';color:#9a4523}.course-download summary:focus-visible,.download-menu a:focus-visible{outline:2px solid #9a4523;outline-offset:3px}.course-download[open] summary{background:#eae0d1}.download-menu{position:absolute;top:calc(100% + 10px);left:0;width:320px;padding:18px;z-index:100;background:#fffaf2;color:#1c1712;border:1px solid #d9cebd;border-radius:12px;box-shadow:0 16px 42px #281b1126}.download-menu .download-title{margin:0 0 15px;font:600 13px/1.5 ui-sans-serif,system-ui,sans-serif;color:#1c1712}.download-row{display:grid;grid-template-columns:1fr 74px 84px;gap:8px;align-items:center;padding:11px 0;border-top:1px solid #e7ddcf}.download-row strong{font-size:13px;font-weight:600}.download-row a{display:block!important;margin:0!important;padding:7px 5px!important;text-align:center;text-decoration:none!important;border:1px solid #d9cebd;border-radius:6px;color:#843c20!important;font-size:12px!important;background:#f8f1e7}.download-row a:hover{background:#eee2d1}.download-row small{display:block;font-size:10px;font-weight:400;line-height:1.4;color:#746a5f}.download-menu .download-note{font:11px/1.6 ui-sans-serif,system-ui,sans-serif;color:#746a5f;margin:13px 0 0}@media(max-width:700px){.course-download{position:static}.course-download .download-menu{width:auto;left:0;right:0;top:calc(100% + 8px)}.download-row{grid-template-columns:1fr 74px 84px}}@media print{.course-download{display:none}}
+</style><!--pocock-download-style:end-->`;

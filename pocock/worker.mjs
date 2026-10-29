@@ -1,6 +1,7 @@
 import { loginPage } from "./login.mjs";
 import { CONTENT, SCRIPT_HASHES } from "./content-manifest.mjs";
 import { PUBLIC_ASSETS, addPwaHead } from "./pwa.mjs";
+import { DOWNLOADS } from "./download-manifest.mjs";
 
 export const COOKIE_NAME = "__Host-pocock-session";
 export const SESSION_TTL = 8 * 60 * 60;
@@ -151,11 +152,12 @@ async function servePublicAsset(request, env, path) {
 }
 
 async function serveContent(request, env, path) {
-  if (!Object.hasOwn(CONTENT, path)) return respond("Nicht gefunden.", 404, { "content-type": "text/plain; charset=utf-8" });
-  const entry = CONTENT[path];
+  const isDownload = Object.hasOwn(DOWNLOADS, path);
+  if (!isDownload && !Object.hasOwn(CONTENT, path)) return respond("Nicht gefunden.", 404, { "content-type": "text/plain; charset=utf-8" });
+  const entry = isDownload ? DOWNLOADS[path] : CONTENT[path];
   const metadata = await env.COURSE_BUCKET.head(entry.key);
   if (!metadata || metadata.size !== entry.bytes) return respond("Der Kursinhalt ist vorübergehend nicht verfügbar.", 503);
-  if (entry.type.startsWith("text/html")) {
+  if (!isDownload && entry.type.startsWith("text/html")) {
     // Nur freigegebene, authentifizierte HTML-Seiten erhalten App-Metadaten.
     // Der R2-ETag und seine Länge beschreiben die unveränderte Eingabe, nicht diese Ansicht.
     const htmlHeaders = { "content-type": entry.type };
@@ -165,6 +167,10 @@ async function serveContent(request, env, path) {
     return addPwaHead(respond(object.body, 200, htmlHeaders));
   }
   const headers = { "content-type": entry.type, "etag": metadata.httpEtag, "last-modified": metadata.uploaded.toUTCString(), "accept-ranges": "bytes" };
+  if (isDownload) {
+    headers["content-disposition"] = `attachment; filename="${entry.filename}"`;
+    headers["content-security-policy"] = "default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'";
+  }
   if (etagMatches(request.headers.get("if-none-match"), metadata.httpEtag)) return respond(null, 304, headers);
   if (request.method === "HEAD") return respond(null, 200, { ...headers, "content-length": String(metadata.size) });
   let rangeHeader = request.headers.get("range");

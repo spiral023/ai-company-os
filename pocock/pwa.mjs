@@ -1,3 +1,5 @@
+import { DOWNLOAD_PANEL, DOWNLOAD_STYLE } from "./downloads.mjs";
+
 // Nur diese öffentlichen Metadaten und selbst erzeugten Icons sind ohne Sitzung erreichbar.
 export const PUBLIC_ASSETS = Object.freeze({
   "/manifest.webmanifest": "application/manifest+json; charset=utf-8",
@@ -24,6 +26,8 @@ export const PWA_HEAD = `<!--pocock-pwa:start-->
 
 export function addPwaHead(response) {
   return new HTMLRewriter().on("head", {
-    element(head) { head.append(PWA_HEAD, { html: true }); },
+    element(head) { head.append(PWA_HEAD + DOWNLOAD_STYLE, { html: true }); },
+  }).on('nav[aria-label="Kursbereich"] > form', {
+    element(form) { form.before(DOWNLOAD_PANEL, { html: true }); },
   }).transform(response);
 }

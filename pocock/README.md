@@ -32,6 +32,24 @@ Der Build prüft die lokale HTML-Quelle und jede Mediendatei gegen das Inventar.
 
 Eine reine Codeänderung benötigt keinen erneuten Medienupload. Bei Änderungen an der Übersetzung oder Auswertung müssen die neu erzeugten HTML-Objekte vor dem Manifest-Deployment hochgeladen sein. Für eine Rückkehr zu einem älteren Release dessen Manifest und Code deployen; alte R2-Objekte nicht im selben Schritt löschen.
 
+## Geschützte Kursdownloads
+
+Der Button **Download** im Kurs und in der Analyse bietet vier Dateien: Deutsch und den englischen Originaltext jeweils als HTML oder Markdown. Die statischen Leseausgaben enthalten pro Sprache alle 38 Kapitel, 175 Codeblöcke, 98 Aufgaben und 22 Quizfragen einschließlich richtiger Antwort und Erklärung. Videos und die Bedienoberfläche des Online-Readers werden entfernt.
+
+Die HTML-Ausgaben betten alle 156 Bilder ein und funktionieren als einzelne Dateien ohne Internet. Sie sind jeweils ungefähr 104 MB groß. Markdown enthält die Bilder über ihre ursprünglichen Cloudinary-URLs und benötigt dafür Internet; die Textdateien sind ungefähr 300 KB groß. Der englische Fließtext und die Codebeispiele stammen unverändert aus der archivierten englischen Fassung; Navigation und Quizdarstellung werden für die Leseausgabe angepasst.
+
+```powershell
+python -m pip install markdownify==1.2.3
+python -X utf8 pocock/build_downloads.py
+python -X utf8 pocock/verify_r2.py --manifest pocock/_site/download-upload-manifest.json
+```
+
+Vor der R2-Prüfung die vier Dateien aus `_site/downloads/` entsprechend `_site/download-upload-manifest.json` in den privaten Bucket hochladen. Die vollständigen Exporte bleiben ignoriert; ausschließlich `download-manifest.mjs` mit Größen, Prüfsummen und Dateinamen wird versioniert. Neue Dateisätze erhalten ein gemeinsames unveränderliches Präfix unter `kurs/downloads/`. Erst nach erfolgreichem Bestandsabgleich Metadaten und Anwendung deployen.
+
+Der Builder vergleicht beide HTML-Eingaben und sämtliche Bilder mit dem Archiv-Inventar. Er prüft außerdem Kapitelreihenfolge, alle Codeblöcke, Aufgaben, Bildverweise und Textabschnitte des erzeugten Markdown. `--image-mode embedded` bettet auch Markdown-Bilder als Data-URLs ein; deren Anzeige hängt vom Markdown-Viewer ab. `--image-mode text-only` erzeugt beide Formate ohne Bilddateien. Die Voreinstellung ist `html-embedded-md-links`. Die HTML-Dateien benötigen für das Lesen weder JavaScript noch externe Schriften; Bilddekodierung erfolgt nach Möglichkeit verzögert.
+
+Alle vier Download-URLs benötigen eine gültige Sitzung und senden `Content-Disposition: attachment` sowie `private, no-store`. HEAD, ETag und Bytebereiche beziehen sich auf die tatsächliche Exportdatei. Die HTML-Downloads umgehen die Online-Head-Ergänzung, damit Dateigröße, Prüfsumme und Offline-Inhalt unverändert bleiben. Kein Kursdownload liegt in der öffentlichen Assets-Ablage. Die HTML-zu-Markdown-Konvertierung verwendet [python-markdownify](https://github.com/matthewwithanm/python-markdownify).
+
 ## Installation auf dem iPhone
 
 1. <https://pocock.sp23.online/> in Safari öffnen.
@@ -43,7 +61,7 @@ Das Manifest definiert die Standalone-Ansicht, den App-Namen und Icons in 192 un
 
 Der Kurs benötigt eine Internetverbindung. Es wird kein Service Worker registriert, und es werden keine Kursseiten oder Videos in einen Offline-Cache geschrieben. Öffentlich abrufbar und cachebar sind ausschließlich die sieben in `pwa.mjs` aufgeführten Manifest- und Icon-Dateien. `assets.run_worker_first: true` stellt sicher, dass auch diese URLs die explizite Worker-Freigabe durchlaufen; die öffentliche Ablage enthält keine Kursdateien.
 
-Login, Kurs und Analyse referenzieren dieselben App-Metadaten. Für Kurs und Analyse ergänzt der Worker den HTML-Head nach erfolgreicher Anmeldung mit Cloudflares HTMLRewriter; die privaten R2-Originale und ihre Script-Inhalte bleiben unverändert. Diese HTML-Antworten haben weder den ETag noch die Content-Length der unveränderten Eingabedatei. Ein bytegenauer Vergleich mit dem R2-Build entfernt zunächst ausschließlich den Zusatz zwischen `<!--pocock-pwa:start-->` und `<!--pocock-pwa:end-->`. Video-Bytebereiche und ihre ETags bleiben unverändert.
+Login, Kurs und Analyse referenzieren dieselben App-Metadaten. Für Kurs und Analyse ergänzt der Worker nach erfolgreicher Anmeldung den HTML-Head und den Downloadbereich mit Cloudflares HTMLRewriter; die privaten R2-Originale und ihre Script-Inhalte bleiben unverändert. Diese HTML-Antworten haben weder den ETag noch die Content-Length der unveränderten Eingabedatei. Ein bytegenauer Vergleich mit dem R2-Build entfernt zunächst ausschließlich die drei klar begrenzten Zusätze `pocock-pwa`, `pocock-download-style` und `pocock-downloads`. `tests/runtime-check.mjs` führt diesen Abgleich aus. Video-Bytebereiche und ihre ETags bleiben unverändert.
 
 Das mit Imagegen erzeugte [Icon-Original und der vollständige Prompt](assets/README.md) sind versioniert. Mit `python -m pip install pillow` und `python pocock/build_icons.py` lassen sich alle Größen reproduzieren. Das gezeichnete Portrait ist eine eigene Illustration für diesen Kurszugang und kein offizielles Autorenlogo.
 
